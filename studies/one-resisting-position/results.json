@@ -1,0 +1,81 @@
+{
+  "data_kind": "simulation",
+  "seed": 20261008,
+  "rounds_per_case": 4000,
+  "baseline_equivalence_checks": 100,
+  "cases": [
+    {
+      "name": "Ring: ordinary C",
+      "first_consensus_n": 3869,
+      "first_consensus_fraction": 0.96725,
+      "mean_capped_seconds": 34.338,
+      "unanimous_at_120_fraction": null,
+      "rounds_with_consensus_broken": 0,
+      "successful_rounds_at_focal_initial_color": 2163
+    },
+    {
+      "name": "Ring: seat 0 holds its initial color",
+      "first_consensus_n": 3498,
+      "first_consensus_fraction": 0.8745,
+      "mean_capped_seconds": 48.3725,
+      "unanimous_at_120_fraction": null,
+      "rounds_with_consensus_broken": 0,
+      "successful_rounds_at_focal_initial_color": 3498
+    },
+    {
+      "name": "Star: hub holds its initial color",
+      "first_consensus_n": 4000,
+      "first_consensus_fraction": 1.0,
+      "mean_capped_seconds": 9.47875,
+      "unanimous_at_120_fraction": null,
+      "rounds_with_consensus_broken": 0,
+      "successful_rounds_at_focal_initial_color": 4000
+    },
+    {
+      "name": "Star: leaf holds its initial color",
+      "first_consensus_n": 3745,
+      "first_consensus_fraction": 0.93625,
+      "mean_capped_seconds": 35.17125,
+      "unanimous_at_120_fraction": null,
+      "rounds_with_consensus_broken": 0,
+      "successful_rounds_at_focal_initial_color": 3745
+    },
+    {
+      "name": "Ring: ordinary, no initiative, continue for 120 s",
+      "first_consensus_n": 3891,
+      "first_consensus_fraction": 0.97275,
+      "mean_capped_seconds": 33.639,
+      "unanimous_at_120_fraction": 0.97275,
+      "rounds_with_consensus_broken": 0,
+      "successful_rounds_at_focal_initial_color": null
+    },
+    {
+      "name": "Ring: one local opponent, no other initiative, continue for 120 s",
+      "first_consensus_n": 3418,
+      "first_consensus_fraction": 0.8545,
+      "mean_capped_seconds": 54.355,
+      "unanimous_at_120_fraction": 0.05,
+      "rounds_with_consensus_broken": 3378,
+      "successful_rounds_at_focal_initial_color": null
+    }
+  ],
+  "exact_hold": {
+    "A_distinct_stubborn_follower": [
+      256,
+      512
+    ],
+    "B_one_frozen_seat": [
+      110,
+      512
+    ]
+  },
+  "assumptions": {
+    "ordinary_C": "Each second, random sequential order; activation .25; local copying with refusal .15; initiative .02 unless explicitly disabled.",
+    "hold": "The selected seat always retains its initial color; the exception attaches to the seat, not identity.",
+    "oppose": "On each active opportunity the selected seat chooses the opposite of its visible neighbors' majority; holds on a tie. No global information.",
+    "continued_runs": "No stopping at first consensus; observe the entire 120 seconds. Initiative is zero for the ordinary and opponent continuation comparison.",
+    "matching": "All cases use the same 4,000 starts and seed derivation as the original main sample. State-dependent draws need not remain aligned between different policies.",
+    "population": "Nine simulated participants representing a human coordination task. These conditions extend the original study.",
+    "interpretation": "All successful frozen-seat rounds must match that seat by construction. This alone is not evidence of authority or persuasion."
+  }
+}
