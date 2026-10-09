@@ -38,7 +38,7 @@ For exhaustive enumeration of all 512 binary starts, a frozen follower in hierar
 
 ## Behavioral assumptions
 
-The water-inspired rule is an analogy for local coordination, not molecular dynamics or a description of actual water.
+The Streams and Rocks analogy motivates the local coordination rules specified below.
 
 Ordinary C uses a new random sequential seat order each second. Each SIM is active with probability 0.25. When active, it spontaneously flips with probability 0.02; otherwise it samples a visible neighbor uniformly, proposes copying that color, and refuses a differing proposal with probability 0.15. These probabilities are chosen model assumptions.
 
