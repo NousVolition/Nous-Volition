@@ -44,4 +44,4 @@ The maintained implementation lives in the shared workspace. The original PDF is
 
 [Open the resisting-position experiment](studies/one-resisting-position/README.md) for runnable simulations, saved results, assumptions, and volunteer-testing considerations. It compares a position that holds its initial color with one that actively opposes its neighbors, including ring and star networks and the difference between first and lasting agreement.
 
-The study explores human coordination through a Streams and Rocks analogy. The experiment runs independently using Python 3.12 and no third-party dependencies.
+The study explores human coordination through nine **SIMS**, its simulated participants, using a Streams and Rocks analogy. The experiment runs independently using Python 3.12 and no third-party dependencies.

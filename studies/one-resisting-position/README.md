@@ -1,6 +1,6 @@
 # One position always fights back
 
-This study explores human coordination: what happens when one position in a group consistently resists, and how does that position shape everyone else's choices? In the Streams and Rocks metaphor, a fixed position acts like an obstacle around which others adapt.
+This study explores human coordination through nine **SIMS**—the simulated participants in the model. What happens when one position in their group consistently resists, and how does that position shape everyone else's choices? In the Streams and Rocks metaphor, a fixed position acts like an obstacle around which others adapt.
 
 ## Run and reproduce
 
@@ -14,14 +14,14 @@ This reruns all six scenarios, compares every aggregate and assumption with [res
 
 ## Two meanings of resistance
 
-- **Hold:** the chosen seat always keeps its initial color. Others can agree with it.
-- **Oppose:** whenever active, the chosen seat takes the opposite of its visible neighbors' majority, holding its current color on a tie. Even if everyone briefly agrees, its next active turn breaks that agreement.
+- **Hold:** the SIM in the chosen seat always keeps its initial color. Other SIMS can agree with it.
+- **Oppose:** whenever active, the SIM in the chosen seat takes the opposite of its visible neighbors' majority, holding its current color on a tie. Even if everyone briefly agrees, its next active turn breaks that agreement.
 
 The exception belongs to a seat, not a named individual. Seat numbers start at zero. On a ring every seat has two neighbors and equivalent structural status. In a star, seat 0 is the hub and seats 1–8 are leaves, each seeing only the hub.
 
 ## Results
 
-These results come from computer simulations of nine participants. Each row uses the same 4,000 randomized starting color patterns. Seed: `20261008`. All rounds have a maximum duration of 120 simulated seconds, including initially unanimous states at time zero.
+Each scenario follows nine SIMS and uses the same 4,000 randomized starting color patterns. Seed: `20261008`. All rounds have a maximum duration of 120 simulated seconds, including initially unanimous states at time zero.
 
 | Model scenario | Reached consensus at least once | Unanimous at 120 seconds | Mean capped time to first consensus |
 | --- | ---: | ---: | ---: |
@@ -40,9 +40,9 @@ For exhaustive enumeration of all 512 binary starts, a frozen follower in hierar
 
 The water-inspired rule is an analogy for local coordination, not molecular dynamics or a description of actual water.
 
-Ordinary C uses a new random sequential seat order each second. Each seat is active with probability 0.25. When active, it spontaneously flips with probability 0.02; otherwise it samples a visible neighbor uniformly, proposes copying that color, and refuses a differing proposal with probability 0.15. These probabilities are chosen model assumptions.
+Ordinary C uses a new random sequential seat order each second. Each SIM is active with probability 0.25. When active, it spontaneously flips with probability 0.02; otherwise it samples a visible neighbor uniformly, proposes copying that color, and refuses a differing proposal with probability 0.15. These probabilities are chosen model assumptions.
 
-The holding/opposing seat overrides the ordinary proposal on an active turn. A holding seat therefore never changes color. Both continued scenarios disable spontaneous initiative for ordinary agents, isolating the effect of active opposition under that particular control. Comparing those rows to the first four also changes initiative and stopping rules.
+The SIM in the holding/opposing seat overrides the ordinary proposal on an active turn. A holding SIM therefore never changes color. Both continued scenarios disable spontaneous initiative for ordinary SIMS, isolating the effect of active opposition under that particular control. Comparing those rows to the first four also changes initiative and stopping rules.
 
 All cases reuse the original main sample's starting states and seed derivation. State-dependent random draws can diverge between policies; shared seeds do not guarantee identical future random opportunities. The follow-up uses homogeneous identities, so permuting names alone cannot create an identity effect. The original schedule includes randomized A/B/C orders and identity mappings; this follow-up has no learning, fatigue, or order carryover and does not model these merely by reading that schedule.
 

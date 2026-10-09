@@ -1,4 +1,4 @@
-"""Human coordination with one fixed stubborn or locally contrarian position.
+"""Human coordination through nine SIMS, with one resisting position.
 
 See README.md and the results metadata for the simulation assumptions.
 """
@@ -103,7 +103,7 @@ def build_results():
         exact_b += len(set(state)) == 1
     output['exact_hold'] = {'A_distinct_stubborn_follower': [exact_a, 512],
                             'B_one_frozen_seat': [exact_b, 512]}
-    output['assumptions'] = {'ordinary_C': 'Each second, random sequential order; activation .25; local copying with refusal .15; initiative .02 unless explicitly disabled.', 'hold': 'The selected seat always retains its initial color; the exception attaches to the seat, not identity.', 'oppose': "On each active opportunity the selected seat chooses the opposite of its visible neighbors' majority; holds on a tie. No global information.", 'continued_runs': 'No stopping at first consensus; observe the entire 120 seconds. Initiative is zero for the ordinary and opponent continuation comparison.', 'matching': 'All cases use the same 4,000 starts and seed derivation as the original main sample. State-dependent draws need not remain aligned between different policies.', 'population': 'Nine simulated participants representing a human coordination task. These conditions extend the original study.', 'interpretation': 'All successful frozen-seat rounds must match that seat by construction. This alone is not evidence of authority or persuasion.'}
+    output['assumptions'] = {'ordinary_C': 'Each second, random sequential order; activation .25; local copying with refusal .15; initiative .02 unless explicitly disabled.', 'hold': 'The selected seat always retains its initial color; the exception attaches to the seat, not identity.', 'oppose': "On each active opportunity the selected seat chooses the opposite of its visible neighbors' majority; holds on a tie. No global information.", 'continued_runs': 'No stopping at first consensus; observe the entire 120 seconds. Initiative is zero for the ordinary and opponent continuation comparison.', 'matching': 'All cases use the same 4,000 starts and seed derivation as the original main sample. State-dependent draws need not remain aligned between different policies.', 'population': 'Nine SIMS (simulated participants) representing a human coordination task. These conditions extend the original study.', 'interpretation': 'All successful frozen-seat rounds must match that seat by construction. This alone is not evidence of authority or persuasion.'}
     print(json.dumps(output['exact_hold']), flush=True)
     return output
 
