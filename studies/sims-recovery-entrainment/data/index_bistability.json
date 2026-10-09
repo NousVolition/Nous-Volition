@@ -1,0 +1,490 @@
+{
+  "index": 1.7669748230352872e-16,
+  "index_controls": {
+    "constant": 0.0,
+    "rotation": 1.0,
+    "saddle": -1.0
+  },
+  "min_field_norm_on_circle": 0.3472466993209653,
+  "nine_vectors": [
+    [
+      0.0,
+      1.0
+    ],
+    [
+      0.35355339059327384,
+      0.0
+    ],
+    [
+      0.0,
+      -1.0
+    ],
+    [
+      0.35355339059327373,
+      0.0
+    ],
+    [
+      0.0,
+      1.0
+    ],
+    [
+      -0.3535533905932739,
+      0.0
+    ],
+    [
+      0.0,
+      -1.0
+    ],
+    [
+      -0.3535533905932737,
+      0.0
+    ],
+    [
+      0.0,
+      1.0
+    ]
+  ],
+  "coarse_junction": [
+    {
+      "beta": 0.2,
+      "bias": 0.4,
+      "initial": "rest",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 0.2,
+      "bias": 0.4,
+      "initial": "running",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 0.2,
+      "bias": 0.5,
+      "initial": "rest",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 0.2,
+      "bias": 0.5,
+      "initial": "running",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 0.2,
+      "bias": 0.8,
+      "initial": "rest",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 0.2,
+      "bias": 0.8,
+      "initial": "running",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 0.2,
+      "bias": 0.9,
+      "initial": "rest",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 0.2,
+      "bias": 0.9,
+      "initial": "running",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 0.2,
+      "bias": 1.0,
+      "initial": "rest",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 0.2,
+      "bias": 1.0,
+      "initial": "running",
+      "mean_velocity": 8.221244423836094e-06
+    },
+    {
+      "beta": 0.2,
+      "bias": 1.025,
+      "initial": "rest",
+      "mean_velocity": 0.24527046217741855
+    },
+    {
+      "beta": 0.2,
+      "bias": 1.025,
+      "initial": "running",
+      "mean_velocity": 0.22079723572512996
+    },
+    {
+      "beta": 2.0,
+      "bias": 0.4,
+      "initial": "rest",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 2.0,
+      "bias": 0.4,
+      "initial": "running",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 2.0,
+      "bias": 0.5,
+      "initial": "rest",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 2.0,
+      "bias": 0.5,
+      "initial": "running",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 2.0,
+      "bias": 0.8,
+      "initial": "rest",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 2.0,
+      "bias": 0.8,
+      "initial": "running",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 2.0,
+      "bias": 0.9,
+      "initial": "rest",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 2.0,
+      "bias": 0.9,
+      "initial": "running",
+      "mean_velocity": 0.7114515714216029
+    },
+    {
+      "beta": 2.0,
+      "bias": 1.0,
+      "initial": "rest",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 2.0,
+      "bias": 1.0,
+      "initial": "running",
+      "mean_velocity": 0.8782112115537285
+    },
+    {
+      "beta": 2.0,
+      "bias": 1.025,
+      "initial": "rest",
+      "mean_velocity": 0.912574293479735
+    },
+    {
+      "beta": 2.0,
+      "bias": 1.025,
+      "initial": "running",
+      "mean_velocity": 0.9122473013092403
+    },
+    {
+      "beta": 10.0,
+      "bias": 0.4,
+      "initial": "rest",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 10.0,
+      "bias": 0.4,
+      "initial": "running",
+      "mean_velocity": 0.25139650050054646
+    },
+    {
+      "beta": 10.0,
+      "bias": 0.5,
+      "initial": "rest",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 10.0,
+      "bias": 0.5,
+      "initial": "running",
+      "mean_velocity": 0.4584383181851219
+    },
+    {
+      "beta": 10.0,
+      "bias": 0.8,
+      "initial": "rest",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 10.0,
+      "bias": 0.8,
+      "initial": "running",
+      "mean_velocity": 0.7894936623984645
+    },
+    {
+      "beta": 10.0,
+      "bias": 0.9,
+      "initial": "rest",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 10.0,
+      "bias": 0.9,
+      "initial": "running",
+      "mean_velocity": 0.8942070812216801
+    },
+    {
+      "beta": 10.0,
+      "bias": 1.0,
+      "initial": "rest",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 10.0,
+      "bias": 1.0,
+      "initial": "running",
+      "mean_velocity": 0.9941395457902686
+    },
+    {
+      "beta": 10.0,
+      "bias": 1.025,
+      "initial": "rest",
+      "mean_velocity": 1.020627948136354
+    },
+    {
+      "beta": 10.0,
+      "bias": 1.025,
+      "initial": "running",
+      "mean_velocity": 1.0212801911571612
+    }
+  ],
+  "refined_junction": [
+    {
+      "beta": 0.2,
+      "bias": 0.4,
+      "initial": "rest",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 0.2,
+      "bias": 0.4,
+      "initial": "running",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 0.2,
+      "bias": 0.5,
+      "initial": "rest",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 0.2,
+      "bias": 0.5,
+      "initial": "running",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 0.2,
+      "bias": 0.8,
+      "initial": "rest",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 0.2,
+      "bias": 0.8,
+      "initial": "running",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 0.2,
+      "bias": 0.9,
+      "initial": "rest",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 0.2,
+      "bias": 0.9,
+      "initial": "running",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 0.2,
+      "bias": 1.0,
+      "initial": "rest",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 0.2,
+      "bias": 1.0,
+      "initial": "running",
+      "mean_velocity": 8.221244423450846e-06
+    },
+    {
+      "beta": 0.2,
+      "bias": 1.025,
+      "initial": "rest",
+      "mean_velocity": 0.24527046199500915
+    },
+    {
+      "beta": 0.2,
+      "bias": 1.025,
+      "initial": "running",
+      "mean_velocity": 0.22079723593383663
+    },
+    {
+      "beta": 2.0,
+      "bias": 0.4,
+      "initial": "rest",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 2.0,
+      "bias": 0.4,
+      "initial": "running",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 2.0,
+      "bias": 0.5,
+      "initial": "rest",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 2.0,
+      "bias": 0.5,
+      "initial": "running",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 2.0,
+      "bias": 0.8,
+      "initial": "rest",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 2.0,
+      "bias": 0.8,
+      "initial": "running",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 2.0,
+      "bias": 0.9,
+      "initial": "rest",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 2.0,
+      "bias": 0.9,
+      "initial": "running",
+      "mean_velocity": 0.7114515619028279
+    },
+    {
+      "beta": 2.0,
+      "bias": 1.0,
+      "initial": "rest",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 2.0,
+      "bias": 1.0,
+      "initial": "running",
+      "mean_velocity": 0.8782112091414525
+    },
+    {
+      "beta": 2.0,
+      "bias": 1.025,
+      "initial": "rest",
+      "mean_velocity": 0.912574285847223
+    },
+    {
+      "beta": 2.0,
+      "bias": 1.025,
+      "initial": "running",
+      "mean_velocity": 0.91224729467847
+    },
+    {
+      "beta": 10.0,
+      "bias": 0.4,
+      "initial": "rest",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 10.0,
+      "bias": 0.4,
+      "initial": "running",
+      "mean_velocity": 0.2513965003979712
+    },
+    {
+      "beta": 10.0,
+      "bias": 0.5,
+      "initial": "rest",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 10.0,
+      "bias": 0.5,
+      "initial": "running",
+      "mean_velocity": 0.45843831795020235
+    },
+    {
+      "beta": 10.0,
+      "bias": 0.8,
+      "initial": "rest",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 10.0,
+      "bias": 0.8,
+      "initial": "running",
+      "mean_velocity": 0.7894936622687192
+    },
+    {
+      "beta": 10.0,
+      "bias": 0.9,
+      "initial": "rest",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 10.0,
+      "bias": 0.9,
+      "initial": "running",
+      "mean_velocity": 0.8942070811140315
+    },
+    {
+      "beta": 10.0,
+      "bias": 1.0,
+      "initial": "rest",
+      "mean_velocity": 0.0
+    },
+    {
+      "beta": 10.0,
+      "bias": 1.0,
+      "initial": "running",
+      "mean_velocity": 0.9941395456130349
+    },
+    {
+      "beta": 10.0,
+      "bias": 1.025,
+      "initial": "rest",
+      "mean_velocity": 1.0206279479107159
+    },
+    {
+      "beta": 10.0,
+      "bias": 1.025,
+      "initial": "running",
+      "mean_velocity": 1.0212801910177673
+    }
+  ],
+  "maximum_junction_step_difference": 9.518774990446843e-09,
+  "checks": {
+    "index_zero": true,
+    "index_controls": true,
+    "nonzero_on_contour": true,
+    "junction_step_convergence": true
+  }
+}

@@ -1,0 +1,2198 @@
+[
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 0.0,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 0.0,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 0.0,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 0.025,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 0.025,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 0.025,
+    "voltage_ratio": 9.298729853886127e-08
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 0.05,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 0.05,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 0.05,
+    "voltage_ratio": 9.190927376502914e-08
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 0.07500000000000001,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 0.07500000000000001,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 0.07500000000000001,
+    "voltage_ratio": 8.999886873511248e-08
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 0.1,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 0.1,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 0.1,
+    "voltage_ratio": 8.707291388829891e-08
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 0.125,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 0.125,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 0.125,
+    "voltage_ratio": 8.288024468602884e-08
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 0.15000000000000002,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 0.15000000000000002,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 0.15000000000000002,
+    "voltage_ratio": 7.711120934388027e-08
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 0.17500000000000002,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 0.17500000000000002,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 0.17500000000000002,
+    "voltage_ratio": 6.941384177380771e-08
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 0.2,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 0.2,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 0.2,
+    "voltage_ratio": 5.9420519982894546e-08
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 0.225,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 0.225,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 0.225,
+    "voltage_ratio": 4.6789216064449525e-08
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 0.25,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 0.25,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 0.25,
+    "voltage_ratio": 3.126374922557407e-08
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 0.275,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 0.275,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 0.275,
+    "voltage_ratio": 1.2756980222183856e-08
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 0.30000000000000004,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 0.30000000000000004,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 0.30000000000000004,
+    "voltage_ratio": -8.541022541302957e-09
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 0.325,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 0.325,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 0.325,
+    "voltage_ratio": -3.2032112844138094e-08
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 0.35000000000000003,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 0.35000000000000003,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 0.35000000000000003,
+    "voltage_ratio": -5.656671283882364e-08
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 0.375,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 0.375,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 0.375,
+    "voltage_ratio": -8.03112328140454e-08
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 0.4,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 0.4,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 0.4,
+    "voltage_ratio": -1.0066877415976227e-07
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 0.42500000000000004,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 0.42500000000000004,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 0.42500000000000004,
+    "voltage_ratio": -1.1432082896861706e-07
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 0.45,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 0.45,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 0.45,
+    "voltage_ratio": -1.174850526232396e-07
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 0.47500000000000003,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 0.47500000000000003,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 0.47500000000000003,
+    "voltage_ratio": -1.0650283307628294e-07
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 0.5,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 0.5,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 0.5,
+    "voltage_ratio": -7.885753943170925e-08
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 0.525,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 0.525,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 0.525,
+    "voltage_ratio": -3.4641159099568776e-08
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 0.55,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 0.55,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 0.55,
+    "voltage_ratio": 2.1719058466984632e-08
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 0.5750000000000001,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 0.5750000000000001,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 0.5750000000000001,
+    "voltage_ratio": 8.003628741981572e-08
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 0.6000000000000001,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 0.6000000000000001,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 0.6000000000000001,
+    "voltage_ratio": 1.243234914391489e-07
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 0.625,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 0.625,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 0.625,
+    "voltage_ratio": 1.356759426029974e-07
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 0.65,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 0.65,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 0.65,
+    "voltage_ratio": 9.947621354006175e-08
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 0.675,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 0.675,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 0.675,
+    "voltage_ratio": 1.6670086908088244e-08
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 0.7000000000000001,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 0.7000000000000001,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 0.7000000000000001,
+    "voltage_ratio": -8.518041965527301e-08
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 0.7250000000000001,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 0.7250000000000001,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 0.7250000000000001,
+    "voltage_ratio": -1.5127458428132456e-07
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 0.75,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 0.75,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 0.75,
+    "voltage_ratio": -1.2302954743165229e-07
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 0.775,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 0.775,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 0.775,
+    "voltage_ratio": 9.568352622724152e-09
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 0.8,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 0.8,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 0.8,
+    "voltage_ratio": 1.5398503749319837e-07
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 0.8250000000000001,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 0.8250000000000001,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 0.8250000000000001,
+    "voltage_ratio": 1.3832842872679719e-07
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 0.8500000000000001,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 0.8500000000000001,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 0.8500000000000001,
+    "voltage_ratio": -9.082440346752652e-08
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 0.875,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 0.875,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 0.875,
+    "voltage_ratio": -1.929692945629169e-07
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 0.9,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 0.9,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 0.9,
+    "voltage_ratio": 1.682337519515187e-07
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 0.925,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 0.925,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 0.925,
+    "voltage_ratio": 1.589115413147546e-08
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 0.9500000000000001,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 0.9500000000000001,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 0.9500000000000001,
+    "voltage_ratio": -4.9769098398044775e-08
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 0.9750000000000001,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 0.9750000000000001,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 0.9750000000000001,
+    "voltage_ratio": -4.2612279305409563e-07
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 1.0,
+    "voltage_ratio": 4.7176406596483035e-05
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 1.0,
+    "voltage_ratio": 4.304528704007216e-05
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 1.0,
+    "voltage_ratio": 0.47104475362555875
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 1.0250000000000001,
+    "voltage_ratio": 0.23219797373032555
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 1.0250000000000001,
+    "voltage_ratio": 0.9055324199181729
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 1.0250000000000001,
+    "voltage_ratio": 1.0203393019470972
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 1.05,
+    "voltage_ratio": 0.31563037670760136
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 1.05,
+    "voltage_ratio": 0.9456932960026905
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 1.05,
+    "voltage_ratio": 1.0474074439869725
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 1.075,
+    "voltage_ratio": 0.3947372304294664
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 1.075,
+    "voltage_ratio": 0.9880309384978514
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 1.075,
+    "voltage_ratio": 1.0696840830697631
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 1.1,
+    "voltage_ratio": 0.4697214598479045
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 1.1,
+    "voltage_ratio": 1.0097660553380774
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 1.1,
+    "voltage_ratio": 1.0961579978845122
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 1.125,
+    "voltage_ratio": 0.5416506303541535
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 1.125,
+    "voltage_ratio": 1.0363543935398496
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 1.125,
+    "voltage_ratio": 1.1200801555506732
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 1.1500000000000001,
+    "voltage_ratio": 0.5686559797500716
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 1.1500000000000001,
+    "voltage_ratio": 1.0778625847792032
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 1.1500000000000001,
+    "voltage_ratio": 1.1484349780644187
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 1.175,
+    "voltage_ratio": 0.6276971117762666
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 1.175,
+    "voltage_ratio": 1.1015252568417864
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 1.175,
+    "voltage_ratio": 1.1715795749729434
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 1.2000000000000002,
+    "voltage_ratio": 0.6843203074129033
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 1.2000000000000002,
+    "voltage_ratio": 1.1249439417114175
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 1.2000000000000002,
+    "voltage_ratio": 1.1963161314570652
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 1.225,
+    "voltage_ratio": 0.710747751583963
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 1.225,
+    "voltage_ratio": 1.1612844670243643
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 1.225,
+    "voltage_ratio": 1.2234653584834536
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 1.25,
+    "voltage_ratio": 0.7618547440930861
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 1.25,
+    "voltage_ratio": 1.1866569719257385
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 1.25,
+    "voltage_ratio": 1.2469206538931796
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 1.2750000000000001,
+    "voltage_ratio": 0.7986325411549409
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 1.2750000000000001,
+    "voltage_ratio": 1.2232380254491049
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 1.2750000000000001,
+    "voltage_ratio": 1.2716966587462497
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 1.3,
+    "voltage_ratio": 0.8488699525857613
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 1.3,
+    "voltage_ratio": 1.2462907639514245
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 1.3,
+    "voltage_ratio": 1.2985869913831458
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 1.3250000000000002,
+    "voltage_ratio": 0.876849199755316
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 1.3250000000000002,
+    "voltage_ratio": 1.2732846918933762
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 1.3250000000000002,
+    "voltage_ratio": 1.323156531565666
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 1.35,
+    "voltage_ratio": 0.9247416415443904
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 1.35,
+    "voltage_ratio": 1.306547369607992
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 1.35,
+    "voltage_ratio": 1.3486370573780935
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 1.375,
+    "voltage_ratio": 0.9591388351523591
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 1.375,
+    "voltage_ratio": 1.328629654123856
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 1.375,
+    "voltage_ratio": 1.3733744990904966
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 1.4000000000000001,
+    "voltage_ratio": 1.0097640716315541
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 1.4000000000000001,
+    "voltage_ratio": 1.3542420804316264
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 1.4000000000000001,
+    "voltage_ratio": 1.397526467348742
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 1.425,
+    "voltage_ratio": 1.0337731985780274
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 1.425,
+    "voltage_ratio": 1.381599755555968
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 1.425,
+    "voltage_ratio": 1.4236723939369031
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 1.4500000000000002,
+    "voltage_ratio": 1.0523437652890806
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 1.4500000000000002,
+    "voltage_ratio": 1.4120129863644835
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 1.4500000000000002,
+    "voltage_ratio": 1.448653607894802
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 1.475,
+    "voltage_ratio": 1.1047951280843376
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 1.475,
+    "voltage_ratio": 1.4357658844343835
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 1.475,
+    "voltage_ratio": 1.4732496088688376
+  },
+  {
+    "beta": 0.2,
+    "direction": "up",
+    "bias": 1.5,
+    "voltage_ratio": 1.1531065315724465
+  },
+  {
+    "beta": 2.0,
+    "direction": "up",
+    "bias": 1.5,
+    "voltage_ratio": 1.4684464830097386
+  },
+  {
+    "beta": 10.0,
+    "direction": "up",
+    "bias": 1.5,
+    "voltage_ratio": 1.4986551353756514
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 1.5,
+    "voltage_ratio": 1.1227373569790653
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 1.5,
+    "voltage_ratio": 1.469027514970465
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 1.5,
+    "voltage_ratio": 1.4987730549473124
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 1.475,
+    "voltage_ratio": 1.108427858722009
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 1.475,
+    "voltage_ratio": 1.4389246949779708
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 1.475,
+    "voltage_ratio": 1.47418404059934
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 1.4500000000000002,
+    "voltage_ratio": 1.0490946554026574
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 1.4500000000000002,
+    "voltage_ratio": 1.4118598935370268
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 1.4500000000000002,
+    "voltage_ratio": 1.4473256193321862
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 1.425,
+    "voltage_ratio": 1.0309942668817218
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 1.425,
+    "voltage_ratio": 1.3890374544487467
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 1.425,
+    "voltage_ratio": 1.423568451434796
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 1.4000000000000001,
+    "voltage_ratio": 1.010064823912375
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 1.4000000000000001,
+    "voltage_ratio": 1.3618925489318165
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 1.4000000000000001,
+    "voltage_ratio": 1.3982060245483254
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 1.375,
+    "voltage_ratio": 0.9786202079070592
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 1.375,
+    "voltage_ratio": 1.3288313537298375
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 1.375,
+    "voltage_ratio": 1.3741212231889424
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 1.35,
+    "voltage_ratio": 0.9345786868184384
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 1.35,
+    "voltage_ratio": 1.2985602177144606
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 1.35,
+    "voltage_ratio": 1.3473958700021698
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 1.3250000000000002,
+    "voltage_ratio": 0.9058576435638507
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 1.3250000000000002,
+    "voltage_ratio": 1.2750093495276473
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 1.3250000000000002,
+    "voltage_ratio": 1.323120551784184
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 1.3,
+    "voltage_ratio": 0.8567290823109385
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 1.3,
+    "voltage_ratio": 1.243876487408056
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 1.3,
+    "voltage_ratio": 1.2964490375683948
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 1.2750000000000001,
+    "voltage_ratio": 0.8270373469554432
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 1.2750000000000001,
+    "voltage_ratio": 1.2172049062300896
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 1.2750000000000001,
+    "voltage_ratio": 1.2718821842183612
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 1.25,
+    "voltage_ratio": 0.7762427212373154
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 1.25,
+    "voltage_ratio": 1.1934234101883114
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 1.25,
+    "voltage_ratio": 1.2474247520771367
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 1.225,
+    "voltage_ratio": 0.7114939830656869
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 1.225,
+    "voltage_ratio": 1.1660124794770326
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 1.225,
+    "voltage_ratio": 1.2211700484572314
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 1.2000000000000002,
+    "voltage_ratio": 0.6905902351488494
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 1.2000000000000002,
+    "voltage_ratio": 1.1249486348319018
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 1.2000000000000002,
+    "voltage_ratio": 1.1960044595244992
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 1.175,
+    "voltage_ratio": 0.6277336315094603
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 1.175,
+    "voltage_ratio": 1.1021937150787753
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 1.175,
+    "voltage_ratio": 1.1723559234487169
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 1.1500000000000001,
+    "voltage_ratio": 0.576521486418585
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 1.1500000000000001,
+    "voltage_ratio": 1.0659920843294461
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 1.1500000000000001,
+    "voltage_ratio": 1.1484857859829751
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 1.125,
+    "voltage_ratio": 0.5424774681550009
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 1.125,
+    "voltage_ratio": 1.0362007885218716
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 1.125,
+    "voltage_ratio": 1.1229102283987409
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 1.1,
+    "voltage_ratio": 0.4602753378221559
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 1.1,
+    "voltage_ratio": 1.0096759376200903
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 1.1,
+    "voltage_ratio": 1.0960756367850704
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 1.075,
+    "voltage_ratio": 0.3946503927336355
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 1.075,
+    "voltage_ratio": 0.9750950402741203
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 1.075,
+    "voltage_ratio": 1.070983770255187
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 1.05,
+    "voltage_ratio": 0.3158192733713684
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 1.05,
+    "voltage_ratio": 0.9449639841292807
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 1.05,
+    "voltage_ratio": 1.0471707653976972
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 1.0250000000000001,
+    "voltage_ratio": 0.23461464265265902
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 1.0250000000000001,
+    "voltage_ratio": 0.9146925279891928
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 1.0250000000000001,
+    "voltage_ratio": 1.02030413760018
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 1.0,
+    "voltage_ratio": 3.8343742587299e-05
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 1.0,
+    "voltage_ratio": 0.8840261979602477
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 1.0,
+    "voltage_ratio": 0.9954115208607778
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 0.9750000000000001,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 0.9750000000000001,
+    "voltage_ratio": 0.8454306438103452
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 0.9750000000000001,
+    "voltage_ratio": 0.9719520900741347
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 0.9500000000000001,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 0.9500000000000001,
+    "voltage_ratio": 0.7985164619340992
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 0.9500000000000001,
+    "voltage_ratio": 0.944120028024259
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 0.925,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 0.925,
+    "voltage_ratio": 0.7465344820490121
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 0.925,
+    "voltage_ratio": 0.9207472229491088
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 0.9,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 0.9,
+    "voltage_ratio": 0.7172103540045318
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 0.9,
+    "voltage_ratio": 0.8908424298357538
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 0.875,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 0.875,
+    "voltage_ratio": 0.6481225274104689
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 0.875,
+    "voltage_ratio": 0.8674687738140541
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 0.8500000000000001,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 0.8500000000000001,
+    "voltage_ratio": 0.6045666384158436
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 0.8500000000000001,
+    "voltage_ratio": 0.8396160691959313
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 0.8250000000000001,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 0.8250000000000001,
+    "voltage_ratio": 0.5428867380019735
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 0.8250000000000001,
+    "voltage_ratio": 0.8195270416723393
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 0.8,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 0.8,
+    "voltage_ratio": 0.39728364151157136
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 0.8,
+    "voltage_ratio": 0.7896648221916607
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 0.775,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 0.775,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 0.775,
+    "voltage_ratio": 0.7640148332505726
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 0.75,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 0.75,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 0.75,
+    "voltage_ratio": 0.735685340010592
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 0.7250000000000001,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 0.7250000000000001,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 0.7250000000000001,
+    "voltage_ratio": 0.7125886799021716
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 0.7000000000000001,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 0.7000000000000001,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 0.7000000000000001,
+    "voltage_ratio": 0.6887066880581237
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 0.675,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 0.675,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 0.675,
+    "voltage_ratio": 0.6566773983565012
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 0.65,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 0.65,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 0.65,
+    "voltage_ratio": 0.6307439729048967
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 0.625,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 0.625,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 0.625,
+    "voltage_ratio": 0.5990561844062983
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 0.6000000000000001,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 0.6000000000000001,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 0.6000000000000001,
+    "voltage_ratio": 0.571225932198282
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 0.5750000000000001,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 0.5750000000000001,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 0.5750000000000001,
+    "voltage_ratio": 0.5471555154736591
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 0.55,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 0.55,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 0.55,
+    "voltage_ratio": 0.5178739041368432
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 0.525,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 0.525,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 0.525,
+    "voltage_ratio": 0.49191411362729925
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 0.5,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 0.5,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 0.5,
+    "voltage_ratio": 0.4565147348382405
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 0.47500000000000003,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 0.47500000000000003,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 0.47500000000000003,
+    "voltage_ratio": 0.4090281639468662
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 0.45,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 0.45,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 0.45,
+    "voltage_ratio": 0.38463054799495244
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 0.42500000000000004,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 0.42500000000000004,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 0.42500000000000004,
+    "voltage_ratio": 0.3438529057154273
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 0.4,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 0.4,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 0.4,
+    "voltage_ratio": 0.247649706632299
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 0.375,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 0.375,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 0.375,
+    "voltage_ratio": 1.3113566789987873e-05
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 0.35000000000000003,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 0.35000000000000003,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 0.35000000000000003,
+    "voltage_ratio": 5.716233914543345e-08
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 0.325,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 0.325,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 0.325,
+    "voltage_ratio": 3.251397360445885e-08
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 0.30000000000000004,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 0.30000000000000004,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 0.30000000000000004,
+    "voltage_ratio": 8.852359979077961e-09
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 0.275,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 0.275,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 0.275,
+    "voltage_ratio": -1.258836343845382e-08
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 0.25,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 0.25,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 0.25,
+    "voltage_ratio": -3.1206842660697066e-08
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 0.225,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 0.225,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 0.225,
+    "voltage_ratio": -4.681381010028518e-08
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 0.2,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 0.2,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 0.2,
+    "voltage_ratio": -5.949947884664741e-08
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 0.17500000000000002,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 0.17500000000000002,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 0.17500000000000002,
+    "voltage_ratio": -6.952414140053154e-08
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 0.15000000000000002,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 0.15000000000000002,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 0.15000000000000002,
+    "voltage_ratio": -7.723416663128758e-08
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 0.125,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 0.125,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 0.125,
+    "voltage_ratio": -8.300126868379664e-08
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 0.1,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 0.1,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 0.1,
+    "voltage_ratio": -8.718101819626956e-08
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 0.07500000000000001,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 0.07500000000000001,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 0.07500000000000001,
+    "voltage_ratio": -9.0086108489075e-08
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 0.05,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 0.05,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 0.05,
+    "voltage_ratio": -9.1970212652559e-08
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 0.025,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 0.025,
+    "voltage_ratio": 0.0
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 0.025,
+    "voltage_ratio": -9.301895422643771e-08
+  },
+  {
+    "beta": 0.2,
+    "direction": "down",
+    "bias": 0.0,
+    "voltage_ratio": -4.73267055051144e-100
+  },
+  {
+    "beta": 2.0,
+    "direction": "down",
+    "bias": 0.0,
+    "voltage_ratio": -3.170009498208963e-22
+  },
+  {
+    "beta": 10.0,
+    "direction": "down",
+    "bias": 0.0,
+    "voltage_ratio": -9.334532343933634e-08
+  }
+]

@@ -1,0 +1,211 @@
+{
+  "runs": [
+    {
+      "initial": [
+        0.4,
+        0
+      ],
+      "dt": 0.02,
+      "duration": 100,
+      "energy": -0.9210609940028851,
+      "final": [
+        0.016310936613448204,
+        0.39700374127624016
+      ],
+      "maximum_energy_error": 3.3069991189904613e-10
+    },
+    {
+      "initial": [
+        0.4,
+        0
+      ],
+      "dt": 0.01,
+      "duration": 100,
+      "energy": -0.9210609940028851,
+      "final": [
+        0.01631098234871935,
+        0.39700374019308404
+      ],
+      "maximum_energy_error": 1.0469847211425076e-11
+    },
+    {
+      "initial": [
+        0,
+        1.8
+      ],
+      "dt": 0.02,
+      "duration": 100,
+      "energy": 0.6200000000000001,
+      "final": [
+        -0.6075598548207221,
+        1.6976710230960503
+      ],
+      "maximum_energy_error": 5.824828508416147e-09
+    },
+    {
+      "initial": [
+        0,
+        1.8
+      ],
+      "dt": 0.01,
+      "duration": 100,
+      "energy": 0.6200000000000001,
+      "final": [
+        -0.6075599920786376,
+        1.697670979591623
+      ],
+      "maximum_energy_error": 2.5476110110389527e-10
+    },
+    {
+      "initial": [
+        0,
+        2.2
+      ],
+      "dt": 0.02,
+      "duration": 100,
+      "energy": 1.4200000000000004,
+      "final": [
+        148.45493779699584,
+        1.2027908226818012
+      ],
+      "maximum_energy_error": 1.012777195441572e-08
+    },
+    {
+      "initial": [
+        0,
+        2.2
+      ],
+      "dt": 0.01,
+      "duration": 100,
+      "energy": 1.4200000000000004,
+      "final": [
+        148.45493821595767,
+        1.2027910791139451
+      ],
+      "maximum_energy_error": 4.5534109816003365e-10
+    }
+  ],
+  "separatrix": [
+    {
+      "initial": [
+        0,
+        2
+      ],
+      "dt": 0.02,
+      "duration": 10,
+      "energy": 1.0,
+      "final": [
+        3.141407107139151,
+        0.00017765299199810447
+      ],
+      "maximum_energy_error": 3.3825200418391432e-09,
+      "exact_endpoint_max_error": 3.94673171744131e-06
+    },
+    {
+      "initial": [
+        0,
+        2
+      ],
+      "dt": 0.01,
+      "duration": 10,
+      "energy": 1.0,
+      "final": [
+        3.1414108158270655,
+        0.00018136167518651182
+      ],
+      "maximum_energy_error": 2.0848323067923502e-10,
+      "exact_endpoint_max_error": 2.3804380289149663e-07
+    }
+  ],
+  "damping": [
+    {
+      "initial": [
+        0.4,
+        0
+      ],
+      "dt": 0.02,
+      "energy_balance_error": 4.794044050626667e-10,
+      "largest_energy_increase": 0.0,
+      "final": [
+        -8.285921780953809e-05,
+        0.00011347666461890286
+      ]
+    },
+    {
+      "initial": [
+        0.4,
+        0
+      ],
+      "dt": 0.01,
+      "energy_balance_error": 3.0428895514411636e-11,
+      "largest_energy_increase": 0.0,
+      "final": [
+        -8.285920460190675e-05,
+        0.0001134766657093066
+      ]
+    },
+    {
+      "initial": [
+        0,
+        1.8
+      ],
+      "dt": 0.02,
+      "energy_balance_error": 8.645966398601601e-06,
+      "largest_energy_increase": 0.0,
+      "final": [
+        0.00015000088616473481,
+        -0.0006465535577962226
+      ]
+    },
+    {
+      "initial": [
+        0,
+        1.8
+      ],
+      "dt": 0.01,
+      "energy_balance_error": 2.160379786175781e-06,
+      "largest_energy_increase": 0.0,
+      "final": [
+        0.00015000082476047607,
+        -0.0006465535367621574
+      ]
+    },
+    {
+      "initial": [
+        0,
+        3.2
+      ],
+      "dt": 0.02,
+      "energy_balance_error": 2.7316773237195946e-05,
+      "largest_energy_increase": 0.0,
+      "final": [
+        6.28227310616814,
+        0.0007251561789560822
+      ]
+    },
+    {
+      "initial": [
+        0,
+        3.2
+      ],
+      "dt": 0.01,
+      "energy_balance_error": 6.8273234932192395e-06,
+      "largest_energy_increase": 0.0,
+      "final": [
+        6.282273106264858,
+        0.0007251562247606595
+      ]
+    }
+  ],
+  "checks": {
+    "centers_energy_minus_one": true,
+    "saddles_energy_one": true,
+    "energy_error_below_one_millionth": true,
+    "refinement_reduces_energy_error": true,
+    "separatrix_refined_endpoint": true,
+    "conservative_energy_derivative": true,
+    "damped_energy_nonincreasing": true,
+    "damped_energy_balance": true
+  },
+  "all_passed": true
+}

@@ -40,6 +40,15 @@ The stream function constructs an initial velocity field. The original radial Ga
 
 The maintained implementation lives in the shared workspace. The original PDF is preserved here as a record of the earlier construction.
 
+## SIMS follow-up: recovery, shared rhythms, and the arrangement
+
+[Open the follow-up and worked model atlas](studies/sims-recovery-entrainment/README.md).
+This adds 1,152 longer recovery runs, 576 oscillator-SIMS runs, and worked
+calculations from the supplied mathematical pages: entrainment, Josephson dynamics,
+pendulum energy and damping, topology, population models, and weakly nonlinear
+oscillations. The package includes numerical results, tests, 17 original figures,
+and two offline reports. The cropped heteroclinic exercise awaits its missing equations.
+
 ## One position always fights back
 
 [Open the resisting-position experiment](studies/one-resisting-position/README.md) for runnable simulations, saved results, assumptions, and volunteer-testing considerations. It compares a position that holds its initial color with one that actively opposes its neighbors, including ring and star networks and the difference between first and lasting agreement.

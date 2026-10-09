@@ -1,0 +1,70 @@
+{
+  "frozen_utc": "2026-10-09T09:42:59.578549+00:00",
+  "source_sha256": "9dd9cc81a4e0989cc2cfd1e8d62f2180985d28e710b9db5881006d62830ae0f6",
+  "status": "Later supplied exercise addendum; explicit numerical examples, no fitted populations or materials.",
+  "hypercycle": {
+    "n": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "seeds": [
+      501,
+      502,
+      503
+    ],
+    "dt": 0.02,
+    "duration": 300,
+    "initial": "independent Dirichlet(2,...,2), positive simplex"
+  },
+  "three_group": {
+    "initial": [
+      0.2,
+      0.3,
+      0.5
+    ],
+    "r": [
+      -1,
+      0,
+      1
+    ],
+    "duration": 12,
+    "dt": 0.01
+  },
+  "gravity": {
+    "G": 1,
+    "d": 1,
+    "m1": 1,
+    "m2": 4,
+    "initial_offset": [
+      -1e-05,
+      1e-05
+    ],
+    "duration": 0.3,
+    "dt": 0.0005
+  },
+  "hamiltonian": {
+    "sho": "m=2,k=3,x0=1,p0=0; duration20",
+    "inverse": "h=k=1,r0=1.2,p0=0; duration40",
+    "dt": [
+      0.02,
+      0.01
+    ]
+  },
+  "predator_prey": {
+    "mu": [
+      0.5,
+      1,
+      2
+    ],
+    "initial": [
+      0.7,
+      1.6
+    ],
+    "duration": 40,
+    "dt": 0.01
+  },
+  "pending": "Final heteroclinic crop omits governing equations. No vector field is inferred from its stated saddle positions."
+}

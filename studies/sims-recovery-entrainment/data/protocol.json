@@ -1,0 +1,93 @@
+{
+  "status": "Frozen before this ensemble; exploratory follow-up, not externally preregistered.",
+  "frozen_utc": "2026-10-09T09:33:59.150246+00:00",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "quick": false,
+  "seeds": [
+    12100,
+    12101,
+    12102,
+    12103,
+    12104,
+    12105,
+    12106,
+    12107,
+    12108,
+    12109,
+    12110,
+    12111,
+    22100,
+    22101,
+    22102,
+    22103,
+    22104,
+    22105,
+    22106,
+    22107,
+    22108,
+    22109,
+    22110,
+    22111
+  ],
+  "recovery_runs": 1152,
+  "schedules": {
+    "never": [],
+    "early": [
+      [
+        40,
+        80
+      ]
+    ],
+    "late": [
+      [
+        200,
+        240
+      ]
+    ],
+    "repeated": [
+      [
+        40,
+        80
+      ],
+      [
+        200,
+        240
+      ]
+    ]
+  },
+  "rounds": 480,
+  "block_size": 10,
+  "trace_fields": [
+    "cooperation",
+    "rigid",
+    "choice_excess",
+    "switching",
+    "boundary_crossing",
+    "pool_used",
+    "membership_retention",
+    "group_entropy"
+  ],
+  "source_hashes": {
+    "recovery_model.py": "27930e4ad535faf3ce7d95d3982d20ce4ab683248f287272d3071722b59c07eb",
+    "oscillators.py": "95c88eb7d6ce240987ae8d653ad7478a8a945a29cfe203d7edd266c6c03cc497",
+    "run_experiments.py": "13a52982b1435c297c5f23b22a38917ebb6538405d11c518b8987cb0e3481162",
+    "analyze.py": "d30ae7f231260d53ae46164a49c0d800ad7423b50deef2d20c31110af47e7e90",
+    "test_experiments.py": "796a82be9bd9f58d11b3f5163dc0936f4a3a13597210350531dd46efbbcca1fa"
+  },
+  "recovery_primary": "Last 40 rounds: early-minus-never and repeated-minus-late, for rigidity, cooperation and choice excess, separated by memory.",
+  "acute_primary": "Rounds 201-240: (repeated-early)-(late-never), separated by memory.",
+  "recovery_rule": "Two consecutive 10-round blocks with abs(paired rigidity difference)<=.03 AND abs(choice-excess difference)<=.03; count from stress removal. First attainment is not sustained recovery.",
+  "recovery_comparisons": {
+    "early": "never",
+    "late": "never",
+    "repeated": "early"
+  },
+  "uncertainty": "10,000 percentile bootstrap resamples of 12 independent seed means per split; average network and balance within seed. Descriptive unadjusted intervals.",
+  "network": "30 oscillator SIMS; three topologies; four driver positions; two mappings swap the high/low occupants with their detuning and initial phase. Total forcing 12 for every nonzero mode, coupling 4, dt .04, horizon 120, final window 30.",
+  "network_lock": "abs(mean phase drift)<.005 AND phase excursion<.2 in final 30 time units; numerical finite-window criterion.",
+  "physical_models": "Dimensionless equations supplied in screenshots, not measured devices or calibrated human behavior.",
+  "junction": "beta .2,2,10; bias grid 0..1.5 step .025; upward/downward continuation; dt .04, settle160, observe80; repeat dt .02 and settle320.",
+  "circle": "All fully visible exercises 4.1.2--4.1.7; 4.1.8 body and later 4.5.1 subparts are not visible.",
+  "future": "No volunteer activity is executed; no equilibrium or permanent-memory claim from finite horizons."
+}

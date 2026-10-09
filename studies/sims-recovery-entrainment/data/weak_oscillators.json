@@ -1,0 +1,109 @@
+{
+  "van_der_pol": [
+    {
+      "epsilon": 0.05,
+      "initial_amplitude": 0.1,
+      "late_half_range": 2.0000259592685774
+    },
+    {
+      "epsilon": 0.05,
+      "initial_amplitude": 1,
+      "late_half_range": 2.0000259847306703
+    },
+    {
+      "epsilon": 0.05,
+      "initial_amplitude": 3,
+      "late_half_range": 2.0000259860418566
+    },
+    {
+      "epsilon": 0.1,
+      "initial_amplitude": 0.1,
+      "late_half_range": 2.0001039279891444
+    },
+    {
+      "epsilon": 0.1,
+      "initial_amplitude": 1,
+      "late_half_range": 2.0001038850847417
+    },
+    {
+      "epsilon": 0.1,
+      "initial_amplitude": 3,
+      "late_half_range": 2.0001039259804356
+    },
+    {
+      "epsilon": 0.2,
+      "initial_amplitude": 0.1,
+      "late_half_range": 2.000413668074077
+    },
+    {
+      "epsilon": 0.2,
+      "initial_amplitude": 1,
+      "late_half_range": 2.000413623426959
+    },
+    {
+      "epsilon": 0.2,
+      "initial_amplitude": 3,
+      "late_half_range": 2.000413630993826
+    }
+  ],
+  "duffing": [
+    {
+      "amplitude": 0.2,
+      "dt": 0.02,
+      "measured_period": 6.2737828541202525,
+      "quadrature_period": 6.273782851401972,
+      "first_order_frequency": 1.0015,
+      "energy_error": 1.7969730217726188e-10
+    },
+    {
+      "amplitude": 1.0,
+      "dt": 0.02,
+      "measured_period": 6.060656748375534,
+      "quadrature_period": 6.060656736957467,
+      "first_order_frequency": 1.0375,
+      "energy_error": 6.108081596067905e-09
+    },
+    {
+      "amplitude": 2.0,
+      "dt": 0.02,
+      "measured_period": 5.51685191817656,
+      "quadrature_period": 5.516851888104295,
+      "first_order_frequency": 1.15,
+      "energy_error": 6.699970001022848e-08
+    }
+  ],
+  "duffing_refined": [
+    {
+      "amplitude": 0.2,
+      "dt": 0.01,
+      "measured_period": 6.273782852229507,
+      "quadrature_period": 6.273782851401972,
+      "first_order_frequency": 1.0015,
+      "energy_error": 5.610713282866442e-12
+    },
+    {
+      "amplitude": 1.0,
+      "dt": 0.01,
+      "measured_period": 6.060656737390284,
+      "quadrature_period": 6.060656736957467,
+      "first_order_frequency": 1.0375,
+      "energy_error": 1.940372307274174e-10
+    },
+    {
+      "amplitude": 2.0,
+      "dt": 0.01,
+      "measured_period": 5.5168518895639584,
+      "quadrature_period": 5.516851888104295,
+      "first_order_frequency": 1.15,
+      "energy_error": 2.1756050294641227e-09
+    }
+  ],
+  "checks": {
+    "vdp_amplitude_near_two": true,
+    "vdp_initial_conditions_agree": true,
+    "duffing_periods_match_quadrature": true,
+    "duffing_energy_error": true,
+    "duffing_hardening": true
+  },
+  "all_passed": true
+}

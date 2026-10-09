@@ -1,0 +1,9 @@
+{
+  "frozen_utc": "2026-10-09T09:57:41.929134+00:00",
+  "source_sha256": "84d23459ab4f03f3268b05f2c96644e93a2bf3bdbbc9503a908236f7a561e2f8",
+  "source": "Supplied weak-oscillator exercise continuation, 7.6.15, 7.6.16 and visible 7.6.17(a).",
+  "cubic_damping": "xddot+epsilon*xdot^3+x=0; a1 epsilon2 duration50; dt .01 and .005.",
+  "pendulum": "Periods from exact energy quadrature for amplitudes .1,.3,.6,1; compare 1-a^2/16.",
+  "swing": "epsilon .1, gamma -1..1 in 81 steps; monodromy over coefficient period pi; 1600/3200 RK4 steps; full nonlinear rest and .001 displacement at gamma0 over time120.",
+  "note": "Figure8.1.7 lacks the original equations; explanatory normal forms in the atlas are explicitly illustrative."
+}
