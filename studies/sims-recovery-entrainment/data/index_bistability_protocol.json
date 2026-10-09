@@ -1,0 +1,9 @@
+{
+  "frozen_utc": "2026-10-09T09:41:15.720388+00:00",
+  "source_sha256": "44fa53dbf222283eefd23a1df452ebd4c77afaf2c2e2bdc11fa1468a4a93bb2c",
+  "vector_field": "(x^2 y, x^2-y^2)",
+  "source": "User-provided Figure 6.8.5",
+  "index": "Winding of field direction along counterclockwise unit circle; not a dynamical trajectory.",
+  "junction": "Post-analysis check prompted by finite-window disagreement at beta10, bias1. Two initial conditions; dt .04 and .02; duration600, final200. Critical rest state is initialized exactly.",
+  "status": "Additional diagnostic after main numerical results; not preplanned confirmation."
+}

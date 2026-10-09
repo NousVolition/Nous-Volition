@@ -1,0 +1,180 @@
+{
+  "unusual": [
+    {
+      "exercise": "6.8.2",
+      "field": "(x^2, y)",
+      "equilibria": [
+        [
+          0,
+          0
+        ]
+      ],
+      "exact_index": 0,
+      "numerical": [
+        {
+          "radius": 0.1,
+          "index": -3.8981718325193754e-16,
+          "minimum_norm": 0.010000000000000002
+        },
+        {
+          "radius": 1,
+          "index": -3.8981718325193755e-17,
+          "minimum_norm": 0.8660254037844386
+        }
+      ]
+    },
+    {
+      "exercise": "6.8.3",
+      "field": "(y-x, x^2)",
+      "equilibria": [
+        [
+          0,
+          0
+        ]
+      ],
+      "exact_index": 0,
+      "numerical": [
+        {
+          "radius": 0.1,
+          "index": 0.0,
+          "minimum_norm": 0.00498822555309416
+        },
+        {
+          "radius": 1,
+          "index": 0.0,
+          "minimum_norm": 0.4100998967979082
+        }
+      ]
+    },
+    {
+      "exercise": "6.8.4",
+      "field": "(y^3, x)",
+      "equilibria": [
+        [
+          0,
+          0
+        ]
+      ],
+      "exact_index": -1,
+      "numerical": [
+        {
+          "radius": 0.1,
+          "index": -1.0,
+          "minimum_norm": 0.0010000000000000002
+        },
+        {
+          "radius": 1,
+          "index": -1.0,
+          "minimum_norm": 0.7842833490139642
+        }
+      ]
+    },
+    {
+      "exercise": "6.8.5",
+      "field": "(xy, x+y)",
+      "equilibria": [
+        [
+          0,
+          0
+        ]
+      ],
+      "exact_index": 0,
+      "numerical": [
+        {
+          "radius": 0.1,
+          "index": -1.4135798584282297e-16,
+          "minimum_norm": 0.005
+        },
+        {
+          "radius": 1,
+          "index": -1.0601848938211722e-16,
+          "minimum_norm": 0.5
+        }
+      ]
+    }
+  ],
+  "complex": [
+    {
+      "conjugate": false,
+      "k": 1,
+      "index": 1.0,
+      "expected": 1
+    },
+    {
+      "conjugate": false,
+      "k": 2,
+      "index": 2.0,
+      "expected": 2
+    },
+    {
+      "conjugate": false,
+      "k": 3,
+      "index": 3.0,
+      "expected": 3
+    },
+    {
+      "conjugate": true,
+      "k": 1,
+      "index": -1.0,
+      "expected": -1
+    },
+    {
+      "conjugate": true,
+      "k": 2,
+      "index": -2.0,
+      "expected": -2
+    },
+    {
+      "conjugate": true,
+      "k": 3,
+      "index": -2.9999999999999996,
+      "expected": -3
+    }
+  ],
+  "checks": {
+    "unusual_indices": true,
+    "complex_indices": true,
+    "counterexample_annulus_no_equilibria": true,
+    "opposite_cycle_directions": true
+  },
+  "all_passed": true,
+  "cycle_count": "N + F + C - S = 1 for usual isolated fixed points inside a simple periodic orbit bounding a disk.",
+  "three_cycles": "Outer index1 minus inner indices1+1 leaves index -1 in the intervening region, so at least one equilibrium is required.",
+  "opposite_rotation_counterexample": "q=x^2+y^2; g=(q-1)(4-q); w=q-2.5; xdot=g*x-w*y, ydot=w*x+g*y. No equilibrium in 1<r<2.",
+  "no_cycle_field_equilibria": [
+    {
+      "point": [
+        0,
+        0
+      ],
+      "kind": "saddle",
+      "index": -1
+    },
+    {
+      "point": [
+        2,
+        0
+      ],
+      "kind": "saddle",
+      "index": -1
+    },
+    {
+      "point": [
+        -2,
+        0
+      ],
+      "kind": "stable node",
+      "index": 1
+    },
+    {
+      "point": [
+        1,
+        3
+      ],
+      "kind": "stable focus",
+      "index": 1
+    }
+  ],
+  "no_cycle_proof": "Axes are invariant. In each open quadrant B=1/(xy) gives div(BF)=-2x/y, with fixed nonzero sign. Bendixson-Dulac excludes cycles. Index alone does not exclude one enclosing (1,3).",
+  "surfaces": "The disk statement survives on surfaces. Noncontractible loops on a cylinder or torus do not bound such disks. A simple loop on the sphere bounds two disks; smooth tangent fields have total index2."
+}

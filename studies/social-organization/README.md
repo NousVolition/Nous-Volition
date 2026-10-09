@@ -2,6 +2,8 @@
 
 **SIMS** are the simulated participants in this six-group experiment.
 
+**[Next stage: longer recovery, shared rhythms, and the worked model atlas](../sims-recovery-entrainment/README.md)**
+
 This experiment examines group formation, cooperation, memory, and changing
 relationships among SIMS. Its six symbolic group labels are Ice, Water, Fog, Mist,
 Gas (water vapor), and Smoke.

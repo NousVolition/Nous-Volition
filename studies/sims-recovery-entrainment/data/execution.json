@@ -1,0 +1,9 @@
+{
+  "completed_utc": "2026-10-09T09:35:59.090579+00:00",
+  "seconds": 119.94589329999872,
+  "recovery_runs": 1152,
+  "network_runs": 576,
+  "phase_trajectories": 96,
+  "junction_grid_segments": 732,
+  "workers": 4
+}

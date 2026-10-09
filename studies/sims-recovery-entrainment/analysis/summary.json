@@ -1,0 +1,1692 @@
+{
+  "recovery_contrasts": [
+    {
+      "split": "discovery",
+      "memory": 0,
+      "contrast": "early_minus_never",
+      "metric": "cooperation",
+      "mean": 2.893518518518353e-05,
+      "lo": -0.00017361111111111627,
+      "hi": 0.00026620370370369944,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "memory": 0,
+      "contrast": "early_minus_never",
+      "metric": "rigid",
+      "mean": 2.3720292767992175e-05,
+      "lo": -0.00014840533889957323,
+      "hi": 0.00020976680729199013,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "memory": 0,
+      "contrast": "early_minus_never",
+      "metric": "choice_excess",
+      "mean": 0.008633198302469142,
+      "lo": -0.002441796874999994,
+      "hi": 0.020133068094135797,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "memory": 0,
+      "contrast": "repeated_minus_late",
+      "metric": "cooperation",
+      "mean": 0.00014467592592592464,
+      "lo": -0.00012152777777778133,
+      "hi": 0.00037037037037036883,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "memory": 0,
+      "contrast": "repeated_minus_late",
+      "metric": "rigid",
+      "mean": -0.00011892675318971633,
+      "lo": -0.000350838537672968,
+      "hi": 0.00015659104956556455,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "memory": 0,
+      "contrast": "repeated_minus_late",
+      "metric": "choice_excess",
+      "mean": 0.0058309220679012425,
+      "lo": -0.0019797477816357947,
+      "hi": 0.012685312982253102,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "memory": 0,
+      "contrast": "second_pulse_history_interaction",
+      "metric": "cooperation",
+      "mean": 1.157407407407778e-05,
+      "lo": -0.0004224537037037046,
+      "hi": 0.0004282407407407394,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "memory": 0,
+      "contrast": "second_pulse_history_interaction",
+      "metric": "rigid",
+      "mean": -3.816376393066007e-05,
+      "lo": -0.00027986596019272916,
+      "hi": 0.00019917596699019314,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "memory": 0,
+      "contrast": "second_pulse_history_interaction",
+      "metric": "choice_excess",
+      "mean": -0.002585165895061716,
+      "lo": -0.008558617862654303,
+      "hi": 0.0029104817708333407,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "memory": 1,
+      "contrast": "early_minus_never",
+      "metric": "cooperation",
+      "mean": 0.000451388888888882,
+      "lo": -0.000671296296296297,
+      "hi": 0.0014872685185185058,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "memory": 1,
+      "contrast": "early_minus_never",
+      "metric": "rigid",
+      "mean": 0.00043311032639652337,
+      "lo": -0.0007004052669650476,
+      "hi": 0.001728182709802083,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "memory": 1,
+      "contrast": "early_minus_never",
+      "metric": "choice_excess",
+      "mean": -0.003999035493827162,
+      "lo": -0.014681529706790137,
+      "hi": 0.006641198881172835,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "memory": 1,
+      "contrast": "repeated_minus_late",
+      "metric": "cooperation",
+      "mean": 0.0007870370370370375,
+      "lo": -0.00033000578703704764,
+      "hi": 0.0019560185185185266,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "memory": 1,
+      "contrast": "repeated_minus_late",
+      "metric": "rigid",
+      "mean": -0.0008420502367507786,
+      "lo": -0.00208032547787216,
+      "hi": 0.00029999566549465196,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "memory": 1,
+      "contrast": "repeated_minus_late",
+      "metric": "choice_excess",
+      "mean": 0.0014514853395061662,
+      "lo": -0.009963818962191364,
+      "hi": 0.01262302758487654,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "memory": 1,
+      "contrast": "second_pulse_history_interaction",
+      "metric": "cooperation",
+      "mean": -0.0004456018518518516,
+      "lo": -0.0018518518518518502,
+      "hi": 0.0009781539351851804,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "memory": 1,
+      "contrast": "second_pulse_history_interaction",
+      "metric": "rigid",
+      "mean": 0.0002141267591057954,
+      "lo": -0.0009176519360594416,
+      "hi": 0.0013078719754961385,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "memory": 1,
+      "contrast": "second_pulse_history_interaction",
+      "metric": "choice_excess",
+      "mean": 0.0019585262345678993,
+      "lo": -0.004711426986882725,
+      "hi": 0.00902096113040124,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "memory": 0,
+      "contrast": "early_minus_never",
+      "metric": "cooperation",
+      "mean": -2.3148148148147544e-05,
+      "lo": -0.00021412037037035997,
+      "hi": 0.0001793981481481438,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "memory": 0,
+      "contrast": "early_minus_never",
+      "metric": "rigid",
+      "mean": -6.033115690636442e-05,
+      "lo": -0.0002209889175343987,
+      "hi": 0.00010465805926149381,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "memory": 0,
+      "contrast": "early_minus_never",
+      "metric": "choice_excess",
+      "mean": -0.00399074074074075,
+      "lo": -0.012912321566358029,
+      "hi": 0.004511060474537027,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "memory": 0,
+      "contrast": "repeated_minus_late",
+      "metric": "cooperation",
+      "mean": -3.472222222222071e-05,
+      "lo": -0.00016218171296296515,
+      "hi": 0.00011574074074074037,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "memory": 0,
+      "contrast": "repeated_minus_late",
+      "metric": "rigid",
+      "mean": -4.537071732300195e-05,
+      "lo": -0.0002445118247183504,
+      "hi": 0.00013250741835574094,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "memory": 0,
+      "contrast": "repeated_minus_late",
+      "metric": "choice_excess",
+      "mean": 0.0013842592592592552,
+      "lo": -0.0053989366319444594,
+      "hi": 0.008921843653549375,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "memory": 0,
+      "contrast": "second_pulse_history_interaction",
+      "metric": "cooperation",
+      "mean": -5.7870370370369404e-05,
+      "lo": -0.0003356481481481529,
+      "hi": 0.0001853298611111161,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "memory": 0,
+      "contrast": "second_pulse_history_interaction",
+      "metric": "rigid",
+      "mean": 8.630165427860461e-05,
+      "lo": -0.00011331158367710449,
+      "hi": 0.00030070094202125,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "memory": 0,
+      "contrast": "second_pulse_history_interaction",
+      "metric": "choice_excess",
+      "mean": -0.001863136574074072,
+      "lo": -0.00407674334490741,
+      "hi": 0.00033729263117284684,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "memory": 1,
+      "contrast": "early_minus_never",
+      "metric": "cooperation",
+      "mean": 1.736111111111151e-05,
+      "lo": -0.0011516203703703768,
+      "hi": 0.001261574074074069,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "memory": 1,
+      "contrast": "early_minus_never",
+      "metric": "rigid",
+      "mean": -0.00022414420184917408,
+      "lo": -0.0013502390006552476,
+      "hi": 0.0007874880586190108,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "memory": 1,
+      "contrast": "early_minus_never",
+      "metric": "choice_excess",
+      "mean": 0.0015104166666666788,
+      "lo": -0.011402717496141955,
+      "hi": 0.014991133777006177,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "memory": 1,
+      "contrast": "repeated_minus_late",
+      "metric": "cooperation",
+      "mean": 0.0011921296296296291,
+      "lo": -0.0006656539351851959,
+      "hi": 0.0030381944444444493,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "memory": 1,
+      "contrast": "repeated_minus_late",
+      "metric": "rigid",
+      "mean": -0.0013039076142574062,
+      "lo": -0.0031536913720119626,
+      "hi": 0.00048309136331590037,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "memory": 1,
+      "contrast": "repeated_minus_late",
+      "metric": "choice_excess",
+      "mean": 0.010882426697530865,
+      "lo": -0.0027364293981481493,
+      "hi": 0.0247835262345679,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "memory": 1,
+      "contrast": "second_pulse_history_interaction",
+      "metric": "cooperation",
+      "mean": 0.0001041666666666699,
+      "lo": -0.0011344039351851903,
+      "hi": 0.0012848668981481556,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "memory": 1,
+      "contrast": "second_pulse_history_interaction",
+      "metric": "rigid",
+      "mean": -0.00017762618070622644,
+      "lo": -0.001207182673683012,
+      "hi": 0.0008996063553629145,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "memory": 1,
+      "contrast": "second_pulse_history_interaction",
+      "metric": "choice_excess",
+      "mean": -0.008942901234567905,
+      "lo": -0.01716283757716049,
+      "hi": -0.0006710431134259252,
+      "seeds": 12
+    }
+  ],
+  "recovery_rates": [
+    {
+      "split": "discovery",
+      "memory": 0,
+      "schedule": "early",
+      "endpoint": "first_attainment",
+      "mean": 0.9861111111111112,
+      "lo": 0.9583333333333334,
+      "hi": 1.0,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "memory": 0,
+      "schedule": "early",
+      "endpoint": "last_40_all_within",
+      "mean": 0.4305555555555556,
+      "lo": 0.34722222222222227,
+      "hi": 0.5138888888888888,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "memory": 0,
+      "schedule": "late",
+      "endpoint": "first_attainment",
+      "mean": 0.9722222222222223,
+      "lo": 0.9305555555555557,
+      "hi": 1.0,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "memory": 0,
+      "schedule": "late",
+      "endpoint": "last_40_all_within",
+      "mean": 0.5277777777777778,
+      "lo": 0.3888888888888889,
+      "hi": 0.6666666666666666,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "memory": 0,
+      "schedule": "repeated",
+      "endpoint": "first_attainment",
+      "mean": 0.9861111111111112,
+      "lo": 0.9583333333333334,
+      "hi": 1.0,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "memory": 0,
+      "schedule": "repeated",
+      "endpoint": "last_40_all_within",
+      "mean": 0.5972222222222222,
+      "lo": 0.513888888888889,
+      "hi": 0.6805555555555555,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "memory": 1,
+      "schedule": "early",
+      "endpoint": "first_attainment",
+      "mean": 0.9444444444444445,
+      "lo": 0.8472222222222223,
+      "hi": 1.0,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "memory": 1,
+      "schedule": "early",
+      "endpoint": "last_40_all_within",
+      "mean": 0.25,
+      "lo": 0.1940972222222225,
+      "hi": 0.3055555555555556,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "memory": 1,
+      "schedule": "late",
+      "endpoint": "first_attainment",
+      "mean": 0.9166666666666669,
+      "lo": 0.875,
+      "hi": 0.9583333333333335,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "memory": 1,
+      "schedule": "late",
+      "endpoint": "last_40_all_within",
+      "mean": 0.27777777777777773,
+      "lo": 0.18055555555555555,
+      "hi": 0.375,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "memory": 1,
+      "schedule": "repeated",
+      "endpoint": "first_attainment",
+      "mean": 0.9583333333333335,
+      "lo": 0.9166666666666669,
+      "hi": 1.0,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "memory": 1,
+      "schedule": "repeated",
+      "endpoint": "last_40_all_within",
+      "mean": 0.27777777777777773,
+      "lo": 0.16666666666666666,
+      "hi": 0.3888888888888889,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "memory": 0,
+      "schedule": "early",
+      "endpoint": "first_attainment",
+      "mean": 0.9861111111111112,
+      "lo": 0.9583333333333334,
+      "hi": 1.0,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "memory": 0,
+      "schedule": "early",
+      "endpoint": "last_40_all_within",
+      "mean": 0.3333333333333333,
+      "lo": 0.2638888888888889,
+      "hi": 0.40277777777777773,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "memory": 0,
+      "schedule": "late",
+      "endpoint": "first_attainment",
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "memory": 0,
+      "schedule": "late",
+      "endpoint": "last_40_all_within",
+      "mean": 0.513888888888889,
+      "lo": 0.4166666666666667,
+      "hi": 0.5972222222222222,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "memory": 0,
+      "schedule": "repeated",
+      "endpoint": "first_attainment",
+      "mean": 0.9583333333333334,
+      "lo": 0.9166666666666669,
+      "hi": 1.0,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "memory": 0,
+      "schedule": "repeated",
+      "endpoint": "last_40_all_within",
+      "mean": 0.375,
+      "lo": 0.25,
+      "hi": 0.5,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "memory": 1,
+      "schedule": "early",
+      "endpoint": "first_attainment",
+      "mean": 0.9305555555555557,
+      "lo": 0.8611111111111113,
+      "hi": 0.9861111111111112,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "memory": 1,
+      "schedule": "early",
+      "endpoint": "last_40_all_within",
+      "mean": 0.23611111111111108,
+      "lo": 0.16666666666666666,
+      "hi": 0.3055555555555556,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "memory": 1,
+      "schedule": "late",
+      "endpoint": "first_attainment",
+      "mean": 0.861111111111111,
+      "lo": 0.7916666666666665,
+      "hi": 0.9305555555555557,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "memory": 1,
+      "schedule": "late",
+      "endpoint": "last_40_all_within",
+      "mean": 0.25,
+      "lo": 0.125,
+      "hi": 0.375,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "memory": 1,
+      "schedule": "repeated",
+      "endpoint": "first_attainment",
+      "mean": 0.9027777777777778,
+      "lo": 0.8472222222222222,
+      "hi": 0.9583333333333335,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "memory": 1,
+      "schedule": "repeated",
+      "endpoint": "last_40_all_within",
+      "mean": 0.2916666666666667,
+      "lo": 0.16666666666666666,
+      "hi": 0.4166666666666666,
+      "seeds": 12
+    }
+  ],
+  "network_contrasts": [
+    {
+      "split": "discovery",
+      "topology": "ring",
+      "contrast": "high_degree_minus_low_degree",
+      "metric": "coherence",
+      "mean": -0.0011524644793469523,
+      "lo": -0.013812701202889214,
+      "hi": 0.008043206834861481,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "ring",
+      "contrast": "distributed_minus_none",
+      "metric": "coherence",
+      "mean": 0.12400430180307853,
+      "lo": 0.00010053506035573358,
+      "hi": 0.33028594997852734,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "ring",
+      "contrast": "high_degree_minus_low_degree",
+      "metric": "locked_fraction",
+      "mean": -0.08055555555555556,
+      "lo": -0.24166666666666667,
+      "hi": 0.0,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "ring",
+      "contrast": "distributed_minus_none",
+      "metric": "locked_fraction",
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "ring",
+      "contrast": "high_degree_minus_low_degree",
+      "metric": "mean_drift",
+      "mean": 0.000870578459534773,
+      "lo": -0.0007813797247160875,
+      "hi": 0.0033793965794624123,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "ring",
+      "contrast": "distributed_minus_none",
+      "metric": "mean_drift",
+      "mean": -0.11794225926804301,
+      "lo": -0.12060277573851995,
+      "hi": -0.11527959702333114,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "random",
+      "contrast": "high_degree_minus_low_degree",
+      "metric": "coherence",
+      "mean": 0.024159974664234047,
+      "lo": 0.01630904587265201,
+      "hi": 0.03191799846378687,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "random",
+      "contrast": "distributed_minus_none",
+      "metric": "coherence",
+      "mean": 7.722360027014504e-06,
+      "lo": 6.009334972007647e-06,
+      "hi": 9.684469144307511e-06,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "random",
+      "contrast": "high_degree_minus_low_degree",
+      "metric": "locked_fraction",
+      "mean": 0.9972222222222222,
+      "lo": 0.9930555555555555,
+      "hi": 1.0,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "random",
+      "contrast": "distributed_minus_none",
+      "metric": "locked_fraction",
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "random",
+      "contrast": "high_degree_minus_low_degree",
+      "metric": "mean_drift",
+      "mean": -0.09296911667244301,
+      "lo": -0.10909616862752579,
+      "hi": -0.07688809716436501,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "random",
+      "contrast": "distributed_minus_none",
+      "metric": "mean_drift",
+      "mean": -0.11774551056450384,
+      "lo": -0.12011427744531462,
+      "hi": -0.11522606037507176,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "hub",
+      "contrast": "high_degree_minus_low_degree",
+      "metric": "coherence",
+      "mean": 0.03287618580072976,
+      "lo": 0.026060207097029695,
+      "hi": 0.03938014476976516,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "hub",
+      "contrast": "distributed_minus_none",
+      "metric": "coherence",
+      "mean": 5.162930506998527e-06,
+      "lo": 4.233753418472301e-06,
+      "hi": 6.130777310939713e-06,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "hub",
+      "contrast": "high_degree_minus_low_degree",
+      "metric": "locked_fraction",
+      "mean": 0.9972222222222222,
+      "lo": 0.9916666666666667,
+      "hi": 1.0,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "hub",
+      "contrast": "distributed_minus_none",
+      "metric": "locked_fraction",
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "hub",
+      "contrast": "high_degree_minus_low_degree",
+      "metric": "mean_drift",
+      "mean": -0.10443791175832899,
+      "lo": -0.11431727681879451,
+      "hi": -0.092666196047696,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "hub",
+      "contrast": "distributed_minus_none",
+      "metric": "mean_drift",
+      "mean": -0.11952342907953391,
+      "lo": -0.12217303442096558,
+      "hi": -0.11711457183725017,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "ring",
+      "contrast": "high_degree_minus_low_degree",
+      "metric": "coherence",
+      "mean": 0.03673355587243055,
+      "lo": 0.0010264596225111184,
+      "hi": 0.09330470571348615,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "ring",
+      "contrast": "distributed_minus_none",
+      "metric": "coherence",
+      "mean": 0.34702821617372503,
+      "lo": 0.1431888735454461,
+      "hi": 0.5720067570775115,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "ring",
+      "contrast": "high_degree_minus_low_degree",
+      "metric": "locked_fraction",
+      "mean": -0.008333333333333323,
+      "lo": -0.1638888888888889,
+      "hi": 0.14583333333333334,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "ring",
+      "contrast": "distributed_minus_none",
+      "metric": "locked_fraction",
+      "mean": 0.875,
+      "lo": 0.75,
+      "hi": 1.0,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "ring",
+      "contrast": "high_degree_minus_low_degree",
+      "metric": "mean_drift",
+      "mean": 0.0015141209046864986,
+      "lo": -0.0003288211746886085,
+      "hi": 0.003981889435437935,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "ring",
+      "contrast": "distributed_minus_none",
+      "metric": "mean_drift",
+      "mean": -0.10879900511437977,
+      "lo": -0.11738636939489139,
+      "hi": -0.09926473823153247,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "random",
+      "contrast": "high_degree_minus_low_degree",
+      "metric": "coherence",
+      "mean": 0.03291238398805468,
+      "lo": 0.02646127345695185,
+      "hi": 0.03820871274451892,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "random",
+      "contrast": "distributed_minus_none",
+      "metric": "coherence",
+      "mean": 5.755214038671852e-06,
+      "lo": 4.758779816084237e-06,
+      "hi": 6.7639538861357275e-06,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "random",
+      "contrast": "high_degree_minus_low_degree",
+      "metric": "locked_fraction",
+      "mean": 0.9944444444444445,
+      "lo": 0.9861111111111112,
+      "hi": 1.0,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "random",
+      "contrast": "distributed_minus_none",
+      "metric": "locked_fraction",
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "random",
+      "contrast": "high_degree_minus_low_degree",
+      "metric": "mean_drift",
+      "mean": -0.08146019028495695,
+      "lo": -0.09479380125426927,
+      "hi": -0.0685612046577561,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "random",
+      "contrast": "distributed_minus_none",
+      "metric": "mean_drift",
+      "mean": -0.11889543658862257,
+      "lo": -0.12175284089986514,
+      "hi": -0.11579411193561992,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "hub",
+      "contrast": "high_degree_minus_low_degree",
+      "metric": "coherence",
+      "mean": 0.030729502155996707,
+      "lo": 0.022290202188956183,
+      "hi": 0.03884816302290662,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "hub",
+      "contrast": "distributed_minus_none",
+      "metric": "coherence",
+      "mean": 4.31185558778339e-06,
+      "lo": 3.669393024273669e-06,
+      "hi": 4.944788635907517e-06,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "hub",
+      "contrast": "high_degree_minus_low_degree",
+      "metric": "locked_fraction",
+      "mean": 0.998611111111111,
+      "lo": 0.9958333333333332,
+      "hi": 1.0,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "hub",
+      "contrast": "distributed_minus_none",
+      "metric": "locked_fraction",
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "hub",
+      "contrast": "high_degree_minus_low_degree",
+      "metric": "mean_drift",
+      "mean": -0.10317068997315519,
+      "lo": -0.11367142008057333,
+      "hi": -0.09108545726935507,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "hub",
+      "contrast": "distributed_minus_none",
+      "metric": "mean_drift",
+      "mean": -0.11939476333286562,
+      "lo": -0.12330191527347927,
+      "hi": -0.1150067926318116,
+      "seeds": 12
+    }
+  ],
+  "network_levels": [
+    {
+      "split": "discovery",
+      "topology": "ring",
+      "driver": "none",
+      "metric": "coherence",
+      "mean": 0.8759448557320537,
+      "lo": 0.6696710970451869,
+      "hi": 0.9998497002581823,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "ring",
+      "driver": "high_degree",
+      "metric": "coherence",
+      "mean": 0.8742302850155981,
+      "lo": 0.8227746231618724,
+      "hi": 0.9026687577360961,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "ring",
+      "driver": "low_degree",
+      "metric": "coherence",
+      "mean": 0.875382749494945,
+      "lo": 0.8346861720149737,
+      "hi": 0.8987415769102216,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "ring",
+      "driver": "distributed",
+      "metric": "coherence",
+      "mean": 0.9999491575351324,
+      "lo": 0.9999324180503744,
+      "hi": 0.999964564955353,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "ring",
+      "driver": "none",
+      "metric": "locked_fraction",
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "ring",
+      "driver": "high_degree",
+      "metric": "locked_fraction",
+      "mean": 0.8361111111111111,
+      "lo": 0.5916666666666667,
+      "hi": 1.0,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "ring",
+      "driver": "low_degree",
+      "metric": "locked_fraction",
+      "mean": 0.9166666666666666,
+      "lo": 0.75,
+      "hi": 1.0,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "ring",
+      "driver": "distributed",
+      "metric": "locked_fraction",
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "ring",
+      "driver": "none",
+      "metric": "mean_drift",
+      "mean": 0.11794225926804301,
+      "lo": 0.11527959702333102,
+      "hi": 0.12060277573851995,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "ring",
+      "driver": "high_degree",
+      "metric": "mean_drift",
+      "mean": 0.006331368133630514,
+      "lo": 0.000680007661599867,
+      "hi": 0.016190980062831335,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "ring",
+      "driver": "low_degree",
+      "metric": "mean_drift",
+      "mean": 0.0054607896740957425,
+      "lo": 0.000616311596375933,
+      "hi": 0.014926543563609526,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "ring",
+      "driver": "distributed",
+      "metric": "mean_drift",
+      "mean": -1.838292892394385e-17,
+      "lo": -8.854561888231939e-17,
+      "hi": 3.406502189382707e-17,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "random",
+      "driver": "none",
+      "metric": "coherence",
+      "mean": 0.9999709077011145,
+      "lo": 0.9999660509309114,
+      "hi": 0.999975702168819,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "random",
+      "driver": "high_degree",
+      "metric": "coherence",
+      "mean": 0.9916361530461121,
+      "lo": 0.990485454030545,
+      "hi": 0.9926337139363693,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "random",
+      "driver": "low_degree",
+      "metric": "coherence",
+      "mean": 0.967476178381878,
+      "lo": 0.9592943105700482,
+      "hi": 0.9756232410240538,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "random",
+      "driver": "distributed",
+      "metric": "coherence",
+      "mean": 0.9999786300611415,
+      "lo": 0.9999756621809087,
+      "hi": 0.9999817921780858,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "random",
+      "driver": "none",
+      "metric": "locked_fraction",
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "random",
+      "driver": "high_degree",
+      "metric": "locked_fraction",
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "random",
+      "driver": "low_degree",
+      "metric": "locked_fraction",
+      "mean": 0.002777777777777778,
+      "lo": 0.0,
+      "hi": 0.006944444444444444,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "random",
+      "driver": "distributed",
+      "metric": "locked_fraction",
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "random",
+      "driver": "none",
+      "metric": "mean_drift",
+      "mean": 0.11774551056450384,
+      "lo": 0.11522606037507176,
+      "hi": 0.12011427744531462,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "random",
+      "driver": "high_degree",
+      "metric": "mean_drift",
+      "mean": 3.6300923823509363e-07,
+      "lo": 1.1693296381528338e-07,
+      "hi": 6.597016748021801e-07,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "random",
+      "driver": "low_degree",
+      "metric": "mean_drift",
+      "mean": 0.09296947968168125,
+      "lo": 0.0768885176023755,
+      "hi": 0.10909645380463227,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "random",
+      "driver": "distributed",
+      "metric": "mean_drift",
+      "mean": 8.162195199559023e-18,
+      "lo": -5.507425791138217e-18,
+      "hi": 3.0767569562065685e-17,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "hub",
+      "driver": "none",
+      "metric": "coherence",
+      "mean": 0.999976949345195,
+      "lo": 0.9999735221382012,
+      "hi": 0.9999803444712598,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "hub",
+      "driver": "high_degree",
+      "metric": "coherence",
+      "mean": 0.9989166377419044,
+      "lo": 0.9987909001273464,
+      "hi": 0.9990306682736102,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "hub",
+      "driver": "low_degree",
+      "metric": "coherence",
+      "mean": 0.9660404519411746,
+      "lo": 0.9594853463220985,
+      "hi": 0.9728831931678972,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "hub",
+      "driver": "distributed",
+      "metric": "coherence",
+      "mean": 0.9999821122757021,
+      "lo": 0.9999796459856981,
+      "hi": 0.9999846014768369,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "hub",
+      "driver": "none",
+      "metric": "locked_fraction",
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "hub",
+      "driver": "high_degree",
+      "metric": "locked_fraction",
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "hub",
+      "driver": "low_degree",
+      "metric": "locked_fraction",
+      "mean": 0.002777777777777778,
+      "lo": 0.0,
+      "hi": 0.008333333333333333,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "hub",
+      "driver": "distributed",
+      "metric": "locked_fraction",
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "hub",
+      "driver": "none",
+      "metric": "mean_drift",
+      "mean": 0.11952342907953385,
+      "lo": 0.11711457183725014,
+      "hi": 0.12217303442096557,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "hub",
+      "driver": "high_degree",
+      "metric": "mean_drift",
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "hub",
+      "driver": "low_degree",
+      "metric": "mean_drift",
+      "mean": 0.10443791175832899,
+      "lo": 0.092666196047696,
+      "hi": 0.11431727681879451,
+      "seeds": 12
+    },
+    {
+      "split": "discovery",
+      "topology": "hub",
+      "driver": "distributed",
+      "metric": "mean_drift",
+      "mean": -3.712822230731397e-17,
+      "lo": -7.486379057827272e-17,
+      "hi": -5.823209712783631e-18,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "ring",
+      "driver": "none",
+      "metric": "coherence",
+      "mean": 0.587390107563308,
+      "lo": 0.34128602410647996,
+      "hi": 0.7940774899434508,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "ring",
+      "driver": "high_degree",
+      "metric": "coherence",
+      "mean": 0.8829028219884454,
+      "lo": 0.8281408984540375,
+      "hi": 0.9164657542837302,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "ring",
+      "driver": "low_degree",
+      "metric": "coherence",
+      "mean": 0.8461692661160147,
+      "lo": 0.776332367495501,
+      "hi": 0.8984039700740092,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "ring",
+      "driver": "distributed",
+      "metric": "coherence",
+      "mean": 0.934418323737033,
+      "lo": 0.868826079336407,
+      "hi": 0.9999742553762584,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "ring",
+      "driver": "none",
+      "metric": "locked_fraction",
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "ring",
+      "driver": "high_degree",
+      "metric": "locked_fraction",
+      "mean": 0.7527777777777778,
+      "lo": 0.5430555555555555,
+      "hi": 0.9597222222222221,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "ring",
+      "driver": "low_degree",
+      "metric": "locked_fraction",
+      "mean": 0.7611111111111111,
+      "lo": 0.5472222222222222,
+      "hi": 0.9583333333333334,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "ring",
+      "driver": "distributed",
+      "metric": "locked_fraction",
+      "mean": 0.875,
+      "lo": 0.75,
+      "hi": 1.0,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "ring",
+      "driver": "none",
+      "metric": "mean_drift",
+      "mean": 0.11847175166613023,
+      "lo": 0.11558696173065114,
+      "hi": 0.12114055931818403,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "ring",
+      "driver": "high_degree",
+      "metric": "mean_drift",
+      "mean": 0.010837365159867697,
+      "lo": 0.0018546802395595873,
+      "hi": 0.022128461004750383,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "ring",
+      "driver": "low_degree",
+      "metric": "mean_drift",
+      "mean": 0.009323244255181195,
+      "lo": 0.0014204425688472337,
+      "hi": 0.019618618294797486,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "ring",
+      "driver": "distributed",
+      "metric": "mean_drift",
+      "mean": 0.00967274655175046,
+      "lo": 6.3555128238379925e-18,
+      "hi": 0.019472571040756715,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "random",
+      "driver": "none",
+      "metric": "coherence",
+      "mean": 0.9999763499080018,
+      "lo": 0.9999731749849031,
+      "hi": 0.9999796646538739,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "random",
+      "driver": "high_degree",
+      "metric": "coherence",
+      "mean": 0.9918274395048837,
+      "lo": 0.9908920945717662,
+      "hi": 0.992707409196317,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "random",
+      "driver": "low_degree",
+      "metric": "coherence",
+      "mean": 0.9589150555168291,
+      "lo": 0.9540834461628892,
+      "hi": 0.964743496228714,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "random",
+      "driver": "distributed",
+      "metric": "coherence",
+      "mean": 0.9999821051220401,
+      "lo": 0.9999798784145071,
+      "hi": 0.9999844686417735,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "random",
+      "driver": "none",
+      "metric": "locked_fraction",
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "random",
+      "driver": "high_degree",
+      "metric": "locked_fraction",
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "random",
+      "driver": "low_degree",
+      "metric": "locked_fraction",
+      "mean": 0.005555555555555556,
+      "lo": 0.0,
+      "hi": 0.013888888888888888,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "random",
+      "driver": "distributed",
+      "metric": "locked_fraction",
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "random",
+      "driver": "none",
+      "metric": "mean_drift",
+      "mean": 0.11889543658862257,
+      "lo": 0.11579411193561992,
+      "hi": 0.12175284089986514,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "random",
+      "driver": "high_degree",
+      "metric": "mean_drift",
+      "mean": 6.055948008752686e-07,
+      "lo": -6.02716814735963e-08,
+      "hi": 1.6265950984130463e-06,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "random",
+      "driver": "low_degree",
+      "metric": "mean_drift",
+      "mean": 0.08146079587975781,
+      "lo": 0.06856133566431896,
+      "hi": 0.09479397633679373,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "random",
+      "driver": "distributed",
+      "metric": "mean_drift",
+      "mean": 4.872645496965965e-18,
+      "lo": -2.287265027584235e-19,
+      "hi": 1.2315251699082755e-17,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "hub",
+      "driver": "none",
+      "metric": "coherence",
+      "mean": 0.9999802250335135,
+      "lo": 0.9999779351680491,
+      "hi": 0.9999826063205708,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "hub",
+      "driver": "high_degree",
+      "metric": "coherence",
+      "mean": 0.9990660090315627,
+      "lo": 0.998957923438183,
+      "hi": 0.9991695419369837,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "hub",
+      "driver": "low_degree",
+      "metric": "coherence",
+      "mean": 0.9683365068755663,
+      "lo": 0.960220677869763,
+      "hi": 0.9767793444147596,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "hub",
+      "driver": "distributed",
+      "metric": "coherence",
+      "mean": 0.9999845368891012,
+      "lo": 0.9999828606639536,
+      "hi": 0.9999862848320401,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "hub",
+      "driver": "none",
+      "metric": "locked_fraction",
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "hub",
+      "driver": "high_degree",
+      "metric": "locked_fraction",
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "hub",
+      "driver": "low_degree",
+      "metric": "locked_fraction",
+      "mean": 0.001388888888888889,
+      "lo": 0.0,
+      "hi": 0.004166666666666667,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "hub",
+      "driver": "distributed",
+      "metric": "locked_fraction",
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "hub",
+      "driver": "none",
+      "metric": "mean_drift",
+      "mean": 0.11939476333286562,
+      "lo": 0.11500679263181157,
+      "hi": 0.12330191527347927,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "hub",
+      "driver": "high_degree",
+      "metric": "mean_drift",
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "hub",
+      "driver": "low_degree",
+      "metric": "mean_drift",
+      "mean": 0.10317068997315519,
+      "lo": 0.09108545726935506,
+      "hi": 0.11367142008057332,
+      "seeds": 12
+    },
+    {
+      "split": "replication",
+      "topology": "hub",
+      "driver": "distributed",
+      "metric": "mean_drift",
+      "mean": 3.1019425711170452e-18,
+      "lo": -1.1338923627195962e-17,
+      "hi": 1.5731179219351598e-17,
+      "seeds": 12
+    }
+  ],
+  "maximum_phase_period_relative_error": 4.027372710508844e-07,
+  "uncertainty": "Descriptive seed-bootstrap intervals; no multiplicity adjustment, empirical calibration or population claims."
+}

@@ -1,0 +1,7 @@
+{
+  "frozen_utc": "2026-10-09T09:45:03.321050+00:00",
+  "source_sha256": "afc41de492e1e407017d005501337e49f185c9ccbab4177657c031fb5e6052bf",
+  "source": "Supplied exercises 6.8.2--6.8.11; only visible text addressed.",
+  "checks": "4097 samples on circles of radii .1 and 1; no field zeros on the sampled contours.",
+  "note": "Dulac divergence supplements index theory in 6.8.7; a +1 interior equilibrium is not ruled out by index alone."
+}

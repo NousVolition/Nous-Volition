@@ -1,0 +1,46 @@
+{
+  "frozen_utc": "2026-10-09T09:41:14.767995+00:00",
+  "source_sha256": "2e23ffe510df9caf8cf562b47a813eabd623cc69fdd0a3f8b568b500304a6132",
+  "equation": "theta'=v; v'=-sin(theta)",
+  "energy": "v^2/2 - cos(theta)",
+  "cases": [
+    [
+      0.4,
+      0
+    ],
+    [
+      0,
+      1.8
+    ],
+    [
+      0,
+      2.2
+    ]
+  ],
+  "duration": 100,
+  "steps": [
+    0.02,
+    0.01
+  ],
+  "damping": {
+    "b": 0.2,
+    "cases": [
+      [
+        0.4,
+        0
+      ],
+      [
+        0,
+        1.8
+      ],
+      [
+        0,
+        3.2
+      ]
+    ],
+    "duration": 80,
+    "energy_balance": "E(t)-E(0)+integral(b*v^2)=0"
+  },
+  "separatrix": "Exact theta=4 atan(exp(t))-pi, v=2 sech(t), tested to t=10 only.",
+  "status": "Additional calculation specified after the main ensemble, prompted by a later supplied page."
+}

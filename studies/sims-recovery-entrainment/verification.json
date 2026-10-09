@@ -1,0 +1,308 @@
+{
+  "all_passed": true,
+  "checks": {
+    "frozen_sources": true,
+    "expected_shape": true,
+    "finite_and_bounded": true,
+    "no_anticipation_all_matched_cases": true,
+    "selected_exact_reruns": true,
+    "network_step_refinement": true,
+    "unit_tests": true
+  },
+  "unit_tests": 13,
+  "exact_reruns": [
+    {
+      "id": 0,
+      "exact": true
+    },
+    {
+      "id": 104,
+      "exact": true
+    },
+    {
+      "id": 209,
+      "exact": true
+    },
+    {
+      "id": 313,
+      "exact": true
+    },
+    {
+      "id": 418,
+      "exact": true
+    },
+    {
+      "id": 523,
+      "exact": true
+    },
+    {
+      "id": 627,
+      "exact": true
+    },
+    {
+      "id": 732,
+      "exact": true
+    },
+    {
+      "id": 837,
+      "exact": true
+    },
+    {
+      "id": 941,
+      "exact": true
+    },
+    {
+      "id": 1046,
+      "exact": true
+    },
+    {
+      "id": 1151,
+      "exact": true
+    }
+  ],
+  "network_refinement": [
+    {
+      "seed": 22100,
+      "topology": "ring",
+      "mapping": 0,
+      "driver": "none",
+      "coherence_difference": 3.1308289294429414e-14,
+      "mean_drift_difference": 3.211320098728265e-14,
+      "lock_fraction_difference": 0.0
+    },
+    {
+      "seed": 22100,
+      "topology": "ring",
+      "mapping": 0,
+      "driver": "high_degree",
+      "coherence_difference": 1.1516011827472639e-06,
+      "mean_drift_difference": 7.757431112406787e-11,
+      "lock_fraction_difference": 0.0
+    },
+    {
+      "seed": 22100,
+      "topology": "ring",
+      "mapping": 0,
+      "driver": "low_degree",
+      "coherence_difference": 1.235772104091204e-06,
+      "mean_drift_difference": 2.586748558408569e-10,
+      "lock_fraction_difference": 0.0
+    },
+    {
+      "seed": 22100,
+      "topology": "ring",
+      "mapping": 0,
+      "driver": "distributed",
+      "coherence_difference": 1.6653345369377348e-14,
+      "mean_drift_difference": 3.725415038186637e-17,
+      "lock_fraction_difference": 0.0
+    },
+    {
+      "seed": 22100,
+      "topology": "ring",
+      "mapping": 1,
+      "driver": "none",
+      "coherence_difference": 2.1316282072803006e-14,
+      "mean_drift_difference": 3.207156762385921e-14,
+      "lock_fraction_difference": 0.0
+    },
+    {
+      "seed": 22100,
+      "topology": "ring",
+      "mapping": 1,
+      "driver": "high_degree",
+      "coherence_difference": 1.2138063704147939e-06,
+      "mean_drift_difference": 1.8772730917514246e-10,
+      "lock_fraction_difference": 0.0
+    },
+    {
+      "seed": 22100,
+      "topology": "ring",
+      "mapping": 1,
+      "driver": "low_degree",
+      "coherence_difference": 1.1699344084625807e-06,
+      "mean_drift_difference": 1.8830423982249545e-10,
+      "lock_fraction_difference": 0.0
+    },
+    {
+      "seed": 22100,
+      "topology": "ring",
+      "mapping": 1,
+      "driver": "distributed",
+      "coherence_difference": 1.5654144647214707e-14,
+      "mean_drift_difference": 3.67607179264774e-17,
+      "lock_fraction_difference": 0.0
+    },
+    {
+      "seed": 22100,
+      "topology": "random",
+      "mapping": 0,
+      "driver": "none",
+      "coherence_difference": 2.220446049250313e-16,
+      "mean_drift_difference": 5.523359547510154e-15,
+      "lock_fraction_difference": 0.0
+    },
+    {
+      "seed": 22100,
+      "topology": "random",
+      "mapping": 0,
+      "driver": "high_degree",
+      "coherence_difference": 5.674738456917794e-11,
+      "mean_drift_difference": 1.2613922165101112e-14,
+      "lock_fraction_difference": 0.0
+    },
+    {
+      "seed": 22100,
+      "topology": "random",
+      "mapping": 0,
+      "driver": "low_degree",
+      "coherence_difference": 4.307743278642029e-06,
+      "mean_drift_difference": 2.0079972254394285e-08,
+      "lock_fraction_difference": 0.0
+    },
+    {
+      "seed": 22100,
+      "topology": "random",
+      "mapping": 0,
+      "driver": "distributed",
+      "coherence_difference": 1.9095836023552692e-14,
+      "mean_drift_difference": 2.806397090024701e-17,
+      "lock_fraction_difference": 0.0
+    },
+    {
+      "seed": 22100,
+      "topology": "random",
+      "mapping": 1,
+      "driver": "none",
+      "coherence_difference": 1.4654943925052066e-14,
+      "mean_drift_difference": 0.0,
+      "lock_fraction_difference": 0.0
+    },
+    {
+      "seed": 22100,
+      "topology": "random",
+      "mapping": 1,
+      "driver": "high_degree",
+      "coherence_difference": 5.626643595491032e-11,
+      "mean_drift_difference": 2.134973678784325e-13,
+      "lock_fraction_difference": 0.0
+    },
+    {
+      "seed": 22100,
+      "topology": "random",
+      "mapping": 1,
+      "driver": "low_degree",
+      "coherence_difference": 7.4072288448467916e-06,
+      "mean_drift_difference": 1.7664918416926412e-09,
+      "lock_fraction_difference": 0.0
+    },
+    {
+      "seed": 22100,
+      "topology": "random",
+      "mapping": 1,
+      "driver": "distributed",
+      "coherence_difference": 3.9968028886505635e-15,
+      "mean_drift_difference": 5.4400928206632676e-17,
+      "lock_fraction_difference": 0.0
+    },
+    {
+      "seed": 22100,
+      "topology": "hub",
+      "mapping": 0,
+      "driver": "none",
+      "coherence_difference": 3.1530333899354446e-14,
+      "mean_drift_difference": 4.4353409833775004e-14,
+      "lock_fraction_difference": 0.0
+    },
+    {
+      "seed": 22100,
+      "topology": "hub",
+      "mapping": 0,
+      "driver": "high_degree",
+      "coherence_difference": 2.042810365310288e-14,
+      "mean_drift_difference": 0.0,
+      "lock_fraction_difference": 0.0
+    },
+    {
+      "seed": 22100,
+      "topology": "hub",
+      "mapping": 0,
+      "driver": "low_degree",
+      "coherence_difference": 1.5574717791011494e-05,
+      "mean_drift_difference": 1.4909206924595964e-09,
+      "lock_fraction_difference": 0.0
+    },
+    {
+      "seed": 22100,
+      "topology": "hub",
+      "mapping": 0,
+      "driver": "distributed",
+      "coherence_difference": 3.5860203695392556e-14,
+      "mean_drift_difference": 6.574987468057873e-17,
+      "lock_fraction_difference": 0.0
+    },
+    {
+      "seed": 22100,
+      "topology": "hub",
+      "mapping": 1,
+      "driver": "none",
+      "coherence_difference": 4.551914400963142e-15,
+      "mean_drift_difference": 8.326672684688674e-17,
+      "lock_fraction_difference": 0.0
+    },
+    {
+      "seed": 22100,
+      "topology": "hub",
+      "mapping": 1,
+      "driver": "high_degree",
+      "coherence_difference": 2.0317081350640365e-14,
+      "mean_drift_difference": 0.0,
+      "lock_fraction_difference": 0.0
+    },
+    {
+      "seed": 22100,
+      "topology": "hub",
+      "mapping": 1,
+      "driver": "low_degree",
+      "coherence_difference": 1.5641264044186087e-05,
+      "mean_drift_difference": 1.0240251230309028e-08,
+      "lock_fraction_difference": 0.0
+    },
+    {
+      "seed": 22100,
+      "topology": "hub",
+      "mapping": 1,
+      "driver": "distributed",
+      "coherence_difference": 1.84297022087776e-14,
+      "mean_drift_difference": 2.097087935403074e-17,
+      "lock_fraction_difference": 0.0
+    }
+  ],
+  "junction_refinement": [
+    {
+      "beta": 0.2,
+      "max_voltage_refinement_difference": 0.041797797227264843,
+      "coarse_up_lowest_running_grid_bias": 1.0250000000000001,
+      "refined_up_lowest_running_grid_bias": 1.0250000000000001,
+      "coarse_down_lowest_running_grid_bias": 1.0250000000000001,
+      "refined_down_lowest_running_grid_bias": 1.0250000000000001
+    },
+    {
+      "beta": 2,
+      "max_voltage_refinement_difference": 0.018608019882913995,
+      "coarse_up_lowest_running_grid_bias": 1.0250000000000001,
+      "refined_up_lowest_running_grid_bias": 1.0250000000000001,
+      "coarse_down_lowest_running_grid_bias": 0.8,
+      "refined_down_lowest_running_grid_bias": 0.8
+    },
+    {
+      "beta": 10,
+      "max_voltage_refinement_difference": 0.5239325378443497,
+      "coarse_up_lowest_running_grid_bias": 1.0,
+      "refined_up_lowest_running_grid_bias": 1.0,
+      "coarse_down_lowest_running_grid_bias": 0.4,
+      "refined_down_lowest_running_grid_bias": 0.4
+    }
+  ],
+  "scope": "Finite-horizon implementation and numerical checks. The .02 junction threshold is a reporting convention, not an exact bifurcation value."
+}

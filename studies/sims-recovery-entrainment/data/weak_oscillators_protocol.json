@@ -1,0 +1,35 @@
+{
+  "frozen_utc": "2026-10-09T09:51:33.979565+00:00",
+  "source_sha256": "fd72686d9e3c46a344088d65585dd8c09bca654fa2833b1da917ffd770d4b96a",
+  "source": "Supplied weakly nonlinear oscillator equations and Figure 7.6.1.",
+  "van_der_pol": {
+    "epsilon": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "initial_amplitude": [
+      0.1,
+      1,
+      3
+    ],
+    "velocity": 0,
+    "duration": 600,
+    "dt": 0.02
+  },
+  "duffing": {
+    "epsilon": 0.1,
+    "amplitude": [
+      0.2,
+      1,
+      2
+    ],
+    "velocity": 0,
+    "duration": 200,
+    "dt": [
+      0.02,
+      0.01
+    ]
+  },
+  "scope": "Later standalone mathematical addendum, not a parameter fit to SIMS."
+}

@@ -1,0 +1,10 @@
+{
+  "source": "../social-organization/model.py",
+  "source_sha256": "fe9702bbb29e31cc3e23ec34cb139a33682bcc9331b954e142639881aeb95012",
+  "source_commit": "c5088fdda7eedb6ea87efc51b0a41398b28e04b8",
+  "changes": [
+    "Add validated optional stress_windows to run().",
+    "Use supplied schedule instead of middle third when present."
+  ],
+  "unchanged": "All participant, memory, resource, switching, network, and random-stream rules."
+}
