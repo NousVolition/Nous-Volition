@@ -1,0 +1,214 @@
+{
+  "triangle": [
+    {
+      "mu": 0.0,
+      "stable_phase": 0.0,
+      "predicted_drift": 0.0,
+      "quadrature_drift": 0.0
+    },
+    {
+      "mu": 0.5,
+      "stable_phase": 0.5,
+      "predicted_drift": 0.0,
+      "quadrature_drift": 0.0
+    },
+    {
+      "mu": 1.4,
+      "stable_phase": 1.4,
+      "predicted_drift": 0.0,
+      "quadrature_drift": 0.0
+    },
+    {
+      "mu": 1.8,
+      "stable_phase": null,
+      "predicted_drift": 1.168619760774785,
+      "quadrature_drift": 1.1686197607747846
+    },
+    {
+      "mu": 2.0,
+      "stable_phase": null,
+      "predicted_drift": 1.4828539378507986,
+      "quadrature_drift": 1.4828539378507979
+    }
+  ],
+  "linear": [
+    {
+      "name": "stable_node",
+      "matrix": [
+        [
+          -2.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0
+        ]
+      ],
+      "trace": -3.0,
+      "determinant": 2.0,
+      "eigenvalues": [
+        [
+          -2.0,
+          0.0
+        ],
+        [
+          -1.0,
+          0.0
+        ]
+      ],
+      "classification": "stable node",
+      "maximum_gain_0_to_5": 1.0,
+      "peak_time": 0.0,
+      "numerical_vs_exponential_max_error": 4.580252843666699e-12
+    },
+    {
+      "name": "saddle",
+      "matrix": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0
+        ]
+      ],
+      "trace": 0.0,
+      "determinant": -1.0,
+      "eigenvalues": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          -1.0,
+          0.0
+        ]
+      ],
+      "classification": "saddle",
+      "maximum_gain_0_to_5": 22026.465794806714,
+      "peak_time": 5.0,
+      "numerical_vs_exponential_max_error": 8.082352564997564e-10
+    },
+    {
+      "name": "stable_spiral",
+      "matrix": [
+        [
+          -0.3,
+          -1.0
+        ],
+        [
+          1.0,
+          -0.3
+        ]
+      ],
+      "trace": -0.6,
+      "determinant": 1.09,
+      "eigenvalues": [
+        [
+          -0.3,
+          1.0
+        ],
+        [
+          -0.3,
+          -1.0
+        ]
+      ],
+      "classification": "stable spiral",
+      "maximum_gain_0_to_5": 1.0,
+      "peak_time": 0.0,
+      "numerical_vs_exponential_max_error": 6.843109412457693e-12
+    },
+    {
+      "name": "center",
+      "matrix": [
+        [
+          0.0,
+          2.0
+        ],
+        [
+          -1.0,
+          0.0
+        ]
+      ],
+      "trace": 0.0,
+      "determinant": 2.0,
+      "eigenvalues": [
+        [
+          0.0,
+          1.4142135623730951
+        ],
+        [
+          0.0,
+          -1.4142135623730951
+        ]
+      ],
+      "classification": "center (linear system)",
+      "maximum_gain_0_to_5": 1.9999993073891236,
+      "peak_time": 1.11,
+      "numerical_vs_exponential_max_error": 1.7143064745539505e-11
+    },
+    {
+      "name": "degenerate_line",
+      "matrix": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.0
+        ]
+      ],
+      "trace": -1.0,
+      "determinant": 0.0,
+      "eigenvalues": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          -1.0,
+          0.0
+        ]
+      ],
+      "classification": "zero eigenvalue / degenerate",
+      "maximum_gain_0_to_5": 1.0,
+      "peak_time": 0.0,
+      "numerical_vs_exponential_max_error": 1.1081024986481225e-11
+    },
+    {
+      "name": "nonnormal_stable",
+      "matrix": [
+        [
+          -1.0,
+          8.0
+        ],
+        [
+          0.0,
+          -2.0
+        ]
+      ],
+      "trace": -3.0,
+      "determinant": 2.0,
+      "eigenvalues": [
+        [
+          -1.0,
+          0.0
+        ],
+        [
+          -2.0,
+          0.0
+        ]
+      ],
+      "classification": "stable node",
+      "maximum_gain_0_to_5": 4.326589476717862,
+      "peak_time": 0.65,
+      "numerical_vs_exponential_max_error": 1.4352741217749099e-11
+    }
+  ],
+  "center_max_invariant_drift": 4.099298678283958e-11,
+  "triangle_raw_lock_range": "|Delta| < A*pi/2; phi*=Delta/A on the stable rising branch",
+  "triangle_normalized_lock_range": "For g=2f/pi, |Delta|<A; the wider raw range is an amplitude-normalization effect",
+  "circuit_status": "Conditional overdamped identical-junction RSJ equations and algebraic tests only. No component-specific circuit experiment is claimed."
+}

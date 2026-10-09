@@ -1,0 +1,74 @@
+{
+  "saddle_node_equations": "x_dot=mu-x^2; y_dot=-y",
+  "bottleneck_crossing": "x=+1 to x=-1 at mu=-epsilon<0",
+  "bottleneck": [
+    {
+      "epsilon_minus_mu": 0.25,
+      "analytic_passage_time": 4.428594871176362,
+      "measured_passage_time": 4.428594871176357,
+      "asymptotic_pi_over_sqrt_epsilon": 6.283185307179586,
+      "relative_error": 9.992007221626409e-16
+    },
+    {
+      "epsilon_minus_mu": 0.0625,
+      "analytic_passage_time": 10.60654130934426,
+      "measured_passage_time": 10.606541309344285,
+      "asymptotic_pi_over_sqrt_epsilon": 12.566370614359172,
+      "relative_error": 2.4424906541753444e-15
+    },
+    {
+      "epsilon_minus_mu": 0.015625,
+      "analytic_passage_time": 23.14306131597016,
+      "measured_passage_time": 23.143061315970122,
+      "asymptotic_pi_over_sqrt_epsilon": 25.132741228718345,
+      "relative_error": 1.6653345369377348e-15
+    },
+    {
+      "epsilon_minus_mu": 0.00390625,
+      "analytic_passage_time": 48.26808053756606,
+      "measured_passage_time": 48.26808053756612,
+      "asymptotic_pi_over_sqrt_epsilon": 50.26548245743669,
+      "relative_error": 1.3322676295501878e-15
+    }
+  ],
+  "hopf_equation": "z_dot=(mu+i)z-|z|^2 z",
+  "hopf": [
+    {
+      "mu": -0.2,
+      "initial_radius": 0.05,
+      "final_radius": 3.0530836644975557e-07,
+      "max_radial_solution_error": 1.3877787807814457e-17
+    },
+    {
+      "mu": -0.2,
+      "initial_radius": 0.8,
+      "final_radius": 2.3984549135641957e-06,
+      "max_radial_solution_error": 1.3433698597964394e-14
+    },
+    {
+      "mu": 0.0,
+      "initial_radius": 0.05,
+      "final_radius": 0.04385290096535135,
+      "max_radial_solution_error": 1.8041124150158794e-16
+    },
+    {
+      "mu": 0.0,
+      "initial_radius": 0.8,
+      "final_radius": 0.09069851751650346,
+      "max_radial_solution_error": 1.3100631690576847e-14
+    },
+    {
+      "mu": 0.2,
+      "initial_radius": 0.05,
+      "final_radius": 0.4472135948330827,
+      "max_radial_solution_error": 3.3306690738754696e-16
+    },
+    {
+      "mu": 0.2,
+      "initial_radius": 0.8,
+      "final_radius": 0.44721359550576123,
+      "max_radial_solution_error": 7.216449660063518e-15
+    }
+  ],
+  "scope": "Local representative normal forms. No fluid bifurcation, global attractor classification or hidden historical force is inferred."
+}

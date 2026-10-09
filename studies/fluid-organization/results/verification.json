@@ -1,0 +1,643 @@
+{
+  "status": "passed",
+  "fluid_configurations": 93,
+  "particle_configurations": 7,
+  "test_count": 22,
+  "test_failures": 0,
+  "identical_no_kick_configs": 4,
+  "max_recomputed_energy_error": 0.0,
+  "max_recomputed_marker_rms_error": 0.0,
+  "fluid_records": [
+    {
+      "file": "data/screen.npz",
+      "sha256": "aa26c948d02e0f8312f06aa0ebad517bd7834aa85333b718c747a9e733d6528c",
+      "seed": 6000,
+      "max_budget_residual": 9.494302696463897e-10
+    },
+    {
+      "file": "data/screen_dt.npz",
+      "sha256": "3d5ae1560f04f5ddc3dd7952b7de408ee58c911016ff71267131b2473703b345",
+      "seed": 6000,
+      "max_budget_residual": 6.383155722738953e-11
+    },
+    {
+      "file": "data/screen_grid.npz",
+      "sha256": "16028359107bbc0c0639a1f19e82ec78c4a9fe02d9f182bc72a5d2cb9eb8b5ce",
+      "seed": 6000,
+      "max_budget_residual": 9.650502402411276e-10
+    },
+    {
+      "file": "data/ensemble/seed5000.npz",
+      "sha256": "b7120f5724e888ddf07b0e2bc63889e3d20c8b59616e84522af86b799f24985a",
+      "seed": 5000,
+      "max_budget_residual": 1.4575682732611296e-10
+    },
+    {
+      "file": "data/ensemble/seed5001.npz",
+      "sha256": "ee2d8c3ee80f47ce8355df507197ff37038e0604cbac053114de05e84fbac2a1",
+      "seed": 5001,
+      "max_budget_residual": 1.4740195175555473e-09
+    },
+    {
+      "file": "data/ensemble/seed5002.npz",
+      "sha256": "f66ac23be3d4aec59e75a4f3c655e6cce88da3579c9da86399ae7143ae1947aa",
+      "seed": 5002,
+      "max_budget_residual": 7.771685855625933e-10
+    },
+    {
+      "file": "data/ensemble/seed5003.npz",
+      "sha256": "5c751c34639c29dc38684a5ce6d1fea87d00157f668ec4c82540d1cb617dd026",
+      "seed": 5003,
+      "max_budget_residual": 5.999212628407521e-10
+    },
+    {
+      "file": "data/ensemble/seed5004.npz",
+      "sha256": "3a76e28965e3296ec97050f1d12667f5bb5eca15dcea7548ed2bd090498ecc80",
+      "seed": 5004,
+      "max_budget_residual": 4.980620733549546e-10
+    },
+    {
+      "file": "data/ensemble/seed5005.npz",
+      "sha256": "0fec2386a85132dd6c9a78c771cfd8d1d46f655c46618d366791aab79927ab8e",
+      "seed": 5005,
+      "max_budget_residual": 7.066343387165942e-10
+    },
+    {
+      "file": "data/ensemble/seed5006.npz",
+      "sha256": "ee60a1de65c6b1d61b034b2c8c2309d25219c89dec6c00c82342882a20154ec3",
+      "seed": 5006,
+      "max_budget_residual": 1.1192570091231315e-09
+    },
+    {
+      "file": "data/ensemble/seed5007.npz",
+      "sha256": "5af041b7f25e9bfa72a03728e0dc48304a00290097ff4823a4f002405d007c70",
+      "seed": 5007,
+      "max_budget_residual": 1.9648428934218587e-09
+    },
+    {
+      "file": "data/ensemble/seed5008.npz",
+      "sha256": "6798a7ec23a43abc5f68d7cde4e3cf43c1fc4a3b92545213371aa6c88bac8a2d",
+      "seed": 5008,
+      "max_budget_residual": 1.7724165017607432e-09
+    },
+    {
+      "file": "data/ensemble/seed5009.npz",
+      "sha256": "f60970d133a1ef88f3d79911037eef94cd08eaaed768cdb8e64650ebfb333355",
+      "seed": 5009,
+      "max_budget_residual": 1.5473111290506547e-09
+    },
+    {
+      "file": "data/ensemble/seed5010.npz",
+      "sha256": "fddf01badd2a23ca1d7bea42dc92ca75fac1229c0420b12c57314a1111a83720",
+      "seed": 5010,
+      "max_budget_residual": 1.102208472061883e-09
+    },
+    {
+      "file": "data/ensemble/seed5011.npz",
+      "sha256": "2e32ae9c05e78b8443443daade2f40b23b643b01e72c480f30ff406e6a8b0858",
+      "seed": 5011,
+      "max_budget_residual": 5.855898231599267e-10
+    },
+    {
+      "file": "data/ensemble/seed5012.npz",
+      "sha256": "65ef5f7d48876e1770236a7ea82e70812f3c87adaba48bc7ed56e54401cca39d",
+      "seed": 5012,
+      "max_budget_residual": 1.4072975423884417e-09
+    },
+    {
+      "file": "data/ensemble/seed5013.npz",
+      "sha256": "509e6b333c19eb436d221ca10f6ef513867d68bb041181da10fdd46004a5cc31",
+      "seed": 5013,
+      "max_budget_residual": 1.0684036554770018e-09
+    },
+    {
+      "file": "data/ensemble/seed5014.npz",
+      "sha256": "9229929b885edd4dcc58619900f83017b7c157d1225c31db318c11f05f801a85",
+      "seed": 5014,
+      "max_budget_residual": 7.696638465448659e-10
+    },
+    {
+      "file": "data/ensemble/seed5015.npz",
+      "sha256": "31817096387a786e473fd73d41457fb33524bdbad07fd70cd541e9936145564d",
+      "seed": 5015,
+      "max_budget_residual": 1.1389601501515804e-09
+    },
+    {
+      "file": "data/ensemble/seed5016.npz",
+      "sha256": "fe32664a02ac35e967ef9531ac2df97e00bfead897de9f55b4df35d5166b16be",
+      "seed": 5016,
+      "max_budget_residual": 1.1353085355506056e-09
+    },
+    {
+      "file": "data/ensemble/seed5017.npz",
+      "sha256": "14e6fabf25575b025b406e609ab3143b75dbd04119104933dbae7c477f651ad0",
+      "seed": 5017,
+      "max_budget_residual": 1.032748365992209e-09
+    },
+    {
+      "file": "data/ensemble/seed5018.npz",
+      "sha256": "8cba89eb102d2be1553d4b182dc75bbad85d53ee4460cc05d52c5baabdafa902",
+      "seed": 5018,
+      "max_budget_residual": 4.705610900934687e-10
+    },
+    {
+      "file": "data/ensemble/seed5019.npz",
+      "sha256": "7d4c8ac1fd229ccc6eb6396e46a767dd8ac2802c0986f84dfd4722ea25585f4d",
+      "seed": 5019,
+      "max_budget_residual": 7.057942338212221e-10
+    },
+    {
+      "file": "data/ensemble/seed5020.npz",
+      "sha256": "664dc7804de07a25aa6a21aacd10f3460dce1f55bfb5e224c58f041f63e08a2e",
+      "seed": 5020,
+      "max_budget_residual": 3.0491622681622073e-10
+    },
+    {
+      "file": "data/ensemble/seed5021.npz",
+      "sha256": "c83a3bbfa995b962b4db23f83e36314b4ef929bb8187c838562f8381831c6af5",
+      "seed": 5021,
+      "max_budget_residual": 3.65946750122072e-10
+    },
+    {
+      "file": "data/ensemble/seed5022.npz",
+      "sha256": "598244554eaff51d68670d4f5a8f68f26b68b0c70f44167d5c9955b80c659d10",
+      "seed": 5022,
+      "max_budget_residual": 6.04595041565903e-10
+    },
+    {
+      "file": "data/ensemble/seed5023.npz",
+      "sha256": "40f11135472357486312c41059b62cefa4aac544c9e90cdfe8dc5939f4900267",
+      "seed": 5023,
+      "max_budget_residual": 5.291602876364433e-10
+    },
+    {
+      "file": "data/ensemble/seed5024.npz",
+      "sha256": "8a40b57e0f227c8cf4d25b82eee8a195cd624b317aaafeb99334fdee135007d0",
+      "seed": 5024,
+      "max_budget_residual": 4.882201197140004e-10
+    },
+    {
+      "file": "data/ensemble/seed5025.npz",
+      "sha256": "177b24a7b4be122f622aef9c62a55e57bc8e49ae90af72532b8fb03440a7d005",
+      "seed": 5025,
+      "max_budget_residual": 2.809768129968804e-09
+    },
+    {
+      "file": "data/refinement/air_dt_7000.npz",
+      "sha256": "2b8f84dd6ebc89b0bfee35ac45a221dccc5b5b4045cc7625979110c0466409d9",
+      "seed": 7000,
+      "max_budget_residual": 1.2177012870262513e-10
+    },
+    {
+      "file": "data/refinement/air_grid_7000.npz",
+      "sha256": "54304e12ad2121bfdb2fc575e24f40e9fcccc55e9934c494ce018447e627358c",
+      "seed": 7000,
+      "max_budget_residual": 1.2177602676244348e-10
+    },
+    {
+      "file": "data/refinement/dt_5018.npz",
+      "sha256": "a22b917e9d0f369429e2c4ed0b1543059d19e532417f63bd7980eaec00eb7e68",
+      "seed": 5018,
+      "max_budget_residual": 3.066379615501713e-11
+    },
+    {
+      "file": "data/refinement/dt_5019.npz",
+      "sha256": "379706905f52aea6569d76e204ddd5b179e081de74c9d546f84d1e400ce88589",
+      "seed": 5019,
+      "max_budget_residual": 4.918374735263243e-11
+    },
+    {
+      "file": "data/refinement/dt_5020.npz",
+      "sha256": "9733566ffcdec61c975cde5b57953a9f0ccebd9ab5bac7b1e3a7c416511fe9d3",
+      "seed": 5020,
+      "max_budget_residual": 2.1272653777382176e-11
+    },
+    {
+      "file": "data/refinement/dt_5021.npz",
+      "sha256": "a5bd092997198293736d577214e18fa84a03cbe3699a1eef3c155effc96ca631",
+      "seed": 5021,
+      "max_budget_residual": 2.3914998127110807e-11
+    },
+    {
+      "file": "data/refinement/dt_5022.npz",
+      "sha256": "98167d5dc8b0e8995f5e331d7e681c098d635b488309d8c88386ff5b6a56ae65",
+      "seed": 5022,
+      "max_budget_residual": 3.963947226015564e-11
+    },
+    {
+      "file": "data/refinement/dt_5023.npz",
+      "sha256": "3fe7b448ae2c5f2f9d273e209791a4ab944fe2ebc82cea56d80b50f84d884453",
+      "seed": 5023,
+      "max_budget_residual": 3.536097196304989e-11
+    },
+    {
+      "file": "data/refinement/dt_5024.npz",
+      "sha256": "33b6279d38232a552beb6b4ed635f226ba6f9506430f1ecfcf273dcce386a118",
+      "seed": 5024,
+      "max_budget_residual": 3.8371302663042796e-11
+    },
+    {
+      "file": "data/refinement/dt_5025.npz",
+      "sha256": "9c6dbffa80da63da78ef3bf3e5236f471d3e5e050730fc1e3b44b46cef07e41d",
+      "seed": 5025,
+      "max_budget_residual": 1.9597606957383332e-10
+    },
+    {
+      "file": "data/refinement/fast_water_dt_7000.npz",
+      "sha256": "7051ff6904e6aff0599b7cf4d692976e4c337141db65ff7c13164f849614b350",
+      "seed": 7000,
+      "max_budget_residual": 1.2738972680545473e-08
+    },
+    {
+      "file": "data/refinement/fast_water_grid_7000.npz",
+      "sha256": "00795514294d3cdb90182135d596255a4bd1bf42e47bf41fd78980a5bf07afdf",
+      "seed": 7000,
+      "max_budget_residual": 2.479930618498605e-08
+    },
+    {
+      "file": "data/refinement/grid_5018.npz",
+      "sha256": "b046cac3ddaa18f053ceafca6afdebd9589912c73e42694ea9462a67aec287d0",
+      "seed": 5018,
+      "max_budget_residual": 4.722457667971636e-10
+    },
+    {
+      "file": "data/refinement/grid_5019.npz",
+      "sha256": "76475108dfea1a606c3defbcd1f65a7a0e9dfca245163b3ca95a73db91afd050",
+      "seed": 5019,
+      "max_budget_residual": 7.415856990988789e-10
+    },
+    {
+      "file": "data/refinement/grid_5020.npz",
+      "sha256": "8ea476fd8ace3b8cdd5d77d04754265f4ed5d1aee25d9454ffd89e8f3ac866af",
+      "seed": 5020,
+      "max_budget_residual": 3.071505940213659e-10
+    },
+    {
+      "file": "data/refinement/grid_5021.npz",
+      "sha256": "c54b15c35a3f4cdd058c3d0acd30181ecd74789576a4d7ab01dd547dd53d0886",
+      "seed": 5021,
+      "max_budget_residual": 3.716942091368591e-10
+    },
+    {
+      "file": "data/refinement/grid_5022.npz",
+      "sha256": "888d5c726b92891b53a8a8da90b0cb4e7539e7b38cd44368df35040b49d6f993",
+      "seed": 5022,
+      "max_budget_residual": 6.069300877847851e-10
+    },
+    {
+      "file": "data/refinement/grid_5023.npz",
+      "sha256": "c8f651de36797354875d1d3e90e8b3a4a4eca33302c9814e0cc3b3fce2a9cc76",
+      "seed": 5023,
+      "max_budget_residual": 5.373504592676158e-10
+    },
+    {
+      "file": "data/refinement/grid_5024.npz",
+      "sha256": "0bb0c3bdcf87f541eb30ecc46dae9332aca6f63bf71e3fa6e4ad40198fe5acf5",
+      "seed": 5024,
+      "max_budget_residual": 5.209908459508084e-10
+    },
+    {
+      "file": "data/refinement/grid_5025.npz",
+      "sha256": "16463f1f99689de326b618e56ae08f1b355d435c5bc66dea6985ee52ca5ae40c",
+      "seed": 5025,
+      "max_budget_residual": 2.8344624390663764e-09
+    },
+    {
+      "file": "data/refinement/water_dt_7000.npz",
+      "sha256": "12c6e6d9dcca74dfaba3e6932b04ee880b0e68b32ce9484d28b709a3cd832146",
+      "seed": 7000,
+      "max_budget_residual": 2.030720426884902e-11
+    },
+    {
+      "file": "data/refinement/water_grid_7000.npz",
+      "sha256": "a1a15df8e651c168df3e960a4571a275ff7e381bf2dd4b657c5e41e2d3b36a08",
+      "seed": 7000,
+      "max_budget_residual": 2.2140220572487787e-11
+    },
+    {
+      "file": "data/regimes/air_7000.npz",
+      "sha256": "94b1d6ad7fc62c53bf00da2e95de7564c151d9adf8f58e29b1d36a11e257cd0a",
+      "seed": 7000,
+      "max_budget_residual": 1.958756941367047e-09
+    },
+    {
+      "file": "data/regimes/air_7001.npz",
+      "sha256": "6912e8488d47d2d9b006c5fcdc64ff83f8533ad8b1661fd6da33542c9b6ffd56",
+      "seed": 7001,
+      "max_budget_residual": 2.9840870226227595e-09
+    },
+    {
+      "file": "data/regimes/air_7002.npz",
+      "sha256": "470a91f06acbdc471506402ef7ab5b17585b745c87f69d90f13427a976323d1e",
+      "seed": 7002,
+      "max_budget_residual": 3.423059405371909e-09
+    },
+    {
+      "file": "data/regimes/air_7003.npz",
+      "sha256": "e59251589ac0339302e8846e7f15a87ba3715132d55847cec17bc6208efe384e",
+      "seed": 7003,
+      "max_budget_residual": 1.8029567422361826e-09
+    },
+    {
+      "file": "data/regimes/fast_water_7000.npz",
+      "sha256": "0fb86797f3317c07a4e269c73d8d2a3692dd440f2f068162487e3dd7102103da",
+      "seed": 7000,
+      "max_budget_residual": 2.6455719568177504e-07
+    },
+    {
+      "file": "data/regimes/fast_water_7001.npz",
+      "sha256": "c022a1c47000db5adc42166bff98dc7b8fd4eb68970c7149b5e133330f1806da",
+      "seed": 7001,
+      "max_budget_residual": 2.2791292954467436e-07
+    },
+    {
+      "file": "data/regimes/fast_water_7002.npz",
+      "sha256": "0bd0239cfe1a404687aad2eaad363d1975f884a82460f29937be889f375d18f5",
+      "seed": 7002,
+      "max_budget_residual": 9.735393363859147e-08
+    },
+    {
+      "file": "data/regimes/fast_water_7003.npz",
+      "sha256": "57fdd16c6102f5e5e7aa5a32e61f0cb6e963150adfaa05f23ba7edf244b794fd",
+      "seed": 7003,
+      "max_budget_residual": 2.4013322406923887e-07
+    },
+    {
+      "file": "data/regimes/forced_7000.npz",
+      "sha256": "57597116dcaeb14a53bc5f0f1af899dacf9dc1a74c42552e5f5dd8705a8913a4",
+      "seed": 7000,
+      "max_budget_residual": 6.293101890292309e-10
+    },
+    {
+      "file": "data/regimes/forced_7001.npz",
+      "sha256": "52a0255391410296eddb4119468ffac03c636ee1a125a57e81a8e78c73c37800",
+      "seed": 7001,
+      "max_budget_residual": 3.256698730136343e-10
+    },
+    {
+      "file": "data/regimes/forced_7002.npz",
+      "sha256": "ab9233ae7c4917a079d8f982384d805c988317bdf5dd1212ac22ef8ca6307139",
+      "seed": 7002,
+      "max_budget_residual": 9.397856624848713e-10
+    },
+    {
+      "file": "data/regimes/forced_7003.npz",
+      "sha256": "816724470c15f8adcc7edfb7d6995926d1a533e2225d31ecf31f65efe022c4fb",
+      "seed": 7003,
+      "max_budget_residual": 4.3679448079314554e-10
+    },
+    {
+      "file": "data/regimes/large_kick_7000.npz",
+      "sha256": "7ddab721d8cd24e130c901f88d6297ec75ca5450783152ec9ea16976bf131b4e",
+      "seed": 7000,
+      "max_budget_residual": 6.648526347519114e-10
+    },
+    {
+      "file": "data/regimes/large_kick_7001.npz",
+      "sha256": "6e6f50776154553460c03f938491d8fe89d7ca4703655e59d277849171e2649b",
+      "seed": 7001,
+      "max_budget_residual": 5.147757003651223e-10
+    },
+    {
+      "file": "data/regimes/large_kick_7002.npz",
+      "sha256": "8ed43e4d42f65adb6b6796f9e39a3358d702836dd63ee2960b3256f35637ea67",
+      "seed": 7002,
+      "max_budget_residual": 9.300299679687596e-10
+    },
+    {
+      "file": "data/regimes/large_kick_7003.npz",
+      "sha256": "b59f68f71311aa63691503a900c49063998c13cde943d8b74e07f0666ec3bc7c",
+      "seed": 7003,
+      "max_budget_residual": 3.7831229034862584e-10
+    },
+    {
+      "file": "data/regimes/no_kick_7000.npz",
+      "sha256": "faee18db5b4c6a5b376222554118171da5305ff77abd5b8a02e56c4c3b322c03",
+      "seed": 7000,
+      "max_budget_residual": 3.8816654472723624e-10
+    },
+    {
+      "file": "data/regimes/no_kick_7001.npz",
+      "sha256": "f3c99f652f6600bd82b4ac02d51f1bbb1cf2beab4e6ff03834d79f041cde115a",
+      "seed": 7001,
+      "max_budget_residual": 1.4898448963200012e-10
+    },
+    {
+      "file": "data/regimes/no_kick_7002.npz",
+      "sha256": "b9651d74fe8c6df8afacd2dc9f7eb9112d317eccf13091450a325db9d0b323f1",
+      "seed": 7002,
+      "max_budget_residual": 1.6690061180263138e-10
+    },
+    {
+      "file": "data/regimes/no_kick_7003.npz",
+      "sha256": "0996419a059f6c017018bff6096b5da3d2484fd4be5a61c809ec0b7f347374c1",
+      "seed": 7003,
+      "max_budget_residual": 1.47407196005429e-10
+    },
+    {
+      "file": "data/regimes/organized_7000.npz",
+      "sha256": "ec2d288b5f7b2e79b53fe56af2825753593e2800ffe554e39a2ec6ebffd161c9",
+      "seed": 7000,
+      "max_budget_residual": 4.951733901387142e-10
+    },
+    {
+      "file": "data/regimes/organized_7001.npz",
+      "sha256": "b2e32a69707400ba0c2d4ac31414895d8a2ca4bc1ec3e405d56c7ce77049b763",
+      "seed": 7001,
+      "max_budget_residual": 6.403294344412e-10
+    },
+    {
+      "file": "data/regimes/organized_7002.npz",
+      "sha256": "cf776e205a738d2bf63a4cc36df72dc5d5a573b9a300792349148599426ec0f6",
+      "seed": 7002,
+      "max_budget_residual": 4.310089828443717e-10
+    },
+    {
+      "file": "data/regimes/organized_7003.npz",
+      "sha256": "706d2746dc2e70614d061e57c0527748c0ce8e7e51e36d4aa7363690777c23df",
+      "seed": 7003,
+      "max_budget_residual": 1.7206125847019088e-10
+    },
+    {
+      "file": "data/regimes/reference_7000.npz",
+      "sha256": "3b8d2be0ba79812041e367c1d3ee89a175b06181be59d26fc6bf55c2505f4779",
+      "seed": 7000,
+      "max_budget_residual": 5.64174575112819e-10
+    },
+    {
+      "file": "data/regimes/reference_7001.npz",
+      "sha256": "421c07105d87961a310d626bd254aef0c178cd9fb0a294ec16623ba47077a1b1",
+      "seed": 7001,
+      "max_budget_residual": 3.6463208754472514e-10
+    },
+    {
+      "file": "data/regimes/reference_7002.npz",
+      "sha256": "28fdd93f3139eb62b222132f6ebbffdd79fe614f679180be15e854b19b4d2f34",
+      "seed": 7002,
+      "max_budget_residual": 7.381401045947201e-10
+    },
+    {
+      "file": "data/regimes/reference_7003.npz",
+      "sha256": "9e6f07a417cde0c9413c05db148a8b1ec8259f1defc1aad90f6bee4adc1b1574",
+      "seed": 7003,
+      "max_budget_residual": 3.305140666362562e-10
+    },
+    {
+      "file": "data/regimes/small_kick_7000.npz",
+      "sha256": "a5fd46974e0d31588f3d2966ebdc48f96d2788c709c5301edfdb93f06bbe2ec2",
+      "seed": 7000,
+      "max_budget_residual": 5.358909930391901e-10
+    },
+    {
+      "file": "data/regimes/small_kick_7001.npz",
+      "sha256": "47fb2613aaee303cc8ac16c87d5c32cd8e7fec99d1eb621924ebcaea22ebe4f6",
+      "seed": 7001,
+      "max_budget_residual": 3.1650255333248743e-10
+    },
+    {
+      "file": "data/regimes/small_kick_7002.npz",
+      "sha256": "f98c9ab791299982da9d7acd0236a25b57532e2d94a16391fa3d398b15c9bb74",
+      "seed": 7002,
+      "max_budget_residual": 6.71885030251174e-10
+    },
+    {
+      "file": "data/regimes/small_kick_7003.npz",
+      "sha256": "e5dca35c904eb7a47ce98b354d11663e11d2b308dd46c68b9aa321bc55285456",
+      "seed": 7003,
+      "max_budget_residual": 3.2068911328536625e-10
+    },
+    {
+      "file": "data/regimes/stokes_null_7000.npz",
+      "sha256": "ac7c7683fe8eef8ae95be8022a9d1e7533850df228e0fa05f9d2063f4a81c4fd",
+      "seed": 7000,
+      "max_budget_residual": 2.8473317453814333e-13
+    },
+    {
+      "file": "data/regimes/stokes_null_7001.npz",
+      "sha256": "b125087f28abb2b5f5c2edec96552629ad94518288eab08caa07dd0a51406602",
+      "seed": 7001,
+      "max_budget_residual": 2.8390918088705424e-13
+    },
+    {
+      "file": "data/regimes/stokes_null_7002.npz",
+      "sha256": "4cec8226d9ea31cd2b27a108953a02d95428e569a8e860d0e675c9f71d5be9fc",
+      "seed": 7002,
+      "max_budget_residual": 2.8844114596804345e-13
+    },
+    {
+      "file": "data/regimes/stokes_null_7003.npz",
+      "sha256": "800c7b19bcfacbb285fba2bc01ba363ad37d89ac0577feeca52207583c5bb7b1",
+      "seed": 7003,
+      "max_budget_residual": 2.8867967044599036e-13
+    },
+    {
+      "file": "data/regimes/water_7000.npz",
+      "sha256": "474815661ecf641c3cee1660cfb70e2ba4ffc151de6cb6fc65e80200957ba215",
+      "seed": 7000,
+      "max_budget_residual": 4.0029983451247954e-10
+    },
+    {
+      "file": "data/regimes/water_7001.npz",
+      "sha256": "a4f6d0e8dac7f6dff43426a6cb4280f93a88710fb7723f21eb326d6add386ac3",
+      "seed": 7001,
+      "max_budget_residual": 1.2469894366227968e-09
+    },
+    {
+      "file": "data/regimes/water_7002.npz",
+      "sha256": "b13ef5ed563c4d230bea380a3a87f8964b048de3e19b82af477f2f0c18f20219",
+      "seed": 7002,
+      "max_budget_residual": 4.42653997224235e-10
+    },
+    {
+      "file": "data/regimes/water_7003.npz",
+      "sha256": "7c87af78c57f5e32653a208076f10ce7a06e1b4c477a7219411d22cccce573a3",
+      "seed": 7003,
+      "max_budget_residual": 3.9606388915064426e-10
+    },
+    {
+      "file": "data/stress_extension/fast_water_n50_7000.npz",
+      "sha256": "83c9adc2bcb3dc52841e2f889321f139265a1b844dc0b8dee4c01f4277a59200",
+      "seed": 7000,
+      "max_budget_residual": 2.5318645704291987e-08
+    },
+    {
+      "file": "data/stress_extension/fast_water_n62_7000.npz",
+      "sha256": "2c675817229466941918048240c7c5851b42d7c4208752b1daa729615eb36ad6",
+      "seed": 7000,
+      "max_budget_residual": 2.2812069030639354e-08
+    }
+  ],
+  "particle_records": [
+    {
+      "file": "air_particles_7000.json",
+      "max_particle_Re": 0.01589450012142226
+    },
+    {
+      "file": "air_particles_7000_fine_grid.json",
+      "max_particle_Re": 0.015897953180368195
+    },
+    {
+      "file": "air_particles_7000_half_fluid_step.json",
+      "max_particle_Re": 0.015894500120990345
+    },
+    {
+      "file": "air_particles_7000_half_particle_step.json",
+      "max_particle_Re": 0.01589450012142226
+    },
+    {
+      "file": "air_particles_7001.json",
+      "max_particle_Re": 0.01455039780665493
+    },
+    {
+      "file": "air_particles_7002.json",
+      "max_particle_Re": 0.015885562057791635
+    },
+    {
+      "file": "air_particles_7003.json",
+      "max_particle_Re": 0.01685731441848882
+    }
+  ],
+  "numerical_sensitivity_failures": [
+    {
+      "regime": "fast_water",
+      "seed": 7000,
+      "comparison": "grid",
+      "marker_rms_change": 0.03482310481349491,
+      "limit": 0.005
+    }
+  ],
+  "stress_followup": {
+    "seed": 7000,
+    "comparisons": [
+      {
+        "from_n": 38,
+        "to_n": 50,
+        "dt": 0.005,
+        "marker_rms_change": 0.010337710868107516,
+        "gain_relative_change": 0.0010035365276730435,
+        "fine_gain": 2.1945042378705004,
+        "marker_screen_passed": false
+      },
+      {
+        "from_n": 50,
+        "to_n": 62,
+        "dt": 0.005,
+        "marker_rms_change": 0.0037971640999576698,
+        "gain_relative_change": 5.6736688956116055e-05,
+        "fine_gain": 2.1943797289661435,
+        "marker_screen_passed": true
+      }
+    ],
+    "interpretation": "One-seed spatial sensitivity only; no evidence that every stress realization is resolved."
+  },
+  "oscillator_checks": {
+    "phase_locking": "saved arrays finite",
+    "dynamics": "saved arrays finite",
+    "pendulum": "saved arrays finite",
+    "relaxation": "saved arrays finite",
+    "weak_nonlinear": "saved arrays finite",
+    "parametric": "saved arrays finite",
+    "bifurcations": "saved arrays finite"
+  },
+  "scope": "Passed data integrity, automated tests and energy/CFL gates. Numerical sensitivity failures are retained explicitly; this is not a proof of continuum convergence or unrestricted physical validity."
+}

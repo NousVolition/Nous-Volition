@@ -1,0 +1,24 @@
+{
+  "seed": 7000,
+  "comparisons": [
+    {
+      "from_n": 38,
+      "to_n": 50,
+      "dt": 0.005,
+      "marker_rms_change": 0.010337710868107516,
+      "gain_relative_change": 0.0010035365276730435,
+      "fine_gain": 2.1945042378705004,
+      "marker_screen_passed": false
+    },
+    {
+      "from_n": 50,
+      "to_n": 62,
+      "dt": 0.005,
+      "marker_rms_change": 0.0037971640999576698,
+      "gain_relative_change": 5.6736688956116055e-05,
+      "fine_gain": 2.1943797289661435,
+      "marker_screen_passed": true
+    }
+  ],
+  "interpretation": "One-seed spatial sensitivity only; no evidence that every stress realization is resolved."
+}

@@ -1,0 +1,8 @@
+{
+  "study": "Fluid Organization Under Stress",
+  "source_repository": "https://github.com/NousVolition/My-Sources-Project-ALL/tree/main/reports/fluid-organization-pilot",
+  "presentation_repository": "https://github.com/NousVolition/Nous-Volition/tree/main/studies/fluid-organization",
+  "original_manifest_sha256": "c3cd8b767bd500c802f17f003629e2141defd5b26880c1e81d445e3995dcbc52",
+  "original_files_unchanged": false,
+  "scope": "Completed numerical pilot. Numerical sensitivity failures and proposed extensions remain documented."
+}

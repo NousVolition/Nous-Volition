@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "status": "Exploratory protocol written before new numerical results",
+  "source_commit": "1b12558739736d472b0eb75845cf721371fcbb71",
+  "base": {"n": 26, "nu": 0.03, "dt": 0.01, "save_dt": 0.05, "kick_time": 0.4, "end": 1.0, "speed": 1.0, "amplitude": 0.05, "width": 0.7, "markers": 256, "forcing": 0.0, "nonlinear": true, "initial": "random", "interp_order": 3},
+  "train_seeds": [5000,5001,5002,5003,5004,5005,5006,5007,5008,5009,5010,5011],
+  "validation_seeds": [5012,5013,5014,5015,5016,5017],
+  "test_seeds": [5018,5019,5020,5021,5022,5023,5024,5025],
+  "regime_seeds": [7000,7001,7002,7003],
+  "refinement_seeds": [5018,5019,5020,5021,5022,5023,5024,5025],
+  "regimes": {
+    "reference": {},
+    "water": {"nu": 0.01},
+    "air": {"nu": 0.15},
+    "small_kick": {"amplitude": 0.025},
+    "large_kick": {"amplitude": 0.1},
+    "fast_water": {"nu": 0.01, "speed": 2.0},
+    "forced": {"forcing": 0.25},
+    "stokes_null": {"nonlinear": false},
+    "organized": {"initial": "beltrami"},
+    "no_kick": {"amplitude": 0.0}
+  },
+  "history": {"neighbors": 8, "lags": [0.1,0.2,0.3], "target": "mean over current fixed neighbors of log(future distance/current distance), divided by horizon 0.6; also disturbed-minus-baseline response", "primary_model": "train-standardized quadratic ridge, regularization selected on validation only", "alphas": [0.001,0.01,0.1,1,10,100,1000], "bootstrap_replicates": 4000, "bootstrap_unit": "independent held-out seed", "controls": ["shuffled history within run", "reversed lag order with matched refit", "shuffled training targets", "current-only quadratic terms", "frozen instantaneous pair rate"]},
+  "gates": {"max_cfl": 0.4, "max_diffusion_number": 0.5, "max_energy_budget_relative_residual": 0.0001, "max_divergence": 1e-10, "grid_relative_energy_gain_change": 0.02, "dt_relative_energy_gain_change": 0.005, "grid_marker_rms": 0.005},
+  "scope": "3D incompressible periodic cube side 6, constant density/viscosity, no walls or thermal phase change. A localized band-limited curl impulse disturbs only one cloned state. No feedback from markers. Fog/smoke use separate dilute heavy-sphere Stokes-drag observations of air. Ice, compressible gas, phase change, wall boundary variation and fully developed turbulence are separate proposed extensions."
+}
