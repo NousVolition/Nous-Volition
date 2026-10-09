@@ -2,9 +2,9 @@
 
 **SIMS** are the simulated participants in this six-group experiment.
 
-**Social analogy, not fluid physics.** Six symbolic labels: Ice, Water, Fog, Mist,
-Gas (water vapor), and Smoke. Fog and mist contain liquid droplets; Smoke is not a
-water phase. No human data, molecular model, Navier–Stokes claim, or new law.
+This experiment examines group formation, cooperation, memory, and changing
+relationships among SIMS. Its six symbolic group labels are Ice, Water, Fog, Mist,
+Gas (water vapor), and Smoke.
 
 Open [report.html](report.html) for the accessible results and charts.
 [methods.html](methods.html) specifies every model assumption and metric.
@@ -24,11 +24,11 @@ The A/B/name-permutation comparison is exactly invariant in all 144 blocks when
 semantic perception is absent. In the full model, combined stress reduced
 cooperation by 18.43 percentage points (95% seed interval −18.88 to −17.97).
 Same-group choice excess also fell. Memory delayed rigidity recovery under the
-specified adaptation rule. An assumed negative label prior reduced nominations
-to whichever word received it; this does not establish human dislike of Smoke.
+specified adaptation rule. An assigned negative label prior reduced nominations
+to whichever word received it, measuring the model's response to that input.
 
 The pre-execution simulation design is recorded, but the analysis is exploratory
-and was not externally preregistered. No volunteers have been recruited.
+and was not externally preregistered.
 
 ## Reproduce
 
@@ -81,7 +81,8 @@ leadership, attribution, and permutation controls. PNG/SVG figures are included.
 Intervals resample **12 independent seeds within each split**, after averaging
 matched conditions within seed. Agents, rounds, topologies sharing a seed, and
 counterfactual runs are not treated as independent replicates. These are
-descriptive intervals, not model-uncertainty intervals or human causal estimates.
+descriptive intervals for sampling variation across simulation seeds, with the
+model assumptions held fixed.
 
 ## Project context and publication
 
@@ -93,16 +94,16 @@ The research was originally developed with context from
 NousVolition/My-Sources-Project-ALL at commit
 `277157c4f44d33a0d4eba29b60bcf2104e28a46a`. Its positional-water-influence and
 isotope studies motivated the distinction between identity and position.
-No numerical observations or physical laws from those studies were transferred
-to this social model. The social analogy remains separate from the original
-stream-function report and the fluid and molecular evidence.
+The SIMS model uses its own interaction and adaptation rules, specified in
+[methods.html](methods.html). The original stream-function report and the fluid
+and molecular studies provide the wider research context.
 
 The full recorded arrays and all scripts are included here. The 44 MB NPZ is stored
 in eleven transport parts because of the upload API limit. `python restore_data.py`
 reassembles the exact original bytes and verifies every part and the complete SHA-256.
 The analysis and verification commands also restore it automatically when needed. Download the
 repository ZIP and open this folder's `report.html` to read the offline report;
-GitHub's HTML file view displays source. No volunteers have been recruited.
+GitHub's HTML file view displays source.
 
 ## Integrity
 
@@ -110,4 +111,4 @@ GitHub's HTML file view displays source. No volunteers have been recruited.
 source hashes, environment, and run counts. `verification.json` records checks.
 `manifest_sha256.json` covers repository files except itself, Python cache files,
 and the reconstructed `data/arrays.npz`, whose checksum is in `data/arrays.parts.json`. `package.py` verifies local HTML links and creates that manifest.
-Checks establish implementation consistency, not validity as a theory of people.
+Checks verify implementation consistency and reproduction of the recorded results.
