@@ -1,0 +1,164 @@
+{
+  "epsilon": 0.1,
+  "periodic_coefficient_period": 3.141592653589793,
+  "floquet": [
+    {
+      "gamma": -1.0,
+      "floquet_growth_rate": 7.067899292141147e-17,
+      "leading_growth_rate": 0.0,
+      "determinant": 1.0000000000000002,
+      "multiplier_real_imag": [
+        [
+          -0.9903548302327871,
+          0.1385543584106528
+        ],
+        [
+          -0.9903548302327871,
+          -0.1385543584106528
+        ]
+      ]
+    },
+    {
+      "gamma": -0.75,
+      "floquet_growth_rate": -1.41357985842823e-16,
+      "leading_growth_rate": 0.0,
+      "determinant": 0.9999999999999991,
+      "multiplier_real_imag": [
+        [
+          -0.9960572540459987,
+          0.08871271984526326
+        ],
+        [
+          -0.9960572540459987,
+          -0.08871271984526326
+        ]
+      ]
+    },
+    {
+      "gamma": -0.25,
+      "floquet_growth_rate": 0.02187133740146815,
+      "leading_growth_rate": 0.021650635094610966,
+      "determinant": 0.9999999999999997,
+      "multiplier_real_imag": [
+        [
+          -0.9335966064683399,
+          0.0
+        ],
+        [
+          -1.0711264298430285,
+          0.0
+        ]
+      ]
+    },
+    {
+      "gamma": 0.0,
+      "floquet_growth_rate": 0.024992680919296132,
+      "leading_growth_rate": 0.025,
+      "determinant": 1.0,
+      "multiplier_real_imag": [
+        [
+          -1.081681551888717,
+          0.0
+        ],
+        [
+          -0.9244865073772467,
+          0.0
+        ]
+      ]
+    },
+    {
+      "gamma": 0.25,
+      "floquet_growth_rate": 0.021420537952360517,
+      "leading_growth_rate": 0.021650635094610966,
+      "determinant": 0.9999999999999992,
+      "multiplier_real_imag": [
+        [
+          -1.0696105440206105,
+          0.0
+        ],
+        [
+          -0.9349197290455377,
+          0.0
+        ]
+      ]
+    },
+    {
+      "gamma": 0.75,
+      "floquet_growth_rate": 7.067899292141147e-17,
+      "leading_growth_rate": 0.0,
+      "determinant": 1.0000000000000004,
+      "multiplier_real_imag": [
+        [
+          -0.9962307468843314,
+          0.08674271705617519
+        ],
+        [
+          -0.9962307468843314,
+          -0.08674271705617519
+        ]
+      ]
+    },
+    {
+      "gamma": 1.0,
+      "floquet_growth_rate": -1.0601848938211725e-16,
+      "leading_growth_rate": 0.0,
+      "determinant": 0.9999999999999992,
+      "multiplier_real_imag": [
+        [
+          -0.9911260309233837,
+          0.13292550856046859
+        ],
+        [
+          -0.9911260309233837,
+          -0.13292550856046859
+        ]
+      ]
+    }
+  ],
+  "trajectory_controls": [
+    {
+      "gamma": 0.0,
+      "kick": 0.0,
+      "modulation": true,
+      "max_abs_angle": 0.0,
+      "max_energy_work_residual": 0.0
+    },
+    {
+      "gamma": 0.0,
+      "kick": 0.001,
+      "modulation": true,
+      "max_abs_angle": 0.10072863045798207,
+      "max_energy_work_residual": 2.5673907444456745e-16
+    },
+    {
+      "gamma": -0.75,
+      "kick": 0.001,
+      "modulation": true,
+      "max_abs_angle": 0.001,
+      "max_energy_work_residual": 2.416991044935609e-16
+    },
+    {
+      "gamma": 0.75,
+      "kick": 0.001,
+      "modulation": true,
+      "max_abs_angle": 0.0022244775230835755,
+      "max_energy_work_residual": 2.708697015871373e-16
+    },
+    {
+      "gamma": 0.0,
+      "kick": 0.001,
+      "modulation": false,
+      "max_abs_angle": 0.001,
+      "max_energy_work_residual": 7.146247569395081e-17
+    },
+    {
+      "gamma": 0.0,
+      "kick": 0.01,
+      "modulation": true,
+      "max_abs_angle": 0.8407989863484504,
+      "max_energy_work_residual": 1.3322676295501878e-15
+    }
+  ],
+  "leading_instability_band": "|gamma| < 1/2; finite-epsilon Floquet results determine the actual linear behavior",
+  "scope": "Prescribed external modulation; no damping, noise or forcing independent of x. Exact rest remains exact rest."
+}

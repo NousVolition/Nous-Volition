@@ -1,0 +1,109 @@
+{
+  "equation": "theta_ddot + sin(theta) = 0",
+  "period_formula": "4 K(m), m=sin(alpha/2)^2",
+  "records": [
+    {
+      "amplitude_rad": 0.05,
+      "energy": 0.0012497396050337173,
+      "elliptic_period": 6.284167195521779,
+      "quadrature_period": 6.28416719552178,
+      "measured_period": 6.284167195521782,
+      "relative_period_error": 4.440892098500626e-16,
+      "measured_cycle_period_range": 8.881784197001252e-16,
+      "max_absolute_energy_error": 1.1102230246251565e-16
+    },
+    {
+      "amplitude_rad": 0.5,
+      "energy": 0.12241743810962724,
+      "elliptic_period": 6.38278969767774,
+      "quadrature_period": 6.38278969767774,
+      "measured_period": 6.3827896976777465,
+      "relative_period_error": 8.881784197001252e-16,
+      "measured_cycle_period_range": 4.440892098500626e-15,
+      "max_absolute_energy_error": 1.0769163338864018e-14
+    },
+    {
+      "amplitude_rad": 1.0,
+      "energy": 0.45969769413186023,
+      "elliptic_period": 6.699975664370452,
+      "quadrature_period": 6.699975664370451,
+      "measured_period": 6.699975664370463,
+      "relative_period_error": 1.5543122344752192e-15,
+      "measured_cycle_period_range": 5.329070518200751e-15,
+      "max_absolute_energy_error": 1.2678746941219288e-13
+    },
+    {
+      "amplitude_rad": 2.0,
+      "energy": 1.4161468365471424,
+      "elliptic_period": 8.349752926918494,
+      "quadrature_period": 8.349752926918494,
+      "measured_period": 8.349752926918322,
+      "relative_period_error": 2.0650148258027912e-14,
+      "measured_cycle_period_range": 3.090860900556436e-13,
+      "max_absolute_energy_error": 1.4408474413585282e-12
+    },
+    {
+      "amplitude_rad": 2.8,
+      "energy": 1.942222340668658,
+      "elliptic_period": 12.697086489053419,
+      "quadrature_period": 12.69708648905342,
+      "measured_period": 12.697086489046782,
+      "relative_period_error": 5.226929999935237e-13,
+      "measured_cycle_period_range": 7.709388682997087e-12,
+      "max_absolute_energy_error": 2.8037572263883703e-12
+    },
+    {
+      "amplitude_rad": 3.05,
+      "energy": 1.9958083245390612,
+      "elliptic_period": 17.88806245318134,
+      "quadrature_period": 17.888062453181366,
+      "measured_period": 17.88806245307962,
+      "relative_period_error": 5.686562332130052e-12,
+      "measured_cycle_period_range": 1.1571898994588992e-10,
+      "max_absolute_energy_error": 3.062439191126032e-12
+    },
+    {
+      "amplitude_rad": 3.13,
+      "energy": 1.9999328059438939,
+      "elliptic_period": 26.147509360368197,
+      "quadrature_period": 26.147509360369366,
+      "measured_period": 26.147509353871442,
+      "relative_period_error": 2.484655814427583e-10,
+      "measured_cycle_period_range": 7.335646756700953e-09,
+      "max_absolute_energy_error": 3.306244167333716e-12
+    }
+  ],
+  "paired_kick_initial_angle": 2.8,
+  "rotation_threshold_speed": 0.3399342858004821,
+  "kick_controls": [
+    {
+      "velocity_kick": 0.0,
+      "initial_energy": 1.942222340668658,
+      "added_energy": 0.0,
+      "motion": "libration",
+      "max_energy_drift": 9.103828801926284e-15
+    },
+    {
+      "velocity_kick": 0.1,
+      "initial_energy": 1.947222340668658,
+      "added_energy": 0.005000000000000001,
+      "motion": "libration",
+      "max_energy_drift": 9.547918011776346e-15
+    },
+    {
+      "velocity_kick": 0.3,
+      "initial_energy": 1.987222340668658,
+      "added_energy": 0.045,
+      "motion": "libration",
+      "max_energy_drift": 9.103828801926284e-15
+    },
+    {
+      "velocity_kick": 0.5,
+      "initial_energy": 2.067222340668658,
+      "added_energy": 0.125,
+      "motion": "rotation",
+      "max_energy_drift": 1.9984014443252818e-14
+    }
+  ],
+  "scope": "Separate conservative one-degree-of-freedom control. No damping, stochastic noise, fluid coupling or material phase transition."
+}

@@ -1,0 +1,439 @@
+{
+  "repository": "NousVolition/Nous-Volition",
+  "study": "studies/fluid-organization",
+  "files": [
+    {
+      "path": "studies/fluid-organization/phase_locking_reference.png",
+      "size": 97769,
+      "git_blob_sha": "22436209b7ec5ae0e2d017e6e8063ddfbc18324c",
+      "sha256": "96383d5a0ad1a8e38355f816ed7c2e0ffde9af65b0ffb92fe28af5bdedb60705"
+    },
+    {
+      "path": "studies/fluid-organization/protocol.json",
+      "size": 2310,
+      "git_blob_sha": "b806363d0c899971abc8f5e2da9daa23ebdd8678",
+      "sha256": "ecb86199b8d8a424df1529b9402c08378e5714fcb2ef2f8115a384582821cb2d"
+    },
+    {
+      "path": "studies/fluid-organization/protocol_addendum.json",
+      "size": 2485,
+      "git_blob_sha": "ee6bb62a052674ed97c796137546552398a88582",
+      "sha256": "a8811e405215abd2b4863265fc6be42f9ee5685b73ac5218e56fe1368237c701"
+    },
+    {
+      "path": "studies/fluid-organization/publication.json",
+      "size": 538,
+      "git_blob_sha": "7944ae2d75325ef5aa5471e8df658f1e189f1a29",
+      "sha256": "0e9f03245cf5a11421d477b4113dc01e7398160961aa30753594244cf697a09c"
+    },
+    {
+      "path": "studies/fluid-organization/README.md",
+      "size": 4384,
+      "git_blob_sha": "cb8c9e30cf62073c6a408065d6d3332e72500ed9",
+      "sha256": "b988f511dbabc365545bf30ffd87d7c691308971909b292e474e7574d543d5d1"
+    },
+    {
+      "path": "studies/fluid-organization/references/codex-clipboard-0832323a-bb13-4cdf-9c2d-5fedb9d9d689.png",
+      "size": 79272,
+      "git_blob_sha": "6f6a174a0830af8bd8b6ad48d51d6a67ed34accf",
+      "sha256": "b30d7c8e5c29b2f5154664e3b3a3a1542ed9ba1f1fbb04bb3e9bd921a4dd4262"
+    },
+    {
+      "path": "studies/fluid-organization/references/codex-clipboard-1b035f47-a5a5-4c89-b62f-f8ee0e3a49fb.png",
+      "size": 26654,
+      "git_blob_sha": "a99f8d8116f41c315ed4aa32f293124250d8e05a",
+      "sha256": "2cec6cba4de9acd0cf6fccad66cc90de960f84977fc97578fcc6189d540e25a7"
+    },
+    {
+      "path": "studies/fluid-organization/references/codex-clipboard-3c34bc32-b068-4afe-9b69-6886c754bc39.png",
+      "size": 11600,
+      "git_blob_sha": "9672abdd2f34bb216695624af8de630e01dccc87",
+      "sha256": "ab25abe13c36895188877e7f0b4df7d4194ed1f6e9a606c966237799dce0c5c7"
+    },
+    {
+      "path": "studies/fluid-organization/references/codex-clipboard-6b32b21a-5c89-41d8-8c24-3209b41c0bfd.png",
+      "size": 32678,
+      "git_blob_sha": "28c4658932b1d6a4740889f7655acbf325bf2673",
+      "sha256": "23809f5c84e331bc4277b839f562e2cad8de98f722620e67888fdc25f5ab3f00"
+    },
+    {
+      "path": "studies/fluid-organization/references/codex-clipboard-70fe52e5-13aa-433e-99bd-34e61e535416.png",
+      "size": 113904,
+      "git_blob_sha": "dc8dfc2cd4a27d43f3746476c6693c2118268977",
+      "sha256": "fdd581a353539ec47466e4fe83197dc3d9f47c9804325f5fbf6455373ebac840"
+    },
+    {
+      "path": "studies/fluid-organization/references/codex-clipboard-924b3953-78ea-4911-8beb-98767651764a.png",
+      "size": 36060,
+      "git_blob_sha": "b92d44ca4ba779862b563f2760618ce8bf34962a",
+      "sha256": "ff5ed91a258eee51a5f5e04096b03ea8882f8b9e471760877fd93fa7969ba2fc"
+    },
+    {
+      "path": "studies/fluid-organization/references/codex-clipboard-b67a9691-edf7-4b9a-9c78-0c295f8acd6d.png",
+      "size": 34316,
+      "git_blob_sha": "09dcdf0b6100c747bde7973284357d535cc40926",
+      "sha256": "5ecc4320b7139d7d226738484699d7f575613a92ebfb2faf2c711554d75cf1dd"
+    },
+    {
+      "path": "studies/fluid-organization/references/codex-clipboard-e07ce763-4b61-4c10-b4e8-9e7ec3176db1.png",
+      "size": 11477,
+      "git_blob_sha": "15f9798187b031d8d4ae2810ef10d68903cc45d0",
+      "sha256": "e74a5ce6c80aa594da8dbf476eccddd669cef7241f92b1aaaa3e2636b96639dc"
+    },
+    {
+      "path": "studies/fluid-organization/references/local_bifurcation_reference.png",
+      "size": 64142,
+      "git_blob_sha": "f2c2bbb22e643d7189803d7b696738ba544b3b42",
+      "sha256": "e97a0859be5e6a7f34e80290b498d39f5b1d269dd75cd534429e55f47629cf08"
+    },
+    {
+      "path": "studies/fluid-organization/references/parametric_reference.png",
+      "size": 108336,
+      "git_blob_sha": "7966c3aec87e8fef224a7afa77ba6c29925ad8e3",
+      "sha256": "855cc33758764f6183c1f5ab6599cf72a978c45cad52076cd43b7520a297bd11"
+    },
+    {
+      "path": "studies/fluid-organization/references/pendulum_reference.png",
+      "size": 25418,
+      "git_blob_sha": "aef0b8c5211766b6dad4ed300592116e36dbe070",
+      "sha256": "1dbb740955f6f00321b0df85815f55f1d4cbaf461bf9fc508b55774153163999"
+    },
+    {
+      "path": "studies/fluid-organization/references/relaxation_reference.png",
+      "size": 93261,
+      "git_blob_sha": "a1ab86ebd99057fc15670baa9fa65c18b25df1e6",
+      "sha256": "d3c85e84cd2cdab87660497006fb510432a7777ae4b398f93ed7e53d655f6a8b"
+    },
+    {
+      "path": "studies/fluid-organization/references/saddle_node_reference.png",
+      "size": 91769,
+      "git_blob_sha": "40d92bcd699467ae25d1d1409fdd09fd442680ab",
+      "sha256": "237607b4a70e0bcd1f09903ec09b2f156cc7f89e6b38727cfc7dc35334d39ec9"
+    },
+    {
+      "path": "studies/fluid-organization/references/weak_nonlinear_reference.png",
+      "size": 64366,
+      "git_blob_sha": "3d0acfdb983abeeff8387d3bca3ea7ee4ab9a483",
+      "sha256": "210b0a3301e034392418cc174b89f4b50616c2e99f4b4e1d95a1030a0ed16de0"
+    },
+    {
+      "path": "studies/fluid-organization/report.html",
+      "size": 4133765,
+      "git_blob_sha": "d2d5c9b0d66205c725e21c34944cf4d3435efbb4",
+      "sha256": "338611ac2e51901d035fab057884d52b5562583c092eb9e1335977103f66728b"
+    },
+    {
+      "path": "studies/fluid-organization/results/all_runs.csv",
+      "size": 40001,
+      "git_blob_sha": "883f753dab2942e778878b529a6eaa0d72c77133",
+      "sha256": "d4420863b6358680eb15bca11d04e348fc976f7171ec8575cc45e3dd515c4db0"
+    },
+    {
+      "path": "studies/fluid-organization/results/bifurcations.json",
+      "size": 2405,
+      "git_blob_sha": "aabd2cb60311953635c851168984abaaad3d66fa",
+      "sha256": "ea8ef791b0349ad786a29531cc3915c23a39f98b4b7ed5c6067a2dca1b75ef54"
+    },
+    {
+      "path": "studies/fluid-organization/results/dynamics.json",
+      "size": 4504,
+      "git_blob_sha": "e1819da8e7dc640c2e6b34d64268436a47b0a628",
+      "sha256": "604c05525073ee29b74d694d5d3ca364b90c9d47c416c652204ede54e4cc6c1a"
+    },
+    {
+      "path": "studies/fluid-organization/results/environment.json",
+      "size": 143,
+      "git_blob_sha": "f2d26e0d28324cc796ce438c57924b7ac1042062",
+      "sha256": "f902a0e9a1875662f6e61f972bb7f38c0f7ea148fe73a651022771a63bc73db1"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/bifurcations.png",
+      "size": 158038,
+      "git_blob_sha": "83a44c74ff68db3bddafd5bd7a7c80cd384d3a62",
+      "sha256": "d2b57ff741a11be67fa38a9b476e7ae6304c18a91713073dcb8c27bf6219ff59"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/bifurcations.svg",
+      "size": 98213,
+      "git_blob_sha": "82fe48a7bcb112d112189ffd3a1b1fad7eb658a6",
+      "sha256": "027309a73a55f2f7b33c999c4d17ab66e1180ce7485bb6187d3d520cb64c8c2f"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/disturbance_response.png",
+      "size": 362911,
+      "git_blob_sha": "76bed7257ee98ebe6fc96798ab9c6b59b67de249",
+      "sha256": "44d77969a8a3e32e5b9218bd4fa9b2db61dd1f944e5a859cf7f9e74400571c05"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/disturbance_response.svg",
+      "size": 133393,
+      "git_blob_sha": "d483ee6034eef4189cd230faba526ec3d27f7a5a",
+      "sha256": "b83b84049868c68f1d272088332523c0e44283a18c1e5af12ffaa402dac70712"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/energy_budget.png",
+      "size": 148182,
+      "git_blob_sha": "4c62f3d753339af88c8692aef5e95594ff39556b",
+      "sha256": "2557c31ad58195acbace0bd3addb5b67b880ec0bbaceccb34d58b0411cc95030"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/energy_budget.svg",
+      "size": 85950,
+      "git_blob_sha": "e19bbd5bcdeb568aa7fb07cd673b5104b0edee18",
+      "sha256": "363031c57227475d576da088dd791159589683c4727c2ebe9d2f626af87751b2"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/history_prediction.png",
+      "size": 102362,
+      "git_blob_sha": "11ab5d5cb11fdd21ca2c51a935c05efc22b8de08",
+      "sha256": "c15724108219d96154b24bf52ea9cdc6848111a78791338f110db5c7374b889a"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/history_prediction.svg",
+      "size": 77988,
+      "git_blob_sha": "d8e77dddf8c93e7d0993cce2c11bd67e408c3267",
+      "sha256": "de3a9ca396f55d00abe74b1da9352ec2e967c358f6d684bef278e0ff9370f224"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/linear_dynamics.png",
+      "size": 395203,
+      "git_blob_sha": "4985ef10467eb86538254543f8d63b8f81b023df",
+      "sha256": "021eb362417cb6c84099b186c681c2af5176edb0926e0cbb7e2469d74fcd951b"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/linear_dynamics.svg",
+      "size": 188312,
+      "git_blob_sha": "857f54c13947f759dafd571798781918e5b35b4b",
+      "sha256": "6e18cc3d2e0072bafb7ac5fdfb24d614642ffecaceac794090d2ac8d37ff2975"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/numerical_controls.png",
+      "size": 105439,
+      "git_blob_sha": "5346f9997e9531bac4cbf904742a64945c273f6f",
+      "sha256": "0e631d4c41bed849a76e716d3ded1aa010662c42c663c45fbc384e0abb88d87c"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/numerical_controls.svg",
+      "size": 86779,
+      "git_blob_sha": "ddcb3065db1d97422207ee4a8a02f910b0ccec90",
+      "sha256": "414d8404e04d57b98315919368fc4608daca6cf957ecec4013b65a39eb0ae3d4"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/parametric_swing.png",
+      "size": 162630,
+      "git_blob_sha": "939a1d44eb2eb467852e346c7efd3c790ed5c4e4",
+      "sha256": "ce9c4ae1819f932065b50a9cde0a4688748525dbc19a6beb3d5444c74b568a7e"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/parametric_swing.svg",
+      "size": 123580,
+      "git_blob_sha": "0b543553f4fb8d284284de547f63b9fc0e4b1202",
+      "sha256": "e5320e91f52d0055ebcab248f13155d0e045da986867c1f0d0f27739a5ee7d6e"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/particles.png",
+      "size": 193472,
+      "git_blob_sha": "909c4cf6490ae42add1248324d075ad6c9a4a979",
+      "sha256": "e2035523af6551e3b9e0226521cabeebea4e93b0a798e61c1ce3c24d32bdcfbe"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/particles.svg",
+      "size": 81228,
+      "git_blob_sha": "e7efaa581e49b5967dfe4bc3377d15c0a612555c",
+      "sha256": "8ee7b7e6346a6ef55732485957bfa3f431194e944e137034282c2529fe1ab2cb"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/pendulum.png",
+      "size": 208068,
+      "git_blob_sha": "b0749db46fb23263b74aa10bc31cc7e5e64ce4a8",
+      "sha256": "e3edb52b8686a75b6b845d3b8686efab85466e8855366a822ade3c55e3f7283d"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/pendulum.svg",
+      "size": 145083,
+      "git_blob_sha": "eb05ff703aa29e511de44a35d862d7845c5b812d",
+      "sha256": "926b41c44f1d1191f9931d3a5946e49d131355374d4bec0be25d9964da20c189"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/phase_locking.png",
+      "size": 288081,
+      "git_blob_sha": "0a1451fb87a7e5b1a042c76c9d143d7d1351173a",
+      "sha256": "d2c05e92a44b61b6f6e2c94286c8c32f80ad2d353eade9cba151e76a9d2952ba"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/phase_locking.svg",
+      "size": 137062,
+      "git_blob_sha": "ac58c7838b0e3692b30dda3824e581becc90c7d5",
+      "sha256": "78294a6a34ad60fd4f9136b9d9f6479bb919d0eb676eb9b44c5cf69cc4c7d9b9"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/phase_portraits.png",
+      "size": 238338,
+      "git_blob_sha": "40c3e8de6eeb9f7d53619c9c512228e48d8a527f",
+      "sha256": "8d00e4c419cce7c021a3bb5d2cb8752b31b753c79f9ce0bb02cc4e7aed0391f6"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/phase_portraits.svg",
+      "size": 258710,
+      "git_blob_sha": "dd7d660bee0e6e2cd58f71ac3428957cf96ced83",
+      "sha256": "ab0ae587f40a4cb12ee579c25a6cd5e6cfb3b45434f6683195c5774d44145b30"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/relaxation.png",
+      "size": 206069,
+      "git_blob_sha": "851e52f3c721aa842cbe8607ccb77f359f920890",
+      "sha256": "fbe7670ba07ffad933cbb6bc4fc5ba44369685646a81eb82454e7ed54803faab"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/relaxation.svg",
+      "size": 111415,
+      "git_blob_sha": "01d6fc517632d19e5809af6019ee8bba066cf55b",
+      "sha256": "64b59fd625d524841d77f4281310f286903bd54e17c4cc7d94ea451916d34d88"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/triangular_response.png",
+      "size": 199717,
+      "git_blob_sha": "653b234895aa2e2f515f46eeb3472b3974b141ab",
+      "sha256": "0644134c45c8b6e85309b888dd06f81e9306129da1dbe81ee6b1005136cb2cd8"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/triangular_response.svg",
+      "size": 96850,
+      "git_blob_sha": "6988e4022b6dd4a5a378bf51788dfedcf8c24aef",
+      "sha256": "5e1cd683aaad42b9f1b48f21e26b9ca3bb1d7494cc0104fc067ed10bdc666c99"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/weak_nonlinear.png",
+      "size": 292854,
+      "git_blob_sha": "5b5a77ceeada4f96ff9abded1e4eb3e96d29c01b",
+      "sha256": "11d625e5ffcbfa685d3204519c2609c40c7a1f3307c2396e2529f59c765421f9"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/weak_nonlinear.svg",
+      "size": 227961,
+      "git_blob_sha": "b70f971a093b726a1b7fa7b9c9ecd575128dbf7b",
+      "sha256": "afb776c656e9ee4fcf6be7dbd422e4fc18587c834160df62dbf6cceb78b566a1"
+    },
+    {
+      "path": "studies/fluid-organization/results/numerical_controls.csv",
+      "size": 1973,
+      "git_blob_sha": "542c447b517ce2ddf8d8c246508057635da07206",
+      "sha256": "3bd6f4c5f87d0b51c3d8b454f2c06ba4cba24791153d61401e04bd52286ff0ee"
+    },
+    {
+      "path": "studies/fluid-organization/results/parameter_regimes.csv",
+      "size": 5912,
+      "git_blob_sha": "4c1ec3b99239841cce92d1954aad8f7497ad9718",
+      "sha256": "3bd968c4fac0284ea99fe1bf5024e213af8f35e8169df41da5e39be7e0ea39b0"
+    },
+    {
+      "path": "studies/fluid-organization/results/parametric.json",
+      "size": 4021,
+      "git_blob_sha": "bf463a0ac158b2a786a86b18890cdb67fa6a1356",
+      "sha256": "89ee534010cc4f131cb72d5a48235d72e5393d6c2bc00933d364ac4ac01c8a15"
+    },
+    {
+      "path": "studies/fluid-organization/results/particle_controls.csv",
+      "size": 225,
+      "git_blob_sha": "4fcaf814eed65615a8e59946cdb705531ecae2ec",
+      "sha256": "4b0b99ffb9a7b1cf16b96ae8d903844cb66e9b5ae9d2555b710dd5a8e0084e84"
+    },
+    {
+      "path": "studies/fluid-organization/results/particle_results.csv",
+      "size": 19230,
+      "git_blob_sha": "7a825bd35e027d29797d0f9c29ca23c2dbe64637",
+      "sha256": "352467068b96fd96d4ae02280558f71bbd57d02ee82c2bcac867df7f3fa86b80"
+    },
+    {
+      "path": "studies/fluid-organization/results/pendulum.json",
+      "size": 3943,
+      "git_blob_sha": "f09591cec782b050e32d6b2fbe464312a334707b",
+      "sha256": "eb724383a4544d5aa08b6e3485a277968a0d8789c937afc4db804dccd8664fb3"
+    },
+    {
+      "path": "studies/fluid-organization/results/phase_locking.json",
+      "size": 3684,
+      "git_blob_sha": "68e6b7db1319c77805ef8572232f6e3d94709ee0",
+      "sha256": "13e91e0c023a8d29ec59aa64000d7850c34e63340890422fbfb00d914a070c97"
+    },
+    {
+      "path": "studies/fluid-organization/results/prediction.json",
+      "size": 7429,
+      "git_blob_sha": "faa38eaf8a944b47227b9bb429e1a8e8aba656c5",
+      "sha256": "0bc56d02005d730c803d946c7e212d1b072a48f914fb3831a568d093ce4d18e4"
+    },
+    {
+      "path": "studies/fluid-organization/results/prediction_sensitivity.json",
+      "size": 2680,
+      "git_blob_sha": "0ab7798fd1140ad1e0f47748f75bbae60aeac189",
+      "sha256": "2a4a2cee9b52d64ef7a220c160f124b0a87e3582cf4584b6eae13a739f0d32bc"
+    },
+    {
+      "path": "studies/fluid-organization/results/relaxation.json",
+      "size": 2320,
+      "git_blob_sha": "01e693c3150ffaf9c6c4c91943c8f0d62e790619",
+      "sha256": "1ecb38bf7cda68860b1368786e72a2f65cc0c44444f85a393122e4ca0013136c"
+    },
+    {
+      "path": "studies/fluid-organization/results/stress_extension.json",
+      "size": 674,
+      "git_blob_sha": "8f9a16aa89ce6d7788739811d423ba8b21ab8fa1",
+      "sha256": "db77edbff664212903d92ff93bccacd291fc4f5d17e42d13e0b8955c90697f62"
+    },
+    {
+      "path": "studies/fluid-organization/results/tests.xml",
+      "size": 2772,
+      "git_blob_sha": "04e4b658978fc50eea9bb117c1da2b35cb2c35f5",
+      "sha256": "d1f9d3be3c2ef3c0245e759826ff4cbd85a75f3de3217f6323e081ffc9cb63ec"
+    },
+    {
+      "path": "studies/fluid-organization/results/verification.json",
+      "size": 23141,
+      "git_blob_sha": "d34359c396144252a7635089b15cae1cbd404783",
+      "sha256": "3d659cd9c5d0918d22ae348e9c2f3631a1d5e2f7df2ca19d2c3578ae8efd2868"
+    },
+    {
+      "path": "studies/fluid-organization/results/weak_nonlinear.json",
+      "size": 1431,
+      "git_blob_sha": "631a5e071e3b8acf0135e90cca0532a0f9d05d5e",
+      "sha256": "4398512ced22004ca510ecb0d0b2094d79b92345cc398aa58ee75d51e49145c0"
+    },
+    {
+      "path": "studies/fluid-organization/network_reference_addendum.html",
+      "size": 12826,
+      "git_blob_sha": "9c9d30641ba61565f3d649582664d3acccc44c5d",
+      "sha256": "2a486181e34b22e02ea68d208ebbe8226ccfc9f9ce000cb24464c55df567fe95"
+    },
+    {
+      "path": "studies/fluid-organization/references/heteroclinic_network_reference.png",
+      "size": 133015,
+      "git_blob_sha": "453c061e29f66fe7819d6a4a924b92014ca2aa08",
+      "sha256": "c45cf4174c099113343276d50a18ce7db7ee632cdcf14d1767dcd9407f7f4022"
+    },
+    {
+      "path": "studies/fluid-organization/references/oscillator_network_reference.png",
+      "size": 11518,
+      "git_blob_sha": "b026420324f52957f7daed9f775d7947c0d66166",
+      "sha256": "84373774bf7b2262c2d225b274a5335ac07d4b380f4df12df81eab546d56b407"
+    },
+    {
+      "path": "studies/fluid-organization/references/sequential_learning_reference.png",
+      "size": 110273,
+      "git_blob_sha": "f117afa3f763d72df0948b1fc36800824aa61039",
+      "sha256": "cfff3ea1906500d8aa4cc5c9fcacd7bb4895951066abb307c6cb7dba414bf5fd"
+    },
+    {
+      "path": "studies/fluid-organization/references/quench_relaxation_reference.png",
+      "size": 75345,
+      "git_blob_sha": "f0c7542ccbab88b3844ef8fdf75b84976c0c6736",
+      "sha256": "ee5135d40af5429b7e68e21eb6e45d58077764fe33c3cc91de3dfd44fd6aec23"
+    },
+    {
+      "path": "studies/fluid-organization/references/heteroclinic_definition_reference.png",
+      "size": 94641,
+      "git_blob_sha": "4e6bfbf53a8fc17219fc2cf0fd003e2a23413e3e",
+      "sha256": "aa42bb85782d5a01fcf6f54cae0ced60f1e1ee1e895f82dc746b5751a45e5f8e"
+    }
+  ],
+  "note": "Study files only; repository indexes are intentionally outside this inventory. Complete original numerical snapshot restores from the checksum-verified recorded package. Reference addenda add no completed numerical experiments."
+}

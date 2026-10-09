@@ -1,6 +1,12 @@
 # Nous Volition · Streams and Rocks
 
-This repository, **Streams and Rocks**, preserves the original stream-function report and a separate social-organization experiment.
+This repository, **Streams and Rocks**, preserves the original stream-function report, physical-fluid experiments and separate social-organization studies.
+
+## Fluid Organization Under Stress
+
+**[Open the completed physical-fluid pilot](studies/fluid-organization/README.md).** It includes 93 paired fluid configurations, 7 inertial-particle configurations, 22 passing tests and the added dynamical-system controls. Marker history improves overall deformation prediction in the held-out pilot, but does not clearly improve the disturbance-specific response. Numerical failures and remaining questions are retained explicitly.
+
+The [report and plots](studies/fluid-organization/report.html) are here in Streams and Rocks. **[Runnable code and complete data live in My-Sources-Project-ALL](https://github.com/NousVolition/My-Sources-Project-ALL/tree/main/reports/fluid-organization-pilot).** This is separate from the symbolic social SIMS models below.
 
 ## SIMS: names, memory, and group boundaries
 

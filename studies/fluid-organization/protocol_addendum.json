@@ -1,0 +1,14 @@
+{
+  "reason": "User supplied phase-locking, triangular-response, circuit, linear-system and pendulum reference excerpts and requested continuation.",
+  "relation_to_primary_study": "Added after the primary fluid/prediction protocol and some completed fluid runs. No change to primary train/validation/test split or fluid results.",
+  "sinusoidal_phase_control": {"mu": [0,0.5,0.9,1,1.2,1.5], "initial_phases": 8, "time": 400, "phase_kick": 0.05},
+  "triangular_phase_control": {"mu": [0,0.5,1.4,1.8,2], "time": 12, "initial_phases": [0.2,0.25], "normalization_check": "Compare raw f, whose peak is pi/2, with equal-peak 2f/pi."},
+  "linear_controls": ["stable node", "saddle", "stable spiral", "center", "line of equilibria", "non-normal stable system with transient growth"],
+  "circuit": "Conditional identical overdamped Josephson-junction shared-load equations and algebraic tests only; no missing component values inferred.",
+  "pendulum": {"amplitudes_rad": [0.05,0.5,1,2,2.8,3.05,3.13], "cycles_each": 4, "paired_initial_angle": 2.8, "velocity_kicks": [0,0.1,0.3,0.5]},
+  "relaxation": {"model": "Representative Van der Pol in Lienard variables, F=x^3/3-x", "mu": [1,5,10,30], "paired_mu": 10, "x_kick": 0.2, "validation": "Energy input/dissipation balance, late-cycle periods, stiff Radau integration with analytic Jacobian"},
+  "weakly_nonlinear": {"epsilon": 0.1, "vdp_initial_state": [0.1,0], "vdp_end": 200, "duffing_amplitudes": [0.5,1,2], "duffing_cycles": 5, "validation": "Cycle periods, energy integral, Duffing energy conservation, leading averaging approximations labeled as such"},
+  "parametric_swing": {"epsilon": 0.1, "gamma": [-1,-0.75,-0.25,0,0.25,0.75,1], "end": 200, "initial_displacements": [0,0.001,0.01], "validation": "Floquet multipliers, unit monodromy determinant, exact rest, detuning, modulation removal and explicit forcing-work budget"},
+  "bifurcation_controls": {"saddle_node_negative_mu": [0.25,0.0625,0.015625,0.00390625], "passage_endpoints": [1,-1], "hopf_mu": [-0.2,0,0.2], "hopf_initial_radius": [0.05,0.8], "validation": "Exact finite bottleneck passage time and exact Hopf radial solution; local normal forms only"},
+  "stress_followup": {"reason": "Original fast-water seed 7000 failed the marker spatial-sensitivity screen", "n": [50,62], "reference_n": 38, "dt": 0.005, "seed": 7000, "marker_rms_screen": 0.005, "status": "Dependent numerical sensitivity, not independent validation or a change to the primary prediction protocol"}
+}

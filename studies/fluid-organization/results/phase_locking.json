@@ -1,0 +1,108 @@
+{
+  "equation": "dphi/dt = Delta - A sin(phi); mu=Delta/A, tau=A t when A>0",
+  "records": [
+    {
+      "mu": 0.0,
+      "stable_phase_rad": 0.0,
+      "linear_recovery_rate": 1.0,
+      "predicted_mean_slip_rate": 0.0,
+      "window_slip_mean": 0.0,
+      "window_slip_min": -2.5957532290777932e-14,
+      "window_slip_max": 2.5957532290777932e-14,
+      "complete_cycle_slip_rate": 0.0,
+      "max_tolerance_refinement_phase_error": 1.5463874625254448e-10
+    },
+    {
+      "mu": 0.5,
+      "stable_phase_rad": 0.5235987755982989,
+      "linear_recovery_rate": 0.8660254037844386,
+      "predicted_mean_slip_rate": 0.0,
+      "window_slip_mean": 1.0254367147077835e-11,
+      "window_slip_min": -8.295091280530186e-12,
+      "window_slip_max": 6.925043649630424e-11,
+      "complete_cycle_slip_rate": 0.0,
+      "max_tolerance_refinement_phase_error": 2.3261102377603038e-08
+    },
+    {
+      "mu": 0.9,
+      "stable_phase_rad": 1.1197695149986342,
+      "linear_recovery_rate": 0.4358898943540673,
+      "predicted_mean_slip_rate": 0.0,
+      "window_slip_mean": 2.9848110094654603e-13,
+      "window_slip_min": -6.7679772897122344e-12,
+      "window_slip_max": 2.1121993043493603e-12,
+      "complete_cycle_slip_rate": 0.0,
+      "max_tolerance_refinement_phase_error": 1.0066049549450895e-08
+    },
+    {
+      "mu": 1.0,
+      "stable_phase_rad": null,
+      "linear_recovery_rate": 0.0,
+      "predicted_mean_slip_rate": 0.0,
+      "window_slip_mean": 2.5026237019832723e-05,
+      "window_slip_min": 2.4130293271777957e-05,
+      "window_slip_max": 2.6071013511974605e-05,
+      "complete_cycle_slip_rate": 0.0,
+      "max_tolerance_refinement_phase_error": 1.0717942089399912e-09
+    },
+    {
+      "mu": 1.2,
+      "stable_phase_rad": null,
+      "linear_recovery_rate": 0.0,
+      "predicted_mean_slip_rate": 0.6633249580710799,
+      "window_slip_mean": 0.6637012646382955,
+      "window_slip_min": 0.6608326611900119,
+      "window_slip_max": 0.6699956474706732,
+      "complete_cycle_slip_rate": 0.6633250112420912,
+      "max_tolerance_refinement_phase_error": 7.768404657326755e-07
+    },
+    {
+      "mu": 1.5,
+      "stable_phase_rad": null,
+      "linear_recovery_rate": 0.0,
+      "predicted_mean_slip_rate": 1.118033988749895,
+      "window_slip_mean": 1.1201620014603335,
+      "window_slip_min": 1.1102505691302174,
+      "window_slip_max": 1.1244159565664793,
+      "complete_cycle_slip_rate": 1.1180336289885642,
+      "max_tolerance_refinement_phase_error": 4.645039552997332e-07
+    }
+  ],
+  "coupling_controls": [
+    {
+      "detuning": 1.0,
+      "A": 0.0,
+      "observed_window_drift": 1.0000000000000009,
+      "predicted_drift": 1.0
+    },
+    {
+      "detuning": 1.0,
+      "A": 0.5,
+      "observed_window_drift": 0.8669126398427585,
+      "predicted_drift": 0.8660254037844386
+    },
+    {
+      "detuning": 1.0,
+      "A": 1.0,
+      "observed_window_drift": 2.5026237019832723e-05,
+      "predicted_drift": 0.0
+    },
+    {
+      "detuning": 1.0,
+      "A": 2.0,
+      "observed_window_drift": -2.7943002772756737e-12,
+      "predicted_drift": 0.0
+    }
+  ],
+  "initial_phases": [
+    -2.7,
+    -1.9285714285714288,
+    -1.1571428571428573,
+    -0.3857142857142857,
+    0.3857142857142857,
+    1.157142857142857,
+    1.9285714285714288,
+    2.7
+  ],
+  "interpretation": "Strict |Delta|<A gives robust stable phase lock except the unstable fixed point. Equality is the nonhyperbolic saddle-node threshold, not robust locking. Above threshold phases slip with nonuniform instantaneous rate. No fluid phase was identified or fitted."
+}

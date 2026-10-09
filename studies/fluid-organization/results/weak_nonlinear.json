@@ -1,0 +1,44 @@
+{
+  "vdp": {
+    "eps": 0.1,
+    "initial_state": [
+      0.1,
+      0.0
+    ],
+    "late_min_radius": 1.9368828172662846,
+    "late_max_radius": 2.0668116032905712,
+    "late_max_abs_x": 2.00010137279377,
+    "late_period": 6.287111189154672,
+    "averaged_envelope_formula": "r(t)=2/sqrt(1+(4/r0^2-1)*exp(-eps*t)); leading-order averaging, not exact"
+  },
+  "duffing": [
+    {
+      "amplitude": 0.5,
+      "epsilon_a_squared": 0.025,
+      "integral_period": 6.225139992418638,
+      "measured_period": 6.2251399924186375,
+      "leading_frequency": 1.009375,
+      "leading_period": 6.224827548908569,
+      "max_energy_drift": 3.0531133177191805e-16
+    },
+    {
+      "amplitude": 1.0,
+      "epsilon_a_squared": 0.1,
+      "integral_period": 6.060656736957467,
+      "measured_period": 6.060656736957466,
+      "leading_frequency": 1.0375,
+      "leading_period": 6.056082223787553,
+      "max_energy_drift": 1.6653345369377348e-15
+    },
+    {
+      "amplitude": 2.0,
+      "epsilon_a_squared": 0.4,
+      "integral_period": 5.516851888104293,
+      "measured_period": 5.516851888104296,
+      "leading_frequency": 1.15,
+      "leading_period": 5.463639397547467,
+      "max_energy_drift": 2.042810365310288e-14
+    }
+  ],
+  "scope": "Autonomous scalar oscillator controls. Duffing epsilon=0.1 >0 is hardening, undamped and unforced. No chaos or fluid constitutive-law claim."
+}

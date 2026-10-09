@@ -1,0 +1,54 @@
+{
+  "model": "Representative Van der Pol / Lienard system; F=x^3/3-x. The supplied excerpt omits the preceding equation, so this explicit standard choice is not attributed as unseen source text.",
+  "records": [
+    {
+      "mu": 1.0,
+      "measured_period": 6.663286859326671,
+      "period_range_last_four": 1.1795009413617663e-12,
+      "large_mu_period": 1.6137056388801094,
+      "relative_asymptotic_period_error": 0.7578213766046423,
+      "slow_branch_time_fraction": 0.02999500083319447,
+      "max_energy_balance_absolute_residual": 9.364591324612093e-10
+    },
+    {
+      "mu": 5.0,
+      "measured_period": 11.612230667723125,
+      "period_range_last_four": 1.8189894035458565e-12,
+      "large_mu_period": 8.068528194400548,
+      "relative_asymptotic_period_error": 0.30516983125150154,
+      "slow_branch_time_fraction": 0.7915347442092985,
+      "max_energy_balance_absolute_residual": 8.569038811856444e-09
+    },
+    {
+      "mu": 10.0,
+      "measured_period": 19.07836956694083,
+      "period_range_last_four": 2.842170943040401e-14,
+      "large_mu_period": 16.137056388801096,
+      "relative_asymptotic_period_error": 0.15417004937552248,
+      "slow_branch_time_fraction": 0.9185135810698217,
+      "max_energy_balance_absolute_residual": 2.5680222393020813e-08
+    },
+    {
+      "mu": 30.0,
+      "measured_period": 50.54368648274982,
+      "period_range_last_four": 1.1368683772161603e-13,
+      "large_mu_period": 48.41116916640328,
+      "relative_asymptotic_period_error": 0.042191566637592826,
+      "slow_branch_time_fraction": 0.9805032494584236,
+      "max_energy_balance_absolute_residual": 2.69214410764107e-07
+    }
+  ],
+  "paired_mu10": {
+    "x_kick": 0.2,
+    "anchor": [
+      1.675857689573067,
+      -0.11618511215640265
+    ],
+    "final_same_time_separation": 0.0011733531804918524,
+    "final_distance_to_sampled_cycle": 4.2647249580085325e-05,
+    "last_three_mean_crossing_time_shift": -0.006136408407343197,
+    "reference_cycle_period": 19.07836956694083,
+    "reference_cycle_samples": 6001
+  },
+  "interpretation": "Separate active nonlinear oscillator. Slow recovery and rapid jumps do not by themselves diagnose weakened interaction, fluid instability or loss of energy conservation in an isolated system."
+}
