@@ -1,0 +1,13 @@
+{
+  "python": "3.12.14",
+  "platform": "Windows",
+  "automated_tests": 34,
+  "test_result": "passed",
+  "sims_rounds": 10240,
+  "first_batch_reproduction": "passed",
+  "second_batch_reproduction": "passed",
+  "figure_count": 5,
+  "figure_review": "All five plots inspected; overlapping labels repaired.",
+  "html_local_links": "verified",
+  "html_browser_preview": "Unavailable: browser policy blocks local file URLs."
+}

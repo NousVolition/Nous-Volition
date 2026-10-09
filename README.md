@@ -45,3 +45,9 @@ The maintained implementation lives in the shared workspace. The original PDF is
 [Open the resisting-position experiment](studies/one-resisting-position/README.md) for runnable simulations, saved results, assumptions, and volunteer-testing considerations. It compares a position that holds its initial color with one that actively opposes its neighbors, including ring and star networks and the difference between first and lasting agreement.
 
 The study explores human coordination through nine **SIMS**, its simulated participants, using a Streams and Rocks analogy. The experiment runs independently using Python 3.12 and no third-party dependencies.
+
+## Dynamics, fractals, and SIMS
+
+[Open the dynamics and fractals test suite](studies/dynamics-fractals-sims/README.md) for two batches of mathematical experiments and 10,240 matched SIMS runs. It covers Lorenz sensitivity, phase space, damping, numerical integration, laser thresholds, Menger-sponge and Koch-snowflake networks, cusp hysteresis, the tilted-wire bead, budworm outbreaks, pitchforks, and the rotating hoop.
+
+The package includes 34 automated tests, five original scientific figures, saved numerical results, and an [illustrated report](studies/dynamics-fractals-sims/report.html) to download and open locally. Equations, selected parameters, and links to sources are documented alongside the code.

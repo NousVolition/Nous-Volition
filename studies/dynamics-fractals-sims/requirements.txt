@@ -1,0 +1,4 @@
+# Core simulation and unittest suite require only Python 3.12.
+# These dependencies are needed only to rebuild the figures and HTML report.
+matplotlib==3.10.8
+numpy==2.3.5
