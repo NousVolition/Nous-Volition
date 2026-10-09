@@ -26,6 +26,12 @@ delayed rigidity recovery. These results describe the specified model's response
 Current Navier–Stokes math, code, papers, and project status remain organized in
 the separate project linked below.
 
+## Review across both repositories
+
+[Read the review and connections](https://github.com/NousVolition/My-Sources-Project-ALL/blob/main/REPOSITORY-REVIEW.md) for related identity/position, symmetry, persistence and prediction tests, together with unresolved work.
+
+Repository CI now runs the existing 59 dynamics/fractal, 12 social-organization and 13 recovery/entrainment unit tests, plus source syntax, JSON, local Markdown links and the three published study manifests. These checks do not rerun the full ensembles or certify the scientific interpretations.
+
 ## Start here
 
 **[Open the organized project →](https://github.com/NousVolition/My-Sources-Project-ALL/tree/main)**
