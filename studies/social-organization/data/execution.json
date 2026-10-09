@@ -1,0 +1,30 @@
+{
+  "status": "frozen before ensemble; exploratory simulation, not externally preregistered",
+  "started_utc": "2026-10-09T06:11:58.613636+00:00",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "workers": 4,
+  "task_count": 6444,
+  "source_hashes": {
+    "model.py": "fe9702bbb29e31cc3e23ec34cb139a33682bcc9331b954e142639881aeb95012",
+    "run_study.py": "aeca0af2b1d6d7187a7ff7c6f7862635eeac7cc2bc3316af20597ee32cebfc08"
+  },
+  "quick": false,
+  "primary_metrics": [
+    "choice_excess",
+    "coop_gap",
+    "window_excluded",
+    "rigid",
+    "switching"
+  ],
+  "uncertainty": "Paired seed-cluster bootstrap; collapse topology and group balance within independent seed.",
+  "discovery": "1100 through 1111",
+  "replication": "9100 through 9111",
+  "phase_rounds": "0-39 baseline, 40-79 stress (when enabled), 80-119 recovery",
+  "note": "All parameters fixed before these batches. No learned predictor, no fit to humans. Replication is independent seeds, not prospective external confirmation.",
+  "completed_utc": "2026-10-09T06:13:51.449364+00:00",
+  "elapsed_seconds": 112.68467429996235,
+  "completed_runs": 6444,
+  "leadership_assays": 144,
+  "attribution_assays": 288
+}

@@ -1,0 +1,109 @@
+{
+  "all_passed": true,
+  "checks": {
+    "frozen_source_hashes": true,
+    "complete_run_count": true,
+    "allocation_budget": true,
+    "bounded_rigidity": true,
+    "all_influence_shares_sum_to_one": true,
+    "independent_group_accounting": true,
+    "independent_reruns": true,
+    "unit_tests": true
+  },
+  "unit_tests_run": 12,
+  "reruns": [
+    {
+      "id": "00000",
+      "exact_digest": true,
+      "numeric_equal": true
+    },
+    {
+      "id": "00379",
+      "exact_digest": true,
+      "numeric_equal": true
+    },
+    {
+      "id": "00758",
+      "exact_digest": true,
+      "numeric_equal": true
+    },
+    {
+      "id": "01137",
+      "exact_digest": true,
+      "numeric_equal": true
+    },
+    {
+      "id": "01516",
+      "exact_digest": true,
+      "numeric_equal": true
+    },
+    {
+      "id": "01895",
+      "exact_digest": true,
+      "numeric_equal": true
+    },
+    {
+      "id": "02274",
+      "exact_digest": true,
+      "numeric_equal": true
+    },
+    {
+      "id": "02653",
+      "exact_digest": true,
+      "numeric_equal": true
+    },
+    {
+      "id": "03032",
+      "exact_digest": true,
+      "numeric_equal": true
+    },
+    {
+      "id": "03411",
+      "exact_digest": true,
+      "numeric_equal": true
+    },
+    {
+      "id": "03790",
+      "exact_digest": true,
+      "numeric_equal": true
+    },
+    {
+      "id": "04169",
+      "exact_digest": true,
+      "numeric_equal": true
+    },
+    {
+      "id": "04548",
+      "exact_digest": true,
+      "numeric_equal": true
+    },
+    {
+      "id": "04927",
+      "exact_digest": true,
+      "numeric_equal": true
+    },
+    {
+      "id": "05306",
+      "exact_digest": true,
+      "numeric_equal": true
+    },
+    {
+      "id": "05685",
+      "exact_digest": true,
+      "numeric_equal": true
+    },
+    {
+      "id": "06064",
+      "exact_digest": true,
+      "numeric_equal": true
+    },
+    {
+      "id": "06443",
+      "exact_digest": true,
+      "numeric_equal": true
+    }
+  ],
+  "max_group_success_accounting_error": 9.094947017729282e-13,
+  "max_opportunity_accounting_error": 1.8189894035458565e-12,
+  "scope": "Implementation and saved-result consistency; not validation against humans."
+}

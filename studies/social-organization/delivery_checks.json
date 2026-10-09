@@ -1,0 +1,20 @@
+[
+  {
+    "file": "report.html",
+    "local_links": 4,
+    "images": 6,
+    "status": "passed"
+  },
+  {
+    "file": "methods.html",
+    "local_links": 3,
+    "images": 0,
+    "status": "passed"
+  },
+  {
+    "file": "human_protocol.html",
+    "local_links": 1,
+    "images": 0,
+    "status": "passed"
+  }
+]
