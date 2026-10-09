@@ -1,0 +1,510 @@
+{
+  "provenance": "Computed mathematical examples; no new SIMS behavioral coupling.",
+  "radial": [
+    {
+      "kind": "stable",
+      "initial_radius": 0.25,
+      "final_time": 25.0,
+      "final_radius": 0.9999999996866308,
+      "terminated_before_r2": false
+    },
+    {
+      "kind": "stable",
+      "initial_radius": 1.5,
+      "final_time": 25.0,
+      "final_radius": 0.9999999996866308,
+      "terminated_before_r2": false
+    },
+    {
+      "kind": "unstable",
+      "initial_radius": 0.98,
+      "final_time": 25.0,
+      "final_radius": 0.37477918723329107,
+      "terminated_before_r2": false
+    },
+    {
+      "kind": "unstable",
+      "initial_radius": 1.02,
+      "final_time": 14.8,
+      "final_radius": 1.9974598806928738,
+      "terminated_before_r2": true
+    },
+    {
+      "kind": "half_stable",
+      "initial_radius": 0.8,
+      "final_time": 25.0,
+      "final_radius": 4.504185054996806e-11,
+      "terminated_before_r2": false
+    },
+    {
+      "kind": "half_stable",
+      "initial_radius": 1.5,
+      "final_time": 25.0,
+      "final_radius": 1.0091789461579865,
+      "terminated_before_r2": false
+    }
+  ],
+  "stable_radius_max_error": 3.1336933048464743e-10,
+  "gradient": {
+    "initial": [
+      0.5,
+      0.7
+    ],
+    "duration": 10,
+    "step": 0.01,
+    "largest_sampled_potential_increment": -0.005645677781688618,
+    "analytic_identity": "dV/dt = -sin(y)^2 - x^2*cos(y)^2"
+  },
+  "dulac": [
+    {
+      "field": "x*(2-x-y), y*(4*x-x*x-3)",
+      "weight": "1/(x*y)",
+      "weighted_divergence": "-1/y",
+      "domain": "x>0, y>0",
+      "provenance": "Reconstructed algebraically from the displayed weighted components."
+    },
+    {
+      "field": "y, -x-y+x*x+y*y",
+      "weight": "exp(-2*x)",
+      "weighted_divergence": "-exp(-2*x)",
+      "domain": "R^2",
+      "provenance": "Exact supplied equations."
+    }
+  ],
+  "unit_annulus": {
+    "inner_radius": 0.5,
+    "outer_radius": 1.5,
+    "inner_radial_rate": 0.375,
+    "outer_radial_rate": -1.875,
+    "angular_rate": 1,
+    "equilibria_in_annulus": 0
+  },
+  "missing_mu_example": {
+    "status": "not run",
+    "reason": "Figure 7.3.3 / Example 7.3.1 crop omits the vector field; awaiting equations."
+  },
+  "selkov_hopf_b_at_a_0_1": [
+    0.41999190736253605,
+    0.7896877849821275
+  ],
+  "selkov": [
+    {
+      "a": 0.1,
+      "b": 0.2,
+      "initial": [
+        0.4,
+        1.5
+      ],
+      "duration": 500,
+      "step": 0.02,
+      "equilibrium": {
+        "x": 0.2,
+        "y": 1.4285714285714286,
+        "trace": -0.5685714285714285,
+        "determinant": 0.14,
+        "stability": "attractor"
+      },
+      "endpoint": [
+        0.19999999999999876,
+        1.4285714285714148
+      ],
+      "max_step_refinement_difference": 9.985504827168295e-12,
+      "minimum_xy": 0.17465621704980544,
+      "outer_trap": {
+        "Y": 3.0,
+        "L": 4.2,
+        "top_max_ydot": -0.1,
+        "diagonal_max_xdot_plus_ydot": -1
+      },
+      "distance_to_equilibrium": 1.3823307698749303e-14
+    },
+    {
+      "a": 0.1,
+      "b": 0.5,
+      "initial": [
+        0.4,
+        1.5
+      ],
+      "duration": 500,
+      "step": 0.02,
+      "equilibrium": {
+        "x": 0.5,
+        "y": 1.4285714285714286,
+        "trace": 0.07857142857142863,
+        "determinant": 0.35,
+        "stability": "repeller"
+      },
+      "endpoint": [
+        0.2811739194969389,
+        1.4683764042624032
+      ],
+      "max_step_refinement_difference": 4.013369243795902e-08,
+      "minimum_xy": 0.27733852444451357,
+      "outer_trap": {
+        "Y": 6.0,
+        "L": 7.5,
+        "top_max_ydot": -0.1,
+        "diagonal_max_xdot_plus_ydot": -1
+      },
+      "cycle": {
+        "mean_period": 10.648652743776449,
+        "period_range": 3.732539482825814e-06,
+        "return_y_range": 1.1385679485886868e-06,
+        "last_return_y": 1.8641400114507378,
+        "x_min": 0.2773386271721005,
+        "x_max": 0.8852306139547772,
+        "measurement_start": 439.958867003845,
+        "measurement_end": 493.20213072272725,
+        "cycles_measured": 5
+      },
+      "second_initial": [
+        1.2,
+        0.3
+      ],
+      "second_cycle": {
+        "mean_period": 10.648652693106499,
+        "period_range": 5.060249463895161e-06,
+        "return_y_range": 1.5229956806805944e-06,
+        "last_return_y": 1.8641394006114687,
+        "x_min": 0.27733852608386855,
+        "x_max": 0.885230646839072,
+        "measurement_start": 444.6721823861553,
+        "measurement_end": 497.9154458516878,
+        "cycles_measured": 5
+      }
+    },
+    {
+      "a": 0.1,
+      "b": 1,
+      "initial": [
+        0.4,
+        1.5
+      ],
+      "duration": 500,
+      "step": 0.02,
+      "equilibrium": {
+        "x": 1,
+        "y": 0.9090909090909091,
+        "trace": -0.28181818181818197,
+        "determinant": 1.1,
+        "stability": "attractor"
+      },
+      "endpoint": [
+        1.0000000000000089,
+        0.9090909090908994
+      ],
+      "max_step_refinement_difference": 2.4644885111533516e-08,
+      "minimum_xy": 0.3471655302879275,
+      "outer_trap": {
+        "Y": 11.0,
+        "L": 13.0,
+        "top_max_ydot": -0.1,
+        "diagonal_max_xdot_plus_ydot": -1
+      },
+      "distance_to_equilibrium": 1.3121784120923874e-14
+    }
+  ],
+  "van_der_pol": [
+    {
+      "mu": 0.1,
+      "initial_x_velocity": [
+        0.1,
+        0
+      ],
+      "duration": 600,
+      "step": 0.02,
+      "cycle": {
+        "mean_period": 6.287111493101247,
+        "period_range": 1.6568122873650282e-06,
+        "return_y_range": 2.1988919489679404e-05,
+        "last_return_y": 2.0017675730403814,
+        "x_min": -2.0001039748240337,
+        "x_max": 2.000103433373067,
+        "measurement_start": 564.2247481188322,
+        "measurement_end": 595.6603055843384,
+        "cycles_measured": 5
+      },
+      "coarse_cycle": {
+        "mean_period": 6.287111923768362,
+        "period_range": 7.391929557343246e-06,
+        "return_y_range": 9.045871476986989e-05,
+        "last_return_y": 2.001764477469841,
+        "x_min": -2.0001017876199634,
+        "x_max": 2.0001034349347764,
+        "measurement_start": 564.2247466236158,
+        "measurement_end": 595.6603062424576,
+        "cycles_measured": 5
+      },
+      "second_initial_x_velocity": [
+        3,
+        1
+      ],
+      "second_cycle": {
+        "mean_period": 6.287111264511532,
+        "period_range": 8.812947271508165e-06,
+        "return_y_range": 9.403514469763508e-05,
+        "last_return_y": 2.001673325390314,
+        "x_min": -2.0001036036695212,
+        "x_max": 2.0001014027539052,
+        "measurement_start": 564.7927226435838,
+        "measurement_end": 596.2282789661415,
+        "cycles_measured": 5
+      },
+      "max_step_refinement_difference": 1.7694747983707324e-06,
+      "large_mu_period_leading_term": null
+    },
+    {
+      "mu": 1,
+      "initial_x_velocity": [
+        2,
+        0
+      ],
+      "duration": 240,
+      "step": 0.02,
+      "cycle": {
+        "mean_period": 6.663286824615949,
+        "period_range": 1.1260787175615405e-05,
+        "return_y_range": 1.2352000732906987e-05,
+        "last_return_y": 2.172697896165782,
+        "x_min": -2.008617212559485,
+        "x_max": 2.0086198612824573,
+        "measurement_start": 205.39174915442,
+        "measurement_end": 238.70818327749976,
+        "cycles_measured": 5
+      },
+      "coarse_cycle": {
+        "mean_period": 6.6632870487459055,
+        "period_range": 4.4124796545474965e-05,
+        "return_y_range": 7.470281450583371e-05,
+        "last_return_y": 2.172607417912601,
+        "x_min": -2.008616593707008,
+        "x_max": 2.0086198708986127,
+        "measurement_start": 205.3917118258132,
+        "measurement_end": 238.70814706954272,
+        "cycles_measured": 5
+      },
+      "second_initial_x_velocity": [
+        3,
+        1
+      ],
+      "second_cycle": {
+        "mean_period": 6.66328156442583,
+        "period_range": 4.300027424619657e-05,
+        "return_y_range": 0.00010543584306166309,
+        "last_return_y": 2.1726543993473766,
+        "x_min": -2.0086198692015342,
+        "x_max": 2.00861774055168,
+        "measurement_start": 201.06013988300683,
+        "measurement_end": 234.37654770513598,
+        "cycles_measured": 5
+      },
+      "max_step_refinement_difference": 2.3329892177497726e-05,
+      "large_mu_period_leading_term": null
+    },
+    {
+      "mu": 10,
+      "initial_x_velocity": [
+        2,
+        0
+      ],
+      "duration": 400,
+      "step": 0.004,
+      "cycle": {
+        "mean_period": 19.078369835514184,
+        "period_range": 4.655817747334368e-06,
+        "return_y_range": 3.3229506639642636e-06,
+        "last_return_y": 7.5528085143234955,
+        "x_min": -2.014285341287482,
+        "x_max": 2.014285312445289,
+        "measurement_start": 285.6426068260802,
+        "measurement_end": 381.03445600365114,
+        "cycles_measured": 5
+      },
+      "coarse_cycle": {
+        "mean_period": 19.078371408248017,
+        "period_range": 3.368285308624763e-05,
+        "return_y_range": 2.033621118169293e-05,
+        "last_return_y": 7.552803119458518,
+        "x_min": -2.0142853768201077,
+        "x_max": 2.014285345485309,
+        "measurement_start": 285.64262023286506,
+        "measurement_end": 381.03447727410514,
+        "cycles_measured": 5
+      },
+      "second_initial_x_velocity": [
+        3,
+        1
+      ],
+      "second_cycle": {
+        "mean_period": 19.07837166018455,
+        "period_range": 3.367034037182748e-05,
+        "return_y_range": 1.8508302259689913e-05,
+        "last_return_y": 7.552793160252169,
+        "x_min": -2.014285408784612,
+        "x_max": 2.014285397849977,
+        "measurement_start": 287.83373357576426,
+        "measurement_end": 383.225591876687,
+        "cycles_measured": 5
+      },
+      "max_step_refinement_difference": 0.0058577652575677154,
+      "large_mu_period_leading_term": 16.137056388801096
+    }
+  ],
+  "duffing": [
+    {
+      "epsilon": 0.1,
+      "initial_amplitude": 0.5,
+      "duration": 100,
+      "step": 0.02,
+      "cycle": {
+        "mean_period": 6.225140020743896,
+        "period_range": 3.1488866625295486e-07,
+        "return_y_range": 2.3817029741746154e-05,
+        "last_return_y": 0.5030942539363252,
+        "x_min": -0.4999999036736243,
+        "x_max": 0.49999927587395926,
+        "measurement_start": 66.92025503064902,
+        "measurement_end": 98.0459551343685,
+        "cycles_measured": 5
+      },
+      "energy_integral_period": 6.225139992418639,
+      "max_energy_drift": 5.964844729255958e-10
+    },
+    {
+      "epsilon": 0.1,
+      "initial_amplitude": 1.5,
+      "duration": 100,
+      "step": 0.02,
+      "cycle": {
+        "mean_period": 5.8144397562692545,
+        "period_range": 3.906951064891473e-07,
+        "return_y_range": 7.225888442108364e-05,
+        "last_return_y": 1.5820503741893719,
+        "x_min": -1.4999997689748636,
+        "x_max": 1.499995722113218,
+        "measurement_start": 68.31966718888819,
+        "measurement_end": 97.39186597023446,
+        "cycles_measured": 5
+      },
+      "energy_integral_period": 5.81443974821576,
+      "max_energy_drift": 1.0618751211666222e-08
+    },
+    {
+      "epsilon": 0.1,
+      "initial_amplitude": 2,
+      "duration": 100,
+      "step": 0.02,
+      "cycle": {
+        "mean_period": 5.516851939979523,
+        "period_range": 2.132287590939086e-07,
+        "return_y_range": 0.00010635125405888957,
+        "last_return_y": 2.1908185222836942,
+        "x_min": -1.99999124685856,
+        "x_max": 1.9999987934054109,
+        "measurement_start": 70.33986183064442,
+        "measurement_end": 97.92412153054204,
+        "cycles_measured": 5
+      },
+      "energy_integral_period": 5.516851888104294,
+      "max_energy_drift": 3.413874694047081e-08
+    }
+  ],
+  "averaging": {
+    "pendulum": [
+      {
+        "amplitude": 0.1,
+        "exact_integral_frequency": 0.9993750325208686,
+        "leading_frequency": 0.999375,
+        "numerical_period": 6.287114556619457,
+        "energy_integral_period": 6.28711454931048
+      },
+      {
+        "amplitude": 0.4,
+        "exact_integral_frequency": 0.9900082042903813,
+        "leading_frequency": 0.99,
+        "numerical_period": 6.346599203259032,
+        "energy_integral_period": 6.346599230137948
+      },
+      {
+        "amplitude": 0.8,
+        "exact_integral_frequency": 0.9601248189826757,
+        "leading_frequency": 0.96,
+        "numerical_period": 6.544133832250431,
+        "energy_integral_period": 6.544133828179854
+      }
+    ],
+    "cubic_velocity_damping": [
+      {
+        "epsilon": 0.1,
+        "amplitude": 1,
+        "duration": 50,
+        "maximum_approximation_error": 0.023583729997119662,
+        "rms_approximation_error": 0.011804898053573102,
+        "max_step_refinement_difference": 1.7798350398938948e-09,
+        "final_energy": 0.10478977570345265
+      },
+      {
+        "epsilon": 2,
+        "amplitude": 1,
+        "duration": 50,
+        "maximum_approximation_error": 0.2532844745967864,
+        "rms_approximation_error": 0.07445908856364741,
+        "max_step_refinement_difference": 4.4399496652415366e-10,
+        "final_energy": 0.006500475291328321
+      }
+    ],
+    "pumped_swing": [
+      {
+        "epsilon": 0.1,
+        "gamma": 0,
+        "initial": [
+          0.005,
+          0
+        ],
+        "duration": 160,
+        "max_absolute_angle": 0.19090450950535537,
+        "max_linearization_error": 0.003869641803186063,
+        "max_averaging_error_vs_linear": 0.0028690492759601413,
+        "max_step_refinement_difference": 7.104796870248323e-10,
+        "leading_growth_rate": 0.025
+      },
+      {
+        "epsilon": 0.1,
+        "gamma": 1,
+        "initial": [
+          0.005,
+          0
+        ],
+        "duration": 160,
+        "max_absolute_angle": 0.008641274370682574,
+        "max_linearization_error": 5.26667300615913e-06,
+        "max_averaging_error_vs_linear": 0.0011106121092125025,
+        "max_step_refinement_difference": 1.4785779608299942e-10,
+        "leading_growth_rate": 0
+      }
+    ],
+    "swing_zero_state": "Exact solution for every epsilon and gamma; a nonzero perturbation is required.",
+    "swing_leading_instability_band": "abs(gamma)<1/2, growth=epsilon*sqrt(1-4*gamma^2)/4",
+    "vdp_green_integral": "epsilon*pi*R^2*(1-R^2/4)=0; nonzero circle gives R=2"
+  },
+  "lienard_certificate": {
+    "f": "mu*(x^2-1)",
+    "g": "x",
+    "F": "mu*(x^3/3-x)",
+    "requires": "mu>0",
+    "positive_zero_of_F": 1.7320508075688772,
+    "result": "Unique stable limit cycle; all supplied hypotheses verified analytically."
+  },
+  "zero_eigenvalue_vs_hopf": {
+    "provenance": "Chosen comparison; Figure 8.1.7 equations were not supplied.",
+    "pitchfork": "xdot=mu*x-x^3, ydot=-y; origin eigenvalues mu,-1",
+    "hopf": "xdot=(mu-r^2)*x-y, ydot=x+(mu-r^2)*y; origin eigenvalues mu +/- i",
+    "positive_mu": 0.5,
+    "pitchfork_stable_x": [
+      -0.7071067811865476,
+      0.7071067811865476
+    ],
+    "hopf_stable_radius": 0.7071067811865476,
+    "hopf_period": 6.283185307179586
+  }
+}

@@ -1,6 +1,6 @@
 # Dynamics, fractals, and SIMS
 
-Can the same local choices produce different group outcomes when connections change? This study connects that human-coordination question to the dynamics in the supplied textbook images. **SIMS** are the simulated participants. The package contains two batches of mathematical experiments, a Menger-sponge/Koch-snowflake network comparison, original plots, and 34 automated tests.
+Can the same local choices produce different group outcomes when connections change? This study connects that human-coordination question to the dynamics in the supplied textbook images. **SIMS** are the simulated participants. The package contains three batches of mathematical experiments, a Menger-sponge/Koch-snowflake network comparison, nine original figures, and 59 automated tests.
 
 Open [report.html](report.html) locally for the illustrated report. Figures and numerical results are saved with the code. The images supplied in the conversation are references; the plots here are newly computed.
 
@@ -12,15 +12,17 @@ From this folder, use Python 3.12:
 python -m unittest -v
 python run_study.py --check
 python bifurcations.py --check
+python oscillations.py --check
 ```
 
-The first command checks analytic formulas, numerical accuracy, graph construction, stability, and identity/geometry invariance. The second reruns 10,240 SIMS rounds plus the first mathematical batch. The third reproduces the second batch. No third-party packages are needed for these commands.
+The first command checks analytic formulas, numerical accuracy, graph construction, stability, and identity/geometry invariance. The second reruns 10,240 SIMS rounds plus the first mathematical batch. The remaining commands reproduce the tipping-point and oscillation batches. The oscillation run also checks period convergence across step sizes and initial states. No third-party packages are needed for these commands.
 
 To regenerate the saved data and figures:
 
 ```sh
 python run_study.py
 python bifurcations.py
+python oscillations.py
 python -m pip install -r requirements.txt
 python build_report.py
 ```
@@ -90,7 +92,17 @@ With positive viscous drag b, use b x′=mg sin(θ)−k x[1−L₀/√(x²+a²)]
 
 **Improved laser.** The supplied equations are n′=G nN−κn and N′=−G nN−fN+p. We use G=κ=1, f=0.2 and positive n(0)=0.01. The off equilibrium is (0,p/f); the on equilibrium is (p/κ−f/G,κ/G), physically available above pₜₕ=κf/G=0.2. At p=0.8 the on state is (0.6,1), with eigenvalues −0.4±0.663325i: perturbations spiral inward and the integrated trajectory exhibits decaying relaxation oscillations. At threshold a zero eigenvalue means slow convergence, so the finite-time endpoint is not treated as an exact equilibrium. Rate-equation context: [MIT photonics, Lasers](https://www.ocw.mit.edu/courses/6-974-fundamentals-of-photonics-quantum-electronics-spring-2006/18f30fad63a62ef4dd894d3752b55a60_chapter7.pdf). Neither laser model contains optical phase, and both omit spontaneous-emission noise.
 
-## How the two batches connect
+## Batch 3: cycles, exclusion arguments, and nonlinear oscillators
+
+The latest screenshots are implemented in `oscillations.py`, with full equations, analytic arguments, numerical settings, and source distinctions in [OSCILLATION_METHODS.md](OSCILLATION_METHODS.md). Saved measurements are in [oscillation_results.json](oscillation_results.json).
+
+The tests cover stable/unstable/half-stable cycles; the exact supplied gradient and Dulac examples; Poincaré–Bendixson trapping; the Sel’kov glycolytic oscillator; Liénard's hypotheses for van der Pol; weak and relaxation oscillations; unforced Duffing energy families; pendulum frequency corrections; cubic velocity damping; and the parametrically pumped swing. A chosen planar pitchfork and Hopf comparison illustrates the final stability-change page.
+
+At a=0.1, b=0.5, the Sel’kov cycle has period about 10.648653, with agreement across two starting states and smaller steps. van der Pol has near-2 amplitude at μ=0.1 and slow/fast motion at μ=10. Duffing preserves a family of amplitudes. An exactly resting swing stays at rest in the deterministic model, while a small seed grows under resonant pumping. Approximation errors and finite-step differences are reported separately.
+
+One source item remains pending: the vector field for the μ-dependent annulus in Figure 7.3.3 was not supplied. It is explicitly marked as not run. Figure 8.1.7 also omits its equations; its mechanism is illustrated using labelled normal forms, without claiming to reconstruct that exact system.
+
+## How the batches connect
 
 The shared tools are state, local change rules, equilibria, sensitivity, and stability. The ODE examples test continuous dynamics; the SIMS experiment tests discrete stochastic coordination on specified graphs. We have not inserted a Lorenz trajectory, laser equation, or bead force into a SIM's decision rule. Doing so would require another behavioral assumption and an explicit experiment. Here the meaningful connection is testable: distinguish first arrival from persistence, compare alternative basins, and hold the rules fixed when changing connections.
 

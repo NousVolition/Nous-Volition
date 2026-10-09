@@ -48,6 +48,6 @@ The study explores human coordination through nine **SIMS**, its simulated parti
 
 ## Dynamics, fractals, and SIMS
 
-[Open the dynamics and fractals test suite](studies/dynamics-fractals-sims/README.md) for two batches of mathematical experiments and 10,240 matched SIMS runs. It covers Lorenz sensitivity, phase space, damping, numerical integration, laser thresholds, Menger-sponge and Koch-snowflake networks, cusp hysteresis, the tilted-wire bead, budworm outbreaks, pitchforks, and the rotating hoop.
+[Open the dynamics and fractals test suite](studies/dynamics-fractals-sims/README.md) for three batches of mathematical experiments and 10,240 matched SIMS runs. It covers Lorenz sensitivity, phase space, damping, numerical integration, laser thresholds, Menger-sponge and Koch-snowflake networks, cusp hysteresis, the tilted-wire bead, budworm outbreaks, pitchforks, the rotating hoop, limit cycles, Sel’kov oscillations, van der Pol and Duffing, and averaging tests for damping, pendulums, and a pumped swing.
 
-The package includes 34 automated tests, five original scientific figures, saved numerical results, and an [illustrated report](studies/dynamics-fractals-sims/report.html) to download and open locally. Equations, selected parameters, and links to sources are documented alongside the code.
+The package includes 59 automated tests, nine original scientific figures, saved numerical results, and an [illustrated report](studies/dynamics-fractals-sims/report.html) to download and open locally. Equations, selected parameters, and links to sources are documented alongside the code.

@@ -4,6 +4,7 @@ import os
 import json
 import math
 import html
+import unittest
 
 ROOT = Path(__file__).resolve().parent
 os.environ.setdefault('MPLCONFIGDIR',str(ROOT/'.plot-cache'))
@@ -15,6 +16,7 @@ from models import (integrate,logistic,logistic_exact,lorenz,pendulum,spring,thr
                     menger_cells,menger_graph,koch_vertices)
 from bifurcations import (cusp_roots,bead_roots,budworm,budworm_fold,
                          pitchfork_roots,hoop,full_laser)
+from oscillation_report import build_figures as build_oscillation_figures, html_section
 
 BLUE, ORANGE, TEAL, INK = '#236783','#d36c37','#348b72','#1b2935'
 plt.rcParams.update({'font.size':9,'axes.spines.top':False,'axes.spines.right':False,
@@ -221,6 +223,7 @@ def extended():
 
 
 def make_html():
+    test_count=unittest.defaultTestLoader.discover(str(ROOT),pattern='test_*.py').countTestCases()
     cases=data['sims']['cases']
     def case(network,policy='ordinary',role='baseline'):
         return next(r for r in cases if r['network']==network and r['policy']==policy and r['focal_role']==role and r['initiative']==0)
@@ -237,9 +240,9 @@ def make_html():
 <style>body{{margin:0;background:#f5f3ee;color:#1b2935;font:17px/1.65 system-ui,sans-serif}}main{{max-width:1120px;margin:auto;padding:48px 24px 80px}}h1{{font-size:clamp(36px,6vw,64px);line-height:1.08;max-width:850px;margin:20px 0}}h2{{font-size:30px;line-height:1.25;margin-top:0}}h3{{font-size:21px}}p{{max-width:950px}}a{{color:#236783}}.eyebrow{{letter-spacing:.13em;font-size:12px;text-transform:uppercase;color:#236783}}.lead{{font-size:22px;max-width:850px}}section{{background:white;margin:32px 0;padding:30px;border-radius:15px}}.cards{{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}}.card{{padding:20px;background:#e7eef0;border-radius:12px}}.big{{font-size:34px;font-weight:700;display:block}}img{{width:100%;height:auto;border-radius:5px}}figure{{margin:25px 0}}figcaption{{font-size:14px;color:#52616a}}table{{border-collapse:collapse;width:100%;font-size:14px}}th,td{{padding:10px 12px;border-bottom:1px solid #dde3e5;text-align:left}}th{{background:#edf2f3}}.scroll{{overflow:auto}}code{{background:#e9eff1;padding:3px 6px;border-radius:4px}}summary{{cursor:pointer;font-weight:650}}.equation{{font-size:20px;background:#eef3f4;padding:18px;border-radius:8px}}@media(max-width:650px){{.cards{{grid-template-columns:1fr}}section{{padding:20px}}}}@media print{{body{{background:white}}main{{padding:0}}section{{break-inside:avoid}}}}</style></head><body><main>
 <div class="eyebrow">Streams and Rocks / Research notebook</div><h1>Dynamics, fractals,<br>and SIMS</h1>
 <p class="lead">How do local rules, resistance, and the pattern of connections shape a group's path toward agreement?</p>
-<p>SIMS are the simulated participants in the coordination tests. Two sets of mathematical experiments connect your images to explicit equations, stability tests, and original plots.</p>
-<div class="cards"><div class="card"><span class="big">{data['sims']['total_rounds']:,}</span>matched SIMS runs</div><div class="card"><span class="big">34</span>automated tests passed</div><div class="card"><span class="big">2 batches</span>dynamics, geometry, and tipping points</div></div>
-<p><a href="README.md">Full methods and instructions</a> · <a href="results.json">SIMS and first-batch data</a> · <a href="bifurcation_results.json">Second-batch data</a></p>
+<p>SIMS are the simulated participants in the coordination tests. Three sets of mathematical experiments connect your images to explicit equations, stability tests, and original plots.</p>
+<div class="cards"><div class="card"><span class="big">{data['sims']['total_rounds']:,}</span>matched SIMS runs</div><div class="card"><span class="big">{test_count}</span>automated tests</div><div class="card"><span class="big">3 batches</span>dynamics, geometry, tipping, and oscillations</div></div>
+<p><a href="#oscillations">New: oscillation tests</a> · <a href="README.md">Full methods and instructions</a> · <a href="results.json">SIMS and first-batch data</a> · <a href="bifurcation_results.json">Second-batch data</a> · <a href="oscillation_results.json">Third-batch data</a></p>
 <section><h2>The first result: shape matters through connections</h2><p>The Koch boundary and a matching 48-SIMS ring produced identical outcomes. Each SIM has the same two neighbors in both drawings. The Menger network changes the contacts: ordinary agreement occurred in <strong>{case('Menger L1')['first_consensus_fraction']:.2%}</strong> of its 20-SIMS rounds, compared with <strong>{case('Ring 20')['first_consensus_fraction']:.2%}</strong> on a 20-SIMS ring.</p>
 <p>These are the main runs with no spontaneous initiative. Whole-network connectivity changes in the Menger comparison; the experiment does not isolate a uniquely fractal cause. Menger-versus-Koch would also change group size.</p>
 <figure><img src="figures/fractals.png" alt="Menger sponge, Koch snowflake, and the finite neighbor graphs used for SIMS"><figcaption>The rendered Menger level 2 has 400 cubes; SIMS trials use level 1 with 20 face-connected cubes. Koch trials use 48 boundary vertices.</figcaption></figure>
@@ -260,12 +263,13 @@ def make_html():
 <figure><img src="figures/extended.png" alt="Two-variable laser dynamics, rotating hoop rate, and three parameter-a pitchfork diagrams"><figcaption>The supplied subcritical pitchfork uses a=1. The a=−1 and a=0 cases are an explicitly chosen extension of that equation because the final crop omitted its formula.</figcaption></figure>
 <h3>The improved laser has a moving internal state</h3><p>With G=κ=1 and f=0.2, the threshold is p=0.2. At p=0.8 the solution approaches (n,N)=(0.6,1) through decaying oscillations; the equilibrium eigenvalues are −0.4 ± 0.663325i. Halving the time step changes the computed trajectory by at most {bif['two_variable_laser'][-1]['max_step_refinement_difference']:.2g} over the sampled interval. At the threshold, convergence is much slower.</p>
 <p>The rotating-hoop test finds stable angles ±π/3 for γ=2 and checks the small-angle cubic expansion. The parameter-a extension compares x′=r x+a x³−x⁵ at a=−1,0,1. All choices and equations are recorded in the <a href="README.md">methods</a>.</p></section>
-<section><h2>What connects these tests?</h2><p>Each system has a state, a rule for changing it, and questions about where it settles. For SIMS, the practical lesson is to measure both agreement and its stability, and to distinguish a changed drawing from changed contacts.</p><p>The continuous equations are independent mathematical experiments. They have not been inserted into SIMS decision rules. A future coupling would need a stated behavioral assumption. The current results concern the models and parameter choices tested here.</p>
-<h3>Reproduce this notebook</h3><p><code>python -m unittest -v</code><br><code>python run_study.py --check</code><br><code>python bifurcations.py --check</code></p><p>Python 3.12; no third-party dependencies for the simulations or tests. Plotting dependencies are pinned in <a href="requirements.txt">requirements.txt</a>. Read <a href="README.md">the methods</a> for limitations, sources, and the optional volunteer extension.</p></section>
+{html_section()}
+<section><h2>What connects these tests?</h2><p>Each system has a state, a rule for changing it, and questions about where it settles. For SIMS, the practical lesson is to measure both agreement and its stability, and to distinguish a changed drawing from changed contacts.</p><p>The continuous equations are independent mathematical experiments. A future coupling to SIMS decision rules would need a stated behavioral assumption. Repeated switching could decay, persist, or depend on initial conditions; these are distinct outcomes to measure. The current results concern the models and parameter choices tested here.</p>
+<h3>Reproduce this notebook</h3><p><code>python -m unittest -v</code><br><code>python run_study.py --check</code><br><code>python bifurcations.py --check</code><br><code>python oscillations.py --check</code></p><p>Python 3.12; no third-party dependencies for the simulations or tests. Plotting dependencies are pinned in <a href="requirements.txt">requirements.txt</a>. Read <a href="README.md">the methods</a> for limitations, sources, and the optional volunteer extension.</p></section>
 </main></body></html>'''
     (ROOT/'report.html').write_text(document,encoding='utf-8',newline='\n')
 
 
 if __name__=='__main__':
-    dynamics();fractals();coordination();tipping();extended();make_html()
-    print('Built five original figures and report.html')
+    dynamics();fractals();coordination();tipping();extended();build_oscillation_figures();make_html()
+    print('Built nine original figures and report.html')
