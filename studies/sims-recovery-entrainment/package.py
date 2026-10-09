@@ -24,13 +24,13 @@ def main():
             u=urlsplit(link)
             if not u.scheme and u.path:assert (root/unquote(u.path)).is_file(),link
         checks.append(dict(file=filename,links=len(parser.links),embedded_figures=parser.images,status='passed'))
-    for name in ('pendulum','index_bistability','structural','index_exercises','weak_oscillators','averaging'):
+    for name in ('pendulum','index_bistability','structural','index_exercises','weak_oscillators','averaging','transient_memory'):
         record=json.loads((root/'data'/f'{name}.json').read_text())
         assert all(record['checks'].values()),name
     assert json.loads((root/'verification.json').read_text())['all_passed']
     for p in (root/'data').glob('*_protocol.json'):
         record=json.loads(p.read_text());name={'pendulum_protocol.json':'pendulum.py','index_bistability_protocol.json':'index_and_bistability.py',
-          'structural_protocol.json':'structural_models.py','index_exercises_protocol.json':'index_exercises.py','weak_oscillators_protocol.json':'weak_oscillators.py','averaging_protocol.json':'averaging.py'}[p.name]
+          'structural_protocol.json':'structural_models.py','index_exercises_protocol.json':'index_exercises.py','weak_oscillators_protocol.json':'weak_oscillators.py','averaging_protocol.json':'averaging.py','transient_memory_protocol.json':'transient_memory.py'}[p.name]
         assert hashlib.sha256((root/name).read_bytes()).hexdigest()==record['source_sha256'],name
     (root/'delivery_checks.json').write_text(json.dumps(checks,indent=2))
     files=sorted(p for p in root.rglob('*') if p.is_file() and '__pycache__' not in p.parts and p.name!='manifest_sha256.json' and not any(s.startswith('reproduced') for s in p.relative_to(root).parts))

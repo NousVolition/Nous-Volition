@@ -1,6 +1,7 @@
 """Build two offline reading artifacts from executed results and worked derivations."""
 import base64,html,json
 from pathlib import Path
+from transient_report import section as transient_section
 
 STYLE='''body{margin:0;background:#eef2f3;color:#23353e;font:17px/1.65 system-ui,Segoe UI,sans-serif}main{max-width:1050px;margin:auto;background:white;padding:42px 38px}h1{font-size:42px;line-height:1.12}h2{font-size:28px;line-height:1.3;margin-top:48px;color:#176977}h3{font-size:21px;margin-top:30px}p{max-width:960px}.eyebrow{letter-spacing:.12em;font-size:13px;color:#176977;text-transform:uppercase;font-weight:700}.lead{font-size:22px}.note{border-left:4px solid #198291;background:#edf6f5;padding:16px 22px}.equation{font:19px/1.7 Cambria,Georgia,serif;background:#f1f5f6;padding:14px 20px;overflow:auto}table{border-collapse:collapse;width:100%;font-size:15px;margin:22px 0}th,td{padding:10px;border-bottom:1px solid #d8e1e4;text-align:left;vertical-align:top}th{background:#edf4f5}a{color:#176977}figure{margin:34px 0}img{max-width:100%;height:auto}figcaption{font-size:14px;color:#587078}pre{padding:18px;background:#f1f5f6;overflow:auto}code{font-size:14px}nav{font-size:15px}footer{border-top:1px solid #ddd;margin-top:40px;padding-top:15px;font-size:14px}details{padding:15px;border:1px solid #d8e1e4;margin:20px 0}summary{font-weight:bold;cursor:pointer}@media(max-width:650px){main{padding:24px 18px}h1{font-size:34px}table{font-size:13px}}@media print{main{padding:0}figure{break-inside:avoid}}'''
 
@@ -27,6 +28,7 @@ def main():
 <nav><a href="worked_models.html">Worked equations and model atlas</a> · <a href="README.md">Reproduction guide</a> · <a href="data/protocol.json">Frozen main design</a> · <a href="verification.json">Verification</a></nav>
 <p class="note">These are two distinct SIMS models: the original cooperation-and-memory model, and a new phase-oscillator model. The supplied firefly, Josephson, pendulum, and other equations are analyzed as mathematical models. Shared mathematical structures do not establish that social groups, water, electrical devices, or molecules obey one common physical law.</p>
 <h2>What actually ran</h2>
+<p>A later screenshot-driven addendum adds 528 scheduled six-mode trajectories and two figures. It separates starting-state forgetting from stored-input effects, and explains the supplied heteroclinic-network, noise, and learning passages. <a href="worked_models.html#transient-memory">Read the new switching and memory section</a>. Exact reproduction of the paper's nine-state network and learning/noise mechanisms remains proposed.</p>
 <table><tr><th>Experiment</th><th>Executed scope</th></tr>
 <tr><td>Long recovery and repeated stress</td><td>{e['recovery_runs']:,} matched trajectories; 60 SIMS; 480 rounds; 24 fresh seeds; ring/random/hub networks; equal/unequal group sizes; memory on/off; four stress schedules.</td></tr>
 <tr><td>Signal placement</td><td>{e['network_runs']} trajectories; 30 oscillator SIMS; the same 24 seed identifiers; four signal placements; two mappings exchange selected occupants and their intrinsic frequencies.</td></tr>
@@ -56,7 +58,7 @@ def main():
 <p>One circuit value near the critical point was strongly sensitive to settling time: at β=10 and normalized current 1, mean voltage changed from 0.471 to 0.995. We preserve both outputs. The later fixed-bias diagnostic separates initial-state dependence from timestep error; no precise bifurcation location is inferred from that single finite-window value.</p>
 <footer>The original six-group results remain in <a href="https://github.com/NousVolition/Nous-Volition/tree/main/studies/social-organization">social-organization</a>. Source material for the new mathematical examples is the user-supplied page extracts; the atlas identifies the visible figures and exercises. The cropped heteroclinic question remains pending its missing equations.</footer>'''
     Path('report.html').write_text(page('SIMS: recovery, shared rhythms, and arrangement',body),encoding='utf-8')
-    atlas=ATLAS
+    atlas=ATLAS.replace('<h2>SIMS oscillator assumptions</h2>',transient_section(figure)+'<h2>SIMS oscillator assumptions</h2>')
     for name,caption in CAPTIONS.items():atlas=atlas.replace('{{'+name+'}}',figure(name,caption))
     Path('worked_models.html').write_text(page('Worked models: locking, energy, topology, and populations',atlas),encoding='utf-8')
     print('Built report.html and worked_models.html')

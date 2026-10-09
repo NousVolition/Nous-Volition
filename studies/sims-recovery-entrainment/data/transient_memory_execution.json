@@ -1,0 +1,7 @@
+{
+  "first_run": "Calculation completed; plotting failed because a scale argument was passed to Axes.set.",
+  "repair": "Plot formatting only; solver, parameters, seeds, metrics, and tests unchanged.",
+  "initial_source_sha256": "843c70a268fbb5b5ca0e63a0149afad74cef949e8671add687f29772753e722a",
+  "final_source_sha256": "ec3e1bda3bde74f1bd43e153980b1a4370da85f4080ba44ba30106d265d95674",
+  "repeated_arrays_exactly_equal": true
+}

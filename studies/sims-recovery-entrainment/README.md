@@ -20,6 +20,38 @@ locally; their figures are embedded and work offline. GitHub displays HTML sourc
   cubic velocity damping, pendulum averaging, and parametric swing instability.
 - 13 main unit tests; 12 exact recovery reruns; matched-prefix, numerical refinement,
   invariant, eigenvalue, and winding checks. Records are included.
+- A later six-mode switching/input-history addendum: 528 scheduled trajectories
+  (480 distinct full-state cases, plus 48 planned duplicates), 24 new seeds,
+  44 half-step repeats, nine numerical checks, and two additional figures.
+
+## Temporary states, switching routes, and memory
+
+[Read the new atlas section](worked_models.html#transient-memory). It identifies
+the supplied framework paragraph and Figures 2 and 5 as excerpts from
+[Meyer-Ortmanns (2023)](https://www.frontiersin.org/journals/network-physiology/articles/10.3389/fnetp.2023.1276401/full).
+The nine-state network in those figures is explained, not reproduced. The new
+six-mode example explicitly builds a successor order into inhibitory connections.
+Reversing those connections reverses the detected order in both seed batches.
+
+The replication mean separation of different starting activities at time 20 was
+4.64e-10 under a sustained shared cue, versus 0.643 without the cue. Separate
+input histories changed subsequent activity when a fading input trace fed back
+into the dynamics; disconnecting that trace eliminated the difference exactly.
+This is a mechanism demonstration, not evidence of learned recall or a calibrated
+brain model. Dissipation alone does not imply starting-state independence.
+
+The new outputs are `data/transient_memory_protocol.json`,
+`data/transient_memory.json`, and `data/transient_memory_trajectories.npz`.
+To rerun only this addendum without overwriting delivered results:
+
+```sh
+python transient_memory.py --out ../../reproduced-transient-memory
+```
+
+An initial execution completed the calculations but failed while formatting a
+plot. Only plotting code was repaired; the final run used the identical design
+and reproduced the arrays exactly. `data/transient_memory_execution.json` records
+that comparison. Both batches are exploratory; no outcomes were used for fitting.
 
 ## Findings
 
