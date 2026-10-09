@@ -1,14 +1,14 @@
 [
   {
     "file": "report.html",
-    "links": 6,
+    "links": 7,
     "embedded_figures": 3,
     "status": "passed"
   },
   {
     "file": "worked_models.html",
-    "links": 8,
-    "embedded_figures": 14,
+    "links": 17,
+    "embedded_figures": 16,
     "status": "passed"
   }
 ]

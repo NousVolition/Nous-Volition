@@ -46,8 +46,11 @@ The maintained implementation lives in the shared workspace. The original PDF is
 This adds 1,152 longer recovery runs, 576 oscillator-SIMS runs, and worked
 calculations from the supplied mathematical pages: entrainment, Josephson dynamics,
 pendulum energy and damping, topology, population models, and weakly nonlinear
-oscillations. The package includes numerical results, tests, 17 original figures,
-and two offline reports. The cropped heteroclinic exercise awaits its missing equations.
+oscillations. A later six-mode addendum adds 528 scheduled trajectories separating
+initial-state forgetting, stored input history, and connection-dependent switching.
+It also explains the supplied nine-state heteroclinic-network and entrainment figures.
+The package includes numerical results, tests, 19 original figures, and two offline
+reports. The cropped textbook heteroclinic exercise awaits its missing equations.
 
 ## One position always fights back
 
