@@ -1,13 +1,16 @@
 {
   "python": "3.12.14",
   "platform": "Windows",
-  "automated_tests": 34,
+  "automated_tests": 59,
   "test_result": "passed",
   "sims_rounds": 10240,
-  "first_batch_reproduction": "passed",
-  "second_batch_reproduction": "passed",
-  "figure_count": 5,
-  "figure_review": "All five plots inspected; overlapping labels repaired.",
+  "first_batch_reproduction": "Passed previously; code and saved results unchanged in this extension.",
+  "second_batch_reproduction": "Passed previously; code and saved results unchanged in this extension.",
+  "third_batch_reproduction": "passed; relative tolerance 1e-8, absolute 1e-10",
+  "long_trajectory_accuracy_gates": "passed: step refinement, two-start period agreement, Duffing integral and energy",
+  "figure_count": 9,
+  "figure_review": "Four new plots inspected; five unchanged plots reviewed in the previous batch.",
+  "pending_source": "Figure 7.3.3 / Example 7.3.1 vector field absent; this specific case was not run.",
   "html_local_links": "verified",
   "html_browser_preview": "Unavailable: browser policy blocks local file URLs."
 }
