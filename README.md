@@ -1,6 +1,31 @@
-# Nous Volition · Original stream-function report
+# Nous Volition · Streams and Rocks
 
-This repository preserves the original report. Current math, code, papers, and project status are organized together in the shared workspace.
+This repository, **Streams and Rocks**, preserves the original stream-function report and a separate social-organization experiment.
+
+## Social organization: names, memory, and group boundaries
+
+**[Read the completed six-group study →](studies/social-organization/README.md)**
+
+Ice, Water, Fog, Mist, Gas (water vapor), and Smoke are symbolic group labels in a
+social analogy. The study includes 6,444 main/control simulations, 72 additional
+diagnostic trajectories, numerical results, six charts, runnable Python scripts,
+tests, and a proposed human-study protocol. No humans participated.
+
+- [Results and reproduction guide](studies/social-organization/README.md)
+- [Accessible report](studies/social-organization/report.html) — download and open locally
+- [Model and measurement specification](studies/social-organization/methods.html)
+- [Optional human-study protocol](studies/social-organization/human_protocol.html)
+- [Recorded numerical outcomes](studies/social-organization/analysis/run_phase_metrics.csv)
+
+Names alone changed nothing when semantic perception was disabled. In the full
+model, combined stress reduced cooperation by 18.43 percentage points; memory
+delayed rigidity recovery. These are outcomes of the specified simulation,
+not conclusions about human populations or fluid physics.
+
+![Stress and recovery in the social model](studies/social-organization/analysis/recovery.png)
+
+Current Navier–Stokes math, code, papers, and project status remain organized in
+the separate project linked below.
 
 ## Start here
 

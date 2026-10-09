@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+reproduced*/
+quick-check/
+data/arrays.npz
+data/arrays.npz.assembling

@@ -1,0 +1,98 @@
+{
+  "completed_ensemble_runs": 6444,
+  "label_comparisons": 144,
+  "label_all_exact": true,
+  "label_max_difference": 0.0,
+  "null_summary": [
+    {
+      "metric": "choice_excess",
+      "mean": 0.0004863040123456868,
+      "lo": -0.0016387996720678916,
+      "hi": 0.002507491801697534,
+      "seeds": 12
+    },
+    {
+      "metric": "coop_gap",
+      "mean": 0.004470771058316409,
+      "lo": -0.0074706579948584685,
+      "hi": 0.01576039605963954,
+      "seeds": 12
+    }
+  ],
+  "intervals": "95% percentile bootstrap, 10,000 resamples of 12 independent seeds within split; unadjusted descriptive intervals; no p-value claims",
+  "suites": {
+    "factorial": 4608,
+    "labels": 432,
+    "population": 288,
+    "random_null": 144,
+    "semantics": 324,
+    "stress_component": 216,
+    "sweep": 432
+  },
+  "recovery": [
+    {
+      "memory": 0,
+      "metric": "recovered",
+      "mean": 0.6111111111111112,
+      "lo": 0.5000000000000001,
+      "hi": 0.7083333333333334,
+      "seeds": 12
+    },
+    {
+      "memory": 0,
+      "metric": "time_or_censor",
+      "mean": 39.72222222222222,
+      "lo": 39.166666666666664,
+      "hi": 40.0,
+      "seeds": 12
+    },
+    {
+      "memory": 0,
+      "metric": "late_rigidity_difference",
+      "mean": 0.0063914035048168,
+      "lo": 0.006128807823388314,
+      "hi": 0.006658162052375082,
+      "seeds": 12
+    },
+    {
+      "memory": 0,
+      "metric": "late_choice_difference",
+      "mean": 0.0015810185185185207,
+      "lo": -0.0016883391203703657,
+      "hi": 0.005118605324074067,
+      "seeds": 12
+    },
+    {
+      "memory": 1,
+      "metric": "recovered",
+      "mean": 0.06944444444444443,
+      "lo": 0.027777777777777776,
+      "hi": 0.11111111111111112,
+      "seeds": 12
+    },
+    {
+      "memory": 1,
+      "metric": "time_or_censor",
+      "mean": 40.0,
+      "lo": 40.0,
+      "hi": 40.0,
+      "seeds": 12
+    },
+    {
+      "memory": 1,
+      "metric": "late_rigidity_difference",
+      "mean": 0.023053832673804498,
+      "lo": 0.021222757223309772,
+      "hi": 0.02475489481808434,
+      "seeds": 12
+    },
+    {
+      "memory": 1,
+      "metric": "late_choice_difference",
+      "mean": 0.0011547067901234507,
+      "lo": -0.004706076388888881,
+      "hi": 0.008705516975308629,
+      "seeds": 12
+    }
+  ]
+}

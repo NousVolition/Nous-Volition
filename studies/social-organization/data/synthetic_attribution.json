@@ -1,0 +1,2594 @@
+[
+  {
+    "seed": 1100,
+    "target": 0,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.18833333333333332,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.021666666666666667
+  },
+  {
+    "seed": 1100,
+    "target": 0,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.29,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.12333333333333332
+  },
+  {
+    "seed": 1100,
+    "target": 1,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.13833333333333334,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.02833333333333332
+  },
+  {
+    "seed": 1100,
+    "target": 1,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2916666666666667,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.12500000000000003
+  },
+  {
+    "seed": 1100,
+    "target": 2,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.17666666666666667,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.010000000000000009
+  },
+  {
+    "seed": 1100,
+    "target": 2,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.28833333333333333,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.12166666666666667
+  },
+  {
+    "seed": 1100,
+    "target": 3,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.17,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.003333333333333355
+  },
+  {
+    "seed": 1100,
+    "target": 3,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.26166666666666666,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.095
+  },
+  {
+    "seed": 1100,
+    "target": 4,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.13666666666666666,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.03
+  },
+  {
+    "seed": 1100,
+    "target": 4,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.25333333333333335,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.0866666666666667
+  },
+  {
+    "seed": 1100,
+    "target": 5,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.19,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.023333333333333345
+  },
+  {
+    "seed": 1100,
+    "target": 5,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2966666666666667,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.13000000000000003
+  },
+  {
+    "seed": 1101,
+    "target": 0,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.16833333333333333,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.0016666666666666774
+  },
+  {
+    "seed": 1101,
+    "target": 0,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.285,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.11833333333333332
+  },
+  {
+    "seed": 1101,
+    "target": 1,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.16666666666666666,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.0
+  },
+  {
+    "seed": 1101,
+    "target": 1,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2733333333333333,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.10666666666666666
+  },
+  {
+    "seed": 1101,
+    "target": 2,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.14833333333333334,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.018333333333333313
+  },
+  {
+    "seed": 1101,
+    "target": 2,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2783333333333333,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.11166666666666666
+  },
+  {
+    "seed": 1101,
+    "target": 3,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.18166666666666667,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.015000000000000013
+  },
+  {
+    "seed": 1101,
+    "target": 3,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2966666666666667,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.13000000000000003
+  },
+  {
+    "seed": 1101,
+    "target": 4,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.185,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.01833333333333334
+  },
+  {
+    "seed": 1101,
+    "target": 4,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.31166666666666665,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.145
+  },
+  {
+    "seed": 1101,
+    "target": 5,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.15,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.016666666666666663
+  },
+  {
+    "seed": 1101,
+    "target": 5,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2916666666666667,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.12500000000000003
+  },
+  {
+    "seed": 1102,
+    "target": 0,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.175,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.008333333333333331
+  },
+  {
+    "seed": 1102,
+    "target": 0,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.305,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.13833333333333334
+  },
+  {
+    "seed": 1102,
+    "target": 1,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.17333333333333334,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.006666666666666682
+  },
+  {
+    "seed": 1102,
+    "target": 1,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.3,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.13333333333333333
+  },
+  {
+    "seed": 1102,
+    "target": 2,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.16833333333333333,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.0016666666666666774
+  },
+  {
+    "seed": 1102,
+    "target": 2,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2816666666666667,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.11500000000000002
+  },
+  {
+    "seed": 1102,
+    "target": 3,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.17666666666666667,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.010000000000000009
+  },
+  {
+    "seed": 1102,
+    "target": 3,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2733333333333333,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.10666666666666666
+  },
+  {
+    "seed": 1102,
+    "target": 4,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.14,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.026666666666666644
+  },
+  {
+    "seed": 1102,
+    "target": 4,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.28,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.11333333333333337
+  },
+  {
+    "seed": 1102,
+    "target": 5,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.16666666666666666,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.0
+  },
+  {
+    "seed": 1102,
+    "target": 5,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2783333333333333,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.11166666666666666
+  },
+  {
+    "seed": 1103,
+    "target": 0,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.16666666666666666,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.0
+  },
+  {
+    "seed": 1103,
+    "target": 0,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2916666666666667,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.12500000000000003
+  },
+  {
+    "seed": 1103,
+    "target": 1,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.165,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.0016666666666666496
+  },
+  {
+    "seed": 1103,
+    "target": 1,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2633333333333333,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.09666666666666665
+  },
+  {
+    "seed": 1103,
+    "target": 2,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.15166666666666667,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.014999999999999986
+  },
+  {
+    "seed": 1103,
+    "target": 2,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.285,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.11833333333333332
+  },
+  {
+    "seed": 1103,
+    "target": 3,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.19166666666666668,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.025000000000000022
+  },
+  {
+    "seed": 1103,
+    "target": 3,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.31666666666666665,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.15
+  },
+  {
+    "seed": 1103,
+    "target": 4,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.17333333333333334,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.006666666666666682
+  },
+  {
+    "seed": 1103,
+    "target": 4,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2966666666666667,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.13000000000000003
+  },
+  {
+    "seed": 1103,
+    "target": 5,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.15166666666666667,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.014999999999999986
+  },
+  {
+    "seed": 1103,
+    "target": 5,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2833333333333333,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.11666666666666667
+  },
+  {
+    "seed": 1104,
+    "target": 0,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.15166666666666667,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.014999999999999986
+  },
+  {
+    "seed": 1104,
+    "target": 0,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2833333333333333,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.11666666666666667
+  },
+  {
+    "seed": 1104,
+    "target": 1,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.17833333333333334,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.011666666666666686
+  },
+  {
+    "seed": 1104,
+    "target": 1,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2966666666666667,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.13000000000000003
+  },
+  {
+    "seed": 1104,
+    "target": 2,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.18,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.013333333333333336
+  },
+  {
+    "seed": 1104,
+    "target": 2,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.31166666666666665,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.145
+  },
+  {
+    "seed": 1104,
+    "target": 3,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.16333333333333333,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.003333333333333327
+  },
+  {
+    "seed": 1104,
+    "target": 3,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2783333333333333,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.11166666666666666
+  },
+  {
+    "seed": 1104,
+    "target": 4,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.15833333333333333,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.008333333333333331
+  },
+  {
+    "seed": 1104,
+    "target": 4,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.25833333333333336,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.0916666666666667
+  },
+  {
+    "seed": 1104,
+    "target": 5,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.16833333333333333,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.0016666666666666774
+  },
+  {
+    "seed": 1104,
+    "target": 5,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.29833333333333334,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.13166666666666668
+  },
+  {
+    "seed": 1105,
+    "target": 0,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.175,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.008333333333333331
+  },
+  {
+    "seed": 1105,
+    "target": 0,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.26666666666666666,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.1
+  },
+  {
+    "seed": 1105,
+    "target": 1,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.13333333333333333,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.033333333333333326
+  },
+  {
+    "seed": 1105,
+    "target": 1,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.27166666666666667,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.10500000000000001
+  },
+  {
+    "seed": 1105,
+    "target": 2,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.19,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.023333333333333345
+  },
+  {
+    "seed": 1105,
+    "target": 2,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.30666666666666664,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.13999999999999999
+  },
+  {
+    "seed": 1105,
+    "target": 3,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.15833333333333333,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.008333333333333331
+  },
+  {
+    "seed": 1105,
+    "target": 3,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.28,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.11333333333333337
+  },
+  {
+    "seed": 1105,
+    "target": 4,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.19333333333333333,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.026666666666666672
+  },
+  {
+    "seed": 1105,
+    "target": 4,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.30666666666666664,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.13999999999999999
+  },
+  {
+    "seed": 1105,
+    "target": 5,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.15,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.016666666666666663
+  },
+  {
+    "seed": 1105,
+    "target": 5,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.3016666666666667,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.13500000000000004
+  },
+  {
+    "seed": 1106,
+    "target": 0,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.17333333333333334,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.006666666666666682
+  },
+  {
+    "seed": 1106,
+    "target": 0,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.30333333333333334,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.1366666666666667
+  },
+  {
+    "seed": 1106,
+    "target": 1,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.17,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.003333333333333355
+  },
+  {
+    "seed": 1106,
+    "target": 1,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.29,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.12333333333333332
+  },
+  {
+    "seed": 1106,
+    "target": 2,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.16333333333333333,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.003333333333333327
+  },
+  {
+    "seed": 1106,
+    "target": 2,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.285,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.11833333333333332
+  },
+  {
+    "seed": 1106,
+    "target": 3,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.18,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.013333333333333336
+  },
+  {
+    "seed": 1106,
+    "target": 3,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.275,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.10833333333333336
+  },
+  {
+    "seed": 1106,
+    "target": 4,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.145,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.021666666666666667
+  },
+  {
+    "seed": 1106,
+    "target": 4,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2733333333333333,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.10666666666666666
+  },
+  {
+    "seed": 1106,
+    "target": 5,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.16833333333333333,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.0016666666666666774
+  },
+  {
+    "seed": 1106,
+    "target": 5,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.27666666666666667,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.11000000000000001
+  },
+  {
+    "seed": 1107,
+    "target": 0,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.16,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.006666666666666654
+  },
+  {
+    "seed": 1107,
+    "target": 0,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.27166666666666667,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.10500000000000001
+  },
+  {
+    "seed": 1107,
+    "target": 1,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.15833333333333333,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.008333333333333331
+  },
+  {
+    "seed": 1107,
+    "target": 1,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.25833333333333336,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.0916666666666667
+  },
+  {
+    "seed": 1107,
+    "target": 2,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.15166666666666667,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.014999999999999986
+  },
+  {
+    "seed": 1107,
+    "target": 2,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.295,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.12833333333333333
+  },
+  {
+    "seed": 1107,
+    "target": 3,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.18,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.013333333333333336
+  },
+  {
+    "seed": 1107,
+    "target": 3,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2916666666666667,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.12500000000000003
+  },
+  {
+    "seed": 1107,
+    "target": 4,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.16666666666666666,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.0
+  },
+  {
+    "seed": 1107,
+    "target": 4,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.28,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.11333333333333337
+  },
+  {
+    "seed": 1107,
+    "target": 5,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.18333333333333332,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.016666666666666663
+  },
+  {
+    "seed": 1107,
+    "target": 5,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.305,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.13833333333333334
+  },
+  {
+    "seed": 1108,
+    "target": 0,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.15666666666666668,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.009999999999999981
+  },
+  {
+    "seed": 1108,
+    "target": 0,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.26666666666666666,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.1
+  },
+  {
+    "seed": 1108,
+    "target": 1,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.15333333333333332,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.013333333333333336
+  },
+  {
+    "seed": 1108,
+    "target": 1,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.26166666666666666,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.095
+  },
+  {
+    "seed": 1108,
+    "target": 2,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.17,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.003333333333333355
+  },
+  {
+    "seed": 1108,
+    "target": 2,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.285,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.11833333333333332
+  },
+  {
+    "seed": 1108,
+    "target": 3,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.17166666666666666,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.0050000000000000044
+  },
+  {
+    "seed": 1108,
+    "target": 3,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2866666666666667,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.12000000000000002
+  },
+  {
+    "seed": 1108,
+    "target": 4,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.175,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.008333333333333331
+  },
+  {
+    "seed": 1108,
+    "target": 4,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.315,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.14833333333333334
+  },
+  {
+    "seed": 1108,
+    "target": 5,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.17333333333333334,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.006666666666666682
+  },
+  {
+    "seed": 1108,
+    "target": 5,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.31,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.14333333333333334
+  },
+  {
+    "seed": 1109,
+    "target": 0,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.16833333333333333,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.0016666666666666774
+  },
+  {
+    "seed": 1109,
+    "target": 0,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.27666666666666667,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.11000000000000001
+  },
+  {
+    "seed": 1109,
+    "target": 1,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.145,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.021666666666666667
+  },
+  {
+    "seed": 1109,
+    "target": 1,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.26666666666666666,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.1
+  },
+  {
+    "seed": 1109,
+    "target": 2,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.16333333333333333,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.003333333333333327
+  },
+  {
+    "seed": 1109,
+    "target": 2,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2683333333333333,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.10166666666666666
+  },
+  {
+    "seed": 1109,
+    "target": 3,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.17333333333333334,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.006666666666666682
+  },
+  {
+    "seed": 1109,
+    "target": 3,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2733333333333333,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.10666666666666666
+  },
+  {
+    "seed": 1109,
+    "target": 4,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.16666666666666666,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.0
+  },
+  {
+    "seed": 1109,
+    "target": 4,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.3,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.13333333333333333
+  },
+  {
+    "seed": 1109,
+    "target": 5,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.18333333333333332,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.016666666666666663
+  },
+  {
+    "seed": 1109,
+    "target": 5,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.31833333333333336,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.1516666666666667
+  },
+  {
+    "seed": 1110,
+    "target": 0,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.175,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.008333333333333331
+  },
+  {
+    "seed": 1110,
+    "target": 0,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2833333333333333,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.11666666666666667
+  },
+  {
+    "seed": 1110,
+    "target": 1,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.16333333333333333,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.003333333333333327
+  },
+  {
+    "seed": 1110,
+    "target": 1,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.27166666666666667,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.10500000000000001
+  },
+  {
+    "seed": 1110,
+    "target": 2,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.16,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.006666666666666654
+  },
+  {
+    "seed": 1110,
+    "target": 2,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.27166666666666667,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.10500000000000001
+  },
+  {
+    "seed": 1110,
+    "target": 3,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.15333333333333332,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.013333333333333336
+  },
+  {
+    "seed": 1110,
+    "target": 3,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.30333333333333334,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.1366666666666667
+  },
+  {
+    "seed": 1110,
+    "target": 4,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.18333333333333332,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.016666666666666663
+  },
+  {
+    "seed": 1110,
+    "target": 4,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.31166666666666665,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.145
+  },
+  {
+    "seed": 1110,
+    "target": 5,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.165,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.0016666666666666496
+  },
+  {
+    "seed": 1110,
+    "target": 5,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.28,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.11333333333333337
+  },
+  {
+    "seed": 1111,
+    "target": 0,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.15833333333333333,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.008333333333333331
+  },
+  {
+    "seed": 1111,
+    "target": 0,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.29833333333333334,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.13166666666666668
+  },
+  {
+    "seed": 1111,
+    "target": 1,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.16833333333333333,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.0016666666666666774
+  },
+  {
+    "seed": 1111,
+    "target": 1,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.31,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.14333333333333334
+  },
+  {
+    "seed": 1111,
+    "target": 2,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.165,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.0016666666666666496
+  },
+  {
+    "seed": 1111,
+    "target": 2,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.26,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.09333333333333335
+  },
+  {
+    "seed": 1111,
+    "target": 3,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.17833333333333334,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.011666666666666686
+  },
+  {
+    "seed": 1111,
+    "target": 3,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.275,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.10833333333333336
+  },
+  {
+    "seed": 1111,
+    "target": 4,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.145,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.021666666666666667
+  },
+  {
+    "seed": 1111,
+    "target": 4,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.29333333333333333,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.12666666666666668
+  },
+  {
+    "seed": 1111,
+    "target": 5,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.185,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.01833333333333334
+  },
+  {
+    "seed": 1111,
+    "target": 5,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.3016666666666667,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.13500000000000004
+  },
+  {
+    "seed": 9100,
+    "target": 0,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.15666666666666668,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.009999999999999981
+  },
+  {
+    "seed": 9100,
+    "target": 0,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2816666666666667,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.11500000000000002
+  },
+  {
+    "seed": 9100,
+    "target": 1,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.18166666666666667,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.015000000000000013
+  },
+  {
+    "seed": 9100,
+    "target": 1,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.3016666666666667,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.13500000000000004
+  },
+  {
+    "seed": 9100,
+    "target": 2,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.15833333333333333,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.008333333333333331
+  },
+  {
+    "seed": 9100,
+    "target": 2,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.295,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.12833333333333333
+  },
+  {
+    "seed": 9100,
+    "target": 3,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.15666666666666668,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.009999999999999981
+  },
+  {
+    "seed": 9100,
+    "target": 3,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2833333333333333,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.11666666666666667
+  },
+  {
+    "seed": 9100,
+    "target": 4,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.185,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.01833333333333334
+  },
+  {
+    "seed": 9100,
+    "target": 4,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.29333333333333333,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.12666666666666668
+  },
+  {
+    "seed": 9100,
+    "target": 5,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.16166666666666665,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.0050000000000000044
+  },
+  {
+    "seed": 9100,
+    "target": 5,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2833333333333333,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.11666666666666667
+  },
+  {
+    "seed": 9101,
+    "target": 0,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.14333333333333334,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.023333333333333317
+  },
+  {
+    "seed": 9101,
+    "target": 0,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.23333333333333334,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.06666666666666668
+  },
+  {
+    "seed": 9101,
+    "target": 1,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.13,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.03666666666666665
+  },
+  {
+    "seed": 9101,
+    "target": 1,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.25333333333333335,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.0866666666666667
+  },
+  {
+    "seed": 9101,
+    "target": 2,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.18833333333333332,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.021666666666666667
+  },
+  {
+    "seed": 9101,
+    "target": 2,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.31166666666666665,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.145
+  },
+  {
+    "seed": 9101,
+    "target": 3,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.17666666666666667,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.010000000000000009
+  },
+  {
+    "seed": 9101,
+    "target": 3,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.31333333333333335,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.1466666666666667
+  },
+  {
+    "seed": 9101,
+    "target": 4,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.205,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.03833333333333333
+  },
+  {
+    "seed": 9101,
+    "target": 4,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.3283333333333333,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.16166666666666665
+  },
+  {
+    "seed": 9101,
+    "target": 5,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.15666666666666668,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.009999999999999981
+  },
+  {
+    "seed": 9101,
+    "target": 5,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.305,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.13833333333333334
+  },
+  {
+    "seed": 9102,
+    "target": 0,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.15666666666666668,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.009999999999999981
+  },
+  {
+    "seed": 9102,
+    "target": 0,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2733333333333333,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.10666666666666666
+  },
+  {
+    "seed": 9102,
+    "target": 1,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.17,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.003333333333333355
+  },
+  {
+    "seed": 9102,
+    "target": 1,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2966666666666667,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.13000000000000003
+  },
+  {
+    "seed": 9102,
+    "target": 2,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.18333333333333332,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.016666666666666663
+  },
+  {
+    "seed": 9102,
+    "target": 2,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.30833333333333335,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.1416666666666667
+  },
+  {
+    "seed": 9102,
+    "target": 3,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.18666666666666668,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.020000000000000018
+  },
+  {
+    "seed": 9102,
+    "target": 3,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.305,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.13833333333333334
+  },
+  {
+    "seed": 9102,
+    "target": 4,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.15166666666666667,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.014999999999999986
+  },
+  {
+    "seed": 9102,
+    "target": 4,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2866666666666667,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.12000000000000002
+  },
+  {
+    "seed": 9102,
+    "target": 5,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.15166666666666667,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.014999999999999986
+  },
+  {
+    "seed": 9102,
+    "target": 5,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.265,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.09833333333333336
+  },
+  {
+    "seed": 9103,
+    "target": 0,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.15,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.016666666666666663
+  },
+  {
+    "seed": 9103,
+    "target": 0,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.25666666666666665,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.09
+  },
+  {
+    "seed": 9103,
+    "target": 1,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.16166666666666665,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.0050000000000000044
+  },
+  {
+    "seed": 9103,
+    "target": 1,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.285,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.11833333333333332
+  },
+  {
+    "seed": 9103,
+    "target": 2,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.17666666666666667,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.010000000000000009
+  },
+  {
+    "seed": 9103,
+    "target": 2,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.31833333333333336,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.1516666666666667
+  },
+  {
+    "seed": 9103,
+    "target": 3,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.19166666666666668,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.025000000000000022
+  },
+  {
+    "seed": 9103,
+    "target": 3,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.32,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.15333333333333335
+  },
+  {
+    "seed": 9103,
+    "target": 4,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.15,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.016666666666666663
+  },
+  {
+    "seed": 9103,
+    "target": 4,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.285,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.11833333333333332
+  },
+  {
+    "seed": 9103,
+    "target": 5,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.17,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.003333333333333355
+  },
+  {
+    "seed": 9103,
+    "target": 5,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2733333333333333,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.10666666666666666
+  },
+  {
+    "seed": 9104,
+    "target": 0,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.17833333333333334,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.011666666666666686
+  },
+  {
+    "seed": 9104,
+    "target": 0,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.3,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.13333333333333333
+  },
+  {
+    "seed": 9104,
+    "target": 1,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.16333333333333333,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.003333333333333327
+  },
+  {
+    "seed": 9104,
+    "target": 1,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.27666666666666667,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.11000000000000001
+  },
+  {
+    "seed": 9104,
+    "target": 2,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.14833333333333334,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.018333333333333313
+  },
+  {
+    "seed": 9104,
+    "target": 2,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2733333333333333,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.10666666666666666
+  },
+  {
+    "seed": 9104,
+    "target": 3,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.17666666666666667,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.010000000000000009
+  },
+  {
+    "seed": 9104,
+    "target": 3,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.27666666666666667,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.11000000000000001
+  },
+  {
+    "seed": 9104,
+    "target": 4,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.15666666666666668,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.009999999999999981
+  },
+  {
+    "seed": 9104,
+    "target": 4,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.26666666666666666,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.1
+  },
+  {
+    "seed": 9104,
+    "target": 5,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.17666666666666667,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.010000000000000009
+  },
+  {
+    "seed": 9104,
+    "target": 5,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.29333333333333333,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.12666666666666668
+  },
+  {
+    "seed": 9105,
+    "target": 0,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.16,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.006666666666666654
+  },
+  {
+    "seed": 9105,
+    "target": 0,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.27666666666666667,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.11000000000000001
+  },
+  {
+    "seed": 9105,
+    "target": 1,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.16166666666666665,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.0050000000000000044
+  },
+  {
+    "seed": 9105,
+    "target": 1,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2866666666666667,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.12000000000000002
+  },
+  {
+    "seed": 9105,
+    "target": 2,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.17333333333333334,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.006666666666666682
+  },
+  {
+    "seed": 9105,
+    "target": 2,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.29833333333333334,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.13166666666666668
+  },
+  {
+    "seed": 9105,
+    "target": 3,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.16833333333333333,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.0016666666666666774
+  },
+  {
+    "seed": 9105,
+    "target": 3,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.3,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.13333333333333333
+  },
+  {
+    "seed": 9105,
+    "target": 4,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.17,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.003333333333333355
+  },
+  {
+    "seed": 9105,
+    "target": 4,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2866666666666667,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.12000000000000002
+  },
+  {
+    "seed": 9105,
+    "target": 5,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.16666666666666666,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.0
+  },
+  {
+    "seed": 9105,
+    "target": 5,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2833333333333333,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.11666666666666667
+  },
+  {
+    "seed": 9106,
+    "target": 0,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.18666666666666668,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.020000000000000018
+  },
+  {
+    "seed": 9106,
+    "target": 0,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.30666666666666664,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.13999999999999999
+  },
+  {
+    "seed": 9106,
+    "target": 1,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.15333333333333332,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.013333333333333336
+  },
+  {
+    "seed": 9106,
+    "target": 1,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2866666666666667,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.12000000000000002
+  },
+  {
+    "seed": 9106,
+    "target": 2,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.17333333333333334,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.006666666666666682
+  },
+  {
+    "seed": 9106,
+    "target": 2,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.28833333333333333,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.12166666666666667
+  },
+  {
+    "seed": 9106,
+    "target": 3,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.15666666666666668,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.009999999999999981
+  },
+  {
+    "seed": 9106,
+    "target": 3,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.25666666666666665,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.09
+  },
+  {
+    "seed": 9106,
+    "target": 4,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.17166666666666666,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.0050000000000000044
+  },
+  {
+    "seed": 9106,
+    "target": 4,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2683333333333333,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.10166666666666666
+  },
+  {
+    "seed": 9106,
+    "target": 5,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.15833333333333333,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.008333333333333331
+  },
+  {
+    "seed": 9106,
+    "target": 5,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.3016666666666667,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.13500000000000004
+  },
+  {
+    "seed": 9107,
+    "target": 0,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.18666666666666668,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.020000000000000018
+  },
+  {
+    "seed": 9107,
+    "target": 0,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.315,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.14833333333333334
+  },
+  {
+    "seed": 9107,
+    "target": 1,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.16333333333333333,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.003333333333333327
+  },
+  {
+    "seed": 9107,
+    "target": 1,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.275,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.10833333333333336
+  },
+  {
+    "seed": 9107,
+    "target": 2,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.15666666666666668,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.009999999999999981
+  },
+  {
+    "seed": 9107,
+    "target": 2,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.245,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.07833333333333334
+  },
+  {
+    "seed": 9107,
+    "target": 3,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.13833333333333334,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.02833333333333332
+  },
+  {
+    "seed": 9107,
+    "target": 3,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.25,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.08333333333333334
+  },
+  {
+    "seed": 9107,
+    "target": 4,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.17,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.003333333333333355
+  },
+  {
+    "seed": 9107,
+    "target": 4,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.29,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.12333333333333332
+  },
+  {
+    "seed": 9107,
+    "target": 5,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.185,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.01833333333333334
+  },
+  {
+    "seed": 9107,
+    "target": 5,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.32166666666666666,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.155
+  },
+  {
+    "seed": 9108,
+    "target": 0,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.15833333333333333,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.008333333333333331
+  },
+  {
+    "seed": 9108,
+    "target": 0,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.29,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.12333333333333332
+  },
+  {
+    "seed": 9108,
+    "target": 1,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.17,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.003333333333333355
+  },
+  {
+    "seed": 9108,
+    "target": 1,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2816666666666667,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.11500000000000002
+  },
+  {
+    "seed": 9108,
+    "target": 2,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.16,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.006666666666666654
+  },
+  {
+    "seed": 9108,
+    "target": 2,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.265,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.09833333333333336
+  },
+  {
+    "seed": 9108,
+    "target": 3,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.17166666666666666,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.0050000000000000044
+  },
+  {
+    "seed": 9108,
+    "target": 3,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.3,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.13333333333333333
+  },
+  {
+    "seed": 9108,
+    "target": 4,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.16,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.006666666666666654
+  },
+  {
+    "seed": 9108,
+    "target": 4,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2966666666666667,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.13000000000000003
+  },
+  {
+    "seed": 9108,
+    "target": 5,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.18,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.013333333333333336
+  },
+  {
+    "seed": 9108,
+    "target": 5,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2866666666666667,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.12000000000000002
+  },
+  {
+    "seed": 9109,
+    "target": 0,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.15,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.016666666666666663
+  },
+  {
+    "seed": 9109,
+    "target": 0,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2683333333333333,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.10166666666666666
+  },
+  {
+    "seed": 9109,
+    "target": 1,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.17,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.003333333333333355
+  },
+  {
+    "seed": 9109,
+    "target": 1,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2966666666666667,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.13000000000000003
+  },
+  {
+    "seed": 9109,
+    "target": 2,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.17333333333333334,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.006666666666666682
+  },
+  {
+    "seed": 9109,
+    "target": 2,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.3016666666666667,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.13500000000000004
+  },
+  {
+    "seed": 9109,
+    "target": 3,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.16333333333333333,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.003333333333333327
+  },
+  {
+    "seed": 9109,
+    "target": 3,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.29,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.12333333333333332
+  },
+  {
+    "seed": 9109,
+    "target": 4,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.15,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.016666666666666663
+  },
+  {
+    "seed": 9109,
+    "target": 4,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2633333333333333,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.09666666666666665
+  },
+  {
+    "seed": 9109,
+    "target": 5,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.19333333333333333,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.026666666666666672
+  },
+  {
+    "seed": 9109,
+    "target": 5,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2966666666666667,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.13000000000000003
+  },
+  {
+    "seed": 9110,
+    "target": 0,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.16833333333333333,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.0016666666666666774
+  },
+  {
+    "seed": 9110,
+    "target": 0,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2966666666666667,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.13000000000000003
+  },
+  {
+    "seed": 9110,
+    "target": 1,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.18,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.013333333333333336
+  },
+  {
+    "seed": 9110,
+    "target": 1,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.3,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.13333333333333333
+  },
+  {
+    "seed": 9110,
+    "target": 2,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.18666666666666668,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.020000000000000018
+  },
+  {
+    "seed": 9110,
+    "target": 2,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.305,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.13833333333333334
+  },
+  {
+    "seed": 9110,
+    "target": 3,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.16333333333333333,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.003333333333333327
+  },
+  {
+    "seed": 9110,
+    "target": 3,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.28833333333333333,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.12166666666666667
+  },
+  {
+    "seed": 9110,
+    "target": 4,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.155,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.011666666666666659
+  },
+  {
+    "seed": 9110,
+    "target": 4,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.28,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.11333333333333337
+  },
+  {
+    "seed": 9110,
+    "target": 5,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.14666666666666667,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.01999999999999999
+  },
+  {
+    "seed": 9110,
+    "target": 5,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2683333333333333,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.10166666666666666
+  },
+  {
+    "seed": 9111,
+    "target": 0,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.2,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.033333333333333354
+  },
+  {
+    "seed": 9111,
+    "target": 0,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.31166666666666665,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.145
+  },
+  {
+    "seed": 9111,
+    "target": 1,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.15333333333333332,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.013333333333333336
+  },
+  {
+    "seed": 9111,
+    "target": 1,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2916666666666667,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.12500000000000003
+  },
+  {
+    "seed": 9111,
+    "target": 2,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.17666666666666667,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": 0.010000000000000009
+  },
+  {
+    "seed": 9111,
+    "target": 2,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2833333333333333,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.11666666666666667
+  },
+  {
+    "seed": 9111,
+    "target": 3,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.15333333333333332,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.013333333333333336
+  },
+  {
+    "seed": 9111,
+    "target": 3,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.2733333333333333,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.10666666666666666
+  },
+  {
+    "seed": 9111,
+    "target": 4,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.16333333333333333,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.003333333333333327
+  },
+  {
+    "seed": 9111,
+    "target": 4,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.27666666666666667,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.11000000000000001
+  },
+  {
+    "seed": 9111,
+    "target": 5,
+    "bias": 0.0,
+    "trials": 600,
+    "share": 0.15333333333333332,
+    "expected_share": 0.16666666666666666,
+    "excess_over_equal_evidence": -0.013333333333333336
+  },
+  {
+    "seed": 9111,
+    "target": 5,
+    "bias": 0.7,
+    "trials": 600,
+    "share": 0.275,
+    "expected_share": 0.2871148715188649,
+    "excess_over_equal_evidence": 0.10833333333333336
+  }
+]
