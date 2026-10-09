@@ -1,4 +1,6 @@
-# Names, memory, and group boundaries
+# SIMS: names, memory, and group boundaries
+
+**SIMS** are the simulated participants in this six-group experiment.
 
 **Social analogy, not fluid physics.** Six symbolic labels: Ice, Water, Fog, Mist,
 Gas (water vapor), and Smoke. Fog and mist contain liquid droplets; Smoke is not a
@@ -6,12 +8,13 @@ water phase. No human data, molecular model, Navier–Stokes claim, or new law.
 
 Open [report.html](report.html) for the accessible results and charts.
 [methods.html](methods.html) specifies every model assumption and metric.
-[human_protocol.html](human_protocol.html) is the optional, not-yet-run human study.
+[Optional group-decision game](human_protocol.html) is a separate proposal for
+volunteers; it has not been run.
 All three HTML files work offline. Report chart images are embedded.
 
 ## Executed
 
-- 6,444 ensemble trajectories (4,608 core factorial), 30/60/120 agents, 120 rounds.
+- 6,444 ensemble trajectories (4,608 core factorial), 30/60/120 SIMS, 120 rounds.
 - 12 discovery and 12 independent replication seeds; three network topologies.
 - 72 later diagnostic trajectories and 35,928 membership shuffles.
 - 144 influence assays and 288 synthetic attribution assays.
@@ -25,7 +28,7 @@ specified adaptation rule. An assumed negative label prior reduced nominations
 to whichever word received it; this does not establish human dislike of Smoke.
 
 The pre-execution simulation design is recorded, but the analysis is exploratory
-and was not externally preregistered. Human-study recruitment was not performed.
+and was not externally preregistered. No volunteers have been recruited.
 
 ## Reproduce
 
@@ -99,7 +102,7 @@ in eleven transport parts because of the upload API limit. `python restore_data.
 reassembles the exact original bytes and verifies every part and the complete SHA-256.
 The analysis and verification commands also restore it automatically when needed. Download the
 repository ZIP and open this folder's `report.html` to read the offline report;
-GitHub's HTML file view displays source. Human-study recruitment was not performed.
+GitHub's HTML file view displays source. No volunteers have been recruited.
 
 ## Integrity
 
