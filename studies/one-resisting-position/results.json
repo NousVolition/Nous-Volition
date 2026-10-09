@@ -75,7 +75,7 @@
     "oppose": "On each active opportunity the selected seat chooses the opposite of its visible neighbors' majority; holds on a tie. No global information.",
     "continued_runs": "No stopping at first consensus; observe the entire 120 seconds. Initiative is zero for the ordinary and opponent continuation comparison.",
     "matching": "All cases use the same 4,000 starts and seed derivation as the original main sample. State-dependent draws need not remain aligned between different policies.",
-    "population": "Nine simulated participants representing a human coordination task. These conditions extend the original study.",
+    "population": "Nine SIMS (simulated participants) representing a human coordination task. These conditions extend the original study.",
     "interpretation": "All successful frozen-seat rounds must match that seat by construction. This alone is not evidence of authority or persuasion."
   }
 }
