@@ -1,6 +1,6 @@
 # Dynamics, fractals, and SIMS
 
-Can the same local choices produce different group outcomes when connections change? This study connects that human-coordination question to the dynamics and topology in the supplied images. **SIMS** are the simulated participants. The package contains six batches of mathematical experiments, two matched SIMS experiments totaling 12,800 runs, sixteen original figures, and 138 automated tests.
+Can the same local choices produce different group outcomes when connections change? This study connects that human-coordination question to the dynamics and topology in the supplied images. **SIMS** are the simulated participants. The package contains seven batches, 12,800 binary-choice SIMS runs plus 1,632 continuous-response SIMS trajectories, eighteen original figures, and 162 automated tests. The combined SIMS count is 14,432; the different response rules are reported separately.
 
 Open [report.html](report.html) locally for the illustrated report. Figures and numerical results are saved with the code. The images supplied in the conversation are references; the plots here are newly computed.
 
@@ -20,6 +20,7 @@ python pacemaker.py --check
 python memory_inference.py --check
 python quench.py --check
 python bridge_checks.py --check
+python sims_response.py --check
 ```
 
 The tests check analytic formulas, numerical accuracy, graph construction, stability, and identity/geometry invariance. The study command reruns 10,240 SIMS rounds plus the first mathematical batch. The topology command includes 2,560 additional SIMS runs and 39,056 bounded algebraic equalities. The oscillation run also checks period convergence across step sizes and initial states. The fifth batch checks saddle connections, 48 isolated nine-state trajectories, 64 starts for a 16-unit pacemaker ring, local memory, interaction inference, and 12 quenches. NumPy is required for the coupled ensemble, inference, quenches, and their tests; the earlier calculations and isolated heteroclinic solver use the standard library.
@@ -37,6 +38,7 @@ python pacemaker.py
 python memory_inference.py
 python quench.py
 python bridge_checks.py
+python sims_response.py
 python build_report.py
 ```
 
@@ -129,10 +131,16 @@ Seven linear cases reproduce the supplied phase-portrait report and its neutral 
 
 Independent formulas check all 36 saved channel cases behind the water screenshot, including density/viscosity swaps and the 18.55% lower steady D₂O speed at 25 °C under the specified pressure and geometry. A new discrete-mode implementation checks spatial and temporal convergence against exact solutions. This reuses saved material inputs from the separate water study, with source hashes; it adds no molecular, three-dimensional vortex, or SIMS runs. It also adds no new experimental velocity measurements. See [results](bridge_results.json) and [reference extracts](bridge_references.json).
 
+## Batch 7: apply the supplied dynamics inside SIMS
+
+The references now define participant response rules, as requested, in addition to checking separate mathematical models. Twenty SIMS follow local linear, reversible, or driven-relaxation rules while exchanging state with neighbors. The 1,632 new runs reuse 32 starts across Menger, ring, and complete networks. They test whether participants align, whether choices agree, whether the shared state settles, whether a reversal retraces the path, and whether response speed changes independently of the final target.
+
+For an unstable-spiral rule, the complete graph makes participants align even while their collective displacement grows by about 11 times. The reversal intervention returns to earlier states with maximum error below 7.1e-8. Water-property ratios define response-rate controls with both fixed input and a matched final target. These are explicit continuous-state SIMS assumptions, documented in [SIMS_RESPONSE_METHODS.md](SIMS_RESPONSE_METHODS.md) and the [protocol](sims_response_protocol.json). All [outcomes and controls](sims_response_results.json) are saved, and 24 further [tests](test_sims_response.py) check the coupled mathematics and participant measurements.
+
 ## How the batches connect
 
 The newest [topology tests](TOPOLOGY_TESTS.md) use graph projections, lifting, gluing, category nerves, and cubical identities as executable specifications. They also test two concrete ways that topology interacts with the SIMS model: changing filled faces while holding pairwise contacts fixed, and changing contacts by taking transitive closure. An exact counterexample shows that matching group totals can conceal different next-step dynamics. Full outcomes are in [topology_results.json](topology_results.json).
 
-The shared tools are state, local change rules, equilibria, sensitivity, and stability. The ODE examples test continuous dynamics; the SIMS experiment tests discrete stochastic coordination on specified graphs. We have not inserted a Lorenz trajectory, laser equation, or bead force into a SIM's decision rule. Doing so would require another behavioral assumption and an explicit experiment. Here the meaningful connection is testable: distinguish first arrival from persistence, compare alternative basins, and hold the rules fixed when changing connections.
+The shared tools are state, local change rules, equilibria, sensitivity, and stability. The original binary SIMS experiment tests stochastic coordination on specified graphs. Batch 7 adds an explicit continuous-state SIMS experiment using the latest supplied dynamics, with its assumptions and controls recorded before execution. The remaining ODE examples retain their roles as mathematical reference systems. Across both SIMS arms we distinguish first arrival from persistence, compare stable and changing states, and hold the rules fixed when changing connections.
 
 For volunteer work, start with the earlier [resisting-position protocol](https://github.com/NousVolition/Nous-Volition/tree/main/studies/one-resisting-position), rotate occupants through positions, separate an assigned role from personal behavior, and obtain voluntary consent with an unrestricted option to stop. The 20- and 48-SIMS simulations do not require recruiting those group sizes immediately.

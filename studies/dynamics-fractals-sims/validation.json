@@ -1,9 +1,11 @@
 {
   "python": "3.12.14",
   "platform": "Windows",
-  "automated_tests": 138,
+  "automated_tests": 162,
   "test_result": "passed",
-  "sims_rounds": 12800,
+  "sims_rounds": 14432,
+  "binary_sims_rounds": 12800,
+  "continuous_sims_trajectories": 1632,
   "new_topology_sims_rounds": 2560,
   "bounded_algebraic_equalities": 39056,
   "first_batch_reproduction": "Passed previously; code and saved results unchanged in this extension.",
@@ -24,9 +26,16 @@
     "new_channel_grid_cases": 6,
     "new_sims_runs": 0
   },
+  "seventh_batch_reproduction": "passed; 1,632 matched continuous-state SIMS outcomes and 18 separate step-refinement controls reproduced",
+  "seventh_batch_checks": {
+    "new_unit_tests": 24,
+    "linear_sims_runs": 672,
+    "reversal_sims_runs": 192,
+    "response_rate_sims_runs": 768
+  },
   "long_trajectory_accuracy_gates": "passed: step refinement, two-start period agreement, Duffing integral and energy",
-  "figure_count": 16,
-  "figure_review": "Two new reversibility, linear, and channel figures inspected; fourteen unchanged plots reviewed in previous batches.",
+  "figure_count": 18,
+  "figure_review": "Two new SIMS response figures inspected; sixteen unchanged plots reviewed in previous batches.",
   "pending_source": "Figure 7.3.3 / Example 7.3.1 vector field absent; this specific case was not run.",
   "html_local_links": "verified",
   "html_browser_preview": "Unavailable: browser policy blocks local file URLs."
