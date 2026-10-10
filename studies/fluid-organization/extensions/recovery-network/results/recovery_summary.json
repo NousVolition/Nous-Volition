@@ -1,0 +1,334 @@
+{
+  "unchanged": {
+    "n": 36,
+    "settled": 0,
+    "censored": 36,
+    "settling_time_among_observed": null,
+    "integrated_energy_0_8": {
+      "mean": 4.542567624514084,
+      "ci95": [
+        4.207944917339628,
+        4.925382860680923
+      ],
+      "n_independent_runs": 36
+    },
+    "peak_above_initial": {
+      "mean": 0.02521704776996675,
+      "ci95": [
+        0.0010145417391881411,
+        0.06506418639475225
+      ],
+      "n_independent_runs": 36
+    }
+  },
+  "abrupt": {
+    "n": 36,
+    "settled": 36,
+    "censored": 0,
+    "settling_time_among_observed": {
+      "mean": 4.772222222222222,
+      "ci95": [
+        4.691666666666666,
+        4.847222222222222
+      ],
+      "n_independent_runs": 36
+    },
+    "integrated_energy_0_8": {
+      "mean": 1.9796361840630792,
+      "ci95": [
+        1.9439147748380206,
+        2.0126243429340187
+      ],
+      "n_independent_runs": 36
+    },
+    "peak_above_initial": {
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "n_independent_runs": 36
+    }
+  },
+  "gradual": {
+    "n": 36,
+    "settled": 36,
+    "censored": 0,
+    "settling_time_among_observed": {
+      "mean": 5.088888888888889,
+      "ci95": [
+        4.966666666666667,
+        5.2055555555555575
+      ],
+      "n_independent_runs": 36
+    },
+    "integrated_energy_0_8": {
+      "mean": 2.1925323065593214,
+      "ci95": [
+        2.118993877498069,
+        2.267460094441335
+      ],
+      "n_independent_runs": 36
+    },
+    "peak_above_initial": {
+      "mean": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "n_independent_runs": 36
+    }
+  },
+  "gradual_minus_abrupt_settling": {
+    "mean": 0.3166666666666666,
+    "ci95": [
+      0.22499999999999995,
+      0.41111111111111104
+    ],
+    "n_independent_runs": 36
+  },
+  "validation": {
+    "max_energy_budget_residual": 4.0607450405302635e-10,
+    "max_burn_budget_residual": 5.93991722854532e-08,
+    "max_divergence": 2.5169159961740845e-17,
+    "max_cfl": 0.10603591840965541,
+    "clone_error_max": 0.0,
+    "refinement": [
+      {
+        "seed": 1024,
+        "comparison": "time",
+        "max_energy_difference_over_initial": 1.2770361561466027e-11,
+        "settling_differences": [
+          0.0,
+          0.0
+        ],
+        "pass": true
+      },
+      {
+        "seed": 1024,
+        "comparison": "grid",
+        "max_energy_difference_over_initial": 4.297130484974043e-08,
+        "settling_differences": [
+          0.0,
+          0.0
+        ],
+        "pass": true
+      },
+      {
+        "seed": 1025,
+        "comparison": "time",
+        "max_energy_difference_over_initial": 4.554462437622879e-10,
+        "settling_differences": [
+          0.0,
+          0.0
+        ],
+        "pass": true
+      },
+      {
+        "seed": 1025,
+        "comparison": "grid",
+        "max_energy_difference_over_initial": 1.000777225784999e-07,
+        "settling_differences": [
+          0.0,
+          0.0
+        ],
+        "pass": true
+      },
+      {
+        "seed": 1026,
+        "comparison": "time",
+        "max_energy_difference_over_initial": 2.1782370500320648e-10,
+        "settling_differences": [
+          0.0,
+          0.0
+        ],
+        "pass": true
+      },
+      {
+        "seed": 1026,
+        "comparison": "grid",
+        "max_energy_difference_over_initial": 2.262879909272197e-08,
+        "settling_differences": [
+          0.0,
+          0.0
+        ],
+        "pass": true
+      },
+      {
+        "seed": 1027,
+        "comparison": "time",
+        "max_energy_difference_over_initial": 9.746813028685951e-11,
+        "settling_differences": [
+          0.0,
+          0.0
+        ],
+        "pass": true
+      },
+      {
+        "seed": 1027,
+        "comparison": "grid",
+        "max_energy_difference_over_initial": 1.5751551397635538e-08,
+        "settling_differences": [
+          0.0,
+          0.0
+        ],
+        "pass": true
+      }
+    ]
+  },
+  "settling_sensitivity": {
+    "fraction0.05_residence0.5": {
+      "unchanged": {
+        "settled": 0,
+        "censored": 36,
+        "mean_observed": null
+      },
+      "abrupt": {
+        "settled": 36,
+        "censored": 0,
+        "mean_observed": 6.269444444444444
+      },
+      "gradual": {
+        "settled": 36,
+        "censored": 0,
+        "mean_observed": 6.602777777777778
+      }
+    },
+    "fraction0.05_residence1.0": {
+      "unchanged": {
+        "settled": 0,
+        "censored": 36,
+        "mean_observed": null
+      },
+      "abrupt": {
+        "settled": 36,
+        "censored": 0,
+        "mean_observed": 6.269444444444444
+      },
+      "gradual": {
+        "settled": 36,
+        "censored": 0,
+        "mean_observed": 6.602777777777778
+      }
+    },
+    "fraction0.05_residence2.0": {
+      "unchanged": {
+        "settled": 0,
+        "censored": 36,
+        "mean_observed": null
+      },
+      "abrupt": {
+        "settled": 36,
+        "censored": 0,
+        "mean_observed": 6.269444444444444
+      },
+      "gradual": {
+        "settled": 36,
+        "censored": 0,
+        "mean_observed": 6.602777777777778
+      }
+    },
+    "fraction0.1_residence0.5": {
+      "unchanged": {
+        "settled": 0,
+        "censored": 36,
+        "mean_observed": null
+      },
+      "abrupt": {
+        "settled": 36,
+        "censored": 0,
+        "mean_observed": 4.772222222222222
+      },
+      "gradual": {
+        "settled": 36,
+        "censored": 0,
+        "mean_observed": 5.088888888888889
+      }
+    },
+    "fraction0.1_residence1.0": {
+      "unchanged": {
+        "settled": 0,
+        "censored": 36,
+        "mean_observed": null
+      },
+      "abrupt": {
+        "settled": 36,
+        "censored": 0,
+        "mean_observed": 4.772222222222222
+      },
+      "gradual": {
+        "settled": 36,
+        "censored": 0,
+        "mean_observed": 5.088888888888889
+      }
+    },
+    "fraction0.1_residence2.0": {
+      "unchanged": {
+        "settled": 0,
+        "censored": 36,
+        "mean_observed": null
+      },
+      "abrupt": {
+        "settled": 36,
+        "censored": 0,
+        "mean_observed": 4.772222222222222
+      },
+      "gradual": {
+        "settled": 36,
+        "censored": 0,
+        "mean_observed": 5.088888888888889
+      }
+    },
+    "fraction0.2_residence0.5": {
+      "unchanged": {
+        "settled": 0,
+        "censored": 36,
+        "mean_observed": null
+      },
+      "abrupt": {
+        "settled": 36,
+        "censored": 0,
+        "mean_observed": 3.305555555555556
+      },
+      "gradual": {
+        "settled": 36,
+        "censored": 0,
+        "mean_observed": 3.611111111111111
+      }
+    },
+    "fraction0.2_residence1.0": {
+      "unchanged": {
+        "settled": 0,
+        "censored": 36,
+        "mean_observed": null
+      },
+      "abrupt": {
+        "settled": 36,
+        "censored": 0,
+        "mean_observed": 3.305555555555556
+      },
+      "gradual": {
+        "settled": 36,
+        "censored": 0,
+        "mean_observed": 3.611111111111111
+      }
+    },
+    "fraction0.2_residence2.0": {
+      "unchanged": {
+        "settled": 0,
+        "censored": 36,
+        "mean_observed": null
+      },
+      "abrupt": {
+        "settled": 36,
+        "censored": 0,
+        "mean_observed": 3.305555555555556
+      },
+      "gradual": {
+        "settled": 36,
+        "censored": 0,
+        "mean_observed": 3.611111111111111
+      }
+    }
+  }
+}

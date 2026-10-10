@@ -1,5 +1,9 @@
 # Fluid Organization Under Stress: completed pilot
 
+## Completed recovery and network extension — 10 October 2026
+
+[Read the new experiments, results and code links](extensions/recovery-network/README.md). This separate extension adds 36 three-arm fluid recovery runs, a specified three-state network with frozen learning controls, independent test runs, and 14 passing automated tests. It does not alter the original pilot results. The intervention-specific fluid history benefit remains unresolved.
+
 Does past marker organization help predict a fluid's response to a local disturbance?
 
 This is a physical-fluid pilot, separate from the social SIMS studies. Completed work comprises **93 paired fluid configurations**, **7 particle-tracking configurations**, and **22 passing automated tests**, with separate phase-locking, linear-system, pendulum, relaxation, weakly nonlinear, parametric-forcing and bifurcation controls.
