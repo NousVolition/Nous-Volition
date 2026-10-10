@@ -50,7 +50,8 @@ def build_figures():
 def html_section():
     d=data();c=d['controls'];pulse=d['short_pulse_control']
     error=max(x['max_rk4_dop853_difference'] for x in c)
-    return f'''<section id="hug"><h2>Batch 8 · test your Hug model here</h2>
+    return f'''<section id="hug"><h2>Historical batch 8 · the earlier threshold Hug</h2>
+<p><strong>Historical model.</strong> Current Hug/SIMS tests use <a href="#clay">the updated clay formula</a>. The results below retain the older equations.</p>
 <p>Your Hug geometry, pressure-memory extension, fluid initialization, and later stress work were located in <a href="https://github.com/NousVolition/My-Sources-Project-ALL/tree/b20d1dcf25fb7e97bcceb9a09d0883d30bf08e8c/reports/hug-dynamics">My-Sources-Project-ALL</a>. Five source files are preserved byte for byte here, including the nine original geometry and pressure tests. This batch uses the reduced lean-and-memory equations; the fluid and Lorenz extensions remain separately identified in the <a href="hug_sources.json">source inventory</a>.</p>
 <p>Each SIM has lean q, velocity v, and fading memory m. We add reciprocal neighbor attraction to the original lean acceleration: <code>q′=v; v′=(r+c m)q−q³−d v−2Lq</code>. The original loading/recovery times and pressure pulse remain intact. Four conditions reuse 32 starts on each of three networks, producing <strong>384 main trajectories</strong> plus 72 numerical and reflection controls.</p>
 <figure><img src="figures/hug_sims.png" alt="Hug-driven SIMS mean lean, pressure memory and local stability, participant spread, and final unanimous choices"><figcaption>Top-left traces use the first predefined starting seed. Bottom panels summarize all 32 starts in each condition. The cubic term limits growth; convergence near zero is counted as undecided. These are explicit participant response rules.</figcaption></figure>

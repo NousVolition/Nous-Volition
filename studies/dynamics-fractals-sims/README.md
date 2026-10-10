@@ -1,6 +1,8 @@
 # Dynamics, fractals, and SIMS
 
-Can the same local choices produce different group outcomes when connections change? This study connects that human-coordination question to the dynamics and topology in the supplied images. **SIMS** are the simulated participants. The package contains eight batches, 12,800 binary-choice SIMS runs, 1,632 earlier continuous-response trajectories, and 384 Hug-based SIMS trajectories, nineteen original figures, and 187 automated tests. The combined SIMS count is 14,816; the different response rules are reported separately.
+Can the same local choices produce different group outcomes when connections change? This study connects that human-coordination question to the dynamics and topology in the supplied images. **SIMS** are the simulated participants. The package contains nine batches, 12,800 binary-choice SIMS runs, 1,632 earlier continuous-response trajectories, 384 historical threshold-Hug trajectories and 384 current clay-SIMS trajectories, twenty original figures, and 211 automated tests. The cumulative main SIMS count is 15,200; model families and additional controls are reported separately.
+
+**Current Hug/SIMS: [the updated clay formula, rerun and checks](CLAY_SIMS_METHODS.md).** It replaces the opening-threshold model for current work and adds 128 uncoupled comparisons plus 24 independent solver runs.
 
 Open [report.html](report.html) locally for the illustrated report. Figures and numerical results are saved with the code. The images supplied in the conversation are references; the plots here are newly computed.
 
@@ -21,7 +23,7 @@ python memory_inference.py --check
 python quench.py --check
 python bridge_checks.py --check
 python sims_response.py --check
-python hug_sims.py --check
+python clay_sims.py --check
 ```
 
 The tests check analytic formulas, numerical accuracy, graph construction, stability, and identity/geometry invariance. The study command reruns 10,240 SIMS rounds plus the first mathematical batch. The topology command includes 2,560 additional SIMS runs and 39,056 bounded algebraic equalities. The oscillation run also checks period convergence across step sizes and initial states. The fifth batch checks saddle connections, 48 isolated nine-state trajectories, 64 starts for a 16-unit pacemaker ring, local memory, interaction inference, and 12 quenches. NumPy is required for the coupled ensemble, inference, quenches, and their tests; the earlier calculations and isolated heteroclinic solver use the standard library.
@@ -40,7 +42,7 @@ python memory_inference.py
 python quench.py
 python bridge_checks.py
 python sims_response.py
-python hug_sims.py
+python clay_sims.py
 python build_report.py
 ```
 
@@ -147,8 +149,16 @@ The shared tools are state, local change rules, equilibria, sensitivity, and sta
 
 For volunteer work, start with the earlier [resisting-position protocol](https://github.com/NousVolition/Nous-Volition/tree/main/studies/one-resisting-position), rotate occupants through positions, separate an assigned role from personal behavior, and obtain voluntary consent with an unrestricted option to stop. The 20- and 48-SIMS simulations do not require recruiting those group sizes immediately.
 
-## Batch 8: your Hug files inside SIMS
+## Historical batch 8: the earlier threshold Hug inside SIMS
+
+Current Hug/SIMS tests use the clay model in batch 9 below. The following results retain the earlier model.
 
 The located Hug geometry, pressure memory and reduced dynamics are pinned to the source repository and tested here. This adds 384 matched Hug-based SIMS trajectories across Menger, ring and complete networks, plus 72 separate numerical/reflection controls. Buckling produces final unanimous choices in 28/32, 11/32 and 32/32 runs respectively; pulse-driven cases return to the undecided range. The short-pulse control reproduces a numerical failure that coarse-step agreement alone misses.
 
 [Located files, equations and results](HUG_SIMS_METHODS.md) · [Source hashes](hug_sources.json) · [All outcomes](hug_sims_results.json) · [Protocol](hug_sims_protocol.json) · [Tests](test_hug_sims.py). The extension adds sixteen new checks and reruns nine unchanged original Hug tests, bringing the suite to 187.
+
+## Batch 9: current clay Hug/SIMS
+
+The Burgers clay formula now governs immediate deformation, delayed recovery and retained strain for 20 SIMS. All four source coefficient rows are rerun on the three matched networks. There is no opening-at-1 trigger. Under the 20 Pa coefficient set, remaining strain spread at 420 s is 24.56% of the uncoupled comparison on Menger, 30.67% on the ring and 9.98% on the complete graph. The common mean retains strain after release. Shared positive forcing makes positive response signs expected; this is a response measurement.
+
+[Current methods](CLAY_SIMS_METHODS.md) · [All results](clay_sims_results.json) · [Fixed protocol](clay_sims_protocol.json) · [Source hashes](clay_sources.json) · [24 new tests](test_clay_sims.py). The full suite now has 211 tests. Earlier Hug runs are historical and are not relabeled as clay outcomes.

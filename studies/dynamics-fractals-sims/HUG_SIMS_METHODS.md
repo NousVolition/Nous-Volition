@@ -1,4 +1,6 @@
-# Your Hug files tested inside SIMS
+# Historical Hug/SIMS: the earlier threshold model
+
+**Superseded for current Hug/SIMS work by [the clay formula and rerun](CLAY_SIMS_METHODS.md).** These older equations, results and regression tests remain preserved; they are not clay-model outcomes.
 
 The located Hug work is in [My-Sources-Project-ALL](https://github.com/NousVolition/My-Sources-Project-ALL/tree/b20d1dcf25fb7e97bcceb9a09d0883d30bf08e8c), pinned here to commit `b20d1dcf25fb7e97bcceb9a09d0883d30bf08e8c`.
 
@@ -38,7 +40,7 @@ The [fixed protocol](hug_sims_protocol.json) uses the same 32 seeds and starting
 
 There are **384 main trajectories** (4 × 3 × 32), evolved to time 24 with RK4 step 0.01 and sampled every 0.1. The original model's step routine is reused. All outcomes, final lean/velocity arrays and sample-based measurements are in [the results](hug_sims_results.json). First-seed mean/spread traces are saved for every condition and graph. All full paths can be regenerated from the saved protocol; only those representative traces are stored in full summary form.
 
-There are **72 separate control trajectories**: 24 at step 0.005, 24 reflected, and 24 adaptive (DOP853 and Radau for the first start in each graph/condition). These do not inflate the main count. The four additional short-pulse calculations described below are also separate. The package now contains 14,816 main SIMS trajectories: 12,800 binary, 1,632 earlier continuous, and 384 Hug-based runs.
+There are **72 separate control trajectories**: 24 at step 0.005, 24 reflected, and 24 adaptive (DOP853 and Radau for the first start in each graph/condition). These do not inflate the main count. The four additional short-pulse calculations described below are also separate. At completion of this historical batch, the cumulative archive contained 14,816 main SIMS trajectories: 12,800 binary, 1,632 earlier continuous, and 384 Hug-based runs.
 
 ## Results
 
