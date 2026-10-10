@@ -1,14 +1,20 @@
 [
   {
     "file": "report.html",
-    "links": 7,
+    "links": 8,
     "embedded_figures": 3,
     "status": "passed"
   },
   {
     "file": "worked_models.html",
-    "links": 17,
+    "links": 18,
     "embedded_figures": 16,
+    "status": "passed"
+  },
+  {
+    "file": "junction_methods.html",
+    "links": 8,
+    "embedded_figures": 3,
     "status": "passed"
   }
 ]

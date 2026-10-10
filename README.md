@@ -61,7 +61,10 @@ pendulum energy and damping, topology, population models, and weakly nonlinear
 oscillations. A later six-mode addendum adds 528 scheduled trajectories separating
 initial-state forgetting, stored input history, and connection-dependent switching.
 It also explains the supplied nine-state heteroclinic-network and entrainment figures.
-The package includes numerical results, tests, 19 original figures, and two offline
+A [Josephson solver and current-order comparison](studies/sims-recovery-entrainment/junction_methods.html)
+adds damping-aware leapfrog, alternating and random current paths, and reset controls:
+2,496 paths comprising 32,448 current-setting segments, plus fixed-start checks.
+The package includes numerical results, tests, 22 original figures, and three offline
 reports. The cropped textbook heteroclinic exercise awaits its missing equations.
 
 ## One position always fights back
