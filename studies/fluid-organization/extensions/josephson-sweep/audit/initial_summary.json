@@ -1,0 +1,138 @@
+{
+  "counts": {
+    "primary_segments": 7344,
+    "independent_initial_draws": 12,
+    "voltage_window_estimates": 5508,
+    "long_window_replays": 1836,
+    "independent_solver_runs": 24,
+    "analytic_cycle_runs": 9
+  },
+  "regimes": [
+    {
+      "alpha": 0.0,
+      "max_step_change": 4.452596003817755e-06,
+      "max_settling_change": 0.054827245015702575,
+      "max_window_change": 0.02811336765235084,
+      "critical_mean_abs_up_down_gap_W200": {
+        "mean": 0.006976396366317985,
+        "ci95": [
+          0.004493413239322322,
+          0.00961403194819651
+        ],
+        "sd": 0.00475245309674458
+      },
+      "critical_mean_abs_up_down_gap_W800": {
+        "mean": 0.002755773755320632,
+        "ci95": [
+          0.0023070542475779653,
+          0.003208985116774878
+        ],
+        "sd": 0.0008727483393224127
+      },
+      "paired_gap_change_W800_minus_W200": {
+        "mean": -0.004220622610997353,
+        "ci95": [
+          -0.006764957831266335,
+          -0.0017109794089403448
+        ],
+        "sd": 0.0047235008528087015
+      },
+      "max_abs_subcritical_voltage_both": 4.999021196994136e-12
+    },
+    {
+      "alpha": 0.5,
+      "max_step_change": 0.0017572985818986586,
+      "max_settling_change": 0.19196595813062378,
+      "max_window_change": 0.04033519288573864,
+      "critical_mean_abs_up_down_gap_W200": {
+        "mean": 0.023940818989858764,
+        "ci95": [
+          0.020218070452576304,
+          0.027477000651130786
+        ],
+        "sd": 0.006949103129908968
+      },
+      "critical_mean_abs_up_down_gap_W800": {
+        "mean": 0.025354803557592443,
+        "ci95": [
+          0.022437448973169728,
+          0.027910648868178893
+        ],
+        "sd": 0.005155025367082137
+      },
+      "paired_gap_change_W800_minus_W200": {
+        "mean": 0.0014139845677336813,
+        "ci95": [
+          -0.00025049677512814484,
+          0.0030540565091623038
+        ],
+        "sd": 0.003130659651581819
+      },
+      "max_abs_subcritical_voltage_both": 1.0700673269581351e-07
+    },
+    {
+      "alpha": 2.0,
+      "max_step_change": 0.00023610363125769335,
+      "max_settling_change": 0.1275693730364002,
+      "max_window_change": 0.029878990628079957,
+      "critical_mean_abs_up_down_gap_W200": {
+        "mean": 0.016733659933873865,
+        "ci95": [
+          0.016001062328333465,
+          0.01750713589457115
+        ],
+        "sd": 0.0013986053251351619
+      },
+      "critical_mean_abs_up_down_gap_W800": {
+        "mean": 0.011523548520278067,
+        "ci95": [
+          0.011118366229288947,
+          0.011901478144819507
+        ],
+        "sd": 0.0007427180172711835
+      },
+      "paired_gap_change_W800_minus_W200": {
+        "mean": -0.0052101114135957955,
+        "ci95": [
+          -0.00613915499355012,
+          -0.004306140003536103
+        ],
+        "sd": 0.0017161700103872836
+      },
+      "max_abs_subcritical_voltage_both": 9.632358039112887e-05
+    }
+  ],
+  "numerical_gates": {
+    "max_absolute_voltage_step_difference": {
+      "value": 0.0017572985818986586,
+      "limit": 2e-05,
+      "passed": false
+    },
+    "max_normalized_power_balance_residual": {
+      "value": 1.94235946760748e-08,
+      "limit": 2e-06,
+      "passed": true
+    },
+    "max_reference_voltage_error": {
+      "value": 0.030149026673212658,
+      "limit": 2e-06,
+      "passed": false
+    },
+    "max_analytic_cycle_relative_error": {
+      "value": 2.832647619444968e-09,
+      "limit": 2e-06,
+      "passed": true
+    },
+    "finite_and_nonnegative_dissipation": {
+      "passed": true
+    },
+    "window_replay_reproduces_W200": {
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    }
+  },
+  "all_gates_passed": false,
+  "critical_definition": "Average absolute up-minus-down total voltage across sampled currents 0.98 to 1.02, computed per initial phase draw before bootstrap.",
+  "interval_scope": "Paired percentile bootstrap over 12 independent initial phase draws, preserving all currents/modes/settings within a draw; not a population confidence interval for real devices."
+}
