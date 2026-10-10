@@ -1,7 +1,8 @@
-"""Build two offline reading artifacts from executed results and worked derivations."""
+"""Build offline reading artifacts from executed results and worked derivations."""
 import base64,html,json
 from pathlib import Path
 from transient_report import section as transient_section
+from junction_report import section as junction_section
 
 STYLE='''body{margin:0;background:#eef2f3;color:#23353e;font:17px/1.65 system-ui,Segoe UI,sans-serif}main{max-width:1050px;margin:auto;background:white;padding:42px 38px}h1{font-size:42px;line-height:1.12}h2{font-size:28px;line-height:1.3;margin-top:48px;color:#176977}h3{font-size:21px;margin-top:30px}p{max-width:960px}.eyebrow{letter-spacing:.12em;font-size:13px;color:#176977;text-transform:uppercase;font-weight:700}.lead{font-size:22px}.note{border-left:4px solid #198291;background:#edf6f5;padding:16px 22px}.equation{font:19px/1.7 Cambria,Georgia,serif;background:#f1f5f6;padding:14px 20px;overflow:auto}table{border-collapse:collapse;width:100%;font-size:15px;margin:22px 0}th,td{padding:10px;border-bottom:1px solid #d8e1e4;text-align:left;vertical-align:top}th{background:#edf4f5}a{color:#176977}figure{margin:34px 0}img{max-width:100%;height:auto}figcaption{font-size:14px;color:#587078}pre{padding:18px;background:#f1f5f6;overflow:auto}code{font-size:14px}nav{font-size:15px}footer{border-top:1px solid #ddd;margin-top:40px;padding-top:15px;font-size:14px}details{padding:15px;border:1px solid #d8e1e4;margin:20px 0}summary{font-weight:bold;cursor:pointer}@media(max-width:650px){main{padding:24px 18px}h1{font-size:34px}table{font-size:13px}}@media print{main{padding:0}figure{break-inside:avoid}}'''
 
@@ -28,6 +29,7 @@ def main():
 <nav><a href="worked_models.html">Worked equations and model atlas</a> · <a href="README.md">Reproduction guide</a> · <a href="data/protocol.json">Frozen main design</a> · <a href="verification.json">Verification</a></nav>
 <p class="note">These are two distinct SIMS models: the original cooperation-and-memory model, and a new phase-oscillator model. The supplied firefly, Josephson, pendulum, and other equations are analyzed as mathematical models. Shared mathematical structures do not establish that social groups, water, electrical devices, or molecules obey one common physical law.</p>
 <h2>What actually ran</h2>
+<p>The <a href="junction_methods.html">leapfrog and random-order follow-up</a> independently varies solver, integration step, settling time, current order, and state resetting: 2,496 paths with 32,448 current-setting segments, 192 fixed-start trajectories, and 48 finer-reference trajectories.</p>
 <p>A later screenshot-driven addendum adds 528 scheduled six-mode trajectories and two figures. It separates starting-state forgetting from stored-input effects, and explains the supplied heteroclinic-network, noise, and learning passages. <a href="worked_models.html#transient-memory">Read the new switching and memory section</a>. Exact reproduction of the paper's nine-state network and learning/noise mechanisms remains proposed.</p>
 <table><tr><th>Experiment</th><th>Executed scope</th></tr>
 <tr><td>Long recovery and repeated stress</td><td>{e['recovery_runs']:,} matched trajectories; 60 SIMS; 480 rounds; 24 fresh seeds; ring/random/hub networks; equal/unequal group sizes; memory on/off; four stress schedules.</td></tr>
@@ -61,7 +63,8 @@ def main():
     atlas=ATLAS.replace('<h2>SIMS oscillator assumptions</h2>',transient_section(figure)+'<h2>SIMS oscillator assumptions</h2>')
     for name,caption in CAPTIONS.items():atlas=atlas.replace('{{'+name+'}}',figure(name,caption))
     Path('worked_models.html').write_text(page('Worked models: locking, energy, topology, and populations',atlas),encoding='utf-8')
-    print('Built report.html and worked_models.html')
+    Path('junction_methods.html').write_text(page('Josephson: leapfrog and random current orders',junction_section(figure)),encoding='utf-8')
+    print('Built report.html, worked_models.html and junction_methods.html')
 
 
 CAPTIONS={
@@ -103,6 +106,7 @@ ATLAS='''<div class="eyebrow">Streams and Rocks · Worked mathematical atlas</di
 <div class="equation">Raw triangle: |Δ|&lt;Aπ/2; stable φ*=Δ/A.<br>T = (2/A) log[(|Δ|+Aπ/2)/(|Δ|−Aπ/2)] outside the range.<br>Equal-peak triangle g=(2/π)f: |Δ|&lt;A;<br>T = (π/A) log[(|Δ|+A)/(|Δ|−A)].</div>
 <p>These periods follow by integrating the two linear pieces separately; each contributes the same logarithm. The equal-peak comparison has the same locking boundary as the sine but a different near-threshold slowing law. Only the visible triangle definition and part (a) are supplied; these further formulas are our derivations.</p>
 <h2>Josephson junction and driven pendulum</h2>
+<p><a href="junction_methods.html">Executed follow-up: leapfrog, alternating currents, and random orders</a>. The new factorial comparison separates integration step and settling time, and checks retained state against resetting.</p>
 <p>The supplied circuit has supercurrent I<sub>c</sub>sinφ, voltage V=(ℏ/2e)φ̇, resistance R and capacitance C in parallel. Current balance gives:</p>
 <div class="equation">(ℏC/2e)φ̈ + (ℏ/2eR)φ̇ + I<sub>c</sub>sinφ = I.<br>τ=(2eI<sub>c</sub>R/ℏ)t, &nbsp; β=2eI<sub>c</sub>R²C/ℏ, &nbsp; i=I/I<sub>c</sub>.<br>βφ″ + φ′ + sinφ = i, &nbsp; V/(I<sub>c</sub>R)=φ′.</div>
 <p>Primes here mean derivatives with respect to τ. The overdamped reduction is φ′=i−sinφ after the fast transient when neglecting the inertial term is justified. Its locked equilibria have zero voltage; for |i|&gt;1 the mean normalized voltage is sign(i)√(i²−1). These calculations do not verify the excerpt's example device dimensions or typical physical parameter ranges.</p>
@@ -136,6 +140,7 @@ ATLAS='''<div class="eyebrow">Streams and Rocks · Worked mathematical atlas</di
 <p>The assertion in 6.8.9 is false. An inner clockwise orbit and outer counterclockwise orbit do not require an equilibrium between them. A smooth polynomial counterexample is:</p>
 <div class="equation">q=x²+y², &nbsp; g=(q−1)(4−q), &nbsp; w=q−5/2;<br>ẋ=gx−wy, &nbsp; ẏ=wx+gy.<br>ṙ=r(r²−1)(4−r²), &nbsp; θ̇=r²−5/2.</div>
 <p>The only nonconstant periodic orbits are r=1 and r=2, with opposite rotations. For 1&lt;r&lt;2 the radial component is strictly positive, even where angular velocity vanishes, so there is no equilibrium there.</p>
+<p>At r=√(5/2), angular motion stops but radial speed is ṙ=(9/4)r&gt;0: the particle moves straight outward at that instant, then turns the other way. An equilibrium requires both components to vanish. The only equilibrium is the origin, inside the inner orbit.</p>
 {{index_counterexample}}
 <p>For 6.8.10 the disk version remains valid on a surface. A noncontractible circle on a cylinder or torus need not bound a disk and can exist with no equilibrium: constant angular motion provides an example. A simple loop on a sphere bounds two disks; applying the disk argument to both sides is consistent with total index 2 for a smooth tangent field with isolated zeros. An “inside” must be specified before transferring a planar argument.</p>
 <h3>6.8.11: complex vector fields</h3>

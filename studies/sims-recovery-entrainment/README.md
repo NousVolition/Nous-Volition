@@ -1,9 +1,9 @@
 # SIMS: recovery, shared rhythms, and the arrangement
 
-**[Read the results](report.html)** · **[Worked equations and model atlas](worked_models.html)**
+**[Read the results](report.html)** · **[Worked equations and model atlas](worked_models.html)** · **[Leapfrog and random currents](junction_methods.html)**
 
 This follow-up extends the six-group SIMS experiment and works through the equations
-in the supplied page extracts. Download the repository and open either HTML file
+in the supplied page extracts. Download the repository and open any HTML report
 locally; their figures are embedded and work offline. GitHub displays HTML source.
 
 ## What ran
@@ -23,6 +23,33 @@ locally; their figures are embedded and work offline. GitHub displays HTML sourc
 - A later six-mode switching/input-history addendum: 528 scheduled trajectories
   (480 distinct full-state cases, plus 48 planned duplicates), 24 new seeds,
   44 half-step repeats, nine numerical checks, and two additional figures.
+- A Josephson solver/order factorial: 2,496 paths containing 32,448 current-setting
+  segments, 192 fixed-start trajectories, 48 finer-reference trajectories,
+  eight unit tests, six saved-data checks, and three additional figures.
+
+## Leapfrog and random current orders
+
+[Read the executed comparison](junction_methods.html). RK4 and a symmetric,
+damping-aware leapfrog/Verlet method were crossed with two integration steps,
+two settling windows, three inertia values, and reset/retained-state handling.
+Orders include upward, downward, two alternating low/high paths, and 24 seeded
+random permutations paired with their reversals. Randomness changes order only;
+there is no stochastic forcing. Independent replication uses 12 seed pairs.
+
+At β=10 and current 0.5, the upward retained-state path stays near zero voltage;
+the other three fixed orders give about 0.45 with either solver. Resetting the
+state eliminates the order effect exactly. RK4 is more accurate against the finer
+reference at the tested steps; leapfrog is a comparison, not an automatic upgrade.
+Finite-window averages and histories remain distinct from asymptotic thresholds.
+
+```sh
+python test_junction_orders.py
+python junction_orders.py --out ../../reproduced-junction-orders
+```
+
+The frozen configuration and source/test hashes are in
+`data/junction_orders_protocol.json`; full segment measurements and summaries
+are in `data/junction_orders_arrays.npz` and `data/junction_orders.json`.
 
 ## Temporary states, switching routes, and memory
 
@@ -97,7 +124,7 @@ python reproduce.py --out ../../reproduced-sims --workers 4
 ```
 
 That helper copies the source and reference model into a fresh layout and executes
-the main design, its checks, the later mathematical additions, and both reports.
+the main design, its checks, the later mathematical additions, and all three reports.
 It refuses an existing destination. Depending on hardware, expect several minutes.
 The main batch took about two minutes on the original machine.
 

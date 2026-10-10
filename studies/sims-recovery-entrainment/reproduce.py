@@ -13,7 +13,7 @@ def main():
     for name in ('model_provenance.json','requirements.txt','README.md','.gitignore','.gitattributes'):shutil.copy2(source/name,study/name)
     shutil.copy2(source.parent/'social-organization/model.py',reference/'model.py')
     commands=[['test_experiments.py'],['run_experiments.py','--workers',str(a.workers)],['analyze.py'],['verify_results.py'],
-              ['pendulum.py'],['index_and_bistability.py'],['structural_models.py'],['index_exercises.py'],['weak_oscillators.py'],['averaging.py'],['transient_memory.py'],['build_report.py'],['package.py']]
+              ['pendulum.py'],['index_and_bistability.py'],['structural_models.py'],['index_exercises.py'],['weak_oscillators.py'],['averaging.py'],['transient_memory.py'],['test_junction_orders.py'],['junction_orders.py'],['build_report.py'],['package.py']]
     for args in commands:
         print('Running',args[0],flush=True);subprocess.run([sys.executable,*args],cwd=study,check=True)
     print('Completed:',study/'report.html')
