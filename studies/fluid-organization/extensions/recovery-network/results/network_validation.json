@@ -1,0 +1,98 @@
+{
+  "refinement": [
+    {
+      "file": "cycle_c0.8_seed2024.npz",
+      "state_rms_difference": 4.431968587221349e-15,
+      "switch_time_max_difference": 0.0,
+      "same_event_count": true,
+      "pass": true
+    },
+    {
+      "file": "cycle_c0.8_seed2025.npz",
+      "state_rms_difference": 4.927437564878737e-15,
+      "switch_time_max_difference": 0.0,
+      "same_event_count": true,
+      "pass": true
+    },
+    {
+      "file": "cycle_c0.8_seed2026.npz",
+      "state_rms_difference": 2.1528713290890585e-15,
+      "switch_time_max_difference": 0.0,
+      "same_event_count": true,
+      "pass": true
+    },
+    {
+      "file": "cycle_c0.8_seed2027.npz",
+      "state_rms_difference": 4.7752509230193354e-15,
+      "switch_time_max_difference": 0.0,
+      "same_event_count": true,
+      "pass": true
+    },
+    {
+      "file": "cycle_c1.2_seed2024.npz",
+      "state_rms_difference": 8.617432784519524e-14,
+      "switch_time_max_difference": 0.0,
+      "same_event_count": true,
+      "pass": true
+    },
+    {
+      "file": "cycle_c1.2_seed2025.npz",
+      "state_rms_difference": 3.456519474820844e-12,
+      "switch_time_max_difference": 0.0,
+      "same_event_count": true,
+      "pass": true
+    },
+    {
+      "file": "cycle_c1.2_seed2026.npz",
+      "state_rms_difference": 1.0549277379831559e-13,
+      "switch_time_max_difference": 0.0,
+      "same_event_count": true,
+      "pass": true
+    },
+    {
+      "file": "cycle_c1.2_seed2027.npz",
+      "state_rms_difference": 6.119276653225044e-15,
+      "switch_time_max_difference": 0.0,
+      "same_event_count": true,
+      "pass": true
+    },
+    {
+      "file": "cycle_c1_seed2024.npz",
+      "state_rms_difference": 1.4848843874925918e-14,
+      "switch_time_max_difference": 0.0,
+      "same_event_count": true,
+      "pass": true
+    },
+    {
+      "file": "cycle_c1_seed2025.npz",
+      "state_rms_difference": 2.260130469194709e-12,
+      "switch_time_max_difference": 0.0,
+      "same_event_count": true,
+      "pass": true
+    },
+    {
+      "file": "cycle_c1_seed2026.npz",
+      "state_rms_difference": 9.987708754954175e-15,
+      "switch_time_max_difference": 0.0,
+      "same_event_count": true,
+      "pass": true
+    },
+    {
+      "file": "cycle_c1_seed2027.npz",
+      "state_rms_difference": 1.123110910413301e-14,
+      "switch_time_max_difference": 0.0,
+      "same_event_count": true,
+      "pass": true
+    }
+  ],
+  "saddle_eigenvalues": [
+    -1.0,
+    -0.6000000000000001,
+    0.4
+  ],
+  "local_cycle_contraction_ratio": 3.3750000000000013,
+  "observed_trajectory_files": 76,
+  "invariant_coordinate_planes": true,
+  "noise": 0,
+  "state_definition": "Largest component; dominance intervals are not epsilon-neighborhood dwell times."
+}

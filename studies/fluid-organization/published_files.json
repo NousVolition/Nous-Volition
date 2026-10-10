@@ -28,9 +28,9 @@
     },
     {
       "path": "studies/fluid-organization/README.md",
-      "size": 4384,
-      "git_blob_sha": "cb8c9e30cf62073c6a408065d6d3332e72500ed9",
-      "sha256": "b988f511dbabc365545bf30ffd87d7c691308971909b292e474e7574d543d5d1"
+      "size": 4836,
+      "git_blob_sha": "978b44b28dcce29ca18ad1a546787976aa47aa68",
+      "sha256": "2dfe532e2f9fafa1438b225ed01fe08dd03e1d793ee6f01f55f7e127f5785ffe"
     },
     {
       "path": "studies/fluid-organization/references/codex-clipboard-0832323a-bb13-4cdf-9c2d-5fedb9d9d689.png",
@@ -400,9 +400,9 @@
     },
     {
       "path": "studies/fluid-organization/network_reference_addendum.html",
-      "size": 12826,
-      "git_blob_sha": "9c9d30641ba61565f3d649582664d3acccc44c5d",
-      "sha256": "2a486181e34b22e02ea68d208ebbe8226ccfc9f9ce000cb24464c55df567fe95"
+      "size": 13233,
+      "git_blob_sha": "bde9cf6fc40b4b71f892c4feec1d14af4088774d",
+      "sha256": "8ab97bca0e3abb0e079a3d9029c517c5397320f1931bcfce06e1949dbe851646"
     },
     {
       "path": "studies/fluid-organization/references/heteroclinic_network_reference.png",
@@ -433,7 +433,199 @@
       "size": 94641,
       "git_blob_sha": "4e6bfbf53a8fc17219fc2cf0fd003e2a23413e3e",
       "sha256": "aa42bb85782d5a01fcf6f54cae0ced60f1e1ee1e895f82dc746b5751a45e5f8e"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/.gitattributes",
+      "size": 9,
+      "git_blob_sha": "625449502ba4b4d7c229c6ccee42e3ec41cc780c",
+      "sha256": "8b9c3028d6467ff3be7c793141927841d70f47f52d0590677438f488ca154992"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/figures/history_and_coupling.png",
+      "size": 93429,
+      "git_blob_sha": "af4b3d403e2503cd5d429acfcb01305c05dd0c9b",
+      "sha256": "432cea85defcd52c20ce5c6067060000a3391d1fc7192539bce16c778bc2da3d"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/figures/history_and_coupling.svg",
+      "size": 31509,
+      "git_blob_sha": "abd00e9fb1d066b1f25c965c1533bf75838a07d1",
+      "sha256": "64d5e6f7bfe4226100e81ab406af5a271c223096f3202249d789f6f568d9d51a"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/figures/network_cycle.png",
+      "size": 226335,
+      "git_blob_sha": "c62a9e183a9aa4a06b962999256e0860af3f626d",
+      "sha256": "4c08a6d61189a1f360d13a4a9346ff3711b993f678d3276f0cdf5db31b9b102b"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/figures/network_cycle.svg",
+      "size": 44876,
+      "git_blob_sha": "ceb99fbdab55d802b3d80273094519a502c9b17f",
+      "sha256": "3e3e19228035880d9958e2252b34436308e548075f045f1c5c221f8e979a6a7e"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/figures/network_learning.png",
+      "size": 114424,
+      "git_blob_sha": "e16e39224610ed67cf55450bdd36240adeb2f7f2",
+      "sha256": "c90d260879cc05c32e113d3b3878662fa99642b2c92c01024d3a592945412bd7"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/figures/network_learning.svg",
+      "size": 38099,
+      "git_blob_sha": "7f34a01f1f0629aeff9335dcdb942cc2c740e38c",
+      "sha256": "bf3ff0f47f5cc8ca1d7b144c6e135bef31f5a2bb09ce2b15b502ce33b8646a75"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/figures/recovery.png",
+      "size": 167010,
+      "git_blob_sha": "60f4c98553a5d033e668157ac8830d8a0c9d2daf",
+      "sha256": "c46ba9e4fb74f0c21aa0340fca5b179c5a0c0e553313d9af7c2cb78a047ca743"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/figures/recovery.svg",
+      "size": 62531,
+      "git_blob_sha": "7de91aa85b58cccbefb2668377aef58fbaf13028",
+      "sha256": "5a5c32870fa6f4c6602a2b77c27c53fab5e76a773e770f4d70e5dacfb3127821"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/figures/recovery_prediction.png",
+      "size": 72931,
+      "git_blob_sha": "c7ab030a315264a9dffbac1d884aa8b4100353b7",
+      "sha256": "c4f4c3ab941041ed2f898756a475e54886514be68400e2ab1aba4dccbdd66853"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/figures/recovery_prediction.svg",
+      "size": 20567,
+      "git_blob_sha": "6651c3db9a8f7de539cea665679b191009a27c01",
+      "sha256": "bb5f270b3c56b678afbfa92f1f716216bf61e6e06aa13142ce65333082b2422d"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/figures/recurrence_and_validation.png",
+      "size": 131874,
+      "git_blob_sha": "1f8489b651227b5b780d42b315493f72896f840e",
+      "sha256": "ddde49eb6009955be4629aabcc01ec8c7d392c8f6d764093848565c87b4b5567"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/figures/recurrence_and_validation.svg",
+      "size": 37098,
+      "git_blob_sha": "ea6eddb0980cc9d48bb0d6fe1c7fd04e36461288",
+      "sha256": "cb65bf9b9a39d7042c5e263a18630324f21b51f2a3f2238b5eacccde5f130f76"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/manifest.json",
+      "size": 39586,
+      "git_blob_sha": "086e4dad5d53e21e3445ea027f4058122f02667a",
+      "sha256": "9c062145f28472943ff92d32ad30b685f328f0e0ebd6b314c4fb3f23133e8057"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/protocol.json",
+      "size": 2392,
+      "git_blob_sha": "e8f072efef609223533d409bc5303bf994e52b65",
+      "sha256": "8e9b6c0f998801711df38dfe97c1572fd51d9f30535fd2b712775dcf60e38aa4"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/README.md",
+      "size": 3866,
+      "git_blob_sha": "8484d1afb1792415388d8f09899c6cd5db867a2e",
+      "sha256": "3e81a8272e8f726f0b2242dbf8327cb4a4d677c6fb52a831eee4314ccab421a0"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/README.txt",
+      "size": 2523,
+      "git_blob_sha": "5ba8242726df6790031a05c916478afcaba69e24",
+      "sha256": "b7e30417ca12137b858234ec8f9abcdddae5b77d4c421e60a9bcbe79c0af0d0f"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/report.html",
+      "size": 18636,
+      "git_blob_sha": "e195dde28582ae54032bbdaa34b6d9760ea40b6f",
+      "sha256": "f26fbdf71ebfb27de398a8b895a66cf7af7a02e78b17e4dfd085f1adf256fa41"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/requirements-lock.txt",
+      "size": 86,
+      "git_blob_sha": "b7438746fa2342a2074afa0132f9312849b6f1ce",
+      "sha256": "5ee45f93ed6436cbc328aae7f961673547be8b90a46fc2b145e28fed8c968a3b"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/requirements.txt",
+      "size": 71,
+      "git_blob_sha": "f2b7513278e0046d11bd8aa1c66146188e96bd29",
+      "sha256": "4aa57b5353334621703b414d87cd212ae9ba7bcd35f2df5f0cda5c3b0487a5a9"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/results/learned_network_parameters.json",
+      "size": 1489,
+      "git_blob_sha": "8fa5e3b31a8bf2373e0b64db1013e6229cf213e2",
+      "sha256": "8a6e66addd00cacabdab16f371113d7f6eed918c2964f5ef4ce20898b2294b2c"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/results/network_events.csv",
+      "size": 43659,
+      "git_blob_sha": "24649ee57228c8252ed8994784289711284bb881",
+      "sha256": "505fb0c9a816ad7b5ca09d3acddc4d70332d17cc4aa83a3bbb04f431bf1c0cba"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/results/network_forecast.json",
+      "size": 6061,
+      "git_blob_sha": "4cd3cda8abfcf0d2c745ce6b4d07425a4a36ec31",
+      "sha256": "d6c662cf242de2b7653d0b60e891b8bfc10e7a10d4749e2b3d164db779fcf110"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/results/network_history_prediction.json",
+      "size": 5207,
+      "git_blob_sha": "e9443a059772a9ba5db4aea3b4cebc84de1a675f",
+      "sha256": "66810c375825e06c2d24528f64603ed26a3684ecd5e85c346a4328928d41ec45"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/results/network_regimes.csv",
+      "size": 11860,
+      "git_blob_sha": "06de5b78ba3b85756ccf2d3abfca5ceef898e89d",
+      "sha256": "dd91ab93bfd3570c8f9f2514fa262d06062841add6d4f081dcd39cf9dc859861"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/results/network_validation.json",
+      "size": 2830,
+      "git_blob_sha": "81ef3b115dfdf12e50501ee6c5ab3cdd28c42151",
+      "sha256": "8561e3e5409c86d16052e1be881d8d08355a564d251424543a8fb86eb0c82ff5"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/results/recovery_prediction.json",
+      "size": 4897,
+      "git_blob_sha": "501dbe3d9ab5d3c69c1baea59c0cf86d5e5aaae6",
+      "sha256": "6965452b25cd10817b304d3ac1a1f7246d91dc85144676d03ef48a1326f1f660"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/results/recovery_runs.csv",
+      "size": 11740,
+      "git_blob_sha": "63aa29ea5b54853d2f73c9d3c0a60967f5af8556",
+      "sha256": "cea60224d60a60f198c8e975e325a678e5e1267c8b59eeee39bcc1e83666b1ad"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/results/recovery_summary.json",
+      "size": 7724,
+      "git_blob_sha": "5f4d34796a40734e2e69f7d94b8c903e41695eea",
+      "sha256": "d2bc60e2f73027e48428eb1952b61c8dc26f2858339c2afc8caceda6e0e3641d"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/results/recurrence.json",
+      "size": 11261,
+      "git_blob_sha": "f76290f5d23935459b49d278a2ac9096a0e0e358",
+      "sha256": "2c7cbc6062ea5adb8c821d56da8bc375f4eff48a5f9ed819a0493cc6ce81f330"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/results/tests.xml",
+      "size": 2074,
+      "git_blob_sha": "ba34cba266d4a254af7db5df93020f82f2a909fd",
+      "sha256": "24a4be90a939276fe6a337cf677c6113ec50e4c67728b3d36792dbe6d1528b71"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/results/verification.json",
+      "size": 5166,
+      "git_blob_sha": "3f5f656962b16823615e36fe4f66358d1e12e26c",
+      "sha256": "5f099ce941a0b1e2b16acd97d7b79d4be11b9b7c70a5fddce514b41aa7a7a8d9"
     }
   ],
-  "note": "Study files only; repository indexes are intentionally outside this inventory. Complete original numerical snapshot restores from the checksum-verified recorded package. Reference addenda add no completed numerical experiments."
+  "note": "Study files only; repository-wide indexes and this inventory itself are outside the inventory. Original numerical snapshot is preserved. The completed recovery-network extension has its own protocol, numerical data and source manifest. Historical reference addenda distinguish that limited pilot from remaining proposed experiments."
 }
