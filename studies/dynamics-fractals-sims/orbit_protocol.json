@@ -1,0 +1,21 @@
+{
+  "source_url": "https://ssd.jpl.nasa.gov/sats/elem/sep.html",
+  "retrieved_UTC_date": "2026-10-10",
+  "source_epoch_TDB": "2000-01-01.5",
+  "source_warning": "Mean elements describe general orbit shape; they are not ephemerides.",
+  "aliases_assumed": {"Dasiphae": "Pasiphae", "thebes": "Thebe"},
+  "moons": [
+    {"name": "Pasiphae", "requested_group": "CO", "code": 508, "a_km": 23463200, "e": 0.412, "period_days": 734.4215, "inclination_deg": 148.3, "frame": "ecliptic", "ephemeris": "JUP347"},
+    {"name": "Elara", "requested_group": "CO", "code": 507, "a_km": 11710700, "e": 0.212, "period_days": 258.8861, "inclination_deg": 27.8, "frame": "ecliptic", "ephemeris": "JUP347"},
+    {"name": "Himalia", "requested_group": "CO", "code": 506, "a_km": 11439000, "e": 0.160, "period_days": 249.9090, "inclination_deg": 28.4, "frame": "ecliptic", "ephemeris": "JUP347"},
+    {"name": "Europa", "requested_group": "Eccentric", "code": 502, "a_km": 671100, "e": 0.009, "period_days": 3.525463, "inclination_deg": 0.5, "frame": "Laplace", "ephemeris": "JUP365"},
+    {"name": "Callisto", "requested_group": "Eccentric", "code": 504, "a_km": 1882700, "e": 0.007, "period_days": 16.690440, "inclination_deg": 0.3, "frame": "Laplace", "ephemeris": "JUP365"},
+    {"name": "Thebe", "requested_group": "Eccentric", "code": 514, "a_km": 221900, "e": 0.018, "period_days": 0.676105, "inclination_deg": 1.1, "frame": "Laplace", "ephemeris": "JUP365"}
+  ],
+  "orbit_model": "Independent frozen Kepler ellipses in each moon's own orbital plane, periapsis at time zero; circular controls set e=0 at the same a and P. Not current positions or a common sky projection.",
+  "sims_mapping": "Uniform load 20*sqrt(1-e^2)/(1-e*cos(E))^2 Pa for one orbit compressed into 100 SIMS seconds, from 20 to 120 s; zero load otherwise. Equal time-mean load, not measured gravitational stress or an astronomical timescale.",
+  "material_row_stress_Pa": 20,
+  "coupling_ratio_K_over_G_M": 2,
+  "seeds": [20261020,20261021,20261022,20261023,20261024,20261025,20261026,20261027,20261028,20261029,20261030,20261031,20261032,20261033,20261034,20261035,20261036,20261037,20261038,20261039,20261040,20261041,20261042,20261043,20261044,20261045,20261046,20261047,20261048,20261049,20261050,20261051],
+  "gates": {"max_orbit_position_error_over_a": 1e-8, "max_clay_strain_error": 1e-9, "max_mean_response_error": 1e-12, "max_paired_spread_error": 1e-12}
+}

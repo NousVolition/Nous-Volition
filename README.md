@@ -36,7 +36,7 @@ the separate project linked below.
 
 [Read the review and connections](https://github.com/NousVolition/My-Sources-Project-ALL/blob/main/REPOSITORY-REVIEW.md) for related identity/position, symmetry, persistence and prediction tests, together with unresolved work.
 
-Repository CI now runs 211 dynamics/fractal/topology/heteroclinic/reversibility/SIMS-response/Hug/clay, 12 social-organization and 13 recovery/entrainment unit tests, plus source syntax, JSON, local Markdown links and the three published study manifests. These checks do not rerun the full ensembles or certify the scientific interpretations.
+Repository CI now runs 234 dynamics/fractal/topology/heteroclinic/reversibility/SIMS-response/Hug/clay/orbit, 12 social-organization and 13 recovery/entrainment unit tests, plus source syntax, JSON, local Markdown links and the three published study manifests. These checks do not rerun the full ensembles or certify the scientific interpretations.
 
 ## Start here
 
@@ -75,7 +75,7 @@ The study explores human coordination through nine **SIMS**, its simulated parti
 
 ## Dynamics, fractals, and SIMS
 
-[Open the dynamics and fractals test suite](studies/dynamics-fractals-sims/README.md) for nine batches, including 12,800 binary-choice SIMS runs, 1,632 earlier continuous-response trajectories, 384 historical threshold-Hug trajectories, and 384 current clay-SIMS trajectories. These use different response rules, reported separately. The package covers continuous dynamics, finite fractals, tipping points, oscillations, topology, and heteroclinic switching.
+[Open the dynamics and fractals test suite](studies/dynamics-fractals-sims/README.md) for ten batches, including 12,800 binary-choice SIMS runs, 1,632 earlier continuous-response trajectories, 384 historical threshold-Hug trajectories, 384 current clay-SIMS trajectories, and 672 orbit-driven clay trajectories. These use different response rules, reported separately. The package covers continuous dynamics, finite fractals, tipping points, oscillations, topology, and heteroclinic switching.
 
 The topology batch adds 39,056 bounded algebraic checks and 2,560 new SIMS runs comparing contact density, resisting positions, and filled faces. An exact counterexample shows why group totals can conceal different future coordination.
 
@@ -89,4 +89,7 @@ The historical eighth batch locates and pins the earlier threshold-Hug equations
 
 The current ninth batch replaces the active Hug/SIMS response with the updated Burgers clay formula. It reruns 384 matched SIMS trajectories, adds 128 uncoupled comparisons and 24 independent solver controls, and verifies immediate deformation, delayed recovery and retained strain. The current model has no opening-at-1 trigger. See [the clay SIMS methods and results](studies/dynamics-fractals-sims/CLAY_SIMS_METHODS.md).
 
-The package includes 211 automated tests, twenty original scientific figures, saved numerical results, and an [illustrated report](studies/dynamics-fractals-sims/report.html) to download and open locally. Equations, selected parameters, and links to primary sources are documented alongside the code.
+The tenth batch adds paired circular/reference-eccentric orbits for Pasiphae, Elara, Himalia, Europa, Callisto and Thebe. It applies six equal-mean eccentric loading signals and a shared circular control inside the current clay formula: 672 main SIMS runs, twelve orbital integration controls and twelve full-network solver checks. See [the orbital methods and outcomes](studies/dynamics-fractals-sims/ORBIT_METHODS.md).
+
+The package includes 234 automated tests, twenty-two original scientific figures, saved numerical results, and an [illustrated report](studies/dynamics-fractals-sims/report.html) to download and open locally. Equations, selected parameters, and links to primary sources are documented alongside the code.
+

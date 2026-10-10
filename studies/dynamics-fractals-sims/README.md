@@ -1,6 +1,8 @@
 # Dynamics, fractals, and SIMS
 
-Can the same local choices produce different group outcomes when connections change? This study connects that human-coordination question to the dynamics and topology in the supplied images. **SIMS** are the simulated participants. The package contains nine batches, 12,800 binary-choice SIMS runs, 1,632 earlier continuous-response trajectories, 384 historical threshold-Hug trajectories and 384 current clay-SIMS trajectories, twenty original figures, and 211 automated tests. The cumulative main SIMS count is 15,200; model families and additional controls are reported separately.
+Can the same local choices produce different group outcomes when connections change? This study connects that human-coordination question to the supplied mathematical references. **SIMS** are the simulated participants. The package contains ten batches, 12,800 binary-choice SIMS runs, 1,632 earlier continuous-response trajectories, 384 historical threshold-Hug trajectories, 384 current clay-SIMS trajectories and 672 orbit-driven clay trajectories, twenty-two original figures, and 234 automated tests. The cumulative main SIMS count is 15,872; model families and additional controls are reported separately.
+
+**New: [circular and eccentric Jupiter-moon orbits applied inside clay SIMS](ORBIT_METHODS.md).** Pasiphae, Elara, Himalia, Europa, Callisto and Thebe have paired circular/reference-eccentric orbit controls. Six eccentric pressure signals share one circular participant baseline; all 672 new runs use the current clay formula.
 
 **Current Hug/SIMS: [the updated clay formula, rerun and checks](CLAY_SIMS_METHODS.md).** It replaces the opening-threshold model for current work and adds 128 uncoupled comparisons plus 24 independent solver runs.
 
@@ -24,6 +26,7 @@ python quench.py --check
 python bridge_checks.py --check
 python sims_response.py --check
 python clay_sims.py --check
+python orbits.py --check
 ```
 
 The tests check analytic formulas, numerical accuracy, graph construction, stability, and identity/geometry invariance. The study command reruns 10,240 SIMS rounds plus the first mathematical batch. The topology command includes 2,560 additional SIMS runs and 39,056 bounded algebraic equalities. The oscillation run also checks period convergence across step sizes and initial states. The fifth batch checks saddle connections, 48 isolated nine-state trajectories, 64 starts for a 16-unit pacemaker ring, local memory, interaction inference, and 12 quenches. NumPy is required for the coupled ensemble, inference, quenches, and their tests; the earlier calculations and isolated heteroclinic solver use the standard library.
@@ -43,6 +46,7 @@ python quench.py
 python bridge_checks.py
 python sims_response.py
 python clay_sims.py
+python orbits.py
 python build_report.py
 ```
 
