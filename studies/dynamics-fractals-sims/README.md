@@ -1,6 +1,6 @@
 # Dynamics, fractals, and SIMS
 
-Can the same local choices produce different group outcomes when connections change? This study connects that human-coordination question to the dynamics and topology in the supplied images. **SIMS** are the simulated participants. The local package contains five batches of mathematical experiments, two matched SIMS experiments totaling 12,800 runs, fourteen original figures, and 116 automated tests.
+Can the same local choices produce different group outcomes when connections change? This study connects that human-coordination question to the dynamics and topology in the supplied images. **SIMS** are the simulated participants. The package contains six batches of mathematical experiments, two matched SIMS experiments totaling 12,800 runs, sixteen original figures, and 138 automated tests.
 
 Open [report.html](report.html) locally for the illustrated report. Figures and numerical results are saved with the code. The images supplied in the conversation are references; the plots here are newly computed.
 
@@ -19,6 +19,7 @@ python heteroclinic.py --check
 python pacemaker.py --check
 python memory_inference.py --check
 python quench.py --check
+python bridge_checks.py --check
 ```
 
 The tests check analytic formulas, numerical accuracy, graph construction, stability, and identity/geometry invariance. The study command reruns 10,240 SIMS rounds plus the first mathematical batch. The topology command includes 2,560 additional SIMS runs and 39,056 bounded algebraic equalities. The oscillation run also checks period convergence across step sizes and initial states. The fifth batch checks saddle connections, 48 isolated nine-state trajectories, 64 starts for a 16-unit pacemaker ring, local memory, interaction inference, and 12 quenches. NumPy is required for the coupled ensemble, inference, quenches, and their tests; the earlier calculations and isolated heteroclinic solver use the standard library.
@@ -35,6 +36,7 @@ python heteroclinic.py
 python pacemaker.py
 python memory_inference.py
 python quench.py
+python bridge_checks.py
 python build_report.py
 ```
 
@@ -118,6 +120,14 @@ One source item remains pending: the vector field for the μ-dependent annulus i
 The latest references drive executable experiments documented in [HETEROCLINIC_METHODS.md](HETEROCLINIC_METHODS.md). A three-saddle cycle develops longer pauses; the nine-state model changes its transition preferences when rates change while connections remain fixed. The 16-unit model produces two different synchronized patterns at the same parameter settings, selected by initial conditions. An uncoupled control removes collective switching. Smaller-step comparisons preserve the selected patterns.
 
 The local memory diagnostic tests how a hidden offset survives or is erased while passing saddles. A least-squares inference baseline recovers interactions from full activity observations and tests them on a new trajectory; equilibrium-only data fail identifiability. Twelve sudden parameter changes measure damped relaxation toward coexistence and record a case that does not confirm settling within the horizon. These mathematical activity-state experiments do not add to the SIMS round count.
+
+## Batch 6: reversibility, linear stability, and water-flow checks
+
+The latest three images become 22 executable checks, documented in [BRIDGE_CHECKS.md](BRIDGE_CHECKS.md). The reversible textbook system has an attracting node, a repelling node, and two saddles per repeating cell. An exact diagonal solution checks numerical convergence, and a strictly decreasing potential excludes nonconstant closed orbits. Time reversal symmetry does not imply conservative dynamics.
+
+Seven linear cases reproduce the supplied phase-portrait report and its neutral boundary. A stable-node control temporarily amplifies a displacement before it decays; separate nonlinear examples show why imaginary linearized eigenvalues alone do not establish a center.
+
+Independent formulas check all 36 saved channel cases behind the water screenshot, including density/viscosity swaps and the 18.55% lower steady D₂O speed at 25 °C under the specified pressure and geometry. A new discrete-mode implementation checks spatial and temporal convergence against exact solutions. This reuses saved material inputs from the separate water study, with source hashes; it adds no molecular, three-dimensional vortex, or SIMS runs. It also adds no new experimental velocity measurements. See [results](bridge_results.json) and [reference extracts](bridge_references.json).
 
 ## How the batches connect
 

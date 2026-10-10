@@ -1,0 +1,655 @@
+{
+  "reversible": {
+    "equation": "xprime=-2*cos(x)-cos(y); yprime=-cos(x)-2*cos(y)",
+    "domain": "Four equilibria per 2pi-periodic cell; infinitely many on R^2.",
+    "fixed_points": [
+      {
+        "point": [
+          -1.5707963267948966,
+          -1.5707963267948966
+        ],
+        "trace": -4.0,
+        "determinant": 3.0,
+        "discriminant": 4.0,
+        "classification": "stable node",
+        "eigenvalues": [
+          -3.0,
+          -1.0
+        ]
+      },
+      {
+        "point": [
+          1.5707963267948966,
+          1.5707963267948966
+        ],
+        "trace": 4.0,
+        "determinant": 3.0,
+        "discriminant": 4.0,
+        "classification": "unstable node",
+        "eigenvalues": [
+          1.0,
+          3.0
+        ]
+      },
+      {
+        "point": [
+          -1.5707963267948966,
+          1.5707963267948966
+        ],
+        "trace": 0.0,
+        "determinant": -3.0,
+        "discriminant": 12.0,
+        "classification": "saddle",
+        "eigenvalues": [
+          -1.7320508075688772,
+          1.7320508075688772
+        ]
+      },
+      {
+        "point": [
+          1.5707963267948966,
+          -1.5707963267948966
+        ],
+        "trace": 0.0,
+        "determinant": -3.0,
+        "discriminant": 12.0,
+        "classification": "saddle",
+        "eigenvalues": [
+          -1.7320508075688772,
+          1.7320508075688772
+        ]
+      }
+    ],
+    "path_reversal_max_errors": [
+      5.087743767950847e-10,
+      4.947073861671925e-10,
+      4.5511056034897024e-10
+    ],
+    "step_halving_max_errors": [
+      2.6126008023652503e-09,
+      1.258505522017117e-09,
+      1.888759593171585e-09
+    ],
+    "diagonal_accuracy": [
+      {
+        "step": 0.04,
+        "max_error": 7.318145380796892e-07
+      },
+      {
+        "step": 0.02,
+        "max_error": 4.46768892992111e-08
+      },
+      {
+        "step": 0.01,
+        "max_error": 2.761468609335793e-09
+      },
+      {
+        "step": 0.005,
+        "max_error": 1.7162671284154385e-10
+      }
+    ],
+    "attraction": [
+      {
+        "initial_distance": 0.19999999999999996,
+        "final_distance": 4.752090372992295e-05,
+        "largest_potential_increment": -2.2809754085528766e-11
+      },
+      {
+        "initial_distance": 0.19999999999999996,
+        "final_distance": 4.752090372992295e-05,
+        "largest_potential_increment": -2.2809754085528766e-11
+      },
+      {
+        "initial_distance": 0.18027756377319945,
+        "final_distance": 5.938242277284172e-05,
+        "largest_potential_increment": -3.56175089422095e-11
+      }
+    ]
+  },
+  "linear": [
+    {
+      "name": "center",
+      "matrix": [
+        [
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0
+        ]
+      ],
+      "trace": 0.0,
+      "determinant": 1.0,
+      "discriminant": -4.0,
+      "classification": "linear center",
+      "source_classification": "linear center",
+      "rk4_max_error": 3.726779275634356e-11
+    },
+    {
+      "name": "stable spiral",
+      "matrix": [
+        [
+          -0.2,
+          -1.0
+        ],
+        [
+          1.0,
+          -0.2
+        ]
+      ],
+      "trace": -0.4,
+      "determinant": 1.04,
+      "discriminant": -4.0,
+      "classification": "stable spiral",
+      "source_classification": "stable spiral",
+      "rk4_max_error": 2.7600979101429384e-11
+    },
+    {
+      "name": "unstable spiral",
+      "matrix": [
+        [
+          0.2,
+          -1.0
+        ],
+        [
+          1.0,
+          0.2
+        ]
+      ],
+      "trace": 0.4,
+      "determinant": 1.04,
+      "discriminant": -4.0,
+      "classification": "unstable spiral",
+      "source_classification": "unstable spiral",
+      "rk4_max_error": 6.12223692910906e-11
+    },
+    {
+      "name": "5.1.3",
+      "matrix": [
+        [
+          1.0,
+          -1.0
+        ],
+        [
+          -1.0,
+          0.0
+        ]
+      ],
+      "trace": 1.0,
+      "determinant": -1.0,
+      "discriminant": 5.0,
+      "classification": "saddle",
+      "source_classification": "saddle",
+      "rk4_max_error": 1.0329170294739562e-08
+    },
+    {
+      "name": "symmetric a=-1,b=0.5",
+      "matrix": [
+        [
+          -1.0,
+          0.5
+        ],
+        [
+          0.5,
+          -1.0
+        ]
+      ],
+      "trace": -2.0,
+      "determinant": 0.75,
+      "discriminant": 1.0,
+      "classification": "stable node",
+      "source_classification": "stable node",
+      "rk4_max_error": 3.333659572354176e-11
+    },
+    {
+      "name": "symmetric a=-1,b=1",
+      "matrix": [
+        [
+          -1.0,
+          1.0
+        ],
+        [
+          1.0,
+          -1.0
+        ]
+      ],
+      "trace": -2.0,
+      "determinant": 0.0,
+      "discriminant": 4.0,
+      "classification": "zero eigenvalue; inspect neutral direction",
+      "source_classification": "non-isolated equilibria; inspect zero mode",
+      "rk4_max_error": 1.0580113663655987e-10
+    },
+    {
+      "name": "symmetric a=-1,b=1.5",
+      "matrix": [
+        [
+          -1.0,
+          1.5
+        ],
+        [
+          1.5,
+          -1.0
+        ]
+      ],
+      "trace": -2.0,
+      "determinant": -1.25,
+      "discriminant": 9.0,
+      "classification": "saddle",
+      "source_classification": "saddle",
+      "rk4_max_error": 2.5938278799140975e-10
+    }
+  ],
+  "transient_growth": {
+    "matrix": [
+      [
+        -1.0,
+        10.0
+      ],
+      [
+        0.0,
+        -2.0
+      ]
+    ],
+    "initial": [
+      0,
+      1
+    ],
+    "largest_sampled_norm": 2.5127048606505906,
+    "sampled_peak_time": 0.68,
+    "norm_at_10": 0.00045397868609330306,
+    "trace": -3.0,
+    "determinant": 2.0,
+    "discriminant": 1.0,
+    "classification": "stable node"
+  },
+  "water": {
+    "comparison_kind": "Independent analytical and discrete-mode checks of saved continuum data; no new molecular or 3D vortex runs.",
+    "source_rows_checked": 36,
+    "checks": [
+      {
+        "T_K": 283.15,
+        "material": "H2O",
+        "G_Pam": 1.0,
+        "steady_relative_error": 0.0,
+        "tau_relative_error": 2.220446049250313e-16,
+        "startup_mean_relative_difference": 1.4950121141055206e-09,
+        "perturbation_absolute_error": 0.0
+      },
+      {
+        "T_K": 283.15,
+        "material": "H2O",
+        "G_Pam": 10.0,
+        "steady_relative_error": 2.220446049250313e-16,
+        "tau_relative_error": 2.220446049250313e-16,
+        "startup_mean_relative_difference": 1.4950105597932861e-09,
+        "perturbation_absolute_error": 0.0
+      },
+      {
+        "T_K": 283.15,
+        "material": "H2O",
+        "G_Pam": 100.0,
+        "steady_relative_error": 2.220446049250313e-16,
+        "tau_relative_error": 2.220446049250313e-16,
+        "startup_mean_relative_difference": 1.4950185533990634e-09,
+        "perturbation_absolute_error": 0.0
+      },
+      {
+        "T_K": 283.15,
+        "material": "density_only",
+        "G_Pam": 1.0,
+        "steady_relative_error": 0.0,
+        "tau_relative_error": 0.0,
+        "startup_mean_relative_difference": 4.724443725123706e-09,
+        "perturbation_absolute_error": 1.5246593050577406e-20
+      },
+      {
+        "T_K": 283.15,
+        "material": "density_only",
+        "G_Pam": 10.0,
+        "steady_relative_error": 2.220446049250313e-16,
+        "tau_relative_error": 0.0,
+        "startup_mean_relative_difference": 4.724439728320817e-09,
+        "perturbation_absolute_error": 1.5246593050577406e-20
+      },
+      {
+        "T_K": 283.15,
+        "material": "density_only",
+        "G_Pam": 100.0,
+        "steady_relative_error": 2.220446049250313e-16,
+        "tau_relative_error": 0.0,
+        "startup_mean_relative_difference": 4.724440616499237e-09,
+        "perturbation_absolute_error": 1.5246593050577406e-20
+      },
+      {
+        "T_K": 283.15,
+        "material": "viscosity_only",
+        "G_Pam": 1.0,
+        "steady_relative_error": 0.0,
+        "tau_relative_error": 2.220446049250313e-16,
+        "startup_mean_relative_difference": 5.0490944758507794e-11,
+        "perturbation_absolute_error": 0.0
+      },
+      {
+        "T_K": 283.15,
+        "material": "viscosity_only",
+        "G_Pam": 10.0,
+        "steady_relative_error": 2.220446049250313e-16,
+        "tau_relative_error": 2.220446049250313e-16,
+        "startup_mean_relative_difference": 5.049116680311272e-11,
+        "perturbation_absolute_error": 0.0
+      },
+      {
+        "T_K": 283.15,
+        "material": "viscosity_only",
+        "G_Pam": 100.0,
+        "steady_relative_error": 2.220446049250313e-16,
+        "tau_relative_error": 2.220446049250313e-16,
+        "startup_mean_relative_difference": 5.049916040889002e-11,
+        "perturbation_absolute_error": 0.0
+      },
+      {
+        "T_K": 283.15,
+        "material": "D2O",
+        "G_Pam": 1.0,
+        "steady_relative_error": 0.0,
+        "tau_relative_error": 0.0,
+        "startup_mean_relative_difference": 2.2723045667305541e-10,
+        "perturbation_absolute_error": 0.0
+      },
+      {
+        "T_K": 283.15,
+        "material": "D2O",
+        "G_Pam": 10.0,
+        "steady_relative_error": 2.220446049250313e-16,
+        "tau_relative_error": 0.0,
+        "startup_mean_relative_difference": 2.272302346284505e-10,
+        "perturbation_absolute_error": 0.0
+      },
+      {
+        "T_K": 283.15,
+        "material": "D2O",
+        "G_Pam": 100.0,
+        "steady_relative_error": 2.220446049250313e-16,
+        "tau_relative_error": 0.0,
+        "startup_mean_relative_difference": 2.2721824421978454e-10,
+        "perturbation_absolute_error": 0.0
+      },
+      {
+        "T_K": 298.15,
+        "material": "H2O",
+        "G_Pam": 1.0,
+        "steady_relative_error": 0.0,
+        "tau_relative_error": 2.220446049250313e-16,
+        "startup_mean_relative_difference": 6.296121624060902e-08,
+        "perturbation_absolute_error": 5.149960319306146e-19
+      },
+      {
+        "T_K": 298.15,
+        "material": "H2O",
+        "G_Pam": 10.0,
+        "steady_relative_error": 2.220446049250313e-16,
+        "tau_relative_error": 2.220446049250313e-16,
+        "startup_mean_relative_difference": 6.296120891313706e-08,
+        "perturbation_absolute_error": 5.149960319306146e-19
+      },
+      {
+        "T_K": 298.15,
+        "material": "H2O",
+        "G_Pam": 100.0,
+        "steady_relative_error": 0.0,
+        "tau_relative_error": 2.220446049250313e-16,
+        "startup_mean_relative_difference": 6.296122112559033e-08,
+        "perturbation_absolute_error": 5.149960319306146e-19
+      },
+      {
+        "T_K": 298.15,
+        "material": "density_only",
+        "G_Pam": 1.0,
+        "steady_relative_error": 0.0,
+        "tau_relative_error": 0.0,
+        "startup_mean_relative_difference": 1.3474638316246512e-07,
+        "perturbation_absolute_error": 2.710505431213761e-19
+      },
+      {
+        "T_K": 298.15,
+        "material": "density_only",
+        "G_Pam": 10.0,
+        "steady_relative_error": 2.220446049250313e-16,
+        "tau_relative_error": 0.0,
+        "startup_mean_relative_difference": 1.347463916001601e-07,
+        "perturbation_absolute_error": 2.710505431213761e-19
+      },
+      {
+        "T_K": 298.15,
+        "material": "density_only",
+        "G_Pam": 100.0,
+        "steady_relative_error": 0.0,
+        "tau_relative_error": 0.0,
+        "startup_mean_relative_difference": 1.347464002598997e-07,
+        "perturbation_absolute_error": 2.710505431213761e-19
+      },
+      {
+        "T_K": 298.15,
+        "material": "viscosity_only",
+        "G_Pam": 1.0,
+        "steady_relative_error": 0.0,
+        "tau_relative_error": 1.1102230246251565e-16,
+        "startup_mean_relative_difference": 1.0213056400587561e-08,
+        "perturbation_absolute_error": 7.115076756936123e-20
+      },
+      {
+        "T_K": 298.15,
+        "material": "viscosity_only",
+        "G_Pam": 10.0,
+        "steady_relative_error": 2.220446049250313e-16,
+        "tau_relative_error": 1.1102230246251565e-16,
+        "startup_mean_relative_difference": 1.0213053291963092e-08,
+        "perturbation_absolute_error": 7.115076756936123e-20
+      },
+      {
+        "T_K": 298.15,
+        "material": "viscosity_only",
+        "G_Pam": 100.0,
+        "steady_relative_error": 2.220446049250313e-16,
+        "tau_relative_error": 1.1102230246251565e-16,
+        "startup_mean_relative_difference": 1.0213063283970314e-08,
+        "perturbation_absolute_error": 7.115076756936123e-20
+      },
+      {
+        "T_K": 298.15,
+        "material": "D2O",
+        "G_Pam": 1.0,
+        "steady_relative_error": 0.0,
+        "tau_relative_error": 0.0,
+        "startup_mean_relative_difference": 2.6651260975896207e-08,
+        "perturbation_absolute_error": 0.0
+      },
+      {
+        "T_K": 298.15,
+        "material": "D2O",
+        "G_Pam": 10.0,
+        "steady_relative_error": 2.220446049250313e-16,
+        "tau_relative_error": 0.0,
+        "startup_mean_relative_difference": 2.6651255424781084e-08,
+        "perturbation_absolute_error": 0.0
+      },
+      {
+        "T_K": 298.15,
+        "material": "D2O",
+        "G_Pam": 100.0,
+        "steady_relative_error": 2.220446049250313e-16,
+        "tau_relative_error": 0.0,
+        "startup_mean_relative_difference": 2.6651262752253047e-08,
+        "perturbation_absolute_error": 0.0
+      },
+      {
+        "T_K": 313.15,
+        "material": "H2O",
+        "G_Pam": 1.0,
+        "steady_relative_error": 0.0,
+        "tau_relative_error": 0.0,
+        "startup_mean_relative_difference": 4.787335710076945e-07,
+        "perturbation_absolute_error": 1.3010426069826053e-18
+      },
+      {
+        "T_K": 313.15,
+        "material": "H2O",
+        "G_Pam": 10.0,
+        "steady_relative_error": 2.220446049250313e-16,
+        "tau_relative_error": 0.0,
+        "startup_mean_relative_difference": 4.787335801115233e-07,
+        "perturbation_absolute_error": 1.3010426069826053e-18
+      },
+      {
+        "T_K": 313.15,
+        "material": "H2O",
+        "G_Pam": 100.0,
+        "steady_relative_error": 2.220446049250313e-16,
+        "tau_relative_error": 0.0,
+        "startup_mean_relative_difference": 4.78733582554014e-07,
+        "perturbation_absolute_error": 1.3010426069826053e-18
+      },
+      {
+        "T_K": 313.15,
+        "material": "density_only",
+        "G_Pam": 1.0,
+        "steady_relative_error": 0.0,
+        "tau_relative_error": 2.220446049250313e-16,
+        "startup_mean_relative_difference": 8.196153018502628e-07,
+        "perturbation_absolute_error": 0.0
+      },
+      {
+        "T_K": 313.15,
+        "material": "density_only",
+        "G_Pam": 10.0,
+        "steady_relative_error": 2.220446049250313e-16,
+        "tau_relative_error": 2.220446049250313e-16,
+        "startup_mean_relative_difference": 8.196152814221591e-07,
+        "perturbation_absolute_error": 0.0
+      },
+      {
+        "T_K": 313.15,
+        "material": "density_only",
+        "G_Pam": 100.0,
+        "steady_relative_error": 2.220446049250313e-16,
+        "tau_relative_error": 2.220446049250313e-16,
+        "startup_mean_relative_difference": 8.196153062911549e-07,
+        "perturbation_absolute_error": 0.0
+      },
+      {
+        "T_K": 313.15,
+        "material": "viscosity_only",
+        "G_Pam": 1.0,
+        "steady_relative_error": 0.0,
+        "tau_relative_error": 0.0,
+        "startup_mean_relative_difference": 1.5492934046790197e-07,
+        "perturbation_absolute_error": 7.047314121155779e-19
+      },
+      {
+        "T_K": 313.15,
+        "material": "viscosity_only",
+        "G_Pam": 10.0,
+        "steady_relative_error": 2.220446049250313e-16,
+        "tau_relative_error": 0.0,
+        "startup_mean_relative_difference": 1.5492934801741853e-07,
+        "perturbation_absolute_error": 7.047314121155779e-19
+      },
+      {
+        "T_K": 313.15,
+        "material": "viscosity_only",
+        "G_Pam": 100.0,
+        "steady_relative_error": 2.220446049250313e-16,
+        "tau_relative_error": 0.0,
+        "startup_mean_relative_difference": 1.5492935023786458e-07,
+        "perturbation_absolute_error": 7.047314121155779e-19
+      },
+      {
+        "T_K": 313.15,
+        "material": "D2O",
+        "G_Pam": 1.0,
+        "steady_relative_error": 0.0,
+        "tau_relative_error": 2.220446049250313e-16,
+        "startup_mean_relative_difference": 3.015281064833175e-07,
+        "perturbation_absolute_error": 0.0
+      },
+      {
+        "T_K": 313.15,
+        "material": "D2O",
+        "G_Pam": 10.0,
+        "steady_relative_error": 2.220446049250313e-16,
+        "tau_relative_error": 2.220446049250313e-16,
+        "startup_mean_relative_difference": 3.015280867213477e-07,
+        "perturbation_absolute_error": 0.0
+      },
+      {
+        "T_K": 313.15,
+        "material": "D2O",
+        "G_Pam": 100.0,
+        "steady_relative_error": 2.220446049250313e-16,
+        "tau_relative_error": 2.220446049250313e-16,
+        "startup_mean_relative_difference": 3.015281113682988e-07,
+        "perturbation_absolute_error": 0.0
+      }
+    ],
+    "material_ratios": [
+      {
+        "temperature_C": 10.0,
+        "steady_D_over_H": 0.7823940768942825,
+        "tau_D_over_H": 0.8655155209998093,
+        "initial_acceleration_D_over_H": 0.9039630808590142
+      },
+      {
+        "temperature_C": 25.0,
+        "steady_D_over_H": 0.8144651540390555,
+        "tau_D_over_H": 0.9022144415146587,
+        "initial_acceleration_D_over_H": 0.9027400987637841
+      },
+      {
+        "temperature_C": 40.0,
+        "steady_D_over_H": 0.8329641773588043,
+        "tau_D_over_H": 0.9234479336153394,
+        "initial_acceleration_D_over_H": 0.9020153135193155
+      }
+    ],
+    "grid_convergence": [
+      {
+        "material": "H2O",
+        "intervals": 32,
+        "dt": 0.00025,
+        "relative_L2_error": 0.000499111996759476
+      },
+      {
+        "material": "H2O",
+        "intervals": 64,
+        "dt": 0.00025,
+        "relative_L2_error": 0.00012463755914186327
+      },
+      {
+        "material": "H2O",
+        "intervals": 128,
+        "dt": 0.00025,
+        "relative_L2_error": 3.097378683863895e-05
+      },
+      {
+        "material": "D2O",
+        "intervals": 32,
+        "dt": 0.00025,
+        "relative_L2_error": 0.0004724917244958111
+      },
+      {
+        "material": "D2O",
+        "intervals": 64,
+        "dt": 0.00025,
+        "relative_L2_error": 0.00011794105580669606
+      },
+      {
+        "material": "D2O",
+        "intervals": 128,
+        "dt": 0.00025,
+        "relative_L2_error": 2.9268253642868155e-05
+      }
+    ]
+  }
+}
