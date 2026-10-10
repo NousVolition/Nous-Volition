@@ -1,13 +1,14 @@
 {
   "python": "3.12.14",
   "platform": "Windows",
-  "automated_tests": 211,
+  "automated_tests": 234,
   "test_result": "passed",
-  "sims_rounds": 15200,
+  "sims_rounds": 15872,
   "binary_sims_rounds": 12800,
-  "continuous_sims_trajectories": 2400,
+  "continuous_sims_trajectories": 3072,
   "historical_hug_sims_trajectories": 384,
   "current_clay_sims_trajectories": 384,
+  "orbit_driven_clay_sims_trajectories": 672,
   "new_topology_sims_rounds": 2560,
   "bounded_algebraic_equalities": 39056,
   "first_batch_reproduction": "Passed previously; code and saved results unchanged in this extension.",
@@ -53,8 +54,17 @@
     "accuracy_gates": "passed",
     "full_reproduction": "passed"
   },
-  "figure_count": 20,
-  "figure_review": "New clay/SIMS figure inspected; nineteen earlier plots reviewed in previous batches.",
+  "tenth_batch_checks": {
+    "main_orbit_driven_clay_sims_runs": 672,
+    "orbital_integration_controls": 12,
+    "full_network_solver_controls": 12,
+    "new_tests": 23,
+    "accuracy_gates": "passed",
+    "full_reproduction": "passed",
+    "circular_participant_baseline": "shared across all six moon labels"
+  },
+  "figure_count": 22,
+  "figure_review": "Two new orbital and orbit/clay SIMS figures inspected; twenty earlier plots reviewed in previous batches.",
   "pending_source": "Figure 7.3.3 / Example 7.3.1 vector field absent; this specific case was not run.",
   "html_local_links": "verified",
   "html_browser_preview": "Unavailable: browser policy blocks local file URLs."
