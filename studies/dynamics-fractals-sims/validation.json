@@ -1,12 +1,13 @@
 {
   "python": "3.12.14",
   "platform": "Windows",
-  "automated_tests": 187,
+  "automated_tests": 211,
   "test_result": "passed",
-  "sims_rounds": 14816,
+  "sims_rounds": 15200,
   "binary_sims_rounds": 12800,
-  "continuous_sims_trajectories": 2016,
-  "hug_sims_trajectories": 384,
+  "continuous_sims_trajectories": 2400,
+  "historical_hug_sims_trajectories": 384,
+  "current_clay_sims_trajectories": 384,
   "new_topology_sims_rounds": 2560,
   "bounded_algebraic_equalities": 39056,
   "first_batch_reproduction": "Passed previously; code and saved results unchanged in this extension.",
@@ -44,8 +45,16 @@
     "accuracy_gates": "passed",
     "reproduction": "main outcomes match within roundoff; replay error diagnostics pass original accuracy gates; observed adaptive differences recorded"
   },
-  "figure_count": 19,
-  "figure_review": "New Hug/SIMS figure inspected; eighteen unchanged plots reviewed in previous batches.",
+  "ninth_batch_checks": {
+    "main_clay_sims_runs": 384,
+    "uncoupled_controls": 128,
+    "independent_solver_controls": 24,
+    "new_tests": 24,
+    "accuracy_gates": "passed",
+    "full_reproduction": "passed"
+  },
+  "figure_count": 20,
+  "figure_review": "New clay/SIMS figure inspected; nineteen earlier plots reviewed in previous batches.",
   "pending_source": "Figure 7.3.3 / Example 7.3.1 vector field absent; this specific case was not run.",
   "html_local_links": "verified",
   "html_browser_preview": "Unavailable: browser policy blocks local file URLs."

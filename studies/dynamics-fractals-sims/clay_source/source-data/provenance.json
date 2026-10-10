@@ -1,0 +1,19 @@
+{
+  "title": "Rheologic testing of wet kaolin reveals frictional and bi-viscous behavior typical of crustal materials",
+  "authors": ["Michele L. Cooke", "Nicholas J. van der Elst"],
+  "year": 2012,
+  "journal": "Geophysical Research Letters 39, L01308",
+  "doi": "10.1029/2011GL050186",
+  "url": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2011GL050186",
+  "location": "Table 1; equation (1); sections 2, 3 and 3.1",
+  "access_date": "2026-10-10",
+  "transcription": "Table 1 manually transcribed and cross-checked against the publisher HTML and PDF text. Original downloadable supplement was not obtained; this CSV is our transcription.",
+  "evidence_type": "Four published fitted coefficient sets from real creep-recovery measurements; not raw time-series observations.",
+  "material": "Wet kaolin, #6 tile clay",
+  "water_content": "Study tested 62 and 66% water by mass. Table 1 does not identify the water content of its creep-recovery coefficient sets. No assignment is made here.",
+  "temperature": "Not specified for Table 1 in the accessed article.",
+  "strain_convention": "Engineering shear strain, equation (1); no factor of two in its creep formula.",
+  "history_limitation": "The original stepped experiment used a different fit for each load. Here each row is used in a separate idealized rest-to-load-to-release calculation. No interpolation across stresses or validation of arbitrary histories is claimed.",
+  "raw_trace_validation": false,
+  "new_physical_measurement": false
+}

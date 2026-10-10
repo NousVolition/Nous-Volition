@@ -1,0 +1,71 @@
+{
+  "snapshot_date": "2026-10-10",
+  "source_location": "Local hug-clay update; not present in My-Sources-Project-ALL main at 5ef446835b7041d9fa376f7364b659c2a0b67e13",
+  "files": [
+    {
+      "original_path": "C:\\Users\\ziman\\Documents\\Codex\\2026-10-05\\ca\\outputs\\hug-clay\\clay_model.py",
+      "local_path": "clay_source/clay_model.py",
+      "sha256": "bfc0eb42fba2f96e033c38d32f7c181697e0386fe6841183e388e5199e2efbc5"
+    },
+    {
+      "original_path": "C:\\Users\\ziman\\Documents\\Codex\\2026-10-05\\ca\\outputs\\hug-clay\\source-data\\cooke-2012-table-1.csv",
+      "local_path": "clay_source/source-data/cooke-2012-table-1.csv",
+      "sha256": "bb405da788a0e6edfb5a0e0ceefbe4de5c97efbd091481a653dbdb560ca0df46"
+    },
+    {
+      "original_path": "C:\\Users\\ziman\\Documents\\Codex\\2026-10-05\\ca\\outputs\\hug-clay\\source-data\\provenance.json",
+      "local_path": "clay_source/source-data/provenance.json",
+      "sha256": "83a189a9d0ae265ce049f00a38dd490e35b64875c37d33d30ec5dba50cd1cb63"
+    }
+  ],
+  "source_verification_generated_utc": "2026-10-10T20:28:32.605123+00:00",
+  "source_verification_passed": true,
+  "source_verification_scope": "Computational verification of a published constitutive law; no new experimental validation.",
+  "source_case_results": [
+    {
+      "stress_Pa": 10.0,
+      "ode_max_absolute_strain_error": 2.0721814021629203e-15,
+      "energy_balance_error_J_m3": 2.6020852139652106e-18,
+      "peak_strain_percent": 0.15730417324200704,
+      "instantaneous_recovery_percent": 0.05263157894736842,
+      "delayed_recovery_percent": 0.06119433342507341,
+      "final_retained_percent": 0.043478260869565216,
+      "total_at_420s_percent": 0.043512106498924244,
+      "passed": true
+    },
+    {
+      "stress_Pa": 20.0,
+      "ode_max_absolute_strain_error": 2.5184932264665782e-15,
+      "energy_balance_error_J_m3": 1.734723475976807e-18,
+      "peak_strain_percent": 0.17807403137498512,
+      "instantaneous_recovery_percent": 0.08333333333333334,
+      "delayed_recovery_percent": 0.06488995177299506,
+      "final_retained_percent": 0.029850746268656716,
+      "total_at_420s_percent": 0.03028797132447637,
+      "passed": true
+    },
+    {
+      "stress_Pa": 30.0,
+      "ode_max_absolute_strain_error": 2.8047226000027514e-15,
+      "energy_balance_error_J_m3": 1.734723475976807e-17,
+      "peak_strain_percent": 0.25787509410376325,
+      "instantaneous_recovery_percent": 0.13043478260869568,
+      "delayed_recovery_percent": 0.08946562795076383,
+      "final_retained_percent": 0.0379746835443038,
+      "total_at_420s_percent": 0.03801322019618151,
+      "passed": true
+    },
+    {
+      "stress_Pa": 40.0,
+      "ode_max_absolute_strain_error": 3.0919277554941615e-15,
+      "energy_balance_error_J_m3": 6.938893903907228e-18,
+      "peak_strain_percent": 0.36712674613009727,
+      "instantaneous_recovery_percent": 0.2,
+      "delayed_recovery_percent": 0.12006792260068552,
+      "final_retained_percent": 0.047058823529411764,
+      "total_at_420s_percent": 0.04717706583547251,
+      "passed": true
+    }
+  ],
+  "note": "These prior checks are provenance; the new SIMS checks independently rerun the constitutive and coupled equations."
+}

@@ -22,6 +22,7 @@ from heteroclinic_report import build_figures as build_heteroclinic_figures, htm
 from bridge_report import build_figures as build_bridge_figures, html_section as bridge_section
 from sims_response_report import build_figures as build_response_figures, html_section as response_section
 from hug_sims_report import build_figures as build_hug_figures, html_section as hug_section
+from clay_sims_report import build_figures as build_clay_figures, html_section as clay_section
 
 BLUE, ORANGE, TEAL, INK = '#236783','#d36c37','#348b72','#1b2935'
 plt.rcParams.update({'font.size':9,'axes.spines.top':False,'axes.spines.right':False,
@@ -231,7 +232,7 @@ def make_html():
     test_count=unittest.defaultTestLoader.discover(str(ROOT),pattern='test_*.py').countTestCases()
     topology_data=json.loads((ROOT/'topology_results.json').read_text(encoding='utf-8'))
     response_data=json.loads((ROOT/'sims_response_results.json').read_text(encoding='utf-8'))
-    total_sims_runs=data['sims']['total_rounds']+topology_data['sims']['new_rounds']+response_data['total_new_sims_trajectories']+384
+    total_sims_runs=data['sims']['total_rounds']+topology_data['sims']['new_rounds']+response_data['total_new_sims_trajectories']+384+384
     cases=data['sims']['cases']
     def case(network,policy='ordinary',role='baseline'):
         return next(r for r in cases if r['network']==network and r['policy']==policy and r['focal_role']==role and r['initiative']==0)
@@ -248,13 +249,14 @@ def make_html():
 <style>body{{margin:0;background:#f5f3ee;color:#1b2935;font:17px/1.65 system-ui,sans-serif}}main{{max-width:1120px;margin:auto;padding:48px 24px 80px}}h1{{font-size:clamp(36px,6vw,64px);line-height:1.08;max-width:850px;margin:20px 0}}h2{{font-size:30px;line-height:1.25;margin-top:0}}h3{{font-size:21px}}p{{max-width:950px}}a{{color:#236783}}.eyebrow{{letter-spacing:.13em;font-size:12px;text-transform:uppercase;color:#236783}}.lead{{font-size:22px;max-width:850px}}section{{background:white;margin:32px 0;padding:30px;border-radius:15px}}.cards{{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}}.card{{padding:20px;background:#e7eef0;border-radius:12px}}.big{{font-size:34px;font-weight:700;display:block}}img{{width:100%;height:auto;border-radius:5px}}figure{{margin:25px 0}}figcaption{{font-size:14px;color:#52616a}}table{{border-collapse:collapse;width:100%;font-size:14px}}th,td{{padding:10px 12px;border-bottom:1px solid #dde3e5;text-align:left}}th{{background:#edf2f3}}.scroll{{overflow:auto}}code{{background:#e9eff1;padding:3px 6px;border-radius:4px}}summary{{cursor:pointer;font-weight:650}}.equation{{font-size:20px;background:#eef3f4;padding:18px;border-radius:8px}}@media(max-width:650px){{.cards{{grid-template-columns:1fr}}section{{padding:20px}}}}@media print{{body{{background:white}}main{{padding:0}}section{{break-inside:avoid}}}}</style></head><body><main>
 <div class="eyebrow">Streams and Rocks / Research notebook</div><h1>Dynamics, fractals,<br>and SIMS</h1>
 <p class="lead">How do local rules, resistance, and the pattern of connections shape a group's path toward agreement?</p>
-<p>SIMS are the simulated participants in the coordination tests. Eight batches turn your images into explicit models, executable checks, and original plots. Your located Hug model now operates inside a matched SIMS experiment.</p>
-<div class="cards"><div class="card"><span class="big">{total_sims_runs:,}</span>12,800 binary + 1,632 continuous + 384 Hug SIMS trajectories</div><div class="card"><span class="big">{test_count}</span>automated tests</div><div class="card"><span class="big">8 batches</span>dynamics, topology, and participant response experiments</div></div>
-<p><a href="#hug">New: your Hug equations tested inside SIMS</a></p>
+<p>SIMS are the simulated participants in the coordination tests. Nine batches turn your images into explicit models, executable checks, and original plots. The current Hug/SIMS experiment uses your updated clay deformation formula; its older threshold model is retained as historical.</p>
+<div class="cards"><div class="card"><span class="big">{total_sims_runs:,}</span>12,800 binary + 1,632 continuous + 384 historical Hug + 384 current clay SIMS</div><div class="card"><span class="big">{test_count}</span>automated tests</div><div class="card"><span class="big">9 batches</span>dynamics, topology, and participant response experiments</div></div>
+<p><a href="#clay">Current: clay deformation, recovery and retained strain inside SIMS</a></p>
 <p><a href="#sims-response">New: apply the dynamics inside the SIMS test</a></p>
 <p><a href="#bridge">New: reversibility, stability, and water-flow checks</a></p>
 <p><a href="#heteroclinic">New: switching, memory, and stopping</a> · <a href="#topology">Topology tests applied to SIMS</a> · <a href="#oscillations">Oscillation tests</a> · <a href="README.md">Full methods and instructions</a> · <a href="results.json">First-batch data</a> · <a href="bifurcation_results.json">Second-batch data</a> · <a href="oscillation_results.json">Third-batch data</a> · <a href="topology_results.json">Fourth-batch data</a></p>
-{hug_section()}
+{clay_section()}
+<details><summary>Historical: the earlier threshold-based Hug experiment</summary>{hug_section()}</details>
 {response_section()}
 {bridge_section()}
 {heteroclinic_section()}
@@ -281,11 +283,11 @@ def make_html():
 <p>The rotating-hoop test finds stable angles ±π/3 for γ=2 and checks the small-angle cubic expansion. The parameter-a extension compares x′=r x+a x³−x⁵ at a=−1,0,1. All choices and equations are recorded in the <a href="README.md">methods</a>.</p></section>
 {html_section()}
 <section><h2>What connects these tests?</h2><p>Each system has a state, a rule for changing it, and questions about where it settles. For SIMS, the practical lesson is to measure both agreement and its stability, and to distinguish a changed drawing from changed contacts.</p><p>Batch 7 puts the supplied reversal, linear-stability, and response-rate ideas into explicit SIMS rules. Its continuous-state assumptions, paired controls, and measurements are documented separately from the original binary-copying experiment. Repeated switching can decay or persist; alignment can coexist with collective growth. The current results concern the models and parameter choices tested here.</p>
-<h3>Reproduce this notebook</h3><p><code>python -m pip install -r requirements.txt</code><br><code>python -m unittest -v</code><br><code>python run_study.py --check</code><br><code>python bifurcations.py --check</code><br><code>python oscillations.py --check</code><br><code>python topology.py --check</code><br><code>python heteroclinic.py --check</code><br><code>python pacemaker.py --check</code><br><code>python memory_inference.py --check</code><br><code>python quench.py --check</code><br><code>python bridge_checks.py --check</code><br><code>python sims_response.py --check</code><br><code>python hug_sims.py --check</code></p><p>Python 3.12. The coupled ensemble, inference, quenches, and their tests use NumPy. Requirements are pinned in <a href="requirements.txt">requirements.txt</a>. Read <a href="README.md">the methods</a> for limitations, sources, and the optional volunteer extension.</p></section>
+<h3>Reproduce this notebook</h3><p><code>python -m pip install -r requirements.txt</code><br><code>python -m unittest -v</code><br><code>python run_study.py --check</code><br><code>python bifurcations.py --check</code><br><code>python oscillations.py --check</code><br><code>python topology.py --check</code><br><code>python heteroclinic.py --check</code><br><code>python pacemaker.py --check</code><br><code>python memory_inference.py --check</code><br><code>python quench.py --check</code><br><code>python bridge_checks.py --check</code><br><code>python sims_response.py --check</code><br><code>python clay_sims.py --check</code></p><p>Python 3.12. The coupled ensemble, inference, quenches, and their tests use NumPy. Requirements are pinned in <a href="requirements.txt">requirements.txt</a>. Read <a href="README.md">the methods</a> for limitations, sources, and the optional volunteer extension.</p></section>
 </main></body></html>'''
     (ROOT/'report.html').write_text(document,encoding='utf-8',newline='\n')
 
 
 if __name__=='__main__':
-    dynamics();fractals();coordination();tipping();extended();build_oscillation_figures();build_topology_figures();build_heteroclinic_figures();build_bridge_figures();build_response_figures();build_hug_figures();make_html()
-    print('Built nineteen original figures and report.html')
+    dynamics();fractals();coordination();tipping();extended();build_oscillation_figures();build_topology_figures();build_heteroclinic_figures();build_bridge_figures();build_response_figures();build_hug_figures();build_clay_figures();make_html()
+    print('Built twenty original figures and report.html')
