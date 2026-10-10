@@ -1,0 +1,54 @@
+{
+  "repository": "NousVolition/My-Sources-Project-ALL",
+  "commit": "b20d1dcf25fb7e97bcceb9a09d0883d30bf08e8c",
+  "files": [
+    {
+      "repository_path": "reports/hug-dynamics/hug_model.py",
+      "local_path": "hug_source/hug_model.py",
+      "git_blob_sha": "3611065d8bef4e93ba1e4a5e5e08ef15062b4cd1",
+      "sha256": "a64dea09dc0ef6f8e8cb1167554e0aa757672c392b224a8b0035d39a5a17c18c"
+    },
+    {
+      "repository_path": "reports/hug-dynamics/source/hug_envelope.py",
+      "local_path": "hug_source/source/hug_envelope.py",
+      "git_blob_sha": "ea9b0bca014349ffef2e474d16a2637184749ce8",
+      "sha256": "e0ef7fbb71e561d8875e1efc02e2ebf79558a8d0eae5e2e03ef9ee3045d9bdb6"
+    },
+    {
+      "repository_path": "reports/hug-dynamics/source/pressure_envelope.py",
+      "local_path": "hug_source/source/pressure_envelope.py",
+      "git_blob_sha": "e1c0247a3b20985a7c31252756d9e819fb41616c",
+      "sha256": "6a32e8885cff0b2877a37e157dd02354735d345a77e7817bc5f2723f437108a0"
+    },
+    {
+      "repository_path": "reports/hug-dynamics/tests/test_original_hug.py",
+      "local_path": "hug_source/tests/test_original_hug.py",
+      "git_blob_sha": "ed2faa1ccfc5763851266dadbd24db796710408f",
+      "sha256": "0de47c9566586df08e16eb9297def3038b8f2fb83a0d26e96089a85be2b927c5"
+    },
+    {
+      "repository_path": "reports/hug-dynamics/tests/test_original_pressure.py",
+      "local_path": "hug_source/tests/test_original_pressure.py",
+      "git_blob_sha": "0c4489a6a6f6d48f722364d6520998aa7360ddaf",
+      "sha256": "44b1c4e4ff0da14453a4ccfb70c0d254899da8c1e1c695ed4ab249544d96ceda"
+    }
+  ],
+  "located_related_work": [
+    {
+      "path": "math/hugged_ring.py",
+      "role": "Smooth initial fluid field; not evolved in this batch"
+    },
+    {
+      "path": "reports/hug-dynamics",
+      "role": "Pinned reduced model and original geometry/pressure tests reused"
+    },
+    {
+      "path": "reports/hug-stress",
+      "role": "Stress findings informed pulse and solver controls; broad sweep not rerun"
+    },
+    {
+      "path": "reports/hug-stress/lorenz_hug.py",
+      "role": "Located; Lorenz pressure drive not included in this batch"
+    }
+  ]
+}

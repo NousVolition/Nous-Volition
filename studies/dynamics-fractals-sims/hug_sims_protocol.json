@@ -1,0 +1,37 @@
+{
+  "source_commit": "b20d1dcf25fb7e97bcceb9a09d0883d30bf08e8c",
+  "source_path": "reports/hug-dynamics",
+  "design": "Fixed before running; reuse the exact Hug local RHS and add reciprocal coupling only to lean acceleration.",
+  "participants": 20,
+  "graphs": ["Menger L1", "Ring 20", "Complete 20"],
+  "seeds": [20261020, 20261021, 20261022, 20261023, 20261024, 20261025, 20261026, 20261027, 20261028, 20261029, 20261030, 20261031, 20261032, 20261033, 20261034, 20261035, 20261036, 20261037, 20261038, 20261039, 20261040, 20261041, 20261042, 20261043, 20261044, 20261045, 20261046, 20261047, 20261048, 20261049, 20261050, 20261051],
+  "initial_state": "Same q,v arrays as batch 7; memory, work and loss initially zero. Uniform scalar pressure supplies no preferred sign.",
+  "coupling": 2.0,
+  "duration": 24.0,
+  "step": 0.01,
+  "sample": 0.1,
+  "conditions": [
+    {"name": "Memory off", "r": -0.25, "damping": 0.6, "pressure": 0.8, "memory_coupling": 0.0},
+    {"name": "Memory on", "r": -0.25, "damping": 0.6, "pressure": 0.8, "memory_coupling": 1.5},
+    {"name": "Opening load", "r": -0.25, "damping": 0.6, "pressure": 1.2, "memory_coupling": 1.5},
+    {"name": "Buckling", "r": 1.0, "damping": 0.6, "pressure": 0.0, "memory_coupling": 0.0}
+  ],
+  "source_defaults": {"pulse_duration": 4.0, "shear": 0.35},
+  "controls": {
+    "refinement_seeds_per_condition_and_graph": 2,
+    "refinement_step": 0.005,
+    "reflection_seeds_per_condition_and_graph": 2,
+    "adaptive_seeds_per_condition_and_graph": 1,
+    "adaptive_methods": ["DOP853", "Radau"],
+    "adaptive_rtol": 1e-10,
+    "adaptive_atol": 1e-12,
+    "adaptive_max_step": 0.05,
+    "maximum_state_discrepancy": 0.00002,
+    "maximum_energy_budget_residual": 0.000002,
+    "maximum_reflection_error": 1e-11
+  },
+  "measurements": "Batch-7 choice/spread metrics; final q,v for every run; peak sampled absolute lean; mean lean and spread traces for first seed of every graph/condition; energy-work-loss budget. Main count 384; controls separate.",
+  "opening": "Preserve the source threshold as a geometry diagnostic. It does not disconnect SIMS or vent the prescribed pressure.",
+  "short_pulse_control": {"pressure": 100.0, "pulse_duration": 0.001, "duration": 1.0, "old_steps": [0.02, 0.01], "reference_split_at_pulse_end": true},
+  "scope": "Reduced Hug dynamics inside a specified SIMS model; no new Navier-Stokes or Lorenz-driven trajectories in this batch. All outcomes retained."
+}

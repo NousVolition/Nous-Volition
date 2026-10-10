@@ -1,0 +1,31 @@
+{
+  "main_outcomes_roundoff_match": true,
+  "main_outcome_rtol": 1e-09,
+  "main_outcome_atol": 2e-12,
+  "original_accuracy_gates_pass_in_both_runs": true,
+  "main_runs_replayed": 384,
+  "controls_replayed": 72,
+  "adaptive_discrepancy_changes_above_2e_12": [
+    {
+      "graph": "Menger L1",
+      "condition": "Memory off",
+      "saved": 1.0804357408744636e-09,
+      "replay": 1.118868886429425e-09,
+      "absolute_change": 3.8433145554961357e-11
+    },
+    {
+      "graph": "Ring 20",
+      "condition": "Memory off",
+      "saved": 8.023002262547152e-10,
+      "replay": 8.057147171669499e-10,
+      "absolute_change": 3.414490912234669e-12
+    },
+    {
+      "graph": "Complete 20",
+      "condition": "Memory off",
+      "saved": 4.513925899729543e-10,
+      "replay": 4.4347869820882124e-10,
+      "absolute_change": 7.913891764133041e-12
+    }
+  ]
+}

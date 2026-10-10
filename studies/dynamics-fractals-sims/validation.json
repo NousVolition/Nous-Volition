@@ -1,11 +1,12 @@
 {
   "python": "3.12.14",
   "platform": "Windows",
-  "automated_tests": 162,
+  "automated_tests": 187,
   "test_result": "passed",
-  "sims_rounds": 14432,
+  "sims_rounds": 14816,
   "binary_sims_rounds": 12800,
-  "continuous_sims_trajectories": 1632,
+  "continuous_sims_trajectories": 2016,
+  "hug_sims_trajectories": 384,
   "new_topology_sims_rounds": 2560,
   "bounded_algebraic_equalities": 39056,
   "first_batch_reproduction": "Passed previously; code and saved results unchanged in this extension.",
@@ -34,8 +35,17 @@
     "response_rate_sims_runs": 768
   },
   "long_trajectory_accuracy_gates": "passed: step refinement, two-start period agreement, Duffing integral and energy",
-  "figure_count": 18,
-  "figure_review": "Two new SIMS response figures inspected; sixteen unchanged plots reviewed in previous batches.",
+  "eighth_batch_checks": {
+    "main_sims_runs": 384,
+    "separate_numerical_and_reflection_controls": 72,
+    "new_checks": 16,
+    "unchanged_source_checks": 9,
+    "pulse_calculations": 4,
+    "accuracy_gates": "passed",
+    "reproduction": "main outcomes match within roundoff; replay error diagnostics pass original accuracy gates; observed adaptive differences recorded"
+  },
+  "figure_count": 19,
+  "figure_review": "New Hug/SIMS figure inspected; eighteen unchanged plots reviewed in previous batches.",
   "pending_source": "Figure 7.3.3 / Example 7.3.1 vector field absent; this specific case was not run.",
   "html_local_links": "verified",
   "html_browser_preview": "Unavailable: browser policy blocks local file URLs."

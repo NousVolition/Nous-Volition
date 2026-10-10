@@ -36,7 +36,7 @@ the separate project linked below.
 
 [Read the review and connections](https://github.com/NousVolition/My-Sources-Project-ALL/blob/main/REPOSITORY-REVIEW.md) for related identity/position, symmetry, persistence and prediction tests, together with unresolved work.
 
-Repository CI now runs 162 dynamics/fractal/topology/heteroclinic/reversibility/SIMS-response, 12 social-organization and 13 recovery/entrainment unit tests, plus source syntax, JSON, local Markdown links and the three published study manifests. These checks do not rerun the full ensembles or certify the scientific interpretations.
+Repository CI now runs 187 dynamics/fractal/topology/heteroclinic/reversibility/SIMS-response/Hug, 12 social-organization and 13 recovery/entrainment unit tests, plus source syntax, JSON, local Markdown links and the three published study manifests. These checks do not rerun the full ensembles or certify the scientific interpretations.
 
 ## Start here
 
@@ -72,7 +72,7 @@ The study explores human coordination through nine **SIMS**, its simulated parti
 
 ## Dynamics, fractals, and SIMS
 
-[Open the dynamics and fractals test suite](studies/dynamics-fractals-sims/README.md) for seven batches, including 12,800 binary-choice SIMS runs and 1,632 continuous-response SIMS trajectories. These use different response rules, reported separately. The package covers continuous dynamics, finite fractals, tipping points, oscillations, topology, and heteroclinic switching.
+[Open the dynamics and fractals test suite](studies/dynamics-fractals-sims/README.md) for eight batches, including 12,800 binary-choice SIMS runs, 1,632 earlier continuous-response trajectories, and 384 Hug-based SIMS trajectories. These use different response rules, reported separately. The package covers continuous dynamics, finite fractals, tipping points, oscillations, topology, and heteroclinic switching.
 
 The topology batch adds 39,056 bounded algebraic checks and 2,560 new SIMS runs comparing contact density, resisting positions, and filled faces. An exact counterexample shows why group totals can conceal different future coordination.
 
@@ -82,4 +82,6 @@ The sixth batch checks a reversible system with an attractor, seven linear stabi
 
 The seventh batch applies the supplied dynamics inside a continuous-state SIMS experiment: 20 participants follow linear, reversible, or driven-relaxation rules on three matched networks. It measures alignment separately from bounded attraction and choice agreement, tests a reversal intervention, and separates response speed from the final target. Its 1,632 trajectories and 24 additional mathematical/participant tests are documented in [the SIMS response methods](studies/dynamics-fractals-sims/SIMS_RESPONSE_METHODS.md).
 
-The package includes 162 automated tests, eighteen original scientific figures, saved numerical results, and an [illustrated report](studies/dynamics-fractals-sims/report.html) to download and open locally. Equations, selected parameters, and links to primary sources are documented alongside the code.
+The eighth batch locates and pins the existing Hug equations, reproduces nine original checks, and applies lean, damping and pressure memory to 384 matched SIMS runs. It adds 72 separate numerical/reflection controls and reproduces the missed short-pressure-pulse failure. See [the Hug/SIMS methods and outcomes](studies/dynamics-fractals-sims/HUG_SIMS_METHODS.md).
+
+The package includes 187 automated tests, nineteen original scientific figures, saved numerical results, and an [illustrated report](studies/dynamics-fractals-sims/report.html) to download and open locally. Equations, selected parameters, and links to primary sources are documented alongside the code.
