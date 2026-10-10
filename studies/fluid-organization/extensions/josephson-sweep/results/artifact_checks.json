@@ -1,0 +1,313 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "check": "base starts match recorded trajectory",
+      "passed": true
+    },
+    {
+      "check": "base fresh resets exact state",
+      "passed": true
+    },
+    {
+      "check": "base continuation from S+W endpoints",
+      "passed": true
+    },
+    {
+      "check": "base initial sweeps cloned correctly",
+      "passed": true
+    },
+    {
+      "check": "base settled states occur at declared time",
+      "passed": true
+    },
+    {
+      "check": "base end states exact",
+      "passed": true
+    },
+    {
+      "check": "base saved individual voltage recomputes",
+      "passed": true
+    },
+    {
+      "check": "base actual current order",
+      "passed": true
+    },
+    {
+      "check": "base power residual independently recomputes",
+      "passed": true
+    },
+    {
+      "check": "half_step starts match recorded trajectory",
+      "passed": true
+    },
+    {
+      "check": "half_step fresh resets exact state",
+      "passed": true
+    },
+    {
+      "check": "half_step continuation from S+W endpoints",
+      "passed": true
+    },
+    {
+      "check": "half_step initial sweeps cloned correctly",
+      "passed": true
+    },
+    {
+      "check": "half_step settled states occur at declared time",
+      "passed": true
+    },
+    {
+      "check": "half_step end states exact",
+      "passed": true
+    },
+    {
+      "check": "half_step saved individual voltage recomputes",
+      "passed": true
+    },
+    {
+      "check": "half_step actual current order",
+      "passed": true
+    },
+    {
+      "check": "half_step power residual independently recomputes",
+      "passed": true
+    },
+    {
+      "check": "double_settle starts match recorded trajectory",
+      "passed": true
+    },
+    {
+      "check": "double_settle fresh resets exact state",
+      "passed": true
+    },
+    {
+      "check": "double_settle continuation from S+W endpoints",
+      "passed": true
+    },
+    {
+      "check": "double_settle initial sweeps cloned correctly",
+      "passed": true
+    },
+    {
+      "check": "double_settle settled states occur at declared time",
+      "passed": true
+    },
+    {
+      "check": "double_settle end states exact",
+      "passed": true
+    },
+    {
+      "check": "double_settle saved individual voltage recomputes",
+      "passed": true
+    },
+    {
+      "check": "double_settle actual current order",
+      "passed": true
+    },
+    {
+      "check": "double_settle power residual independently recomputes",
+      "passed": true
+    },
+    {
+      "check": "both starts match recorded trajectory",
+      "passed": true
+    },
+    {
+      "check": "both fresh resets exact state",
+      "passed": true
+    },
+    {
+      "check": "both continuation from S+W endpoints",
+      "passed": true
+    },
+    {
+      "check": "both initial sweeps cloned correctly",
+      "passed": true
+    },
+    {
+      "check": "both settled states occur at declared time",
+      "passed": true
+    },
+    {
+      "check": "both end states exact",
+      "passed": true
+    },
+    {
+      "check": "both saved individual voltage recomputes",
+      "passed": true
+    },
+    {
+      "check": "both actual current order",
+      "passed": true
+    },
+    {
+      "check": "both power residual independently recomputes",
+      "passed": true
+    },
+    {
+      "check": "reference S=100 initial draws unchanged",
+      "passed": true
+    },
+    {
+      "check": "reference S=100 fresh reset",
+      "passed": true
+    },
+    {
+      "check": "reference S=100 continuation uses S+200 endpoint",
+      "passed": true
+    },
+    {
+      "check": "reference S=100 settled states at declared time",
+      "passed": true
+    },
+    {
+      "check": "reference S=100 measured voltage recomputes",
+      "passed": true
+    },
+    {
+      "check": "reference S=100 finite and dissipative",
+      "passed": true
+    },
+    {
+      "check": "reference S=200 initial draws unchanged",
+      "passed": true
+    },
+    {
+      "check": "reference S=200 fresh reset",
+      "passed": true
+    },
+    {
+      "check": "reference S=200 continuation uses S+200 endpoint",
+      "passed": true
+    },
+    {
+      "check": "reference S=200 settled states at declared time",
+      "passed": true
+    },
+    {
+      "check": "reference S=200 measured voltage recomputes",
+      "passed": true
+    },
+    {
+      "check": "reference S=200 finite and dissipative",
+      "passed": true
+    },
+    {
+      "check": "reference windows reuse exact settled states",
+      "passed": true
+    },
+    {
+      "check": "cross-solver windows reuse exact state and sign",
+      "passed": true
+    },
+    {
+      "check": "window replay starts from identical settled states",
+      "passed": true
+    },
+    {
+      "check": "window replay preserves hidden log separation",
+      "passed": true
+    },
+    {
+      "check": "window endpoint W=200 matches primary",
+      "passed": true
+    },
+    {
+      "check": "primary_voltages.csv row count",
+      "passed": true
+    },
+    {
+      "check": "primary_voltages.csv total equals individual sum",
+      "passed": true
+    },
+    {
+      "check": "window_voltages.csv row count",
+      "passed": true
+    },
+    {
+      "check": "window_voltages.csv total equals individual sum",
+      "passed": true
+    },
+    {
+      "check": "disjoint_blocks.csv row count",
+      "passed": true
+    },
+    {
+      "check": "18 automated tests passed",
+      "passed": true
+    },
+    {
+      "check": "report link results/reference_regimes.csv",
+      "passed": true
+    },
+    {
+      "check": "report link results/reference_summary.json",
+      "passed": true
+    },
+    {
+      "check": "report link protocol.json",
+      "passed": true
+    },
+    {
+      "check": "report link refinement_protocol.json",
+      "passed": true
+    },
+    {
+      "check": "report link figures/voltage_sweeps.png",
+      "passed": true
+    },
+    {
+      "check": "report link figures/separate_checks.png",
+      "passed": true
+    },
+    {
+      "check": "report link figures/critical_window.png",
+      "passed": true
+    },
+    {
+      "check": "report link figures/history_windows.png",
+      "passed": true
+    },
+    {
+      "check": "report link figures/precision_control.png",
+      "passed": true
+    },
+    {
+      "check": "report link results/primary_voltages.csv",
+      "passed": true
+    },
+    {
+      "check": "report link results/reference_voltages.csv",
+      "passed": true
+    },
+    {
+      "check": "report link results/reference_means.csv",
+      "passed": true
+    },
+    {
+      "check": "report link results/reference_windows.csv",
+      "passed": true
+    },
+    {
+      "check": "report link results/reference_disjoint_blocks.csv",
+      "passed": true
+    },
+    {
+      "check": "report link results/independent_validation.json",
+      "passed": true
+    },
+    {
+      "check": "report link results/verification.json",
+      "passed": true
+    },
+    {
+      "check": "report link results/refinement.json",
+      "passed": true
+    },
+    {
+      "check": "report link tests.xml",
+      "passed": true
+    }
+  ]
+}

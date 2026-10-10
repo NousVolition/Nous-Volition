@@ -1,0 +1,24 @@
+{
+  "reason": "Original full-sweep fixed-step gate failed at alpha=0.5 in the S=200 downward sweep, despite independent fresh-start checks passing.",
+  "adaptive_reference": {
+    "method": "DOP853",
+    "rtol": 1e-11,
+    "atol": 1e-12,
+    "max_step": 0.5
+  },
+  "targeted_fixed_steps": [
+    0.0125,
+    0.00625
+  ],
+  "targeted_tighter_reference": {
+    "alpha": 0.5,
+    "mode": "down",
+    "settle": 200,
+    "rtol": 1e-12,
+    "atol": 1e-13,
+    "max_step": 0.25
+  },
+  "voltage_acceptance_limit": 2e-05,
+  "reference_tolerance_change_limit": 2e-06,
+  "window_step_check": "Replay every W=800 reference from its same settled state at RK4 dt=.025; compare total voltage and individual voltages to adaptive reference."
+}

@@ -1,0 +1,13 @@
+{
+  "existing_model": "NousVolition/My-Sources-Project-ALL/reports/fluid-organization-pilot/dynamics.py:circuit_rhs",
+  "existing_repository_commit": "c3722b46e40968d549d6e531fde42203749929d1",
+  "existing_file_git_blob_sha": "10a926962e390596881d579f362f683e6f190fd6",
+  "link": "https://github.com/NousVolition/My-Sources-Project-ALL/blob/c3722b46e40968d549d6e531fde42203749929d1/reports/fluid-organization-pilot/dynamics.py",
+  "reuse": "Same conditional overdamped, identical-junction resistively loaded circuit equations. New sweep/validation code derives and tests a numerically stable coordinate formulation of those equations. No Navier-Stokes code is used in this separate circuit extension.",
+  "physical_assumptions": "The supplied diagram is interpreted as two identical RSJ junctions with individual resistance r, a shared resistive load R and ideal DC bias. No device-specific component values or measurements were supplied.",
+  "primary_background_sources": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7314811/",
+    "https://arxiv.org/abs/chao-dyn/9408004"
+  ],
+  "new_prediction_claim": "None. This pilot separates numerical, initial-state, settling and finite-observation effects in established circuit dynamics."
+}

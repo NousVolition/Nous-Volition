@@ -1,0 +1,119 @@
+{
+  "regimes": [
+    {
+      "alpha": 0.0,
+      "original_both_vs_reference_max_error": 2.113306618589661e-07,
+      "max_settling_change": 0.054827224470418545,
+      "max_window_change": 0.0281133676023701,
+      "critical_mean_abs_up_down_gap_W200": {
+        "mean": 0.00697640796714824,
+        "ci95": [
+          0.004493422833868242,
+          0.009614045843373543
+        ]
+      },
+      "critical_mean_abs_up_down_gap_W800": {
+        "mean": 0.0027557737880666688,
+        "ci95": [
+          0.0023070525078455633,
+          0.0032089831894735
+        ]
+      },
+      "paired_gap_change_W800_minus_W200": {
+        "mean": -0.004220634179081571,
+        "ci95": [
+          -0.006764976534745029,
+          -0.0017109853883401026
+        ]
+      }
+    },
+    {
+      "alpha": 0.5,
+      "original_both_vs_reference_max_error": 0.00013862234941711127,
+      "max_settling_change": 0.1919659507955606,
+      "max_window_change": 0.04033519288516044,
+      "critical_mean_abs_up_down_gap_W200": {
+        "mean": 0.0239374829436039,
+        "ci95": [
+          0.02021098003711585,
+          0.027473139684219616
+        ]
+      },
+      "critical_mean_abs_up_down_gap_W800": {
+        "mean": 0.025355011960656704,
+        "ci95": [
+          0.022437722259642825,
+          0.02791067770606531
+        ]
+      },
+      "paired_gap_change_W800_minus_W200": {
+        "mean": 0.001417529017052798,
+        "ci95": [
+          -0.00024323815311096654,
+          0.0030539921313116826
+        ]
+      }
+    },
+    {
+      "alpha": 2.0,
+      "original_both_vs_reference_max_error": 1.8270796139918666e-08,
+      "max_settling_change": 0.12756937343496844,
+      "max_window_change": 0.029878990628753876,
+      "critical_mean_abs_up_down_gap_W200": {
+        "mean": 0.01673170673470626,
+        "ci95": [
+          0.016000662849107054,
+          0.017505836246197382
+        ]
+      },
+      "critical_mean_abs_up_down_gap_W800": {
+        "mean": 0.011708738550704903,
+        "ci95": [
+          0.011363685878454927,
+          0.012022975768612668
+        ]
+      },
+      "paired_gap_change_W800_minus_W200": {
+        "mean": -0.005022968184001356,
+        "ci95": [
+          -0.006020013661193077,
+          -0.004097871256067771
+        ]
+      }
+    }
+  ],
+  "max_normalized_power_residual": 1.6836567421285604e-10,
+  "power_gate_passed": true,
+  "reference_window_replay_W200_max_difference": 1.5883300230612463e-10,
+  "refinement": {
+    "comparisons": {
+      "dt0125": {
+        "max_individual_voltage_difference": 6.030254803016111e-06,
+        "max_total_voltage_difference": 8.849378814367037e-06
+      },
+      "dt00625": {
+        "max_individual_voltage_difference": 3.76706395285864e-07,
+        "max_total_voltage_difference": 5.525010828913435e-07
+      },
+      "tighter": {
+        "max_individual_voltage_difference": 3.125987860230772e-08,
+        "max_total_voltage_difference": 4.584581575484137e-08
+      },
+      "finest_step_pair": {
+        "max_total_voltage_difference": 8.296877731475694e-06
+      },
+      "window_RK4_reference_max_error": 1.4875957354831826e-08
+    },
+    "gates": {
+      "finest_fixed_reference": true,
+      "finer_step_pair": true,
+      "reference_tolerance_change": true,
+      "all_window_cross_solver": true
+    },
+    "all_passed": true,
+    "scope": "Additional high-accuracy full sweep histories at S=100 and 200. Targeted further fixed-step/tolerance checks cover alpha=.5 downward S=200 only. All W=800 replays cross-check RK4 against adaptive integration."
+  },
+  "primary_reference_segments": 3672,
+  "targeted_refinement_segments": 612,
+  "interpretation": "Original fixed-step comparisons remain recorded, including their failed gate. These separately labeled reference summaries use full-history DOP853 replays; no averaging window is mixed with another sweep history."
+}

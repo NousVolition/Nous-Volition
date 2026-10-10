@@ -1,0 +1,33 @@
+{
+  "all_passed": false,
+  "gates": {
+    "max_absolute_voltage_step_difference": {
+      "value": 0.0017572985818986586,
+      "limit": 2e-05,
+      "passed": false
+    },
+    "max_normalized_power_balance_residual": {
+      "value": 1.94235946760748e-08,
+      "limit": 2e-06,
+      "passed": true
+    },
+    "max_reference_voltage_error": {
+      "value": 0.030149026673212658,
+      "limit": 2e-06,
+      "passed": false
+    },
+    "max_analytic_cycle_relative_error": {
+      "value": 2.832647619444968e-09,
+      "limit": 2e-06,
+      "passed": true
+    },
+    "finite_and_nonnegative_dissipation": {
+      "passed": true
+    },
+    "window_replay_reproduces_W200": {
+      "value": 0.0,
+      "limit": 1e-11,
+      "passed": true
+    }
+  }
+}

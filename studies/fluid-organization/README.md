@@ -1,5 +1,10 @@
 # Fluid Organization Under Stress: completed pilot
 
+## Completed Josephson voltage sweep — 10 October 2026
+
+[Read the sweep results, plots and source-code links](extensions/josephson-sweep/README.md). The experiment includes upward/downward sweeps, fresh starts, all four time-step/settling combinations, separate voltage averaging windows, and further convergence checks. Original numerical failures are retained alongside refined results. Eighteen automated tests pass; finite-time phase-history effects are not presented as a new physical memory law or fluid result.
+
+
 ## Completed recovery and network extension — 10 October 2026
 
 [Read the new experiments, results and code links](extensions/recovery-network/README.md). This separate extension adds 36 three-arm fluid recovery runs, a specified three-state network with frozen learning controls, independent test runs, and 14 passing automated tests. It does not alter the original pilot results. The intervention-specific fluid history benefit remains unresolved.

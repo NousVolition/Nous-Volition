@@ -1,0 +1,28 @@
+{
+  "comparisons": {
+    "dt0125": {
+      "max_individual_voltage_difference": 6.030254803016111e-06,
+      "max_total_voltage_difference": 8.849378814367037e-06
+    },
+    "dt00625": {
+      "max_individual_voltage_difference": 3.76706395285864e-07,
+      "max_total_voltage_difference": 5.525010828913435e-07
+    },
+    "tighter": {
+      "max_individual_voltage_difference": 3.125987860230772e-08,
+      "max_total_voltage_difference": 4.584581575484137e-08
+    },
+    "finest_step_pair": {
+      "max_total_voltage_difference": 8.296877731475694e-06
+    },
+    "window_RK4_reference_max_error": 1.4875957354831826e-08
+  },
+  "gates": {
+    "finest_fixed_reference": true,
+    "finer_step_pair": true,
+    "reference_tolerance_change": true,
+    "all_window_cross_solver": true
+  },
+  "all_passed": true,
+  "scope": "Additional high-accuracy full sweep histories at S=100 and 200. Targeted further fixed-step/tolerance checks cover alpha=.5 downward S=200 only. All W=800 replays cross-check RK4 against adaptive integration."
+}

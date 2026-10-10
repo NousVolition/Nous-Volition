@@ -28,9 +28,9 @@
     },
     {
       "path": "studies/fluid-organization/README.md",
-      "size": 4836,
-      "git_blob_sha": "978b44b28dcce29ca18ad1a546787976aa47aa68",
-      "sha256": "2dfe532e2f9fafa1438b225ed01fe08dd03e1d793ee6f01f55f7e127f5785ffe"
+      "size": 5358,
+      "git_blob_sha": "d5d81641864f3e7023529c091ef122b6ccc0f5d7",
+      "sha256": "512ea2cbc74e932e4fc485af3c6dcea070162f5a2ff46aff7e7d28a6183c652a"
     },
     {
       "path": "studies/fluid-organization/references/codex-clipboard-0832323a-bb13-4cdf-9c2d-5fedb9d9d689.png",
@@ -400,9 +400,9 @@
     },
     {
       "path": "studies/fluid-organization/network_reference_addendum.html",
-      "size": 13233,
-      "git_blob_sha": "bde9cf6fc40b4b71f892c4feec1d14af4088774d",
-      "sha256": "8ab97bca0e3abb0e079a3d9029c517c5397320f1931bcfce06e1949dbe851646"
+      "size": 14034,
+      "git_blob_sha": "10f2bd75e109fd489a81fb585ee00ae5790aaa71",
+      "sha256": "460c6748219b129831b6cddc82cfc67457e50bb5f45560832c2d60298916aa04"
     },
     {
       "path": "studies/fluid-organization/references/heteroclinic_network_reference.png",
@@ -625,7 +625,271 @@
       "size": 5166,
       "git_blob_sha": "3f5f656962b16823615e36fe4f66358d1e12e26c",
       "sha256": "5f099ce941a0b1e2b16acd97d7b79d4be11b9b7c70a5fddce514b41aa7a7a8d9"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/.gitattributes",
+      "size": 9,
+      "git_blob_sha": "625449502ba4b4d7c229c6ccee42e3ec41cc780c",
+      "sha256": "8b9c3028d6467ff3be7c793141927841d70f47f52d0590677438f488ca154992"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/audit/initial_independent_validation.json",
+      "size": 13095,
+      "git_blob_sha": "19a2437b7e462ae0944886fad9397c6cae223ebb",
+      "sha256": "8646d797ae83ec4c7afbd7b97b0cc77e5786185e6e27dc35c2538626bcb35e10"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/audit/initial_protocol.json",
+      "size": 2176,
+      "git_blob_sha": "98e044be84dab577bb789a851812155f03fe97be",
+      "sha256": "69a4b1e6b85791d2743c5094bbee29a7348311c4f92e2becc34f6c6f70717bfc"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/audit/initial_summary.json",
+      "size": 4229,
+      "git_blob_sha": "d41b6e3c0514013f976f5080b304a44161f53816",
+      "sha256": "a460f155aedb59259a8fc3a364e9ed148d9b0a5a82ff52514e46128269a2637b"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/audit/initial_verification.json",
+      "size": 782,
+      "git_blob_sha": "9336320def25c8ac29bfeedd0d4ecb6c476e55e8",
+      "sha256": "fc5fea66788c36cc85b1de755dc7f8704aa54de07e86759046baa75f26fc8a51"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/audit/README.txt",
+      "size": 1257,
+      "git_blob_sha": "48cf31f9961c7ff78fb0baf62d7e6621b0a9c54f",
+      "sha256": "64601245bf1ce5ef3435c8d3caad983f6d2d9e3ac31f33d56d999e9739ad3d3b"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/figures/critical_window.png",
+      "size": 178899,
+      "git_blob_sha": "f3d1b37228561c29f1ef82a20f95978edf3ea2bb",
+      "sha256": "1c84acf06ac47eb9dbff9bb7e70a10364b5404e475b59d5b1169573f616a1f87"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/figures/critical_window.svg",
+      "size": 97394,
+      "git_blob_sha": "90fab7cd452b15dce9dcac72e675ccb32ec89078",
+      "sha256": "bd95755a3fd8d2f0430d3c288a4dff36fe599187cc6c98b3ba6df814c43c9a2d"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/figures/history_windows.png",
+      "size": 72136,
+      "git_blob_sha": "1341841e0756d4304f7e6e385e09a51412fcd93b",
+      "sha256": "fc5a8b5802e15037182e4bc59c3e13463c2f974f3386162d2c6104e0377ccb20"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/figures/history_windows.svg",
+      "size": 59171,
+      "git_blob_sha": "9a4179dd46b2193be30980e8552e93e6bb6d90b6",
+      "sha256": "54e91e7bf6876796e17d0eae669f630450d047035e15411c5f4d93121337de52"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/figures/precision_control.png",
+      "size": 107541,
+      "git_blob_sha": "90e23ea7dc3cc0ceb40c4afcc6f23e715b3d71a6",
+      "sha256": "c76a9e361e34f4aa7af9ad179f7a87ee9cb821299fa041fdb636c6d9a6376375"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/figures/precision_control.svg",
+      "size": 77018,
+      "git_blob_sha": "afce1cc185d341b77c093b79bb13f979b815e556",
+      "sha256": "1f0201246334aa5152129ce0eb682caa2820c17579a5e80a1b674ea8dfb2ced7"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/figures/separate_checks.png",
+      "size": 131453,
+      "git_blob_sha": "4930275202b8b492c847ea5e00a29bf9fc20fc5d",
+      "sha256": "2d51a03b49f36a7e2489b7fbd11b6100b4b3a5b2324e512c8cf612970012cb76"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/figures/separate_checks.svg",
+      "size": 101816,
+      "git_blob_sha": "86aecbad970896a23c5d172cbb0da55788dacc69",
+      "sha256": "59e3f2574e8496e5f5a6f020b1a7477774c0977efda6e6249b8ba0dcae0ce95d"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/figures/voltage_sweeps.png",
+      "size": 146184,
+      "git_blob_sha": "01115b5a02b21c8705cc594c1dd4cb97bb491d2b",
+      "sha256": "493d4cf52bf0729ec3ef771b541508cd56877f38abf3d368a8dcd2b0212722d1"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/figures/voltage_sweeps.svg",
+      "size": 85369,
+      "git_blob_sha": "80c0bb8cac6857cf792578165928ba94fba15290",
+      "sha256": "2f5e23bf67ed0d471d3ae69bceb2871ccd2c1fbe7a0a6cb2cf60b94121f93095"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/manifest.json",
+      "size": 11903,
+      "git_blob_sha": "e13abcbd3efa9a96ee15a41cd3df0b7435228a47",
+      "sha256": "58b52adb2aa8b38c4a05f5f404d3f569e8e64499ac0f89c38051239c23ae752b"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/protocol.json",
+      "size": 2606,
+      "git_blob_sha": "6a876b694a2b8c1a2fd66136497376ae08877978",
+      "sha256": "5be9ff740b72e6c1c6124db3ba79af0b66ffc7f1c7545fe608d100806daaad91"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/provenance.json",
+      "size": 1238,
+      "git_blob_sha": "5ae7a0304196f9a692edcd9bc316165f3bedadbb",
+      "sha256": "0d32c37c5b00f64b57b01c2a6f32fbb308155d9ad2fa43263db41eb53945fe99"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/README.md",
+      "size": 4672,
+      "git_blob_sha": "a501690bb54931c4e1d05bf09d0caecf06373bae",
+      "sha256": "237c7c21fea8dd9c02cad6d3aed90417d8f98d4f4efaf7e59d60ae4ac7a02144"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/README.txt",
+      "size": 2755,
+      "git_blob_sha": "39bc23c07ee09d7f9ed90da4f6a017de3330c9fe",
+      "sha256": "2a8d5d0348fed3830ce7db568e61d558f47cc78608cbb7ae8106151908cadfe5"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/refinement_protocol.json",
+      "size": 750,
+      "git_blob_sha": "ded43ec7e3e6c3983dd68fae50171528ff38e4be",
+      "sha256": "e5c2c66e226cc759ed35ff293bbd40589a8824d69408286e74534bfaf8520256"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/report.html",
+      "size": 19346,
+      "git_blob_sha": "4b5bd4c09de85fe7609f600ddc9b283fd28fbe7c",
+      "sha256": "e877406ebf8e459a61303bbce44e6ae5d07aabedf7478e19c5b3e4e9fbdb5e87"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/requirements-lock.txt",
+      "size": 60,
+      "git_blob_sha": "faa5e949436b03c3eab5513c67f7979d0a41951e",
+      "sha256": "3db358865fdc3eff38b370e3db6b95e6676c71aacd3b29fc794226543010955a"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/requirements.txt",
+      "size": 50,
+      "git_blob_sha": "2071785a8c59c8d89c7c443021bc97755cdecb3d",
+      "sha256": "4b739380ae0a92df990b24c265233aad4ddc8132f14a504b73c6b6c0e41a9a07"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/results/artifact_checks.json",
+      "size": 7409,
+      "git_blob_sha": "4df7565ed29122c2e98a2d9b38a525c06971f1e8",
+      "sha256": "e17297f75d0f0f4d3af03605c352e99c4ba1c6c0d3453edc4a007a15c9be3e21"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/results/disjoint_blocks.csv",
+      "size": 254445,
+      "git_blob_sha": "3f255b2b197ea5fcb188fd7a496e494a5602ded8",
+      "sha256": "41108098b6e76ecf51d2203614d4c388af9883afedf692c870c5a36cfc4955a1"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/results/final_verification.json",
+      "size": 519,
+      "git_blob_sha": "b49d27409788a8bc5c8ea8eda36cd7ed50def19c",
+      "sha256": "3d566264a136a8c31a59cdcbf471bcb60bf1746b584ce8926292ec3310f304e7"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/results/independent_validation.json",
+      "size": 13125,
+      "git_blob_sha": "34733cb89e49bdb00db870c13fbf1eab9e56277c",
+      "sha256": "070234d52e53ad812366750e654311a25000291a15e28d3c525176d1f8616fec"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/results/precision_diagnostic.csv",
+      "size": 1048,
+      "git_blob_sha": "09fa6a257ff3fe8c0b16f02aea9f424ad3af9fd0",
+      "sha256": "f1e653c9533895ce2f96650357cff6235bf00773b7c2d05a9962345a1185653e"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/results/primary_means.csv",
+      "size": 68710,
+      "git_blob_sha": "c29d6124ebcfe6da692da4dedf140d4c448c00db",
+      "sha256": "d211b351fd675a9335ef8459eb0646ba6a7920bda9c7fb09871bd2e62c8ffdb3"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/results/primary_voltages.csv",
+      "size": 749208,
+      "git_blob_sha": "1f528fe2ed629930f83cbdfb322a79a88ebbc5f6",
+      "sha256": "921377ca3651e8ea876f9010b5c79a3be2859b2dd11bec6de879c5e83d7a4d57"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/results/reference_disjoint_blocks.csv",
+      "size": 258341,
+      "git_blob_sha": "94f082e48d82e0701be9dbe2e63010ae9c0b70ef",
+      "sha256": "1b690be37897b149c0ec28dcbc805a6e87f26f9f440bbad7a39066ec53421384"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/results/reference_means.csv",
+      "size": 24157,
+      "git_blob_sha": "8512cb42b2f5129600ea33c75f803276fe7d2a54",
+      "sha256": "4ae76f4bbb4ec9a28b7b25d580bff5171c1551b31e3bdcd107b00822134fed4f"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/results/reference_regimes.csv",
+      "size": 1226,
+      "git_blob_sha": "c6db00d7b21f3161ce5635899ec20ee80007382f",
+      "sha256": "db69352a5e58c3a09c6202a238b7cf6e5a36aa51975264fa28d253c368204360"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/results/reference_summary.json",
+      "size": 3976,
+      "git_blob_sha": "b93dc0e1f8b30aed19a133d1fcb48550c55b4d5b",
+      "sha256": "a1b493795e0adf4eb16e296a0ba874922d5638f249c53ad2053d07c79037da3b"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/results/reference_voltages.csv",
+      "size": 296227,
+      "git_blob_sha": "3c3ae41d18027e753f32df78d694d2951d148e41",
+      "sha256": "a049dc54f49521b1cf5cc1f56c2a53bfe9c511490aebea5d0aa4615437ec8631"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/results/reference_windows.csv",
+      "size": 400479,
+      "git_blob_sha": "54c98c5280ad6cd65ff73e2a68581b6a081471fa",
+      "sha256": "35376fc2e11fb49efd3d59f44d3668e4e13da6b63178cb9e5b6088da19d1d8ee"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/results/refinement.json",
+      "size": 1061,
+      "git_blob_sha": "63f2644a3c3e4e9310fd3893761564e9e291b4bc",
+      "sha256": "0e4e14b18baadcdfb060b29d5b079a136ac28a4e86ce2d3b849585d92fc99783"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/results/regime_summary.csv",
+      "size": 1310,
+      "git_blob_sha": "5d403b38ee0064e9d3573e4d75f65da5f35b8bb0",
+      "sha256": "9a680ae59dbde9b3bcd4362d9e856a391d3cdf63404207ea8d955a82933af66d"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/results/summary.json",
+      "size": 4228,
+      "git_blob_sha": "a66acef3c922299ad98cafae8c3f05e28525210a",
+      "sha256": "630bb7c00f42cd813ddd53d4831011acf2d4672852fbd2a7b8549669d35ec008"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/results/verification.json",
+      "size": 783,
+      "git_blob_sha": "5fde7730248afe3ad10dbd019567517486c93a3d",
+      "sha256": "f249521d3976080184869c067ba4d244cbaaeff6145283d88009c775415cc3ad"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/results/window_voltages.csv",
+      "size": 400888,
+      "git_blob_sha": "21383c076103f03d0cc0029e995262144eec742e",
+      "sha256": "780086e3d198f01ada7d21a5ad178e4c2a50045f6a67d7c5f1df03dc1245506e"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/tests.xml",
+      "size": 2341,
+      "git_blob_sha": "dc4e709da6d521d0560c7c783e2cacc4f998d94c",
+      "sha256": "ddb9dde89eea58d39afbb17f530a229629c27395cd903237f9312d93fb8bf7e5"
     }
   ],
-  "note": "Study files only; repository-wide indexes and this inventory itself are outside the inventory. Original numerical snapshot is preserved. The completed recovery-network extension has its own protocol, numerical data and source manifest. Historical reference addenda distinguish that limited pilot from remaining proposed experiments."
+  "note": "Study files only; this inventory itself and repository-wide indexes are outside the inventory. Original pilot snapshots are preserved. Completed recovery/network and Josephson circuit extensions have separate protocols, recorded data and result limitations. The Josephson extension retains failed initial checks and distinguishes refined finite-time results from proposed physical extensions."
 }
