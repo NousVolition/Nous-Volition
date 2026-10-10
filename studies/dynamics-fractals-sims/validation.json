@@ -1,7 +1,7 @@
 {
   "python": "3.12.14",
   "platform": "Windows",
-  "automated_tests": 116,
+  "automated_tests": 138,
   "test_result": "passed",
   "sims_rounds": 12800,
   "new_topology_sims_rounds": 2560,
@@ -16,9 +16,17 @@
     "pacemaker_ring_starts": 64,
     "quenches": 12
   },
+  "sixth_batch_reproduction": "passed; all saved reversibility, linear, and channel comparisons agree within platform-roundoff tolerance",
+  "sixth_batch_checks": {
+    "new_unit_tests": 22,
+    "linear_reference_cases": 7,
+    "existing_channel_rows_compared": 36,
+    "new_channel_grid_cases": 6,
+    "new_sims_runs": 0
+  },
   "long_trajectory_accuracy_gates": "passed: step refinement, two-start period agreement, Duffing integral and energy",
-  "figure_count": 14,
-  "figure_review": "Three new heteroclinic figures inspected; eleven unchanged plots reviewed in previous batches.",
+  "figure_count": 16,
+  "figure_review": "Two new reversibility, linear, and channel figures inspected; fourteen unchanged plots reviewed in previous batches.",
   "pending_source": "Figure 7.3.3 / Example 7.3.1 vector field absent; this specific case was not run.",
   "html_local_links": "verified",
   "html_browser_preview": "Unavailable: browser policy blocks local file URLs."

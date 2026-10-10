@@ -1,0 +1,590 @@
+{
+  "description": "Numerical extracts from the two supplied report screenshots; not new source-study runs.",
+  "sources": {
+    "water_properties": {
+      "local_source_relative_to_codex": "2026-10-09/research-test-from-quantum-water-to/outputs/quantum-water/fluid-data/properties.json",
+      "sha256": "69055045eb64bbca936abab340cfce3cda500be70694a96ef44b6385293ad132"
+    },
+    "water_channels": {
+      "local_source_relative_to_codex": "2026-10-09/research-test-from-quantum-water-to/outputs/quantum-water/fluid-data/channel_results.json",
+      "sha256": "631c367e9ca19df4c2668fe08a2cdf13baebe5949916c727eed55784769041dc"
+    },
+    "linear_reference": {
+      "local_source_relative_to_codex": "2026-10-08/referenced-chatgpt-conversation-this-is-an/outputs/gas-feedback-extension/data/textbook_checks.json",
+      "sha256": "5bdc0bc3e204d703a3a0cad8b2f7d1ee348bcd5fcdd69e5ea031008ce67a6fbf"
+    }
+  },
+  "water_repository": "https://github.com/NousVolition/My-Sources-Project-ALL/tree/main/reports/quantum-water-pilot",
+  "water_properties": {
+    "283.15": {
+      "H2O": {
+        "rho": 999.7024701877399,
+        "mu": 0.0013058996603510804,
+        "nu": 1.3062883200697083e-06
+      },
+      "D2O": {
+        "rho": 1105.9107294932298,
+        "mu": 0.0016691072937756073,
+        "nu": 1.5092604215355207e-06
+      }
+    },
+    "298.15": {
+      "H2O": {
+        "rho": 997.0476367603434,
+        "mu": 0.000890022489077689,
+        "nu": 8.926579395640455e-07
+      },
+      "D2O": {
+        "rho": 1104.468094555348,
+        "mu": 0.0010927692666333646,
+        "nu": 9.894077266879374e-07
+      }
+    },
+    "313.15": {
+      "H2O": {
+        "rho": 992.2163528731411,
+        "mu": 0.0006527287265767487,
+        "nu": 6.578491925542803e-07
+      },
+      "D2O": {
+        "rho": 1099.9994545568145,
+        "mu": 0.000783621606209341,
+        "nu": 7.123836316128531e-07
+      }
+    }
+  },
+  "water_channels": [
+    {
+      "T_K": 283.15,
+      "material": "H2O",
+      "rho": 999.7024701877399,
+      "mu": 0.0013058996603510804,
+      "G_Pam": 1.0,
+      "H_m": 0.001,
+      "steady_mean_ms": 6.381296807361895e-05,
+      "mean_velocity_ms": 6.38128097012146e-05,
+      "tau_s": 0.07756418095886435,
+      "exact_perturbation_amplitude_ratio": 2.5167329326806558e-06
+    },
+    {
+      "T_K": 283.15,
+      "material": "H2O",
+      "rho": 999.7024701877399,
+      "mu": 0.0013058996603510804,
+      "G_Pam": 10.0,
+      "H_m": 0.001,
+      "steady_mean_ms": 0.0006381296807361895,
+      "mean_velocity_ms": 0.0006381280970121471,
+      "tau_s": 0.07756418095886435,
+      "exact_perturbation_amplitude_ratio": 2.5167329326806558e-06
+    },
+    {
+      "T_K": 283.15,
+      "material": "H2O",
+      "rho": 999.7024701877399,
+      "mu": 0.0013058996603510804,
+      "G_Pam": 100.0,
+      "H_m": 0.001,
+      "steady_mean_ms": 0.006381296807361895,
+      "mean_velocity_ms": 0.006381280970121419,
+      "tau_s": 0.07756418095886435,
+      "exact_perturbation_amplitude_ratio": 2.5167329326806558e-06
+    },
+    {
+      "T_K": 283.15,
+      "material": "density_only",
+      "rho": 1105.9107294932298,
+      "mu": 0.0013058996603510804,
+      "G_Pam": 1.0,
+      "H_m": 0.001,
+      "steady_mean_ms": 6.381296807361895e-05,
+      "mean_velocity_ms": 6.381242183307653e-05,
+      "tau_s": 0.08580458937012891,
+      "exact_perturbation_amplitude_ratio": 8.680874621302283e-06
+    },
+    {
+      "T_K": 283.15,
+      "material": "density_only",
+      "rho": 1105.9107294932298,
+      "mu": 0.0013058996603510804,
+      "G_Pam": 10.0,
+      "H_m": 0.001,
+      "steady_mean_ms": 0.0006381296807361895,
+      "mean_velocity_ms": 0.000638124218330768,
+      "tau_s": 0.08580458937012891,
+      "exact_perturbation_amplitude_ratio": 8.680874621302283e-06
+    },
+    {
+      "T_K": 283.15,
+      "material": "density_only",
+      "rho": 1105.9107294932298,
+      "mu": 0.0013058996603510804,
+      "G_Pam": 100.0,
+      "H_m": 0.001,
+      "steady_mean_ms": 0.006381296807361895,
+      "mean_velocity_ms": 0.006381242183307674,
+      "tau_s": 0.08580458937012891,
+      "exact_perturbation_amplitude_ratio": 8.680874621302283e-06
+    },
+    {
+      "T_K": 283.15,
+      "material": "viscosity_only",
+      "rho": 999.7024701877399,
+      "mu": 0.0016691072937756073,
+      "G_Pam": 1.0,
+      "H_m": 0.001,
+      "steady_mean_ms": 4.992688824984343e-05,
+      "mean_velocity_ms": 4.992688481523939e-05,
+      "tau_s": 0.060685755761371765,
+      "exact_perturbation_amplitude_ratio": 6.975118079609974e-08
+    },
+    {
+      "T_K": 283.15,
+      "material": "viscosity_only",
+      "rho": 999.7024701877399,
+      "mu": 0.0016691072937756073,
+      "G_Pam": 10.0,
+      "H_m": 0.001,
+      "steady_mean_ms": 0.0004992688824984342,
+      "mean_velocity_ms": 0.0004992688481523938,
+      "tau_s": 0.060685755761371765,
+      "exact_perturbation_amplitude_ratio": 6.975118079609974e-08
+    },
+    {
+      "T_K": 283.15,
+      "material": "viscosity_only",
+      "rho": 999.7024701877399,
+      "mu": 0.0016691072937756073,
+      "G_Pam": 100.0,
+      "H_m": 0.001,
+      "steady_mean_ms": 0.0049926888249843425,
+      "mean_velocity_ms": 0.004992688481523898,
+      "tau_s": 0.060685755761371765,
+      "exact_perturbation_amplitude_ratio": 6.975118079609974e-08
+    },
+    {
+      "T_K": 283.15,
+      "material": "D2O",
+      "rho": 1105.9107294932298,
+      "mu": 0.0016691072937756073,
+      "G_Pam": 1.0,
+      "H_m": 0.001,
+      "steady_mean_ms": 4.992688824984343e-05,
+      "mean_velocity_ms": 4.992687153370681e-05,
+      "tau_s": 0.06713300249353499,
+      "exact_perturbation_amplitude_ratio": 3.3949612672454957e-07
+    },
+    {
+      "T_K": 283.15,
+      "material": "D2O",
+      "rho": 1105.9107294932298,
+      "mu": 0.0016691072937756073,
+      "G_Pam": 10.0,
+      "H_m": 0.001,
+      "steady_mean_ms": 0.0004992688824984342,
+      "mean_velocity_ms": 0.0004992687153370682,
+      "tau_s": 0.06713300249353499,
+      "exact_perturbation_amplitude_ratio": 3.3949612672454957e-07
+    },
+    {
+      "T_K": 283.15,
+      "material": "D2O",
+      "rho": 1105.9107294932298,
+      "mu": 0.0016691072937756073,
+      "G_Pam": 100.0,
+      "H_m": 0.001,
+      "steady_mean_ms": 0.0049926888249843425,
+      "mean_velocity_ms": 0.004992687153370742,
+      "tau_s": 0.06713300249353499,
+      "exact_perturbation_amplitude_ratio": 3.3949612672454957e-07
+    },
+    {
+      "T_K": 298.15,
+      "material": "H2O",
+      "rho": 997.0476367603434,
+      "mu": 0.000890022489077689,
+      "G_Pam": 1.0,
+      "H_m": 0.001,
+      "steady_mean_ms": 9.363059288500659e-05,
+      "mean_velocity_ms": 9.361681880743782e-05,
+      "tau_s": 0.1135050495286255,
+      "exact_perturbation_amplitude_ratio": 0.0001492062876004108
+    },
+    {
+      "T_K": 298.15,
+      "material": "H2O",
+      "rho": 997.0476367603434,
+      "mu": 0.000890022489077689,
+      "G_Pam": 10.0,
+      "H_m": 0.001,
+      "steady_mean_ms": 0.0009363059288500659,
+      "mean_velocity_ms": 0.000936168188074385,
+      "tau_s": 0.1135050495286255,
+      "exact_perturbation_amplitude_ratio": 0.0001492062876004108
+    },
+    {
+      "T_K": 298.15,
+      "material": "H2O",
+      "rho": 997.0476367603434,
+      "mu": 0.000890022489077689,
+      "G_Pam": 100.0,
+      "H_m": 0.001,
+      "steady_mean_ms": 0.009363059288500659,
+      "mean_velocity_ms": 0.009361681880743735,
+      "tau_s": 0.1135050495286255,
+      "exact_perturbation_amplitude_ratio": 0.0001492062876004108
+    },
+    {
+      "T_K": 298.15,
+      "material": "density_only",
+      "rho": 1104.468094555348,
+      "mu": 0.000890022489077689,
+      "G_Pam": 1.0,
+      "H_m": 0.001,
+      "steady_mean_ms": 9.363059288500659e-05,
+      "mean_velocity_ms": 9.359814528609502e-05,
+      "tau_s": 0.12573391797269198,
+      "exact_perturbation_amplitude_ratio": 0.0003514990949939542
+    },
+    {
+      "T_K": 298.15,
+      "material": "density_only",
+      "rho": 1104.468094555348,
+      "mu": 0.000890022489077689,
+      "G_Pam": 10.0,
+      "H_m": 0.001,
+      "steady_mean_ms": 0.0009363059288500659,
+      "mean_velocity_ms": 0.0009359814528609423,
+      "tau_s": 0.12573391797269198,
+      "exact_perturbation_amplitude_ratio": 0.0003514990949939542
+    },
+    {
+      "T_K": 298.15,
+      "material": "density_only",
+      "rho": 1104.468094555348,
+      "mu": 0.000890022489077689,
+      "G_Pam": 100.0,
+      "H_m": 0.001,
+      "steady_mean_ms": 0.009363059288500659,
+      "mean_velocity_ms": 0.009359814528609341,
+      "tau_s": 0.12573391797269198,
+      "exact_perturbation_amplitude_ratio": 0.0003514990949939542
+    },
+    {
+      "T_K": 298.15,
+      "material": "viscosity_only",
+      "rho": 997.0476367603434,
+      "mu": 0.0010927692666333646,
+      "G_Pam": 1.0,
+      "H_m": 0.001,
+      "steady_mean_ms": 7.625885525685499e-05,
+      "mean_velocity_ms": 7.625734738750434e-05,
+      "tau_s": 0.09244590764854259,
+      "exact_perturbation_amplitude_ratio": 2.0052905952237827e-05
+    },
+    {
+      "T_K": 298.15,
+      "material": "viscosity_only",
+      "rho": 997.0476367603434,
+      "mu": 0.0010927692666333646,
+      "G_Pam": 10.0,
+      "H_m": 0.001,
+      "steady_mean_ms": 0.0007625885525685499,
+      "mean_velocity_ms": 0.0007625734738750459,
+      "tau_s": 0.09244590764854259,
+      "exact_perturbation_amplitude_ratio": 2.0052905952237827e-05
+    },
+    {
+      "T_K": 298.15,
+      "material": "viscosity_only",
+      "rho": 997.0476367603434,
+      "mu": 0.0010927692666333646,
+      "G_Pam": 100.0,
+      "H_m": 0.001,
+      "steady_mean_ms": 0.007625885525685498,
+      "mean_velocity_ms": 0.0076257347387503815,
+      "tau_s": 0.09244590764854259,
+      "exact_perturbation_amplitude_ratio": 2.0052905952237827e-05
+    },
+    {
+      "T_K": 298.15,
+      "material": "D2O",
+      "rho": 1104.468094555348,
+      "mu": 0.0010927692666333646,
+      "G_Pam": 1.0,
+      "H_m": 0.001,
+      "steady_mean_ms": 7.625885525685499e-05,
+      "mean_velocity_ms": 7.625453754580711e-05,
+      "tau_s": 0.10240589486956254,
+      "exact_perturbation_amplitude_ratio": 5.742315987969978e-05
+    },
+    {
+      "T_K": 298.15,
+      "material": "D2O",
+      "rho": 1104.468094555348,
+      "mu": 0.0010927692666333646,
+      "G_Pam": 10.0,
+      "H_m": 0.001,
+      "steady_mean_ms": 0.0007625885525685499,
+      "mean_velocity_ms": 0.0007625453754580754,
+      "tau_s": 0.10240589486956254,
+      "exact_perturbation_amplitude_ratio": 5.742315987969978e-05
+    },
+    {
+      "T_K": 298.15,
+      "material": "D2O",
+      "rho": 1104.468094555348,
+      "mu": 0.0010927692666333646,
+      "G_Pam": 100.0,
+      "H_m": 0.001,
+      "steady_mean_ms": 0.007625885525685498,
+      "mean_velocity_ms": 0.0076254537545806965,
+      "tau_s": 0.10240589486956254,
+      "exact_perturbation_amplitude_ratio": 5.742315987969978e-05
+    },
+    {
+      "T_K": 313.15,
+      "material": "H2O",
+      "rho": 992.2163528731411,
+      "mu": 0.0006527287265767487,
+      "G_Pam": 1.0,
+      "H_m": 0.001,
+      "steady_mean_ms": 0.00012766916781857752,
+      "mean_velocity_ms": 0.00012747855673215036,
+      "tau_s": 0.154018861448975,
+      "exact_perturbation_amplitude_ratio": 0.0015144373637109966
+    },
+    {
+      "T_K": 313.15,
+      "material": "H2O",
+      "rho": 992.2163528731411,
+      "mu": 0.0006527287265767487,
+      "G_Pam": 10.0,
+      "H_m": 0.001,
+      "steady_mean_ms": 0.001276691678185775,
+      "mean_velocity_ms": 0.0012747855673214922,
+      "tau_s": 0.154018861448975,
+      "exact_perturbation_amplitude_ratio": 0.0015144373637109966
+    },
+    {
+      "T_K": 313.15,
+      "material": "H2O",
+      "rho": 992.2163528731411,
+      "mu": 0.0006527287265767487,
+      "G_Pam": 100.0,
+      "H_m": 0.001,
+      "steady_mean_ms": 0.012766916781857752,
+      "mean_velocity_ms": 0.012747855673214892,
+      "tau_s": 0.154018861448975,
+      "exact_perturbation_amplitude_ratio": 0.0015144373637109966
+    },
+    {
+      "T_K": 313.15,
+      "material": "density_only",
+      "rho": 1099.9994545568145,
+      "mu": 0.0006527287265767487,
+      "G_Pam": 1.0,
+      "H_m": 0.001,
+      "steady_mean_ms": 0.00012766916781857752,
+      "mean_velocity_ms": 0.00012730906448900158,
+      "tau_s": 0.1707497191461782,
+      "exact_perturbation_amplitude_ratio": 0.002861168971656114
+    },
+    {
+      "T_K": 313.15,
+      "material": "density_only",
+      "rho": 1099.9994545568145,
+      "mu": 0.0006527287265767487,
+      "G_Pam": 10.0,
+      "H_m": 0.001,
+      "steady_mean_ms": 0.001276691678185775,
+      "mean_velocity_ms": 0.001273090644890042,
+      "tau_s": 0.1707497191461782,
+      "exact_perturbation_amplitude_ratio": 0.002861168971656114
+    },
+    {
+      "T_K": 313.15,
+      "material": "density_only",
+      "rho": 1099.9994545568145,
+      "mu": 0.0006527287265767487,
+      "G_Pam": 100.0,
+      "H_m": 0.001,
+      "steady_mean_ms": 0.012766916781857752,
+      "mean_velocity_ms": 0.012730906448900103,
+      "tau_s": 0.1707497191461782,
+      "exact_perturbation_amplitude_ratio": 0.002861168971656114
+    },
+    {
+      "T_K": 313.15,
+      "material": "viscosity_only",
+      "rho": 992.2163528731411,
+      "mu": 0.000783621606209341,
+      "G_Pam": 1.0,
+      "H_m": 0.001,
+      "steady_mean_ms": 0.00010634384334608456,
+      "mean_velocity_ms": 0.00010630065647686273,
+      "tau_s": 0.12829219422458513,
+      "exact_perturbation_amplitude_ratio": 0.0004119096625664377
+    },
+    {
+      "T_K": 313.15,
+      "material": "viscosity_only",
+      "rho": 992.2163528731411,
+      "mu": 0.000783621606209341,
+      "G_Pam": 10.0,
+      "H_m": 0.001,
+      "steady_mean_ms": 0.0010634384334608454,
+      "mean_velocity_ms": 0.0010630065647686197,
+      "tau_s": 0.12829219422458513,
+      "exact_perturbation_amplitude_ratio": 0.0004119096625664377
+    },
+    {
+      "T_K": 313.15,
+      "material": "viscosity_only",
+      "rho": 992.2163528731411,
+      "mu": 0.000783621606209341,
+      "G_Pam": 100.0,
+      "H_m": 0.001,
+      "steady_mean_ms": 0.010634384334608456,
+      "mean_velocity_ms": 0.010630065647686171,
+      "tau_s": 0.12829219422458513,
+      "exact_perturbation_amplitude_ratio": 0.0004119096625664377
+    },
+    {
+      "T_K": 313.15,
+      "material": "D2O",
+      "rho": 1099.9994545568145,
+      "mu": 0.000783621606209341,
+      "G_Pam": 1.0,
+      "H_m": 0.001,
+      "steady_mean_ms": 0.00010634384334608456,
+      "mean_velocity_ms": 0.00010625115315500502,
+      "tau_s": 0.1422283993428432,
+      "exact_perturbation_amplitude_ratio": 0.0008840962458738397
+    },
+    {
+      "T_K": 313.15,
+      "material": "D2O",
+      "rho": 1099.9994545568145,
+      "mu": 0.000783621606209341,
+      "G_Pam": 10.0,
+      "H_m": 0.001,
+      "steady_mean_ms": 0.0010634384334608454,
+      "mean_velocity_ms": 0.0010625115315500712,
+      "tau_s": 0.1422283993428432,
+      "exact_perturbation_amplitude_ratio": 0.0008840962458738397
+    },
+    {
+      "T_K": 313.15,
+      "material": "D2O",
+      "rho": 1099.9994545568145,
+      "mu": 0.000783621606209341,
+      "G_Pam": 100.0,
+      "H_m": 0.001,
+      "steady_mean_ms": 0.010634384334608456,
+      "mean_velocity_ms": 0.010625115315500451,
+      "tau_s": 0.1422283993428432,
+      "exact_perturbation_amplitude_ratio": 0.0008840962458738397
+    }
+  ],
+  "linear_reference": [
+    {
+      "name": "center",
+      "matrix": [
+        [
+          0.0,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0
+        ]
+      ],
+      "classification": "linear center"
+    },
+    {
+      "name": "stable spiral",
+      "matrix": [
+        [
+          -0.2,
+          -1.0
+        ],
+        [
+          1.0,
+          -0.2
+        ]
+      ],
+      "classification": "stable spiral"
+    },
+    {
+      "name": "unstable spiral",
+      "matrix": [
+        [
+          0.2,
+          -1.0
+        ],
+        [
+          1.0,
+          0.2
+        ]
+      ],
+      "classification": "unstable spiral"
+    },
+    {
+      "name": "5.1.3",
+      "matrix": [
+        [
+          1.0,
+          -1.0
+        ],
+        [
+          -1.0,
+          0.0
+        ]
+      ],
+      "classification": "saddle"
+    },
+    {
+      "name": "symmetric a=-1,b=0.5",
+      "matrix": [
+        [
+          -1.0,
+          0.5
+        ],
+        [
+          0.5,
+          -1.0
+        ]
+      ],
+      "classification": "stable node"
+    },
+    {
+      "name": "symmetric a=-1,b=1",
+      "matrix": [
+        [
+          -1.0,
+          1.0
+        ],
+        [
+          1.0,
+          -1.0
+        ]
+      ],
+      "classification": "non-isolated equilibria; inspect zero mode"
+    },
+    {
+      "name": "symmetric a=-1,b=1.5",
+      "matrix": [
+        [
+          -1.0,
+          1.5
+        ],
+        [
+          1.5,
+          -1.0
+        ]
+      ],
+      "classification": "saddle"
+    }
+  ]
+}

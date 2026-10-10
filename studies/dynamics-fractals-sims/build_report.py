@@ -19,6 +19,7 @@ from bifurcations import (cusp_roots,bead_roots,budworm,budworm_fold,
 from oscillation_report import build_figures as build_oscillation_figures, html_section
 from topology_report import build_figures as build_topology_figures, html_section as topology_section
 from heteroclinic_report import build_figures as build_heteroclinic_figures, html_section as heteroclinic_section
+from bridge_report import build_figures as build_bridge_figures, html_section as bridge_section
 
 BLUE, ORANGE, TEAL, INK = '#236783','#d36c37','#348b72','#1b2935'
 plt.rcParams.update({'font.size':9,'axes.spines.top':False,'axes.spines.right':False,
@@ -244,9 +245,11 @@ def make_html():
 <style>body{{margin:0;background:#f5f3ee;color:#1b2935;font:17px/1.65 system-ui,sans-serif}}main{{max-width:1120px;margin:auto;padding:48px 24px 80px}}h1{{font-size:clamp(36px,6vw,64px);line-height:1.08;max-width:850px;margin:20px 0}}h2{{font-size:30px;line-height:1.25;margin-top:0}}h3{{font-size:21px}}p{{max-width:950px}}a{{color:#236783}}.eyebrow{{letter-spacing:.13em;font-size:12px;text-transform:uppercase;color:#236783}}.lead{{font-size:22px;max-width:850px}}section{{background:white;margin:32px 0;padding:30px;border-radius:15px}}.cards{{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}}.card{{padding:20px;background:#e7eef0;border-radius:12px}}.big{{font-size:34px;font-weight:700;display:block}}img{{width:100%;height:auto;border-radius:5px}}figure{{margin:25px 0}}figcaption{{font-size:14px;color:#52616a}}table{{border-collapse:collapse;width:100%;font-size:14px}}th,td{{padding:10px 12px;border-bottom:1px solid #dde3e5;text-align:left}}th{{background:#edf2f3}}.scroll{{overflow:auto}}code{{background:#e9eff1;padding:3px 6px;border-radius:4px}}summary{{cursor:pointer;font-weight:650}}.equation{{font-size:20px;background:#eef3f4;padding:18px;border-radius:8px}}@media(max-width:650px){{.cards{{grid-template-columns:1fr}}section{{padding:20px}}}}@media print{{body{{background:white}}main{{padding:0}}section{{break-inside:avoid}}}}</style></head><body><main>
 <div class="eyebrow">Streams and Rocks / Research notebook</div><h1>Dynamics, fractals,<br>and SIMS</h1>
 <p class="lead">How do local rules, resistance, and the pattern of connections shape a group's path toward agreement?</p>
-<p>SIMS are the simulated participants in the coordination tests. Five sets of mathematical experiments turn your images into explicit models, executable checks, and original plots.</p>
-<div class="cards"><div class="card"><span class="big">{total_sims_runs:,}</span>SIMS runs across two matched experiments</div><div class="card"><span class="big">{test_count}</span>automated tests</div><div class="card"><span class="big">5 batches</span>dynamics, topology, and heteroclinic switching</div></div>
+<p>SIMS are the simulated participants in the coordination tests. Six sets of mathematical experiments turn your images into explicit models, executable checks, and original plots.</p>
+<div class="cards"><div class="card"><span class="big">{total_sims_runs:,}</span>SIMS runs across two matched experiments</div><div class="card"><span class="big">{test_count}</span>automated tests</div><div class="card"><span class="big">6 batches</span>dynamics, topology, switching, and reversibility</div></div>
+<p><a href="#bridge">New: reversibility, stability, and water-flow checks</a></p>
 <p><a href="#heteroclinic">New: switching, memory, and stopping</a> · <a href="#topology">Topology tests applied to SIMS</a> · <a href="#oscillations">Oscillation tests</a> · <a href="README.md">Full methods and instructions</a> · <a href="results.json">First-batch data</a> · <a href="bifurcation_results.json">Second-batch data</a> · <a href="oscillation_results.json">Third-batch data</a> · <a href="topology_results.json">Fourth-batch data</a></p>
+{bridge_section()}
 {heteroclinic_section()}
 {topology_section()}
 <section><h2>The first result: shape matters through connections</h2><p>The Koch boundary and a matching 48-SIMS ring produced identical outcomes. Each SIM has the same two neighbors in both drawings. The Menger network changes the contacts: ordinary agreement occurred in <strong>{case('Menger L1')['first_consensus_fraction']:.2%}</strong> of its 20-SIMS rounds, compared with <strong>{case('Ring 20')['first_consensus_fraction']:.2%}</strong> on a 20-SIMS ring.</p>
@@ -277,5 +280,5 @@ def make_html():
 
 
 if __name__=='__main__':
-    dynamics();fractals();coordination();tipping();extended();build_oscillation_figures();build_topology_figures();build_heteroclinic_figures();make_html()
-    print('Built fourteen original figures and report.html')
+    dynamics();fractals();coordination();tipping();extended();build_oscillation_figures();build_topology_figures();build_heteroclinic_figures();build_bridge_figures();make_html()
+    print('Built sixteen original figures and report.html')
