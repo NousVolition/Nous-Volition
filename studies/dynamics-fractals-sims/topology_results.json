@@ -1,0 +1,1364 @@
+{
+  "mathematics": {
+    "menger_projections": [
+      {
+        "source_level": 1,
+        "target_level": 0,
+        "homomorphism": true,
+        "vertex_surjective": true,
+        "edge_surjective": true,
+        "connected_fibers": true,
+        "source_connected": true,
+        "target_connected": true,
+        "fiber_sizes": [
+          20
+        ],
+        "connected_epimorphism": true
+      },
+      {
+        "source_level": 2,
+        "target_level": 1,
+        "homomorphism": true,
+        "vertex_surjective": true,
+        "edge_surjective": true,
+        "connected_fibers": true,
+        "source_connected": true,
+        "target_connected": true,
+        "fiber_sizes": [
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20
+        ],
+        "connected_epimorphism": true
+      }
+    ],
+    "menger_finite_symmetries": {
+      "verified_coordinate_symmetries": 48,
+      "orbits": [
+        {
+          "seats": [
+            0,
+            2,
+            5,
+            7,
+            12,
+            14,
+            17,
+            19
+          ],
+          "size": 8,
+          "contact_degree": 3
+        },
+        {
+          "seats": [
+            1,
+            3,
+            4,
+            6,
+            8,
+            9,
+            10,
+            11,
+            13,
+            15,
+            16,
+            18
+          ],
+          "size": 12,
+          "contact_degree": 2
+        }
+      ]
+    },
+    "compatible_prefixes": 400,
+    "sample_prefixes": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        2
+      ],
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        0,
+        1,
+        4
+      ]
+    ],
+    "finite_prefix_status": "A three-level truncation, not the infinite generic prespace.",
+    "transitivity": {
+      "level1_witness": [
+        0,
+        1,
+        2
+      ],
+      "original_edges_without_loops": 24,
+      "closure_edges_without_loops": 190,
+      "closure_equivalence_classes": 1
+    },
+    "lifting": {
+      "A_vertices": 2,
+      "B_vertices": 3,
+      "C_vertices": 3,
+      "D_vertices": 4,
+      "g_B_to_A": [
+        0,
+        0,
+        1
+      ],
+      "f_C_to_A": [
+        0,
+        1,
+        1
+      ],
+      "D_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "projection_to_B": [
+        0,
+        1,
+        2,
+        2
+      ],
+      "projection_to_C": [
+        0,
+        0,
+        1,
+        2
+      ],
+      "projection_B_audit": {
+        "homomorphism": true,
+        "vertex_surjective": true,
+        "edge_surjective": true,
+        "connected_fibers": true,
+        "source_connected": true,
+        "target_connected": true,
+        "fiber_sizes": [
+          1,
+          1,
+          2
+        ],
+        "connected_epimorphism": true
+      },
+      "projection_C_audit": {
+        "homomorphism": true,
+        "vertex_surjective": true,
+        "edge_surjective": true,
+        "connected_fibers": true,
+        "source_connected": true,
+        "target_connected": true,
+        "fiber_sizes": [
+          2,
+          1,
+          1
+        ],
+        "connected_epimorphism": true
+      },
+      "direct_lifts_from_C": 0,
+      "refined_lifts_with_endpoints_fixed": [
+        [
+          0,
+          1,
+          2,
+          2
+        ]
+      ],
+      "compatible_but_blocked_prescription": {
+        "source_vertex": 1,
+        "target_vertex": 0,
+        "lifts": 0
+      }
+    },
+    "simplicial_identities": {
+      "standard_simplex_dimension": 2,
+      "max_input_degree": 6,
+      "by_family": {
+        "face_degeneracy_identity": 1260,
+        "degeneracy_degeneracy": 2142,
+        "face_degeneracy_right": 1512,
+        "face_degeneracy_left": 1512,
+        "face_face": 1506
+      },
+      "equalities_checked": 7932
+    },
+    "category_nerve": {
+      "category": "One object; morphisms 0,1,2; composition addition mod 3; identity 0",
+      "max_degree": 5,
+      "by_family": {
+        "face_degeneracy": 13304,
+        "degeneracy_degeneracy": 6652,
+        "face_face": 4644
+      },
+      "equalities_checked": 24600
+    },
+    "cubical_relations": {
+      "connection": "maximum of adjacent coordinates",
+      "coordinate_grid": [
+        "0",
+        "1/3",
+        "1"
+      ],
+      "max_input_dimension": 4,
+      "by_family": {
+        "projection_after_insert": 1094,
+        "connection_face": 4008,
+        "projection_connection": 846,
+        "two_projection_forms": 306,
+        "max_associativity": 189,
+        "connection_connection": 81
+      },
+      "equalities_checked": 6524
+    },
+    "aggregation_counterexample": {
+      "source": "six-vertex path",
+      "projection": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "map_audit": {
+        "homomorphism": true,
+        "vertex_surjective": true,
+        "edge_surjective": true,
+        "connected_fibers": true,
+        "source_connected": true,
+        "target_connected": true,
+        "fiber_sizes": [
+          3,
+          3
+        ],
+        "connected_epimorphism": true
+      },
+      "states": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "ones_per_block": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "majority_colors": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "microscopic_consensus": [
+        false,
+        false
+      ],
+      "expected_change_in_block_ones": [
+        [
+          -0.07083333333333333,
+          0.0
+        ],
+        [
+          0.07083333333333333,
+          0.07083333333333333
+        ]
+      ],
+      "exact_expected_changes": [
+        [
+          "-17/240",
+          "0"
+        ],
+        [
+          "17/240",
+          "17/240"
+        ]
+      ],
+      "interpretation": "Equal block counts have different next-step drift: counts alone do not close the copying dynamics."
+    },
+    "realization": {
+      "face_gluing_equal": true,
+      "face_common_point": [
+        0.4,
+        0.6
+      ],
+      "degeneracy_collapse_equal": true,
+      "collapse_common_point": [
+        0.8,
+        0.0
+      ]
+    },
+    "homology": {
+      "triangle boundary": {
+        "simplex_counts": [
+          3,
+          3
+        ],
+        "betti_Z2": [
+          1,
+          1
+        ],
+        "euler_characteristic": 0
+      },
+      "filled triangle": {
+        "simplex_counts": [
+          3,
+          3,
+          1
+        ],
+        "betti_Z2": [
+          1,
+          0,
+          0
+        ],
+        "euler_characteristic": 1
+      },
+      "tetrahedron boundary": {
+        "simplex_counts": [
+          4,
+          6,
+          4
+        ],
+        "betti_Z2": [
+          1,
+          0,
+          1
+        ],
+        "euler_characteristic": 2
+      },
+      "filled tetrahedron": {
+        "simplex_counts": [
+          4,
+          6,
+          4,
+          1
+        ],
+        "betti_Z2": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "euler_characteristic": 1
+      },
+      "four triangle wireframe": {
+        "simplex_counts": [
+          9,
+          12
+        ],
+        "betti_Z2": [
+          1,
+          4
+        ],
+        "euler_characteristic": -3
+      },
+      "four filled triangles": {
+        "simplex_counts": [
+          9,
+          12,
+          4
+        ],
+        "betti_Z2": [
+          1,
+          0,
+          0
+        ],
+        "euler_characteristic": 1
+      }
+    }
+  },
+  "sims": {
+    "seed": 20261010,
+    "data_kind": "SIMS simulation",
+    "new_rounds": 2560,
+    "horizon_seconds": 120,
+    "activation": 0.25,
+    "refusal": 0.15,
+    "cases": [
+      {
+        "network": "Menger contacts",
+        "sims": 20,
+        "policy": "ordinary",
+        "role": "baseline",
+        "focal_seat": 0,
+        "initiative": 0,
+        "rounds": 256,
+        "first_consensus_n": 186,
+        "first_consensus_fraction": 0.7265625,
+        "wilson95": [
+          0.6689146042381685,
+          0.7775114608188586
+        ],
+        "endpoint_fraction": 0.7265625,
+        "mean_capped_seconds": 70.6796875,
+        "mean_switches": 67.66796875,
+        "mean_refusals": 11.77734375,
+        "mean_breaks": 0.0,
+        "copy_credit_by_seat": [
+          1304,
+          604,
+          1292,
+          581,
+          535,
+          1390,
+          569,
+          1323,
+          570,
+          577,
+          587,
+          556,
+          1292,
+          584,
+          1292,
+          571,
+          541,
+          1303,
+          525,
+          1327
+        ]
+      },
+      {
+        "network": "Menger contacts",
+        "sims": 20,
+        "policy": "oppose",
+        "role": "corner",
+        "focal_seat": 0,
+        "initiative": 0,
+        "rounds": 256,
+        "first_consensus_n": 102,
+        "first_consensus_fraction": 0.3984375,
+        "wilson95": [
+          0.3403930035879241,
+          0.459484967248581
+        ],
+        "endpoint_fraction": 0.01171875,
+        "mean_capped_seconds": 97.078125,
+        "mean_switches": 121.99609375,
+        "mean_refusals": 19.12890625,
+        "mean_breaks": 0.54296875,
+        "copy_credit_by_seat": [
+          5622,
+          636,
+          2260,
+          576,
+          823,
+          2180,
+          795,
+          1710,
+          624,
+          839,
+          800,
+          669,
+          2143,
+          832,
+          1719,
+          816,
+          675,
+          1736,
+          658,
+          1586
+        ]
+      },
+      {
+        "network": "Menger contacts",
+        "sims": 20,
+        "policy": "oppose",
+        "role": "edge",
+        "focal_seat": 1,
+        "initiative": 0,
+        "rounds": 256,
+        "first_consensus_n": 87,
+        "first_consensus_fraction": 0.33984375,
+        "wilson95": [
+          0.28457152593543,
+          0.39985142807598195
+        ],
+        "endpoint_fraction": 0.0078125,
+        "mean_capped_seconds": 100.08203125,
+        "mean_switches": 105.0625,
+        "mean_refusals": 17.53515625,
+        "mean_breaks": 0.38671875,
+        "copy_credit_by_seat": [
+          1787,
+          2692,
+          1812,
+          988,
+          958,
+          1883,
+          740,
+          1858,
+          982,
+          1011,
+          723,
+          680,
+          1800,
+          761,
+          1797,
+          716,
+          691,
+          1511,
+          626,
+          1616
+        ]
+      },
+      {
+        "network": "Transitive closure contacts",
+        "sims": 20,
+        "policy": "ordinary",
+        "role": "baseline",
+        "focal_seat": 0,
+        "initiative": 0,
+        "rounds": 256,
+        "first_consensus_n": 238,
+        "first_consensus_fraction": 0.9296875,
+        "wilson95": [
+          0.8916056708459876,
+          0.9550644525380292
+        ],
+        "endpoint_fraction": 0.9296875,
+        "mean_capped_seconds": 46.9453125,
+        "mean_switches": 77.41796875,
+        "mean_refusals": 13.6328125,
+        "mean_breaks": 0.0,
+        "copy_credit_by_seat": [
+          986,
+          944,
+          1019,
+          1018,
+          1001,
+          992,
+          1083,
+          1000,
+          977,
+          952,
+          1000,
+          986,
+          1014,
+          1025,
+          980,
+          979,
+          978,
+          984,
+          927,
+          974
+        ]
+      },
+      {
+        "network": "Transitive closure contacts",
+        "sims": 20,
+        "policy": "oppose",
+        "role": "corner",
+        "focal_seat": 0,
+        "initiative": 0,
+        "rounds": 256,
+        "first_consensus_n": 8,
+        "first_consensus_fraction": 0.03125,
+        "wilson95": [
+          0.015918258891511296,
+          0.06044160650774316
+        ],
+        "endpoint_fraction": 0.0,
+        "mean_capped_seconds": 118.5625,
+        "mean_switches": 191.50390625,
+        "mean_refusals": 33.14453125,
+        "mean_breaks": 0.03125,
+        "copy_credit_by_seat": [
+          4498,
+          2320,
+          2363,
+          2336,
+          2267,
+          2249,
+          2326,
+          2327,
+          2277,
+          2215,
+          2233,
+          2234,
+          2219,
+          2381,
+          2212,
+          2235,
+          2224,
+          2311,
+          2246,
+          2260
+        ]
+      },
+      {
+        "network": "Transitive closure contacts",
+        "sims": 20,
+        "policy": "oppose",
+        "role": "edge",
+        "focal_seat": 1,
+        "initiative": 0,
+        "rounds": 256,
+        "first_consensus_n": 11,
+        "first_consensus_fraction": 0.04296875,
+        "wilson95": [
+          0.024159813300607562,
+          0.07529105546366555
+        ],
+        "endpoint_fraction": 0.0,
+        "mean_capped_seconds": 117.70703125,
+        "mean_switches": 192.24609375,
+        "mean_refusals": 33.71875,
+        "mean_breaks": 0.04296875,
+        "copy_credit_by_seat": [
+          2296,
+          4506,
+          2291,
+          2262,
+          2306,
+          2300,
+          2340,
+          2254,
+          2356,
+          2247,
+          2268,
+          2209,
+          2256,
+          2273,
+          2244,
+          2282,
+          2292,
+          2331,
+          2240,
+          2269
+        ]
+      },
+      {
+        "network": "Triangle wireframe",
+        "sims": 9,
+        "policy": "ordinary",
+        "role": "baseline",
+        "focal_seat": 0,
+        "initiative": 0,
+        "rounds": 256,
+        "first_consensus_n": 249,
+        "first_consensus_fraction": 0.97265625,
+        "wilson95": [
+          0.9446442920775396,
+          0.9866928436448789
+        ],
+        "endpoint_fraction": 0.97265625,
+        "mean_capped_seconds": 31.33203125,
+        "mean_switches": 14.06640625,
+        "mean_refusals": 2.56640625,
+        "mean_breaks": 0.0,
+        "copy_credit_by_seat": [
+          212,
+          216,
+          751,
+          219,
+          805,
+          220,
+          775,
+          206,
+          197
+        ]
+      },
+      {
+        "network": "Filled triangles",
+        "sims": 9,
+        "policy": "ordinary",
+        "role": "baseline",
+        "focal_seat": 0,
+        "initiative": 0,
+        "rounds": 256,
+        "first_consensus_n": 249,
+        "first_consensus_fraction": 0.97265625,
+        "wilson95": [
+          0.9446442920775396,
+          0.9866928436448789
+        ],
+        "endpoint_fraction": 0.97265625,
+        "mean_capped_seconds": 31.33203125,
+        "mean_switches": 14.06640625,
+        "mean_refusals": 2.56640625,
+        "mean_breaks": 0.0,
+        "copy_credit_by_seat": [
+          212,
+          216,
+          751,
+          219,
+          805,
+          220,
+          775,
+          206,
+          197
+        ]
+      },
+      {
+        "network": "Menger contacts",
+        "sims": 20,
+        "policy": "ordinary",
+        "role": "baseline",
+        "focal_seat": 0,
+        "initiative": 0.02,
+        "rounds": 64,
+        "first_consensus_n": 38,
+        "first_consensus_fraction": 0.59375,
+        "wilson95": [
+          0.4714520812860451,
+          0.7054309075028039
+        ],
+        "endpoint_fraction": 0.1875,
+        "mean_capped_seconds": 81.296875,
+        "mean_switches": 118.8125,
+        "mean_refusals": 17.390625,
+        "mean_breaks": 1.34375,
+        "copy_credit_by_seat": [
+          514,
+          213,
+          502,
+          212,
+          227,
+          544,
+          241,
+          537,
+          209,
+          216,
+          239,
+          224,
+          490,
+          230,
+          491,
+          214,
+          219,
+          494,
+          226,
+          540
+        ]
+      },
+      {
+        "network": "Menger contacts",
+        "sims": 20,
+        "policy": "oppose",
+        "role": "corner",
+        "focal_seat": 0,
+        "initiative": 0.02,
+        "rounds": 64,
+        "first_consensus_n": 13,
+        "first_consensus_fraction": 0.203125,
+        "wilson95": [
+          0.12273417819183653,
+          0.3171363573101416
+        ],
+        "endpoint_fraction": 0.0,
+        "mean_capped_seconds": 107.515625,
+        "mean_switches": 152.359375,
+        "mean_refusals": 22.0,
+        "mean_breaks": 0.296875,
+        "copy_credit_by_seat": [
+          1375,
+          150,
+          606,
+          136,
+          262,
+          659,
+          249,
+          576,
+          179,
+          236,
+          254,
+          222,
+          592,
+          251,
+          534,
+          256,
+          211,
+          554,
+          241,
+          539
+        ]
+      },
+      {
+        "network": "Menger contacts",
+        "sims": 20,
+        "policy": "oppose",
+        "role": "edge",
+        "focal_seat": 1,
+        "initiative": 0.02,
+        "rounds": 64,
+        "first_consensus_n": 14,
+        "first_consensus_fraction": 0.21875,
+        "wilson95": [
+          0.13502319406719474,
+          0.3343278395662582
+        ],
+        "endpoint_fraction": 0.015625,
+        "mean_capped_seconds": 108.875,
+        "mean_switches": 138.375,
+        "mean_refusals": 20.234375,
+        "mean_breaks": 0.234375,
+        "copy_credit_by_seat": [
+          458,
+          655,
+          470,
+          266,
+          288,
+          581,
+          250,
+          592,
+          274,
+          283,
+          256,
+          239,
+          542,
+          240,
+          563,
+          259,
+          228,
+          510,
+          239,
+          564
+        ]
+      },
+      {
+        "network": "Transitive closure contacts",
+        "sims": 20,
+        "policy": "ordinary",
+        "role": "baseline",
+        "focal_seat": 0,
+        "initiative": 0.02,
+        "rounds": 64,
+        "first_consensus_n": 55,
+        "first_consensus_fraction": 0.859375,
+        "wilson95": [
+          0.7538371825842297,
+          0.9242142744396914
+        ],
+        "endpoint_fraction": 0.328125,
+        "mean_capped_seconds": 58.484375,
+        "mean_switches": 149.734375,
+        "mean_refusals": 22.875,
+        "mean_breaks": 2.75,
+        "copy_credit_by_seat": [
+          435,
+          393,
+          423,
+          394,
+          486,
+          430,
+          454,
+          432,
+          469,
+          418,
+          459,
+          456,
+          452,
+          411,
+          459,
+          409,
+          439,
+          452,
+          434,
+          456
+        ]
+      },
+      {
+        "network": "Transitive closure contacts",
+        "sims": 20,
+        "policy": "oppose",
+        "role": "corner",
+        "focal_seat": 0,
+        "initiative": 0.02,
+        "rounds": 64,
+        "first_consensus_n": 0,
+        "first_consensus_fraction": 0.0,
+        "wilson95": [
+          0.0,
+          0.05662405979280534
+        ],
+        "endpoint_fraction": 0.0,
+        "mean_capped_seconds": 120.0,
+        "mean_switches": 215.28125,
+        "mean_refusals": 32.984375,
+        "mean_breaks": 0.0,
+        "copy_credit_by_seat": [
+          1027,
+          576,
+          657,
+          565,
+          631,
+          571,
+          608,
+          635,
+          636,
+          602,
+          632,
+          614,
+          634,
+          614,
+          602,
+          579,
+          623,
+          638,
+          603,
+          601
+        ]
+      },
+      {
+        "network": "Transitive closure contacts",
+        "sims": 20,
+        "policy": "oppose",
+        "role": "edge",
+        "focal_seat": 1,
+        "initiative": 0.02,
+        "rounds": 64,
+        "first_consensus_n": 2,
+        "first_consensus_fraction": 0.03125,
+        "wilson95": [
+          0.008612138346171874,
+          0.10697291770958313
+        ],
+        "endpoint_fraction": 0.0,
+        "mean_capped_seconds": 117.625,
+        "mean_switches": 215.78125,
+        "mean_refusals": 34.234375,
+        "mean_breaks": 0.046875,
+        "copy_credit_by_seat": [
+          588,
+          1047,
+          629,
+          567,
+          654,
+          567,
+          616,
+          618,
+          621,
+          619,
+          618,
+          601,
+          614,
+          577,
+          618,
+          592,
+          625,
+          653,
+          605,
+          610
+        ]
+      },
+      {
+        "network": "Triangle wireframe",
+        "sims": 9,
+        "policy": "ordinary",
+        "role": "baseline",
+        "focal_seat": 0,
+        "initiative": 0.02,
+        "rounds": 64,
+        "first_consensus_n": 63,
+        "first_consensus_fraction": 0.984375,
+        "wilson95": [
+          0.9166589839990573,
+          0.9972364580766624
+        ],
+        "endpoint_fraction": 0.515625,
+        "mean_capped_seconds": 24.203125,
+        "mean_switches": 33.765625,
+        "mean_refusals": 4.515625,
+        "mean_breaks": 2.84375,
+        "copy_credit_by_seat": [
+          130,
+          117,
+          394,
+          133,
+          348,
+          98,
+          373,
+          112,
+          101
+        ]
+      },
+      {
+        "network": "Filled triangles",
+        "sims": 9,
+        "policy": "ordinary",
+        "role": "baseline",
+        "focal_seat": 0,
+        "initiative": 0.02,
+        "rounds": 64,
+        "first_consensus_n": 63,
+        "first_consensus_fraction": 0.984375,
+        "wilson95": [
+          0.9166589839990573,
+          0.9972364580766624
+        ],
+        "endpoint_fraction": 0.515625,
+        "mean_capped_seconds": 24.203125,
+        "mean_switches": 33.765625,
+        "mean_refusals": 4.515625,
+        "mean_breaks": 2.84375,
+        "copy_credit_by_seat": [
+          130,
+          117,
+          394,
+          133,
+          348,
+          98,
+          373,
+          112,
+          101
+        ]
+      }
+    ],
+    "paired_comparisons": [
+      {
+        "left": "Menger contacts",
+        "right": "Transitive closure contacts",
+        "role": "baseline",
+        "initiative": 0,
+        "metric": "first",
+        "right_minus_left": 0.203125,
+        "paired_monte_carlo_normal95": [
+          0.1373857204184442,
+          0.2688642795815558
+        ]
+      },
+      {
+        "left": "Menger contacts",
+        "right": "Transitive closure contacts",
+        "role": "baseline",
+        "initiative": 0,
+        "metric": "endpoint",
+        "right_minus_left": 0.203125,
+        "paired_monte_carlo_normal95": [
+          0.1373857204184442,
+          0.2688642795815558
+        ]
+      },
+      {
+        "left": "Menger contacts",
+        "right": "Transitive closure contacts",
+        "role": "baseline",
+        "initiative": 0,
+        "metric": "capped",
+        "right_minus_left": -23.734375,
+        "paired_monte_carlo_normal95": [
+          -29.8498555374844,
+          -17.6188944625156
+        ]
+      },
+      {
+        "left": "Menger contacts",
+        "right": "Transitive closure contacts",
+        "role": "corner",
+        "initiative": 0,
+        "metric": "first",
+        "right_minus_left": -0.3671875,
+        "paired_monte_carlo_normal95": [
+          -0.4320466959810544,
+          -0.3023283040189456
+        ]
+      },
+      {
+        "left": "Menger contacts",
+        "right": "Transitive closure contacts",
+        "role": "corner",
+        "initiative": 0,
+        "metric": "endpoint",
+        "right_minus_left": -0.01171875,
+        "paired_monte_carlo_normal95": [
+          -0.0249276576485674,
+          0.0014901576485674
+        ]
+      },
+      {
+        "left": "Menger contacts",
+        "right": "Transitive closure contacts",
+        "role": "corner",
+        "initiative": 0,
+        "metric": "capped",
+        "right_minus_left": 21.484375,
+        "paired_monte_carlo_normal95": [
+          16.976083004781145,
+          25.992666995218855
+        ]
+      },
+      {
+        "left": "Menger contacts",
+        "right": "Transitive closure contacts",
+        "role": "edge",
+        "initiative": 0,
+        "metric": "first",
+        "right_minus_left": -0.296875,
+        "paired_monte_carlo_normal95": [
+          -0.3598715447037204,
+          -0.2338784552962796
+        ]
+      },
+      {
+        "left": "Menger contacts",
+        "right": "Transitive closure contacts",
+        "role": "edge",
+        "initiative": 0,
+        "metric": "endpoint",
+        "right_minus_left": -0.0078125,
+        "paired_monte_carlo_normal95": [
+          -0.018618821197272803,
+          0.002993821197272801
+        ]
+      },
+      {
+        "left": "Menger contacts",
+        "right": "Transitive closure contacts",
+        "role": "edge",
+        "initiative": 0,
+        "metric": "capped",
+        "right_minus_left": 17.625,
+        "paired_monte_carlo_normal95": [
+          13.396465273718029,
+          21.85353472628197
+        ]
+      },
+      {
+        "left": "Triangle wireframe",
+        "right": "Filled triangles",
+        "role": "baseline",
+        "initiative": 0,
+        "metric": "first",
+        "right_minus_left": 0.0,
+        "paired_monte_carlo_normal95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "left": "Triangle wireframe",
+        "right": "Filled triangles",
+        "role": "baseline",
+        "initiative": 0,
+        "metric": "endpoint",
+        "right_minus_left": 0.0,
+        "paired_monte_carlo_normal95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "left": "Triangle wireframe",
+        "right": "Filled triangles",
+        "role": "baseline",
+        "initiative": 0,
+        "metric": "capped",
+        "right_minus_left": 0.0,
+        "paired_monte_carlo_normal95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "left": "Menger contacts",
+        "right": "Transitive closure contacts",
+        "role": "baseline",
+        "initiative": 0.02,
+        "metric": "first",
+        "right_minus_left": 0.265625,
+        "paired_monte_carlo_normal95": [
+          0.10677373636532403,
+          0.42447626363467594
+        ]
+      },
+      {
+        "left": "Menger contacts",
+        "right": "Transitive closure contacts",
+        "role": "baseline",
+        "initiative": 0.02,
+        "metric": "endpoint",
+        "right_minus_left": 0.140625,
+        "paired_monte_carlo_normal95": [
+          -0.003277847483602242,
+          0.28452784748360227
+        ]
+      },
+      {
+        "left": "Menger contacts",
+        "right": "Transitive closure contacts",
+        "role": "baseline",
+        "initiative": 0.02,
+        "metric": "capped",
+        "right_minus_left": -22.8125,
+        "paired_monte_carlo_normal95": [
+          -36.013725137800236,
+          -9.611274862199762
+        ]
+      },
+      {
+        "left": "Menger contacts",
+        "right": "Transitive closure contacts",
+        "role": "corner",
+        "initiative": 0.02,
+        "metric": "first",
+        "right_minus_left": -0.203125,
+        "paired_monte_carlo_normal95": [
+          -0.30247379109313144,
+          -0.10377620890686859
+        ]
+      },
+      {
+        "left": "Menger contacts",
+        "right": "Transitive closure contacts",
+        "role": "corner",
+        "initiative": 0.02,
+        "metric": "endpoint",
+        "right_minus_left": 0.0,
+        "paired_monte_carlo_normal95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "left": "Menger contacts",
+        "right": "Transitive closure contacts",
+        "role": "corner",
+        "initiative": 0.02,
+        "metric": "capped",
+        "right_minus_left": 12.484375,
+        "paired_monte_carlo_normal95": [
+          5.495312385889411,
+          19.473437614110587
+        ]
+      },
+      {
+        "left": "Menger contacts",
+        "right": "Transitive closure contacts",
+        "role": "edge",
+        "initiative": 0.02,
+        "metric": "first",
+        "right_minus_left": -0.1875,
+        "paired_monte_carlo_normal95": [
+          -0.3019582650770334,
+          -0.0730417349229666
+        ]
+      },
+      {
+        "left": "Menger contacts",
+        "right": "Transitive closure contacts",
+        "role": "edge",
+        "initiative": 0.02,
+        "metric": "endpoint",
+        "right_minus_left": -0.015625,
+        "paired_monte_carlo_normal95": [
+          -0.04625,
+          0.015
+        ]
+      },
+      {
+        "left": "Menger contacts",
+        "right": "Transitive closure contacts",
+        "role": "edge",
+        "initiative": 0.02,
+        "metric": "capped",
+        "right_minus_left": 8.75,
+        "paired_monte_carlo_normal95": [
+          1.3710200945900093,
+          16.12897990540999
+        ]
+      },
+      {
+        "left": "Triangle wireframe",
+        "right": "Filled triangles",
+        "role": "baseline",
+        "initiative": 0.02,
+        "metric": "first",
+        "right_minus_left": 0.0,
+        "paired_monte_carlo_normal95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "left": "Triangle wireframe",
+        "right": "Filled triangles",
+        "role": "baseline",
+        "initiative": 0.02,
+        "metric": "endpoint",
+        "right_minus_left": 0.0,
+        "paired_monte_carlo_normal95": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "left": "Triangle wireframe",
+        "right": "Filled triangles",
+        "role": "baseline",
+        "initiative": 0.02,
+        "metric": "capped",
+        "right_minus_left": 0.0,
+        "paired_monte_carlo_normal95": [
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "exact_wireframe_filled_matched_pairs": 320,
+    "group_face_behavior": "Faces are not inputs to the existing pairwise copying rule."
+  }
+}

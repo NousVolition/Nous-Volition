@@ -1,6 +1,6 @@
 # Dynamics, fractals, and SIMS
 
-Can the same local choices produce different group outcomes when connections change? This study connects that human-coordination question to the dynamics in the supplied textbook images. **SIMS** are the simulated participants. The package contains three batches of mathematical experiments, a Menger-sponge/Koch-snowflake network comparison, nine original figures, and 59 automated tests.
+Can the same local choices produce different group outcomes when connections change? This study connects that human-coordination question to the dynamics and topology in the supplied images. **SIMS** are the simulated participants. The local package contains five batches of mathematical experiments, two matched SIMS experiments totaling 12,800 runs, fourteen original figures, and 116 automated tests.
 
 Open [report.html](report.html) locally for the illustrated report. Figures and numerical results are saved with the code. The images supplied in the conversation are references; the plots here are newly computed.
 
@@ -9,13 +9,19 @@ Open [report.html](report.html) locally for the illustrated report. Figures and 
 From this folder, use Python 3.12:
 
 ```sh
+python -m pip install -r requirements.txt
 python -m unittest -v
 python run_study.py --check
 python bifurcations.py --check
 python oscillations.py --check
+python topology.py --check
+python heteroclinic.py --check
+python pacemaker.py --check
+python memory_inference.py --check
+python quench.py --check
 ```
 
-The first command checks analytic formulas, numerical accuracy, graph construction, stability, and identity/geometry invariance. The second reruns 10,240 SIMS rounds plus the first mathematical batch. The remaining commands reproduce the tipping-point and oscillation batches. The oscillation run also checks period convergence across step sizes and initial states. No third-party packages are needed for these commands.
+The tests check analytic formulas, numerical accuracy, graph construction, stability, and identity/geometry invariance. The study command reruns 10,240 SIMS rounds plus the first mathematical batch. The topology command includes 2,560 additional SIMS runs and 39,056 bounded algebraic equalities. The oscillation run also checks period convergence across step sizes and initial states. The fifth batch checks saddle connections, 48 isolated nine-state trajectories, 64 starts for a 16-unit pacemaker ring, local memory, interaction inference, and 12 quenches. NumPy is required for the coupled ensemble, inference, quenches, and their tests; the earlier calculations and isolated heteroclinic solver use the standard library.
 
 To regenerate the saved data and figures:
 
@@ -23,7 +29,12 @@ To regenerate the saved data and figures:
 python run_study.py
 python bifurcations.py
 python oscillations.py
+python topology.py
 python -m pip install -r requirements.txt
+python heteroclinic.py
+python pacemaker.py
+python memory_inference.py
+python quench.py
 python build_report.py
 ```
 
@@ -102,7 +113,15 @@ At a=0.1, b=0.5, the Sel’kov cycle has period about 10.648653, with agreement 
 
 One source item remains pending: the vector field for the μ-dependent annulus in Figure 7.3.3 was not supplied. It is explicitly marked as not run. Figure 8.1.7 also omits its equations; its mechanism is illustrated using labelled normal forms, without claiming to reconstruct that exact system.
 
+## Batch 5: switching, synchronization, memory, and stopping
+
+The latest references drive executable experiments documented in [HETEROCLINIC_METHODS.md](HETEROCLINIC_METHODS.md). A three-saddle cycle develops longer pauses; the nine-state model changes its transition preferences when rates change while connections remain fixed. The 16-unit model produces two different synchronized patterns at the same parameter settings, selected by initial conditions. An uncoupled control removes collective switching. Smaller-step comparisons preserve the selected patterns.
+
+The local memory diagnostic tests how a hidden offset survives or is erased while passing saddles. A least-squares inference baseline recovers interactions from full activity observations and tests them on a new trajectory; equilibrium-only data fail identifiability. Twelve sudden parameter changes measure damped relaxation toward coexistence and record a case that does not confirm settling within the horizon. These mathematical activity-state experiments do not add to the SIMS round count.
+
 ## How the batches connect
+
+The newest [topology tests](TOPOLOGY_TESTS.md) use graph projections, lifting, gluing, category nerves, and cubical identities as executable specifications. They also test two concrete ways that topology interacts with the SIMS model: changing filled faces while holding pairwise contacts fixed, and changing contacts by taking transitive closure. An exact counterexample shows that matching group totals can conceal different next-step dynamics. Full outcomes are in [topology_results.json](topology_results.json).
 
 The shared tools are state, local change rules, equilibria, sensitivity, and stability. The ODE examples test continuous dynamics; the SIMS experiment tests discrete stochastic coordination on specified graphs. We have not inserted a Lorenz trajectory, laser equation, or bead force into a SIM's decision rule. Doing so would require another behavioral assumption and an explicit experiment. Here the meaningful connection is testable: distinguish first arrival from persistence, compare alternative basins, and hold the rules fixed when changing connections.
 

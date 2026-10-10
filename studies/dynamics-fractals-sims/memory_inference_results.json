@@ -1,0 +1,656 @@
+{
+  "memory": {
+    "seed": 20261013,
+    "readouts_per_history_per_case": 4096,
+    "configurations": [
+      {
+        "name": "one saddle, positive saddle quantity",
+        "ratios": [
+          0.5
+        ],
+        "epsilon": 0.1,
+        "exit_offset": 0.31622776601683794,
+        "offset_relative_to_noise": 3.162277660168379,
+        "p_plus_given_history_plus": 0.99951171875,
+        "p_plus_given_history_minus": 0.000732421875,
+        "measured_conditional_gap": 0.998779296875,
+        "exact_conditional_gap": 0.9984345977419975,
+        "exact_mutual_information_bits": 0.9907943536971004
+      },
+      {
+        "name": "one saddle, positive saddle quantity",
+        "ratios": [
+          0.5
+        ],
+        "epsilon": 0.03,
+        "exit_offset": 0.17320508075688773,
+        "offset_relative_to_noise": 5.773502691896258,
+        "p_plus_given_history_plus": 1.0,
+        "p_plus_given_history_minus": 0.0,
+        "measured_conditional_gap": 1.0,
+        "exact_conditional_gap": 0.9999999922359635,
+        "exact_mutual_information_bits": 0.9999998859337219
+      },
+      {
+        "name": "one saddle, positive saddle quantity",
+        "ratios": [
+          0.5
+        ],
+        "epsilon": 0.01,
+        "exit_offset": 0.1,
+        "offset_relative_to_noise": 10.0,
+        "p_plus_given_history_plus": 1.0,
+        "p_plus_given_history_minus": 0.0,
+        "measured_conditional_gap": 1.0,
+        "exact_conditional_gap": 1.0,
+        "exact_mutual_information_bits": 1.0
+      },
+      {
+        "name": "one saddle, positive saddle quantity",
+        "ratios": [
+          0.5
+        ],
+        "epsilon": 0.003,
+        "exit_offset": 0.05477225575051661,
+        "offset_relative_to_noise": 18.257418583505537,
+        "p_plus_given_history_plus": 1.0,
+        "p_plus_given_history_minus": 0.0,
+        "measured_conditional_gap": 1.0,
+        "exact_conditional_gap": 1.0,
+        "exact_mutual_information_bits": 1.0
+      },
+      {
+        "name": "one saddle, positive saddle quantity",
+        "ratios": [
+          0.5
+        ],
+        "epsilon": 0.001,
+        "exit_offset": 0.03162277660168379,
+        "offset_relative_to_noise": 31.62277660168379,
+        "p_plus_given_history_plus": 1.0,
+        "p_plus_given_history_minus": 0.0,
+        "measured_conditional_gap": 1.0,
+        "exact_conditional_gap": 1.0,
+        "exact_mutual_information_bits": 1.0
+      },
+      {
+        "name": "one saddle, negative saddle quantity",
+        "ratios": [
+          1.5
+        ],
+        "epsilon": 0.1,
+        "exit_offset": 0.0316227766016838,
+        "offset_relative_to_noise": 0.31622776601683794,
+        "p_plus_given_history_plus": 0.64111328125,
+        "p_plus_given_history_minus": 0.39453125,
+        "measured_conditional_gap": 0.24658203125,
+        "exact_conditional_gap": 0.24817036595415076,
+        "exact_mutual_information_bits": 0.044894383306598895
+      },
+      {
+        "name": "one saddle, negative saddle quantity",
+        "ratios": [
+          1.5
+        ],
+        "epsilon": 0.03,
+        "exit_offset": 0.005196152422706632,
+        "offset_relative_to_noise": 0.17320508075688773,
+        "p_plus_given_history_plus": 0.58544921875,
+        "p_plus_given_history_minus": 0.44775390625,
+        "measured_conditional_gap": 0.1376953125,
+        "exact_conditional_gap": 0.1375097698640784,
+        "exact_mutual_information_bits": 0.013683229189122459
+      },
+      {
+        "name": "one saddle, negative saddle quantity",
+        "ratios": [
+          1.5
+        ],
+        "epsilon": 0.01,
+        "exit_offset": 0.001,
+        "offset_relative_to_noise": 0.1,
+        "p_plus_given_history_plus": 0.553955078125,
+        "p_plus_given_history_minus": 0.47802734375,
+        "measured_conditional_gap": 0.075927734375,
+        "exact_conditional_gap": 0.07965567455405796,
+        "exact_mutual_information_bits": 0.00458182161611842
+      },
+      {
+        "name": "one saddle, negative saddle quantity",
+        "ratios": [
+          1.5
+        ],
+        "epsilon": 0.003,
+        "exit_offset": 0.00016431676725154983,
+        "offset_relative_to_noise": 0.054772255750516606,
+        "p_plus_given_history_plus": 0.53564453125,
+        "p_plus_given_history_minus": 0.492431640625,
+        "measured_conditional_gap": 0.043212890625,
+        "exact_conditional_gap": 0.04368009608449646,
+        "exact_mutual_information_bits": 0.0013767335594003782
+      },
+      {
+        "name": "one saddle, negative saddle quantity",
+        "ratios": [
+          1.5
+        ],
+        "epsilon": 0.001,
+        "exit_offset": 3.1622776601683795e-05,
+        "offset_relative_to_noise": 0.03162277660168379,
+        "p_plus_given_history_plus": 0.52783203125,
+        "p_plus_given_history_minus": 0.501220703125,
+        "measured_conditional_gap": 0.026611328125,
+        "exact_conditional_gap": 0.025227120630039606,
+        "exact_mutual_information_bits": 0.00045911976039492153
+      },
+      {
+        "name": "two saddles, retained offset",
+        "ratios": [
+          0.4,
+          0.4
+        ],
+        "epsilon": 0.1,
+        "exit_offset": 0.15848931924611134,
+        "offset_relative_to_noise": 1.5848931924611134,
+        "p_plus_given_history_plus": 0.951171875,
+        "p_plus_given_history_minus": 0.061767578125,
+        "measured_conditional_gap": 0.889404296875,
+        "exact_conditional_gap": 0.8870093965012766,
+        "exact_mutual_information_bits": 0.6866274705175135
+      },
+      {
+        "name": "two saddles, retained offset",
+        "ratios": [
+          0.4,
+          0.4
+        ],
+        "epsilon": 0.03,
+        "exit_offset": 0.06049186910982998,
+        "offset_relative_to_noise": 2.016395636994333,
+        "p_plus_given_history_plus": 0.978271484375,
+        "p_plus_given_history_minus": 0.025146484375,
+        "measured_conditional_gap": 0.953125,
+        "exact_conditional_gap": 0.9562413786152288,
+        "exact_mutual_information_bits": 0.8481338452374053
+      },
+      {
+        "name": "two saddles, retained offset",
+        "ratios": [
+          0.4,
+          0.4
+        ],
+        "epsilon": 0.01,
+        "exit_offset": 0.025118864315095798,
+        "offset_relative_to_noise": 2.5118864315095797,
+        "p_plus_given_history_plus": 0.993896484375,
+        "p_plus_given_history_minus": 0.009033203125,
+        "measured_conditional_gap": 0.98486328125,
+        "exact_conditional_gap": 0.9879912271996728,
+        "exact_mutual_information_bits": 0.9470525848276461
+      },
+      {
+        "name": "two saddles, retained offset",
+        "ratios": [
+          0.4,
+          0.4
+        ],
+        "epsilon": 0.003,
+        "exit_offset": 0.009587315155141826,
+        "offset_relative_to_noise": 3.1957717183806085,
+        "p_plus_given_history_plus": 0.99951171875,
+        "p_plus_given_history_minus": 0.000732421875,
+        "measured_conditional_gap": 0.998779296875,
+        "exact_conditional_gap": 0.9986054259794399,
+        "exact_mutual_information_bits": 0.9916826547551014
+      },
+      {
+        "name": "two saddles, retained offset",
+        "ratios": [
+          0.4,
+          0.4
+        ],
+        "epsilon": 0.001,
+        "exit_offset": 0.003981071705534972,
+        "offset_relative_to_noise": 3.981071705534972,
+        "p_plus_given_history_plus": 1.0,
+        "p_plus_given_history_minus": 0.0,
+        "measured_conditional_gap": 1.0,
+        "exact_conditional_gap": 0.9999313947522672,
+        "exact_mutual_information_bits": 0.9994417593792416
+      },
+      {
+        "name": "two saddles, erased offset",
+        "ratios": [
+          0.4,
+          0.9
+        ],
+        "epsilon": 0.1,
+        "exit_offset": 0.05011872336272723,
+        "offset_relative_to_noise": 0.5011872336272722,
+        "p_plus_given_history_plus": 0.70556640625,
+        "p_plus_given_history_minus": 0.322998046875,
+        "measured_conditional_gap": 0.382568359375,
+        "exact_conditional_gap": 0.3837606418684707,
+        "exact_mutual_information_bits": 0.10900898566672135
+      },
+      {
+        "name": "two saddles, erased offset",
+        "ratios": [
+          0.4,
+          0.9
+        ],
+        "epsilon": 0.03,
+        "exit_offset": 0.010477499074303185,
+        "offset_relative_to_noise": 0.3492499691434395,
+        "p_plus_given_history_plus": 0.655029296875,
+        "p_plus_given_history_minus": 0.37841796875,
+        "measured_conditional_gap": 0.276611328125,
+        "exact_conditional_gap": 0.27309834483840734,
+        "exact_mutual_information_bits": 0.0544895961619819
+      },
+      {
+        "name": "two saddles, erased offset",
+        "ratios": [
+          0.4,
+          0.9
+        ],
+        "epsilon": 0.01,
+        "exit_offset": 0.00251188643150958,
+        "offset_relative_to_noise": 0.25118864315095796,
+        "p_plus_given_history_plus": 0.6162109375,
+        "p_plus_given_history_minus": 0.4208984375,
+        "measured_conditional_gap": 0.1953125,
+        "exact_conditional_gap": 0.19833173540223817,
+        "exact_mutual_information_bits": 0.028563560183108683
+      },
+      {
+        "name": "two saddles, erased offset",
+        "ratios": [
+          0.4,
+          0.9
+        ],
+        "epsilon": 0.003,
+        "exit_offset": 0.0005251188776382319,
+        "offset_relative_to_noise": 0.17503962587941063,
+        "p_plus_given_history_plus": 0.58642578125,
+        "p_plus_given_history_minus": 0.4462890625,
+        "measured_conditional_gap": 0.14013671875,
+        "exact_conditional_gap": 0.13895150273913565,
+        "exact_mutual_information_bits": 0.013972598869756103
+      },
+      {
+        "name": "two saddles, erased offset",
+        "ratios": [
+          0.4,
+          0.9
+        ],
+        "epsilon": 0.001,
+        "exit_offset": 0.0001258925411794167,
+        "offset_relative_to_noise": 0.1258925411794167,
+        "p_plus_given_history_plus": 0.563720703125,
+        "p_plus_given_history_minus": 0.467529296875,
+        "measured_conditional_gap": 0.09619140625,
+        "exact_conditional_gap": 0.1001830130227991,
+        "exact_mutual_information_bits": 0.007252062157751649
+      }
+    ],
+    "markov_control_conditional_gap": 0.0,
+    "model": "x grows linearly, y contracts linearly; x resets to epsilon at each saddle; Gaussian noise added only at final branch readout"
+  },
+  "inference": {
+    "method": "least-squares baseline from complete activity observations and finite-difference log derivatives",
+    "training_seeds": [
+      20261014,
+      20261015,
+      20261016,
+      20261017,
+      20261018,
+      20261019
+    ],
+    "training_duration": 40.0,
+    "step": 0.02,
+    "heldout_seed": 20262014,
+    "heldout_initial": [
+      0.019299715329985416,
+      0.07609082410675709,
+      0.0977864510832614,
+      0.08438742405949426,
+      0.07442121283097562,
+      0.07334957468590295,
+      0.07224488956503876,
+      0.07158109616780503,
+      0.05468239592511635
+    ],
+    "heldout_duration": 100.0,
+    "true_matrix": [
+      [
+        1.05,
+        2.0,
+        0.2,
+        2.0,
+        1.25,
+        1.25,
+        0.3,
+        1.25,
+        1.25
+      ],
+      [
+        0.2,
+        1.05,
+        2.0,
+        1.25,
+        2.0,
+        1.25,
+        1.25,
+        0.3,
+        1.25
+      ],
+      [
+        2.0,
+        0.2,
+        1.05,
+        1.25,
+        1.25,
+        2.0,
+        1.25,
+        1.25,
+        0.3
+      ],
+      [
+        0.3,
+        1.25,
+        1.25,
+        1.05,
+        2.0,
+        0.2,
+        2.0,
+        1.25,
+        1.25
+      ],
+      [
+        1.25,
+        0.3,
+        1.25,
+        0.2,
+        1.05,
+        2.0,
+        1.25,
+        2.0,
+        1.25
+      ],
+      [
+        1.25,
+        1.25,
+        0.3,
+        2.0,
+        0.2,
+        1.05,
+        1.25,
+        1.25,
+        2.0
+      ],
+      [
+        2.0,
+        1.25,
+        1.25,
+        0.3,
+        1.25,
+        1.25,
+        1.05,
+        2.0,
+        0.2
+      ],
+      [
+        1.25,
+        2.0,
+        1.25,
+        1.25,
+        0.3,
+        1.25,
+        0.2,
+        1.05,
+        2.0
+      ],
+      [
+        1.25,
+        1.25,
+        2.0,
+        1.25,
+        1.25,
+        0.3,
+        2.0,
+        0.2,
+        1.05
+      ]
+    ],
+    "cases": [
+      {
+        "log_measurement_noise_sd": 0.0,
+        "fitted_matrix": [
+          [
+            1.0499985176787887,
+            1.9999940092085828,
+            0.20000615146224376,
+            1.999994854515529,
+            1.249997496571062,
+            1.2500009327729724,
+            0.3000049705675072,
+            1.250004546984449,
+            1.2499938551438967
+          ],
+          [
+            0.20000238990417832,
+            1.0500009419548286,
+            1.9999977651736933,
+            1.2500009044926066,
+            1.9999909401039973,
+            1.2500006197759663,
+            1.2499986086363066,
+            0.3000053815742112,
+            1.249997680907265
+          ],
+          [
+            1.9999924590423293,
+            0.20000354473019266,
+            1.0500030098558226,
+            1.2500029085526472,
+            1.2499996412964585,
+            1.9999947297867915,
+            1.2499997987455234,
+            1.2499985059313878,
+            0.3000008145765114
+          ],
+          [
+            0.3000020603557019,
+            1.250000188219217,
+            1.2499983084340511,
+            1.0500010904784074,
+            1.9999908446523964,
+            0.20000292782746631,
+            1.999998450909295,
+            1.2500035488271157,
+            1.2499982248732118
+          ],
+          [
+            1.2499950464436416,
+            0.30000414015366106,
+            1.2500014074781094,
+            0.20000434205093176,
+            1.0500008408082397,
+            1.9999938975067413,
+            1.2500008786478425,
+            1.9999957302021647,
+            1.2499995863249351
+          ],
+          [
+            1.2499970627023682,
+            1.249995604355941,
+            0.3000061534252627,
+            1.9999953889261168,
+            0.19999966726344764,
+            1.0500013614724542,
+            1.2500036163459876,
+            1.2500036267209027,
+            1.9999930827212953
+          ],
+          [
+            1.9999946340739931,
+            1.2500012102482825,
+            1.2500013121734028,
+            0.3000036626432121,
+            1.2499984367770747,
+            1.2499960655863114,
+            1.0500015855219187,
+            1.999997467239446,
+            0.20000124750697523
+          ],
+          [
+            1.2499991025376331,
+            1.9999943304171715,
+            1.2500041202743417,
+            1.249995913146628,
+            0.2999987273499294,
+            1.25000049758052,
+            0.20000567024769356,
+            1.0500043132151387,
+            1.9999926760358497
+          ],
+          [
+            1.2500000193053828,
+            1.2499994556943155,
+            1.99999812466873,
+            1.2500010744054166,
+            1.249990324832394,
+            0.3000032586781677,
+            1.9999979494594722,
+            0.2000067078449994,
+            1.049998177101416
+          ]
+        ],
+        "rank": 9,
+        "observations": 1200,
+        "condition_number": 7.973623698164878,
+        "root_mean_square_residual": 1.3185974766216025e-06,
+        "maximum_parameter_error": 9.675167605971424e-06,
+        "exact_transition_edges_recovered": true,
+        "heldout_max_state_error": 1.836063927956877e-05
+      },
+      {
+        "log_measurement_noise_sd": 0.0001,
+        "fitted_matrix": [
+          [
+            1.0504595430670098,
+            1.9981916165707685,
+            0.19809893593394512,
+            1.999680443630707,
+            1.250283129076064,
+            1.250352701993756,
+            0.29946349124061866,
+            1.2489605165492537,
+            1.25266988258163
+          ],
+          [
+            0.20063320102590065,
+            1.0482987587681212,
+            1.9989969937290606,
+            1.2502881445137184,
+            2.0028035882198862,
+            1.2471045099396014,
+            1.2495771696973454,
+            0.301284097915018,
+            1.251333127892907
+          ],
+          [
+            2.0021230861371215,
+            0.1983793167088339,
+            1.0498043589352943,
+            1.2484469785531114,
+            1.250923542364645,
+            1.999818839172017,
+            1.2517121499921369,
+            1.2486251493574758,
+            0.3018783787571837
+          ],
+          [
+            0.2997833883562726,
+            1.2510078372930873,
+            1.2500047095595246,
+            1.0511520826473448,
+            1.9938300851883053,
+            0.20145198587498525,
+            1.9992648119618726,
+            1.2518209366739481,
+            1.2500400007315027
+          ],
+          [
+            1.251061439812036,
+            0.3006122959256703,
+            1.2521305534238056,
+            0.19807523638814073,
+            1.0529925854196747,
+            1.998009771481776,
+            1.25040993846765,
+            1.9988824084917494,
+            1.2506350716253003
+          ],
+          [
+            1.2474339776883112,
+            1.246689199857991,
+            0.3033125551582584,
+            2.0000567167683565,
+            0.19648061838710662,
+            1.0502885060953464,
+            1.2500513281124177,
+            1.2537292975324608,
+            1.9996087192840726
+          ],
+          [
+            2.002759355263389,
+            1.2490757599738078,
+            1.2489304809846666,
+            0.30009050600676446,
+            1.2519894843813533,
+            1.246688913972169,
+            1.047704227462557,
+            1.9992754072998284,
+            0.20443209137766893
+          ],
+          [
+            1.2485902520485865,
+            2.001108103463588,
+            1.2472514156885968,
+            1.2508337112899715,
+            0.300993126376925,
+            1.2502312872531054,
+            0.19988014964089218,
+            1.049586989637941,
+            1.9995082292177664
+          ],
+          [
+            1.2498673452278444,
+            1.2505516072207716,
+            1.9983479339363528,
+            1.252698696104435,
+            1.2494849757245081,
+            0.2986297338877606,
+            1.999411469829003,
+            0.19875293503544245,
+            1.0491412499850137
+          ]
+        ],
+        "rank": 9,
+        "observations": 1200,
+        "condition_number": 7.973606246053557,
+        "root_mean_square_residual": 0.0035540819969564325,
+        "maximum_parameter_error": 0.00616991481169471,
+        "exact_transition_edges_recovered": true,
+        "heldout_max_state_error": 0.008120029733337808
+      }
+    ],
+    "coexistence_counterexample": {
+      "design_rank": 1,
+      "different_matrices_same_observation": true,
+      "vector_field_residual": 1.0523440991707644e-17
+    }
+  }
+}
