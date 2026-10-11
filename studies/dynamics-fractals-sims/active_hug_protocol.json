@@ -1,0 +1,30 @@
+{
+  "model": "Active one-mode Hug with the unchanged Burgers clay internal law",
+  "material_rows_stress_Pa": [10, 20, 30, 40],
+  "time_scale_seconds": 10.0,
+  "strain_scale": 0.0005,
+  "parallel_stiffness_over_G_M": 1.0,
+  "active_gain": 1.0,
+  "orbital_force_rms": 0.3,
+  "orbit_period_model_seconds": 100.0,
+  "horizon_scaled_time": 1000.0,
+  "autonomous_horizon_scaled_time": 1200.0,
+  "initial_states": [[0.05, 0.0, 0.0, 0.0], [3.0, 0.0, 0.0, 0.0], [-0.6, 0.2, 0.1, -0.1]],
+  "gain_controls": [0.0, 0.02, 0.05, 0.1, 0.5, 1.0],
+  "perturbation": [0.0, 0.1, 0.05, -0.05],
+  "perturbation_return_cycles": 400,
+  "solver": {"method": "DOP853", "rtol": 2e-10, "atol": 2e-12, "max_step": 0.12},
+  "gates": {
+    "cycle_full_state_error": 1e-7,
+    "initial_state_cycle_error": 1e-5,
+    "cycle_period_relative_error": 1e-6,
+    "transverse_multiplier_max": 0.999,
+    "perturbation_return_error": 1e-5,
+    "energy_balance_error": 5e-6,
+    "solver_state_error": 2e-6,
+    "passive_final_norm": 1e-4,
+    "independent_cycle_power_error": 1e-7
+  },
+  "forcing": "beta times the zero-mean, unit-RMS signed tidal-shaped signal (a/r)^3 sin(2 true_anomaly), in a fixed nonrotating body frame. Chosen model periods and force scale; not a physical gravitational stress calculation.",
+  "interpretation": "Inertia, parallel restoring stiffness and powered feedback are declared additions, not fitted clay properties. Shear remains one mode; contact opening is not modeled. No additional SIMS trajectories."
+}

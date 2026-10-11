@@ -1,6 +1,8 @@
 # Dynamics, fractals, and SIMS
 
-Can the same local choices produce different group outcomes when connections change? This study connects that human-coordination question to the supplied mathematical references. **SIMS** are the simulated participants. The package contains eleven batches, 12,800 binary-choice SIMS runs, 1,632 earlier continuous-response trajectories, 384 historical threshold-Hug trajectories, 384 current clay-SIMS trajectories and 672 orbit-driven clay trajectories, twenty-four original figures, and 250 automated tests. The cumulative main SIMS count is 15,872; model families and additional controls are reported separately.
+Can the same local choices produce different group outcomes when connections change? This study connects that human-coordination question to the supplied mathematical references. **SIMS** are the simulated participants. The package contains twelve batches, 12,800 binary-choice SIMS runs, 1,632 earlier continuous-response trajectories, 384 historical threshold-Hug trajectories, 384 current clay-SIMS trajectories and 672 orbit-driven clay trajectories, twenty-eight original figures, and 271 automated tests. The cumulative main SIMS count is 15,872; model families and additional controls are reported separately.
+
+**New: [active Hug, tested first without an orbit and then with circular/eccentric inputs](ACTIVE_HUG_METHODS.md).** Forty main direct Hug trajectories establish autonomous cycles and compare signed orbital forcing across four clay coefficient sets. Four passive controls, four kicked-cycle controls, periodic shooting, Floquet stability, independent cycle energy integrals and 32 Radau segment controls distinguish attraction from visible repetition. This adds no SIMS participant runs.
 
 **New: [test the orbital input directly with the clay Hug](HUG_ORBIT_METHODS.md).** Twenty-eight material trajectories and 28 independent solver controls check the actual Hug outline, deformation, recovery, retained strain and work/energy balance. These are separate from the SIMS run counts.
 
@@ -30,6 +32,7 @@ python sims_response.py --check
 python clay_sims.py --check
 python orbits.py --check
 python hug_orbits.py --check
+python active_hug.py --check
 ```
 
 The tests check analytic formulas, numerical accuracy, graph construction, stability, and identity/geometry invariance. The study command reruns 10,240 SIMS rounds plus the first mathematical batch. The topology command includes 2,560 additional SIMS runs and 39,056 bounded algebraic equalities. The oscillation run also checks period convergence across step sizes and initial states. The fifth batch checks saddle connections, 48 isolated nine-state trajectories, 64 starts for a 16-unit pacemaker ring, local memory, interaction inference, and 12 quenches. NumPy is required for the coupled ensemble, inference, quenches, and their tests; the earlier calculations and isolated heteroclinic solver use the standard library.
