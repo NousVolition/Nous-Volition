@@ -1,0 +1,50 @@
+{
+  "independent_starts": 12,
+  "regimes": [
+    {
+      "leg_duration": 200,
+      "current_increment": 0.05,
+      "mean_run_rms_vs_smooth": 0.09669806030550104,
+      "ci_low": 0.09669806030549376,
+      "ci_high": 0.09669806030550639
+    },
+    {
+      "leg_duration": 200,
+      "current_increment": 0.025,
+      "mean_run_rms_vs_smooth": 0.031383335888442616,
+      "ci_low": 0.031383335888407034,
+      "ci_high": 0.03138333588848089
+    },
+    {
+      "leg_duration": 200,
+      "current_increment": 0.0125,
+      "mean_run_rms_vs_smooth": 0.006763412715930455,
+      "ci_low": 0.006763412715917582,
+      "ci_high": 0.006763412715942924
+    },
+    {
+      "leg_duration": 800,
+      "current_increment": 0.05,
+      "mean_run_rms_vs_smooth": 0.14345940155229095,
+      "ci_low": 0.14345940155228917,
+      "ci_high": 0.14345940155229356
+    },
+    {
+      "leg_duration": 800,
+      "current_increment": 0.025,
+      "mean_run_rms_vs_smooth": 0.019727188318226917,
+      "ci_low": 0.019727188318213594,
+      "ci_high": 0.0197271883182358
+    },
+    {
+      "leg_duration": 800,
+      "current_increment": 0.0125,
+      "mean_run_rms_vs_smooth": 0.058392871713655536,
+      "ci_low": 0.05839287171365229,
+      "ci_high": 0.0583928717136577
+    }
+  ],
+  "max_smooth_step_refinement_voltage_error": 3.3224745177307113e-10,
+  "step_gate_2e_6": true,
+  "design": "Same initial states, current endpoints, elapsed leg duration and voltage bins; only staircase resolution changes."
+}

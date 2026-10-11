@@ -1,5 +1,10 @@
 # Fluid Organization Under Stress: completed pilot
 
+## Completed circuit follow-ups and 120-field fluid confirmation — 10 October 2026
+
+[Read the completed experiments and linked code](extensions/josephson-followups/README.md). Longer and whole-cycle observations, stepped/continuous ramps, dimensionless noise and mismatch, capacitance, and held-out forecasts have been run. A separate confirmation uses **120 new fluid starting fields** and frozen models. The larger independent fluid test did not resolve a prediction advantage from the declared history features. Mean error change with history: **+9.41%**, paired 95% interval **[-3.98%, +26.38%]**; positive values mean increased error. The interpretation is limited to the specified global flow summaries, predictors and simulated regime; laboratory calibration, LRC/general-capacitance dynamics, other media and physical circuit-to-fluid transfer remain proposed.
+
+
 ## Completed Josephson voltage sweep — 10 October 2026
 
 [Read the sweep results, plots and source-code links](extensions/josephson-sweep/README.md). The experiment includes upward/downward sweeps, fresh starts, all four time-step/settling combinations, separate voltage averaging windows, and further convergence checks. Original numerical failures are retained alongside refined results. Eighteen automated tests pass; finite-time phase-history effects are not presented as a new physical memory law or fluid result.

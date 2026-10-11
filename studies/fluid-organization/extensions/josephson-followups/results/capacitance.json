@@ -1,0 +1,557 @@
+{
+  "scope": "Exactly synchronized two-junction invariant branch, initialized with equal junction phases and zero velocities; not arbitrary phase configurations. LRC loading remains future work.",
+  "variants": {
+    "base": {
+      "settle": 100,
+      "max_step": 0.2,
+      "max_normalized_balance_error": 3.764345228444384e-11
+    },
+    "half_step": {
+      "settle": 100,
+      "max_step": 0.1,
+      "max_normalized_balance_error": 7.818653787454174e-11
+    },
+    "double_settle": {
+      "settle": 200,
+      "max_step": 0.2,
+      "max_normalized_balance_error": 1.2752880123963396e-10
+    }
+  },
+  "regimes": [
+    {
+      "beta": 0.2,
+      "bias": 0,
+      "mean_up_voltage": -8.010440958536849e-27,
+      "mean_down_voltage": 0.0,
+      "mean_abs_gap": 3.604143641315605e-26,
+      "ci_low": 2.3175682227929016e-26,
+      "ci_high": 4.6311905262230186e-26,
+      "step_change_max": 2.808864252301646e-13,
+      "settling_change_at_bias": 5.0383362658299625e-26
+    },
+    {
+      "beta": 0.2,
+      "bias": 0.1,
+      "mean_up_voltage": 0.0,
+      "mean_down_voltage": 0.0,
+      "mean_abs_gap": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "step_change_max": 2.808864252301646e-13,
+      "settling_change_at_bias": 0.0
+    },
+    {
+      "beta": 0.2,
+      "bias": 0.2,
+      "mean_up_voltage": 0.0,
+      "mean_down_voltage": 0.0,
+      "mean_abs_gap": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "step_change_max": 2.808864252301646e-13,
+      "settling_change_at_bias": 0.0
+    },
+    {
+      "beta": 0.2,
+      "bias": 0.3,
+      "mean_up_voltage": 0.0,
+      "mean_down_voltage": 0.0,
+      "mean_abs_gap": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "step_change_max": 2.808864252301646e-13,
+      "settling_change_at_bias": 0.0
+    },
+    {
+      "beta": 0.2,
+      "bias": 0.4,
+      "mean_up_voltage": 0.0,
+      "mean_down_voltage": 0.0,
+      "mean_abs_gap": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "step_change_max": 2.808864252301646e-13,
+      "settling_change_at_bias": 0.0
+    },
+    {
+      "beta": 0.2,
+      "bias": 0.5,
+      "mean_up_voltage": 0.0,
+      "mean_down_voltage": 0.0,
+      "mean_abs_gap": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "step_change_max": 2.808864252301646e-13,
+      "settling_change_at_bias": 0.0
+    },
+    {
+      "beta": 0.2,
+      "bias": 0.6,
+      "mean_up_voltage": 0.0,
+      "mean_down_voltage": 0.0,
+      "mean_abs_gap": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "step_change_max": 2.808864252301646e-13,
+      "settling_change_at_bias": 0.0
+    },
+    {
+      "beta": 0.2,
+      "bias": 0.7,
+      "mean_up_voltage": 0.0,
+      "mean_down_voltage": 0.0,
+      "mean_abs_gap": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "step_change_max": 2.808864252301646e-13,
+      "settling_change_at_bias": 0.0
+    },
+    {
+      "beta": 0.2,
+      "bias": 0.8,
+      "mean_up_voltage": 8.437694987151189e-17,
+      "mean_down_voltage": 0.0,
+      "mean_abs_gap": 8.437694987151189e-17,
+      "ci_low": 8.437694987151189e-17,
+      "ci_high": 8.437694987151189e-17,
+      "step_change_max": 2.808864252301646e-13,
+      "settling_change_at_bias": 8.43769498715119e-17
+    },
+    {
+      "beta": 0.2,
+      "bias": 0.9,
+      "mean_up_voltage": 6.810951802549427e-13,
+      "mean_down_voltage": -3.667537384899333e-12,
+      "mean_abs_gap": 4.348632565154276e-12,
+      "ci_low": 4.348632565154276e-12,
+      "ci_high": 4.348632565154276e-12,
+      "step_change_max": 2.808864252301646e-13,
+      "settling_change_at_bias": 3.667537384899333e-12
+    },
+    {
+      "beta": 0.2,
+      "bias": 1,
+      "mean_up_voltage": 0.00035074574014251516,
+      "mean_down_voltage": 4.219291755134691e-05,
+      "mean_abs_gap": 0.0003085528225911683,
+      "ci_low": 0.0003085528225911683,
+      "ci_high": 0.0003085528225911683,
+      "step_change_max": 2.808864252301646e-13,
+      "settling_change_at_bias": 0.0002270623062819688
+    },
+    {
+      "beta": 0.2,
+      "bias": 1.1,
+      "mean_up_voltage": 0.40648682594922597,
+      "mean_down_voltage": 0.4879259327387399,
+      "mean_abs_gap": 0.081439106789514,
+      "ci_low": 0.081439106789514,
+      "ci_high": 0.081439106789514,
+      "step_change_max": 2.808864252301646e-13,
+      "settling_change_at_bias": 0.08388410977904215
+    },
+    {
+      "beta": 0.2,
+      "bias": 1.2,
+      "mean_up_voltage": 0.6826683427802754,
+      "mean_down_voltage": 0.7003440140465659,
+      "mean_abs_gap": 0.017675671266290438,
+      "ci_low": 0.017675671266290438,
+      "ci_high": 0.017675671266290438,
+      "step_change_max": 2.808864252301646e-13,
+      "settling_change_at_bias": 0.006833879162070455
+    },
+    {
+      "beta": 0.2,
+      "bias": 1.3,
+      "mean_up_voltage": 0.8426668272281791,
+      "mean_down_voltage": 0.8192400563917909,
+      "mean_abs_gap": 0.023426770836388222,
+      "ci_low": 0.023426770836388222,
+      "ci_high": 0.023426770836388222,
+      "step_change_max": 2.808864252301646e-13,
+      "settling_change_at_bias": 0.04083606356488412
+    },
+    {
+      "beta": 0.2,
+      "bias": 1.4,
+      "mean_up_voltage": 0.985985223920182,
+      "mean_down_voltage": 0.995040779227056,
+      "mean_abs_gap": 0.009055555306874186,
+      "ci_low": 0.009055555306874186,
+      "ci_high": 0.009055555306874186,
+      "step_change_max": 2.808864252301646e-13,
+      "settling_change_at_bias": 0.004942745389571956
+    },
+    {
+      "beta": 0.2,
+      "bias": 1.5,
+      "mean_up_voltage": 1.1055330294998056,
+      "mean_down_voltage": 1.1183971473175882,
+      "mean_abs_gap": 0.012864117817782628,
+      "ci_low": 0.012864117817782628,
+      "ci_high": 0.012864117817782628,
+      "step_change_max": 2.808864252301646e-13,
+      "settling_change_at_bias": 0.019126740287075394
+    },
+    {
+      "beta": 2,
+      "bias": 0,
+      "mean_up_voltage": -8.51244175304044e-26,
+      "mean_down_voltage": 0.0,
+      "mean_abs_gap": 3.834521037595958e-25,
+      "ci_low": 2.471641646386171e-25,
+      "ci_high": 4.917689891065236e-25,
+      "step_change_max": 3.752553823233029e-13,
+      "settling_change_at_bias": 5.338823616652013e-25
+    },
+    {
+      "beta": 2,
+      "bias": 0.1,
+      "mean_up_voltage": 0.0,
+      "mean_down_voltage": 0.0,
+      "mean_abs_gap": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "step_change_max": 3.752553823233029e-13,
+      "settling_change_at_bias": 0.0
+    },
+    {
+      "beta": 2,
+      "bias": 0.2,
+      "mean_up_voltage": 0.0,
+      "mean_down_voltage": 0.0,
+      "mean_abs_gap": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "step_change_max": 3.752553823233029e-13,
+      "settling_change_at_bias": 0.0
+    },
+    {
+      "beta": 2,
+      "bias": 0.3,
+      "mean_up_voltage": 0.0,
+      "mean_down_voltage": 0.0,
+      "mean_abs_gap": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "step_change_max": 3.752553823233029e-13,
+      "settling_change_at_bias": 0.0
+    },
+    {
+      "beta": 2,
+      "bias": 0.4,
+      "mean_up_voltage": 0.0,
+      "mean_down_voltage": 0.0,
+      "mean_abs_gap": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "step_change_max": 3.752553823233029e-13,
+      "settling_change_at_bias": 0.0
+    },
+    {
+      "beta": 2,
+      "bias": 0.5,
+      "mean_up_voltage": 0.0,
+      "mean_down_voltage": 0.0,
+      "mean_abs_gap": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "step_change_max": 3.752553823233029e-13,
+      "settling_change_at_bias": 0.0
+    },
+    {
+      "beta": 2,
+      "bias": 0.6,
+      "mean_up_voltage": 0.0,
+      "mean_down_voltage": 0.0,
+      "mean_abs_gap": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "step_change_max": 3.752553823233029e-13,
+      "settling_change_at_bias": 0.0
+    },
+    {
+      "beta": 2,
+      "bias": 0.7,
+      "mean_up_voltage": 0.0,
+      "mean_down_voltage": 0.0,
+      "mean_abs_gap": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "step_change_max": 3.752553823233029e-13,
+      "settling_change_at_bias": 0.0
+    },
+    {
+      "beta": 2,
+      "bias": 0.8,
+      "mean_up_voltage": 0.0,
+      "mean_down_voltage": 0.0,
+      "mean_abs_gap": 0.0,
+      "ci_low": 0.0,
+      "ci_high": 0.0,
+      "step_change_max": 3.752553823233029e-13,
+      "settling_change_at_bias": 0.0
+    },
+    {
+      "beta": 2,
+      "bias": 0.9,
+      "mean_up_voltage": 3.1086244689504386e-17,
+      "mean_down_voltage": 0.0,
+      "mean_abs_gap": 3.1086244689504386e-17,
+      "ci_low": 3.1086244689504386e-17,
+      "ci_high": 3.1086244689504386e-17,
+      "step_change_max": 3.752553823233029e-13,
+      "settling_change_at_bias": 3.1086244689504386e-17
+    },
+    {
+      "beta": 2,
+      "bias": 1,
+      "mean_up_voltage": 0.000334037850578488,
+      "mean_down_voltage": 0.0002862060320603632,
+      "mean_abs_gap": 4.7831818518124776e-05,
+      "ci_low": 4.7831818518124776e-05,
+      "ci_high": 4.7831818518124776e-05,
+      "step_change_max": 3.752553823233029e-13,
+      "settling_change_at_bias": 0.00021476237724613154
+    },
+    {
+      "beta": 2,
+      "bias": 1.1,
+      "mean_up_voltage": 0.5073625733999906,
+      "mean_down_voltage": 0.5594778371274765,
+      "mean_abs_gap": 0.05211526372748587,
+      "ci_low": 0.05211526372748587,
+      "ci_high": 0.05211526372748587,
+      "step_change_max": 3.752553823233029e-13,
+      "settling_change_at_bias": 0.05243472301415064
+    },
+    {
+      "beta": 2,
+      "bias": 1.2,
+      "mean_up_voltage": 0.7543730123852691,
+      "mean_down_voltage": 0.7548207926236933,
+      "mean_abs_gap": 0.000447780238424178,
+      "ci_low": 0.000447780238424178,
+      "ci_high": 0.000447780238424178,
+      "step_change_max": 3.752553823233029e-13,
+      "settling_change_at_bias": 0.002244578620600346
+    },
+    {
+      "beta": 2,
+      "bias": 1.3,
+      "mean_up_voltage": 0.9576424622636387,
+      "mean_down_voltage": 0.9075079937192072,
+      "mean_abs_gap": 0.05013446854443149,
+      "ci_low": 0.05013446854443149,
+      "ci_high": 0.05013446854443149,
+      "step_change_max": 3.752553823233029e-13,
+      "settling_change_at_bias": 0.037634711800813014
+    },
+    {
+      "beta": 2,
+      "bias": 1.4,
+      "mean_up_voltage": 1.075027526107449,
+      "mean_down_voltage": 1.0856767443268565,
+      "mean_abs_gap": 0.010649218219407564,
+      "ci_low": 0.010649218219407564,
+      "ci_high": 0.010649218219407564,
+      "step_change_max": 3.752553823233029e-13,
+      "settling_change_at_bias": 0.03418117119076225
+    },
+    {
+      "beta": 2,
+      "bias": 1.5,
+      "mean_up_voltage": 1.2478645150744307,
+      "mean_down_voltage": 1.245737416966074,
+      "mean_abs_gap": 0.002127098108356984,
+      "ci_low": 0.002127098108356984,
+      "ci_high": 0.002127098108356984,
+      "step_change_max": 3.752553823233029e-13,
+      "settling_change_at_bias": 0.01170869987788481
+    },
+    {
+      "beta": 10,
+      "bias": 0,
+      "mean_up_voltage": 5.19508023395636e-09,
+      "mean_down_voltage": 1.6072117432486266e-08,
+      "mean_abs_gap": 2.2098408074367188e-08,
+      "ci_low": 1.0229008946635667e-08,
+      "ci_high": 3.498491433011482e-08,
+      "step_change_max": 3.3650859876388495e-13,
+      "settling_change_at_bias": 3.286214388399146e-08
+    },
+    {
+      "beta": 10,
+      "bias": 0.1,
+      "mean_up_voltage": -2.3756704020475953e-08,
+      "mean_down_voltage": 2.449472958687693e-08,
+      "mean_abs_gap": 4.825143360735289e-08,
+      "ci_low": 4.8251433595047914e-08,
+      "ci_high": 4.825143362095543e-08,
+      "step_change_max": 3.3650859876388495e-13,
+      "settling_change_at_bias": 2.4490464056725616e-08
+    },
+    {
+      "beta": 10,
+      "bias": 0.2,
+      "mean_up_voltage": -4.6995838785535147e-08,
+      "mean_down_voltage": 4.879762855125591e-08,
+      "mean_abs_gap": 9.579346733679105e-08,
+      "ci_low": 9.579346733679105e-08,
+      "ci_high": 9.579346733679105e-08,
+      "step_change_max": 3.3650859876388495e-13,
+      "settling_change_at_bias": 4.879421794612426e-08
+    },
+    {
+      "beta": 10,
+      "bias": 0.3,
+      "mean_up_voltage": -8.070265451576297e-08,
+      "mean_down_voltage": 8.388144578930223e-08,
+      "mean_abs_gap": 1.6458410030506525e-07,
+      "ci_low": 1.6458410030506525e-07,
+      "ci_high": 1.6458410030506525e-07,
+      "step_change_max": 3.3650859876388495e-13,
+      "settling_change_at_bias": 8.388151854887838e-08
+    },
+    {
+      "beta": 10,
+      "bias": 0.4,
+      "mean_up_voltage": -1.033555898666272e-07,
+      "mean_down_voltage": 1.0697124707803596e-07,
+      "mean_abs_gap": 2.1032683694466312e-07,
+      "ci_low": 2.1032683694466312e-07,
+      "ci_high": 2.1032683694466312e-07,
+      "step_change_max": 3.3650859876388495e-13,
+      "settling_change_at_bias": 1.0697591278585606e-07
+    },
+    {
+      "beta": 10,
+      "bias": 0.5,
+      "mean_up_voltage": -6.553768391759361e-08,
+      "mean_down_voltage": 6.491018666565651e-08,
+      "mean_abs_gap": 1.3044787058325014e-07,
+      "ci_low": 1.3044787058325014e-07,
+      "ci_high": 1.3044787058325014e-07,
+      "step_change_max": 3.3650859876388495e-13,
+      "settling_change_at_bias": 6.553791742858195e-08
+    },
+    {
+      "beta": 10,
+      "bias": 0.6,
+      "mean_up_voltage": 6.469941741027439e-08,
+      "mean_down_voltage": -7.609268322994466e-08,
+      "mean_abs_gap": 1.4079210064021908e-07,
+      "ci_low": 1.4079210064021908e-07,
+      "ci_high": 1.4079210064021908e-07,
+      "step_change_max": 3.3650859876388495e-13,
+      "settling_change_at_bias": 7.609632120875175e-08
+    },
+    {
+      "beta": 10,
+      "bias": 0.7,
+      "mean_up_voltage": 1.0069902661058452e-07,
+      "mean_down_voltage": -6.7846712681784995e-06,
+      "mean_abs_gap": 6.885370294789084e-06,
+      "ci_low": 6.885370294789084e-06,
+      "ci_high": 6.885370294789084e-06,
+      "step_change_max": 3.3650859876388495e-13,
+      "settling_change_at_bias": 6.7845410649169935e-06
+    },
+    {
+      "beta": 10,
+      "bias": 0.8,
+      "mean_up_voltage": -1.546208182290343e-07,
+      "mean_down_voltage": 0.6108085656674485,
+      "mean_abs_gap": 0.6108087202882667,
+      "ci_low": 0.6108087202882667,
+      "ci_high": 0.6108087202882667,
+      "step_change_max": 3.3650859876388495e-13,
+      "settling_change_at_bias": 0.004193504491276978
+    },
+    {
+      "beta": 10,
+      "bias": 0.9,
+      "mean_up_voltage": 1.3214744176703874e-07,
+      "mean_down_voltage": 0.7887939106574094,
+      "mean_abs_gap": 0.7887937785099677,
+      "ci_low": 0.7887937785099677,
+      "ci_high": 0.7887937785099677,
+      "step_change_max": 3.3650859876388495e-13,
+      "settling_change_at_bias": 0.004249197952854056
+    },
+    {
+      "beta": 10,
+      "bias": 1,
+      "mean_up_voltage": 0.00019912699876431183,
+      "mean_down_voltage": 0.927183843311168,
+      "mean_abs_gap": 0.9269847163124038,
+      "ci_low": 0.9269847163124038,
+      "ci_high": 0.9269847163124038,
+      "step_change_max": 3.3650859876388495e-13,
+      "settling_change_at_bias": 0.008143983977956792
+    },
+    {
+      "beta": 10,
+      "bias": 1.1,
+      "mean_up_voltage": 1.0475982019963708,
+      "mean_down_voltage": 1.0317962373654657,
+      "mean_abs_gap": 0.01580196463090555,
+      "ci_low": 0.01580196463090555,
+      "ci_high": 0.01580196463090555,
+      "step_change_max": 3.3650859876388495e-13,
+      "settling_change_at_bias": 0.020236419066141043
+    },
+    {
+      "beta": 10,
+      "bias": 1.2,
+      "mean_up_voltage": 1.1496290836845997,
+      "mean_down_voltage": 1.1606379468214707,
+      "mean_abs_gap": 0.011008863136871216,
+      "ci_low": 0.011008863136871216,
+      "ci_high": 0.011008863136871216,
+      "step_change_max": 3.3650859876388495e-13,
+      "settling_change_at_bias": 0.012498315407987626
+    },
+    {
+      "beta": 10,
+      "bias": 1.3,
+      "mean_up_voltage": 1.264269748653417,
+      "mean_down_voltage": 1.2632603803828146,
+      "mean_abs_gap": 0.0010093682706020513,
+      "ci_low": 0.0010093682706020513,
+      "ci_high": 0.0010093682706020513,
+      "step_change_max": 3.3650859876388495e-13,
+      "settling_change_at_bias": 0.0007248833121764608
+    },
+    {
+      "beta": 10,
+      "bias": 1.4,
+      "mean_up_voltage": 1.373903471268684,
+      "mean_down_voltage": 1.373768667286779,
+      "mean_abs_gap": 0.0001348039819049074,
+      "ci_low": 0.0001348039819049074,
+      "ci_high": 0.0001348039819049074,
+      "step_change_max": 3.3650859876388495e-13,
+      "settling_change_at_bias": 0.003952496543936368
+    },
+    {
+      "beta": 10,
+      "bias": 1.5,
+      "mean_up_voltage": 1.4732455045990014,
+      "mean_down_voltage": 1.4809375296278608,
+      "mean_abs_gap": 0.007692025028859462,
+      "ci_low": 0.007692025028859462,
+      "ci_high": 0.007692025028859462,
+      "step_change_max": 3.3650859876388495e-13,
+      "settling_change_at_bias": 0.006574635928859651
+    }
+  ],
+  "max_step_voltage_change": 3.752553823233029e-13,
+  "max_settling_voltage_change": 0.08388410977904215,
+  "gates": {
+    "power": true,
+    "time_step_2e_5": true
+  },
+  "normalization": "beta=2 e Ic r^2 C/hbar; synchronized equation beta*p_ddot+(1+2*alpha)*p_dot+sin(p)=i; total voltage=2*p_dot"
+}

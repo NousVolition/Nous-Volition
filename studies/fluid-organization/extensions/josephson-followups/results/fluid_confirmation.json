@@ -1,0 +1,114 @@
+{
+  "present": {
+    "mean": 0.19445555836352976,
+    "ci95": [
+      0.15376751535882333,
+      0.24043678428272236
+    ],
+    "n": 120
+  },
+  "history": {
+    "mean": 0.2127597265656727,
+    "ci95": [
+      0.17299174872779702,
+      0.25741715643651175
+    ],
+    "n": 120
+  },
+  "shuffled_history": {
+    "mean": 0.41153875001970214,
+    "ci95": [
+      0.3314484187675194,
+      0.5041175068918035
+    ],
+    "n": 120
+  },
+  "history_minus_present": {
+    "mean": 0.018304168202142954,
+    "ci95": [
+      -0.0084182437044899,
+      0.04573093914790363
+    ],
+    "n": 120
+  },
+  "history_minus_shuffled": {
+    "mean": -0.19877902345402937,
+    "ci95": [
+      -0.2615416121485124,
+      -0.1422661151338699
+    ],
+    "n": 120
+  },
+  "relative_mean_rmse_reduction": {
+    "value": -0.09413034194642966,
+    "ci95": [
+      -0.2637644670091948,
+      0.03984432552239823
+    ]
+  },
+  "median_paired_error_difference": -0.00039354593167586355,
+  "fields_improved": 60,
+  "independent_fields": 120,
+  "primary_improvement_resolved": false,
+  "per_arm_mean_absolute_error": {
+    "present": {
+      "abrupt": 0.20301132229921198,
+      "gradual": 0.1845296880793221
+    },
+    "history": {
+      "abrupt": 0.21970457348070782,
+      "gradual": 0.20358910631993926
+    },
+    "shuffled_history": {
+      "abrupt": 0.4287922489495622,
+      "gradual": 0.3702440234441617
+    }
+  },
+  "numerical": {
+    "max_energy_budget": 4.0311336258503825e-10,
+    "max_burn_budget": 4.373039971024154e-08,
+    "max_divergence": 2.753507827563566e-17,
+    "max_cfl": 0.1289914757919839,
+    "max_clone_error": 0.0,
+    "refinements": [
+      {
+        "seed": 5000,
+        "time_error_over_initial_energy": 6.35070682467826e-11,
+        "grid_error_over_initial_energy": 1.887652560466293e-09
+      },
+      {
+        "seed": 5039,
+        "time_error_over_initial_energy": 7.192518815759199e-10,
+        "grid_error_over_initial_energy": 4.011808779779543e-08
+      },
+      {
+        "seed": 5079,
+        "time_error_over_initial_energy": 5.730639129227009e-10,
+        "grid_error_over_initial_energy": 9.041131991883571e-08
+      },
+      {
+        "seed": 5119,
+        "time_error_over_initial_energy": 1.906488724458563e-10,
+        "grid_error_over_initial_energy": 1.9647825881898238e-08
+      }
+    ]
+  },
+  "gates": {
+    "energy": true,
+    "divergence": true,
+    "cfl": true,
+    "clones": true,
+    "refinements": true
+  },
+  "interpretation": "Independent confirmation conditional on the fixed model family, small original training set, global flow summaries, laminar periodic regime and forcing interventions. It is not evidence for a new fluid memory law, a complete-state Markov violation, or transfer of Josephson physics. The 12-field pilot remains a separate exploratory result.",
+  "model_hashes": {
+    "data/fluid_model_present.npz": "5e4fa84255fa5f798f3b1c8085e855b02461b19e48a9bcb068d6432a4f85bb59",
+    "data/fluid_model_history.npz": "67536bb107bc25e6a69cb4a3218656ec5188325757e04b45f834dcf93cf86c20",
+    "data/fluid_model_shuffled_history.npz": "ee601f4a9de6300d0063b516ebc707974f51767edbb57b04539c83caf537e6a7",
+    "fluid/core.py": "aa6569c95c2f65382a5da58f475102e5291d4af5ae019a3d0a0ac5060cc8a8b2",
+    "fluid/recovery.py": "74d8a550b6fde75d65cce709ddc6341154ee38c6d6134ac7b1461cdf71fb77c5",
+    "fluid/vendor/numerics.py": "d95ed8e4cb9895cf7247f4f30722479ab60055af8625d94e8396a124c5aab502",
+    "fluid/protocol.json": "8e9b6c0f998801711df38dfe97c1572fd51d9f30535fd2b712775dcf60e38aa4",
+    "fluid_confirmation_protocol.json": "856596f9c407f16cbf34cc4c1dbfc82148d14d4ac0372dd026da6abb99d605e4"
+  }
+}

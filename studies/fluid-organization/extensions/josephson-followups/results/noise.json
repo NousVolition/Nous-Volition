@@ -1,0 +1,188 @@
+{
+  "regimes": [
+    {
+      "bias": 0.99,
+      "Gamma": 0.0,
+      "mismatch": 0.02,
+      "mean_total_voltage": 0.08425715334956307,
+      "ci_low": 0.08423942356842166,
+      "ci_high": 0.08427976237112622,
+      "paired_resolution_rms": 2.1137260271009617e-08,
+      "matched_identical_noiseless_mean": 1.5166139691463743e-06
+    },
+    {
+      "bias": 0.99,
+      "Gamma": 1e-05,
+      "mismatch": 0.0,
+      "mean_total_voltage": 2.189746887182058e-05,
+      "ci_low": 3.3255162646870776e-07,
+      "ci_high": 4.2611036666888e-05,
+      "paired_resolution_rms": 2.397117629026397e-08,
+      "matched_identical_noiseless_mean": 1.5166139691463743e-06
+    },
+    {
+      "bias": 0.99,
+      "Gamma": 1e-05,
+      "mismatch": 0.02,
+      "mean_total_voltage": 0.08440898689047716,
+      "ci_low": 0.08431148871388512,
+      "ci_high": 0.08451698217229257,
+      "paired_resolution_rms": 2.0646300916729848e-07,
+      "matched_identical_noiseless_mean": 1.5166139691463743e-06
+    },
+    {
+      "bias": 0.99,
+      "Gamma": 0.001,
+      "mismatch": 0.0,
+      "mean_total_voltage": 0.019989102702113015,
+      "ci_low": 0.014527104366794661,
+      "ci_high": 0.02542478822034631,
+      "paired_resolution_rms": 4.463877550572536e-06,
+      "matched_identical_noiseless_mean": 1.5166139691463743e-06
+    },
+    {
+      "bias": 0.99,
+      "Gamma": 0.001,
+      "mismatch": 0.02,
+      "mean_total_voltage": 0.10191478122145436,
+      "ci_low": 0.09538289260481193,
+      "ci_high": 0.10846873873009076,
+      "paired_resolution_rms": 1.9877403507909848e-05,
+      "matched_identical_noiseless_mean": 1.5166139691463743e-06
+    },
+    {
+      "bias": 1.005,
+      "Gamma": 0.0,
+      "mismatch": 0.02,
+      "mean_total_voltage": 0.13062557181420323,
+      "ci_low": 0.12910609394073397,
+      "ci_high": 0.13251753267900407,
+      "paired_resolution_rms": 1.0229727680961794e-06,
+      "matched_identical_noiseless_mean": 0.0826667618019059
+    },
+    {
+      "bias": 1.005,
+      "Gamma": 1e-05,
+      "mismatch": 0.0,
+      "mean_total_voltage": 0.05854137060962524,
+      "ci_low": 0.05538497102279926,
+      "ci_high": 0.06167654824656636,
+      "paired_resolution_rms": 1.0251403506624556e-06,
+      "matched_identical_noiseless_mean": 0.0826667618019059
+    },
+    {
+      "bias": 1.005,
+      "Gamma": 1e-05,
+      "mismatch": 0.02,
+      "mean_total_voltage": 0.13074834753727024,
+      "ci_low": 0.12963705590410807,
+      "ci_high": 0.1322080575064413,
+      "paired_resolution_rms": 1.6052336005645665e-06,
+      "matched_identical_noiseless_mean": 0.0826667618019059
+    },
+    {
+      "bias": 1.005,
+      "Gamma": 0.001,
+      "mismatch": 0.0,
+      "mean_total_voltage": 0.0865386307711023,
+      "ci_low": 0.07926688930627648,
+      "ci_high": 0.09411633439295879,
+      "paired_resolution_rms": 1.3481480898300226e-05,
+      "matched_identical_noiseless_mean": 0.0826667618019059
+    },
+    {
+      "bias": 1.005,
+      "Gamma": 0.001,
+      "mismatch": 0.02,
+      "mean_total_voltage": 0.13952105464812817,
+      "ci_low": 0.13418990528001354,
+      "ci_high": 0.1445703077774507,
+      "paired_resolution_rms": 1.4497082492716268e-05,
+      "matched_identical_noiseless_mean": 0.0826667618019059
+    },
+    {
+      "bias": 1.02,
+      "Gamma": 0.0,
+      "mismatch": 0.02,
+      "mean_total_voltage": 0.1829496734649121,
+      "ci_low": 0.18131129865739626,
+      "ci_high": 0.18424592401606352,
+      "paired_resolution_rms": 1.5438509087292223e-06,
+      "matched_identical_noiseless_mean": 0.1467331545387141
+    },
+    {
+      "bias": 1.02,
+      "Gamma": 1e-05,
+      "mismatch": 0.0,
+      "mean_total_voltage": 0.12106620901028575,
+      "ci_low": 0.12003736518760894,
+      "ci_high": 0.12196722090601311,
+      "paired_resolution_rms": 7.973144809192785e-05,
+      "matched_identical_noiseless_mean": 0.1467331545387141
+    },
+    {
+      "bias": 1.02,
+      "Gamma": 1e-05,
+      "mismatch": 0.02,
+      "mean_total_voltage": 0.18236198017465557,
+      "ci_low": 0.18062761174838576,
+      "ci_high": 0.18384354965883584,
+      "paired_resolution_rms": 1.5883412513374833e-06,
+      "matched_identical_noiseless_mean": 0.1467331545387141
+    },
+    {
+      "bias": 1.02,
+      "Gamma": 0.001,
+      "mismatch": 0.0,
+      "mean_total_voltage": 0.13213293805964357,
+      "ci_low": 0.12719642256321403,
+      "ci_high": 0.136968279920998,
+      "paired_resolution_rms": 8.118340535273731e-05,
+      "matched_identical_noiseless_mean": 0.1467331545387141
+    },
+    {
+      "bias": 1.02,
+      "Gamma": 0.001,
+      "mismatch": 0.02,
+      "mean_total_voltage": 0.17778934015050973,
+      "ci_low": 0.17392589966687003,
+      "ci_high": 0.18141569783871148,
+      "paired_resolution_rms": 1.1798229935257462e-05,
+      "matched_identical_noiseless_mean": 0.1467331545387141
+    }
+  ],
+  "independent_runs_per_regime": 24,
+  "number_of_conditions": 15,
+  "averaging_window": [
+    100,
+    400
+  ],
+  "common_random_numbers": "Same Brownian drivers across sensitivity conditions; fine/coarse increments coupled exactly",
+  "max_resolution_rms": 8.118340535273731e-05,
+  "resolution_gate": true,
+  "free_diffusion_covariance": [
+    [
+      0.0015085954945964757,
+      -0.000505578863885345
+    ],
+    [
+      -0.000505578863885345,
+      0.0015129388756992825
+    ]
+  ],
+  "expected_covariance": [
+    [
+      0.0015,
+      -0.0005
+    ],
+    [
+      -0.0005,
+      0.0015
+    ]
+  ],
+  "covariance_relative_error": 0.008625917132855,
+  "covariance_gate_0_02": true,
+  "max_normalized_potential_budget_residual": 0.00014597514877377624,
+  "budget_description": "Finite-step Stratonovich potential budget includes both drift work and thermal work; diagnostic, not an ordinary deterministic power balance.",
+  "interpretation": "Exploratory finite-window dimensionless sensitivity. White-noise voltage is measured through phase increments, not instantaneous derivatives. No deterministic pathwise energy-conservation claim."
+}

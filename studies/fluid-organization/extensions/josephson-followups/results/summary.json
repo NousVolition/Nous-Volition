@@ -1,0 +1,223 @@
+{
+  "date": "2026-10-10",
+  "scope": "Completed dimensionless numerical pilots; no laboratory validation",
+  "whole_cycle_regimes": [
+    {
+      "alpha": 0.0,
+      "bias": 1.005,
+      "window": "whole_cycle",
+      "mean_abs_up_down_gap": 1.553271400389633e-13,
+      "ci_low": 1.1835659767071386e-13,
+      "ci_high": 1.9451575766771258e-13
+    },
+    {
+      "alpha": 0.0,
+      "bias": 1.02,
+      "window": "whole_cycle",
+      "mean_abs_up_down_gap": 1.0732155904709846e-15,
+      "ci_low": 5.597374415818498e-16,
+      "ci_high": 1.609823385706477e-15
+    },
+    {
+      "alpha": 0.0,
+      "bias": 1.2,
+      "window": "whole_cycle",
+      "mean_abs_up_down_gap": 6.106226635438361e-16,
+      "ci_low": 3.7007434154171886e-16,
+      "ci_high": 8.696747026230393e-16
+    },
+    {
+      "alpha": 0.5,
+      "bias": 1.005,
+      "window": "whole_cycle",
+      "mean_abs_up_down_gap": 0.047139283024038664,
+      "ci_low": 0.04576186193336942,
+      "ci_high": 0.047914577556723875
+    },
+    {
+      "alpha": 0.5,
+      "bias": 1.02,
+      "window": "whole_cycle",
+      "mean_abs_up_down_gap": 0.07170560181003761,
+      "ci_low": 0.054567120252918544,
+      "ci_high": 0.08638131405304506
+    },
+    {
+      "alpha": 0.5,
+      "bias": 1.2,
+      "window": "whole_cycle",
+      "mean_abs_up_down_gap": 0.10520018121391927,
+      "ci_low": 0.05826467242587228,
+      "ci_high": 0.15236098580145535
+    },
+    {
+      "alpha": 2.0,
+      "bias": 1.005,
+      "window": "whole_cycle",
+      "mean_abs_up_down_gap": 0.01925417692831541,
+      "ci_low": 0.019214830550389136,
+      "ci_high": 0.01928991916735928
+    },
+    {
+      "alpha": 2.0,
+      "bias": 1.02,
+      "window": "whole_cycle",
+      "mean_abs_up_down_gap": 0.03686153963467954,
+      "ci_low": 0.036550242415047535,
+      "ci_high": 0.03713001266842555
+    },
+    {
+      "alpha": 2.0,
+      "bias": 1.2,
+      "window": "whole_cycle",
+      "mean_abs_up_down_gap": 0.07236736154732216,
+      "ci_low": 0.0483101291962762,
+      "ci_high": 0.09260275849708313
+    }
+  ],
+  "circuit_history_minus_present": {
+    "mean": 0.009731642565313461,
+    "ci95": [
+      -0.015104515935011546,
+      0.04341878111189006
+    ],
+    "n": 16
+  },
+  "fluid_history_minus_present": {
+    "mean": -0.06507275521270711,
+    "ci95": [
+      -0.19814122188343314,
+      0.03329919192641876
+    ],
+    "n": 12
+  },
+  "fluid_history_minus_shuffled": {
+    "mean": -0.28825843436494236,
+    "ci95": [
+      -0.4810742665547629,
+      -0.10104264573940575
+    ],
+    "n": 12
+  },
+  "remaining": [
+    "Physical calibration and laboratory validation",
+    "LRC load and general off-synchrony capacitive dynamics",
+    "Joint noise/mismatch/capacitance/ramp studies",
+    "More independent test starts and locked external validation",
+    "Physical transfer to fluid mechanisms, gas/fog/smoke/ice extensions"
+  ],
+  "fluid_confirmation": {
+    "present": {
+      "mean": 0.19445555836352976,
+      "ci95": [
+        0.15376751535882333,
+        0.24043678428272236
+      ],
+      "n": 120
+    },
+    "history": {
+      "mean": 0.2127597265656727,
+      "ci95": [
+        0.17299174872779702,
+        0.25741715643651175
+      ],
+      "n": 120
+    },
+    "shuffled_history": {
+      "mean": 0.41153875001970214,
+      "ci95": [
+        0.3314484187675194,
+        0.5041175068918035
+      ],
+      "n": 120
+    },
+    "history_minus_present": {
+      "mean": 0.018304168202142954,
+      "ci95": [
+        -0.0084182437044899,
+        0.04573093914790363
+      ],
+      "n": 120
+    },
+    "history_minus_shuffled": {
+      "mean": -0.19877902345402937,
+      "ci95": [
+        -0.2615416121485124,
+        -0.1422661151338699
+      ],
+      "n": 120
+    },
+    "relative_mean_rmse_reduction": {
+      "value": -0.09413034194642966,
+      "ci95": [
+        -0.2637644670091948,
+        0.03984432552239823
+      ]
+    },
+    "median_paired_error_difference": -0.00039354593167586355,
+    "fields_improved": 60,
+    "independent_fields": 120,
+    "primary_improvement_resolved": false,
+    "per_arm_mean_absolute_error": {
+      "present": {
+        "abrupt": 0.20301132229921198,
+        "gradual": 0.1845296880793221
+      },
+      "history": {
+        "abrupt": 0.21970457348070782,
+        "gradual": 0.20358910631993926
+      },
+      "shuffled_history": {
+        "abrupt": 0.4287922489495622,
+        "gradual": 0.3702440234441617
+      }
+    },
+    "numerical": {
+      "max_energy_budget": 4.0311336258503825e-10,
+      "max_burn_budget": 4.373039971024154e-08,
+      "max_divergence": 2.753507827563566e-17,
+      "max_cfl": 0.1289914757919839,
+      "max_clone_error": 0.0,
+      "refinements": [
+        {
+          "seed": 5000,
+          "time_error_over_initial_energy": 6.35070682467826e-11,
+          "grid_error_over_initial_energy": 1.887652560466293e-09
+        },
+        {
+          "seed": 5039,
+          "time_error_over_initial_energy": 7.192518815759199e-10,
+          "grid_error_over_initial_energy": 4.011808779779543e-08
+        },
+        {
+          "seed": 5079,
+          "time_error_over_initial_energy": 5.730639129227009e-10,
+          "grid_error_over_initial_energy": 9.041131991883571e-08
+        },
+        {
+          "seed": 5119,
+          "time_error_over_initial_energy": 1.906488724458563e-10,
+          "grid_error_over_initial_energy": 1.9647825881898238e-08
+        }
+      ]
+    },
+    "gates": {
+      "energy": true,
+      "divergence": true,
+      "cfl": true,
+      "clones": true,
+      "refinements": true
+    },
+    "interpretation": "Independent confirmation conditional on the fixed model family, small original training set, global flow summaries, laminar periodic regime and forcing interventions. It is not evidence for a new fluid memory law, a complete-state Markov violation, or transfer of Josephson physics. The 12-field pilot remains a separate exploratory result.",
+    "model_hashes": {
+      "data/fluid_model_present.npz": "5e4fa84255fa5f798f3b1c8085e855b02461b19e48a9bcb068d6432a4f85bb59",
+      "data/fluid_model_history.npz": "67536bb107bc25e6a69cb4a3218656ec5188325757e04b45f834dcf93cf86c20",
+      "data/fluid_model_shuffled_history.npz": "ee601f4a9de6300d0063b516ebc707974f51767edbb57b04539c83caf537e6a7",
+      "fluid/core.py": "aa6569c95c2f65382a5da58f475102e5291d4af5ae019a3d0a0ac5060cc8a8b2",
+      "fluid/recovery.py": "74d8a550b6fde75d65cce709ddc6341154ee38c6d6134ac7b1461cdf71fb77c5",
+      "fluid/vendor/numerics.py": "d95ed8e4cb9895cf7247f4f30722479ab60055af8625d94e8396a124c5aab502",
+      "fluid/protocol.json": "8e9b6c0f998801711df38dfe97c1572fd51d9f30535fd2b712775dcf60e38aa4",
+      "fluid_confirmation_protocol.json": "856596f9c407f16cbf34cc4c1dbfc82148d14d4ac0372dd026da6abb99d605e4"
+    }
+  }
+}

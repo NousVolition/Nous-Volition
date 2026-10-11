@@ -28,9 +28,9 @@
     },
     {
       "path": "studies/fluid-organization/README.md",
-      "size": 5358,
-      "git_blob_sha": "d5d81641864f3e7023529c091ef122b6ccc0f5d7",
-      "sha256": "512ea2cbc74e932e4fc485af3c6dcea070162f5a2ff46aff7e7d28a6183c652a"
+      "size": 6231,
+      "git_blob_sha": "a9e1f8a2ec590405f8f00bcdc2754b120f5b262f",
+      "sha256": "e01339ff21881ac643959059be80057729ef42d62b2107b2603f6c434326b603"
     },
     {
       "path": "studies/fluid-organization/references/codex-clipboard-0832323a-bb13-4cdf-9c2d-5fedb9d9d689.png",
@@ -400,9 +400,9 @@
     },
     {
       "path": "studies/fluid-organization/network_reference_addendum.html",
-      "size": 14034,
-      "git_blob_sha": "10f2bd75e109fd489a81fb585ee00ae5790aaa71",
-      "sha256": "460c6748219b129831b6cddc82cfc67457e50bb5f45560832c2d60298916aa04"
+      "size": 14912,
+      "git_blob_sha": "9b4e36ad21d8dd7f4d025c8df772e0d0026eab35",
+      "sha256": "90fe34d2d4b623cd41863958311014a798e221566727ed518b809473aea1e8e4"
     },
     {
       "path": "studies/fluid-organization/references/heteroclinic_network_reference.png",
@@ -742,9 +742,9 @@
     },
     {
       "path": "studies/fluid-organization/extensions/josephson-sweep/README.md",
-      "size": 4672,
-      "git_blob_sha": "a501690bb54931c4e1d05bf09d0caecf06373bae",
-      "sha256": "237c7c21fea8dd9c02cad6d3aed90417d8f98d4f4efaf7e59d60ae4ac7a02144"
+      "size": 4929,
+      "git_blob_sha": "f3611cc96e1a381b537b91af35139363bf6809be",
+      "sha256": "e386e0ac9a9695193048a5757ec635eade5c93a519707b69c7f972641fe7cb59"
     },
     {
       "path": "studies/fluid-organization/extensions/josephson-sweep/README.txt",
@@ -889,7 +889,235 @@
       "size": 2341,
       "git_blob_sha": "dc4e709da6d521d0560c7c783e2cacc4f998d94c",
       "sha256": "ddb9dde89eea58d39afbb17f530a229629c27395cd903237f9312d93fb8bf7e5"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/.gitattributes",
+      "size": 9,
+      "git_blob_sha": "625449502ba4b4d7c229c6ccee42e3ec41cc780c",
+      "sha256": "8b9c3028d6467ff3be7c793141927841d70f47f52d0590677438f488ca154992"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/figures/capacitance.png",
+      "size": 104053,
+      "git_blob_sha": "033d2e274e592ced427fe82cece282f67657e868",
+      "sha256": "0249b20e469878088eaaee63b9382f7d72372d503ff622e5e6e8ee91962cfefe"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/figures/capacitance.svg",
+      "size": 70924,
+      "git_blob_sha": "2d6539964483bfc9e51e7560b3503c69207c586b",
+      "sha256": "588deba8fc8ecc3c6e744b5929deb72fa18cba90386ce5469724517efc9d8b36"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/figures/fluid_confirmation.png",
+      "size": 115252,
+      "git_blob_sha": "92919d6f2ecd84ecfa4987ad78acc4349e7ea16e",
+      "sha256": "233d06c0f01dbd5706c4610e997997f3ad83a00eae876fa9087af3ecc697aa2e"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/figures/fluid_confirmation.svg",
+      "size": 85329,
+      "git_blob_sha": "2520789b68688ece10e3eb136b229525cded6f03",
+      "sha256": "73dcc6b19c283415fadee188155fab77d5f08975930329ad36e15b6adb2315c1"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/figures/held_out_prediction.png",
+      "size": 78418,
+      "git_blob_sha": "724c2abb465e10acd84869eeef6f6f3725a796fb",
+      "sha256": "25ac07ae44904407c082ee7790258366ca66b4d674ed23b163c7441fc6a22e3c"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/figures/held_out_prediction.svg",
+      "size": 55728,
+      "git_blob_sha": "63edfe913be042b60fd092b0ec7295d6bde3f8bd",
+      "sha256": "af32e0363a766a228eb51b136fde11866d31b127be302140cc6e232fa1352d23"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/figures/noise_mismatch.png",
+      "size": 114959,
+      "git_blob_sha": "a483b2dd3ccb181dd8cd6c71d3be4bc7e9a399b2",
+      "sha256": "71127a568e54893b924c581af77de771ff35627adbc0ad212b6f2b24e0285f26"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/figures/noise_mismatch.svg",
+      "size": 78144,
+      "git_blob_sha": "0f71a8bc7b90b5f4fab0c7e0828cf9bbc6582812",
+      "sha256": "582896308cd412ddc0ebd9c1f8f42a18a4c4644a7df079a4e3d63ba2aac5f8ed"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/figures/ramps.png",
+      "size": 137718,
+      "git_blob_sha": "74ba783fd3496a17fdbcf4cbc0100802674f9a9b",
+      "sha256": "03f6844fd8ab30c2a860fcbd50beb683b56a985fcbf528607e58966cd49dbc4f"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/figures/ramps.svg",
+      "size": 74577,
+      "git_blob_sha": "01046a74896494749e3f1c51521df8458ca5407a",
+      "sha256": "73a0b63bfc16f7ca98a6934de080df918d600b43566ec09312fd5ae366c69ec4"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/figures/whole_cycles.png",
+      "size": 176890,
+      "git_blob_sha": "884b2868616d7d9fd48986f2966d99d84ee687a0",
+      "sha256": "430aab024f6289ee4a023905eb0a04a153b2e286defe6eeaba020de42a094caf"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/figures/whole_cycles.svg",
+      "size": 90572,
+      "git_blob_sha": "3b400dc88a6c6f72863508a26f255f4972b861e8",
+      "sha256": "c914a3c2c07878506197d5f6876d01caa7b135d8e8aa821f6c9f9aad7f93109f"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/fluid_confirmation_protocol.json",
+      "size": 2356,
+      "git_blob_sha": "330e2a39eba9eeb35e48ab4a3200a06a580d30b3",
+      "sha256": "856596f9c407f16cbf34cc4c1dbfc82148d14d4ac0372dd026da6abb99d605e4"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/manifest.json",
+      "size": 63994,
+      "git_blob_sha": "2229024deba298c68e17f7bda97cd3065c7ec29f",
+      "sha256": "3ac01d9e6478d3011437a88e7cfb4114e447280ea9a2db9ffd50538fbe6d26cd"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/protocol.json",
+      "size": 3070,
+      "git_blob_sha": "d1561da79f2d7c64dd9a7ab1d957cde2f97a6514",
+      "sha256": "2c5fae7fbc1562a99334fffc963d16e1fb23a4bc1124c23ac1b9813e7bea0150"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/provenance.json",
+      "size": 6185,
+      "git_blob_sha": "4f23af84aef8dd91368cea0f480ad9248bd50b4c",
+      "sha256": "93046e3b3d18e35893ba9261a5be88ba63d2cadafde830dab86197786fe335c5"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/README.md",
+      "size": 5792,
+      "git_blob_sha": "23765d7df4b0edd726e7db30ad96256f7c73e952",
+      "sha256": "003b30ff845b36a05248ee011f7a6186aa4a2c0138eeb3ab8a135007c1967cc3"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/report.html",
+      "size": 20990,
+      "git_blob_sha": "fede8a4b36d642f422638dbf8b3f8c5f16add1f5",
+      "sha256": "d57a35863aba0f4746b8c228eef38c1684e57531004b5e085021882b837ab859"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/requirements.txt",
+      "size": 68,
+      "git_blob_sha": "cde368038130a4e89f97f4777b13d77b29996d61",
+      "sha256": "227ed6828111a8d7f7536e859fa6eec40e91660e30f1d69f4902f3ea9a930044"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/results/capacitance.csv",
+      "size": 6035,
+      "git_blob_sha": "bc1086e09cfaf7994e98d9cffaf614108da8af8d",
+      "sha256": "67529ac5914ff60ebed86d53499afc293887ea8f5ff8ea861adae2818b654d38"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/results/capacitance.json",
+      "size": 17630,
+      "git_blob_sha": "ecfb14f8823a06a13cd9b0861fcd5deab1093823",
+      "sha256": "f01bc6fdc13cf9f1f62e1b7531528914fbee85f356d41278036921c7ded7db31"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/results/circuit_prediction.json",
+      "size": 3778,
+      "git_blob_sha": "c96096bf89cc16fc13b576c611f5a57a0025145b",
+      "sha256": "ccc940aaeea5e45c50157fbbab790ee2c85e1a42ab1e491ecc2625df9593f57c"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/results/fluid_confirmation.csv",
+      "size": 15052,
+      "git_blob_sha": "182241e851cb7660ef16473240ab998ed6d26bfd",
+      "sha256": "285a5a804f2f8d454823cb37ff4e2d81f8a4d604a255c50eaabff782bbbf9e32"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/results/fluid_confirmation.json",
+      "size": 3738,
+      "git_blob_sha": "c8ea60b0a84353bbd2f3b651418e6f11293b8d7c",
+      "sha256": "e09e1633e6da5254ca99ff563bb8e3f5e2cad31aabddca0d5489a5386c583064"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/results/fluid_prediction.json",
+      "size": 3948,
+      "git_blob_sha": "9663eae13cd054d58748d469ecb6a468092b10ee",
+      "sha256": "2a617efe3dd17096bcb5a068ed62effff0158e3478cc9a7d7a32118cb553f50f"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/results/fluid_runs.csv",
+      "size": 844,
+      "git_blob_sha": "645cc30dd72c4a0e05e06c30983f9b4894e112c7",
+      "sha256": "824318e28e802faf98d95d28fa28796492e5ebd0c8cf85de9325ac8c15fbc33b"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/results/long_cycles.csv",
+      "size": 3591,
+      "git_blob_sha": "0eef1c1af7a8f59611e88af44893db76befbd3bf",
+      "sha256": "8582684aeac88704f680638d347a77f2e57a4a0b806c7bbc2b2f0e5510929621"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/results/long_cycles.json",
+      "size": 10247,
+      "git_blob_sha": "c36735f0f4285fee86b7ca48069f2653d882f76a",
+      "sha256": "15a8707eb3f4268731771d6cdefab3ad09588e0eba6faf241f8c3d843b11a701"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/results/noise.csv",
+      "size": 1905,
+      "git_blob_sha": "a319c2df877b7ad0ee8bcca77b5dbf30cad6db6f",
+      "sha256": "b3685f6ad9ed5bc5be54ac9d0bb9e7959f2fec17594020c1aa985322abda9a30"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/results/noise.json",
+      "size": 6143,
+      "git_blob_sha": "c9614a02e2b835511f73a1b84934cde811b1e59e",
+      "sha256": "0d4ca1e0a13b45ca510fcb264cbcc17e1095304eb3a80a5171460dc5b2e37d70"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/results/ramps.csv",
+      "size": 502,
+      "git_blob_sha": "1e8b27d3d02398129e26145ba518fbc38625a52d",
+      "sha256": "eeb92cd453e15bbf37f8fb5eb700496c74730198ed4df8345a4f0b63802cfb99"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/results/ramps.json",
+      "size": 1537,
+      "git_blob_sha": "bd509af65be8eb2e4281d6c7d07cdaf80854f368",
+      "sha256": "e7405fdda20c550fd69c98f3791911c49d1e6b5b09d6709a319ad976a5e17b06"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/results/ramps_refined.csv",
+      "size": 553,
+      "git_blob_sha": "19668ffed2c204c2b34aa74d2ee35f36f3202b0d",
+      "sha256": "9e7526f58977bbbd39823a9ffb4798dad03b070d6e06e14e296152e3040b009d"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/results/ramps_refined.json",
+      "size": 1500,
+      "git_blob_sha": "00a93141fb6c60e2aa8fd593a4fdaec68306832c",
+      "sha256": "853ff6404c2060dcb800aa5bac3a35c55c8711a0b49bb3083599667a79e300c2"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/results/summary.json",
+      "size": 6963,
+      "git_blob_sha": "4d888d9e48e122ddb1dda6ba09f017446fba9ff5",
+      "sha256": "b0ee900f5240b85e5f0ccc26d0b7c76d634ead9669de0775f21a05090e7f91b4"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/results/verification.json",
+      "size": 58979,
+      "git_blob_sha": "241c7d7c681c13f26a33cd33ff0c004b0a2dca4e",
+      "sha256": "62ad41383078588f18b6b32ea2756dd86fbecf8b33b78f628eef4bc358ce149d"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/tests.xml",
+      "size": 1870,
+      "git_blob_sha": "4b89122e8dd72081e1be48b5cb26eaa843f7d322",
+      "sha256": "0e5d94ab7a299548a5139d4f89f9fcb8c13db6112e4ff3e83683882d2db5661c"
     }
   ],
-  "note": "Study files only; this inventory itself and repository-wide indexes are outside the inventory. Original pilot snapshots are preserved. Completed recovery/network and Josephson circuit extensions have separate protocols, recorded data and result limitations. The Josephson extension retains failed initial checks and distinguishes refined finite-time results from proposed physical extensions."
+  "note": "Study inventory excluding itself. Original numerical snapshots are preserved, with later completed extensions linked separately. Follow-ups distinguish exploratory pilots, the larger independent frozen-model fluid confirmation, and uncompleted physical/laboratory extensions."
 }

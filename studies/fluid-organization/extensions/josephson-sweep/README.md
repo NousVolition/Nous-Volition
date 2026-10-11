@@ -40,8 +40,8 @@ Dimensionless Josephson sweep. Solid curves use the initial integration settings
 
 ![Reference critical-window observation test](figures/history_windows.png)
 
-## Proposed — not completed
+## Follow-up status — 10 October 2026
 
-Longer asymptotic/whole-cycle studies; different sweep increments and continuous ramps; calibrated noise and junction mismatch; capacitance or LRC loads; held-out history-prediction models; laboratory validation and any transfer to fluid mechanisms. These remain separate future experiments.
+[The separate completed follow-up](../josephson-followups/README.md) now covers longer and whole-cycle observations, stepped/continuous ramps, dimensionless noise and mismatch, a synchronized capacitive branch, held-out circuit forecasts, and a 120-field independent fluid confirmation. Calibrated physical noise, laboratory validation, LRC loads, general capacitive states, other-media studies and demonstrated physical circuit-to-fluid transfer remain future experiments. The original sweep results above remain its historical snapshot.
 
 The executable code and recorded arrays are in the linked source repository.
