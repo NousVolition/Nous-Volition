@@ -36,7 +36,7 @@ the separate project linked below.
 
 [Read the review and connections](https://github.com/NousVolition/My-Sources-Project-ALL/blob/main/REPOSITORY-REVIEW.md) for related identity/position, symmetry, persistence and prediction tests, together with unresolved work.
 
-Repository CI now runs 250 dynamics/fractal/topology/heteroclinic/reversibility/SIMS-response/Hug/clay/orbit, 12 social-organization and 13 recovery/entrainment unit tests, plus source syntax, JSON, local Markdown links and the three published study manifests. These checks do not rerun the full ensembles or certify the scientific interpretations.
+Repository CI now runs 300 dynamics/fractal/topology/heteroclinic/reversibility/SIMS-response/Hug/clay/orbit, 12 social-organization and 13 recovery/entrainment unit tests, plus source syntax, JSON, local Markdown links and the three published study manifests. These checks do not rerun the full ensembles or certify the scientific interpretations.
 
 ## Start here
 
@@ -75,7 +75,7 @@ The study explores human coordination through nine **SIMS**, its simulated parti
 
 ## Dynamics, fractals, and SIMS
 
-[Open the dynamics and fractals test suite](studies/dynamics-fractals-sims/README.md) for twelve batches, including 12,800 binary-choice SIMS runs, 1,632 earlier continuous-response trajectories, 384 historical threshold-Hug trajectories, 384 current clay-SIMS trajectories, and 672 orbit-driven clay trajectories. These use different response rules, reported separately. The package covers continuous dynamics, finite fractals, tipping points, oscillations, topology, and heteroclinic switching.
+[Open the dynamics and fractals test suite](studies/dynamics-fractals-sims/README.md) for thirteen batches, including 12,800 binary-choice SIMS runs, 1,632 earlier continuous-response trajectories, 384 historical threshold-Hug trajectories, 384 current clay-SIMS trajectories, and 672 orbit-driven clay trajectories. These use different response rules, reported separately. The package covers continuous dynamics, finite fractals, tipping points, oscillations, topology, and heteroclinic switching.
 
 The topology batch adds 39,056 bounded algebraic checks and 2,560 new SIMS runs comparing contact density, resisting positions, and filled faces. An exact counterexample shows why group totals can conceal different future coordination.
 
@@ -95,7 +95,9 @@ The eleventh batch applies those orbital inputs directly to the current clay Hug
 
 The twelfth batch adds a proposed active Hug with the unchanged clay internal law plus inertia, restoring stiffness and powered feedback. Twelve autonomous starts establish attracting cycles before 28 circular/eccentric forced runs. Full-state periodic shooting, Floquet multipliers, kicked-cycle recovery, passive controls, energy accounting and 32 independent Radau segment controls test the new behavior. See [the active Hug methods and plots](studies/dynamics-fractals-sims/ACTIVE_HUG_METHODS.md). These direct Hug tests add no SIMS participant runs.
 
-The package includes 271 automated tests, twenty-eight original scientific figures, saved numerical results, and an [illustrated report](studies/dynamics-fractals-sims/report.html) to download and open locally. Equations, selected parameters, and links to primary sources are documented alongside the code.
+The thirteenth batch adds [a local Hug measurement notebook and calibration procedure](studies/dynamics-fractals-sims/HUG_CALIBRATION_METHODS.md). It fits clay, passive mechanics and actuator feedback using separate fitting recordings, then tests held-out autonomous and orbital motion. Fourteen synthetic recordings recover known parameters; physical measurements are still pending. The entry form and analysis never upload entered measurements. These checks add no SIMS participant runs.
+
+The package includes 300 automated tests, thirty original scientific figures, saved numerical results, and an [illustrated report](studies/dynamics-fractals-sims/report.html) to download and open locally. Equations, selected parameters, and links to primary sources are documented alongside the code.
 
 ## SIMS animations: what changes within, and what changes with place
 

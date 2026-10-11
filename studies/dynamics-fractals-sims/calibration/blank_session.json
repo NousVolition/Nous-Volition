@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "data_origin": "physical",
+  "title": "Hug measurements — awaiting recordings",
+  "specimen_id": "",
+  "geometry": {"coupon_area_mm2": null, "coupon_gap_mm": null, "mode_length_mm": null, "mode_volume_mm3": null},
+  "environment": {"water_mass_fraction": null, "temperature_C": null},
+  "instrument": {"force_resolution_N": null, "displacement_resolution_mm": null, "sampling_note": ""},
+  "initial_guess": {
+    "material": {"G_M_Pa": 24000, "eta_M_Pa_s": 6700000, "G_K_Pa": 25000, "eta_K_Pa_s": 1500000},
+    "effective_mass_kg": null,
+    "parallel_stiffness_N_m": null
+  },
+  "acceptance": {"displacement_rmse_mm": null, "force_rmse_N": null},
+  "trials": [
+    {"id":"creep-fit-1","kind":"creep","role":"fit","notes":"Load, hold, unload and record recovery; document conditioning.","controller_delay_s":null,"initial":{"known":false,"delayed_strain":null,"viscous_strain":null,"velocity_mm_s":null,"constant_delay_history_known":false},"samples":[]},
+    {"id":"creep-held-out","kind":"creep","role":"validation","notes":"Different load/hold from fitting recordings.","controller_delay_s":null,"initial":{"known":false,"delayed_strain":null,"viscous_strain":null,"velocity_mm_s":null,"constant_delay_history_known":false},"samples":[]},
+    {"id":"passive-fit-1","kind":"passive","role":"fit","notes":"Release with actuator and orbit input off.","controller_delay_s":null,"initial":{"known":false,"delayed_strain":null,"viscous_strain":null,"velocity_mm_s":null,"constant_delay_history_known":false},"samples":[]},
+    {"id":"passive-held-out","kind":"passive","role":"validation","notes":"Release from a different displacement.","controller_delay_s":null,"initial":{"known":false,"delayed_strain":null,"viscous_strain":null,"velocity_mm_s":null,"constant_delay_history_known":false},"samples":[]},
+    {"id":"feedback-fit-1","kind":"feedback","role":"fit","notes":"Record force, position and velocity over different amplitudes; measure controller delay.","controller_delay_s":null,"initial":{"known":false,"delayed_strain":null,"viscous_strain":null,"velocity_mm_s":null,"constant_delay_history_known":false},"samples":[]},
+    {"id":"feedback-held-out","kind":"feedback","role":"validation","notes":"Independent feedback recording.","controller_delay_s":null,"initial":{"known":false,"delayed_strain":null,"viscous_strain":null,"velocity_mm_s":null,"constant_delay_history_known":false},"samples":[]},
+    {"id":"autonomous-held-out","kind":"autonomous","role":"validation","notes":"No orbit or external load after release; repeat with different starts and a separate disturbed recording.","controller_delay_s":null,"initial":{"known":false,"delayed_strain":null,"viscous_strain":null,"velocity_mm_s":null,"constant_delay_history_known":false},"samples":[]},
+    {"id":"circular-held-out","kind":"circular","role":"validation","notes":"Record actual orbital waveform force separately from actuator force.","controller_delay_s":null,"initial":{"known":false,"delayed_strain":null,"viscous_strain":null,"velocity_mm_s":null,"constant_delay_history_known":false},"samples":[]},
+    {"id":"eccentric-held-out","kind":"eccentric","role":"validation","notes":"Record actual orbital waveform force; add separate trials for each chosen eccentricity.","controller_delay_s":null,"initial":{"known":false,"delayed_strain":null,"viscous_strain":null,"velocity_mm_s":null,"constant_delay_history_known":false},"samples":[]}
+  ]
+}

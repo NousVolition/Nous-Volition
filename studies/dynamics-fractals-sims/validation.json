@@ -1,7 +1,7 @@
 {
   "python": "3.12.14",
   "platform": "Windows",
-  "automated_tests": 271,
+  "automated_tests": 300,
   "test_result": "passed",
   "sims_rounds": 15872,
   "binary_sims_rounds": 12800,
@@ -72,8 +72,8 @@
     "accuracy_gates": "passed",
     "full_reproduction": "passed"
   },
-  "figure_count": 28,
-  "figure_review": "Four new active Hug figures inspected; twenty-four earlier figures preserved.",
+  "figure_count": 30,
+  "figure_review": "Two synthetic Hug calibration figures inspected; twenty-eight earlier figures preserved.",
   "pending_source": "Figure 7.3.3 / Example 7.3.1 vector field absent; this specific case was not run.",
   "html_local_links": "verified",
   "html_browser_preview": "Unavailable: browser policy blocks local file URLs.",
@@ -91,5 +91,30 @@
     "maximum_energy_balance_error_scaled": 1.8719890704232967e-07,
     "maximum_independent_solver_state_error": 1.932198401277674e-09,
     "full_main_trajectory_reproduction": "Not rerun a second time; original runs and separate numerical, stability, energy and unit controls completed."
+  },
+  "thirteenth_batch_checks": {
+    "new_tests": 29,
+    "synthetic_recordings": 14,
+    "fitting_recordings": 6,
+    "held_out_recordings": 8,
+    "held_out_test_types": [
+      "creep",
+      "passive",
+      "feedback",
+      "autonomous",
+      "circular",
+      "eccentric"
+    ],
+    "known_coefficients_recovered": true,
+    "held_out_gates_passed": true,
+    "origin": "synthetic",
+    "physical_measurements_entered": 0,
+    "physical_calibration_established": false,
+    "additional_sims_runs": 0,
+    "blank_template_status": "awaiting_measurements",
+    "measurement_entry_checks": "Node conversion/validation checks and HTML field/template contract passed; no interactive browser preview.",
+    "private_data_handling": "Entry exports locally; analysis writes only to caller-chosen output. No measurement upload.",
+    "independent_fixture_solver": "RK45 physical ODE and piecewise integrated creep",
+    "limitations": "Noiseless synthetic fixtures; no parameter uncertainty intervals or physical limit-cycle claim."
   }
 }

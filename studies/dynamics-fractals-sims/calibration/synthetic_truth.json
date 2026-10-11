@@ -1,0 +1,17 @@
+{
+  "material": {
+    "G_M_Pa": 28000.0,
+    "eta_M_Pa_s": 5200000.0,
+    "G_K_Pa": 19000.0,
+    "eta_K_Pa_s": 900000.0
+  },
+  "mechanics": {
+    "effective_mass_kg": 0.2,
+    "parallel_stiffness_N_m": 0.7
+  },
+  "feedback": {
+    "gain_N_s_m": 0.03,
+    "saturation_N_s_m3": 3000000.0,
+    "controller_delay_s": 0.0
+  }
+}
