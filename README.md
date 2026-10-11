@@ -1,5 +1,7 @@
 # Nous Volition · Streams and Rocks
 
+**Large numerical data:** [verified release downloads and restore instructions](DATA-RELEASES.md). Reports and figures remain available here.
+
 This repository, **Streams and Rocks**, preserves the original stream-function report, physical-fluid experiments and separate social-organization studies.
 
 ## Fluid Organization Under Stress

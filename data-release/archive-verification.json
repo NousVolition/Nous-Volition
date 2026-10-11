@@ -1,0 +1,16 @@
+{
+  "source_commit": "bfa17510174326b0f9afc99d697ea5f3a94d0f61",
+  "repository": "NousVolition/Nous-Volition",
+  "catalog_sha256": "90408d9535e05c8d0cda3d5bda08a103ce051eeda5cf59210be0b58360349d3a",
+  "all_source_and_restored_bytes_identical": true,
+  "git_blobs_verified": 531,
+  "numerical_files": 20,
+  "numerical_bytes": 61321907,
+  "roundtrip": {
+    "verified_archives": 3,
+    "selected_files": 531,
+    "written_files": 531,
+    "bytes": 138548971,
+    "full_snapshot": true
+  }
+}

@@ -1,0 +1,4280 @@
+{
+  "schema": 1,
+  "repository": "NousVolition/Nous-Volition",
+  "source_commit": "bfa17510174326b0f9afc99d697ea5f3a94d0f61",
+  "release_tag": "numerical-data-2026-10-11",
+  "description": "Lossless archive of every published file at the source commit. Numerical files move off main; source/report archive preserves all original bytes and historical manifests. No numerical values or sources are changed.",
+  "files": [
+    {
+      "path": ".github/workflows/blank.yml",
+      "bytes": 1099,
+      "sha256": "f499f823c1aaa79bf9c750c3100130c8fd8a13c1db608ea1629cc2d9b9a66124",
+      "git_blob_sha": "02ef678d292a5a455aae7908d0ecec254f715c0a",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "README.md",
+      "bytes": 11008,
+      "sha256": "14ca56849afaddf802693c120ca13dbe0e7679e351eee9c2f1bd68271027c129",
+      "git_blob_sha": "11f81c7bf78b5ec58535f6e9d8d1d95e231d21fc",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "stokes_stream_report.pdf",
+      "bytes": 161383,
+      "sha256": "9dfeec4d0f24ed4d5387ba64e898acb8206960350ce5f867e9427a84b95f0452",
+      "git_blob_sha": "78fcf43f2525977408aab05827cc6db5b2732267",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/.gitignore",
+      "bytes": 26,
+      "sha256": "1876ce059fc516f773523546cd486d0e52efe0271fedfaefe87ac32091cc3f01",
+      "git_blob_sha": "c305ff172431b3c7d594365d8750054205d460b5",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/ACTIVE_HUG_METHODS.md",
+      "bytes": 10858,
+      "sha256": "eccf9e8299a472453bd29d3b45ddec2556b6ea4506fbf7583f2aeaac6e7825ed",
+      "git_blob_sha": "b9b0f9bd2f121127456a4125765b3509161986d6",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/BRIDGE_CHECKS.md",
+      "bytes": 8763,
+      "sha256": "460d5dfd4e7a70cbbb08bd76ec36648a05d456464607378fe56bf2f8b52ce2dc",
+      "git_blob_sha": "cfc5be96ee43074e97b2dca87eb6cc8140ff9216",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/CLAY_SIMS_METHODS.md",
+      "bytes": 9666,
+      "sha256": "e33ccc9200eea9adbb579f1d5b25c49176deb8c5ca97c4558a2fc63e881dae50",
+      "git_blob_sha": "254b25cb1b34236156959e8aa83db06b0cf1d044",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/HETEROCLINIC_METHODS.md",
+      "bytes": 12253,
+      "sha256": "4e57f9b33cc19027a4ad70e3dae9339373330b4a02c48e66332e97b73616e5ea",
+      "git_blob_sha": "bd4d0199417276a8382130168e6b987d4aa6dae5",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/HUG_CALIBRATION_METHODS.md",
+      "bytes": 9599,
+      "sha256": "04d9d5671ee074e9d439d267b8b97076d60122455fd05d159d0ee1a98d3e63c2",
+      "git_blob_sha": "2f7de7d70c611d24b84a488ae875d38fb85b80bb",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/HUG_ORBIT_METHODS.md",
+      "bytes": 6603,
+      "sha256": "cfe3f07b0904373ed77f07f3831a8af2c2f62efb81386c53e493b5ce618748b1",
+      "git_blob_sha": "735a3437e0a8220645ffbc4ba64b090e3678d4ab",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/HUG_SIMS_METHODS.md",
+      "bytes": 9928,
+      "sha256": "862b0f909fb5e9929204011b47768c9739cf11c288609a66546820a741fd46d6",
+      "git_blob_sha": "5de0b315a599401ff3030fb5c1f8048a94e9ec0c",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/ORBIT_METHODS.md",
+      "bytes": 7669,
+      "sha256": "a9b6ac81d7b522a51f6e80916ad9fa911714c40c513b9d3eda06e885595c6211",
+      "git_blob_sha": "6d762ec60fdc8b398fb30c2a6fc335f47c8eb1c1",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/OSCILLATION_METHODS.md",
+      "bytes": 13517,
+      "sha256": "5a182c14018bfffb3057818c16eb79d0579423182b174a627b45b2599eb324a0",
+      "git_blob_sha": "03f6c50dedc6ab981c09b18e87057d44d4076707",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/README.md",
+      "bytes": 23433,
+      "sha256": "b76ecac8f7e35f07eea17d4f7afc6821d3530e2bb7c61968dd4aa67fc80ff7f3",
+      "git_blob_sha": "f08f864ff5411dbecc8fddb4cc9708d3b6492e58",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/SIMS_RESPONSE_METHODS.md",
+      "bytes": 9232,
+      "sha256": "ddbd92db0da5a4b523581ff4d2ee28d27ac477628e15ad26e84117b106f462e6",
+      "git_blob_sha": "9139c58e7edfb1bdd75803358a119cf09db3aa60",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/TOPOLOGY_TESTS.md",
+      "bytes": 11401,
+      "sha256": "2d7fc49e857305d0648db0167b9a840912396c8efff4303a74cd7cd6f53e4a52",
+      "git_blob_sha": "a275775c2432bd2a83cb7fcdfe31d0bfa58fd329",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/active_hug.py",
+      "bytes": 14333,
+      "sha256": "e651fce052d97369f62baa783eb201faa488c551ad70948d6dfdd1f77e1d4f8d",
+      "git_blob_sha": "914e77e757a87c2fe66c9659249dccf8c2ac9a26",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/active_hug_protocol.json",
+      "bytes": 1500,
+      "sha256": "00b52ea633f2f519af8a54d8f754231c73ed78863add8aaafe3f7d460a7d4277",
+      "git_blob_sha": "73d1c1c04bf1ebefd10aeabf8d47d890b58c9a1f",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/active_hug_report.py",
+      "bytes": 11713,
+      "sha256": "b8c45aad82adc7ade376ea52ff5751e5613c2d6182c999c37220507b99cfc340",
+      "git_blob_sha": "b9bd3709d3d0382736490501e90e8530224ffc32",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/active_hug_results.json",
+      "bytes": 4166854,
+      "sha256": "171fb98ac7cd38818a9b4c5a10ecd21ca69fcb98f4719e5257bf3991aa50af0d",
+      "git_blob_sha": "587caf405039bfcda839beb38c35f2492283904e",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/bifurcation_results.json",
+      "bytes": 34554,
+      "sha256": "9b14c823719c13f465ea7971e291a990ad713ea96f3f64a8a6095d2c2d6a34e2",
+      "git_blob_sha": "5961a40cfab047677f35f1fd8c58c39a3eb36a2d",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/bifurcations.py",
+      "bytes": 9019,
+      "sha256": "1367b2e740b1d9a42f0efb49e9a4bb4401d81c1b8e152eb5d474a332ccc03878",
+      "git_blob_sha": "b10928d1869bc5616d6d857129b8983cfb8e3c0a",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/bridge_checks.py",
+      "bytes": 10237,
+      "sha256": "eee5d1773b584dd500f9cb6aedabeac5a524850534765e986a177d41242ca238",
+      "git_blob_sha": "28b67d1bfb324c696ae051cb5ef428fc475b48ba",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/bridge_references.json",
+      "bytes": 17357,
+      "sha256": "2fdf55885a30e1232d70d484b18afcd96493a9a3574da7b7b18fa04261194e42",
+      "git_blob_sha": "396b3e935b76616e118971b3d725ff78d72db79e",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/bridge_report.py",
+      "bytes": 9100,
+      "sha256": "7b5cb6d319ef5d3f9ef2fdd41e06631ca1a0f20c34bd71aee051d3ab9acc2922",
+      "git_blob_sha": "af7301d767a5daba081bcc6e0b6cb1480ff1969e",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/bridge_results.json",
+      "bytes": 18530,
+      "sha256": "27902f4172074b0c63526c09e31e43a603db1d3b7327982f3155be5daffea4ab",
+      "git_blob_sha": "012d18d1423a498ba09fffda0e4eaf226c87e52a",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/build_report.py",
+      "bytes": 26494,
+      "sha256": "cabcbb8440602e2521daee6f5238bd812e39155e478553d7b4dd5ccf8ab93956",
+      "git_blob_sha": "cc38cffa4f56b51693717fe23882e08ebca11d63",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/calibration/blank_session.json",
+      "bytes": 3453,
+      "sha256": "ca0ca48bbcab39bc0c69d34ab0f952376405cead03db71df48586ecc2eabfc24",
+      "git_blob_sha": "4bb91844f93637cc350a9a0a710c66f7671b03d1",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/calibration/measurement_entry.js",
+      "bytes": 9006,
+      "sha256": "a9f035cb91eedc6ff842bb82ef2b82b6adf6e8d9cd569d3270db11f5c490b4ff",
+      "git_blob_sha": "9b436d44c4cdc74a2ab062845eecfb80171d8a77",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/calibration/measurement_template.csv",
+      "bytes": 74,
+      "sha256": "cbfb597a1d6c3d62f7e61d900eaa83295b9665929762d624932c7104100358a4",
+      "git_blob_sha": "973b48046bfe4c8e686b24433d99f036481eb530",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/calibration/measurements.html",
+      "bytes": 12982,
+      "sha256": "21e25b537efc14be77a24112422e6966d64827b32c0a066045bd70cb8c8a9029",
+      "git_blob_sha": "533814d9d8abc32a811fe8f2141b13581c52f90f",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/calibration/synthetic_demo.json",
+      "bytes": 1483740,
+      "sha256": "7984d6b6d465e22bbf42455b6cc0a2d136853177f5bdd25decfa6d2f7d03f529",
+      "git_blob_sha": "102751647d654344459de4402a3dd963183e6d18",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/calibration/synthetic_results.json",
+      "bytes": 369801,
+      "sha256": "137400e41b1026a3b57fc346e85d1acc8a4cc18f96423633e9fe08b71a5f478a",
+      "git_blob_sha": "0439515c9724f2c941d893e8a9b5bc1103a1cc8a",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/calibration/synthetic_truth.json",
+      "bytes": 340,
+      "sha256": "e8ee8ac8a73849db7ec3f0aef7c61d36a00810ad57c2973845cddf4f34e59d53",
+      "git_blob_sha": "fd9569d7a82336b297237229160dedd489167c07",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/calibration/test_entry.cjs",
+      "bytes": 2031,
+      "sha256": "730bf76a7db17e8794eea84ea498c115021a1bf48de1c522695dd37991049e35",
+      "git_blob_sha": "921cc02f8aa329042055348fb9edee5a3d4ae890",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/calibration_demo.py",
+      "bytes": 5500,
+      "sha256": "b05c01dc01d7cf37bf7cb235ecfd05c66bc47597f670e98787585c01b3b65bed",
+      "git_blob_sha": "219f010e7e6bb4975e0cecd271b497a57ab55c6b",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/calibration_report.py",
+      "bytes": 4767,
+      "sha256": "f890c167d58f90b0d3de1af86b24a0f188faaecc0ba244900bc277b2eb4ffd16",
+      "git_blob_sha": "a4e801202576c43b1566805af8c20891a71036a9",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/clay_sims.py",
+      "bytes": 12324,
+      "sha256": "a485001bfc350822f7f5dbdf4ef0986ba0cd9cdc4f1b2f07757bad7562048d36",
+      "git_blob_sha": "04325d0abbc9f3c83a2ddb36afd319a91c3de7e0",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/clay_sims_protocol.json",
+      "bytes": 2754,
+      "sha256": "753234e21e85154bf174672190e5783f4788a5a9e0b318a06cc6640927636bb4",
+      "git_blob_sha": "368024a556862bde6d0a42f6c428c10fda83bdb0",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/clay_sims_report.py",
+      "bytes": 5532,
+      "sha256": "f1cd72bbf4fac8bcaed4c97991240cbbe3c1d1e9c81bdd42419936c97ac75607",
+      "git_blob_sha": "d67d2211851713047f0ebcee14aa20b29f0fb8b5",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/clay_sims_results.json",
+      "bytes": 1698010,
+      "sha256": "0728543b2c2b300d55cf30ea9d3042859764625a826d339a7abb456b8c7f6f99",
+      "git_blob_sha": "cb5f229a38674a9287ef330ee21aac3eedf2f5db",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/clay_source/clay_model.py",
+      "bytes": 2734,
+      "sha256": "bfc0eb42fba2f96e033c38d32f7c181697e0386fe6841183e388e5199e2efbc5",
+      "git_blob_sha": "4c7cc28b42078d78b11372cee3259dbc943a07ea",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/clay_source/source-data/cooke-2012-table-1.csv",
+      "bytes": 169,
+      "sha256": "bb405da788a0e6edfb5a0e0ceefbe4de5c97efbd091481a653dbdb560ca0df46",
+      "git_blob_sha": "1d4da26a77ed124a7a4b29f3614b19b20567f8e4",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/clay_source/source-data/provenance.json",
+      "bytes": 1511,
+      "sha256": "83a189a9d0ae265ce049f00a38dd490e35b64875c37d33d30ec5dba50cd1cb63",
+      "git_blob_sha": "9631f3f3702f77f43c50863055409b8013ed72c3",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/clay_sources.json",
+      "bytes": 3288,
+      "sha256": "8414ef0b4857491c6780b7ff1aebc544676cd5e13da91c2253c971e259d31a35",
+      "git_blob_sha": "249d7d8dd1ef7e466b2209910fcd66501ded1002",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/figures/active_hug_autonomous.png",
+      "bytes": 357611,
+      "sha256": "0df417084fc3b497160cb8a86e37f3341fec646cf3eff287ff6e6db2e9492378",
+      "git_blob_sha": "18c52e0616419b862237712295df5a1a193184ad",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/figures/active_hug_diagnostics.png",
+      "bytes": 466360,
+      "sha256": "69f94f8efc740a3a18559873d267e9a2a3ba956a7b404c9f1038f3d14b5b0ae4",
+      "git_blob_sha": "650148f4f2a3d49206333dfddbb63de97937dddd",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/figures/active_hug_orbits.png",
+      "bytes": 362017,
+      "sha256": "f92a5b81862da8329b286e069455063bd3915f76a0699f3db466f7208a3897b4",
+      "git_blob_sha": "e95a2736e51cd64e23ba57e9e57f23d7f1df93d6",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/figures/active_hug_shapes.png",
+      "bytes": 223727,
+      "sha256": "c18d93ca7f97cb10fc1403fcbd90a62d4dba657704ac1d85b883b9e052a90667",
+      "git_blob_sha": "93b509a5283d1c4c58d646ef26edc918d503d27e",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/figures/averaging.png",
+      "bytes": 214204,
+      "sha256": "82f996352a5be48a023dac2f10a8fecb773836bcaa208d6190da69986b463b95",
+      "git_blob_sha": "00c3bec1082cad13ddc3699b1ef4098c8bab9d7d",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/figures/clay_sims.png",
+      "bytes": 189824,
+      "sha256": "dca2077359c65bb135d256cc3d2d94ab5869e1d86958a7d9eff2aaf82bc42bb0",
+      "git_blob_sha": "d44ee598ea5994fb142a3b37c977d1f48cdcea60",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/figures/coordination.png",
+      "bytes": 60924,
+      "sha256": "514b0bd89af3cbb90bbe0a3a93734e23ceb8edd001e2d39e72d6e5caeda622dd",
+      "git_blob_sha": "6840a9e56a0d3b12315aeea13c2b515193d881b6",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/figures/cycles.png",
+      "bytes": 272047,
+      "sha256": "191d6f4f7eb57046290a9529f2eb0578746ccaaa38a1753ef9ceeba4f815886f",
+      "git_blob_sha": "4155272aeb8be0531f8577e02a5547748a80d93f",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/figures/dynamics.png",
+      "bytes": 356022,
+      "sha256": "059628bcf0473ae2b6747b636aa8ecf197b6449e40cdc8e5e9616081dcac83a6",
+      "git_blob_sha": "cfbd14166b78168ce1e2a40bedfea75f6b186a1f",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/figures/extended.png",
+      "bytes": 157163,
+      "sha256": "9726a7bf156ffc45f51f9f958dc09e2838594885534e4f208ec24001b65f06da",
+      "git_blob_sha": "098656453d98acb3259d4fdf1f7f6075fddaa2f0",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/figures/fractals.png",
+      "bytes": 308515,
+      "sha256": "05597df0c46e69810aec8c9143b15b7c3931c1309a1422079cf01e2b8fe39b17",
+      "git_blob_sha": "47651a45ffb6f8f8873bc8ef94cd559a8dc258b5",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/figures/heteroclinic_switching.png",
+      "bytes": 247339,
+      "sha256": "ea8fd72bf348bbc02c836bd6790d33705f89ef29fdf9ef797087f8236087f603",
+      "git_blob_sha": "02e24c49f42f1573cc877b8e2798755f1fde555a",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/figures/hug_calibration_parameters.png",
+      "bytes": 50643,
+      "sha256": "1b02084b8e625db5dedd4c0ef232f4e61f1a417667751dde334b8b47649dfbac",
+      "git_blob_sha": "4b7f8b5e2394e71623f01473fb6a4e6a2c6d661f",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/figures/hug_calibration_validation.png",
+      "bytes": 910196,
+      "sha256": "202488400eb6e126e52702a144870fb8ac9cdea2fd74c50c83300b83f930b75f",
+      "git_blob_sha": "6d0f6f355021f04df35f3b9c9758461d78ecd344",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/figures/hug_sims.png",
+      "bytes": 184280,
+      "sha256": "b55967644d6037cfe99818e38fcc3a32c1b3b1796fd373590ae74d85d37181a4",
+      "git_blob_sha": "873206e571c3be86abbf0e0c18e9e527b0229917",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/figures/jupiter_orbits.png",
+      "bytes": 231046,
+      "sha256": "e7dd30941e9b7d06c7e05ddb0d6e7f15df1ac6052d5b2a300d594c4ec31c039a",
+      "git_blob_sha": "42f814dceb08dd0df287b4e11b9b4958826d39c8",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/figures/linear_reference_checks.png",
+      "bytes": 169771,
+      "sha256": "78ee5cc0d6d5c0d112825b8c0bc4d3e5f0558828f75a658a4b612a4159eae037",
+      "git_blob_sha": "d31f863026676946362f5f3205875fb1090091fd",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/figures/memory_inference_quench.png",
+      "bytes": 207295,
+      "sha256": "6e3756971c8e72c57f41c7e6dbe5f17ea560057f61c1308353f02a2bce3d95ca",
+      "git_blob_sha": "bd29474e52b3c5788cb8f0a93b1ac034c53aafba",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/figures/nonlinear_oscillators.png",
+      "bytes": 268840,
+      "sha256": "443e8249bbd40bd6a0ea6ed8918afa80349d8ecd977ff7d3b6f7f6853e7a961d",
+      "git_blob_sha": "af591e9bf30050561a362a4b8b92d95574410d3c",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/figures/orbit_clay_sims.png",
+      "bytes": 250907,
+      "sha256": "1d13945f27bcb12150c2a6b9f724433b51be42646aae7e6ab96124340dbaecc6",
+      "git_blob_sha": "6105b4bb672ea38d62d1d7cd4e1a832886f5452e",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/figures/orbit_hug_outline.png",
+      "bytes": 327030,
+      "sha256": "cf1a751d1278b1909d44885a40fe291cd09c142e406080e80bdcac23bdc6517f",
+      "git_blob_sha": "8ca87ee2d7e8222a5c39b3be6ede149d160ab337",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/figures/orbit_hug_recovery.png",
+      "bytes": 254685,
+      "sha256": "2e930cd7f0dd2a8af1156ba1d9f5f1ebccd539568a51fac62aca3dc3a974ab6a",
+      "git_blob_sha": "46a978c368df78e8f0173cc8d84713359d6652cb",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/figures/pacemaker_patterns.png",
+      "bytes": 91859,
+      "sha256": "1d5d217c2c7e5dc5bb0aa33a5576dce329508da38302a3ab1e623ae5f5331631",
+      "git_blob_sha": "dfacb0478200394b860b7e0da6719871b6b4dfbe",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/figures/reversibility_and_flow.png",
+      "bytes": 342101,
+      "sha256": "ba144bf1ba207177c966aa06669ea424d970d8e94c8b5dadd9c7602ec928d669",
+      "git_blob_sha": "3f5b59eddf3ca5c5d9f4b9f6d625f9d14ca7b5ac",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/figures/selkov.png",
+      "bytes": 317842,
+      "sha256": "195b57cfdc594cdcca775035782e85cfbaed2730f7da1ec963f09c73de15cd14",
+      "git_blob_sha": "d7f1888467b59945351c512eafc50fb6be36dc21",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/figures/sims_response_rates.png",
+      "bytes": 142303,
+      "sha256": "044a7f8960078c48103a4333c78fd75c3551bfafa194af3d0b87851e284e452e",
+      "git_blob_sha": "6dc267d31b7b9de4f5eb769bf96b2ab3ef318da7",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/figures/sims_response_stability.png",
+      "bytes": 193142,
+      "sha256": "b857d10a11d849d2685b4e478547205a2e01575cd3b7c3bb4d81ae4a3c6b099b",
+      "git_blob_sha": "daf3e909abfd51c691438776dc51ea95e03818f5",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/figures/tipping.png",
+      "bytes": 298157,
+      "sha256": "9c960e116e7db404311b1ce726184fcacb92a4bd20922fcc105fc00fcaf3d3d7",
+      "git_blob_sha": "5e2cfcf949091e6299c42f33a38ee019e19f1ab1",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/figures/topology_checks.png",
+      "bytes": 161780,
+      "sha256": "0f6ec2337c40888e8c54e105af2982ef0a2b7e6c51244b9e40ebe992cbabec5d",
+      "git_blob_sha": "e7215553864be89a51161a525ca6200bf0775917",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/figures/topology_sims.png",
+      "bytes": 124757,
+      "sha256": "b815f9b6b4c92cf65b0c1ac8c8769b7831fffe4d12aff5401ab65c5409b31521",
+      "git_blob_sha": "297682b2de883ae012b93d3026df717b2f8cb25c",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/heteroclinic.py",
+      "bytes": 10119,
+      "sha256": "f8f620c91f5af285076cfc70837cb3a55b544651d44ead8d6cbfa3d192e47b9c",
+      "git_blob_sha": "758e5768ce55b1d1600215677af0fefb3bdd0a3c",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/heteroclinic_report.py",
+      "bytes": 13804,
+      "sha256": "f88c0942419b07d03ce7eaa3b38060b929b763f2a3733921da037c241a4e6265",
+      "git_blob_sha": "e2715c05ebec47656bd15fe3ae27e3d0ac23f648",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/heteroclinic_results.json",
+      "bytes": 1681420,
+      "sha256": "5e58f4cf46a1ba7e443409ff8f09ceb95c60886e95aad9cfb613aa98e2de1611",
+      "git_blob_sha": "04af486726a48183d8d33b8f2678e7d509fc02c8",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/hug_calibration.py",
+      "bytes": 18856,
+      "sha256": "281e6e66ab7413ad67c518ca07f6e9d38365e18e75489ec9cbc53c42fdc07cee",
+      "git_blob_sha": "3c73990e91fd7222476bfecc2536978799645ac2",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/hug_orbit_protocol.json",
+      "bytes": 915,
+      "sha256": "2762bcbc9c178e69886e08c52914cf6f2f7e1b42f246bf11bfd780df24ebe0de",
+      "git_blob_sha": "dbed87a0b556a977a2b7b626d1e037b18ee21c62",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/hug_orbit_report.py",
+      "bytes": 7609,
+      "sha256": "e846d2d7c3ad58f44e8e6a80c321fa78462f68424041a8eda28c98f5a4fcbc7d",
+      "git_blob_sha": "fe8d4b5ebea1a848f8e58a6c91f24d666538f10a",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/hug_orbit_results.json",
+      "bytes": 2310572,
+      "sha256": "adc6e972e70433786a836a9f1b6d9044b8bd097041f5de19d75f7818997167e8",
+      "git_blob_sha": "8313760cede827c505938b209fc634f3feb62211",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/hug_orbits.py",
+      "bytes": 8496,
+      "sha256": "12b2827d9463710537f71483a5f2baa06b953aab858457f6869b32a85d218512",
+      "git_blob_sha": "a5c52b474853a5be688e47ce4a79ce91b2731a6b",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/hug_sims.py",
+      "bytes": 9212,
+      "sha256": "6a53441550ad49c229838ae1319253fd22d8ec8cd41931b4752dc7998c279faa",
+      "git_blob_sha": "66c98b6419cee2ecfdcfc28f86be285300e5003b",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/hug_sims_protocol.json",
+      "bytes": 2454,
+      "sha256": "a03f9e4a03ddd9b5dbf2cd75c4d63bb04ed62be00dc14e4af413d3e5dd151a0f",
+      "git_blob_sha": "2a9761198409b486ca9b5bfa084cdb53b1321642",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/hug_sims_report.py",
+      "bytes": 5784,
+      "sha256": "a7419547e82f3524edb992014ddb03abdd5e9459dc9d3e833b4b43597c1e0919",
+      "git_blob_sha": "095442529e3a3ec462c7e4288232b4e228e2f339",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/hug_sims_reproduction.json",
+      "bytes": 892,
+      "sha256": "af95b0f76ef6cbb94662744b29fd1e01caeefb1201652e348d5ca21354af3a4c",
+      "git_blob_sha": "954faa8db777d6b4830e1a74183522c8779eb8ff",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/hug_sims_results.json",
+      "bytes": 982141,
+      "sha256": "2579ea58f89cc6c8d590d4996ebf2bfbc05c8fbfc53f910463f0637be21de73d",
+      "git_blob_sha": "fa8f93c7ff3eaea300ba311c4b91b4f681ac93f9",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/hug_source/hug_model.py",
+      "bytes": 5203,
+      "sha256": "a64dea09dc0ef6f8e8cb1167554e0aa757672c392b224a8b0035d39a5a17c18c",
+      "git_blob_sha": "3611065d8bef4e93ba1e4a5e5e08ef15062b4cd1",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/hug_source/source/hug_envelope.py",
+      "bytes": 4839,
+      "sha256": "e0ef7fbb71e561d8875e1efc02e2ebf79558a8d0eae5e2e03ef9ee3045d9bdb6",
+      "git_blob_sha": "ea9b0bca014349ffef2e474d16a2637184749ce8",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/hug_source/source/pressure_envelope.py",
+      "bytes": 2828,
+      "sha256": "6a32e8885cff0b2877a37e157dd02354735d345a77e7817bc5f2723f437108a0",
+      "git_blob_sha": "e1c0247a3b20985a7c31252756d9e819fb41616c",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/hug_source/tests/test_original_hug.py",
+      "bytes": 2368,
+      "sha256": "0de47c9566586df08e16eb9297def3038b8f2fb83a0d26e96089a85be2b927c5",
+      "git_blob_sha": "ed2faa1ccfc5763851266dadbd24db796710408f",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/hug_source/tests/test_original_pressure.py",
+      "bytes": 2176,
+      "sha256": "44b1c4e4ff0da14453a4ccfb70c0d254899da8c1e1c695ed4ab249544d96ceda",
+      "git_blob_sha": "0c4489a6a6f6d48f722364d6520998aa7360ddaf",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/hug_sources.json",
+      "bytes": 2216,
+      "sha256": "f654806c5b879d14f8f93ecac40c543237e3a944525cb865ceefeabaaa3186ff",
+      "git_blob_sha": "53831638a0598ee6fe12d2e7eb1601a726591a0e",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/manifest_sha256.json",
+      "bytes": 12708,
+      "sha256": "ab95cc2a57b5b7e361c829bb2eb6e33e288204353390e58facedd31749e18cea",
+      "git_blob_sha": "095f08a69595810902dc88e2329b5e8fa3e69f4e",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/memory_inference.py",
+      "bytes": 5736,
+      "sha256": "331c2b9fae36433b2ac5d80082743699b7694a2a562ec9f96a2a44eee57979a6",
+      "git_blob_sha": "db41e208dea17b8c6b66bfd0b8bd4b7dab545184",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/memory_inference_results.json",
+      "bytes": 18891,
+      "sha256": "6e855e49ea878c03b037cb8e3260e7939e4b657e28ae5d22806d9af94a6410d3",
+      "git_blob_sha": "f69ecba3d4d6c3c54a765e1a6906e4257d82048e",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/models.py",
+      "bytes": 4920,
+      "sha256": "4efb846917f50f4f0bf43f3c7c1253d0fb9cbf6db5ecbf4d20679ffa475348af",
+      "git_blob_sha": "a5c675a19e6782ab9e3d34e9168d0fa63d1dd6ed",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/orbit_protocol.json",
+      "bytes": 2420,
+      "sha256": "699c641d6a03ee5112a76eb20f0c30325b9160a49b50cc9a2a15c472772e5a4c",
+      "git_blob_sha": "35af8b8f93251f38f393a35b6edf9396b97d0b5e",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/orbit_report.py",
+      "bytes": 7242,
+      "sha256": "c13e374c8054e807107ded3e1d04894925ef120b10816b261b5aa55c6729a030",
+      "git_blob_sha": "65dafbd17c01862c769d652e80e762ee151a8f39",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/orbit_results.json",
+      "bytes": 1588214,
+      "sha256": "2b486f34ff131e8b82b52331fdb4a2cf796318c326ca0dd3da0fa1c272d1e94a",
+      "git_blob_sha": "f25217482bb2e9f43e3e401a306d45076da79039",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/orbits.py",
+      "bytes": 11229,
+      "sha256": "d87199df5a01b45a8cd4847e3b2168454bc7e6918192f4f413a28133c8ea6cbc",
+      "git_blob_sha": "1ed03812452c01af7eac8a093377edd556a1ce27",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/oscillation_report.py",
+      "bytes": 16897,
+      "sha256": "bf8b0e4d05bb02e93e76a3ebdcbe3990ea408eb66419bcac18b2dc8ae91b67fe",
+      "git_blob_sha": "4da6829cfb785b5467a032703e75b3cc25855ba7",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/oscillation_results.json",
+      "bytes": 15070,
+      "sha256": "a0cd8ba1cac2dbb261b669bd7fa1a97b60f4c57ec3ce48f4a35934761c4e9b7c",
+      "git_blob_sha": "7b03762188de97dc82b48637b4f6ede06b6b5009",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/oscillations.py",
+      "bytes": 17702,
+      "sha256": "2c7e9d867f44a76a835c7740cdc3d2c51ca9eb80635c620ed1278454be748d4f",
+      "git_blob_sha": "95b4e554d9a8235b58abbb672ac405925ff62c86",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/pacemaker.py",
+      "bytes": 7412,
+      "sha256": "afc63607c82fff06f762beae3a05232f3180d8a3e1dd7f3dcd9182a06e806b65",
+      "git_blob_sha": "447fdd19fcef3c693c7e5564dae9e484f896c740",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/pacemaker_results.json",
+      "bytes": 1902999,
+      "sha256": "454a26943f06e97b63d297522aad9c045a1b403cee0a2b850577e847d17d1e8f",
+      "git_blob_sha": "9a75da1a1970e6115df62ae16d73e1e1d12894d1",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/quench.py",
+      "bytes": 4146,
+      "sha256": "0559ba6d327d0f1a692a8d1da2db5234612d9b53d64763c99a7a5ae1e5209b8e",
+      "git_blob_sha": "af6bfcdcad1e933cb8acaa980555845411bef3d3",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/quench_results.json",
+      "bytes": 413461,
+      "sha256": "4ec9df7dbfe0096e66fb9ef4d82a21bd325d5365cce6ed23f56c974ca080083c",
+      "git_blob_sha": "377efdaaab16bc6a69a8a12b92326737d77c7832",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/report.html",
+      "bytes": 58366,
+      "sha256": "15b45b0d8555815ba4ed55b3150bf2d123f3a2b45dfedaeb08d679670c8ee7d5",
+      "git_blob_sha": "c790549b0b8b97ee0d5616bffc3e4ba1b1e98fef",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/requirements.txt",
+      "bytes": 204,
+      "sha256": "dbebf0f21f19282b036e7f6f58ba0c9a3d88241b38e65b27a6b8e55cc4d20c7f",
+      "git_blob_sha": "9ce0360dfefaf145da240e610b0356303f1a8a28",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/results.json",
+      "bytes": 69836,
+      "sha256": "a5114858258c7f3c76459acbb409415585c40ee3980e618ad7c553762a8104fa",
+      "git_blob_sha": "712372b5ceda6323a25c78eb4bdbba7fd25f2e1d",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/run_study.py",
+      "bytes": 4796,
+      "sha256": "4e9dc9184aa610eaaff923e62ea94efe14033fc8980fb247e7d91daf87346bd0",
+      "git_blob_sha": "1e235314e2794e222f1d522e7817f2e19d3f2121",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/sims.py",
+      "bytes": 9175,
+      "sha256": "874db3d8defaad4d475eccfa2cb4032ce47dde9ba177b8013ef6e1e19c65d1c2",
+      "git_blob_sha": "19c613095e29d4312e7da71f552c10370e8b9316",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/sims_response.py",
+      "bytes": 11521,
+      "sha256": "49ab067c3bbb76ad586ff9ed563fdd78bfb02028729d569fd3413f89fe5f35f0",
+      "git_blob_sha": "7814b6b3442537ba32935df65f72e8c8400590f5",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/sims_response_protocol.json",
+      "bytes": 3383,
+      "sha256": "8ef14eddad151f4467803a8f5d326e683d7f39caa33dcf0d4c014907a9822fb1",
+      "git_blob_sha": "1c1061adb4d43d6917eaa490734cc1b5999d3f48",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/sims_response_report.py",
+      "bytes": 8524,
+      "sha256": "245d3d63f9ea3f1729eab7c96372301d75be6628aa217b124c7c67c0af161434",
+      "git_blob_sha": "8bf2bdf78507c997a60324a2fdcfb3278fde5731",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/sims_response_results.json",
+      "bytes": 1869943,
+      "sha256": "af3a2ea8d81079d769a5745ac15175b1a7227845e79e9b4b883b238297d5df98",
+      "git_blob_sha": "c9766bbf91a5d5786c8a37442cfdefcb8d51b6b4",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/test_active_hug.py",
+      "bytes": 8333,
+      "sha256": "0fff9ba1128e2b66de93d44c788ad5fdc0851b6a2852b2c6247e34787b9fd659",
+      "git_blob_sha": "1637a424465636d14c51634bb1fbe4b798fecf27",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/test_bifurcations.py",
+      "bytes": 4545,
+      "sha256": "40e9e8ada929d219e6ba5b3bbe1c569f0c327096f604a88e9ad23af9a7d9cc7e",
+      "git_blob_sha": "b46c6cd53e0d54780fe2475a0760997a0eb5d2e5",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/test_bridge_checks.py",
+      "bytes": 9450,
+      "sha256": "df90666163c05bdc3a65b8f0389b83685e930fe5974a9b56e80c8312432260c9",
+      "git_blob_sha": "3abfd1de4831f5dc10cb65368d871c78fb7b2b1e",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/test_clay_sims.py",
+      "bytes": 9160,
+      "sha256": "ad1561f2b79df66113f061571b31c8f4d6eefae7281a5701bc21d1817e6ba6ea",
+      "git_blob_sha": "188bfc768974a990f7629c7b683dba01baa63270",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/test_heteroclinic.py",
+      "bytes": 7047,
+      "sha256": "13caaeb38553592e4b47ba26e5434be5dd41bafe540a3e869e3fed4b981a00ee",
+      "git_blob_sha": "28ba6a4a7bf62781533f91749975b57d8da7d60e",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/test_hug_calibration.py",
+      "bytes": 10358,
+      "sha256": "a67e760d429b642562286fd314c388da7296825535dc8d4b5cf0779a1683fdd5",
+      "git_blob_sha": "c6118317d0fda33fee960a1bf96ba46e7f195df5",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/test_hug_orbits.py",
+      "bytes": 7537,
+      "sha256": "a3faea6681bdd487fc05694957f1a6422aac0b2ee53b2541eeb91cf3c7be6ac3",
+      "git_blob_sha": "cde923cc67e694d9671c85bbfcf0b5703dfbb06c",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/test_hug_sims.py",
+      "bytes": 6750,
+      "sha256": "f8e69769053bc76b1bb4632521ceb78ca8af6ad037ecf45fcb9d63621e144391",
+      "git_blob_sha": "ca0a13dbc19e7973cf65486543d2f57cb6a30887",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/test_models.py",
+      "bytes": 6637,
+      "sha256": "f2cba99ae57b2d6c001e77786d1fb17d713e0e2ae02f9c1fc9830cd86d95bece",
+      "git_blob_sha": "8f6ec49578621b98749ff5c41c2da65980a7b406",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/test_orbits.py",
+      "bytes": 8449,
+      "sha256": "4875b997006c605301b20efb3dc216557293b5cdbfa5934eb70d97b9ecd66e16",
+      "git_blob_sha": "c6498d0b7794be600c2e3f4b872225b92efe9a97",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/test_oscillations.py",
+      "bytes": 9008,
+      "sha256": "17fa2ac50c0829e84fe2a15af443922255e56b409dff896957ef8dd203943817",
+      "git_blob_sha": "15aa39561f91706d943fdda71f89ec4cc8dd7ebe",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/test_pacemaker_memory.py",
+      "bytes": 5020,
+      "sha256": "5942f9065bc9f99314c86b897fcca6239f2164dd3dd86f275b14469ec843e425",
+      "git_blob_sha": "d16b03d2c2477c08091b72517c0d7a4eee035c7e",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/test_sims_response.py",
+      "bytes": 10098,
+      "sha256": "32dac16363ba4e32e149647ce3ee526e1ec2731984a58ce57fccfa5c7a68f97d",
+      "git_blob_sha": "5c47844384d758c203abc2ea12b3d7688c377e15",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/test_topology.py",
+      "bytes": 10247,
+      "sha256": "e75444c9d1e438ff1fbaf0fdc61d4f4b537f74a31507f65f1126c497a4a30912",
+      "git_blob_sha": "b46ba94def5e3a5f45d4a0376d68621061aa4040",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/topology.py",
+      "bytes": 23618,
+      "sha256": "038d5b677935a4c469d16a74ebe4215ca41e284026b68c940bc61891fe3f18f9",
+      "git_blob_sha": "0a7fd61011cf3a6203166c6f8c6d663a2eda0085",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/topology_report.py",
+      "bytes": 13631,
+      "sha256": "490e79ed4b241bbc0ea369f9aea887c4b380f93f8aaed2962deee478c2da6b80",
+      "git_blob_sha": "fa2e1ce724085df92b260f62f60d1ccf90e44191",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/topology_results.json",
+      "bytes": 30019,
+      "sha256": "fc122502cf5ee0be8400bd0d805264fcda7b2a9b635e5d3ba3081851f3ebbe36",
+      "git_blob_sha": "e32fca7a38cf08f49ffa1ccd85733ac5cbab9928",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/dynamics-fractals-sims/validation.json",
+      "bytes": 5056,
+      "sha256": "cbeb7d2316c64ec1ff1fdf3a16f904cf72fa02d18d00d1d8a3156e9c5aa3c6bc",
+      "git_blob_sha": "92d42501a01626b77779de9e0b52e92e1bc43a1c",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/README.md",
+      "bytes": 6231,
+      "sha256": "e01339ff21881ac643959059be80057729ef42d62b2107b2603f6c434326b603",
+      "git_blob_sha": "a9e1f8a2ec590405f8f00bcdc2754b120f5b262f",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/.gitattributes",
+      "bytes": 9,
+      "sha256": "8b9c3028d6467ff3be7c793141927841d70f47f52d0590677438f488ca154992",
+      "git_blob_sha": "625449502ba4b4d7c229c6ccee42e3ec41cc780c",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/README.md",
+      "bytes": 5792,
+      "sha256": "003b30ff845b36a05248ee011f7a6186aa4a2c0138eeb3ab8a135007c1967cc3",
+      "git_blob_sha": "23765d7df4b0edd726e7db30ad96256f7c73e952",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/figures/capacitance.png",
+      "bytes": 104053,
+      "sha256": "0249b20e469878088eaaee63b9382f7d72372d503ff622e5e6e8ee91962cfefe",
+      "git_blob_sha": "033d2e274e592ced427fe82cece282f67657e868",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/figures/capacitance.svg",
+      "bytes": 70924,
+      "sha256": "588deba8fc8ecc3c6e744b5929deb72fa18cba90386ce5469724517efc9d8b36",
+      "git_blob_sha": "2d6539964483bfc9e51e7560b3503c69207c586b",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/figures/fluid_confirmation.png",
+      "bytes": 115252,
+      "sha256": "233d06c0f01dbd5706c4610e997997f3ad83a00eae876fa9087af3ecc697aa2e",
+      "git_blob_sha": "92919d6f2ecd84ecfa4987ad78acc4349e7ea16e",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/figures/fluid_confirmation.svg",
+      "bytes": 85329,
+      "sha256": "73dcc6b19c283415fadee188155fab77d5f08975930329ad36e15b6adb2315c1",
+      "git_blob_sha": "2520789b68688ece10e3eb136b229525cded6f03",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/figures/held_out_prediction.png",
+      "bytes": 78418,
+      "sha256": "25ac07ae44904407c082ee7790258366ca66b4d674ed23b163c7441fc6a22e3c",
+      "git_blob_sha": "724c2abb465e10acd84869eeef6f6f3725a796fb",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/figures/held_out_prediction.svg",
+      "bytes": 55728,
+      "sha256": "af32e0363a766a228eb51b136fde11866d31b127be302140cc6e232fa1352d23",
+      "git_blob_sha": "63edfe913be042b60fd092b0ec7295d6bde3f8bd",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/figures/noise_mismatch.png",
+      "bytes": 114959,
+      "sha256": "71127a568e54893b924c581af77de771ff35627adbc0ad212b6f2b24e0285f26",
+      "git_blob_sha": "a483b2dd3ccb181dd8cd6c71d3be4bc7e9a399b2",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/figures/noise_mismatch.svg",
+      "bytes": 78144,
+      "sha256": "582896308cd412ddc0ebd9c1f8f42a18a4c4644a7df079a4e3d63ba2aac5f8ed",
+      "git_blob_sha": "0f71a8bc7b90b5f4fab0c7e0828cf9bbc6582812",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/figures/ramps.png",
+      "bytes": 137718,
+      "sha256": "03f6844fd8ab30c2a860fcbd50beb683b56a985fcbf528607e58966cd49dbc4f",
+      "git_blob_sha": "74ba783fd3496a17fdbcf4cbc0100802674f9a9b",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/figures/ramps.svg",
+      "bytes": 74577,
+      "sha256": "73a0b63bfc16f7ca98a6934de080df918d600b43566ec09312fd5ae366c69ec4",
+      "git_blob_sha": "01046a74896494749e3f1c51521df8458ca5407a",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/figures/whole_cycles.png",
+      "bytes": 176890,
+      "sha256": "430aab024f6289ee4a023905eb0a04a153b2e286defe6eeaba020de42a094caf",
+      "git_blob_sha": "884b2868616d7d9fd48986f2966d99d84ee687a0",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/figures/whole_cycles.svg",
+      "bytes": 90572,
+      "sha256": "c914a3c2c07878506197d5f6876d01caa7b135d8e8aa821f6c9f9aad7f93109f",
+      "git_blob_sha": "3b400dc88a6c6f72863508a26f255f4972b861e8",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/fluid_confirmation_protocol.json",
+      "bytes": 2356,
+      "sha256": "856596f9c407f16cbf34cc4c1dbfc82148d14d4ac0372dd026da6abb99d605e4",
+      "git_blob_sha": "330e2a39eba9eeb35e48ab4a3200a06a580d30b3",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/manifest.json",
+      "bytes": 63994,
+      "sha256": "3ac01d9e6478d3011437a88e7cfb4114e447280ea9a2db9ffd50538fbe6d26cd",
+      "git_blob_sha": "2229024deba298c68e17f7bda97cd3065c7ec29f",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/protocol.json",
+      "bytes": 3070,
+      "sha256": "2c5fae7fbc1562a99334fffc963d16e1fb23a4bc1124c23ac1b9813e7bea0150",
+      "git_blob_sha": "d1561da79f2d7c64dd9a7ab1d957cde2f97a6514",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/provenance.json",
+      "bytes": 6185,
+      "sha256": "93046e3b3d18e35893ba9261a5be88ba63d2cadafde830dab86197786fe335c5",
+      "git_blob_sha": "4f23af84aef8dd91368cea0f480ad9248bd50b4c",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/report.html",
+      "bytes": 20990,
+      "sha256": "d57a35863aba0f4746b8c228eef38c1684e57531004b5e085021882b837ab859",
+      "git_blob_sha": "fede8a4b36d642f422638dbf8b3f8c5f16add1f5",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/requirements.txt",
+      "bytes": 68,
+      "sha256": "227ed6828111a8d7f7536e859fa6eec40e91660e30f1d69f4902f3ea9a930044",
+      "git_blob_sha": "cde368038130a4e89f97f4777b13d77b29996d61",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/results/capacitance.csv",
+      "bytes": 6035,
+      "sha256": "67529ac5914ff60ebed86d53499afc293887ea8f5ff8ea861adae2818b654d38",
+      "git_blob_sha": "bc1086e09cfaf7994e98d9cffaf614108da8af8d",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/results/capacitance.json",
+      "bytes": 17630,
+      "sha256": "f01bc6fdc13cf9f1f62e1b7531528914fbee85f356d41278036921c7ded7db31",
+      "git_blob_sha": "ecfb14f8823a06a13cd9b0861fcd5deab1093823",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/results/circuit_prediction.json",
+      "bytes": 3778,
+      "sha256": "ccc940aaeea5e45c50157fbbab790ee2c85e1a42ab1e491ecc2625df9593f57c",
+      "git_blob_sha": "c96096bf89cc16fc13b576c611f5a57a0025145b",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/results/fluid_confirmation.csv",
+      "bytes": 15052,
+      "sha256": "285a5a804f2f8d454823cb37ff4e2d81f8a4d604a255c50eaabff782bbbf9e32",
+      "git_blob_sha": "182241e851cb7660ef16473240ab998ed6d26bfd",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/results/fluid_confirmation.json",
+      "bytes": 3738,
+      "sha256": "e09e1633e6da5254ca99ff563bb8e3f5e2cad31aabddca0d5489a5386c583064",
+      "git_blob_sha": "c8ea60b0a84353bbd2f3b651418e6f11293b8d7c",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/results/fluid_prediction.json",
+      "bytes": 3948,
+      "sha256": "2a617efe3dd17096bcb5a068ed62effff0158e3478cc9a7d7a32118cb553f50f",
+      "git_blob_sha": "9663eae13cd054d58748d469ecb6a468092b10ee",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/results/fluid_runs.csv",
+      "bytes": 844,
+      "sha256": "824318e28e802faf98d95d28fa28796492e5ebd0c8cf85de9325ac8c15fbc33b",
+      "git_blob_sha": "645cc30dd72c4a0e05e06c30983f9b4894e112c7",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/results/long_cycles.csv",
+      "bytes": 3591,
+      "sha256": "8582684aeac88704f680638d347a77f2e57a4a0b806c7bbc2b2f0e5510929621",
+      "git_blob_sha": "0eef1c1af7a8f59611e88af44893db76befbd3bf",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/results/long_cycles.json",
+      "bytes": 10247,
+      "sha256": "15a8707eb3f4268731771d6cdefab3ad09588e0eba6faf241f8c3d843b11a701",
+      "git_blob_sha": "c36735f0f4285fee86b7ca48069f2653d882f76a",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/results/noise.csv",
+      "bytes": 1905,
+      "sha256": "b3685f6ad9ed5bc5be54ac9d0bb9e7959f2fec17594020c1aa985322abda9a30",
+      "git_blob_sha": "a319c2df877b7ad0ee8bcca77b5dbf30cad6db6f",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/results/noise.json",
+      "bytes": 6143,
+      "sha256": "0d4ca1e0a13b45ca510fcb264cbcc17e1095304eb3a80a5171460dc5b2e37d70",
+      "git_blob_sha": "c9614a02e2b835511f73a1b84934cde811b1e59e",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/results/ramps.csv",
+      "bytes": 502,
+      "sha256": "eeb92cd453e15bbf37f8fb5eb700496c74730198ed4df8345a4f0b63802cfb99",
+      "git_blob_sha": "1e8b27d3d02398129e26145ba518fbc38625a52d",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/results/ramps.json",
+      "bytes": 1537,
+      "sha256": "e7405fdda20c550fd69c98f3791911c49d1e6b5b09d6709a319ad976a5e17b06",
+      "git_blob_sha": "bd509af65be8eb2e4281d6c7d07cdaf80854f368",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/results/ramps_refined.csv",
+      "bytes": 553,
+      "sha256": "9e7526f58977bbbd39823a9ffb4798dad03b070d6e06e14e296152e3040b009d",
+      "git_blob_sha": "19668ffed2c204c2b34aa74d2ee35f36f3202b0d",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/results/ramps_refined.json",
+      "bytes": 1500,
+      "sha256": "853ff6404c2060dcb800aa5bac3a35c55c8711a0b49bb3083599667a79e300c2",
+      "git_blob_sha": "00a93141fb6c60e2aa8fd593a4fdaec68306832c",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/results/summary.json",
+      "bytes": 6963,
+      "sha256": "b0ee900f5240b85e5f0ccc26d0b7c76d634ead9669de0775f21a05090e7f91b4",
+      "git_blob_sha": "4d888d9e48e122ddb1dda6ba09f017446fba9ff5",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/results/verification.json",
+      "bytes": 58979,
+      "sha256": "62ad41383078588f18b6b32ea2756dd86fbecf8b33b78f628eef4bc358ce149d",
+      "git_blob_sha": "241c7d7c681c13f26a33cd33ff0c004b0a2dca4e",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-followups/tests.xml",
+      "bytes": 1870,
+      "sha256": "0e5d94ab7a299548a5139d4f89f9fcb8c13db6112e4ff3e83683882d2db5661c",
+      "git_blob_sha": "4b89122e8dd72081e1be48b5cb26eaa843f7d322",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/.gitattributes",
+      "bytes": 9,
+      "sha256": "8b9c3028d6467ff3be7c793141927841d70f47f52d0590677438f488ca154992",
+      "git_blob_sha": "625449502ba4b4d7c229c6ccee42e3ec41cc780c",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/README.md",
+      "bytes": 4929,
+      "sha256": "e386e0ac9a9695193048a5757ec635eade5c93a519707b69c7f972641fe7cb59",
+      "git_blob_sha": "f3611cc96e1a381b537b91af35139363bf6809be",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/README.txt",
+      "bytes": 2755,
+      "sha256": "2a8d5d0348fed3830ce7db568e61d558f47cc78608cbb7ae8106151908cadfe5",
+      "git_blob_sha": "39bc23c07ee09d7f9ed90da4f6a017de3330c9fe",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/audit/README.txt",
+      "bytes": 1257,
+      "sha256": "64601245bf1ce5ef3435c8d3caad983f6d2d9e3ac31f33d56d999e9739ad3d3b",
+      "git_blob_sha": "48cf31f9961c7ff78fb0baf62d7e6621b0a9c54f",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/audit/initial_independent_validation.json",
+      "bytes": 13095,
+      "sha256": "8646d797ae83ec4c7afbd7b97b0cc77e5786185e6e27dc35c2538626bcb35e10",
+      "git_blob_sha": "19a2437b7e462ae0944886fad9397c6cae223ebb",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/audit/initial_protocol.json",
+      "bytes": 2176,
+      "sha256": "69a4b1e6b85791d2743c5094bbee29a7348311c4f92e2becc34f6c6f70717bfc",
+      "git_blob_sha": "98e044be84dab577bb789a851812155f03fe97be",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/audit/initial_summary.json",
+      "bytes": 4229,
+      "sha256": "a460f155aedb59259a8fc3a364e9ed148d9b0a5a82ff52514e46128269a2637b",
+      "git_blob_sha": "d41b6e3c0514013f976f5080b304a44161f53816",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/audit/initial_verification.json",
+      "bytes": 782,
+      "sha256": "fc5fea66788c36cc85b1de755dc7f8704aa54de07e86759046baa75f26fc8a51",
+      "git_blob_sha": "9336320def25c8ac29bfeedd0d4ecb6c476e55e8",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/figures/critical_window.png",
+      "bytes": 178899,
+      "sha256": "1c84acf06ac47eb9dbff9bb7e70a10364b5404e475b59d5b1169573f616a1f87",
+      "git_blob_sha": "f3d1b37228561c29f1ef82a20f95978edf3ea2bb",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/figures/critical_window.svg",
+      "bytes": 97394,
+      "sha256": "bd95755a3fd8d2f0430d3c288a4dff36fe599187cc6c98b3ba6df814c43c9a2d",
+      "git_blob_sha": "90fab7cd452b15dce9dcac72e675ccb32ec89078",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/figures/history_windows.png",
+      "bytes": 72136,
+      "sha256": "fc5a8b5802e15037182e4bc59c3e13463c2f974f3386162d2c6104e0377ccb20",
+      "git_blob_sha": "1341841e0756d4304f7e6e385e09a51412fcd93b",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/figures/history_windows.svg",
+      "bytes": 59171,
+      "sha256": "54e91e7bf6876796e17d0eae669f630450d047035e15411c5f4d93121337de52",
+      "git_blob_sha": "9a4179dd46b2193be30980e8552e93e6bb6d90b6",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/figures/precision_control.png",
+      "bytes": 107541,
+      "sha256": "c76a9e361e34f4aa7af9ad179f7a87ee9cb821299fa041fdb636c6d9a6376375",
+      "git_blob_sha": "90e23ea7dc3cc0ceb40c4afcc6f23e715b3d71a6",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/figures/precision_control.svg",
+      "bytes": 77018,
+      "sha256": "1f0201246334aa5152129ce0eb682caa2820c17579a5e80a1b674ea8dfb2ced7",
+      "git_blob_sha": "afce1cc185d341b77c093b79bb13f979b815e556",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/figures/separate_checks.png",
+      "bytes": 131453,
+      "sha256": "2d51a03b49f36a7e2489b7fbd11b6100b4b3a5b2324e512c8cf612970012cb76",
+      "git_blob_sha": "4930275202b8b492c847ea5e00a29bf9fc20fc5d",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/figures/separate_checks.svg",
+      "bytes": 101816,
+      "sha256": "59e3f2574e8496e5f5a6f020b1a7477774c0977efda6e6249b8ba0dcae0ce95d",
+      "git_blob_sha": "86aecbad970896a23c5d172cbb0da55788dacc69",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/figures/voltage_sweeps.png",
+      "bytes": 146184,
+      "sha256": "493d4cf52bf0729ec3ef771b541508cd56877f38abf3d368a8dcd2b0212722d1",
+      "git_blob_sha": "01115b5a02b21c8705cc594c1dd4cb97bb491d2b",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/figures/voltage_sweeps.svg",
+      "bytes": 85369,
+      "sha256": "2f5e23bf67ed0d471d3ae69bceb2871ccd2c1fbe7a0a6cb2cf60b94121f93095",
+      "git_blob_sha": "80c0bb8cac6857cf792578165928ba94fba15290",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/manifest.json",
+      "bytes": 11903,
+      "sha256": "58b52adb2aa8b38c4a05f5f404d3f569e8e64499ac0f89c38051239c23ae752b",
+      "git_blob_sha": "e13abcbd3efa9a96ee15a41cd3df0b7435228a47",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/protocol.json",
+      "bytes": 2606,
+      "sha256": "5be9ff740b72e6c1c6124db3ba79af0b66ffc7f1c7545fe608d100806daaad91",
+      "git_blob_sha": "6a876b694a2b8c1a2fd66136497376ae08877978",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/provenance.json",
+      "bytes": 1238,
+      "sha256": "0d32c37c5b00f64b57b01c2a6f32fbb308155d9ad2fa43263db41eb53945fe99",
+      "git_blob_sha": "5ae7a0304196f9a692edcd9bc316165f3bedadbb",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/refinement_protocol.json",
+      "bytes": 750,
+      "sha256": "e5c2c66e226cc759ed35ff293bbd40589a8824d69408286e74534bfaf8520256",
+      "git_blob_sha": "ded43ec7e3e6c3983dd68fae50171528ff38e4be",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/report.html",
+      "bytes": 19346,
+      "sha256": "e877406ebf8e459a61303bbce44e6ae5d07aabedf7478e19c5b3e4e9fbdb5e87",
+      "git_blob_sha": "4b5bd4c09de85fe7609f600ddc9b283fd28fbe7c",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/requirements-lock.txt",
+      "bytes": 60,
+      "sha256": "3db358865fdc3eff38b370e3db6b95e6676c71aacd3b29fc794226543010955a",
+      "git_blob_sha": "faa5e949436b03c3eab5513c67f7979d0a41951e",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/requirements.txt",
+      "bytes": 50,
+      "sha256": "4b739380ae0a92df990b24c265233aad4ddc8132f14a504b73c6b6c0e41a9a07",
+      "git_blob_sha": "2071785a8c59c8d89c7c443021bc97755cdecb3d",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/results/artifact_checks.json",
+      "bytes": 7409,
+      "sha256": "e17297f75d0f0f4d3af03605c352e99c4ba1c6c0d3453edc4a007a15c9be3e21",
+      "git_blob_sha": "4df7565ed29122c2e98a2d9b38a525c06971f1e8",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/results/disjoint_blocks.csv",
+      "bytes": 254445,
+      "sha256": "41108098b6e76ecf51d2203614d4c388af9883afedf692c870c5a36cfc4955a1",
+      "git_blob_sha": "3f255b2b197ea5fcb188fd7a496e494a5602ded8",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/results/final_verification.json",
+      "bytes": 519,
+      "sha256": "3d566264a136a8c31a59cdcbf471bcb60bf1746b584ce8926292ec3310f304e7",
+      "git_blob_sha": "b49d27409788a8bc5c8ea8eda36cd7ed50def19c",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/results/independent_validation.json",
+      "bytes": 13125,
+      "sha256": "070234d52e53ad812366750e654311a25000291a15e28d3c525176d1f8616fec",
+      "git_blob_sha": "34733cb89e49bdb00db870c13fbf1eab9e56277c",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/results/precision_diagnostic.csv",
+      "bytes": 1048,
+      "sha256": "f1e653c9533895ce2f96650357cff6235bf00773b7c2d05a9962345a1185653e",
+      "git_blob_sha": "09fa6a257ff3fe8c0b16f02aea9f424ad3af9fd0",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/results/primary_means.csv",
+      "bytes": 68710,
+      "sha256": "d211b351fd675a9335ef8459eb0646ba6a7920bda9c7fb09871bd2e62c8ffdb3",
+      "git_blob_sha": "c29d6124ebcfe6da692da4dedf140d4c448c00db",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/results/primary_voltages.csv",
+      "bytes": 749208,
+      "sha256": "921377ca3651e8ea876f9010b5c79a3be2859b2dd11bec6de879c5e83d7a4d57",
+      "git_blob_sha": "1f528fe2ed629930f83cbdfb322a79a88ebbc5f6",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/results/reference_disjoint_blocks.csv",
+      "bytes": 258341,
+      "sha256": "1b690be37897b149c0ec28dcbc805a6e87f26f9f440bbad7a39066ec53421384",
+      "git_blob_sha": "94f082e48d82e0701be9dbe2e63010ae9c0b70ef",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/results/reference_means.csv",
+      "bytes": 24157,
+      "sha256": "4ae76f4bbb4ec9a28b7b25d580bff5171c1551b31e3bdcd107b00822134fed4f",
+      "git_blob_sha": "8512cb42b2f5129600ea33c75f803276fe7d2a54",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/results/reference_regimes.csv",
+      "bytes": 1226,
+      "sha256": "db69352a5e58c3a09c6202a238b7cf6e5a36aa51975264fa28d253c368204360",
+      "git_blob_sha": "c6db00d7b21f3161ce5635899ec20ee80007382f",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/results/reference_summary.json",
+      "bytes": 3976,
+      "sha256": "a1b493795e0adf4eb16e296a0ba874922d5638f249c53ad2053d07c79037da3b",
+      "git_blob_sha": "b93dc0e1f8b30aed19a133d1fcb48550c55b4d5b",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/results/reference_voltages.csv",
+      "bytes": 296227,
+      "sha256": "a049dc54f49521b1cf5cc1f56c2a53bfe9c511490aebea5d0aa4615437ec8631",
+      "git_blob_sha": "3c3ae41d18027e753f32df78d694d2951d148e41",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/results/reference_windows.csv",
+      "bytes": 400479,
+      "sha256": "35376fc2e11fb49efd3d59f44d3668e4e13da6b63178cb9e5b6088da19d1d8ee",
+      "git_blob_sha": "54c98c5280ad6cd65ff73e2a68581b6a081471fa",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/results/refinement.json",
+      "bytes": 1061,
+      "sha256": "0e4e14b18baadcdfb060b29d5b079a136ac28a4e86ce2d3b849585d92fc99783",
+      "git_blob_sha": "63f2644a3c3e4e9310fd3893761564e9e291b4bc",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/results/regime_summary.csv",
+      "bytes": 1310,
+      "sha256": "9a680ae59dbde9b3bcd4362d9e856a391d3cdf63404207ea8d955a82933af66d",
+      "git_blob_sha": "5d403b38ee0064e9d3573e4d75f65da5f35b8bb0",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/results/summary.json",
+      "bytes": 4228,
+      "sha256": "630bb7c00f42cd813ddd53d4831011acf2d4672852fbd2a7b8549669d35ec008",
+      "git_blob_sha": "a66acef3c922299ad98cafae8c3f05e28525210a",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/results/verification.json",
+      "bytes": 783,
+      "sha256": "f249521d3976080184869c067ba4d244cbaaeff6145283d88009c775415cc3ad",
+      "git_blob_sha": "5fde7730248afe3ad10dbd019567517486c93a3d",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/results/window_voltages.csv",
+      "bytes": 400888,
+      "sha256": "780086e3d198f01ada7d21a5ad178e4c2a50045f6a67d7c5f1df03dc1245506e",
+      "git_blob_sha": "21383c076103f03d0cc0029e995262144eec742e",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/josephson-sweep/tests.xml",
+      "bytes": 2341,
+      "sha256": "ddb9dde89eea58d39afbb17f530a229629c27395cd903237f9312d93fb8bf7e5",
+      "git_blob_sha": "dc4e709da6d521d0560c7c783e2cacc4f998d94c",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/.gitattributes",
+      "bytes": 9,
+      "sha256": "8b9c3028d6467ff3be7c793141927841d70f47f52d0590677438f488ca154992",
+      "git_blob_sha": "625449502ba4b4d7c229c6ccee42e3ec41cc780c",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/README.md",
+      "bytes": 3866,
+      "sha256": "3e81a8272e8f726f0b2242dbf8327cb4a4d677c6fb52a831eee4314ccab421a0",
+      "git_blob_sha": "8484d1afb1792415388d8f09899c6cd5db867a2e",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/README.txt",
+      "bytes": 2523,
+      "sha256": "b7e30417ca12137b858234ec8f9abcdddae5b77d4c421e60a9bcbe79c0af0d0f",
+      "git_blob_sha": "5ba8242726df6790031a05c916478afcaba69e24",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/figures/history_and_coupling.png",
+      "bytes": 93429,
+      "sha256": "432cea85defcd52c20ce5c6067060000a3391d1fc7192539bce16c778bc2da3d",
+      "git_blob_sha": "af4b3d403e2503cd5d429acfcb01305c05dd0c9b",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/figures/history_and_coupling.svg",
+      "bytes": 31509,
+      "sha256": "64d5e6f7bfe4226100e81ab406af5a271c223096f3202249d789f6f568d9d51a",
+      "git_blob_sha": "abd00e9fb1d066b1f25c965c1533bf75838a07d1",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/figures/network_cycle.png",
+      "bytes": 226335,
+      "sha256": "4c08a6d61189a1f360d13a4a9346ff3711b993f678d3276f0cdf5db31b9b102b",
+      "git_blob_sha": "c62a9e183a9aa4a06b962999256e0860af3f626d",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/figures/network_cycle.svg",
+      "bytes": 44876,
+      "sha256": "3e3e19228035880d9958e2252b34436308e548075f045f1c5c221f8e979a6a7e",
+      "git_blob_sha": "ceb99fbdab55d802b3d80273094519a502c9b17f",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/figures/network_learning.png",
+      "bytes": 114424,
+      "sha256": "c90d260879cc05c32e113d3b3878662fa99642b2c92c01024d3a592945412bd7",
+      "git_blob_sha": "e16e39224610ed67cf55450bdd36240adeb2f7f2",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/figures/network_learning.svg",
+      "bytes": 38099,
+      "sha256": "bf3ff0f47f5cc8ca1d7b144c6e135bef31f5a2bb09ce2b15b502ce33b8646a75",
+      "git_blob_sha": "7f34a01f1f0629aeff9335dcdb942cc2c740e38c",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/figures/recovery.png",
+      "bytes": 167010,
+      "sha256": "c46ba9e4fb74f0c21aa0340fca5b179c5a0c0e553313d9af7c2cb78a047ca743",
+      "git_blob_sha": "60f4c98553a5d033e668157ac8830d8a0c9d2daf",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/figures/recovery.svg",
+      "bytes": 62531,
+      "sha256": "5a5c32870fa6f4c6602a2b77c27c53fab5e76a773e770f4d70e5dacfb3127821",
+      "git_blob_sha": "7de91aa85b58cccbefb2668377aef58fbaf13028",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/figures/recovery_prediction.png",
+      "bytes": 72931,
+      "sha256": "c4f4c3ab941041ed2f898756a475e54886514be68400e2ab1aba4dccbdd66853",
+      "git_blob_sha": "c7ab030a315264a9dffbac1d884aa8b4100353b7",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/figures/recovery_prediction.svg",
+      "bytes": 20567,
+      "sha256": "bb5f270b3c56b678afbfa92f1f716216bf61e6e06aa13142ce65333082b2422d",
+      "git_blob_sha": "6651c3db9a8f7de539cea665679b191009a27c01",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/figures/recurrence_and_validation.png",
+      "bytes": 131874,
+      "sha256": "ddde49eb6009955be4629aabcc01ec8c7d392c8f6d764093848565c87b4b5567",
+      "git_blob_sha": "1f8489b651227b5b780d42b315493f72896f840e",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/figures/recurrence_and_validation.svg",
+      "bytes": 37098,
+      "sha256": "cb65bf9b9a39d7042c5e263a18630324f21b51f2a3f2238b5eacccde5f130f76",
+      "git_blob_sha": "ea6eddb0980cc9d48bb0d6fe1c7fd04e36461288",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/manifest.json",
+      "bytes": 39586,
+      "sha256": "9c062145f28472943ff92d32ad30b685f328f0e0ebd6b314c4fb3f23133e8057",
+      "git_blob_sha": "086e4dad5d53e21e3445ea027f4058122f02667a",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/protocol.json",
+      "bytes": 2392,
+      "sha256": "8e9b6c0f998801711df38dfe97c1572fd51d9f30535fd2b712775dcf60e38aa4",
+      "git_blob_sha": "e8f072efef609223533d409bc5303bf994e52b65",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/report.html",
+      "bytes": 18636,
+      "sha256": "f26fbdf71ebfb27de398a8b895a66cf7af7a02e78b17e4dfd085f1adf256fa41",
+      "git_blob_sha": "e195dde28582ae54032bbdaa34b6d9760ea40b6f",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/requirements-lock.txt",
+      "bytes": 86,
+      "sha256": "5ee45f93ed6436cbc328aae7f961673547be8b90a46fc2b145e28fed8c968a3b",
+      "git_blob_sha": "b7438746fa2342a2074afa0132f9312849b6f1ce",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/requirements.txt",
+      "bytes": 71,
+      "sha256": "4aa57b5353334621703b414d87cd212ae9ba7bcd35f2df5f0cda5c3b0487a5a9",
+      "git_blob_sha": "f2b7513278e0046d11bd8aa1c66146188e96bd29",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/results/learned_network_parameters.json",
+      "bytes": 1489,
+      "sha256": "8a6e66addd00cacabdab16f371113d7f6eed918c2964f5ef4ce20898b2294b2c",
+      "git_blob_sha": "8fa5e3b31a8bf2373e0b64db1013e6229cf213e2",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/results/network_events.csv",
+      "bytes": 43659,
+      "sha256": "505fb0c9a816ad7b5ca09d3acddc4d70332d17cc4aa83a3bbb04f431bf1c0cba",
+      "git_blob_sha": "24649ee57228c8252ed8994784289711284bb881",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/results/network_forecast.json",
+      "bytes": 6061,
+      "sha256": "d6c662cf242de2b7653d0b60e891b8bfc10e7a10d4749e2b3d164db779fcf110",
+      "git_blob_sha": "4cd3cda8abfcf0d2c745ce6b4d07425a4a36ec31",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/results/network_history_prediction.json",
+      "bytes": 5207,
+      "sha256": "66810c375825e06c2d24528f64603ed26a3684ecd5e85c346a4328928d41ec45",
+      "git_blob_sha": "e9443a059772a9ba5db4aea3b4cebc84de1a675f",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/results/network_regimes.csv",
+      "bytes": 11860,
+      "sha256": "dd91ab93bfd3570c8f9f2514fa262d06062841add6d4f081dcd39cf9dc859861",
+      "git_blob_sha": "06de5b78ba3b85756ccf2d3abfca5ceef898e89d",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/results/network_validation.json",
+      "bytes": 2830,
+      "sha256": "8561e3e5409c86d16052e1be881d8d08355a564d251424543a8fb86eb0c82ff5",
+      "git_blob_sha": "81ef3b115dfdf12e50501ee6c5ab3cdd28c42151",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/results/recovery_prediction.json",
+      "bytes": 4897,
+      "sha256": "6965452b25cd10817b304d3ac1a1f7246d91dc85144676d03ef48a1326f1f660",
+      "git_blob_sha": "501dbe3d9ab5d3c69c1baea59c0cf86d5e5aaae6",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/results/recovery_runs.csv",
+      "bytes": 11740,
+      "sha256": "cea60224d60a60f198c8e975e325a678e5e1267c8b59eeee39bcc1e83666b1ad",
+      "git_blob_sha": "63aa29ea5b54853d2f73c9d3c0a60967f5af8556",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/results/recovery_summary.json",
+      "bytes": 7724,
+      "sha256": "d2bc60e2f73027e48428eb1952b61c8dc26f2858339c2afc8caceda6e0e3641d",
+      "git_blob_sha": "5f4d34796a40734e2e69f7d94b8c903e41695eea",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/results/recurrence.json",
+      "bytes": 11261,
+      "sha256": "2c7cbc6062ea5adb8c821d56da8bc375f4eff48a5f9ed819a0493cc6ce81f330",
+      "git_blob_sha": "f76290f5d23935459b49d278a2ac9096a0e0e358",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/results/tests.xml",
+      "bytes": 2074,
+      "sha256": "24a4be90a939276fe6a337cf677c6113ec50e4c67728b3d36792dbe6d1528b71",
+      "git_blob_sha": "ba34cba266d4a254af7db5df93020f82f2a909fd",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/recovery-network/results/verification.json",
+      "bytes": 5166,
+      "sha256": "5f099ce941a0b1e2b16acd97d7b79d4be11b9b7c70a5fddce514b41aa7a7a8d9",
+      "git_blob_sha": "3f5f656962b16823615e36fe4f66358d1e12e26c",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/network_reference_addendum.html",
+      "bytes": 14912,
+      "sha256": "90fe34d2d4b623cd41863958311014a798e221566727ed518b809473aea1e8e4",
+      "git_blob_sha": "9b4e36ad21d8dd7f4d025c8df772e0d0026eab35",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/phase_locking_reference.png",
+      "bytes": 97769,
+      "sha256": "96383d5a0ad1a8e38355f816ed7c2e0ffde9af65b0ffb92fe28af5bdedb60705",
+      "git_blob_sha": "22436209b7ec5ae0e2d017e6e8063ddfbc18324c",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/protocol.json",
+      "bytes": 2310,
+      "sha256": "ecb86199b8d8a424df1529b9402c08378e5714fcb2ef2f8115a384582821cb2d",
+      "git_blob_sha": "b806363d0c899971abc8f5e2da9daa23ebdd8678",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/protocol_addendum.json",
+      "bytes": 2485,
+      "sha256": "a8811e405215abd2b4863265fc6be42f9ee5685b73ac5218e56fe1368237c701",
+      "git_blob_sha": "ee6bb62a052674ed97c796137546552398a88582",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/publication.json",
+      "bytes": 538,
+      "sha256": "0e9f03245cf5a11421d477b4113dc01e7398160961aa30753594244cf697a09c",
+      "git_blob_sha": "7944ae2d75325ef5aa5471e8df658f1e189f1a29",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/published_files.json",
+      "bytes": 51240,
+      "sha256": "c75c653dee4cb9f4f3534d227a5685bb161b49d460d4974be66ae336ec8b3590",
+      "git_blob_sha": "f9afb3ec2f048c7d7ece8a63e8217efd294cb02c",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/references/codex-clipboard-0832323a-bb13-4cdf-9c2d-5fedb9d9d689.png",
+      "bytes": 79272,
+      "sha256": "b30d7c8e5c29b2f5154664e3b3a3a1542ed9ba1f1fbb04bb3e9bd921a4dd4262",
+      "git_blob_sha": "6f6a174a0830af8bd8b6ad48d51d6a67ed34accf",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/references/codex-clipboard-1b035f47-a5a5-4c89-b62f-f8ee0e3a49fb.png",
+      "bytes": 26654,
+      "sha256": "2cec6cba4de9acd0cf6fccad66cc90de960f84977fc97578fcc6189d540e25a7",
+      "git_blob_sha": "a99f8d8116f41c315ed4aa32f293124250d8e05a",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/references/codex-clipboard-3c34bc32-b068-4afe-9b69-6886c754bc39.png",
+      "bytes": 11600,
+      "sha256": "ab25abe13c36895188877e7f0b4df7d4194ed1f6e9a606c966237799dce0c5c7",
+      "git_blob_sha": "9672abdd2f34bb216695624af8de630e01dccc87",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/references/codex-clipboard-6b32b21a-5c89-41d8-8c24-3209b41c0bfd.png",
+      "bytes": 32678,
+      "sha256": "23809f5c84e331bc4277b839f562e2cad8de98f722620e67888fdc25f5ab3f00",
+      "git_blob_sha": "28c4658932b1d6a4740889f7655acbf325bf2673",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/references/codex-clipboard-70fe52e5-13aa-433e-99bd-34e61e535416.png",
+      "bytes": 113904,
+      "sha256": "fdd581a353539ec47466e4fe83197dc3d9f47c9804325f5fbf6455373ebac840",
+      "git_blob_sha": "dc8dfc2cd4a27d43f3746476c6693c2118268977",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/references/codex-clipboard-924b3953-78ea-4911-8beb-98767651764a.png",
+      "bytes": 36060,
+      "sha256": "ff5ed91a258eee51a5f5e04096b03ea8882f8b9e471760877fd93fa7969ba2fc",
+      "git_blob_sha": "b92d44ca4ba779862b563f2760618ce8bf34962a",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/references/codex-clipboard-b67a9691-edf7-4b9a-9c78-0c295f8acd6d.png",
+      "bytes": 34316,
+      "sha256": "5ecc4320b7139d7d226738484699d7f575613a92ebfb2faf2c711554d75cf1dd",
+      "git_blob_sha": "09dcdf0b6100c747bde7973284357d535cc40926",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/references/codex-clipboard-e07ce763-4b61-4c10-b4e8-9e7ec3176db1.png",
+      "bytes": 11477,
+      "sha256": "e74a5ce6c80aa594da8dbf476eccddd669cef7241f92b1aaaa3e2636b96639dc",
+      "git_blob_sha": "15f9798187b031d8d4ae2810ef10d68903cc45d0",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/references/heteroclinic_definition_reference.png",
+      "bytes": 94641,
+      "sha256": "aa42bb85782d5a01fcf6f54cae0ced60f1e1ee1e895f82dc746b5751a45e5f8e",
+      "git_blob_sha": "4e6bfbf53a8fc17219fc2cf0fd003e2a23413e3e",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/references/heteroclinic_network_reference.png",
+      "bytes": 133015,
+      "sha256": "c45cf4174c099113343276d50a18ce7db7ee632cdcf14d1767dcd9407f7f4022",
+      "git_blob_sha": "453c061e29f66fe7819d6a4a924b92014ca2aa08",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/references/local_bifurcation_reference.png",
+      "bytes": 64142,
+      "sha256": "e97a0859be5e6a7f34e80290b498d39f5b1d269dd75cd534429e55f47629cf08",
+      "git_blob_sha": "f2c2bbb22e643d7189803d7b696738ba544b3b42",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/references/oscillator_network_reference.png",
+      "bytes": 11518,
+      "sha256": "84373774bf7b2262c2d225b274a5335ac07d4b380f4df12df81eab546d56b407",
+      "git_blob_sha": "b026420324f52957f7daed9f775d7947c0d66166",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/references/parametric_reference.png",
+      "bytes": 108336,
+      "sha256": "855cc33758764f6183c1f5ab6599cf72a978c45cad52076cd43b7520a297bd11",
+      "git_blob_sha": "7966c3aec87e8fef224a7afa77ba6c29925ad8e3",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/references/pendulum_reference.png",
+      "bytes": 25418,
+      "sha256": "1dbb740955f6f00321b0df85815f55f1d4cbaf461bf9fc508b55774153163999",
+      "git_blob_sha": "aef0b8c5211766b6dad4ed300592116e36dbe070",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/references/quench_relaxation_reference.png",
+      "bytes": 75345,
+      "sha256": "ee5135d40af5429b7e68e21eb6e45d58077764fe33c3cc91de3dfd44fd6aec23",
+      "git_blob_sha": "f0c7542ccbab88b3844ef8fdf75b84976c0c6736",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/references/relaxation_reference.png",
+      "bytes": 93261,
+      "sha256": "d3c85e84cd2cdab87660497006fb510432a7777ae4b398f93ed7e53d655f6a8b",
+      "git_blob_sha": "a1ab86ebd99057fc15670baa9fa65c18b25df1e6",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/references/saddle_node_reference.png",
+      "bytes": 91769,
+      "sha256": "237607b4a70e0bcd1f09903ec09b2f156cc7f89e6b38727cfc7dc35334d39ec9",
+      "git_blob_sha": "40d92bcd699467ae25d1d1409fdd09fd442680ab",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/references/sequential_learning_reference.png",
+      "bytes": 110273,
+      "sha256": "cfff3ea1906500d8aa4cc5c9fcacd7bb4895951066abb307c6cb7dba414bf5fd",
+      "git_blob_sha": "f117afa3f763d72df0948b1fc36800824aa61039",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/references/weak_nonlinear_reference.png",
+      "bytes": 64366,
+      "sha256": "210b0a3301e034392418cc174b89f4b50616c2e99f4b4e1d95a1030a0ed16de0",
+      "git_blob_sha": "3d0acfdb983abeeff8387d3bca3ea7ee4ab9a483",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/report.html",
+      "bytes": 4133765,
+      "sha256": "338611ac2e51901d035fab057884d52b5562583c092eb9e1335977103f66728b",
+      "git_blob_sha": "d2d5c9b0d66205c725e21c34944cf4d3435efbb4",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/all_runs.csv",
+      "bytes": 40001,
+      "sha256": "d4420863b6358680eb15bca11d04e348fc976f7171ec8575cc45e3dd515c4db0",
+      "git_blob_sha": "883f753dab2942e778878b529a6eaa0d72c77133",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/bifurcations.json",
+      "bytes": 2405,
+      "sha256": "ea8ef791b0349ad786a29531cc3915c23a39f98b4b7ed5c6067a2dca1b75ef54",
+      "git_blob_sha": "aabd2cb60311953635c851168984abaaad3d66fa",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/dynamics.json",
+      "bytes": 4504,
+      "sha256": "604c05525073ee29b74d694d5d3ca364b90c9d47c416c652204ede54e4cc6c1a",
+      "git_blob_sha": "e1819da8e7dc640c2e6b34d64268436a47b0a628",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/environment.json",
+      "bytes": 143,
+      "sha256": "f902a0e9a1875662f6e61f972bb7f38c0f7ea148fe73a651022771a63bc73db1",
+      "git_blob_sha": "f2d26e0d28324cc796ce438c57924b7ac1042062",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/bifurcations.png",
+      "bytes": 158038,
+      "sha256": "d2b57ff741a11be67fa38a9b476e7ae6304c18a91713073dcb8c27bf6219ff59",
+      "git_blob_sha": "83a44c74ff68db3bddafd5bd7a7c80cd384d3a62",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/bifurcations.svg",
+      "bytes": 98213,
+      "sha256": "027309a73a55f2f7b33c999c4d17ab66e1180ce7485bb6187d3d520cb64c8c2f",
+      "git_blob_sha": "82fe48a7bcb112d112189ffd3a1b1fad7eb658a6",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/disturbance_response.png",
+      "bytes": 362911,
+      "sha256": "44d77969a8a3e32e5b9218bd4fa9b2db61dd1f944e5a859cf7f9e74400571c05",
+      "git_blob_sha": "76bed7257ee98ebe6fc96798ab9c6b59b67de249",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/disturbance_response.svg",
+      "bytes": 133393,
+      "sha256": "b83b84049868c68f1d272088332523c0e44283a18c1e5af12ffaa402dac70712",
+      "git_blob_sha": "d483ee6034eef4189cd230faba526ec3d27f7a5a",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/energy_budget.png",
+      "bytes": 148182,
+      "sha256": "2557c31ad58195acbace0bd3addb5b67b880ec0bbaceccb34d58b0411cc95030",
+      "git_blob_sha": "4c62f3d753339af88c8692aef5e95594ff39556b",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/energy_budget.svg",
+      "bytes": 85950,
+      "sha256": "363031c57227475d576da088dd791159589683c4727c2ebe9d2f626af87751b2",
+      "git_blob_sha": "e19bbd5bcdeb568aa7fb07cd673b5104b0edee18",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/history_prediction.png",
+      "bytes": 102362,
+      "sha256": "c15724108219d96154b24bf52ea9cdc6848111a78791338f110db5c7374b889a",
+      "git_blob_sha": "11ab5d5cb11fdd21ca2c51a935c05efc22b8de08",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/history_prediction.svg",
+      "bytes": 77988,
+      "sha256": "de3a9ca396f55d00abe74b1da9352ec2e967c358f6d684bef278e0ff9370f224",
+      "git_blob_sha": "d8e77dddf8c93e7d0993cce2c11bd67e408c3267",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/linear_dynamics.png",
+      "bytes": 395203,
+      "sha256": "021eb362417cb6c84099b186c681c2af5176edb0926e0cbb7e2469d74fcd951b",
+      "git_blob_sha": "4985ef10467eb86538254543f8d63b8f81b023df",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/linear_dynamics.svg",
+      "bytes": 188312,
+      "sha256": "6e18cc3d2e0072bafb7ac5fdfb24d614642ffecaceac794090d2ac8d37ff2975",
+      "git_blob_sha": "857f54c13947f759dafd571798781918e5b35b4b",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/numerical_controls.png",
+      "bytes": 105439,
+      "sha256": "0e631d4c41bed849a76e716d3ded1aa010662c42c663c45fbc384e0abb88d87c",
+      "git_blob_sha": "5346f9997e9531bac4cbf904742a64945c273f6f",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/numerical_controls.svg",
+      "bytes": 86779,
+      "sha256": "414d8404e04d57b98315919368fc4608daca6cf957ecec4013b65a39eb0ae3d4",
+      "git_blob_sha": "ddcb3065db1d97422207ee4a8a02f910b0ccec90",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/parametric_swing.png",
+      "bytes": 162630,
+      "sha256": "ce9c4ae1819f932065b50a9cde0a4688748525dbc19a6beb3d5444c74b568a7e",
+      "git_blob_sha": "939a1d44eb2eb467852e346c7efd3c790ed5c4e4",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/parametric_swing.svg",
+      "bytes": 123580,
+      "sha256": "e5320e91f52d0055ebcab248f13155d0e045da986867c1f0d0f27739a5ee7d6e",
+      "git_blob_sha": "0b543553f4fb8d284284de547f63b9fc0e4b1202",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/particles.png",
+      "bytes": 193472,
+      "sha256": "e2035523af6551e3b9e0226521cabeebea4e93b0a798e61c1ce3c24d32bdcfbe",
+      "git_blob_sha": "909c4cf6490ae42add1248324d075ad6c9a4a979",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/particles.svg",
+      "bytes": 81228,
+      "sha256": "8ee7b7e6346a6ef55732485957bfa3f431194e944e137034282c2529fe1ab2cb",
+      "git_blob_sha": "e7efaa581e49b5967dfe4bc3377d15c0a612555c",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/pendulum.png",
+      "bytes": 208068,
+      "sha256": "e3edb52b8686a75b6b845d3b8686efab85466e8855366a822ade3c55e3f7283d",
+      "git_blob_sha": "b0749db46fb23263b74aa10bc31cc7e5e64ce4a8",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/pendulum.svg",
+      "bytes": 145083,
+      "sha256": "926b41c44f1d1191f9931d3a5946e49d131355374d4bec0be25d9964da20c189",
+      "git_blob_sha": "eb05ff703aa29e511de44a35d862d7845c5b812d",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/phase_locking.png",
+      "bytes": 288081,
+      "sha256": "d2c05e92a44b61b6f6e2c94286c8c32f80ad2d353eade9cba151e76a9d2952ba",
+      "git_blob_sha": "0a1451fb87a7e5b1a042c76c9d143d7d1351173a",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/phase_locking.svg",
+      "bytes": 137062,
+      "sha256": "78294a6a34ad60fd4f9136b9d9f6479bb919d0eb676eb9b44c5cf69cc4c7d9b9",
+      "git_blob_sha": "ac58c7838b0e3692b30dda3824e581becc90c7d5",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/phase_portraits.png",
+      "bytes": 238338,
+      "sha256": "8d00e4c419cce7c021a3bb5d2cb8752b31b753c79f9ce0bb02cc4e7aed0391f6",
+      "git_blob_sha": "40c3e8de6eeb9f7d53619c9c512228e48d8a527f",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/phase_portraits.svg",
+      "bytes": 258710,
+      "sha256": "ab0ae587f40a4cb12ee579c25a6cd5e6cfb3b45434f6683195c5774d44145b30",
+      "git_blob_sha": "dd7d660bee0e6e2cd58f71ac3428957cf96ced83",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/relaxation.png",
+      "bytes": 206069,
+      "sha256": "fbe7670ba07ffad933cbb6bc4fc5ba44369685646a81eb82454e7ed54803faab",
+      "git_blob_sha": "851e52f3c721aa842cbe8607ccb77f359f920890",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/relaxation.svg",
+      "bytes": 111415,
+      "sha256": "64b59fd625d524841d77f4281310f286903bd54e17c4cc7d94ea451916d34d88",
+      "git_blob_sha": "01d6fc517632d19e5809af6019ee8bba066cf55b",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/triangular_response.png",
+      "bytes": 199717,
+      "sha256": "0644134c45c8b6e85309b888dd06f81e9306129da1dbe81ee6b1005136cb2cd8",
+      "git_blob_sha": "653b234895aa2e2f515f46eeb3472b3974b141ab",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/triangular_response.svg",
+      "bytes": 96850,
+      "sha256": "5e1cd683aaad42b9f1b48f21e26b9ca3bb1d7494cc0104fc067ed10bdc666c99",
+      "git_blob_sha": "6988e4022b6dd4a5a378bf51788dfedcf8c24aef",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/weak_nonlinear.png",
+      "bytes": 292854,
+      "sha256": "11d625e5ffcbfa685d3204519c2609c40c7a1f3307c2396e2529f59c765421f9",
+      "git_blob_sha": "5b5a77ceeada4f96ff9abded1e4eb3e96d29c01b",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/figures/weak_nonlinear.svg",
+      "bytes": 227961,
+      "sha256": "afb776c656e9ee4fcf6be7dbd422e4fc18587c834160df62dbf6cceb78b566a1",
+      "git_blob_sha": "b70f971a093b726a1b7fa7b9c9ecd575128dbf7b",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/numerical_controls.csv",
+      "bytes": 1973,
+      "sha256": "3bd6f4c5f87d0b51c3d8b454f2c06ba4cba24791153d61401e04bd52286ff0ee",
+      "git_blob_sha": "542c447b517ce2ddf8d8c246508057635da07206",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/parameter_regimes.csv",
+      "bytes": 5912,
+      "sha256": "3bd968c4fac0284ea99fe1bf5024e213af8f35e8169df41da5e39be7e0ea39b0",
+      "git_blob_sha": "4c1ec3b99239841cce92d1954aad8f7497ad9718",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/parametric.json",
+      "bytes": 4021,
+      "sha256": "89ee534010cc4f131cb72d5a48235d72e5393d6c2bc00933d364ac4ac01c8a15",
+      "git_blob_sha": "bf463a0ac158b2a786a86b18890cdb67fa6a1356",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/particle_controls.csv",
+      "bytes": 225,
+      "sha256": "4b0b99ffb9a7b1cf16b96ae8d903844cb66e9b5ae9d2555b710dd5a8e0084e84",
+      "git_blob_sha": "4fcaf814eed65615a8e59946cdb705531ecae2ec",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/particle_results.csv",
+      "bytes": 19230,
+      "sha256": "352467068b96fd96d4ae02280558f71bbd57d02ee82c2bcac867df7f3fa86b80",
+      "git_blob_sha": "7a825bd35e027d29797d0f9c29ca23c2dbe64637",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/pendulum.json",
+      "bytes": 3943,
+      "sha256": "eb724383a4544d5aa08b6e3485a277968a0d8789c937afc4db804dccd8664fb3",
+      "git_blob_sha": "f09591cec782b050e32d6b2fbe464312a334707b",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/phase_locking.json",
+      "bytes": 3684,
+      "sha256": "13e91e0c023a8d29ec59aa64000d7850c34e63340890422fbfb00d914a070c97",
+      "git_blob_sha": "68e6b7db1319c77805ef8572232f6e3d94709ee0",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/prediction.json",
+      "bytes": 7429,
+      "sha256": "0bc56d02005d730c803d946c7e212d1b072a48f914fb3831a568d093ce4d18e4",
+      "git_blob_sha": "faa38eaf8a944b47227b9bb429e1a8e8aba656c5",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/prediction_sensitivity.json",
+      "bytes": 2680,
+      "sha256": "2a4a2cee9b52d64ef7a220c160f124b0a87e3582cf4584b6eae13a739f0d32bc",
+      "git_blob_sha": "0ab7798fd1140ad1e0f47748f75bbae60aeac189",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/relaxation.json",
+      "bytes": 2320,
+      "sha256": "1ecb38bf7cda68860b1368786e72a2f65cc0c44444f85a393122e4ca0013136c",
+      "git_blob_sha": "01e693c3150ffaf9c6c4c91943c8f0d62e790619",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/stress_extension.json",
+      "bytes": 674,
+      "sha256": "db77edbff664212903d92ff93bccacd291fc4f5d17e42d13e0b8955c90697f62",
+      "git_blob_sha": "8f9a16aa89ce6d7788739811d423ba8b21ab8fa1",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/tests.xml",
+      "bytes": 2772,
+      "sha256": "d1f9d3be3c2ef3c0245e759826ff4cbd85a75f3de3217f6323e081ffc9cb63ec",
+      "git_blob_sha": "04e4b658978fc50eea9bb117c1da2b35cb2c35f5",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/verification.json",
+      "bytes": 23141,
+      "sha256": "3d659cd9c5d0918d22ae348e9c2f3631a1d5e2f7df2ca19d2c3578ae8efd2868",
+      "git_blob_sha": "d34359c396144252a7635089b15cae1cbd404783",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/fluid-organization/results/weak_nonlinear.json",
+      "bytes": 1431,
+      "sha256": "4398512ced22004ca510ecb0d0b2094d79b92345cc398aa58ee75d51e49145c0",
+      "git_blob_sha": "631a5e071e3b8acf0135e90cca0532a0f9d05d5e",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/one-resisting-position/.gitignore",
+      "bytes": 14,
+      "sha256": "8aa5efb7d6e0df77f24b80fd2a9a48b4b37f79719bf85ba6bf0d2935d7eb97f7",
+      "git_blob_sha": "372c13e20e3945f5e29b472b1e744de9612b0312",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/one-resisting-position/README.md",
+      "bytes": 6636,
+      "sha256": "40df29ab6fe6f26fd967f394a884d9ff05168d3ef806cbe1a856627bd219ff2d",
+      "git_blob_sha": "d4b7b9643f42b7bd91ee9868e2e9df213a31f805",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/one-resisting-position/base_simulation.py",
+      "bytes": 11008,
+      "sha256": "40be4a2de8c9f2e84d4965ef92d67ce2242bc6a28d27589679c28f1e54c12d31",
+      "git_blob_sha": "bb06cfe3d3ff0b37fc591574a56208915d9f746b",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/one-resisting-position/experiment.py",
+      "bytes": 7394,
+      "sha256": "3117c18bc6a8c6260b75c7b6bf4cf10f5d782b58340a557c518a38a5e9048d9a",
+      "git_blob_sha": "27a449a802bcc1dfb142573a4c62874ac88eaae7",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/one-resisting-position/results.json",
+      "bytes": 3281,
+      "sha256": "032244a780e703ae34bc5ba7413c6585e8165eb4d7f8ee38064c35233598fd36",
+      "git_blob_sha": "f368bcc2160f5ed0bab8877587c256f8c1aad887",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/.gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+      "git_blob_sha": "fa1385d99a319b43c06f5309d1aae9fdd3adea46",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/.gitignore",
+      "bytes": 45,
+      "sha256": "01f8f29037f8322f5501abfd2cbba3285fd40adaec931d43e105544ee8f87ae9",
+      "git_blob_sha": "ca7c6e0a8bfd0fff55a96548d96368f6146cc182",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/README.md",
+      "bytes": 11268,
+      "sha256": "f83dd599d254513e2d5f906bcf089d82ca557707b7760fb8954660f4a5f4a885",
+      "git_blob_sha": "7fa593736f4848bdc49fee57fdfa5b6a50efaea3",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/averaging.png",
+      "bytes": 152149,
+      "sha256": "81fdc9e3f4084c29c59b78c444190583cf64e6abe638c726bcc13084b397a07d",
+      "git_blob_sha": "4c276f68102758b75d161676654c71253e630148",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/averaging.svg",
+      "bytes": 96175,
+      "sha256": "c76f55cc335639832651c14b63f770f4b224cfc72e67f4c5f1a0be584f66cc53",
+      "git_blob_sha": "36c2f54050cd442f193f4d13da219df6e993187f",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/circle.png",
+      "bytes": 101997,
+      "sha256": "ca274e79a7e1e8d9aed4d239846a38e0939d200e54202d6ac289ede432958b1c",
+      "git_blob_sha": "8e2478e82b9e9b765061c0c6e041c5c16f406455",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/circle.svg",
+      "bytes": 65355,
+      "sha256": "72df1538e9200ff69b8085ac51a4824e10b138ea12267d8e17f2a05ff8a41069",
+      "git_blob_sha": "663609827cbca8c1134032f34579762b01613fa6",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/complex_fields.png",
+      "bytes": 490182,
+      "sha256": "08ae6d42f800347aaafb315e30a84b2d473e6a693e5407f472b39bd26cbc2c6a",
+      "git_blob_sha": "b3c9097e8b0a55c3ea0399c296059b600fabef04",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/complex_fields.svg",
+      "bytes": 419694,
+      "sha256": "3dc42841aa48c3345039da67c5507082b4dbb30cb6787b4f05aa2ed30d1096f2",
+      "git_blob_sha": "675ff2e5c5706f66c692053b73d90f966b3e24b3",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/cylinder.png",
+      "bytes": 225010,
+      "sha256": "e6a58da2fe8e7cac9ed999ff457c478316a8a6fbf96b8344b0de61e47a3105df",
+      "git_blob_sha": "78582d95ee740ae8db41ebc25aad2e8164e07d55",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/cylinder.svg",
+      "bytes": 69583,
+      "sha256": "c8aa30242bda1ae795e18c4ca4cc8f6d490465649b22e3f28d313dbe0fe518b2",
+      "git_blob_sha": "1194864a298c354605a0cf5921488e9df9f087b4",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/damping.png",
+      "bytes": 107027,
+      "sha256": "1802c6e2db88ea45cce444c4f4b00a70be66fceb6927979a48af276bde76319a",
+      "git_blob_sha": "b812a888fa2adfbb7123de9e7128ab3127520c8c",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/damping.svg",
+      "bytes": 71750,
+      "sha256": "99a1991c8c4cfcc24cd8cce1afb7cb522f2613a1b237a9a48c76df90e34a4abe",
+      "git_blob_sha": "98776bae73ebd2aa51991848d2748b9b88f48ee2",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/entrainment.png",
+      "bytes": 133420,
+      "sha256": "f816b11880a3e090163a9c1ed439247d28c9eb3444f0d30a88332d195e360c9f",
+      "git_blob_sha": "d1fa2cd27bf5d8bc55ff9f4001485a3c86da7573",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/entrainment.svg",
+      "bytes": 84066,
+      "sha256": "23e6a7489eb51d1bf6dc4bf611a5e4f45a70e138b18188aef24cfca0578b6ae5",
+      "git_blob_sha": "f1dc959e65fd25c3c4591edaf132a2c7db07e30c",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/hypercycle.png",
+      "bytes": 371139,
+      "sha256": "1e0b9791a47b519cc306f3592d770b0bae60d9ba1d118e7fe8d5b2d916a7bc97",
+      "git_blob_sha": "3aa8067882dbb7bddb759cc9485c64ff5b0d540c",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/hypercycle.svg",
+      "bytes": 150442,
+      "sha256": "58b1518aff990c10043f7279674a51d22f5f92b45dafa54abcb2b50e42f4e1bf",
+      "git_blob_sha": "60711edeb07329116f492d33cff2c2855de8f575",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/index_counterexample.png",
+      "bytes": 79234,
+      "sha256": "0782a4916a81742bd019b81c7e9f14e919c62556a98b8c7825b9d92323731e74",
+      "git_blob_sha": "bb3770d07b94034fb08c65b26c755a603b8bab10",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/index_counterexample.svg",
+      "bytes": 49712,
+      "sha256": "2b165335da5f31ad8d53898742ec26ce429dfea360708b5da6d790c5b81bb7e8",
+      "git_blob_sha": "1f16686f000fe4c128cd400dc114c00bcd32d23d",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/junction.png",
+      "bytes": 98564,
+      "sha256": "967014c16c2f2228cce174a01eb491ef0fef2624d7b928a9d8034378dff3c0f4",
+      "git_blob_sha": "a010648a7b5b0f37cd577daaace589b3ebc725a4",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/junction.svg",
+      "bytes": 85379,
+      "sha256": "21e70c75cbaef33aaefdb260cfa84e0bcfcbabec348c9c7956d019a805c51895",
+      "git_blob_sha": "3da12563b79b9d6621da91ed3ffaa62fbe82042f",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/junction_numerics.png",
+      "bytes": 132106,
+      "sha256": "dd46c87200f23dd159da49bc714fc51de754eff3c034a951cd07d5a86718e9dc",
+      "git_blob_sha": "b958f21aae3d48ff69f44ed5eead383340dc52c0",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/junction_numerics.svg",
+      "bytes": 88068,
+      "sha256": "b95c4b4cbfd4bb5b5667dbc5759b6b38d19c910be4aab04304600a0610619fa5",
+      "git_blob_sha": "20b6360c0261ccf928d137decd06dbc0135dcb22",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/junction_orders.png",
+      "bytes": 199865,
+      "sha256": "4d0852abbce556eeb55c19b4f894163e9ae457613a6d06ba3bb40e1da97db696",
+      "git_blob_sha": "d6711e215dc70d64b4dc9119f538197c8c4da47a",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/junction_orders.svg",
+      "bytes": 157955,
+      "sha256": "158fa6fcd35a85ae81672d14b9fd8e1cbfcbcfeab95ebe7c7d763e2948219270",
+      "git_blob_sha": "54daf11f940885b8351cd53f36b667901da30abb",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/junction_random_orders.png",
+      "bytes": 114368,
+      "sha256": "34aba1fc22052190a078022ef17a71f5ab583b8ac2b8b98eb166f0a9c141c5fe",
+      "git_blob_sha": "5a36845aaf2a778bd41d7f0b4323cc0938fffb0a",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/junction_random_orders.svg",
+      "bytes": 80396,
+      "sha256": "7d6be3d38fe162a68f8736ee5b2ccfa66d288ff00838edb26b42280b64acf984",
+      "git_blob_sha": "78c2a0c5ac54741e8c1a468b329d876e226c63f5",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/mechanics.png",
+      "bytes": 120441,
+      "sha256": "a21ba3b6384a91550d7fc801df58e632e0bbfb8e8663ae9f4a43e23e94ddd92a",
+      "git_blob_sha": "0e6c69f0e439c9260a0fdb4142c2af40e54ffd84",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/mechanics.svg",
+      "bytes": 106455,
+      "sha256": "a899dc06119f75e94d5d349ecaa1e9ca4d3e355daaf942a3ab96c71ad95adc8f",
+      "git_blob_sha": "39f121e979b8abe70987a893153295e4bc30ef55",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/network.png",
+      "bytes": 51886,
+      "sha256": "6b935c31d8e3465ffbbe78cdca3848ceb7a123a919aaaa64c7fc2af5b9148b48",
+      "git_blob_sha": "22e114698ded05be035029b2584e6872b8ab13e9",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/network.svg",
+      "bytes": 61054,
+      "sha256": "c22189bbb4977236db781a29658426a3a5b1f2028d9954531fddfa4c20e92e12",
+      "git_blob_sha": "c4e191aefa0f5a59d1c25f761638380052450b6c",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/network_contrasts.csv",
+      "bytes": 4026,
+      "sha256": "ad33e6e51228246124245f87ee07e0b111668e7be86587e5a77ece055929e799",
+      "git_blob_sha": "138362ae1cae54053ad1e4480ab04a00001d5f91",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/network_levels.csv",
+      "bytes": 6455,
+      "sha256": "6589a677184e6f1380f535a994952dc0c5435e760a1864e55c4abc3cbfc76e1f",
+      "git_blob_sha": "881b00d6ace624b56a7e7314c6688b0832937934",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/pendulum.png",
+      "bytes": 368704,
+      "sha256": "3a1fb69fb176ff2808a29d71312ed5e54cfc7fea44f565c0c252d97db7773d53",
+      "git_blob_sha": "e4647ea21946e981551716b36c0d3add886ab899",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/pendulum.svg",
+      "bytes": 332637,
+      "sha256": "3c588a2aab95fcd6f6cd2bfb15ae8d9dc174a40a7166c452ac035835f3c97efa",
+      "git_blob_sha": "bd99b695f3b2a12800bd840d279cedd586bcf0af",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/phase_periods.csv",
+      "bytes": 3246,
+      "sha256": "d204a4a90619eb34705e1339d995cd8233c4f6a8d551d8ff3596b44d82d4e8e6",
+      "git_blob_sha": "70cb592d53b385efa7f93eb395fb7e0ec8344a2d",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/predator_prey.png",
+      "bytes": 139182,
+      "sha256": "786631480502e88f2c73f3f87347a6ed718b7ead4f4b052730de029936b71d0e",
+      "git_blob_sha": "0dbfd40ad7388865fac3ffedc135cfeb5637899d",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/predator_prey.svg",
+      "bytes": 126793,
+      "sha256": "eb61aeb83c8605291f4fdea98536e65759d31fca3a3f1f0906ad12616c6ab4c2",
+      "git_blob_sha": "69ad249b358096acf056622ca29f4a356acaa083",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/recovery.png",
+      "bytes": 279101,
+      "sha256": "0de90e18cdc0129aee8f32e85e0638e1e84f6eb9f88f8974c5f27c12677cb078",
+      "git_blob_sha": "4d1beed991b5fba64ae47953f049806fe07cc289",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/recovery.svg",
+      "bytes": 125636,
+      "sha256": "dd67926d0e50d90c18d4e2608d1d5e272cc09a1f1aa6f05dd890c2fc415239d0",
+      "git_blob_sha": "959f7b74de563c318f940daf25869619a96cf350",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/recovery_contrasts.csv",
+      "bytes": 4310,
+      "sha256": "7344efdd7c3384a6c95de3e08842b03e6382519b91858f2794c607d510c44361",
+      "git_blob_sha": "b86dbca04500c925931802fb825962cf622ca34d",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/recovery_endpoints.csv",
+      "bytes": 44724,
+      "sha256": "3f151c251b9d1b95456c54493fa3bb38508d51e7e7046204d57457b56eb2515d",
+      "git_blob_sha": "7bad2462e5d3081154c16c5bf5bdf0999546a41a",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/recovery_rates.csv",
+      "bytes": 2151,
+      "sha256": "afac9082aa9a182c8082c7e471e6335ec39e04bdfe03b27f92a39c17da3bf423",
+      "git_blob_sha": "b1815d7dcd2d4df2dae656c2393f8cb2515e6739",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/seed_contrasts.csv",
+      "bytes": 33049,
+      "sha256": "feacb883cb6fa9d4b836080ee5a392f507bfd63d79ae6f9d0d2e9851a904b804",
+      "git_blob_sha": "46c67c041ef54cd166f410e4aeb5b491a27287e1",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/summary.json",
+      "bytes": 43108,
+      "sha256": "a0f8fe71815aad278b7c19e60c1874898f6cd10c657660c85d83d44e7618c015",
+      "git_blob_sha": "47ee6ed6b8afa2c90ba24aa9b84b9ab65554d35d",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/three_group.png",
+      "bytes": 63551,
+      "sha256": "7194597455f961bf7f75169faadabb422e051c921b351723ef936b2dbf01ecea",
+      "git_blob_sha": "4624a67e291c7e5282989916fd50312ed72a2c87",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/three_group.svg",
+      "bytes": 62665,
+      "sha256": "a66cfea73dddf4421c67e97a257710514a1a7683785ccd2440ae28545db45656",
+      "git_blob_sha": "fa723f816a0bb7026a852e27a08a917c6d40224f",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/transient_memory.png",
+      "bytes": 98473,
+      "sha256": "e610d294d31cd6961bd98817881e4f492627a4a868e18af70541cc0c7a51cb96",
+      "git_blob_sha": "064d4d83877009092e6eae7c360f8bc7ce674215",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/transient_memory.svg",
+      "bytes": 84530,
+      "sha256": "bf31836d29af747b6ae2c3388ac69779aef9ba9902fb2a5e3810cbd0381001cc",
+      "git_blob_sha": "ea3261426269b73cc5c4fad46e1871c13fb175d7",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/transient_switching.png",
+      "bytes": 307758,
+      "sha256": "db42e542885924c9661f7bc8a757a2d258df17112631a82b33dc74359637c688",
+      "git_blob_sha": "952c6554bdc207da7d87baba99af870c225b50b3",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/transient_switching.svg",
+      "bytes": 144428,
+      "sha256": "4422fdd60d65074bb35c1676f472dea52cf7422bd0e0d65f3aa5382cca607c54",
+      "git_blob_sha": "fcecd75d0d04e67fe2119e10c721e9d4225de37e",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/vector_index.png",
+      "bytes": 193438,
+      "sha256": "d2ed7aab0e02a1e4de1e46dce31a1169764c0d3e599e52047ce6a1f0fe055a43",
+      "git_blob_sha": "7f0e27f152216db9065e5216b3270d6906a2f53b",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/vector_index.svg",
+      "bytes": 129092,
+      "sha256": "8a11beaeb0b6184a8a6269833ffd52201811973bdd5dbc056f6433d9bceca36f",
+      "git_blob_sha": "95c8e209cb6c58a4604b618528c201748ae74e34",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/weak_oscillators.png",
+      "bytes": 246983,
+      "sha256": "f87d9f04c7b1af69216a8ae2d435b3af3c37b9b2ebd540b780715c045de99a3a",
+      "git_blob_sha": "7468f32fc04c9fb46e8eb4670a264d9c98211d8d",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analysis/weak_oscillators.svg",
+      "bytes": 454010,
+      "sha256": "5f431f76144a21ee3bacc7ca1d0ca7a4eb7a625e5e1752c6a2faddf4878c7fe5",
+      "git_blob_sha": "4179a08d8b10d32df6c449ba3e3974f16d566f8f",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/analyze.py",
+      "bytes": 13625,
+      "sha256": "d30ae7f231260d53ae46164a49c0d800ad7423b50deef2d20c31110af47e7e90",
+      "git_blob_sha": "8f431b83396d5cf2f4042d3562abac6f0e5311e9",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/animations/check_browser.cjs",
+      "bytes": 2804,
+      "sha256": "4c234fdbd391d644574a845ae5dc2e67108cd5c1ecc2d02943c5403d48b918ee",
+      "git_blob_sha": "e4a94c7daa5a4343795b9cdb8b376934a9a1e751",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/animations/check_models.cjs",
+      "bytes": 6505,
+      "sha256": "20f42d3f7ad530a07260bc789e024aea9e66e5204e3838ae3bedec5aaf1a32a9",
+      "git_blob_sha": "a21c514028480138fef62d963788a5cd24fb665d",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/animations/checks/animation-guide.png",
+      "bytes": 86081,
+      "sha256": "b1e3f2e90e1e333d47452ca5a07cd935ac9da90f59e358f5c32c0356968d5c12",
+      "git_blob_sha": "fbc9642818d69b9f8da814e0ffdd08a589d826e1",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/animations/checks/memory-cycle.json",
+      "bytes": 7070,
+      "sha256": "d225efcf3426380c57b4af333366acdf1008d6110d882792809d4c950824d0cf",
+      "git_blob_sha": "0e92b35ecc3e0cadf7081613dbdb94a871beb5f3",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/animations/checks/memory-next.json",
+      "bytes": 1695,
+      "sha256": "2f4f0bb467dd672aaaacf3ca709627af5706e702013c7ca689f11a1027eab098",
+      "git_blob_sha": "f96c0f727ae4fdfc7806931493d3dfd1c6fecf23",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/animations/checks/moving-memory.json",
+      "bytes": 2328,
+      "sha256": "d64233958ee26cd0e35b1c7fefedebf6db878c965444e45abdfb9fe0ca3ecf20",
+      "git_blob_sha": "2a9e0b52f6c1379149768fbe2cbb132f9fd43fbb",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/animations/checks/standalone-exports.json",
+      "bytes": 786,
+      "sha256": "512269de8af6c99dfaa65c3e36b9b43afb776bb786c6150529215a936074b819",
+      "git_blob_sha": "576d86f902b28b5fdfde0f8829f0601f26398458",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/animations/checks/within-position.json",
+      "bytes": 1415,
+      "sha256": "5ee268d24dafbd68970c5e02f9f97f8e370993e686d46d7d9049d9fdf6cbc57d",
+      "git_blob_sha": "45004075ab4e7a535ba86027d538a0bf4726462b",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/animations/index.html",
+      "bytes": 5975,
+      "sha256": "0e70e241a394679c28c9e6a901c75f098752480d8c593e1ce593ca80f9c4ca06",
+      "git_blob_sha": "c6eb162c267deee87bba9e268f06efb914efcafe",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/animations/memory-journey-cycle.html",
+      "bytes": 97741,
+      "sha256": "35a317227720a591aeab34b35d15065e74d3a064cc2b6cfc5fa9a3fb58f28470",
+      "git_blob_sha": "7233cbad812c56159e8868afca44b1c20aa81f0b",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/animations/memory-next-path.html",
+      "bytes": 94799,
+      "sha256": "1f9ed6d5a39eeaf0e6ad52d67b909ccf679563ce38a601263adecb20fd4f6f90",
+      "git_blob_sha": "b00c07af01e13fb298431bd75dcba1fd38e45287",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/animations/moving-with-memory.html",
+      "bytes": 93407,
+      "sha256": "9dc0c9afebc8985b08666d0cba995d80b55ece5cbe2fd87c15c2c08c60be11a1",
+      "git_blob_sha": "707026ab92e77d986ba78cfc849024c27b54fa06",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/animations/source/memory-journey-cycle.html",
+      "bytes": 14696,
+      "sha256": "8c035fdcfd235db252c077bb2bd33c717dcc93d3d756953e2fa163763dc38e96",
+      "git_blob_sha": "df94c71a4783c0e1a9012a9e685552b418a3a630",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/animations/source/memory-next-path.html",
+      "bytes": 12129,
+      "sha256": "04e8aa399868790db704b738f549cabc406a77f5b4a340eae17c587cbc3236ed",
+      "git_blob_sha": "2f13f8d92cb381f6c8dfd2dbe0ad808d9a29fc4f",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/animations/source/moving-with-memory.html",
+      "bytes": 11010,
+      "sha256": "e9ade66a6facc6fc90a3802344024aea0a96638ba289c21ee96e7557b6998250",
+      "git_blob_sha": "7e7a1c00a97a21411c4fa50ac739f2ab856e9626",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/animations/source/two-orbits.html",
+      "bytes": 9699,
+      "sha256": "da3f8152dca0183fa06b48a390721c26c960157a45fbe1bdb00fa37fdb6ad35b",
+      "git_blob_sha": "3c1e00b0a9a8256b6743011f9b1ac581b22faacd",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/animations/source/within-and-position.html",
+      "bytes": 9884,
+      "sha256": "b9bfda210b8c52b40e78c06c5b11a24ccfa3a31f846325c675062e44f40c098a",
+      "git_blob_sha": "27d335c5b54b8960a364ed8a2d302b0f73984e6f",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/animations/two-orbits.html",
+      "bytes": 91756,
+      "sha256": "a745e40484c9d96c59b86019f9852ebcca364ab6e2a98598984aab5c1a2725eb",
+      "git_blob_sha": "963320136335fbb96eb196418d8050f5e8c69ad4",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/animations/within-and-position.html",
+      "bytes": 92166,
+      "sha256": "33d6311f9a069d32553b005239736fdf749d3b87a6cd918531bb694fdee78538",
+      "git_blob_sha": "e4a3c1d792ada28f1ea965e360a8c2f0501e3761",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/averaging.py",
+      "bytes": 5453,
+      "sha256": "84d23459ab4f03f3268b05f2c96644e93a2bf3bdbbc9503a908236f7a561e2f8",
+      "git_blob_sha": "a09cd31e1dc7cf46f4dff4cd3da1b767a4b9ff11",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/build_report.py",
+      "bytes": 39007,
+      "sha256": "83648f2f27da36fd882138960177ce4f3859b7ea95777068a679e77517b15008",
+      "git_blob_sha": "3abb19c6887eb85edab076f4e1c4e163d01c8898",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/data/averaging.json",
+      "bytes": 10781,
+      "sha256": "f4b0b8efba9f368e58beb29f61d7693056ccb5689c807f214b89a2ec1f5ed719",
+      "git_blob_sha": "58359e8e383cd120aff5ee0173b22aea71cdb6c3",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/data/averaging_protocol.json",
+      "bytes": 736,
+      "sha256": "be820a50297fc94c0b7e05b72810aa87f765cb6d7bd390201dd68db057b069bd",
+      "git_blob_sha": "55735c9a18b1ad7f7497023cc957c4760b198a5d",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/data/averaging_trajectories.npz",
+      "bytes": 260010,
+      "sha256": "d731351a394553f1673c14b7ae2bd01a85e1edb37c57f092aa1f929e72dcd97d",
+      "git_blob_sha": "31da53a967faebdd8f2d90a5cf69b745d2267a2f",
+      "kind": "numerical",
+      "asset": "sims-recovery-entrainment-numerical-001.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/data/circle.json",
+      "bytes": 1455,
+      "sha256": "29f7b35350838d01cff2847fb5de52326ac78d57e4651da7f1a2e77e78af786a",
+      "git_blob_sha": "e96d12a28bfbec4c947c92e02f7f44359bf66578",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/data/execution.json",
+      "bytes": 223,
+      "sha256": "37862e7ec2cce4ec524477cd6befb0ac092ea4683bc74e3444ebf9d0d7ea542f",
+      "git_blob_sha": "fb3794f37a0379fa815fb0cddbd63894d7daba7f",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/data/index_bistability.json",
+      "bytes": 9316,
+      "sha256": "c82e50b412e8bb528a2290867b28a928481ab01193759e699ca426435fce7a12",
+      "git_blob_sha": "76fc7cd780d9188a8109b6d39e4d77951909b751",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/data/index_bistability_protocol.json",
+      "bytes": 631,
+      "sha256": "cc2827bf810ad4cdde5d9a3272cfb5372914616c84e49fb524c31dd98f7067d3",
+      "git_blob_sha": "490c2d8ce6bf5f0a248fa3e488d2f7c45d890f07",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/data/index_exercises.json",
+      "bytes": 3998,
+      "sha256": "98105bc087a373587020654fbd219772f5cd1c34a5c46f05a7781921bc6ecb92",
+      "git_blob_sha": "0c9b808366e31230bdb5b42ca6cb4c473940d375",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/data/index_exercises_protocol.json",
+      "bytes": 447,
+      "sha256": "d26f93fdce8be9be6e221ad4228cdd257c0785269c41b57d4c5a99dc485bcf64",
+      "git_blob_sha": "69e19ccb9c40984332052867d5d85792b8558156",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/data/junction.json",
+      "bytes": 41728,
+      "sha256": "20b1d01f519ee3068756a4167baf3b9199a2c4843c13d8e2087b2c294afe1a4e",
+      "git_blob_sha": "94baea92320427e40627fef44b40b393ed3b6364",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/data/junction_orders.json",
+      "bytes": 1856593,
+      "sha256": "eca0d31ed551943791ebb366f5c82757bfd34ca404ef55896e86b88315fa62e2",
+      "git_blob_sha": "5289d1636c617d8ff3315212f23bbf2226d8282d",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/data/junction_orders_arrays.npz",
+      "bytes": 204870,
+      "sha256": "0cc6ac56d28131a72a671bb441b91bcd4a2e841fded4b378b9ce02784b17a238",
+      "git_blob_sha": "6f4e11b1f76ca8f84db9cb9d48a8880d81da26e9",
+      "kind": "numerical",
+      "asset": "sims-recovery-entrainment-numerical-001.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/data/junction_orders_protocol.json",
+      "bytes": 122726,
+      "sha256": "5816f836303676c93029539b1a49f4680e874881ba0591963eb4dce652e28e46",
+      "git_blob_sha": "583856ada537a1390faa08482ac7e00a44dd6bad",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/data/junction_refined.json",
+      "bytes": 41742,
+      "sha256": "2898ee5d53dc2d49caadf18a27f46e8f813c66dfeeb7522ee494d238f1f387f2",
+      "git_blob_sha": "8255224facf77173d7e2e966f0f0f1ef018a3533",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/data/network.json",
+      "bytes": 206646,
+      "sha256": "6a1cbdf95c21073e24b4843a40d83abf411c2c7b111798f8bdacd266cde65bd7",
+      "git_blob_sha": "56aea7b3ba8d11639a8d3266f2b874b787f639ba",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/data/pendulum.json",
+      "bytes": 4477,
+      "sha256": "31c334e3d8054a0f803e15ecddae80a9a78f5a3636c072333c92a2dbce447410",
+      "git_blob_sha": "1718ecd6879ec32607a32733bfca520cb896522e",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/data/pendulum_protocol.json",
+      "bytes": 870,
+      "sha256": "7e36729a511f5b1ec6d7506a10a163136bacc10f9d9252552650b09837ea0196",
+      "git_blob_sha": "cbfcb99b8dbbfc59dc8d505db01241c9611f7ff0",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/data/phase.npz",
+      "bytes": 223521,
+      "sha256": "a1183380850f29330de46f485fb4510b0c3b0f8977e5d8f6d806dc1a27531111",
+      "git_blob_sha": "8a173d8fda75c4f8fd4411e18ec7d54c32d5fc41",
+      "kind": "numerical",
+      "asset": "sims-recovery-entrainment-numerical-001.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/data/protocol.json",
+      "bytes": 3175,
+      "sha256": "7cf4d733ec43970949fc3e56a2fa11fbc6df08016fe7687f74c07e37f24683d3",
+      "git_blob_sha": "48b37237ed87e1999944231ea1c4f314b6d19159",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/data/recovery.npz",
+      "bytes": 1423918,
+      "sha256": "4b068672abbd12571707e5bdac4ca5ba1fc9ae7f03c440d939a1ea41cd0c0d37",
+      "git_blob_sha": "837a129755267cc2be19c660a2880d7ecdc4e2b2",
+      "kind": "numerical",
+      "asset": "sims-recovery-entrainment-numerical-001.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/data/structural.json",
+      "bytes": 6196,
+      "sha256": "bf6303d383bc3c2d95c677836f7a03790044d30b2d2821689016392d859f7b78",
+      "git_blob_sha": "1d391d162e23cb53777440b8413c87160f946c07",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/data/structural_protocol.json",
+      "bytes": 1330,
+      "sha256": "7bc4f61c00a6f795ea2a89f5e90e4939ccb32a50291fc6767c4365d1f32b1a15",
+      "git_blob_sha": "4ebf91941f8f2703f4257e952d49d979e3e973be",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/data/structural_trajectories.npz",
+      "bytes": 439763,
+      "sha256": "1b737f43e2ebab07b64646f963b96f493deb503047ce97f22477749bb1a54340",
+      "git_blob_sha": "fb951ac0b9b9d717c66373b967473ed14826b9e0",
+      "kind": "numerical",
+      "asset": "sims-recovery-entrainment-numerical-001.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/data/tasks.json",
+      "bytes": 686637,
+      "sha256": "8d0ae7214857f3f0b9c3171a83e8efc23d90d270ae710e7ef95f8ec3b9d49e78",
+      "git_blob_sha": "00056bdfd764cda4da13f6ce54c7ed8337a2e81a",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/data/transient_memory.json",
+      "bytes": 484149,
+      "sha256": "8dacc75bb81e721aadbb9400eccb31b1e754c76f6102ea05e527e5642a14daf7",
+      "git_blob_sha": "76c44b0ebb7a5e186da22b78d67dab8be1f6a8b7",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/data/transient_memory_execution.json",
+      "bytes": 437,
+      "sha256": "aebd4c4b02bcfcd5b5dbdc4fe2f40347e95f520c63cc877a3a15e76dcc7c822c",
+      "git_blob_sha": "3d1b28e81571d8df4a7be0aabc03a5effe4e7f0a",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/data/transient_memory_protocol.json",
+      "bytes": 316371,
+      "sha256": "81efe656e05c185f28b6a546b6a777760ac95f0517957e2edeb0a7f581657efc",
+      "git_blob_sha": "d0fea4eba44123da7137e1aab84d543269170d8e",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/data/transient_memory_trajectories.npz",
+      "bytes": 14015718,
+      "sha256": "f41adadabbbc04f8c6efa2ea629eb0363197e05044dd538313ad1dbb82bb5e33",
+      "git_blob_sha": "9f8893fa66cf9747a2ca9308cd461120eef9731e",
+      "kind": "numerical",
+      "asset": "sims-recovery-entrainment-numerical-001.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/data/weak_oscillators.json",
+      "bytes": 2762,
+      "sha256": "6ee89f4160d67519ebd2e2a8c3ae732a898a3ad1684be3e037eeb0a0d3c60208",
+      "git_blob_sha": "4a4450ee3d93b7b60459aa69a0a8a7a4f0126da6",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/data/weak_oscillators_protocol.json",
+      "bytes": 711,
+      "sha256": "e49ad90187981211ca6a3542626a9e6b7ddcaf9c9b8532c0d63b1b39c85e99d3",
+      "git_blob_sha": "6aa391d49102247115329f0ce2bcb2b0ea896867",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/data/weak_trajectories.npz",
+      "bytes": 465287,
+      "sha256": "d68b2fda0cfd52aef80c097193fb6df1bcf440112a421e730e8f1221966cd9f9",
+      "git_blob_sha": "5c283fe8c43b33a10a6192baba2dd66d07eda9c5",
+      "kind": "numerical",
+      "asset": "sims-recovery-entrainment-numerical-001.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/delivery_checks.json",
+      "bytes": 346,
+      "sha256": "2bccf7bb45acdf65797c3f81b6da52f2dc3c790fdca6d5cc1574c5aeee596982",
+      "git_blob_sha": "0234c2535463f5df76958455510fbbd9966a488b",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/index_and_bistability.py",
+      "bytes": 4822,
+      "sha256": "44fa53dbf222283eefd23a1df452ebd4c77afaf2c2e2bdc11fa1468a4a93bb2c",
+      "git_blob_sha": "3dc74cc5ac4eeb604ecf28ff3f0af3b49e8abda6",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/index_exercises.py",
+      "bytes": 5518,
+      "sha256": "afc41de492e1e407017d005501337e49f185c9ccbab4177657c031fb5e6052bf",
+      "git_blob_sha": "598475c85c7ed08b2afe9d7334496e3d3749909f",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/junction_methods.html",
+      "bytes": 607909,
+      "sha256": "3488b490890398212d2bd71b7ce74c2f90bf0249d0796654edb355b0f905aebb",
+      "git_blob_sha": "a6d4fc509d765c0eb2fd93f53863650df3fd2d44",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/junction_orders.py",
+      "bytes": 18981,
+      "sha256": "2cd0e89e24b4a007111a382f5f51520b330785710d1e0623205787b61b8cf9e3",
+      "git_blob_sha": "9984c68208b728099e197a1293c8b2a4ecfad697",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/junction_report.py",
+      "bytes": 11365,
+      "sha256": "aa3cd9fdc6ae2f54f0c99997c51671872f1f9f3c3f0f5fe45f28c46502c63485",
+      "git_blob_sha": "dc75e79b0521e8760969170703a8631e46737810",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/manifest_sha256.json",
+      "bytes": 13175,
+      "sha256": "a100f3c55e3707512a762f448097932e8c99122a81a6dffa9cc6452e22422aac",
+      "git_blob_sha": "1c9a4600361d959d5053f1b288767a2554f9bdb7",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/model_provenance.json",
+      "bytes": 447,
+      "sha256": "77825485c5f3dc50c917b3cfaf09d779d83b70947abf50ba86f50ee265d755f2",
+      "git_blob_sha": "9eb5f87779998724f3bce3066db199932000e7a0",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/oscillators.py",
+      "bytes": 6536,
+      "sha256": "95c88eb7d6ce240987ae8d653ad7478a8a945a29cfe203d7edd266c6c03cc497",
+      "git_blob_sha": "cc34ab0da4a3ac73e4919c9934c5356950005316",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/package.py",
+      "bytes": 3331,
+      "sha256": "e5bb760f6abd36b08d2159114bfd54f691f3103c8733fe67f5271d9b0843b2dc",
+      "git_blob_sha": "251871018f02edbdf0cd1fd4e2b1eefbfb493b36",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/pendulum.py",
+      "bytes": 6663,
+      "sha256": "2e23ffe510df9caf8cf562b47a813eabd623cc69fdd0a3f8b568b500304a6132",
+      "git_blob_sha": "be44f31e41ca322c084b617de9412f018a4fc82b",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/recovery_model.py",
+      "bytes": 14034,
+      "sha256": "27930e4ad535faf3ce7d95d3982d20ce4ab683248f287272d3071722b59c07eb",
+      "git_blob_sha": "0252d571868535fb9a3b85c00df1848208426718",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/report.html",
+      "bytes": 630663,
+      "sha256": "497f6deea614f6ff00adfa57e6733778d811b9d2d9aec785c17bd9d992535294",
+      "git_blob_sha": "36e0ffa6ad35d23c674188cb466253026c1f5970",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/reproduce.py",
+      "bytes": 1510,
+      "sha256": "e2483357a15ab224c0dc7c0c01507fd00b9556bb8c2e05a8245a9c9669891f1a",
+      "git_blob_sha": "e528b84baef58316af69d6453592a4ff6196b8ec",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/requirements.txt",
+      "bytes": 32,
+      "sha256": "adc7fa5a4dbaa7335c32c1e7d10cffae5c96f67ba2f5f22c8453c1bc11cf8e0a",
+      "git_blob_sha": "f900d33694ff2290edc8cedaabebcbaeddf95521",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/run_experiments.py",
+      "bytes": 6316,
+      "sha256": "13a52982b1435c297c5f23b22a38917ebb6538405d11c518b8987cb0e3481162",
+      "git_blob_sha": "f4b3c715ffb39151429f35ca7e393438676b230e",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/structural_models.py",
+      "bytes": 8783,
+      "sha256": "9dd9cc81a4e0989cc2cfd1e8d62f2180985d28e710b9db5881006d62830ae0f6",
+      "git_blob_sha": "8dfb6115ac721101b18ccde6e0489812cce27848",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/test_experiments.py",
+      "bytes": 5754,
+      "sha256": "796a82be9bd9f58d11b3f5163dc0936f4a3a13597210350531dd46efbbcca1fa",
+      "git_blob_sha": "ea5ff941c0229de83a82fae8693677558da03090",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/test_junction_orders.py",
+      "bytes": 2635,
+      "sha256": "b77a4770f35fc854c56409b8d6de12444fb7f0271d9bb0aa5c242cb974569ad0",
+      "git_blob_sha": "378f752466ba588f4788631990a0243b7156b5a9",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/transient_memory.py",
+      "bytes": 18386,
+      "sha256": "ec3e1bda3bde74f1bd43e153980b1a4370da85f4080ba44ba30106d265d95674",
+      "git_blob_sha": "3d073b978f73cf5515bcc6490a79fbd8af9d3e0b",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/transient_report.py",
+      "bytes": 17573,
+      "sha256": "04740c9ac294aed27eae5e12d387be11f4f9db2b6f4df7449e1cccc749ca8dde",
+      "git_blob_sha": "8e41455cd95615a176886da20abadb1465e23372",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/verification.json",
+      "bytes": 8489,
+      "sha256": "c080805a02d33e30d68070ebd174f0d65bee76574756286a0fc28f8c60fd8cad",
+      "git_blob_sha": "02649cef4228dae57beef98d54b7ba1a525dc5f3",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/verify_results.py",
+      "bytes": 4016,
+      "sha256": "c1b969a21ece1a2e2c89970d7b841b981fa778c9a4f3e88f1386e042038c3cbc",
+      "git_blob_sha": "944e5db45bbfb416d97667adbdd2a23543125c5f",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/weak_oscillators.py",
+      "bytes": 4670,
+      "sha256": "fd72686d9e3c46a344088d65585dd8c09bca654fa2833b1da917ffd770d4b96a",
+      "git_blob_sha": "ceaebbdac0faee5ecb1431e09efce833057dcb3a",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/sims-recovery-entrainment/worked_models.html",
+      "bytes": 4265986,
+      "sha256": "d2d9ac98cb173ed0e231205e481bcb2ccae1a4bc963a087e10cd2cd4fb262e02",
+      "git_blob_sha": "b6a09e09788d2ec1716733131a2192c71a3590e1",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/.gitattributes",
+      "bytes": 9,
+      "sha256": "8b9c3028d6467ff3be7c793141927841d70f47f52d0590677438f488ca154992",
+      "git_blob_sha": "625449502ba4b4d7c229c6ccee42e3ec41cc780c",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/.gitignore",
+      "bytes": 94,
+      "sha256": "a152cc221efa80e261a8a9524ce6c31684ac04b1dbd6c6fd8d77601df70db084",
+      "git_blob_sha": "df4f68a2742a34480d62253152201ae0b6e9b55a",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/README.md",
+      "bytes": 6069,
+      "sha256": "e786f133fbcad604cb5c25017e2d5fd7347afa32ada7c868e1a7eb50d53da684",
+      "git_blob_sha": "58d5031632d5189e9372537fad9f46868d5391ee",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/analysis/alliance_proxies.csv",
+      "bytes": 15102,
+      "sha256": "70e6b38ebfcf3ab4eb2f0e558d7ed841b7c7836ecd92928f1b248e9f763e38d7",
+      "git_blob_sha": "8861d6f743464b8a4c0cec54ecff97894847405b",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/analysis/diagnostics_execution.json",
+      "bytes": 238,
+      "sha256": "37794db11f2ba4c95f02f93ca60aadb40c1712489f2e43581cf94f11068fd6b6",
+      "git_blob_sha": "8baf308dd71bfc7668d229ccecad2bc8c2179b2d",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/analysis/factorial_contrasts.csv",
+      "bytes": 17405,
+      "sha256": "454e191573f1ea713d777adb27f0344633fe05a41a4347b492ac6a635e5c82c4",
+      "git_blob_sha": "1d3da6113132e3a3f23fd201bbc0cc46773f4899",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/analysis/factorial_effects.png",
+      "bytes": 82701,
+      "sha256": "71ee1e11120d681e61764b304589ecec5c04c57bc16787290ee42b33d875cefe",
+      "git_blob_sha": "5d84ba106dfa55875e45b074813d65518cdd60b4",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/analysis/factorial_effects.svg",
+      "bytes": 75318,
+      "sha256": "a83c85798e45ee32184913a11937607f56cf0a76286bef25eca9fe4156bdf49e",
+      "git_blob_sha": "6dc787b8e121890eeaf6f0056078506987c17f1f",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/analysis/full_model_levels.csv",
+      "bytes": 3577,
+      "sha256": "dbfee7606b5b80524be5a887e4268b4a54c35fd1ede0d21e697ce337829c9f35",
+      "git_blob_sha": "8347c600d5773d7c290dd593fe0739ade1492ce7",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/analysis/group_permutation_null.csv",
+      "bytes": 9084,
+      "sha256": "beee1f7b9d804be472c03989bbdbc96d4e734c8919e3e2a6a94af02a29fbae44",
+      "git_blob_sha": "e7983ca2db25ab0667eeea7a454f6a99824ae8b6",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/analysis/interactions.csv",
+      "bytes": 5331,
+      "sha256": "d831565715d61d73d9e1cb084c8bba8cfcdc5112e401bdfba731dfda5825e21a",
+      "git_blob_sha": "b8a872ea7cf2c646a58cb3109d43a08460dbe312",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/analysis/label_invariance.csv",
+      "bytes": 3987,
+      "sha256": "dc2844185db06659b50389bbda856ed9df6a4ba24ec030d9373d151d3433c11c",
+      "git_blob_sha": "624160ea74528ef1dbc7d4e8007977087b16c1a8",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/analysis/leadership_summary.csv",
+      "bytes": 462,
+      "sha256": "4feaf4ba4c1c22d4844ea91a3362903f98bbaadcc33e31fa08788a02dc925b83",
+      "git_blob_sha": "dc274790b503b9c5467e185520ee89aa9b7e50f2",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/analysis/network_diagnostics.png",
+      "bytes": 80437,
+      "sha256": "d15e65d18465676a4679e45f9cd1407c2be32298adce5eb57adeb95a5a20dc75",
+      "git_blob_sha": "2eb8912477c25876e9bb7550c9008852f16b0c09",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/analysis/network_diagnostics.svg",
+      "bytes": 61263,
+      "sha256": "a5634a694e7336e13204f2b3ddafc5e5a083b1055a865bec2858d14d75449a60",
+      "git_blob_sha": "b5724432c25f16353c07e7c4d15103f35fd33d49",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/analysis/parameter_sweep.csv",
+      "bytes": 3229,
+      "sha256": "88582ba3ca4d3b675338c56fef5c536edb93935551bb91e10d4876c00a1c9b69",
+      "git_blob_sha": "6891acf90f9b293ca9dbdfcb4b92acd34f379326",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/analysis/population_topology.png",
+      "bytes": 103013,
+      "sha256": "31cf15325b9e74e38cd541a8ad2faa394a715e993e182a10cf84d23285a58c4f",
+      "git_blob_sha": "7dedd5269c43796bc415d620fef5de2b1a497a0d",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/analysis/population_topology.svg",
+      "bytes": 77646,
+      "sha256": "3a5c5e2d3885900d009231981c131b3fc6e2a75538590f67c1e94182b3929ccc",
+      "git_blob_sha": "8cb45f5297a3e1b6fac381a61bcacbd1f6423b45",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/analysis/population_topology_sensitivity.csv",
+      "bytes": 6789,
+      "sha256": "4995103192084c0dadf81b6cadaa199d7003d34234056c92eec8b876140f4750",
+      "git_blob_sha": "0f5116193da3b55223ad217d99cd0525665a38fa",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/analysis/recovery.csv",
+      "bytes": 10290,
+      "sha256": "440cb9ca3e5727fed70bf5e25a2327f608309b33868b2c6287594cff1dd79970",
+      "git_blob_sha": "8259f1ce7e7aad83f96967cea67d116325f489e6",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/analysis/recovery.png",
+      "bytes": 377831,
+      "sha256": "1c04a490bf9626dd3726ab3df7b1409bacc3ac5cd0e31af24e79902a01f9f00f",
+      "git_blob_sha": "43347b670bd50e3fcbd2f33325120efa53991662",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/analysis/recovery.svg",
+      "bytes": 126427,
+      "sha256": "4a5e128e240900e07f2d0a9c289d491cb7fe1800a678969fbc025d01ac1179b1",
+      "git_blob_sha": "c3502372a574c2b833b8c54981b56f4cace06125",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/analysis/recovery_summary.csv",
+      "bytes": 655,
+      "sha256": "4bfaecedba45432fac68d56baa2c19d18322dd5f3b3127bc59fecd9661a437d1",
+      "git_blob_sha": "ff7f70c61a96134667e1053ca4a4f77186db24f7",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/analysis/run_phase_metrics.csv",
+      "bytes": 9110494,
+      "sha256": "051f692c69b62f69fbdee77594056bbef04e39fb63c7bbe35597689b39d158fe",
+      "git_blob_sha": "d1ba08e5fc5490d478e435eeb78061c33eaff134",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/analysis/semantic_targets.csv",
+      "bytes": 395,
+      "sha256": "87adf89593c3509f58d4dea28e816c91ee1b2ab3dabb46e6a2d402fb6bf32e6d",
+      "git_blob_sha": "5a996f2302e32af3b95d9110fb132141fa3b4439",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/analysis/sensitivity_semantics.png",
+      "bytes": 82955,
+      "sha256": "bb0c77e422d056cd59ff8405edc23da5fbd8303ea44c360d2ba95973ebef5e36",
+      "git_blob_sha": "09b2b2ab9c28a12dd553f65b1e2f3a8909d46fe7",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/analysis/sensitivity_semantics.svg",
+      "bytes": 61367,
+      "sha256": "461109c14b948973c048a65f87d84e9509b6918934b898832ae75a278c5f4fa0",
+      "git_blob_sha": "32711a8c3035380387e9e876731e4052161085b6",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/analysis/stress_components.csv",
+      "bytes": 1446,
+      "sha256": "e950e0a99651abe146421a7be044c21e4140fc941ee3f5099303eb556b541411",
+      "git_blob_sha": "762d050a6ad205dea4aeb0929d755a2ffeb0ff00",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/analysis/stress_components.png",
+      "bytes": 48773,
+      "sha256": "dacb412205783cabda68ec37dbf8e985ff42b2b863b8a127bd02dfa25e971532",
+      "git_blob_sha": "9e11f64d59513c26a4bb5487371e8938e77f7236",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/analysis/stress_components.svg",
+      "bytes": 45248,
+      "sha256": "5885d0a654d29ee028e9cfcfb1d718d436b1979777f9b96b20af86b9b7239804",
+      "git_blob_sha": "18b94ae6a8ef829e4b91e027cc5a26bafc0f4076",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/analysis/summary.json",
+      "bytes": 2381,
+      "sha256": "010ce136768b8bb9126f12dc30a17377ff591e948ff2e3e3a91c31d17438b3a4",
+      "git_blob_sha": "fda857de88caf45f9927adff277fc60d4895ced1",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/analysis/synthetic_attribution.csv",
+      "bytes": 437,
+      "sha256": "23bd8e8640adc912cf567b0605836e6bb2f090f94839442da989b98d8866fede",
+      "git_blob_sha": "6e354ad602c284b20ac19f045b0da94aaeca000a",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/analyze.py",
+      "bytes": 16937,
+      "sha256": "34055647936bc0dda34cba21cf469a26b05f0f45b694580592ae533d2e4b3cd5",
+      "git_blob_sha": "1e44c5da44bf1dd52d6e813dadd692d2b8de5e27",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/build_report.py",
+      "bytes": 47104,
+      "sha256": "38b1008d3c128732e8dec7d3842e2ca50ba601ac9d0fe34424e576cac7a631ff",
+      "git_blob_sha": "fabbec7f837d03f5d5e146be2b083c5add4b6801",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/data/array-parts/000.part",
+      "bytes": 4194304,
+      "sha256": "4b8d2e9589624ebc10d38a8f8a656f0be64f729b4b2eb29291937e6a0aef2916",
+      "git_blob_sha": "3447a68a91a576d43a39acf8299b750c68d5a868",
+      "kind": "numerical",
+      "asset": "social-organization-numerical-001.zip"
+    },
+    {
+      "path": "studies/social-organization/data/array-parts/001.part",
+      "bytes": 4194304,
+      "sha256": "d1cbbf7219a6062b27e7fb9fae4340b0d52b7089fce51f155e7f5cb25af4f06c",
+      "git_blob_sha": "a35e9ee2ae682c9a1ddf694b0ecde4fd6bbe7c92",
+      "kind": "numerical",
+      "asset": "social-organization-numerical-001.zip"
+    },
+    {
+      "path": "studies/social-organization/data/array-parts/002.part",
+      "bytes": 4194304,
+      "sha256": "0481806a5d934f29c77ad838b32ad52f950f70811862de4192e68fdf73bb3c25",
+      "git_blob_sha": "ac9d39c805b365c64f677253514d7660d7cad91a",
+      "kind": "numerical",
+      "asset": "social-organization-numerical-001.zip"
+    },
+    {
+      "path": "studies/social-organization/data/array-parts/003.part",
+      "bytes": 4194304,
+      "sha256": "2231a5e706e068d37fb529a095ff4eb7e13a5ec566aa9aa116c8e8b204b8a6ff",
+      "git_blob_sha": "d5edfde8cefcac38461e2eae4d3d43a536bd0dfa",
+      "kind": "numerical",
+      "asset": "social-organization-numerical-001.zip"
+    },
+    {
+      "path": "studies/social-organization/data/array-parts/004.part",
+      "bytes": 4194304,
+      "sha256": "b20c5d89181ff3d9095823bb51f4cfc5030b30b00af88be69b3d1f6f2f2e3c80",
+      "git_blob_sha": "3212e4a6d90017a93bfcb4c054c3aa5d2aef9f40",
+      "kind": "numerical",
+      "asset": "social-organization-numerical-001.zip"
+    },
+    {
+      "path": "studies/social-organization/data/array-parts/005.part",
+      "bytes": 4194304,
+      "sha256": "ef5492afa433c5dbc6f7d9236105489fee1002dd6e44802c1b004ed612001e0b",
+      "git_blob_sha": "8ef0c0162ab043cfc6f68f74df57f71fa8b63093",
+      "kind": "numerical",
+      "asset": "social-organization-numerical-001.zip"
+    },
+    {
+      "path": "studies/social-organization/data/array-parts/006.part",
+      "bytes": 4194304,
+      "sha256": "e42f7f025a15d1192863d7b4ef84a95ece9b3a58c55155a0e10f7c98655bb5a3",
+      "git_blob_sha": "f3c99140ab6ddb047e0a434f6d25a4b5784c4756",
+      "kind": "numerical",
+      "asset": "social-organization-numerical-001.zip"
+    },
+    {
+      "path": "studies/social-organization/data/array-parts/007.part",
+      "bytes": 4194304,
+      "sha256": "c2cf0ac567c1a52e3b2fe27432b17fc1850a9306bf6cc0e44135d44c7cb22619",
+      "git_blob_sha": "3123bd372850390ada4bed1f65475810de47f29a",
+      "kind": "numerical",
+      "asset": "social-organization-numerical-001.zip"
+    },
+    {
+      "path": "studies/social-organization/data/array-parts/008.part",
+      "bytes": 4194304,
+      "sha256": "171c9b9f93b3195275061c0b886cf135244f1a3c04cf9452efa55c426856c410",
+      "git_blob_sha": "e98dae28d36e59a3cadd8919db5e3a83b153a996",
+      "kind": "numerical",
+      "asset": "social-organization-numerical-001.zip"
+    },
+    {
+      "path": "studies/social-organization/data/array-parts/009.part",
+      "bytes": 4194304,
+      "sha256": "1e7ec9c38eecd1a0a5c740b99e9e42e41a85aac684cce4e70a0c50fea5e8a31a",
+      "git_blob_sha": "b08675e260e93d9ce8875796f5a49f9c7fe8c2ee",
+      "kind": "numerical",
+      "asset": "social-organization-numerical-001.zip"
+    },
+    {
+      "path": "studies/social-organization/data/array-parts/010.part",
+      "bytes": 2324963,
+      "sha256": "be5463b18b1de0dac135acd63651b22a5d63744cdbf072cba9fb1f8eb0ac818d",
+      "git_blob_sha": "1cc3e2ab67ef96e4cf4da16427d76d6b8fa9edb8",
+      "kind": "numerical",
+      "asset": "social-organization-numerical-001.zip"
+    },
+    {
+      "path": "studies/social-organization/data/arrays.parts.json",
+      "bytes": 1880,
+      "sha256": "e4937f5615fe6684ec6761b061f9dd3be74f065b65b5d728b88ab69b494d2755",
+      "git_blob_sha": "1cfa365aee67f9656552d19e06fed13528ac11d7",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/data/example_events_stress0.npz",
+      "bytes": 10130,
+      "sha256": "3c7319a72ee33449e3a7dbd04e9b4df2959cefad05a9a31d6a9d276001a4b26c",
+      "git_blob_sha": "b1af8a9e40ed838492933df6bba2930552f7949b",
+      "kind": "numerical",
+      "asset": "social-organization-numerical-001.zip"
+    },
+    {
+      "path": "studies/social-organization/data/example_events_stress1.npz",
+      "bytes": 10687,
+      "sha256": "def843a2226157acf58baba247261671a18b529f1f2b0a369ff47ff4baae3ee5",
+      "git_blob_sha": "2243765480de72c06c95af28c691304d2a3352e8",
+      "kind": "numerical",
+      "asset": "social-organization-numerical-001.zip"
+    },
+    {
+      "path": "studies/social-organization/data/execution.json",
+      "bytes": 1204,
+      "sha256": "025944c30aca56bb6b532541c40f2198c0fc1fa30204273f2d0430237f31a485",
+      "git_blob_sha": "0b4bfb10ac6331cee930e29a56bd4dac9367691a",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/data/leadership.json",
+      "bytes": 60555,
+      "sha256": "39eac9639c1ea7afe214fdb22466e28245b0e501d1099fc1723f831d17a91691",
+      "git_blob_sha": "d5ee47c1ee3a60722813243784efef26d3947253",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/data/protocol.json",
+      "bytes": 1020,
+      "sha256": "fcc328d9654c053a26399c21465cb3c33a08cbe6e03dd96c12afe11cc5870ffb",
+      "git_blob_sha": "08c6f3af23cf415d1d25d494b3f411abe6824b82",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/data/schema.json",
+      "bytes": 1234,
+      "sha256": "63087ba9affc97f00de7cd519faf6c5f2874fa7841c18dc4031f76f88bd1fb24",
+      "git_blob_sha": "f2437ea2e5c31818b41f8b838d3f18e4b848a00a",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/data/synthetic_attribution.json",
+      "bytes": 61732,
+      "sha256": "a087e55069fd9177d6cfa98d558fa2d48b7f70179a5145969a73407ccfc37d48",
+      "git_blob_sha": "1ceee857771f73a487546fefde9ab8de407f12b4",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/data/tasks.json",
+      "bytes": 3862929,
+      "sha256": "d72b8a55992125d8ade8d4921ee3e7ebf3751f78c4cc3a09713041875914f865",
+      "git_blob_sha": "79019fd449feffe39051b334a940b2aa1d3698b9",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/delivery_checks.json",
+      "bytes": 324,
+      "sha256": "39246e5fb453d2410df27e2d671e99af586e0d26ec819a2b370162015f6ab614",
+      "git_blob_sha": "d924b1a994813380fd1b755a4391a2ecc5ee4995",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/diagnostics.py",
+      "bytes": 4689,
+      "sha256": "26aaaed502f524480c2ba16846f752a9466fe885b7bbbc576be381e2357739ef",
+      "git_blob_sha": "c7877bbfb3b21125880c0506db8768e0a00be417",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/human_protocol.html",
+      "bytes": 19263,
+      "sha256": "5abeb3fbe1cacbc9e9b2d902a0fde3445aa0e4a71533ea41139c0a7071c636c7",
+      "git_blob_sha": "153881838438b3832d634bf00eb92e76b7fac785",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/manifest_sha256.json",
+      "bytes": 6720,
+      "sha256": "aa57b2b620b14b8b2848a732b2a01e3d7d6a4c67644692601db4543dbd4b6b3d",
+      "git_blob_sha": "065f389fb6463e4d1f11f26289e256ff4743f136",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/methods.html",
+      "bytes": 18430,
+      "sha256": "4085728c1ef00bcfdfbcbdb4c647d6cbc89ec4141f0bb95e90c6fbcd71d7025a",
+      "git_blob_sha": "36a176a2f2fa2640bd8f9ff1b553bdd58622bc3c",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/model.py",
+      "bytes": 13123,
+      "sha256": "fe9702bbb29e31cc3e23ec34cb139a33682bcc9331b954e142639881aeb95012",
+      "git_blob_sha": "ad62f34c05febe68f5559c3e486936f3fb8744e2",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/package.py",
+      "bytes": 2131,
+      "sha256": "0bd93c6d8ddfaf7ac8a8e9a15c8e71f20258ac7c51c4233454a26787c879824e",
+      "git_blob_sha": "99d4dededd41fe6d16dacba6584fd3ca10b54633",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/publication_provenance.json",
+      "bytes": 5959,
+      "sha256": "4aa5a1672565448887d75102fb4b96de6206e6d653096adf1dfd5ca08243a00d",
+      "git_blob_sha": "f378f0f30c6761861a236d66843f3e92eefa6ab3",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/report.html",
+      "bytes": 1045700,
+      "sha256": "d5145d55a7d762253cdbb825cf18d7055360014a2a405c45b7e0225e30045261",
+      "git_blob_sha": "72f96c65a80d0dadaa62e0aaa88d0575a63b9cc2",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/requirements.txt",
+      "bytes": 32,
+      "sha256": "adc7fa5a4dbaa7335c32c1e7d10cffae5c96f67ba2f5f22c8453c1bc11cf8e0a",
+      "git_blob_sha": "f900d33694ff2290edc8cedaabebcbaeddf95521",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/restore_data.py",
+      "bytes": 1755,
+      "sha256": "829bcd42e7fffb9dc1fe63e65d4b6a94f8b5ab6283110374559680e7e7d30280",
+      "git_blob_sha": "e87526ca842b4bf13cda5450650553ed2d2dae11",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/run_study.py",
+      "bytes": 8546,
+      "sha256": "aeca0af2b1d6d7187a7ff7c6f7862635eeac7cc2bc3316af20597ee32cebfc08",
+      "git_blob_sha": "643a7cc85f9eef2fe473dd0e45e02996dd854879",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/test_model.py",
+      "bytes": 3783,
+      "sha256": "7309d8ca10c386dee821811a8dcf10c3897043562941e3a5a82ab16216c936be",
+      "git_blob_sha": "cda16607a82464e221fb2703c547307d74ce7c1f",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/verification.json",
+      "bytes": 2297,
+      "sha256": "d951fc7b58ad1ebab058487ae872f9823797e9cb326e80121b4769a96ea27053",
+      "git_blob_sha": "56fbbc67b0b28c2b38bbd4a8f9d5397e58a66b04",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "studies/social-organization/verify_results.py",
+      "bytes": 3139,
+      "sha256": "ee479471cfaf81e3e4d6ea13edb5470ddd35b286d1a66d6f72057f0cdd20923e",
+      "git_blob_sha": "20fc64fe66b3fe02fc66b803877ac391680651e2",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    },
+    {
+      "path": "tools/check_repository.py",
+      "bytes": 3666,
+      "sha256": "ba0054e659058919ceb224b8c445d3285e9aa261e11b4dd17b9d42d0c0353962",
+      "git_blob_sha": "0d2175783f37f5c88487c5c59974aafc6440a68d",
+      "kind": "source",
+      "asset": "reports-and-source.zip"
+    }
+  ],
+  "assets": [
+    {
+      "name": "sims-recovery-entrainment-numerical-001.zip",
+      "bytes": 17034635,
+      "sha256": "dd131aef299a5281b0978d1b230dab622f5cd214a8003407bdf53f7a2423f4a0",
+      "files": 7,
+      "url": "https://github.com/NousVolition/Nous-Volition/releases/download/numerical-data-2026-10-11/sims-recovery-entrainment-numerical-001.zip"
+    },
+    {
+      "name": "social-organization-numerical-001.zip",
+      "bytes": 44291492,
+      "sha256": "e7a1eb94790a621bb7086693db3a64cbb709408f71bb1c8140a42494f04bd157",
+      "files": 13,
+      "url": "https://github.com/NousVolition/Nous-Volition/releases/download/numerical-data-2026-10-11/social-organization-numerical-001.zip"
+    },
+    {
+      "name": "reports-and-source.zip",
+      "bytes": 37461696,
+      "sha256": "aa95f584124f29ab3b5b4514151d09f841a49ad622f14f83ccc8d50f794a11d1",
+      "files": 511,
+      "url": "https://github.com/NousVolition/Nous-Volition/releases/download/numerical-data-2026-10-11/reports-and-source.zip"
+    }
+  ]
+}

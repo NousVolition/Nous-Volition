@@ -13,6 +13,12 @@ from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
 
+try:
+    from .restore_numerical_data import load_catalog, matching, safe_path
+except ImportError:  # direct script execution
+    from restore_numerical_data import load_catalog, matching, safe_path
+
+
 def check(root):
     if (root / '.git').exists():
         names = subprocess.check_output(
@@ -30,6 +36,29 @@ def check(root):
             parent = posixpath.dirname(parent)
     errors = []
     counts = dict(python=0, json=0, markdown=0, local_links=0, manifest_files=0)
+    # Restored release files are deliberately untracked. Count only files whose
+    # original bytes have been checked; a catalog entry alone never satisfies a link.
+    counts['restored_numerical_files'] = 0
+    release_catalog = root / 'data-release/catalog.json'
+    if release_catalog.exists():
+        try:
+            catalog = load_catalog(release_catalog)
+            for record in catalog['files']:
+                if record['kind'] != 'numerical':
+                    continue
+                name = record['path']
+                if not matching(safe_path(root, name), record):
+                    errors.append('Release data missing or changed: ' + name +
+                                  '; run python tools/restore_numerical_data.py')
+                    continue
+                counts['restored_numerical_files'] += 1
+                files.add(name)
+                parent = posixpath.dirname(name)
+                while parent:
+                    dirs.add(parent)
+                    parent = posixpath.dirname(parent)
+        except (OSError, ValueError, KeyError, TypeError) as exc:
+            errors.append('Invalid data release catalog: ' + str(exc))
     for name in sorted(files):
         suffix = Path(name).suffix.lower()
         if suffix not in ('.py', '.json', '.md'):

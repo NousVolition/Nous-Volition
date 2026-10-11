@@ -1,0 +1,51 @@
+{
+  "repository": "NousVolition/Nous-Volition",
+  "source_commit": "bfa17510174326b0f9afc99d697ea5f3a94d0f61",
+  "release_url": "https://github.com/NousVolition/Nous-Volition/releases/tag/numerical-data-2026-10-11",
+  "all_remote_assets_equal_local_verified_assets": true,
+  "remote_archive_members_verified": 531,
+  "assets": [
+    {
+      "name": "archive-verification.json",
+      "bytes": 505,
+      "sha256": "8c03d232647c72602bae3de49e66b844a57aea47d60a8acf61bbea973fa88bfa",
+      "download_verified": true
+    },
+    {
+      "name": "catalog.json",
+      "bytes": 180108,
+      "sha256": "90408d9535e05c8d0cda3d5bda08a103ce051eeda5cf59210be0b58360349d3a",
+      "download_verified": true
+    },
+    {
+      "name": "reports-and-source.zip",
+      "bytes": 37461696,
+      "sha256": "aa95f584124f29ab3b5b4514151d09f841a49ad622f14f83ccc8d50f794a11d1",
+      "download_verified": true
+    },
+    {
+      "name": "restore_numerical_data.py",
+      "bytes": 9855,
+      "sha256": "34cc1e78ad3865127af7cfa08ea3314bb6b06cd4c67bad4db6699d93be57973a",
+      "download_verified": true
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 572,
+      "sha256": "3e38872518f42fbccea28b7bb1516dd050b55e005867eef2ba69c2968fae236a",
+      "download_verified": true
+    },
+    {
+      "name": "sims-recovery-entrainment-numerical-001.zip",
+      "bytes": 17034635,
+      "sha256": "dd131aef299a5281b0978d1b230dab622f5cd214a8003407bdf53f7a2423f4a0",
+      "download_verified": true
+    },
+    {
+      "name": "social-organization-numerical-001.zip",
+      "bytes": 44291492,
+      "sha256": "e7a1eb94790a621bb7086693db3a64cbb709408f71bb1c8140a42494f04bd157",
+      "download_verified": true
+    }
+  ]
+}

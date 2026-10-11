@@ -23,6 +23,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Restore and verify published numerical data
+        run: python tools/restore_numerical_data.py
+      - name: Test lossless data restoration
+        run: python -m unittest discover -s tools -p test_numerical_release.py -q
       - name: Check sources, local Markdown links and published study hashes
         run: python tools/check_repository.py
       - name: Install the dependencies used by the unit tests
