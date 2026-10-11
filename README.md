@@ -34,7 +34,7 @@ the separate project linked below.
 
 ## Review across both repositories
 
-[Read the review and connections](https://github.com/NousVolition/My-Sources-Project-ALL/blob/main/REPOSITORY-REVIEW.md) for related identity/position, symmetry, persistence and prediction tests, together with unresolved work.
+[Read the review and connections](https://github.com/NousVolition/My-Sources-Project-ALL/blob/main/REPOSITORY-CURRENT-REVIEW.md) for current completion status, duplicate-file findings, material feedback, clay memory, and related identity/position and prediction tests. It distinguishes shared testing methods from demonstrated physical coupling.
 
 Repository CI now runs 300 dynamics/fractal/topology/heteroclinic/reversibility/SIMS-response/Hug/clay/orbit, 12 social-organization and 13 recovery/entrainment unit tests, plus source syntax, JSON, local Markdown links and the three published study manifests. These checks do not rerun the full ensembles or certify the scientific interpretations.
 
