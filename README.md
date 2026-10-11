@@ -75,7 +75,7 @@ The study explores human coordination through nine **SIMS**, its simulated parti
 
 ## Dynamics, fractals, and SIMS
 
-[Open the dynamics and fractals test suite](studies/dynamics-fractals-sims/README.md) for eleven batches, including 12,800 binary-choice SIMS runs, 1,632 earlier continuous-response trajectories, 384 historical threshold-Hug trajectories, 384 current clay-SIMS trajectories, and 672 orbit-driven clay trajectories. These use different response rules, reported separately. The package covers continuous dynamics, finite fractals, tipping points, oscillations, topology, and heteroclinic switching.
+[Open the dynamics and fractals test suite](studies/dynamics-fractals-sims/README.md) for twelve batches, including 12,800 binary-choice SIMS runs, 1,632 earlier continuous-response trajectories, 384 historical threshold-Hug trajectories, 384 current clay-SIMS trajectories, and 672 orbit-driven clay trajectories. These use different response rules, reported separately. The package covers continuous dynamics, finite fractals, tipping points, oscillations, topology, and heteroclinic switching.
 
 The topology batch adds 39,056 bounded algebraic checks and 2,560 new SIMS runs comparing contact density, resisting positions, and filled faces. An exact counterexample shows why group totals can conceal different future coordination.
 
@@ -93,6 +93,6 @@ The tenth batch adds paired circular/reference-eccentric orbits for Pasiphae, El
 
 The eleventh batch applies those orbital inputs directly to the current clay Hug: 28 material trajectories across four frozen coefficient sets and 28 independent solver controls. It tests deformation, recovery, retained strain, closed joins, enclosed area and work/energy balance; these add no participant runs. See [the direct Hug orbital-load test](studies/dynamics-fractals-sims/HUG_ORBIT_METHODS.md).
 
-The package includes 250 automated tests, twenty-four original scientific figures, saved numerical results, and an [illustrated report](studies/dynamics-fractals-sims/report.html) to download and open locally. Equations, selected parameters, and links to primary sources are documented alongside the code.
+The twelfth batch adds a proposed active Hug with the unchanged clay internal law plus inertia, restoring stiffness and powered feedback. Twelve autonomous starts establish attracting cycles before 28 circular/eccentric forced runs. Full-state periodic shooting, Floquet multipliers, kicked-cycle recovery, passive controls, energy accounting and 32 independent Radau segment controls test the new behavior. See [the active Hug methods and plots](studies/dynamics-fractals-sims/ACTIVE_HUG_METHODS.md). These direct Hug tests add no SIMS participant runs.
 
-
+The package includes 271 automated tests, twenty-eight original scientific figures, saved numerical results, and an [illustrated report](studies/dynamics-fractals-sims/report.html) to download and open locally. Equations, selected parameters, and links to primary sources are documented alongside the code.

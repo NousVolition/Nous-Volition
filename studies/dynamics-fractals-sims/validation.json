@@ -1,7 +1,7 @@
 {
   "python": "3.12.14",
   "platform": "Windows",
-  "automated_tests": 250,
+  "automated_tests": 271,
   "test_result": "passed",
   "sims_rounds": 15872,
   "binary_sims_rounds": 12800,
@@ -72,9 +72,24 @@
     "accuracy_gates": "passed",
     "full_reproduction": "passed"
   },
-  "figure_count": 24,
-  "figure_review": "Two new direct Hug orbital loading/recovery figures inspected; twenty-two earlier plots reviewed in previous batches.",
+  "figure_count": 28,
+  "figure_review": "Four new active Hug figures inspected; twenty-four earlier figures preserved.",
   "pending_source": "Figure 7.3.3 / Example 7.3.1 vector field absent; this specific case was not run.",
   "html_local_links": "verified",
-  "html_browser_preview": "Unavailable: browser policy blocks local file URLs."
+  "html_browser_preview": "Unavailable: browser policy blocks local file URLs.",
+  "twelfth_batch_checks": {
+    "main_autonomous_trajectories": 12,
+    "main_orbit_forced_trajectories": 28,
+    "passive_controls": 4,
+    "kicked_cycle_controls": 4,
+    "periodic_shooting_and_variational_calculations": 4,
+    "algebraic_gain_checks": 24,
+    "independent_Radau_segment_controls": 32,
+    "new_tests": 21,
+    "additional_sims_runs": 0,
+    "accuracy_gates": "passed",
+    "maximum_energy_balance_error_scaled": 1.8719890704232967e-07,
+    "maximum_independent_solver_state_error": 1.932198401277674e-09,
+    "full_main_trajectory_reproduction": "Not rerun a second time; original runs and separate numerical, stability, energy and unit controls completed."
+  }
 }
