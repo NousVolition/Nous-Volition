@@ -1,0 +1,47 @@
+{
+  "reason": "Post-check numerical follow-up: the original long-leg staircase errors were nonmonotone. Original results are retained. No forecast models were changed.",
+  "regimes": [
+    {
+      "leg_duration": 200,
+      "current_increment": 0.00625,
+      "mean_run_rms_vs_smooth": 0.0016555608581235995,
+      "ci_low": 0.0016555608580997505,
+      "ci_high": 0.0016555608581578186
+    },
+    {
+      "leg_duration": 200,
+      "current_increment": 0.003125,
+      "mean_run_rms_vs_smooth": 0.0004120506726361344,
+      "ci_low": 0.000412050672599217,
+      "ci_high": 0.00041205067267720795
+    },
+    {
+      "leg_duration": 200,
+      "current_increment": 0.0015625,
+      "mean_run_rms_vs_smooth": 0.00010290233319216117,
+      "ci_low": 0.0001029023331814559,
+      "ci_high": 0.00010290233320418778
+    },
+    {
+      "leg_duration": 800,
+      "current_increment": 0.00625,
+      "mean_run_rms_vs_smooth": 0.0006184069480436673,
+      "ci_low": 0.000618406948038152,
+      "ci_high": 0.0006184069480473444
+    },
+    {
+      "leg_duration": 800,
+      "current_increment": 0.003125,
+      "mean_run_rms_vs_smooth": 2.597919175276678e-05,
+      "ci_low": 2.5979191750063096e-05,
+      "ci_high": 2.5979191756821566e-05
+    },
+    {
+      "leg_duration": 800,
+      "current_increment": 0.0015625,
+      "mean_run_rms_vs_smooth": 9.661974567143158e-06,
+      "ci_low": 9.661974560659304e-06,
+      "ci_high": 9.661974576868611e-06
+    }
+  ]
+}

@@ -1,0 +1,2578 @@
+{
+  "checks": [
+    {
+      "check": "long_cycles/cycle_return",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "long_cycles/direct_voltage",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "long_cycles/alpha_zero_exact",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "long_cycles/cycle_energy_1e_6",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "capacitance/power",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "capacitance/time_step_2e_5",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "fluid_prediction/energy_budget",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "fluid_prediction/divergence",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "fluid_prediction/cfl",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "fluid_prediction/identical_clones",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "fluid_prediction/refinement",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "ramps/step_gate_2e_6",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "noise/resolution_gate",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "noise/covariance_gate_0_02",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "324 cycle checkpoints",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "direct time continuation recomputed",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "cycle-energy recomputed",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "cycle time strictly increases",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "fine noisy voltage reproduced",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "coarse noisy voltage reproduced",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "noise clones identical",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "base capacitor continuation",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "base capacitor voltage recomputed",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "half_step capacitor continuation",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "half_step capacitor voltage recomputed",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "double_settle capacitor continuation",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "double_settle capacitor voltage recomputed",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "circuit run split counts",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "circuit outcome recomputed",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "full-state independent solver comparator",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "fluid train/val/test independence",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "circuit/simple_present frozen predictions reproduce",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "circuit/simple_present train-only scaling",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "circuit/present frozen predictions reproduce",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "circuit/present train-only scaling",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "circuit/history frozen predictions reproduce",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "circuit/history train-only scaling",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "circuit/shuffled_history frozen predictions reproduce",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "circuit/shuffled_history train-only scaling",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "fluid/simple_present frozen predictions reproduce",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "fluid/simple_present train-only scaling",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "fluid/present frozen predictions reproduce",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "fluid/present train-only scaling",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "fluid/history frozen predictions reproduce",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "fluid/history train-only scaling",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "fluid/shuffled_history frozen predictions reproduce",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "fluid/shuffled_history train-only scaling",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5000 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5000 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5000 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5001 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5001 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5001 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5002 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5002 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5002 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5003 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5003 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5003 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5004 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5004 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5004 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5005 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5005 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5005 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5006 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5006 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5006 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5007 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5007 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5007 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5008 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5008 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5008 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5009 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5009 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5009 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5010 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5010 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5010 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5011 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5011 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5011 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5012 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5012 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5012 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5013 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5013 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5013 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5014 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5014 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5014 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5015 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5015 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5015 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5016 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5016 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5016 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5017 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5017 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5017 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5018 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5018 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5018 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5019 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5019 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5019 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5020 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5020 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5020 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5021 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5021 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5021 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5022 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5022 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5022 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5023 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5023 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5023 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5024 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5024 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5024 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5025 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5025 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5025 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5026 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5026 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5026 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5027 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5027 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5027 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5028 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5028 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5028 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5029 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5029 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5029 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5030 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5030 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5030 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5031 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5031 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5031 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5032 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5032 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5032 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5033 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5033 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5033 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5034 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5034 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5034 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5035 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5035 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5035 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5036 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5036 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5036 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5037 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5037 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5037 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5038 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5038 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5038 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5039 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5039 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5039 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5040 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5040 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5040 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5041 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5041 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5041 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5042 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5042 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5042 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5043 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5043 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5043 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5044 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5044 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5044 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5045 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5045 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5045 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5046 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5046 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5046 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5047 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5047 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5047 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5048 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5048 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5048 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5049 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5049 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5049 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5050 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5050 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5050 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5051 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5051 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5051 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5052 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5052 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5052 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5053 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5053 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5053 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5054 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5054 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5054 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5055 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5055 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5055 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5056 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5056 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5056 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5057 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5057 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5057 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5058 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5058 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5058 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5059 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5059 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5059 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5060 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5060 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5060 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5061 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5061 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5061 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5062 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5062 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5062 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5063 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5063 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5063 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5064 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5064 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5064 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5065 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5065 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5065 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5066 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5066 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5066 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5067 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5067 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5067 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5068 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5068 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5068 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5069 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5069 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5069 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5070 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5070 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5070 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5071 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5071 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5071 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5072 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5072 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5072 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5073 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5073 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5073 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5074 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5074 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5074 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5075 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5075 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5075 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5076 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5076 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5076 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5077 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5077 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5077 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5078 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5078 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5078 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5079 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5079 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5079 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5080 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5080 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5080 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5081 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5081 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5081 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5082 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5082 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5082 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5083 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5083 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5083 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5084 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5084 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5084 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5085 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5085 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5085 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5086 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5086 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5086 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5087 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5087 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5087 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5088 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5088 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5088 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5089 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5089 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5089 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5090 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5090 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5090 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5091 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5091 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5091 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5092 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5092 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5092 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5093 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5093 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5093 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5094 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5094 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5094 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5095 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5095 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5095 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5096 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5096 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5096 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5097 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5097 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5097 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5098 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5098 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5098 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5099 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5099 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5099 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5100 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5100 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5100 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5101 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5101 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5101 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5102 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5102 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5102 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5103 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5103 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5103 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5104 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5104 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5104 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5105 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5105 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5105 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5106 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5106 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5106 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5107 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5107 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5107 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5108 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5108 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5108 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5109 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5109 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5109 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5110 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5110 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5110 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5111 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5111 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5111 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5112 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5112 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5112 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5113 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5113 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5113 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5114 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5114 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5114 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5115 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5115 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5115 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5116 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5116 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5116 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5117 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5117 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5117 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5118 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5118 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5118 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5119 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5119 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_5119 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_fine_5000 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_fine_5000 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_fine_5000 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_fine_5039 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_fine_5039 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_fine_5039 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_fine_5079 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_fine_5079 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_fine_5079 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_fine_5119 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_fine_5119 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_fine_5119 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_half_5000 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_half_5000 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_half_5000 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_half_5039 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_half_5039 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_half_5039 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_half_5079 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_half_5079 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_half_5079 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_half_5119 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_half_5119 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation_half_5119 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "fine_4000 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "fine_4000 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "fine_4000 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "fine_4001 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "fine_4001 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "fine_4001 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "half_4000 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "half_4000 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "half_4000 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "half_4001 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "half_4001 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "half_4001 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "replication_4000 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "replication_4000 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "replication_4000 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "replication_4001 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "replication_4001 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "replication_4001 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "replication_4002 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "replication_4002 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "replication_4002 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "replication_4003 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "replication_4003 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "replication_4003 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "replication_4004 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "replication_4004 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "replication_4004 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "replication_4005 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "replication_4005 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "replication_4005 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "replication_4006 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "replication_4006 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "replication_4006 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "replication_4007 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "replication_4007 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "replication_4007 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "replication_4008 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "replication_4008 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "replication_4008 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "replication_4009 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "replication_4009 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "replication_4009 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "replication_4010 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "replication_4010 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "replication_4010 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "replication_4011 raw SHA256",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "replication_4011 exact source provenance",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "replication_4011 energy/clone/CFL",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "capacitance.npz finite arrays",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "checkpoints.npz finite arrays",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "circuit_model_history.npz finite arrays",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "circuit_model_present.npz finite arrays",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "circuit_model_shuffled_history.npz finite arrays",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "circuit_model_simple_present.npz finite arrays",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "circuit_prediction_inputs.npz finite arrays",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "circuit_predictions.npz finite arrays",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "fluid_confirmation.npz finite arrays",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "fluid_model_history.npz finite arrays",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "fluid_model_present.npz finite arrays",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "fluid_model_shuffled_history.npz finite arrays",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "fluid_model_simple_present.npz finite arrays",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "fluid_predictions.npz finite arrays",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "fluid_test_features.npz finite arrays",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "fluid_training.npz finite arrays",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "long_cycles.npz finite arrays",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "noise.npz finite arrays",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "ramps.npz finite arrays",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "ramps_refined.npz finite arrays",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "120 completely new confirmation fields",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation excludes old training, validation and test seeds",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation models and protocol remain frozen",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation present frozen forecasts reproduce",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation history frozen forecasts reproduce",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation shuffled_history frozen forecasts reproduce",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation paired whole-field interval reproduced",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation decision follows declared rule",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation/energy",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation/divergence",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation/cfl",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation/clones",
+      "pass": true,
+      "observed": null
+    },
+    {
+      "check": "confirmation/refinements",
+      "pass": true,
+      "observed": null
+    }
+  ],
+  "passed": 512,
+  "total": 512,
+  "all_pass": true,
+  "diagnostics": {
+    "noise_fine_budget_max": 0.00014597514877377624,
+    "noise_coarse_budget_max": 0.000583237522124927
+  },
+  "versions": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "platform": "Windows-11-10.0.26300-SP0"
+  }
+}

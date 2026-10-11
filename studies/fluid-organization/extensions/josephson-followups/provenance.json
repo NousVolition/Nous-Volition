@@ -1,0 +1,128 @@
+{
+  "circuit.py": {
+    "source": "josephson_sweep/model.py",
+    "sha256": "3e567204b7fd36ea7eb7d91f9d1add53c7cb15213bdbe9eadc27c2b20843c112"
+  },
+  "fluid/core.py": {
+    "source": "recovery_network_pilot/core.py",
+    "sha256": "aa6569c95c2f65382a5da58f475102e5291d4af5ae019a3d0a0ac5060cc8a8b2"
+  },
+  "fluid/common.py": {
+    "source": "recovery_network_pilot/common.py",
+    "sha256": "f4350033f9c523b63336099a16ead4ca38a28bccddb6be42f5ed07c8a36c3eb4"
+  },
+  "fluid/recovery.py": {
+    "source": "recovery_network_pilot/recovery.py",
+    "sha256": "74d8a550b6fde75d65cce709ddc6341154ee38c6d6134ac7b1461cdf71fb77c5"
+  },
+  "fluid/protocol.json": {
+    "source": "recovery_network_pilot/protocol.json",
+    "sha256": "8e9b6c0f998801711df38dfe97c1572fd51d9f30535fd2b712775dcf60e38aa4"
+  },
+  "fluid/vendor/numerics.py": {
+    "source": "recovery_network_pilot/vendor/numerics.py",
+    "sha256": "d95ed8e4cb9895cf7247f4f30722479ab60055af8625d94e8396a124c5aab502"
+  },
+  "data/checkpoints.npz": {
+    "source": "outputs\\josephson_sweep\\data\\reference_S200.npz",
+    "source_sha256": "6b557e709296d8a9ebdb1ed6fb246d0f93c258c2c2956aa1b5b61387812f12fe",
+    "operation": "Settled S=200 checkpoints at i=1.005,1.02,1.2; down order reversed to canonical bias",
+    "source_commit": "8c85be766d3213811f3dcce504129ceaa04f702e"
+  },
+  "fluid_training/1000": {
+    "source": "outputs\\recovery_network_pilot\\data\\fluid\\base_1000.npz",
+    "source_sha256": "32b3a66dff4e5053c50f19ff53db1add32ae2ea20344b16ec48f615d1cc3b36a"
+  },
+  "fluid_training/1001": {
+    "source": "outputs\\recovery_network_pilot\\data\\fluid\\base_1001.npz",
+    "source_sha256": "3bc0dbdfbc84be5e3d7bb3b8086407d8efd16f671bb3f9981f9140ed80dbfa88"
+  },
+  "fluid_training/1002": {
+    "source": "outputs\\recovery_network_pilot\\data\\fluid\\base_1002.npz",
+    "source_sha256": "c8302cda4e020ae2a0a1abe9349dd9ebdbb034f49a49251af392bc1757274645"
+  },
+  "fluid_training/1003": {
+    "source": "outputs\\recovery_network_pilot\\data\\fluid\\base_1003.npz",
+    "source_sha256": "2fa1f42da72b3d04c66a8554a5d6666097cef90c9a74d367896263c1ee84aa96"
+  },
+  "fluid_training/1004": {
+    "source": "outputs\\recovery_network_pilot\\data\\fluid\\base_1004.npz",
+    "source_sha256": "a3a918831364c97e3193571dbc60ab4de35ea2380bdda0cea65a848e517701c3"
+  },
+  "fluid_training/1005": {
+    "source": "outputs\\recovery_network_pilot\\data\\fluid\\base_1005.npz",
+    "source_sha256": "6fe06a5b088ce69f34bfcb0d813b769fe2b787c218e36e1ea134c5f504de29c7"
+  },
+  "fluid_training/1006": {
+    "source": "outputs\\recovery_network_pilot\\data\\fluid\\base_1006.npz",
+    "source_sha256": "3e31b8e2bd05419dc0b592257b8bb0fdd96b93fd08b9baac06c9b5b55aa2a258"
+  },
+  "fluid_training/1007": {
+    "source": "outputs\\recovery_network_pilot\\data\\fluid\\base_1007.npz",
+    "source_sha256": "d35aa9f976444a2ce0b1825a91abb52809d54c1c782096011d10c8b795730e8b"
+  },
+  "fluid_training/1008": {
+    "source": "outputs\\recovery_network_pilot\\data\\fluid\\base_1008.npz",
+    "source_sha256": "93213d45dd52d59aee4fa07ac5efed171d5ccaf5e6650fedbe700d1c94e6a158"
+  },
+  "fluid_training/1009": {
+    "source": "outputs\\recovery_network_pilot\\data\\fluid\\base_1009.npz",
+    "source_sha256": "e5815a4ec0ecc677a1108afd935774baaffa8ae8b00c271a332bf69cc794a42f"
+  },
+  "fluid_training/1010": {
+    "source": "outputs\\recovery_network_pilot\\data\\fluid\\base_1010.npz",
+    "source_sha256": "3b6e010b342047896fc670a805919804d442a7212957c2351d2c4da108dd8f39"
+  },
+  "fluid_training/1011": {
+    "source": "outputs\\recovery_network_pilot\\data\\fluid\\base_1011.npz",
+    "source_sha256": "99cea66cc0f2da152e10934eeca87dfd4883fc287a326fb80eb6f0c5ad39f7b2"
+  },
+  "fluid_training/1012": {
+    "source": "outputs\\recovery_network_pilot\\data\\fluid\\base_1012.npz",
+    "source_sha256": "b4310f89fea8e6069999740ada4b3b48cbbea79db93ff76bf6a724defffc16fe"
+  },
+  "fluid_training/1013": {
+    "source": "outputs\\recovery_network_pilot\\data\\fluid\\base_1013.npz",
+    "source_sha256": "8a2005895c76b8aa4f8ba7017be7c57ed2cbdf6d165bb02736ecbcbb034788de"
+  },
+  "fluid_training/1014": {
+    "source": "outputs\\recovery_network_pilot\\data\\fluid\\base_1014.npz",
+    "source_sha256": "bdfde028e301b06958921e13837ca24a8038227ea7013d2b51d7af6797c1e620"
+  },
+  "fluid_training/1015": {
+    "source": "outputs\\recovery_network_pilot\\data\\fluid\\base_1015.npz",
+    "source_sha256": "ececcbc90c0a10b70406c0760d30ddebc7144164deefc8bf619db03aef0543a9"
+  },
+  "fluid_training/1016": {
+    "source": "outputs\\recovery_network_pilot\\data\\fluid\\base_1016.npz",
+    "source_sha256": "50d1ff6be8fcb868c9762ef5c9ff909368007120d8b4a5d91d2b703a9d1156eb"
+  },
+  "fluid_training/1017": {
+    "source": "outputs\\recovery_network_pilot\\data\\fluid\\base_1017.npz",
+    "source_sha256": "483074e5dc52b64c9bf0ca3dd92c8018cf8e24f6ae635f9fd0ab214a1ad7f760"
+  },
+  "fluid_training/1018": {
+    "source": "outputs\\recovery_network_pilot\\data\\fluid\\base_1018.npz",
+    "source_sha256": "9bbd24bcf1502dfa7fb0a4ccea83a53b2a5d7c6f645dff67e2a36eb61e0d5350"
+  },
+  "fluid_training/1019": {
+    "source": "outputs\\recovery_network_pilot\\data\\fluid\\base_1019.npz",
+    "source_sha256": "a0831953cfb90b1d42c396f5c565123debfc903d91be5794e7b1f6b65174d983"
+  },
+  "fluid_training/1020": {
+    "source": "outputs\\recovery_network_pilot\\data\\fluid\\base_1020.npz",
+    "source_sha256": "662b4a1d1d3dce73f12b75f9fd10ba63bded605683a9e0b1d1d521aeb67cc56e"
+  },
+  "fluid_training/1021": {
+    "source": "outputs\\recovery_network_pilot\\data\\fluid\\base_1021.npz",
+    "source_sha256": "fe699f6aae962507bab0bb9d746af3daeda2160f1280435e90b1bd6a352f9276"
+  },
+  "fluid_training/1022": {
+    "source": "outputs\\recovery_network_pilot\\data\\fluid\\base_1022.npz",
+    "source_sha256": "4f03863ec7d3c755fa06367060d240cdba4f8031d573a1b70f02740420e3acc5"
+  },
+  "fluid_training/1023": {
+    "source": "outputs\\recovery_network_pilot\\data\\fluid\\base_1023.npz",
+    "source_sha256": "b8f9deaa161e435c8488d9064f301326860a343604233fa1e251cdd0a9fd77d9"
+  }
+}
