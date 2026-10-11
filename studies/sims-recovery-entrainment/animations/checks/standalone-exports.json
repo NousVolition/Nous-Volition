@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "records": [
+    {
+      "name": "two-orbits",
+      "played": true,
+      "narrowLayout": true,
+      "errors": [],
+      "networkRequests": 0
+    },
+    {
+      "name": "within-and-position",
+      "played": true,
+      "narrowLayout": true,
+      "errors": [],
+      "networkRequests": 0
+    },
+    {
+      "name": "moving-with-memory",
+      "played": true,
+      "narrowLayout": true,
+      "errors": [],
+      "networkRequests": 0
+    },
+    {
+      "name": "memory-next-path",
+      "played": true,
+      "narrowLayout": true,
+      "errors": [],
+      "networkRequests": 0
+    },
+    {
+      "name": "memory-journey-cycle",
+      "played": true,
+      "narrowLayout": true,
+      "errors": [],
+      "networkRequests": 0
+    }
+  ],
+  "guideLinks": 9
+}

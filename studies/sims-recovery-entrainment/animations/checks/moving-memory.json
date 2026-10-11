@@ -1,0 +1,89 @@
+{
+  "status": "passed",
+  "advanced": 0.73,
+  "snapshots": [
+    {
+      "time": 0,
+      "panels": [
+        "SIM with stored memory: context -1.00, memory +0.00, response -1.00.",
+        "SIM without stored memory: context -1.00, memory +0.00, response -1.00."
+      ]
+    },
+    {
+      "time": 3,
+      "panels": [
+        "SIM with stored memory: context +0.00, memory +0.21, response -0.66.",
+        "SIM without stored memory: context +0.00, memory +0.00, response -0.71."
+      ]
+    },
+    {
+      "time": 6,
+      "panels": [
+        "SIM with stored memory: context +1.00, memory +1.67, response +2.22.",
+        "SIM without stored memory: context +1.00, memory +0.00, response +0.89."
+      ]
+    },
+    {
+      "time": 9,
+      "panels": [
+        "SIM with stored memory: context -1.00, memory +1.90, response +1.66.",
+        "SIM without stored memory: context -1.00, memory +0.00, response -0.19."
+      ]
+    },
+    {
+      "time": 12,
+      "panels": [
+        "SIM with stored memory: context -1.00, memory +1.90, response +0.94.",
+        "SIM without stored memory: context -1.00, memory +0.00, response -0.96."
+      ]
+    },
+    {
+      "time": 32,
+      "panels": [
+        "SIM with stored memory: context -1.00, memory +1.90, response +0.90.",
+        "SIM without stored memory: context -1.00, memory +0.00, response -1.00."
+      ]
+    }
+  ],
+  "fading": "SIM with stored memory: context -1.00, memory +0.26, response -0.72.",
+  "final": [
+    {
+      "kind": "memory",
+      "tau": 0,
+      "x": 0.9004258633417798,
+      "m": 1.9004258632641136
+    },
+    {
+      "kind": "control",
+      "tau": 0,
+      "x": -0.9999999999172337,
+      "m": 0
+    },
+    {
+      "kind": "memory",
+      "tau": 12,
+      "x": -0.7181377414214006,
+      "m": 0.2583737369661684
+    },
+    {
+      "kind": "control",
+      "tau": 12,
+      "x": -0.9999999999172337,
+      "m": 0
+    }
+  ],
+  "maxRefinement": 2.62545540863357e-12,
+  "maxLateError": 1.5524248553333564e-12,
+  "errors": [],
+  "checks": [
+    "no change before departure",
+    "memory disabled stays exactly zero",
+    "analytic retained exposure integral",
+    "independent post-return memory/response solutions",
+    "half-step numerical agreement",
+    "play/pause/replay",
+    "scrubbing",
+    "retention toggle",
+    "five resize layouts"
+  ]
+}

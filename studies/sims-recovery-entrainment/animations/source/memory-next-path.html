@@ -1,0 +1,180 @@
+<div id="sims-memory-next-path">
+  <style>
+    #sims-memory-next-path .sims-lanes { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; }
+    #sims-memory-next-path .sims-stage { min-width:0; }
+    #sims-memory-next-path .sims-svg { display:block; width:100%; }
+    #sims-memory-next-path .sims-svg text { fill:var(--foreground); }
+    #sims-memory-next-path .sims-case { font-weight:500; margin:12px 0 4px; }
+    #sims-memory-next-path .sims-phase { min-height:2em; margin:8px 0; }
+    @media(max-width:640px) { #sims-memory-next-path .sims-lanes { grid-template-columns:minmax(0,1fr); gap:12px; } }
+  </style>
+  <h3>What it carries changes its next path</h3>
+  <div class="text-small">Same journey · same fork · same decision rule</div>
+  <div class="sims-lanes">
+    <div class="sims-stage" data-case="memory">
+      <div class="sims-case">SIM with stored memory</div>
+      <svg class="sims-svg" role="img" aria-label="SIM A stores its visit, returns home, then chooses a path using the memory it carries."></svg>
+    </div>
+    <div class="sims-stage" data-case="control">
+      <div class="sims-case">SIM with storage switched off</div>
+      <svg class="sims-svg" role="img" aria-label="The comparison SIM makes the same visit, returns home, then reaches the same fork without stored memory."></svg>
+    </div>
+  </div>
+  <div class="text-small">Inner ring: stored memory · choice threshold: 0.80</div>
+  <div class="sims-phase" data-phase></div>
+  <div class="viz-controls">
+    <button type="button" class="btn btn-primary" data-play>Play both</button>
+    <button type="button" class="btn" data-fork>At fork</button>
+    <label class="form-label" for="sims-next-retention">Memory retention
+      <select id="sims-next-retention" class="form-select">
+        <option value="0">Retained</option>
+        <option value="12">Fades gradually</option>
+      </select>
+    </label>
+    <label class="form-label" for="sims-next-departure">Next departure
+      <select id="sims-next-departure" class="form-select">
+        <option value="12">Soon after return</option>
+        <option value="24">After a longer wait</option>
+      </select>
+    </label>
+  </div>
+  <label class="form-label" for="sims-next-time">Time <span class="tabular-nums" data-time>0.00</span></label>
+  <input id="sims-next-time" class="form-range" type="range" min="0" max="32" step="0.01" value="0" aria-label="Time for both SIMS">
+  <div class="sr-only" aria-live="polite" data-announce></div>
+  <script>
+  (() => {
+    const root=document.getElementById('sims-memory-next-path');
+    const NS='http://www.w3.org/2000/svg';
+    const slider=root.querySelector('input'),button=root.querySelector('[data-play]');
+    const forkButton=root.querySelector('[data-fork]'),phase=root.querySelector('[data-phase]');
+    const timeLabel=root.querySelector('[data-time]'),announce=root.querySelector('[data-announce]');
+    const retention=root.querySelector('#sims-next-retention'),departure=root.querySelector('#sims-next-departure');
+    const duration=32,step=.005,threshold=.8;
+    const ramp=(t,start,end)=>{
+      const p=Math.max(0,Math.min(1,(t-start)/(end-start)));
+      return p*p*(3-2*p);
+    };
+    const exposure=t=>ramp(t,2,4)*(1-ramp(t,7,9));
+    // Preserve the earlier exposure-storage rule. The second trip adds no new
+    // storage, isolating how the trace from the first trip affects a choice.
+    const rhs=(t,m,kind,tau)=>kind==='memory'?.6*exposure(t)*(2-m)-(tau>0?(1-exposure(t))*m/tau:0):0;
+    const trajectory=(kind,h,tau)=>{
+      const points=[0];let m=0;
+      for(let i=0;i<Math.round(duration/h);i++){
+        const t=i*h,k1=rhs(t,m,kind,tau),k2=rhs(t+h/2,m+h*k1/2,kind,tau);
+        const k3=rhs(t+h/2,m+h*k2/2,kind,tau),k4=rhs(t+h,m+h*k3,kind,tau);
+        m+=h*(k1+2*k2+2*k3+k4)/6;points.push(m);
+      }
+      return points;
+    };
+    const sample=(points,t)=>{
+      const index=Math.min(points.length-2,Math.floor(t/step)),p=(t-index*step)/step;
+      return points[index]*(1-p)+points[index+1]*p;
+    };
+    // This threshold is an illustrative decision assumption, not an inferred
+    // preference. Both arms use it; neither arm has a hard-coded destination.
+    const decision=(points,arrive)=>sample(points,arrive)>threshold?'explore':'familiar';
+    let tracks={memory:trajectory('memory',step,0),control:trajectory('control',step,0)};
+    let time=0,playing=false,lastTime=0,animation=0,resizeFrame=0,measuredWidth=0;
+    const stages=Array.from(root.querySelectorAll('.sims-stage')).map(el=>({el,kind:el.dataset.case,svg:el.querySelector('svg'),nodes:null}));
+    const arrive=()=>Number(departure.value)+2;
+    function add(svg,tag,attrs){
+      const n=document.createElementNS(NS,tag);
+      Object.entries(attrs).forEach(([key,v])=>n.setAttribute(key,v));svg.appendChild(n);return n;
+    }
+    function text(svg,x,y,label,attrs={}){
+      const n=add(svg,'text',{x,y,...attrs});n.textContent=label;return n;
+    }
+    const mix=(a,b,p)=>({x:a.x+(b.x-a.x)*p,y:a.y+(b.y-a.y)*p});
+    function position(t,n,chosen){
+      const d=Number(departure.value),f=d+2;
+      if(t<=d)return mix(n.home,n.visit,exposure(t));
+      if(t<=f)return mix(n.home,n.fork,ramp(t,d,f));
+      return mix(n.fork,chosen==='explore'?n.explore:n.familiar,ramp(t,f,f+4));
+    }
+    function build(stage){
+      const svg=stage.svg,w=Math.max(260,stage.el.getBoundingClientRect().width),height=340;
+      svg.setAttribute('viewBox',`0 0 ${w} ${height}`);svg.setAttribute('height',height);svg.replaceChildren();
+      const home={x:52,y:80},visit={x:w-52,y:80},fork={x:w/2,y:174};
+      const familiar={x:52,y:264},explore={x:w-52,y:264};
+      const memoryText=text(svg,8,20,'Carried memory: 0.00',{'class':'tabular-nums'});
+      const line=(a,b)=>add(svg,'line',{x1:a.x,y1:a.y,x2:b.x,y2:b.y,stroke:'var(--border)','stroke-width':1.5});
+      line(home,visit);line(home,fork);line(fork,familiar);line(fork,explore);
+      [home,visit,familiar,explore].forEach(p=>add(svg,'circle',{cx:p.x,cy:p.y,r:25,fill:'none',stroke:'var(--border)','stroke-width':1.5}));
+      add(svg,'circle',{cx:fork.x,cy:fork.y,r:12,fill:'var(--background)',stroke:'var(--border)','stroke-width':1.5});
+      text(svg,home.x,home.y+43,'Home',{'text-anchor':'middle','class':'text-small'});
+      text(svg,visit.x,visit.y+43,'First visit',{'text-anchor':'middle','class':'text-small'});
+      text(svg,fork.x,fork.y-32,'Fork',{'text-anchor':'middle','class':'text-small'});
+      text(svg,familiar.x,familiar.y+43,'Familiar',{'text-anchor':'middle'});
+      text(svg,explore.x,explore.y+43,'Explore',{'text-anchor':'middle'});
+      const active=add(svg,'line',{x1:fork.x,y1:fork.y,x2:fork.x,y2:fork.y,stroke:'var(--viz-series-1)','stroke-width':2});
+      const marker=add(svg,'g',{});
+      add(marker,'circle',{cx:0,cy:0,r:22,fill:'var(--viz-series-1)','fill-opacity':.1,stroke:'var(--viz-series-1)','stroke-width':2});
+      const ring=add(marker,'circle',{cx:0,cy:0,r:18,fill:'none',stroke:'var(--viz-series-2)','stroke-width':3,transform:'rotate(-90)','stroke-dasharray':`0 ${2*Math.PI*18}`});
+      text(marker,0,5,'A',{'text-anchor':'middle'});
+      const choiceText=text(svg,w/2,326,'Choice: pending',{'text-anchor':'middle','class':'text-small'});
+      stage.nodes={home,visit,fork,familiar,explore,memoryText,active,marker,ring,choiceText};
+    }
+    function draw(){
+      const f=arrive();
+      stages.forEach(stage=>{
+        if(!stage.nodes)return;
+        const n=stage.nodes,m=sample(tracks[stage.kind],time),chosen=decision(tracks[stage.kind],f);
+        const pos=position(time,n,chosen);
+        n.marker.setAttribute('transform',`translate(${pos.x} ${pos.y})`);
+        n.ring.setAttribute('stroke-dasharray',`${Math.PI*18*m} ${2*Math.PI*18}`);
+        n.memoryText.textContent=`Carried memory: ${m.toFixed(2)}`;
+        n.active.setAttribute('x2',time>=f?pos.x:n.fork.x);n.active.setAttribute('y2',time>=f?pos.y:n.fork.y);
+        const choice=time>=f?`${chosen==='explore'?'Explore':'Familiar'} · memory at fork ${sample(tracks[stage.kind],f).toFixed(2)}`:'Choice: pending';
+        n.choiceText.textContent=choice;
+        stage.svg.setAttribute('aria-label',`${stage.kind==='memory'?'SIM with memory':'SIM without stored memory'}: carried memory ${m.toFixed(2)}. ${choice}.`);
+      });
+      phase.textContent=time<2?'Same starting state.':time<4?'Both travel; one stores the experience.':time<7?'Same first visit; memory grows.':time<9?'Both carry their internal states home.':time<Number(departure.value)?'Back home, waiting before the next trip.':time<f?'Both approach the same fork.':time<f+4?'Same fork: carried memory selects the next path.':'Next destinations reached.';
+      timeLabel.textContent=time.toFixed(2);slider.value=String(time);
+      slider.setAttribute('aria-valuetext',`${time.toFixed(2)} model time. ${phase.textContent}`);
+      button.textContent=playing?'Pause both':time>=duration?'Replay both':'Play both';
+    }
+    function resize(){
+      const width=root.getBoundingClientRect().width;
+      if(Math.abs(width-measuredWidth)<.5&&stages.every(s=>s.nodes))return;
+      measuredWidth=width;stages.forEach(build);draw();
+    }
+    function scheduleResize(){if(!resizeFrame)resizeFrame=requestAnimationFrame(()=>{resizeFrame=0;resize();});}
+    function persist(){
+      if(typeof window.openai?.setWidgetState!=='function')return;
+      const state=kind=>({memory:sample(tracks[kind],time),memoryAtFork:sample(tracks[kind],arrive()),destination:time>=arrive()?decision(tracks[kind],arrive()):'pending'});
+      Promise.resolve(window.openai.setWidgetState({
+        modelContent:{example:'Carried exposure memory changes the next route under an explicit threshold rule',time,retention:retention.value,departure:Number(departure.value),choiceTime:arrive(),threshold,withMemory:state('memory'),withoutMemory:state('control')},
+        privateContent:{example:'memory-next-path',time,retention:retention.value,departure:departure.value}
+      })).catch(()=>{});
+    }
+    function stop(){playing=false;lastTime=0;if(animation){cancelAnimationFrame(animation);animation=0;}}
+    function recompute(){const tau=Number(retention.value);tracks={memory:trajectory('memory',step,tau),control:trajectory('control',step,tau)};}
+    function restore(snapshot){
+      const saved=snapshot?.privateContent;
+      if(saved?.example!=='memory-next-path'||!Number.isFinite(saved.time))return;
+      stop();retention.value=saved.retention==='12'?'12':'0';departure.value=saved.departure==='24'?'24':'12';
+      recompute();time=Math.max(0,Math.min(duration,saved.time));draw();
+    }
+    function tick(now){
+      animation=0;if(!playing)return;
+      if(lastTime)time=Math.min(duration,time+2*Math.min(.1,(now-lastTime)/1000));lastTime=now;
+      if(time>=duration){stop();draw();persist();announce.textContent='Finished. Next destinations reached.';return;}
+      draw();animation=requestAnimationFrame(tick);
+    }
+    button.addEventListener('click',()=>{
+      if(playing){stop();draw();persist();announce.textContent='Both paused.';return;}
+      if(time>=duration)time=0;
+      playing=true;lastTime=0;draw();animation=requestAnimationFrame(tick);
+    });
+    forkButton.addEventListener('click',()=>{stop();time=arrive();draw();persist();announce.textContent='Both at the fork. Compare carried memory and selected paths.';});
+    slider.addEventListener('input',()=>{stop();time=Number(slider.value);draw();});
+    slider.addEventListener('change',()=>{persist();announce.textContent=phase.textContent;});
+    [retention,departure].forEach(control=>control.addEventListener('change',()=>{stop();recompute();draw();persist();announce.textContent=phase.textContent;}));
+    window.addEventListener('openai:set_globals',event=>{if(event.detail?.globals?.widgetState)restore(event.detail.globals.widgetState);});
+    const reduced=window.matchMedia('(prefers-reduced-motion: reduce)');
+    reduced.addEventListener('change',()=>{if(reduced.matches){stop();draw();}});
+    new ResizeObserver(scheduleResize).observe(root);restore(window.openai?.widgetState);resize();
+  })();
+  </script>
+</div>

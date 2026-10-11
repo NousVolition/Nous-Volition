@@ -1,0 +1,190 @@
+<div id="sims-moving-memory">
+  <style>
+    #sims-moving-memory .sims-lanes { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; }
+    #sims-moving-memory .sims-stage { min-width:0; }
+    #sims-moving-memory .sims-svg { display:block; width:100%; }
+    #sims-moving-memory .sims-svg text { fill:var(--foreground); }
+    #sims-moving-memory .sims-phase { min-height:2em; margin:8px 0; }
+    #sims-moving-memory .sims-case { font-weight:500; margin:12px 0 4px; }
+    @media(max-width:640px) { #sims-moving-memory .sims-lanes { grid-template-columns:minmax(0,1fr); gap:12px; } }
+  </style>
+  <h3>The SIM brings its experience back</h3>
+  <div class="text-small">Same starting SIM · same journey · with and without stored memory</div>
+  <div class="sims-lanes">
+    <div class="sims-stage" data-case="memory">
+      <div class="sims-case">Moving builds stored memory</div>
+      <svg class="sims-svg" role="img" aria-label="SIM A visits another context, gains an internal memory and carries it home."></svg>
+    </div>
+    <div class="sims-stage" data-case="control">
+      <div class="sims-case">Same move, no stored memory</div>
+      <svg class="sims-svg" role="img" aria-label="SIM A makes the same journey, with the memory-storage mechanism switched off."></svg>
+    </div>
+  </div>
+  <div class="sims-phase" data-phase></div>
+  <div class="viz-controls">
+    <button type="button" class="btn btn-primary" data-play>Play both</button>
+    <label class="form-label" for="sims-memory-retention">Memory retention
+      <select id="sims-memory-retention" class="form-select">
+        <option value="0">Retained</option>
+        <option value="12">Fades gradually</option>
+      </select>
+    </label>
+  </div>
+  <label class="form-label" for="sims-moving-memory-time">Time <span class="tabular-nums" data-time>0.00</span> · same clock, same response rule</label>
+  <input id="sims-moving-memory-time" class="form-range" type="range" min="0" max="32" step="0.01" value="0" aria-label="Model time for both SIMS">
+  <div class="sr-only" aria-live="polite" data-announce></div>
+  <script>
+  (() => {
+    const root=document.getElementById('sims-moving-memory');
+    const NS='http://www.w3.org/2000/svg';
+    const slider=root.querySelector('input');
+    const button=root.querySelector('[data-play]');
+    const phase=root.querySelector('[data-phase]');
+    const timeLabel=root.querySelector('[data-time]');
+    const announce=root.querySelector('[data-announce]');
+    const retention=root.querySelector('select');
+    const duration=32,step=.005;
+    const ramp=(t,start,end)=>{
+      const p=Math.max(0,Math.min(1,(t-start)/(end-start)));
+      return p*p*(3-2*p);
+    };
+    const causes=(t)=>{
+      const change=ramp(t,2,4),returned=ramp(t,7,9);
+      return {position:change*(1-returned)};
+    };
+    // x is the fast response; m is a separate stored exposure trace.
+    // Storage is enabled only in the memory arm. No jump is applied to m.
+    const rhs=(t,z,kind,tau)=>{
+      const p=causes(t).position,u=-1+2*p;
+      const dm=kind==='memory'?.6*p*(2-z[1])-(tau>0?(1-p)*z[1]/tau:0):0;
+      return [u+z[1]-z[0],dm];
+    };
+    const trajectory=(kind,h,tau)=>{
+      const points=[{x:-1,m:0}];let z=[-1,0];
+      for(let i=0;i<Math.round(duration/h);i++){
+        const t=i*h,k1=rhs(t,z,kind,tau);
+        const k2=rhs(t+h/2,z.map((v,j)=>v+h*k1[j]/2),kind,tau);
+        const k3=rhs(t+h/2,z.map((v,j)=>v+h*k2[j]/2),kind,tau);
+        const k4=rhs(t+h,z.map((v,j)=>v+h*k3[j]),kind,tau);
+        z=z.map((v,j)=>v+h*(k1[j]+2*k2[j]+2*k3[j]+k4[j])/6);
+        points.push({x:z[0],m:z[1]});
+      }
+      return points;
+    };
+    let tracks={memory:trajectory('memory',step,0),control:trajectory('control',step,0)};
+    let time=0,playing=false,lastTime=0,animation=0,resizeFrame=0,measuredWidth=0;
+    const stages=Array.from(root.querySelectorAll('.sims-stage')).map(el=>({el,kind:el.dataset.case,svg:el.querySelector('svg'),nodes:null}));
+    const signed=(v)=>`${v>=0?'+':''}${v.toFixed(2)}`;
+    const value=(kind,t)=>{
+      const index=Math.min(tracks[kind].length-2,Math.floor(t/step));
+      const p=(t-index*step)/step;
+      const a=tracks[kind][index],b=tracks[kind][index+1];
+      return {x:a.x*(1-p)+b.x*p,m:a.m*(1-p)+b.m*p};
+    };
+    function add(svg,tag,attrs){
+      const n=document.createElementNS(NS,tag);
+      Object.entries(attrs).forEach(([key,v])=>n.setAttribute(key,v));svg.appendChild(n);return n;
+    }
+    function text(svg,x,y,label,attrs={}){
+      const n=add(svg,'text',{x,y,...attrs});n.textContent=label;return n;
+    }
+    function build(stage){
+      const svg=stage.svg,w=Math.max(260,stage.el.getBoundingClientRect().width),height=242;
+      svg.setAttribute('viewBox',`0 0 ${w} ${height}`);svg.setAttribute('height',height);
+      svg.replaceChildren();
+      const left=58,right=w-58,y=78;
+      text(svg,8,20,'Context:',{'class':'text-small'});
+      const contextText=text(svg,70,20,'−1.00',{'class':'tabular-nums'});
+      const biasText=text(svg,w-8,20,'Memory: +0.00',{'text-anchor':'end','class':'tabular-nums'});
+      add(svg,'line',{x1:left,y1:y,x2:right,y2:y,stroke:'var(--border)','stroke-width':1.5});
+      [left,right].forEach(x=>add(svg,'circle',{cx:x,cy:y,r:27,fill:'none',stroke:'var(--border)','stroke-width':1.5}));
+      text(svg,left,y+49,'Context −1',{'text-anchor':'middle','class':'text-small'});
+      text(svg,right,y+49,'Context +1',{'text-anchor':'middle','class':'text-small'});
+      const marker=add(svg,'g',{});
+      add(marker,'circle',{cx:0,cy:0,r:23,fill:'var(--viz-series-1)','fill-opacity':.1,stroke:'var(--viz-series-1)','stroke-width':2});
+      const biasRing=add(marker,'circle',{cx:0,cy:0,r:19,fill:'none',stroke:'var(--viz-series-2)','stroke-width':3,transform:'rotate(-90)','stroke-dasharray':`0 ${2*Math.PI*19}`});
+      text(marker,0,5,'A',{'text-anchor':'middle'});
+      text(svg,8,164,'Response');
+      const responseText=text(svg,w-8,164,'−1.00',{'text-anchor':'end','class':'tabular-nums'});
+      const l=24,r=w-24,barY=191;
+      add(svg,'line',{x1:l,y1:barY,x2:r,y2:barY,stroke:'var(--border)','stroke-width':2});
+      [-1,0,1,3].forEach(v=>{
+        const x=l+(r-l)*(v+1)/4;
+        add(svg,'line',{x1:x,y1:barY-4,x2:x,y2:barY+4,stroke:'var(--border)','stroke-width':1});
+        text(svg,x,barY+25,v>0?`+${v}`:String(v),{'text-anchor':v===-1?'start':v===3?'end':'middle','class':'text-small'});
+      });
+      const responseMarker=add(svg,'circle',{cx:l,cy:barY,r:6,fill:'var(--viz-series-1)'});
+      stage.nodes={w,left,right,y,contextText,biasText,marker,biasRing,responseText,responseMarker,l,r};
+    }
+    function draw(){
+      const c=causes(time);
+      stages.forEach(stage=>{
+        if(!stage.nodes)return;
+        const n=stage.nodes,p=c.position,state=value(stage.kind,time),b=state.m;
+        const u=-1+2*p,x=state.x;
+        n.marker.setAttribute('transform',`translate(${n.left+(n.right-n.left)*p} ${n.y})`);
+        n.contextText.textContent=signed(u);
+        n.biasText.textContent=`Memory: ${signed(b)}`;
+        n.biasRing.setAttribute('stroke-dasharray',`${Math.PI*19*b} ${2*Math.PI*19}`);
+        n.responseText.textContent=signed(x);
+        n.responseMarker.setAttribute('cx',n.l+(n.r-n.l)*(x+1)/4);
+        stage.svg.setAttribute('aria-label',`${stage.kind==='memory'?'SIM with stored memory':'SIM without stored memory'}: context ${signed(u)}, memory ${signed(b)}, response ${signed(x)}.`);
+      });
+      phase.textContent=time<2?'Same starting state.':time<4?'Both move; one starts storing the experience.':time<7?'Same new context; stored memory keeps growing.':time<9?'Both return, carrying their internal states.':Number(retention.value)===0?'Same original context; the stored change remains.':'Same original context; the stored change slowly fades.';
+      timeLabel.textContent=time.toFixed(2);slider.value=String(time);
+      slider.setAttribute('aria-valuetext',`${time.toFixed(2)} model time. ${phase.textContent}`);
+      button.textContent=playing?'Pause both':time>=duration?'Replay both':'Play both';
+    }
+    function resize(){
+      const width=root.getBoundingClientRect().width;
+      if(Math.abs(width-measuredWidth)<.5 && stages.every(s=>s.nodes))return;
+      measuredWidth=width;stages.forEach(build);draw();
+    }
+    function scheduleResize(){
+      if(resizeFrame)return;
+      resizeFrame=requestAnimationFrame(()=>{resizeFrame=0;resize();});
+    }
+    function persist(){
+      if(typeof window.openai?.setWidgetState!=='function')return;
+      const c=causes(time);
+      Promise.resolve(window.openai.setWidgetState({
+        modelContent:{example:'Moving changes a SIM internally through stored exposure',time,retention:retention.value,
+          withMemory:{context:-1+2*c.position,...value('memory',time)},
+          withoutMemory:{context:-1+2*c.position,...value('control',time)}},
+        privateContent:{example:'moving-memory',time,retention:retention.value}
+      })).catch(()=>{});
+    }
+    function stop(){playing=false;lastTime=0;if(animation){cancelAnimationFrame(animation);animation=0;}}
+    function restore(snapshot){
+      const saved=snapshot?.privateContent;
+      if(saved?.example!=='moving-memory'||!Number.isFinite(saved.time))return;
+      stop();retention.value=saved.retention==='12'?'12':'0';
+      recompute();time=Math.max(0,Math.min(duration,saved.time));draw();
+    }
+    function tick(now){
+      animation=0;if(!playing)return;
+      if(lastTime)time=Math.min(duration,time+2*Math.min(.1,(now-lastTime)/1000));
+      lastTime=now;
+      if(time>=duration){stop();draw();persist();announce.textContent='Finished. Compare the stored memory and response after the return.';return;}
+      draw();animation=requestAnimationFrame(tick);
+    }
+    button.addEventListener('click',()=>{
+      if(playing){stop();draw();persist();announce.textContent='Both paused.';return;}
+      if(time>=duration)time=0;
+      playing=true;lastTime=0;draw();animation=requestAnimationFrame(tick);announce.textContent='Both playing on the same clock.';
+    });
+    slider.addEventListener('input',()=>{stop();time=Number(slider.value);draw();});
+    slider.addEventListener('change',()=>{persist();announce.textContent=phase.textContent;});
+    function recompute(){
+      const tau=Number(retention.value);
+      tracks={memory:trajectory('memory',step,tau),control:trajectory('control',step,tau)};
+    }
+    retention.addEventListener('change',()=>{stop();recompute();draw();persist();announce.textContent=`Memory mode: ${retention.options[retention.selectedIndex].text}.`;});
+    window.addEventListener('openai:set_globals',event=>{if(event.detail?.globals?.widgetState)restore(event.detail.globals.widgetState);});
+    const reduced=window.matchMedia('(prefers-reduced-motion: reduce)');
+    reduced.addEventListener('change',()=>{if(reduced.matches){stop();draw();}});
+    new ResizeObserver(scheduleResize).observe(root);
+    restore(window.openai?.widgetState);resize();
+  })();
+  </script>
+</div>

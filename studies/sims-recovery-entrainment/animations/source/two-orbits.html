@@ -1,0 +1,164 @@
+<div id="orbit-reversal-sims">
+  <style>
+    #orbit-reversal-sims .orbit-stage { width:100%; }
+    #orbit-reversal-sims .orbit-svg { display:block; width:100%; overflow:visible; }
+    #orbit-reversal-sims .orbit-svg text { fill:var(--foreground); }
+    #orbit-reversal-sims .orbit-legend { display:flex; flex-wrap:wrap; gap:8px 20px; margin:8px 0; }
+    #orbit-reversal-sims .orbit-key { display:inline-flex; gap:7px; align-items:center; }
+    #orbit-reversal-sims .orbit-swatch { width:20px; height:3px; display:inline-block; }
+    #orbit-reversal-sims .orbit-detail { min-height:2.5em; margin:8px 0; }
+  </style>
+  <h3>Opposite rotations, no equilibrium between</h3>
+  <div class="orbit-stage">
+    <svg class="orbit-svg" role="img" aria-labelledby="orbit-sims-title orbit-sims-description">
+      <title id="orbit-sims-title">Two circular orbits and a particle crossing between them</title>
+      <desc id="orbit-sims-description">The inner orbit turns clockwise and the outer orbit counterclockwise. A diamond moves outward through the annulus, reversing its turning direction at the dashed circle without stopping. The arrow on the diamond shows its velocity. The only equilibrium is at the center, inside the inner orbit.</desc>
+    </svg>
+  </div>
+  <div class="orbit-legend text-small">
+    <span class="orbit-key"><span class="orbit-swatch" style="background:var(--viz-series-1)"></span>● Inner: clockwise</span>
+    <span class="orbit-key"><span class="orbit-swatch" style="background:var(--viz-series-2)"></span>■ Outer: counterclockwise</span>
+    <span class="orbit-key"><span class="orbit-swatch" style="background:var(--viz-series-3)"></span>◆ Crossing particle</span>
+  </div>
+  <div class="orbit-detail tabular-nums" data-detail></div>
+  <div class="viz-controls">
+    <button type="button" class="btn btn-primary" data-play>Play</button>
+    <button type="button" class="btn" data-reversal>At reversal</button>
+  </div>
+  <label class="form-label" for="orbit-sims-time">Time <span class="tabular-nums" data-time>0.000</span> · all three particles share the same clock</label>
+  <input id="orbit-sims-time" class="form-range" type="range" min="0" max="4.2" step="0.001" value="0" aria-label="Model time">
+  <div class="sr-only" aria-live="polite" data-announcement></div>
+  <script>
+  (() => {
+    const root = document.getElementById('orbit-reversal-sims');
+    const svg = root.querySelector('.orbit-svg');
+    const slider = root.querySelector('input');
+    const play = root.querySelector('[data-play]');
+    const detail = root.querySelector('[data-detail]');
+    const timeLabel = root.querySelector('[data-time]');
+    const announcement = root.querySelector('[data-announcement]');
+    const NS = 'http://www.w3.org/2000/svg';
+    const duration = 4.2, h = 0.0005, rstar = Math.sqrt(2.5);
+    const initialAngle = 1.15;
+    const samples = [{t:0,r:1.0001,a:initialAngle}];
+    const rhs = (r) => [r*(r*r-1)*(4-r*r),r*r-2.5];
+    let reversalTime = null;
+    for (let k=1;k<=Math.round(duration/h);k++) {
+      const p=samples[k-1], k1=rhs(p.r), k2=rhs(p.r+h*k1[0]/2);
+      const k3=rhs(p.r+h*k2[0]/2), k4=rhs(p.r+h*k3[0]);
+      const r=p.r+h*(k1[0]+2*k2[0]+2*k3[0]+k4[0])/6;
+      const a=p.a+h*(k1[1]+2*k2[1]+2*k3[1]+k4[1])/6;
+      const t=k*h;
+      samples.push({t,r,a});
+      if (reversalTime===null && r>=rstar) reversalTime=p.t+h*(rstar-p.r)/(r-p.r);
+    }
+    let t=0, playing=false, last=0, layout=null, resizeFrame=0;
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const stateAt = (v) => {
+      const k=Math.min(samples.length-2,Math.floor(v/h));
+      const p=samples[k],q=samples[k+1],u=(v-p.t)/h;
+      return {r:p.r+(q.r-p.r)*u,a:p.a+(q.a-p.a)*u};
+    };
+    function add(tag,attrs,parent=svg) {
+      const n=document.createElementNS(NS,tag);
+      for(const [key,value] of Object.entries(attrs)) n.setAttribute(key,value);
+      parent.appendChild(n); return n;
+    }
+    function line(x1,y1,x2,y2,attrs={}) {return add('line',{x1,y1,x2,y2,...attrs});}
+    function label(x,y,value,attrs={}) {
+      const n=add('text',{x,y,'text-anchor':'middle',...attrs}); n.textContent=value; return n;
+    }
+    function arrow(x,y,dx,dy,color,width=2) {
+      if(Math.hypot(dx,dy)<0.01) return;
+      line(x,y,x+dx,y+dy,{stroke:color,'stroke-width':width,'marker-end':'url(#orbit-sims-arrow)'});
+    }
+    function draw() {
+      if (!layout) return;
+      const {w,H,cx,cy,s}=layout;
+      svg.querySelectorAll(':scope > :not(title):not(desc)').forEach(n=>n.remove());
+      const defs=add('defs',{}),marker=add('marker',{id:'orbit-sims-arrow',viewBox:'0 0 10 10',refX:8,refY:5,markerWidth:5,markerHeight:5,orient:'auto-start-reverse'},defs);
+      add('path',{d:'M 0 0 L 10 5 L 0 10 z',fill:'var(--foreground)'},marker);
+      const xy=(r,a)=>[cx+s*r*Math.cos(a),cy-s*r*Math.sin(a)];
+      [1,2].forEach((r,i)=>add('circle',{cx,cy,r:r*s,fill:'none',stroke:`var(--viz-series-${i+1})`,'stroke-width':2}));
+      add('circle',{cx,cy,r:rstar*s,fill:'none',stroke:'var(--muted-foreground)','stroke-width':1,'stroke-dasharray':'5 5'});
+      const target=xy(rstar,2.45);
+      const lx=Math.max(64,cx-1.1*s),ly=cy-2*s-17;
+      line(lx,ly+7,target[0],target[1],{stroke:'var(--border)','stroke-width':1});
+      label(lx,ly,'Zero turning circle');
+      label(cx,cy+2*s+22,'Radius 2');
+      label(cx,cy+s-10,'Radius 1');
+      line(cx-4,cy,cx+4,cy,{stroke:'var(--foreground)','stroke-width':1.5});
+      line(cx,cy-4,cx,cy+4,{stroke:'var(--foreground)','stroke-width':1.5});
+      label(cx,cy+23,w>=450?'Only equilibrium':'Equilibrium');
+      if(w>=450) label(cx,cy+40,'at the center',{'class':'text-small'});
+      const p=stateAt(t), atTurn=Math.abs(t-reversalTime)<1e-7;
+      if(atTurn) p.r=rstar;
+      let path='';
+      for(let k=0;k<samples.length && samples[k].t<t;k+=8) {
+        const v=samples[k],pt=xy(v.r,v.a);path+=(path?' L ':'M ')+pt[0].toFixed(2)+' '+pt[1].toFixed(2);
+      }
+      const pos=xy(p.r,p.a);
+      path+=(path?' L ':'M ')+pos[0].toFixed(2)+' '+pos[1].toFixed(2);
+      add('path',{d:path,fill:'none',stroke:'var(--viz-series-3)','stroke-width':2.5,'stroke-linecap':'round'});
+      const inner=xy(1,-1.5*t),outer=xy(2,Math.PI+1.5*t);
+      add('circle',{cx:inner[0],cy:inner[1],r:6,fill:'var(--viz-series-1)'});
+      add('rect',{x:outer[0]-5.5,y:outer[1]-5.5,width:11,height:11,fill:'var(--viz-series-2)'});
+      const vr=p.r*(p.r*p.r-1)*(4-p.r*p.r),omega=atTurn?0:p.r*p.r-2.5;
+      const vx=vr*Math.cos(p.a)-p.r*omega*Math.sin(p.a),vy=vr*Math.sin(p.a)+p.r*omega*Math.cos(p.a);
+      arrow(pos[0],pos[1],s*.095*vx,-s*.095*vy,'var(--foreground)',2);
+      add('path',{d:`M ${pos[0]} ${pos[1]-7} l 7 7 l -7 7 l -7 -7 z`,fill:'var(--viz-series-3)'});
+      const direction=atTurn?'Purely outward — still moving':omega<0?'Clockwise + outward':'Counterclockwise + outward';
+      detail.textContent=`${direction} · turning ${omega.toFixed(3)} rad/time · outward ${vr.toFixed(3)} units/time`;
+      timeLabel.textContent=t.toFixed(3);
+      slider.value=t;
+      slider.setAttribute('aria-valuetext',`${t.toFixed(3)} model time; ${direction}`);
+      play.textContent=playing?'Pause':t>=duration?'Replay':'Play';
+    }
+    function resize() {
+      const w=Math.max(280,root.querySelector('.orbit-stage').getBoundingClientRect().width);
+      if(layout && Math.abs(layout.w-w)<0.5) return;
+      const H=Math.min(440,w+50),s=Math.min((w-44)/4.35,(H-82)/4.2);
+      layout={w,H,cx:w/2,cy:H/2+3,s};
+      svg.setAttribute('viewBox',`0 0 ${w} ${H}`);svg.setAttribute('height',H);
+      draw();
+    }
+    function scheduleResize() {
+      if(resizeFrame) return;
+      resizeFrame=requestAnimationFrame(()=>{resizeFrame=0;resize();});
+    }
+    function persist() {
+      if(window.openai?.setWidgetState) Promise.resolve(window.openai.setWidgetState({
+        modelContent:{example:'Two opposite circular orbits, radial crossing without an equilibrium',time:t,atReversal:Math.abs(t-reversalTime)<1e-7},
+        privateContent:{time:t}
+      })).catch(()=>{});
+    }
+    function restore(snapshot) {
+      const val=snapshot?.privateContent?.time ?? snapshot?.modelContent?.time;
+      if(typeof val==='number' && Number.isFinite(val)) {t=Math.max(0,Math.min(duration,val));playing=false;draw();}
+    }
+    function frame(now) {
+      if(playing) {
+        if(last) t=Math.min(duration,t+Math.min(.1,(now-last)/1000)*.12);
+        if(t>=duration) {playing=false;announcement.textContent='Animation complete. Replay or inspect the reversal.';persist();}
+        draw();
+      }
+      last=now;requestAnimationFrame(frame);
+    }
+    play.addEventListener('click',()=>{
+      if(t>=duration) t=0;
+      playing=!playing;last=0;draw();if(!playing) persist();
+      announcement.textContent=playing?'Playing at 0.12 model time per second.':'Paused.';
+    });
+    root.querySelector('[data-reversal]').addEventListener('click',()=>{
+      playing=false;t=reversalTime;draw();persist();
+      announcement.textContent='At the reversal: zero turning, but outward speed is 3.558 units per model time.';
+    });
+    slider.addEventListener('input',()=>{playing=false;t=Number(slider.value);draw();});
+    slider.addEventListener('change',()=>{persist();announcement.textContent=detail.textContent;});
+    window.addEventListener('openai:set_globals',e=>{if(e.detail?.globals?.widgetState) restore(e.detail.globals.widgetState);});
+    reduced.addEventListener('change',()=>{if(reduced.matches){playing=false;draw();}});
+    new ResizeObserver(scheduleResize).observe(root.querySelector('.orbit-stage'));
+    restore(window.openai?.widgetState);resize();requestAnimationFrame(frame);
+  })();
+  </script>
+</div>

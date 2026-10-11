@@ -1,0 +1,213 @@
+<div id="sims-memory-journey-cycle">
+  <style>
+    #sims-memory-journey-cycle .sims-lanes { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; }
+    #sims-memory-journey-cycle .sims-stage { min-width:0; }
+    #sims-memory-journey-cycle .sims-svg { display:block; width:100%; }
+    #sims-memory-journey-cycle .sims-svg text { fill:var(--foreground); }
+    #sims-memory-journey-cycle .sims-case { font-weight:500; margin:12px 0 4px; }
+    #sims-memory-journey-cycle .sims-phase { min-height:2em; margin:8px 0; }
+    @media(max-width:640px) { #sims-memory-journey-cycle .sims-lanes { grid-template-columns:minmax(0,1fr); gap:12px; } }
+  </style>
+  <h3>Experience → memory → choice → new experience</h3>
+  <div class="text-small">One first visit · three further trips · the same decision rule</div>
+  <div class="sims-lanes">
+    <div class="sims-stage" data-case="memory">
+      <div class="sims-case">SIM with stored memory</div>
+      <svg class="sims-svg" role="img" aria-label="SIM A repeatedly returns home. Each chosen destination changes its memory before its next choice."></svg>
+    </div>
+    <div class="sims-stage" data-case="control">
+      <div class="sims-case">SIM with storage switched off</div>
+      <svg class="sims-svg" role="img" aria-label="The comparison SIM repeatedly visits the fork with memory storage switched off."></svg>
+    </div>
+  </div>
+  <div class="text-small">Inner ring: stored memory · choice threshold: 0.80</div>
+  <div class="sims-phase" data-phase></div>
+  <div class="viz-controls">
+    <button type="button" class="btn btn-primary" data-play>Play both</button>
+    <button type="button" class="btn" data-fork>Next choice</button>
+    <label class="form-label" for="sims-cycle-retention">Between visits
+      <select id="sims-cycle-retention" class="form-select">
+        <option value="0">No fading</option>
+        <option value="12">Gradual fading</option>
+      </select>
+    </label>
+    <label class="form-label" for="sims-cycle-feedback">Destination feedback
+      <select id="sims-cycle-feedback" class="form-select">
+        <option value="balancing">Balancing</option>
+        <option value="reinforcing">Reinforcing</option>
+      </select>
+    </label>
+  </div>
+  <label class="form-label" for="sims-cycle-time">Time <span class="tabular-nums" data-time>0.00</span></label>
+  <input id="sims-cycle-time" class="form-range" type="range" min="0" max="44" step="0.01" value="0" aria-label="Time for both SIMS">
+  <div class="sr-only" aria-live="polite" data-announce></div>
+  <script>
+  (() => {
+    const root=document.getElementById('sims-memory-journey-cycle');
+    const NS='http://www.w3.org/2000/svg';
+    const slider=root.querySelector('input'),button=root.querySelector('[data-play]');
+    const forkButton=root.querySelector('[data-fork]'),phase=root.querySelector('[data-phase]');
+    const timeLabel=root.querySelector('[data-time]'),announce=root.querySelector('[data-announce]');
+    const retention=root.querySelector('#sims-cycle-retention'),feedback=root.querySelector('#sims-cycle-feedback');
+    const duration=44,step=.005,threshold=.8;
+    const ramp=(t,start,end)=>{
+      const p=Math.max(0,Math.min(1,(t-start)/(end-start)));
+      return p*p*(3-2*p);
+    };
+    const exposure=t=>ramp(t,2,4)*(1-ramp(t,7,9));
+    const tripSchedule=Array.from({length:3},(_,k)=>({depart:12+10*k,fork:14+10*k,arrival:16+10*k,leave:19+10*k,home:22+10*k}));
+    const choose=m=>m>threshold?'explore':'familiar';
+    const target=(destination,mode)=>mode==='reinforcing'?(destination==='explore'?2:0):(destination==='explore'?0:2);
+    // New storage occurs during the dwell at the destination actually chosen.
+    // Only the first visit is imposed. Subsequent paths depend on the current
+    // memory at each fork. Targets and the threshold are illustrative assumptions.
+    const rhs=(t,m,kind,tau,dwellTarget)=>{
+      if(kind==='control')return 0;
+      const p=exposure(t);
+      if(dwellTarget!==null)return .6*(dwellTarget-m);
+      return .6*p*(2-m)-(tau>0?(1-p)*m/tau:0);
+    };
+    const trajectory=(kind,h,tau,mode)=>{
+      const points=[0],trips=[];let m=0;
+      for(let i=0;i<Math.round(duration/h);i++){
+        const t=i*h;
+        for(const trip of tripSchedule)if(i===Math.round(trip.fork/h))trips.push({...trip,destination:choose(m),memoryAtFork:m});
+        const dwell=trips.find(trip=>t>=trip.arrival-1e-9&&t<trip.leave-1e-9);
+        // Every event is aligned to the integration grid. Hold the active regime
+        // over the entire step, including its right-hand endpoint.
+        const aim=dwell?target(dwell.destination,mode):null;
+        const k1=rhs(t,m,kind,tau,aim),k2=rhs(t+h/2,m+h*k1/2,kind,tau,aim);
+        const k3=rhs(t+h/2,m+h*k2/2,kind,tau,aim),k4=rhs(t+h,m+h*k3,kind,tau,aim);
+        m+=h*(k1+2*k2+2*k3+k4)/6;points.push(m);
+      }
+      return {points,trips};
+    };
+    const sample=(points,t)=>{
+      const index=Math.min(points.length-2,Math.floor(t/step)),p=(t-index*step)/step;
+      return points[index]*(1-p)+points[index+1]*p;
+    };
+    let tracks={memory:trajectory('memory',step,0,'balancing'),control:trajectory('control',step,0,'balancing')};
+    let time=0,playing=false,lastTime=0,animation=0,resizeFrame=0,measuredWidth=0;
+    const stages=Array.from(root.querySelectorAll('.sims-stage')).map(el=>({el,kind:el.dataset.case,svg:el.querySelector('svg'),nodes:null}));
+    function add(svg,tag,attrs){
+      const n=document.createElementNS(NS,tag);
+      Object.entries(attrs).forEach(([key,v])=>n.setAttribute(key,v));svg.appendChild(n);return n;
+    }
+    function text(svg,x,y,label,attrs={}){
+      const n=add(svg,'text',{x,y,...attrs});n.textContent=label;return n;
+    }
+    const mix=(a,b,p)=>({x:a.x+(b.x-a.x)*p,y:a.y+(b.y-a.y)*p});
+    function position(t,n,tripList){
+      if(t<=12)return mix(n.home,n.visit,exposure(t));
+      for(const trip of tripList){
+        if(t<trip.depart)return n.home;
+        const destination=trip.destination==='explore'?n.explore:n.familiar;
+        if(t<=trip.fork)return mix(n.home,n.fork,ramp(t,trip.depart,trip.fork));
+        if(t<=trip.arrival)return mix(n.fork,destination,ramp(t,trip.fork,trip.arrival));
+        if(t<=trip.leave)return destination;
+        const middle=(trip.leave+trip.home)/2;
+        if(t<=middle)return mix(destination,n.fork,ramp(t,trip.leave,middle));
+        if(t<=trip.home)return mix(n.fork,n.home,ramp(t,middle,trip.home));
+      }
+      return n.home;
+    }
+    function build(stage){
+      const svg=stage.svg,w=Math.max(260,stage.el.getBoundingClientRect().width),height=370;
+      svg.setAttribute('viewBox',`0 0 ${w} ${height}`);svg.setAttribute('height',height);svg.replaceChildren();
+      const home={x:52,y:80},visit={x:w-52,y:80},fork={x:w/2,y:174};
+      const familiar={x:52,y:264},explore={x:w-52,y:264};
+      const memoryText=text(svg,8,20,'Carried memory: 0.00',{'class':'tabular-nums'});
+      const line=(a,b)=>add(svg,'line',{x1:a.x,y1:a.y,x2:b.x,y2:b.y,stroke:'var(--border)','stroke-width':1.5});
+      line(home,visit);line(home,fork);line(fork,familiar);line(fork,explore);
+      [home,visit,familiar,explore].forEach(p=>add(svg,'circle',{cx:p.x,cy:p.y,r:25,fill:'none',stroke:'var(--border)','stroke-width':1.5}));
+      add(svg,'circle',{cx:fork.x,cy:fork.y,r:12,fill:'var(--background)',stroke:'var(--border)','stroke-width':1.5});
+      text(svg,home.x,home.y+43,'Home',{'text-anchor':'middle','class':'text-small'});
+      text(svg,visit.x,visit.y+43,'First visit',{'text-anchor':'middle','class':'text-small'});
+      text(svg,fork.x,fork.y-32,'Fork',{'text-anchor':'middle','class':'text-small'});
+      text(svg,familiar.x,familiar.y+43,'Familiar',{'text-anchor':'middle'});
+      text(svg,explore.x,explore.y+43,'Explore',{'text-anchor':'middle'});
+      const familiarEffect=text(svg,familiar.x,familiar.y+62,'Toward 2.00',{'text-anchor':'middle','class':'text-small'});
+      const exploreEffect=text(svg,explore.x,explore.y+62,'Toward 0.00',{'text-anchor':'middle','class':'text-small'});
+      const active=add(svg,'line',{x1:fork.x,y1:fork.y,x2:fork.x,y2:fork.y,stroke:'var(--viz-series-1)','stroke-width':2});
+      const marker=add(svg,'g',{});
+      add(marker,'circle',{cx:0,cy:0,r:22,fill:'var(--viz-series-1)','fill-opacity':.1,stroke:'var(--viz-series-1)','stroke-width':2});
+      const ring=add(marker,'circle',{cx:0,cy:0,r:18,fill:'none',stroke:'var(--viz-series-2)','stroke-width':3,transform:'rotate(-90)','stroke-dasharray':`0 ${2*Math.PI*18}`});
+      text(marker,0,5,'A',{'text-anchor':'middle'});
+      const choiceText=text(svg,w/2,358,'Choices: pending',{'text-anchor':'middle','class':'text-small'});
+      stage.nodes={home,visit,fork,familiar,explore,memoryText,active,marker,ring,choiceText,familiarEffect,exploreEffect};
+    }
+    function draw(){
+      stages.forEach(stage=>{
+        if(!stage.nodes)return;
+        const n=stage.nodes,track=tracks[stage.kind],m=sample(track.points,time);
+        const pos=position(time,n,track.trips);
+        n.marker.setAttribute('transform',`translate(${pos.x} ${pos.y})`);
+        n.ring.setAttribute('stroke-dasharray',`${Math.PI*18*m} ${2*Math.PI*18}`);
+        n.memoryText.textContent=`Carried memory: ${m.toFixed(2)}`;
+        n.familiarEffect.textContent=stage.kind==='control'?'Storage off':`Toward ${target('familiar',feedback.value).toFixed(2)}`;
+        n.exploreEffect.textContent=stage.kind==='control'?'Storage off':`Toward ${target('explore',feedback.value).toFixed(2)}`;
+        const selected=track.trips.filter(trip=>trip.fork<=time);
+        const current=selected.at(-1),end=current?(current.destination==='explore'?n.explore:n.familiar):n.fork;
+        n.active.setAttribute('x2',end.x);n.active.setAttribute('y2',end.y);
+        const choice=selected.length?`Choices: ${selected.map(trip=>trip.destination==='explore'?'Explore':'Familiar').join(' → ')}`:'Choices: pending';
+        n.choiceText.textContent=choice;
+        stage.svg.setAttribute('aria-label',`${stage.kind==='memory'?'SIM with memory':'SIM without stored memory'}: carried memory ${m.toFixed(2)}. ${choice}.`);
+      });
+      const activeIndex=tripSchedule.findIndex(trip=>time>=trip.depart&&time<trip.home);
+      if(time<2)phase.textContent='Same starting state.';
+      else if(time<4)phase.textContent='Both travel; one stores the experience.';
+      else if(time<7)phase.textContent='First visit: memory grows.';
+      else if(time<9)phase.textContent='Both carry their internal states home.';
+      else if(time<12)phase.textContent='Back home, before the next trip.';
+      else if(activeIndex>=0){
+        const trip=tripSchedule[activeIndex],prefix=`Trip ${activeIndex+1}: `;
+        phase.textContent=prefix+(time<trip.fork?'approaching the same fork.':time<trip.arrival?'memory selects a destination.':time<trip.leave?'the chosen destination changes memory.':'returning home with the updated trace.');
+      }else phase.textContent='Three trips complete; both back home.';
+      timeLabel.textContent=time.toFixed(2);slider.value=String(time);
+      slider.setAttribute('aria-valuetext',`${time.toFixed(2)} model time. ${phase.textContent}`);
+      button.textContent=playing?'Pause both':time>=duration?'Replay both':'Play both';
+    }
+    function resize(){
+      const width=root.getBoundingClientRect().width;
+      if(Math.abs(width-measuredWidth)<.5&&stages.every(s=>s.nodes))return;
+      measuredWidth=width;stages.forEach(build);draw();
+    }
+    function scheduleResize(){if(!resizeFrame)resizeFrame=requestAnimationFrame(()=>{resizeFrame=0;resize();});}
+    function persist(){
+      if(typeof window.openai?.setWidgetState!=='function')return;
+      const state=kind=>({memory:sample(tracks[kind].points,time),choices:tracks[kind].trips.filter(trip=>trip.fork<=time).map(trip=>({time:trip.fork,memoryAtFork:trip.memoryAtFork,destination:trip.destination}))});
+      Promise.resolve(window.openai.setWidgetState({
+        modelContent:{example:'Repeated cycle: destination updates carried memory, which changes the next destination',time,retention:retention.value,feedback:feedback.value,threshold,destinationTargets:{explore:target('explore',feedback.value),familiar:target('familiar',feedback.value)},withMemory:state('memory'),withoutMemory:state('control')},
+        privateContent:{example:'memory-journey-cycle',time,retention:retention.value,feedback:feedback.value}
+      })).catch(()=>{});
+    }
+    function stop(){playing=false;lastTime=0;if(animation){cancelAnimationFrame(animation);animation=0;}}
+    function recompute(){const tau=Number(retention.value),mode=feedback.value;tracks={memory:trajectory('memory',step,tau,mode),control:trajectory('control',step,tau,mode)};}
+    function restore(snapshot){
+      const saved=snapshot?.privateContent;
+      if(saved?.example!=='memory-journey-cycle'||!Number.isFinite(saved.time))return;
+      stop();retention.value=saved.retention==='12'?'12':'0';feedback.value=saved.feedback==='reinforcing'?'reinforcing':'balancing';
+      recompute();time=Math.max(0,Math.min(duration,saved.time));draw();
+    }
+    function tick(now){
+      animation=0;if(!playing)return;
+      if(lastTime)time=Math.min(duration,time+3*Math.min(.1,(now-lastTime)/1000));lastTime=now;
+      if(time>=duration){stop();draw();persist();announce.textContent='Finished. Three trips complete; both back home.';return;}
+      draw();animation=requestAnimationFrame(tick);
+    }
+    button.addEventListener('click',()=>{
+      if(playing){stop();draw();persist();announce.textContent='Both paused.';return;}
+      if(time>=duration)time=0;
+      playing=true;lastTime=0;draw();animation=requestAnimationFrame(tick);
+    });
+    forkButton.addEventListener('click',()=>{stop();time=tripSchedule.find(trip=>trip.fork>time+.01)?.fork??tripSchedule[0].fork;draw();persist();announce.textContent='Both at the fork. Compare the carried memory and choice history.';});
+    slider.addEventListener('input',()=>{stop();time=Number(slider.value);draw();});
+    slider.addEventListener('change',()=>{persist();announce.textContent=phase.textContent;});
+    [retention,feedback].forEach(control=>control.addEventListener('change',()=>{stop();recompute();draw();persist();announce.textContent=phase.textContent;}));
+    window.addEventListener('openai:set_globals',event=>{if(event.detail?.globals?.widgetState)restore(event.detail.globals.widgetState);});
+    const reduced=window.matchMedia('(prefers-reduced-motion: reduce)');
+    reduced.addEventListener('change',()=>{if(reduced.matches){stop();draw();}});
+    new ResizeObserver(scheduleResize).observe(root);restore(window.openai?.widgetState);resize();
+  })();
+  </script>
+</div>

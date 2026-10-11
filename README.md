@@ -96,3 +96,7 @@ The eleventh batch applies those orbital inputs directly to the current clay Hug
 The twelfth batch adds a proposed active Hug with the unchanged clay internal law plus inertia, restoring stiffness and powered feedback. Twelve autonomous starts establish attracting cycles before 28 circular/eccentric forced runs. Full-state periodic shooting, Floquet multipliers, kicked-cycle recovery, passive controls, energy accounting and 32 independent Radau segment controls test the new behavior. See [the active Hug methods and plots](studies/dynamics-fractals-sims/ACTIVE_HUG_METHODS.md). These direct Hug tests add no SIMS participant runs.
 
 The package includes 271 automated tests, twenty-eight original scientific figures, saved numerical results, and an [illustrated report](studies/dynamics-fractals-sims/report.html) to download and open locally. Equations, selected parameters, and links to primary sources are documented alongside the code.
+
+## SIMS animations: what changes within, and what changes with place
+
+[Open the animation guide](studies/sims-recovery-entrainment/animations/index.html). Five interactive examples trace position, internal changes, carried memory, and repeated destination–memory feedback. These are explanatory models with explicit assumptions; download the repository to play the HTML animations locally.

@@ -1,0 +1,315 @@
+{
+  "status": "passed",
+  "outcomes": [
+    {
+      "kind": "memory",
+      "tau": 0,
+      "mode": "balancing",
+      "trips": [
+        {
+          "depart": 12,
+          "fork": 14,
+          "arrival": 16,
+          "leave": 19,
+          "home": 22,
+          "destination": "explore",
+          "memoryAtFork": 1.9004258632641136
+        },
+        {
+          "depart": 22,
+          "fork": 24,
+          "arrival": 26,
+          "leave": 29,
+          "home": 32,
+          "destination": "familiar",
+          "memoryAtFork": 0.31413828234548946
+        },
+        {
+          "depart": 32,
+          "fork": 34,
+          "arrival": 36,
+          "leave": 39,
+          "home": 42,
+          "destination": "explore",
+          "memoryAtFork": 1.7213289323760352
+        }
+      ],
+      "finalMemory": 0.28453375878575576
+    },
+    {
+      "kind": "control",
+      "tau": 0,
+      "mode": "balancing",
+      "trips": [
+        {
+          "depart": 12,
+          "fork": 14,
+          "arrival": 16,
+          "leave": 19,
+          "home": 22,
+          "destination": "familiar",
+          "memoryAtFork": 0
+        },
+        {
+          "depart": 22,
+          "fork": 24,
+          "arrival": 26,
+          "leave": 29,
+          "home": 32,
+          "destination": "familiar",
+          "memoryAtFork": 0
+        },
+        {
+          "depart": 32,
+          "fork": 34,
+          "arrival": 36,
+          "leave": 39,
+          "home": 42,
+          "destination": "familiar",
+          "memoryAtFork": 0
+        }
+      ],
+      "finalMemory": 0
+    },
+    {
+      "kind": "memory",
+      "tau": 0,
+      "mode": "reinforcing",
+      "trips": [
+        {
+          "depart": 12,
+          "fork": 14,
+          "arrival": 16,
+          "leave": 19,
+          "home": 22,
+          "destination": "explore",
+          "memoryAtFork": 1.9004258632641136
+        },
+        {
+          "depart": 22,
+          "fork": 24,
+          "arrival": 26,
+          "leave": 29,
+          "home": 32,
+          "destination": "explore",
+          "memoryAtFork": 1.9835405059019142
+        },
+        {
+          "depart": 32,
+          "fork": 34,
+          "arrival": 36,
+          "leave": 39,
+          "home": 42,
+          "destination": "explore",
+          "memoryAtFork": 1.9972792639248924
+        }
+      ],
+      "finalMemory": 1.9995502653516404
+    },
+    {
+      "kind": "control",
+      "tau": 0,
+      "mode": "reinforcing",
+      "trips": [
+        {
+          "depart": 12,
+          "fork": 14,
+          "arrival": 16,
+          "leave": 19,
+          "home": 22,
+          "destination": "familiar",
+          "memoryAtFork": 0
+        },
+        {
+          "depart": 22,
+          "fork": 24,
+          "arrival": 26,
+          "leave": 29,
+          "home": 32,
+          "destination": "familiar",
+          "memoryAtFork": 0
+        },
+        {
+          "depart": 32,
+          "fork": 34,
+          "arrival": 36,
+          "leave": 39,
+          "home": 42,
+          "destination": "familiar",
+          "memoryAtFork": 0
+        }
+      ],
+      "finalMemory": 0
+    },
+    {
+      "kind": "memory",
+      "tau": 12,
+      "mode": "balancing",
+      "trips": [
+        {
+          "depart": 12,
+          "fork": 14,
+          "arrival": 16,
+          "leave": 19,
+          "home": 22,
+          "destination": "explore",
+          "memoryAtFork": 1.157950753023668
+        },
+        {
+          "depart": 22,
+          "fork": 24,
+          "arrival": 26,
+          "leave": 29,
+          "home": 32,
+          "destination": "familiar",
+          "memoryAtFork": 0.10681237560701241
+        },
+        {
+          "depart": 32,
+          "fork": 34,
+          "arrival": 36,
+          "leave": 39,
+          "home": 42,
+          "destination": "explore",
+          "memoryAtFork": 1.1103904239982938
+        }
+      ],
+      "finalMemory": 0.1024252877152465
+    },
+    {
+      "kind": "control",
+      "tau": 12,
+      "mode": "balancing",
+      "trips": [
+        {
+          "depart": 12,
+          "fork": 14,
+          "arrival": 16,
+          "leave": 19,
+          "home": 22,
+          "destination": "familiar",
+          "memoryAtFork": 0
+        },
+        {
+          "depart": 22,
+          "fork": 24,
+          "arrival": 26,
+          "leave": 29,
+          "home": 32,
+          "destination": "familiar",
+          "memoryAtFork": 0
+        },
+        {
+          "depart": 32,
+          "fork": 34,
+          "arrival": 36,
+          "leave": 39,
+          "home": 42,
+          "destination": "familiar",
+          "memoryAtFork": 0
+        }
+      ],
+      "finalMemory": 0
+    },
+    {
+      "kind": "memory",
+      "tau": 12,
+      "mode": "reinforcing",
+      "trips": [
+        {
+          "depart": 12,
+          "fork": 14,
+          "arrival": 16,
+          "leave": 19,
+          "home": 22,
+          "destination": "explore",
+          "memoryAtFork": 1.157950753023668
+        },
+        {
+          "depart": 22,
+          "fork": 24,
+          "arrival": 26,
+          "leave": 29,
+          "home": 32,
+          "destination": "explore",
+          "memoryAtFork": 1.207350149522373
+        },
+        {
+          "depart": 32,
+          "fork": 34,
+          "arrival": 36,
+          "leave": 39,
+          "home": 42,
+          "destination": "explore",
+          "memoryAtFork": 1.2119068777595619
+        }
+      ],
+      "finalMemory": 1.212327202170367
+    },
+    {
+      "kind": "control",
+      "tau": 12,
+      "mode": "reinforcing",
+      "trips": [
+        {
+          "depart": 12,
+          "fork": 14,
+          "arrival": 16,
+          "leave": 19,
+          "home": 22,
+          "destination": "familiar",
+          "memoryAtFork": 0
+        },
+        {
+          "depart": 22,
+          "fork": 24,
+          "arrival": 26,
+          "leave": 29,
+          "home": 32,
+          "destination": "familiar",
+          "memoryAtFork": 0
+        },
+        {
+          "depart": 32,
+          "fork": 34,
+          "arrival": 36,
+          "leave": 39,
+          "home": 42,
+          "destination": "familiar",
+          "memoryAtFork": 0
+        }
+      ],
+      "finalMemory": 0
+    }
+  ],
+  "maxRefinement": 4.107825191113079e-13,
+  "maxAnalyticError": 4.773959005888173e-13,
+  "snapshots": [
+    {
+      "time": 14,
+      "labels": [
+        "SIM with memory: carried memory 1.90. Choices: Explore.",
+        "SIM without stored memory: carried memory 0.00. Choices: Familiar."
+      ]
+    },
+    {
+      "time": 24,
+      "labels": [
+        "SIM with memory: carried memory 0.31. Choices: Explore → Familiar.",
+        "SIM without stored memory: carried memory 0.00. Choices: Familiar → Familiar."
+      ]
+    },
+    {
+      "time": 34,
+      "labels": [
+        "SIM with memory: carried memory 1.72. Choices: Explore → Familiar → Explore.",
+        "SIM without stored memory: carried memory 0.00. Choices: Familiar → Familiar → Familiar."
+      ]
+    }
+  ],
+  "homePositions": [
+    "translate(52 80)",
+    "translate(52 80)"
+  ],
+  "errors": []
+}

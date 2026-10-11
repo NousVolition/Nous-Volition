@@ -6,6 +6,29 @@ This follow-up extends the six-group SIMS experiment and works through the equat
 in the supplied page extracts. Download the repository and open any HTML report
 locally; their figures are embedded and work offline. GitHub displays HTML source.
 
+
+## Animations: position, internal change, and repeated journeys
+
+[Open the animation guide](animations/index.html), then choose one of five offline
+animations. Download the repository and open the guide locally; GitHub displays
+HTML source. The editable fragments are in `animations/source`.
+
+The demonstrations distinguish a changed current context, a changed internal
+bias, a carried exposure trace, and a feedback cycle in which the chosen
+destination updates that trace before the next decision. The repeated cycle uses
+an explicit threshold and assumed destination effects. With balancing feedback,
+the memory-enabled SIM chooses Explore, Familiar, Explore; with reinforcing
+feedback, it chooses Explore on all three trips. These are deterministic mechanism
+examples, not additional population experiments, learned preferences, human
+findings, or physical phase transitions.
+
+The orbit animation shows angular reversal without an equilibrium in the annulus:
+the radial component remains nonzero when the angular component vanishes. The
+guide records the equations, assumptions, and checks. Browser checks and
+independent numerical comparisons actually ran; archived records are in
+`animations/checks`. Run `node animations/check_models.cjs` to verify the four
+memory/position models with Node.js and no external dependencies.
+
 ## What ran
 
 - 1,152 cooperation-model trajectories: 60 SIMS, 480 rounds, four stress schedules,

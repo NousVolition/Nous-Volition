@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SIMS animations: position, memory, and journeys</title>
+<style>
+:root { color-scheme:light dark; }
+body { margin:0; background:Canvas; color:CanvasText; font:17px/1.6 system-ui,sans-serif; }
+main { max-width:850px; margin:auto; padding:32px 24px; }
+h1 { line-height:1.2; } h2 { margin-top:32px; } a { color:LinkText; }
+li { margin:16px 0; } code { overflow-wrap:anywhere; }
+@media(max-width:480px) { main { padding:20px 16px; } }
+</style>
+</head>
+<body><main>
+<nav><a href="../README.md">SIMS study</a> · <a href="../worked_models.html">Worked models</a></nav>
+<h1>What changes within, and what changes with place?</h1>
+<p>Five animations follow that question from a change in position to a repeated cycle of experience, stored memory, and choice. Download the repository and open this guide locally to play them. GitHub displays HTML source.</p>
+<ol>
+<li><a href="two-orbits.html">Opposite rotations without an equilibrium between</a><br>The inner orbit rotates clockwise, the outer orbit counterclockwise. At the turning circle, angular speed is zero but outward motion continues. Use <strong>At reversal</strong> to inspect it.</li>
+<li><a href="within-and-position.html">Changed position versus changed internal state</a><br>One SIM moves; the other stays in place but receives an internal bias change. Their early responses match by construction. Returning the moving SIM separates those explanations.</li>
+<li><a href="moving-with-memory.html">A journey changes what the SIM carries home</a><br>Both make the same trip. One stores a slow exposure trace, visible as its inner ring. Compare retained and fading traces. Both still have a fast response lag; the control disables the additional storage mechanism.</li>
+<li><a href="memory-next-path.html">Carried memory changes the next destination</a><br>Both reach the same fork. Under the assumed rule, a trace above 0.80 selects Explore, otherwise Familiar. A longer wait can let fading memory change that decision.</li>
+<li><a href="memory-journey-cycle.html">The destination changes memory again</a><br>Three further trips close the feedback cycle. In Balancing mode, Explore reduces the trace and Familiar rebuilds it; choices become Explore → Familiar → Explore. In Reinforcing mode, Explore strengthens the trace and the SIM chooses it three times. The storage-disabled comparison always chooses Familiar. Use <strong>Next choice</strong> to inspect each fork.</li>
+</ol>
+<h2>What the model assumes</h2>
+<p>The SIM identity A stays fixed. Position and stored state are separate variables. The scalar trace summarizes a stored effect; it is not a record of detailed memories or learned weights. All animations are deterministic mechanism examples. They do not establish preferences in people, a brain model, or a physical law. The six water-related group names elsewhere in the study remain a social analogy.</p>
+<p>The first journey is imposed: departure over times 2–4, a visit until time 7, and return over 7–9. For the response examples, <code>dx/dt = u + m − x</code>, where <code>u</code> is the current context. The internal-bias comparison instead supplies a controlled bias. The trace grows during the first visit according to <code>dm/dt = 0.6 p(2 − m) − (1 − p)m/τ</code>, with exposure <code>p</code> between 0 and 1. Retained mode omits the decay term.</p>
+<p>For the repeated cycle, choices occur at times 14, 24, and 34. Each chosen destination is reached two time units later and visited for three time units, then the SIM returns home. During a destination visit, <code>dm/dt = 0.6(target − m)</code>. Balancing targets are Explore = 0 and Familiar = 2; Reinforcing reverses those targets. Between visits, the trace either stays constant or decays with time scale 12. Choice is evaluated once at each fork from the current trace; later updates affect the next fork. Paths are computed from that rule, not stored as a preset sequence.</p>
+<p>In the orbit example, let <code>q = x² + y²</code>, <code>g = (q − 1)(4 − q)</code>, and <code>w = q − 2.5</code>. The smooth field is <code>dx/dt = gx − wy</code>, <code>dy/dt = wx + gy</code>. The reversal radius is √2.5; there <code>dr/dt = (9/4)r &gt; 0</code>. The origin is the only equilibrium and lies inside the inner orbit, not between the two orbits.</p>
+<h2>What actually ran</h2>
+<p>All five animations were executed and inspected. The four position/memory models have saved numerical and browser-check records in <a href="checks/memory-cycle.json">checks</a>. Checks include independent analytic solutions, half-step agreement, storage-disabled controls, playback and scrubbing, controls, saved-state restoration where applicable, and narrow-screen layouts. They are verification of these examples, not new population replications. The orbit animation was also checked at reversal and during playback; this package includes a new export playback check.</p>
+<p>Portable numerical checks: <code>node check_models.cjs</code> from this directory, using Node.js without additional packages. Editable animation fragments are in <code>source</code>. The standalone pages embed the styling and runtime needed for local playback; no account or live service is required. The manifest records file hashes. Previously published ensemble results remain separate.</p>
+<p>Optional browser verification: install Playwright and its Chromium browser, then run <code>node check_browser.cjs</code>. Set <code>SIMS_BROWSER_EXECUTABLE</code> to use an installed Chromium browser instead. This repeats export playback, layout, local-link, error, and zero-network-request checks. It writes records into <code>checks</code>; historical check records and their manifest hashes describe the delivered files.</p>
+<p><a href="../report.html">Return to the research results</a></p>
+</main></body></html>

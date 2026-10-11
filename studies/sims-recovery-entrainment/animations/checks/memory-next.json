@@ -1,0 +1,80 @@
+{
+  "status": "passed",
+  "outcomes": [
+    {
+      "kind": "memory",
+      "tau": 0,
+      "arrive": 14,
+      "memory": 1.9004258632641136,
+      "choice": "explore"
+    },
+    {
+      "kind": "memory",
+      "tau": 0,
+      "arrive": 26,
+      "memory": 1.9004258632641136,
+      "choice": "explore"
+    },
+    {
+      "kind": "control",
+      "tau": 0,
+      "arrive": 14,
+      "memory": 0,
+      "choice": "familiar"
+    },
+    {
+      "kind": "control",
+      "tau": 0,
+      "arrive": 26,
+      "memory": 0,
+      "choice": "familiar"
+    },
+    {
+      "kind": "memory",
+      "tau": 12,
+      "arrive": 14,
+      "memory": 1.157950753023668,
+      "choice": "explore"
+    },
+    {
+      "kind": "memory",
+      "tau": 12,
+      "arrive": 26,
+      "memory": 0.4259862759264004,
+      "choice": "familiar"
+    },
+    {
+      "kind": "control",
+      "tau": 12,
+      "arrive": 14,
+      "memory": 0,
+      "choice": "familiar"
+    },
+    {
+      "kind": "control",
+      "tau": 12,
+      "arrive": 26,
+      "memory": 0,
+      "choice": "familiar"
+    }
+  ],
+  "maxRefinement": 4.021227795192317e-13,
+  "maxAnalyticError": 3.83026943495679e-15,
+  "retained": [
+    "SIM with memory: carried memory 1.90. Explore · memory at fork 1.90.",
+    "SIM without stored memory: carried memory 0.00. Familiar · memory at fork 0.00."
+  ],
+  "faded": [
+    "SIM with memory: carried memory 0.43. Familiar · memory at fork 0.43.",
+    "SIM without stored memory: carried memory 0.00. Familiar · memory at fork 0.00."
+  ],
+  "retainedPositions": [
+    "translate(300 264)",
+    "translate(52 264)"
+  ],
+  "fadingPositions": [
+    "translate(52 264)",
+    "translate(52 264)"
+  ],
+  "errors": []
+}

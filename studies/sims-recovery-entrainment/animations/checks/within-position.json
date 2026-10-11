@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "advanced": 0.36,
+  "snapshots": [
+    {
+      "time": 0,
+      "panels": [
+        "Moved SIM: context -1.00, stored bias +0.00, response -1.00.",
+        "Internally changed SIM: context -1.00, stored bias +0.00, response -1.00."
+      ]
+    },
+    {
+      "time": 3,
+      "panels": [
+        "Moved SIM: context +0.00, stored bias +0.00, response -0.71.",
+        "Internally changed SIM: context -1.00, stored bias +1.00, response -0.71."
+      ]
+    },
+    {
+      "time": 6,
+      "panels": [
+        "Moved SIM: context +1.00, stored bias +0.00, response +0.89.",
+        "Internally changed SIM: context -1.00, stored bias +2.00, response +0.89."
+      ]
+    },
+    {
+      "time": 10,
+      "panels": [
+        "Moved SIM: context -1.00, stored bias +0.00, response -0.70.",
+        "Internally changed SIM: context -1.00, stored bias +2.00, response +1.00."
+      ]
+    },
+    {
+      "time": 14,
+      "panels": [
+        "Moved SIM: context -1.00, stored bias +0.00, response -0.99.",
+        "Internally changed SIM: context -1.00, stored bias +2.00, response +1.00."
+      ]
+    }
+  ],
+  "maxRefinement": 2.62545540863357e-12,
+  "errors": [],
+  "checks": [
+    "matching response until return",
+    "independent exact constant-drive decay",
+    "half-step numerical agreement",
+    "play/pause/replay",
+    "scrubbing",
+    "five resize layouts without runtime errors"
+  ]
+}
