@@ -1,0 +1,1 @@
+active_cubic_90001: 367.9s; CFL=0.110; min kcut_eta=1.830; high E=3.1e-06; difference balance=3.1e-10

@@ -1,0 +1,238 @@
+{
+  "smooth": {
+    "mean_field_rmse": {
+      "conventional": 0.016637556390033233,
+      "present": 0.02080404737715527,
+      "history": 0.017332032137796143,
+      "shuffled_0": 0.01752795443208944,
+      "shuffled_1": 0.016414549290682624,
+      "shuffled_2": 0.01736183022992724,
+      "prior_by_strength": 0.0176028087881447
+    },
+    "pooled_rmse": {
+      "conventional": 0.021519837308546334,
+      "present": 0.02808910650937244,
+      "history": 0.02239638695306969,
+      "shuffled_0": 0.022942048357076472,
+      "shuffled_1": 0.021541552946987258,
+      "shuffled_2": 0.022783517257115637,
+      "prior_by_strength": 0.022971815183705762
+    },
+    "target_mean": 0.9017784986480899,
+    "target_std": 0.022990966037485766,
+    "contrasts": {
+      "history_vs_present": {
+        "mean_rmse_difference": -0.003472015239359127,
+        "rmse_difference_interval": [
+          -0.010948583010844785,
+          0.003617841385310612
+        ],
+        "relative_improvement_percent": 16.689133496070173,
+        "relative_improvement_interval": [
+          -23.030855058918217,
+          42.28859518590062
+        ],
+        "fields_better": 16,
+        "independent_fields": 32
+      },
+      "history_vs_shuffled_mean": {
+        "mean_rmse_difference": 7.092808344119628e-05,
+        "rmse_difference_interval": [
+          -0.00037869019963398577,
+          0.0005943776232447295
+        ],
+        "relative_improvement_percent": -0.4109127852879313,
+        "relative_improvement_interval": [
+          -3.600170747177959,
+          2.2612240109893125
+        ],
+        "fields_better": 15,
+        "independent_fields": 32,
+        "null_mean_field_rmse": 0.017261104054354947,
+        "null_definition": "Mean RMSE over all nonidentity whole-run history donors and the three frozen shuffled-history models",
+        "uncertainty": "Field-node bootstrap resamples both current and history-donor roles jointly; excludes same original seed even when duplicated"
+      },
+      "present_vs_conventional": {
+        "mean_rmse_difference": 0.004166490987122039,
+        "rmse_difference_interval": [
+          -0.0029496263134323806,
+          0.011660491634924863
+        ],
+        "relative_improvement_percent": -25.042685893572592,
+        "relative_improvement_interval": [
+          -79.7941735231445,
+          15.720627068131977
+        ],
+        "fields_better": 13,
+        "independent_fields": 32
+      },
+      "history_vs_training_prior": {
+        "mean_rmse_difference": -0.00027077665034855753,
+        "rmse_difference_interval": [
+          -0.0008800994200498185,
+          0.0003484786192476334
+        ],
+        "relative_improvement_percent": 1.538258204173193,
+        "relative_improvement_interval": [
+          -2.377386626644838,
+          4.694827252260743
+        ],
+        "fields_better": 20,
+        "independent_fields": 32
+      }
+    },
+    "history_supported": false,
+    "test_data_sha256": {
+      "smooth_base_22000.npz": "d11f6f20fae57302d4098479eb6f50557ec4ce8336a0643510afd61d33ad7220",
+      "smooth_base_22001.npz": "c7fb6731d00b56cc129645e9d8b5328581f27e8b68b984451081a705935337b6",
+      "smooth_base_22002.npz": "ce62ab1658c2183b71c1416383990700be04a073ff99aee7eb8313d05434a102",
+      "smooth_base_22003.npz": "02ca529960a156dd769fc36e4f0ea002e5a2bad8656cbef74c4dc6ccbb85dd91",
+      "smooth_base_22004.npz": "e968ba3a9a0efaa89562c6784317cc697652479198fcab843e444875ed1dfefe",
+      "smooth_base_22005.npz": "d8a273e7948bdcdd413bc6641172d3ec317954e36172cc0c2c0ca049e07f41ac",
+      "smooth_base_22006.npz": "24889a58f7e47cacedf642f4ee10703cae8aafb834977ff7beae6613c720e585",
+      "smooth_base_22007.npz": "d07751e897fb1a85b314fa87a49cdf280adef5be47a46535ee1881bba13b930d",
+      "smooth_base_22008.npz": "a201908e0f7f54d4c13285e67f88264673b84534c945d4d45d501347521ad132",
+      "smooth_base_22009.npz": "a7ac834b40b1b9dc600e135fd3cce73299f5b1f5fe32390428731c2512b19156",
+      "smooth_base_22010.npz": "cd92893cd2689e39fdf6ba9b3f611917b5f9cc73cc49894a043864301b1262d6",
+      "smooth_base_22011.npz": "b5be064b85f39d30a9177947e7d618a2e4fc203c81bc2eb9acf471a609be4962",
+      "smooth_base_22012.npz": "6f639ce97dba4eb55071484db9ebb1c50955bc131a9db53e79478a9aa8d33f76",
+      "smooth_base_22013.npz": "217276cc52030f0421beb52619c2f6f96a31cf1ebe8faeb8e99d1795f36c2542",
+      "smooth_base_22014.npz": "ec646510ee91b41fb79f64fae9b27be39e2151b033f3f1f06a78d60344ed30f5",
+      "smooth_base_22015.npz": "62c336878e2df5dc0d9c6ab4b680c0142f746dc22fc217e12f6e626b548e4f85",
+      "smooth_base_22016.npz": "8668246d585c1623113719a4b3eb01ae699d36783ba400b1890cdf51f6581374",
+      "smooth_base_22017.npz": "9432c8e00c7b9e966f2eb4b492e43a66f52469dea64e5c579ca71e38a85d2ab7",
+      "smooth_base_22018.npz": "3d8e613198f1c342cb73ea06886216eea2dfaa11f78216d632a7fbeea287fec7",
+      "smooth_base_22019.npz": "a77a9aa75da9b526946505ef0641f5f67b5e7a75f9280ed9262bcf06cbae740d",
+      "smooth_base_22020.npz": "3bfc1b91465d77eb9f9d767deb821e223f8b979849b87f9997731f79233c8099",
+      "smooth_base_22021.npz": "b8d12c91209cb35c5285f94508c717739816a95f38f4b68db39edbcda05eb67c",
+      "smooth_base_22022.npz": "842df3e2ab4a000b1360540746b15760ec8e72ccee917da5bd8c38ce276179ed",
+      "smooth_base_22023.npz": "b9dcabe531798c0815da267afe6657b1a95708375cd4a9a692dbe78d167886b5",
+      "smooth_base_22024.npz": "e7dac4b6a69b4e6cee3633773915359488fb673a736118a69f03fed33f1520fd",
+      "smooth_base_22025.npz": "587166e4c0af8fa824443c57aab4a2a2c9bac6c130a7ee168174a1ee833fb5b6",
+      "smooth_base_22026.npz": "0656fde1d0d296db3b7c609b8a30b846307de20f272d3ceed39afdc2c820183f",
+      "smooth_base_22027.npz": "97a47eeeafc469645a1288cbe4e343f2ceffd07d83b744314059653e5dcab7d8",
+      "smooth_base_22028.npz": "7d6e483efc6ef2cf200278ecf80251b2b9ea74f7db0c4c9438b33a86ece6eb81",
+      "smooth_base_22029.npz": "ec0a8fe38c23365c4c0b38be94531cce77fd58b93419befe55847616309e366a",
+      "smooth_base_22030.npz": "bb7b815e23903617ffbc723f7fe9c7ece66927aabd17da7d94f36f985036bf1e",
+      "smooth_base_22031.npz": "c7d5f39af36e76586116aaf3c06cefc499d6db364ff7b2c5b9e0e92659bf34a2"
+    }
+  },
+  "active": {
+    "mean_field_rmse": {
+      "conventional": 0.09659793073553458,
+      "present": 0.1551417863092351,
+      "history": 0.10072685991345057,
+      "shuffled_0": 0.11243165866887314,
+      "shuffled_1": 0.10144103163996207,
+      "shuffled_2": 0.08307992785435922,
+      "prior_by_strength": 0.10840794078217883
+    },
+    "pooled_rmse": {
+      "conventional": 0.11375527544014091,
+      "present": 0.18216580645120603,
+      "history": 0.11991923776690908,
+      "shuffled_0": 0.14089174010686922,
+      "shuffled_1": 0.12320503982693334,
+      "shuffled_2": 0.1032375032636223,
+      "prior_by_strength": 0.12532082623604854
+    },
+    "target_mean": 1.6232533890151388,
+    "target_std": 0.1348262390823927,
+    "contrasts": {
+      "history_vs_present": {
+        "mean_rmse_difference": -0.05441492639578455,
+        "rmse_difference_interval": [
+          -0.09378380250099692,
+          -0.017515773499333937
+        ],
+        "relative_improvement_percent": 35.07431987879941,
+        "relative_improvement_interval": [
+          13.45662676780619,
+          52.1641319291684
+        ],
+        "fields_better": 21,
+        "independent_fields": 32
+      },
+      "history_vs_shuffled_mean": {
+        "mean_rmse_difference": -0.005721287764156063,
+        "rmse_difference_interval": [
+          -0.029887069770962716,
+          0.019557379687306527
+        ],
+        "relative_improvement_percent": 5.374718009639579,
+        "relative_improvement_interval": [
+          -19.93322951845,
+          26.68027830909029
+        ],
+        "fields_better": 16,
+        "independent_fields": 32,
+        "null_mean_field_rmse": 0.10644814767760663,
+        "null_definition": "Mean RMSE over all nonidentity whole-run history donors and the three frozen shuffled-history models",
+        "uncertainty": "Field-node bootstrap resamples both current and history-donor roles jointly; excludes same original seed even when duplicated"
+      },
+      "present_vs_conventional": {
+        "mean_rmse_difference": 0.05854385557370054,
+        "rmse_difference_interval": [
+          0.02320740726891928,
+          0.09712446216363316
+        ],
+        "relative_improvement_percent": -60.60570358798023,
+        "relative_improvement_interval": [
+          -114.12416666385512,
+          -21.76091709789403
+        ],
+        "fields_better": 12,
+        "independent_fields": 32
+      },
+      "history_vs_training_prior": {
+        "mean_rmse_difference": -0.007681080868728293,
+        "rmse_difference_interval": [
+          -0.04293503909760311,
+          0.02612302102856806
+        ],
+        "relative_improvement_percent": 7.085348926755886,
+        "relative_improvement_interval": [
+          -28.357756032431354,
+          34.82138749581484
+        ],
+        "fields_better": 13,
+        "independent_fields": 32
+      }
+    },
+    "history_supported": false,
+    "test_data_sha256": {
+      "active_base_22000.npz": "60a58697b0d8e4a4980c570a8516bc2ca28ea29965cae7d47616817c6648c20e",
+      "active_base_22001.npz": "575ed273d6255e8e32af7337a8f0ae8b1c4e74acb77855e217e7f6b442f7f855",
+      "active_base_22002.npz": "0302dbc557ecb3ef6404db9309ccb0fae1a055fe03b10eb608c1caceaac8c2d1",
+      "active_base_22003.npz": "4fb401294a14c436dc43e9c548961f3bb457f908f2d2d735375f42989f3a5a75",
+      "active_base_22004.npz": "bebfaf12559a9051b55e4f7c30905d93c175698c7f99504ad0a6dee8480c8cc3",
+      "active_base_22005.npz": "807e8db98faaefee88499c51ecd84167cc92b2a0ecf1be66d5daf99d96f07b3d",
+      "active_base_22006.npz": "dcad411ef205809a09bdab5d95afed68323e06f6bb51cee8ed23593229a0e8cf",
+      "active_base_22007.npz": "4c73220fc41fe154403eb95f19926d514b744fbcf0a4e74629c6539af45f997c",
+      "active_base_22008.npz": "6395b1f5d4a935f94e822159e400968b58899882792a7341fb950844eeab5156",
+      "active_base_22009.npz": "1eb1a92285a6aeebc9dbd104ef998824b04d962fbdaf279fab2cad45c763da8b",
+      "active_base_22010.npz": "689d80bd070f6c1e4e9cdae03a431d3dc02aa37ae87ba2a91c363130e7f201ad",
+      "active_base_22011.npz": "2d13db255dc806732397e8e71217ecb543152bd3a0f67e750260d2af0d627b17",
+      "active_base_22012.npz": "c66727711c2849597899ac49c1fb88f3e400d20e7318b2bbd560072caea0cc3c",
+      "active_base_22013.npz": "ec2efe9d0892a18f2f18e11bccec659329806a57b64b3bebdde1d4324bbf9394",
+      "active_base_22014.npz": "a714d52f5696ef09a9cc657df03b70faa1c9d838d021f12fa0c40e626350f668",
+      "active_base_22015.npz": "a8b4e43fe142397a5c129f1109bc30a10d7a7945d63c9a5bb689e1390768f157",
+      "active_base_22016.npz": "4c9741e4a02bd4e5bc03fd7192b745cdf05fac2788615d492e291d88044ddd10",
+      "active_base_22017.npz": "e18f21f5b20e1d705833534be328f231c593a91cd9a6f24ea8e66dd0aca3a8a1",
+      "active_base_22018.npz": "dfff9f58b2c884fe3e9976ae041976223a4d2afac93877ec43cbda85c539024e",
+      "active_base_22019.npz": "1aa35c31ba4bc09b28439f332ab1bbfeca19b767db33a0b336ce8cbd2ef8016a",
+      "active_base_22020.npz": "b1cba23e75df0c979471e42bdd7c9ac50fa3b744afdc5dfa7fc860888e7efc8c",
+      "active_base_22021.npz": "41d3a47ecc6cac2b73c8785daaa6d55890e3f783b704d149afdf9846c68664e9",
+      "active_base_22022.npz": "a69778d167a201f9d8fff09049f615a7f8eca245ab8db705552baa9781ca04db",
+      "active_base_22023.npz": "8e25fa5bebd4b91a068ab750d4b352140d1adc63058735401922ce84a5a414e5",
+      "active_base_22024.npz": "61218343731028624d465bf5f7bfaa033461d3ce828fafb0e8b10354985c3965",
+      "active_base_22025.npz": "feaa9cf50b77c067545dc370800f9b1280b8756a3da6f872440d7a5484fdd736",
+      "active_base_22026.npz": "1c2fa124f65be7bdc768a3150c53beb236e31e02b3a6fc41a399fc87f4396dee",
+      "active_base_22027.npz": "770d03fa3163309e993f6157ff0ed7197d22f3d52e451c3d06efec7bf4922625",
+      "active_base_22028.npz": "6929ef7a46e2727453c3098a4f31cbd26bc00636efe6cb3598728f30a72244df",
+      "active_base_22029.npz": "971d9e6b698688811c0fa32e586fc951de478badce2ec4dddd8f6bc15cc340bb",
+      "active_base_22030.npz": "a89c63a221598ffd4204b6477729c2477d52ea6b616372dcad5bec06a39d2e54",
+      "active_base_22031.npz": "97a90a492387cd89aea4901ce4aaf8cd65acdd5f3f42651bce726f43ef5d46b0"
+    }
+  }
+}

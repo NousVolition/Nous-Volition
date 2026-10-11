@@ -1,0 +1,7 @@
+{
+  "current_33": ["kinetic_energy","enstrophy","helicity","forcing_alignment","energy_fraction_k_lt_2","maximum_speed","mean_speed_fourth_power","acceleration_rms","energy_fraction_2_le_k_lt_4","energy_fraction_k_ge_4","vortex_stretching","source_speed","source_vorticity_norm","source_strain_norm","source_vorticity_strain_vorticity","mean_log_neighbor_length","std_log_neighbor_length","mean_log_tetrad_volume","std_log_tetrad_volume","mean_tetrad_anisotropy","std_tetrad_anisotropy","source_velocity_x","source_velocity_y","source_velocity_z","du_x_dx","du_x_dy","du_x_dz","du_y_dx","du_y_dy","du_y_dz","du_z_dx","du_z_dy","du_z_dz"],
+  "conventional_9": "The first eight current features plus known relative impulse strength",
+  "strong_present_36": "All 33 current features, known relative strength, initial production/E_delta0 and dissipation/E_delta0",
+  "history_135": "Strong present plus current-feature changes at lags0.25,0.5,1.0, with each past observation minus the current value",
+  "excluded": "Initial-condition seed, future states, future marker positions, future energy, test outcomes, entire current three-dimensional field"
+}

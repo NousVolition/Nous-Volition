@@ -1,0 +1,1 @@
+smooth_base_20006: 24.8s; CFL=0.101; min kcut_eta=2.718; high E=2.4e-09; difference balance=8.6e-10

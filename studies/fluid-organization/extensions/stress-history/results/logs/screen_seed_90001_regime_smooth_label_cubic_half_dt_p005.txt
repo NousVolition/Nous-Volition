@@ -1,0 +1,1 @@
+smooth_cubic_half_90001: 42.3s; CFL=0.060; min kcut_eta=2.203; high E=1.3e-07; difference balance=5.1e-11

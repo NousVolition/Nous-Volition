@@ -1,0 +1,1 @@
+smooth_cubic_90001: 22.3s; CFL=0.121; min kcut_eta=2.203; high E=1.3e-07; difference balance=8.1e-10

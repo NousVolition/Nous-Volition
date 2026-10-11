@@ -1,5 +1,10 @@
 # Fluid Organization Under Stress: completed pilot
 
+## Completed stronger-disturbance history test — 11 October 2026
+
+[Read the completed study and linked runnable code](extensions/stress-history/README.md). Two impulse strengths (0.25 and 0.75 times baseline RMS velocity) are tested in smooth and five-fold lower-viscosity 3D flows. Models are frozen before 32 new independent test fields per regime, with richer current-state and three shuffled-history controls. **A useful advantage from relevant history remains unestablished in both regimes.** Relative to the richer present-input model: smooth: error reduction **+16.69%**, paired 97.5% interval **[-23.03%, +42.29%]**; active: error reduction **+35.07%**, paired 97.5% interval **[+13.46%, +52.16%]**. Positive reductions favor history. The active gain does not clearly beat expected shuffled histories or the training-only average, and the simpler global-current model also performs better than history. All numerical and refinement checks pass. These are modest-Reynolds-number transient flows; fully developed high-Reynolds turbulence, other media and laboratory validation remain proposed. The original studies below retain their separate targets and results.
+
+
 ## Completed circuit follow-ups and 120-field fluid confirmation — 10 October 2026
 
 [Read the completed experiments and linked code](extensions/josephson-followups/README.md). Longer and whole-cycle observations, stepped/continuous ramps, dimensionless noise and mismatch, capacitance, and held-out forecasts have been run. A separate confirmation uses **120 new fluid starting fields** and frozen models. The larger independent fluid test did not resolve a prediction advantage from the declared history features. Mean error change with history: **+9.41%**, paired 95% interval **[-3.98%, +26.38%]**; positive values mean increased error. The interpretation is limited to the specified global flow summaries, predictors and simulated regime; laboratory calibration, LRC/general-capacitance dynamics, other media and physical circuit-to-fluid transfer remain proposed.
@@ -31,7 +36,7 @@ For the **additional deformation caused by the disturbance**, history did not de
 - Fog and idealized smoke are dilute inertial particles carried by air, with gravity present/removed. Fixed droplets, no evaporation, condensation, combustion or two-way coupling.
 - Perturbation energy can grow by transfer from background flow while total unforced kinetic energy falls. Marker separation alone does not establish amplification.
 - The original fast-water coarse-grid marker comparison **failed**: RMS change 0.03482 against a 0.005 screen. For one seed, the 50-to-62-grid continuation passed at 0.003797. This does not validate every stress realization or prove continuum convergence.
-- Ice, phase changes, wall-boundary comparisons and broader stressful regimes remain proposed. The finite-dimensional examples are established mathematical controls, not evidence of a fluid bifurcation or a solution to the Clay problem.
+- A [separate completed stronger-disturbance study](extensions/stress-history/README.md) now tests more active, lower-viscosity transient flows. Ice, phase changes, wall-boundary comparisons and fully developed high-Reynolds turbulence remain proposed. The finite-dimensional examples are established mathematical controls, not evidence of a fluid bifurcation or a solution to the Clay problem.
 
 ## Read the study
 

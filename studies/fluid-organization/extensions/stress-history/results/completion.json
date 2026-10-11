@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-11",
+  "unique_new_seeds": 64,
+  "regime_seed_triplets": 128,
+  "fluid_trajectories": 384,
+  "heldout_seeds_per_regime": 32,
+  "numerical_gates_passed": true,
+  "history_supported": {
+    "smooth": false,
+    "active": false
+  },
+  "python": "3.12.14",
+  "code_url": "https://github.com/NousVolition/My-Sources-Project-ALL/tree/main/reports/fluid-organization-pilot/extensions/stress-history",
+  "streams_url": "https://github.com/NousVolition/Nous-Volition/tree/main/studies/fluid-organization/extensions/stress-history"
+}

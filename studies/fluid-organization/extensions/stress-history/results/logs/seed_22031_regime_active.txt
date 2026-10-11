@@ -1,0 +1,1 @@
+active_base_22031: 638.7s; CFL=0.159; min kcut_eta=1.662; high E=1.6e-05; difference balance=1.6e-09

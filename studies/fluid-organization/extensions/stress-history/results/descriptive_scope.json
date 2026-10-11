@@ -1,0 +1,5 @@
+{
+  "response_intervals": "Descriptive pointwise 95% intervals; no additional confirmatory claims.",
+  "primary_intervals": "97.5% per regime; Bonferroni protection for two history-versus-present comparisons.",
+  "refinement_scope": "Four prechosen held-out initial fields per regime. Dependent numerical controls, not independent validation samples."
+}

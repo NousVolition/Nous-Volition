@@ -1,0 +1,19 @@
+{
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "matplotlib": "3.11.2",
+  "pytest": "9.1.1",
+  "threadpoolctl": "3.7.0",
+  "fft_workers": 1,
+  "simulation_processes": {
+    "calibration": 4,
+    "test": 8,
+    "controls": 8,
+    "maximum_concurrent_test_and_control_processes": 16
+  },
+  "execution_note": "The already-running calibration used four processes. Later test/control batches used eight on this host, and independent control trajectories ran alongside test trajectories. Solver operations, seeds and model freeze were unchanged.",
+  "arrays": "float64/complex128",
+  "observation_units": "Declared model length/time units; target integral and RMSE have model-time units"
+}

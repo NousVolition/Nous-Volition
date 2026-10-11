@@ -1,0 +1,26 @@
+{
+  "smooth": {
+    "mean_history_minus_present_on_four_fields": {
+      "base": -0.0036266816392176125,
+      "half": -0.0036266816228479833,
+      "fine": -0.0036308274310702616
+    },
+    "maximum_grid_contrast_drift": 1.4904012096219471e-05,
+    "primary_mean_contrast": -0.003472015239359127,
+    "drift_exceeds_primary_contrast_magnitude": false,
+    "coarse_fine_mean_sign_changed": false,
+    "scope": "Descriptive dependent four-field checks; not an independent significance test or ensemble continuum proof"
+  },
+  "active": {
+    "mean_history_minus_present_on_four_fields": {
+      "base": -0.02127898749611886,
+      "half": -0.02127898824391442,
+      "fine": -0.021287309485905744
+    },
+    "maximum_grid_contrast_drift": 0.0005016030276504962,
+    "primary_mean_contrast": -0.05441492639578455,
+    "drift_exceeds_primary_contrast_magnitude": false,
+    "coarse_fine_mean_sign_changed": false,
+    "scope": "Descriptive dependent four-field checks; not an independent significance test or ensemble continuum proof"
+  }
+}

@@ -1,0 +1,7 @@
+This extension reuses the existing Navier-Stokes research, not a new fluid model.
+physics.py and vendor/numerics.py are byte-identical copies of core.py and vendor/numerics.py in the published josephson-followups/fluid extension at source commit 1383468a36b0f047a7f479e2f71e8c93f9730dd9.
+Source: https://github.com/NousVolition/My-Sources-Project-ALL/tree/1383468a36b0f047a7f479e2f71e8c93f9730dd9/reports/fluid-organization-pilot/extensions/josephson-followups/fluid
+physics.py SHA256 aa6569c95c2f65382a5da58f475102e5291d4af5ae019a3d0a0ac5060cc8a8b2
+vendor/numerics.py SHA256 d95ed8e4cb9895cf7247f4f30722479ab60055af8625d94e8396a124c5aab502
+The new simulate.py supplies localized impulse triplets, cubic B-spline passive marker tetrads, compact time series, and causal observation statistics. Trilinear pilot results and exact source are retained, including their failed marker-grid screen. The one-way interpolation change does not alter the fluid calculation. The unused historical runner in physics.py is retained with the original source and is not invoked.
+The new study uses RK4 and strict two-thirds dealiasing, as did the reused PilotFlow adapter. It does not use the historical Heun runner or sharp initial tube in the vendor module.

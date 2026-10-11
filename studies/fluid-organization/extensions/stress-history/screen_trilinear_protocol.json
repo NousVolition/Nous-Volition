@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-11",
+  "status": "Numerical screening only; no prediction fitting or test outcomes used for selecting the grid/time step",
+  "regimes": {
+    "smooth": {"nu": 0.2, "n": 24, "dt": 0.01},
+    "active": {"nu": 0.04, "n": 40, "dt": 0.01}
+  },
+  "initial_rms_range": [1.0, 1.4],
+  "forcing_rms": 0.25,
+  "forcing": "Fixed ABC curl-eigenfield, seed 7788; identical within every cloned triplet",
+  "burn": 2.0,
+  "end": 1.5,
+  "save_dt": 0.05,
+  "kick_rms_over_baseline_rms": [0.25, 0.75],
+  "impulse_width": 1.0,
+  "marker_clusters": 16,
+  "marker_edge": 0.18,
+  "marker_interpolation": "Periodic trilinear interpolation in the same RK4 stages, one-way tracers",
+  "pilot_seeds": [90000,90001],
+  "pilot_fine_grid": {"smooth": 32, "active": 56},
+  "history_lags": [0.25,0.5,1.0],
+  "gates": {"cfl":0.4,"diffusion":0.5,"energy_budget":0.00005,"difference_energy_budget":0.00005,"divergence":0.00000001,"min_kcut_eta":1.5,"max_high_band_energy_fraction":0.005,"grid_energy_curve_relative":0.02,"step_energy_curve_relative":0.002,"grid_marker_position_rms":0.03},
+  "prediction_design": "After screening, lock grid/time steps and new disjoint train/validation/test seed lists before production. Primary target: integral 0..1.5 of perturbation energy divided by its impulse-time value; paired per-field forecast error across both strengths. Compare conventional global present measurements, stronger current flow/local/marker summaries, history augmentation, and whole-run shuffled histories. Frozen models, independent held-out fields, group bootstrap and multiplicity controls for the two regimes.",
+  "scope": "Periodic constant-density 3D incompressible Navier-Stokes. Transient, initially random flows; turbulence characterization is measured, not assumed. No walls, molecular interactions, thermal phases, particle feedback, laboratory data, or fully developed high-Reynolds turbulence claim."
+}
