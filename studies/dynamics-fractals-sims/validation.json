@@ -1,7 +1,7 @@
 {
   "python": "3.12.14",
   "platform": "Windows",
-  "automated_tests": 234,
+  "automated_tests": 250,
   "test_result": "passed",
   "sims_rounds": 15872,
   "binary_sims_rounds": 12800,
@@ -63,8 +63,17 @@
     "full_reproduction": "passed",
     "circular_participant_baseline": "shared across all six moon labels"
   },
-  "figure_count": 22,
-  "figure_review": "Two new orbital and orbit/clay SIMS figures inspected; twenty earlier plots reviewed in previous batches.",
+  "eleventh_batch_checks": {
+    "direct_hug_material_trajectories": 28,
+    "independent_Radau_controls": 28,
+    "additional_sims_runs": 0,
+    "geometric_outline_states_checked": 23688,
+    "new_tests": 16,
+    "accuracy_gates": "passed",
+    "full_reproduction": "passed"
+  },
+  "figure_count": 24,
+  "figure_review": "Two new direct Hug orbital loading/recovery figures inspected; twenty-two earlier plots reviewed in previous batches.",
   "pending_source": "Figure 7.3.3 / Example 7.3.1 vector field absent; this specific case was not run.",
   "html_local_links": "verified",
   "html_browser_preview": "Unavailable: browser policy blocks local file URLs."
