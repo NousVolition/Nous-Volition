@@ -1,0 +1,14 @@
+{
+  "model": "Current clay Hug directly driven by the existing normalized orbit waveform",
+  "orbital_inputs": "orbit_protocol.json",
+  "material_rows_stress_Pa": [10,20,30,40],
+  "cases": ["Circular control","Pasiphae","Elara","Himalia","Europa","Callisto","Thebe"],
+  "schedule_seconds": {"rest":20,"loading":100,"recovery":300},
+  "initial_internal_strain": [0,0],
+  "mean_pressure": "Each frozen coefficient row uses its own nominal stress times the equal-mean orbit factor. Comparisons are paired within row.",
+  "geometry": "The original two closed arms (bend=1) are mapped by x'=x+gamma*y, y'=y using the current clay shear_points function.",
+  "points_per_arm": 65,
+  "display_magnification": 200,
+  "magnifications_checked": [1,200],
+  "gates": {"max_solver_strain_error":1e-9,"max_convolution_strain_error":1e-10,"max_energy_budget_error_J_m3":1e-8,"max_join_gap":1e-12,"max_relative_area_error":1e-12}
+}
