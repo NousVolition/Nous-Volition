@@ -29,6 +29,8 @@ class HugOrbitTests(unittest.TestCase):
 
     def test_zero_strain_is_the_original_closed_hug(self):
         np.testing.assert_array_equal(outline(0),hug_geometry.arm_points(1,points=65))
+        # A saved Windows outline and a fresh Linux outline may differ by one sin/cos ULP.
+        np.testing.assert_allclose(self.saved['closed_outline'],outline(0),atol=4*np.finfo(float).eps,rtol=0)
 
     def test_both_joins_remain_closed_through_actual_trajectories(self):
         for r in self.saved['runs']:
@@ -52,7 +54,8 @@ class HugOrbitTests(unittest.TestCase):
                 np.testing.assert_allclose(actual,original,atol=1e-14,rtol=0)
 
     def test_display_magnification_is_not_material_strain(self):
-        p=np.array(outline(0))
+        # Compare stored deformations with their stored original, keeping exact y checks.
+        p=np.array(self.saved['closed_outline'])
         for r in self.saved['runs']:
             for s in r['snapshots']:
                 actual=np.array(s['actual_arms']);display=np.array(s['display_arms'])
