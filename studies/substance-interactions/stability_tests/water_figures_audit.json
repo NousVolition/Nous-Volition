@@ -1,0 +1,232 @@
+{
+  "status": "Completed reanalysis of saved outputs; no new molecular or CFD trajectories",
+  "source_manifest": "prior_water_data/source_manifest.json",
+  "consistency_checks": [
+    "Frequency residuals reproduce the saved table",
+    "Frequency RMSE and mean absolute error reproduce the saved summary",
+    "All selected liquid group means reproduce from independent run summaries",
+    "95 percent Student-t intervals reproduce using three runs per condition",
+    "Liquid sampling/energy/control counts match the recorded audit",
+    "Steady channel means match pressure-driven Poiseuille identity",
+    "Channel relaxation times match the lowest Laplacian mode",
+    "Recorded D2O/H2O steady-flow ratio equals the inverse viscosity ratio"
+  ],
+  "vibration": {
+    "RMSE_cm1": 71.73969808593452,
+    "minimum_absolute_mismatch_cm1": 13.344038594620542,
+    "maximum_absolute_mismatch_cm1": 109.51942402211716,
+    "reported_max_numerical_spread_cm1": 0.18991689291488,
+    "max_mismatch_over_reported_spread": 576.6702600342315,
+    "harmonic_reference_max_error_percent": 7.3944737391954725,
+    "caveat": "Harmonic predictions compared with fundamental bands; mismatch includes anharmonic/reference and electronic-model effects. Numerical spread is a sensitivity diagnostic, not a certified error bound."
+  },
+  "molecular_groups": [
+    {
+      "isotope": "H2O",
+      "beads": 1,
+      "independent_seeds": [
+        1,
+        2,
+        3
+      ],
+      "bond_mean_A": {
+        "mean": 0.9633351300924637,
+        "CI95": [
+          0.9628815209467828,
+          0.9637887392381447
+        ]
+      },
+      "intramolecular_RDF_peak_A": {
+        "mean": 0.9603333333333333,
+        "CI95": [
+          0.9545964630270006,
+          0.9660702036396659
+        ]
+      },
+      "hydrogen_bond_degree": {
+        "mean": 3.6654166666666668,
+        "CI95": [
+          3.6188304598916896,
+          3.712002873441644
+        ]
+      },
+      "tetrahedral_order": {
+        "mean": 0.6696893063732041,
+        "CI95": [
+          0.6360714013611212,
+          0.7033072113852871
+        ]
+      }
+    },
+    {
+      "isotope": "H2O",
+      "beads": 32,
+      "independent_seeds": [
+        1,
+        2,
+        3
+      ],
+      "bond_mean_A": {
+        "mean": 0.9790308171932679,
+        "CI95": [
+          0.978555629980314,
+          0.9795060044062218
+        ]
+      },
+      "intramolecular_RDF_peak_A": {
+        "mean": 0.9636666666666667,
+        "CI95": [
+          0.9462186567963964,
+          0.981114676536937
+        ]
+      },
+      "hydrogen_bond_degree": {
+        "mean": 3.618951822916667,
+        "CI95": [
+          3.5731271458451155,
+          3.664776499988218
+        ]
+      },
+      "tetrahedral_order": {
+        "mean": 0.6893304411759796,
+        "CI95": [
+          0.6601878424110025,
+          0.7184730399409568
+        ]
+      }
+    },
+    {
+      "isotope": "D2O",
+      "beads": 1,
+      "independent_seeds": [
+        1,
+        2,
+        3
+      ],
+      "bond_mean_A": {
+        "mean": 0.9639908959689842,
+        "CI95": [
+          0.963333849193957,
+          0.9646479427440114
+        ]
+      },
+      "intramolecular_RDF_peak_A": {
+        "mean": 0.9583333333333334,
+        "CI95": [
+          0.9525964630270007,
+          0.964070203639666
+        ]
+      },
+      "hydrogen_bond_degree": {
+        "mean": 3.7452083333333337,
+        "CI95": [
+          3.699960814473589,
+          3.7904558521930785
+        ]
+      },
+      "tetrahedral_order": {
+        "mean": 0.7080534971167555,
+        "CI95": [
+          0.6800831488822907,
+          0.7360238453512202
+        ]
+      }
+    },
+    {
+      "isotope": "D2O",
+      "beads": 32,
+      "independent_seeds": [
+        1,
+        2,
+        3
+      ],
+      "bond_mean_A": {
+        "mean": 0.974328944847784,
+        "CI95": [
+          0.9740349144070128,
+          0.9746229752885551
+        ]
+      },
+      "intramolecular_RDF_peak_A": {
+        "mean": 0.9656666666666666,
+        "CI95": [
+          0.9468570794888317,
+          0.9844762538445014
+        ]
+      },
+      "hydrogen_bond_degree": {
+        "mean": 3.650305989583334,
+        "CI95": [
+          3.569717867314423,
+          3.7308941118522445
+        ]
+      },
+      "tetrahedral_order": {
+        "mean": 0.6794251767554796,
+        "CI95": [
+          0.6432070049259193,
+          0.71564334858504
+        ]
+      }
+    }
+  ],
+  "molecular_screens": {
+    "main_runs": 12,
+    "diffusion_window_passes": 7,
+    "energy_drift_passes": 3,
+    "structural_control_passes": 3,
+    "structural_controls": 4
+  },
+  "liquid_limitations": {
+    "bulk_diffusion_validated": false,
+    "viscosity_computed": false
+  },
+  "channel": {
+    "T_K": 298.15,
+    "pressure_gradient_Pa_m": 10,
+    "full_gap_m": 0.001,
+    "max_steady_identity_relative_residual": 2.220446049250313e-16,
+    "max_tau_identity_relative_residual": 2.220446049250313e-16,
+    "D_over_H_steady_velocity": 0.8144651540390555,
+    "D_velocity_reduction_percent": 18.55348459609445,
+    "properties": [
+      {
+        "material": "H2O",
+        "rho_kg_m3": 997.0476367603434,
+        "mu_Pa_s": 0.000890022489077689,
+        "steady_mean_mm_s": 0.9363059288500659,
+        "relative_to_H2O": 1.0,
+        "tau_s": 0.1135050495286255,
+        "lambda1_per_s": -8.810180728988662
+      },
+      {
+        "material": "density_only",
+        "rho_kg_m3": 1104.468094555348,
+        "mu_Pa_s": 0.000890022489077689,
+        "steady_mean_mm_s": 0.9363059288500659,
+        "relative_to_H2O": 1.0,
+        "tau_s": 0.12573391797269198,
+        "lambda1_per_s": -7.953303421414013
+      },
+      {
+        "material": "viscosity_only",
+        "rho_kg_m3": 997.0476367603434,
+        "mu_Pa_s": 0.0010927692666333646,
+        "steady_mean_mm_s": 0.7625885525685498,
+        "relative_to_H2O": 0.8144651540390555,
+        "tau_s": 0.09244590764854259,
+        "lambda1_per_s": -10.817136479440094
+      },
+      {
+        "material": "D2O",
+        "rho_kg_m3": 1104.468094555348,
+        "mu_Pa_s": 0.0010927692666333646,
+        "steady_mean_mm_s": 0.7625885525685498,
+        "relative_to_H2O": 0.8144651540390555,
+        "tau_s": 0.10240589486956254,
+        "lambda1_per_s": -9.765062853791083
+      }
+    ]
+  },
+  "interpretation": "Linearization predicts small molecular normal modes and selected channel perturbation decay when the corresponding physical operator is specified. Accurate integration alone does not validate potentials, sampling or micro-to-macro property transfer."
+}

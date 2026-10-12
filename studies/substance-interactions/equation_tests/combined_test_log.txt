@@ -1,0 +1,13 @@
+test_combined_species_mass_and_positivity (combined_transport.CombinedTests.test_combined_species_mass_and_positivity) ... ok
+test_diffusion_only_analytic_fourier_decay (combined_transport.CombinedTests.test_diffusion_only_analytic_fourier_decay) ... ok
+test_discrete_flow_divergence (combined_transport.CombinedTests.test_discrete_flow_divergence) ... ok
+test_exchange_conservation (combined_transport.CombinedTests.test_exchange_conservation) ... ok
+test_exchange_equilibrium (combined_transport.CombinedTests.test_exchange_equilibrium) ... ok
+test_global_partition_independent_of_prescribed_flow (combined_transport.CombinedTests.test_global_partition_independent_of_prescribed_flow) ... ok
+test_no_uptake_control (combined_transport.CombinedTests.test_no_uptake_control) ... ok
+test_saddle_controller_event (combined_transport.CombinedTests.test_saddle_controller_event) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.164s
+
+OK

@@ -1,0 +1,231 @@
+{
+  "scope": "Verification of five supplied equations and explicit one-way coupling to gas/fog transport; no chemical-model substitution",
+  "source": "User attachments, Images1-5. Images4/5 are cropped; equations reconstructed from their visible terms.",
+  "python": "3.12.14",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "matplotlib": "3.11.2",
+  "cases": {
+    "limit_cycle": {
+      "results": [
+        {
+          "initial_radius": 0,
+          "final_radius_t10": 0.0,
+          "max_cartesian_error": 0.0
+        },
+        {
+          "initial_radius": 0.01,
+          "final_radius_t10": 0.9999896954240033,
+          "max_cartesian_error": 2.772491832953303e-10
+        },
+        {
+          "initial_radius": 0.2,
+          "final_radius_t10": 0.9999999752678156,
+          "max_cartesian_error": 2.79555608494438e-10
+        },
+        {
+          "initial_radius": 0.8,
+          "final_radius_t10": 0.9999999994223808,
+          "max_cartesian_error": 1.777491590830031e-10
+        },
+        {
+          "initial_radius": 1,
+          "final_radius_t10": 1.0000000000020206,
+          "max_cartesian_error": 9.905207271799725e-11
+        },
+        {
+          "initial_radius": 1.5,
+          "final_radius_t10": 1.0000000005747043,
+          "max_cartesian_error": 8.871240721876672e-11
+        },
+        {
+          "initial_radius": 3,
+          "final_radius_t10": 1.0000000009176786,
+          "max_cartesian_error": 1.3644078966648202e-10
+        }
+      ],
+      "period": 6.283185307179586,
+      "radial_floquet_multiplier": 3.4873423562089973e-06,
+      "r0_2_backward_blowup_time": -0.14384103622589045,
+      "correction": "r0=0 is fixed; log derivation needs absolute value for r>1. Positive nonunit radii approach the unit circle."
+    },
+    "junction": {
+      "parameters": {
+        "alpha": 0.2,
+        "Ic_A": 1e-06,
+        "C_F": 1e-12,
+        "R_ohm": 90.70639151617891,
+        "omega_p_rad_s": 55122907178.02583,
+        "V_scale_V": 1.814127830323578e-05
+      },
+      "runs": [
+        {
+          "case": "locked",
+          "i": 0.5,
+          "alpha": 0.2,
+          "initial_phase": 0,
+          "initial_dimensionless_rate": 0,
+          "final_phase_unwrapped": 0.5235987755986142,
+          "mean_rate_last50": 2.099875828776021e-14,
+          "mean_voltage_last50_V": 3.809443181206368e-19,
+          "max_tilted_energy_balance_error": 3.536737569476145e-11,
+          "max_SI_dimensionless_phase_difference": 2.5504132139531066e-10
+        },
+        {
+          "case": "running_same_bias",
+          "i": 0.5,
+          "alpha": 0.2,
+          "initial_phase": 0,
+          "initial_dimensionless_rate": 2.5,
+          "final_phase_unwrapped": 737.8409846800704,
+          "mean_rate_last50": 2.4718121130119424,
+          "mean_voltage_last50_V": 4.484183145545894e-05,
+          "max_tilted_energy_balance_error": 5.730271368520334e-09,
+          "max_SI_dimensionless_phase_difference": 5.555875759455375e-10
+        },
+        {
+          "case": "above_threshold",
+          "i": 1.2,
+          "alpha": 0.2,
+          "initial_phase": 0,
+          "initial_dimensionless_rate": 0,
+          "final_phase_unwrapped": 1762.3109941656767,
+          "mean_rate_last50": 5.998291649369758,
+          "mean_voltage_last50_V": 0.00010881667815519195,
+          "max_tilted_energy_balance_error": 1.1679685485432856e-07,
+          "max_SI_dimensionless_phase_difference": 2.0736706574098207e-08
+        }
+      ],
+      "overdamped_limit": [
+        {
+          "i": 1.1,
+          "numeric_period": 13.711034416940429,
+          "analytic_period": 13.711034416945143,
+          "relative_error": 3.43836070726411e-13
+        },
+        {
+          "i": 1.2,
+          "numeric_period": 9.472258251006615,
+          "analytic_period": 9.472258250994829,
+          "relative_error": 1.2443379659998755e-12
+        },
+        {
+          "i": 2,
+          "numeric_period": 3.62759872846843,
+          "analytic_period": 3.6275987284684357,
+          "relative_error": 1.5543122344752192e-15
+        }
+      ],
+      "note": "C=0 period uses s=(2eRIc/hbar)t, a different time scale from finite-C \u03c4."
+    },
+    "clock": {
+      "numeric_minutes": 65.45454545454551,
+      "exact_minutes": "720/11",
+      "elapsed_minutes_integer": 65,
+      "elapsed_seconds_remainder": 27.272727272727273,
+      "next_clock_time": "13:05:27.272727...",
+      "absolute_error_minutes": 5.684341886080802e-14,
+      "meaning": "Same direction coincidence, not merely collinear opposite hands"
+    },
+    "saddle_node": {
+      "a": 0.5,
+      "b": -0.5,
+      "validity": "r>0 for the real square-root scaling",
+      "runs": [
+        {
+          "r": 1,
+          "transit_from_minus1_to_plus1": 1.5707963267948948,
+          "analytic_transit": 1.5707963267948966,
+          "asymptotic_pi_over_sqrt_r": 3.141592653589793,
+          "relative_error": 1.1102230246251565e-15,
+          "max_scaled_trajectory_error": 2.9014346480948916e-11
+        },
+        {
+          "r": 0.1,
+          "transit_from_minus1_to_plus1": 7.997520101115837,
+          "analytic_transit": 7.997520101115322,
+          "asymptotic_pi_over_sqrt_r": 9.934588265796101,
+          "relative_error": 6.439293542825908e-14,
+          "max_scaled_trajectory_error": 2.8498758908312993e-11
+        },
+        {
+          "r": 0.01,
+          "transit_from_minus1_to_plus1": 29.42255348607863,
+          "analytic_transit": 29.422553486074694,
+          "asymptotic_pi_over_sqrt_r": 31.41592653589793,
+          "relative_error": 1.3389289676979388e-13,
+          "max_scaled_trajectory_error": 2.639222174138922e-11
+        },
+        {
+          "r": 0.001,
+          "transit_from_minus1_to_plus1": 97.34654892495999,
+          "analytic_transit": 97.34654892491318,
+          "asymptotic_pi_over_sqrt_r": 99.34588265796101,
+          "relative_error": 4.809486142676178e-13,
+          "max_scaled_trajectory_error": 2.7998492413416898e-11
+        },
+        {
+          "r": 0.0001,
+          "transit_from_minus1_to_plus1": 312.1593320217623,
+          "analytic_transit": 312.15933202164626,
+          "asymptotic_pi_over_sqrt_r": 314.1592653589793,
+          "relative_error": 3.717026686445024e-13,
+          "max_scaled_trajectory_error": 3.175371077190903e-11
+        }
+      ],
+      "negative_r_equilibria": "x=\u00b1sqrt(-r); negative equilibrium stable, positive unstable",
+      "r0_behavior": "xdot=x\u00b2; origin semistable, not an r>0 through-transit"
+    },
+    "harmonic_oscillator": {
+      "runs": [
+        {
+          "method": "DOP853",
+          "dt": 0.019997407088413705,
+          "omega_rad_per_time": 1,
+          "periods": 10,
+          "final_energy_ratio": 0.999999999992123,
+          "max_relative_energy_error": 4.434674849562725e-11,
+          "max_position_error": 4.711825374315026e-11
+        },
+        {
+          "method": "Verlet",
+          "dt": 0.019997407088413705,
+          "omega_rad_per_time": 1,
+          "periods": 10,
+          "final_energy_ratio": 0.9999999998904208,
+          "max_relative_energy_error": 9.997406900674743e-05,
+          "max_position_error": 0.0010209144212191927
+        },
+        {
+          "method": "Euler",
+          "dt": 0.019997407088413705,
+          "omega_rad_per_time": 1,
+          "periods": 10,
+          "final_energy_ratio": 3.5121310193804294,
+          "max_relative_energy_error": 2.5121310193804294,
+          "max_position_error": 0.874002341574621
+        }
+      ],
+      "verlet_refinement": [
+        {
+          "dt": 0.03999481417682741,
+          "max_position_error": 0.004084129518397022,
+          "max_relative_energy_error": 0.00039989628103187513
+        },
+        {
+          "dt": 0.019997407088413705,
+          "max_position_error": 0.0010209144212191927,
+          "max_relative_energy_error": 9.997406900674743e-05
+        },
+        {
+          "dt": 0.009998703544206853,
+          "max_position_error": 0.0002552216001550818,
+          "max_relative_energy_error": 2.4993502266146272e-05
+        }
+      ],
+      "exact_invariant": "v\u00b2+\u03c9\u00b2x\u00b2",
+      "motion": "Clockwise closed ellipses in position-velocity space. Not real-space pair repulsion."
+    }
+  },
+  "elapsed_seconds": 2.2478451000060886
+}

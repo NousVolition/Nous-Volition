@@ -1,0 +1,25 @@
+{
+  "destination": "NousVolition/Nous-Volition/studies/substance-interactions",
+  "publication_date": "2026-10-11",
+  "scope": [
+    "Substance interactions",
+    "Five-equation and transport tests",
+    "Stability, energy and water-figure checks"
+  ],
+  "historical_unit_tests": {
+    "substances": 27,
+    "equations": 20,
+    "coupled_transport": 8,
+    "stability": 19
+  },
+  "historical_water_data_checks": 8,
+  "original_file_count": 95,
+  "modifications": [
+    "Added GitHub reading guides and navigation links.",
+    "Updated publication manifests for the selected files; retained original hashes separately.",
+    "Replaced one workstation source-directory path with bundled-snapshot provenance.",
+    "Omitted duplicate ZIPs, environments, caches and the already-published switching package."
+  ],
+  "numerical_data": "Original CSV tables, arrays, numerical JSON results and figures retained byte-for-byte.",
+  "evidence": "Numerical verification of declared models; matrix assessments are not all simulated and are not new environmental measurements."
+}

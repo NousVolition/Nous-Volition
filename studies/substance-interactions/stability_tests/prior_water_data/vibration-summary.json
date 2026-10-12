@@ -1,0 +1,28 @@
+{
+  "RMSE_cm1": 71.73969808593452,
+  "MAE_cm1": 63.34827440249361,
+  "MAPE_percent": 2.761870057232692,
+  "max_relative_error_percent": 4.274876032128994,
+  "primary_gate": {
+    "max_absolute_relative_error": 0.042748760321289936,
+    "max_isotope_shift_fraction_error": 0.010388415803811335,
+    "max_numerical_spread_cm1": 0.18991689291488,
+    "passed": true
+  },
+  "quantum_harmonic_ZPE_kJmol": {
+    "H2O": 52.84161963324567,
+    "D2O": 38.46204281317598
+  },
+  "GFN1_max_error_percent": 10.625130414473649,
+  "H2O_harmonic_reference_cm1": [
+    1649.0,
+    3832.0,
+    3943.0
+  ],
+  "H2O_harmonic_reference_error_percent": [
+    -6.629043578525618,
+    -4.924165934097613,
+    -7.3944737391954725
+  ],
+  "H2O_harmonic_reference_max_error_percent": 7.3944737391954725
+}

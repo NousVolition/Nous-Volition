@@ -1,0 +1,126 @@
+{
+  "steady_channel_D_over_H": 0.8144651540390555,
+  "steady_channel_velocity_reduction_percent": 18.55348459609445,
+  "tau_D_over_H": 0.9022144415146588,
+  "channel_worst_relative_error": 8.310691531136036e-07,
+  "channel_worst_energy_residual": 2.2019357504998143e-13,
+  "vortex_worst_divergence": 2.3652913667358564e-17,
+  "vortex_worst_energy_residual": 3.5982150592417383e-10,
+  "strongest_forcing_worst_fine_field_difference": 0.004082866873549331,
+  "historical_max_viscosity_ratio_error_percent": 0.33535147483180205,
+  "vortex_velocity_differences": [
+    {
+      "T_K": 283.15,
+      "U_scale_ms": 0.005,
+      "grid_n": 16,
+      "rms_velocity_difference_ms": 0.00010016346729623296,
+      "relative_velocity_field_difference": 0.0593821908464902
+    },
+    {
+      "T_K": 283.15,
+      "U_scale_ms": 0.01,
+      "grid_n": 16,
+      "rms_velocity_difference_ms": 0.00020239063579296444,
+      "relative_velocity_field_difference": 0.0602833554373129
+    },
+    {
+      "T_K": 283.15,
+      "U_scale_ms": 0.02,
+      "grid_n": 32,
+      "rms_velocity_difference_ms": 0.0004183798941874778,
+      "relative_velocity_field_difference": 0.06353401293492482
+    },
+    {
+      "T_K": 298.15,
+      "U_scale_ms": 0.005,
+      "grid_n": 16,
+      "rms_velocity_difference_ms": 5.511736358770888e-05,
+      "relative_velocity_field_difference": 0.02885699039569723
+    },
+    {
+      "T_K": 298.15,
+      "U_scale_ms": 0.01,
+      "grid_n": 16,
+      "rms_velocity_difference_ms": 0.00011257876910211464,
+      "relative_velocity_field_difference": 0.029594401098804225
+    },
+    {
+      "T_K": 298.15,
+      "U_scale_ms": 0.02,
+      "grid_n": 32,
+      "rms_velocity_difference_ms": 0.00024162520737430068,
+      "relative_velocity_field_difference": 0.03231184900278342
+    },
+    {
+      "T_K": 313.15,
+      "U_scale_ms": 0.005,
+      "grid_n": 16,
+      "rms_velocity_difference_ms": 3.364310492553683e-05,
+      "relative_velocity_field_difference": 0.0164124326913999
+    },
+    {
+      "T_K": 313.15,
+      "U_scale_ms": 0.01,
+      "grid_n": 16,
+      "rms_velocity_difference_ms": 6.930451086113262e-05,
+      "relative_velocity_field_difference": 0.01696503369850762
+    },
+    {
+      "T_K": 313.15,
+      "U_scale_ms": 0.02,
+      "grid_n": 32,
+      "rms_velocity_difference_ms": 0.00015333291764492308,
+      "relative_velocity_field_difference": 0.01904859609343483
+    }
+  ],
+  "perturbation_controls": [
+    {
+      "isotope": "H2O",
+      "seed": 1,
+      "absolute_perturbation_amplitude_gain": 0.6523924742827395,
+      "perturbation_energy_gain": 0.4256159405007549,
+      "base_amplitude_decay": 0.7608112539956035,
+      "relative_to_base_amplitude_gain": 0.8574958254843448
+    },
+    {
+      "isotope": "H2O",
+      "seed": 2,
+      "absolute_perturbation_amplitude_gain": 0.8092570211490371,
+      "perturbation_energy_gain": 0.6548969262790131,
+      "base_amplitude_decay": 0.7608112539956035,
+      "relative_to_base_amplitude_gain": 1.0636764596987858
+    },
+    {
+      "isotope": "H2O",
+      "seed": 3,
+      "absolute_perturbation_amplitude_gain": 0.6581316963738142,
+      "perturbation_energy_gain": 0.43313732977187436,
+      "base_amplitude_decay": 0.7608112539956035,
+      "relative_to_base_amplitude_gain": 0.8650393812098071
+    },
+    {
+      "isotope": "D2O",
+      "seed": 1,
+      "absolute_perturbation_amplitude_gain": 0.6266783853408059,
+      "perturbation_energy_gain": 0.3927257986533596,
+      "base_amplitude_decay": 0.7388533272128517,
+      "relative_to_base_amplitude_gain": 0.8481769821688439
+    },
+    {
+      "isotope": "D2O",
+      "seed": 2,
+      "absolute_perturbation_amplitude_gain": 0.7860938429067571,
+      "perturbation_energy_gain": 0.6179435298559133,
+      "base_amplitude_decay": 0.7388533272128517,
+      "relative_to_base_amplitude_gain": 1.063937609744696
+    },
+    {
+      "isotope": "D2O",
+      "seed": 3,
+      "absolute_perturbation_amplitude_gain": 0.6305577294094148,
+      "perturbation_energy_gain": 0.39760305011795677,
+      "base_amplitude_decay": 0.7388533272128517,
+      "relative_to_base_amplitude_gain": 0.853427474960482
+    }
+  ]
+}

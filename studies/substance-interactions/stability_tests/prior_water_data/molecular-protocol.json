@@ -1,0 +1,14 @@
+{
+  "status": "exploratory follow-on after the monomer pilot passed; fixed before ensemble execution",
+  "model": "q-TIP4P/F, original 2009 parameters, no refit",
+  "main": "64 molecules, same number density in both isotopes (H2O-equivalent density 0.997 g/cm3), 300 K, 3 independent orientation/velocity/noise seeds, H2O/D2O x 1/32 beads",
+  "sampling": "5 ps equilibration + 5 ps thermostatted structure sampling + 5 ps unthermostatted mobility branch, 0.5 fs step; save every 0.1 ps",
+  "controls": "H2O seed 1: 16 and 64 beads, 0.25 fs timestep, 216 molecules. Temperature pilots at 280 and 320 K for both isotopes and both nuclear treatments, single seed, 3 ps equilibration + 3 ps sampling, no mobility branch.",
+  "structure": "Bead-averaged covalent bond length, bond angle, O-O RDF, tetrahedral order and hydrogen-bond degree; O-O <0.35 nm and donor O-H to O-O angle <30 degrees",
+  "neighbor_change": "Fraction of four nearest oxygen neighbors replaced at 1 ps along the unthermostatted centroid trajectory",
+  "mobility": "Centroid MSD-derived short-time diffusivity from 1-2 and 2-4 ps lag intervals. Not an accepted bulk diffusion prediction unless window, run, size and step checks agree.",
+  "uncertainty": "Student-t 95% intervals from three independent runs, not individual molecules/beads/frames. Single-run control differences are sensitivity diagnostics, not statistical proof.",
+  "validation": "Check analytical forces against independent finite-difference energies; normal-mode/harmonic controls; compare structure against 300 K neutron distances 0.990(5) A H2O and 0.985(5) A D2O (Zeidler et al. 2012), recognizing differing distribution estimators and experimental interpretation. No force-field fitting to those data.",
+  "screens": "Structural numerical checks: bond length change <0.002 A and hydrogen-bond degree change <0.15. Diffusion fit-window disagreement <20%; energy drift <0.5% of NkBT after dividing total ring energy by beads. Failed checks retained and block a converged-improvement claim.",
+  "limitations": "Short trajectories and small boxes may not resolve network/diffusion isotope effects. Gas monomer xTB and liquid q-TIP4P/F are separate models. PIMD samples equilibrium quantum statistics; RPMD real-time dynamics is approximate. No viscosity estimated from these trajectories."
+}

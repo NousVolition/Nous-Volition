@@ -1,0 +1,422 @@
+{
+  "description": "Manufactured one-way coupling of all five equation-based controllers to conservative two-phase transport",
+  "conditions": {
+    "T_K": 298.15,
+    "P_Pa": 101325.0,
+    "domain_m": [
+      1,
+      1,
+      1
+    ],
+    "periodic_x_y": true,
+    "water_volume_fraction": 5e-07,
+    "droplet_radius_m": 1e-05,
+    "gas_diffusivity_m2_s": 2e-05,
+    "initial_wet_gas_ppm": {
+      "CO": 1.0,
+      "acetone": 1.0,
+      "H2O2": 0.001
+    },
+    "assumption": "Fixed saturated fog inventory, co-advection without settling, no reactions; imposed flow, not a momentum prediction"
+  },
+  "species_order": [
+    "CO",
+    "acetone",
+    "H2O2"
+  ],
+  "runs": [
+    {
+      "case": "no_flow",
+      "n": 48,
+      "dt_s": 0.25,
+      "end_s": 180,
+      "initial_species_moles": [
+        4.087404452357611e-05,
+        4.087404452357611e-05,
+        4.087404452357612e-08
+      ],
+      "final_total_species_moles": [
+        4.087404452357611e-05,
+        4.087404452357613e-05,
+        4.087404452357612e-08
+      ],
+      "final_aqueous_percent": [
+        1.202294144902046e-06,
+        0.03345472396850631,
+        51.59615368520139
+      ],
+      "gas_variance": [
+        0.03532646531791176,
+        0.0353095396190308,
+        0.011035438816529127
+      ],
+      "initial_variance": 0.06232174242812115,
+      "max_relative_mass_residual": 4.440892098500626e-16,
+      "minimum_normalized_concentration": 6.048080078486766e-09,
+      "gate_full_activation_s": 88.26766045422953,
+      "chemical_conversion_moles": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "case": "steady",
+      "n": 48,
+      "dt_s": 0.25,
+      "end_s": 180,
+      "initial_species_moles": [
+        4.087404452357611e-05,
+        4.087404452357611e-05,
+        4.087404452357612e-08
+      ],
+      "final_total_species_moles": [
+        4.087404452357611e-05,
+        4.087404452357609e-05,
+        4.087404452357612e-08
+      ],
+      "final_aqueous_percent": [
+        1.202294144902046e-06,
+        0.033454723968506295,
+        51.59615368520139
+      ],
+      "gas_variance": [
+        0.02166582951368949,
+        0.021656573878421702,
+        0.0073593473091712915
+      ],
+      "initial_variance": 0.06232174242812115,
+      "max_relative_mass_residual": 4.440892098500626e-16,
+      "minimum_normalized_concentration": 6.048200903879219e-09,
+      "gate_full_activation_s": 88.26766045422953,
+      "chemical_conversion_moles": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "case": "combined",
+      "n": 48,
+      "dt_s": 0.25,
+      "end_s": 180,
+      "initial_species_moles": [
+        4.087404452357611e-05,
+        4.087404452357611e-05,
+        4.087404452357612e-08
+      ],
+      "final_total_species_moles": [
+        4.087404452357611e-05,
+        4.087404452357611e-05,
+        4.087404452357612e-08
+      ],
+      "final_aqueous_percent": [
+        1.202294144902046e-06,
+        0.0334547239685063,
+        51.59615368520139
+      ],
+      "gas_variance": [
+        0.01938875778124907,
+        0.019380532826806098,
+        0.0066111266067371355
+      ],
+      "initial_variance": 0.06232174242812115,
+      "max_relative_mass_residual": 0.0,
+      "minimum_normalized_concentration": 6.048221185974318e-09,
+      "gate_full_activation_s": 88.26766045422953,
+      "chemical_conversion_moles": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "case": "without_limit_cycle",
+      "n": 48,
+      "dt_s": 0.25,
+      "end_s": 180,
+      "initial_species_moles": [
+        4.087404452357611e-05,
+        4.087404452357611e-05,
+        4.087404452357612e-08
+      ],
+      "final_total_species_moles": [
+        4.087404452357611e-05,
+        4.087404452357611e-05,
+        4.087404452357612e-08
+      ],
+      "final_aqueous_percent": [
+        1.2022941449020459e-06,
+        0.033454723968506295,
+        51.59615368520139
+      ],
+      "gas_variance": [
+        0.019984649527602157,
+        0.019976287830410333,
+        0.006872342746595892
+      ],
+      "initial_variance": 0.06232174242812115,
+      "max_relative_mass_residual": 2.220446049250313e-16,
+      "minimum_normalized_concentration": 6.04822141247783e-09,
+      "gate_full_activation_s": 88.26766045422953,
+      "chemical_conversion_moles": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "case": "without_junction",
+      "n": 48,
+      "dt_s": 0.25,
+      "end_s": 180,
+      "initial_species_moles": [
+        4.087404452357611e-05,
+        4.087404452357611e-05,
+        4.087404452357612e-08
+      ],
+      "final_total_species_moles": [
+        4.087404452357611e-05,
+        4.087404452357611e-05,
+        4.087404452357612e-08
+      ],
+      "final_aqueous_percent": [
+        1.202294144902046e-06,
+        0.033454723968506295,
+        51.59615368520139
+      ],
+      "gas_variance": [
+        0.021307075972875355,
+        0.021298045060286874,
+        0.007266856343751824
+      ],
+      "initial_variance": 0.06232174242812115,
+      "max_relative_mass_residual": 4.440892098500626e-16,
+      "minimum_normalized_concentration": 6.048221185532238e-09,
+      "gate_full_activation_s": 88.26766045422953,
+      "chemical_conversion_moles": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "case": "without_clock",
+      "n": 48,
+      "dt_s": 0.25,
+      "end_s": 180,
+      "initial_species_moles": [
+        4.087404452357611e-05,
+        4.087404452357611e-05,
+        4.087404452357612e-08
+      ],
+      "final_total_species_moles": [
+        4.087404452357611e-05,
+        4.087404452357611e-05,
+        4.087404452357612e-08
+      ],
+      "final_aqueous_percent": [
+        1.202294144902046e-06,
+        0.0334547239685063,
+        51.59615368520139
+      ],
+      "gas_variance": [
+        0.021634245411678507,
+        0.02162489104113943,
+        0.007276956266443572
+      ],
+      "initial_variance": 0.06232174242812115,
+      "max_relative_mass_residual": 2.220446049250313e-16,
+      "minimum_normalized_concentration": 6.0482223176276915e-09,
+      "gate_full_activation_s": 88.26766045422953,
+      "chemical_conversion_moles": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "case": "without_saddle",
+      "n": 48,
+      "dt_s": 0.25,
+      "end_s": 180,
+      "initial_species_moles": [
+        4.087404452357611e-05,
+        4.087404452357611e-05,
+        4.087404452357612e-08
+      ],
+      "final_total_species_moles": [
+        4.087404452357611e-05,
+        4.087404452357611e-05,
+        4.087404452357612e-08
+      ],
+      "final_aqueous_percent": [
+        1.202294144902046e-06,
+        0.0334547239685063,
+        51.59615368520139
+      ],
+      "gas_variance": [
+        0.01770652728212495,
+        0.01769929694893433,
+        0.0062008401601960144
+      ],
+      "initial_variance": 0.06232174242812115,
+      "max_relative_mass_residual": 2.220446049250313e-16,
+      "minimum_normalized_concentration": 6.04822075721913e-09,
+      "gate_full_activation_s": 88.26766045422953,
+      "chemical_conversion_moles": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "case": "without_harmonic",
+      "n": 48,
+      "dt_s": 0.25,
+      "end_s": 180,
+      "initial_species_moles": [
+        4.087404452357611e-05,
+        4.087404452357611e-05,
+        4.087404452357612e-08
+      ],
+      "final_total_species_moles": [
+        4.0874044523576105e-05,
+        4.087404452357611e-05,
+        4.087404452357612e-08
+      ],
+      "final_aqueous_percent": [
+        1.2022941449020459e-06,
+        0.0334547239685063,
+        51.59615368520139
+      ],
+      "gas_variance": [
+        0.018113790679622342,
+        0.01810608595717872,
+        0.00619668917702416
+      ],
+      "initial_variance": 0.06232174242812115,
+      "max_relative_mass_residual": 4.440892098500626e-16,
+      "minimum_normalized_concentration": 6.048199981897013e-09,
+      "gate_full_activation_s": 88.26766045422953,
+      "chemical_conversion_moles": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "no_uptake_control": {
+    "case": "combined",
+    "n": 48,
+    "dt_s": 0.25,
+    "end_s": 180,
+    "initial_species_moles": [
+      4.087404452357611e-05,
+      4.087404452357611e-05,
+      4.087404452357612e-08
+    ],
+    "final_total_species_moles": [
+      4.087404452357611e-05,
+      4.087404452357611e-05,
+      4.087404452357612e-08
+    ],
+    "final_aqueous_percent": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "gas_variance": [
+      0.019388758076830825,
+      0.019388758076830825,
+      0.019388758076830825
+    ],
+    "initial_variance": 0.06232174242812115,
+    "max_relative_mass_residual": 0.0,
+    "minimum_normalized_concentration": 0.0,
+    "gate_full_activation_s": 88.26766045422953,
+    "chemical_conversion_moles": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "refinement": {
+    "coarse_24": {
+      "case": "combined",
+      "n": 24,
+      "dt_s": 0.5,
+      "end_s": 180,
+      "initial_species_moles": [
+        4.087404452357611e-05,
+        4.087404452357611e-05,
+        4.087404452357612e-08
+      ],
+      "final_total_species_moles": [
+        4.087404452357611e-05,
+        4.087404452357611e-05,
+        4.087404452357612e-08
+      ],
+      "final_aqueous_percent": [
+        1.202294144902046e-06,
+        0.03345472396850631,
+        51.59615368520139
+      ],
+      "gas_variance": [
+        0.016177060129252616,
+        0.016170003161944432,
+        0.0053878670312885475
+      ],
+      "initial_variance": 0.061789711620489046,
+      "max_relative_mass_residual": 4.440892098500626e-16,
+      "minimum_normalized_concentration": 6.153354254141439e-09,
+      "gate_full_activation_s": 88.26766045422953,
+      "chemical_conversion_moles": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "fine_96": {
+      "case": "combined",
+      "n": 96,
+      "dt_s": 0.1,
+      "end_s": 180,
+      "initial_species_moles": [
+        4.087404452357611e-05,
+        4.087404452357611e-05,
+        4.087404452357612e-08
+      ],
+      "final_total_species_moles": [
+        4.087404452357611e-05,
+        4.0874044523576105e-05,
+        4.087404452357612e-08
+      ],
+      "final_aqueous_percent": [
+        1.202294144902046e-06,
+        0.033454723968506295,
+        51.59615368520139
+      ],
+      "gas_variance": [
+        0.019936528042785725,
+        0.01992819484070845,
+        0.006920433798817047
+      ],
+      "initial_variance": 0.062455392640774016,
+      "max_relative_mass_residual": 4.440892098500626e-16,
+      "minimum_normalized_concentration": 6.006041227552881e-09,
+      "gate_full_activation_s": 88.26766045422953,
+      "chemical_conversion_moles": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "CO_rms_24_vs_restricted48": 0.014549338274270998,
+    "CO_rms_48_vs_restricted96": 0.0034031709626005826,
+    "CO_rms_dt025_vs_dt0125": 1.3900452710794242e-06,
+    "note": "Differences between numerical grids, not analytic error estimates. Refinement indicates sensitivity to spatial numerical diffusion."
+  },
+  "caveat": "The chosen coupling gains/time scales are declared scenario assumptions, not measured chemical effects. Global partition is unchanged by flow because kLa and water volume are fixed.",
+  "elapsed_seconds": 34.2271863000351
+}

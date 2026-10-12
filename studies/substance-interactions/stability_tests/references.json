@@ -1,0 +1,31 @@
+{
+  "screenshots": "Eight new user attachments: fixed-point linearization; Poincare return map; cubic spiral; population competition (two pages); conservative systems; energy contours; time reversal. Equations are transcribed as data. The double-well potential is an explicitly chosen illustration because no formula is visible in its screenshot.",
+  "linearization_reference": {
+    "title": "Jeremy Orloff, MIT ES.1803 Topic Notes, Spring 2024",
+    "url": "https://ocw.mit.edu/courses/es-1803-differential-equations-spring-2024/mites_1803_s24_topic_full.pdf",
+    "use": "Section29.4, PDF page261: linearized centers may be nonlinear centers, spiral sinks or spiral sources. Our example and all numerical values derive from the user-provided equations."
+  },
+  "Henry": {
+    "title": "Sander (2023), Compilation of Henry's law constants, version5.0.0",
+    "url": "https://doi.org/10.5194/acp-23-10901-2023",
+    "definition": "Equilibrium aqueous molar concentration divided by gas partial pressure",
+    "units": "mol m^-3 Pa^-1",
+    "reference_T_K": 298.15,
+    "CO": {"Hcp": 9.7e-6, "url": "https://henrys-law.org/henry/casrn/630-08-0"},
+    "acetone": {"Hcp": 0.27, "url": "https://henrys-law.org/henry/casrn/67-64-1"},
+    "H2O2": {"Hcp": 860, "url": "https://henrys-law.org/henry/casrn/7722-84-1"},
+    "selected_entries": "Burkholder et al.2019 review entries as used in the earlier study. All three coefficients describe dilute neutral solutes in water."
+  },
+  "mobility": {
+    "title": "Mulholland et al. (2006), NIST, aerosol size measurements",
+    "url": "https://nvlpubs.nist.gov/nistpubs/jres/111/4/V111.N04.A01.pdf",
+    "use": "Section3.3: Stokes/Cunningham mobility, Kim coefficients1.165,0.483,0.997; reference mean free path67.3nm at296.15K and101325Pa. Same closure as earlier study. Reference air viscosity1.8325e-5Pa s and Sutherland temperature110.4K are rounded scenario inputs."
+  },
+  "constants": {
+    "R_J_mol_K": 8.31446261815324,
+    "elementary_charge_C": 1.602176634e-19,
+    "epsilon0_F_m": 8.8541878128e-12,
+    "note": "e is an exact defining SI constant; epsilon0 is the retained rounded value from the earlier simulation, not a claim of the latest metrological estimate."
+  },
+  "assumptions": "Dimensionless mathematical examples; selected double-well potential; shared diffusivities and spherical transfer closure; fixed fog inventory; no chemical reactions; far-field independent particle mobility; no noise in the energy audit. No empirical calibration or new experiments."
+}

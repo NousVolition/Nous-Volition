@@ -1,0 +1,8 @@
+﻿test,dt_s,relative_error,mean_m,sem_m,n,note
+deterministic_timestep,0.04,6.0527995980441673e-05,,,,
+deterministic_timestep,0.02,3.025122148869741e-05,,,,
+deterministic_timestep,0.01,1.5122418987489894e-05,,,,
+deterministic_timestep,0.005,7.560411849460991e-06,,,,
+stochastic_timestep_distribution,0.02,,0.00022936776848966976,1.744951130190042e-07,1280,"Independent discretized paths; compare sampling uncertainty, not pathwise convergence"
+stochastic_timestep_distribution,0.01,,0.00022936999987550498,1.7353221195077063e-07,1280,"Independent discretized paths; compare sampling uncertainty, not pathwise convergence"
+stochastic_timestep_distribution,0.005,,0.00022929549994811946,1.7328152514670388e-07,1280,"Independent discretized paths; compare sampling uncertainty, not pathwise convergence"

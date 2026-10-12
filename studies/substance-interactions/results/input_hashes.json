@@ -1,0 +1,12 @@
+{
+  "build_report.py": "86bb4df8177380177f3bd3debbbefbff18c9d41d7b7a638a855a57cadf664798",
+  "config.json": "ec9ab4eca57297565dec1a3125406a506af5aa99d881c86071c23bb5f3be7d89",
+  "model.py": "7b4f20eaba4c727a918b4953194918a55a316202be88cf7bdaa467fd0e9b8624",
+  "README.txt": "c7268c0ebab2cb0392b19fd967e5c7fe1657543fc256dcc72af05d2d0b8cfadb",
+  "references.json": "04973334e73c63ea7c6630559a6f70e1b016531e8a666989f743aee5908b9641",
+  "requirements.txt": "1839f9ebfe6ef8dbf3960d324981bdc15fa2378d9bb2f754e1af4ae7360baf4e",
+  "run_log.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "run_study.py": "b5103b3ecfaa6a17c247ee1e1ffeff8a128a560fe6825dc92b6d7a2ca876cf9e",
+  "test_log.txt": "05767d62e9a1c0df4c6b4640e7aed606029d1926c8fd312c0fe98ce0e0b0388d",
+  "test_models.py": "aad7ba2c6ba38caf80995369e8d713ba0826808ad17b5a6e46a62630ed8ec032"
+}

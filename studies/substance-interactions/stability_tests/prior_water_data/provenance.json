@@ -1,0 +1,28 @@
+{
+  "project": "NousVolition/My-Sources-Project-ALL",
+  "repository_snapshot": "4e4a970e20d3289e883dec5c34e1a1bd3968795e",
+  "repository_url": "https://github.com/NousVolition/My-Sources-Project-ALL",
+  "reused_file": "reports/navier-stokes-stress/solver.py",
+  "local_reused_file": "vendor/ns_solver.py",
+  "reused_file_sha256": "c3d7ac5efb9998ecbc60891d7c79a8f65a2be616934b22ddb07d5bfe860ec95d",
+  "integration": "Repository copy in reports/quantum-water-pilot, prepared for direct publication to main at the user's request. Scientific results and the pinned reused solver are unchanged. The original local archive preceded repository integration.",
+  "existing_experiments_inspected": [
+    "reports/molecular/isotope-mass/README.md",
+    "reports/water-molecule-influence/README.md",
+    "reports/water-molecule-influence/experiment.py",
+    "reports/fluid-organization-pilot/README.md",
+    "reports/navier-stokes-stress/README.md"
+  ],
+  "xtb_release_url": "https://github.com/grimme-lab/xtb/releases/download/v6.7.1/xtb-6.7.1pre-windows-x86_64.zip",
+  "xtb_archive_sha256": "043e578da4a7e114a4d584972959a875e3ffb9f2767a86723b95aa6719d28d9c",
+  "xtb_reported_version": "6.7.1pre5071a88",
+  "python": "3.12.14",
+  "platform": "Windows, OpenMM OpenCL mixed precision, NVIDIA GeForce RTX 3080",
+  "openmm": "8.6.1",
+  "quantum_harmonic_sampler_check": "OpenMM Reference platform",
+  "iapws": "1.5.5",
+  "potential_models": "GFN2-xTB gas phase and q-TIP4P/F liquid are separate models, not one transferred potential",
+  "original_diagnostic_runs": "Failure evidence retained in diagnostics. Only vibration-final contributes primary frequency results.",
+  "reference_observations": "Published observations were looked up before execution; no parameters were fitted to them in this study. This is not a blinded experiment or certified training-data holdout.",
+  "original_archive_sha256": "8b7be366b59fb3e3d46fc0d71b56b4dc1af947369fab1fe2385b99452a262ce3"
+}

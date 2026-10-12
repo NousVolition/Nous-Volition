@@ -1,0 +1,92 @@
+[
+  {
+    "id": "nist_h",
+    "title": "H\u2082O gas IR, NIST WebBook / Shimanouchi 1972",
+    "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C7732185&Mask=800"
+  },
+  {
+    "id": "nist_d",
+    "title": "D\u2082O gas IR, NIST WebBook / Shimanouchi 1972",
+    "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C7789200&Mask=800"
+  },
+  {
+    "id": "nist_hdo",
+    "title": "HDO gas IR, NIST WebBook / Shimanouchi 1972",
+    "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C14940637&Mask=800"
+  },
+  {
+    "id": "harmonic",
+    "title": "NIST CCCBDB H\u2082O harmonic frequencies and equilibrium geometry",
+    "url": "https://cccbdb.nist.gov/exp2x.asp?casno=7732185&charge=0"
+  },
+  {
+    "id": "xtb",
+    "title": "xTB Hessian and isotope documentation",
+    "url": "https://xtb-docs.readthedocs.io/en/latest/hessian.html"
+  },
+  {
+    "id": "gfn2",
+    "title": "Bannwarth, Ehlert & Grimme (2019), GFN2-xTB quantum chemical method",
+    "url": "https://doi.org/10.1021/acs.jctc.8b01176"
+  },
+  {
+    "id": "xtb_issue",
+    "title": "xTB issue 1143: isotopic masses in numerical Hessian calculations",
+    "url": "https://github.com/grimme-lab/xtb/issues/1143"
+  },
+  {
+    "id": "qtip",
+    "title": "Habershon, Markland & Manolopoulos, JCP 131, 024501 (2009), q-TIP4P/F",
+    "url": "https://arxiv.org/pdf/1011.1047"
+  },
+  {
+    "id": "neutron",
+    "title": "Zeidler et al., JPCM 24, 284126 (2012), neutron isotope effects",
+    "url": "https://purehost.bath.ac.uk/ws/portalfiles/portal/9301378/18O_JPCM_20111126.pdf"
+  },
+  {
+    "id": "rpmd",
+    "title": "OpenMM RPMDIntegrator API",
+    "url": "https://docs.openmm.org/latest/api-python/generated/openmm.openmm.RPMDIntegrator.html"
+  },
+  {
+    "id": "iapws",
+    "title": "IAPWS releases: water and heavy-water material properties",
+    "url": "https://iapws.org/documents/release"
+  },
+  {
+    "id": "visc",
+    "title": "IAPWS 2020 heavy-water viscosity formulation, verification table 3",
+    "url": "https://iapws.org/public/documents/OM7f5/D2Ovisc.pdf"
+  },
+  {
+    "id": "hardy",
+    "title": "Hardy & Cottington, J. Research NBS 42, 573 (1949), table 2",
+    "url": "https://nvlpubs.nist.gov/nistpubs/jres/42/jresv42n6p573_A1b.pdf"
+  },
+  {
+    "id": "visc_fit",
+    "title": "Assael et al. (2021), heavy-water viscosity correlation and fitted datasets",
+    "url": "https://srd.nist.gov/jpcrdreprint/5.0048711.pdf"
+  },
+  {
+    "id": "later_visc",
+    "title": "Ragueneau, Caupin & Issenmann (2022), supplemental viscosity measurements",
+    "url": "https://arxiv.org/pdf/2112.09024"
+  },
+  {
+    "id": "interface_flow",
+    "title": "Yoon & Yoon (2018), silica-interface HPLC flow observations",
+    "url": "https://www.nature.com/articles/s41598-018-24886-y"
+  },
+  {
+    "id": "mills",
+    "title": "Mills, J. Physical Chemistry 77, 685 (1973), table III",
+    "url": "https://fenix.ciencias.ulisboa.pt/downloadFile/2533412229372806/Mills1973.pdf"
+  },
+  {
+    "id": "repo",
+    "title": "Existing project, inspected snapshot 4e4a970e20d3289e883dec5c34e1a1bd3968795e",
+    "url": "https://github.com/NousVolition/My-Sources-Project-ALL/tree/4e4a970e20d3289e883dec5c34e1a1bd3968795e"
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "molecular": "After first H2O quantum mobility branch failed the energy-drift and lag-window screens, the preplanned 0.25 fs control was extended with a 5 ps NVE mobility branch. Original failed runs remain in the primary ensemble; no selection or replacement.",
+  "fluid": "Added 24^3/32^3 and half-step checks at the strongest initial velocity for every temperature and both real fluids. Historical conductance ratio is calculated as inverse measured viscosity ratio and is not an independently observed velocity field.",
+  "source_audit": "Hardy and Cottington 1949 is cited as experimental input in the 2021 heavy-water viscosity formulation. Therefore its agreement is explicitly a consistency check, not an independent holdout validation.",
+  "extra_stress": "Added HDO with the unchanged primary Hessian, a fictitious mass sweep, and 50/100 mm/s three-dimensional flow tests at 24/32/48 grid points per dimension, with the same 1% convergence screen.",
+  "harmonic_reference": "Post-primary diagnostic compares H2O with NIST harmonic reference frequencies [1649,3832,3943] cm^-1; retain the primary fundamental-position gate and report the larger harmonic error rather than treating it as a replacement reference.",
+  "finer_flow": "After the 100 mm/s 32-to-48 grid comparison failed, add a bounded 64/96 refinement and a 64-point half time step. Preserve original fields and failures. Keep the 1% spatial screen; set a separate 0.1% temporal screen before running. Agreement between grids is not an exact-error bound.",
+  "channel_error_budget": "After total channel error increased slightly on time-step refinement, use exact discrete-Laplacian modes to separate spatial and temporal errors and check their cancellation. This analyzes the recorded scheme without additional physical simulation runs.",
+  "isotope_difference_precision": "After both 64-to-96 full-flow comparisons passed, also compare the smaller D-minus-H field between these grids, normalized by its own magnitude. Report this post-primary precision diagnostic without replacing the original full-flow screen."
+}

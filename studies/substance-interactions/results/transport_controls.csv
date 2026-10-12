@@ -1,0 +1,8 @@
+﻿case,RH_percent,chemical_conversion_fraction,mean_CO_ppm,relative_L2,note,u_m_s,max_field_change
+CO_in_air_RH0,0,0,1.0,0.018099654205551458,"Identical fixed flow and D by design; humid mixture is all gas, no droplets",,
+CO_in_air_RH50,50,0,1.0,0.018099654205551458,"Identical fixed flow and D by design; humid mixture is all gas, no droplets",,
+CO_in_air_RH100,100,0,1.0,0.018099654205551458,"Identical fixed flow and D by design; humid mixture is all gas, no droplets",,
+flow_sensitivity,,,1.0,0.004290103788899638,"Changes spatial distribution, not total inventory",0,
+flow_sensitivity,,,1.0,0.01809965257875348,"Changes spatial distribution, not total inventory",0.01,
+flow_sensitivity,,,1.0,0.04254827841945879,"Changes spatial distribution, not total inventory",0.03,
+no_transport,,,,,,,1.1102230246251565e-16

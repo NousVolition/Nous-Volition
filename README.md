@@ -4,6 +4,10 @@
 
 This repository, **Streams and Rocks**, preserves the original stream-function report, physical-fluid experiments and separate social-organization studies.
 
+## Substance interactions and equation tests
+
+**[Open the earlier substance-interaction and equation studies](studies/substance-interactions/README.md).** The collection includes the 114-row interaction matrix, gas/water partitioning, charged-droplet controls, five-equation transport tests, stability and energy examples, and the water-figure audit. Source, saved numerical data, figures, references and reproduction instructions are included. All 74 unit tests and 8 saved-data checks passed again before publication; matrix entries distinguish simulated cases from analytic or literature assessments.
+
 ## Mechanisms, switching and memory
 
 **[Open the completed spring and chemical-feedback study](studies/mechanisms-switching-memory/README.md).** Eighteen verification tests and 168 seeded simulations test spring hysteresis, pulse thresholds, maintained activity, finite fuel and controls. Source, figures, saved trajectories and numerical results are included. The biochemical rates are explicitly hypothetical; this does not establish new reactions or forces for the original substances.

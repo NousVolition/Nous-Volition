@@ -1,0 +1,11 @@
+{
+  "properties": "IAPWS95 ordinary water, Herrig EOS heavy water, IAPWS viscosity correlations via iapws 1.5.5; 0.101325 MPa. These are measurement-based correlations, not ab initio predictions.",
+  "temperatures_K": [283.15, 298.15, 313.15],
+  "channel": "1 mm full gap, no slip, fluid initially at rest; constant pressure gradients 1,10,100 Pa/m. Crank-Nicolson finite differences. Compare analytical startup and steady plane-Poiseuille solutions. Perturbations restricted to streamwise velocity varying across the gap.",
+  "channel_convergence": "33,65,129 nodes; dt=0.001,0.0005,0.00025 s at 25 C. Primary all cases: 129 nodes,0.0005 s,1 s duration. Record energy, dissipation, pressure work and perturbation decay.",
+  "3D": "Reuse repository spectral Navier-Stokes solver unchanged; periodic Taylor-Green vortex, zero forcing, 1 mm length scale, initial velocity scales 5,10,20 mm/s,0.1 s physical duration. Main grid16; controls24,32 and half time step for both isotopes. Three perturbation seeds at 25 C,1% equal-energy perturbations, grid24.",
+  "ablation": "H2O properties, D2O density only, D2O dynamic viscosity only, both. Attribute property dependence without claiming microscopic origin.",
+  "experimental_benchmark": "Hardy and Cottington (1949), Table 2: measured viscosity ratios at 5,20,40 C = 1.3052,1.2452,1.2017. Compare capillary conductance ratios 1/(muD/muH). This is a constitutive consistency test, not an independent velocity-field validation; historical data may inform IAPWS fits.",
+  "uncertainty": "Deterministic convergence errors plus explicitly assumed independent rectangular sensitivity ranges of +/-0.5% H2O viscosity, +/-1% D2O viscosity, +/-0.02% each density. Report sensitivity intervals, not calibrated experimental confidence intervals.",
+  "acceptance": "Channel relative L2 error <0.001 and energy closure <0.001; 3D finest field differences <1% and divergence RMS near roundoff. Failed controls retained. No turbulence threshold, universal stability, or continuum singularity claim."
+}

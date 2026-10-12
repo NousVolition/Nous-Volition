@@ -1,0 +1,25 @@
+test_clock_first_alignment (test_equations.ScreenshotTests.test_clock_first_alignment) ... ok
+test_clock_no_earlier_coincidence (test_equations.ScreenshotTests.test_clock_no_earlier_coincidence) ... ok
+test_cycle_backward_blowup_domain (test_equations.ScreenshotTests.test_cycle_backward_blowup_domain) ... ok
+test_cycle_forward_semigroup (test_equations.ScreenshotTests.test_cycle_forward_semigroup) ... ok
+test_cycle_inside_and_outside_exact_flow (test_equations.ScreenshotTests.test_cycle_inside_and_outside_exact_flow) ... ok
+test_cycle_origin_is_an_exception (test_equations.ScreenshotTests.test_cycle_origin_is_an_exception) ... ok
+test_cycle_radial_stability (test_equations.ScreenshotTests.test_cycle_radial_stability) ... ok
+test_forward_euler_energy_growth_is_numerical (test_equations.ScreenshotTests.test_forward_euler_energy_growth_is_numerical) ... ok
+test_harmonic_exact_solution_and_energy (test_equations.ScreenshotTests.test_harmonic_exact_solution_and_energy) ... ok
+test_junction_dimensional_mapping (test_equations.ScreenshotTests.test_junction_dimensional_mapping) ... ok
+test_junction_locked_and_running_same_bias (test_equations.ScreenshotTests.test_junction_locked_and_running_same_bias) ... ok
+test_junction_tilted_energy_balance (test_equations.ScreenshotTests.test_junction_tilted_energy_balance) ... ok
+test_overdamped_rotation_analytic_period (test_equations.ScreenshotTests.test_overdamped_rotation_analytic_period) ... ok
+test_radius_is_nonnegative (test_equations.ScreenshotTests.test_radius_is_nonnegative) ... ok
+test_saddle_balance_exponents (test_equations.ScreenshotTests.test_saddle_balance_exponents) ... ok
+test_saddle_no_real_transit_formula_for_negative_r (test_equations.ScreenshotTests.test_saddle_no_real_transit_formula_for_negative_r) ... ok
+test_saddle_rescaled_trajectory_collapse (test_equations.ScreenshotTests.test_saddle_rescaled_trajectory_collapse) ... ok
+test_saddle_transit_analytic (test_equations.ScreenshotTests.test_saddle_transit_analytic) ... ok
+test_verlet_bounded_energy (test_equations.ScreenshotTests.test_verlet_bounded_energy) ... ok
+test_verlet_second_order_refinement (test_equations.ScreenshotTests.test_verlet_second_order_refinement) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 1.082s
+
+OK

@@ -1,0 +1,2530 @@
+{
+  "runs": [
+    {
+      "tag": "n216-H2O-P32-T300.0-s1-dt0.0005",
+      "n": 216,
+      "isotope": "H2O",
+      "beads": 32,
+      "T_K": 300.0,
+      "seed": 1,
+      "dt_ps": 0.0005,
+      "equilibration_ps": 5.0,
+      "production_ps": 5.0,
+      "sample_ps": 0.1,
+      "mobility_NVE_ps": 0.0,
+      "side_nm": 1.8644449678623654,
+      "cutoff_nm": 0.9,
+      "platform": "OpenCL",
+      "parameters": {
+        "epsilon": 0.7748768,
+        "sigma": 0.31589,
+        "q": 1.1128,
+        "gamma": 0.73612,
+        "D": 485.72056000000003,
+        "alpha": 22.87,
+        "r0": 0.09419,
+        "ktheta": 367.5644,
+        "theta0": 1.87448361664191
+      },
+      "thermostat": "PILE 1/ps; disabled for mobility branch",
+      "density_control": "same number density, no barostat",
+      "contractions": "none",
+      "openmm_version": "8.6.1",
+      "bond_mean_A": 0.97855027697452,
+      "angle_mean_deg": 104.77722298775706,
+      "hydrogen_bond_degree": 3.545850694444444,
+      "tetrahedral_order": 0.6641742006425696,
+      "coordination_035nm": 5.068819444444446,
+      "nearest_OO_A": 2.7057176162114933,
+      "potential_mean_kJmol": -17.21413875553466,
+      "bond_mean_A_second_minus_first_half": -0.00020304879781107843,
+      "angle_mean_deg_second_minus_first_half": 0.08072956210395432,
+      "hydrogen_bond_degree_second_minus_first_half": -0.007303240740740069,
+      "tetrahedral_order_second_minus_first_half": -0.007196404989963212,
+      "coordination_035nm_second_minus_first_half": -0.01004629629629683,
+      "nearest_OO_A_second_minus_first_half": 0.005589008345081137,
+      "bond_distribution_sd_A": 0.07151488076504993,
+      "intramolecular_RDF_peak_A": 0.965,
+      "experimental_peak_A": 0.99,
+      "experimental_peak_uncertainty_A": 0.005,
+      "peak_error_A": -0.025000000000000022
+    },
+    {
+      "tag": "n64-D2O-P1-T280.0-s1-dt0.0005",
+      "n": 64,
+      "isotope": "D2O",
+      "beads": 1,
+      "T_K": 280.0,
+      "seed": 1,
+      "dt_ps": 0.0005,
+      "equilibration_ps": 3.0,
+      "production_ps": 3.0,
+      "sample_ps": 0.1,
+      "mobility_NVE_ps": 0.0,
+      "side_nm": 1.2429633119082437,
+      "cutoff_nm": 0.6090520228350395,
+      "platform": "OpenCL",
+      "parameters": {
+        "epsilon": 0.7748768,
+        "sigma": 0.31589,
+        "q": 1.1128,
+        "gamma": 0.73612,
+        "D": 485.72056000000003,
+        "alpha": 22.87,
+        "r0": 0.09419,
+        "ktheta": 367.5644,
+        "theta0": 1.87448361664191
+      },
+      "thermostat": "PILE 1/ps; disabled for mobility branch",
+      "density_control": "same number density, no barostat",
+      "contractions": "none",
+      "openmm_version": "8.6.1",
+      "bond_mean_A": 0.9636057396754901,
+      "angle_mean_deg": 104.71021054400595,
+      "hydrogen_bond_degree": 3.73125,
+      "tetrahedral_order": 0.6796888384740478,
+      "coordination_035nm": 5.08125,
+      "nearest_OO_A": 2.7057006172173503,
+      "potential_mean_kJmol": -44.2971793389513,
+      "bond_mean_A_second_minus_first_half": 0.0004671101283042489,
+      "angle_mean_deg_second_minus_first_half": 0.04009003828170421,
+      "hydrogen_bond_degree_second_minus_first_half": 0.008333333333333304,
+      "tetrahedral_order_second_minus_first_half": 0.007276607043840699,
+      "coordination_035nm_second_minus_first_half": -0.00416666666666643,
+      "nearest_OO_A_second_minus_first_half": -0.0021386801985543435,
+      "bond_distribution_sd_A": 0.02415155664819177,
+      "intramolecular_RDF_peak_A": 0.955,
+      "experimental_peak_A": 0.985,
+      "experimental_peak_uncertainty_A": 0.005,
+      "peak_error_A": -0.030000000000000027
+    },
+    {
+      "tag": "n64-D2O-P1-T300.0-s1-dt0.0005",
+      "n": 64,
+      "isotope": "D2O",
+      "beads": 1,
+      "T_K": 300.0,
+      "seed": 1,
+      "dt_ps": 0.0005,
+      "equilibration_ps": 5.0,
+      "production_ps": 5.0,
+      "sample_ps": 0.1,
+      "mobility_NVE_ps": 5.0,
+      "side_nm": 1.2429633119082437,
+      "cutoff_nm": 0.6090520228350395,
+      "platform": "OpenCL",
+      "parameters": {
+        "epsilon": 0.7748768,
+        "sigma": 0.31589,
+        "q": 1.1128,
+        "gamma": 0.73612,
+        "D": 485.72056000000003,
+        "alpha": 22.87,
+        "r0": 0.09419,
+        "ktheta": 367.5644,
+        "theta0": 1.87448361664191
+      },
+      "thermostat": "PILE 1/ps; disabled for mobility branch",
+      "density_control": "same number density, no barostat",
+      "contractions": "none",
+      "openmm_version": "8.6.1",
+      "bond_mean_A": 0.9637691830647048,
+      "angle_mean_deg": 104.85166783347678,
+      "hydrogen_bond_degree": 3.753125,
+      "tetrahedral_order": 0.7048939827738255,
+      "coordination_035nm": 4.90875,
+      "nearest_OO_A": 2.7012698720984885,
+      "potential_mean_kJmol": -43.89662065848988,
+      "bond_mean_A_second_minus_first_half": 0.0007486013419395476,
+      "angle_mean_deg_second_minus_first_half": -0.11533970875721877,
+      "hydrogen_bond_degree_second_minus_first_half": 0.03874999999999984,
+      "tetrahedral_order_second_minus_first_half": 0.0157989462063709,
+      "coordination_035nm_second_minus_first_half": 0.012500000000000178,
+      "nearest_OO_A_second_minus_first_half": 0.0006888786961383175,
+      "bond_distribution_sd_A": 0.024808846785140854,
+      "intramolecular_RDF_peak_A": 0.957,
+      "experimental_peak_A": 0.985,
+      "experimental_peak_uncertainty_A": 0.005,
+      "peak_error_A": -0.028000000000000025,
+      "short_D_1_2ps_1e9_m2s": 0.7289432131304037,
+      "short_D_2_4ps_1e9_m2s": 0.9756143239679702,
+      "diffusion_window_relative_disagreement": 0.25283670481007087,
+      "diffusion_window_pass": false,
+      "NVE_energy_drift_NkBT": -0.0091421400412069,
+      "NVE_energy_range_NkBT": 0.018998909462267264,
+      "NVE_energy_linear_slope_NkBT_per_ps": -0.0001408199588753486,
+      "NVE_energy_drift_pass": false,
+      "neighbor_replaced_fraction_1ps": 0.2171303353658537
+    },
+    {
+      "tag": "n64-D2O-P1-T300.0-s2-dt0.0005",
+      "n": 64,
+      "isotope": "D2O",
+      "beads": 1,
+      "T_K": 300.0,
+      "seed": 2,
+      "dt_ps": 0.0005,
+      "equilibration_ps": 5.0,
+      "production_ps": 5.0,
+      "sample_ps": 0.1,
+      "mobility_NVE_ps": 5.0,
+      "side_nm": 1.2429633119082437,
+      "cutoff_nm": 0.6090520228350395,
+      "platform": "OpenCL",
+      "parameters": {
+        "epsilon": 0.7748768,
+        "sigma": 0.31589,
+        "q": 1.1128,
+        "gamma": 0.73612,
+        "D": 485.72056000000003,
+        "alpha": 22.87,
+        "r0": 0.09419,
+        "ktheta": 367.5644,
+        "theta0": 1.87448361664191
+      },
+      "thermostat": "PILE 1/ps; disabled for mobility branch",
+      "density_control": "same number density, no barostat",
+      "contractions": "none",
+      "openmm_version": "8.6.1",
+      "bond_mean_A": 0.9639198426576491,
+      "angle_mean_deg": 104.7970061633727,
+      "hydrogen_bond_degree": 3.724375,
+      "tetrahedral_order": 0.6987112008129297,
+      "coordination_035nm": 5.013125,
+      "nearest_OO_A": 2.6979377958075803,
+      "potential_mean_kJmol": -43.437108828125275,
+      "bond_mean_A_second_minus_first_half": 0.00044264853141806615,
+      "angle_mean_deg_second_minus_first_half": 0.09835302110056432,
+      "hydrogen_bond_degree_second_minus_first_half": 0.03625000000000034,
+      "tetrahedral_order_second_minus_first_half": 0.015644696675042202,
+      "coordination_035nm_second_minus_first_half": -0.1012499999999994,
+      "nearest_OO_A_second_minus_first_half": -0.001693724337946012,
+      "bond_distribution_sd_A": 0.026032882074812493,
+      "intramolecular_RDF_peak_A": 0.957,
+      "experimental_peak_A": 0.985,
+      "experimental_peak_uncertainty_A": 0.005,
+      "peak_error_A": -0.028000000000000025,
+      "short_D_1_2ps_1e9_m2s": 1.681500738387849,
+      "short_D_2_4ps_1e9_m2s": 1.2086066736189665,
+      "diffusion_window_relative_disagreement": 0.39127209462850476,
+      "diffusion_window_pass": false,
+      "NVE_energy_drift_NkBT": 0.00568732919914828,
+      "NVE_energy_range_NkBT": 0.017758440972642214,
+      "NVE_energy_linear_slope_NkBT_per_ps": -0.00033494226031522713,
+      "NVE_energy_drift_pass": false,
+      "neighbor_replaced_fraction_1ps": 0.24466463414634143
+    },
+    {
+      "tag": "n64-D2O-P1-T300.0-s3-dt0.0005",
+      "n": 64,
+      "isotope": "D2O",
+      "beads": 1,
+      "T_K": 300.0,
+      "seed": 3,
+      "dt_ps": 0.0005,
+      "equilibration_ps": 5.0,
+      "production_ps": 5.0,
+      "sample_ps": 0.1,
+      "mobility_NVE_ps": 5.0,
+      "side_nm": 1.2429633119082437,
+      "cutoff_nm": 0.6090520228350395,
+      "platform": "OpenCL",
+      "parameters": {
+        "epsilon": 0.7748768,
+        "sigma": 0.31589,
+        "q": 1.1128,
+        "gamma": 0.73612,
+        "D": 485.72056000000003,
+        "alpha": 22.87,
+        "r0": 0.09419,
+        "ktheta": 367.5644,
+        "theta0": 1.87448361664191
+      },
+      "thermostat": "PILE 1/ps; disabled for mobility branch",
+      "density_control": "same number density, no barostat",
+      "contractions": "none",
+      "openmm_version": "8.6.1",
+      "bond_mean_A": 0.9642836621845987,
+      "angle_mean_deg": 104.85321293581859,
+      "hydrogen_bond_degree": 3.758125,
+      "tetrahedral_order": 0.7205553077635112,
+      "coordination_035nm": 4.908125,
+      "nearest_OO_A": 2.699678509975619,
+      "potential_mean_kJmol": -44.09276015355385,
+      "bond_mean_A_second_minus_first_half": -0.0005767553834800099,
+      "angle_mean_deg_second_minus_first_half": -0.1330935822984003,
+      "hydrogen_bond_degree_second_minus_first_half": 0.018750000000000266,
+      "tetrahedral_order_second_minus_first_half": 0.0018106641258660572,
+      "coordination_035nm_second_minus_first_half": -0.0012500000000006395,
+      "nearest_OO_A_second_minus_first_half": 0.004747014408886585,
+      "bond_distribution_sd_A": 0.0250327376255044,
+      "intramolecular_RDF_peak_A": 0.961,
+      "experimental_peak_A": 0.985,
+      "experimental_peak_uncertainty_A": 0.005,
+      "peak_error_A": -0.02400000000000002,
+      "short_D_1_2ps_1e9_m2s": 1.0522436526168129,
+      "short_D_2_4ps_1e9_m2s": 0.9568021169476874,
+      "diffusion_window_relative_disagreement": 0.0997505481839812,
+      "diffusion_window_pass": true,
+      "NVE_energy_drift_NkBT": -0.002149189857610928,
+      "NVE_energy_range_NkBT": 0.012148042624227482,
+      "NVE_energy_linear_slope_NkBT_per_ps": -1.4626643224187748e-05,
+      "NVE_energy_drift_pass": true,
+      "neighbor_replaced_fraction_1ps": 0.17092225609756095
+    },
+    {
+      "tag": "n64-D2O-P1-T320.0-s1-dt0.0005",
+      "n": 64,
+      "isotope": "D2O",
+      "beads": 1,
+      "T_K": 320.0,
+      "seed": 1,
+      "dt_ps": 0.0005,
+      "equilibration_ps": 3.0,
+      "production_ps": 3.0,
+      "sample_ps": 0.1,
+      "mobility_NVE_ps": 0.0,
+      "side_nm": 1.2429633119082437,
+      "cutoff_nm": 0.6090520228350395,
+      "platform": "OpenCL",
+      "parameters": {
+        "epsilon": 0.7748768,
+        "sigma": 0.31589,
+        "q": 1.1128,
+        "gamma": 0.73612,
+        "D": 485.72056000000003,
+        "alpha": 22.87,
+        "r0": 0.09419,
+        "ktheta": 367.5644,
+        "theta0": 1.87448361664191
+      },
+      "thermostat": "PILE 1/ps; disabled for mobility branch",
+      "density_control": "same number density, no barostat",
+      "contractions": "none",
+      "openmm_version": "8.6.1",
+      "bond_mean_A": 0.963834579005315,
+      "angle_mean_deg": 104.85218007199745,
+      "hydrogen_bond_degree": 3.73125,
+      "tetrahedral_order": 0.6986607321619277,
+      "coordination_035nm": 4.944791666666666,
+      "nearest_OO_A": 2.702600581016935,
+      "potential_mean_kJmol": -43.12880017764313,
+      "bond_mean_A_second_minus_first_half": -0.0005766364446621042,
+      "angle_mean_deg_second_minus_first_half": 0.32414743478780395,
+      "hydrogen_bond_degree_second_minus_first_half": -0.07499999999999973,
+      "tetrahedral_order_second_minus_first_half": -0.004904234301712829,
+      "coordination_035nm_second_minus_first_half": 0.014583333333333393,
+      "nearest_OO_A_second_minus_first_half": -0.004888261194913923,
+      "bond_distribution_sd_A": 0.025008640819007923,
+      "intramolecular_RDF_peak_A": 0.961,
+      "experimental_peak_A": 0.985,
+      "experimental_peak_uncertainty_A": 0.005,
+      "peak_error_A": -0.02400000000000002
+    },
+    {
+      "tag": "n64-D2O-P32-T280.0-s1-dt0.0005",
+      "n": 64,
+      "isotope": "D2O",
+      "beads": 32,
+      "T_K": 280.0,
+      "seed": 1,
+      "dt_ps": 0.0005,
+      "equilibration_ps": 3.0,
+      "production_ps": 3.0,
+      "sample_ps": 0.1,
+      "mobility_NVE_ps": 0.0,
+      "side_nm": 1.2429633119082437,
+      "cutoff_nm": 0.6090520228350395,
+      "platform": "OpenCL",
+      "parameters": {
+        "epsilon": 0.7748768,
+        "sigma": 0.31589,
+        "q": 1.1128,
+        "gamma": 0.73612,
+        "D": 485.72056000000003,
+        "alpha": 22.87,
+        "r0": 0.09419,
+        "ktheta": 367.5644,
+        "theta0": 1.87448361664191
+      },
+      "thermostat": "PILE 1/ps; disabled for mobility branch",
+      "density_control": "same number density, no barostat",
+      "contractions": "none",
+      "openmm_version": "8.6.1",
+      "bond_mean_A": 0.9743905341803101,
+      "angle_mean_deg": 104.59445274698895,
+      "hydrogen_bond_degree": 3.7056315104166666,
+      "tetrahedral_order": 0.691892383382634,
+      "coordination_035nm": 5.06259765625,
+      "nearest_OO_A": 2.701840305838389,
+      "potential_mean_kJmol": -27.08154373363151,
+      "bond_mean_A_second_minus_first_half": 0.00020359332300223798,
+      "angle_mean_deg_second_minus_first_half": 0.2043608369778127,
+      "hydrogen_bond_degree_second_minus_first_half": -0.03313802083333339,
+      "tetrahedral_order_second_minus_first_half": -0.0026494904881221304,
+      "coordination_035nm_second_minus_first_half": -0.07311197916666679,
+      "nearest_OO_A_second_minus_first_half": -0.0052000424069973405,
+      "bond_distribution_sd_A": 0.06059650832503701,
+      "intramolecular_RDF_peak_A": 0.967,
+      "experimental_peak_A": 0.985,
+      "experimental_peak_uncertainty_A": 0.005,
+      "peak_error_A": -0.018000000000000016
+    },
+    {
+      "tag": "n64-D2O-P32-T300.0-s1-dt0.0005",
+      "n": 64,
+      "isotope": "D2O",
+      "beads": 32,
+      "T_K": 300.0,
+      "seed": 1,
+      "dt_ps": 0.0005,
+      "equilibration_ps": 5.0,
+      "production_ps": 5.0,
+      "sample_ps": 0.1,
+      "mobility_NVE_ps": 5.0,
+      "side_nm": 1.2429633119082437,
+      "cutoff_nm": 0.6090520228350395,
+      "platform": "OpenCL",
+      "parameters": {
+        "epsilon": 0.7748768,
+        "sigma": 0.31589,
+        "q": 1.1128,
+        "gamma": 0.73612,
+        "D": 485.72056000000003,
+        "alpha": 22.87,
+        "r0": 0.09419,
+        "ktheta": 367.5644,
+        "theta0": 1.87448361664191
+      },
+      "thermostat": "PILE 1/ps; disabled for mobility branch",
+      "density_control": "same number density, no barostat",
+      "contractions": "none",
+      "openmm_version": "8.6.1",
+      "bond_mean_A": 0.9743834584142054,
+      "angle_mean_deg": 104.76357796905721,
+      "hydrogen_bond_degree": 3.68564453125,
+      "tetrahedral_order": 0.6938299080209154,
+      "coordination_035nm": 4.92775390625,
+      "nearest_OO_A": 2.6967815751519923,
+      "potential_mean_kJmol": -26.491450130044942,
+      "bond_mean_A_second_minus_first_half": 0.0010579104224776037,
+      "angle_mean_deg_second_minus_first_half": -0.24168522554407446,
+      "hydrogen_bond_degree_second_minus_first_half": 0.04316406249999982,
+      "tetrahedral_order_second_minus_first_half": 0.0049119158192516554,
+      "coordination_035nm_second_minus_first_half": -0.15933593750000075,
+      "nearest_OO_A_second_minus_first_half": -0.005203194758758745,
+      "bond_distribution_sd_A": 0.06071970588279882,
+      "intramolecular_RDF_peak_A": 0.957,
+      "experimental_peak_A": 0.985,
+      "experimental_peak_uncertainty_A": 0.005,
+      "peak_error_A": -0.028000000000000025,
+      "short_D_1_2ps_1e9_m2s": 1.2159723019178736,
+      "short_D_2_4ps_1e9_m2s": 1.1919900449259335,
+      "diffusion_window_relative_disagreement": 0.020119511143593737,
+      "diffusion_window_pass": true,
+      "NVE_energy_drift_NkBT": 0.025753417853460046,
+      "NVE_energy_range_NkBT": 0.05285898998794277,
+      "NVE_energy_linear_slope_NkBT_per_ps": -0.0013293904791892202,
+      "NVE_energy_drift_pass": false,
+      "neighbor_replaced_fraction_1ps": 0.21693978658536583
+    },
+    {
+      "tag": "n64-D2O-P32-T300.0-s2-dt0.0005",
+      "n": 64,
+      "isotope": "D2O",
+      "beads": 32,
+      "T_K": 300.0,
+      "seed": 2,
+      "dt_ps": 0.0005,
+      "equilibration_ps": 5.0,
+      "production_ps": 5.0,
+      "sample_ps": 0.1,
+      "mobility_NVE_ps": 5.0,
+      "side_nm": 1.2429633119082437,
+      "cutoff_nm": 0.6090520228350395,
+      "platform": "OpenCL",
+      "parameters": {
+        "epsilon": 0.7748768,
+        "sigma": 0.31589,
+        "q": 1.1128,
+        "gamma": 0.73612,
+        "D": 485.72056000000003,
+        "alpha": 22.87,
+        "r0": 0.09419,
+        "ktheta": 367.5644,
+        "theta0": 1.87448361664191
+      },
+      "thermostat": "PILE 1/ps; disabled for mobility branch",
+      "density_control": "same number density, no barostat",
+      "contractions": "none",
+      "openmm_version": "8.6.1",
+      "bond_mean_A": 0.9744102285908481,
+      "angle_mean_deg": 104.7610631099314,
+      "hydrogen_bond_degree": 3.6433984375,
+      "tetrahedral_order": 0.6797691785430677,
+      "coordination_035nm": 5.04193359375,
+      "nearest_OO_A": 2.699597217894387,
+      "potential_mean_kJmol": -25.936497704968392,
+      "bond_mean_A_second_minus_first_half": 0.0002858574846978934,
+      "angle_mean_deg_second_minus_first_half": -0.01758814213781079,
+      "hydrogen_bond_degree_second_minus_first_half": 0.08070312499999988,
+      "tetrahedral_order_second_minus_first_half": 0.018248780567790113,
+      "coordination_035nm_second_minus_first_half": -0.09261718749999925,
+      "nearest_OO_A_second_minus_first_half": 0.0039611941759374325,
+      "bond_distribution_sd_A": 0.06075155894361223,
+      "intramolecular_RDF_peak_A": 0.971,
+      "experimental_peak_A": 0.985,
+      "experimental_peak_uncertainty_A": 0.005,
+      "peak_error_A": -0.014000000000000012,
+      "short_D_1_2ps_1e9_m2s": 2.4364445601901092,
+      "short_D_2_4ps_1e9_m2s": 2.159792583514657,
+      "diffusion_window_relative_disagreement": 0.12809191900513572,
+      "diffusion_window_pass": true,
+      "NVE_energy_drift_NkBT": 0.0029567997576951032,
+      "NVE_energy_range_NkBT": 0.05989420260981411,
+      "NVE_energy_linear_slope_NkBT_per_ps": 0.00021345806095214313,
+      "NVE_energy_drift_pass": true,
+      "neighbor_replaced_fraction_1ps": 0.34127286585365857
+    },
+    {
+      "tag": "n64-D2O-P32-T300.0-s3-dt0.0005",
+      "n": 64,
+      "isotope": "D2O",
+      "beads": 32,
+      "T_K": 300.0,
+      "seed": 3,
+      "dt_ps": 0.0005,
+      "equilibration_ps": 5.0,
+      "production_ps": 5.0,
+      "sample_ps": 0.1,
+      "mobility_NVE_ps": 5.0,
+      "side_nm": 1.2429633119082437,
+      "cutoff_nm": 0.6090520228350395,
+      "platform": "OpenCL",
+      "parameters": {
+        "epsilon": 0.7748768,
+        "sigma": 0.31589,
+        "q": 1.1128,
+        "gamma": 0.73612,
+        "D": 485.72056000000003,
+        "alpha": 22.87,
+        "r0": 0.09419,
+        "ktheta": 367.5644,
+        "theta0": 1.87448361664191
+      },
+      "thermostat": "PILE 1/ps; disabled for mobility branch",
+      "density_control": "same number density, no barostat",
+      "contractions": "none",
+      "openmm_version": "8.6.1",
+      "bond_mean_A": 0.9741931475382986,
+      "angle_mean_deg": 104.73185654295524,
+      "hydrogen_bond_degree": 3.621875,
+      "tetrahedral_order": 0.6646764437024558,
+      "coordination_035nm": 5.043515625,
+      "nearest_OO_A": 2.7007339447834213,
+      "potential_mean_kJmol": -25.536525021437537,
+      "bond_mean_A_second_minus_first_half": -0.0003835583769401518,
+      "angle_mean_deg_second_minus_first_half": -0.1453555391210557,
+      "hydrogen_bond_degree_second_minus_first_half": -0.01601562500000009,
+      "tetrahedral_order_second_minus_first_half": -0.021632795539049843,
+      "coordination_035nm_second_minus_first_half": 0.06757812499999982,
+      "nearest_OO_A_second_minus_first_half": 0.00474096377631783,
+      "bond_distribution_sd_A": 0.060931898333090595,
+      "intramolecular_RDF_peak_A": 0.969,
+      "experimental_peak_A": 0.985,
+      "experimental_peak_uncertainty_A": 0.005,
+      "peak_error_A": -0.016000000000000014,
+      "short_D_1_2ps_1e9_m2s": 1.1912207574404623,
+      "short_D_2_4ps_1e9_m2s": 0.5948053449364505,
+      "diffusion_window_relative_disagreement": 1.0027068814718423,
+      "diffusion_window_pass": false,
+      "NVE_energy_drift_NkBT": 0.00746373251597499,
+      "NVE_energy_range_NkBT": 0.06056285044305875,
+      "NVE_energy_linear_slope_NkBT_per_ps": 0.0021609063488918496,
+      "NVE_energy_drift_pass": false,
+      "neighbor_replaced_fraction_1ps": 0.23065929878048785
+    },
+    {
+      "tag": "n64-D2O-P32-T320.0-s1-dt0.0005",
+      "n": 64,
+      "isotope": "D2O",
+      "beads": 32,
+      "T_K": 320.0,
+      "seed": 1,
+      "dt_ps": 0.0005,
+      "equilibration_ps": 3.0,
+      "production_ps": 3.0,
+      "sample_ps": 0.1,
+      "mobility_NVE_ps": 0.0,
+      "side_nm": 1.2429633119082437,
+      "cutoff_nm": 0.6090520228350395,
+      "platform": "OpenCL",
+      "parameters": {
+        "epsilon": 0.7748768,
+        "sigma": 0.31589,
+        "q": 1.1128,
+        "gamma": 0.73612,
+        "D": 485.72056000000003,
+        "alpha": 22.87,
+        "r0": 0.09419,
+        "ktheta": 367.5644,
+        "theta0": 1.87448361664191
+      },
+      "thermostat": "PILE 1/ps; disabled for mobility branch",
+      "density_control": "same number density, no barostat",
+      "contractions": "none",
+      "openmm_version": "8.6.1",
+      "bond_mean_A": 0.9745424524701046,
+      "angle_mean_deg": 104.77830825613802,
+      "hydrogen_bond_degree": 3.6062825520833335,
+      "tetrahedral_order": 0.674957904778791,
+      "coordination_035nm": 5.03583984375,
+      "nearest_OO_A": 2.7005610808878857,
+      "potential_mean_kJmol": -25.620633058274226,
+      "bond_mean_A_second_minus_first_half": -0.0006991940880340941,
+      "angle_mean_deg_second_minus_first_half": 0.10581349060508671,
+      "hydrogen_bond_degree_second_minus_first_half": -0.04108072916666661,
+      "tetrahedral_order_second_minus_first_half": 0.008065908492466689,
+      "coordination_035nm_second_minus_first_half": 0.07311197916666679,
+      "nearest_OO_A_second_minus_first_half": -0.004320404941845268,
+      "bond_distribution_sd_A": 0.06096243093983289,
+      "intramolecular_RDF_peak_A": 0.957,
+      "experimental_peak_A": 0.985,
+      "experimental_peak_uncertainty_A": 0.005,
+      "peak_error_A": -0.028000000000000025
+    },
+    {
+      "tag": "n64-H2O-P1-T280.0-s1-dt0.0005",
+      "n": 64,
+      "isotope": "H2O",
+      "beads": 1,
+      "T_K": 280.0,
+      "seed": 1,
+      "dt_ps": 0.0005,
+      "equilibration_ps": 3.0,
+      "production_ps": 3.0,
+      "sample_ps": 0.1,
+      "mobility_NVE_ps": 0.0,
+      "side_nm": 1.2429633119082437,
+      "cutoff_nm": 0.6090520228350395,
+      "platform": "OpenCL",
+      "parameters": {
+        "epsilon": 0.7748768,
+        "sigma": 0.31589,
+        "q": 1.1128,
+        "gamma": 0.73612,
+        "D": 485.72056000000003,
+        "alpha": 22.87,
+        "r0": 0.09419,
+        "ktheta": 367.5644,
+        "theta0": 1.87448361664191
+      },
+      "thermostat": "PILE 1/ps; disabled for mobility branch",
+      "density_control": "same number density, no barostat",
+      "contractions": "none",
+      "openmm_version": "8.6.1",
+      "bond_mean_A": 0.9637788843950299,
+      "angle_mean_deg": 104.80450492421974,
+      "hydrogen_bond_degree": 3.765625,
+      "tetrahedral_order": 0.7004065698934508,
+      "coordination_035nm": 4.9875,
+      "nearest_OO_A": 2.7043750862492377,
+      "potential_mean_kJmol": -44.27074013757667,
+      "bond_mean_A_second_minus_first_half": -0.00028322594353502595,
+      "angle_mean_deg_second_minus_first_half": -0.1641561311851092,
+      "hydrogen_bond_degree_second_minus_first_half": 0.010416666666666963,
+      "tetrahedral_order_second_minus_first_half": 0.023973742564056044,
+      "coordination_035nm_second_minus_first_half": -0.04583333333333339,
+      "nearest_OO_A_second_minus_first_half": 0.0004597120917151365,
+      "bond_distribution_sd_A": 0.024064656829743764,
+      "intramolecular_RDF_peak_A": 0.965,
+      "experimental_peak_A": 0.99,
+      "experimental_peak_uncertainty_A": 0.005,
+      "peak_error_A": -0.025000000000000022
+    },
+    {
+      "tag": "n64-H2O-P1-T300.0-s1-dt0.0005",
+      "n": 64,
+      "isotope": "H2O",
+      "beads": 1,
+      "T_K": 300.0,
+      "seed": 1,
+      "dt_ps": 0.0005,
+      "equilibration_ps": 5.0,
+      "production_ps": 5.0,
+      "sample_ps": 0.1,
+      "mobility_NVE_ps": 5.0,
+      "side_nm": 1.2429633119082437,
+      "cutoff_nm": 0.6090520228350395,
+      "platform": "OpenCL",
+      "parameters": {
+        "epsilon": 0.7748768,
+        "sigma": 0.31589,
+        "q": 1.1128,
+        "gamma": 0.73612,
+        "D": 485.72056000000003,
+        "alpha": 22.87,
+        "r0": 0.09419,
+        "ktheta": 367.5644,
+        "theta0": 1.87448361664191
+      },
+      "thermostat": "PILE 1/ps; disabled for mobility branch",
+      "density_control": "same number density, no barostat",
+      "contractions": "none",
+      "openmm_version": "8.6.1",
+      "bond_mean_A": 0.963125873511184,
+      "angle_mean_deg": 104.76398739828052,
+      "hydrogen_bond_degree": 3.646875,
+      "tetrahedral_order": 0.6563892710959229,
+      "coordination_035nm": 5.104375,
+      "nearest_OO_A": 2.70545527283691,
+      "potential_mean_kJmol": -42.26911173672864,
+      "bond_mean_A_second_minus_first_half": 0.00011119450905516803,
+      "angle_mean_deg_second_minus_first_half": 0.2005078409165435,
+      "hydrogen_bond_degree_second_minus_first_half": 0.03374999999999995,
+      "tetrahedral_order_second_minus_first_half": 0.00392989317199266,
+      "coordination_035nm_second_minus_first_half": 0.006249999999999645,
+      "nearest_OO_A_second_minus_first_half": 0.006267512798377339,
+      "bond_distribution_sd_A": 0.024804951622609546,
+      "intramolecular_RDF_peak_A": 0.963,
+      "experimental_peak_A": 0.99,
+      "experimental_peak_uncertainty_A": 0.005,
+      "peak_error_A": -0.027000000000000024,
+      "short_D_1_2ps_1e9_m2s": 2.338324937631762,
+      "short_D_2_4ps_1e9_m2s": 2.1155093544852277,
+      "diffusion_window_relative_disagreement": 0.10532479219443237,
+      "diffusion_window_pass": true,
+      "NVE_energy_drift_NkBT": 0.0016060526892425495,
+      "NVE_energy_range_NkBT": 0.017683929537003044,
+      "NVE_energy_linear_slope_NkBT_per_ps": 0.0007978000232398483,
+      "NVE_energy_drift_pass": true,
+      "neighbor_replaced_fraction_1ps": 0.31545350609756095
+    },
+    {
+      "tag": "n64-H2O-P1-T300.0-s2-dt0.0005",
+      "n": 64,
+      "isotope": "H2O",
+      "beads": 1,
+      "T_K": 300.0,
+      "seed": 2,
+      "dt_ps": 0.0005,
+      "equilibration_ps": 5.0,
+      "production_ps": 5.0,
+      "sample_ps": 0.1,
+      "mobility_NVE_ps": 5.0,
+      "side_nm": 1.2429633119082437,
+      "cutoff_nm": 0.6090520228350395,
+      "platform": "OpenCL",
+      "parameters": {
+        "epsilon": 0.7748768,
+        "sigma": 0.31589,
+        "q": 1.1128,
+        "gamma": 0.73612,
+        "D": 485.72056000000003,
+        "alpha": 22.87,
+        "r0": 0.09419,
+        "ktheta": 367.5644,
+        "theta0": 1.87448361664191
+      },
+      "thermostat": "PILE 1/ps; disabled for mobility branch",
+      "density_control": "same number density, no barostat",
+      "contractions": "none",
+      "openmm_version": "8.6.1",
+      "bond_mean_A": 0.9634173453155142,
+      "angle_mean_deg": 104.8754016228651,
+      "hydrogen_bond_degree": 3.665,
+      "tetrahedral_order": 0.6692347732927024,
+      "coordination_035nm": 5.03875,
+      "nearest_OO_A": 2.704562861549294,
+      "potential_mean_kJmol": -42.500952693830975,
+      "bond_mean_A_second_minus_first_half": -0.0007354528434448948,
+      "angle_mean_deg_second_minus_first_half": 0.2305277780865964,
+      "hydrogen_bond_degree_second_minus_first_half": -0.05250000000000021,
+      "tetrahedral_order_second_minus_first_half": -0.02625932738050807,
+      "coordination_035nm_second_minus_first_half": 0.17250000000000032,
+      "nearest_OO_A_second_minus_first_half": 0.006031738349946636,
+      "bond_distribution_sd_A": 0.02655502280054566,
+      "intramolecular_RDF_peak_A": 0.959,
+      "experimental_peak_A": 0.99,
+      "experimental_peak_uncertainty_A": 0.005,
+      "peak_error_A": -0.031000000000000028,
+      "short_D_1_2ps_1e9_m2s": 2.169882086546109,
+      "short_D_2_4ps_1e9_m2s": 1.5930396796226716,
+      "diffusion_window_relative_disagreement": 0.36210171931189344,
+      "diffusion_window_pass": false,
+      "NVE_energy_drift_NkBT": 0.009078178920819514,
+      "NVE_energy_range_NkBT": 0.02481157200988318,
+      "NVE_energy_linear_slope_NkBT_per_ps": 0.0015134048790245924,
+      "NVE_energy_drift_pass": false,
+      "neighbor_replaced_fraction_1ps": 0.28534679878048785
+    },
+    {
+      "tag": "n64-H2O-P1-T300.0-s3-dt0.0005",
+      "n": 64,
+      "isotope": "H2O",
+      "beads": 1,
+      "T_K": 300.0,
+      "seed": 3,
+      "dt_ps": 0.0005,
+      "equilibration_ps": 5.0,
+      "production_ps": 5.0,
+      "sample_ps": 0.1,
+      "mobility_NVE_ps": 5.0,
+      "side_nm": 1.2429633119082437,
+      "cutoff_nm": 0.6090520228350395,
+      "platform": "OpenCL",
+      "parameters": {
+        "epsilon": 0.7748768,
+        "sigma": 0.31589,
+        "q": 1.1128,
+        "gamma": 0.73612,
+        "D": 485.72056000000003,
+        "alpha": 22.87,
+        "r0": 0.09419,
+        "ktheta": 367.5644,
+        "theta0": 1.87448361664191
+      },
+      "thermostat": "PILE 1/ps; disabled for mobility branch",
+      "density_control": "same number density, no barostat",
+      "contractions": "none",
+      "openmm_version": "8.6.1",
+      "bond_mean_A": 0.9634621714506929,
+      "angle_mean_deg": 104.57750751517727,
+      "hydrogen_bond_degree": 3.684375,
+      "tetrahedral_order": 0.6834438747309869,
+      "coordination_035nm": 4.974375,
+      "nearest_OO_A": 2.703513780734627,
+      "potential_mean_kJmol": -43.36132606056189,
+      "bond_mean_A_second_minus_first_half": 0.0005891778425844985,
+      "angle_mean_deg_second_minus_first_half": 0.2080520152569676,
+      "hydrogen_bond_degree_second_minus_first_half": 0.06875000000000009,
+      "tetrahedral_order_second_minus_first_half": 0.01843617106865114,
+      "coordination_035nm_second_minus_first_half": -0.04375000000000018,
+      "nearest_OO_A_second_minus_first_half": -0.0060947977995753355,
+      "bond_distribution_sd_A": 0.025264909689549527,
+      "intramolecular_RDF_peak_A": 0.959,
+      "experimental_peak_A": 0.99,
+      "experimental_peak_uncertainty_A": 0.005,
+      "peak_error_A": -0.031000000000000028,
+      "short_D_1_2ps_1e9_m2s": 1.057494079013366,
+      "short_D_2_4ps_1e9_m2s": 1.0280616980646509,
+      "diffusion_window_relative_disagreement": 0.028629002523994675,
+      "diffusion_window_pass": true,
+      "NVE_energy_drift_NkBT": -0.007753208984694603,
+      "NVE_energy_range_NkBT": 0.02128410892410288,
+      "NVE_energy_linear_slope_NkBT_per_ps": -0.0008495194088452224,
+      "NVE_energy_drift_pass": false,
+      "neighbor_replaced_fraction_1ps": 0.15443978658536583
+    },
+    {
+      "tag": "n64-H2O-P1-T320.0-s1-dt0.0005",
+      "n": 64,
+      "isotope": "H2O",
+      "beads": 1,
+      "T_K": 320.0,
+      "seed": 1,
+      "dt_ps": 0.0005,
+      "equilibration_ps": 3.0,
+      "production_ps": 3.0,
+      "sample_ps": 0.1,
+      "mobility_NVE_ps": 0.0,
+      "side_nm": 1.2429633119082437,
+      "cutoff_nm": 0.6090520228350395,
+      "platform": "OpenCL",
+      "parameters": {
+        "epsilon": 0.7748768,
+        "sigma": 0.31589,
+        "q": 1.1128,
+        "gamma": 0.73612,
+        "D": 485.72056000000003,
+        "alpha": 22.87,
+        "r0": 0.09419,
+        "ktheta": 367.5644,
+        "theta0": 1.87448361664191
+      },
+      "thermostat": "PILE 1/ps; disabled for mobility branch",
+      "density_control": "same number density, no barostat",
+      "contractions": "none",
+      "openmm_version": "8.6.1",
+      "bond_mean_A": 0.9625161522750678,
+      "angle_mean_deg": 104.78815708911222,
+      "hydrogen_bond_degree": 3.5875,
+      "tetrahedral_order": 0.6410375501401832,
+      "coordination_035nm": 5.190625,
+      "nearest_OO_A": 2.7079165223946617,
+      "potential_mean_kJmol": -41.22372245330121,
+      "bond_mean_A_second_minus_first_half": -0.0016406217476644391,
+      "angle_mean_deg_second_minus_first_half": -0.569240023561818,
+      "hydrogen_bond_degree_second_minus_first_half": -0.033333333333333215,
+      "tetrahedral_order_second_minus_first_half": -0.009693978815448312,
+      "coordination_035nm_second_minus_first_half": 0.09791666666666643,
+      "nearest_OO_A_second_minus_first_half": 0.0033838680735085447,
+      "bond_distribution_sd_A": 0.025996653884367383,
+      "intramolecular_RDF_peak_A": 0.959,
+      "experimental_peak_A": 0.99,
+      "experimental_peak_uncertainty_A": 0.005,
+      "peak_error_A": -0.031000000000000028
+    },
+    {
+      "tag": "n64-H2O-P16-T300.0-s1-dt0.0005",
+      "n": 64,
+      "isotope": "H2O",
+      "beads": 16,
+      "T_K": 300.0,
+      "seed": 1,
+      "dt_ps": 0.0005,
+      "equilibration_ps": 5.0,
+      "production_ps": 5.0,
+      "sample_ps": 0.1,
+      "mobility_NVE_ps": 0.0,
+      "side_nm": 1.2429633119082437,
+      "cutoff_nm": 0.6090520228350395,
+      "platform": "OpenCL",
+      "parameters": {
+        "epsilon": 0.7748768,
+        "sigma": 0.31589,
+        "q": 1.1128,
+        "gamma": 0.73612,
+        "D": 485.72056000000003,
+        "alpha": 22.87,
+        "r0": 0.09419,
+        "ktheta": 367.5644,
+        "theta0": 1.87448361664191
+      },
+      "thermostat": "PILE 1/ps; disabled for mobility branch",
+      "density_control": "same number density, no barostat",
+      "contractions": "none",
+      "openmm_version": "8.6.1",
+      "bond_mean_A": 0.9770023721095177,
+      "angle_mean_deg": 104.63534594191464,
+      "hydrogen_bond_degree": 3.4990234375,
+      "tetrahedral_order": 0.6526911155205056,
+      "coordination_035nm": 5.09890625,
+      "nearest_OO_A": 2.710091761776211,
+      "potential_mean_kJmol": -18.65312938046446,
+      "bond_mean_A_second_minus_first_half": 0.00014338119269219352,
+      "angle_mean_deg_second_minus_first_half": 0.25228929208647344,
+      "hydrogen_bond_degree_second_minus_first_half": -0.09648437500000018,
+      "tetrahedral_order_second_minus_first_half": -0.02621411178259414,
+      "coordination_035nm_second_minus_first_half": 0.028281250000000036,
+      "nearest_OO_A_second_minus_first_half": 0.00989616362327883,
+      "bond_distribution_sd_A": 0.06843545441713329,
+      "intramolecular_RDF_peak_A": 0.967,
+      "experimental_peak_A": 0.99,
+      "experimental_peak_uncertainty_A": 0.005,
+      "peak_error_A": -0.02300000000000002
+    },
+    {
+      "tag": "n64-H2O-P32-T280.0-s1-dt0.0005",
+      "n": 64,
+      "isotope": "H2O",
+      "beads": 32,
+      "T_K": 280.0,
+      "seed": 1,
+      "dt_ps": 0.0005,
+      "equilibration_ps": 3.0,
+      "production_ps": 3.0,
+      "sample_ps": 0.1,
+      "mobility_NVE_ps": 0.0,
+      "side_nm": 1.2429633119082437,
+      "cutoff_nm": 0.6090520228350395,
+      "platform": "OpenCL",
+      "parameters": {
+        "epsilon": 0.7748768,
+        "sigma": 0.31589,
+        "q": 1.1128,
+        "gamma": 0.73612,
+        "D": 485.72056000000003,
+        "alpha": 22.87,
+        "r0": 0.09419,
+        "ktheta": 367.5644,
+        "theta0": 1.87448361664191
+      },
+      "thermostat": "PILE 1/ps; disabled for mobility branch",
+      "density_control": "same number density, no barostat",
+      "contractions": "none",
+      "openmm_version": "8.6.1",
+      "bond_mean_A": 0.9797688349176248,
+      "angle_mean_deg": 104.8206435812136,
+      "hydrogen_bond_degree": 3.649055989583333,
+      "tetrahedral_order": 0.692683609591983,
+      "coordination_035nm": 4.994303385416667,
+      "nearest_OO_A": 2.702723745951609,
+      "potential_mean_kJmol": -18.60237161775719,
+      "bond_mean_A_second_minus_first_half": 0.001181020146985845,
+      "angle_mean_deg_second_minus_first_half": 0.2800450512930439,
+      "hydrogen_bond_degree_second_minus_first_half": -0.004622395833333126,
+      "tetrahedral_order_second_minus_first_half": 0.004057532316570023,
+      "coordination_035nm_second_minus_first_half": -0.09537760416666696,
+      "nearest_OO_A_second_minus_first_half": 0.003582975355297613,
+      "bond_distribution_sd_A": 0.0713330883681885,
+      "intramolecular_RDF_peak_A": 0.961,
+      "experimental_peak_A": 0.99,
+      "experimental_peak_uncertainty_A": 0.005,
+      "peak_error_A": -0.029000000000000026
+    },
+    {
+      "tag": "n64-H2O-P32-T300.0-s1-dt0.00025",
+      "n": 64,
+      "isotope": "H2O",
+      "beads": 32,
+      "T_K": 300.0,
+      "seed": 1,
+      "dt_ps": 0.00025,
+      "equilibration_ps": 5.0,
+      "production_ps": 5.0,
+      "sample_ps": 0.1,
+      "mobility_NVE_ps": 5.0,
+      "side_nm": 1.2429633119082437,
+      "cutoff_nm": 0.6090520228350395,
+      "platform": "OpenCL",
+      "parameters": {
+        "epsilon": 0.7748768,
+        "sigma": 0.31589,
+        "q": 1.1128,
+        "gamma": 0.73612,
+        "D": 485.72056000000003,
+        "alpha": 22.87,
+        "r0": 0.09419,
+        "ktheta": 367.5644,
+        "theta0": 1.87448361664191
+      },
+      "thermostat": "PILE 1/ps; disabled for mobility branch",
+      "density_control": "same number density, no barostat",
+      "contractions": "none",
+      "openmm_version": "8.6.1",
+      "bond_mean_A": 0.9780233757496056,
+      "angle_mean_deg": 104.70296361183519,
+      "hydrogen_bond_degree": 3.519921875,
+      "tetrahedral_order": 0.65144705757482,
+      "coordination_035nm": 5.123671875,
+      "nearest_OO_A": 2.7053229147594475,
+      "potential_mean_kJmol": -17.347609787724277,
+      "bond_mean_A_second_minus_first_half": -0.0008169454087432193,
+      "angle_mean_deg_second_minus_first_half": -0.13066424236698992,
+      "hydrogen_bond_degree_second_minus_first_half": -0.04773437500000011,
+      "tetrahedral_order_second_minus_first_half": -0.013916358189491884,
+      "coordination_035nm_second_minus_first_half": -0.027734375000000533,
+      "nearest_OO_A_second_minus_first_half": 0.006734428224561828,
+      "bond_distribution_sd_A": 0.07048559167862428,
+      "intramolecular_RDF_peak_A": 0.963,
+      "experimental_peak_A": 0.99,
+      "experimental_peak_uncertainty_A": 0.005,
+      "peak_error_A": -0.027000000000000024,
+      "short_D_1_2ps_1e9_m2s": 2.577185432127556,
+      "short_D_2_4ps_1e9_m2s": 3.1330348898900104,
+      "diffusion_window_relative_disagreement": 0.17741566158619074,
+      "diffusion_window_pass": true,
+      "NVE_energy_drift_NkBT": -0.0045911300605686566,
+      "NVE_energy_range_NkBT": 0.03598261578820376,
+      "NVE_energy_linear_slope_NkBT_per_ps": -0.0004801765466660145,
+      "NVE_energy_drift_pass": true,
+      "neighbor_replaced_fraction_1ps": 0.321360518292683
+    },
+    {
+      "tag": "n64-H2O-P32-T300.0-s1-dt0.0005",
+      "n": 64,
+      "isotope": "H2O",
+      "beads": 32,
+      "T_K": 300.0,
+      "seed": 1,
+      "dt_ps": 0.0005,
+      "equilibration_ps": 5.0,
+      "production_ps": 5.0,
+      "sample_ps": 0.1,
+      "mobility_NVE_ps": 5.0,
+      "side_nm": 1.2429633119082437,
+      "cutoff_nm": 0.6090520228350395,
+      "platform": "OpenCL",
+      "parameters": {
+        "epsilon": 0.7748768,
+        "sigma": 0.31589,
+        "q": 1.1128,
+        "gamma": 0.73612,
+        "D": 485.72056000000003,
+        "alpha": 22.87,
+        "r0": 0.09419,
+        "ktheta": 367.5644,
+        "theta0": 1.87448361664191
+      },
+      "thermostat": "PILE 1/ps; disabled for mobility branch",
+      "density_control": "same number density, no barostat",
+      "contractions": "none",
+      "openmm_version": "8.6.1",
+      "bond_mean_A": 0.9792515786224886,
+      "angle_mean_deg": 104.87125454272206,
+      "hydrogen_bond_degree": 3.6384375,
+      "tetrahedral_order": 0.6992980344935856,
+      "coordination_035nm": 4.9441015625,
+      "nearest_OO_A": 2.695124246638608,
+      "potential_mean_kJmol": -18.062892796099728,
+      "bond_mean_A_second_minus_first_half": 0.00041845364570669563,
+      "angle_mean_deg_second_minus_first_half": -0.3111215472251416,
+      "hydrogen_bond_degree_second_minus_first_half": -0.052734375,
+      "tetrahedral_order_second_minus_first_half": -0.027934286077378356,
+      "coordination_035nm_second_minus_first_half": 0.04796874999999989,
+      "nearest_OO_A_second_minus_first_half": -0.0016676250536526993,
+      "bond_distribution_sd_A": 0.07146937352010618,
+      "intramolecular_RDF_peak_A": 0.971,
+      "experimental_peak_A": 0.99,
+      "experimental_peak_uncertainty_A": 0.005,
+      "peak_error_A": -0.019000000000000017,
+      "short_D_1_2ps_1e9_m2s": 1.2443432294369283,
+      "short_D_2_4ps_1e9_m2s": 1.77859446424441,
+      "diffusion_window_relative_disagreement": 0.30037832993843516,
+      "diffusion_window_pass": false,
+      "NVE_energy_drift_NkBT": -0.06149820979798537,
+      "NVE_energy_range_NkBT": 0.10243370969774042,
+      "NVE_energy_linear_slope_NkBT_per_ps": 0.0020328716233321115,
+      "NVE_energy_drift_pass": false,
+      "neighbor_replaced_fraction_1ps": 0.2821074695121951
+    },
+    {
+      "tag": "n64-H2O-P32-T300.0-s2-dt0.0005",
+      "n": 64,
+      "isotope": "H2O",
+      "beads": 32,
+      "T_K": 300.0,
+      "seed": 2,
+      "dt_ps": 0.0005,
+      "equilibration_ps": 5.0,
+      "production_ps": 5.0,
+      "sample_ps": 0.1,
+      "mobility_NVE_ps": 5.0,
+      "side_nm": 1.2429633119082437,
+      "cutoff_nm": 0.6090520228350395,
+      "platform": "OpenCL",
+      "parameters": {
+        "epsilon": 0.7748768,
+        "sigma": 0.31589,
+        "q": 1.1128,
+        "gamma": 0.73612,
+        "D": 485.72056000000003,
+        "alpha": 22.87,
+        "r0": 0.09419,
+        "ktheta": 367.5644,
+        "theta0": 1.87448361664191
+      },
+      "thermostat": "PILE 1/ps; disabled for mobility branch",
+      "density_control": "same number density, no barostat",
+      "contractions": "none",
+      "openmm_version": "8.6.1",
+      "bond_mean_A": 0.9789267309323706,
+      "angle_mean_deg": 104.79282549733844,
+      "hydrogen_bond_degree": 3.61666015625,
+      "tetrahedral_order": 0.6922910017399916,
+      "coordination_035nm": 4.95787109375,
+      "nearest_OO_A": 2.7000816469181386,
+      "potential_mean_kJmol": -18.11226290443908,
+      "bond_mean_A_second_minus_first_half": 0.00045127122663668473,
+      "angle_mean_deg_second_minus_first_half": 0.20262688700715614,
+      "hydrogen_bond_degree_second_minus_first_half": -0.024726562499999716,
+      "tetrahedral_order_second_minus_first_half": -0.02161177250726376,
+      "coordination_035nm_second_minus_first_half": 0.030117187500000142,
+      "nearest_OO_A_second_minus_first_half": -0.0029909019062968056,
+      "bond_distribution_sd_A": 0.07158830876313771,
+      "intramolecular_RDF_peak_A": 0.963,
+      "experimental_peak_A": 0.99,
+      "experimental_peak_uncertainty_A": 0.005,
+      "peak_error_A": -0.027000000000000024,
+      "short_D_1_2ps_1e9_m2s": 1.4596063120808718,
+      "short_D_2_4ps_1e9_m2s": 1.7567414880902976,
+      "diffusion_window_relative_disagreement": 0.16913995486748185,
+      "diffusion_window_pass": true,
+      "NVE_energy_drift_NkBT": -0.02117195153513162,
+      "NVE_energy_range_NkBT": 0.09992219509402105,
+      "NVE_energy_linear_slope_NkBT_per_ps": 0.005400995165868126,
+      "NVE_energy_drift_pass": false,
+      "neighbor_replaced_fraction_1ps": 0.2827743902439024
+    },
+    {
+      "tag": "n64-H2O-P32-T300.0-s3-dt0.0005",
+      "n": 64,
+      "isotope": "H2O",
+      "beads": 32,
+      "T_K": 300.0,
+      "seed": 3,
+      "dt_ps": 0.0005,
+      "equilibration_ps": 5.0,
+      "production_ps": 5.0,
+      "sample_ps": 0.1,
+      "mobility_NVE_ps": 5.0,
+      "side_nm": 1.2429633119082437,
+      "cutoff_nm": 0.6090520228350395,
+      "platform": "OpenCL",
+      "parameters": {
+        "epsilon": 0.7748768,
+        "sigma": 0.31589,
+        "q": 1.1128,
+        "gamma": 0.73612,
+        "D": 485.72056000000003,
+        "alpha": 22.87,
+        "r0": 0.09419,
+        "ktheta": 367.5644,
+        "theta0": 1.87448361664191
+      },
+      "thermostat": "PILE 1/ps; disabled for mobility branch",
+      "density_control": "same number density, no barostat",
+      "contractions": "none",
+      "openmm_version": "8.6.1",
+      "bond_mean_A": 0.9789141420249444,
+      "angle_mean_deg": 104.71433185494443,
+      "hydrogen_bond_degree": 3.6017578125,
+      "tetrahedral_order": 0.6764022872943615,
+      "coordination_035nm": 5.03328125,
+      "nearest_OO_A": 2.6984901649864885,
+      "potential_mean_kJmol": -17.260337549165147,
+      "bond_mean_A_second_minus_first_half": -0.001631310046462997,
+      "angle_mean_deg_second_minus_first_half": -0.25494671130574886,
+      "hydrogen_bond_degree_second_minus_first_half": -0.011640625000000071,
+      "tetrahedral_order_second_minus_first_half": 0.010450815916768774,
+      "coordination_035nm_second_minus_first_half": 0.023046875000000355,
+      "nearest_OO_A_second_minus_first_half": 0.0033037685577812503,
+      "bond_distribution_sd_A": 0.07185633446150855,
+      "intramolecular_RDF_peak_A": 0.957,
+      "experimental_peak_A": 0.99,
+      "experimental_peak_uncertainty_A": 0.005,
+      "peak_error_A": -0.03300000000000003,
+      "short_D_1_2ps_1e9_m2s": 2.843236577876155,
+      "short_D_2_4ps_1e9_m2s": 3.0106473308008783,
+      "diffusion_window_relative_disagreement": 0.05560623166054772,
+      "diffusion_window_pass": true,
+      "NVE_energy_drift_NkBT": 0.02817113666545583,
+      "NVE_energy_range_NkBT": 0.09905144699121135,
+      "NVE_energy_linear_slope_NkBT_per_ps": 0.0023636357598254536,
+      "NVE_energy_drift_pass": false,
+      "neighbor_replaced_fraction_1ps": 0.3137385670731707
+    },
+    {
+      "tag": "n64-H2O-P32-T320.0-s1-dt0.0005",
+      "n": 64,
+      "isotope": "H2O",
+      "beads": 32,
+      "T_K": 320.0,
+      "seed": 1,
+      "dt_ps": 0.0005,
+      "equilibration_ps": 3.0,
+      "production_ps": 3.0,
+      "sample_ps": 0.1,
+      "mobility_NVE_ps": 0.0,
+      "side_nm": 1.2429633119082437,
+      "cutoff_nm": 0.6090520228350395,
+      "platform": "OpenCL",
+      "parameters": {
+        "epsilon": 0.7748768,
+        "sigma": 0.31589,
+        "q": 1.1128,
+        "gamma": 0.73612,
+        "D": 485.72056000000003,
+        "alpha": 22.87,
+        "r0": 0.09419,
+        "ktheta": 367.5644,
+        "theta0": 1.87448361664191
+      },
+      "thermostat": "PILE 1/ps; disabled for mobility branch",
+      "density_control": "same number density, no barostat",
+      "contractions": "none",
+      "openmm_version": "8.6.1",
+      "bond_mean_A": 0.9781169576123403,
+      "angle_mean_deg": 104.80649853564061,
+      "hydrogen_bond_degree": 3.4884440104166665,
+      "tetrahedral_order": 0.6399254818394585,
+      "coordination_035nm": 5.1291015625,
+      "nearest_OO_A": 2.7110420866105818,
+      "potential_mean_kJmol": -16.400865304512436,
+      "bond_mean_A_second_minus_first_half": -5.848141119113581e-05,
+      "angle_mean_deg_second_minus_first_half": 0.12532851191244276,
+      "hydrogen_bond_degree_second_minus_first_half": 0.056835937500000266,
+      "tetrahedral_order_second_minus_first_half": 0.01144557377184896,
+      "coordination_035nm_second_minus_first_half": -0.16718749999999982,
+      "nearest_OO_A_second_minus_first_half": -0.0006341955427182633,
+      "bond_distribution_sd_A": 0.071572715791036,
+      "intramolecular_RDF_peak_A": 0.963,
+      "experimental_peak_A": 0.99,
+      "experimental_peak_uncertainty_A": 0.005,
+      "peak_error_A": -0.027000000000000024
+    },
+    {
+      "tag": "n64-H2O-P64-T300.0-s1-dt0.0005",
+      "n": 64,
+      "isotope": "H2O",
+      "beads": 64,
+      "T_K": 300.0,
+      "seed": 1,
+      "dt_ps": 0.0005,
+      "equilibration_ps": 5.0,
+      "production_ps": 5.0,
+      "sample_ps": 0.1,
+      "mobility_NVE_ps": 0.0,
+      "side_nm": 1.2429633119082437,
+      "cutoff_nm": 0.6090520228350395,
+      "platform": "OpenCL",
+      "parameters": {
+        "epsilon": 0.7748768,
+        "sigma": 0.31589,
+        "q": 1.1128,
+        "gamma": 0.73612,
+        "D": 485.72056000000003,
+        "alpha": 22.87,
+        "r0": 0.09419,
+        "ktheta": 367.5644,
+        "theta0": 1.87448361664191
+      },
+      "thermostat": "PILE 1/ps; disabled for mobility branch",
+      "density_control": "same number density, no barostat",
+      "contractions": "none",
+      "openmm_version": "8.6.1",
+      "bond_mean_A": 0.9792681107028026,
+      "angle_mean_deg": 104.62461210703823,
+      "hydrogen_bond_degree": 3.61111328125,
+      "tetrahedral_order": 0.6755571370871009,
+      "coordination_035nm": 5.025166015625,
+      "nearest_OO_A": 2.7003239675622384,
+      "potential_mean_kJmol": -16.85842500236311,
+      "bond_mean_A_second_minus_first_half": -0.00031421822846211533,
+      "angle_mean_deg_second_minus_first_half": -0.06970714418675072,
+      "hydrogen_bond_degree_second_minus_first_half": -0.025585937500000266,
+      "tetrahedral_order_second_minus_first_half": -0.00042190627768756706,
+      "coordination_035nm_second_minus_first_half": -0.01806640625,
+      "nearest_OO_A_second_minus_first_half": -0.0031375263928370423,
+      "bond_distribution_sd_A": 0.07241696900014087,
+      "intramolecular_RDF_peak_A": 0.963,
+      "experimental_peak_A": 0.99,
+      "experimental_peak_uncertainty_A": 0.005,
+      "peak_error_A": -0.027000000000000024
+    }
+  ],
+  "groups": {
+    "H2O-P1": {
+      "bond_mean_A": {
+        "n": 3,
+        "mean": 0.9633351300924637,
+        "CI95": [
+          0.9628815209467828,
+          0.9637887392381447
+        ],
+        "independent_run_values": [
+          0.963125873511184,
+          0.9634173453155142,
+          0.9634621714506929
+        ]
+      },
+      "angle_mean_deg": {
+        "n": 3,
+        "mean": 104.73896551210764,
+        "CI95": [
+          104.36506527096353,
+          105.11286575325175
+        ],
+        "independent_run_values": [
+          104.76398739828052,
+          104.8754016228651,
+          104.57750751517727
+        ]
+      },
+      "hydrogen_bond_degree": {
+        "n": 3,
+        "mean": 3.6654166666666668,
+        "CI95": [
+          3.6188304598916896,
+          3.712002873441644
+        ],
+        "independent_run_values": [
+          3.646875,
+          3.665,
+          3.684375
+        ]
+      },
+      "tetrahedral_order": {
+        "n": 3,
+        "mean": 0.6696893063732041,
+        "CI95": [
+          0.6360714013611212,
+          0.7033072113852871
+        ],
+        "independent_run_values": [
+          0.6563892710959229,
+          0.6692347732927024,
+          0.6834438747309869
+        ]
+      },
+      "coordination_035nm": {
+        "n": 3,
+        "mean": 5.0391666666666675,
+        "CI95": [
+          4.877695227303364,
+          5.200638106029971
+        ],
+        "independent_run_values": [
+          5.104375,
+          5.03875,
+          4.974375
+        ]
+      },
+      "nearest_OO_A": {
+        "n": 3,
+        "mean": 2.7045106383736104,
+        "CI95": [
+          2.7020965557726377,
+          2.706924720974583
+        ],
+        "independent_run_values": [
+          2.70545527283691,
+          2.704562861549294,
+          2.703513780734627
+        ]
+      },
+      "intramolecular_RDF_peak_A": {
+        "n": 3,
+        "mean": 0.9603333333333333,
+        "CI95": [
+          0.9545964630270006,
+          0.9660702036396659
+        ],
+        "independent_run_values": [
+          0.963,
+          0.959,
+          0.959
+        ]
+      },
+      "bond_distribution_sd_A": {
+        "n": 3,
+        "mean": 0.025541628037568247,
+        "CI95": [
+          0.023287874243970816,
+          0.02779538183116568
+        ],
+        "independent_run_values": [
+          0.024804951622609546,
+          0.02655502280054566,
+          0.025264909689549527
+        ]
+      },
+      "short_D_2_4ps_1e9_m2s": {
+        "n": 3,
+        "mean": 1.5788702440575166,
+        "CI95": [
+          0.22784144103368975,
+          2.9298990470813435
+        ],
+        "independent_run_values": [
+          2.1155093544852277,
+          1.5930396796226716,
+          1.0280616980646509
+        ]
+      },
+      "neighbor_replaced_fraction_1ps": {
+        "n": 3,
+        "mean": 0.25174669715447157,
+        "CI95": [
+          0.03909406792968148,
+          0.4643993263792616
+        ],
+        "independent_run_values": [
+          0.31545350609756095,
+          0.28534679878048785,
+          0.15443978658536583
+        ]
+      }
+    },
+    "H2O-P32": {
+      "bond_mean_A": {
+        "n": 3,
+        "mean": 0.9790308171932679,
+        "CI95": [
+          0.978555629980314,
+          0.9795060044062218
+        ],
+        "independent_run_values": [
+          0.9792515786224886,
+          0.9789267309323706,
+          0.9789141420249444
+        ]
+      },
+      "angle_mean_deg": {
+        "n": 3,
+        "mean": 104.79280396500165,
+        "CI95": [
+          104.59789517622815,
+          104.98771275377516
+        ],
+        "independent_run_values": [
+          104.87125454272206,
+          104.79282549733844,
+          104.71433185494443
+        ]
+      },
+      "hydrogen_bond_degree": {
+        "n": 3,
+        "mean": 3.618951822916667,
+        "CI95": [
+          3.5731271458451155,
+          3.664776499988218
+        ],
+        "independent_run_values": [
+          3.6384375,
+          3.61666015625,
+          3.6017578125
+        ]
+      },
+      "tetrahedral_order": {
+        "n": 3,
+        "mean": 0.6893304411759796,
+        "CI95": [
+          0.6601878424110025,
+          0.7184730399409568
+        ],
+        "independent_run_values": [
+          0.6992980344935856,
+          0.6922910017399916,
+          0.6764022872943615
+        ]
+      },
+      "coordination_035nm": {
+        "n": 3,
+        "mean": 4.97841796875,
+        "CI95": [
+          4.859156467388076,
+          5.097679470111923
+        ],
+        "independent_run_values": [
+          4.9441015625,
+          4.95787109375,
+          5.03328125
+        ]
+      },
+      "nearest_OO_A": {
+        "n": 3,
+        "mean": 2.6978986861810785,
+        "CI95": [
+          2.6916111477589673,
+          2.70418622460319
+        ],
+        "independent_run_values": [
+          2.695124246638608,
+          2.7000816469181386,
+          2.6984901649864885
+        ]
+      },
+      "intramolecular_RDF_peak_A": {
+        "n": 3,
+        "mean": 0.9636666666666667,
+        "CI95": [
+          0.9462186567963964,
+          0.981114676536937
+        ],
+        "independent_run_values": [
+          0.971,
+          0.963,
+          0.957
+        ]
+      },
+      "bond_distribution_sd_A": {
+        "n": 3,
+        "mean": 0.07163800558158415,
+        "CI95": [
+          0.07114562578143237,
+          0.07213038538173593
+        ],
+        "independent_run_values": [
+          0.07146937352010618,
+          0.07158830876313771,
+          0.07185633446150855
+        ]
+      },
+      "short_D_2_4ps_1e9_m2s": {
+        "n": 3,
+        "mean": 2.181994427711862,
+        "CI95": [
+          0.39908496708718055,
+          3.9649038883365435
+        ],
+        "independent_run_values": [
+          1.77859446424441,
+          1.7567414880902976,
+          3.0106473308008783
+        ]
+      },
+      "neighbor_replaced_fraction_1ps": {
+        "n": 3,
+        "mean": 0.2928734756097561,
+        "CI95": [
+          0.2479782115493833,
+          0.3377687396701289
+        ],
+        "independent_run_values": [
+          0.2821074695121951,
+          0.2827743902439024,
+          0.3137385670731707
+        ]
+      }
+    },
+    "D2O-P1": {
+      "bond_mean_A": {
+        "n": 3,
+        "mean": 0.9639908959689842,
+        "CI95": [
+          0.963333849193957,
+          0.9646479427440114
+        ],
+        "independent_run_values": [
+          0.9637691830647048,
+          0.9639198426576491,
+          0.9642836621845987
+        ]
+      },
+      "angle_mean_deg": {
+        "n": 3,
+        "mean": 104.83396231088936,
+        "CI95": [
+          104.75443441740283,
+          104.91349020437589
+        ],
+        "independent_run_values": [
+          104.85166783347678,
+          104.7970061633727,
+          104.85321293581859
+        ]
+      },
+      "hydrogen_bond_degree": {
+        "n": 3,
+        "mean": 3.7452083333333337,
+        "CI95": [
+          3.699960814473589,
+          3.7904558521930785
+        ],
+        "independent_run_values": [
+          3.753125,
+          3.724375,
+          3.758125
+        ]
+      },
+      "tetrahedral_order": {
+        "n": 3,
+        "mean": 0.7080534971167555,
+        "CI95": [
+          0.6800831488822907,
+          0.7360238453512202
+        ],
+        "independent_run_values": [
+          0.7048939827738255,
+          0.6987112008129297,
+          0.7205553077635112
+        ]
+      },
+      "coordination_035nm": {
+        "n": 3,
+        "mean": 4.943333333333333,
+        "CI95": [
+          4.793186673963901,
+          5.093479992702766
+        ],
+        "independent_run_values": [
+          4.90875,
+          5.013125,
+          4.908125
+        ]
+      },
+      "nearest_OO_A": {
+        "n": 3,
+        "mean": 2.699628725960563,
+        "CI95": [
+          2.6954886722020883,
+          2.7037687797190375
+        ],
+        "independent_run_values": [
+          2.7012698720984885,
+          2.6979377958075803,
+          2.699678509975619
+        ]
+      },
+      "intramolecular_RDF_peak_A": {
+        "n": 3,
+        "mean": 0.9583333333333334,
+        "CI95": [
+          0.9525964630270007,
+          0.964070203639666
+        ],
+        "independent_run_values": [
+          0.957,
+          0.957,
+          0.961
+        ]
+      },
+      "bond_distribution_sd_A": {
+        "n": 3,
+        "mean": 0.025291488828485916,
+        "CI95": [
+          0.023672448884880556,
+          0.026910528772091276
+        ],
+        "independent_run_values": [
+          0.024808846785140854,
+          0.026032882074812493,
+          0.0250327376255044
+        ]
+      },
+      "short_D_2_4ps_1e9_m2s": {
+        "n": 3,
+        "mean": 1.0470077048448745,
+        "CI95": [
+          0.6985712392345098,
+          1.3954441704552392
+        ],
+        "independent_run_values": [
+          0.9756143239679702,
+          1.2086066736189665,
+          0.9568021169476874
+        ]
+      },
+      "neighbor_replaced_fraction_1ps": {
+        "n": 3,
+        "mean": 0.2109057418699187,
+        "CI95": [
+          0.11833889885461625,
+          0.30347258488522116
+        ],
+        "independent_run_values": [
+          0.2171303353658537,
+          0.24466463414634143,
+          0.17092225609756095
+        ]
+      }
+    },
+    "D2O-P32": {
+      "bond_mean_A": {
+        "n": 3,
+        "mean": 0.974328944847784,
+        "CI95": [
+          0.9740349144070128,
+          0.9746229752885551
+        ],
+        "independent_run_values": [
+          0.9743834584142054,
+          0.9744102285908481,
+          0.9741931475382986
+        ]
+      },
+      "angle_mean_deg": {
+        "n": 3,
+        "mean": 104.7521658739813,
+        "CI95": [
+          104.70836235979569,
+          104.79596938816691
+        ],
+        "independent_run_values": [
+          104.76357796905721,
+          104.7610631099314,
+          104.73185654295524
+        ]
+      },
+      "hydrogen_bond_degree": {
+        "n": 3,
+        "mean": 3.650305989583334,
+        "CI95": [
+          3.569717867314423,
+          3.7308941118522445
+        ],
+        "independent_run_values": [
+          3.68564453125,
+          3.6433984375,
+          3.621875
+        ]
+      },
+      "tetrahedral_order": {
+        "n": 3,
+        "mean": 0.6794251767554796,
+        "CI95": [
+          0.6432070049259193,
+          0.71564334858504
+        ],
+        "independent_run_values": [
+          0.6938299080209154,
+          0.6797691785430677,
+          0.6646764437024558
+        ]
+      },
+      "coordination_035nm": {
+        "n": 3,
+        "mean": 5.004401041666667,
+        "CI95": [
+          4.839496330692456,
+          5.169305752640878
+        ],
+        "independent_run_values": [
+          4.92775390625,
+          5.04193359375,
+          5.043515625
+        ]
+      },
+      "nearest_OO_A": {
+        "n": 3,
+        "mean": 2.6990375792766,
+        "CI95": [
+          2.693982982875435,
+          2.7040921756777654
+        ],
+        "independent_run_values": [
+          2.6967815751519923,
+          2.699597217894387,
+          2.7007339447834213
+        ]
+      },
+      "intramolecular_RDF_peak_A": {
+        "n": 3,
+        "mean": 0.9656666666666666,
+        "CI95": [
+          0.9468570794888317,
+          0.9844762538445014
+        ],
+        "independent_run_values": [
+          0.957,
+          0.971,
+          0.969
+        ]
+      },
+      "bond_distribution_sd_A": {
+        "n": 3,
+        "mean": 0.06080105438650055,
+        "CI95": [
+          0.06051679957458669,
+          0.06108530919841441
+        ],
+        "independent_run_values": [
+          0.06071970588279882,
+          0.06075155894361223,
+          0.060931898333090595
+        ]
+      },
+      "short_D_2_4ps_1e9_m2s": {
+        "n": 3,
+        "mean": 1.3155293244590136,
+        "CI95": [
+          -0.6463776726492809,
+          3.277436321567308
+        ],
+        "independent_run_values": [
+          1.1919900449259335,
+          2.159792583514657,
+          0.5948053449364505
+        ]
+      },
+      "neighbor_replaced_fraction_1ps": {
+        "n": 3,
+        "mean": 0.26295731707317077,
+        "CI95": [
+          0.09361544870908414,
+          0.4322991854372574
+        ],
+        "independent_run_values": [
+          0.21693978658536583,
+          0.34127286585365857,
+          0.23065929878048785
+        ]
+      }
+    }
+  },
+  "paired_contrasts": {
+    "bond_mean_A": {
+      "classical_D_minus_H": {
+        "n": 3,
+        "mean": 0.0006557658765205346,
+        "CI95": [
+          0.0002586489306087864,
+          0.0010528828224322829
+        ],
+        "independent_run_values": [
+          0.0006433095535208766,
+          0.0005024973421349221,
+          0.0008214907339058053
+        ]
+      },
+      "quantum_D_minus_H": {
+        "n": 3,
+        "mean": -0.004701872345483841,
+        "CI95": [
+          -0.0051405391563298115,
+          -0.004263205534637871
+        ],
+        "independent_run_values": [
+          -0.0048681202082832,
+          -0.004516502341522455,
+          -0.004720994486645869
+        ]
+      },
+      "NQE_H": {
+        "n": 3,
+        "mean": 0.015695687100804195,
+        "CI95": [
+          0.014767833436528398,
+          0.01662354076507999
+        ],
+        "independent_run_values": [
+          0.016125705111304622,
+          0.015509385616856441,
+          0.015451970574251517
+        ]
+      },
+      "NQE_D": {
+        "n": 3,
+        "mean": 0.010338048878799818,
+        "CI95": [
+          0.009403315791955384,
+          0.011272781965644253
+        ],
+        "independent_run_values": [
+          0.010614275349500546,
+          0.010490385933199065,
+          0.009909485353699843
+        ]
+      },
+      "isotope_by_quantum_interaction": {
+        "n": 3,
+        "mean": -0.0053576382220043755,
+        "CI95": [
+          -0.006087180684852536,
+          -0.004628095759156215
+        ],
+        "independent_run_values": [
+          -0.005511429761804076,
+          -0.005018999683657377,
+          -0.005542485220551674
+        ]
+      }
+    },
+    "angle_mean_deg": {
+      "classical_D_minus_H": {
+        "n": 3,
+        "mean": 0.09499679878172647,
+        "CI95": [
+          -0.34510243013785724,
+          0.5350960277013102
+        ],
+        "independent_run_values": [
+          0.0876804351962619,
+          -0.07839545949239834,
+          0.27570542064131587
+        ]
+      },
+      "quantum_D_minus_H": {
+        "n": 3,
+        "mean": -0.040638091020359944,
+        "CI95": [
+          -0.19731457989868897,
+          0.11603839785796907
+        ],
+        "independent_run_values": [
+          -0.10767657366484684,
+          -0.03176238740704207,
+          0.017524688010809086
+        ]
+      },
+      "NQE_H": {
+        "n": 3,
+        "mean": 0.05383845289401279,
+        "CI95": [
+          -0.2419211704832644,
+          0.34959807627128997
+        ],
+        "independent_run_values": [
+          0.10726714444153629,
+          -0.08257612552665705,
+          0.13682433976715913
+        ]
+      },
+      "NQE_D": {
+        "n": 3,
+        "mean": -0.08179643690807363,
+        "CI95": [
+          -0.18874614045776655,
+          0.025153266641619293
+        ],
+        "independent_run_values": [
+          -0.08808986441957245,
+          -0.035943053441300776,
+          -0.12135639286334765
+        ]
+      },
+      "isotope_by_quantum_interaction": {
+        "n": 3,
+        "mean": -0.1356348898020864,
+        "CI95": [
+          -0.5354414972803214,
+          0.26417171767614867
+        ],
+        "independent_run_values": [
+          -0.19535700886110874,
+          0.046633072085356275,
+          -0.2581807326305068
+        ]
+      }
+    },
+    "hydrogen_bond_degree": {
+      "classical_D_minus_H": {
+        "n": 3,
+        "mean": 0.07979166666666664,
+        "CI95": [
+          0.02013652271291875,
+          0.13944681062041453
+        ],
+        "independent_run_values": [
+          0.10624999999999973,
+          0.05937500000000018,
+          0.07374999999999998
+        ]
+      },
+      "quantum_D_minus_H": {
+        "n": 3,
+        "mean": 0.03135416666666672,
+        "CI95": [
+          -0.0037280418692273304,
+          0.06643637520256077
+        ],
+        "independent_run_values": [
+          0.0472070312499997,
+          0.026738281250000107,
+          0.020117187500000355
+        ]
+      },
+      "NQE_H": {
+        "n": 3,
+        "mean": -0.046464843750000075,
+        "CI95": [
+          -0.13868937979612028,
+          0.04575969229612014
+        ],
+        "independent_run_values": [
+          -0.008437499999999876,
+          -0.04833984375,
+          -0.08261718750000036
+        ]
+      },
+      "NQE_D": {
+        "n": 3,
+        "mean": -0.09490234374999999,
+        "CI95": [
+          -0.1854203695054487,
+          -0.004384317994551287
+        ],
+        "independent_run_values": [
+          -0.06748046874999991,
+          -0.08097656250000007,
+          -0.13624999999999998
+        ]
+      },
+      "isotope_by_quantum_interaction": {
+        "n": 3,
+        "mean": -0.04843749999999991,
+        "CI95": [
+          -0.08308796784059932,
+          -0.01378703215940049
+        ],
+        "independent_run_values": [
+          -0.059042968750000036,
+          -0.03263671875000007,
+          -0.05363281249999963
+        ]
+      }
+    },
+    "tetrahedral_order": {
+      "classical_D_minus_H": {
+        "n": 3,
+        "mean": 0.03836419074355139,
+        "CI95": [
+          0.014576584160037192,
+          0.06215179732706558
+        ],
+        "independent_run_values": [
+          0.0485047116779026,
+          0.029476427520227277,
+          0.03711143303252429
+        ]
+      },
+      "quantum_D_minus_H": {
+        "n": 3,
+        "mean": -0.009905264420499918,
+        "CI95": [
+          -0.019502058057036115,
+          -0.00030847078396372025
+        ],
+        "independent_run_values": [
+          -0.005468126472670254,
+          -0.012521823196923854,
+          -0.01172584359190565
+        ]
+      },
+      "NQE_H": {
+        "n": 3,
+        "mean": 0.01964113480277548,
+        "CI95": [
+          -0.042834140216363156,
+          0.08211640982191411
+        ],
+        "independent_run_values": [
+          0.0429087633976627,
+          0.023056228447289162,
+          -0.007041587436625418
+        ]
+      },
+      "NQE_D": {
+        "n": 3,
+        "mean": -0.028628320361275827,
+        "CI95": [
+          -0.0880641178528645,
+          0.030807477130312844
+        ],
+        "independent_run_values": [
+          -0.011064074752910158,
+          -0.01894202226986197,
+          -0.055878864061055356
+        ]
+      },
+      "isotope_by_quantum_interaction": {
+        "n": 3,
+        "mean": -0.04826945516405131,
+        "CI95": [
+          -0.06319279786546346,
+          -0.03334611246263916
+        ],
+        "independent_run_values": [
+          -0.053972838150572855,
+          -0.04199825071715113,
+          -0.04883727662442994
+        ]
+      }
+    },
+    "coordination_035nm": {
+      "classical_D_minus_H": {
+        "n": 3,
+        "mean": -0.0958333333333335,
+        "CI95": [
+          -0.3163679694566791,
+          0.12470130279001208
+        ],
+        "independent_run_values": [
+          -0.19562499999999972,
+          -0.025625000000000675,
+          -0.06625000000000014
+        ]
+      },
+      "quantum_D_minus_H": {
+        "n": 3,
+        "mean": 0.025983072916666867,
+        "CI95": [
+          -0.1032533645014317,
+          0.15521951033476544
+        ],
+        "independent_run_values": [
+          -0.016347656249999787,
+          0.08406249999999993,
+          0.010234375000000462
+        ]
+      },
+      "NQE_H": {
+        "n": 3,
+        "mean": -0.06074869791666693,
+        "CI95": [
+          -0.3364079967234013,
+          0.21491060089006747
+        ],
+        "independent_run_values": [
+          -0.1602734374999999,
+          -0.0808789062500006,
+          0.058906249999999716
+        ]
+      },
+      "NQE_D": {
+        "n": 3,
+        "mean": 0.06106770833333345,
+        "CI95": [
+          -0.09928823814786539,
+          0.22142365481453227
+        ],
+        "independent_run_values": [
+          0.019003906250000036,
+          0.02880859375,
+          0.13539062500000032
+        ]
+      },
+      "isotope_by_quantum_interaction": {
+        "n": 3,
+        "mean": 0.12181640625000038,
+        "CI95": [
+          -0.008498611718289015,
+          0.25213142421828977
+        ],
+        "independent_run_values": [
+          0.17927734374999993,
+          0.1096875000000006,
+          0.0764843750000006
+        ]
+      }
+    },
+    "nearest_OO_A": {
+      "classical_D_minus_H": {
+        "n": 3,
+        "mean": -0.004881912413047622,
+        "CI95": [
+          -0.008657136022147318,
+          -0.001106688803947925
+        ],
+        "independent_run_values": [
+          -0.004185400738421663,
+          -0.0066250657417135095,
+          -0.0038352707590076918
+        ]
+      },
+      "quantum_D_minus_H": {
+        "n": 3,
+        "mean": 0.0011388930955217684,
+        "CI95": [
+          -0.0024285589910428406,
+          0.004706345182086378
+        ],
+        "independent_run_values": [
+          0.001657328513384293,
+          -0.00048442902375178676,
+          0.002243779796932799
+        ]
+      },
+      "NQE_H": {
+        "n": 3,
+        "mean": -0.006611952192531856,
+        "CI95": [
+          -0.014641207658327928,
+          0.0014173032732642168
+        ],
+        "independent_run_values": [
+          -0.010331026198302062,
+          -0.00448121463115525,
+          -0.005023615748138255
+        ]
+      },
+      "NQE_D": {
+        "n": 3,
+        "mean": -0.0005911466839624661,
+        "CI95": [
+          -0.009008685088008088,
+          0.007826391720083157
+        ],
+        "independent_run_values": [
+          -0.0044882969464961064,
+          0.0016594220868064724,
+          0.0010554348078022358
+        ]
+      },
+      "isotope_by_quantum_interaction": {
+        "n": 3,
+        "mean": 0.0060208055085693895,
+        "CI95": [
+          0.005630143131532964,
+          0.006411467885605815
+        ],
+        "independent_run_values": [
+          0.005842729251805956,
+          0.006140636717961723,
+          0.006079050555940491
+        ]
+      }
+    },
+    "intramolecular_RDF_peak_A": {
+      "classical_D_minus_H": {
+        "n": 3,
+        "mean": -0.0020000000000000018,
+        "CI95": [
+          -0.01193655084700133,
+          0.007936550847001327
+        ],
+        "independent_run_values": [
+          -0.006000000000000005,
+          -0.0020000000000000018,
+          0.0020000000000000018
+        ]
+      },
+      "quantum_D_minus_H": {
+        "n": 3,
+        "mean": 0.0020000000000000018,
+        "CI95": [
+          -0.032777927964504655,
+          0.03677792796450466
+        ],
+        "independent_run_values": [
+          -0.014000000000000012,
+          0.008000000000000007,
+          0.01200000000000001
+        ]
+      },
+      "NQE_H": {
+        "n": 3,
+        "mean": 0.003333333333333336,
+        "CI95": [
+          -0.009169885625418225,
+          0.015836552292084898
+        ],
+        "independent_run_values": [
+          0.008000000000000007,
+          0.0040000000000000036,
+          -0.0020000000000000018
+        ]
+      },
+      "NQE_D": {
+        "n": 3,
+        "mean": 0.00733333333333334,
+        "CI95": [
+          -0.010114676536936928,
+          0.02478134320360361
+        ],
+        "independent_run_values": [
+          0.0,
+          0.014000000000000012,
+          0.008000000000000007
+        ]
+      },
+      "isotope_by_quantum_interaction": {
+        "n": 3,
+        "mean": 0.0040000000000000036,
+        "CI95": [
+          -0.02181591637849679,
+          0.029815916378496798
+        ],
+        "independent_run_values": [
+          -0.008000000000000007,
+          0.010000000000000009,
+          0.010000000000000009
+        ]
+      }
+    },
+    "bond_distribution_sd_A": {
+      "classical_D_minus_H": {
+        "n": 3,
+        "mean": -0.00025013920908232776,
+        "CI95": [
+          -0.0009046543556645071,
+          0.0004043759374998516
+        ],
+        "independent_run_values": [
+          3.895162531308144e-06,
+          -0.0005221407257331653,
+          -0.00023217206404512608
+        ]
+      },
+      "quantum_D_minus_H": {
+        "n": 3,
+        "mean": -0.0108369511950836,
+        "CI95": [
+          -0.01105402612718199,
+          -0.010619876262985209
+        ],
+        "independent_run_values": [
+          -0.010749667637307364,
+          -0.010836749819525482,
+          -0.010924436128417953
+        ]
+      },
+      "NQE_H": {
+        "n": 3,
+        "mean": 0.0460963775440159,
+        "CI95": [
+          0.04380752410435787,
+          0.048385230983673935
+        ],
+        "independent_run_values": [
+          0.04666442189749664,
+          0.045033285962592054,
+          0.04659142477195902
+        ]
+      },
+      "NQE_D": {
+        "n": 3,
+        "mean": 0.035509565558014634,
+        "CI95": [
+          0.033808043827486235,
+          0.037211087288543034
+        ],
+        "independent_run_values": [
+          0.03591085909765797,
+          0.03471867686879973,
+          0.0358991607075862
+        ]
+      },
+      "isotope_by_quantum_interaction": {
+        "n": 3,
+        "mean": -0.010586811986001273,
+        "CI95": [
+          -0.011177338048217772,
+          -0.009996285923784775
+        ],
+        "independent_run_values": [
+          -0.010753562799838672,
+          -0.010314609093792317,
+          -0.010692264064372826
+        ]
+      }
+    },
+    "short_D_2_4ps_1e9_m2s": {
+      "classical_D_minus_H": {
+        "n": 3,
+        "mean": -0.531862539212642,
+        "CI95": [
+          -1.8965498383346495,
+          0.8328247599093656
+        ],
+        "independent_run_values": [
+          -1.1398950305172575,
+          -0.3844330060037051,
+          -0.07125958111696351
+        ]
+      },
+      "quantum_D_minus_H": {
+        "n": 3,
+        "mean": -0.8664651032528483,
+        "CI95": [
+          -4.419112990285608,
+          2.6861827837799113
+        ],
+        "independent_run_values": [
+          -0.5866044193184765,
+          0.40305109542435935,
+          -2.4158419858644278
+        ]
+      },
+      "NQE_H": {
+        "n": 3,
+        "mean": 0.6031241836543453,
+        "CI95": [
+          -2.428989200118077,
+          3.6352375674267674
+        ],
+        "independent_run_values": [
+          -0.33691489024081767,
+          0.16370180846762605,
+          1.9825856327362275
+        ]
+      },
+      "NQE_D": {
+        "n": 3,
+        "mean": 0.268521619614139,
+        "CI95": [
+          -1.3663950499583843,
+          1.9034382891866621
+        ],
+        "independent_run_values": [
+          0.2163757209579633,
+          0.9511859098956905,
+          -0.3619967720112368
+        ]
+      },
+      "isotope_by_quantum_interaction": {
+        "n": 3,
+        "mean": -0.33460256404020633,
+        "CI95": [
+          -4.668498066547224,
+          3.999292938466812
+        ],
+        "independent_run_values": [
+          0.553290611198781,
+          0.7874841014280645,
+          -2.3445824047474644
+        ]
+      }
+    },
+    "neighbor_replaced_fraction_1ps": {
+      "classical_D_minus_H": {
+        "n": 3,
+        "mean": -0.04084095528455286,
+        "CI95": [
+          -0.18343787469835918,
+          0.10175596412925345
+        ],
+        "independent_run_values": [
+          -0.09832317073170727,
+          -0.04068216463414642,
+          0.01648246951219512
+        ]
+      },
+      "quantum_D_minus_H": {
+        "n": 3,
+        "mean": -0.02991615853658532,
+        "CI95": [
+          -0.2214215372935719,
+          0.16158922022040123
+        ],
+        "independent_run_values": [
+          -0.06516768292682928,
+          0.058498475609756184,
+          -0.08307926829268286
+        ]
+      },
+      "NQE_H": {
+        "n": 3,
+        "mean": 0.04112677845528453,
+        "CI95": [
+          -0.21595711933641423,
+          0.2982106762469833
+        ],
+        "independent_run_values": [
+          -0.033346036585365835,
+          -0.0025724085365854688,
+          0.15929878048780488
+        ]
+      },
+      "NQE_D": {
+        "n": 3,
+        "mean": 0.052051575203252064,
+        "CI95": [
+          -0.06931071233526559,
+          0.1734138627417697
+        ],
+        "independent_run_values": [
+          -0.00019054878048785362,
+          0.09660823170731714,
+          0.0597370426829269
+        ]
+      },
+      "isotope_by_quantum_interaction": {
+        "n": 3,
+        "mean": 0.010924796747967536,
+        "CI95": [
+          -0.24051713787767326,
+          0.26236673137360833
+        ],
+        "independent_run_values": [
+          0.03315548780487798,
+          0.0991806402439026,
+          -0.09956173780487798
+        ]
+      }
+    }
+  },
+  "controls": [
+    {
+      "tag": "n216-H2O-P32-T300.0-s1-dt0.0005",
+      "bond_difference_A": -0.0007013016479685552,
+      "hbond_difference": -0.09258680555555632,
+      "structural_screen_pass": true
+    },
+    {
+      "tag": "n64-H2O-P16-T300.0-s1-dt0.0005",
+      "bond_difference_A": -0.0022492065129708916,
+      "hbond_difference": -0.1394140625000002,
+      "structural_screen_pass": false
+    },
+    {
+      "tag": "n64-H2O-P32-T300.0-s1-dt0.00025",
+      "bond_difference_A": -0.0012282028728829442,
+      "hbond_difference": -0.11851562500000012,
+      "structural_screen_pass": true
+    },
+    {
+      "tag": "n64-H2O-P64-T300.0-s1-dt0.0005",
+      "bond_difference_A": 1.6532080314046738e-05,
+      "hbond_difference": -0.027324218750000018,
+      "structural_screen_pass": true
+    }
+  ],
+  "complete_main_seeds": [
+    1,
+    2,
+    3
+  ]
+}

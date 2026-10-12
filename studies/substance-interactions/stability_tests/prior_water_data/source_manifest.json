@@ -1,0 +1,19 @@
+{
+  "source_directory": "Bundled prior_water_data snapshot of the earlier quantum-water study; see provenance.json",
+  "meaning": "Snapshot of existing completed outputs; source study was not modified or rerun",
+  "sha256": {
+    "vibration_comparison.csv": "bb1e20d80a5621718196291b53ac3431b6380209c6612a0978c82567d29b8cab",
+    "vibration-summary.json": "a694c2b5990d1817b96195932fbe547c3c86017f601c9c193ac1ed5bca889a9c",
+    "molecular-data/summary.json": "8d272bb550982d04b874f60f790070d149be5d10614108a1b4af8a77ce56b862",
+    "molecular-summary.json": "56da4a091b7d4a9d42f54dbd35a1aef8e00f135ce2ed75582a6f42e73af43480",
+    "molecular-protocol.json": "7428f3dfb364ee91e898f9a76d1ca80066469be98705804989734b4ab63f5862",
+    "channel_results.csv": "9d87749116120a378446bff36ccd322b852adbec9ff0850e2fc0eaf90957f77e",
+    "fluid-summary.json": "c91e180c7f05d55291be173c2a61e80bae94c870fb3b9e419278f49bfbf5d58c",
+    "flow-protocol.json": "2b623b29b8f03ba23dce261fae805ac863321f5e858b07b6592f7934e1edbb85",
+    "channel-error-budget.json": "1a7c183ebb9504a896e87f3fec7e610f3ba079296044fcabf21af5005fc898d2",
+    "protocol.json": "995a79335366cbbdc541aca9ba861faf51ac8459f59e14f88beeb82d7f62dec6",
+    "sources.json": "abd09e0a88c9f5ea9b30ee96b6b775c508b7244fa7763f78ca65ac3cd9ee0214",
+    "provenance.json": "8a6e1fd23d45a6244099b84d8e9d51b2501ed458a10b367e1bd8f9b1e727c61a",
+    "followup-amendments.json": "42bb3c979d23c976e2feb4a0ac272edff885c8949befdd8b8ae65b11f1d5134a"
+  }
+}

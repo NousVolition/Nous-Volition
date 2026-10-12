@@ -1,0 +1,57 @@
+{
+  "partition_cases": 21,
+  "carbonate_cases": 2,
+  "transport_grid_cases": 4,
+  "charge_ensemble_pairs": 7680,
+  "water_phase_cases": 28,
+  "ice_adsorption_cases": 9,
+  "max_relative_inventory_error": 2.484367025450083e-15,
+  "best_transport_relative_L2": 0.004725151884516056,
+  "grid_errors": [
+    0.034174846540424755,
+    0.01809966020000225,
+    0.009314875590647939,
+    0.004725151884516056
+  ],
+  "fog_CO_aqueous_percent": 1.202294144902046e-06,
+  "bulk_CO2_pH": 5.594648628330274,
+  "charge_droplet": {
+    "like": {
+      "mean_m": 0.00022936999987550498,
+      "sd_m": 6.208477155325192e-06,
+      "sem_m": 1.7353221195077063e-07,
+      "p05_m": 0.0002191996876966231,
+      "p95_m": 0.0002396198166333401,
+      "n": 1280,
+      "stopped_fraction": 0.0
+    },
+    "neutral": {
+      "mean_m": 0.0002003352707384643,
+      "sd_m": 7.001036067318958e-06,
+      "sem_m": 1.9568490699316228e-07,
+      "p05_m": 0.00018895516997176153,
+      "p95_m": 0.0002116016155305641,
+      "n": 1280,
+      "stopped_fraction": 0.0
+    },
+    "opposite": {
+      "mean_m": 0.00015880839125919264,
+      "sd_m": 9.25035366541808e-06,
+      "sem_m": 2.5855524514736464e-07,
+      "p05_m": 0.00014341239778936467,
+      "p95_m": 0.00017297547469432022,
+      "n": 1280,
+      "stopped_fraction": 0.0
+    }
+  },
+  "smoke_diffusion_capture_percent_600s": 0.20200117333108725,
+  "ice_acetone_adsorbed_percent": 59.19567007082781,
+  "CO_OH_converted_percent": 0.0036117540812470993,
+  "elapsed_seconds": 17.823300599993672,
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "matplotlib": "3.11.2",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "status": "Numerically verified reduced models; not validated against a new environmental dataset"
+}

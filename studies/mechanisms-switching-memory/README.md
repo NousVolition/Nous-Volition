@@ -51,4 +51,8 @@ Chemical hypothesis: total protein=1 µM; v=2 s⁻¹, d=1 s⁻¹, K=0.3 and Hill
 
 The supplied refuge/outbreak drawing is interpreted as a comparison of stability geometry; its missing equation was not reconstructed. The spring and chemical examples share analysis methods but are not physically coupled. This study does not propose a new Navier–Stokes law or resolve the existence and smoothness problem.
 
+## Earlier substance and equation studies
+
+[Open the earlier substance-interaction collection](../substance-interactions/README.md): the 114-row interaction matrix, gas/liquid and charged-particle tests, five-equation transport benchmark, stability/energy examples and water-figure reanalysis. Its 74 unit tests and 8 data checks are separate from this switching study.
+
 [Return to Streams and Rocks](../../README.md)

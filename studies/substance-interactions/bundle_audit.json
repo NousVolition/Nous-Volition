@@ -1,0 +1,10 @@
+{
+  "matrix_rows": 114,
+  "baseline_pairs": 105,
+  "complete_pair_coverage": true,
+  "tests_passed": 27,
+  "linked_result_files_exist": true,
+  "monotonic_grid_refinement": true,
+  "max_inventory_residual": 2.484367025450083e-15,
+  "note": "Figures visually inspected. Matrix conditions and statuses audited. Numerical verification is not full environmental validation."
+}

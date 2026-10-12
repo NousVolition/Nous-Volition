@@ -1,0 +1,2 @@
+# Keep published file hashes independent of checkout line endings.
+* -text

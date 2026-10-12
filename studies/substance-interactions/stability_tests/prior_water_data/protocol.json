@@ -1,0 +1,21 @@
+{
+  "stage": "1: gas-phase isolated monomer validation; written before execution",
+  "primary_method": "GFN2-xTB, gas phase, unscaled harmonic normal modes at optimized geometry",
+  "secondary_method": "GFN1-xTB, diagnostic model sensitivity only, not substituted for a failed primary method",
+  "reference": "NIST WebBook gas-phase IR frequencies, Shimanouchi (1972)",
+  "mode_order": ["bend", "symmetric stretch", "antisymmetric stretch"],
+  "H2O_observed_cm-1": [1594.59, 3656.65, 3755.79],
+  "D2O_observed_cm-1": [1178.33, 2671.46, 2788.05],
+  "mass_u": {"O16": 15.99491461957, "H1": 1.00782503223, "D2": 2.01410177812},
+  "starting_configurations": [{"r_angstrom":0.96,"angle_deg":104.5},{"r_angstrom":0.88,"angle_deg":115.0},{"r_angstrom":1.06,"angle_deg":95.0}],
+  "hessian_steps_bohr": [0.005, 0.0025, 0.00125],
+  "optimization": "verytight, electronic accuracy 0.01",
+  "pilot_acceptance": {
+    "maximum_absolute_fundamental_relative_error": 0.05,
+    "maximum_isotope_shift_fraction_absolute_error": 0.02,
+    "maximum_numerical_frequency_spread_cm-1": 1.0,
+    "no_imaginary_internal_modes": true
+  },
+  "interpretation": "A harmonic frequency isotope shift is possible with classical nuclei on the same potential. This experiment alone cannot establish the necessity of nuclear quantum dynamics. Harmonic versus fundamental mismatch includes anharmonicity and electronic-model error.",
+  "expansion_rule": "Review all primary validation criteria before extending the molecular model. If failed, report the failure and keep liquid nuclear-quantum and micro-to-macro causal claims unestablished."
+}

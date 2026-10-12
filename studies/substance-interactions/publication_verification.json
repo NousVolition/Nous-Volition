@@ -1,0 +1,57 @@
+{
+  "checked_at_utc": "2026-10-12T00:46:40.015239+00:00",
+  "status": "passed",
+  "unit_test_total": 74,
+  "unit_test_suites": [
+    {
+      "suite": "substances",
+      "tests_passed": 27,
+      "command": "python -m unittest -v test_models.py",
+      "working_directory": ".",
+      "exit_code": 0
+    },
+    {
+      "suite": "equations",
+      "tests_passed": 20,
+      "command": "python -m unittest -v test_equations.py",
+      "working_directory": "equation_tests",
+      "exit_code": 0
+    },
+    {
+      "suite": "coupled_transport",
+      "tests_passed": 8,
+      "command": "python -m unittest -v combined_transport.CombinedTests",
+      "working_directory": "equation_tests",
+      "exit_code": 0
+    },
+    {
+      "suite": "stability",
+      "tests_passed": 19,
+      "command": "python -m unittest -v test_stability.py",
+      "working_directory": "stability_tests",
+      "exit_code": 0
+    }
+  ],
+  "saved_water_data_checks": 8,
+  "water_audit_matches_original_json": true,
+  "original_files_checked": 95,
+  "original_files_byte_identical": 88,
+  "navigation_or_provenance_only_edits": [
+    "build_report.py",
+    "equation_tests/report.html",
+    "equation_tests/run_examples.py",
+    "research_report.html",
+    "stability_tests/prior_water_data/source_manifest.json",
+    "stability_tests/report.html",
+    "stability_tests/run_study.py"
+  ],
+  "python_syntax_files": 12,
+  "json_files_checked": 29,
+  "local_reading_links_checked": 58,
+  "scope": "Fresh verification of the packaged code and eight saved-data audit checks. Full historical simulation ensembles were not rerun for publication; saved numerical tables, trajectories and figures retain their original bytes.",
+  "omitted": [
+    "duplicate ZIP archives",
+    "installed dependencies",
+    "Python caches"
+  ]
+}

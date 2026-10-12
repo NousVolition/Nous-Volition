@@ -1,0 +1,15 @@
+{
+  "compilation": {
+    "title": "Sander (2023), Compilation of Henry's law constants (version 5.0.0) for water as solvent",
+    "url": "https://doi.org/10.5194/acp-23-10901-2023",
+    "definition": "Hcp = equilibrium aqueous concentration / gas partial pressure",
+    "units": "mol m^-3 Pa^-1",
+    "temperature_K": 298.15
+  },
+  "CO": {"Hcp": 9.7e-6, "url": "https://henrys-law.org/henry/casrn/630-08-0", "selected_entry": "Burkholder et al. 2019 review, freshwater; consistent with Rettich et al. 1982 measurements"},
+  "acetone": {"Hcp": 0.27, "url": "https://henrys-law.org/henry/casrn/67-64-1", "selected_entry": "Burkholder et al. 2019 review"},
+  "H2O2": {"Hcp": 860, "url": "https://henrys-law.org/henry/casrn/7722-84-1", "selected_entry": "Burkholder et al. 2019 review; dilute neutral hydrogen peroxide"},
+  "equations": "Five user-supplied screenshots. Images 4 and 5 are cropped. Exact reference solutions and scaling follow analytically from the equations reproduced in the report.",
+  "assumptions": "All controller gains/time mappings, geometry, concentration, flow, fixed fog inventory, common diffusivities and transfer-coefficient closure are declared scenario assumptions. No empirical calibration of the combined controller model is claimed.",
+  "scope": "Numerical verification, not validation against a laboratory dataset. No physical chemicals generated. The earlier substance study retains the broader reaction, ice and electrostatic modules."
+}

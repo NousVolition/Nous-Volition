@@ -1,0 +1,32 @@
+test_brownian_einstein_msd (test_models.PhysicsTests.test_brownian_einstein_msd) ... ok
+test_capture_reservoir (test_models.PhysicsTests.test_capture_reservoir) ... ok
+test_carbonate_blocks_temperature_extrapolation (test_models.PhysicsTests.test_carbonate_blocks_temperature_extrapolation) ... ok
+test_carbonate_charge_and_carbon (test_models.PhysicsTests.test_carbonate_charge_and_carbon) ... ok
+test_carbonate_pure_water_limit (test_models.PhysicsTests.test_carbonate_pure_water_limit) ... ok
+test_charged_neutral_monopole_control (test_models.PhysicsTests.test_charged_neutral_monopole_control) ... ok
+test_co_no_oxidant_control (test_models.PhysicsTests.test_co_no_oxidant_control) ... ok
+test_co_oh_against_exact_second_order_solution (test_models.PhysicsTests.test_co_oh_against_exact_second_order_solution) ... ok
+test_co_oh_atom_conservation_finite_oxidant (test_models.PhysicsTests.test_co_oh_atom_conservation_finite_oxidant) ... ok
+test_coulomb_stokes_limit_both_signs (test_models.PhysicsTests.test_coulomb_stokes_limit_both_signs) ... ok
+test_decomposition_element_conservation (test_models.PhysicsTests.test_decomposition_element_conservation) ... ok
+test_henry_units_known_CO (test_models.PhysicsTests.test_henry_units_known_CO) ... ok
+test_ice_sorption_equilibrium_and_capacity (test_models.PhysicsTests.test_ice_sorption_equilibrium_and_capacity) ... ok
+test_ice_sorption_validity_range (test_models.PhysicsTests.test_ice_sorption_validity_range) ... ok
+test_inert_no_flow_no_diffusion (test_models.PhysicsTests.test_inert_no_flow_no_diffusion) ... ok
+test_no_charge_no_brownian (test_models.PhysicsTests.test_no_charge_no_brownian) ... ok
+test_partition_closed_analytic_and_budget (test_models.PhysicsTests.test_partition_closed_analytic_and_budget) ... ok
+test_phase_change_mass_energy (test_models.PhysicsTests.test_phase_change_mass_energy) ... ok
+test_saturation_reference (test_models.PhysicsTests.test_saturation_reference) ... ok
+test_scavenging_sticking_control (test_models.PhysicsTests.test_scavenging_sticking_control) ... ok
+test_seed_repeatability (test_models.PhysicsTests.test_seed_repeatability) ... ok
+test_stokes_continuum_and_slip (test_models.PhysicsTests.test_stokes_continuum_and_slip) ... ok
+test_transport_analytic_grid_convergence (test_models.PhysicsTests.test_transport_analytic_grid_convergence) ... ok
+test_transport_positivity_bound (test_models.PhysicsTests.test_transport_positivity_bound) ... ok
+test_validity_stop_before_contact (test_models.PhysicsTests.test_validity_stop_before_contact) ... ok
+test_water_ice_exchange_sign_and_conservation (test_models.PhysicsTests.test_water_ice_exchange_sign_and_conservation) ... ok
+test_zero_transfer_control (test_models.PhysicsTests.test_zero_transfer_control) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 3.752s
+
+OK

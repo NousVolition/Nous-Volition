@@ -1,0 +1,551 @@
+{
+  "scope": "Eight screenshot interpretations, with direct stability and energy audits of the earlier substance model",
+  "tests_passed": 19,
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "cubic_spiral": [
+    {
+      "a": -1,
+      "r0": 0.2,
+      "end": 10,
+      "final_radius": 0.14907119849998635,
+      "exact_final_radius": 0.14907119849998599,
+      "linear_prediction_radius": 0.2,
+      "max_state_error": 2.440922986127371e-15,
+      "forward_blowup_time": null
+    },
+    {
+      "a": 0,
+      "r0": 0.2,
+      "end": 10,
+      "final_radius": 0.19999999999999993,
+      "exact_final_radius": 0.2,
+      "linear_prediction_radius": 0.2,
+      "max_state_error": 2.7135600152522366e-15,
+      "forward_blowup_time": null
+    },
+    {
+      "a": 1,
+      "r0": 0.2,
+      "end": 10,
+      "final_radius": 0.4472135954999484,
+      "exact_final_radius": 0.44721359549995815,
+      "linear_prediction_radius": 0.2,
+      "max_state_error": 1.2710993058079933e-14,
+      "forward_blowup_time": 12.499999999999998
+    }
+  ],
+  "cubic_tolerance_check": [
+    {
+      "rtol": 1e-07,
+      "max_step": 1,
+      "error": 1.1027863717638992e-07
+    },
+    {
+      "rtol": 1e-09,
+      "max_step": 1,
+      "error": 1.1256748494222751e-09
+    },
+    {
+      "rtol": 1e-11,
+      "max_step": 1,
+      "error": 1.2784191876583987e-11
+    }
+  ],
+  "poincare": {
+    "returns": [
+      {
+        "r0": 0.2,
+        "return_time": 6.283185307179586,
+        "return_radius": 0.9999581545184382,
+        "exact_return_radius": 0.9999581545184385,
+        "time_error": 0.0
+      },
+      {
+        "r0": 0.8,
+        "return_time": 6.283185307179585,
+        "return_radius": 0.999999019186405,
+        "exact_return_radius": 0.9999990191864052,
+        "time_error": 8.881784197001252e-16
+      },
+      {
+        "r0": 1,
+        "return_time": 6.283185307179586,
+        "return_radius": 0.9999999999999999,
+        "exact_return_radius": 1.0,
+        "time_error": 0.0
+      },
+      {
+        "r0": 1.5,
+        "return_time": 6.283185307179588,
+        "return_radius": 1.0000009687076183,
+        "exact_return_radius": 1.0000009687076177,
+        "time_error": 1.7763568394002505e-15
+      },
+      {
+        "r0": 3,
+        "return_time": 6.283185307179592,
+        "return_radius": 1.00000154993354,
+        "exact_return_radius": 1.0000015499335395,
+        "time_error": 5.329070518200751e-15
+      }
+    ],
+    "monodromy": [
+      [
+        3.4873423561896883e-06,
+        1.6052437157298982e-13
+      ],
+      [
+        -6.495400518208088e-14,
+        1.000000000000012
+      ]
+    ],
+    "numerical_multipliers": [
+      3.4873423562231665e-06,
+      1.000000000000012
+    ],
+    "exact_radial_multiplier": 3.4873423562089973e-06,
+    "backward_radius_from_08_after_one_turn": 0.002489915923898825,
+    "lower_time_boundary_for_r0_15": -0.2938933324510595,
+    "correction": "Attraction is forward in time. For 0<r0<1, backward trajectories tend to the origin; for r0>1, backward flow blows up in finite time. The origin is excluded from the transverse section."
+  },
+  "competition_fixed_points": [
+    {
+      "point": [
+        0,
+        0
+      ],
+      "jacobian": [
+        [
+          3,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "eigenvalues": [
+        2.0,
+        3.0
+      ],
+      "classification": "unstable node"
+    },
+    {
+      "point": [
+        0,
+        2
+      ],
+      "jacobian": [
+        [
+          -1,
+          0
+        ],
+        [
+          -2,
+          -2
+        ]
+      ],
+      "eigenvalues": [
+        -2.0,
+        -1.0
+      ],
+      "classification": "stable node"
+    },
+    {
+      "point": [
+        3,
+        0
+      ],
+      "jacobian": [
+        [
+          -3,
+          -6
+        ],
+        [
+          0,
+          -1
+        ]
+      ],
+      "eigenvalues": [
+        -3.0,
+        -1.0
+      ],
+      "classification": "stable node"
+    },
+    {
+      "point": [
+        1,
+        1
+      ],
+      "jacobian": [
+        [
+          -1,
+          -2
+        ],
+        [
+          -1,
+          -1
+        ]
+      ],
+      "eigenvalues": [
+        -2.414213562373095,
+        0.41421356237309515
+      ],
+      "classification": "saddle"
+    }
+  ],
+  "competition_runs": [
+    {
+      "initial": [
+        0.1,
+        0.1
+      ],
+      "final": [
+        2.9999999999999996,
+        1.2713345860023095e-25
+      ],
+      "minimum": 1.2713345860023095e-25
+    },
+    {
+      "initial": [
+        0.1,
+        1
+      ],
+      "final": [
+        4.5871457234644004e-27,
+        1.9999999999999996
+      ],
+      "minimum": 4.5871457234644004e-27
+    },
+    {
+      "initial": [
+        1,
+        0.1
+      ],
+      "final": [
+        2.9999999999999996,
+        3.330921516303146e-27
+      ],
+      "minimum": 3.330921516303146e-27
+    },
+    {
+      "initial": [
+        0.4,
+        1.8
+      ],
+      "final": [
+        7.13977930128729e-27,
+        1.9999999999999996
+      ],
+      "minimum": 7.13977930128729e-27
+    },
+    {
+      "initial": [
+        2.5,
+        0.1
+      ],
+      "final": [
+        2.9999999999999996,
+        1.1823601947131439e-27
+      ],
+      "minimum": 1.1823601947131439e-27
+    },
+    {
+      "initial": [
+        1.8,
+        1.4
+      ],
+      "final": [
+        2.9999999999999996,
+        7.919748153783774e-24
+      ],
+      "minimum": 7.919748153783774e-24
+    },
+    {
+      "initial": [
+        1.0008164965809276,
+        0.9994226497308104
+      ],
+      "final": [
+        2.9999999999999996,
+        2.7519452232403646e-19
+      ],
+      "minimum": 2.7519452232403646e-19
+    },
+    {
+      "initial": [
+        0.9991835034190722,
+        1.0005773502691897
+      ],
+      "final": [
+        2.139347440252615e-19,
+        1.9999999999999996
+      ],
+      "minimum": 2.139347440252615e-19
+    }
+  ],
+  "linearization_refinement": [
+    {
+      "epsilon": 0.04,
+      "vector_field_remainder": 0.0006631549063091741,
+      "max_trajectory_error": 0.0002792833296050684
+    },
+    {
+      "epsilon": 0.02,
+      "vector_field_remainder": 0.00016578872657724077,
+      "max_trajectory_error": 6.944648453389047e-05
+    },
+    {
+      "epsilon": 0.01,
+      "vector_field_remainder": 4.144718164425507e-05,
+      "max_trajectory_error": 1.7314648217825036e-05
+    },
+    {
+      "epsilon": 0.005,
+      "vector_field_remainder": 1.0361795411048456e-05,
+      "max_trajectory_error": 4.3227804000109475e-06
+    }
+  ],
+  "double_well": {
+    "potential": "V=x^4/4-x^2/2, illustrative dimensionless choice, not specified in screenshot",
+    "runs": [
+      {
+        "initial": [
+          1,
+          0.4
+        ],
+        "gamma": 0,
+        "end": 40,
+        "initial_energy": -0.16999999999999998,
+        "final_energy": -0.1700000000002368,
+        "final_state": [
+          1.0301333048612604,
+          -0.39765416202976783
+        ],
+        "dissipated_energy": 0.0,
+        "max_energy_balance_error": 9.30533428089575e-13,
+        "x_min": 0.6590265308725405,
+        "x_max": 1.251272406439958
+      },
+      {
+        "initial": [
+          1,
+          0.4
+        ],
+        "gamma": 0.2,
+        "end": 40,
+        "initial_energy": -0.16999999999999998,
+        "final_energy": -0.2499716638498975,
+        "final_state": [
+          0.9985917825004981,
+          0.007260284456755549
+        ],
+        "dissipated_energy": 0.07997166384989146,
+        "max_energy_balance_error": 6.315503675580203e-13,
+        "x_min": 0.7676716752544256,
+        "x_max": 1.230165565294827
+      }
+    ],
+    "above_barrier": {
+      "initial": [
+        0,
+        0.7
+      ],
+      "gamma": 0,
+      "end": 40,
+      "initial_energy": 0.24499999999999997,
+      "final_energy": 0.24499999999444466,
+      "final_state": [
+        -0.4130636180009469,
+        0.80378211936658
+      ],
+      "dissipated_energy": 0.0,
+      "max_energy_balance_error": 1.7680246156004387e-11,
+      "x_min": -1.551478177168461,
+      "x_max": 1.551485110958231
+    },
+    "time_reversal": [
+      {
+        "gamma": 0,
+        "time_each_leg": 12,
+        "max_retrace_error": 3.845254154646502e-12,
+        "return_state": [
+          0.7999999999998625,
+          -0.34999999999927917
+        ],
+        "expected_reversed_initial": [
+          0.8,
+          -0.35
+        ],
+        "end_error": 7.33820275834349e-13
+      },
+      {
+        "gamma": 0.2,
+        "time_each_leg": 12,
+        "max_retrace_error": 0.3735837094804478,
+        "return_state": [
+          0.9822700279019503,
+          -0.023898137205881794
+        ],
+        "expected_reversed_initial": [
+          0.8,
+          -0.35
+        ],
+        "end_error": 0.3735837094804478
+      }
+    ]
+  },
+  "gas_water_stability": [
+    {
+      "species": "CO",
+      "Hcp_mol_m3_Pa": 9.7e-06,
+      "temperature_K": 298.15,
+      "water_volume_fraction": 5e-07,
+      "droplet_radius_m": 1e-05,
+      "jacobian_per_s": [
+        [
+          -7.213747610049713e-07,
+          59.999855725047794
+        ],
+        [
+          7.213747610049713e-07,
+          -59.999855725047794
+        ]
+      ],
+      "eigenvalues_per_s": [
+        -59.999856446422555,
+        0.0
+      ],
+      "equilibrium_aqueous_percent": 1.202294144902046e-06,
+      "relaxation_rate_per_s": 59.999856446422555,
+      "time_constant_s": 0.01666670654275581,
+      "time_to_95_percent_of_equilibrium_s": 0.049928990683987026,
+      "max_mass_error": 1.1102230246251565e-16,
+      "max_liquid_fraction_error": 5.51645575716621e-14,
+      "final_aqueous_percent": 1.202239552971766e-06
+    },
+    {
+      "species": "acetone",
+      "Hcp_mol_m3_Pa": 0.27,
+      "temperature_K": 298.15,
+      "water_volume_fraction": 5e-07,
+      "droplet_radius_m": 1e-05,
+      "jacobian_per_s": [
+        [
+          -0.018819901319616788,
+          56.236019736076635
+        ],
+        [
+          0.018819901319616788,
+          -56.236019736076635
+        ]
+      ],
+      "eigenvalues_per_s": [
+        -56.25483963739625,
+        -7.105427357601002e-15
+      ],
+      "equilibrium_aqueous_percent": 0.0334547239685063,
+      "relaxation_rate_per_s": 56.25483963739625,
+      "time_constant_s": 0.01777624834495546,
+      "time_to_95_percent_of_equilibrium_s": 0.05325288086969379,
+      "max_mass_error": 2.220446049250313e-16,
+      "max_liquid_fraction_error": 1.1484739483209883e-13,
+      "final_aqueous_percent": 0.03345320512620024
+    },
+    {
+      "species": "H2O2",
+      "Hcp_mol_m3_Pa": 860,
+      "temperature_K": 298.15,
+      "water_volume_fraction": 5e-07,
+      "droplet_radius_m": 1e-05,
+      "jacobian_per_s": [
+        [
+          -0.2985993763787013,
+          0.2801247242597238
+        ],
+        [
+          0.2985993763787013,
+          -0.2801247242597238
+        ]
+      ],
+      "eigenvalues_per_s": [
+        -0.5787241006384252,
+        -5.551115123125783e-17
+      ],
+      "equilibrium_aqueous_percent": 51.59615368520139,
+      "relaxation_rate_per_s": 0.5787241006384252,
+      "time_constant_s": 1.727939097225846,
+      "time_to_95_percent_of_equilibrium_s": 5.176442920295214,
+      "max_mass_error": 4.440892098500626e-16,
+      "max_liquid_fraction_error": 2.220446049250313e-16,
+      "final_aqueous_percent": 51.593811223448085
+    }
+  ],
+  "charged_drag_energy": [
+    {
+      "charge_product_sign": 1,
+      "radius_m": 1e-06,
+      "initial_separation_m": 2e-05,
+      "q1_e": 100,
+      "q2_e": 100,
+      "T_K": 298.15,
+      "P_Pa": 101325,
+      "Brownian": false,
+      "airflow_m_s": 0,
+      "end_s": 1.0,
+      "final_separation_m": 3.708908288586238e-05,
+      "max_separation_error_m": 2.710505431213761e-20,
+      "initial_potential_J": 1.1535387761708677e-19,
+      "final_potential_J": 6.220368293930362e-20,
+      "heat_to_air_J": 5.315019467778313e-20,
+      "max_energy_residual_J": 4.81482486096809e-35,
+      "relative_energy_residual": 4.1739601307124975e-16,
+      "far_field_stop": false
+    },
+    {
+      "charge_product_sign": 0,
+      "radius_m": 1e-06,
+      "initial_separation_m": 2e-05,
+      "q1_e": 0,
+      "q2_e": 0,
+      "T_K": 298.15,
+      "P_Pa": 101325,
+      "Brownian": false,
+      "airflow_m_s": 0,
+      "end_s": 1.0,
+      "final_separation_m": 2e-05,
+      "max_separation_error_m": 3.3881317890172014e-21,
+      "initial_potential_J": 0.0,
+      "final_potential_J": 0.0,
+      "heat_to_air_J": 0.0,
+      "max_energy_residual_J": 0.0,
+      "relative_energy_residual": 0,
+      "far_field_stop": false
+    },
+    {
+      "charge_product_sign": -1,
+      "radius_m": 1e-06,
+      "initial_separation_m": 2e-05,
+      "q1_e": 100,
+      "q2_e": -100,
+      "T_K": 298.15,
+      "P_Pa": 101325,
+      "Brownian": false,
+      "airflow_m_s": 0,
+      "end_s": 0.18094017066030693,
+      "final_separation_m": 6.000000000000003e-06,
+      "max_separation_error_m": 1.0757318430129614e-17,
+      "initial_potential_J": -1.1535387761708677e-19,
+      "final_potential_J": -3.845129253902891e-19,
+      "heat_to_air_J": 2.6915904777303433e-19,
+      "max_energy_residual_J": 5.682215559671491e-31,
+      "relative_energy_residual": 4.925899048260354e-12,
+      "far_field_stop": true
+    }
+  ]
+}

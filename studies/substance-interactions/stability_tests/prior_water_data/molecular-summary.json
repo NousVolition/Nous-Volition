@@ -1,0 +1,11 @@
+{
+  "completed_runs": 24,
+  "completed_main_runs": 12,
+  "main_window_passes": 7,
+  "main_energy_passes": 3,
+  "structural_controls_passes": 3,
+  "structural_controls_total": 4,
+  "total_simulated_ps": 273.0,
+  "bulk_diffusion_validated": false,
+  "viscosity_computed": false
+}

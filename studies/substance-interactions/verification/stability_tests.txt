@@ -1,0 +1,24 @@
+test_backward_flow_has_different_limit (test_stability.StabilityTests.test_backward_flow_has_different_limit) ... ok
+test_competition_fixed_points_and_eigenvalues (test_stability.StabilityTests.test_competition_fixed_points_and_eigenvalues) ... ok
+test_competition_jacobian_finite_difference (test_stability.StabilityTests.test_competition_jacobian_finite_difference) ... ok
+test_competition_positive_quadrant_and_two_basins (test_stability.StabilityTests.test_competition_positive_quadrant_and_two_basins) ... ok
+test_conservative_well_energy (test_stability.StabilityTests.test_conservative_well_energy) ... ok
+test_coulomb_drag_analytic_separation (test_stability.StabilityTests.test_coulomb_drag_analytic_separation) ... ok
+test_coulomb_drag_energy_and_far_field_stop (test_stability.StabilityTests.test_coulomb_drag_energy_and_far_field_stop) ... ok
+test_cubic_against_exact_solution (test_stability.StabilityTests.test_cubic_against_exact_solution) ... ok
+test_cubic_blowup_domain (test_stability.StabilityTests.test_cubic_blowup_domain) ... ok
+test_cubic_stability_differs_despite_same_linearization (test_stability.StabilityTests.test_cubic_stability_differs_despite_same_linearization) ... ok
+test_cubic_tolerance_refinement (test_stability.StabilityTests.test_cubic_tolerance_refinement) ... ok
+test_cycle_floquet_multipliers (test_stability.StabilityTests.test_cycle_floquet_multipliers) ... ok
+test_damping_energy_loss_accounted (test_stability.StabilityTests.test_damping_energy_loss_accounted) ... ok
+test_exchange_mass_and_exact_relaxation (test_stability.StabilityTests.test_exchange_mass_and_exact_relaxation) ... ok
+test_exchange_zero_mode_is_conservation (test_stability.StabilityTests.test_exchange_zero_mode_is_conservation) ... ok
+test_homoclinic_exact_orbit (test_stability.StabilityTests.test_homoclinic_exact_orbit) ... ok
+test_linearization_quadratic_remainder_and_short_time_error (test_stability.StabilityTests.test_linearization_quadratic_remainder_and_short_time_error) ... ok
+test_return_map_event (test_stability.StabilityTests.test_return_map_event) ... ok
+test_velocity_flip_time_reversal (test_stability.StabilityTests.test_velocity_flip_time_reversal) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 3.958s
+
+OK
