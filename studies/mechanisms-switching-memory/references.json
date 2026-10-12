@@ -1,0 +1,38 @@
+{
+  "spring": {
+    "source": "User-supplied screenshot of Strogatz, exercise 3.6.5, bead on tilted wire",
+    "equilibrium": "mg sin(theta) = k x [1-L0/sqrt(x^2+a^2)]",
+    "use": "Potential and force derived from this ideal-spring geometry; all numerical apparatus parameters selected for illustration.",
+    "status": "Ideal physical model; numerical verification, not an apparatus measurement"
+  },
+  "population": {
+    "source": "User-supplied refuge/outbreak cusp drawing, figure 3.7.6",
+    "use": "Qualitative folded-state comparison only; missing equation not reconstructed or simulated"
+  },
+  "Xiong_Ferrell_2003": {
+    "title": "A positive-feedback-based bistable memory module that governs a cell fate decision",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/14647386/",
+    "doi": "10.1038/nature02089",
+    "primary_reprint": "https://www.bio.davidson.edu/genomics/Exams/2003/BistableSwitch.pdf",
+    "use": "Biological precedent for maintained kinase activation and its dependence on feedback. No rates, datasets or fitted coefficients taken from this study.",
+    "note": "PubMed lists a 2007 corrigendum. This supplement does not reanalyse its experimental figures."
+  },
+  "Smolen_Baxter_Byrne_2009": {
+    "title": "Interlinked dual-time feedback loops can enhance robustness to stochasticity and persistence of memory",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2742492/",
+    "doi": "10.1103/PhysRevE.79.031902",
+    "use": "Primary precedent for effective cooperative activation/deactivation models and noise analysis. Current single-loop equations and numbers are an explicitly separate hypothesis."
+  },
+  "chemical_model": {
+    "origin": "Constructed for this computational hypothesis test; not an omitted screenshot equation",
+    "dp_dt": "(s+v*p^n/(K^n+p^n))*(1-p)-d*p",
+    "parameters": "v=2/s, d=1/s, K=.3 dimensionless, n=4, stimulus=.5/s; total protein=1 uM",
+    "finite_ATP": "2 uM initial ATP, .1 uM assumed saturation parameter",
+    "status": "Uncalibrated kinetic hypothesis; conditional predictions only"
+  },
+  "gravitational_acceleration": {
+    "value": 9.80665,
+    "unit": "m/s^2",
+    "origin": "Conventional standard gravity, not a local gravity measurement"
+  }
+}

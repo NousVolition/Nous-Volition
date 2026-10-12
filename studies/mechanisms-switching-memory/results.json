@@ -1,0 +1,3076 @@
+{
+  "scope": "Ideal spring mechanics and an explicitly uncalibrated biochemical feedback hypothesis",
+  "verification_tests": 18,
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "spring": {
+    "parameters": {
+      "a_m": 0.01,
+      "L0_m": 0.02,
+      "k_N_m": 1.0,
+      "gamma_N_s_m": 2.0,
+      "mass_kg": 0.01,
+      "g_m_s2": 9.80665
+    },
+    "lambda_": 2.0,
+    "time_unit_s": 2.0,
+    "energy_unit_J": 0.0001,
+    "neglected_inertia_ratio": 0.0025,
+    "stable_rest_positions_mm": [
+      -17.32050807568877,
+      17.32050807568877
+    ],
+    "quasistatic_fold_bias": 0.4501964643745654,
+    "fold_tilt_deg": 2.631217197710459,
+    "pulse_bias": 0.8,
+    "pulse_tilt_deg": 4.679234582087911,
+    "critical_pulse_tau": 3.6281184926128747,
+    "critical_pulse_s": 7.256236985225749,
+    "pulses": [
+      {
+        "label": "Short pulse",
+        "lambda_": 2.0,
+        "pulse_s": 5.8049895881806,
+        "end_s": 85.8049895881806,
+        "final_position_mm": -17.320508075686416,
+        "heat_J": 0.00010450269099516791,
+        "parameter_work_J": 0.0001045026909951679,
+        "max_energy_residual_J": 5.10702591327572e-19
+      },
+      {
+        "label": "Long pulse",
+        "lambda_": 2.0,
+        "pulse_s": 8.707484382270898,
+        "end_s": 88.7074843822709,
+        "final_position_mm": 17.32050807568753,
+        "heat_J": 0.00020122157083194187,
+        "parameter_work_J": 0.00020122157083190425,
+        "max_energy_residual_J": 5.4931614812403495e-16
+      },
+      {
+        "label": "Uncompressed control",
+        "lambda_": 0.8,
+        "pulse_s": 8.707484382270898,
+        "end_s": 88.7074843822709,
+        "final_position_mm": 0.002387656229943814,
+        "heat_J": 0.000112908439464585,
+        "parameter_work_J": 0.00011290844003467474,
+        "max_energy_residual_J": 4.279215870539588e-18
+      }
+    ],
+    "ramps": [
+      {
+        "half_duration_tau": 40.0,
+        "half_duration_s": 80.0,
+        "zero_crossing_biases": [
+          0.6962327441061262,
+          -0.6962327441050724
+        ],
+        "max_energy_residual_J": 4.6842529854984605e-15
+      },
+      {
+        "half_duration_tau": 160.0,
+        "half_duration_s": 320.0,
+        "zero_crossing_biases": [
+          0.5541637165232722,
+          -0.5541637165232078
+        ],
+        "max_energy_residual_J": 4.270628295444112e-15
+      },
+      {
+        "half_duration_tau": 640.0,
+        "half_duration_s": 1280.0,
+        "zero_crossing_biases": [
+          0.4934397899239844,
+          -0.49343978992398085
+        ],
+        "max_energy_residual_J": 5.887290654982281e-16
+      }
+    ],
+    "geometry_sensitivity": [
+      {
+        "lambda_": 0.8,
+        "positive_fold_bias": null,
+        "stable_states_at_zero_bias": 1
+      },
+      {
+        "lambda_": 1.0,
+        "positive_fold_bias": null,
+        "stable_states_at_zero_bias": 1
+      },
+      {
+        "lambda_": 1.2,
+        "positive_fold_bias": 0.0464634793607057,
+        "stable_states_at_zero_bias": 2
+      },
+      {
+        "lambda_": 1.5,
+        "positive_fold_bias": 0.17291038090106525,
+        "stable_states_at_zero_bias": 2
+      },
+      {
+        "lambda_": 2.0,
+        "positive_fold_bias": 0.4501964643745654,
+        "stable_states_at_zero_bias": 2
+      },
+      {
+        "lambda_": 2.5,
+        "positive_fold_bias": 0.7726455757523497,
+        "stable_states_at_zero_bias": 2
+      }
+    ]
+  },
+  "chemical_hypothesis": {
+    "parameters_assumed": {
+      "v": 2.0,
+      "K": 0.3,
+      "n": 4,
+      "d": 1.0
+    },
+    "stimulus_during_pulse_s_inv": 0.5,
+    "total_protein_uM": 1.0,
+    "roots_at_zero_stimulus": [
+      0.0,
+      0.17662102972406157,
+      0.6571526255955707
+    ],
+    "root_slopes_s_inv": [
+      -1.0,
+      2.356477262232464,
+      -2.750249306156679
+    ],
+    "critical_pulse_s": 0.4390324462879962,
+    "pulses": [
+      {
+        "label": "Short pulse",
+        "mode": "feedback",
+        "pulse_s": 0.351225957030397,
+        "end_s": 30.351225957030397,
+        "fraction_at_pulse_end": 0.14266834633154524,
+        "final_fraction": 1.83248230656096e-14,
+        "ATP_consumed_uM": 0.2046848964682543,
+        "Pi_released_uM": 0.2046848964682357,
+        "max_conversion_balance_residual_uM": 3.608224830031759e-16
+      },
+      {
+        "label": "Long pulse",
+        "mode": "feedback",
+        "pulse_s": 0.5268389355455955,
+        "end_s": 30.526838935545594,
+        "fraction_at_pulse_end": 0.21660812905982174,
+        "final_fraction": 0.6571526255955701,
+        "ATP_consumed_uM": 20.116163802752613,
+        "Pi_released_uM": 19.45901117715704,
+        "max_conversion_balance_residual_uM": 4.440892098500626e-15
+      },
+      {
+        "label": "No feedback",
+        "mode": "no_feedback",
+        "pulse_s": 0.5268389355455955,
+        "end_s": 30.526838935545594,
+        "fraction_at_pulse_end": 0.18209082152265169,
+        "final_fraction": 1.703937253895377e-14,
+        "ATP_consumed_uM": 0.23630991902274903,
+        "Pi_released_uM": 0.23630991902273207,
+        "max_conversion_balance_residual_uM": 1.1362438767648086e-16
+      },
+      {
+        "label": "Fuel off after pulse",
+        "mode": "fuel_off",
+        "pulse_s": 0.5268389355455955,
+        "end_s": 30.526838935545594,
+        "fraction_at_pulse_end": 0.21660812905982174,
+        "final_fraction": 2.026937203727723e-14,
+        "ATP_consumed_uM": 0.2742772989730288,
+        "Pi_released_uM": 0.2742772989730085,
+        "max_conversion_balance_residual_uM": 2.7755575615628914e-16
+      }
+    ],
+    "sensitivity": [
+      {
+        "changed_parameter": "v",
+        "value": 0.5,
+        "roots": [
+          0.0
+        ],
+        "stable_roots": [
+          0.0
+        ],
+        "critical_pulse_s": null
+      },
+      {
+        "changed_parameter": "v",
+        "value": 1.0,
+        "roots": [
+          0.0,
+          0.2546015733220097,
+          0.45778452230647
+        ],
+        "stable_roots": [
+          0.0,
+          0.45778452230647
+        ],
+        "critical_pulse_s": 0.6930821516345578
+      },
+      {
+        "changed_parameter": "v",
+        "value": 1.5,
+        "roots": [
+          0.0,
+          0.2009970228166878,
+          0.583708668481082
+        ],
+        "stable_roots": [
+          0.0,
+          0.583708668481082
+        ],
+        "critical_pulse_s": 0.5153011962046854
+      },
+      {
+        "changed_parameter": "v",
+        "value": 2.0,
+        "roots": [
+          0.0,
+          0.17662102972406157,
+          0.6571526255955707
+        ],
+        "stable_roots": [
+          0.0,
+          0.6571526255955707
+        ],
+        "critical_pulse_s": 0.4390324462879962
+      },
+      {
+        "changed_parameter": "v",
+        "value": 3.0,
+        "roots": [
+          0.0,
+          0.15000000000000013,
+          0.7451047712094041
+        ],
+        "stable_roots": [
+          0.0,
+          0.7451047712094041
+        ],
+        "critical_pulse_s": 0.3601592079616827
+      },
+      {
+        "changed_parameter": "K",
+        "value": 0.2,
+        "roots": [
+          0.0,
+          0.09787740498744603,
+          0.6648518865528916
+        ],
+        "stable_roots": [
+          0.0,
+          0.6648518865528916
+        ],
+        "critical_pulse_s": 0.2195150506632686
+      },
+      {
+        "changed_parameter": "K",
+        "value": 0.3,
+        "roots": [
+          0.0,
+          0.17662102972406157,
+          0.6571526255955707
+        ],
+        "stable_roots": [
+          0.0,
+          0.6571526255955707
+        ],
+        "critical_pulse_s": 0.4390324462879962
+      },
+      {
+        "changed_parameter": "K",
+        "value": 0.4,
+        "roots": [
+          0.0,
+          0.28065497964951414,
+          0.6330269700749129
+        ],
+        "stable_roots": [
+          0.0,
+          0.6330269700749129
+        ],
+        "critical_pulse_s": 0.8104869234817419
+      },
+      {
+        "changed_parameter": "n",
+        "value": 1,
+        "roots": [
+          0.0,
+          0.5666666666666667
+        ],
+        "stable_roots": [
+          0.5666666666666667
+        ],
+        "critical_pulse_s": null
+      },
+      {
+        "changed_parameter": "n",
+        "value": 2,
+        "roots": [
+          0.0,
+          0.04853320848941562,
+          0.6181334581772511
+        ],
+        "stable_roots": [
+          0.0,
+          0.6181334581772511
+        ],
+        "critical_pulse_s": 0.10110371209380888
+      },
+      {
+        "changed_parameter": "n",
+        "value": 4,
+        "roots": [
+          0.0,
+          0.17662102972406157,
+          0.6571526255955707
+        ],
+        "stable_roots": [
+          0.0,
+          0.6571526255955707
+        ],
+        "critical_pulse_s": 0.4390324462879962
+      },
+      {
+        "changed_parameter": "n",
+        "value": 8,
+        "roots": [
+          0.0,
+          0.24418570388919159,
+          0.6662915220038481
+        ],
+        "stable_roots": [
+          0.0,
+          0.6662915220038481
+        ],
+        "critical_pulse_s": 0.7348691716821882
+      },
+      {
+        "changed_parameter": "d",
+        "value": 0.5,
+        "roots": [
+          0.0,
+          0.1345221511376599,
+          0.7967976344410881
+        ],
+        "stable_roots": [
+          0.0,
+          0.7967976344410881
+        ],
+        "critical_pulse_s": 0.3019632561150058
+      },
+      {
+        "changed_parameter": "d",
+        "value": 1.0,
+        "roots": [
+          0.0,
+          0.17662102972406157,
+          0.6571526255955707
+        ],
+        "stable_roots": [
+          0.0,
+          0.6571526255955707
+        ],
+        "critical_pulse_s": 0.4390324462879962
+      },
+      {
+        "changed_parameter": "d",
+        "value": 2.0,
+        "roots": [
+          0.0,
+          0.2546015733220097,
+          0.45778452230647
+        ],
+        "stable_roots": [
+          0.0,
+          0.45778452230647
+        ],
+        "critical_pulse_s": 0.8651283527266787
+      }
+    ],
+    "finite_ATP": {
+      "initial_ATP_uM": 2.0,
+      "KmATP_uM": 0.1,
+      "initial_active_fraction": 0.6571526255955707,
+      "end_s": 40.0,
+      "final_active_fraction": 6.802325283539173e-17,
+      "final_ATP_uM": 1.4869689415098104e-05,
+      "max_adenylate_residual_uM": 2.886579864025407e-15,
+      "max_phosphate_residual_uM": 7.105427357601002e-15
+    }
+  },
+  "fixed_step_refinement": [
+    {
+      "model": "spring",
+      "max_step": 0.4,
+      "comparison_time": 3.9909303418741624,
+      "reference": 0.34642380598749284,
+      "value": 0.34621427677961236,
+      "absolute_state_error": 0.0002095292078804767
+    },
+    {
+      "model": "spring",
+      "max_step": 0.2,
+      "comparison_time": 3.9909303418741624,
+      "reference": 0.34642380598749284,
+      "value": 0.34641051241744514,
+      "absolute_state_error": 1.3293570047701042e-05
+    },
+    {
+      "model": "spring",
+      "max_step": 0.1,
+      "comparison_time": 3.9909303418741624,
+      "reference": 0.34642380598749284,
+      "value": 0.34642298447834274,
+      "absolute_state_error": 8.215091500951566e-07
+    },
+    {
+      "model": "chemical",
+      "max_step": 0.05,
+      "comparison_time": 1.482935690916796,
+      "reference": 0.4804723824743431,
+      "value": 0.4804685809734256,
+      "absolute_state_error": 3.801500917499645e-06
+    },
+    {
+      "model": "chemical",
+      "max_step": 0.025,
+      "comparison_time": 1.482935690916796,
+      "reference": 0.4804723824743431,
+      "value": 0.4804721436123598,
+      "absolute_state_error": 2.3886198330380637e-07
+    },
+    {
+      "model": "chemical",
+      "max_step": 0.0125,
+      "comparison_time": 1.482935690916796,
+      "reference": 0.4804723824743431,
+      "value": 0.4804723669440656,
+      "absolute_state_error": 1.553027750844649e-08
+    }
+  ],
+  "stochastic": {
+    "method": "Exact Gillespie jumps of a phenomenological Hill process",
+    "post_pulse_s": 20.0,
+    "high_basin_boundary": 0.17662102972406157,
+    "runs": 168,
+    "seeds_per_condition": 24,
+    "ensemble": [
+      {
+        "N": 100,
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "successes": 9,
+        "trials": 24,
+        "fraction": 0.375,
+        "wilson95": [
+          0.21159367559549125,
+          0.5729003755732521
+        ]
+      },
+      {
+        "N": 100,
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "successes": 13,
+        "trials": 24,
+        "fraction": 0.5416666666666666,
+        "wilson95": [
+          0.3507486535891995,
+          0.721086662687886
+        ]
+      },
+      {
+        "N": 100,
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "successes": 16,
+        "trials": 24,
+        "fraction": 0.6666666666666666,
+        "wilson95": [
+          0.4670631683813228,
+          0.8202780967270192
+        ]
+      },
+      {
+        "N": 1000,
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "successes": 0,
+        "trials": 24,
+        "fraction": 0.0,
+        "wilson95": [
+          0.0,
+          0.13797620467497365
+        ]
+      },
+      {
+        "N": 1000,
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "successes": 14,
+        "trials": 24,
+        "fraction": 0.5833333333333334,
+        "wilson95": [
+          0.38834665865229256,
+          0.7553239739018787
+        ]
+      },
+      {
+        "N": 1000,
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "successes": 22,
+        "trials": 24,
+        "fraction": 0.9166666666666666,
+        "wilson95": [
+          0.7415119780678993,
+          0.976841184702956
+        ]
+      },
+      {
+        "N": 1000,
+        "pulse_factor": 1.2,
+        "mode": "no_feedback",
+        "successes": 0,
+        "trials": 24,
+        "fraction": 0.0,
+        "wilson95": [
+          0.0,
+          0.13797620467497365
+        ]
+      }
+    ],
+    "individual_runs": [
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          0,
+          0
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 19,
+        "deactivation_events": 19,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          0,
+          1
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 12,
+        "deactivation_events": 12,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          0,
+          2
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 15,
+        "deactivation_events": 15,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          0,
+          3
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 18,
+        "deactivation_events": 18,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          0,
+          4
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 21,
+        "deactivation_events": 21,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          0,
+          5
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 61,
+        "activation_events": 1342,
+        "deactivation_events": 1281,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          0,
+          6
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 55,
+        "activation_events": 1372,
+        "deactivation_events": 1317,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          0,
+          7
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 18,
+        "deactivation_events": 18,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          0,
+          8
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 14,
+        "deactivation_events": 14,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          0,
+          9
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 63,
+        "activation_events": 1360,
+        "deactivation_events": 1297,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          0,
+          10
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 14,
+        "deactivation_events": 14,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          0,
+          11
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 61,
+        "activation_events": 1308,
+        "deactivation_events": 1247,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          0,
+          12
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 63,
+        "activation_events": 1371,
+        "deactivation_events": 1308,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          0,
+          13
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 70,
+        "activation_events": 1309,
+        "deactivation_events": 1239,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          0,
+          14
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 72,
+        "activation_events": 1337,
+        "deactivation_events": 1265,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          0,
+          15
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 16,
+        "deactivation_events": 16,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          0,
+          16
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 57,
+        "deactivation_events": 57,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          0,
+          17
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 27,
+        "deactivation_events": 27,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          0,
+          18
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 8,
+        "deactivation_events": 8,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          0,
+          19
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 21,
+        "deactivation_events": 21,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          0,
+          20
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 19,
+        "deactivation_events": 19,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          0,
+          21
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 63,
+        "activation_events": 1317,
+        "deactivation_events": 1254,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          0,
+          22
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 65,
+        "activation_events": 1368,
+        "deactivation_events": 1303,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          0,
+          23
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 31,
+        "deactivation_events": 31,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          1,
+          0
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 29,
+        "deactivation_events": 29,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          1,
+          1
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 65,
+        "activation_events": 1344,
+        "deactivation_events": 1279,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          1,
+          2
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 66,
+        "activation_events": 1333,
+        "deactivation_events": 1267,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          1,
+          3
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 25,
+        "deactivation_events": 25,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          1,
+          4
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 63,
+        "activation_events": 1281,
+        "deactivation_events": 1218,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          1,
+          5
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 20,
+        "deactivation_events": 20,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          1,
+          6
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 71,
+        "activation_events": 1300,
+        "deactivation_events": 1229,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          1,
+          7
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 65,
+        "activation_events": 1360,
+        "deactivation_events": 1295,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          1,
+          8
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 27,
+        "deactivation_events": 27,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          1,
+          9
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 18,
+        "deactivation_events": 18,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          1,
+          10
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 15,
+        "deactivation_events": 15,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          1,
+          11
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 56,
+        "activation_events": 1338,
+        "deactivation_events": 1282,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          1,
+          12
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 69,
+        "activation_events": 1322,
+        "deactivation_events": 1253,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          1,
+          13
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 69,
+        "activation_events": 1366,
+        "deactivation_events": 1297,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          1,
+          14
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 59,
+        "activation_events": 1328,
+        "deactivation_events": 1269,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          1,
+          15
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 32,
+        "deactivation_events": 32,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          1,
+          16
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 65,
+        "activation_events": 1364,
+        "deactivation_events": 1299,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          1,
+          17
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 69,
+        "activation_events": 1370,
+        "deactivation_events": 1301,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          1,
+          18
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 30,
+        "deactivation_events": 30,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          1,
+          19
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 34,
+        "deactivation_events": 34,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          1,
+          20
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 65,
+        "activation_events": 1296,
+        "deactivation_events": 1231,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          1,
+          21
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 16,
+        "deactivation_events": 16,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          1,
+          22
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 60,
+        "activation_events": 1376,
+        "deactivation_events": 1316,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          1,
+          23
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 18,
+        "deactivation_events": 18,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          2,
+          0
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 65,
+        "activation_events": 1356,
+        "deactivation_events": 1291,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          2,
+          1
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 64,
+        "activation_events": 1347,
+        "deactivation_events": 1283,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          2,
+          2
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 72,
+        "activation_events": 1352,
+        "deactivation_events": 1280,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          2,
+          3
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 67,
+        "activation_events": 1365,
+        "deactivation_events": 1298,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          2,
+          4
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 23,
+        "deactivation_events": 23,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          2,
+          5
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 72,
+        "activation_events": 1334,
+        "deactivation_events": 1262,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          2,
+          6
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 58,
+        "activation_events": 1355,
+        "deactivation_events": 1297,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          2,
+          7
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 68,
+        "activation_events": 1369,
+        "deactivation_events": 1301,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          2,
+          8
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 12,
+        "deactivation_events": 12,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          2,
+          9
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 63,
+        "activation_events": 1340,
+        "deactivation_events": 1277,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          2,
+          10
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 64,
+        "activation_events": 1342,
+        "deactivation_events": 1278,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          2,
+          11
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 60,
+        "activation_events": 1373,
+        "deactivation_events": 1313,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          2,
+          12
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 70,
+        "activation_events": 1340,
+        "deactivation_events": 1270,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          2,
+          13
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 59,
+        "activation_events": 1391,
+        "deactivation_events": 1332,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          2,
+          14
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 28,
+        "deactivation_events": 28,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          2,
+          15
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 63,
+        "activation_events": 1340,
+        "deactivation_events": 1277,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          2,
+          16
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 63,
+        "activation_events": 1427,
+        "deactivation_events": 1364,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          2,
+          17
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 21,
+        "deactivation_events": 21,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          2,
+          18
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 32,
+        "deactivation_events": 32,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          2,
+          19
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 69,
+        "activation_events": 1383,
+        "deactivation_events": 1314,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          2,
+          20
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 41,
+        "deactivation_events": 41,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          2,
+          21
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 75,
+        "activation_events": 1343,
+        "deactivation_events": 1268,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          2,
+          22
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 22,
+        "deactivation_events": 22,
+        "balance_residual": 0
+      },
+      {
+        "N": 100,
+        "seed_entropy": [
+          100,
+          2,
+          23
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 21,
+        "deactivation_events": 21,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          0,
+          0
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 231,
+        "deactivation_events": 231,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          0,
+          1
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 192,
+        "deactivation_events": 192,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          0,
+          2
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 206,
+        "deactivation_events": 206,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          0,
+          3
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 186,
+        "deactivation_events": 186,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          0,
+          4
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 322,
+        "deactivation_events": 322,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          0,
+          5
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 344,
+        "deactivation_events": 344,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          0,
+          6
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 204,
+        "deactivation_events": 204,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          0,
+          7
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 238,
+        "deactivation_events": 238,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          0,
+          8
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 198,
+        "deactivation_events": 198,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          0,
+          9
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 208,
+        "deactivation_events": 208,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          0,
+          10
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 236,
+        "deactivation_events": 236,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          0,
+          11
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 304,
+        "deactivation_events": 304,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          0,
+          12
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 171,
+        "deactivation_events": 171,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          0,
+          13
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 415,
+        "deactivation_events": 415,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          0,
+          14
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 220,
+        "deactivation_events": 220,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          0,
+          15
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 213,
+        "deactivation_events": 213,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          0,
+          16
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 250,
+        "deactivation_events": 250,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          0,
+          17
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 201,
+        "deactivation_events": 201,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          0,
+          18
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 230,
+        "deactivation_events": 230,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          0,
+          19
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 582,
+        "deactivation_events": 582,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          0,
+          20
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 171,
+        "deactivation_events": 171,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          0,
+          21
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 197,
+        "deactivation_events": 197,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          0,
+          22
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 159,
+        "deactivation_events": 159,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          0,
+          23
+        ],
+        "pulse_factor": 0.8,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 193,
+        "deactivation_events": 193,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          1,
+          0
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 676,
+        "activation_events": 13557,
+        "deactivation_events": 12881,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          1,
+          1
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 346,
+        "deactivation_events": 346,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          1,
+          2
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 625,
+        "activation_events": 13209,
+        "deactivation_events": 12584,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          1,
+          3
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 672,
+        "activation_events": 13449,
+        "deactivation_events": 12777,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          1,
+          4
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 669,
+        "activation_events": 13293,
+        "deactivation_events": 12624,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          1,
+          5
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 337,
+        "deactivation_events": 337,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          1,
+          6
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 491,
+        "deactivation_events": 491,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          1,
+          7
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 666,
+        "activation_events": 13331,
+        "deactivation_events": 12665,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          1,
+          8
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 294,
+        "deactivation_events": 294,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          1,
+          9
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 261,
+        "deactivation_events": 261,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          1,
+          10
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 228,
+        "deactivation_events": 228,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          1,
+          11
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 641,
+        "activation_events": 13291,
+        "deactivation_events": 12650,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          1,
+          12
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 644,
+        "activation_events": 13140,
+        "deactivation_events": 12496,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          1,
+          13
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 657,
+        "activation_events": 13343,
+        "deactivation_events": 12686,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          1,
+          14
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 246,
+        "deactivation_events": 246,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          1,
+          15
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 467,
+        "deactivation_events": 467,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          1,
+          16
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 535,
+        "deactivation_events": 535,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          1,
+          17
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 649,
+        "activation_events": 12515,
+        "deactivation_events": 11866,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          1,
+          18
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 325,
+        "deactivation_events": 325,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          1,
+          19
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 673,
+        "activation_events": 13245,
+        "deactivation_events": 12572,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          1,
+          20
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 654,
+        "activation_events": 13021,
+        "deactivation_events": 12367,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          1,
+          21
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 664,
+        "activation_events": 13091,
+        "deactivation_events": 12427,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          1,
+          22
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 657,
+        "activation_events": 13147,
+        "deactivation_events": 12490,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          1,
+          23
+        ],
+        "pulse_factor": 1.0,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 654,
+        "activation_events": 13410,
+        "deactivation_events": 12756,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          2,
+          0
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 661,
+        "activation_events": 13334,
+        "deactivation_events": 12673,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          2,
+          1
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 638,
+        "activation_events": 13499,
+        "deactivation_events": 12861,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          2,
+          2
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 663,
+        "activation_events": 13234,
+        "deactivation_events": 12571,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          2,
+          3
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 327,
+        "deactivation_events": 327,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          2,
+          4
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 662,
+        "activation_events": 13509,
+        "deactivation_events": 12847,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          2,
+          5
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 660,
+        "activation_events": 13288,
+        "deactivation_events": 12628,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          2,
+          6
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 658,
+        "activation_events": 13393,
+        "deactivation_events": 12735,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          2,
+          7
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 646,
+        "activation_events": 13382,
+        "deactivation_events": 12736,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          2,
+          8
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 677,
+        "activation_events": 13429,
+        "deactivation_events": 12752,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          2,
+          9
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 636,
+        "activation_events": 13201,
+        "deactivation_events": 12565,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          2,
+          10
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 643,
+        "activation_events": 13289,
+        "deactivation_events": 12646,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          2,
+          11
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 657,
+        "activation_events": 13614,
+        "deactivation_events": 12957,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          2,
+          12
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 659,
+        "activation_events": 13429,
+        "deactivation_events": 12770,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          2,
+          13
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 668,
+        "activation_events": 13642,
+        "deactivation_events": 12974,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          2,
+          14
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 692,
+        "activation_events": 13659,
+        "deactivation_events": 12967,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          2,
+          15
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 627,
+        "activation_events": 13504,
+        "deactivation_events": 12877,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          2,
+          16
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 644,
+        "activation_events": 13596,
+        "deactivation_events": 12952,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          2,
+          17
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 664,
+        "activation_events": 13599,
+        "deactivation_events": 12935,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          2,
+          18
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 468,
+        "deactivation_events": 468,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          2,
+          19
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 630,
+        "activation_events": 13712,
+        "deactivation_events": 13082,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          2,
+          20
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 679,
+        "activation_events": 13631,
+        "deactivation_events": 12952,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          2,
+          21
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 619,
+        "activation_events": 13420,
+        "deactivation_events": 12801,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          2,
+          22
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 649,
+        "activation_events": 13305,
+        "deactivation_events": 12656,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          2,
+          23
+        ],
+        "pulse_factor": 1.2,
+        "mode": "feedback",
+        "in_high_basin_at_end": true,
+        "final_active_count": 679,
+        "activation_events": 13411,
+        "deactivation_events": 12732,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          3,
+          0
+        ],
+        "pulse_factor": 1.2,
+        "mode": "no_feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 229,
+        "deactivation_events": 229,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          3,
+          1
+        ],
+        "pulse_factor": 1.2,
+        "mode": "no_feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 257,
+        "deactivation_events": 257,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          3,
+          2
+        ],
+        "pulse_factor": 1.2,
+        "mode": "no_feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 229,
+        "deactivation_events": 229,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          3,
+          3
+        ],
+        "pulse_factor": 1.2,
+        "mode": "no_feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 247,
+        "deactivation_events": 247,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          3,
+          4
+        ],
+        "pulse_factor": 1.2,
+        "mode": "no_feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 244,
+        "deactivation_events": 244,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          3,
+          5
+        ],
+        "pulse_factor": 1.2,
+        "mode": "no_feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 225,
+        "deactivation_events": 225,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          3,
+          6
+        ],
+        "pulse_factor": 1.2,
+        "mode": "no_feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 227,
+        "deactivation_events": 227,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          3,
+          7
+        ],
+        "pulse_factor": 1.2,
+        "mode": "no_feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 236,
+        "deactivation_events": 236,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          3,
+          8
+        ],
+        "pulse_factor": 1.2,
+        "mode": "no_feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 254,
+        "deactivation_events": 254,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          3,
+          9
+        ],
+        "pulse_factor": 1.2,
+        "mode": "no_feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 218,
+        "deactivation_events": 218,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          3,
+          10
+        ],
+        "pulse_factor": 1.2,
+        "mode": "no_feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 233,
+        "deactivation_events": 233,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          3,
+          11
+        ],
+        "pulse_factor": 1.2,
+        "mode": "no_feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 211,
+        "deactivation_events": 211,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          3,
+          12
+        ],
+        "pulse_factor": 1.2,
+        "mode": "no_feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 243,
+        "deactivation_events": 243,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          3,
+          13
+        ],
+        "pulse_factor": 1.2,
+        "mode": "no_feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 229,
+        "deactivation_events": 229,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          3,
+          14
+        ],
+        "pulse_factor": 1.2,
+        "mode": "no_feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 222,
+        "deactivation_events": 222,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          3,
+          15
+        ],
+        "pulse_factor": 1.2,
+        "mode": "no_feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 223,
+        "deactivation_events": 223,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          3,
+          16
+        ],
+        "pulse_factor": 1.2,
+        "mode": "no_feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 233,
+        "deactivation_events": 233,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          3,
+          17
+        ],
+        "pulse_factor": 1.2,
+        "mode": "no_feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 243,
+        "deactivation_events": 243,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          3,
+          18
+        ],
+        "pulse_factor": 1.2,
+        "mode": "no_feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 239,
+        "deactivation_events": 239,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          3,
+          19
+        ],
+        "pulse_factor": 1.2,
+        "mode": "no_feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 236,
+        "deactivation_events": 236,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          3,
+          20
+        ],
+        "pulse_factor": 1.2,
+        "mode": "no_feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 235,
+        "deactivation_events": 235,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          3,
+          21
+        ],
+        "pulse_factor": 1.2,
+        "mode": "no_feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 254,
+        "deactivation_events": 254,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          3,
+          22
+        ],
+        "pulse_factor": 1.2,
+        "mode": "no_feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 238,
+        "deactivation_events": 238,
+        "balance_residual": 0
+      },
+      {
+        "N": 1000,
+        "seed_entropy": [
+          1000,
+          3,
+          23
+        ],
+        "pulse_factor": 1.2,
+        "mode": "no_feedback",
+        "in_high_basin_at_end": false,
+        "final_active_count": 0,
+        "activation_events": 248,
+        "deactivation_events": 248,
+        "balance_residual": 0
+      }
+    ]
+  }
+}

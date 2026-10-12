@@ -1,0 +1,29 @@
+{
+  "study": "Mechanisms, switching and memory",
+  "publication_date": "2026-10-11",
+  "destination": "NousVolition/Nous-Volition/studies/mechanisms-switching-memory",
+  "source": "Completed local switching_tests deliverable from this chat",
+  "source_file_sha256": {
+    "mechanisms.png": "dadab827da458ce256ef3645dae9ed5ce150d06571ef5cf86516be289f249e72",
+    "mechanisms.svg": "e7c7ea10e58c390838db4135bcfd00c2fd3b4f1325235eff21301fd1bd3a5b61",
+    "models.py": "7651c817f7d5adacba1dc0e63237c4e8f6350e3e8ccd7487feeabc744a576360",
+    "README.txt": "d701e2edcfd28cd9f8771d522b3d1d15d73a86594cc8f6bca80b58041eab971e",
+    "references.json": "7ef4249dab5313ffab784d511625fd25a1ced2a507e8cc3bb4d337cdd9b767e9",
+    "report.html": "f1592432b77fc4e82a892269d85cd6dad1240b94bed631bf115bb7882516ef4d",
+    "requirements.txt": "1839f9ebfe6ef8dbf3960d324981bdc15fa2378d9bb2f754e1af4ae7360baf4e",
+    "results.json": "70d082182e3bd98bf1fa84e124fa95c44d84c462d2a1d41a92bcff36e3d28626",
+    "run_study.py": "216b5de80f10061737f60cdfb756dc6dd6cb589915bead08fd9a2a52f7ebb93f",
+    "test_log.txt": "0f1a36938820907fbc9f1a6d997ed59307b0eae1db65ea97c968570319acb2e3",
+    "test_models.py": "934459cab88a7c0602b211f9adaa5cdcc74f3e99cd5f4f0f5fb26b857037dd03",
+    "trajectories.npz": "c4c3d8af7ec1faccb29712a8cbf4e48b14c7ce029a73d8bc232f7abe0a570c71",
+    "verification.png": "8a47a8e1d1db1f7b184e8268435316fa11508c0395bda88c94c94aff94e4bb1a",
+    "verification.svg": "938864ffc8d63dd16c592dbdb246286410a520531a03975ff5d3a2588776b41b"
+  },
+  "adaptations": [
+    "Added GitHub README and local ignore rules.",
+    "Replaced local sibling-report and ZIP navigation with repository links in HTML and its generator.",
+    "Updated reproduction prose for individually committed files.",
+    "Reran the 18 verification tests in the publication directory; original numerical results and arrays retained."
+  ],
+  "evidence": "Numerical verification of an ideal mechanical model and an uncalibrated biochemical hypothesis; no new measurements"
+}

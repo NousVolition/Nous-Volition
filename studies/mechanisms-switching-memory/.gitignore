@@ -1,0 +1,4 @@
+__pycache__/
+.venv/
+*.pyc
+switching_tests.zip

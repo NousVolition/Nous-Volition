@@ -4,6 +4,10 @@
 
 This repository, **Streams and Rocks**, preserves the original stream-function report, physical-fluid experiments and separate social-organization studies.
 
+## Mechanisms, switching and memory
+
+**[Open the completed spring and chemical-feedback study](studies/mechanisms-switching-memory/README.md).** Eighteen verification tests and 168 seeded simulations test spring hysteresis, pulse thresholds, maintained activity, finite fuel and controls. Source, figures, saved trajectories and numerical results are included. The biochemical rates are explicitly hypothetical; this does not establish new reactions or forces for the original substances.
+
 ## Fluid Organization Under Stress
 
 **[Open the completed physical-fluid pilot](studies/fluid-organization/README.md).** It includes 93 paired fluid configurations, 7 inertial-particle configurations, 22 passing tests and the added dynamical-system controls. Marker history improves overall deformation prediction in the held-out pilot, but does not clearly improve the disturbance-specific response. Numerical failures and remaining questions are retained explicitly.

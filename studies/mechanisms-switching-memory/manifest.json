@@ -1,0 +1,20 @@
+{
+  ".gitattributes": "fe0fc910c79b157e01ef819bf4fdba97433e1cbf892d42269671650a190c4434",
+  ".gitignore": "e0fe02f34d0886780205eaa0d240c9edf6a7130b7f92021e514907a13e2fa19b",
+  "mechanisms.png": "dadab827da458ce256ef3645dae9ed5ce150d06571ef5cf86516be289f249e72",
+  "mechanisms.svg": "e7c7ea10e58c390838db4135bcfd00c2fd3b4f1325235eff21301fd1bd3a5b61",
+  "models.py": "7651c817f7d5adacba1dc0e63237c4e8f6350e3e8ccd7487feeabc744a576360",
+  "publication.json": "df782b2b2e4554c785c3ce8c1296e0a5cf8f0268c11c87c044ef40d744320ca1",
+  "README.md": "5929cf71244cd661309c317bc4656a1374dfecc7a5ae2d300d88a335d2717c87",
+  "README.txt": "12f7946965332ae12a82a2a0f84b5d36a03aecf3693e0aeec76fe8dfb3f81c4d",
+  "references.json": "7ef4249dab5313ffab784d511625fd25a1ced2a507e8cc3bb4d337cdd9b767e9",
+  "report.html": "62abc5c956f00226c4f1bd8197718563eee85c8633bd5180955c5d9144d41812",
+  "requirements.txt": "1839f9ebfe6ef8dbf3960d324981bdc15fa2378d9bb2f754e1af4ae7360baf4e",
+  "results.json": "70d082182e3bd98bf1fa84e124fa95c44d84c462d2a1d41a92bcff36e3d28626",
+  "run_study.py": "3fe4ddc723e834e7ac4686e7fc70ea2f1c89fc5dfcd7be622808999f2ff9bb78",
+  "test_log.txt": "d12b1ddf4fb663fb10885ed1bbaa38984b39054d2b8f7a1b20dbb2411ea80595",
+  "test_models.py": "934459cab88a7c0602b211f9adaa5cdcc74f3e99cd5f4f0f5fb26b857037dd03",
+  "trajectories.npz": "c4c3d8af7ec1faccb29712a8cbf4e48b14c7ce029a73d8bc232f7abe0a570c71",
+  "verification.png": "8a47a8e1d1db1f7b184e8268435316fa11508c0395bda88c94c94aff94e4bb1a",
+  "verification.svg": "938864ffc8d63dd16c592dbdb246286410a520531a03975ff5d3a2588776b41b"
+}
