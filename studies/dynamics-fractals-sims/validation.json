@@ -1,7 +1,7 @@
 {
   "python": "3.12.14",
   "platform": "Windows",
-  "automated_tests": 300,
+  "automated_tests": 328,
   "test_result": "passed",
   "sims_rounds": 15872,
   "binary_sims_rounds": 12800,
@@ -72,8 +72,8 @@
     "accuracy_gates": "passed",
     "full_reproduction": "passed"
   },
-  "figure_count": 30,
-  "figure_review": "Two synthetic Hug calibration figures inspected; twenty-eight earlier figures preserved.",
+  "figure_count": 33,
+  "figure_review": "Three simulated rhythm figures inspected; thirty earlier figures preserved.",
   "pending_source": "Figure 7.3.3 / Example 7.3.1 vector field absent; this specific case was not run.",
   "html_local_links": "verified",
   "html_browser_preview": "Unavailable: browser policy blocks local file URLs.",
@@ -116,5 +116,53 @@
     "private_data_handling": "Entry exports locally; analysis writes only to caller-chosen output. No measurement upload.",
     "independent_fixture_solver": "RK45 physical ODE and piecewise integrated creep",
     "limitations": "Noiseless synthetic fixtures; no parameter uncertainty intervals or physical limit-cycle claim."
+  },
+  "fourteenth_batch_checks": {
+    "new_tests": 28,
+    "observed_cases": 12,
+    "independent_Radau_controls": 12,
+    "fixed_parameter_prediction_cases": 10,
+    "noise_realizations": 72,
+    "physical_measurements": 0,
+    "additional_sims_runs": 0,
+    "origin": "synthetic",
+    "accuracy_gates": {
+      "shooting": true,
+      "neutral_multiplier": true,
+      "attracting_cycle": true,
+      "cycle_energy": true,
+      "multiple_starts": true,
+      "disturbed_return": true,
+      "passive_decay": true,
+      "energy_balance": true,
+      "independent_solver": true,
+      "fixed_parameter_prediction": true,
+      "noise_period": true,
+      "noise_amplitude": true
+    },
+    "autonomous_period_simulation_s": 2.8393237567027,
+    "initial_horizon_audit": {
+      "horizon_s": 1800.0,
+      "gate_scaled": 0.0001,
+      "memory_start_error_scaled": 0.00044698963425596986,
+      "disturbed_return_error_scaled": 0.0004436385462287737,
+      "passive_final_norm_scaled": 0.00025158137033849665
+    },
+    "settlement_horizon_s": 4200.0,
+    "repetition_results": {
+      "Circular": 1,
+      "Pasiphae": 1,
+      "Elara": 1,
+      "Himalia": 1,
+      "Europa": 1,
+      "Callisto": 1,
+      "Thebe": 1,
+      "Circular \u2014 detuned control": null,
+      "Pasiphae \u2014 detuned control": null
+    },
+    "maximum_independent_solver_error_scaled": 4.195190861366882e-09,
+    "maximum_prediction_rmse_mm": 7.533406038765661e-09,
+    "limitations": "Same-model synthetic validation. Sensor noise only; fitting data remain noiseless. No physical Hug period established.",
+    "reproduction": "Main trajectories run once; only three failed settlement controls rerun at the documented longer horizon. Full unit suite passed."
   }
 }
