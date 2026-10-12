@@ -45,8 +45,8 @@ Use a **new empty destination**. This recreates the original complete publicatio
 
 ## Preservation and limits
 
-- Original result bytes and historical publication receipts are preserved in the release and in Git history. Where a current download link changed inside a checked package, its current delivery manifest was updated; the original manifest remains in `reports-and-source.zip`.
-- This makes a fresh main-branch checkout or shallow clone smaller. A full clone still contains old large blobs in Git history; no history was rewritten.
+- Original result bytes and historical publication receipts are preserved in the numerical release and the complete original-history backup linked below. Where a current download link changed inside a checked package, its current delivery manifest was updated; the original manifest remains in `reports-and-source.zip`.
+- The subsequent [verified history cleanup](HISTORY-CLEANUP.md) also removes archived numerical paths from normal clone history. Original commits and every historical result remain recoverable from the complete Git backup on the release.
 - The archive is a dated snapshot. Later studies and completions require their own verified additions and are not implied by this release.
 - Reading the kept report pages does not require restoring arrays. Running analyses or package verification that load those arrays does require restoration first.
 
