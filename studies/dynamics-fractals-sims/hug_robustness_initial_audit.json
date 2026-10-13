@@ -1,0 +1,1565 @@
+{
+  "description": "Initial-resolution failures retained; final resolution uses unchanged accuracy gates.",
+  "protocol": {
+    "origin": "synthetic_parameter_sensitivity",
+    "baseline_source": "calibration/synthetic_truth.json",
+    "one_at_a_time_factors": [
+      0.5,
+      2.0
+    ],
+    "gain_factors": [
+      0.0,
+      0.02,
+      0.05,
+      0.1,
+      0.5,
+      2.0
+    ],
+    "joint_samples": 16,
+    "joint_factor_range": [
+      0.75,
+      1.25
+    ],
+    "seed": 20261013,
+    "starts_scaled": [
+      [
+        0.25,
+        0,
+        0,
+        0
+      ],
+      [
+        -1,
+        0.2,
+        0.02,
+        -0.01
+      ]
+    ],
+    "horizon_s": 6000.0,
+    "saved_window_s": 600.0,
+    "sample_interval_s": 0.1,
+    "main_step_s": 0.025,
+    "refined_step_s": 0.0125,
+    "orbit_period_s": 5.7,
+    "baseline_detuned_periods_s": [
+      4.0,
+      6.3
+    ],
+    "orbital_force_rms_N": 6e-06,
+    "independent_control_seconds": 12.0,
+    "gates": {
+      "quiet_norm_scaled": 0.0001,
+      "observable_half_amplitude_mm": 0.0001,
+      "section_error_scaled": 0.0001,
+      "orbit_repeat_error_scaled": 0.0001,
+      "between_start_error_scaled": 0.0001,
+      "metric_relative_agreement": 0.005,
+      "window_amplitude_drift_fraction": 0.02,
+      "energy_error_scaled": 0.001,
+      "refinement_period_relative_error": 0.0001,
+      "refinement_amplitude_relative_error": 0.001,
+      "independent_error_scaled": 2e-05,
+      "state_guard_scaled": 1000.0
+    },
+    "interpretation": "Finite deterministic parameter sweep of the existing synthetic active Hug. One parameter at a time and 16 reproducible joint perturbations are sensitivity scenarios, not probabilities or measured uncertainty. Mass, geometry, controller delay, force RMS and model form remain fixed. Orbit periods are chosen simulation inputs, not astronomical periods. A finite-time nonrepeat is not a diagnosis of chaos. No physical measurements or additional SIMS participants."
+  },
+  "checks": {
+    "all_trajectories_finite": true,
+    "energy_balance": false,
+    "refined_period": true,
+    "refined_amplitude": true,
+    "classification_step_agreement": true,
+    "independent_solver": false
+  },
+  "outcomes": {
+    "self_sustained": 32,
+    "orbit_locked": 147,
+    "no_short_repeat": 102,
+    "rest": 2,
+    "unsettled": 1
+  },
+  "maximum_energy_error_scaled": 0.00422995698147588,
+  "maximum_refined_energy_error_scaled": 0.00028128958098250223,
+  "maximum_independent_error_scaled": 0.0003090368962315182,
+  "independent_controls": [
+    {
+      "case_index": 0,
+      "error_scaled": 8.043951508129865e-05
+    },
+    {
+      "case_index": 2,
+      "error_scaled": 0.0001498122789262979
+    },
+    {
+      "case_index": 4,
+      "error_scaled": 9.99760701692054e-05
+    },
+    {
+      "case_index": 6,
+      "error_scaled": 0.00014608537107463349
+    },
+    {
+      "case_index": 8,
+      "error_scaled": 0.0001503993752942634
+    },
+    {
+      "case_index": 10,
+      "error_scaled": 0.0001493707204680561
+    },
+    {
+      "case_index": 12,
+      "error_scaled": 0.00014947777415752483
+    },
+    {
+      "case_index": 14,
+      "error_scaled": 0.00014882641603186642
+    },
+    {
+      "case_index": 16,
+      "error_scaled": 9.650776367653435e-05
+    },
+    {
+      "case_index": 18,
+      "error_scaled": 0.0003090368962315182
+    },
+    {
+      "case_index": 20,
+      "error_scaled": 0.0001114839899223341
+    },
+    {
+      "case_index": 22,
+      "error_scaled": 0.00010526978289160382
+    },
+    {
+      "case_index": 24,
+      "error_scaled": 6.316965101049732e-05
+    },
+    {
+      "case_index": 40,
+      "error_scaled": 0.000110281010011537
+    },
+    {
+      "case_index": 56,
+      "error_scaled": 8.002258932249262e-05
+    },
+    {
+      "case_index": 72,
+      "error_scaled": 7.928742913509979e-05
+    },
+    {
+      "case_index": 88,
+      "error_scaled": 7.880298273521547e-05
+    },
+    {
+      "case_index": 104,
+      "error_scaled": 8.170386489236847e-05
+    },
+    {
+      "case_index": 120,
+      "error_scaled": 7.334682322435171e-05
+    },
+    {
+      "case_index": 136,
+      "error_scaled": 8.397422854944381e-05
+    },
+    {
+      "case_index": 152,
+      "error_scaled": 3.0425163153324775e-05
+    },
+    {
+      "case_index": 168,
+      "error_scaled": 0.00025690943670841904
+    },
+    {
+      "case_index": 184,
+      "error_scaled": 0.00011359489269935352
+    },
+    {
+      "case_index": 200,
+      "error_scaled": 5.694087408514292e-05
+    },
+    {
+      "case_index": 216,
+      "error_scaled": 9.672208515652908e-20
+    },
+    {
+      "case_index": 232,
+      "error_scaled": 6.84335671541119e-16
+    },
+    {
+      "case_index": 248,
+      "error_scaled": 4.2931599827890007e-10
+    },
+    {
+      "case_index": 264,
+      "error_scaled": 4.9199413484357635e-06
+    },
+    {
+      "case_index": 280,
+      "error_scaled": 3.19833528621416e-05
+    },
+    {
+      "case_index": 296,
+      "error_scaled": 0.00023556412881209354
+    },
+    {
+      "case_index": 312,
+      "error_scaled": 8.260293457862389e-05
+    },
+    {
+      "case_index": 328,
+      "error_scaled": 3.722803256600571e-05
+    },
+    {
+      "case_index": 344,
+      "error_scaled": 6.565966485894137e-05
+    },
+    {
+      "case_index": 360,
+      "error_scaled": 7.913255689473431e-05
+    },
+    {
+      "case_index": 376,
+      "error_scaled": 5.69873501254925e-05
+    },
+    {
+      "case_index": 392,
+      "error_scaled": 6.73428066484405e-05
+    },
+    {
+      "case_index": 408,
+      "error_scaled": 4.9498430833239127e-05
+    },
+    {
+      "case_index": 424,
+      "error_scaled": 8.925123717551386e-05
+    },
+    {
+      "case_index": 440,
+      "error_scaled": 4.637570705989802e-05
+    },
+    {
+      "case_index": 456,
+      "error_scaled": 8.691807224803227e-05
+    },
+    {
+      "case_index": 472,
+      "error_scaled": 7.607353234551084e-05
+    },
+    {
+      "case_index": 488,
+      "error_scaled": 7.636972506430695e-05
+    },
+    {
+      "case_index": 504,
+      "error_scaled": 7.388698212107414e-05
+    },
+    {
+      "case_index": 520,
+      "error_scaled": 5.74565307869257e-05
+    },
+    {
+      "case_index": 536,
+      "error_scaled": 6.858173317647598e-05
+    },
+    {
+      "case_index": 552,
+      "error_scaled": 4.985833069737211e-05
+    }
+  ],
+  "failed_energy_cases": [
+    {
+      "case_index": 2,
+      "setting_id": "baseline",
+      "condition": "Circular",
+      "start": 0,
+      "error_scaled": 0.0015160004470544663
+    },
+    {
+      "case_index": 3,
+      "setting_id": "baseline",
+      "condition": "Circular",
+      "start": 1,
+      "error_scaled": 0.0015187676168295638
+    },
+    {
+      "case_index": 6,
+      "setting_id": "baseline",
+      "condition": "Elara",
+      "start": 0,
+      "error_scaled": 0.0012065052829086653
+    },
+    {
+      "case_index": 7,
+      "setting_id": "baseline",
+      "condition": "Elara",
+      "start": 1,
+      "error_scaled": 0.0012094726654083843
+    },
+    {
+      "case_index": 8,
+      "setting_id": "baseline",
+      "condition": "Himalia",
+      "start": 0,
+      "error_scaled": 0.0013314127057810765
+    },
+    {
+      "case_index": 9,
+      "setting_id": "baseline",
+      "condition": "Himalia",
+      "start": 1,
+      "error_scaled": 0.0013342976220656055
+    },
+    {
+      "case_index": 10,
+      "setting_id": "baseline",
+      "condition": "Europa",
+      "start": 0,
+      "error_scaled": 0.0015153762775526047
+    },
+    {
+      "case_index": 11,
+      "setting_id": "baseline",
+      "condition": "Europa",
+      "start": 1,
+      "error_scaled": 0.0015181469661627034
+    },
+    {
+      "case_index": 12,
+      "setting_id": "baseline",
+      "condition": "Callisto",
+      "start": 0,
+      "error_scaled": 0.0015156221512881984
+    },
+    {
+      "case_index": 13,
+      "setting_id": "baseline",
+      "condition": "Callisto",
+      "start": 1,
+      "error_scaled": 0.001518391892489035
+    },
+    {
+      "case_index": 14,
+      "setting_id": "baseline",
+      "condition": "Thebe",
+      "start": 0,
+      "error_scaled": 0.00151351381040854
+    },
+    {
+      "case_index": 15,
+      "setting_id": "baseline",
+      "condition": "Thebe",
+      "start": 1,
+      "error_scaled": 0.0015162882617403284
+    },
+    {
+      "case_index": 58,
+      "setting_id": "G_K_Pa_0.5",
+      "condition": "Circular",
+      "start": 0,
+      "error_scaled": 0.0015158420102636683
+    },
+    {
+      "case_index": 59,
+      "setting_id": "G_K_Pa_0.5",
+      "condition": "Circular",
+      "start": 1,
+      "error_scaled": 0.0015186089185874607
+    },
+    {
+      "case_index": 62,
+      "setting_id": "G_K_Pa_0.5",
+      "condition": "Elara",
+      "start": 0,
+      "error_scaled": 0.0012063102281274496
+    },
+    {
+      "case_index": 63,
+      "setting_id": "G_K_Pa_0.5",
+      "condition": "Elara",
+      "start": 1,
+      "error_scaled": 0.0012092775043299753
+    },
+    {
+      "case_index": 64,
+      "setting_id": "G_K_Pa_0.5",
+      "condition": "Himalia",
+      "start": 0,
+      "error_scaled": 0.0013312372186931043
+    },
+    {
+      "case_index": 65,
+      "setting_id": "G_K_Pa_0.5",
+      "condition": "Himalia",
+      "start": 1,
+      "error_scaled": 0.0013341220082736527
+    },
+    {
+      "case_index": 66,
+      "setting_id": "G_K_Pa_0.5",
+      "condition": "Europa",
+      "start": 0,
+      "error_scaled": 0.001515217806201008
+    },
+    {
+      "case_index": 67,
+      "setting_id": "G_K_Pa_0.5",
+      "condition": "Europa",
+      "start": 1,
+      "error_scaled": 0.0015179882292954971
+    },
+    {
+      "case_index": 68,
+      "setting_id": "G_K_Pa_0.5",
+      "condition": "Callisto",
+      "start": 0,
+      "error_scaled": 0.001515463581711174
+    },
+    {
+      "case_index": 69,
+      "setting_id": "G_K_Pa_0.5",
+      "condition": "Callisto",
+      "start": 1,
+      "error_scaled": 0.0015182332840879553
+    },
+    {
+      "case_index": 70,
+      "setting_id": "G_K_Pa_0.5",
+      "condition": "Thebe",
+      "start": 0,
+      "error_scaled": 0.0015133551978578907
+    },
+    {
+      "case_index": 71,
+      "setting_id": "G_K_Pa_0.5",
+      "condition": "Thebe",
+      "start": 1,
+      "error_scaled": 0.0015161294959966654
+    },
+    {
+      "case_index": 74,
+      "setting_id": "G_K_Pa_2",
+      "condition": "Circular",
+      "start": 0,
+      "error_scaled": 0.0015163309636818667
+    },
+    {
+      "case_index": 75,
+      "setting_id": "G_K_Pa_2",
+      "condition": "Circular",
+      "start": 1,
+      "error_scaled": 0.0015190985822073344
+    },
+    {
+      "case_index": 78,
+      "setting_id": "G_K_Pa_2",
+      "condition": "Elara",
+      "start": 0,
+      "error_scaled": 0.0012069072780320766
+    },
+    {
+      "case_index": 79,
+      "setting_id": "G_K_Pa_2",
+      "condition": "Elara",
+      "start": 1,
+      "error_scaled": 0.0012098749588460578
+    },
+    {
+      "case_index": 80,
+      "setting_id": "G_K_Pa_2",
+      "condition": "Himalia",
+      "start": 0,
+      "error_scaled": 0.001331776403958429
+    },
+    {
+      "case_index": 81,
+      "setting_id": "G_K_Pa_2",
+      "condition": "Himalia",
+      "start": 1,
+      "error_scaled": 0.0013346615472471512
+    },
+    {
+      "case_index": 82,
+      "setting_id": "G_K_Pa_2",
+      "condition": "Europa",
+      "start": 0,
+      "error_scaled": 0.0015157068797009288
+    },
+    {
+      "case_index": 83,
+      "setting_id": "G_K_Pa_2",
+      "condition": "Europa",
+      "start": 1,
+      "error_scaled": 0.0015184779845753837
+    },
+    {
+      "case_index": 84,
+      "setting_id": "G_K_Pa_2",
+      "condition": "Callisto",
+      "start": 0,
+      "error_scaled": 0.0015159526541310697
+    },
+    {
+      "case_index": 85,
+      "setting_id": "G_K_Pa_2",
+      "condition": "Callisto",
+      "start": 1,
+      "error_scaled": 0.0015187229576554273
+    },
+    {
+      "case_index": 86,
+      "setting_id": "G_K_Pa_2",
+      "condition": "Thebe",
+      "start": 0,
+      "error_scaled": 0.0015138445219236019
+    },
+    {
+      "case_index": 87,
+      "setting_id": "G_K_Pa_2",
+      "condition": "Thebe",
+      "start": 1,
+      "error_scaled": 0.0015166194816345069
+    },
+    {
+      "case_index": 90,
+      "setting_id": "eta_M_Pa_s_0.5",
+      "condition": "Circular",
+      "start": 0,
+      "error_scaled": 0.001497382260311042
+    },
+    {
+      "case_index": 91,
+      "setting_id": "eta_M_Pa_s_0.5",
+      "condition": "Circular",
+      "start": 1,
+      "error_scaled": 0.0015001198021309392
+    },
+    {
+      "case_index": 94,
+      "setting_id": "eta_M_Pa_s_0.5",
+      "condition": "Elara",
+      "start": 0,
+      "error_scaled": 0.0011898460824681933
+    },
+    {
+      "case_index": 95,
+      "setting_id": "eta_M_Pa_s_0.5",
+      "condition": "Elara",
+      "start": 1,
+      "error_scaled": 0.0011927795222277382
+    },
+    {
+      "case_index": 96,
+      "setting_id": "eta_M_Pa_s_0.5",
+      "condition": "Himalia",
+      "start": 0,
+      "error_scaled": 0.0013139231636785098
+    },
+    {
+      "case_index": 97,
+      "setting_id": "eta_M_Pa_s_0.5",
+      "condition": "Himalia",
+      "start": 1,
+      "error_scaled": 0.0013167767098138938
+    },
+    {
+      "case_index": 98,
+      "setting_id": "eta_M_Pa_s_0.5",
+      "condition": "Europa",
+      "start": 0,
+      "error_scaled": 0.0014967617949821488
+    },
+    {
+      "case_index": 99,
+      "setting_id": "eta_M_Pa_s_0.5",
+      "condition": "Europa",
+      "start": 1,
+      "error_scaled": 0.0014995026457995664
+    },
+    {
+      "case_index": 100,
+      "setting_id": "eta_M_Pa_s_0.5",
+      "condition": "Callisto",
+      "start": 0,
+      "error_scaled": 0.0014970058904850703
+    },
+    {
+      "case_index": 101,
+      "setting_id": "eta_M_Pa_s_0.5",
+      "condition": "Callisto",
+      "start": 1,
+      "error_scaled": 0.0014997464195118937
+    },
+    {
+      "case_index": 102,
+      "setting_id": "eta_M_Pa_s_0.5",
+      "condition": "Thebe",
+      "start": 0,
+      "error_scaled": 0.001494910770588831
+    },
+    {
+      "case_index": 103,
+      "setting_id": "eta_M_Pa_s_0.5",
+      "condition": "Thebe",
+      "start": 1,
+      "error_scaled": 0.0014976551954077877
+    },
+    {
+      "case_index": 106,
+      "setting_id": "eta_M_Pa_s_2",
+      "condition": "Circular",
+      "start": 0,
+      "error_scaled": 0.0015253855643493353
+    },
+    {
+      "case_index": 107,
+      "setting_id": "eta_M_Pa_s_2",
+      "condition": "Circular",
+      "start": 1,
+      "error_scaled": 0.001528167585064466
+    },
+    {
+      "case_index": 110,
+      "setting_id": "eta_M_Pa_s_2",
+      "condition": "Elara",
+      "start": 0,
+      "error_scaled": 0.0012149107404013648
+    },
+    {
+      "case_index": 111,
+      "setting_id": "eta_M_Pa_s_2",
+      "condition": "Elara",
+      "start": 1,
+      "error_scaled": 0.0012178886738354322
+    },
+    {
+      "case_index": 112,
+      "setting_id": "eta_M_Pa_s_2",
+      "condition": "Himalia",
+      "start": 0,
+      "error_scaled": 0.0013402330224323578
+    },
+    {
+      "case_index": 113,
+      "setting_id": "eta_M_Pa_s_2",
+      "condition": "Himalia",
+      "start": 1,
+      "error_scaled": 0.0013431295671466614
+    },
+    {
+      "case_index": 114,
+      "setting_id": "eta_M_Pa_s_2",
+      "condition": "Europa",
+      "start": 0,
+      "error_scaled": 0.001524759578416024
+    },
+    {
+      "case_index": 115,
+      "setting_id": "eta_M_Pa_s_2",
+      "condition": "Europa",
+      "start": 1,
+      "error_scaled": 0.0015275451028458065
+    },
+    {
+      "case_index": 116,
+      "setting_id": "eta_M_Pa_s_2",
+      "condition": "Callisto",
+      "start": 0,
+      "error_scaled": 0.001525006145328689
+    },
+    {
+      "case_index": 117,
+      "setting_id": "eta_M_Pa_s_2",
+      "condition": "Callisto",
+      "start": 1,
+      "error_scaled": 0.0015277908157713682
+    },
+    {
+      "case_index": 118,
+      "setting_id": "eta_M_Pa_s_2",
+      "condition": "Thebe",
+      "start": 0,
+      "error_scaled": 0.0015228916564353767
+    },
+    {
+      "case_index": 119,
+      "setting_id": "eta_M_Pa_s_2",
+      "condition": "Thebe",
+      "start": 1,
+      "error_scaled": 0.0015256810021924139
+    },
+    {
+      "case_index": 122,
+      "setting_id": "eta_K_Pa_s_0.5",
+      "condition": "Circular",
+      "start": 0,
+      "error_scaled": 0.0014121636368145118
+    },
+    {
+      "case_index": 123,
+      "setting_id": "eta_K_Pa_s_0.5",
+      "condition": "Circular",
+      "start": 1,
+      "error_scaled": 0.0014147650965128378
+    },
+    {
+      "case_index": 126,
+      "setting_id": "eta_K_Pa_s_0.5",
+      "condition": "Elara",
+      "start": 0,
+      "error_scaled": 0.0011141581927631705
+    },
+    {
+      "case_index": 127,
+      "setting_id": "eta_K_Pa_s_0.5",
+      "condition": "Elara",
+      "start": 1,
+      "error_scaled": 0.001116912187114849
+    },
+    {
+      "case_index": 128,
+      "setting_id": "eta_K_Pa_s_0.5",
+      "condition": "Himalia",
+      "start": 0,
+      "error_scaled": 0.0012341655519776396
+    },
+    {
+      "case_index": 129,
+      "setting_id": "eta_K_Pa_s_0.5",
+      "condition": "Himalia",
+      "start": 1,
+      "error_scaled": 0.0012368575318078001
+    },
+    {
+      "case_index": 130,
+      "setting_id": "eta_K_Pa_s_0.5",
+      "condition": "Europa",
+      "start": 0,
+      "error_scaled": 0.0014115609897658032
+    },
+    {
+      "case_index": 131,
+      "setting_id": "eta_K_Pa_s_0.5",
+      "condition": "Europa",
+      "start": 1,
+      "error_scaled": 0.0014141653564365697
+    },
+    {
+      "case_index": 132,
+      "setting_id": "eta_K_Pa_s_0.5",
+      "condition": "Callisto",
+      "start": 0,
+      "error_scaled": 0.0014117983864139205
+    },
+    {
+      "case_index": 133,
+      "setting_id": "eta_K_Pa_s_0.5",
+      "condition": "Callisto",
+      "start": 1,
+      "error_scaled": 0.001414402105751833
+    },
+    {
+      "case_index": 134,
+      "setting_id": "eta_K_Pa_s_0.5",
+      "condition": "Thebe",
+      "start": 0,
+      "error_scaled": 0.0014097616652293254
+    },
+    {
+      "case_index": 135,
+      "setting_id": "eta_K_Pa_s_0.5",
+      "condition": "Thebe",
+      "start": 1,
+      "error_scaled": 0.0014123690830274427
+    },
+    {
+      "case_index": 138,
+      "setting_id": "eta_K_Pa_s_2",
+      "condition": "Circular",
+      "start": 0,
+      "error_scaled": 0.0015706996322961686
+    },
+    {
+      "case_index": 139,
+      "setting_id": "eta_K_Pa_s_2",
+      "condition": "Circular",
+      "start": 1,
+      "error_scaled": 0.0015735540428494232
+    },
+    {
+      "case_index": 142,
+      "setting_id": "eta_K_Pa_s_2",
+      "condition": "Elara",
+      "start": 0,
+      "error_scaled": 0.0012554849114820854
+    },
+    {
+      "case_index": 143,
+      "setting_id": "eta_K_Pa_s_2",
+      "condition": "Elara",
+      "start": 1,
+      "error_scaled": 0.0012585650149503635
+    },
+    {
+      "case_index": 144,
+      "setting_id": "eta_K_Pa_s_2",
+      "condition": "Himalia",
+      "start": 0,
+      "error_scaled": 0.0013828184930702037
+    },
+    {
+      "case_index": 145,
+      "setting_id": "eta_K_Pa_s_2",
+      "condition": "Himalia",
+      "start": 1,
+      "error_scaled": 0.0013858050372732578
+    },
+    {
+      "case_index": 146,
+      "setting_id": "eta_K_Pa_s_2",
+      "condition": "Europa",
+      "start": 0,
+      "error_scaled": 0.0015700648632304137
+    },
+    {
+      "case_index": 147,
+      "setting_id": "eta_K_Pa_s_2",
+      "condition": "Europa",
+      "start": 1,
+      "error_scaled": 0.0015729228352938662
+    },
+    {
+      "case_index": 148,
+      "setting_id": "eta_K_Pa_s_2",
+      "condition": "Callisto",
+      "start": 0,
+      "error_scaled": 0.0015703146850398753
+    },
+    {
+      "case_index": 149,
+      "setting_id": "eta_K_Pa_s_2",
+      "condition": "Callisto",
+      "start": 1,
+      "error_scaled": 0.0015731720151137552
+    },
+    {
+      "case_index": 150,
+      "setting_id": "eta_K_Pa_s_2",
+      "condition": "Thebe",
+      "start": 0,
+      "error_scaled": 0.0015681705499019927
+    },
+    {
+      "case_index": 151,
+      "setting_id": "eta_K_Pa_s_2",
+      "condition": "Thebe",
+      "start": 1,
+      "error_scaled": 0.0015710328558782294
+    },
+    {
+      "case_index": 186,
+      "setting_id": "saturation_N_s_m3_0.5",
+      "condition": "Circular",
+      "start": 0,
+      "error_scaled": 0.002310283467636509
+    },
+    {
+      "case_index": 187,
+      "setting_id": "saturation_N_s_m3_0.5",
+      "condition": "Circular",
+      "start": 1,
+      "error_scaled": 0.0023144056502815147
+    },
+    {
+      "case_index": 188,
+      "setting_id": "saturation_N_s_m3_0.5",
+      "condition": "Pasiphae",
+      "start": 0,
+      "error_scaled": 0.001115867936732684
+    },
+    {
+      "case_index": 189,
+      "setting_id": "saturation_N_s_m3_0.5",
+      "condition": "Pasiphae",
+      "start": 1,
+      "error_scaled": 0.0011234087547506988
+    },
+    {
+      "case_index": 190,
+      "setting_id": "saturation_N_s_m3_0.5",
+      "condition": "Elara",
+      "start": 0,
+      "error_scaled": 0.0018852185536388788
+    },
+    {
+      "case_index": 191,
+      "setting_id": "saturation_N_s_m3_0.5",
+      "condition": "Elara",
+      "start": 1,
+      "error_scaled": 0.0018897964598068029
+    },
+    {
+      "case_index": 192,
+      "setting_id": "saturation_N_s_m3_0.5",
+      "condition": "Himalia",
+      "start": 0,
+      "error_scaled": 0.0020577727007093927
+    },
+    {
+      "case_index": 193,
+      "setting_id": "saturation_N_s_m3_0.5",
+      "condition": "Himalia",
+      "start": 1,
+      "error_scaled": 0.0020621592778979903
+    },
+    {
+      "case_index": 194,
+      "setting_id": "saturation_N_s_m3_0.5",
+      "condition": "Europa",
+      "start": 0,
+      "error_scaled": 0.0023094307157407457
+    },
+    {
+      "case_index": 195,
+      "setting_id": "saturation_N_s_m3_0.5",
+      "condition": "Europa",
+      "start": 1,
+      "error_scaled": 0.002313559727781467
+    },
+    {
+      "case_index": 196,
+      "setting_id": "saturation_N_s_m3_0.5",
+      "condition": "Callisto",
+      "start": 0,
+      "error_scaled": 0.002309766033931737
+    },
+    {
+      "case_index": 197,
+      "setting_id": "saturation_N_s_m3_0.5",
+      "condition": "Callisto",
+      "start": 1,
+      "error_scaled": 0.0023138934161579527
+    },
+    {
+      "case_index": 198,
+      "setting_id": "saturation_N_s_m3_0.5",
+      "condition": "Thebe",
+      "start": 0,
+      "error_scaled": 0.0023068926604423723
+    },
+    {
+      "case_index": 199,
+      "setting_id": "saturation_N_s_m3_0.5",
+      "condition": "Thebe",
+      "start": 1,
+      "error_scaled": 0.0023110291149350815
+    },
+    {
+      "case_index": 202,
+      "setting_id": "saturation_N_s_m3_2",
+      "condition": "Circular",
+      "start": 0,
+      "error_scaled": 0.0010296558402984601
+    },
+    {
+      "case_index": 203,
+      "setting_id": "saturation_N_s_m3_2",
+      "condition": "Circular",
+      "start": 1,
+      "error_scaled": 0.0010315933913886965
+    },
+    {
+      "case_index": 210,
+      "setting_id": "saturation_N_s_m3_2",
+      "condition": "Europa",
+      "start": 0,
+      "error_scaled": 0.0010291900768777396
+    },
+    {
+      "case_index": 211,
+      "setting_id": "saturation_N_s_m3_2",
+      "condition": "Europa",
+      "start": 1,
+      "error_scaled": 0.00103112969370045
+    },
+    {
+      "case_index": 212,
+      "setting_id": "saturation_N_s_m3_2",
+      "condition": "Callisto",
+      "start": 0,
+      "error_scaled": 0.0010293736056894431
+    },
+    {
+      "case_index": 213,
+      "setting_id": "saturation_N_s_m3_2",
+      "condition": "Callisto",
+      "start": 1,
+      "error_scaled": 0.001031312855275246
+    },
+    {
+      "case_index": 214,
+      "setting_id": "saturation_N_s_m3_2",
+      "condition": "Thebe",
+      "start": 0,
+      "error_scaled": 0.0010277982496234017
+    },
+    {
+      "case_index": 215,
+      "setting_id": "saturation_N_s_m3_2",
+      "condition": "Thebe",
+      "start": 1,
+      "error_scaled": 0.0010297399140739572
+    },
+    {
+      "case_index": 218,
+      "setting_id": "gain_N_s_m_0",
+      "condition": "Circular",
+      "start": 0,
+      "error_scaled": 0.0035590976635830884
+    },
+    {
+      "case_index": 219,
+      "setting_id": "gain_N_s_m_0",
+      "condition": "Circular",
+      "start": 1,
+      "error_scaled": 0.0035664858319250925
+    },
+    {
+      "case_index": 222,
+      "setting_id": "gain_N_s_m_0",
+      "condition": "Elara",
+      "start": 0,
+      "error_scaled": 0.002014850622117592
+    },
+    {
+      "case_index": 223,
+      "setting_id": "gain_N_s_m_0",
+      "condition": "Elara",
+      "start": 1,
+      "error_scaled": 0.0020205806022204342
+    },
+    {
+      "case_index": 224,
+      "setting_id": "gain_N_s_m_0",
+      "condition": "Himalia",
+      "start": 0,
+      "error_scaled": 0.002578761168706478
+    },
+    {
+      "case_index": 225,
+      "setting_id": "gain_N_s_m_0",
+      "condition": "Himalia",
+      "start": 1,
+      "error_scaled": 0.002585155707947706
+    },
+    {
+      "case_index": 226,
+      "setting_id": "gain_N_s_m_0",
+      "condition": "Europa",
+      "start": 0,
+      "error_scaled": 0.003555459078597778
+    },
+    {
+      "case_index": 227,
+      "setting_id": "gain_N_s_m_0",
+      "condition": "Europa",
+      "start": 1,
+      "error_scaled": 0.003562843977306329
+    },
+    {
+      "case_index": 228,
+      "setting_id": "gain_N_s_m_0",
+      "condition": "Callisto",
+      "start": 0,
+      "error_scaled": 0.0035568889925343683
+    },
+    {
+      "case_index": 229,
+      "setting_id": "gain_N_s_m_0",
+      "condition": "Callisto",
+      "start": 1,
+      "error_scaled": 0.0035642756006382115
+    },
+    {
+      "case_index": 230,
+      "setting_id": "gain_N_s_m_0",
+      "condition": "Thebe",
+      "start": 0,
+      "error_scaled": 0.003544639396295679
+    },
+    {
+      "case_index": 231,
+      "setting_id": "gain_N_s_m_0",
+      "condition": "Thebe",
+      "start": 1,
+      "error_scaled": 0.003552014630713529
+    },
+    {
+      "case_index": 296,
+      "setting_id": "gain_N_s_m_2",
+      "condition": "No orbit",
+      "start": 0,
+      "error_scaled": 0.0024516880704368305
+    },
+    {
+      "case_index": 297,
+      "setting_id": "gain_N_s_m_2",
+      "condition": "No orbit",
+      "start": 1,
+      "error_scaled": 0.0024559248728053262
+    },
+    {
+      "case_index": 298,
+      "setting_id": "gain_N_s_m_2",
+      "condition": "Circular",
+      "start": 0,
+      "error_scaled": 0.004223289360311355
+    },
+    {
+      "case_index": 299,
+      "setting_id": "gain_N_s_m_2",
+      "condition": "Circular",
+      "start": 1,
+      "error_scaled": 0.00422995698147588
+    },
+    {
+      "case_index": 300,
+      "setting_id": "gain_N_s_m_2",
+      "condition": "Pasiphae",
+      "start": 0,
+      "error_scaled": 0.002757313726533539
+    },
+    {
+      "case_index": 301,
+      "setting_id": "gain_N_s_m_2",
+      "condition": "Pasiphae",
+      "start": 1,
+      "error_scaled": 0.002777252133057573
+    },
+    {
+      "case_index": 302,
+      "setting_id": "gain_N_s_m_2",
+      "condition": "Elara",
+      "start": 0,
+      "error_scaled": 0.0037153843508690443
+    },
+    {
+      "case_index": 303,
+      "setting_id": "gain_N_s_m_2",
+      "condition": "Elara",
+      "start": 1,
+      "error_scaled": 0.00372390452395166
+    },
+    {
+      "case_index": 304,
+      "setting_id": "gain_N_s_m_2",
+      "condition": "Himalia",
+      "start": 0,
+      "error_scaled": 0.003923763585248707
+    },
+    {
+      "case_index": 305,
+      "setting_id": "gain_N_s_m_2",
+      "condition": "Himalia",
+      "start": 1,
+      "error_scaled": 0.003931444926479344
+    },
+    {
+      "case_index": 306,
+      "setting_id": "gain_N_s_m_2",
+      "condition": "Europa",
+      "start": 0,
+      "error_scaled": 0.0042222775925893075
+    },
+    {
+      "case_index": 307,
+      "setting_id": "gain_N_s_m_2",
+      "condition": "Europa",
+      "start": 1,
+      "error_scaled": 0.004228966488426522
+    },
+    {
+      "case_index": 308,
+      "setting_id": "gain_N_s_m_2",
+      "condition": "Callisto",
+      "start": 0,
+      "error_scaled": 0.004222673164633761
+    },
+    {
+      "case_index": 309,
+      "setting_id": "gain_N_s_m_2",
+      "condition": "Callisto",
+      "start": 1,
+      "error_scaled": 0.004229357229746711
+    },
+    {
+      "case_index": 310,
+      "setting_id": "gain_N_s_m_2",
+      "condition": "Thebe",
+      "start": 0,
+      "error_scaled": 0.004219289384991498
+    },
+    {
+      "case_index": 311,
+      "setting_id": "gain_N_s_m_2",
+      "condition": "Thebe",
+      "start": 1,
+      "error_scaled": 0.004226002824736952
+    },
+    {
+      "case_index": 394,
+      "setting_id": "joint_06",
+      "condition": "Circular",
+      "start": 0,
+      "error_scaled": 0.0012606751154180529
+    },
+    {
+      "case_index": 395,
+      "setting_id": "joint_06",
+      "condition": "Circular",
+      "start": 1,
+      "error_scaled": 0.001263158621455318
+    },
+    {
+      "case_index": 400,
+      "setting_id": "joint_06",
+      "condition": "Himalia",
+      "start": 0,
+      "error_scaled": 0.0010703267596170463
+    },
+    {
+      "case_index": 401,
+      "setting_id": "joint_06",
+      "condition": "Himalia",
+      "start": 1,
+      "error_scaled": 0.0010726784747987494
+    },
+    {
+      "case_index": 402,
+      "setting_id": "joint_06",
+      "condition": "Europa",
+      "start": 0,
+      "error_scaled": 0.0012600240863207546
+    },
+    {
+      "case_index": 403,
+      "setting_id": "joint_06",
+      "condition": "Europa",
+      "start": 1,
+      "error_scaled": 0.001262502074951044
+    },
+    {
+      "case_index": 404,
+      "setting_id": "joint_06",
+      "condition": "Callisto",
+      "start": 0,
+      "error_scaled": 0.001260282567884019
+    },
+    {
+      "case_index": 405,
+      "setting_id": "joint_06",
+      "condition": "Callisto",
+      "start": 1,
+      "error_scaled": 0.0012627617875153874
+    },
+    {
+      "case_index": 406,
+      "setting_id": "joint_06",
+      "condition": "Thebe",
+      "start": 0,
+      "error_scaled": 0.001258057921489808
+    },
+    {
+      "case_index": 407,
+      "setting_id": "joint_06",
+      "condition": "Thebe",
+      "start": 1,
+      "error_scaled": 0.0012605303164718862
+    },
+    {
+      "case_index": 426,
+      "setting_id": "joint_08",
+      "condition": "Circular",
+      "start": 0,
+      "error_scaled": 0.001711788711816098
+    },
+    {
+      "case_index": 427,
+      "setting_id": "joint_08",
+      "condition": "Circular",
+      "start": 1,
+      "error_scaled": 0.0017148764459875565
+    },
+    {
+      "case_index": 430,
+      "setting_id": "joint_08",
+      "condition": "Elara",
+      "start": 0,
+      "error_scaled": 0.0014054318680223332
+    },
+    {
+      "case_index": 431,
+      "setting_id": "joint_08",
+      "condition": "Elara",
+      "start": 1,
+      "error_scaled": 0.0014086722974866461
+    },
+    {
+      "case_index": 432,
+      "setting_id": "joint_08",
+      "condition": "Himalia",
+      "start": 0,
+      "error_scaled": 0.0015253651818056824
+    },
+    {
+      "case_index": 433,
+      "setting_id": "joint_08",
+      "condition": "Himalia",
+      "start": 1,
+      "error_scaled": 0.0015285234208022302
+    },
+    {
+      "case_index": 434,
+      "setting_id": "joint_08",
+      "condition": "Europa",
+      "start": 0,
+      "error_scaled": 0.001711145726005725
+    },
+    {
+      "case_index": 435,
+      "setting_id": "joint_08",
+      "condition": "Europa",
+      "start": 1,
+      "error_scaled": 0.0017142331111585918
+    },
+    {
+      "case_index": 436,
+      "setting_id": "joint_08",
+      "condition": "Callisto",
+      "start": 0,
+      "error_scaled": 0.0017113998291051757
+    },
+    {
+      "case_index": 437,
+      "setting_id": "joint_08",
+      "condition": "Callisto",
+      "start": 1,
+      "error_scaled": 0.0017144872610970197
+    },
+    {
+      "case_index": 438,
+      "setting_id": "joint_08",
+      "condition": "Thebe",
+      "start": 0,
+      "error_scaled": 0.0017092171391936972
+    },
+    {
+      "case_index": 439,
+      "setting_id": "joint_08",
+      "condition": "Thebe",
+      "start": 1,
+      "error_scaled": 0.0017123045259950231
+    },
+    {
+      "case_index": 442,
+      "setting_id": "joint_09",
+      "condition": "Circular",
+      "start": 0,
+      "error_scaled": 0.0010082963646027565
+    },
+    {
+      "case_index": 443,
+      "setting_id": "joint_09",
+      "condition": "Circular",
+      "start": 1,
+      "error_scaled": 0.0010102753064984427
+    },
+    {
+      "case_index": 450,
+      "setting_id": "joint_09",
+      "condition": "Europa",
+      "start": 0,
+      "error_scaled": 0.0010077887317265777
+    },
+    {
+      "case_index": 451,
+      "setting_id": "joint_09",
+      "condition": "Europa",
+      "start": 1,
+      "error_scaled": 0.001009766229088882
+    },
+    {
+      "case_index": 452,
+      "setting_id": "joint_09",
+      "condition": "Callisto",
+      "start": 0,
+      "error_scaled": 0.0010079895631633917
+    },
+    {
+      "case_index": 453,
+      "setting_id": "joint_09",
+      "condition": "Callisto",
+      "start": 1,
+      "error_scaled": 0.0010099673812078436
+    },
+    {
+      "case_index": 454,
+      "setting_id": "joint_09",
+      "condition": "Thebe",
+      "start": 0,
+      "error_scaled": 0.0010062633930090215
+    },
+    {
+      "case_index": 455,
+      "setting_id": "joint_09",
+      "condition": "Thebe",
+      "start": 1,
+      "error_scaled": 0.001008239435179803
+    },
+    {
+      "case_index": 458,
+      "setting_id": "joint_10",
+      "condition": "Circular",
+      "start": 0,
+      "error_scaled": 0.0015850815419184983
+    },
+    {
+      "case_index": 459,
+      "setting_id": "joint_10",
+      "condition": "Circular",
+      "start": 1,
+      "error_scaled": 0.0015880519666779946
+    },
+    {
+      "case_index": 462,
+      "setting_id": "joint_10",
+      "condition": "Elara",
+      "start": 0,
+      "error_scaled": 0.001260185695770133
+    },
+    {
+      "case_index": 463,
+      "setting_id": "joint_10",
+      "condition": "Elara",
+      "start": 1,
+      "error_scaled": 0.0012630565316271714
+    },
+    {
+      "case_index": 464,
+      "setting_id": "joint_10",
+      "condition": "Himalia",
+      "start": 0,
+      "error_scaled": 0.0013878830135354292
+    },
+    {
+      "case_index": 465,
+      "setting_id": "joint_10",
+      "condition": "Himalia",
+      "start": 1,
+      "error_scaled": 0.0013907735419707024
+    },
+    {
+      "case_index": 466,
+      "setting_id": "joint_10",
+      "condition": "Europa",
+      "start": 0,
+      "error_scaled": 0.0015844011990679974
+    },
+    {
+      "case_index": 467,
+      "setting_id": "joint_10",
+      "condition": "Europa",
+      "start": 1,
+      "error_scaled": 0.0015873659624503489
+    },
+    {
+      "case_index": 468,
+      "setting_id": "joint_10",
+      "condition": "Callisto",
+      "start": 0,
+      "error_scaled": 0.001584671253453962
+    },
+    {
+      "case_index": 469,
+      "setting_id": "joint_10",
+      "condition": "Callisto",
+      "start": 1,
+      "error_scaled": 0.001587637264890418
+    },
+    {
+      "case_index": 470,
+      "setting_id": "joint_10",
+      "condition": "Thebe",
+      "start": 0,
+      "error_scaled": 0.0015823474122953485
+    },
+    {
+      "case_index": 471,
+      "setting_id": "joint_10",
+      "condition": "Thebe",
+      "start": 1,
+      "error_scaled": 0.001585306692334143
+    },
+    {
+      "case_index": 538,
+      "setting_id": "joint_15",
+      "condition": "Circular",
+      "start": 0,
+      "error_scaled": 0.001128854708667859
+    },
+    {
+      "case_index": 539,
+      "setting_id": "joint_15",
+      "condition": "Circular",
+      "start": 1,
+      "error_scaled": 0.0011310410660030357
+    },
+    {
+      "case_index": 546,
+      "setting_id": "joint_15",
+      "condition": "Europa",
+      "start": 0,
+      "error_scaled": 0.0011281797426931917
+    },
+    {
+      "case_index": 547,
+      "setting_id": "joint_15",
+      "condition": "Europa",
+      "start": 1,
+      "error_scaled": 0.00113037227777113
+    },
+    {
+      "case_index": 548,
+      "setting_id": "joint_15",
+      "condition": "Callisto",
+      "start": 0,
+      "error_scaled": 0.0011284445746468919
+    },
+    {
+      "case_index": 549,
+      "setting_id": "joint_15",
+      "condition": "Callisto",
+      "start": 1,
+      "error_scaled": 0.001130635806759983
+    },
+    {
+      "case_index": 550,
+      "setting_id": "joint_15",
+      "condition": "Thebe",
+      "start": 0,
+      "error_scaled": 0.001126176303102966
+    },
+    {
+      "case_index": 551,
+      "setting_id": "joint_15",
+      "condition": "Thebe",
+      "start": 1,
+      "error_scaled": 0.001128374636607532
+    }
+  ],
+  "diagnostic": {
+    "case": "baseline Pasiphae, 4 s orbit, start 1",
+    "stored_node_error_scaled": 9.063398509479015e-06,
+    "between_node_error_scaled": 0.000309036934606155
+  }
+}

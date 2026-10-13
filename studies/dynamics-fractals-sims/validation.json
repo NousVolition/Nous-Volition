@@ -1,7 +1,7 @@
 {
   "python": "3.12.14",
   "platform": "Windows",
-  "automated_tests": 328,
+  "automated_tests": 352,
   "test_result": "passed",
   "sims_rounds": 15872,
   "binary_sims_rounds": 12800,
@@ -72,8 +72,8 @@
     "accuracy_gates": "passed",
     "full_reproduction": "passed"
   },
-  "figure_count": 33,
-  "figure_review": "Three simulated rhythm figures inspected; thirty earlier figures preserved.",
+  "figure_count": 36,
+  "figure_review": "Three Hug robustness figures inspected; all 33 earlier figures preserved.",
   "pending_source": "Figure 7.3.3 / Example 7.3.1 vector field absent; this specific case was not run.",
   "html_local_links": "verified",
   "html_browser_preview": "Unavailable: browser policy blocks local file URLs.",
@@ -164,5 +164,33 @@
     "maximum_prediction_rmse_mm": 7.533406038765661e-09,
     "limitations": "Same-model synthetic validation. Sensor noise only; fitting data remain noiseless. No physical Hug period established.",
     "reproduction": "Main trajectories run once; only three failed settlement controls rerun at the documented longer horizon. Full unit suite passed."
+  },
+  "fifteenth_batch_checks": {
+    "new_tests": 24,
+    "parameter_settings": 35,
+    "trajectories_per_resolution": 568,
+    "step_resolutions": 2,
+    "pairs": 284,
+    "independent_Radau_segments": 46,
+    "physical_measurements": 0,
+    "additional_sims_runs": 0,
+    "accuracy_gates": {
+      "all_trajectories_finite": true,
+      "energy_balance": true,
+      "refined_period": true,
+      "refined_amplitude": true,
+      "classification_step_agreement": true,
+      "independent_solver": true
+    },
+    "outcomes": {
+      "self_sustained": 32,
+      "orbit_locked": 147,
+      "no_short_repeat": 102,
+      "rest": 2,
+      "unsettled": 1
+    },
+    "maximum_energy_error_scaled": 0.00028128958098250223,
+    "maximum_independent_solver_error_scaled": 2.796419067696565e-06,
+    "limitations": "Finite deterministic parameter sweep of the existing synthetic active Hug. One parameter at a time and 16 reproducible joint perturbations are sensitivity scenarios, not probabilities or measured uncertainty. Mass, geometry, controller delay, force RMS and model form remain fixed. Orbit periods are chosen simulation inputs, not astronomical periods. A finite-time nonrepeat is not a diagnosis of chaos. No physical measurements or additional SIMS participants."
   }
 }
