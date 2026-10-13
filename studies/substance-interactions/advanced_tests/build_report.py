@@ -1,0 +1,79 @@
+"""Build both reading formats from saved results; no simulation or network calls."""
+from pathlib import Path
+import csv,json,html,re
+ROOT=Path(__file__).resolve().parent
+S=json.loads((ROOT/'results/summary.json').read_text())
+V=json.loads((ROOT/'results/surface_summary.json').read_text())
+def rows(name):
+    with (ROOT/'results'/name).open(encoding='utf-8') as f:return list(csv.DictReader(f))
+def inline(t):
+    t=html.escape(str(t))
+    t=re.sub(r'\[([^]]+)\]\(([^)]+)\)',r'<a href="\2">\1</a>',t)
+    t=re.sub(r'\*\*([^*]+)\*\*',r'<strong>\1</strong>',t)
+    return re.sub(r'`([^`]+)`',r'<code>\1</code>',t)
+md=[];ht=[]
+def heading(t,level=2):md.append('#'*level+' '+t);ht.append(f'<h{level}>{inline(t)}</h{level}>')
+def para(t):md.append(t);ht.append('<p>'+inline(t)+'</p>')
+def table(headers,data):
+    md.append('\n'.join(['| '+' | '.join(headers)+' |','| '+' | '.join(['---']*len(headers))+' |']+['| '+' | '.join(map(str,r))+' |' for r in data]))
+    ht.append('<div class="scroll"><table><thead><tr>'+''.join('<th>'+inline(x)+'</th>' for x in headers)+'</tr></thead><tbody>'+''.join('<tr>'+''.join('<td>'+inline(x)+'</td>' for x in row)+'</tr>' for row in data)+'</tbody></table></div>')
+def figure(name,caption):
+    md.extend([f'![{caption}](results/{name}.png)',caption]);ht.append(f'<figure><img src="results/{name}.png" alt="{html.escape(caption)}"><figcaption>{inline(caption)}</figcaption></figure>')
+def commands(t):md.append('```sh\n'+t+'\n```');ht.append('<pre>'+html.escape(t)+'</pre>')
+
+heading('Substance study: transport, kinetics and evidence audit',1)
+para('Completed computational batch • 13 October 2026 • Streams and Rocks / Nous Volition')
+para('**The falling-droplet candidate is substantially closer to the published collection data, and the new liquid-diffusion and carbonate solvers pass their numerical checks. Experimental validation remains incomplete.** This report separates completed calculations, measured input data and unresolved evidence across the six requested extensions.')
+para('Read the [methods and assumptions](METHODS.md), [source provenance](references.json), [six-item evidence register](evidence_gaps.csv), [saved-result verification](verification.json), or [previous study](https://github.com/NousVolition/Nous-Volition/tree/main/studies/substance-interactions). The original interaction matrix and equation appendix remain in the parent study.')
+heading('What ran')
+table(['Module','Completed calculations','Status'],[
+ ['Falling-droplet collection','18 measured settings × 4 seeds × 4,096 paths; 12 controls × 4 seeds; separate 4,096-path low-Re pilot','Improved candidate; not validated for smoke'],
+ ['Evolving fog','12 species/RH cases, 8 grid/analytic cases, 7 sensitivity cases','Conservative resolved diffusion; matched uptake/evaporation measurements still needed'],
+ ['CO₂ / carbonate','4 alkalinities, 7 controls/sensitivities, 3 step checks','Published reversible rates; no independent transient-data comparison'],
+ ['H₂O₂ / MnO₂','4 specified-condition rate curves and 2 source-figure checks','Source consistency failed; conditional audit only'],
+ ['VOC surfaces and ice','9 transcribed surface coefficients; 46 loading cases; 21 ice endpoint cases','Condition-specific equilibrium and ice endpoint models'],
+ ['Charge / near contact','3 theoretical charge distributions, 7 relaxation scenarios, 4 positive-gap approach cases','No measured smoke charge distribution or collision/coalescence prediction']])
+para('**34 new unit tests passed** (28 transport/kinetics tests and 6 surface tests). Saved-result audits are reported separately. The substance-study collection now contains 137 unit tests across its three batches, plus 8 historical water-data checks; the older 103 unit tests and 8 water checks were not rerun in this batch. The 495,616 particle paths are model samples, not experimental observations.')
+heading('1. Falling droplets: a large improvement with remaining model error')
+f=S['falling']; ratios=(f['predicted_over_observed_min'],f['predicted_over_observed_max'])
+para(f'Against 18 sodium-fluorescein collection measurements at 71.1%, 82.4% and 93.5% RH, the candidate predicts {ratios[0]:.3f}–{ratios[1]:.3f} times the measured central values: approximately {(1-ratios[1])*100:.1f}–{(1-ratios[0])*100:.1f}% low. Median multiplicative error is **{f["median_factor_error"]:.3f}**, compared with 141.4 for the earlier diffusion-only closure. These observations were not fitted, but they already informed the decision to change the model; they are not untouched model-selection holdouts.')
+para('The model uses flow around a falling sphere, thermal/vapor-gradient forces, Brownian diffusion and finite-particle interception. The comparison uses the published droplet sizes and temperatures, assumed speed 0.25 m/s and pressure 101,325 Pa. Full measured settings are in [measured_collection.json](measured_collection.json); model constants are in [METHODS.md](METHODS.md).')
+figure('falling_capture','Published central values and candidate estimates. Error bars cover four-seed sampling uncertainty only; measurement uncertainty is not included.')
+ctl={r['case']:r for r in f['controls']}
+para(f'At the control setting, removing phoresis changes collection efficiency from {ctl["nominal"]["mean_CE"]:.5f} to {ctl["no_phoresis"]["mean_CE"]:.5f}. Halving the step changes the mean to {ctl["half_step"]["mean_CE"]:.5f}; the stochastic refinement is noise-limited. Overlapping intervals do not prove convergence. Wider injection and farther boundary controls are also saved in [capture_control_summary.csv](results/capture_control_summary.csv).')
+para('**Smoke validation remains open.** Reynolds numbers are about 1.8–1.9, outside the strict creeping-flow regime used here. Finite-Re flow, flow-distorted vapor/temperature fields, first-passage errors, aerosol material properties and sticking must be resolved. Crossing the absorbing interception boundary counts as capture by assumption, not demonstrated coalescence. [Source: Dépée et al., Part I](https://doi.org/10.5194/acp-21-6945-2021).')
+heading('2. Liquid diffusion: resolved transport changes the fog prediction')
+r=S['radial']['H2O2_RH90']
+para(f'At 298.15 K, initial radius 10 μm, liquid water content 0.5 g/m³, 1 atm and 90% RH, the droplet reaches the 2 μm cutoff at **{float(r["end_s"]):.3f} s**. The resolved model leaves **{100*float(r["final_liquid_fraction"]):.3f}%** of the initial H₂O₂ inventory in liquid, versus **{100*float(r["old_film_final_fraction"]):.3f}%** in the old film approximation. Peak liquid uptake is {100*float(r["peak_liquid_fraction"]):.2f}%. This module models partition and diffusion, with no H₂O₂ reaction.')
+co=next(x for x in rows('radial_cases.csv') if x['species']=='CO' and x['RH']=='0.9')
+para(f'CO remains weakly dissolved: {100*float(co["final_liquid_fraction"]):.3g}% of its initial inventory remains in liquid at that cutoff. Maximum gas-plus-liquid inventory residual over the 12 main cases is {S["radial"]["max_mass_residual"]:.2g}. Water thermal balance is quasisteady and externally maintained gas temperature is assumed; this is not a fully closed energy calculation.')
+figure('radial_diffusion','Moving-shell uptake, small internal gradients at 90% RH, analytic sphere refinement and an acetone accommodation sensitivity. The +1 axis offset denotes concentrations close to a uniform mean.')
+para('The fixed-sphere benchmark approaches second-order grid convergence. For the moving H₂O₂ case, 40 versus 160 cells changes the final inventory fraction by about 7.1×10⁻⁸. Independent measurement validation is still absent: the recovered acetone uptake conditions use 10 kPa helium and suppressed evaporation, unlike these air/fog cases. A related water-profile repository contains simulations, not experimental traces. [Acetone uptake source](https://doi.org/10.1039/B313474A); [candidate evaporation measurements](https://doi.org/10.1021/acs.jpcb.2c08909).')
+heading('3. CO₂ chemistry: alkalinity changes both the endpoint and the transient')
+para('A closed liquid starts with 0.2 mmol/L dissolved CO₂ at 25 °C. Reversible hydration/dehydration and hydroxide routes use published forward/reverse rates. Proton-transfer equilibria are resolved at each kinetic step at fixed alkalinity. There is no gas-transfer process in this separate module. CO and CO₂ are different chemical species.')
+table(['Alkalinity (mmol/L)','Initial pH','Final pH','Time to 95% of final hydrated pool (s)'],[
+ [f'{float(x["alkalinity_mol_L"])*1000:.2f}',f'{float(x["pH_initial"]):.3f}',f'{float(x["pH_final"]):.3f}',f'{float(x["t95_hydration_s"]):.3f}'] for x in S['carbonate']['nominal']])
+figure('carbonate_kinetics','Published-rate CO₂ transients with specified alkalinity; hydrated carbon includes H₂CO₃, bicarbonate and carbonate, excluding CO₂(aq).')
+para(f'Carbon conservation residual is at most {S["carbonate"]["max_carbon_error"]:.2g}. Detailed balance, an analytic fixed-pH limit, no-reaction controls and step refinement pass. Published rate inputs do not independently validate these calculated pH transients. Matching stopped-flow data, buffers/indicators and activities remain needed. [Wang et al. (2010)](https://doi.org/10.1021/jp909019u).')
+heading('4. Specified peroxide catalyst: a failed source audit')
+para('The selected source specifies water/NaOH-washed Merck MnO₂, BET area 6.5 m²/g, loading 0.333 g/L, temperature 303.15 K, initial H₂O₂ 0.020 mol/L, dark stirred water and HCl/NH₄OH-adjusted pH. Four unambiguous aqueous Table 1 rates were tested at pH 3, 5, 8 and 10. Hydrogen/oxygen atom accounting and the analytic exponential agree numerically.')
+para('**The source does not pass its own table-versus-figure comparison.** At pH 3, the tabulated 0.009 min⁻¹ predicts 4.4% decomposition after 5 minutes, while a coarse Figure 4 reading is roughly 45% (±5 percentage points reading tolerance, not measurement uncertainty). The 30-minute comparison also disagrees. These curves are retained as an auditable rejected candidate, not an accepted decomposition prediction. Generic water and smoke still have no assigned catalytic rate. [Akhtar et al. (2012)](https://jcsp.org.pk/ArticleUpload/4144-20045-1-CE.pdf).')
+figure('source_constraints','Left: conditional tabulated-rate curves fail the peroxide source check. Right: acetone on ice compares aging endpoints, not a calibrated aging timeline.')
+heading('5. VOCs: material-specific data, with explicit temperature and aging limits')
+para(f'Nine measured partition-coefficient rows were recovered from [Roth et al. supporting Tables S2/S3](https://acs.figshare.com/articles/journal_contribution/3270178). At 15 °C and 50% RH, acetone K is **{V["soot_acetone_K_m"]:.3g} m³/m²** on diesel soot and **{V["tunnel_acetone_K_m3_gOC"]:.3g} m³/g organic carbon** on mixed road-tunnel aerosol. The units represent different normalizations and cannot be compared as identical coefficients. Forty-six closed-inventory equilibrium scenarios were run; source log-error bounds are included in the CSV.')
+figure('surface_partition','Equilibrium loading scenarios use measured coefficients on specified samples. Mixed road-tunnel aerosol is not treated as pure organic material.')
+para(f'The measured ethanol-soot coefficient at 70% RH is {V["ethanol_soot_K_RH70_over_RH50"]:.3f} times its 50% RH value. No extrapolation to other temperatures or arbitrary humidities is allowed by the code. Isopropanol is included as an additional measured species; it is not isoprene. Isoprene sorption rates and soot-aging laws remain unparameterized.')
+para('For acetone on vapor-deposited ice, the 190–220 K model compares a fresh-site upper bound with an aged endpoint retaining only the second site type. At 200 K and gas density 10¹⁰ molecules/cm³, the fresh upper-bound coverage is 8.18 times the aged coverage. There is no calibrated aging clock, no extrapolation to room temperature and no claim for all ice surfaces. [Behr et al. (2006)](https://doi.org/10.1021/jp0563742).')
+heading('6. Charge and near contact: distinguish charge redistribution, loss and collision')
+para('The calculated bipolar charge distributions are theoretical scenarios for 50, 100 and 200 nm radii. They are not measured smoke histograms. Internal electrical relaxation redistributes charge within a droplet; it cannot by itself remove an isolated droplet’s net charge. Charge loss is calculated separately only when an external conducting ambient is specified.')
+figure('charge_and_contact','Charge scenarios and a separate positive-gap hydrodynamic diagnostic. No actual contact or coalescence is simulated.')
+para('For two 10 μm immobilized spheres under a constant 1 pN inward test force, adding leading lubrication resistance increases the time to narrow a 10 μm gap to 1 μm from 0.01561 s to 0.03557 s, a factor of 2.28. The analytic quadrature agrees numerically. The additive drag interpolation is approximate; the smallest stop gap is 0.67 μm. This is neither a complete pair-mobility solution nor a near-contact electrostatic force model. Measured charges, ion attachment, polarization, rarefied lubrication and liquid-film rupture remain necessary before predicting coalescence. Collective electrostatics, buoyancy and turbulence remain separate work.')
+heading('Reproduce and inspect')
+para('Use Python 3.12. The recorded environment used Python 3.12.14, NumPy 2.5.3, SciPy 1.18.1 and Matplotlib 3.11.2. All inputs needed for these computations are packaged; no downloads or service calls occur in the simulations. Run from this directory:')
+commands('python -m pip install -r requirements.txt\npython test_advanced.py\npython -m unittest surface_partition -v\npython run_advanced.py\npython surface_partition.py\npython build_report.py\npython verify_package.py --refresh-manifest')
+para('To inspect the delivered snapshot without rerunning the particle simulations, use `python verify_package.py`. The first long run saved all numerical results before a NumPy-boolean JSON serialization error; the repaired finalizer rebuilt its summary from the saved CSVs. [Original failure log](initial_serialization_failure.txt) and [successful finalization log](finalization_log.txt) are retained with machine paths removed. Input hashes identify the repaired driver used to finalize the package.')
+para('Numerical checks, literature parameters and agreement with experimental observations answer different questions. The open items are recorded in [evidence_gaps.csv](evidence_gaps.csv). No hazardous substances were generated, no exposure tests were proposed, and no new Navier–Stokes law is claimed.')
+(ROOT/'README.md').write_text('\n\n'.join(md)+'\n',encoding='utf-8')
+css='''body{margin:0;background:#f4f7f8;color:#21303a;font:17px/1.65 system-ui,sans-serif}main{max-width:1120px;margin:32px auto;padding:40px;background:white;border-radius:12px}h1{font-size:2.1rem;line-height:1.2}h2{margin-top:2.4em;color:#155d70;font-size:1.45rem}a{color:#087186}p{max-width:100ch}strong{color:#142f3a}table{border-collapse:collapse;width:100%;font-size:.9rem}th,td{padding:12px;text-align:left;border-bottom:1px solid #dce4e6;vertical-align:top}th{background:#edf4f5}.scroll{overflow-x:auto}figure{margin:28px 0}img{width:100%;height:auto}figcaption{font-size:.87rem;color:#526571}pre{overflow:auto;background:#edf3f5;padding:20px;border-radius:8px;font-size:.86rem}code{font-size:.88em} @media(max-width:700px){main{margin:0;padding:20px}body{font-size:16px}}'''
+(ROOT/'report.html').write_text('<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Substance study — transport and evidence</title><style>'+css+'</style><main>'+''.join(ht)+'</main></html>',encoding='utf-8')
+print('Built README.md and report.html from saved results.')

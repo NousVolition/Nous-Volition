@@ -1,0 +1,33 @@
+test_alkalinity (__main__.CarbonateTests.test_alkalinity) ... ok
+test_carbon_conserved_and_pool_accounted (__main__.CarbonateTests.test_carbon_conserved_and_pool_accounted) ... ok
+test_detailed_balance (__main__.CarbonateTests.test_detailed_balance) ... ok
+test_equilibrium_stationarity (__main__.CarbonateTests.test_equilibrium_stationarity) ... ok
+test_fixed_pH_analytic (__main__.CarbonateTests.test_fixed_pH_analytic) ... ok
+test_no_reaction_control (__main__.CarbonateTests.test_no_reaction_control) ... ok
+test_true_pka_matches_published_rounding (__main__.CarbonateTests.test_true_pka_matches_published_rounding) ... ok
+test_divergence_free (__main__.FallingTests.test_divergence_free) ... ok
+test_far_flow (__main__.FallingTests.test_far_flow) ... ok
+test_no_slip (__main__.FallingTests.test_no_slip) ... ok
+test_phoresis_saturation (__main__.FallingTests.test_phoresis_saturation) ... ok
+test_phoretic_directions (__main__.FallingTests.test_phoretic_directions) ... ok
+test_streamline_interception_analytic (__main__.FallingTests.test_streamline_interception_analytic) ... ok
+test_charge_distribution (__main__.OtherTests.test_charge_distribution) ... ok
+test_charge_tail (__main__.OtherTests.test_charge_tail) ... ok
+test_ice_aged_upper_bound (__main__.OtherTests.test_ice_aged_upper_bound) ... ok
+test_ice_guard (__main__.OtherTests.test_ice_guard) ... ok
+test_ice_kinetic_equilibrium (__main__.OtherTests.test_ice_kinetic_equilibrium) ... ok
+test_lubrication_quadrature (__main__.OtherTests.test_lubrication_quadrature) ... ok
+test_no_arbitrary_peroxide_pH (__main__.OtherTests.test_no_arbitrary_peroxide_pH) ... ok
+test_peroxide_analytic (__main__.OtherTests.test_peroxide_analytic) ... ok
+test_peroxide_atoms (__main__.OtherTests.test_peroxide_atoms) ... ok
+test_closed_mass (__main__.RadialTests.test_closed_mass) ... ok
+test_fixed_geometry_Henry_equilibrium (__main__.RadialTests.test_fixed_geometry_Henry_equilibrium) ... ok
+test_liquid_uniformity_at_equilibrium (__main__.RadialTests.test_liquid_uniformity_at_equilibrium) ... ok
+test_nonvolatile_receding_boundary (__main__.RadialTests.test_nonvolatile_receding_boundary) ... ok
+test_sphere_grid_convergence (__main__.RadialTests.test_sphere_grid_convergence) ... ok
+test_zero_exchange_empty_drop (__main__.RadialTests.test_zero_exchange_empty_drop) ... ok
+
+----------------------------------------------------------------------
+Ran 28 tests in 9.796s
+
+OK

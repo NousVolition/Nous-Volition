@@ -1,0 +1,11 @@
+test_RH_guard (surface_partition.SurfaceTests.test_RH_guard) ... ok
+test_T_guard (surface_partition.SurfaceTests.test_T_guard) ... ok
+test_empty_surface (surface_partition.SurfaceTests.test_empty_surface) ... ok
+test_half_partition (surface_partition.SurfaceTests.test_half_partition) ... ok
+test_mass (surface_partition.SurfaceTests.test_mass) ... ok
+test_normalization_guard (surface_partition.SurfaceTests.test_normalization_guard) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.005s
+
+OK

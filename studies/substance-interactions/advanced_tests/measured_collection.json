@@ -1,0 +1,14 @@
+{
+  "source": "Depee et al. (2021), Part I, Table 3, https://doi.org/10.5194/acp-21-6945-2021",
+  "license": "CC BY 4.0; numerical table transcribed, not a reproduced figure",
+  "retrieved_date": "2026-10-13",
+  "material": "Sodium fluorescein aerosol; not chemically representative of all smoke",
+  "pressure_Pa": 101325,
+  "speed_m_s_approximate": 0.25,
+  "notes": "CE is collected aerosol divided by the aerosol in the swept droplet volume. RH 93.5% is confirmed by section 4.2 and Figure 10; PDF text extraction drops the leading 9 in that Table 3 header. Values are central estimates; per-point error bars are not tabulated here and no statistical significance or chi-square is calculated. Each row index pairs the same dry-size selection across humidity columns; measured wet radii differ.",
+  "groups": [
+    {"RH_percent": 93.5, "T_K": 274.35, "drop_radius_um": 48.8, "wet_radius_nm": [79,119,154,235,314,393], "CE": [0.00392,0.00298,0.00317,0.00248,0.00218,0.00193]},
+    {"RH_percent": 82.4, "T_K": 273.42, "drop_radius_um": 50.8, "wet_radius_nm": [64,96,125,191,254,318], "CE": [0.00715,0.00552,0.00516,0.00520,0.00469,0.00451]},
+    {"RH_percent": 71.1, "T_K": 273.41, "drop_radius_um": 49.3, "wet_radius_nm": [58,88,114,174,232,290], "CE": [0.0118,0.0112,0.00894,0.00850,0.00731,0.00732]}
+  ]
+}

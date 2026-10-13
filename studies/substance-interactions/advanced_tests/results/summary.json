@@ -1,0 +1,191 @@
+{
+  "status": "Numerical batch complete; validation gaps remain",
+  "unit_tests": 28,
+  "surface_unit_tests": 6,
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "falling": {
+    "main_ensembles": 72,
+    "main_paths": 294912,
+    "control_ensembles": 48,
+    "control_paths": 196608,
+    "low_Re_pilot_paths": 4096,
+    "predicted_over_observed_min": 0.6822781596588728,
+    "predicted_over_observed_max": 0.9117255323295718,
+    "median_factor_error": 1.2125983589400944,
+    "max_censored_main": 0.0,
+    "controls": [
+      {
+        "case": "nominal",
+        "mean_CE": 0.005398238490361269,
+        "seed_t_halfwidth": 0.0004206052859184717,
+        "maximum_censored_bound": 0.0
+      },
+      {
+        "case": "half_step",
+        "mean_CE": 0.004987111858956666,
+        "seed_t_halfwidth": 0.000326781004677766,
+        "maximum_censored_bound": 0.0
+      },
+      {
+        "case": "double_step",
+        "mean_CE": 0.004933489095035225,
+        "seed_t_halfwidth": 0.00016090437678059364,
+        "maximum_censored_bound": 0.0
+      },
+      {
+        "case": "wide_disk",
+        "mean_CE": 0.005076490993560491,
+        "seed_t_halfwidth": 0.0017179253640563106,
+        "maximum_censored_bound": 0.0
+      },
+      {
+        "case": "distant_planes",
+        "mean_CE": 0.005058548503591406,
+        "seed_t_halfwidth": 0.0009736645528372137,
+        "maximum_censored_bound": 0.0
+      },
+      {
+        "case": "long_time",
+        "mean_CE": 0.005398238490361269,
+        "seed_t_halfwidth": 0.0004206052859184717,
+        "maximum_censored_bound": 0.0
+      },
+      {
+        "case": "no_phoresis",
+        "mean_CE": 0.0018231935287756449,
+        "seed_t_halfwidth": 0.0003284201420893959,
+        "maximum_censored_bound": 0.0
+      },
+      {
+        "case": "no_Brownian",
+        "mean_CE": 0.004772581377482973,
+        "seed_t_halfwidth": 5.6886241022812355e-05,
+        "maximum_censored_bound": 0.0
+      },
+      {
+        "case": "point_interception",
+        "mean_CE": 0.005183745755753907,
+        "seed_t_halfwidth": 0.000619696184347491,
+        "maximum_censored_bound": 0.0
+      },
+      {
+        "case": "ventilation_1p2",
+        "mean_CE": 0.0062384108679740214,
+        "seed_t_halfwidth": 0.0010276549910913859,
+        "maximum_censored_bound": 0.0
+      },
+      {
+        "case": "U_0p2",
+        "mean_CE": 0.006792557677961909,
+        "seed_t_halfwidth": 0.0005801507096931745,
+        "maximum_censored_bound": 0.0
+      },
+      {
+        "case": "U_0p3",
+        "mean_CE": 0.004540217895162518,
+        "seed_t_halfwidth": 0.0005130318673303829,
+        "maximum_censored_bound": 0.0
+      }
+    ],
+    "validated_for_smoke": false
+  },
+  "radial": {
+    "main_cases": 12,
+    "refinement_cases": 8,
+    "sensitivity_cases": 7,
+    "max_mass_residual": 4.4786396813378815e-13,
+    "H2O2_RH90": {
+      "species": "H2O2",
+      "T_K": "298.15",
+      "RH": "0.9",
+      "A0_um": "10.0",
+      "cells": "40",
+      "Dl_m2_s": "2e-09",
+      "alpha": "1.0",
+      "end_s": "3.7974008247017843",
+      "final_radius_um": "2.000000000000001",
+      "peak_liquid_fraction": "0.2681876972981354",
+      "final_liquid_fraction": "0.05638361998352419",
+      "old_film_final_fraction": "0.05281432967587125",
+      "mass_residual": "4.2588155224621005e-13",
+      "transfer_audit": "4.264107513266002e-13"
+    },
+    "independent_uptake_validation": false,
+    "independent_evaporation_validation": false
+  },
+  "carbonate": {
+    "cases": 11,
+    "refinement_cases": 3,
+    "max_carbon_error": 2.032879073410321e-15,
+    "nominal": [
+      {
+        "alkalinity_mol_L": "0.0",
+        "carbon_mol_L": "0.0002",
+        "T_K": "298.15",
+        "water_scale": "1.0",
+        "oh_scale": "1.0",
+        "pH_initial": "7.0",
+        "pH_final": "5.117843506424322",
+        "t95_hydration_s": "2.023379450000417",
+        "hydrated_fraction": "0.03954382952553841",
+        "carbon_error": "8.131516293641283e-16"
+      },
+      {
+        "alkalinity_mol_L": "5e-05",
+        "carbon_mol_L": "0.0002",
+        "T_K": "298.15",
+        "water_scale": "1.0",
+        "oh_scale": "1.0",
+        "pH_initial": "9.698971741503527",
+        "pH_final": "6.052813218163355",
+        "t95_hydration_s": "1.353279609836698",
+        "hydrated_fraction": "0.2554683745446757",
+        "carbon_error": "1.0842021724855044e-15"
+      },
+      {
+        "alkalinity_mol_L": "0.0001",
+        "carbon_mol_L": "0.0002",
+        "T_K": "298.15",
+        "water_scale": "1.0",
+        "oh_scale": "1.0",
+        "pH_initial": "10.000000434293847",
+        "pH_final": "6.522040852481826",
+        "t95_hydration_s": "2.055468959057213",
+        "hydrated_fraction": "0.5020015436068348",
+        "carbon_error": "1.0842021724855044e-15"
+      },
+      {
+        "alkalinity_mol_L": "0.0002",
+        "carbon_mol_L": "0.0002",
+        "T_K": "298.15",
+        "water_scale": "1.0",
+        "oh_scale": "1.0",
+        "pH_initial": "10.301030104237562",
+        "pH_final": "8.264454368511155",
+        "t95_hydration_s": "8.235014397748145",
+        "hydrated_fraction": "0.9824847662145783",
+        "carbon_error": "2.032879073410321e-15"
+      }
+    ],
+    "independent_transient_validation": false
+  },
+  "peroxide": {
+    "rate_audit_curves": 4,
+    "accepted_predictive_model": false,
+    "source_consistency_pass": false
+  },
+  "ice": {
+    "endpoint_cases": 21,
+    "calibrated_aging_clock": false
+  },
+  "charge": {
+    "measured_smoke_charge_distribution": false,
+    "coalescence_simulated": false
+  },
+  "serialization_recovery_note": "Initial run completed all numerical CSVs and trajectories, then failed on a NumPy boolean during JSON summary serialization. Summary is now rebuilt from saved CSVs; the original failure log is retained."
+}

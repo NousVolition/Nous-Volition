@@ -1,0 +1,60 @@
+Carbonate done
+Radial RH 0.5 done
+Radial RH 0.9 done
+Radial RH 0.99 done
+Capture RH 93.5 size 79nm CE=0.0033068
+Capture RH 93.5 size 119nm CE=0.0027169
+Capture RH 93.5 size 154nm CE=0.0021628
+Capture RH 93.5 size 235nm CE=0.0018232
+Capture RH 93.5 size 314nm CE=0.0016623
+Capture RH 93.5 size 393nm CE=0.0013585
+Capture RH 82.4 size 64nm CE=0.0056843
+Capture RH 82.4 size 96nm CE=0.0047011
+Capture RH 82.4 size 125nm CE=0.004576
+Capture RH 82.4 size 191nm CE=0.0042721
+Capture RH 82.4 size 254nm CE=0.0040218
+Capture RH 82.4 size 318nm CE=0.0034498
+Capture RH 71.1 size 58nm CE=0.0087412
+Capture RH 71.1 size 88nm CE=0.0080797
+Capture RH 71.1 size 114nm CE=0.0076149
+Capture RH 71.1 size 174nm CE=0.0070428
+Capture RH 71.1 size 232nm CE=0.0065959
+Capture RH 71.1 size 290nm CE=0.0060596
+Capture control nominal
+Capture control half_step
+Capture control double_step
+Capture control wide_disk
+Capture control distant_planes
+Capture control long_time
+Capture control no_phoresis
+Capture control no_Brownian
+Capture control point_interception
+Capture control ventilation_1p2
+Capture control U_0p2
+Capture control U_0p3
+Traceback (most recent call last):
+  File "<workspace>\outputs\advanced_tests\run_advanced.py", line 230, in <module>
+    (OUT/'summary.json').write_text(json.dumps(SUMMARY,indent=2),encoding='utf-8')
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<python-runtime>\Lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "<python-runtime>\Lib\json\encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "<python-runtime>\Lib\json\encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "<python-runtime>\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "<python-runtime>\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "<python-runtime>\Lib\json\encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "<python-runtime>\Lib\json\encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "<python-runtime>\Lib\json\encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "<python-runtime>\Lib\json\encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool is not JSON serializable

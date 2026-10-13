@@ -10,6 +10,8 @@ This repository, **Streams and Rocks**, preserves the original stream-function r
 
 **[New substance follow-up: evaporation, polarization and measured capture](studies/substance-interactions/followup_tests/README.md).** Adds 29 tests and independent published-data comparisons. The earlier diffusion-only capture model underpredicts the tested measurements by factors 40–447. A [family/community guide](studies/substance-interactions/followup_tests/COMMUNITY.md) develops the proposed Water, Fog, Mist, Gas, Smoke, Clay and Ice roles alongside the existing SIMS work.
 
+**[Substance extensions: falling droplets, internal diffusion, carbonate kinetics and surface data](studies/substance-interactions/advanced_tests/README.md).** Adds 34 passing unit tests and 44 saved-result audits. The new falling-droplet candidate is 9–32% below 18 measured central values, substantially improving on the failed closure; smoke validation remains open. Includes specified-alkalinity CO₂ transients, recovered VOC partition data, ice-aging endpoints, and a retained failed peroxide-source audit.
+
 ## Mechanisms, switching and memory
 
 **[Open the completed spring and chemical-feedback study](studies/mechanisms-switching-memory/README.md).** Eighteen verification tests and 168 seeded simulations test spring hysteresis, pulse thresholds, maintained activity, finite fuel and controls. Source, figures, saved trajectories and numerical results are included. The biochemical rates are explicitly hypothetical; this does not establish new reactions or forces for the original substances.

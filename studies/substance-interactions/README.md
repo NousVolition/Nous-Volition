@@ -2,13 +2,21 @@
 
 Earlier completed work from the same research chat, now published in **Streams and Rocks**. This collection preserves the numerical data, figures, tests, conditions, references and explicit limitations. It complements [the switching and memory study](../mechanisms-switching-memory/README.md).
 
+## Transport, kinetics and surface-data extensions
+
+**[Read the six-item extension and evidence audit](advanced_tests/README.md)** or [open its illustrated report](advanced_tests/report.html). This batch adds 34 passing unit tests, 44 saved-result audits, resolved liquid diffusion, published reversible CO₂ kinetics, specific VOC surface data and a falling-droplet capture candidate. Across 18 measured settings, central capture predictions are 9–32% low rather than the earlier factors of 40–447 low. Finite-Reynolds-number flow and material-specific evidence are still needed before smoke validation.
+
+The peroxide source fails a table-versus-figure audit, so its conditional curves are not accepted predictions. Matched fog uptake/evaporation validation, measured smoke charge distributions, sorption-aging rates and coalescence remain open. See the [six-item evidence register](advanced_tests/evidence_gaps.csv) and [methods](advanced_tests/METHODS.md).
+
+The three substance batches now contain 137 unit tests, plus 8 historical water-data checks. Only the new 34 unit tests and 44 saved-result audits were run for this extension; older test counts remain historical.
+
 ## Completed follow-up tests
 
 **[Evaporation, polarization and published capture measurements](followup_tests/README.md)** adds 29 passing unit tests, 108 main fog scenarios, 21,504 main Brownian paths, step refinements and 18 published measurement comparisons. Evaporating fog releases part of previously absorbed gas; the conducting-sphere model adds charged-neutral polarization attraction. The old diffusion-only capture kernel underpredicts the tested falling-droplet measurements by factors 40–447, exposing a model limitation.
 
 [Read the full methods and remaining tests](followup_tests/METHODS.md), [inspect the 11 supplementary interaction cases](followup_tests/interaction_updates.csv), or [open the family/community guide](followup_tests/COMMUNITY.md). The guide proposes Water, Fog, Mist, Gas, Smoke, Clay and Ice roles and connects to the existing SIMS community work. A family-specific extension has not yet been simulated.
 
-The counts below describe the earlier packages. These 29 new tests bring the substance collection to 103 unit tests, plus the earlier 8 saved-data checks; they do not turn the failed empirical capture comparison into a validation success.
+The counts below describe the earlier packages. That batch brought the substance collection to 103 unit tests, plus the earlier 8 saved-data checks; they do not turn the failed empirical capture comparison into a validation success.
 
 ## Start reading
 

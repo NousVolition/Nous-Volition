@@ -1,0 +1,116 @@
+{
+  "retrieved_date": "2026-10-13",
+  "sources": [
+    {
+      "id": "depee2021I",
+      "url": "https://doi.org/10.5194/acp-21-6945-2021",
+      "use": "Table 3: 18 previously transcribed sodium-fluorescein collection efficiencies; Eq.12 phoretic forces; k_particle=0.43 W/(m K). All 18 values are comparison data, none used to fit parameters.",
+      "limit": "A single particle material, not smoke generally. Per-point experimental error bars are not numerically transcribed. Our flow solver is a creeping-flow approximation, not their complete model."
+    },
+    {
+      "id": "wang2010",
+      "url": "https://doi.org/10.1021/jp909019u",
+      "access_copy": "https://file1.lookchem.com/doi/2022/3/24/553e4856-492e-4e4c-988a-ebaf03a88f8a.pdf",
+      "use": "Table 1 at 25 C: pseudo-first-order hydration 0.037 +/- 0.002 s^-1; dehydration 24.8 +/- 0.4 s^-1; OH path forward 12100 +/- 400 L/(mol s), reverse 0.00040 +/- 0.00001 s^-1. Fast acid-base equilibria follow the reaction-pool approach.",
+      "limit": "We transfer literature rates to ideal dilute scenarios. We do not reproduce stopped-flow absorbance data, indicator chemistry or ionic activity corrections. This is not independent transient validation."
+    },
+    {
+      "id": "akhtar2012",
+      "url": "https://jcsp.org.pk/ArticleUpload/4144-20045-1-CE.pdf",
+      "citation": "Akhtar, Khalid and Ali, J. Chem. Soc. Pak. 34(2),263-268 (2012)",
+      "use": "Aqueous-medium Table 1 at 30 C: pH 3,5,8,10 rate constants 0.009,0.02878,0.051,0.058 min^-1. Merck MnO2, water/NaOH-washed, BET6.5 m2/g,0.333 g/L, H2O2 .020 mol/L, dark and stirred, pH adjusted using HCl/NH4OH.",
+      "limit": "Table-vs-Fig.4 consistency FAIL. pH3 at5/30min coarse plot readings45/55% (+/-5 reading percentage points, not experimental uncertainty). The paper alternates6.35/6.5 and leaves the temperature-column pH unclear; those rates are excluded. No accepted predictive H2O2 model results."
+    },
+    {
+      "id": "behr2006",
+      "url": "https://doi.org/10.1021/jp0563742",
+      "access_copy": "https://www.electronicsandbooks.com/edt/manual/Magazine/J/Journal%20of%20Physical%20Chemistry/a110/jp0563742.pdf",
+      "use": "Acetone on vapor-deposited ice,190-220K. Two-site adsorption/desorption coefficients used in prior pilot; aged endpoint has site2 only; fresh site1 capacity at its reported upper bound1e14 cm^-2; site2 6e14 cm^-2.",
+      "limit": "Endpoint bounds are not a calibrated aging-time law. No extrapolation to liquid water or room-temperature ice; kinetics-ratio equilibrium is used consistently rather than mixing separate fitted Langmuir coefficients."
+    },
+    {
+      "id": "schutze2004",
+      "url": "https://doi.org/10.1039/B313474A",
+      "primary_author_report": "https://www.tropos.de/fileadmin/user_upload/Aktuelles/Publikationen_Berichte/Berichte/Daten_PDF/IFT_JB2003.pdf",
+      "use": "Authors' report p73 describes single-drop uptake in helium at10kPa with water vapor suppressing evaporation; fitted acetone accommodation .0054, range .0028-.0099. Used as a parameter sensitivity at293K only.",
+      "limit": "Not a matched 1-atm air/fog uptake trace. Direct final-paper full text could not be fetched; no simulated-vs-measured uptake error is reported."
+    },
+    {
+      "id": "hardy2023",
+      "url": "https://doi.org/10.1021/acs.jpcb.2c08909",
+      "primary_record": "https://research-information.bris.ac.uk/en/publications/accurate-measurements-and-simulations-of-the-evaporation-and-traj/",
+      "use": "Candidate independent evaporation benchmark: CK-EDB water measurements290-298K and0-85%RH; Fig5 includes298K at2.5 and59%RH.",
+      "limit": "Underlying measured time series and all matching flow/initial-state metadata not obtained in this batch. No experimental evaporation validation claimed. Zenodo6396580 contains CALCULATED profiles, so it is not substituted for measurements."
+    },
+    {
+      "id": "roth2005",
+      "url": "https://doi.org/10.1021/es049204w",
+      "use": "Nine rows transcribed and visually checked from supporting Tables S2/S3, pages 8/10: acetone, 2-butanone, ethanol and isopropanol on diesel soot or mixed road-tunnel aerosol. All at 15 C; 50% RH with an additional soot ethanol row at 70%. Surface coefficients m3/m2 and organic-carbon-normalized coefficients m3/g_OC are kept distinct. 46 equilibrium loading scenarios.",
+      "limit": "Measured coefficients are reused, not independently validated. No isoprene row, kinetic rates, soot-aging law or general temperature dependence assigned. Road-tunnel sample is mixed aerosol, not a pure organic phase. The copyrighted supporting PDF is not republished; only a small factual numerical subset is included.",
+      "supplement_doi": "10.1021/es049204w.s001",
+      "supporting_data": "https://acs.figshare.com/articles/journal_contribution/3270178",
+      "source_pdf_md5": "41aa15d040e65010d4065f15fef380ab"
+    },
+    {
+      "id": "combustion1997",
+      "url": "https://doi.org/10.1016/S1352-2310(97)00048-4",
+      "use": "Specific oil-furnace particles and water-extracted subsample exhibit humidity-dependent VOC sorption.",
+      "limit": "Reported sample is 60% iron sulfate and9% carbon by mass; not a universal soot surface. No transferable rate extracted."
+    },
+    {
+      "id": "depee2021II",
+      "url": "https://doi.org/10.5194/acp-21-6963-2021",
+      "use": "Motivates distinguish prescribed charge, measured charge and polarization; retained earlier point-charge/sphere module.",
+      "limit": "No new measured smoke charge distribution recovered. The new discrete Boltzmann calculation is a scenario, not a Wiedensohler fit or an empirical histogram."
+    },
+    {
+      "id": "lubrication",
+      "url": "https://cronfa.swan.ac.uk/Record/cronfa26482/Download/0026482-22022016144620.pdf",
+      "use": "Eq.(4)-(5) leading normal resistance6*pi*mu*(aA/(a+A))^2/h, used in a separate analytic constant-force diagnostic.",
+      "limit": "No-slip immobilized interfaces, additive far resistance interpolation, no film rupture or coalescence. Stop gap>=0.67micrometre in air; smaller gaps require rarefied-gas/interface physics."
+    },
+    {
+      "id": "sander2023",
+      "url": "https://doi.org/10.5194/acp-23-10901-2023",
+      "use": "Previously frozen Henry Hcp and temperature slopes for CO,acetone,isoprene,H2O2. mol/(m3 Pa), K; values in followup_model.py.",
+      "limit": "Liquid/gas diffusivities remain assumptions. This batch does not establish solute-specific Dl."
+    },
+    {
+      "id": "slip",
+      "url": "https://nvlpubs.nist.gov/nistpubs/jres/111/4/V111.N04.A01.pdf",
+      "use": "Prior Stokes-Cunningham mobility implementation, Einstein diffusion.",
+      "limit": "Isolated-sphere mobility does not resolve lubrication or deformable interfaces."
+    },
+    {
+      "id": "murphykoop",
+      "url": "https://doi.org/10.1256/qj.04.94",
+      "use": "Previously frozen saturation-vapor-pressure expression, retained in baseline_model.py.",
+      "limit": "Steady thermal closure remains an approximation."
+    }
+  ],
+  "assumptions": {
+    "radial_diffusivity_m2_s": 2e-09,
+    "gas_solute_diffusivity_m2_s": 2e-05,
+    "collection_speed_m_s": 0.25,
+    "collection_ventilation_default": 1,
+    "collection_ventilation_sensitivity": 1.2,
+    "water_density_kg_m3": 1000,
+    "water_latent_heat_J_kg": 2450000,
+    "water_surface_tension_N_m": 0.072,
+    "liquid_permittivity_relative": 78.3,
+    "liquid_conductivity_scenarios_S_m": [
+      5.5e-06,
+      0.0001,
+      0.01
+    ],
+    "ambient_conductivity_scenarios_S_m": [
+      0,
+      1e-14,
+      1e-13,
+      1e-12
+    ],
+    "charge_ion_mobility_ratio": 0.875,
+    "contact_diagnostic_force_N": 1e-12,
+    "contact_diagnostic_air_viscosity_Pa_s": 1.84e-05
+  }
+}

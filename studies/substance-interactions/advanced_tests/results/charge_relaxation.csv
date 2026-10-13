@@ -1,0 +1,8 @@
+kind,conductivity_S_m,relative_permittivity,tau_s,isolated_net_charge_decays
+internal_charge_redistribution,5.5e-06,78.3,0.00012605143740768,False
+internal_charge_redistribution,0.0001,78.3,6.9328290574224e-06,False
+internal_charge_redistribution,0.01,78.3,6.932829057422401e-08,False
+Ohmic_ambient_leakage_scenario,0.0,1.0,inf,False
+Ohmic_ambient_leakage_scenario,1e-14,1.0,885.4187812800001,False
+Ohmic_ambient_leakage_scenario,1e-13,1.0,88.54187812800001,False
+Ohmic_ambient_leakage_scenario,1e-12,1.0,8.854187812800001,False

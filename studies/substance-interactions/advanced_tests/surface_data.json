@@ -1,0 +1,20 @@
+{
+  "source": "Roth, Goss and Schwarzenbach (2005), supporting information, Tables S2 and S3",
+  "doi": "10.1021/es049204w",
+  "supplement_doi": "10.1021/es049204w.s001",
+  "public_data_url": "https://acs.figshare.com/articles/journal_contribution/3270178",
+  "original_pdf_md5": "41aa15d040e65010d4065f15fef380ab",
+  "retrieved": "2026-10-13",
+  "notes": "Small factual numerical subset transcribed and visually checked against pages8/10; the PDF is not redistributed. Reported +/- values are log10 errors, not assigned a new confidence interpretation. Road-tunnel coefficients are normalized to grams organic carbon but represent mixed sorption, not pure organic-phase absorption. No isoprene row or acetone aging/temperature law was recovered.",
+  "rows": [
+    {"species":"acetone","surface":"diesel_soot","T_K":288.15,"RH":0.5,"log10K":-5.08,"log_error":0.05,"units":"m3/m2","table":"S2"},
+    {"species":"2-butanone","surface":"diesel_soot","T_K":288.15,"RH":0.5,"log10K":-4.59,"log_error":0.05,"units":"m3/m2","table":"S2"},
+    {"species":"ethanol","surface":"diesel_soot","T_K":288.15,"RH":0.5,"log10K":-4.58,"log_error":0.05,"units":"m3/m2","table":"S2"},
+    {"species":"ethanol","surface":"diesel_soot","T_K":288.15,"RH":0.7,"log10K":-4.70,"log_error":0.05,"units":"m3/m2","table":"S2"},
+    {"species":"isopropanol","surface":"diesel_soot","T_K":288.15,"RH":0.5,"log10K":-4.33,"log_error":0.05,"units":"m3/m2","table":"S2"},
+    {"species":"acetone","surface":"road_tunnel_mixed_aerosol","T_K":288.15,"RH":0.5,"log10K":-3.64,"log_error":0.04,"units":"m3/g_OC","table":"S3"},
+    {"species":"2-butanone","surface":"road_tunnel_mixed_aerosol","T_K":288.15,"RH":0.5,"log10K":-3.22,"log_error":0.04,"units":"m3/g_OC","table":"S3"},
+    {"species":"ethanol","surface":"road_tunnel_mixed_aerosol","T_K":288.15,"RH":0.5,"log10K":-3.05,"log_error":0.04,"units":"m3/g_OC","table":"S3"},
+    {"species":"isopropanol","surface":"road_tunnel_mixed_aerosol","T_K":288.15,"RH":0.5,"log10K":-3.17,"log_error":0.04,"units":"m3/g_OC","table":"S3"}
+  ]
+}

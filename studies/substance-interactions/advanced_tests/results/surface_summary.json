@@ -1,0 +1,13 @@
+{
+  "measurements": 9,
+  "equilibrium_cases": 46,
+  "soot_acetone_K_m": 8.31763771102671e-06,
+  "tunnel_acetone_K_m3_gOC": 0.00022908676527677723,
+  "ethanol_soot_K_RH70_over_RH50": 0.7585775750291835,
+  "kinetic_validation": false,
+  "aging_law": false,
+  "input_hashes": {
+    "surface_data.json": "780f75061e4c2bf80582dd6e8021d385ba02c7d3b468a7e1297b7825beb83006",
+    "surface_partition.py": "1cf7face74f4397834be85d0710d2dfe7d30e873e09c87af1d7fbd5673bfbbdb"
+  }
+}

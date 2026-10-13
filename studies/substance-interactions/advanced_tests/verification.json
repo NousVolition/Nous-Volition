@@ -1,0 +1,190 @@
+{
+  "status": "passed",
+  "saved_result_checks": 44,
+  "new_unit_tests_recorded": 34,
+  "note": "Saved-result audits, not new experimental validation; unit tests were recorded in this batch.",
+  "manifest_excludes": [
+    "manifest.json",
+    "verification.json",
+    "__pycache__",
+    "*.pyc"
+  ],
+  "checks": [
+    {
+      "name": "All JSON documents parse without nonstandard NaN/Infinity",
+      "passed": true
+    },
+    {
+      "name": "All delivered Python scripts compile",
+      "passed": true
+    },
+    {
+      "name": "core input hashes match delivered source and data",
+      "passed": true
+    },
+    {
+      "name": "surface input hashes match delivered source and data",
+      "passed": true
+    },
+    {
+      "name": "Recorded core test run: 28 passed",
+      "passed": true
+    },
+    {
+      "name": "Recorded surface test run: 6 passed",
+      "passed": true
+    },
+    {
+      "name": "Every expected CSV has the stated number of cases",
+      "passed": true
+    },
+    {
+      "name": "Capture mean agrees with 4 seeds: 93.5/79",
+      "passed": true
+    },
+    {
+      "name": "Capture mean agrees with 4 seeds: 93.5/119",
+      "passed": true
+    },
+    {
+      "name": "Capture mean agrees with 4 seeds: 93.5/154",
+      "passed": true
+    },
+    {
+      "name": "Capture mean agrees with 4 seeds: 93.5/235",
+      "passed": true
+    },
+    {
+      "name": "Capture mean agrees with 4 seeds: 93.5/314",
+      "passed": true
+    },
+    {
+      "name": "Capture mean agrees with 4 seeds: 93.5/393",
+      "passed": true
+    },
+    {
+      "name": "Capture mean agrees with 4 seeds: 82.4/64",
+      "passed": true
+    },
+    {
+      "name": "Capture mean agrees with 4 seeds: 82.4/96",
+      "passed": true
+    },
+    {
+      "name": "Capture mean agrees with 4 seeds: 82.4/125",
+      "passed": true
+    },
+    {
+      "name": "Capture mean agrees with 4 seeds: 82.4/191",
+      "passed": true
+    },
+    {
+      "name": "Capture mean agrees with 4 seeds: 82.4/254",
+      "passed": true
+    },
+    {
+      "name": "Capture mean agrees with 4 seeds: 82.4/318",
+      "passed": true
+    },
+    {
+      "name": "Capture mean agrees with 4 seeds: 71.1/58",
+      "passed": true
+    },
+    {
+      "name": "Capture mean agrees with 4 seeds: 71.1/88",
+      "passed": true
+    },
+    {
+      "name": "Capture mean agrees with 4 seeds: 71.1/114",
+      "passed": true
+    },
+    {
+      "name": "Capture mean agrees with 4 seeds: 71.1/174",
+      "passed": true
+    },
+    {
+      "name": "Capture mean agrees with 4 seeds: 71.1/232",
+      "passed": true
+    },
+    {
+      "name": "Capture mean agrees with 4 seeds: 71.1/290",
+      "passed": true
+    },
+    {
+      "name": "Capture ratio and headline median agree",
+      "passed": true
+    },
+    {
+      "name": "No censored flux in main capture cases",
+      "passed": true
+    },
+    {
+      "name": "Gas-liquid inventory and separate transfer audit below 1e-9",
+      "passed": true
+    },
+    {
+      "name": "All radial liquid fractions lie in [0,1]",
+      "passed": true
+    },
+    {
+      "name": "Analytic sphere benchmark refinement improves by >3 each doubling",
+      "passed": true
+    },
+    {
+      "name": "Moving diffusion refinement contracts and 40/160-cell difference <1e-6",
+      "passed": true
+    },
+    {
+      "name": "Carbon inventory residual below 1e-10",
+      "passed": true
+    },
+    {
+      "name": "Saved no-reaction carbonate control preserves pH and carbon form",
+      "passed": true
+    },
+    {
+      "name": "Carbonate saved step refinement within 1e-6 pH",
+      "passed": true
+    },
+    {
+      "name": "Conditional peroxide H/O residuals below 1e-12",
+      "passed": true
+    },
+    {
+      "name": "Peroxide source discrepancy preserved as a failure",
+      "passed": true
+    },
+    {
+      "name": "Each theoretical charge distribution normalized",
+      "passed": true
+    },
+    {
+      "name": "Near-contact diagnostics stop at positive gaps and match quadrature",
+      "passed": true
+    },
+    {
+      "name": "Surface partition bounds ordered and finite",
+      "passed": true
+    },
+    {
+      "name": "All reported validation gaps remain explicit",
+      "passed": true
+    },
+    {
+      "name": "Saved trajectory arrays are finite and nonempty",
+      "passed": true
+    },
+    {
+      "name": "HTML local links and images resolve",
+      "passed": true
+    },
+    {
+      "name": "No local user-machine paths in shareable text",
+      "passed": true
+    },
+    {
+      "name": "Delivered files match SHA256 snapshot",
+      "passed": true
+    }
+  ]
+}
