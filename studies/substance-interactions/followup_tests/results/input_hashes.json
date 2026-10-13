@@ -1,0 +1,8 @@
+{
+  "baseline_model.py": "7b4f20eaba4c727a918b4953194918a55a316202be88cf7bdaa467fd0e9b8624",
+  "baseline_references.json": "04973334e73c63ea7c6630559a6f70e1b016531e8a666989f743aee5908b9641",
+  "followup_model.py": "05712bf8ca8088388528e0204fa72ceeb9e60241e969fdc34c2e5917a5f9587f",
+  "run_followup.py": "ee8efaf1ceb6b7093520d50013a9439afbd167cf38f14381133b0ce99252e410",
+  "test_followup.py": "fb828b5dba21bbc70bc7c2fd87e5198bfb736f4b601e264f58ce9e6567759e0b",
+  "measured_collection.json": "e00764349db793e27363ff8e9b2892793fc7f58d56ba1833d3245d4739152675"
+}

@@ -1,0 +1,34 @@
+test_closed_mass_and_latent_heat_budgets (test_followup.FogChecks.test_closed_mass_and_latent_heat_budgets) ... ok
+test_condensation_opposite_sign (test_followup.FogChecks.test_condensation_opposite_sign) ... ok
+test_cooling_slows_evaporation (test_followup.FogChecks.test_cooling_slows_evaporation) ... ok
+test_cutoff_not_zero_water (test_followup.FogChecks.test_cutoff_not_zero_water) ... ok
+test_finite_water_cannot_saturate_dry_air (test_followup.FogChecks.test_finite_water_cannot_saturate_dry_air) ... ok
+test_held_water_recovers_original_henry_transient (test_followup.FogChecks.test_held_water_recovers_original_henry_transient) ... ok
+test_kelvin_surface_equilibrium (test_followup.FogChecks.test_kelvin_surface_equilibrium) ... ok
+test_maxwell_radius_squared_against_exact_open_reservoir (test_followup.FogChecks.test_maxwell_radius_squared_against_exact_open_reservoir) ... ok
+test_no_chemical_conversion_and_nonnegative_inventories (test_followup.FogChecks.test_no_chemical_conversion_and_nonnegative_inventories) ... ok
+test_no_solute_transfer_control (test_followup.FogChecks.test_no_solute_transfer_control) ... ok
+test_saturated_flat_control (test_followup.FogChecks.test_saturated_flat_control) ... ok
+test_scenario_domain (test_followup.FogChecks.test_scenario_domain) ... ok
+test_time_step_and_method_agreement (test_followup.FogChecks.test_time_step_and_method_agreement) ... ok
+test_boundary_stop_before_contact (test_followup.ForceChecks.test_boundary_stop_before_contact) ... ok
+test_brownian_relative_einstein_limit (test_followup.ForceChecks.test_brownian_relative_einstein_limit) ... ok
+test_coulomb_stokes_exact_limit (test_followup.ForceChecks.test_coulomb_stokes_exact_limit) ... ok
+test_electrostatic_energy_dissipated_as_drag_heat (test_followup.ForceChecks.test_electrostatic_energy_dissipated_as_drag_heat) ... ok
+test_far_field_dipole_limit (test_followup.ForceChecks.test_far_field_dipole_limit) ... ok
+test_force_is_negative_potential_gradient (test_followup.ForceChecks.test_force_is_negative_potential_gradient) ... ok
+test_image_force_equals_published_equation10 (test_followup.ForceChecks.test_image_force_equals_published_equation10) ... ok
+test_monopole_and_neutral_controls (test_followup.ForceChecks.test_monopole_and_neutral_controls) ... ok
+test_neutral_sphere_attraction_independent_of_charge_sign (test_followup.ForceChecks.test_neutral_sphere_attraction_independent_of_charge_sign) ... ok
+test_repeated_seed (test_followup.ForceChecks.test_repeated_seed) ... ok
+test_stop_preserves_outer_boundary (test_followup.ForceChecks.test_stop_preserves_outer_boundary) ... ok
+test_weak_like_charge_can_attract_in_sphere_model (test_followup.ForceChecks.test_weak_like_charge_can_attract_in_sphere_model) ... ok
+test_invalid_geometry (test_followup.MeasurementChecks.test_invalid_geometry) ... ok
+test_kernel_ce_units_and_zero_sticking (test_followup.MeasurementChecks.test_kernel_ce_units_and_zero_sticking) ... ok
+test_smaller_particle_diffuses_faster (test_followup.MeasurementChecks.test_smaller_particle_diffuses_faster) ... ok
+test_table_shape_and_anchor_values (test_followup.MeasurementChecks.test_table_shape_and_anchor_values) ... ok
+
+----------------------------------------------------------------------
+Ran 29 tests in 3.715s
+
+OK

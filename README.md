@@ -8,6 +8,8 @@ This repository, **Streams and Rocks**, preserves the original stream-function r
 
 **[Open the earlier substance-interaction and equation studies](studies/substance-interactions/README.md).** The collection includes the 114-row interaction matrix, gas/water partitioning, charged-droplet controls, five-equation transport tests, stability and energy examples, and the water-figure audit. Source, saved numerical data, figures, references and reproduction instructions are included. All 74 unit tests and 8 saved-data checks passed again before publication; matrix entries distinguish simulated cases from analytic or literature assessments.
 
+**[New substance follow-up: evaporation, polarization and measured capture](studies/substance-interactions/followup_tests/README.md).** Adds 29 tests and independent published-data comparisons. The earlier diffusion-only capture model underpredicts the tested measurements by factors 40–447. A [family/community guide](studies/substance-interactions/followup_tests/COMMUNITY.md) develops the proposed Water, Fog, Mist, Gas, Smoke, Clay and Ice roles alongside the existing SIMS work.
+
 ## Mechanisms, switching and memory
 
 **[Open the completed spring and chemical-feedback study](studies/mechanisms-switching-memory/README.md).** Eighteen verification tests and 168 seeded simulations test spring hysteresis, pulse thresholds, maintained activity, finite fuel and controls. Source, figures, saved trajectories and numerical results are included. The biochemical rates are explicitly hypothetical; this does not establish new reactions or forces for the original substances.

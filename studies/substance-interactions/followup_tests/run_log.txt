@@ -1,0 +1,189 @@
+Fog: 108 main, 4 controls, 11 sensitivities, 12 refinement solves completed
+Particle paths: neutral completed
+Particle paths: charged_neutral_50e completed
+Particle paths: charged_neutral_100e completed
+Particle paths: charged_neutral_monopole completed
+Particle paths: weak_like_charge completed
+Particle paths: strong_like_charge completed
+Particle paths: opposite_charge completed
+{
+  "completed_date": "2026-10-13",
+  "unit_tests_passed": 29,
+  "fog": {
+    "main_cases": 108,
+    "control_cases": 4,
+    "sensitivity_cases": 11,
+    "refinement_cases": 12,
+    "additional_same_time_control": 1,
+    "max_water_error": 2.1464998667397595e-09,
+    "max_solute_error": 1.9984014443252818e-15,
+    "RH50_isothermal_cutoff_s": 0.17098876739870605,
+    "RH50_cooled_cutoff_s": 0.6078620656541458,
+    "RH90_cutoff_s": 3.7974008246478204,
+    "RH90_H2O2_final_aqueous_percent": 5.281432967587125,
+    "RH90_H2O2_peak_aqueous_percent": 27.033717669800705,
+    "RH90_H2O2_fixed_water_same_time_percent": 45.86567107757383,
+    "final_CO_percent": 9.828011563916063e-09,
+    "max_refinement_end_time_difference": 1.907674018752914e-11,
+    "max_refinement_liquid_fraction_difference": 1.4625913535848412e-09
+  },
+  "particles": {
+    "main_ensembles": 42,
+    "main_paths": 21504,
+    "refinement_ensembles": 36,
+    "refinement_paths": 18432,
+    "deterministic_cases": 7,
+    "deterministic_sensitivities": 27,
+    "summary": [
+      {
+        "case": "neutral",
+        "mean_stop_fraction": 0.4078776041666667,
+        "CI95_low": 0.37867657165100027,
+        "CI95_high": 0.4370786366823331,
+        "independent_seeds": 6,
+        "paths": 3072
+      },
+      {
+        "case": "charged_neutral_50e",
+        "mean_stop_fraction": 0.4755859375,
+        "CI95_low": 0.4500265145334459,
+        "CI95_high": 0.5011453604665541,
+        "independent_seeds": 6,
+        "paths": 3072
+      },
+      {
+        "case": "charged_neutral_100e",
+        "mean_stop_fraction": 0.6409505208333334,
+        "CI95_low": 0.6168926093027526,
+        "CI95_high": 0.6650084323639142,
+        "independent_seeds": 6,
+        "paths": 3072
+      },
+      {
+        "case": "charged_neutral_monopole",
+        "mean_stop_fraction": 0.4078776041666667,
+        "CI95_low": 0.37867657165100027,
+        "CI95_high": 0.4370786366823331,
+        "independent_seeds": 6,
+        "paths": 3072
+      },
+      {
+        "case": "weak_like_charge",
+        "mean_stop_fraction": 0.62109375,
+        "CI95_low": 0.6005969601582816,
+        "CI95_high": 0.6415905398417184,
+        "independent_seeds": 6,
+        "paths": 3072
+      },
+      {
+        "case": "strong_like_charge",
+        "mean_stop_fraction": 0.0006510416666666666,
+        "CI95_low": -0.0004074080094358521,
+        "CI95_high": 0.0017094913427691855,
+        "independent_seeds": 6,
+        "paths": 3072
+      },
+      {
+        "case": "opposite_charge",
+        "mean_stop_fraction": 1.0,
+        "CI95_low": 1.0,
+        "CI95_high": 1.0,
+        "independent_seeds": 6,
+        "paths": 3072
+      }
+    ],
+    "paired_controls": [
+      {
+        "case": "neutral",
+        "mean_stop_fraction_difference": 0.0,
+        "CI95_low": 0.0,
+        "CI95_high": 0.0
+      },
+      {
+        "case": "charged_neutral_50e",
+        "mean_stop_fraction_difference": 0.06770833333333333,
+        "CI95_low": 0.05585086216686568,
+        "CI95_high": 0.07956580449980097
+      },
+      {
+        "case": "charged_neutral_100e",
+        "mean_stop_fraction_difference": 0.23307291666666666,
+        "CI95_low": 0.21063228577713358,
+        "CI95_high": 0.25551354755619976
+      },
+      {
+        "case": "charged_neutral_monopole",
+        "mean_stop_fraction_difference": 0.0,
+        "CI95_low": 0.0,
+        "CI95_high": 0.0
+      },
+      {
+        "case": "weak_like_charge",
+        "mean_stop_fraction_difference": 0.21321614583333334,
+        "CI95_low": 0.1982427299627676,
+        "CI95_high": 0.2281895617038991
+      },
+      {
+        "case": "strong_like_charge",
+        "mean_stop_fraction_difference": -0.4072265625,
+        "CI95_low": -0.4360899437110827,
+        "CI95_high": -0.3783631812889173
+      },
+      {
+        "case": "opposite_charge",
+        "mean_stop_fraction_difference": 0.5921223958333334,
+        "CI95_low": 0.562921363317667,
+        "CI95_high": 0.6213234283489998
+      }
+    ],
+    "max_energy_error": 1.175981144744318e-09,
+    "dt001_max_mean_stop_change_percentage_points": 0.3580729166666667
+  },
+  "measurements": {
+    "points": 18,
+    "min_measured_over_prediction": 40.42395791672615,
+    "median_measured_over_prediction": 141.39201439731136,
+    "max_measured_over_prediction": 446.9756487867339,
+    "above_sensitivity_envelope": 18,
+    "matched_humidity_ratios": [
+      {
+        "size_selection": 1,
+        "measured_lowRH_over_highRH": 3.010204081632653,
+        "brownian_lowRH_over_highRH": 1.6239780589485233
+      },
+      {
+        "size_selection": 2,
+        "measured_lowRH_over_highRH": 3.7583892617449663,
+        "brownian_lowRH_over_highRH": 1.540646768172804
+      },
+      {
+        "size_selection": 3,
+        "measured_lowRH_over_highRH": 2.8201892744479493,
+        "brownian_lowRH_over_highRH": 1.4997504989452723
+      },
+      {
+        "size_selection": 4,
+        "measured_lowRH_over_highRH": 3.42741935483871,
+        "brownian_lowRH_over_highRH": 1.4462007158954175
+      },
+      {
+        "size_selection": 5,
+        "measured_lowRH_over_highRH": 3.3532110091743115,
+        "brownian_lowRH_over_highRH": 1.422263572100738
+      },
+      {
+        "size_selection": 6,
+        "measured_lowRH_over_highRH": 3.792746113989637,
+        "brownian_lowRH_over_highRH": 1.4070180158498422
+      }
+    ],
+    "verdict": "The diffusion-only pilot does not describe these falling-droplet measurements; no factor fitted and no full microphysics validation claimed."
+  },
+  "seconds": 70.36407589999726,
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  }
+}

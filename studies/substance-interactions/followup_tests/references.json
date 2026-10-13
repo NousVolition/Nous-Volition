@@ -1,0 +1,10 @@
+{
+  "date_checked": "2026-10-13",
+  "Depee2021I": {"url": "https://acp.copernicus.org/articles/21/6945/2021/", "doi": "10.5194/acp-21-6945-2021", "use": "Table 3: 18 measured collection efficiencies and wet radii. Section 4.2: group temperatures and radii; Table 2: approximate 0.25 m/s speed. CC BY 4.0. No parameters fitted to these data."},
+  "Depee2021II": {"url": "https://acp.copernicus.org/articles/21/6963/2021/", "doi": "10.5194/acp-21-6963-2021", "use": "Equation 10 for a point aerosol charge interacting with a conducting sphere; conceptual evidence for charged-neutral polarization. Our separate trajectories do not reproduce that paper's falling-droplet measurements or full model."},
+  "MaxwellEvaporation": {"url": "https://doc.comsol.com/6.4/doc/com.comsol.help.particle/particle_ug_fluid_flow.08.54.html", "use": "Maxwell quasi-steady spherical vapor diffusion law and limits; this implementation derives a conductive latent-heat balance and includes an optional classical Kelvin factor."},
+  "Sander2023": {"url": "https://acp.copernicus.org/articles/23/10901/2023/", "use": "Henry concentration/partial-pressure convention; selected constants and slopes retained from baseline_references.json. Constants are source inputs, not an independent validation dataset."},
+  "NIST2006": {"url": "https://nvlpubs.nist.gov/nistpubs/jres/111/4/V111.N04.A01.pdf", "use": "Original slip-mobility expression and its units retained from baseline_model.py; rounded air-viscosity reference remains an assumption."},
+  "MurphyKoop2005": {"url": "https://doi.org/10.1256/qj.04.94", "use": "Original saturation-pressure expression retained unchanged from the verified baseline; source constants and validity documented in baseline_references.json."},
+  "assumptions": {"rho_liquid_kg_m3": 1000, "latent_heat_J_kg": 2450000, "surface_tension_N_m": 0.072, "Dv_at298_m2_s": 0.000025, "kair_at298_W_m_K": 0.026, "Dv_T_exponent": 1.8, "kair_T_exponent": 0.8, "solute_Dg_m2_s": 0.00002, "solute_Dl_m2_s": 0.000000002, "meaning": "Rounded or prescribed pilot properties; no newly measured constants. Sensitivity bounds are scenario ranges, not confidence intervals."}
+}

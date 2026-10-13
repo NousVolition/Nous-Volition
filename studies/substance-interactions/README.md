@@ -2,6 +2,14 @@
 
 Earlier completed work from the same research chat, now published in **Streams and Rocks**. This collection preserves the numerical data, figures, tests, conditions, references and explicit limitations. It complements [the switching and memory study](../mechanisms-switching-memory/README.md).
 
+## Completed follow-up tests
+
+**[Evaporation, polarization and published capture measurements](followup_tests/README.md)** adds 29 passing unit tests, 108 main fog scenarios, 21,504 main Brownian paths, step refinements and 18 published measurement comparisons. Evaporating fog releases part of previously absorbed gas; the conducting-sphere model adds charged-neutral polarization attraction. The old diffusion-only capture kernel underpredicts the tested falling-droplet measurements by factors 40–447, exposing a model limitation.
+
+[Read the full methods and remaining tests](followup_tests/METHODS.md), [inspect the 11 supplementary interaction cases](followup_tests/interaction_updates.csv), or [open the family/community guide](followup_tests/COMMUNITY.md). The guide proposes Water, Fog, Mist, Gas, Smoke, Clay and Ice roles and connects to the existing SIMS community work. A family-specific extension has not yet been simulated.
+
+The counts below describe the earlier packages. These 29 new tests bring the substance collection to 103 unit tests, plus the earlier 8 saved-data checks; they do not turn the failed empirical capture comparison into a validation success.
+
 ## Start reading
 
 | Study | Completed checks | Open |
