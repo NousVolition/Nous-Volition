@@ -28,9 +28,9 @@
     },
     {
       "path": "studies/fluid-organization/README.md",
-      "size": 8632,
-      "git_blob_sha": "41e3a2748e1c3a201fa34c4cfd702dd34d25c11e",
-      "sha256": "5f737e11d37cbeecb688899fc73a409f772d74c5827a53d0bb791af2e415d7e2"
+      "size": 9361,
+      "git_blob_sha": "d9818ec13d3a2005511ee398745d365da30629fc",
+      "sha256": "c552ff5e552237eedf41edc64c6d4c081d15d09f2adbb6683fc0bafa4b51caf5"
     },
     {
       "path": "studies/fluid-organization/references/codex-clipboard-0832323a-bb13-4cdf-9c2d-5fedb9d9d689.png",
@@ -2473,7 +2473,13 @@
       "size": 2631,
       "git_blob_sha": "c2a82c5087ca06b014412c98425230f412968690",
       "sha256": "a6a1bf58e7c76340f057b143b59d881f55d3e7c21079597e275da5d7bd11a57c"
+    },
+    {
+      "path": "studies/fluid-organization/extensions/higher-re-history/README.md",
+      "size": 2736,
+      "git_blob_sha": "c610f75126e74cae142a52826e69ffefa3b95aee",
+      "sha256": "7b010e8dc9930f4103ee4eb265f9f471264c225ac5ae3d4ca02e7876464b42c3"
     }
   ],
-  "note": "Inventory excluding itself; prior numerical snapshots retained. Completed extensions have separate protocols, targets, uncertainty and numerical limits. The sustained-flow extension reaches a higher but still modest Reynolds number; substantially higher Reynolds numbers, other media and laboratory validation remain proposed."
+  "note": "Inventory excluding itself. Completed studies retain separate targets, uncertainty and numerical limits. The higher-re-history extension is a dated acquisition status until completed findings are published; its target Reynolds number is not a measured result."
 }
