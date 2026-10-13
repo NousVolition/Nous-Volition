@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hug synchronization: loss and recovery</title>
+<style>
+:root{color-scheme:light dark;--bg:#faf9f5;--fg:#213442;--line:#c4cdd2;--ghost:#828f97;--yes:#08777c;--no:#ac4e16}@media(prefers-color-scheme:dark){:root{--bg:#18212a;--fg:#e0e8eb;--line:#596671;--ghost:#9aa8b3;--yes:#6fd1c8;--no:#f2b37f}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,sans-serif}main{max-width:1100px;margin:auto;padding:24px}h1{font-size:clamp(24px,4vw,38px);line-height:1.15;margin:8px 0 16px}h2{font-size:20px;margin:0}p{max-width:960px}a{color:var(--yes)}.controls{display:flex;gap:14px;align-items:end;flex-wrap:wrap;margin:24px 0 14px}label{display:block}select,button,input{font:inherit}select,button{padding:10px;background:var(--bg);color:var(--fg);border:1px solid var(--line);border-radius:5px}button{min-width:90px}input{width:100%}.seek{flex:1;min-width:220px}.panels{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:20px}.panel{min-width:0}canvas{width:100%;height:460px;display:block}.status{min-height:50px}.small{font-size:14px}.clock{font-variant-numeric:tabular-nums}.legend{display:flex;gap:18px;flex-wrap:wrap}.legend span::before{content:'';display:inline-block;width:22px;height:3px;margin-right:5px;vertical-align:middle;background:var(--yes)}.legend .ghost::before{height:2px;background:repeating-linear-gradient(to right,var(--ghost) 0 3px,transparent 3px 6px)}@media(max-width:720px){main{padding:16px}.panels{grid-template-columns:1fr}.controls>label{width:100%}select{max-width:100%}}
+</style></head>
+<body><main>
+<h1>The Hug loses and regains synchronization</h1>
+<p>Restoring stiffness doubles at <strong>171 s</strong> and returns to baseline at <strong>741 s</strong>. The Hug’s displacement, velocity, clay memory and orbital clock continue through both changes.</p>
+<p class="small">Synthetic results. These clips skip waiting time within the same simulated trajectories. A faint outline shows the shape one orbit earlier; brief visual overlap alone does not confirm synchronization. Deformation is exaggerated ×150.</p>
+<div class="controls">
+<label>Clip <select id="clip"></select></label>
+<label>Eccentric orbit <select id="condition"></select></label>
+<button id="play" type="button">Play</button>
+<label class="seek">Elapsed simulation time <span id="time" class="clock"></span><input id="seek" type="range" step="0.05" aria-label="Elapsed simulation time"></label>
+</div>
+<div id="clipnote" class="small" aria-live="polite"></div>
+<div class="legend small"><span>Current Hug</span><span class="ghost">One orbit earlier</span></div>
+<div class="panels">
+<section class="panel"><h2>Circular orbit</h2><div id="status0" class="status" aria-live="polite"></div><canvas id="canvas0" role="img" aria-label="Circular Hug motion and its full-state orbit-repeat error"></canvas></section>
+<section class="panel"><h2 id="title1">Eccentric orbit</h2><div id="status1" class="status" aria-live="polite"></div><canvas id="canvas1" role="img" aria-label="Eccentric Hug motion and its full-state orbit-repeat error"></canvas></section>
+</div>
+<p class="small">Synchronization requires 20 full-state comparisons for repeat periods of 1–4 orbits, within one stiffness stage, and agreement between two previously settled histories. Orange marks mean no short repeat was confirmed; this does not establish chaos or exclude longer repeats. The confirmation clock runs on a 5.7 s orbital grid.</p>
+<p class="small">The orbit shapes use the named eccentricities, with a prescribed 5.7 s simulation period and equal force RMS. These are not astronomical motion or physical clay measurements. The shaded plot interval has doubled stiffness; plot gaps mark incomplete confirmation windows. Errors below 10⁻¹² are plotted at that floor.</p>
+<p><a href="HUG_SYNC_METHODS.md">Methods and controls</a> · <a href="report.html#hug-sync">Full study report</a></p>
+<script type="application/json" id="sync-data">SYNC_DATA_PLACEHOLDER</script>
+<script>
+(()=>{
+const D=JSON.parse(document.getElementById('sync-data').textContent),get=id=>document.getElementById(id);
+const clip=get('clip'),condition=get('condition'),seek=get('seek'),play=get('play');
+D.clips.forEach((c,i)=>clip.add(new Option(c.label,i)));D.conditions.slice(1).forEach((c,i)=>condition.add(new Option(`${c.name} · e = ${c.e.toFixed(3)}`,i+1)));
+let t=D.clips[0].start,running=false,last=null,lastStatuses=['',''];
+const canvases=[get('canvas0'),get('canvas1')];
+const statusText={synchronized:'Synchronized',no_short_repeat:'No 1–4 orbit repeat',assessing:'Settling · confirmation window incomplete',quiet:'At rest'};
+function lookup(c,j,v){const x=Math.max(0,Math.min(c.q_mm[j].length-1,(v-c.sample_start_s)/c.step_s)),i=Math.floor(x),k=Math.min(i+1,c.q_mm[j].length-1);return c.q_mm[j][i]+(c.q_mm[j][k]-c.q_mm[j][i])*(x-i);}
+function status(j){const a=D.timeline[j];let i=0;while(i+1<a.time_s.length&&a.time_s[i+1]<=t+1e-8)i++;return a.status[i];}
+function changeClip(){const c=D.clips[+clip.value];t=c.start;seek.min=c.start;seek.max=c.start+D.duration_s;get('clipnote').textContent=`Clip ${+clip.value+1}/${D.clips.length} · ${c.start.toFixed(1)}–${(c.start+D.duration_s).toFixed(1)} s. Changing clips jumps forward or backward in the same saved trajectory.`;draw();}
+function draw(){
+const c=D.clips[+clip.value],style=getComputedStyle(document.documentElement),color=k=>style.getPropertyValue(k).trim();
+get('time').textContent=t.toFixed(2)+' s';seek.value=t;play.textContent=running?'Pause':'Play';
+get('title1').textContent=`Eccentric · ${D.conditions[+condition.value].name}`;
+canvases.forEach((canvas,panel)=>{
+  const j=panel?+condition.value:0,w=canvas.clientWidth,h=460,ratio=window.devicePixelRatio||1;
+  if(canvas.width!==Math.round(w*ratio)||canvas.height!==Math.round(h*ratio)){canvas.width=Math.round(w*ratio);canvas.height=Math.round(h*ratio);}
+  const ctx=canvas.getContext('2d');ctx.setTransform(ratio,0,0,ratio,0,0);ctx.clearRect(0,0,w,h);
+  const label=status(j),q=lookup(c,j,t),old=lookup(c,j,t-D.period_s);
+  if(lastStatuses[panel]!==label){get('status'+panel).textContent=statusText[label];lastStatuses[panel]=label;}
+  const stroke=label==='synchronized'?color('--yes'):label==='assessing'?color('--ghost'):color('--no');
+  function text(x,y,value,align='center'){ctx.fillStyle=color('--fg');ctx.font='13px system-ui';ctx.textAlign=align;ctx.fillText(value,x,y);}
+  function line(points,colorValue,width=1,dash=[]){ctx.strokeStyle=colorValue;ctx.lineWidth=width;ctx.setLineDash(dash);ctx.beginPath();points.forEach((p,i)=>i?ctx.lineTo(...p):ctx.moveTo(...p));ctx.stroke();ctx.setLineDash([]);}
+  const e=D.conditions[j].e,a=29,b=a*Math.sqrt(1-e*e),ox=w/2,oy=42,phase=2*Math.PI*(((6000+t)/D.period_s)%1);let E=phase;
+  for(let i=0;i<8;i++)E-=(E-e*Math.sin(E)-phase)/(1-e*Math.cos(E));
+  ctx.strokeStyle=color('--line');ctx.lineWidth=1;ctx.beginPath();ctx.ellipse(ox,oy,a,b,0,0,2*Math.PI);ctx.stroke();
+  ctx.fillStyle=color('--ghost');ctx.beginPath();ctx.arc(ox-a*e,oy,2.5,0,2*Math.PI);ctx.fill();
+  ctx.fillStyle=stroke;ctx.beginPath();ctx.arc(ox+a*Math.cos(E),oy-b*Math.sin(E),4,0,2*Math.PI);ctx.fill();
+  text(w/2,89,'Continuous orbital clock · 5.7 s per orbit');
+  D.arms.forEach(arm=>{
+    const shape=v=>arm.map(([x,y])=>[w/2+52*(x+D.magnification*v/100*y),166-52*y]);
+    line(shape(old),color('--ghost'),1.8,[3,5]);line(shape(q),stroke,3);
+  });
+  text(w/2,239,`q = ${q>=0?'+':''}${q.toFixed(3)} mm · stiffness ×${t>=171&&t<741?2:1}`);
+  const L=58,R=w-16,T=282,B=407,x=v=>L+(R-L)*v/1500,y=v=>B-(B-T)*(v+12.5)/14.5;
+  ctx.fillStyle=color('--no');ctx.globalAlpha=.08;ctx.fillRect(x(171),T,x(741)-x(171),B-T);ctx.globalAlpha=1;
+  line([[L,T],[L,B],[R,B]],color('--line'));
+  [-12,-8,-4,0].forEach(v=>text(L-8,y(v)+4,({[-12]:'10⁻¹²',[-8]:'10⁻⁸',[-4]:'10⁻⁴',0:'1'})[v],'right'));
+  [0,500,1000,1500].forEach(v=>text(x(v),B+21,String(v),v===0?'left':v===1500?'right':'center'));
+  line([[L,y(-4)],[R,y(-4)]],color('--ghost'),1,[3,4]);
+  ctx.save();ctx.beginPath();ctx.rect(L,T,R-L,B-T);ctx.clip();
+  const aD=D.timeline[j];let points=[];
+  for(let i=0;i<aD.time_s.length;i++){if(aD.log10_error[i]===null){if(points.length)line(points,color('--yes'),1.5);points=[];}else points.push([x(aD.time_s[i]),y(aD.log10_error[i])]);}if(points.length)line(points,color('--yes'),1.5);
+  line([[x(t),T],[x(t),B]],color('--fg'),1.3);ctx.restore();
+  text((L+R)/2,273,'Full-state orbit-repeat error');text((L+R)/2,452,'Elapsed simulation time (s)');
+});}
+function tick(now){if(running&&last!==null){t+=Math.min(.1,(now-last)/1000)*3;const c=D.clips[+clip.value];if(t>c.start+D.duration_s){if(+clip.value<D.clips.length-1){clip.value=+clip.value+1;changeClip();}else{t=c.start+D.duration_s;running=false;}}draw();}last=now;requestAnimationFrame(tick);}
+clip.addEventListener('change',()=>{running=false;changeClip();});condition.addEventListener('change',()=>{lastStatuses=['',''];draw();});
+play.addEventListener('click',()=>{const c=D.clips[+clip.value];if(t>=c.start+D.duration_s)t=c.start;running=!running;last=null;draw();});
+seek.addEventListener('input',()=>{t=+seek.value;running=false;draw();});new ResizeObserver(draw).observe(document.querySelector('main'));
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change',draw);changeClip();requestAnimationFrame(tick);
+})();
+</script></main></body></html>

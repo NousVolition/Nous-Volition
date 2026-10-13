@@ -1,0 +1,51 @@
+{
+  "protocol": {
+    "origin": "synthetic_live_stiffness_intervention",
+    "initial_results": "hug_robustness_results.json",
+    "absolute_start_s": 6000.0,
+    "orbit_period_s": 5.7,
+    "orbital_force_rms_N": 6e-06,
+    "baseline_orbits": 30,
+    "raised_stiffness_orbits": 100,
+    "recovery_orbits": 600,
+    "stiffness_factor": 2.0,
+    "arms": [
+      "restore",
+      "sham",
+      "hold_high"
+    ],
+    "start_histories": [
+      0,
+      1
+    ],
+    "main_step_s": 0.0125,
+    "refined_step_s": 0.00625,
+    "sample_interval_s": 0.05,
+    "repeat_comparisons": 20,
+    "maximum_repeat_orbits": 4,
+    "gates": {
+      "repeat_error_scaled": 0.0001,
+      "between_history_error_scaled": 0.0001,
+      "observable_half_amplitude_mm": 0.0001,
+      "full_path_refinement_error_scaled": 0.0002,
+      "energy_error_scaled": 0.001,
+      "independent_solver_error_scaled": 2e-05,
+      "event_time_refinement_orbits": 1,
+      "state_guard_scaled": 1000.0
+    },
+    "interpretation": "Actual continuous trajectories through externally imposed stiffness steps. Two already-settled baseline histories are continued, not independent new basin samples. Orbit phase and all four states persist through each change. Changing stiffness supplies or extracts spring energy. Repetition is confirmed with 20 full-state comparisons for periods 1\u00e2\u20ac\u201c4 orbits within one constant-parameter stage and agreement between histories. No short repeat does not prove chaos or rule out longer repeats. These are synthetic coefficients and prescribed 5.7-second simulation orbits, not physical clay measurements or astronomical periods."
+  },
+  "checks": {
+    "finite_trajectories": true,
+    "state_continuity": true,
+    "energy_balance": true,
+    "full_path_refinement": false,
+    "classification_refinement": true,
+    "event_time_refinement": true,
+    "independent_solver": true
+  },
+  "maximum_full_path_refinement_error_scaled": 0.0009243611805169749,
+  "maximum_event_time_refinement_s": 0.0,
+  "maximum_energy_error_scaled": 0.00010676714435697843,
+  "resolution_action": "Keep thresholds and scientific parameters unchanged; use the former refined run as main, then integrate at half its step."
+}

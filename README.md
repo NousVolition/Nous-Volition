@@ -50,7 +50,7 @@ the separate project linked below.
 
 [Read the review and connections](https://github.com/NousVolition/My-Sources-Project-ALL/blob/main/REPOSITORY-CURRENT-REVIEW.md) for current completion status, duplicate-file findings, material feedback, clay memory, and related identity/position and prediction tests. It distinguishes shared testing methods from demonstrated physical coupling.
 
-Repository CI now runs 352 dynamics/fractal/topology/heteroclinic/reversibility/SIMS-response/Hug/clay/orbit, 12 social-organization and 13 recovery/entrainment unit tests, plus source syntax, JSON, local Markdown links and the three published study manifests. These checks do not rerun the full ensembles or certify the scientific interpretations.
+Repository CI now runs 374 dynamics/fractal/topology/heteroclinic/reversibility/SIMS-response/Hug/clay/orbit, 12 social-organization and 13 recovery/entrainment unit tests, plus source syntax, JSON, local Markdown links and the three published study manifests. These checks do not rerun the full ensembles or certify the scientific interpretations.
 
 ## Start here
 
@@ -89,7 +89,7 @@ The study explores human coordination through nine **SIMS**, its simulated parti
 
 ## Dynamics, fractals, and SIMS
 
-[Open the dynamics and fractals test suite](studies/dynamics-fractals-sims/README.md) for fifteen batches, including 12,800 binary-choice SIMS runs, 1,632 earlier continuous-response trajectories, 384 historical threshold-Hug trajectories, 384 current clay-SIMS trajectories, and 672 orbit-driven clay trajectories. These use different response rules, reported separately. The package covers continuous dynamics, finite fractals, tipping points, oscillations, topology, and heteroclinic switching.
+[Open the dynamics and fractals test suite](studies/dynamics-fractals-sims/README.md) for sixteen batches, including 12,800 binary-choice SIMS runs, 1,632 earlier continuous-response trajectories, 384 historical threshold-Hug trajectories, 384 current clay-SIMS trajectories, and 672 orbit-driven clay trajectories. These use different response rules, reported separately. The package covers continuous dynamics, finite fractals, tipping points, oscillations, topology, and heteroclinic switching.
 
 The topology batch adds 39,056 bounded algebraic checks and 2,560 new SIMS runs comparing contact density, resisting positions, and filled faces. An exact counterexample shows why group totals can conceal different future coordination.
 
@@ -115,8 +115,11 @@ The fourteenth batch tests [the Hug’s rhythm in simulated measurements](studie
 
 The fifteenth batch tests [Hug rhythm robustness](studies/dynamics-fractals-sims/HUG_ROBUSTNESS_METHODS.md) across 35 synthetic parameter settings. Two starts, no orbit, circular and six eccentric inputs, and baseline timing controls give 568 trajectories, each repeated at half the time step, plus 46 independent physical-unit solver controls. The three new plots distinguish a self-sustained rhythm from orbital repetition and retain unsettled or start-dependent outcomes. The clay and active-feedback equations remain unchanged; no physical measurements or SIMS participant runs are added.
 
-The package includes 352 automated tests, thirty-six original scientific figures, saved numerical results, and an [illustrated report](studies/dynamics-fractals-sims/report.html) to download and open locally. Equations, selected parameters, and links to primary sources are documented alongside the code.
+The sixteenth batch tests [live loss and recovery of Hug synchronization](studies/dynamics-fractals-sims/HUG_SYNC_METHODS.md). Forty-two continuous trajectories raise and restore stiffness, keep it unchanged, or leave it high, with circular and all six eccentric inputs. All restored cases regain confirmed synchronization; the controls separate recovery from mere passage of time. Full-state refinement, switching-work energy accounting and 21 physical-unit solver checks support the results. An [offline animation](studies/dynamics-fractals-sims/hug_sync_player.html) shows the actual continuous intervention with labelled time skips. These are synthetic results, with no physical clay measurements.
+
+The package includes 374 automated tests, thirty-eight original scientific figures, saved numerical results, and an [illustrated report](studies/dynamics-fractals-sims/report.html) to download and open locally. Equations, selected parameters, and links to primary sources are documented alongside the code.
 
 ## SIMS animations: what changes within, and what changes with place
 
 [Open the animation guide](studies/sims-recovery-entrainment/animations/index.html). Five interactive examples trace position, internal changes, carried memory, and repeated destination–memory feedback. These are explanatory models with explicit assumptions; download the repository to play the HTML animations locally.
+

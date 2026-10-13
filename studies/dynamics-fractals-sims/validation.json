@@ -1,7 +1,7 @@
 {
   "python": "3.12.14",
   "platform": "Windows",
-  "automated_tests": 352,
+  "automated_tests": 374,
   "test_result": "passed",
   "sims_rounds": 15872,
   "binary_sims_rounds": 12800,
@@ -72,8 +72,8 @@
     "accuracy_gates": "passed",
     "full_reproduction": "passed"
   },
-  "figure_count": 36,
-  "figure_review": "Three Hug robustness figures inspected; all 33 earlier figures preserved.",
+  "figure_count": 38,
+  "figure_review": "Two live synchronization plots and loss/recovery animation frames inspected; earlier figures preserved.",
   "pending_source": "Figure 7.3.3 / Example 7.3.1 vector field absent; this specific case was not run.",
   "html_local_links": "verified",
   "html_browser_preview": "Unavailable: browser policy blocks local file URLs.",
@@ -192,5 +192,37 @@
     "maximum_energy_error_scaled": 0.00028128958098250223,
     "maximum_independent_solver_error_scaled": 2.796419067696565e-06,
     "limitations": "Finite deterministic parameter sweep of the existing synthetic active Hug. One parameter at a time and 16 reproducible joint perturbations are sensitivity scenarios, not probabilities or measured uncertainty. Mass, geometry, controller delay, force RMS and model form remain fixed. Orbit periods are chosen simulation inputs, not astronomical periods. A finite-time nonrepeat is not a diagnosis of chaos. No physical measurements or additional SIMS participants."
+  },
+  "sixteenth_batch_checks": {
+    "new_tests": 22,
+    "continuous_trajectories_per_resolution": 42,
+    "step_resolutions": 2,
+    "independent_Radau_segments": 21,
+    "accuracy_gates": {
+      "finite_trajectories": true,
+      "state_continuity": true,
+      "energy_balance": true,
+      "full_path_refinement": true,
+      "classification_refinement": true,
+      "event_time_refinement": true,
+      "independent_solver": true
+    },
+    "maximum_full_path_refinement_error_scaled": 5.784948889497876e-05,
+    "maximum_energy_error_scaled": 7.731238625491299e-06,
+    "maximum_event_time_refinement_s": 0.0,
+    "physical_measurements": 0,
+    "additional_sims_runs": 0,
+    "all_seven_restore_cases_recover": true,
+    "initial_failed_resolution_retained": true,
+    "animation_ui": {
+      "all_selections_and_seeks_checked": 378,
+      "canvas_operations_checked": 1280000,
+      "finite_draw_coordinates": true,
+      "play_pause_verified": true,
+      "all_six_eccentricities": true,
+      "offline_no_network": true,
+      "method": "Offline canvas DOM harness; no browser navigation"
+    },
+    "limitations": "Actual continuous trajectories through externally imposed stiffness steps. Two already-settled baseline histories are continued, not independent new basin samples. Orbit phase and all four states persist through each change. Changing stiffness supplies or extracts spring energy. Repetition is confirmed with 20 full-state comparisons for periods 1\u00e2\u20ac\u201c4 orbits within one constant-parameter stage and agreement between histories. No short repeat does not prove chaos or rule out longer repeats. These are synthetic coefficients and prescribed 5.7-second simulation orbits, not physical clay measurements or astronomical periods."
   }
 }
