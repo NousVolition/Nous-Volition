@@ -1,0 +1,83 @@
+[
+  {
+    "nu": 0.03,
+    "seed": 300001,
+    "coarse_n": 56,
+    "fine_n": 64,
+    "coarse_step": 0.025,
+    "fine_step": 0.025,
+    "coarse_means": {
+      "energy": 0.7549503692776777,
+      "dissipation": 0.19888662542688926,
+      "re_lambda": 25.277711377173933,
+      "flux_k4": 0.051596541203577824
+    },
+    "fine_means": {
+      "energy": 0.753557840968237,
+      "dissipation": 0.1993437316974732,
+      "re_lambda": 25.2027948976158,
+      "flux_k4": 0.05201849329001458
+    },
+    "relative_changes": {
+      "energy": -0.0018445296089768526,
+      "dissipation": 0.0022983258406783502,
+      "re_lambda": -0.0029637366468937554,
+      "flux_k4": 0.008177914189478663
+    },
+    "interpretation": "Descriptive time-window means from one matched seed; not independent ensemble uncertainty. Space and time are jointly changed when steps differ."
+  },
+  {
+    "nu": 0.025,
+    "seed": 300000,
+    "coarse_n": 64,
+    "fine_n": 80,
+    "coarse_step": 0.025,
+    "fine_step": 0.0125,
+    "coarse_means": {
+      "energy": 0.7924472145513597,
+      "dissipation": 0.20378020457925447,
+      "re_lambda": 28.71466614784751,
+      "flux_k4": 0.06717269887717035
+    },
+    "fine_means": {
+      "energy": 0.7960609792878676,
+      "dissipation": 0.20514302070430396,
+      "re_lambda": 28.726888012811678,
+      "flux_k4": 0.06724146313669205
+    },
+    "relative_changes": {
+      "energy": 0.00456025924522141,
+      "dissipation": 0.006687676694913991,
+      "re_lambda": 0.0004256314491430935,
+      "flux_k4": 0.0010236935640688394
+    },
+    "interpretation": "Descriptive time-window means from one matched seed; not independent ensemble uncertainty. Space and time are jointly changed when steps differ."
+  },
+  {
+    "nu": 0.02,
+    "seed": 300003,
+    "coarse_n": 64,
+    "fine_n": 80,
+    "coarse_step": 0.025,
+    "fine_step": 0.0125,
+    "coarse_means": {
+      "energy": 0.8642483032099393,
+      "dissipation": 0.20078977319751776,
+      "re_lambda": 35.27351828937571,
+      "flux_k4": 0.08149175287910117
+    },
+    "fine_means": {
+      "energy": 0.8356038053769393,
+      "dissipation": 0.2049085000710222,
+      "re_lambda": 33.75289880833002,
+      "flux_k4": 0.08481253635578173
+    },
+    "relative_changes": {
+      "energy": -0.03314382883554445,
+      "dissipation": 0.020512632729819513,
+      "re_lambda": -0.04310937935282999,
+      "flux_k4": 0.04074993308350083
+    },
+    "interpretation": "Descriptive time-window means from one matched seed; not independent ensemble uncertainty. Space and time are jointly changed when steps differ."
+  }
+]

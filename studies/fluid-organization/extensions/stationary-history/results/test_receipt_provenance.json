@@ -1,0 +1,29 @@
+{
+  "note": "Only unnecessary machine hostname attributes were removed from XML receipts. Test cases, timing and outcomes are unchanged; sub-suite receipts are not additional distinct tests.",
+  "local_receipts": [
+    {
+      "path": "results/tests.xml",
+      "original_sha256": "d9f37e903f373c2ce8e3097039aa21b2c65122c821e2d385c75500753937221a",
+      "published_sha256": "a6a1bf58e7c76340f057b143b59d881f55d3e7c21079597e275da5d7bd11a57c",
+      "tests": 20,
+      "failures": 0
+    },
+    {
+      "path": "results/physics_tests.xml",
+      "original_sha256": "128216cef8847cca0cda3d9f1f10b1712665245937cec1191feb30212dc48153",
+      "published_sha256": "9f2fbc41654c425b0e2b603f2f3015fb147ceaed04eea32ee97b4e0f64f99158",
+      "tests": 10,
+      "failures": 0
+    },
+    {
+      "path": "results/design_tests.xml",
+      "original_sha256": "78f3b961228c8b80895d4088f39e514a4e2bc41106b9b71f6da6f7a4ea0e49be",
+      "published_sha256": "c86cbd320c3403735f22f9b48c38fcc3780b1eb5163878961545523cd33ff5f4",
+      "tests": 10,
+      "failures": 0
+    }
+  ],
+  "linux_workflow_run": 38191616625,
+  "linux_artifact_id": 11720644397,
+  "linux_artifact_sha256": "36a1a55e08de35295d49f7740dbd128e4184dfb7f580945c2c71cc4311304590"
+}

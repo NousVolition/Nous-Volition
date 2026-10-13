@@ -1,0 +1,14 @@
+{
+  "completed_utc": "2026-10-13T22:09:57.668108+00:00",
+  "independent_baselines": 64,
+  "independent_test_runs": 32,
+  "test_targets": 256,
+  "main_interventions": 256,
+  "refinement_run_files": 8,
+  "numerical_pass": true,
+  "calibration_stationarity_pass": true,
+  "test_stationarity_pass": true,
+  "history_supported": false,
+  "code_url": "https://github.com/NousVolition/My-Sources-Project-ALL/tree/main/reports/fluid-organization-pilot/extensions/stationary-history",
+  "streams_url": "https://github.com/NousVolition/Nous-Volition/tree/main/studies/fluid-organization/extensions/stationary-history"
+}

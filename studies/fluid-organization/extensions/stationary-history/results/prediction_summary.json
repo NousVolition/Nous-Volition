@@ -1,0 +1,156 @@
+{
+  "independent_test_runs": 32,
+  "snapshots_per_run": 4,
+  "strengths": [
+    0.25,
+    0.75
+  ],
+  "target_mean": 2.7268294550198195,
+  "target_std": 0.5154989142088712,
+  "mean_run_rmse": {
+    "global_present": 0.2883220677670323,
+    "present": 0.2696946145505298,
+    "history": 0.2879952366184044,
+    "shuffled_0": 0.3436501003000962,
+    "shuffled_1": 0.281881092590387,
+    "shuffled_2": 0.2942298141425411,
+    "training_prior": 0.2799900101120857,
+    "event_prior": 0.2800849908513241
+  },
+  "contrasts": {
+    "global_present": {
+      "mean_error_difference": -0.0003268311486278458,
+      "difference_interval": [
+        -0.021299624564658642,
+        0.02127757431252799
+      ],
+      "error_reduction_percent": 0.11335627243487245,
+      "reduction_interval": [
+        -7.426650327594349,
+        7.3877918978389365
+      ],
+      "independent_runs": 32
+    },
+    "present": {
+      "mean_error_difference": 0.018300622067874667,
+      "difference_interval": [
+        -0.001161221057290902,
+        0.037942101812305326
+      ],
+      "error_reduction_percent": -6.78568316922985,
+      "reduction_interval": [
+        -15.020688450698072,
+        0.41677401521521246
+      ],
+      "independent_runs": 32
+    },
+    "training_prior": {
+      "mean_error_difference": 0.008005226506318781,
+      "difference_interval": [
+        -0.020892713124867273,
+        0.035784767209821405
+      ],
+      "error_reduction_percent": -2.859111474410847,
+      "reduction_interval": [
+        -13.157662497734131,
+        7.187436517171506
+      ],
+      "independent_runs": 32
+    },
+    "event_prior": {
+      "mean_error_difference": 0.007910245767080337,
+      "difference_interval": [
+        -0.02058812290347498,
+        0.03579843558911911
+      ],
+      "error_reduction_percent": -2.8242305105450116,
+      "reduction_interval": [
+        -13.197668259729296,
+        7.041674583185046
+      ],
+      "independent_runs": 32
+    },
+    "wrong_history": {
+      "mean_error_difference": -0.016350081709585906,
+      "difference_interval": [
+        -0.03603333630200468,
+        0.002872434935910183
+      ],
+      "error_reduction_percent": 5.372213970436556,
+      "reduction_interval": [
+        -0.9424750483288941,
+        11.910311550885353
+      ],
+      "independent_runs": 32,
+      "null_mean_run_rmse": 0.30434531832799033
+    }
+  },
+  "history_supported": false,
+  "stationarity_pass": true,
+  "test_data_sha256": {
+    "base_330000.npz": "5bddf03eddf7e51191db8e4436697ab9fe8532043d80250b038ac0014d0e18a3",
+    "base_330000.json": "76052acbd3f8a0255d100dd8253fed558c9c520d108d8f602110563436495805",
+    "base_330001.npz": "8098f99c11860288074e8e86d4eb75c896a00565cbaff9e2669cd922130f9fae",
+    "base_330001.json": "b671709d103dc1d071e80f12d58273b667265dd3eea41396c0b3a924e93ce30c",
+    "base_330002.npz": "248cfd66c749e53040fde70ef4f78c9db6543a159a86d77f0e5c699ee8566496",
+    "base_330002.json": "fbe432c83dd6a5db3c93b5a461b8a8bdf99c9fc22be5bfd7ea31692e252a8c63",
+    "base_330003.npz": "845a85212c27f501b21fa4682f3a4d266b6a4560ac55245c9222d61a64c61d32",
+    "base_330003.json": "12cd7bb693227033f8ae5bcd253347dc64d07ce53acdac60e83bc374fc822524",
+    "base_330004.npz": "664c0c1b44b45cfbd124ce93f4878d53c9378e84286cb20f17f24f2a7edfd266",
+    "base_330004.json": "80b3a425d6e54b00e1a0281c56dda574509277804dfc6affbfaed6dc1b58403f",
+    "base_330005.npz": "97bcb1bbae6af3ee4d11882b1562cb1d3885bc3394d7f440dd47d63be8e600aa",
+    "base_330005.json": "fe341a442bf69dbb8ac77d14d5fc8ce7ab2817f60b67c4bcca5e29070279920a",
+    "base_330006.npz": "74fbbeaa48f6bdc8e4516ed91c18e2c89438d9de5140d39e38d011e5ea78c8a2",
+    "base_330006.json": "3f04703a1c1a76d3205e7cbfbe3b1b341385e3b25bff2ac12dee3303e489a9c7",
+    "base_330007.npz": "fc6b26f7f941748ba7b3410e99fefa056e8becd134e89737c879648bd7c73d41",
+    "base_330007.json": "58e8c5df6feead7f65494f5ee3d43876605d0d6c2dd7b975e78bc9403fc30389",
+    "base_330008.npz": "1bd98e7ca30fe7fd48b435aa03dd27487ac5a10c307da9b0bca9724b440e9e95",
+    "base_330008.json": "eb56fafdff1a7aefba4071dd89fdfc204968786a9441e3d768bc2ed1e2136158",
+    "base_330009.npz": "8cbe6f479d0445155f57f95fc69759a62188137431fb26d6456a9e76572f9bc4",
+    "base_330009.json": "46118869fd0370909195c5689146aa49e3adac5546b935c0461598a920ed0e21",
+    "base_330010.npz": "07e2738929a7bfaa8169f2540bdd80146b12edc6ea08f4b192800f8bf1c6afe4",
+    "base_330010.json": "f1d558be4834563c011f7b32544544e90353e480436b07bcf251851a41246e17",
+    "base_330011.npz": "0f1cc3611ea33cec6bb75c4f74e15f63c239cb52f52671bf4550c7e8be113244",
+    "base_330011.json": "fa6f8e3aebc99e898aeffc6e1b1b04f244493612b85757e6f70d74cb700b6f99",
+    "base_330012.npz": "7337eb0fcf1305d6d2a778ebb2a1e4e5d78e0dd31710344bfec14aa97232dab3",
+    "base_330012.json": "7f82db49bc12f474351eceb2e32d2e74ea1c3e73b8198334950f90413c8326f4",
+    "base_330013.npz": "e0961c755633d327b7055d866ad2db1df46fdbf1a39d731273a527a7443ecba1",
+    "base_330013.json": "da8081b482a8c7eefab2c66dea906b9939a5d8f8447d540cde450cd46d017e3f",
+    "base_330014.npz": "662a408d67776b99b982da3d59225c681085b9a7b65147bba064a00763099d6a",
+    "base_330014.json": "e53400559749abab1f6d08e6f0bd97a4df34a9576c2954a1d750dc4ce57f732f",
+    "base_330015.npz": "a9ca39ace9558e8d0d18008b9eb9560edc7b4f6bd54f26824faf7f7b05d44494",
+    "base_330015.json": "21669c05389a55ad1cafa9fa2c518532fb1d818b427f58c5e160d8d4d8e4b284",
+    "base_330016.npz": "a06f1ea6ecb5ff54b023cdbd1eb4fef407a7690ae7f60e0bdc312eb834d89c27",
+    "base_330016.json": "67cfa838a8bcbede044d43de644cfe50b57d31919eb3dfac51d1799515a1cd17",
+    "base_330017.npz": "db98a51540fcc284f3e67e1530d0c66b37ce775c8e2a915bb18d52c33f333bdd",
+    "base_330017.json": "a4c2d6aa4ea56a9b94018ac7918b8d2aecf5e398d200a6a2639bca5924c7803b",
+    "base_330018.npz": "1992def1dd2fe2fad1f2ae5e3a5a1c195bf60a8e60e6b6c6ebfa8d5b96f65f88",
+    "base_330018.json": "d88867976b60f8a74b1582254bda240092748ee16dbb5827128c3d3c6868eb02",
+    "base_330019.npz": "6ed1115a13c21368b17432ae0c3d4131675af425f631b15df4b8cee0d93bc747",
+    "base_330019.json": "bdbcc16182cb6c0b4e1cbec231740802da497f20703a5e231d3d1eabf8496249",
+    "base_330020.npz": "896a60a94bc5977b710cdb9e592c8082c866d7af892c84812235a3f76e1cd73d",
+    "base_330020.json": "80666052133793dad74c940f48837d71ac929bdf719365e8bfe6eeec5b0b751b",
+    "base_330021.npz": "10d392bc65ed3d9fcf8e72466942d97c8b0807618728b27aacd1d99184a03b97",
+    "base_330021.json": "970b9af284614838caa5adb661557d9dfd0415ceedd3be5ad1359af9bdbeb473",
+    "base_330022.npz": "67026f947633ca790d220fb05402851b3cacfb6e57f9cd41e11f5502c80ccf74",
+    "base_330022.json": "9968a9c047564614c48b812592e7c43b7f0014101db5d69b8c6e564bd71f2589",
+    "base_330023.npz": "1f51e8e6a3e06599bc5ebf154aff4e4e074b4ac02450d075ddb877b7576c6a1f",
+    "base_330023.json": "4bb24e4d364c186a973a9fab7d7944297f7cebd908f71116467f4349a47e67b2",
+    "base_330024.npz": "19dd0726337b0d6820185874473e81d4b894cb2be9169b9b2e7e9c0ccb715b4a",
+    "base_330024.json": "7db7bc175defab4edbc499c4d79db330667520977cb2d15dc8bab2a3e0f2b055",
+    "base_330025.npz": "48ca66caebaa5bb911e6aac4468bc8e2ffcf4b3d217dc461b77c91dbf9c8bd08",
+    "base_330025.json": "c20cfa456354e868d53bc38dd38a438b3ba506d5de1dae0d45307982c0baa07f",
+    "base_330026.npz": "b651ee08cd7138f5509caf634ce34061e0838fdc0900f5cc193631bf51e3c53c",
+    "base_330026.json": "0f92d951c91da9214a905a7651deb6649f8177101c55170cf99b281a8da20f0f",
+    "base_330027.npz": "a6aa9ad7355c34027c43b7d57fd1467c5c7f9379c1318d801ae45ac377d7096a",
+    "base_330027.json": "b572965078684ef6e7ad5ec8a7232af67aa2750c4a847764a0732ba555a292ad",
+    "base_330028.npz": "01646d3554560d7a28e52a888aa7926985e84a60344e368318fb156f5b60dd93",
+    "base_330028.json": "22c808cca61dd4b173592fd8c4556383dc48565c59f3904a5ad1a0a5dbcd8e42",
+    "base_330029.npz": "55d5ada049faecb2952cd86c9ef9506bc37697d113ea51fe5c4ed9eddae75238",
+    "base_330029.json": "b666c6c09cd4f11a1ebfb00f5482bfef04e44cd8ff705d3a7486528a4a27596f",
+    "base_330030.npz": "a23f27f17d14779cc6240ca945d8906fd23fd784597fcf12a5d50e95f4adda0f",
+    "base_330030.json": "b21ae09fc6b0fa2bc9b9abc504ced2ffcc926642c1a80b755e44ac69f0e2c091",
+    "base_330031.npz": "6f3d6c3d79f3ec60e9919467db9cb46ee02b7bd29530c9d1e99a17639bbd4e0b",
+    "base_330031.json": "ca870f606953e59dacfe86007b8c64c42bcdfbf7f2b8f4d2546d6f8f729aefdc"
+  }
+}

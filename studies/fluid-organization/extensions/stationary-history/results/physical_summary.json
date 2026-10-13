@@ -1,0 +1,48 @@
+{
+  "independent_runs": 32,
+  "mean_statistics": {
+    "energy": 0.7979870475845975,
+    "dissipation": 0.20024028733055865,
+    "re_lambda": 29.197672698311,
+    "integral_re": 85.46155901291235,
+    "integral_length": 1.6906107695606136,
+    "turnover": 2.319596971120733,
+    "flux_k4": 0.06478167205352996,
+    "tail_energy": 2.056876157812224e-06
+  },
+  "minimum_keta": 1.7433612676088017,
+  "maximum_response_cfl": 0.6279754894513823,
+  "maximum_difference_budget_residual": 1.8985030906490658e-07,
+  "responses": [
+    {
+      "relative_impulse": 0.25,
+      "independent_runs": 32,
+      "events_per_run": 4,
+      "mean_final_energy_ratio": 3.7594582894118522,
+      "final_ratio_ci_low": 3.6649051920466853,
+      "final_ratio_ci_high": 3.8538854148480435,
+      "mean_integrated_ratio": 3.1520868223188665,
+      "integrated_ratio_ci_low": 3.0904135080158266,
+      "integrated_ratio_ci_high": 3.2140243934518975,
+      "mean_production_integral": 3.6273129441161323,
+      "mean_dissipation_integral": 1.4597521403851508,
+      "mean_forcing_difference_integral": 0.5918974323481823,
+      "fraction_of_events_with_gain_above_1_01": 1.0
+    },
+    {
+      "relative_impulse": 0.75,
+      "independent_runs": 32,
+      "events_per_run": 4,
+      "mean_final_energy_ratio": 2.1298233446347243,
+      "final_ratio_ci_low": 2.088555270470086,
+      "final_ratio_ci_high": 2.1716814701150153,
+      "mean_integrated_ratio": 2.3015720877207726,
+      "integrated_ratio_ci_low": 2.2678989254561652,
+      "integrated_ratio_ci_high": 2.3354357008612174,
+      "mean_production_integral": 1.453550277003114,
+      "mean_dissipation_integral": 0.6978201668716426,
+      "mean_forcing_difference_integral": 0.37409316103533913,
+      "fraction_of_events_with_gain_above_1_01": 1.0
+    }
+  ]
+}

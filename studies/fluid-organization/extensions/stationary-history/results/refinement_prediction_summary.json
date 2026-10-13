@@ -1,0 +1,27 @@
+{
+  "runs": [
+    {
+      "seed": 330000,
+      "step_contrast_change": 2.2780698527569143e-07,
+      "grid_contrast_change": 1.380427973568521e-06
+    },
+    {
+      "seed": 330001,
+      "step_contrast_change": 4.6639254147606835e-07,
+      "grid_contrast_change": 2.0434856996487394e-05
+    },
+    {
+      "seed": 330002,
+      "step_contrast_change": -4.653107036345361e-07,
+      "grid_contrast_change": -6.362280099550532e-05
+    },
+    {
+      "seed": 330003,
+      "step_contrast_change": 2.191504649973197e-08,
+      "grid_contrast_change": -0.0006081992555595495
+    }
+  ],
+  "max_absolute_step_contrast_change": 4.6639254147606835e-07,
+  "max_absolute_grid_contrast_change": 0.0006081992555595495,
+  "scope": "Four dependent matched restart controls; not population-wide continuum extrapolation"
+}

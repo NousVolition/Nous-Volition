@@ -1,0 +1,63 @@
+{
+  "energy": {
+    "early_mean": 0.7994471999806969,
+    "late_mean": 0.7965268951884981,
+    "relative_drift": -0.0036595892139330176,
+    "drift_interval": [
+      -0.030424289970059918,
+      0.021561185231002856
+    ],
+    "equivalence_pass": true
+  },
+  "dissipation": {
+    "early_mean": 0.20025657679749265,
+    "late_mean": 0.20022399786362466,
+    "relative_drift": -0.00016269919656181197,
+    "drift_interval": [
+      -0.01736556961316286,
+      0.01737740098502065
+    ],
+    "equivalence_pass": true
+  },
+  "integral_length": {
+    "early_mean": 1.6937414198845633,
+    "late_mean": 1.687480119236664,
+    "relative_drift": -0.0037035731468377043,
+    "drift_interval": [
+      -0.018131050185867824,
+      0.010299403369394422
+    ],
+    "equivalence_pass": true
+  },
+  "power_balance": {
+    "relative_mismatch": 0.001201436652793264,
+    "interval": [
+      -0.0040121285772077575,
+      0.006654336243683788
+    ],
+    "pass_check": true
+  },
+  "independent_runs": 32,
+  "re_lambda_mean": 29.197672698311,
+  "re_lambda_interval": [
+    28.83558391238069,
+    29.580004493197738
+  ],
+  "flux_mean": 0.06478167205352996,
+  "flux_interval": [
+    0.06418662614792071,
+    0.06538354861115873
+  ],
+  "component_ratio_to_isotropic": [
+    1.0125839529986311,
+    0.9854869196234581,
+    1.00192912737791
+  ],
+  "minimum_spin_turnovers": 13.845442746006134,
+  "spectrum": {
+    "total_variation": 0.004838023719068013,
+    "upper_95_percent_bound": 0.021073943305525887,
+    "pass_check": true
+  },
+  "passed": true
+}

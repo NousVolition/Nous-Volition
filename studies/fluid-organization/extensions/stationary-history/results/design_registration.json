@@ -1,0 +1,8 @@
+{
+  "commit": "017052800a62d6fe80fe473ffc009c662f4771a0",
+  "url": "https://github.com/NousVolition/My-Sources-Project-ALL/tree/017052800a62d6fe80fe473ffc009c662f4771a0/reports/fluid-organization-pilot/extensions/stationary-history",
+  "published_utc": "2026-10-12T01:16:57Z",
+  "status": "Prospective design and source registration during calibration, before any model freeze or test integrations. This is not the final model-freeze receipt.",
+  "cloud_calibration_commit": "c7fdcc7e378d767e4dd1968853491ff9bb00f35f",
+  "cloud_calibration_scope": "Eight bounded two-run groups from the last sixteen queued calibration fields; no test generation or fitting. Standard runners in a public repository."
+}

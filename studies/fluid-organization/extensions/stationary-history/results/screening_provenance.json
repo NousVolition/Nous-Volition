@@ -1,0 +1,92 @@
+[
+  {
+    "metadata": "data/screen/n48_nu0.025_dt0.json",
+    "recording": "data/screen/n48_nu0.025_dt0.0125_seed300000.npz",
+    "recorded_metadata_source_sha256": "b6b88173cfd5d214695ea25c925c5b0cfe97b9a2a0d47d92ab93eb90159ff32e",
+    "executed_module": "screen_original_solver.py",
+    "executed_module_sha256": "bf3949cac74aabf336464778a83238fcdd339273f2ea34bc69b26cbb980d8a69",
+    "kernels_sha256": null,
+    "note": "First driver hashed the on-disk solver at completion, after optimization, rather than the module loaded at launch. The executed pre-optimization source was preserved before editing; its actual hash is supplied separately here. Its JSON filename also reflects a with_suffix naming bug. Numerical recordings are retained unchanged.",
+    "status": "completed"
+  },
+  {
+    "metadata": "data/screen/n56_nu0.03_dt0.025_seed300001.json",
+    "recording": "data/screen/n56_nu0.03_dt0.025_seed300001.npz",
+    "recorded_metadata_source_sha256": "19a0f52aefde18079f659c236f02aa0e7a3dab423d4da7f3f3957a31b4d903e2",
+    "executed_module": "screen_optimized_solver.py",
+    "executed_module_sha256": "19a0f52aefde18079f659c236f02aa0e7a3dab423d4da7f3f3957a31b4d903e2",
+    "kernels_sha256": null,
+    "note": "Source hash captured at launch.",
+    "status": "completed"
+  },
+  {
+    "metadata": "data/screen/n56_nu0.03_dt0.025_seed300002.json",
+    "recording": "data/screen/n56_nu0.03_dt0.025_seed300002.npz",
+    "recorded_metadata_source_sha256": "19a0f52aefde18079f659c236f02aa0e7a3dab423d4da7f3f3957a31b4d903e2",
+    "executed_module": "screen_optimized_solver.py",
+    "executed_module_sha256": "19a0f52aefde18079f659c236f02aa0e7a3dab423d4da7f3f3957a31b4d903e2",
+    "kernels_sha256": null,
+    "note": "Source hash captured at launch.",
+    "status": "completed"
+  },
+  {
+    "metadata": "data/screen/n64_nu0.025_dt0.025_seed300000.json",
+    "recording": "data/screen/n64_nu0.025_dt0.025_seed300000.npz",
+    "recorded_metadata_source_sha256": "b6b88173cfd5d214695ea25c925c5b0cfe97b9a2a0d47d92ab93eb90159ff32e",
+    "executed_module": "solver.py",
+    "executed_module_sha256": "b6b88173cfd5d214695ea25c925c5b0cfe97b9a2a0d47d92ab93eb90159ff32e",
+    "kernels_sha256": "8842566787433e14b2fddd2ab2b03c4908c997e1d0a6db49b302af1a1b7e338c",
+    "note": "Source hash captured at launch.",
+    "status": "completed"
+  },
+  {
+    "metadata": "data/screen/n64_nu0.02_dt0.025_seed300003.json",
+    "recording": "data/screen/n64_nu0.02_dt0.025_seed300003.npz",
+    "recorded_metadata_source_sha256": "19a0f52aefde18079f659c236f02aa0e7a3dab423d4da7f3f3957a31b4d903e2",
+    "executed_module": "screen_optimized_solver.py",
+    "executed_module_sha256": "19a0f52aefde18079f659c236f02aa0e7a3dab423d4da7f3f3957a31b4d903e2",
+    "kernels_sha256": null,
+    "note": "Source hash captured at launch.",
+    "status": "completed"
+  },
+  {
+    "metadata": "data/screen/n64_nu0.03_dt0.025_seed300001.json",
+    "recording": "data/screen/n64_nu0.03_dt0.025_seed300001.npz",
+    "recorded_metadata_source_sha256": "19a0f52aefde18079f659c236f02aa0e7a3dab423d4da7f3f3957a31b4d903e2",
+    "executed_module": "screen_optimized_solver.py",
+    "executed_module_sha256": "19a0f52aefde18079f659c236f02aa0e7a3dab423d4da7f3f3957a31b4d903e2",
+    "kernels_sha256": null,
+    "note": "Source hash captured at launch.",
+    "status": "completed"
+  },
+  {
+    "metadata": "data/screen/n80_nu0.025_dt0.0125_seed300000.json",
+    "recording": "data/screen/n80_nu0.025_dt0.0125_seed300000.npz",
+    "recorded_metadata_source_sha256": "b6b88173cfd5d214695ea25c925c5b0cfe97b9a2a0d47d92ab93eb90159ff32e",
+    "executed_module": "solver.py",
+    "executed_module_sha256": "b6b88173cfd5d214695ea25c925c5b0cfe97b9a2a0d47d92ab93eb90159ff32e",
+    "kernels_sha256": "8842566787433e14b2fddd2ab2b03c4908c997e1d0a6db49b302af1a1b7e338c",
+    "note": "Source hash captured at launch.",
+    "status": "completed"
+  },
+  {
+    "metadata": "data/screen/n80_nu0.02_dt0.0125_seed300003.json",
+    "recording": "data/screen/n80_nu0.02_dt0.0125_seed300003.npz",
+    "recorded_metadata_source_sha256": "af07d2af34410c4cdcd9f1bb1be4011134901a8e9a2f06a3cb13123956492401",
+    "executed_module": "numpy_solver_reference.py",
+    "executed_module_sha256": "af07d2af34410c4cdcd9f1bb1be4011134901a8e9a2f06a3cb13123956492401",
+    "kernels_sha256": null,
+    "note": "Source hash captured at launch.",
+    "status": "completed"
+  },
+  {
+    "metadata": "data/screen/n80_nu0.02_dt0.025_seed300003.json",
+    "recording": null,
+    "recorded_metadata_source_sha256": null,
+    "executed_module": null,
+    "executed_module_sha256": null,
+    "kernels_sha256": null,
+    "note": "Source hash captured at launch.",
+    "status": "Stopped at the initial-step CFL guard (>1); not a completed integration"
+  }
+]

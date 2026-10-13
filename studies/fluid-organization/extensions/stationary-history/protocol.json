@@ -1,0 +1,174 @@
+{
+  "title": "Independent prediction in sustained higher Reynolds number turbulence",
+  "status": "Calibration design; models must be frozen before any test simulation",
+  "created_utc": "2026-10-11T17:13:33.172004-07:00",
+  "n": 64,
+  "fine_n": 80,
+  "nu": 0.025,
+  "power": 0.2,
+  "spin_dt": 0.02,
+  "response_dt": 0.01,
+  "events": [
+    32.0,
+    36.0,
+    40.0,
+    44.0
+  ],
+  "horizon": 1.5,
+  "save_dt": 0.05,
+  "baseline_save_dt": 0.5,
+  "strengths": [
+    0.25,
+    0.75
+  ],
+  "impulse_width": 1.0,
+  "initial_speed": 1.4,
+  "history_lags": [
+    0.5,
+    1.0,
+    2.0
+  ],
+  "splits": {
+    "train": [
+      310000,
+      310001,
+      310002,
+      310003,
+      310004,
+      310005,
+      310006,
+      310007,
+      310008,
+      310009,
+      310010,
+      310011,
+      310012,
+      310013,
+      310014,
+      310015,
+      310016,
+      310017,
+      310018,
+      310019,
+      310020,
+      310021,
+      310022,
+      310023
+    ],
+    "validation": [
+      320000,
+      320001,
+      320002,
+      320003,
+      320004,
+      320005,
+      320006,
+      320007
+    ],
+    "test": [
+      330000,
+      330001,
+      330002,
+      330003,
+      330004,
+      330005,
+      330006,
+      330007,
+      330008,
+      330009,
+      330010,
+      330011,
+      330012,
+      330013,
+      330014,
+      330015,
+      330016,
+      330017,
+      330018,
+      330019,
+      330020,
+      330021,
+      330022,
+      330023,
+      330024,
+      330025,
+      330026,
+      330027,
+      330028,
+      330029,
+      330030,
+      330031
+    ]
+  },
+  "refinement_seeds": [
+    330000,
+    330001,
+    330002,
+    330003
+  ],
+  "response_pilot": {"seed": 300000, "baseline_time": 45.0, "source_grid": 64, "description": "Completed long-run screening field, with separate base, half-step and fine-grid responses; outside all prediction splits"},
+  "stationarity_windows": [
+    [
+      20.0,
+      32.0
+    ],
+    [
+      32.0,
+      44.0
+    ]
+  ],
+  "bootstrap_replicates": 10000,
+  "shuffled_models": 3,
+  "model_grid": {
+    "bandwidth_factors": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "ridge": [
+      0.001,
+      0.1,
+      1.0,
+      10.0
+    ]
+  },
+  "gates": {
+    "cfl_max": 1.0,
+    "diffusion_max": 1.0,
+    "budget_relative_max": 5E-05,
+    "keta_min": 1.5,
+    "tail_energy_max": 0.005,
+    "divergence_max": 1E-08,
+    "step_curve_change": 0.005,
+    "grid_curve_change": 0.02,
+    "stationarity_relative_drift": 0.15,
+    "power_relative_mismatch": 0.1,
+    "mean_re_lambda_min": 25.0,
+    "spin_turnovers_min": 10.0,
+    "spectral_total_variation_max": 0.1,
+    "flux_fraction_min": 0.05
+  },
+  "inference": {
+    "target": "Integral from 0 to 1.5 of E_delta(t)/E_delta(0), model time units",
+    "unit": "One independently initialized baseline run, with all four times and both strengths kept together",
+    "primary": "Mean run RMSE of history minus richer present model; paired 95% run bootstrap",
+    "support": "Require upper 95% difference limits below zero against richer present, global present, wrong-run history expectation, strength prior, and event-strength prior, AND all stationarity/numerical gates. This is a joint intersection-union claim; individual comparisons are not simultaneous intervals.",
+    "null": "Three models trained with whole-run history derangements. Average run RMSE over every different test-run donor; resample run nodes in both roles, excluding equal original seeds.",
+    "limitation": "Conditional on one calibration ensemble and candidate model family. This does not prove physical memory beyond the complete current field, high-Reynolds asymptotic universality, or marker-history prediction."
+  },
+  "refinement_design": "Four predeclared test runs. Restart both controls from each base checkpoint at event minus 2. Half uses n64 and half of both steps; fine uses n80 and those same smaller steps. Compare half-base for time and fine-half for space. Full long-run pilots are separate statistical checks.",
+  "sources": [
+    {
+      "title": "Earlier completed transient history study",
+      "url": "https://github.com/NousVolition/My-Sources-Project-ALL/tree/f9def0b18963f44df2a9df970928dda1b5dcb2ed/reports/fluid-organization-pilot/extensions/stress-history"
+    },
+    {
+      "title": "Energy transfer and dissipation in forced isotropic turbulence",
+      "url": "https://arxiv.org/abs/1406.6317"
+    },
+    {
+      "title": "Self organization under negative damping",
+      "url": "https://doi.org/10.1088/1751-8113/48/25/25FT01"
+    }
+  ]
+}
