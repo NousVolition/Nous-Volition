@@ -1,0 +1,93 @@
+{
+  "title": "Community allocation, boundaries and unequal decision priority",
+  "source": "User-supplied Foucault passage; operational definitions are new modeling assumptions.",
+  "seeds": {
+    "discovery": [
+      31000,
+      31001,
+      31002,
+      31003,
+      31004,
+      31005,
+      31006,
+      31007,
+      31008,
+      31009,
+      31010,
+      31011
+    ],
+    "replication": [
+      41000,
+      41001,
+      41002,
+      41003,
+      41004,
+      41005,
+      41006,
+      41007,
+      41008,
+      41009,
+      41010,
+      41011
+    ]
+  },
+  "members": 7,
+  "services": 2,
+  "heterogeneity": [
+    0.0,
+    0.55
+  ],
+  "scarcity": [
+    1.0,
+    1.4
+  ],
+  "policies": {
+    "independent": {
+      "graph": "self"
+    },
+    "reciprocal": {
+      "graph": "connected"
+    },
+    "partitioned": {
+      "graph": "partitioned"
+    },
+    "priority_hierarchy": {
+      "graph": "connected",
+      "priority": 3.0
+    },
+    "override_budgets": {
+      "graph": "connected",
+      "respect": false
+    },
+    "hierarchy_and_override": {
+      "graph": "connected",
+      "priority": 3.0,
+      "respect": false
+    },
+    "recording_only": {
+      "graph": "connected",
+      "recording": true
+    },
+    "costly_assessment": {
+      "graph": "connected",
+      "assessment": 0.1
+    }
+  },
+  "units": {
+    "time": "one available-time unit per fictional member",
+    "service": "synthetic service units per time unit",
+    "met": "fraction of a two-service needs bundle, 0 to 1"
+  },
+  "main_cases": 768,
+  "additional_cases": 576,
+  "solver_calls_per_case": 2,
+  "interpretation": "Ideal allocation oracle with perfect information; not a simulation of negotiations, learning or actual family behavior.",
+  "source_sha256": {
+    "model.py": "97b99efa3ddd8ac1513bba4151a4bf93d27cc6b7f161328d83881fedfe4e98bf",
+    "run_study.py": "8957f18f6f3970bc8dd900b99e023ff22fcf07350cb1fcaaf21d69b32a839286",
+    "test_model.py": "be11beb8cc97d458e4c8ddf3e442c6b1d7fc21d7871f5eb313f6c9cd2731a9d9"
+  },
+  "exploratory": true,
+  "externally_preregistered": false,
+  "caution": "Feasible-set monotonicities and imposed priorities are assumptions/consequences, not discovered social laws. Seed intervals do not include model uncertainty."
+}

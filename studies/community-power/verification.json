@@ -1,0 +1,128 @@
+{
+  "status": "passed",
+  "unit_tests_recorded": 19,
+  "saved_result_checks": 29,
+  "selected_reproductions": 12,
+  "max_supply_violation": 2.220446049250313e-16,
+  "max_need_violation": 3.885780586188048e-16,
+  "max_time_violation": 1.1102230246251565e-16,
+  "note": "Implementation and saved-result verification; not empirical validation of human behavior.",
+  "checks": [
+    {
+      "name": "Frozen model, runner and test hashes match",
+      "passed": true
+    },
+    {
+      "name": "19 unit tests recorded as passed",
+      "passed": true
+    },
+    {
+      "name": "Case and individual counts match protocol",
+      "passed": true
+    },
+    {
+      "name": "Allocation shapes and finite values",
+      "passed": true
+    },
+    {
+      "name": "All 96 communities retained",
+      "passed": true
+    },
+    {
+      "name": "Saved production respects effort, every case",
+      "passed": true
+    },
+    {
+      "name": "Credited bundles receive both services, every case",
+      "passed": true
+    },
+    {
+      "name": "Policy time budgets obeyed, every case",
+      "passed": true
+    },
+    {
+      "name": "No transfers on forbidden edges, every case",
+      "passed": true
+    },
+    {
+      "name": "Summary and per-member tables match arrays",
+      "passed": true
+    },
+    {
+      "name": "Nonnegative flows/efforts and bounded fulfillment",
+      "passed": true
+    },
+    {
+      "name": "Every solved primary optimum preserved",
+      "passed": true
+    },
+    {
+      "name": "Recording-only remains exactly inert across all 96 communities",
+      "passed": true
+    },
+    {
+      "name": "Tighter tolerance changes fulfillment by less than 1e-7",
+      "passed": true
+    },
+    {
+      "name": "Selected case reproduces 0",
+      "passed": true
+    },
+    {
+      "name": "Selected case reproduces 5",
+      "passed": true
+    },
+    {
+      "name": "Selected case reproduces 8",
+      "passed": true
+    },
+    {
+      "name": "Selected case reproduces 23",
+      "passed": true
+    },
+    {
+      "name": "Selected case reproduces 255",
+      "passed": true
+    },
+    {
+      "name": "Selected case reproduces 383",
+      "passed": true
+    },
+    {
+      "name": "Selected case reproduces 384",
+      "passed": true
+    },
+    {
+      "name": "Selected case reproduces 389",
+      "passed": true
+    },
+    {
+      "name": "Selected case reproduces 391",
+      "passed": true
+    },
+    {
+      "name": "Selected case reproduces 500",
+      "passed": true
+    },
+    {
+      "name": "Selected case reproduces 650",
+      "passed": true
+    },
+    {
+      "name": "Selected case reproduces 767",
+      "passed": true
+    },
+    {
+      "name": "Report local links and images resolve",
+      "passed": true
+    },
+    {
+      "name": "Shareable text has no private local paths",
+      "passed": true
+    },
+    {
+      "name": "Delivered files match manifest",
+      "passed": true
+    }
+  ]
+}

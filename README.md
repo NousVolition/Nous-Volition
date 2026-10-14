@@ -22,6 +22,10 @@ This repository, **Streams and Rocks**, preserves the original stream-function r
 
 The [report and plots](studies/fluid-organization/report.html) are here in Streams and Rocks. **[Runnable code and complete data live in My-Sources-Project-ALL](https://github.com/NousVolition/My-Sources-Project-ALL/tree/main/reports/fluid-organization-pilot).** This is separate from the symbolic social SIMS models below.
 
+## Community: coordination, boundaries and power
+
+**[Use the Foucault passage with the seven-member community](studies/community-power/README.md).** Water, Fog, Mist, Gas, Smoke, Clay and Ice name fictional participants in 768 main allocation cases and 576 sensitivity cases. The comparison tracks needs met, unequal decision priority and work beyond requested limits, with 19 passing unit tests and 29 saved-result checks. In the higher-demand replication setting, connected allocation raises mean fulfillment from 46.6% to 77.2%, while the least-served member can lose out. These are explicit synthetic assumptions, not human observations or chemical behavior. [Passage-to-model interpretation](studies/community-power/interpretation.md).
+
 ## SIMS: names, memory, and group boundaries
 
 **[Read the completed six-group SIMS study →](studies/social-organization/README.md)**
@@ -122,4 +126,3 @@ The package includes 374 automated tests, thirty-eight original scientific figur
 ## SIMS animations: what changes within, and what changes with place
 
 [Open the animation guide](studies/sims-recovery-entrainment/animations/index.html). Five interactive examples trace position, internal changes, carried memory, and repeated destination–memory feedback. These are explanatory models with explicit assumptions; download the repository to play the HTML animations locally.
-

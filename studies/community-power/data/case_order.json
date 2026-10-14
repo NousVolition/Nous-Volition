@@ -1,0 +1,6914 @@
+[
+  {
+    "case_id": 0,
+    "split": "discovery",
+    "seed": 31000,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 1,
+    "split": "discovery",
+    "seed": 31000,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 2,
+    "split": "discovery",
+    "seed": 31000,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 3,
+    "split": "discovery",
+    "seed": 31000,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 4,
+    "split": "discovery",
+    "seed": 31000,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 5,
+    "split": "discovery",
+    "seed": 31000,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 6,
+    "split": "discovery",
+    "seed": 31000,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 7,
+    "split": "discovery",
+    "seed": 31000,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 8,
+    "split": "discovery",
+    "seed": 31000,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 9,
+    "split": "discovery",
+    "seed": 31000,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 10,
+    "split": "discovery",
+    "seed": 31000,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 11,
+    "split": "discovery",
+    "seed": 31000,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 12,
+    "split": "discovery",
+    "seed": 31000,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 13,
+    "split": "discovery",
+    "seed": 31000,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 14,
+    "split": "discovery",
+    "seed": 31000,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 15,
+    "split": "discovery",
+    "seed": 31000,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 16,
+    "split": "discovery",
+    "seed": 31000,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 17,
+    "split": "discovery",
+    "seed": 31000,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 18,
+    "split": "discovery",
+    "seed": 31000,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 19,
+    "split": "discovery",
+    "seed": 31000,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 20,
+    "split": "discovery",
+    "seed": 31000,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 21,
+    "split": "discovery",
+    "seed": 31000,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 22,
+    "split": "discovery",
+    "seed": 31000,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 23,
+    "split": "discovery",
+    "seed": 31000,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 24,
+    "split": "discovery",
+    "seed": 31000,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 25,
+    "split": "discovery",
+    "seed": 31000,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 26,
+    "split": "discovery",
+    "seed": 31000,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 27,
+    "split": "discovery",
+    "seed": 31000,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 28,
+    "split": "discovery",
+    "seed": 31000,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 29,
+    "split": "discovery",
+    "seed": 31000,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 30,
+    "split": "discovery",
+    "seed": 31000,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 31,
+    "split": "discovery",
+    "seed": 31000,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 32,
+    "split": "discovery",
+    "seed": 31001,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 33,
+    "split": "discovery",
+    "seed": 31001,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 34,
+    "split": "discovery",
+    "seed": 31001,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 35,
+    "split": "discovery",
+    "seed": 31001,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 36,
+    "split": "discovery",
+    "seed": 31001,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 37,
+    "split": "discovery",
+    "seed": 31001,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 38,
+    "split": "discovery",
+    "seed": 31001,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 39,
+    "split": "discovery",
+    "seed": 31001,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 40,
+    "split": "discovery",
+    "seed": 31001,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 41,
+    "split": "discovery",
+    "seed": 31001,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 42,
+    "split": "discovery",
+    "seed": 31001,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 43,
+    "split": "discovery",
+    "seed": 31001,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 44,
+    "split": "discovery",
+    "seed": 31001,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 45,
+    "split": "discovery",
+    "seed": 31001,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 46,
+    "split": "discovery",
+    "seed": 31001,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 47,
+    "split": "discovery",
+    "seed": 31001,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 48,
+    "split": "discovery",
+    "seed": 31001,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 49,
+    "split": "discovery",
+    "seed": 31001,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 50,
+    "split": "discovery",
+    "seed": 31001,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 51,
+    "split": "discovery",
+    "seed": 31001,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 52,
+    "split": "discovery",
+    "seed": 31001,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 53,
+    "split": "discovery",
+    "seed": 31001,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 54,
+    "split": "discovery",
+    "seed": 31001,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 55,
+    "split": "discovery",
+    "seed": 31001,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 56,
+    "split": "discovery",
+    "seed": 31001,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 57,
+    "split": "discovery",
+    "seed": 31001,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 58,
+    "split": "discovery",
+    "seed": 31001,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 59,
+    "split": "discovery",
+    "seed": 31001,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 60,
+    "split": "discovery",
+    "seed": 31001,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 61,
+    "split": "discovery",
+    "seed": 31001,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 62,
+    "split": "discovery",
+    "seed": 31001,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 63,
+    "split": "discovery",
+    "seed": 31001,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 64,
+    "split": "discovery",
+    "seed": 31002,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 65,
+    "split": "discovery",
+    "seed": 31002,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 66,
+    "split": "discovery",
+    "seed": 31002,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 67,
+    "split": "discovery",
+    "seed": 31002,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 68,
+    "split": "discovery",
+    "seed": 31002,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 69,
+    "split": "discovery",
+    "seed": 31002,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 70,
+    "split": "discovery",
+    "seed": 31002,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 71,
+    "split": "discovery",
+    "seed": 31002,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 72,
+    "split": "discovery",
+    "seed": 31002,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 73,
+    "split": "discovery",
+    "seed": 31002,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 74,
+    "split": "discovery",
+    "seed": 31002,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 75,
+    "split": "discovery",
+    "seed": 31002,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 76,
+    "split": "discovery",
+    "seed": 31002,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 77,
+    "split": "discovery",
+    "seed": 31002,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 78,
+    "split": "discovery",
+    "seed": 31002,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 79,
+    "split": "discovery",
+    "seed": 31002,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 80,
+    "split": "discovery",
+    "seed": 31002,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 81,
+    "split": "discovery",
+    "seed": 31002,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 82,
+    "split": "discovery",
+    "seed": 31002,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 83,
+    "split": "discovery",
+    "seed": 31002,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 84,
+    "split": "discovery",
+    "seed": 31002,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 85,
+    "split": "discovery",
+    "seed": 31002,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 86,
+    "split": "discovery",
+    "seed": 31002,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 87,
+    "split": "discovery",
+    "seed": 31002,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 88,
+    "split": "discovery",
+    "seed": 31002,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 89,
+    "split": "discovery",
+    "seed": 31002,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 90,
+    "split": "discovery",
+    "seed": 31002,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 91,
+    "split": "discovery",
+    "seed": 31002,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 92,
+    "split": "discovery",
+    "seed": 31002,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 93,
+    "split": "discovery",
+    "seed": 31002,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 94,
+    "split": "discovery",
+    "seed": 31002,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 95,
+    "split": "discovery",
+    "seed": 31002,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 96,
+    "split": "discovery",
+    "seed": 31003,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 97,
+    "split": "discovery",
+    "seed": 31003,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 98,
+    "split": "discovery",
+    "seed": 31003,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 99,
+    "split": "discovery",
+    "seed": 31003,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 100,
+    "split": "discovery",
+    "seed": 31003,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 101,
+    "split": "discovery",
+    "seed": 31003,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 102,
+    "split": "discovery",
+    "seed": 31003,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 103,
+    "split": "discovery",
+    "seed": 31003,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 104,
+    "split": "discovery",
+    "seed": 31003,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 105,
+    "split": "discovery",
+    "seed": 31003,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 106,
+    "split": "discovery",
+    "seed": 31003,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 107,
+    "split": "discovery",
+    "seed": 31003,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 108,
+    "split": "discovery",
+    "seed": 31003,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 109,
+    "split": "discovery",
+    "seed": 31003,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 110,
+    "split": "discovery",
+    "seed": 31003,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 111,
+    "split": "discovery",
+    "seed": 31003,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 112,
+    "split": "discovery",
+    "seed": 31003,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 113,
+    "split": "discovery",
+    "seed": 31003,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 114,
+    "split": "discovery",
+    "seed": 31003,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 115,
+    "split": "discovery",
+    "seed": 31003,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 116,
+    "split": "discovery",
+    "seed": 31003,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 117,
+    "split": "discovery",
+    "seed": 31003,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 118,
+    "split": "discovery",
+    "seed": 31003,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 119,
+    "split": "discovery",
+    "seed": 31003,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 120,
+    "split": "discovery",
+    "seed": 31003,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 121,
+    "split": "discovery",
+    "seed": 31003,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 122,
+    "split": "discovery",
+    "seed": 31003,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 123,
+    "split": "discovery",
+    "seed": 31003,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 124,
+    "split": "discovery",
+    "seed": 31003,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 125,
+    "split": "discovery",
+    "seed": 31003,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 126,
+    "split": "discovery",
+    "seed": 31003,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 127,
+    "split": "discovery",
+    "seed": 31003,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 128,
+    "split": "discovery",
+    "seed": 31004,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 129,
+    "split": "discovery",
+    "seed": 31004,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 130,
+    "split": "discovery",
+    "seed": 31004,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 131,
+    "split": "discovery",
+    "seed": 31004,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 132,
+    "split": "discovery",
+    "seed": 31004,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 133,
+    "split": "discovery",
+    "seed": 31004,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 134,
+    "split": "discovery",
+    "seed": 31004,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 135,
+    "split": "discovery",
+    "seed": 31004,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 136,
+    "split": "discovery",
+    "seed": 31004,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 137,
+    "split": "discovery",
+    "seed": 31004,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 138,
+    "split": "discovery",
+    "seed": 31004,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 139,
+    "split": "discovery",
+    "seed": 31004,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 140,
+    "split": "discovery",
+    "seed": 31004,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 141,
+    "split": "discovery",
+    "seed": 31004,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 142,
+    "split": "discovery",
+    "seed": 31004,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 143,
+    "split": "discovery",
+    "seed": 31004,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 144,
+    "split": "discovery",
+    "seed": 31004,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 145,
+    "split": "discovery",
+    "seed": 31004,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 146,
+    "split": "discovery",
+    "seed": 31004,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 147,
+    "split": "discovery",
+    "seed": 31004,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 148,
+    "split": "discovery",
+    "seed": 31004,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 149,
+    "split": "discovery",
+    "seed": 31004,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 150,
+    "split": "discovery",
+    "seed": 31004,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 151,
+    "split": "discovery",
+    "seed": 31004,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 152,
+    "split": "discovery",
+    "seed": 31004,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 153,
+    "split": "discovery",
+    "seed": 31004,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 154,
+    "split": "discovery",
+    "seed": 31004,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 155,
+    "split": "discovery",
+    "seed": 31004,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 156,
+    "split": "discovery",
+    "seed": 31004,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 157,
+    "split": "discovery",
+    "seed": 31004,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 158,
+    "split": "discovery",
+    "seed": 31004,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 159,
+    "split": "discovery",
+    "seed": 31004,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 160,
+    "split": "discovery",
+    "seed": 31005,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 161,
+    "split": "discovery",
+    "seed": 31005,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 162,
+    "split": "discovery",
+    "seed": 31005,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 163,
+    "split": "discovery",
+    "seed": 31005,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 164,
+    "split": "discovery",
+    "seed": 31005,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 165,
+    "split": "discovery",
+    "seed": 31005,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 166,
+    "split": "discovery",
+    "seed": 31005,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 167,
+    "split": "discovery",
+    "seed": 31005,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 168,
+    "split": "discovery",
+    "seed": 31005,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 169,
+    "split": "discovery",
+    "seed": 31005,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 170,
+    "split": "discovery",
+    "seed": 31005,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 171,
+    "split": "discovery",
+    "seed": 31005,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 172,
+    "split": "discovery",
+    "seed": 31005,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 173,
+    "split": "discovery",
+    "seed": 31005,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 174,
+    "split": "discovery",
+    "seed": 31005,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 175,
+    "split": "discovery",
+    "seed": 31005,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 176,
+    "split": "discovery",
+    "seed": 31005,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 177,
+    "split": "discovery",
+    "seed": 31005,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 178,
+    "split": "discovery",
+    "seed": 31005,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 179,
+    "split": "discovery",
+    "seed": 31005,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 180,
+    "split": "discovery",
+    "seed": 31005,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 181,
+    "split": "discovery",
+    "seed": 31005,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 182,
+    "split": "discovery",
+    "seed": 31005,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 183,
+    "split": "discovery",
+    "seed": 31005,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 184,
+    "split": "discovery",
+    "seed": 31005,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 185,
+    "split": "discovery",
+    "seed": 31005,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 186,
+    "split": "discovery",
+    "seed": 31005,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 187,
+    "split": "discovery",
+    "seed": 31005,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 188,
+    "split": "discovery",
+    "seed": 31005,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 189,
+    "split": "discovery",
+    "seed": 31005,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 190,
+    "split": "discovery",
+    "seed": 31005,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 191,
+    "split": "discovery",
+    "seed": 31005,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 192,
+    "split": "discovery",
+    "seed": 31006,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 193,
+    "split": "discovery",
+    "seed": 31006,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 194,
+    "split": "discovery",
+    "seed": 31006,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 195,
+    "split": "discovery",
+    "seed": 31006,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 196,
+    "split": "discovery",
+    "seed": 31006,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 197,
+    "split": "discovery",
+    "seed": 31006,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 198,
+    "split": "discovery",
+    "seed": 31006,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 199,
+    "split": "discovery",
+    "seed": 31006,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 200,
+    "split": "discovery",
+    "seed": 31006,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 201,
+    "split": "discovery",
+    "seed": 31006,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 202,
+    "split": "discovery",
+    "seed": 31006,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 203,
+    "split": "discovery",
+    "seed": 31006,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 204,
+    "split": "discovery",
+    "seed": 31006,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 205,
+    "split": "discovery",
+    "seed": 31006,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 206,
+    "split": "discovery",
+    "seed": 31006,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 207,
+    "split": "discovery",
+    "seed": 31006,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 208,
+    "split": "discovery",
+    "seed": 31006,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 209,
+    "split": "discovery",
+    "seed": 31006,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 210,
+    "split": "discovery",
+    "seed": 31006,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 211,
+    "split": "discovery",
+    "seed": 31006,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 212,
+    "split": "discovery",
+    "seed": 31006,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 213,
+    "split": "discovery",
+    "seed": 31006,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 214,
+    "split": "discovery",
+    "seed": 31006,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 215,
+    "split": "discovery",
+    "seed": 31006,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 216,
+    "split": "discovery",
+    "seed": 31006,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 217,
+    "split": "discovery",
+    "seed": 31006,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 218,
+    "split": "discovery",
+    "seed": 31006,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 219,
+    "split": "discovery",
+    "seed": 31006,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 220,
+    "split": "discovery",
+    "seed": 31006,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 221,
+    "split": "discovery",
+    "seed": 31006,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 222,
+    "split": "discovery",
+    "seed": 31006,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 223,
+    "split": "discovery",
+    "seed": 31006,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 224,
+    "split": "discovery",
+    "seed": 31007,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 225,
+    "split": "discovery",
+    "seed": 31007,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 226,
+    "split": "discovery",
+    "seed": 31007,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 227,
+    "split": "discovery",
+    "seed": 31007,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 228,
+    "split": "discovery",
+    "seed": 31007,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 229,
+    "split": "discovery",
+    "seed": 31007,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 230,
+    "split": "discovery",
+    "seed": 31007,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 231,
+    "split": "discovery",
+    "seed": 31007,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 232,
+    "split": "discovery",
+    "seed": 31007,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 233,
+    "split": "discovery",
+    "seed": 31007,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 234,
+    "split": "discovery",
+    "seed": 31007,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 235,
+    "split": "discovery",
+    "seed": 31007,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 236,
+    "split": "discovery",
+    "seed": 31007,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 237,
+    "split": "discovery",
+    "seed": 31007,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 238,
+    "split": "discovery",
+    "seed": 31007,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 239,
+    "split": "discovery",
+    "seed": 31007,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 240,
+    "split": "discovery",
+    "seed": 31007,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 241,
+    "split": "discovery",
+    "seed": 31007,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 242,
+    "split": "discovery",
+    "seed": 31007,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 243,
+    "split": "discovery",
+    "seed": 31007,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 244,
+    "split": "discovery",
+    "seed": 31007,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 245,
+    "split": "discovery",
+    "seed": 31007,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 246,
+    "split": "discovery",
+    "seed": 31007,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 247,
+    "split": "discovery",
+    "seed": 31007,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 248,
+    "split": "discovery",
+    "seed": 31007,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 249,
+    "split": "discovery",
+    "seed": 31007,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 250,
+    "split": "discovery",
+    "seed": 31007,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 251,
+    "split": "discovery",
+    "seed": 31007,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 252,
+    "split": "discovery",
+    "seed": 31007,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 253,
+    "split": "discovery",
+    "seed": 31007,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 254,
+    "split": "discovery",
+    "seed": 31007,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 255,
+    "split": "discovery",
+    "seed": 31007,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 256,
+    "split": "discovery",
+    "seed": 31008,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 257,
+    "split": "discovery",
+    "seed": 31008,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 258,
+    "split": "discovery",
+    "seed": 31008,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 259,
+    "split": "discovery",
+    "seed": 31008,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 260,
+    "split": "discovery",
+    "seed": 31008,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 261,
+    "split": "discovery",
+    "seed": 31008,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 262,
+    "split": "discovery",
+    "seed": 31008,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 263,
+    "split": "discovery",
+    "seed": 31008,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 264,
+    "split": "discovery",
+    "seed": 31008,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 265,
+    "split": "discovery",
+    "seed": 31008,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 266,
+    "split": "discovery",
+    "seed": 31008,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 267,
+    "split": "discovery",
+    "seed": 31008,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 268,
+    "split": "discovery",
+    "seed": 31008,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 269,
+    "split": "discovery",
+    "seed": 31008,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 270,
+    "split": "discovery",
+    "seed": 31008,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 271,
+    "split": "discovery",
+    "seed": 31008,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 272,
+    "split": "discovery",
+    "seed": 31008,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 273,
+    "split": "discovery",
+    "seed": 31008,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 274,
+    "split": "discovery",
+    "seed": 31008,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 275,
+    "split": "discovery",
+    "seed": 31008,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 276,
+    "split": "discovery",
+    "seed": 31008,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 277,
+    "split": "discovery",
+    "seed": 31008,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 278,
+    "split": "discovery",
+    "seed": 31008,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 279,
+    "split": "discovery",
+    "seed": 31008,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 280,
+    "split": "discovery",
+    "seed": 31008,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 281,
+    "split": "discovery",
+    "seed": 31008,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 282,
+    "split": "discovery",
+    "seed": 31008,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 283,
+    "split": "discovery",
+    "seed": 31008,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 284,
+    "split": "discovery",
+    "seed": 31008,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 285,
+    "split": "discovery",
+    "seed": 31008,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 286,
+    "split": "discovery",
+    "seed": 31008,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 287,
+    "split": "discovery",
+    "seed": 31008,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 288,
+    "split": "discovery",
+    "seed": 31009,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 289,
+    "split": "discovery",
+    "seed": 31009,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 290,
+    "split": "discovery",
+    "seed": 31009,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 291,
+    "split": "discovery",
+    "seed": 31009,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 292,
+    "split": "discovery",
+    "seed": 31009,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 293,
+    "split": "discovery",
+    "seed": 31009,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 294,
+    "split": "discovery",
+    "seed": 31009,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 295,
+    "split": "discovery",
+    "seed": 31009,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 296,
+    "split": "discovery",
+    "seed": 31009,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 297,
+    "split": "discovery",
+    "seed": 31009,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 298,
+    "split": "discovery",
+    "seed": 31009,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 299,
+    "split": "discovery",
+    "seed": 31009,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 300,
+    "split": "discovery",
+    "seed": 31009,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 301,
+    "split": "discovery",
+    "seed": 31009,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 302,
+    "split": "discovery",
+    "seed": 31009,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 303,
+    "split": "discovery",
+    "seed": 31009,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 304,
+    "split": "discovery",
+    "seed": 31009,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 305,
+    "split": "discovery",
+    "seed": 31009,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 306,
+    "split": "discovery",
+    "seed": 31009,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 307,
+    "split": "discovery",
+    "seed": 31009,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 308,
+    "split": "discovery",
+    "seed": 31009,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 309,
+    "split": "discovery",
+    "seed": 31009,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 310,
+    "split": "discovery",
+    "seed": 31009,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 311,
+    "split": "discovery",
+    "seed": 31009,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 312,
+    "split": "discovery",
+    "seed": 31009,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 313,
+    "split": "discovery",
+    "seed": 31009,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 314,
+    "split": "discovery",
+    "seed": 31009,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 315,
+    "split": "discovery",
+    "seed": 31009,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 316,
+    "split": "discovery",
+    "seed": 31009,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 317,
+    "split": "discovery",
+    "seed": 31009,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 318,
+    "split": "discovery",
+    "seed": 31009,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 319,
+    "split": "discovery",
+    "seed": 31009,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 320,
+    "split": "discovery",
+    "seed": 31010,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 321,
+    "split": "discovery",
+    "seed": 31010,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 322,
+    "split": "discovery",
+    "seed": 31010,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 323,
+    "split": "discovery",
+    "seed": 31010,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 324,
+    "split": "discovery",
+    "seed": 31010,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 325,
+    "split": "discovery",
+    "seed": 31010,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 326,
+    "split": "discovery",
+    "seed": 31010,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 327,
+    "split": "discovery",
+    "seed": 31010,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 328,
+    "split": "discovery",
+    "seed": 31010,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 329,
+    "split": "discovery",
+    "seed": 31010,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 330,
+    "split": "discovery",
+    "seed": 31010,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 331,
+    "split": "discovery",
+    "seed": 31010,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 332,
+    "split": "discovery",
+    "seed": 31010,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 333,
+    "split": "discovery",
+    "seed": 31010,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 334,
+    "split": "discovery",
+    "seed": 31010,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 335,
+    "split": "discovery",
+    "seed": 31010,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 336,
+    "split": "discovery",
+    "seed": 31010,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 337,
+    "split": "discovery",
+    "seed": 31010,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 338,
+    "split": "discovery",
+    "seed": 31010,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 339,
+    "split": "discovery",
+    "seed": 31010,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 340,
+    "split": "discovery",
+    "seed": 31010,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 341,
+    "split": "discovery",
+    "seed": 31010,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 342,
+    "split": "discovery",
+    "seed": 31010,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 343,
+    "split": "discovery",
+    "seed": 31010,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 344,
+    "split": "discovery",
+    "seed": 31010,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 345,
+    "split": "discovery",
+    "seed": 31010,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 346,
+    "split": "discovery",
+    "seed": 31010,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 347,
+    "split": "discovery",
+    "seed": 31010,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 348,
+    "split": "discovery",
+    "seed": 31010,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 349,
+    "split": "discovery",
+    "seed": 31010,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 350,
+    "split": "discovery",
+    "seed": 31010,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 351,
+    "split": "discovery",
+    "seed": 31010,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 352,
+    "split": "discovery",
+    "seed": 31011,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 353,
+    "split": "discovery",
+    "seed": 31011,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 354,
+    "split": "discovery",
+    "seed": 31011,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 355,
+    "split": "discovery",
+    "seed": 31011,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 356,
+    "split": "discovery",
+    "seed": 31011,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 357,
+    "split": "discovery",
+    "seed": 31011,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 358,
+    "split": "discovery",
+    "seed": 31011,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 359,
+    "split": "discovery",
+    "seed": 31011,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 360,
+    "split": "discovery",
+    "seed": 31011,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 361,
+    "split": "discovery",
+    "seed": 31011,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 362,
+    "split": "discovery",
+    "seed": 31011,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 363,
+    "split": "discovery",
+    "seed": 31011,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 364,
+    "split": "discovery",
+    "seed": 31011,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 365,
+    "split": "discovery",
+    "seed": 31011,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 366,
+    "split": "discovery",
+    "seed": 31011,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 367,
+    "split": "discovery",
+    "seed": 31011,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 368,
+    "split": "discovery",
+    "seed": 31011,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 369,
+    "split": "discovery",
+    "seed": 31011,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 370,
+    "split": "discovery",
+    "seed": 31011,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 371,
+    "split": "discovery",
+    "seed": 31011,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 372,
+    "split": "discovery",
+    "seed": 31011,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 373,
+    "split": "discovery",
+    "seed": 31011,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 374,
+    "split": "discovery",
+    "seed": 31011,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 375,
+    "split": "discovery",
+    "seed": 31011,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 376,
+    "split": "discovery",
+    "seed": 31011,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 377,
+    "split": "discovery",
+    "seed": 31011,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 378,
+    "split": "discovery",
+    "seed": 31011,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 379,
+    "split": "discovery",
+    "seed": 31011,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 380,
+    "split": "discovery",
+    "seed": 31011,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 381,
+    "split": "discovery",
+    "seed": 31011,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 382,
+    "split": "discovery",
+    "seed": 31011,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 383,
+    "split": "discovery",
+    "seed": 31011,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 384,
+    "split": "replication",
+    "seed": 41000,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 385,
+    "split": "replication",
+    "seed": 41000,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 386,
+    "split": "replication",
+    "seed": 41000,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 387,
+    "split": "replication",
+    "seed": 41000,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 388,
+    "split": "replication",
+    "seed": 41000,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 389,
+    "split": "replication",
+    "seed": 41000,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 390,
+    "split": "replication",
+    "seed": 41000,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 391,
+    "split": "replication",
+    "seed": 41000,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 392,
+    "split": "replication",
+    "seed": 41000,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 393,
+    "split": "replication",
+    "seed": 41000,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 394,
+    "split": "replication",
+    "seed": 41000,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 395,
+    "split": "replication",
+    "seed": 41000,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 396,
+    "split": "replication",
+    "seed": 41000,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 397,
+    "split": "replication",
+    "seed": 41000,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 398,
+    "split": "replication",
+    "seed": 41000,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 399,
+    "split": "replication",
+    "seed": 41000,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 400,
+    "split": "replication",
+    "seed": 41000,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 401,
+    "split": "replication",
+    "seed": 41000,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 402,
+    "split": "replication",
+    "seed": 41000,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 403,
+    "split": "replication",
+    "seed": 41000,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 404,
+    "split": "replication",
+    "seed": 41000,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 405,
+    "split": "replication",
+    "seed": 41000,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 406,
+    "split": "replication",
+    "seed": 41000,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 407,
+    "split": "replication",
+    "seed": 41000,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 408,
+    "split": "replication",
+    "seed": 41000,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 409,
+    "split": "replication",
+    "seed": 41000,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 410,
+    "split": "replication",
+    "seed": 41000,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 411,
+    "split": "replication",
+    "seed": 41000,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 412,
+    "split": "replication",
+    "seed": 41000,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 413,
+    "split": "replication",
+    "seed": 41000,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 414,
+    "split": "replication",
+    "seed": 41000,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 415,
+    "split": "replication",
+    "seed": 41000,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 416,
+    "split": "replication",
+    "seed": 41001,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 417,
+    "split": "replication",
+    "seed": 41001,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 418,
+    "split": "replication",
+    "seed": 41001,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 419,
+    "split": "replication",
+    "seed": 41001,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 420,
+    "split": "replication",
+    "seed": 41001,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 421,
+    "split": "replication",
+    "seed": 41001,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 422,
+    "split": "replication",
+    "seed": 41001,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 423,
+    "split": "replication",
+    "seed": 41001,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 424,
+    "split": "replication",
+    "seed": 41001,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 425,
+    "split": "replication",
+    "seed": 41001,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 426,
+    "split": "replication",
+    "seed": 41001,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 427,
+    "split": "replication",
+    "seed": 41001,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 428,
+    "split": "replication",
+    "seed": 41001,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 429,
+    "split": "replication",
+    "seed": 41001,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 430,
+    "split": "replication",
+    "seed": 41001,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 431,
+    "split": "replication",
+    "seed": 41001,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 432,
+    "split": "replication",
+    "seed": 41001,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 433,
+    "split": "replication",
+    "seed": 41001,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 434,
+    "split": "replication",
+    "seed": 41001,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 435,
+    "split": "replication",
+    "seed": 41001,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 436,
+    "split": "replication",
+    "seed": 41001,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 437,
+    "split": "replication",
+    "seed": 41001,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 438,
+    "split": "replication",
+    "seed": 41001,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 439,
+    "split": "replication",
+    "seed": 41001,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 440,
+    "split": "replication",
+    "seed": 41001,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 441,
+    "split": "replication",
+    "seed": 41001,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 442,
+    "split": "replication",
+    "seed": 41001,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 443,
+    "split": "replication",
+    "seed": 41001,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 444,
+    "split": "replication",
+    "seed": 41001,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 445,
+    "split": "replication",
+    "seed": 41001,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 446,
+    "split": "replication",
+    "seed": 41001,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 447,
+    "split": "replication",
+    "seed": 41001,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 448,
+    "split": "replication",
+    "seed": 41002,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 449,
+    "split": "replication",
+    "seed": 41002,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 450,
+    "split": "replication",
+    "seed": 41002,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 451,
+    "split": "replication",
+    "seed": 41002,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 452,
+    "split": "replication",
+    "seed": 41002,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 453,
+    "split": "replication",
+    "seed": 41002,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 454,
+    "split": "replication",
+    "seed": 41002,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 455,
+    "split": "replication",
+    "seed": 41002,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 456,
+    "split": "replication",
+    "seed": 41002,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 457,
+    "split": "replication",
+    "seed": 41002,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 458,
+    "split": "replication",
+    "seed": 41002,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 459,
+    "split": "replication",
+    "seed": 41002,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 460,
+    "split": "replication",
+    "seed": 41002,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 461,
+    "split": "replication",
+    "seed": 41002,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 462,
+    "split": "replication",
+    "seed": 41002,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 463,
+    "split": "replication",
+    "seed": 41002,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 464,
+    "split": "replication",
+    "seed": 41002,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 465,
+    "split": "replication",
+    "seed": 41002,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 466,
+    "split": "replication",
+    "seed": 41002,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 467,
+    "split": "replication",
+    "seed": 41002,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 468,
+    "split": "replication",
+    "seed": 41002,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 469,
+    "split": "replication",
+    "seed": 41002,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 470,
+    "split": "replication",
+    "seed": 41002,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 471,
+    "split": "replication",
+    "seed": 41002,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 472,
+    "split": "replication",
+    "seed": 41002,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 473,
+    "split": "replication",
+    "seed": 41002,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 474,
+    "split": "replication",
+    "seed": 41002,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 475,
+    "split": "replication",
+    "seed": 41002,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 476,
+    "split": "replication",
+    "seed": 41002,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 477,
+    "split": "replication",
+    "seed": 41002,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 478,
+    "split": "replication",
+    "seed": 41002,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 479,
+    "split": "replication",
+    "seed": 41002,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 480,
+    "split": "replication",
+    "seed": 41003,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 481,
+    "split": "replication",
+    "seed": 41003,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 482,
+    "split": "replication",
+    "seed": 41003,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 483,
+    "split": "replication",
+    "seed": 41003,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 484,
+    "split": "replication",
+    "seed": 41003,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 485,
+    "split": "replication",
+    "seed": 41003,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 486,
+    "split": "replication",
+    "seed": 41003,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 487,
+    "split": "replication",
+    "seed": 41003,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 488,
+    "split": "replication",
+    "seed": 41003,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 489,
+    "split": "replication",
+    "seed": 41003,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 490,
+    "split": "replication",
+    "seed": 41003,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 491,
+    "split": "replication",
+    "seed": 41003,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 492,
+    "split": "replication",
+    "seed": 41003,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 493,
+    "split": "replication",
+    "seed": 41003,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 494,
+    "split": "replication",
+    "seed": 41003,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 495,
+    "split": "replication",
+    "seed": 41003,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 496,
+    "split": "replication",
+    "seed": 41003,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 497,
+    "split": "replication",
+    "seed": 41003,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 498,
+    "split": "replication",
+    "seed": 41003,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 499,
+    "split": "replication",
+    "seed": 41003,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 500,
+    "split": "replication",
+    "seed": 41003,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 501,
+    "split": "replication",
+    "seed": 41003,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 502,
+    "split": "replication",
+    "seed": 41003,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 503,
+    "split": "replication",
+    "seed": 41003,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 504,
+    "split": "replication",
+    "seed": 41003,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 505,
+    "split": "replication",
+    "seed": 41003,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 506,
+    "split": "replication",
+    "seed": 41003,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 507,
+    "split": "replication",
+    "seed": 41003,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 508,
+    "split": "replication",
+    "seed": 41003,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 509,
+    "split": "replication",
+    "seed": 41003,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 510,
+    "split": "replication",
+    "seed": 41003,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 511,
+    "split": "replication",
+    "seed": 41003,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 512,
+    "split": "replication",
+    "seed": 41004,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 513,
+    "split": "replication",
+    "seed": 41004,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 514,
+    "split": "replication",
+    "seed": 41004,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 515,
+    "split": "replication",
+    "seed": 41004,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 516,
+    "split": "replication",
+    "seed": 41004,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 517,
+    "split": "replication",
+    "seed": 41004,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 518,
+    "split": "replication",
+    "seed": 41004,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 519,
+    "split": "replication",
+    "seed": 41004,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 520,
+    "split": "replication",
+    "seed": 41004,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 521,
+    "split": "replication",
+    "seed": 41004,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 522,
+    "split": "replication",
+    "seed": 41004,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 523,
+    "split": "replication",
+    "seed": 41004,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 524,
+    "split": "replication",
+    "seed": 41004,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 525,
+    "split": "replication",
+    "seed": 41004,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 526,
+    "split": "replication",
+    "seed": 41004,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 527,
+    "split": "replication",
+    "seed": 41004,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 528,
+    "split": "replication",
+    "seed": 41004,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 529,
+    "split": "replication",
+    "seed": 41004,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 530,
+    "split": "replication",
+    "seed": 41004,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 531,
+    "split": "replication",
+    "seed": 41004,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 532,
+    "split": "replication",
+    "seed": 41004,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 533,
+    "split": "replication",
+    "seed": 41004,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 534,
+    "split": "replication",
+    "seed": 41004,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 535,
+    "split": "replication",
+    "seed": 41004,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 536,
+    "split": "replication",
+    "seed": 41004,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 537,
+    "split": "replication",
+    "seed": 41004,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 538,
+    "split": "replication",
+    "seed": 41004,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 539,
+    "split": "replication",
+    "seed": 41004,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 540,
+    "split": "replication",
+    "seed": 41004,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 541,
+    "split": "replication",
+    "seed": 41004,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 542,
+    "split": "replication",
+    "seed": 41004,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 543,
+    "split": "replication",
+    "seed": 41004,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 544,
+    "split": "replication",
+    "seed": 41005,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 545,
+    "split": "replication",
+    "seed": 41005,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 546,
+    "split": "replication",
+    "seed": 41005,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 547,
+    "split": "replication",
+    "seed": 41005,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 548,
+    "split": "replication",
+    "seed": 41005,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 549,
+    "split": "replication",
+    "seed": 41005,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 550,
+    "split": "replication",
+    "seed": 41005,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 551,
+    "split": "replication",
+    "seed": 41005,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 552,
+    "split": "replication",
+    "seed": 41005,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 553,
+    "split": "replication",
+    "seed": 41005,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 554,
+    "split": "replication",
+    "seed": 41005,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 555,
+    "split": "replication",
+    "seed": 41005,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 556,
+    "split": "replication",
+    "seed": 41005,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 557,
+    "split": "replication",
+    "seed": 41005,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 558,
+    "split": "replication",
+    "seed": 41005,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 559,
+    "split": "replication",
+    "seed": 41005,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 560,
+    "split": "replication",
+    "seed": 41005,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 561,
+    "split": "replication",
+    "seed": 41005,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 562,
+    "split": "replication",
+    "seed": 41005,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 563,
+    "split": "replication",
+    "seed": 41005,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 564,
+    "split": "replication",
+    "seed": 41005,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 565,
+    "split": "replication",
+    "seed": 41005,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 566,
+    "split": "replication",
+    "seed": 41005,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 567,
+    "split": "replication",
+    "seed": 41005,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 568,
+    "split": "replication",
+    "seed": 41005,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 569,
+    "split": "replication",
+    "seed": 41005,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 570,
+    "split": "replication",
+    "seed": 41005,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 571,
+    "split": "replication",
+    "seed": 41005,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 572,
+    "split": "replication",
+    "seed": 41005,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 573,
+    "split": "replication",
+    "seed": 41005,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 574,
+    "split": "replication",
+    "seed": 41005,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 575,
+    "split": "replication",
+    "seed": 41005,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 576,
+    "split": "replication",
+    "seed": 41006,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 577,
+    "split": "replication",
+    "seed": 41006,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 578,
+    "split": "replication",
+    "seed": 41006,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 579,
+    "split": "replication",
+    "seed": 41006,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 580,
+    "split": "replication",
+    "seed": 41006,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 581,
+    "split": "replication",
+    "seed": 41006,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 582,
+    "split": "replication",
+    "seed": 41006,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 583,
+    "split": "replication",
+    "seed": 41006,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 584,
+    "split": "replication",
+    "seed": 41006,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 585,
+    "split": "replication",
+    "seed": 41006,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 586,
+    "split": "replication",
+    "seed": 41006,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 587,
+    "split": "replication",
+    "seed": 41006,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 588,
+    "split": "replication",
+    "seed": 41006,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 589,
+    "split": "replication",
+    "seed": 41006,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 590,
+    "split": "replication",
+    "seed": 41006,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 591,
+    "split": "replication",
+    "seed": 41006,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 592,
+    "split": "replication",
+    "seed": 41006,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 593,
+    "split": "replication",
+    "seed": 41006,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 594,
+    "split": "replication",
+    "seed": 41006,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 595,
+    "split": "replication",
+    "seed": 41006,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 596,
+    "split": "replication",
+    "seed": 41006,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 597,
+    "split": "replication",
+    "seed": 41006,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 598,
+    "split": "replication",
+    "seed": 41006,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 599,
+    "split": "replication",
+    "seed": 41006,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 600,
+    "split": "replication",
+    "seed": 41006,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 601,
+    "split": "replication",
+    "seed": 41006,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 602,
+    "split": "replication",
+    "seed": 41006,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 603,
+    "split": "replication",
+    "seed": 41006,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 604,
+    "split": "replication",
+    "seed": 41006,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 605,
+    "split": "replication",
+    "seed": 41006,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 606,
+    "split": "replication",
+    "seed": 41006,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 607,
+    "split": "replication",
+    "seed": 41006,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 608,
+    "split": "replication",
+    "seed": 41007,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 609,
+    "split": "replication",
+    "seed": 41007,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 610,
+    "split": "replication",
+    "seed": 41007,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 611,
+    "split": "replication",
+    "seed": 41007,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 612,
+    "split": "replication",
+    "seed": 41007,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 613,
+    "split": "replication",
+    "seed": 41007,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 614,
+    "split": "replication",
+    "seed": 41007,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 615,
+    "split": "replication",
+    "seed": 41007,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 616,
+    "split": "replication",
+    "seed": 41007,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 617,
+    "split": "replication",
+    "seed": 41007,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 618,
+    "split": "replication",
+    "seed": 41007,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 619,
+    "split": "replication",
+    "seed": 41007,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 620,
+    "split": "replication",
+    "seed": 41007,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 621,
+    "split": "replication",
+    "seed": 41007,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 622,
+    "split": "replication",
+    "seed": 41007,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 623,
+    "split": "replication",
+    "seed": 41007,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 624,
+    "split": "replication",
+    "seed": 41007,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 625,
+    "split": "replication",
+    "seed": 41007,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 626,
+    "split": "replication",
+    "seed": 41007,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 627,
+    "split": "replication",
+    "seed": 41007,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 628,
+    "split": "replication",
+    "seed": 41007,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 629,
+    "split": "replication",
+    "seed": 41007,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 630,
+    "split": "replication",
+    "seed": 41007,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 631,
+    "split": "replication",
+    "seed": 41007,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 632,
+    "split": "replication",
+    "seed": 41007,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 633,
+    "split": "replication",
+    "seed": 41007,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 634,
+    "split": "replication",
+    "seed": 41007,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 635,
+    "split": "replication",
+    "seed": 41007,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 636,
+    "split": "replication",
+    "seed": 41007,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 637,
+    "split": "replication",
+    "seed": 41007,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 638,
+    "split": "replication",
+    "seed": 41007,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 639,
+    "split": "replication",
+    "seed": 41007,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 640,
+    "split": "replication",
+    "seed": 41008,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 641,
+    "split": "replication",
+    "seed": 41008,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 642,
+    "split": "replication",
+    "seed": 41008,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 643,
+    "split": "replication",
+    "seed": 41008,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 644,
+    "split": "replication",
+    "seed": 41008,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 645,
+    "split": "replication",
+    "seed": 41008,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 646,
+    "split": "replication",
+    "seed": 41008,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 647,
+    "split": "replication",
+    "seed": 41008,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 648,
+    "split": "replication",
+    "seed": 41008,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 649,
+    "split": "replication",
+    "seed": 41008,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 650,
+    "split": "replication",
+    "seed": 41008,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 651,
+    "split": "replication",
+    "seed": 41008,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 652,
+    "split": "replication",
+    "seed": 41008,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 653,
+    "split": "replication",
+    "seed": 41008,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 654,
+    "split": "replication",
+    "seed": 41008,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 655,
+    "split": "replication",
+    "seed": 41008,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 656,
+    "split": "replication",
+    "seed": 41008,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 657,
+    "split": "replication",
+    "seed": 41008,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 658,
+    "split": "replication",
+    "seed": 41008,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 659,
+    "split": "replication",
+    "seed": 41008,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 660,
+    "split": "replication",
+    "seed": 41008,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 661,
+    "split": "replication",
+    "seed": 41008,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 662,
+    "split": "replication",
+    "seed": 41008,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 663,
+    "split": "replication",
+    "seed": 41008,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 664,
+    "split": "replication",
+    "seed": 41008,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 665,
+    "split": "replication",
+    "seed": 41008,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 666,
+    "split": "replication",
+    "seed": 41008,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 667,
+    "split": "replication",
+    "seed": 41008,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 668,
+    "split": "replication",
+    "seed": 41008,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 669,
+    "split": "replication",
+    "seed": 41008,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 670,
+    "split": "replication",
+    "seed": 41008,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 671,
+    "split": "replication",
+    "seed": 41008,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 672,
+    "split": "replication",
+    "seed": 41009,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 673,
+    "split": "replication",
+    "seed": 41009,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 674,
+    "split": "replication",
+    "seed": 41009,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 675,
+    "split": "replication",
+    "seed": 41009,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 676,
+    "split": "replication",
+    "seed": 41009,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 677,
+    "split": "replication",
+    "seed": 41009,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 678,
+    "split": "replication",
+    "seed": 41009,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 679,
+    "split": "replication",
+    "seed": 41009,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 680,
+    "split": "replication",
+    "seed": 41009,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 681,
+    "split": "replication",
+    "seed": 41009,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 682,
+    "split": "replication",
+    "seed": 41009,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 683,
+    "split": "replication",
+    "seed": 41009,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 684,
+    "split": "replication",
+    "seed": 41009,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 685,
+    "split": "replication",
+    "seed": 41009,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 686,
+    "split": "replication",
+    "seed": 41009,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 687,
+    "split": "replication",
+    "seed": 41009,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 688,
+    "split": "replication",
+    "seed": 41009,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 689,
+    "split": "replication",
+    "seed": 41009,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 690,
+    "split": "replication",
+    "seed": 41009,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 691,
+    "split": "replication",
+    "seed": 41009,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 692,
+    "split": "replication",
+    "seed": 41009,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 693,
+    "split": "replication",
+    "seed": 41009,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 694,
+    "split": "replication",
+    "seed": 41009,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 695,
+    "split": "replication",
+    "seed": 41009,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 696,
+    "split": "replication",
+    "seed": 41009,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 697,
+    "split": "replication",
+    "seed": 41009,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 698,
+    "split": "replication",
+    "seed": 41009,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 699,
+    "split": "replication",
+    "seed": 41009,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 700,
+    "split": "replication",
+    "seed": 41009,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 701,
+    "split": "replication",
+    "seed": 41009,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 702,
+    "split": "replication",
+    "seed": 41009,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 703,
+    "split": "replication",
+    "seed": 41009,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 704,
+    "split": "replication",
+    "seed": 41010,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 705,
+    "split": "replication",
+    "seed": 41010,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 706,
+    "split": "replication",
+    "seed": 41010,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 707,
+    "split": "replication",
+    "seed": 41010,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 708,
+    "split": "replication",
+    "seed": 41010,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 709,
+    "split": "replication",
+    "seed": 41010,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 710,
+    "split": "replication",
+    "seed": 41010,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 711,
+    "split": "replication",
+    "seed": 41010,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 712,
+    "split": "replication",
+    "seed": 41010,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 713,
+    "split": "replication",
+    "seed": 41010,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 714,
+    "split": "replication",
+    "seed": 41010,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 715,
+    "split": "replication",
+    "seed": 41010,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 716,
+    "split": "replication",
+    "seed": 41010,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 717,
+    "split": "replication",
+    "seed": 41010,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 718,
+    "split": "replication",
+    "seed": 41010,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 719,
+    "split": "replication",
+    "seed": 41010,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 720,
+    "split": "replication",
+    "seed": 41010,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 721,
+    "split": "replication",
+    "seed": 41010,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 722,
+    "split": "replication",
+    "seed": 41010,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 723,
+    "split": "replication",
+    "seed": 41010,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 724,
+    "split": "replication",
+    "seed": 41010,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 725,
+    "split": "replication",
+    "seed": 41010,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 726,
+    "split": "replication",
+    "seed": 41010,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 727,
+    "split": "replication",
+    "seed": 41010,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 728,
+    "split": "replication",
+    "seed": 41010,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 729,
+    "split": "replication",
+    "seed": 41010,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 730,
+    "split": "replication",
+    "seed": 41010,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 731,
+    "split": "replication",
+    "seed": 41010,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 732,
+    "split": "replication",
+    "seed": 41010,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 733,
+    "split": "replication",
+    "seed": 41010,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 734,
+    "split": "replication",
+    "seed": 41010,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 735,
+    "split": "replication",
+    "seed": 41010,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 736,
+    "split": "replication",
+    "seed": 41011,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 737,
+    "split": "replication",
+    "seed": 41011,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 738,
+    "split": "replication",
+    "seed": 41011,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 739,
+    "split": "replication",
+    "seed": 41011,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 740,
+    "split": "replication",
+    "seed": 41011,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 741,
+    "split": "replication",
+    "seed": 41011,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 742,
+    "split": "replication",
+    "seed": 41011,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 743,
+    "split": "replication",
+    "seed": 41011,
+    "heterogeneity": 0.0,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 744,
+    "split": "replication",
+    "seed": 41011,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 745,
+    "split": "replication",
+    "seed": 41011,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 746,
+    "split": "replication",
+    "seed": 41011,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 747,
+    "split": "replication",
+    "seed": 41011,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 748,
+    "split": "replication",
+    "seed": 41011,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 749,
+    "split": "replication",
+    "seed": 41011,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 750,
+    "split": "replication",
+    "seed": 41011,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 751,
+    "split": "replication",
+    "seed": 41011,
+    "heterogeneity": 0.0,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 752,
+    "split": "replication",
+    "seed": 41011,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 753,
+    "split": "replication",
+    "seed": 41011,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 754,
+    "split": "replication",
+    "seed": 41011,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 755,
+    "split": "replication",
+    "seed": 41011,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 756,
+    "split": "replication",
+    "seed": 41011,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 757,
+    "split": "replication",
+    "seed": 41011,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 758,
+    "split": "replication",
+    "seed": 41011,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 759,
+    "split": "replication",
+    "seed": 41011,
+    "heterogeneity": 0.55,
+    "scarcity": 1.0,
+    "policy": "costly_assessment",
+    "leader": 0
+  },
+  {
+    "case_id": 760,
+    "split": "replication",
+    "seed": 41011,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "independent",
+    "leader": 0
+  },
+  {
+    "case_id": 761,
+    "split": "replication",
+    "seed": 41011,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "reciprocal",
+    "leader": 0
+  },
+  {
+    "case_id": 762,
+    "split": "replication",
+    "seed": 41011,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "partitioned",
+    "leader": 0
+  },
+  {
+    "case_id": 763,
+    "split": "replication",
+    "seed": 41011,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "priority_hierarchy",
+    "leader": 0
+  },
+  {
+    "case_id": 764,
+    "split": "replication",
+    "seed": 41011,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "override_budgets",
+    "leader": 0
+  },
+  {
+    "case_id": 765,
+    "split": "replication",
+    "seed": 41011,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "hierarchy_and_override",
+    "leader": 0
+  },
+  {
+    "case_id": 766,
+    "split": "replication",
+    "seed": 41011,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "recording_only",
+    "leader": 0
+  },
+  {
+    "case_id": 767,
+    "split": "replication",
+    "seed": 41011,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4,
+    "policy": "costly_assessment",
+    "leader": 0
+  }
+]

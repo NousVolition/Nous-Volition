@@ -1,0 +1,15 @@
+{
+  "conceptual_source": "Michel Foucault, Discipline and Punish: The Birth of the Prison, Panopticism",
+  "input": "User-supplied photograph of a book passage",
+  "uploaded_image_sha256": "9ac4997474ca9069ef8598c54a6ac5ca2638afb7faf66f65b52a5250cf8cc7f3",
+  "corroborating_excerpt": "https://depts.washington.edu/lsearlec/510/Texts/Foucault-Panopticism.pdf",
+  "visible_edition_and_page": "Not established from photograph",
+  "use": "Conceptual questions about partitioning, coordination, differentiated capacities, assessment and unequal power. No numeric parameters are attributed to the book.",
+  "image_redistributed": false,
+  "model_parameters": "Assumed synthetic values; no human calibration or human-participant experiment",
+  "existing_context": [
+    "https://github.com/NousVolition/Nous-Volition/tree/main/studies/social-organization",
+    "https://github.com/NousVolition/Nous-Volition/tree/main/studies/sims-recovery-entrainment",
+    "https://github.com/NousVolition/Nous-Volition/blob/main/studies/substance-interactions/followup_tests/COMMUNITY.md"
+  ]
+}

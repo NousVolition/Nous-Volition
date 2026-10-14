@@ -1,0 +1,1008 @@
+{
+  "representative_setting": {
+    "split": "replication",
+    "seeds": 12,
+    "heterogeneity": 0.55,
+    "scarcity": 1.4
+  },
+  "policies": {
+    "independent": {
+      "mean_needs_met": {
+        "mean": 0.46592369412990026,
+        "low": 0.44625208401028266,
+        "high": 0.48559530424951786
+      },
+      "minimum_needs_met": {
+        "mean": 0.3473616860750308,
+        "low": 0.32272004310476265,
+        "high": 0.372003329045299
+      },
+      "total_excess_over_requests": {
+        "mean": 2.7755575615628914e-17,
+        "low": -4.147432741299544e-18,
+        "high": 5.965858397255737e-17
+      },
+      "leader_needs_met": {
+        "mean": 0.47896513464596574,
+        "low": 0.41677974945426577,
+        "high": 0.5411505198376657
+      },
+      "others_needs_met": {
+        "mean": 0.46375012071055605,
+        "low": 0.44409864112928027,
+        "high": 0.4834016002918318
+      }
+    },
+    "reciprocal": {
+      "mean_needs_met": {
+        "mean": 0.7723549574639529,
+        "low": 0.6962128103011745,
+        "high": 0.8484971046267312
+      },
+      "minimum_needs_met": {
+        "mean": 0.13052540039928273,
+        "low": -0.06704681480026076,
+        "high": 0.3280976155988262
+      },
+      "total_excess_over_requests": {
+        "mean": 1.850371707708594e-17,
+        "low": -8.95402071409183e-18,
+        "high": 4.596145486826371e-17
+      },
+      "leader_needs_met": {
+        "mean": 0.8073816990258919,
+        "low": 0.588911917587149,
+        "high": 1.0258514804646346
+      },
+      "others_needs_met": {
+        "mean": 0.7665171672036298,
+        "low": 0.679803453090828,
+        "high": 0.8532308813164317
+      }
+    },
+    "partitioned": {
+      "mean_needs_met": {
+        "mean": 0.7431509500039947,
+        "low": 0.6719891647605984,
+        "high": 0.8143127352473909
+      },
+      "minimum_needs_met": {
+        "mean": 0.09893570076266774,
+        "low": -0.08331946758141,
+        "high": 0.28119086910674546
+      },
+      "total_excess_over_requests": {
+        "mean": 0.0,
+        "low": 0.0,
+        "high": 0.0
+      },
+      "leader_needs_met": {
+        "mean": 0.6742363916379658,
+        "low": 0.3946894876512247,
+        "high": 0.9537832956247069
+      },
+      "others_needs_met": {
+        "mean": 0.7546367097316663,
+        "low": 0.6730978183388288,
+        "high": 0.8361756011245038
+      }
+    },
+    "priority_hierarchy": {
+      "mean_needs_met": {
+        "mean": 0.771506047069773,
+        "low": 0.6950308572422094,
+        "high": 0.8479812368973366
+      },
+      "minimum_needs_met": {
+        "mean": 0.13687702653485043,
+        "low": -0.059337141505694996,
+        "high": 0.3330911945753958
+      },
+      "total_excess_over_requests": {
+        "mean": 1.850371707708594e-17,
+        "low": -8.95402071409183e-18,
+        "high": 4.596145486826371e-17
+      },
+      "leader_needs_met": {
+        "mean": 1.0,
+        "low": 1.0,
+        "high": 1.0
+      },
+      "others_needs_met": {
+        "mean": 0.7334237215814019,
+        "low": 0.6442026667825776,
+        "high": 0.8226447763802262
+      }
+    },
+    "override_budgets": {
+      "mean_needs_met": {
+        "mean": 0.9732943641814987,
+        "low": 0.9518232032305681,
+        "high": 0.9947655251324293
+      },
+      "minimum_needs_met": {
+        "mean": 0.8130605492704907,
+        "low": 0.6627624226139762,
+        "high": 0.9633586759270051
+      },
+      "total_excess_over_requests": {
+        "mean": 1.9803013836473955,
+        "low": 1.5488201343956862,
+        "high": 2.4117826328991048
+      },
+      "leader_needs_met": {
+        "mean": 0.9999999998333333,
+        "low": 0.9999999995860159,
+        "high": 1.0000000000806506
+      },
+      "others_needs_met": {
+        "mean": 0.968843424906193,
+        "low": 0.9437937371148918,
+        "high": 0.9938931126974943
+      }
+    },
+    "hierarchy_and_override": {
+      "mean_needs_met": {
+        "mean": 0.9732943641814987,
+        "low": 0.9518232032305681,
+        "high": 0.9947655251324293
+      },
+      "minimum_needs_met": {
+        "mean": 0.8130605492704907,
+        "low": 0.6627624226139762,
+        "high": 0.9633586759270051
+      },
+      "total_excess_over_requests": {
+        "mean": 1.980301383622159,
+        "low": 1.5488201343612853,
+        "high": 2.4117826328830327
+      },
+      "leader_needs_met": {
+        "mean": 1.0,
+        "low": 1.0,
+        "high": 1.0
+      },
+      "others_needs_met": {
+        "mean": 0.9688434248784151,
+        "low": 0.9437937371023294,
+        "high": 0.9938931126545009
+      }
+    },
+    "recording_only": {
+      "mean_needs_met": {
+        "mean": 0.7723549574639529,
+        "low": 0.6962128103011745,
+        "high": 0.8484971046267312
+      },
+      "minimum_needs_met": {
+        "mean": 0.13052540039928273,
+        "low": -0.06704681480026076,
+        "high": 0.3280976155988262
+      },
+      "total_excess_over_requests": {
+        "mean": 1.850371707708594e-17,
+        "low": -8.95402071409183e-18,
+        "high": 4.596145486826371e-17
+      },
+      "leader_needs_met": {
+        "mean": 0.8073816990258919,
+        "low": 0.588911917587149,
+        "high": 1.0258514804646346
+      },
+      "others_needs_met": {
+        "mean": 0.7665171672036298,
+        "low": 0.679803453090828,
+        "high": 0.8532308813164317
+      }
+    },
+    "costly_assessment": {
+      "mean_needs_met": {
+        "mean": 0.6756034179388845,
+        "low": 0.5972849842447985,
+        "high": 0.7539218516329704
+      },
+      "minimum_needs_met": {
+        "mean": 0.06854971890540686,
+        "low": -0.062074887159329725,
+        "high": 0.19917432497014342
+      },
+      "total_excess_over_requests": {
+        "mean": 9.25185853854297e-18,
+        "low": -1.1111344808057227e-17,
+        "high": 2.961506188514317e-17
+      },
+      "leader_needs_met": {
+        "mean": 0.719189777499981,
+        "low": 0.4478035428446513,
+        "high": 0.9905760121553108
+      },
+      "others_needs_met": {
+        "mean": 0.6683390246787018,
+        "low": 0.5787644858352933,
+        "high": 0.7579135635221103
+      }
+    }
+  },
+  "paired_contrasts": [
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "independent",
+      "metric": "mean_needs_met",
+      "reference": "reciprocal",
+      "mean": "-0.30643126333405263",
+      "low": "-0.36824202248364507",
+      "high": "-0.24462050418446019",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "independent",
+      "metric": "minimum_needs_met",
+      "reference": "reciprocal",
+      "mean": "0.21683628567574809",
+      "low": "0.026313506879032472",
+      "high": "0.4073590644724637",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "independent",
+      "metric": "leader_needs_met",
+      "reference": "reciprocal",
+      "mean": "-0.3284165643799263",
+      "low": "-0.5422112046475488",
+      "high": "-0.11462192411230374",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "independent",
+      "metric": "others_needs_met",
+      "reference": "reciprocal",
+      "mean": "-0.3027670464930737",
+      "low": "-0.37564038903306896",
+      "high": "-0.2298937039530784",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "independent",
+      "metric": "total_useful_work",
+      "reference": "reciprocal",
+      "mean": "0.04170826044223245",
+      "low": "-0.05009100123685587",
+      "high": "0.13350752212132078",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "independent",
+      "metric": "total_excess_over_requests",
+      "reference": "reciprocal",
+      "mean": "9.25185853854297e-18",
+      "low": "-3.790835483668214e-17",
+      "high": "5.641207191376809e-17",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "independent",
+      "metric": "fraction_members_over_request",
+      "reference": "reciprocal",
+      "mean": "0.0",
+      "low": "0.0",
+      "high": "0.0",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "independent",
+      "metric": "needs_spread",
+      "reference": "reciprocal",
+      "mean": "-0.612581073420572",
+      "low": "-0.8252537788339315",
+      "high": "-0.3999083680072125",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "reciprocal",
+      "metric": "mean_needs_met",
+      "reference": "reciprocal",
+      "mean": "0.0",
+      "low": "0.0",
+      "high": "0.0",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "reciprocal",
+      "metric": "minimum_needs_met",
+      "reference": "reciprocal",
+      "mean": "0.0",
+      "low": "0.0",
+      "high": "0.0",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "reciprocal",
+      "metric": "leader_needs_met",
+      "reference": "reciprocal",
+      "mean": "0.0",
+      "low": "0.0",
+      "high": "0.0",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "reciprocal",
+      "metric": "others_needs_met",
+      "reference": "reciprocal",
+      "mean": "0.0",
+      "low": "0.0",
+      "high": "0.0",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "reciprocal",
+      "metric": "total_useful_work",
+      "reference": "reciprocal",
+      "mean": "0.0",
+      "low": "0.0",
+      "high": "0.0",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "reciprocal",
+      "metric": "total_excess_over_requests",
+      "reference": "reciprocal",
+      "mean": "0.0",
+      "low": "0.0",
+      "high": "0.0",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "reciprocal",
+      "metric": "fraction_members_over_request",
+      "reference": "reciprocal",
+      "mean": "0.0",
+      "low": "0.0",
+      "high": "0.0",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "reciprocal",
+      "metric": "needs_spread",
+      "reference": "reciprocal",
+      "mean": "0.0",
+      "low": "0.0",
+      "high": "0.0",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "partitioned",
+      "metric": "mean_needs_met",
+      "reference": "reciprocal",
+      "mean": "-0.029204007459958176",
+      "low": "-0.08252585302559083",
+      "high": "0.024117838105674482",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "partitioned",
+      "metric": "minimum_needs_met",
+      "reference": "reciprocal",
+      "mean": "-0.03158969963661499",
+      "low": "-0.13271768074833357",
+      "high": "0.0695382814751036",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "partitioned",
+      "metric": "leader_needs_met",
+      "reference": "reciprocal",
+      "mean": "-0.1331453073879262",
+      "low": "-0.4511502364327242",
+      "high": "0.18485962165687178",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "partitioned",
+      "metric": "others_needs_met",
+      "reference": "reciprocal",
+      "mean": "-0.011880457471963507",
+      "low": "-0.06770653449134868",
+      "high": "0.04394561954742167",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "partitioned",
+      "metric": "total_useful_work",
+      "reference": "reciprocal",
+      "mean": "0.0013417285009330222",
+      "low": "-0.0016113954572954915",
+      "high": "0.004294852459161536",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "partitioned",
+      "metric": "total_excess_over_requests",
+      "reference": "reciprocal",
+      "mean": "-1.850371707708594e-17",
+      "low": "-4.596145486826371e-17",
+      "high": "8.95402071409183e-18",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "partitioned",
+      "metric": "fraction_members_over_request",
+      "reference": "reciprocal",
+      "mean": "0.0",
+      "low": "0.0",
+      "high": "0.0",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "partitioned",
+      "metric": "needs_spread",
+      "reference": "reciprocal",
+      "mean": "0.03158969963661499",
+      "low": "-0.0695382814751036",
+      "high": "0.13271768074833357",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "priority_hierarchy",
+      "metric": "mean_needs_met",
+      "reference": "reciprocal",
+      "mean": "-0.0008489103941797712",
+      "low": "-0.0019568610029294625",
+      "high": "0.0002590402145699202",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "priority_hierarchy",
+      "metric": "minimum_needs_met",
+      "reference": "reciprocal",
+      "mean": "0.006351626135567699",
+      "low": "-0.007628208731267193",
+      "high": "0.02033146100240259",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "priority_hierarchy",
+      "metric": "leader_needs_met",
+      "reference": "reciprocal",
+      "mean": "0.19261830097410806",
+      "low": "-0.025851480464634785",
+      "high": "0.4110880824128509",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "priority_hierarchy",
+      "metric": "others_needs_met",
+      "reference": "reciprocal",
+      "mean": "-0.03309344562222774",
+      "low": "-0.07075604535947537",
+      "high": "0.004569154115019888",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "priority_hierarchy",
+      "metric": "total_useful_work",
+      "reference": "reciprocal",
+      "mean": "1.9239720927544113e-11",
+      "low": "-1.0755967698488992e-11",
+      "high": "4.923540955357722e-11",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "priority_hierarchy",
+      "metric": "total_excess_over_requests",
+      "reference": "reciprocal",
+      "mean": "0.0",
+      "low": "0.0",
+      "high": "0.0",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "priority_hierarchy",
+      "metric": "fraction_members_over_request",
+      "reference": "reciprocal",
+      "mean": "0.0",
+      "low": "0.0",
+      "high": "0.0",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "priority_hierarchy",
+      "metric": "needs_spread",
+      "reference": "reciprocal",
+      "mean": "-0.006351626135567705",
+      "low": "-0.0203314610024026",
+      "high": "0.007628208731267193",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "override_budgets",
+      "metric": "mean_needs_met",
+      "reference": "reciprocal",
+      "mean": "0.20093940671754576",
+      "low": "0.1411816328939689",
+      "high": "0.2606971805411226",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "override_budgets",
+      "metric": "minimum_needs_met",
+      "reference": "reciprocal",
+      "mean": "0.6825351488712079",
+      "low": "0.47965050823708144",
+      "high": "0.8854197895053344",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "override_budgets",
+      "metric": "leader_needs_met",
+      "reference": "reciprocal",
+      "mean": "0.19261830080744138",
+      "low": "-0.02585148046745886",
+      "high": "0.4110880820823416",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "override_budgets",
+      "metric": "others_needs_met",
+      "reference": "reciprocal",
+      "mean": "0.2023262577025632",
+      "low": "0.1371700873318491",
+      "high": "0.2674824280732773",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "override_budgets",
+      "metric": "total_useful_work",
+      "reference": "reciprocal",
+      "mean": "1.587191570809784",
+      "low": "0.8718252815457462",
+      "high": "2.3025578600738217",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "override_budgets",
+      "metric": "total_excess_over_requests",
+      "reference": "reciprocal",
+      "mean": "1.9803013836473955",
+      "low": "1.5488201343956862",
+      "high": "2.4117826328991048",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "override_budgets",
+      "metric": "fraction_members_over_request",
+      "reference": "reciprocal",
+      "mean": "0.869047619047619",
+      "low": "0.77069015227437",
+      "high": "0.9674050858208679",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "override_budgets",
+      "metric": "needs_spread",
+      "reference": "reciprocal",
+      "mean": "-0.6825351488712079",
+      "low": "-0.8854197895053344",
+      "high": "-0.47965050823708144",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "hierarchy_and_override",
+      "metric": "mean_needs_met",
+      "reference": "reciprocal",
+      "mean": "0.20093940671754584",
+      "low": "0.14118163289396898",
+      "high": "0.2606971805411227",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "hierarchy_and_override",
+      "metric": "minimum_needs_met",
+      "reference": "reciprocal",
+      "mean": "0.6825351488712079",
+      "low": "0.47965050823708133",
+      "high": "0.8854197895053345",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "hierarchy_and_override",
+      "metric": "leader_needs_met",
+      "reference": "reciprocal",
+      "mean": "0.19261830097410806",
+      "low": "-0.025851480464634785",
+      "high": "0.4110880824128509",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "hierarchy_and_override",
+      "metric": "others_needs_met",
+      "reference": "reciprocal",
+      "mean": "0.20232625767478543",
+      "low": "0.13717008729503422",
+      "high": "0.26748242805453665",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "hierarchy_and_override",
+      "metric": "total_useful_work",
+      "reference": "reciprocal",
+      "mean": "1.5871915708832267",
+      "low": "0.8718252816686924",
+      "high": "2.302557860097761",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "hierarchy_and_override",
+      "metric": "total_excess_over_requests",
+      "reference": "reciprocal",
+      "mean": "1.980301383622159",
+      "low": "1.5488201343612853",
+      "high": "2.4117826328830327",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "hierarchy_and_override",
+      "metric": "fraction_members_over_request",
+      "reference": "reciprocal",
+      "mean": "0.869047619047619",
+      "low": "0.77069015227437",
+      "high": "0.9674050858208679",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "hierarchy_and_override",
+      "metric": "needs_spread",
+      "reference": "reciprocal",
+      "mean": "-0.6825351488712079",
+      "low": "-0.8854197895053345",
+      "high": "-0.47965050823708133",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "recording_only",
+      "metric": "mean_needs_met",
+      "reference": "reciprocal",
+      "mean": "0.0",
+      "low": "0.0",
+      "high": "0.0",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "recording_only",
+      "metric": "minimum_needs_met",
+      "reference": "reciprocal",
+      "mean": "0.0",
+      "low": "0.0",
+      "high": "0.0",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "recording_only",
+      "metric": "leader_needs_met",
+      "reference": "reciprocal",
+      "mean": "0.0",
+      "low": "0.0",
+      "high": "0.0",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "recording_only",
+      "metric": "others_needs_met",
+      "reference": "reciprocal",
+      "mean": "0.0",
+      "low": "0.0",
+      "high": "0.0",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "recording_only",
+      "metric": "total_useful_work",
+      "reference": "reciprocal",
+      "mean": "0.0",
+      "low": "0.0",
+      "high": "0.0",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "recording_only",
+      "metric": "total_excess_over_requests",
+      "reference": "reciprocal",
+      "mean": "0.0",
+      "low": "0.0",
+      "high": "0.0",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "recording_only",
+      "metric": "fraction_members_over_request",
+      "reference": "reciprocal",
+      "mean": "0.0",
+      "low": "0.0",
+      "high": "0.0",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "recording_only",
+      "metric": "needs_spread",
+      "reference": "reciprocal",
+      "mean": "0.0",
+      "low": "0.0",
+      "high": "0.0",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "costly_assessment",
+      "metric": "mean_needs_met",
+      "reference": "reciprocal",
+      "mean": "-0.09675153952506839",
+      "low": "-0.11191844870086048",
+      "high": "-0.0815846303492763",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "costly_assessment",
+      "metric": "minimum_needs_met",
+      "reference": "reciprocal",
+      "mean": "-0.06197568149387589",
+      "low": "-0.14841935239612225",
+      "high": "0.024467989408370458",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "costly_assessment",
+      "metric": "leader_needs_met",
+      "reference": "reciprocal",
+      "mean": "-0.08819192152591082",
+      "low": "-0.20297201751398797",
+      "high": "0.02658817446216634",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "costly_assessment",
+      "metric": "others_needs_met",
+      "reference": "reciprocal",
+      "mean": "-0.098178142524928",
+      "low": "-0.12144153114267718",
+      "high": "-0.07491475390717882",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "costly_assessment",
+      "metric": "total_useful_work",
+      "reference": "reciprocal",
+      "mean": "-0.658291739645427",
+      "low": "-0.7500910017022354",
+      "high": "-0.5664924775886185",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "costly_assessment",
+      "metric": "total_excess_over_requests",
+      "reference": "reciprocal",
+      "mean": "-9.25185853854297e-18",
+      "low": "-2.961506188514317e-17",
+      "high": "1.1111344808057227e-17",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "costly_assessment",
+      "metric": "fraction_members_over_request",
+      "reference": "reciprocal",
+      "mean": "0.0",
+      "low": "0.0",
+      "high": "0.0",
+      "seeds": "12"
+    },
+    {
+      "split": "replication",
+      "heterogeneity": "0.55",
+      "scarcity": "1.4",
+      "policy": "costly_assessment",
+      "metric": "needs_spread",
+      "reference": "reciprocal",
+      "mean": "0.06197568149387589",
+      "low": "-0.024467989408370458",
+      "high": "0.14841935239612225",
+      "seeds": "12"
+    }
+  ],
+  "rotated_priority_leader_gain": {
+    "mean": 0.2125613610468158,
+    "low": 0.13196370526835874,
+    "high": 0.2931590168252729
+  },
+  "rotated_priority_others_change": {
+    "mean": -0.039422237973372194,
+    "low": -0.052987635949629394,
+    "high": -0.02585683999711499
+  },
+  "unit_tests": 19,
+  "observational_validation": false
+}

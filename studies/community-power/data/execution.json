@@ -1,0 +1,14 @@
+{
+  "main_cases": 768,
+  "member_rows": 5376,
+  "additional_cases": 576,
+  "refinement_pairs": 36,
+  "extra_refinement_solves": 72,
+  "seconds": 11.552461100000073,
+  "python": "3.12.14",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "max_constraint_residual": 8.881784197001252e-16,
+  "max_refinement_mean_difference": 1.2857148679046304e-10,
+  "max_refinement_member_difference": 9.000000744663339e-10
+}

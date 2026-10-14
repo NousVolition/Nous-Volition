@@ -1,0 +1,62 @@
+from pathlib import Path
+import json,html,re
+from analyze import NAMES
+ROOT=Path(__file__).resolve().parent
+s=json.loads((ROOT/'analysis/summary.json').read_text());p=s['policies'];ex=json.loads((ROOT/'data/execution.json').read_text())
+md=[];ht=[]
+def inline(t):
+    t=html.escape(str(t));t=re.sub(r'\[([^]]+)\]\(([^)]+)\)',r'<a href="\2">\1</a>',t)
+    t=re.sub(r'\*\*([^*]+)\*\*',r'<strong>\1</strong>',t)
+    t=re.sub(r'(?<!\*)\*([^*]+)\*(?!\*)',r'<em>\1</em>',t)
+    return re.sub(r'`([^`]+)`',r'<code>\1</code>',t)
+def h(t,n=2):md.append('#'*n+' '+t);ht.append(f'<h{n}>{inline(t)}</h{n}>')
+def para(t):md.append(t);ht.append('<p>'+inline(t)+'</p>')
+def table(headers,rows):
+    md.append('\n'.join(['| '+' | '.join(headers)+' |','| '+' | '.join(['---']*len(headers))+' |']+['| '+' | '.join(map(str,r))+' |' for r in rows]))
+    ht.append('<div class="scroll"><table><thead><tr>'+''.join('<th>'+inline(x)+'</th>' for x in headers)+'</tr></thead><tbody>'+''.join('<tr>'+''.join('<td>'+inline(x)+'</td>' for x in r)+'</tr>' for r in rows)+'</tbody></table></div>')
+def fig(name,caption):md.extend([f'![{caption}](analysis/{name}.png)',caption]);ht.append(f'<figure><img src="analysis/{name}.png" alt="{html.escape(caption)}"><figcaption>{inline(caption)}</figcaption></figure>')
+def code(t):md.append('```sh\n'+t+'\n```');ht.append('<pre>'+html.escape(t)+'</pre>')
+def percent(policy,metric='mean_needs_met'):return 100*p[policy][metric]['mean']
+h('A community: coordination, boundaries and power',1)
+para('Streams and Rocks • seven fictional participants • an executed allocation benchmark inspired by the uploaded Foucault passage')
+para('**Water, Fog, Mist, Gas, Smoke, Clay and Ice can belong to the same community.** This study asks how organizing the same people changes their ability to meet needs, the distribution of help and the work required of each member. Different skills and contact opportunities can make a group more capable; a higher group total does not guarantee that every member benefits.')
+para('The supplied page matches Foucault’s *Discipline and Punish*, in the panopticism chapter. Its discussion of organization and power provides the questions. The numerical rules are our explicit synthetic assumptions. [How the passage is used](interpretation.md) · [Methods and units](methods.md) · [Source provenance](source_provenance.json) · [Verification](verification.json).')
+h('What was actually tested')
+para('768 main allocation cases cross 24 seeds, two skill patterns, two demand levels and eight organizational rules. Another 576 cases vary who receives priority, how strong it is and how much time assessment consumes. There are 36 tighter-tolerance pairs and 19 passing unit tests. These are optimization cases, not observed families or simulated conversations. Every arrangement uses the same ideal solver with complete information; distributed negotiation is not modeled.')
+table(['Choice','What changes'],[
+ ['Independent','Each person must supply their own two services'],
+ ['Connected, total-focused','Help can cross nine bidirectional ties; requested time limits remain'],
+ ['Partitioned','The same number of ties forms disconnected groups of three and four'],
+ ['One member has priority','That member receives triple weight in the allocation objective'],
+ ['Requests can be exceeded','The optimizer may use more time than members requested, within finite capacity'],
+ ['Priority + overrides','Unequal priority and relaxed requested limits together'],
+ ['Recording only','Metadata are recorded but do not alter allocation rules'],
+ ['Assessment time cost','An assumed 0.1 time unit per member is consumed; no information benefit is modeled']])
+para('Names are independent of abilities. Changing the seven labels leaves results exactly unchanged. Both graph types have nine undirected edges, but their degree sequences differ. A family-specific memory role for Clay or a contact style for Mist would require additional stated rules; those dynamics are not implied by the names.')
+h('Results: the group total and the least-served member can move in opposite directions')
+para('The table below uses the differentiated-skill, higher-demand setting and the 12 independent replication seeds. Each person has one total available-time unit and requests a work limit between 0.5 and 0.8. A needs score is the fraction of both abstract services received, not a wellbeing score. Full discovery and replication results for every setting are in [summary.csv](data/summary.csv) and [paired_contrasts.csv](data/paired_contrasts.csv).')
+table(['Arrangement','Mean needs met','Mean of least-served score','Time beyond requests, total'],[
+ [NAMES[k],f'{percent(k):.1f}%',f'{percent(k,"minimum_needs_met"):.1f}%',f'{p[k]["total_excess_over_requests"]["mean"]:.3f}'] for k in NAMES])
+fig('outcomes','Bars show means; dots show the 12 seed outcomes. The lowest member score is retained separately from the group average.')
+gain=percent('reciprocal')-percent('independent')
+para(f'Connected allocation raises mean needs met from **{percent("independent"):.1f}% to {percent("reciprocal"):.1f}%**, a gain of {gain:.1f} percentage points (paired 95% seed-t interval 24.5–36.8 points). Yet the mean lowest-member score falls from **{percent("independent","minimum_needs_met"):.1f}% to {percent("reciprocal","minimum_needs_met"):.1f}%**. The objective maximizes total fulfillment and has no individual minimum guarantee. More available help does not force the optimizer to share its gains equally.')
+para('The direction of the optimized total gain is guaranteed when the connected arrangement includes every independent option. The amount of the gain and its distribution are the numerical findings. Holding each person’s arithmetic mean skill fixed, the corresponding higher-demand coordination gain is only 2.2 percentage points when their two skills are equal. This supports a complementarity mechanism within this model, not a general law about personality types.')
+para('Partitioning changes mean fulfillment by −2.9 percentage points relative to the connected graph; the paired seed interval is −8.3 to +2.4 points. This finite sample does not establish a consistent direction. Keeping the tie count equal prevents explaining the comparison solely by “more relationships,” but does not control every graph property.')
+h('Who receives the benefit?')
+fig('members','One illustrative community, the first replication seed. The priority position is arbitrary. A work/request ratio above 1 means the chosen allocation exceeds that member’s requested time; zero fulfillment displayed here is not a property of the Clay label.')
+para(f'With member 0 given triple priority, that member’s mean fulfillment rises from {percent("reciprocal","leader_needs_met"):.1f}% to {percent("priority_hierarchy","leader_needs_met"):.1f}%, while the other six fall from {percent("reciprocal","others_needs_met"):.1f}% to {percent("priority_hierarchy","others_needs_met"):.1f}%. The group average barely changes. Moving priority through all seven positions gives an average recipient gain of **{100*s["rotated_priority_leader_gain"]["mean"]:.1f} percentage points** and a **{100*s["rotated_priority_others_change"]["mean"]:.1f}-point** change among the others, averaging within seed before calculating intervals.')
+para(f'Allowing work beyond requested limits raises average fulfillment to {percent("override_budgets"):.1f}%, but uses **{p["override_budgets"]["total_excess_over_requests"]["mean"]:.2f} extra time units across seven people** beyond their requests. Relaxing a constraint can only improve this optimized objective. That is not evidence that overrides improve consent, wellbeing or family relationships; these are not modeled.')
+fig('sensitivity','Priority and assessment-cost sensitivities. The intervals describe synthetic seed variation; untransformed interval bounds can extend beyond the metric range.')
+para('Recording alone changes nothing exactly, because the model gives it no causal effect. Assessment that only consumes time reduces available work by construction. Measuring a real benefit of information would require imperfect knowledge, an explicit observation process and a rule for how information changes decisions. No claim that all assessment is harmful follows from these scenarios.')
+h('What the passage adds to your project')
+para('It adds a question about power inside the arrangement: who sets the objective, who has access to whom, whose needs receive priority and whose time counts as available? Your community can contain different members without treating one material name as superior. The model makes it possible to inspect both collective capacity and individual outcomes instead of using output alone as success.')
+para('The earlier [family/community guide](https://github.com/NousVolition/Nous-Volition/blob/main/studies/substance-interactions/followup_tests/COMMUNITY.md), [SIMS model](https://github.com/NousVolition/Nous-Volition/tree/main/studies/social-organization) and [shared-rhythm study](https://github.com/NousVolition/Nous-Volition/tree/main/studies/sims-recovery-entrainment) remain separate, linked components. The substance study supplies physically tested transport mechanisms; this passage supplies a conceptual basis for organizational comparisons. No chemical kinetics or droplet forces were changed.')
+para('A minimum-service guarantee, negotiation, fatigue, memory, changing relationships and a benefit from better information remain possible extensions. They were not silently added. No human participants, real family data or empirical validation of Foucault’s wider argument are involved.')
+h('Reproduce and inspect')
+para(f'The completed ensemble ran in {ex["seconds"]:.1f} seconds on the recorded environment. Maximum allocation-constraint residual was {ex["max_constraint_residual"]:.2g}; tightening the objective tolerance changed a member’s fulfillment by at most {ex["max_refinement_member_difference"]:.2g}. Numerical units are defined in [methods.md](methods.md). [Per-person results](data/members.csv) preserve who contributes and who receives help.')
+code('python -m pip install -r requirements.txt\npython test_model.py\npython verify.py\n\n# Preserve the delivered data while rerunning:\npython run_study.py --out reproduced\npython analyze.py --data reproduced --out reproduced-analysis\n\n# Rebuild the delivered report from delivered data:\npython build_report.py')
+para('`data/protocol.json` records the design and source hashes. `data/allocations.npz` contains every main effort, service flow and needs fraction, with order in `data/case_order.json`. `verification.json` records saved-result checks and selected reruns; `manifest.json` records packaged hashes. The runner refuses to overwrite a previous protocol. Counts of repeated controls and refinement solves are explicit in [execution.json](data/execution.json).')
+(ROOT/'README.md').write_text('\n\n'.join(md)+'\n',encoding='utf-8')
+css='''body{margin:0;background:#f3f5f4;color:#243632;font:17px/1.65 system-ui,sans-serif}main{max-width:1150px;margin:32px auto;padding:40px;background:#fff;border-radius:12px}h1{font-size:2.2rem;line-height:1.15}h2{margin-top:2.3em;color:#166864;font-size:1.45rem}a{color:#087f8c}p{max-width:100ch}table{border-collapse:collapse;width:100%;font-size:.92rem}th,td{padding:12px;text-align:left;border-bottom:1px solid #dce6e0}th{background:#eef5f1}.scroll{overflow-x:auto}figure{margin:28px 0}img{width:100%;height:auto}figcaption{font-size:.85rem;color:#56716b}pre{overflow:auto;padding:20px;background:#eef5f1;border-radius:8px;font-size:.88rem}code{font-size:.88em}@media(max-width:700px){main{margin:0;padding:20px}body{font-size:16px}}'''
+(ROOT/'report.html').write_text('<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Community: coordination, boundaries and power</title><style>'+css+'</style><main>'+''.join(ht)+'</main></html>',encoding='utf-8')
+print('Built community README and offline report.')
