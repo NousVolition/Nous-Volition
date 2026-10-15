@@ -1,0 +1,177 @@
+<div id="records-recreated">
+  <style>
+    #records-recreated .comparisons { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:24px; margin-top:16px; }
+    #records-recreated .arm { min-width:0; }
+    #records-recreated .scene { display:block; width:100%; }
+    #records-recreated .scene text { fill:var(--foreground); font-size:var(--font-size-base); }
+    #records-recreated .event { min-height:3em; margin:8px 0; }
+    #records-recreated .time-control { margin-top:10px; }
+    #records-recreated .notes { margin-top:12px; }
+    #records-recreated h2 { padding-right:90px; }
+    @media(max-width:639px) { #records-recreated .comparisons { grid-template-columns:minmax(0,1fr); } }
+  </style>
+  <h2>When the record comes back</h2>
+  <div class="text-small">Same checkpoint · records erased · internal memories retained</div>
+  <div class="viz-controls">
+    <button type="button" class="btn btn-primary" data-play>Play to first rewrite</button>
+    <button type="button" class="btn" data-rewrite>At first rewrite</button>
+  </div>
+  <div class="time-control">
+    <label class="form-label">Model time <output class="tabular-nums" data-time>24.0</output> / 72
+      <input class="form-range" type="range" data-time-slider aria-label="Model time" min="24" max="72" step="0.01" value="24">
+    </label>
+  </div>
+  <div class="text-small" data-phase>Records just erased · two earlier visits completed</div>
+  <div class="comparisons" data-arms></div>
+  <div class="text-small text-muted notes">Assumed classifier: Familiar → flag; Explore → no flag · new observations only · scheduled visits</div>
+  <span class="sr-only" data-announcement aria-live="polite"></span>
+  <script>
+  (()=>{
+    const root=document.getElementById('records-recreated');
+    if(!root||root.dataset.ready)return;root.dataset.ready='true';
+    const $=s=>root.querySelector(s),NS='http://www.w3.org/2000/svg';
+    // Preserve the preceding experiment's history and learning law.
+    // Only the post-erasure behaviour-to-record write is changed between arms.
+    // The classifier sees the newly observed route, not memory, identity or an old record.
+    const checkpoint=24,firstRewrite=32,duration=72,learningTime=8,threshold=.6;
+    const arms=[{id:'rewrite',title:'Reclassification on',enabled:true},{id:'off',title:'Reclassification off',enabled:false}];
+    const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
+    const access=r=>1-.75*r;
+    const learn=(m,u,t)=>t<=0?m:u+(m-u)*Math.exp(-t/learningTime);
+    const choose=m=>m>=threshold?'Explore':'Familiar';
+    const classify=observedRoute=>observedRoute==='Familiar'?1:0;
+    function makeTrack(enabled,initialRecords=[0,1]){
+      let memories=[.5,.5],records=initialRecords.slice();const visits=[];
+      for(let i=0;i<6;i++){
+        if(i===2)records=[0,0];
+        const depart=12*i,start=memories.slice(),before=records.slice(),offered=before.map(access);
+        const end=start.map((m,j)=>learn(m,offered[j],3)),choices=end.map(choose);
+        const after=i>=2&&enabled?choices.map(classify):before.slice();
+        visits.push({index:i,depart,arrival:depart+2,leave:depart+5,observation:depart+7,review:depart+8,start,end,offered,recordsBefore:before,recordsAfter:after,choices});
+        memories=end.slice();records=after.slice();
+      }
+      return visits;
+    }
+    const tracks=Object.fromEntries(arms.map(a=>[a.id,makeTrack(a.enabled)]));
+    function snapshot(armId,t){
+      const visits=tracks[armId],index=Math.min(5,Math.floor(t/12)),v=visits[index];
+      const records=(t>=v.review?v.recordsAfter:v.recordsBefore).slice();
+      const memories=v.start.map((m,j)=>learn(m,v.offered[j],clamp(t-v.arrival,0,3)));
+      const observed=t>=v.observation?v:visits[index-1];
+      const newlyFlagged=visits.filter(visit=>visit.index>=2&&visit.review<=t&&visit.recordsBefore[1]===0&&visit.recordsAfter[1]===1).map(visit=>visit.review);
+      return {records,memories,nextAccess:records.map(access),visitAccess:v.offered.slice(),choices:observed?observed.choices.slice():null,index,newlyFlagged};
+    }
+    function phaseAt(t){
+      const local=t%12;
+      if(t===duration)return {name:'Complete',edge:null,p:0,node:null};
+      if(local<2)return {name:'Record sets access',edge:0,p:local/2,node:'access'};
+      if(local<5)return {name:'Experience updates memory',edge:1,p:(local-2)/3,node:'memory'};
+      if(local<7)return {name:'Memory shapes the next route',edge:2,p:(local-5)/2,node:'behaviour'};
+      if(local<8)return {name:'New route is reviewed',edge:3,p:local-7,node:'record'};
+      return {name:'Review complete · awaiting next visit',edge:null,p:1,node:'record'};
+    }
+    let time=checkpoint,playing=false,frame=0,last=0,oldWidth=0,resizeFrame=0;
+    const add=(parent,tag,attrs={})=>{const el=document.createElementNS(NS,tag);Object.entries(attrs).forEach(([k,v])=>el.setAttribute(k,v));parent.appendChild(el);return el;};
+    const set=(el,attrs)=>Object.entries(attrs).forEach(([k,v])=>el.setAttribute(k,v));
+    const label=(parent,x,y,value,attrs={})=>{const el=add(parent,'text',{x,y,...attrs});el.textContent=value;return el;};
+    const panels=arms.map(arm=>{
+      const section=document.createElement('section');section.className='arm';section.dataset.arm=arm.id;
+      section.setAttribute('aria-labelledby','rewrite-'+arm.id+'-title');
+      section.innerHTML=`<h3 id="rewrite-${arm.id}-title">${arm.title}</h3><div class="event text-small" data-event></div><svg class="scene" role="img" aria-label="${arm.title}: record, access, internal memory and observed behaviour form a directed feedback loop."></svg><div class="text-small" data-result></div>`;
+      $('[data-arms]').appendChild(section);
+      return {arm,section,svg:section.querySelector('svg'),event:section.querySelector('[data-event]'),result:section.querySelector('[data-result]'),nodes:null,edges:null,dot:null};
+    });
+    function build(panel){
+      const svg=panel.svg,w=svg.getBoundingClientRect().width;set(svg,{viewBox:`0 0 ${w} 380`,height:380});svg.replaceChildren();
+      const defs=add(svg,'defs'),markerId='record-loop-arrow-'+panel.arm.id;
+      const marker=add(defs,'marker',{id:markerId,viewBox:'0 0 10 10',refX:8,refY:5,markerWidth:6,markerHeight:6,orient:'auto-start-reverse'});
+      add(marker,'path',{d:'M0 0 L10 5 L0 10 Z',fill:'var(--border)'});
+      const points={record:{x:w/2,y:52},access:{x:w-64,y:182},memory:{x:w/2,y:312},behaviour:{x:64,y:182}};
+      const edges=[
+        [{x:points.record.x+25,y:90},{x:points.access.x-20,y:140}],
+        [{x:points.access.x-20,y:224},{x:points.memory.x+25,y:270}],
+        [{x:points.memory.x-25,y:270},{x:points.behaviour.x+20,y:224}],
+        [{x:points.behaviour.x+20,y:140},{x:points.record.x-25,y:90}]
+      ];
+      panel.edges=edges.map(([a,b],index)=>{
+        const line=add(svg,'line',{x1:a.x,y1:a.y,x2:b.x,y2:b.y,stroke:'var(--border)','stroke-width':1.5,'marker-end':`url(#${markerId})`});
+        if(index===3&&!panel.arm.enabled)set(line,{'stroke-dasharray':'3 5'});
+        return {a,b,line};
+      });
+      panel.nodes={};
+      for(const [key,title] of [['record','Record'],['access','Next access'],['memory','Internal memory'],['behaviour','Observed route']]){
+        const p=points[key],width=key==='memory'?136:120;
+        const box=add(svg,'rect',{x:p.x-width/2,y:p.y-38,width,height:76,fill:'var(--background)',stroke:'var(--border)','stroke-width':1});
+        label(svg,p.x,p.y-19,title,{'text-anchor':'middle'});
+        const values=[0,1].map(owner=>{
+          const y=p.y+4+21*owner,colour=`var(--viz-series-${owner+1})`;
+          if(owner===0)add(svg,'circle',{cx:p.x-width/2+10,cy:y-5,r:3,fill:colour});
+          else add(svg,'rect',{x:p.x-width/2+7,y:y-8,width:6,height:6,fill:colour});
+          return label(svg,p.x-width/2+20,y,'',{'class':'tabular-nums'});
+        });
+        panel.nodes[key]={box,values};
+      }
+      panel.dot=add(svg,'circle',{r:4.5,fill:'var(--viz-series-2)',visibility:'hidden'});
+      label(svg,w/2,376,'Arrows: direction of influence',{'text-anchor':'middle'});
+    }
+    function eventText(arm,s,t){
+      if(t===checkpoint)return 'Record erased at 24 · B keeps memory 0.37';
+      if(t<31)return 'Equal access restored · earlier memory persists';
+      if(t<32)return 'New observation: B chooses Familiar';
+      if(arm.enabled)return t<38?'B’s flag recreated at 32 · next access 25%':'B’s recreated flag restricts later visits';
+      return t<43?'Same observed route · no record written':'Full access continues · B now chooses Explore';
+    }
+    function buttonText(){if(playing)return 'Pause';if(time===duration)return 'Replay';return time<firstRewrite?'Play to first rewrite':'Continue feedback';}
+    function draw(){
+      const phase=phaseAt(time);
+      $('[data-play]').textContent=buttonText();$('[data-time]').textContent=time.toFixed(1);$('[data-time-slider]').value=time;
+      $('[data-phase]').textContent=time===checkpoint?'Records just erased · two earlier visits completed':time===duration?'Four post-erasure visits complete':`Visit ${Math.min(6,Math.floor(time/12)+1)} · ${phase.name.toLowerCase()}`;
+      for(const panel of panels){
+        const s=snapshot(panel.arm.id,time),n=panel.nodes;
+        panel.event.textContent=eventText(panel.arm,s,time);
+        for(const [key,node] of Object.entries(n))set(node.box,{fill:phase.node===key?'var(--muted)':'var(--background)'});
+        for(let owner=0;owner<2;owner++){
+          const who=owner===0?'A':'B';
+          n.record.values[owner].textContent=who+': '+(s.records[owner]?'Flagged':'None');
+          n.access.values[owner].textContent=who+': '+Math.round(100*s.nextAccess[owner])+'%';
+          n.memory.values[owner].textContent=who+': '+s.memories[owner].toFixed(2);
+          n.behaviour.values[owner].textContent=who+': '+(s.choices?.[owner]||'—');
+        }
+        const active=phase.edge!==null&&!(phase.edge===3&&!panel.arm.enabled);
+        panel.edges.forEach((edge,i)=>set(edge.line,{stroke:active&&phase.edge===i?'var(--viz-series-2)':'var(--border)'}));
+        if(active){const {a,b}=panel.edges[phase.edge];set(panel.dot,{cx:a.x+(b.x-a.x)*phase.p,cy:a.y+(b.y-a.y)*phase.p,visibility:'visible'});}else set(panel.dot,{visibility:'hidden'});
+        panel.result.textContent=time<32?'Classifier waits for a new post-erasure observation':panel.arm.enabled?'Record → restricted access → Familiar → record':'Record remains clear → continued access → recovery';
+        panel.svg.setAttribute('aria-label',`${panel.arm.title}. B record ${s.records[1]?'flagged':'none'}, next access ${100*s.nextAccess[1]} percent, memory ${s.memories[1].toFixed(2)}, observed route ${s.choices?.[1]}. ${phase.name}.`);
+      }
+    }
+    function persist(){
+      const payload={privateContent:{id:'records-recreated',version:1,time},modelContent:{example:'An institution recreates an erased record from behaviour shaped by earlier treatment',time,checkpoint,firstRewrite,assumedRule:'Only a newly observed Familiar route writes a flag; Explore writes no flag. The same classifier applies to A and B. Record updates occur after behaviour and affect subsequent visits.',commonStartingState:snapshot('off',checkpoint),outcomes:Object.fromEntries(arms.map(a=>[a.id,snapshot(a.id,time)])),basis:'Illustrative causal experiment; existing memory learning and access rule; no empirical calibration.'}};
+      try{const result=window.openai?.setWidgetState?.(payload);if(result?.catch)result.catch(()=>{});}catch(_){}
+    }
+    function stop(){playing=false;cancelAnimationFrame(frame);frame=0;}
+    let stopAt=firstRewrite;
+    function tick(now){
+      if(!playing)return;
+      time=Math.min(stopAt,time+Math.min((now-last)/1000,.1)*2);last=now;
+      if(time>=stopAt){stop();draw();persist();$('[data-announcement]').textContent=time===firstRewrite?'B’s record has been recreated in the reclassification case. Continue to see its effect on later visits.':'Comparison complete.';return;}
+      draw();frame=requestAnimationFrame(tick);
+    }
+    $('[data-play]').addEventListener('click',()=>{
+      if(playing){stop();draw();persist();return;}
+      if(time>=duration)time=checkpoint;
+      stopAt=time<firstRewrite?firstRewrite:duration;
+      if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){time=stopAt;draw();persist();return;}
+      playing=true;last=performance.now();draw();persist();frame=requestAnimationFrame(tick);
+    });
+    $('[data-rewrite]').addEventListener('click',()=>{stop();time=firstRewrite;draw();persist();});
+    $('[data-time-slider]').addEventListener('input',event=>{stop();time=clamp(Number(event.target.value),checkpoint,duration);draw();});
+    $('[data-time-slider]').addEventListener('change',()=>persist());
+    function restore(saved){const s=saved?.privateContent;if(s?.id!=='records-recreated'||s.version!==1)return;stop();time=Number.isFinite(s.time)?clamp(s.time,checkpoint,duration):checkpoint;if(panels.every(p=>p.nodes))draw();}
+    window.addEventListener('openai:set_globals',event=>restore(event.detail?.globals?.widgetState));
+    function resize(){const w=root.getBoundingClientRect().width;if(w===oldWidth)return;oldWidth=w;panels.forEach(build);draw();}
+    window.addEventListener('resize',()=>{cancelAnimationFrame(resizeFrame);resizeFrame=requestAnimationFrame(resize);});
+    document.addEventListener('visibilitychange',()=>{if(document.hidden&&playing){stop();draw();persist();}});
+    restore(window.openai?.widgetState);resize();
+  })();
+  </script>
+</div>

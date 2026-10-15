@@ -125,4 +125,5 @@ The package includes 374 automated tests, thirty-eight original scientific figur
 
 ## SIMS animations: what changes within, and what changes with place
 
-[Open the animation guide](studies/sims-recovery-entrainment/animations/index.html). Five interactive examples trace position, internal changes, carried memory, and repeated destination–memory feedback. These are explanatory models with explicit assumptions; download the repository to play the HTML animations locally.
+[Open the animation guide](studies/sims-recovery-entrainment/animations/index.html). Seven interactive examples trace position, internal changes, carried memory, destination–memory feedback, and institutional records recreated from behaviour. These are explanatory models with explicit assumptions; download the repository to play the HTML animations locally.
+

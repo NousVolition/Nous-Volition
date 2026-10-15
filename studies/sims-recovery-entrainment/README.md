@@ -9,7 +9,7 @@ locally; their figures are embedded and work offline. GitHub displays HTML sourc
 
 ## Animations: position, internal change, and repeated journeys
 
-[Open the animation guide](animations/index.html), then choose one of five offline
+[Open the animation guide](animations/index.html), then choose one of seven offline
 animations. Download the repository and open the guide locally; GitHub displays
 HTML source. The editable fragments are in `animations/source`.
 
@@ -28,6 +28,20 @@ guide records the equations, assumptions, and checks. Browser checks and
 independent numerical comparisons actually ran; archived records are in
 `animations/checks`. Run `node animations/check_models.cjs` to verify the four
 memory/position models with Node.js and no external dependencies.
+
+## Institutional records, memory, and recreated classifications
+
+Two further animations compare [record and memory resets](animations/records-and-memory.html)
+and [records recreated from new behaviour](animations/records-recreated.html).
+In the latter, both cases start just after records are erased. Retained memory
+still leads B to the Familiar route; an assumed classifier turns that new
+observation into a flag, reducing access on the next visit. Disabling the
+classifier allows equal access to continue and B's route to change.
+
+[The rules and intervention timing](animations/records.md) separate institutional
+records from internal memory and distinguish new observations from old records.
+These two additions passed numerical and offline control checks; browser layout
+has not been verified. Run `node animations/check_records.cjs` with Node.js.
 
 ## What ran
 
@@ -204,3 +218,4 @@ trajectories. Other clipped subparts were not reconstructed.
 The supplied equations are mathematical inputs, not calibration data about people,
 devices, or ecosystems. Sources are identified by the visible figure/exercise
 numbers in the atlas. The scans themselves are not redistributed.
+

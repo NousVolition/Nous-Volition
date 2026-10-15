@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "exports": [
+    {
+      "name": "records-and-memory",
+      "bytes": 94795,
+      "sourcePreserved": true,
+      "externalScripts": false,
+      "parsedScripts": 7
+    },
+    {
+      "name": "records-recreated",
+      "bytes": 93257,
+      "sourcePreserved": true,
+      "externalScripts": false,
+      "parsedScripts": 7
+    }
+  ],
+  "browserRenderingVerified": false
+}

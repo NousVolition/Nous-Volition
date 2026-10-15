@@ -1,0 +1,365 @@
+{
+  "basis": "Assumed deterministic intervention model inspired by user-provided passages; no source-equation or empirical-validation claim.",
+  "protocol": {
+    "initialMemory": [
+      0.5,
+      0.5
+    ],
+    "initialRecords": [
+      0,
+      1
+    ],
+    "offeredAccess": [
+      1,
+      0.25
+    ],
+    "memoryLearningTime": 8,
+    "routeThreshold": 0.6,
+    "checkpoint": 24,
+    "visits": 6,
+    "visitDuration": 3,
+    "interval": 12,
+    "recordsFixed": true,
+    "simultaneousVisits": true
+  },
+  "maxRK4Error": 3.9968028886505635e-15,
+  "checks": [
+    "Identical initial memories and behaviour",
+    "Shared pre-intervention history",
+    "Field-specific resets",
+    "Position preservation",
+    "Continuous motion",
+    "Identity permutation",
+    "Equal-record counterfactual",
+    "Closed-form vs independent RK4",
+    "Memory-gap identities",
+    "Post-reset route outcomes"
+  ],
+  "outcomes": {
+    "keep": {
+      "checkpoint": {
+        "memories": [
+          0.7638167236294927,
+          0.36809163818525364
+        ],
+        "records": [
+          0,
+          1
+        ],
+        "offered": [
+          1,
+          0.25
+        ],
+        "index": 2,
+        "active": false,
+        "choices": [
+          "Explore",
+          "Familiar"
+        ]
+      },
+      "final": {
+        "memories": [
+          0.9473003877190678,
+          0.2763498061404661
+        ],
+        "records": [
+          0,
+          1
+        ],
+        "offered": [
+          1,
+          0.25
+        ],
+        "index": 5,
+        "active": false,
+        "choices": [
+          "Explore",
+          "Familiar"
+        ]
+      },
+      "routes": [
+        [
+          "Explore",
+          "Familiar"
+        ],
+        [
+          "Explore",
+          "Familiar"
+        ],
+        [
+          "Explore",
+          "Familiar"
+        ],
+        [
+          "Explore",
+          "Familiar"
+        ],
+        [
+          "Explore",
+          "Familiar"
+        ],
+        [
+          "Explore",
+          "Familiar"
+        ]
+      ]
+    },
+    "record": {
+      "checkpoint": {
+        "memories": [
+          0.7638167236294927,
+          0.36809163818525364
+        ],
+        "records": [
+          0,
+          0
+        ],
+        "offered": [
+          1,
+          1
+        ],
+        "index": 2,
+        "active": false,
+        "choices": [
+          "Explore",
+          "Familiar"
+        ]
+      },
+      "final": {
+        "memories": [
+          0.9473003877190678,
+          0.8590021860291438
+        ],
+        "records": [
+          0,
+          0
+        ],
+        "offered": [
+          1,
+          1
+        ],
+        "index": 5,
+        "active": false,
+        "choices": [
+          "Explore",
+          "Explore"
+        ]
+      },
+      "routes": [
+        [
+          "Explore",
+          "Familiar"
+        ],
+        [
+          "Explore",
+          "Familiar"
+        ],
+        [
+          "Explore",
+          "Familiar"
+        ],
+        [
+          "Explore",
+          "Explore"
+        ],
+        [
+          "Explore",
+          "Explore"
+        ],
+        [
+          "Explore",
+          "Explore"
+        ]
+      ]
+    },
+    "memory": {
+      "checkpoint": {
+        "memories": [
+          0.5,
+          0.5
+        ],
+        "records": [
+          0,
+          1
+        ],
+        "offered": [
+          1,
+          0.25
+        ],
+        "index": 2,
+        "active": false,
+        "choices": [
+          "Explore",
+          "Familiar"
+        ]
+      },
+      "final": {
+        "memories": [
+          0.888434919925785,
+          0.3057825400371075
+        ],
+        "records": [
+          0,
+          1
+        ],
+        "offered": [
+          1,
+          0.25
+        ],
+        "index": 5,
+        "active": false,
+        "choices": [
+          "Explore",
+          "Familiar"
+        ]
+      },
+      "routes": [
+        [
+          "Explore",
+          "Familiar"
+        ],
+        [
+          "Explore",
+          "Familiar"
+        ],
+        [
+          "Explore",
+          "Familiar"
+        ],
+        [
+          "Explore",
+          "Familiar"
+        ],
+        [
+          "Explore",
+          "Familiar"
+        ],
+        [
+          "Explore",
+          "Familiar"
+        ]
+      ]
+    },
+    "both": {
+      "checkpoint": {
+        "memories": [
+          0.5,
+          0.5
+        ],
+        "records": [
+          0,
+          0
+        ],
+        "offered": [
+          1,
+          1
+        ],
+        "index": 2,
+        "active": false,
+        "choices": [
+          "Explore",
+          "Familiar"
+        ]
+      },
+      "final": {
+        "memories": [
+          0.888434919925785,
+          0.888434919925785
+        ],
+        "records": [
+          0,
+          0
+        ],
+        "offered": [
+          1,
+          1
+        ],
+        "index": 5,
+        "active": false,
+        "choices": [
+          "Explore",
+          "Explore"
+        ]
+      },
+      "routes": [
+        [
+          "Explore",
+          "Familiar"
+        ],
+        [
+          "Explore",
+          "Familiar"
+        ],
+        [
+          "Explore",
+          "Explore"
+        ],
+        [
+          "Explore",
+          "Explore"
+        ],
+        [
+          "Explore",
+          "Explore"
+        ],
+        [
+          "Explore",
+          "Explore"
+        ]
+      ]
+    }
+  },
+  "offlineControls": [
+    {
+      "width": 736,
+      "failHost": false,
+      "reduced": false,
+      "initialization": true,
+      "checkpointPause": true,
+      "isolatedResets": true,
+      "seekReplayRestore": true,
+      "finitePlayback": true
+    },
+    {
+      "width": 320,
+      "failHost": false,
+      "reduced": false,
+      "initialization": true,
+      "checkpointPause": true,
+      "isolatedResets": true,
+      "seekReplayRestore": true,
+      "finitePlayback": true
+    },
+    {
+      "width": 1024,
+      "failHost": true,
+      "reduced": false,
+      "initialization": true,
+      "checkpointPause": true,
+      "isolatedResets": true,
+      "seekReplayRestore": true,
+      "finitePlayback": true
+    },
+    {
+      "width": 360,
+      "failHost": false,
+      "reduced": true,
+      "initialization": true,
+      "checkpointPause": true,
+      "isolatedResets": true,
+      "seekReplayRestore": true,
+      "finitePlayback": true
+    },
+    {
+      "width": 736,
+      "failHost": false,
+      "reduced": false,
+      "initialization": true,
+      "checkpointPause": true,
+      "isolatedResets": true,
+      "seekReplayRestore": true,
+      "finitePlayback": true
+    }
+  ],
+  "visualInspection": "Browser rendering not verified. Offline DOM/control checks are not browser layout checks."
+}

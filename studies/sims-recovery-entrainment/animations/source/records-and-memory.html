@@ -1,0 +1,175 @@
+<div id="records-and-memory">
+  <style>
+    #records-and-memory .arms { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:24px; margin-top:16px; }
+    #records-and-memory .arm { min-width:0; }
+    #records-and-memory .scene { display:block; width:100%; }
+    #records-and-memory .scene text { fill:var(--foreground); font-size:var(--font-size-base); }
+    #records-and-memory .structure { fill:none; stroke:var(--border); stroke-width:1.5; }
+    #records-and-memory .arm-status { min-height:2.5em; }
+    #records-and-memory .choice { min-height:2.5em; margin-top:8px; }
+    #records-and-memory .memory-cell { display:flex; align-items:center; gap:8px; }
+    #records-and-memory .memory-track { flex:1; min-width:20px; height:6px; background:var(--muted); }
+    #records-and-memory .memory-track span { display:block; height:100%; }
+    #records-and-memory .series-a { color:var(--viz-series-1); }
+    #records-and-memory .series-b { color:var(--viz-series-2); }
+    #records-and-memory .time-control { margin-top:10px; }
+    #records-and-memory h2 { padding-right:90px; }
+    #records-and-memory .notes { margin-top:12px; }
+    @media(max-width:639px) { #records-and-memory .arms { grid-template-columns:minmax(0,1fr); } }
+  </style>
+  <h2>Who remembers the SIM?</h2>
+  <div class="text-small">Two identical SIMS · different institutional records · four matched continuations</div>
+  <div class="viz-controls">
+    <button type="button" class="btn btn-primary" data-play>Play to checkpoint</button>
+    <button type="button" class="btn" data-checkpoint>Shared checkpoint</button>
+  </div>
+  <div class="time-control">
+    <label class="form-label">Model time <output class="tabular-nums" data-time>0.0</output> / 72
+      <input class="form-range" data-time-slider aria-label="Model time" type="range" min="0" max="72" step="0.01" value="0">
+    </label>
+  </div>
+  <div class="text-small" data-phase>Shared history · before treatment</div>
+  <div class="viz-row text-small notes"><span><span class="series-a">●</span> A</span><span><span class="series-b">■</span> B</span><span>Memory: expected access, 0–1</span></div>
+  <div class="arms" data-arms></div>
+  <div class="text-small text-muted notes">Assumed access rule · fixed records after reset · scheduled visits</div>
+  <div class="sr-only" data-announcement aria-live="polite"></div>
+  <script>
+  (()=>{
+    const root=document.getElementById('records-and-memory');
+    if(!root||root.dataset.ready)return;root.dataset.ready='true';
+    const $=s=>root.querySelector(s),NS='http://www.w3.org/2000/svg';
+    // Experimental assumptions, not equations inferred or calibrated from the photographs.
+    // SIM identity never enters the transition rule: only its record and memory do.
+    // A record is external to the SIM. It stays fixed unless the reset clears it.
+    // No shared capacity constraint, environmental learning, or record rewriting is added.
+    const checkpoint=24,duration=72,initialMemory=.5,threshold=.6,learningTime=8;
+    const arms=[
+      {id:'keep',title:'Keep both',eraseRecord:false,eraseMemory:false,detail:'Records kept · memories kept'},
+      {id:'record',title:'Erase records',eraseRecord:true,eraseMemory:false,detail:'Records cleared · memories kept'},
+      {id:'memory',title:'Reset internal memory',eraseRecord:false,eraseMemory:true,detail:'Records kept · memories reset to 0.50'},
+      {id:'both',title:'Reset both',eraseRecord:true,eraseMemory:true,detail:'Records cleared · memories reset to 0.50'}
+    ];
+    const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
+    const access=record=>1-.75*record;
+    const learn=(memory,offered,elapsed)=>elapsed<=0?memory:offered+(memory-offered)*Math.exp(-elapsed/learningTime);
+    const choose=memory=>memory>=threshold?'Explore':'Familiar';
+    function makeTrack(arm,records=[0,1]){
+      let memories=[initialMemory,initialMemory],r=records.slice();const visits=[];
+      for(let i=0;i<6;i++){
+        if(i===2){if(arm.eraseRecord)r=[0,0];if(arm.eraseMemory)memories=[initialMemory,initialMemory];}
+        const depart=12*i,offered=r.map(access),start=memories.slice(),end=start.map((m,j)=>learn(m,offered[j],3));
+        visits.push({index:i,depart,arrival:depart+2,leave:depart+5,fork:depart+7,settled:depart+9,records:r.slice(),offered,start,end,choices:end.map(choose)});
+        memories=end.slice();
+      }
+      return visits;
+    }
+    const tracks=Object.fromEntries(arms.map(arm=>[arm.id,makeTrack(arm)]));
+    function snapshot(armId,t,applied=true){
+      const visits=tracks[armId],index=Math.min(5,Math.floor(t/12)),v=visits[index];
+      if(t===checkpoint&&!applied){const before=visits[1];return {memories:before.end.slice(),records:before.records.slice(),offered:before.offered.slice(),index:2,active:false,choices:before.choices.slice()};}
+      const elapsed=clamp(t-v.arrival,0,3),memories=v.start.map((m,j)=>learn(m,v.offered[j],elapsed));
+      const lastChoice=t>=v.fork?v:index>0?visits[index-1]:null;
+      return {memories,records:v.records.slice(),offered:v.offered.slice(),index,active:t>=v.arrival&&t<v.leave,choices:lastChoice?lastChoice.choices.slice():null};
+    }
+    const ramp=(t,a,b)=>{const p=clamp((t-a)/(b-a),0,1);return p*p*(3-2*p);};
+    const mix=(a,b,p)=>({x:a.x+(b.x-a.x)*p,y:a.y+(b.y-a.y)*p});
+    const offset=(p,owner)=>({x:p.x+(owner===0?-18:18),y:p.y});
+    function position(armId,t,owner,n){
+      const visits=tracks[armId],index=Math.min(5,Math.floor(t/12)),v=visits[index];
+      const destination=which=>offset(which==='Explore'?n.explore:n.familiar,owner),gate=offset(n.gate,owner),fork=offset(n.fork,owner);
+      if(t<=v.arrival){
+        if(index===0)return mix(offset(n.start,owner),gate,ramp(t,v.depart,v.arrival));
+        const prev=destination(visits[index-1].choices[owner]),mid=v.depart+1;
+        return t<mid?mix(prev,fork,ramp(t,v.depart,mid)):mix(fork,gate,ramp(t,mid,v.arrival));
+      }
+      if(t<=v.leave)return gate;
+      if(t<=v.fork)return mix(gate,fork,ramp(t,v.leave,v.fork));
+      return mix(fork,destination(v.choices[owner]),ramp(t,v.fork,v.settled));
+    }
+    let time=0,applied=false,playing=false,frame=0,last=0,oldWidth=0,resizeFrame=0;
+    const add=(parent,tag,attrs={})=>{const el=document.createElementNS(NS,tag);Object.entries(attrs).forEach(([key,value])=>el.setAttribute(key,value));parent.appendChild(el);return el;};
+    const set=(el,attrs)=>Object.entries(attrs).forEach(([key,value])=>el.setAttribute(key,value));
+    const label=(parent,x,y,text,attrs={})=>{const el=add(parent,'text',{x,y,...attrs});el.textContent=text;return el;};
+    const panels=arms.map(arm=>{
+      const section=document.createElement('section');section.className='arm';section.dataset.arm=arm.id;
+      section.setAttribute('aria-labelledby','records-'+arm.id+'-title');
+      // Only fixed, trusted local labels are interpolated here.
+      section.innerHTML=`<h3 id="records-${arm.id}-title">${arm.title}</h3><div class="arm-status text-small" data-status></div><svg class="scene" role="img" aria-label="${arm.title}: A and B visit the same institution and choose their next routes."></svg><table class="table table-sm"><thead><tr><th scope="col">SIM</th><th scope="col">Record</th><th scope="col">Access</th><th scope="col">Memory</th></tr></thead><tbody>${[0,1].map(owner=>`<tr data-owner="${owner}"><th scope="row">${owner===0?'A':'B'}</th><td data-record></td><td class="tabular-nums" data-access></td><td><div class="memory-cell"><div class="memory-track" aria-hidden="true"><span data-memory-bar style="background:var(--viz-series-${owner+1})"></span></div><output class="tabular-nums" data-memory></output></div></td></tr>`).join('')}</tbody></table><div class="choice text-small" data-choice></div>`;
+      $('[data-arms]').appendChild(section);
+      return {arm,section,svg:section.querySelector('svg'),status:section.querySelector('[data-status]'),choice:section.querySelector('[data-choice]'),rows:[...section.querySelectorAll('[data-owner]')].map(row=>({record:row.querySelector('[data-record]'),access:row.querySelector('[data-access]'),memory:row.querySelector('[data-memory]'),bar:row.querySelector('[data-memory-bar]')})),nodes:null};
+    });
+    function build(panel){
+      const svg=panel.svg,w=svg.getBoundingClientRect().width;set(svg,{viewBox:`0 0 ${w} 230`,height:230});svg.replaceChildren();
+      const n={start:{x:w/2,y:20},gate:{x:w/2,y:74},fork:{x:w/2,y:146},familiar:{x:62,y:194},explore:{x:w-62,y:194}};
+      for(const [a,b] of [[n.start,n.gate],[n.gate,n.fork],[n.fork,n.familiar],[n.fork,n.explore]])add(svg,'line',{x1:a.x,y1:a.y,x2:b.x,y2:b.y,class:'structure'});
+      add(svg,'rect',{x:n.gate.x-48,y:n.gate.y-24,width:96,height:48,fill:'var(--background)',stroke:'var(--border)','stroke-width':1.5});
+      label(svg,8,47,'Same');label(svg,8,64,'institution');
+      add(svg,'line',{x1:82,y1:61,x2:n.gate.x-51,y2:61,class:'structure'});
+      n.accessBars=[0,1].map(owner=>{const x=n.gate.x+(owner===0?-34:7);add(svg,'rect',{x,y:105,width:27,height:6,fill:'var(--muted)'});return add(svg,'rect',{x,y:105,width:27,height:6,fill:`var(--viz-series-${owner+1})`});});
+      for(const p of [n.familiar,n.explore])add(svg,'ellipse',{cx:p.x,cy:p.y,rx:42,ry:20,class:'structure'});
+      label(svg,n.familiar.x,227,'Familiar',{'text-anchor':'middle'});label(svg,n.explore.x,227,'Explore',{'text-anchor':'middle'});
+      n.agents=[0,1].map(owner=>{
+        const g=add(svg,'g'),colour=`var(--viz-series-${owner+1})`;
+        const ring=add(g,'circle',{r:12,fill:'none',stroke:colour,'stroke-width':2,opacity:.5});
+        if(owner===0)add(g,'circle',{r:10,fill:'var(--background)',stroke:colour,'stroke-width':2});
+        else add(g,'rect',{x:-9,y:-9,width:18,height:18,fill:'var(--background)',stroke:colour,'stroke-width':2});
+        label(g,0,5,owner===0?'A':'B',{'text-anchor':'middle'});return {g,ring};
+      });
+      panel.nodes=n;
+    }
+    function buttonText(){if(playing)return 'Pause';if(time===duration)return 'Replay';if(time===checkpoint&&!applied)return 'Apply resets & play';return time<checkpoint?'Play to checkpoint':'Continue';}
+    function draw(){
+      const isAfter=time>checkpoint||(time===checkpoint&&applied);
+      $('[data-play]').textContent=buttonText();$('[data-time]').textContent=time.toFixed(1);$('[data-time-slider]').value=time;
+      const currentVisit=Math.min(6,Math.floor(time/12)+1);
+      $('[data-phase]').textContent=time===checkpoint&&!applied?'Shared checkpoint · two visits complete · resets pending':time===duration?'Six visits complete':`${isAfter?'After reset':'Shared history'} · visit ${currentVisit} of 6`;
+      for(const panel of panels){
+        const s=snapshot(panel.arm.id,time,applied),n=panel.nodes;
+        panel.status.textContent=isAfter?panel.arm.detail:'At time 24: '+panel.arm.detail.toLowerCase();
+        for(let owner=0;owner<2;owner++){
+          const row=panel.rows[owner],p=position(panel.arm.id,time,owner,n),agent=n.agents[owner];
+          row.record.textContent=s.records[owner]?'Flagged':'None';row.access.textContent=Math.round(100*s.offered[owner])+'%';
+          row.memory.textContent=s.memories[owner].toFixed(2);row.bar.style.width=(100*s.memories[owner])+'%';
+          set(agent.g,{transform:`translate(${p.x},${p.y})`});set(agent.ring,{r:12+5*s.memories[owner]});
+          set(n.accessBars[owner],{width:27*s.offered[owner]});
+        }
+        panel.choice.textContent=s.choices?`Latest route · A: ${s.choices[0]} · B: ${s.choices[1]}`:'Same initial memory · no route chosen yet';
+        panel.svg.setAttribute('aria-label',`${panel.arm.title}. Time ${time.toFixed(1)}. A memory ${s.memories[0].toFixed(2)}, record ${s.records[0]?'flagged':'none'}. B memory ${s.memories[1].toFixed(2)}, record ${s.records[1]?'flagged':'none'}. ${s.active?'Both are receiving treatment.':''}`);
+      }
+    }
+    function persist(){
+      const outcomes=Object.fromEntries(arms.map(a=>[a.id,snapshot(a.id,time,applied)]));
+      const payload={privateContent:{id:'records-and-memory',version:1,time,applied},modelContent:{example:'Identical SIMS, different institutional records; matched record/memory resets',time,checkpoint,resetApplied:applied,assumptions:{initialMemory,initialRecords:[0,1],accessWithoutFlag:1,accessWithFlag:.25,memoryLearningTime:learningTime,routeThreshold:threshold,visitDuration:3,visitInterval:12,visits:6,recordsStayFixed:true,scheduledReturns:true,empiricallyCalibrated:false},outcomes}};
+      try{const result=window.openai?.setWidgetState?.(payload);if(result?.catch)result.catch(()=>{});}catch(_){}
+    }
+    function stop(){playing=false;cancelAnimationFrame(frame);frame=0;}
+    function tick(now){
+      if(!playing)return;
+      const end=applied?duration:checkpoint;
+      time=Math.min(end,time+Math.min((now-last)/1000,.1)*3);last=now;
+      if(time>=end){stop();$('[data-announcement]').textContent=end===checkpoint?'Shared checkpoint reached. Resets have not been applied.':'All continuations complete.';draw();persist();return;}
+      draw();frame=requestAnimationFrame(tick);
+    }
+    $('[data-play]').addEventListener('click',()=>{
+      if(playing){stop();draw();persist();return;}
+      if(time>=duration){time=0;applied=false;}
+      if(time>=checkpoint)applied=true;
+      if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){time=applied?duration:checkpoint;draw();persist();return;}
+      playing=true;last=performance.now();draw();persist();frame=requestAnimationFrame(tick);
+    });
+    $('[data-checkpoint]').addEventListener('click',()=>{stop();time=checkpoint;applied=false;draw();persist();$('[data-announcement]').textContent='Shared checkpoint before resets.';});
+    $('[data-time-slider]').addEventListener('input',event=>{stop();time=clamp(Number(event.target.value),0,duration);applied=time>checkpoint;draw();});
+    $('[data-time-slider]').addEventListener('change',()=>persist());
+    function restore(saved){
+      const s=saved?.privateContent;if(s?.id!=='records-and-memory'||s.version!==1)return;
+      stop();time=Number.isFinite(s.time)?clamp(s.time,0,duration):0;applied=time>checkpoint||(time===checkpoint&&s.applied===true);
+      if(panels.every(panel=>panel.nodes))draw();
+    }
+    window.addEventListener('openai:set_globals',event=>restore(event.detail?.globals?.widgetState));
+    function resize(){const width=root.getBoundingClientRect().width;if(width===oldWidth)return;oldWidth=width;panels.forEach(build);draw();}
+    window.addEventListener('resize',()=>{cancelAnimationFrame(resizeFrame);resizeFrame=requestAnimationFrame(resize);});
+    document.addEventListener('visibilitychange',()=>{if(document.hidden&&playing){stop();draw();persist();}});
+    restore(window.openai?.widgetState);resize();
+  })();
+  </script>
+</div>

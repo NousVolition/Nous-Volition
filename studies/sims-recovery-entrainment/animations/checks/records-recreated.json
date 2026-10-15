@@ -1,0 +1,303 @@
+{
+  "basis": "Illustrative causal experiment; classifier and access rules assumed, not empirically calibrated.",
+  "protocol": {
+    "initialMemory": [
+      0.5,
+      0.5
+    ],
+    "initialRecords": [
+      0,
+      1
+    ],
+    "eraseTime": 24,
+    "firstNewObservation": 31,
+    "firstRewrite": 32,
+    "firstAffectedArrival": 38,
+    "learningTime": 8,
+    "threshold": 0.6,
+    "rule": "new Familiar route -> flag; new Explore route -> no flag",
+    "simultaneousVisits": true,
+    "scheduledVisits": true
+  },
+  "maxRK4Error": 3.9968028886505635e-15,
+  "checks": [
+    "Shared pre-erasure history",
+    "Exact memory preservation",
+    "Disabled arm matches previous model",
+    "No reclassification before a new observation",
+    "No retroactive treatment",
+    "Memory difference only after treatment difference",
+    "Identity permutation symmetry",
+    "Equal-history counterfactual",
+    "Closed form versus independent RK4"
+  ],
+  "outcomes": {
+    "rewrite": {
+      "checkpoint": {
+        "records": [
+          0,
+          0
+        ],
+        "memories": [
+          0.7638167236294927,
+          0.36809163818525364
+        ],
+        "nextAccess": [
+          1,
+          1
+        ],
+        "visitAccess": [
+          1,
+          1
+        ],
+        "choices": [
+          "Explore",
+          "Familiar"
+        ],
+        "index": 2,
+        "newlyFlagged": []
+      },
+      "firstRewrite": {
+        "records": [
+          0,
+          1
+        ],
+        "memories": [
+          0.8376737663208251,
+          0.5656961577463584
+        ],
+        "nextAccess": [
+          1,
+          0.25
+        ],
+        "visitAccess": [
+          1,
+          1
+        ],
+        "choices": [
+          "Explore",
+          "Familiar"
+        ],
+        "index": 2,
+        "newlyFlagged": [
+          32
+        ]
+      },
+      "final": {
+        "records": [
+          0,
+          1
+        ],
+        "memories": [
+          0.9473003877190678,
+          0.352491536547906
+        ],
+        "nextAccess": [
+          1,
+          0.25
+        ],
+        "visitAccess": [
+          1,
+          0.25
+        ],
+        "choices": [
+          "Explore",
+          "Familiar"
+        ],
+        "index": 5,
+        "newlyFlagged": [
+          32
+        ]
+      },
+      "routes": [
+        [
+          "Explore",
+          "Familiar"
+        ],
+        [
+          "Explore",
+          "Familiar"
+        ],
+        [
+          "Explore",
+          "Familiar"
+        ],
+        [
+          "Explore",
+          "Familiar"
+        ],
+        [
+          "Explore",
+          "Familiar"
+        ],
+        [
+          "Explore",
+          "Familiar"
+        ]
+      ]
+    },
+    "off": {
+      "checkpoint": {
+        "records": [
+          0,
+          0
+        ],
+        "memories": [
+          0.7638167236294927,
+          0.36809163818525364
+        ],
+        "nextAccess": [
+          1,
+          1
+        ],
+        "visitAccess": [
+          1,
+          1
+        ],
+        "choices": [
+          "Explore",
+          "Familiar"
+        ],
+        "index": 2,
+        "newlyFlagged": []
+      },
+      "firstRewrite": {
+        "records": [
+          0,
+          0
+        ],
+        "memories": [
+          0.8376737663208251,
+          0.5656961577463584
+        ],
+        "nextAccess": [
+          1,
+          1
+        ],
+        "visitAccess": [
+          1,
+          1
+        ],
+        "choices": [
+          "Explore",
+          "Familiar"
+        ],
+        "index": 2,
+        "newlyFlagged": []
+      },
+      "final": {
+        "records": [
+          0,
+          0
+        ],
+        "memories": [
+          0.9473003877190678,
+          0.8590021860291438
+        ],
+        "nextAccess": [
+          1,
+          1
+        ],
+        "visitAccess": [
+          1,
+          1
+        ],
+        "choices": [
+          "Explore",
+          "Explore"
+        ],
+        "index": 5,
+        "newlyFlagged": []
+      },
+      "routes": [
+        [
+          "Explore",
+          "Familiar"
+        ],
+        [
+          "Explore",
+          "Familiar"
+        ],
+        [
+          "Explore",
+          "Familiar"
+        ],
+        [
+          "Explore",
+          "Explore"
+        ],
+        [
+          "Explore",
+          "Explore"
+        ],
+        [
+          "Explore",
+          "Explore"
+        ]
+      ]
+    }
+  },
+  "offlineControls": [
+    {
+      "width": 736,
+      "failHost": false,
+      "reduced": false,
+      "noHost": false,
+      "initialization": true,
+      "firstRewritePause": true,
+      "seekReplayRestore": true,
+      "finitePlayback": true
+    },
+    {
+      "width": 320,
+      "failHost": false,
+      "reduced": false,
+      "noHost": false,
+      "initialization": true,
+      "firstRewritePause": true,
+      "seekReplayRestore": true,
+      "finitePlayback": true
+    },
+    {
+      "width": 1024,
+      "failHost": true,
+      "reduced": false,
+      "noHost": false,
+      "initialization": true,
+      "firstRewritePause": true,
+      "seekReplayRestore": true,
+      "finitePlayback": true
+    },
+    {
+      "width": 360,
+      "failHost": false,
+      "reduced": true,
+      "noHost": false,
+      "initialization": true,
+      "firstRewritePause": true,
+      "seekReplayRestore": true,
+      "finitePlayback": true
+    },
+    {
+      "width": 736,
+      "failHost": false,
+      "reduced": false,
+      "noHost": true,
+      "initialization": true,
+      "firstRewritePause": true,
+      "seekReplayRestore": true,
+      "finitePlayback": true
+    },
+    {
+      "width": 736,
+      "failHost": false,
+      "reduced": false,
+      "noHost": false,
+      "initialization": true,
+      "firstRewritePause": true,
+      "seekReplayRestore": true,
+      "finitePlayback": true
+    }
+  ],
+  "visualInspection": "Browser rendering not verified. Offline DOM/control checks are not browser layout checks."
+}
