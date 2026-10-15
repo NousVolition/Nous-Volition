@@ -19,7 +19,7 @@
       "url": "https://jcsp.org.pk/ArticleUpload/4144-20045-1-CE.pdf",
       "citation": "Akhtar, Khalid and Ali, J. Chem. Soc. Pak. 34(2),263-268 (2012)",
       "use": "Aqueous-medium Table 1 at 30 C: pH 3,5,8,10 rate constants 0.009,0.02878,0.051,0.058 min^-1. Merck MnO2, water/NaOH-washed, BET6.5 m2/g,0.333 g/L, H2O2 .020 mol/L, dark and stirred, pH adjusted using HCl/NH4OH.",
-      "limit": "Table-vs-Fig.4 consistency FAIL. pH3 at5/30min coarse plot readings45/55% (+/-5 reading percentage points, not experimental uncertainty). The paper alternates6.35/6.5 and leaves the temperature-column pH unclear; those rates are excluded. No accepted predictive H2O2 model results."
+      "limit": "Single first-order reconstruction from zero initial decomposition fails to match Fig.4; cause unresolved, not proof of source error. pH3 at5/30min coarse plot readings45/55% (+/-5 reading percentage points, not experimental uncertainty). Restarting at the graph's 5min value with the unchanged rate gives56.1% at30min: a same-source diagnostic, not independent validation. The paper alternates6.35/6.5 and leaves the temperature-column pH unclear; those rates are excluded. No accepted predictive H2O2 model results."
     },
     {
       "id": "behr2006",

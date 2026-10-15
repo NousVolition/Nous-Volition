@@ -10,7 +10,7 @@ This repository, **Streams and Rocks**, preserves the original stream-function r
 
 **[New substance follow-up: evaporation, polarization and measured capture](studies/substance-interactions/followup_tests/README.md).** Adds 29 tests and independent published-data comparisons. The earlier diffusion-only capture model underpredicts the tested measurements by factors 40–447. A [family/community guide](studies/substance-interactions/followup_tests/COMMUNITY.md) develops the proposed Water, Fog, Mist, Gas, Smoke, Clay and Ice roles alongside the existing SIMS work.
 
-**[Substance extensions: falling droplets, internal diffusion, carbonate kinetics and surface data](studies/substance-interactions/advanced_tests/README.md).** Adds 34 passing unit tests and 44 saved-result audits. The new falling-droplet candidate is 9–32% below 18 measured central values, substantially improving on the failed closure; smoke validation remains open. Includes specified-alkalinity CO₂ transients, recovered VOC partition data, ice-aging endpoints, and a retained failed peroxide-source audit.
+**[Substance extensions: falling droplets, internal diffusion, carbonate kinetics and surface data](studies/substance-interactions/advanced_tests/README.md).** Adds 34 passing unit tests and 44 saved-result audits. The new falling-droplet candidate is 9–32% below 18 measured central values, substantially improving on the failed closure; smoke validation remains open. Includes specified-alkalinity CO₂ transients, recovered VOC partition data, ice-aging endpoints, and an unresolved peroxide table-to-graph reconstruction mismatch. [Peroxide interpretation recheck](studies/substance-interactions/advanced_tests/results/peroxide_recheck.json) explains why this does not establish an error in the source. [Fresh-measurement test protocol and data screening](studies/substance-interactions/collection_external_check/README.md) records a frozen model and the still-open need for matching unused observations.
 
 ## Mechanisms, switching and memory
 
@@ -25,6 +25,8 @@ The [report and plots](studies/fluid-organization/report.html) are here in Strea
 ## Community: coordination, boundaries and power
 
 **[Use the Foucault passage with the seven-member community](studies/community-power/README.md).** Water, Fog, Mist, Gas, Smoke, Clay and Ice name fictional participants in 768 main allocation cases and 576 sensitivity cases. The comparison tracks needs met, unequal decision priority and work beyond requested limits, with 19 passing unit tests and 29 saved-result checks. In the higher-demand replication setting, connected allocation raises mean fulfillment from 46.6% to 77.2%, while the least-served member can lose out. These are explicit synthetic assumptions, not human observations or chemical behavior. [Passage-to-model interpretation](studies/community-power/interpretation.md).
+
+**[Everyone can be the adaptable one—and everyone can stop](studies/adaptable-roles/README.md).** Rotates the role through all seven members in 2,688 main paths and 1,008 sensitivity paths, with 19 unit tests and 43 saved-result checks. Compare accepting, refusing, handing off and sharing coordination work, while tracking original plans and where extra work goes. These are explicit fictional rules, separate from physical fluid behavior.
 
 ## SIMS: names, memory, and group boundaries
 
@@ -126,4 +128,5 @@ The package includes 374 automated tests, thirty-eight original scientific figur
 ## SIMS animations: what changes within, and what changes with place
 
 [Open the animation guide](studies/sims-recovery-entrainment/animations/index.html). Seven interactive examples trace position, internal changes, carried memory, destination–memory feedback, and institutional records recreated from behaviour. These are explanatory models with explicit assumptions; download the repository to play the HTML animations locally.
+
 

@@ -1,0 +1,741 @@
+{
+  "higher_demand_replication": {
+    "shared": {
+      "coordination_met": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "shared",
+        "metric": "coordination_met",
+        "mean": 1.0,
+        "low": 0.9999999999999999,
+        "high": 1.0,
+        "n_seeds": 12
+      },
+      "planned_met": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "shared",
+        "metric": "planned_met",
+        "mean": 0.9945279003630864,
+        "low": 0.9929939839228008,
+        "high": 0.9960618168033719,
+        "n_seeds": 12
+      },
+      "target_work": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "shared",
+        "metric": "target_work",
+        "mean": 0.3467807557259383,
+        "low": 0.3414777404983021,
+        "high": 0.3520837709535745,
+        "n_seeds": 12
+      },
+      "others_work": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "shared",
+        "metric": "others_work",
+        "mean": 0.3467807557259382,
+        "low": 0.341477740498302,
+        "high": 0.3520837709535744,
+        "n_seeds": 12
+      },
+      "target_plans_met": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "shared",
+        "metric": "target_plans_met",
+        "mean": 0.994542424851743,
+        "low": 0.9930120693651182,
+        "high": 0.9960727803383679,
+        "n_seeds": 12
+      },
+      "target_request_share": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "shared",
+        "metric": "target_request_share",
+        "mean": 0.14285714285714282,
+        "low": 0.1428571428571428,
+        "high": 0.14285714285714285,
+        "n_seeds": 12
+      },
+      "target_output_share": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "shared",
+        "metric": "target_output_share",
+        "mean": 0.14285714285714282,
+        "low": 0.1428571428571428,
+        "high": 0.14285714285714285,
+        "n_seeds": 12
+      },
+      "handoff_time": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "shared",
+        "metric": "handoff_time",
+        "mean": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "n_seeds": 12
+      },
+      "target_final_skill": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "shared",
+        "metric": "target_final_skill",
+        "mean": 1.5353919718703113,
+        "low": 1.5159726267156568,
+        "high": 1.5548113170249658,
+        "n_seeds": 12
+      }
+    },
+    "assigned": {
+      "coordination_met": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "assigned",
+        "metric": "coordination_met",
+        "mean": 0.27752982676634314,
+        "low": 0.2736109590605026,
+        "high": 0.2814486944721837,
+        "n_seeds": 12
+      },
+      "planned_met": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "assigned",
+        "metric": "planned_met",
+        "mean": 0.9673016262855535,
+        "low": 0.9633614465993282,
+        "high": 0.9712418059717788,
+        "n_seeds": 12
+      },
+      "target_work": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "assigned",
+        "metric": "target_work",
+        "mean": 0.5573889668945127,
+        "low": 0.5413169271666972,
+        "high": 0.5734610066223281,
+        "n_seeds": 12
+      },
+      "others_work": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "assigned",
+        "metric": "others_work",
+        "mean": 0.021278669253187065,
+        "low": 0.018963540947100517,
+        "high": 0.023593797559273613,
+        "n_seeds": 12
+      },
+      "target_plans_met": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "assigned",
+        "metric": "target_plans_met",
+        "mean": 0.771160339776781,
+        "low": 0.743586689464388,
+        "high": 0.798733990089174,
+        "n_seeds": 12
+      },
+      "target_request_share": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "assigned",
+        "metric": "target_request_share",
+        "mean": 0.9606255063140313,
+        "low": 0.9564289102622805,
+        "high": 0.9648221023657821,
+        "n_seeds": 12
+      },
+      "target_output_share": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "assigned",
+        "metric": "target_output_share",
+        "mean": 0.8545970628403604,
+        "low": 0.8379344973102855,
+        "high": 0.8712596283704354,
+        "n_seeds": 12
+      },
+      "handoff_time": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "assigned",
+        "metric": "handoff_time",
+        "mean": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "n_seeds": 12
+      },
+      "target_final_skill": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "assigned",
+        "metric": "target_final_skill",
+        "mean": 1.5766953165649105,
+        "low": 1.5555066447961075,
+        "high": 1.5978839883337135,
+        "n_seeds": 12
+      }
+    },
+    "remove_label": {
+      "coordination_met": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "remove_label",
+        "metric": "coordination_met",
+        "mean": 0.8790033087869339,
+        "low": 0.873498303552465,
+        "high": 0.8845083140214027,
+        "n_seeds": 12
+      },
+      "planned_met": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "remove_label",
+        "metric": "planned_met",
+        "mean": 0.9667035435849917,
+        "low": 0.9627724759981888,
+        "high": 0.9706346111717945,
+        "n_seeds": 12
+      },
+      "target_work": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "remove_label",
+        "metric": "target_work",
+        "mean": 0.5500257095551834,
+        "low": 0.5333148029957264,
+        "high": 0.5667366161146403,
+        "n_seeds": 12
+      },
+      "others_work": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "remove_label",
+        "metric": "others_work",
+        "mean": 0.3075827329945557,
+        "low": 0.29909495373262185,
+        "high": 0.3160705122564895,
+        "n_seeds": 12
+      },
+      "target_plans_met": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "remove_label",
+        "metric": "target_plans_met",
+        "mean": 0.7826567308227125,
+        "low": 0.7544549840317266,
+        "high": 0.8108584776136983,
+        "n_seeds": 12
+      },
+      "target_request_share": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "remove_label",
+        "metric": "target_request_share",
+        "mean": 0.3559456384452941,
+        "low": 0.34263084549617595,
+        "high": 0.3692604313944122,
+        "n_seeds": 12
+      },
+      "target_output_share": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "remove_label",
+        "metric": "target_output_share",
+        "mean": 0.268395879102998,
+        "low": 0.25759415334783725,
+        "high": 0.27919760485815875,
+        "n_seeds": 12
+      },
+      "handoff_time": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "remove_label",
+        "metric": "handoff_time",
+        "mean": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "n_seeds": 12
+      },
+      "target_final_skill": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "remove_label",
+        "metric": "target_final_skill",
+        "mean": 1.5761751977188139,
+        "low": 1.555062085738513,
+        "high": 1.5972883096991148,
+        "n_seeds": 12
+      }
+    },
+    "target_stops": {
+      "coordination_met": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "target_stops",
+        "metric": "coordination_met",
+        "mean": 0.22380812628177635,
+        "low": 0.22322329649521427,
+        "high": 0.22439295606833842,
+        "n_seeds": 12
+      },
+      "planned_met": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "target_stops",
+        "metric": "planned_met",
+        "mean": 1.0,
+        "low": 1.0,
+        "high": 1.0,
+        "n_seeds": 12
+      },
+      "target_work": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "target_stops",
+        "metric": "target_work",
+        "mean": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "n_seeds": 12
+      },
+      "others_work": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "target_stops",
+        "metric": "others_work",
+        "mean": 0.11562878235606405,
+        "low": 0.11350501139323618,
+        "high": 0.11775255331889192,
+        "n_seeds": 12
+      },
+      "target_plans_met": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "target_stops",
+        "metric": "target_plans_met",
+        "mean": 1.0,
+        "low": 1.0,
+        "high": 1.0,
+        "n_seeds": 12
+      },
+      "target_request_share": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "target_stops",
+        "metric": "target_request_share",
+        "mean": 0.7761918737182237,
+        "low": 0.7756070439316617,
+        "high": 0.7767767035047858,
+        "n_seeds": 12
+      },
+      "target_output_share": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "target_stops",
+        "metric": "target_output_share",
+        "mean": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "n_seeds": 12
+      },
+      "handoff_time": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "target_stops",
+        "metric": "handoff_time",
+        "mean": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "n_seeds": 12
+      },
+      "target_final_skill": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "target_stops",
+        "metric": "target_final_skill",
+        "mean": 1.4847618753969403,
+        "low": 1.4636028947939848,
+        "high": 1.5059208559998958,
+        "n_seeds": 12
+      }
+    },
+    "target_stops_handoff": {
+      "coordination_met": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "target_stops_handoff",
+        "metric": "coordination_met",
+        "mean": 0.9920238183595353,
+        "low": 0.9889090503692467,
+        "high": 0.995138586349824,
+        "n_seeds": 12
+      },
+      "planned_met": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "target_stops_handoff",
+        "metric": "planned_met",
+        "mean": 0.907177519045964,
+        "low": 0.8978847806234952,
+        "high": 0.9164702574684328,
+        "n_seeds": 12
+      },
+      "target_work": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "target_stops_handoff",
+        "metric": "target_work",
+        "mean": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "n_seeds": 12
+      },
+      "others_work": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "target_stops_handoff",
+        "metric": "others_work",
+        "mean": 0.47585193270474346,
+        "low": 0.46855686940995434,
+        "high": 0.4831469959995326,
+        "n_seeds": 12
+      },
+      "target_plans_met": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "target_stops_handoff",
+        "metric": "target_plans_met",
+        "mean": 1.0,
+        "low": 1.0,
+        "high": 1.0,
+        "n_seeds": 12
+      },
+      "target_request_share": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "target_stops_handoff",
+        "metric": "target_request_share",
+        "mean": 0.7761918737182237,
+        "low": 0.7756070439316617,
+        "high": 0.7767767035047858,
+        "n_seeds": 12
+      },
+      "target_output_share": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "target_stops_handoff",
+        "metric": "target_output_share",
+        "mean": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "n_seeds": 12
+      },
+      "handoff_time": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "target_stops_handoff",
+        "metric": "handoff_time",
+        "mean": 0.13871808661337273,
+        "low": 0.13735908848212133,
+        "high": 0.14007708474462413,
+        "n_seeds": 12
+      },
+      "target_final_skill": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "target_stops_handoff",
+        "metric": "target_final_skill",
+        "mean": 1.4847618753969403,
+        "low": 1.4636028947939848,
+        "high": 1.5059208559998958,
+        "n_seeds": 12
+      }
+    },
+    "share_after": {
+      "coordination_met": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "share_after",
+        "metric": "coordination_met",
+        "mean": 1.0,
+        "low": 0.9999999999999999,
+        "high": 1.0,
+        "n_seeds": 12
+      },
+      "planned_met": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "share_after",
+        "metric": "planned_met",
+        "mean": 0.9764501515034486,
+        "low": 0.9717237281294995,
+        "high": 0.9811765748773977,
+        "n_seeds": 12
+      },
+      "target_work": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "share_after",
+        "metric": "target_work",
+        "mean": 0.3875709789734265,
+        "low": 0.3813575800369252,
+        "high": 0.3937843779099278,
+        "n_seeds": 12
+      },
+      "others_work": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "share_after",
+        "metric": "others_work",
+        "mean": 0.3875481073136989,
+        "low": 0.38134484941540453,
+        "high": 0.3937513652119932,
+        "n_seeds": 12
+      },
+      "target_plans_met": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "share_after",
+        "metric": "target_plans_met",
+        "mean": 0.9764147506984294,
+        "low": 0.9716411703940322,
+        "high": 0.9811883310028267,
+        "n_seeds": 12
+      },
+      "target_request_share": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "share_after",
+        "metric": "target_request_share",
+        "mean": 0.16428851579547996,
+        "low": 0.16381402552824328,
+        "high": 0.16476300606271663,
+        "n_seeds": 12
+      },
+      "target_output_share": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "share_after",
+        "metric": "target_output_share",
+        "mean": 0.16428851579547996,
+        "low": 0.16381402552824328,
+        "high": 0.16476300606271663,
+        "n_seeds": 12
+      },
+      "handoff_time": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "share_after",
+        "metric": "handoff_time",
+        "mean": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "n_seeds": 12
+      },
+      "target_final_skill": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "share_after",
+        "metric": "target_final_skill",
+        "mean": 1.5625214040881354,
+        "low": 1.541843049779557,
+        "high": 1.583199758396714,
+        "n_seeds": 12
+      }
+    },
+    "all_stop": {
+      "coordination_met": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "all_stop",
+        "metric": "coordination_met",
+        "mean": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "n_seeds": 12
+      },
+      "planned_met": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "all_stop",
+        "metric": "planned_met",
+        "mean": 1.0,
+        "low": 1.0,
+        "high": 1.0,
+        "n_seeds": 12
+      },
+      "target_work": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "all_stop",
+        "metric": "target_work",
+        "mean": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "n_seeds": 12
+      },
+      "others_work": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "all_stop",
+        "metric": "others_work",
+        "mean": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "n_seeds": 12
+      },
+      "target_plans_met": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "all_stop",
+        "metric": "target_plans_met",
+        "mean": 1.0,
+        "low": 1.0,
+        "high": 1.0,
+        "n_seeds": 12
+      },
+      "target_request_share": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "all_stop",
+        "metric": "target_request_share",
+        "mean": 0.9464706068104508,
+        "low": 0.9421783289002797,
+        "high": 0.9507628847206219,
+        "n_seeds": 12
+      },
+      "target_output_share": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "all_stop",
+        "metric": "target_output_share",
+        "mean": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "n_seeds": 12
+      },
+      "handoff_time": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "all_stop",
+        "metric": "handoff_time",
+        "mean": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "n_seeds": 12
+      },
+      "target_final_skill": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "all_stop",
+        "metric": "target_final_skill",
+        "mean": 1.4847618753969403,
+        "low": 1.4636028947939848,
+        "high": 1.5059208559998958,
+        "n_seeds": 12
+      }
+    },
+    "none": {
+      "coordination_met": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "none",
+        "metric": "coordination_met",
+        "mean": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "n_seeds": 12
+      },
+      "planned_met": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "none",
+        "metric": "planned_met",
+        "mean": 1.0,
+        "low": 1.0,
+        "high": 1.0,
+        "n_seeds": 12
+      },
+      "target_work": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "none",
+        "metric": "target_work",
+        "mean": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "n_seeds": 12
+      },
+      "others_work": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "none",
+        "metric": "others_work",
+        "mean": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "n_seeds": 12
+      },
+      "target_plans_met": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "none",
+        "metric": "target_plans_met",
+        "mean": 1.0,
+        "low": 1.0,
+        "high": 1.0,
+        "n_seeds": 12
+      },
+      "target_request_share": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "none",
+        "metric": "target_request_share",
+        "mean": 0.14285714285714282,
+        "low": 0.1428571428571428,
+        "high": 0.14285714285714285,
+        "n_seeds": 12
+      },
+      "target_output_share": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "none",
+        "metric": "target_output_share",
+        "mean": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "n_seeds": 12
+      },
+      "handoff_time": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "none",
+        "metric": "handoff_time",
+        "mean": 0.0,
+        "low": 0.0,
+        "high": 0.0,
+        "n_seeds": 12
+      },
+      "target_final_skill": {
+        "split": "replication",
+        "load": 3.6,
+        "policy": "none",
+        "metric": "target_final_skill",
+        "mean": 0.9991499605188294,
+        "low": 0.9776357314319846,
+        "high": 1.0206641896056743,
+        "n_seeds": 12
+      }
+    }
+  },
+  "interpretation": "Intervals quantify synthetic seed variation, not real people. All seven target rotations are averaged within seed before interval calculation."
+}

@@ -1,0 +1,182 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "Frozen model/runner/test source hashes unchanged",
+      "passed": true
+    },
+    {
+      "name": "19 passing unit tests recorded",
+      "passed": true
+    },
+    {
+      "name": "Main, member and sensitivity counts",
+      "passed": true
+    },
+    {
+      "name": "All main and sensitivity paths passed full accounting during execution",
+      "passed": true
+    },
+    {
+      "name": "Complete finite main timeline archive",
+      "passed": true
+    },
+    {
+      "name": "Timeline completion/plan fractions bounded",
+      "passed": true
+    },
+    {
+      "name": "Individual work agrees with case summary",
+      "passed": true
+    },
+    {
+      "name": "All 24 underlying communities saved",
+      "passed": true
+    },
+    {
+      "name": "Saved inputs exactly regenerate from seeds",
+      "passed": true
+    },
+    {
+      "name": "Selected case 0 reproduces metrics and every timeline entry",
+      "passed": true
+    },
+    {
+      "name": "Selected case 3 reproduces metrics and every timeline entry",
+      "passed": true
+    },
+    {
+      "name": "Selected case 5 reproduces metrics and every timeline entry",
+      "passed": true
+    },
+    {
+      "name": "Selected case 7 reproduces metrics and every timeline entry",
+      "passed": true
+    },
+    {
+      "name": "Selected case 200 reproduces metrics and every timeline entry",
+      "passed": true
+    },
+    {
+      "name": "Selected case 541 reproduces metrics and every timeline entry",
+      "passed": true
+    },
+    {
+      "name": "Selected case 1000 reproduces metrics and every timeline entry",
+      "passed": true
+    },
+    {
+      "name": "Selected case 1344 reproduces metrics and every timeline entry",
+      "passed": true
+    },
+    {
+      "name": "Selected case 2003 reproduces metrics and every timeline entry",
+      "passed": true
+    },
+    {
+      "name": "Selected case 2683 reproduces metrics and every timeline entry",
+      "passed": true
+    },
+    {
+      "name": "Selected case 2684 reproduces metrics and every timeline entry",
+      "passed": true
+    },
+    {
+      "name": "Selected case 2687 reproduces metrics and every timeline entry",
+      "passed": true
+    },
+    {
+      "name": "Full illustrative path 0.8/shared reproduces and conserves resources",
+      "passed": true
+    },
+    {
+      "name": "Full illustrative path 0.8/assigned reproduces and conserves resources",
+      "passed": true
+    },
+    {
+      "name": "Full illustrative path 0.8/remove_label reproduces and conserves resources",
+      "passed": true
+    },
+    {
+      "name": "Full illustrative path 0.8/target_stops reproduces and conserves resources",
+      "passed": true
+    },
+    {
+      "name": "Full illustrative path 0.8/target_stops_handoff reproduces and conserves resources",
+      "passed": true
+    },
+    {
+      "name": "Full illustrative path 0.8/share_after reproduces and conserves resources",
+      "passed": true
+    },
+    {
+      "name": "Full illustrative path 0.8/all_stop reproduces and conserves resources",
+      "passed": true
+    },
+    {
+      "name": "Full illustrative path 0.8/none reproduces and conserves resources",
+      "passed": true
+    },
+    {
+      "name": "Full illustrative path 3.6/shared reproduces and conserves resources",
+      "passed": true
+    },
+    {
+      "name": "Full illustrative path 3.6/assigned reproduces and conserves resources",
+      "passed": true
+    },
+    {
+      "name": "Full illustrative path 3.6/remove_label reproduces and conserves resources",
+      "passed": true
+    },
+    {
+      "name": "Full illustrative path 3.6/target_stops reproduces and conserves resources",
+      "passed": true
+    },
+    {
+      "name": "Full illustrative path 3.6/target_stops_handoff reproduces and conserves resources",
+      "passed": true
+    },
+    {
+      "name": "Full illustrative path 3.6/share_after reproduces and conserves resources",
+      "passed": true
+    },
+    {
+      "name": "Full illustrative path 3.6/all_stop reproduces and conserves resources",
+      "passed": true
+    },
+    {
+      "name": "Full illustrative path 3.6/none reproduces and conserves resources",
+      "passed": true
+    },
+    {
+      "name": "18 arithmetic refinements unchanged",
+      "passed": true
+    },
+    {
+      "name": "All summary means agree with raw cases",
+      "passed": true
+    },
+    {
+      "name": "Report local links resolve",
+      "passed": true
+    },
+    {
+      "name": "All packaged Python source compiles",
+      "passed": true
+    },
+    {
+      "name": "No private machine paths in shareable text",
+      "passed": true
+    },
+    {
+      "name": "Files match published manifest",
+      "passed": true
+    }
+  ],
+  "check_count": 43,
+  "unit_tests_recorded": 19,
+  "selected_case_reruns": 12,
+  "full_example_reruns": 16,
+  "note": "Numerical and saved-result checks, not empirical validation of a social theory."
+}

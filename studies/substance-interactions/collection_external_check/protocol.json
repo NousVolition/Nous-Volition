@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-15",
+  "status": "Frozen before searching for a new collection dataset in this turn",
+  "model_source": "../advanced_tests/",
+  "source_sha256": {
+    "advanced_model.py": "9778488101cef5eea6551093aba0baa1f021f8d47e604e1c8343bf2ede77276f",
+    "baseline_model.py": "7b4f20eaba4c727a918b4953194918a55a316202be88cf7bdaa467fd0e9b8624",
+    "followup_model.py": "05712bf8ca8088388528e0204fa72ceeb9e60241e969fdc34c2e5917a5f9587f"
+  },
+  "already_used": "All 18 Depee2021 Part I Table 3 values. Also exclude datasets previously inspected in source/provenance records, including Depee2021 Part II and Hardy2023 evaporation work.",
+  "question": "Does the unchanged falling_capture candidate predict previously unused neutral sodium-fluorescein collection measurements under matching documented conditions?",
+  "eligibility": [
+    "Measured collection efficiencies, not another model output",
+    "Numerical table or raw data with droplet radius, wet aerosol radius, temperature, relative humidity and falling speed",
+    "Neutral or documented effectively uncharged particles and drops; no external electric field",
+    "Sodium fluorescein material (the frozen model hardcodes its thermal conductivity)",
+    "No use of response values to choose parameters or which eligible rows to keep"
+  ],
+  "regime_reporting": "Report Reynolds number and extrapolation. Creeping-flow Re>=0.1 cases are external stress tests, not validation of accuracy in a controlled small-Re domain.",
+  "pressure_rule": "101325 Pa is an assumption if pressure is unavailable; explicitly label a conditional comparison. Missing speed or humidity precludes a matched validation.",
+  "numerics": {
+    "seeds": [
+      62001,
+      62002,
+      62003,
+      62004
+    ],
+    "samples": 4096,
+    "dt": 0.025,
+    "bmax": 0.6,
+    "zmax": 8,
+    "tmax": 250,
+    "vent": 1
+  },
+  "scores": [
+    "every eligible observed/predicted pair",
+    "median absolute log ratio",
+    "minimum and maximum predicted/observed ratios",
+    "four-seed sampling interval, distinct from measurement uncertainty",
+    "censored-flux bound"
+  ],
+  "interpretation": "No universal pass threshold or smoke-validation claim. Publish mismatches, excluded candidates and eligibility reasons. Any subsequent physical/model change makes these data development data for that new version.",
+  "limits": "A local timestamp/hash is a documented freeze, not an independently registered preregistration. This is a retrospective literature test, not a blinded new experiment."
+}

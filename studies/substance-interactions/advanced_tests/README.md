@@ -13,7 +13,7 @@ Read the [methods and assumptions](METHODS.md), [source provenance](references.j
 | Falling-droplet collection | 18 measured settings × 4 seeds × 4,096 paths; 12 controls × 4 seeds; separate 4,096-path low-Re pilot | Improved candidate; not validated for smoke |
 | Evolving fog | 12 species/RH cases, 8 grid/analytic cases, 7 sensitivity cases | Conservative resolved diffusion; matched uptake/evaporation measurements still needed |
 | CO₂ / carbonate | 4 alkalinities, 7 controls/sensitivities, 3 step checks | Published reversible rates; no independent transient-data comparison |
-| H₂O₂ / MnO₂ | 4 specified-condition rate curves and 2 source-figure checks | Source consistency failed; conditional audit only |
+| H₂O₂ / MnO₂ | 4 specified-condition rate curves and 2 source-figure checks | Single-rate reconstruction disagrees; cause unresolved |
 | VOC surfaces and ice | 9 transcribed surface coefficients; 46 loading cases; 21 ice endpoint cases | Condition-specific equilibrium and ice endpoint models |
 | Charge / near contact | 3 theoretical charge distributions, 7 relaxation scenarios, 4 positive-gap approach cases | No measured smoke charge distribution or collision/coalescence prediction |
 
@@ -62,15 +62,17 @@ Published-rate CO₂ transients with specified alkalinity; hydrated carbon inclu
 
 Carbon conservation residual is at most 2e-15. Detailed balance, an analytic fixed-pH limit, no-reaction controls and step refinement pass. Published rate inputs do not independently validate these calculated pH transients. Matching stopped-flow data, buffers/indicators and activities remain needed. [Wang et al. (2010)](https://doi.org/10.1021/jp909019u).
 
-## 4. Specified peroxide catalyst: a failed source audit
+## 4. Specified peroxide catalyst: an unresolved reconstruction mismatch
 
 The selected source specifies water/NaOH-washed Merck MnO₂, BET area 6.5 m²/g, loading 0.333 g/L, temperature 303.15 K, initial H₂O₂ 0.020 mol/L, dark stirred water and HCl/NH₄OH-adjusted pH. Four unambiguous aqueous Table 1 rates were tested at pH 3, 5, 8 and 10. Hydrogen/oxygen atom accounting and the analytic exponential agree numerically.
 
-**The source does not pass its own table-versus-figure comparison.** At pH 3, the tabulated 0.009 min⁻¹ predicts 4.4% decomposition after 5 minutes, while a coarse Figure 4 reading is roughly 45% (±5 percentage points reading tolerance, not measurement uncertainty). The 30-minute comparison also disagrees. These curves are retained as an auditable rejected candidate, not an accepted decomposition prediction. Generic water and smoke still have no assigned catalytic rate. [Akhtar et al. (2012)](https://jcsp.org.pk/ArticleUpload/4144-20045-1-CE.pdf).
+**Our single-rate calculation from time zero does not reproduce the paper’s graph.** At pH 3, applying the tabulated 0.009 min⁻¹ as a first-order decay from zero initial decomposition predicts 4.4% decomposition after 5 minutes, while a coarse Figure 4 reading is roughly 45% (±5 percentage points reading tolerance, not measurement uncertainty). At 30 minutes the corresponding values are 23.7% and roughly 55%. The rate and graph were visually rechecked on printed page 265. This establishes a mismatch under our interpretation; it does not establish that the paper is wrong. [Akhtar et al. (2012)](https://jcsp.org.pk/ArticleUpload/4144-20045-1-CE.pdf).
 
-![Left: conditional tabulated-rate curves fail the peroxide source check. Right: acetone on ice compares aging endpoints, not a calibrated aging timeline.](results/source_constraints.png)
+**Interpretation corrected on 15 October 2026.** A diagnostic that starts at the graph’s roughly 45% decomposition at 5 minutes, and then uses the unchanged table rate, gives 56.1% at 30 minutes. That is within our coarse reading band around 55%. A rapid early stage followed by slower loss is therefore one possible explanation to investigate. This uses the same graph as its initial condition and is **not independent validation** or proof of that mechanism. Raw measurements, the rate-fit interval and clarification of the plotted logarithm would be needed to resolve the issue. The original numerical curves remain unchanged and conditional. Generic water and smoke still have no assigned catalytic rate. [Recheck calculations and provenance](results/peroxide_recheck.json).
 
-Left: conditional tabulated-rate curves fail the peroxide source check. Right: acetone on ice compares aging endpoints, not a calibrated aging timeline.
+![Left: the original single-rate curves and coarse peroxide graph readings disagree when initialized at time zero; the cause is unresolved. Right: acetone on ice compares aging endpoints, not a calibrated aging timeline.](results/source_constraints.png)
+
+Left: the original single-rate curves and coarse peroxide graph readings disagree when initialized at time zero; the cause is unresolved. Right: acetone on ice compares aging endpoints, not a calibrated aging timeline.
 
 ## 5. VOCs: material-specific data, with explicit temperature and aging limits
 

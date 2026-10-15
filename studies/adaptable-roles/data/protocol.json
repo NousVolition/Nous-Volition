@@ -1,0 +1,86 @@
+{
+  "date": "2026-10-15",
+  "rounds": 60,
+  "switch": 30,
+  "loads": [
+    0.8,
+    3.6
+  ],
+  "discovery_seeds": [
+    51000,
+    51001,
+    51002,
+    51003,
+    51004,
+    51005,
+    51006,
+    51007,
+    51008,
+    51009,
+    51010,
+    51011
+  ],
+  "replication_seeds": [
+    61000,
+    61001,
+    61002,
+    61003,
+    61004,
+    61005,
+    61006,
+    61007,
+    61008,
+    61009,
+    61010,
+    61011
+  ],
+  "targets": [
+    "Water",
+    "Fog",
+    "Mist",
+    "Gas",
+    "Smoke",
+    "Clay",
+    "Ice"
+  ],
+  "policies": [
+    "shared",
+    "assigned",
+    "remove_label",
+    "target_stops",
+    "target_stops_handoff",
+    "share_after",
+    "all_stop",
+    "none"
+  ],
+  "bias": 0.75,
+  "memory": 0.25,
+  "learning": 0.1,
+  "gain": 0.6,
+  "handoff_cost": 0.05,
+  "source_sha256": {
+    "model.py": "1700f25354ecbf7a52fb2272936c4fcbb66469e24021a62774ed99e71c291efa",
+    "test_model.py": "0cde8902d7a59d1f7a7b70e01d42b36e9f5acdf525da2cd54d91f19f5d2185e6",
+    "run_study.py": "827ef0907acb25e54960cb6c877d6cb9f2be8693ca4e9cb9a33470324b635aba"
+  },
+  "note": "Exploratory synthetic protocol saved after unit tests and before ensemble execution. All mechanisms and numerical parameters are assumptions. No human or chemical observations fitted. Replication seeds test numerical scenario variability, not external human validity.",
+  "sensitivity": {
+    "no_memory": {
+      "memory": 0
+    },
+    "no_learning": {
+      "gain": 0
+    },
+    "no_bias": {
+      "bias": 0
+    },
+    "costly_handoff": {
+      "handoff_cost": 0.2
+    }
+  },
+  "sensitivity_policies": [
+    "assigned",
+    "remove_label",
+    "target_stops_handoff"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "review_date": "2026-10-15",
+  "source": "https://jcsp.org.pk/ArticleUpload/4144-20045-1-CE.pdf",
+  "location": "printed page 265, Table 1 and Figure 4; conditions on page 264",
+  "rate_per_minute": 0.009,
+  "original_figure_readings_percent": {
+    "5": 45,
+    "30": 55
+  },
+  "reading_tolerance_percentage_points": 5,
+  "reading_tolerance_is_measurement_uncertainty": false,
+  "standard_first_order_from_time_zero_percent": {
+    "5": 4.40025181669001,
+    "30": 23.662050566314676
+  },
+  "diagnostic_restart": {
+    "initial_time_min": 5,
+    "initial_decomposition_percent_from_figure": 45,
+    "predicted_decomposition_percent_at_30_min": 56.08160796823426,
+    "within_original_30_min_reading_band": true,
+    "rate_changed": false,
+    "independent_validation": false,
+    "meaning": "A rapid early stage followed by slower loss is one possible explanation. This calculation does not establish that mechanism; its starting value comes from the same figure. Raw data and the authors' fit interval are needed."
+  },
+  "conclusion": "The tabulated rate alone does not reproduce Figure 4 when applied as a single first-order decay starting with zero decomposition at time zero. The cause of that mismatch is unresolved; it is not proof that the paper is wrong.",
+  "historical_numerical_results_changed": false,
+  "source_script_sha256": "aa3f5f5134ef63ea29e6a0ce50d7beb42331495b6d187c45bfa542e6fc04ef9b"
+}

@@ -1,0 +1,50 @@
+from pathlib import Path
+import json,html,re
+from analyze import NAMES
+from model import POLICIES
+ROOT=Path(__file__).resolve().parent
+S=json.loads((ROOT/'analysis/summary.json').read_text())['higher_demand_replication']
+E=json.loads((ROOT/'data/execution.json').read_text())
+def value(p,m):return S[p][m]['mean']
+md=[];ht=[]
+def inline(x):
+    x=html.escape(str(x));x=re.sub(r'\[([^]]+)\]\(([^)]+)\)',r'<a href="\2">\1</a>',x)
+    x=re.sub(r'\*\*([^*]+)\*\*',r'<strong>\1</strong>',x)
+    return re.sub(r'`([^`]+)`',r'<code>\1</code>',x)
+def para(x):md.append(x);ht.append('<p>'+inline(x)+'</p>')
+def heading(x,level=2):md.append('#'*level+' '+x);ht.append(f'<h{level}>{inline(x)}</h{level}>')
+def figure(name,caption):
+    md.extend([f'![{caption}](analysis/{name}.png)',caption]);ht.append(f'<figure><img src="analysis/{name}.png" alt="{html.escape(caption)}"><figcaption>{inline(caption)}</figcaption></figure>')
+heading('Everyone can be “the adaptable one” — and everyone can stop',1)
+para('Streams and Rocks • completed synthetic community experiment • 15 October 2026')
+para('**Water, Fog, Mist, Gas, Smoke, Clay and Ice each took the adaptable role in turn.** We compared accepting it, removing the label, refusing it, handing work to others and sharing it. We also tested everyone adapting from the start and nobody doing extra coordination. Adaptation here means responding to unexpected coordination needs; it is an explicit social metaphor, not a measured property of people or a fluid simulation.')
+para('The central result is conditional but useful: **when someone stops accommodating, what happens depends strongly on whether the group redistributes the work.** Their original plans can recover, and the additional work can move to others. Counting both outcomes avoids treating all accommodation as good or every refusal as harmful.')
+para(f'Completed: **{E["main_cases"]:,} main paths**, {E["sensitivity_cases"]:,} sensitivity paths, 18 arithmetic-refinement pairs and **19 passing unit tests**. Each path contains 60 decision rounds. The designated role changes after round 30. [Methods, assumptions and Foucault connection](METHODS.md) · [All seven members](analysis/all_seven_roles.csv) · [Verification](verification.json).')
+heading('What happened after the role could change')
+para('This table uses the higher demand (3.6 service units per round on average), 12 replication seeds and all seven target rotations averaged within each seed. Time is normalized: every person has one available time unit per round. “Target” means whoever was assigned the adaptable role in that run.')
+heads=['Rule','Coordination completed','Target extra time','Target original plans completed','Other members extra time each']
+rows=[[NAMES[p],f'{100*value(p,"coordination_met"):.1f}%',f'{value(p,"target_work"):.3f}',f'{100*value(p,"target_plans_met"):.1f}%',f'{value(p,"others_work"):.3f}'] for p in POLICIES]
+md.append('\n'.join(['| '+' | '.join(heads)+' |','| '+' | '.join(['---']*len(heads))+' |']+['| '+' | '.join(r)+' |' for r in rows]))
+ht.append('<div class="scroll"><table><tr>'+''.join('<th>'+inline(x)+'</th>' for x in heads)+'</tr>'+''.join('<tr>'+''.join('<td>'+inline(x)+'</td>' for x in r)+'</tr>' for r in rows)+'</table></div>')
+figure('outcomes','Group needs and individual plans are different outcomes. Error bars quantify synthetic seed variation, not empirical uncertainty about families.')
+para(f'When the target stops without a handoff, coordination completion is {100*value("target_stops","coordination_met"):.1f}%. Adding a handoff gives {100*value("target_stops_handoff","coordination_met"):.1f}%, with the target’s original plans fully completed in both cases. The other six average {value("target_stops","others_work"):.3f} versus {value("target_stops_handoff","others_work"):.3f} extra time units each. The work is redistributed; it is not made costless.')
+para(f'Sharing after round 30 completes {100*value("share_after","coordination_met"):.1f}% of coordination and reduces the target’s extra time from {value("assigned","target_work"):.3f} to {value("share_after","target_work"):.3f}. Target plan completion rises from {100*value("assigned","target_plans_met"):.1f}% to {100*value("share_after","target_plans_met"):.1f}%. These values depend on the available capacity, learning law and ability to share.')
+heading('Try the role with every member')
+figure('all_seven','Each name gets the same role experiment. Small differences arise from random abilities and budgets assigned independently of names; renaming has exactly no effect.')
+para('The family can use every name without making Water permanently responsible for smoothing things over. In this experiment a person can keep the name and change the role. Everyone stopping protects original plans, but leaves all imposed extra coordination unmet by construction. That does not tell us whether a real request should have been imposed in the first place.')
+heading('Removing a label and changing a working arrangement are different actions')
+figure('timeline','The first 30 rounds match across these five policies. The vertical line marks the rule change. Initial requests can still target a person who refuses; handoff changes who actually performs the work.')
+para(f'Removing the assignment bias alone improves group completion to {100*value("remove_label","coordination_met"):.1f}%, but the former target still supplies {value("remove_label","target_work"):.3f} extra time units, near its earlier {value("assigned","target_work"):.3f}. Its remembered role and accumulated skill remain. The model therefore distinguishes changing what someone is called from changing which requests they receive and which work they accept.')
+para('The no-memory control raises completion after label removal to about 99.9%; the no-bias control reaches 100%. These controls show that the poor assigned-role outcomes come from the chosen request-routing rules. They do not establish a general law that specialization, memory or adaptation is harmful. The stronger handoff-cost and no-learning cases are retained in [sensitivity results](analysis/sensitivity_summary.csv).')
+heading('What this does and does not show')
+para('The model assumes a strong 75% assignment bias, allows unused capacity to sit elsewhere when handoff is forbidden, and gives sharing an ideal coordinator. Those mechanisms favor redistribution. Its numerical advantage is a conditional result, not independent evidence that these assumptions describe a family. No fatigue, fear, trust, emotional benefit, retaliation, negotiation cost beyond the specified handoff time, or subjective wellbeing is modeled.')
+para('Foucault provides the question: how can a category and repeated expectations shape a person’s opportunities, and can that arrangement be contested? Our equations are an exploratory way to make those choices inspectable. The physical substance models remain separate; fluid behavior does not validate social roles.')
+heading('Reproduce and inspect')
+commands='python -m pip install -r requirements.txt\npython test_model.py\npython verify.py\npython run_study.py --out reproduced\npython analyze.py --data reproduced --out reproduced-analysis\n# Rebuild the delivered reading formats from delivered results:\npython build_report.py'
+md.append('```sh\n'+commands+'\n```');ht.append('<pre>'+html.escape(commands)+'</pre>')
+para('The runner refuses to overwrite an existing protocol. [Protocol](data/protocol.json), [execution and accounting](data/execution.json), [all cases](data/cases.csv), [individual contributions](data/members.csv), [paired contrasts](analysis/paired_contrasts.csv) and [source code](model.py) are included. Maximum recorded accounting residual is below 2×10⁻¹⁵. Eighteen tighter-arithmetic comparisons make no change in the stored work/output values. This is a discrete process, so there is no physical time-step convergence claim.')
+para('The [earlier community allocation benchmark](https://github.com/NousVolition/Nous-Volition/tree/main/studies/community-power) and [substance study](https://github.com/NousVolition/Nous-Volition/tree/main/studies/substance-interactions) remain available.')
+(ROOT/'README.md').write_text('\n\n'.join(md)+'\n',encoding='utf-8')
+css='body{font:17px/1.6 system-ui;color:#213544;background:#f0f4f4;margin:0}main{max-width:1160px;background:white;margin:24px auto;padding:36px}h1{line-height:1.2}h2{margin-top:2em;color:#17667b}a{color:#086e87}img{width:100%;height:auto}figure{margin:24px 0}figcaption{font-size:.87em}.scroll{overflow-x:auto}table{border-collapse:collapse;font-size:.9em;width:100%}td,th{padding:10px;border-bottom:1px solid #d4e0e3;text-align:left}pre{background:#eef4f5;padding:18px;overflow:auto}@media(max-width:700px){main{padding:18px;margin:0}}'
+(ROOT/'report.html').write_text('<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Everyone can be the adaptable one</title><style>'+css+'</style><main>'+''.join(ht)+'</main></html>',encoding='utf-8')
+print('Built report.html and README.md')

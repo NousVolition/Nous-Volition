@@ -1,0 +1,26 @@
+{
+  "main_cases": 2688,
+  "member_rows": 18816,
+  "sensitivity_cases": 1008,
+  "refinement_pairs": 18,
+  "rounds_per_case": 60,
+  "unit_tests": 19,
+  "accounting_maxima": {
+    "demand_residual": 1.7763568394002505e-15,
+    "time_residual": 1.1102230246251565e-16,
+    "production_residual": 3.3306690738754696e-16,
+    "budget_excess": 1.1102230246251565e-16,
+    "negative_inventory": 0.0,
+    "belief_residual": 6.661338147750939e-16
+  },
+  "elapsed_seconds": 6.490846399974544,
+  "python": "3.12.14",
+  "numpy": "2.5.3",
+  "timeline_columns": [
+    "coordination_met",
+    "target_work",
+    "others_work",
+    "target_request_share",
+    "target_plans_met"
+  ]
+}
