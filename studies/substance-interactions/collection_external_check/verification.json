@@ -1,0 +1,431 @@
+{
+  "status": "passed",
+  "checks": 106,
+  "items": [
+    {
+      "name": "all 47 prescribed row/scenario records",
+      "passed": true
+    },
+    {
+      "name": "all 188 seed records, including reused duplicate-size predictions",
+      "passed": true
+    },
+    {
+      "name": "184 unique simulations (duplicate physical inputs reused)",
+      "passed": true
+    },
+    {
+      "name": "901120 unique paths",
+      "passed": true
+    },
+    {
+      "name": "no added or dropped comparisons",
+      "passed": true
+    },
+    {
+      "name": "row1 nominal seeds",
+      "passed": true
+    },
+    {
+      "name": "row1 nominal aggregate",
+      "passed": true
+    },
+    {
+      "name": "row2 nominal seeds",
+      "passed": true
+    },
+    {
+      "name": "row2 nominal aggregate",
+      "passed": true
+    },
+    {
+      "name": "row3 nominal seeds",
+      "passed": true
+    },
+    {
+      "name": "row3 nominal aggregate",
+      "passed": true
+    },
+    {
+      "name": "row4 nominal seeds",
+      "passed": true
+    },
+    {
+      "name": "row4 nominal aggregate",
+      "passed": true
+    },
+    {
+      "name": "row5 nominal seeds",
+      "passed": true
+    },
+    {
+      "name": "row5 nominal aggregate",
+      "passed": true
+    },
+    {
+      "name": "row6 nominal seeds",
+      "passed": true
+    },
+    {
+      "name": "row6 nominal aggregate",
+      "passed": true
+    },
+    {
+      "name": "row7 nominal seeds",
+      "passed": true
+    },
+    {
+      "name": "row7 nominal aggregate",
+      "passed": true
+    },
+    {
+      "name": "row8 nominal seeds",
+      "passed": true
+    },
+    {
+      "name": "row8 nominal aggregate",
+      "passed": true
+    },
+    {
+      "name": "row1 dt_0.0125 seeds",
+      "passed": true
+    },
+    {
+      "name": "row1 dt_0.0125 aggregate",
+      "passed": true
+    },
+    {
+      "name": "row1 dt_0.00625 seeds",
+      "passed": true
+    },
+    {
+      "name": "row1 dt_0.00625 aggregate",
+      "passed": true
+    },
+    {
+      "name": "row1 long_time seeds",
+      "passed": true
+    },
+    {
+      "name": "row1 long_time aggregate",
+      "passed": true
+    },
+    {
+      "name": "row1 wide_domain seeds",
+      "passed": true
+    },
+    {
+      "name": "row1 wide_domain aggregate",
+      "passed": true
+    },
+    {
+      "name": "row1 T_288.15 seeds",
+      "passed": true
+    },
+    {
+      "name": "row1 T_288.15 aggregate",
+      "passed": true
+    },
+    {
+      "name": "row1 T_298.15 seeds",
+      "passed": true
+    },
+    {
+      "name": "row1 T_298.15 aggregate",
+      "passed": true
+    },
+    {
+      "name": "row1 RH_0.72 seeds",
+      "passed": true
+    },
+    {
+      "name": "row1 RH_0.72 aggregate",
+      "passed": true
+    },
+    {
+      "name": "row1 RH_0.82 seeds",
+      "passed": true
+    },
+    {
+      "name": "row1 RH_0.82 aggregate",
+      "passed": true
+    },
+    {
+      "name": "row1 U_4.5 seeds",
+      "passed": true
+    },
+    {
+      "name": "row1 U_4.5 aggregate",
+      "passed": true
+    },
+    {
+      "name": "row1 U_4.9 seeds",
+      "passed": true
+    },
+    {
+      "name": "row1 U_4.9 aggregate",
+      "passed": true
+    },
+    {
+      "name": "row1 no_phoresis seeds",
+      "passed": true
+    },
+    {
+      "name": "row1 no_phoresis aggregate",
+      "passed": true
+    },
+    {
+      "name": "row1 no_brownian seeds",
+      "passed": true
+    },
+    {
+      "name": "row1 no_brownian aggregate",
+      "passed": true
+    },
+    {
+      "name": "row1 no_interception seeds",
+      "passed": true
+    },
+    {
+      "name": "row1 no_interception aggregate",
+      "passed": true
+    },
+    {
+      "name": "row5 dt_0.0125 seeds",
+      "passed": true
+    },
+    {
+      "name": "row5 dt_0.0125 aggregate",
+      "passed": true
+    },
+    {
+      "name": "row5 dt_0.00625 seeds",
+      "passed": true
+    },
+    {
+      "name": "row5 dt_0.00625 aggregate",
+      "passed": true
+    },
+    {
+      "name": "row5 long_time seeds",
+      "passed": true
+    },
+    {
+      "name": "row5 long_time aggregate",
+      "passed": true
+    },
+    {
+      "name": "row5 wide_domain seeds",
+      "passed": true
+    },
+    {
+      "name": "row5 wide_domain aggregate",
+      "passed": true
+    },
+    {
+      "name": "row5 T_288.15 seeds",
+      "passed": true
+    },
+    {
+      "name": "row5 T_288.15 aggregate",
+      "passed": true
+    },
+    {
+      "name": "row5 T_298.15 seeds",
+      "passed": true
+    },
+    {
+      "name": "row5 T_298.15 aggregate",
+      "passed": true
+    },
+    {
+      "name": "row5 RH_0.72 seeds",
+      "passed": true
+    },
+    {
+      "name": "row5 RH_0.72 aggregate",
+      "passed": true
+    },
+    {
+      "name": "row5 RH_0.82 seeds",
+      "passed": true
+    },
+    {
+      "name": "row5 RH_0.82 aggregate",
+      "passed": true
+    },
+    {
+      "name": "row5 U_4.5 seeds",
+      "passed": true
+    },
+    {
+      "name": "row5 U_4.5 aggregate",
+      "passed": true
+    },
+    {
+      "name": "row5 U_4.9 seeds",
+      "passed": true
+    },
+    {
+      "name": "row5 U_4.9 aggregate",
+      "passed": true
+    },
+    {
+      "name": "row5 no_phoresis seeds",
+      "passed": true
+    },
+    {
+      "name": "row5 no_phoresis aggregate",
+      "passed": true
+    },
+    {
+      "name": "row5 no_brownian seeds",
+      "passed": true
+    },
+    {
+      "name": "row5 no_brownian aggregate",
+      "passed": true
+    },
+    {
+      "name": "row5 no_interception seeds",
+      "passed": true
+    },
+    {
+      "name": "row5 no_interception aggregate",
+      "passed": true
+    },
+    {
+      "name": "row8 dt_0.0125 seeds",
+      "passed": true
+    },
+    {
+      "name": "row8 dt_0.0125 aggregate",
+      "passed": true
+    },
+    {
+      "name": "row8 dt_0.00625 seeds",
+      "passed": true
+    },
+    {
+      "name": "row8 dt_0.00625 aggregate",
+      "passed": true
+    },
+    {
+      "name": "row8 long_time seeds",
+      "passed": true
+    },
+    {
+      "name": "row8 long_time aggregate",
+      "passed": true
+    },
+    {
+      "name": "row8 wide_domain seeds",
+      "passed": true
+    },
+    {
+      "name": "row8 wide_domain aggregate",
+      "passed": true
+    },
+    {
+      "name": "row8 T_288.15 seeds",
+      "passed": true
+    },
+    {
+      "name": "row8 T_288.15 aggregate",
+      "passed": true
+    },
+    {
+      "name": "row8 T_298.15 seeds",
+      "passed": true
+    },
+    {
+      "name": "row8 T_298.15 aggregate",
+      "passed": true
+    },
+    {
+      "name": "row8 RH_0.72 seeds",
+      "passed": true
+    },
+    {
+      "name": "row8 RH_0.72 aggregate",
+      "passed": true
+    },
+    {
+      "name": "row8 RH_0.82 seeds",
+      "passed": true
+    },
+    {
+      "name": "row8 RH_0.82 aggregate",
+      "passed": true
+    },
+    {
+      "name": "row8 U_4.5 seeds",
+      "passed": true
+    },
+    {
+      "name": "row8 U_4.5 aggregate",
+      "passed": true
+    },
+    {
+      "name": "row8 U_4.9 seeds",
+      "passed": true
+    },
+    {
+      "name": "row8 U_4.9 aggregate",
+      "passed": true
+    },
+    {
+      "name": "row8 no_phoresis seeds",
+      "passed": true
+    },
+    {
+      "name": "row8 no_phoresis aggregate",
+      "passed": true
+    },
+    {
+      "name": "row8 no_brownian seeds",
+      "passed": true
+    },
+    {
+      "name": "row8 no_brownian aggregate",
+      "passed": true
+    },
+    {
+      "name": "row8 no_interception seeds",
+      "passed": true
+    },
+    {
+      "name": "row8 no_interception aggregate",
+      "passed": true
+    },
+    {
+      "name": "duplicate-size predictions identical",
+      "passed": true
+    },
+    {
+      "name": "source model hashes preserved",
+      "passed": true
+    },
+    {
+      "name": "measurements.csv run-input hash",
+      "passed": true
+    },
+    {
+      "name": "continuation_protocol.json run-input hash",
+      "passed": true
+    },
+    {
+      "name": "protocol.json run-input hash",
+      "passed": true
+    },
+    {
+      "name": "run_external.py run-input hash",
+      "passed": true
+    },
+    {
+      "name": "large Re explicitly outside creeping flow",
+      "passed": true
+    }
+  ],
+  "note": "File/numerical bookkeeping checks passed; this does not imply physical validation or rare-event convergence."
+}

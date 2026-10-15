@@ -1,0 +1,6 @@
+{
+  "initial_attempt": "First simulation result could not be saved: dict constructor repeated the samples key present in both input and result dictionaries. No comparison scores were produced by that attempt.",
+  "repair": "Merge input and result dictionaries before adding row identifiers; close the input CSV handle explicitly. No physical model, inputs, eligibility or seed changes.",
+  "upper_bound_clarification": "Implementation uses the conservative inlet-weight bound 1+abs(ph)/zmax^2 rather than the tighter 1 anticipated in the continuation protocol. This enlarges, not narrows, zero-hit bounds. It is a numerical reporting bound and does not modify trajectories.",
+  "post_run_reporting_addition": "After the row1 wide-domain case gave only four total hits but an artificially narrow four-seed t interval (one hit in each seed), add conservative count-based intervals for ALL cases. Invert independent-Bernoulli Chernoff bounds, using global inlet-weight bounds. Original intervals retained, no data selection or physics changes. Tested for binomial coverage and noncollapse at small counts."
+}

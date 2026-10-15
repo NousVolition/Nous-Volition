@@ -1,0 +1,19 @@
+{
+  "elapsed_s": 586.7450654506683,
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.5.3",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "unique_simulations": 184,
+  "simulated_paths": 901120,
+  "frozen_sha256": {
+    "advanced_model.py": "9778488101cef5eea6551093aba0baa1f021f8d47e604e1c8343bf2ede77276f",
+    "baseline_model.py": "7b4f20eaba4c727a918b4953194918a55a316202be88cf7bdaa467fd0e9b8624",
+    "followup_model.py": "05712bf8ca8088388528e0204fa72ceeb9e60241e969fdc34c2e5917a5f9587f"
+  },
+  "input_sha256": {
+    "measurements.csv": "249ddce5ebcfc6e8f4951b24098aae3fc3a0242bf33793b7c64deae5e60a6094",
+    "continuation_protocol.json": "6ac82fc86096c82a60e19b8f61c830463523de0921028bbd02fe703c1151190c",
+    "protocol.json": "f9bab8b0a8878d82f00daf8664f67214af9a6150bda2e6fb8012b032192bc0e4",
+    "run_external.py": "cc2aca8993f2726675171dcb66dc1e70be384adf9c33ca015cb7f636ddf4ce35"
+  }
+}

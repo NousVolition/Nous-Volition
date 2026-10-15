@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-15",
+  "status": "Recorded after reading the new source and before computing predictions; not preregistered or blinded",
+  "original_protocol": "protocol.json remains unchanged",
+  "change_in_scope": "No fully specified matched holdout recovered. Add an explicitly conditional, large-Re external stress test of ALL eight Lemaitre2017 Table2 outcomes, leaving the physical model unchanged.",
+  "selection": "All eight rows, including two replicate observations at the same size. No selection by predicted agreement. Row6 is flagged for source arithmetic inconsistency before running predictions; show it but exclude it from the qualified seven-row aggregate.",
+  "independence": "These numerical outcomes were first extracted in this continuation. No mention or data for this paper was found in the existing advanced/followup code and provenance records. Related authors and shared material constants mean this is not an independent laboratory replication. The paper is cited by literature used earlier, so absolute isolation from its ideas is not claimed.",
+  "inputs": {
+    "drop_diameter_mm": 1.25,
+    "particle_physical_diameter": "0.88 times reported aerodynamic diameter, following source Eq11; input radius is half the physical diameter",
+    "RH": 0.77,
+    "T_K": 293.15,
+    "T_status": "Assumed room temperature; no numerical temperature for these rows recovered from the paper",
+    "U_m_s": 4.7,
+    "U_status": "Approximate reading of the 1.25 mm measurement in Fig5, not tabulated precision",
+    "P_Pa": 101325,
+    "P_status": "Assumed; frozen model default",
+    "charge": "No electrostatic forces. Source neutralizes particles and describes a 10 fC drop-charge detection limit; this does not establish every particle or drop has exactly zero charge.",
+    "distribution": "Monodisperse median-size approximation; source has number-size GSD <=1.5 and measures mass collection. Distribution averaging is not modeled."
+  },
+  "nominal_numerics": "Exactly protocol.json: four seeds, 4096 paths each, dt .025, bmax .6, zmax 8, tmax 250, vent 1.",
+  "additional_diagnostics": {
+    "refinement_rows": [1,5,8],
+    "dt": [0.0125,0.00625],
+    "long_time": {"tmax": 1000},
+    "wide_domain": {"bmax": 1.2,"zmax": 16,"samples": 16384,"tmax": 1000},
+    "sensitivity_rows": [1,5,8],
+    "one_at_a_time": {"T_K": [288.15,298.15],"RH": [0.72,0.82],"U_m_s": [4.5,4.9]},
+    "controls_rows": [1,5,8],
+    "controls": ["no phoresis","no Brownian motion","no finite-particle interception"],
+    "note": "Same four seeds for diagnostics; common seed is not a new experimental replicate. These numerical/assumption variations do not modify frozen physics. Wide-domain test covers only the listed finite domain, not an infinite-tail proof."
+  },
+  "statistics": "Four-seed mean and t(3) descriptive 95% sampling interval. If pooled hits are zero, also report a conservative one-sided 95% upper bound bmax^2*(1-0.05^(1/N)) for finite-time sampled-disk CE (inlet <=1 checked analytically for these inward-phoresis cases). Add observed censored flux separately. Do not report zero-hit log ratios as finite, or zero-width intervals as proof of exact zero.",
+  "interpretation": "All scores conditional, outside creeping flow; no claim of smoke validation. Temperature range is an assumed sensitivity range, not a measured uncertainty interval. Retain source conflicts, missing metadata and numerical nonconvergence."
+}

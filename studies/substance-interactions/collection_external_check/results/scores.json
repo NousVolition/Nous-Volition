@@ -1,0 +1,14 @@
+{
+  "qualified_rows": 7,
+  "all_rows": 8,
+  "unique_nominal_conditions": 7,
+  "min_predicted_over_observed": 0.0,
+  "max_predicted_over_observed": 0.0040623298869620844,
+  "median_absolute_log10_ratio": null,
+  "log_ratio_note": "Undefined/infinite for zero point estimates; upper bounds reported separately.",
+  "Re_nominal": 389.0864379357594,
+  "nominal_hits": 3,
+  "largest_censored_flux": 0.000285988122659324,
+  "matched_validation": false,
+  "model_unchanged": true
+}
