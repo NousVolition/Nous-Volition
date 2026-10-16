@@ -1,0 +1,33 @@
+{
+  "frozen_utc": "2026-10-16T00:32:43.002197+00:00",
+  "version": "large-drop-v1",
+  "model_sha256": "744d93c185f504e6633eb7a9f18f770822b8a456852ce86db4bbd3da3f4f8e7f",
+  "target": "Hong et al. 2025, DOI 10.1063/5.0263346; numerical outcomes not yet extracted or read in this development turn.",
+  "known_target_metadata": "Title, authors, year, approximate T=11\u00b11 C and RH=56\u00b12%; no collection-efficiency outcomes used.",
+  "source_of_parameters": "Published equations and physical constants, no fit performed to collection outcomes.",
+  "development_data": [
+    "Lemaitre2017",
+    "Querel2014",
+    "Lemaitre2020",
+    "Depee2021",
+    "Jones2022 and its ancestral calibration datasets"
+  ],
+  "eligibility": "All extractable individual-drop collection measurements in Hong2025; include all reported particle/drop size combinations. Distinguish actual observations from paper model curves. If no numerical table, digitize visible measured markers with explicit axis calibration and uncertainty; do not select on model agreement.",
+  "matching": "Use reported physical in-chamber size, density, T, RH, P and speed. If aerodynamic size, convert with slip and density; do not apply water uptake twice. Missing P=101325 Pa, missing speed=Beard, unknown GSD primary=1 with 1.3/1.5 sensitivities, unknown k_p=.43 with .1/1/3 sensitivities. Number vs mass average follows measurement method. Non-neutral/unreported charges, unmatched humidity, missing distribution, nonterminal drops and Re>800 rear are explicit qualifications.",
+  "primary": "Sum brownian, finite interception, S42 corrected impaction, Jones Eq12 rear within Re20--800, signed Depee-style surface phoretic flux, clipped at zero only with flag. All assumed sticking probability=1.",
+  "controls": [
+    "Slinn uncorrected impaction",
+    "no rear capture",
+    "no phoresis",
+    "no impaction",
+    "no collection inventory"
+  ],
+  "scores": "All-row predicted/observed ratios, geometric bias, median absolute factor error, fraction within factor 2. These are descriptive scores, not a universal validation criterion. Report measured uncertainty and digitization separately. Never re-tune after outcome reveal.",
+  "sensitivity": "Reported T/RH/size uncertainty if available; speed \u00b110%, density \u00b110%, GSD 1/1.3/1.5, k_p .1/.43/1/3; sensitivity envelopes are not confidence intervals.",
+  "numerics": "Deterministic algebraic closure: no stochastic seeds or trajectory timestep. Quadrature refinement eps 1e-5/1e-8. Independent author-code Brownian/interception/rear benchmarks and closed inventory conservation. No claim of grid-resolved CFD.",
+  "source_audit": "Jones archived impaction code uses Re_radius whereas S42 uses Re_diameter; main Eq8 says .172 but supplement S42 and code say .173. Use S42. Thermophoresis S50/code mixes thermal-conductivity and length terms dimensionally; use prior Depee force with correct particle Kn and parameterized material conductivity. Independent benchmarking excludes discrepant components.",
+  "author_code_sha256": "c07e92e097d4dbb33221bd9edcb61615602d224c6925320f5597b26f8591931b",
+  "author_code_url": "https://zenodo.org/records/6617052",
+  "author_code_license": "Non-Commercial Government Licence v2; inspected/executed for research, not bundled/relicensed.",
+  "supplement_sha256": "46c725e97303242e9369f0477497fa07f93617a101ebf35ffcf24c3364e6fbab"
+}

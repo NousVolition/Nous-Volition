@@ -1,0 +1,5 @@
+id,source_location,drop_equiv_mm,drop_long_axis_mm,speed_m_s,T_K,RH,rho_particle_kg_m3,particle_mean_um,particle_min_um,particle_max_um,observable,observed_E,uncertainty,qualification
+H1,Hong2025_sectionIII_page6,3.94,4.46,9.32,284.15,0.56,1900,2.92,1,5,number,0.311,not_reported_for_aggregate,glycerol_water_PDMS_silica_unknown_size_distribution_charge_and_sticking
+H2,Hong2025_sectionIII_page6,3.94,4.46,9.32,284.15,0.56,1900,2.92,1,5,mass,0.184,not_reported_for_aggregate,glycerol_water_PDMS_silica_unknown_size_distribution_charge_and_sticking
+H3,Hong2025_sectionIII_page6,2.60,2.81,8.04,284.15,0.56,1900,2.92,1,5,number,0.635,not_reported_for_aggregate,glycerol_water_PDMS_silica_unknown_size_distribution_charge_and_sticking
+H4,Hong2025_sectionIII_page6,2.60,2.81,8.04,284.15,0.56,1900,2.92,1,5,mass,0.779,not_reported_for_aggregate,glycerol_water_PDMS_silica_unknown_size_distribution_charge_and_sticking

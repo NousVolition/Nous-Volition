@@ -1,0 +1,17 @@
+test_brownian_size_trend (__main__.ModelTests.test_brownian_size_trend) ... ok
+test_distribution_limit (__main__.ModelTests.test_distribution_limit) ... ok
+test_heat_balance (__main__.ModelTests.test_heat_balance) ... ok
+test_impaction_threshold (__main__.ModelTests.test_impaction_threshold) ... ok
+test_input_guards (__main__.ModelTests.test_input_guards) ... ok
+test_mass_accounting (__main__.ModelTests.test_mass_accounting) ... ok
+test_no_collection_control (__main__.ModelTests.test_no_collection_control) ... ok
+test_published_rear_reference (__main__.ModelTests.test_published_rear_reference) ... ok
+test_quadrature_refinement (__main__.ModelTests.test_quadrature_refinement) ... ok
+test_rear_domain (__main__.ModelTests.test_rear_domain) ... ok
+test_saturation_control (__main__.ModelTests.test_saturation_control) ... ok
+test_terminal_speed_physical_range (__main__.ModelTests.test_terminal_speed_physical_range) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.260s
+
+OK

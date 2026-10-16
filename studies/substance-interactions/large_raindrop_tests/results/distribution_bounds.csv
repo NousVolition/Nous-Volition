@@ -1,0 +1,9 @@
+id,n,minimum_E,maximum_E,observed_E,observed_above_maximum,qualification
+H1,501,0.0001252209366629355,0.06867586422485167,0.311,True,Numerical support envelope at nominal conditions; not experimental uncertainty.
+H1,1001,0.0001252205229420351,0.06867586422485167,0.311,True,Numerical support envelope at nominal conditions; not experimental uncertainty.
+H2,501,0.0001252209366629355,0.06867586422485167,0.184,True,Numerical support envelope at nominal conditions; not experimental uncertainty.
+H2,1001,0.0001252205229420351,0.06867586422485167,0.184,True,Numerical support envelope at nominal conditions; not experimental uncertainty.
+H3,501,0.00019965555835038448,0.23856457201173425,0.635,True,Numerical support envelope at nominal conditions; not experimental uncertainty.
+H3,1001,0.00019965555835038448,0.23856457201173425,0.635,True,Numerical support envelope at nominal conditions; not experimental uncertainty.
+H4,501,0.00019965555835038448,0.23856457201173425,0.779,True,Numerical support envelope at nominal conditions; not experimental uncertainty.
+H4,1001,0.00019965555835038448,0.23856457201173425,0.779,True,Numerical support envelope at nominal conditions; not experimental uncertainty.

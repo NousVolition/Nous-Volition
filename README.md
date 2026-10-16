@@ -12,6 +12,8 @@ This repository, **Streams and Rocks**, preserves the original stream-function r
 
 **[Substance extensions: falling droplets, internal diffusion, carbonate kinetics and surface data](studies/substance-interactions/advanced_tests/README.md).** Adds 34 passing unit tests and 44 saved-result audits. The new falling-droplet candidate is 9–32% below 18 measured central values, substantially improving on the failed closure; smoke validation remains open. Includes specified-alkalinity CO₂ transients, recovered VOC partition data, ice-aging endpoints, and an unresolved peroxide table-to-graph reconstruction mismatch. [Peroxide interpretation recheck](studies/substance-interactions/advanced_tests/results/peroxide_recheck.json) explains why this does not establish an error in the source. [New collection measurements and frozen-model tests](studies/substance-interactions/collection_external_check/README.md) compares eight previously unused experimental outcomes with the unchanged falling-droplet model, including source checks, repeated seeds, numerical refinement and sensitivity. These large-raindrop comparisons expose limitations; missing temperature, size-distribution and flow-regime mismatches keep matched validation open.
 
+**[Large-raindrop revision and new measurement test](studies/substance-interactions/large_raindrop_tests/README.txt).** Adds published finite-Re collection, inertia, bounded wake capture, ventilated phoresis and distribution averaging. The physical model was frozen before extracting four new Hong2025 mean efficiencies. They remain 5–15 times above the predictions; glycerol–water, coated silica, unknown distribution and unresolved high-Re wake make this a conditional transfer test, not smoke validation. Includes all outcomes, 72 controls/sensitivities, 12 passing unit tests, 52 saved-result checks and an [illustrated report](studies/substance-interactions/large_raindrop_tests/report.html).
+
 ## Mechanisms, switching and memory
 
 **[Open the completed spring and chemical-feedback study](studies/mechanisms-switching-memory/README.md).** Eighteen verification tests and 168 seeded simulations test spring hysteresis, pulse thresholds, maintained activity, finite fuel and controls. Source, figures, saved trajectories and numerical results are included. The biochemical rates are explicitly hypothetical; this does not establish new reactions or forces for the original substances.
@@ -128,6 +130,7 @@ The package includes 374 automated tests, thirty-eight original scientific figur
 ## SIMS animations: what changes within, and what changes with place
 
 [Open the animation guide](studies/sims-recovery-entrainment/animations/index.html). Seven interactive examples trace position, internal changes, carried memory, destination–memory feedback, and institutional records recreated from behaviour. These are explanatory models with explicit assumptions; download the repository to play the HTML animations locally.
+
 
 
 

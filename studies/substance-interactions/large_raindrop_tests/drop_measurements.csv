@@ -1,0 +1,6 @@
+source,drop_equiv_mm,drop_equiv_sd_mm,drop_long_axis_mm,drop_long_axis_sd_mm,drop_short_axis_mm,speed_m_s,speed_sd_m_s
+Hong2025_TableI,3.94,0.01,4.46,0.03,3.29,9.32,0.09
+Hong2025_TableI,3.63,0.02,4.08,0.03,3.09,9.10,0.06
+Hong2025_TableI,3.32,0.01,3.71,0.03,2.91,8.89,0.08
+Hong2025_TableI,2.99,0.01,3.29,0.03,2.67,8.58,0.09
+Hong2025_TableI,2.60,0.01,2.81,0.03,2.38,8.04,0.09

@@ -1,0 +1,215 @@
+{
+  "status": "passed",
+  "checks": 52,
+  "max_distribution_refinement_relative": 6.345235931599134e-06,
+  "items": [
+    {
+      "name": "frozen model byte identity",
+      "passed": true
+    },
+    {
+      "name": "all four published prose means",
+      "passed": true
+    },
+    {
+      "name": "H1 source mean",
+      "passed": true
+    },
+    {
+      "name": "H1 positive finite prediction",
+      "passed": true
+    },
+    {
+      "name": "H1 area conversion",
+      "passed": true
+    },
+    {
+      "name": "H1 ratio",
+      "passed": true
+    },
+    {
+      "name": "H1 heat balance",
+      "passed": true
+    },
+    {
+      "name": "H1 outside rear domain flagged",
+      "passed": true
+    },
+    {
+      "name": "H1 component accounting",
+      "passed": true
+    },
+    {
+      "name": "H2 source mean",
+      "passed": true
+    },
+    {
+      "name": "H2 positive finite prediction",
+      "passed": true
+    },
+    {
+      "name": "H2 area conversion",
+      "passed": true
+    },
+    {
+      "name": "H2 ratio",
+      "passed": true
+    },
+    {
+      "name": "H2 heat balance",
+      "passed": true
+    },
+    {
+      "name": "H2 outside rear domain flagged",
+      "passed": true
+    },
+    {
+      "name": "H2 component accounting",
+      "passed": true
+    },
+    {
+      "name": "H3 source mean",
+      "passed": true
+    },
+    {
+      "name": "H3 positive finite prediction",
+      "passed": true
+    },
+    {
+      "name": "H3 area conversion",
+      "passed": true
+    },
+    {
+      "name": "H3 ratio",
+      "passed": true
+    },
+    {
+      "name": "H3 heat balance",
+      "passed": true
+    },
+    {
+      "name": "H3 outside rear domain flagged",
+      "passed": true
+    },
+    {
+      "name": "H3 component accounting",
+      "passed": true
+    },
+    {
+      "name": "H4 source mean",
+      "passed": true
+    },
+    {
+      "name": "H4 positive finite prediction",
+      "passed": true
+    },
+    {
+      "name": "H4 area conversion",
+      "passed": true
+    },
+    {
+      "name": "H4 ratio",
+      "passed": true
+    },
+    {
+      "name": "H4 heat balance",
+      "passed": true
+    },
+    {
+      "name": "H4 outside rear domain flagged",
+      "passed": true
+    },
+    {
+      "name": "H4 component accounting",
+      "passed": true
+    },
+    {
+      "name": "geometric score reproduced",
+      "passed": true
+    },
+    {
+      "name": "median factor reproduced",
+      "passed": true
+    },
+    {
+      "name": "H1 distribution refinement 1.3",
+      "passed": true
+    },
+    {
+      "name": "H1 distribution refinement 1.5",
+      "passed": true
+    },
+    {
+      "name": "H2 distribution refinement 1.3",
+      "passed": true
+    },
+    {
+      "name": "H2 distribution refinement 1.5",
+      "passed": true
+    },
+    {
+      "name": "H3 distribution refinement 1.3",
+      "passed": true
+    },
+    {
+      "name": "H3 distribution refinement 1.5",
+      "passed": true
+    },
+    {
+      "name": "H4 distribution refinement 1.3",
+      "passed": true
+    },
+    {
+      "name": "H4 distribution refinement 1.5",
+      "passed": true
+    },
+    {
+      "name": "H1 upper bound refinement",
+      "passed": true
+    },
+    {
+      "name": "H1 nominal support cannot reach observed",
+      "passed": true
+    },
+    {
+      "name": "H2 upper bound refinement",
+      "passed": true
+    },
+    {
+      "name": "H2 nominal support cannot reach observed",
+      "passed": true
+    },
+    {
+      "name": "H3 upper bound refinement",
+      "passed": true
+    },
+    {
+      "name": "H3 nominal support cannot reach observed",
+      "passed": true
+    },
+    {
+      "name": "H4 upper bound refinement",
+      "passed": true
+    },
+    {
+      "name": "H4 nominal support cannot reach observed",
+      "passed": true
+    },
+    {
+      "name": "closed particle inventory",
+      "passed": true
+    },
+    {
+      "name": "four complete control/sensitivity sets",
+      "passed": true
+    },
+    {
+      "name": "five independent source speed rows",
+      "passed": true
+    },
+    {
+      "name": "all eight development rows at all widths",
+      "passed": true
+    }
+  ]
+}

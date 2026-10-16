@@ -1,0 +1,9 @@
+row,source,daero_um,dphysical_um,drop_diameter_mm,RH_fraction,CE,CE_expanded_relative_uncertainty,fluo_drop_g_cm3,fluo_chamber_g_cm3,aggregate_eligible,flag
+1,Lemaitre2017_Table2,0.25,0.22,1.25,0.77,0.0088,0.16,8.22e-8,6.22e-9,1,conditional_temperature_speed_distribution
+2,Lemaitre2017_Table2,0.25,0.22,1.25,0.77,0.0097,0.16,1.15e-7,7.91e-9,1,replicate_same_size
+3,Lemaitre2017_Table2,0.5,0.44,1.25,0.77,0.0054,0.16,3.39e-8,4.22e-9,1,conditional_temperature_speed_distribution
+4,Lemaitre2017_Table2,0.6,0.528,1.25,0.77,0.0022,0.16,4.51e-8,1.38e-8,1,conditional_temperature_speed_distribution
+5,Lemaitre2017_Table2,0.71,0.6248,1.25,0.77,0.0015,0.16,2.15e-8,9.62e-9,1,conditional_temperature_speed_distribution
+6,Lemaitre2017_Table2,1,0.88,1.25,0.77,0.0029,0.16,2.52e-7,1.17e-9,0,table_concentration_arithmetic_conflict
+7,Lemaitre2017_Table2,1.47,1.2936,1.25,0.77,0.0057,0.16,5.48e-8,6.39e-9,1,conditional_temperature_speed_distribution
+8,Lemaitre2017_Table2,2.54,2.2352,1.25,0.77,0.079,0.16,6.51e-7,5.51e-9,1,conditional_temperature_speed_distribution

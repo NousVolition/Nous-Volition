@@ -1,0 +1,21 @@
+{
+  "n_observables": 4,
+  "geometric_bias": 0.12576536818550063,
+  "median_absolute_factor": 7.438240683283658,
+  "within_factor2": 0,
+  "note": "Four aggregate observables at two drop conditions, not four independent experiments; conditional inputs.",
+  "model_sha256": "744d93c185f504e6633eb7a9f18f770822b8a456852ce86db4bbd3da3f4f8e7f",
+  "freeze_utc": "2026-10-16T00:32:43.002197+00:00",
+  "run_utc": "2026-10-16T00:36:06.933527+00:00",
+  "holdout_status": "New outcomes; frozen model. Conditional out-of-domain transfer test, NOT matched pure-water/smoke validation.",
+  "source_counts": {
+    "aggregate_efficiencies": 4,
+    "unique_drop_conditions_for_efficiency": 2,
+    "drop_speed_table_rows": 5,
+    "figure_only_intermediate_efficiencies": "not extracted; source PDF graphics unavailable; no numeric values invented"
+  },
+  "max_mass_balance_absolute": 0.0,
+  "python": "3.12.14",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1"
+}
