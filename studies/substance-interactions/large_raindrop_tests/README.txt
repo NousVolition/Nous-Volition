@@ -1,6 +1,15 @@
 LARGE-RAINDROP MODEL REVISION AND NEW-MEASUREMENT TEST
 Streams and Rocks / NousVolition — 2026-10-15 local date
 
+ADDED METHODS
+ADDED_METHODS.txt now links Beard's 1974 resolved-flow/trajectory study to
+the capture mechanism audit and adds a separate water-interface topology
+classifier (Jedlovszky et al. 2025 / Foffi and Sciortino). The classifier has
+14 passing synthetic/unit tests, including 175 independent shortest-path
+comparisons. No new interface MD or resolved raindrop-flow simulation ran.
+The frozen model, earlier measurements and numerical outcomes below remain
+unchanged. See interface_topology/ for runnable code and a labeled toy example.
+
 RESULT
 An improved candidate implementation is complete and has been run. It adds
 finite-Reynolds-number collection correlations, particle inertia, a published

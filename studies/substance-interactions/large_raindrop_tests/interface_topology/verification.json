@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "tests": 14,
+  "failures": 0,
+  "errors": 0,
+  "independent_oracle_graphs": 5,
+  "independent_oracle_molecule_checks": 175,
+  "type": "synthetic analytic and software verification; no MD or measurement validation",
+  "source_sha256": "6b6b27b70ceef5f670bf441bec3530ff2e6f8856ef34f4a195e735b9e9c5abde"
+}

@@ -1,0 +1,155 @@
+TWO ADDED METHODS: PARTICLE CAPTURE AND WATER-INTERFACE TOPOLOGY
+Streams and Rocks / substance interactions — added 2026-10-15 local date
+
+These additions answer two different questions in the same study:
+  1. Does an airborne particle reach and remain on a falling drop?
+  2. What hydrogen-bond network surrounds a water molecule at the interface?
+The first predicts transport; the second measures molecular structure.
+No untested conversion between these quantities is introduced.
+
+1. PARTICLE CAPTURE: THE BEARD ROUTE
+
+The passage supplied by the user points to Beard (1974), not the separate
+Beard (1976) terminal-speed parameterization already used in our model.
+Beard (1974) numerically calculated axisymmetric steady flow around rigid
+spheres up to Reynolds number 400, then particle trajectories including
+gravity, Stokes–Cunningham resistance and electrical forces. The experimental
+drop diameters were 0.40–0.85 mm, with 0.4 micrometre-radius particles.
+Rear/wake capture is physically relevant in that study. This supports a
+resolved-flow and trajectory approach, but does not establish its validity
+for deformable drops at Re about 1466–2576 in our latest comparison.
+
+Mechanism                 Meaning and current implementation
+Brownian diffusion        Random thermal displacement. Included as a
+                          collection correlation in the frozen model.
+Direct interception       A finite-sized particle touches the drop even
+                          when its center approximately follows the air.
+                          Included as a correlation; not an attractive force.
+Inertial impaction        Particle inertia prevents following diverted air.
+                          Included as a corrected collection correlation.
+Diffusiophoresis           Drift from a gas-composition/vapor gradient.
+                          Included as signed approximate surface flux.
+Thermophoresis             Drift driven by a temperature gradient.
+                          Included with the same surface-flux approximation.
+Electrophoresis            Electric-field drift of charged particles.
+                          NOT included in the neutral frozen model.
+Wake capture              Included as a correlation only for 20<=Re_D<=800;
+                          unresolved outside that interval, not absent in nature.
+Retention/coalescence     Perfect sticking assumed; rebound and film rupture
+                          are not calculated. Encounter is not retention.
+
+We use 'direct interception' for the user's 'directional interception'.
+We separate 'diffusiophoresis' from 'electrophoresis' rather than treating
+'diffusion electrophoresis' as one universal mechanism. Neither dominance
+nor direction follows from drop size alone: gradients, charge, flow, particle
+size and material also matter. The neutral control has no electric force.
+
+A future resolved calculation must specify liquid properties and interface
+shape, solve the air/liquid flow with appropriate boundary conditions, and
+transport particles using resolved drag and specified forces. Brownian
+motion requires a stochastic term when relevant. Finite-particle contact
+and an independently justified retention rule are separate decisions.
+Efficiency E must be measured from incident particle flux and declared
+reference area. Mesh, time-step, domain-size and sampling convergence, plus
+an untouched matched experiment, are needed. A steady rigid-sphere solution
+at Re<=400 cannot simply be extrapolated to a deforming high-Re wake.
+
+STATUS: the literature route and mechanism audit are added. The existing
+correlation calculations remain the completed numerical capture results.
+No new resolved Navier–Stokes solver or particle-retention simulation ran.
+The four Hong2025 aggregate comparisons remain 5.08–14.62-fold low.
+
+2. WATER-INTERFACE TOPOLOGY: IMPLEMENTED AND CHECKED
+
+Jedlovszky, Dellago and Sega (2025) apply Foffi and Sciortino's descriptor
+psi to interfacial water. Molecules form an undirected hydrogen-bond graph.
+An edge requires O--O <3.5 A and donor-H--acceptor-O <2.5 A, in either donor
+direction. No angular criterion is added here. For molecule i, find all j
+whose shortest bond path has exactly FOUR links; psi_i is their minimum
+oxygen--oxygen distance under the minimum-image convention. Classify
+psi<5 A as HDL-like and psi>=5 A as LDL-like. This is not the fourth-closest
+spatial neighbor, a fourth direct bond, or any arbitrary four-step walk.
+The published TIP4P/2005 slab study used ITIM layers with a 1.5 A probe.
+
+Our new module is interface_topology/water_topology.py. The supplied
+five-water chain is an artificial calculation check, not equilibrated
+water. It produces four bonds; only its two ends have fourth-shell
+neighbors, both at psi=11.2 A. The remaining three are UNCLASSIFIED.
+Missing neighbors are stored as JSON null, never silently as LDL-like.
+The saved results and 14 passing tests are in interface_topology/.
+Five seeded random graphs additionally agree with an independent
+Floyd–Warshall implementation for all 175 molecule/shell comparisons.
+Those seeds test graph code; they are not repeated molecular simulations.
+
+The tests explicitly show why cutting a network is dangerous: removing
+a shortcut node can change a shortest path from two to four bonds without
+moving the retained molecules. That can change psi or make it newly defined.
+Compute the graph on the complete supplied system before selecting layers.
+Our summary reports classification coverage and HDL fraction among the
+classified molecules; absent values are not put in the denominator.
+
+Input requires oxygen and two hydrogen coordinates PER water molecule in
+angstroms (1 nm = 10 A). Orthorhombic periodic boxes and mixed periodic
+directions are supported. Triclinic boxes are rejected. External layer
+labels may be supplied, e.g. independently obtained ITIM labels, but this
+module does not identify interfaces or implement ITIM. It makes O(N^2)
+geometric comparisons per snapshot and is a reference implementation,
+not an optimized production trajectory analyzer. No uncertainty estimate
+can be obtained from the artificial single snapshot.
+
+HDL-like and LDL-like are structural labels within a specified water model.
+They do not, by themselves, prove two coexisting phases. A 5 A threshold is
+not automatically transferable to other potentials, clay, smoke or mixtures.
+Before comparing real interface populations, supply equilibrated slab/drop
+trajectories, a documented force field and interface definition, sufficient
+independent samples, and block uncertainties. Audit threshold/H-bond choices,
+finite size and graph truncation. The paper's interfacial populations have
+NOT been reproduced here; our completed result is algorithm verification.
+
+HOW THESE TWO COULD BE CONNECTED
+
+psi can describe a simulated water interface. To affect a capture prediction,
+one must separately measure or compute how that interface changes a quantity
+the transport model uses, such as sticking probability or surface tension,
+under matched conditions. That proposed relationship must then be tested
+against data not used to select it. No psi-to-capture coefficient, invented
+force, chemical reaction, or personal/community classification is inferred.
+The frozen raindrop source and its old outcomes are unchanged.
+
+REPRODUCE FROM THE large_raindrop_tests DIRECTORY
+
+  python interface_topology/test_topology.py
+  python interface_topology/water_topology.py interface_topology/example_chain.json interface_topology/example_result.json
+  python verify_results.py
+  python build_report.py
+
+Uses the existing requirements.txt (NumPy and SciPy; plotting for old report).
+Source metadata, units, thresholds and downloaded-paper hash are recorded in
+interface_topology/sources.json. Scientific source PDFs are linked, not bundled.
+
+SOURCES
+
+Beard, K. V. (1974). Experimental and Numerical Collision Efficiencies for
+Submicron Particles Scavenged by Small Raindrops. J. Atmos. Sci. 31,1595–1603.
+https://doi.org/10.1175/1520-0469(1974)031%3C1595:EANCEF%3E2.0.CO;2
+Primary abstract inspected; no independent reproduction of its flow solver.
+
+Hong et al. (2025), the source of the supplied capture passage, refs.14–15.
+https://doi.org/10.1063/5.0263346
+Jones et al. (2022), existing collection correlations:
+https://doi.org/10.5194/acp-22-11381-2022
+Depee et al. (2021), phoretic/electrical distinction and force framework:
+https://doi.org/10.5194/acp-21-6945-2021
+
+Jedlovszky, P., Dellago, C., Sega, M. (2025). Hydrogen bond topology reveals
+layering of LDL-like and HDL-like water at its liquid/vapor interface.
+J. Chem. Phys. 163,024511. Methods printed pp.2–3; published CC BY 4.0.
+https://doi.org/10.1063/5.0272802
+Author-hosted published PDF, read and methods page visually inspected:
+https://discovery.ucl.ac.uk/10211213/1/024511_1_5.0272802.pdf
+
+Foffi, R. and Sciortino, F. Correlated Fluctuations of Structural Indicators
+Close to the Liquid–Liquid Transition in Supercooled Water.
+J. Phys. Chem. B 127,378–386 (2023 issue; online December 2022).
+https://doi.org/10.1021/acs.jpcb.2c07169
+Origin of the descriptor; implementation follows the explicit 2025 Methods.

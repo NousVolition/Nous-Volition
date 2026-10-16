@@ -1,0 +1,44 @@
+{
+  "addition_date_local": "2026-10-15",
+  "implementation_source": {
+    "authors": ["Pal Jedlovszky", "Christoph Dellago", "Marcello Sega"],
+    "year": 2025,
+    "doi": "10.1063/5.0272802",
+    "journal": "Journal of Chemical Physics 163, 024511",
+    "pages_used": "printed 024511-2 and 024511-3 (PDF pages 3 and 4)",
+    "url": "https://discovery.ucl.ac.uk/10211213/1/024511_1_5.0272802.pdf",
+    "pdf_sha256": "3f789bfe43b22806a4c7602af524955da9aa8b828daa13623137702f656f8fe5",
+    "license": "CC BY 4.0",
+    "evidence": "published Methods extracted; PDF Methods page visually inspected; source PDF not bundled"
+  },
+  "descriptor_origin": {
+    "authors": ["Riccardo Foffi", "Francesco Sciortino"],
+    "doi": "10.1021/acs.jpcb.2c07169",
+    "journal_year": 2023,
+    "online_year": 2022,
+    "implementation_note": "Method implemented from the explicit 2025 definition, not reverse engineered from original author software"
+  },
+  "definition": {
+    "coordinate_units": "angstrom",
+    "oo_cutoff_A_strict_less_than": 3.5,
+    "donor_h_acceptor_o_cutoff_A_strict_less_than": 2.5,
+    "edge_direction": "undirected; either donor direction qualifies",
+    "graph_distance": "shortest path of exactly 4 hydrogen bonds",
+    "psi": "minimum periodic oxygen distance over all exact-four neighbors",
+    "HDL_like": "psi_A < 5",
+    "LDL_like": "psi_A >= 5, when psi is defined",
+    "missing_shell_convention_ours": "null psi and unclassified; report coverage separately",
+    "periodicity": "explicit orthorhombic minimum-image distances",
+    "layer_identification": "not implemented; external labels only; full-system graph precedes selection"
+  },
+  "capture_source": {
+    "author": "K. V. Beard",
+    "year": 1974,
+    "doi": "10.1175/1520-0469(1974)031<1595:EANCEF>2.0.CO;2",
+    "model_scope_from_primary_abstract": "axisymmetric steady rigid-sphere flow up to Re 400",
+    "distinction": "different paper from Beard 1976 terminal-speed correlation already in model",
+    "status": "source-backed method specification; no new resolved flow solver implemented"
+  },
+  "physical_validation": "none added; synthetic classifier checks only",
+  "raindrop_model_sha256_unchanged": "744d93c185f504e6633eb7a9f18f770822b8a456852ce86db4bbd3da3f4f8e7f"
+}

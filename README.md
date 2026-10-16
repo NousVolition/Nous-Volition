@@ -14,6 +14,8 @@ This repository, **Streams and Rocks**, preserves the original stream-function r
 
 **[Large-raindrop revision and new measurement test](studies/substance-interactions/large_raindrop_tests/README.txt).** Adds published finite-Re collection, inertia, bounded wake capture, ventilated phoresis and distribution averaging. The physical model was frozen before extracting four new Hong2025 mean efficiencies. They remain 5–15 times above the predictions; glycerol–water, coated silica, unknown distribution and unresolved high-Re wake make this a conditional transfer test, not smoke validation. Includes all outcomes, 72 controls/sensitivities, 12 passing unit tests, 52 saved-result checks and an [illustrated report](studies/substance-interactions/large_raindrop_tests/report.html).
 
+**[Particle-capture mechanisms and water-interface topology](studies/substance-interactions/large_raindrop_tests/ADDED_METHODS.txt).** Adds Beard’s 1974 resolved-flow route and distinguishes diffusion, interception, inertia, diffusiophoresis and electrophoresis. Includes a runnable fourth-topological-neighbor water classifier with 14 passing tests and 175 independent shortest-path comparisons. Synthetic checks establish algorithm behavior; no new interface MD or resolved high-Re flow was run.
+
 ## Mechanisms, switching and memory
 
 **[Open the completed spring and chemical-feedback study](studies/mechanisms-switching-memory/README.md).** Eighteen verification tests and 168 seeded simulations test spring hysteresis, pulse thresholds, maintained activity, finite fuel and controls. Source, figures, saved trajectories and numerical results are included. The biochemical rates are explicitly hypothetical; this does not establish new reactions or forces for the original substances.
@@ -134,3 +136,4 @@ The package includes 374 automated tests, thirty-eight original scientific figur
 ## SIMS evidence lab: claims, actions, and repeated promises
 
 [Open the complete interactive collection](studies/sims-evidence-lab/README.md). Four browser models trace network choices, claim predictions, evidence exchanges, and repeated rounds with remembered promises. The package preserves editable sources, standalone browser documents, methods, existing checks, and reproducible saved outputs. [The latest saved run](studies/sims-evidence-lab/site/latest-run.html) retains the eight-round, seed-20261011 settings. Response policies and evidence thresholds are explicit synthetic assumptions; claim revisions, behavior-rule changes, and promises without change are recorded separately.
+

@@ -1,0 +1,83 @@
+{
+  "method_doi": "10.1063/5.0272802",
+  "units": "angstrom",
+  "input_description": "Artificial five-water straight chain for algorithm verification only; not equilibrated water or an interfacial MD snapshot",
+  "settings": {
+    "oo_cutoff_A": 3.5,
+    "oh_cutoff_A": 2.5,
+    "threshold_A": 5.0
+  },
+  "box_A": null,
+  "pbc": [
+    false,
+    false,
+    false
+  ],
+  "hydrogen_bonds": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      4
+    ]
+  ],
+  "molecules": [
+    {
+      "molecule": 0,
+      "psi_A": 11.2,
+      "label": "LDL-like",
+      "fourth_shell_count": 1,
+      "closest_fourth_neighbor": 4
+    },
+    {
+      "molecule": 1,
+      "psi_A": null,
+      "label": "unclassified",
+      "fourth_shell_count": 0,
+      "closest_fourth_neighbor": null
+    },
+    {
+      "molecule": 2,
+      "psi_A": null,
+      "label": "unclassified",
+      "fourth_shell_count": 0,
+      "closest_fourth_neighbor": null
+    },
+    {
+      "molecule": 3,
+      "psi_A": null,
+      "label": "unclassified",
+      "fourth_shell_count": 0,
+      "closest_fourth_neighbor": null
+    },
+    {
+      "molecule": 4,
+      "psi_A": 11.2,
+      "label": "LDL-like",
+      "fourth_shell_count": 1,
+      "closest_fourth_neighbor": 0
+    }
+  ],
+  "layers": {
+    "all": {
+      "molecules": 5,
+      "classified": 2,
+      "unclassified": 3,
+      "coverage": 0.4,
+      "HDL_like": 0,
+      "LDL_like": 2,
+      "HDL_fraction_of_classified": 0.0
+    }
+  },
+  "layer_note": "External labels only; graph constructed before layer aggregation. ITIM not implemented."
+}
