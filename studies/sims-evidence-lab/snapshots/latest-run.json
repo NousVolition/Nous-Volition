@@ -1,0 +1,21 @@
+{
+  "modelContent": {
+    "model": "sims-repeated-rounds-v1",
+    "config": {
+      "topology": "ring",
+      "mode": "network",
+      "seed": 20261011,
+      "innovation": 0.02,
+      "roundCount": 8,
+      "preset": "current",
+      "claims": ["majority", "oppose", "copy", "copy", "copy", "copy", "copy", "copy", "copy"],
+      "actual": ["hold", "hold", "copy", "copy", "copy", "copy", "copy", "copy", "copy"],
+      "policies": ["claim", "behavior", "both", "behavior", "keep", "claim", "promise", "both", "keep"]
+    },
+    "roundIndex": 7,
+    "chapter": "after",
+    "cursor": 637,
+    "selected": 1
+  },
+  "privateContent": {"version": 1}
+}

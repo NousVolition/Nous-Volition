@@ -131,6 +131,6 @@ The package includes 374 automated tests, thirty-eight original scientific figur
 
 [Open the animation guide](studies/sims-recovery-entrainment/animations/index.html). Seven interactive examples trace position, internal changes, carried memory, destination–memory feedback, and institutional records recreated from behaviour. These are explanatory models with explicit assumptions; download the repository to play the HTML animations locally.
 
+## SIMS evidence lab: claims, actions, and repeated promises
 
-
-
+[Open the complete interactive collection](studies/sims-evidence-lab/README.md). Four browser models trace network choices, claim predictions, evidence exchanges, and repeated rounds with remembered promises. The package preserves editable sources, standalone browser documents, methods, existing checks, and reproducible saved outputs. [The latest saved run](studies/sims-evidence-lab/site/latest-run.html) retains the eight-round, seed-20261011 settings. Response policies and evidence thresholds are explicit synthetic assumptions; claim revisions, behavior-rule changes, and promises without change are recorded separately.

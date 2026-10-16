@@ -1,0 +1,381 @@
+[
+  {
+    "setup": "current",
+    "rounds": 5,
+    "beforeActions": 260,
+    "history": [
+      {
+        "sim": 0,
+        "codes": [
+          "—",
+          "—",
+          "—",
+          "—",
+          "—"
+        ],
+        "claim": "majority -> majority",
+        "behavior": "hold -> hold",
+        "promises": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "sim": 1,
+        "codes": [
+          "B",
+          "—",
+          "—",
+          "—",
+          "—"
+        ],
+        "claim": "oppose -> oppose",
+        "behavior": "hold -> oppose",
+        "promises": [
+          "supported",
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "sim": 2,
+        "codes": [
+          "—",
+          "—",
+          "—",
+          "—",
+          "—"
+        ],
+        "claim": "copy -> copy",
+        "behavior": "copy -> copy",
+        "promises": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "sim": 3,
+        "codes": [
+          "—",
+          "—",
+          "—",
+          "—",
+          "—"
+        ],
+        "claim": "copy -> copy",
+        "behavior": "copy -> copy",
+        "promises": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "sim": 4,
+        "codes": [
+          "—",
+          "—",
+          "—",
+          "—",
+          "—"
+        ],
+        "claim": "copy -> copy",
+        "behavior": "copy -> copy",
+        "promises": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "sim": 5,
+        "codes": [
+          "—",
+          "—",
+          "—",
+          "—",
+          "—"
+        ],
+        "claim": "copy -> copy",
+        "behavior": "copy -> copy",
+        "promises": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "sim": 6,
+        "codes": [
+          "—",
+          "—",
+          "—",
+          "—",
+          "—"
+        ],
+        "claim": "copy -> copy",
+        "behavior": "copy -> copy",
+        "promises": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "sim": 7,
+        "codes": [
+          "—",
+          "—",
+          "—",
+          "—",
+          "—"
+        ],
+        "claim": "copy -> copy",
+        "behavior": "copy -> copy",
+        "promises": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "sim": 8,
+        "codes": [
+          "—",
+          "—",
+          "—",
+          "—",
+          "—"
+        ],
+        "claim": "copy -> copy",
+        "behavior": "copy -> copy",
+        "promises": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "roundTwoPromiseDialogue": null,
+    "actionBlocks": [
+      246,
+      272,
+      264,
+      287,
+      258
+    ]
+  },
+  {
+    "setup": "contrast",
+    "rounds": 5,
+    "beforeActions": 432,
+    "history": [
+      {
+        "sim": 0,
+        "codes": [
+          "C",
+          "—",
+          "—",
+          "—",
+          "—"
+        ],
+        "claim": "copy -> oppose",
+        "behavior": "oppose -> oppose",
+        "promises": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "sim": 1,
+        "codes": [
+          "—",
+          "—",
+          "—",
+          "—",
+          "—"
+        ],
+        "claim": "copy -> copy",
+        "behavior": "copy -> copy",
+        "promises": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "sim": 2,
+        "codes": [
+          "—",
+          "—",
+          "—",
+          "—",
+          "—"
+        ],
+        "claim": "copy -> copy",
+        "behavior": "copy -> copy",
+        "promises": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "sim": 3,
+        "codes": [
+          "B",
+          "—",
+          "—",
+          "—",
+          "—"
+        ],
+        "claim": "copy -> copy",
+        "behavior": "hold -> copy",
+        "promises": [
+          "supported",
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "sim": 4,
+        "codes": [
+          "—",
+          "—",
+          "—",
+          "—",
+          "—"
+        ],
+        "claim": "copy -> copy",
+        "behavior": "copy -> copy",
+        "promises": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "sim": 5,
+        "codes": [
+          "—",
+          "—",
+          "—",
+          "—",
+          "—"
+        ],
+        "claim": "copy -> copy",
+        "behavior": "copy -> copy",
+        "promises": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "sim": 6,
+        "codes": [
+          "P",
+          "P",
+          "P",
+          "P",
+          "P"
+        ],
+        "claim": "copy -> copy",
+        "behavior": "majority -> majority",
+        "promises": [
+          "alternative",
+          "alternative",
+          "alternative",
+          "alternative",
+          "alternative"
+        ]
+      },
+      {
+        "sim": 7,
+        "codes": [
+          "—",
+          "—",
+          "—",
+          "—",
+          "—"
+        ],
+        "claim": "copy -> copy",
+        "behavior": "copy -> copy",
+        "promises": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      {
+        "sim": 8,
+        "codes": [
+          "—",
+          "—",
+          "—",
+          "—",
+          "—"
+        ],
+        "claim": "hold -> hold",
+        "behavior": "oppose -> oppose",
+        "promises": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    ],
+    "roundTwoPromiseDialogue": {
+      "target": "copy",
+      "n": 48,
+      "status": "alternative",
+      "support": 5.876271914659397e-06,
+      "best": "majority",
+      "round": 1
+    },
+    "actionBlocks": [
+      432,
+      432,
+      432,
+      432,
+      432
+    ]
+  }
+]

@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "collection": "SIMS evidence lab",
+  "exported_on": "2026-10-15",
+  "source_study_commit": "ce3547bd03947bf893d13fb065df4d65f083c40f",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 19,
+      "sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793"
+    },
+    {
+      "path": "assets/calendar.js",
+      "bytes": 13770,
+      "sha256": "f6517bf5584f34b36ae024188b2c93715e8e4e86869afdbe0fe7a8265b0fa74e"
+    },
+    {
+      "path": "assets/share-shell.css",
+      "bytes": 7523,
+      "sha256": "bdbdafad34540fde5f4ce75f4f1f80b27033545973b8313db1a6b7d1416c8f77"
+    },
+    {
+      "path": "assets/share-shell.js",
+      "bytes": 19184,
+      "sha256": "4073d949ebd36346a79029fb2ccfbfc92ac5bc23eec3f43f1ffdb24995e48401"
+    },
+    {
+      "path": "assets/standalone-host-bridge.js",
+      "bytes": 9970,
+      "sha256": "0b19685a4a762846461f42ee0f7af67b86a35df7d93eee0c057ebf6e8d291bed"
+    },
+    {
+      "path": "assets/standalone-shell.js",
+      "bytes": 6012,
+      "sha256": "5c3ae7035fcd3df868b9f41ffd0a5f23d6e24c1da581e772b783bef0aec08b80"
+    },
+    {
+      "path": "assets/visualize.css",
+      "bytes": 36570,
+      "sha256": "038fc5e0e41de359ab0873b63dd5c2c70e1eed0e01735233b885abd4a9c6d1a0"
+    },
+    {
+      "path": "assets/visualize.html",
+      "bytes": 20663,
+      "sha256": "3b25c0d80c2880eab8b69e52ed7361aa4f6a6acfba27b1d29758326458429234"
+    },
+    {
+      "path": "fragments/archive/sims-feynman-network.html",
+      "bytes": 15610,
+      "sha256": "2ec07a33a39cd3d44a3d9f28fce03c0d672b5ef5e7c04aeb6f0fb8b71388d558"
+    },
+    {
+      "path": "fragments/sims-claim-testing.html",
+      "bytes": 25423,
+      "sha256": "ec58cf3a5172f3814c1f5cb150ed22f5037c7a0ae8257df1b2a76b927f5c10e3"
+    },
+    {
+      "path": "fragments/sims-evidence-and-response.html",
+      "bytes": 37698,
+      "sha256": "6643b0aa06068caf8299535e87b10b3540996747a3e0f256f869d60ad7bb4ea9"
+    },
+    {
+      "path": "fragments/sims-network.html",
+      "bytes": 15610,
+      "sha256": "2ec07a33a39cd3d44a3d9f28fce03c0d672b5ef5e7c04aeb6f0fb8b71388d558"
+    },
+    {
+      "path": "fragments/sims-repeated-rounds.html",
+      "bytes": 49053,
+      "sha256": "76c691fdfea4ca35b1b75099bd5466ac791048627dc3b0001c6cc1b3ec445d6f"
+    },
+    {
+      "path": "METHODS.md",
+      "bytes": 7424,
+      "sha256": "b88d749eed16cac73d0d9f3f87b40beb2a0383b795ffd432707e21e5568d1d91"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4895,
+      "sha256": "bb9bd5d70f1789007d40495670ccb00d0c0fbfa76485a10713eda08370621400"
+    },
+    {
+      "path": "results/evidence-response-examples.json",
+      "bytes": 6968,
+      "sha256": "364fb54de04ad76ee75f5adfd87cbc7ec30c3f8b33167c407dbe178b2c49ce0c"
+    },
+    {
+      "path": "results/latest-run.json",
+      "bytes": 45421,
+      "sha256": "54812f35710a03bc2f1cc069fbd8a925c5afab92dd243d46804928daa8b9d6fc"
+    },
+    {
+      "path": "results/repeated-round-examples.json",
+      "bytes": 6593,
+      "sha256": "d6ec9c8537269e57ba5e30647596b1eb56e3195803b21761b1bb36c9eb89800d"
+    },
+    {
+      "path": "site/latest-run.html",
+      "bytes": 138896,
+      "sha256": "42c50725f072d060c79780eb1260a6d5b06d19981751367ec02c0b1550b57f79"
+    },
+    {
+      "path": "site/sims-claim-testing.html",
+      "bytes": 109143,
+      "sha256": "15e563f3cc30e376a3a2479dee5634c343cfe5894094d4c0fb82fc2799e4a2dc"
+    },
+    {
+      "path": "site/sims-evidence-and-response.html",
+      "bytes": 124587,
+      "sha256": "b65ec3dc112884167293d118c2467fd40057c76269d276a2d474aa0c483adc50"
+    },
+    {
+      "path": "site/sims-network.html",
+      "bytes": 96946,
+      "sha256": "a034e35be50bc4f0b22522c4056d23e5d68b09d5768a8e3dfdf6b85935840c3f"
+    },
+    {
+      "path": "site/sims-repeated-rounds.html",
+      "bytes": 138401,
+      "sha256": "cdcb4a8da2d3b4d424c4635c19529496c223ba9c7e92abd60c21d23fcad0868c"
+    },
+    {
+      "path": "snapshots/latest-run.json",
+      "bytes": 650,
+      "sha256": "7b427d4b5963a652847aec7fe9d272c9ab5758f503e769f6484a67732bfe4fba"
+    },
+    {
+      "path": "tools/build.py",
+      "bytes": 1200,
+      "sha256": "854954f4eb35618fa992708b4f7f83d05a7125ff97d55a643ffd3ab63418294f"
+    },
+    {
+      "path": "tools/check-claims.cjs",
+      "bytes": 8510,
+      "sha256": "ab0141f24b711c5f6f0bb4d9581574f16f6ef06711268872b1405306d2ca45c9"
+    },
+    {
+      "path": "tools/check-sims.cjs",
+      "bytes": 5625,
+      "sha256": "39d1fc0985d328492f9fa7bb60c6688f2edf18527a49eabb2c38852f2aa0c4fc"
+    },
+    {
+      "path": "tools/render.py",
+      "bytes": 15398,
+      "sha256": "26233f0378d1fb6d2306e3227f7415f43843c73aedb95755e34b299d753914a4"
+    },
+    {
+      "path": "tools/run-evidence-response.cjs",
+      "bytes": 1478,
+      "sha256": "ac16878c7115487e8faa04dc34a555ef50b083c8e6a8bc9c2636da990aacf601"
+    },
+    {
+      "path": "tools/run-latest.cjs",
+      "bytes": 1699,
+      "sha256": "aece2ec8ae9322bc1fba44a2f350b115ad4e49fdcf82f2c7b2b8a8602aeb8aa6"
+    },
+    {
+      "path": "tools/run-repeated-rounds.cjs",
+      "bytes": 1281,
+      "sha256": "7323c317087f4f6d113585d93fc3873722ea4514587116e24af60e98427f84d3"
+    }
+  ]
+}

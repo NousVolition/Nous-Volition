@@ -1,0 +1,232 @@
+[
+  {
+    "setup": "mismatch",
+    "beforeActions": 260,
+    "afterActions": 246,
+    "participants": [
+      {
+        "sim": 0,
+        "evidence": 26,
+        "challenged": true,
+        "policy": "claim",
+        "claim": "copy -> oppose",
+        "behavior": "oppose -> oppose",
+        "reply": "I revise my claim to “Oppose” to match these actions. I will keep my current behavior.",
+        "freshActions": 24,
+        "freshBest": "oppose",
+        "freshSupport": 1
+      },
+      {
+        "sim": 1,
+        "evidence": 25,
+        "challenged": false,
+        "policy": "behavior",
+        "claim": "copy -> copy",
+        "behavior": "copy -> copy",
+        "reply": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+        "freshActions": 25,
+        "freshBest": "copy",
+        "freshSupport": 1
+      },
+      {
+        "sim": 2,
+        "evidence": 31,
+        "challenged": false,
+        "policy": "both",
+        "claim": "copy -> copy",
+        "behavior": "copy -> copy",
+        "reply": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+        "freshActions": 33,
+        "freshBest": "copy",
+        "freshSupport": 1
+      },
+      {
+        "sim": 3,
+        "evidence": 36,
+        "challenged": false,
+        "policy": "behavior",
+        "claim": "copy -> copy",
+        "behavior": "copy -> copy",
+        "reply": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+        "freshActions": 37,
+        "freshBest": "copy",
+        "freshSupport": 1
+      },
+      {
+        "sim": 4,
+        "evidence": 29,
+        "challenged": false,
+        "policy": "keep",
+        "claim": "copy -> copy",
+        "behavior": "copy -> copy",
+        "reply": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+        "freshActions": 33,
+        "freshBest": "copy",
+        "freshSupport": 1
+      },
+      {
+        "sim": 5,
+        "evidence": 22,
+        "challenged": false,
+        "policy": "claim",
+        "claim": "copy -> copy",
+        "behavior": "copy -> copy",
+        "reply": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+        "freshActions": 25,
+        "freshBest": "copy",
+        "freshSupport": 1
+      },
+      {
+        "sim": 6,
+        "evidence": 27,
+        "challenged": false,
+        "policy": "promise",
+        "claim": "copy -> copy",
+        "behavior": "copy -> copy",
+        "reply": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+        "freshActions": 26,
+        "freshBest": "copy",
+        "freshSupport": 1
+      },
+      {
+        "sim": 7,
+        "evidence": 35,
+        "challenged": false,
+        "policy": "both",
+        "claim": "copy -> copy",
+        "behavior": "copy -> copy",
+        "reply": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+        "freshActions": 17,
+        "freshBest": "copy",
+        "freshSupport": 1
+      },
+      {
+        "sim": 8,
+        "evidence": 29,
+        "challenged": false,
+        "policy": "keep",
+        "claim": "copy -> copy",
+        "behavior": "copy -> copy",
+        "reply": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+        "freshActions": 26,
+        "freshBest": "copy",
+        "freshSupport": 1
+      }
+    ]
+  },
+  {
+    "setup": "contrast",
+    "beforeActions": 432,
+    "afterActions": 432,
+    "participants": [
+      {
+        "sim": 0,
+        "evidence": 48,
+        "challenged": true,
+        "policy": "claim",
+        "claim": "copy -> oppose",
+        "behavior": "oppose -> oppose",
+        "reply": "I revise my claim to “Oppose” to match these actions. I will keep my current behavior.",
+        "freshActions": 48,
+        "freshBest": "oppose",
+        "freshSupport": 1
+      },
+      {
+        "sim": 1,
+        "evidence": 48,
+        "challenged": false,
+        "policy": "behavior",
+        "claim": "copy -> copy",
+        "behavior": "copy -> copy",
+        "reply": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+        "freshActions": 48,
+        "freshBest": "copy",
+        "freshSupport": 1
+      },
+      {
+        "sim": 2,
+        "evidence": 48,
+        "challenged": false,
+        "policy": "both",
+        "claim": "copy -> copy",
+        "behavior": "copy -> copy",
+        "reply": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+        "freshActions": 48,
+        "freshBest": "copy",
+        "freshSupport": 1
+      },
+      {
+        "sim": 3,
+        "evidence": 48,
+        "challenged": true,
+        "policy": "behavior",
+        "claim": "copy -> copy",
+        "behavior": "hold -> copy",
+        "reply": "I keep my claim, “Copy neighbor”. I will change my decisions to follow that rule from now on.",
+        "freshActions": 48,
+        "freshBest": "copy",
+        "freshSupport": 1
+      },
+      {
+        "sim": 4,
+        "evidence": 48,
+        "challenged": false,
+        "policy": "keep",
+        "claim": "copy -> copy",
+        "behavior": "copy -> copy",
+        "reply": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+        "freshActions": 48,
+        "freshBest": "copy",
+        "freshSupport": 1
+      },
+      {
+        "sim": 5,
+        "evidence": 48,
+        "challenged": false,
+        "policy": "claim",
+        "claim": "copy -> copy",
+        "behavior": "copy -> copy",
+        "reply": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+        "freshActions": 48,
+        "freshBest": "copy",
+        "freshSupport": 1
+      },
+      {
+        "sim": 6,
+        "evidence": 48,
+        "challenged": true,
+        "policy": "promise",
+        "claim": "copy -> copy",
+        "behavior": "majority -> majority",
+        "reply": "I keep my claim, “Copy neighbor”. I promise my next decisions will follow it.",
+        "freshActions": 48,
+        "freshBest": "majority",
+        "freshSupport": 0.9999941237280854
+      },
+      {
+        "sim": 7,
+        "evidence": 48,
+        "challenged": false,
+        "policy": "both",
+        "claim": "copy -> copy",
+        "behavior": "copy -> copy",
+        "reply": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+        "freshActions": 48,
+        "freshBest": "copy",
+        "freshSupport": 1
+      },
+      {
+        "sim": 8,
+        "evidence": 48,
+        "challenged": true,
+        "policy": "keep",
+        "claim": "hold -> hold",
+        "behavior": "oppose -> oppose",
+        "reply": "I see that these actions favor “Oppose”. I choose to keep my current claim and behavior.",
+        "freshActions": 48,
+        "freshBest": "oppose",
+        "freshSupport": 1
+      }
+    ]
+  }
+]

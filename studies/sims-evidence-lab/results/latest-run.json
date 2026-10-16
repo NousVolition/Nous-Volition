@@ -1,0 +1,1535 @@
+{
+  "model": "sims-repeated-rounds-v1",
+  "config": {
+    "topology": "ring",
+    "mode": "network",
+    "seed": 20261011,
+    "innovation": 0.02,
+    "roundCount": 8,
+    "preset": "current",
+    "claims": [
+      "majority",
+      "oppose",
+      "copy",
+      "copy",
+      "copy",
+      "copy",
+      "copy",
+      "copy",
+      "copy"
+    ],
+    "actual": [
+      "hold",
+      "hold",
+      "copy",
+      "copy",
+      "copy",
+      "copy",
+      "copy",
+      "copy",
+      "copy"
+    ],
+    "policies": [
+      "claim",
+      "behavior",
+      "both",
+      "behavior",
+      "keep",
+      "claim",
+      "promise",
+      "both",
+      "keep"
+    ]
+  },
+  "baselineActions": 257,
+  "rounds": [
+    {
+      "round": 1,
+      "observedActions": 262,
+      "participants": [
+        {
+          "sim": 0,
+          "challenged": true,
+          "claimBefore": "majority",
+          "claimAfter": "majority",
+          "behaviorBefore": "hold",
+          "behaviorAfter": "hold",
+          "responsePolicy": "claim",
+          "response": "These actions contradict my claim, but the remaining rules are still ambiguous. I will defer revising my claim and keep my behavior while asking for a more discriminating test.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 35,
+          "freshSupport": [
+            6.370389081739372e-10,
+            0.33333333312098706,
+            0.33333333312098706,
+            0.33333333312098706
+          ]
+        },
+        {
+          "sim": 1,
+          "challenged": false,
+          "claimBefore": "oppose",
+          "claimAfter": "oppose",
+          "behaviorBefore": "hold",
+          "behaviorAfter": "hold",
+          "responsePolicy": "behavior",
+          "response": "These observations do not meet my response threshold for changing my rule. I will keep both settings and ask for more evidence.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 31,
+          "freshSupport": [
+            6.449534416809095e-10,
+            0.4999999996775233,
+            0,
+            0.4999999996775233
+          ]
+        },
+        {
+          "sim": 2,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "both",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 31,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 3,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "behavior",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 26,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 4,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "keep",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 22,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 5,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "claim",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 27,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 6,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "promise",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 24,
+          "freshSupport": [
+            0.2354098040705037,
+            0.38229509796474814,
+            0.38229509796474814,
+            0
+          ]
+        },
+        {
+          "sim": 7,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "both",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 39,
+          "freshSupport": [
+            0.3126185576687852,
+            0,
+            0.6873814423312148,
+            0
+          ]
+        },
+        {
+          "sim": 8,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "keep",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 27,
+          "freshSupport": [
+            0.36691532129134224,
+            0,
+            0.6330846787086578,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "observedActions": 259,
+      "participants": [
+        {
+          "sim": 0,
+          "challenged": false,
+          "claimBefore": "majority",
+          "claimAfter": "majority",
+          "behaviorBefore": "hold",
+          "behaviorAfter": "hold",
+          "responsePolicy": "claim",
+          "response": "These observations do not meet my response threshold for changing my rule. I will keep both settings and ask for more evidence.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 36,
+          "freshSupport": [
+            3.66435859139185e-11,
+            0.4999999999816782,
+            0,
+            0.4999999999816782
+          ]
+        },
+        {
+          "sim": 1,
+          "challenged": false,
+          "claimBefore": "oppose",
+          "claimAfter": "oppose",
+          "behaviorBefore": "hold",
+          "behaviorAfter": "hold",
+          "responsePolicy": "behavior",
+          "response": "These observations do not meet my response threshold for changing my rule. I will keep both settings and ask for more evidence.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 25,
+          "freshSupport": [
+            1.3709186062467386e-09,
+            0.49999999931454076,
+            0,
+            0.49999999931454076
+          ]
+        },
+        {
+          "sim": 2,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "both",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 21,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 3,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "behavior",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 39,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 4,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "keep",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 28,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 5,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "claim",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 23,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 6,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "promise",
+          "response": "These observations do not meet my response threshold for changing my rule. I will keep both settings and ask for more evidence.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 28,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 7,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "both",
+          "response": "These observations do not meet my response threshold for changing my rule. I will keep both settings and ask for more evidence.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 32,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 8,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "keep",
+          "response": "These observations do not meet my response threshold for changing my rule. I will keep both settings and ask for more evidence.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 27,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "observedActions": 267,
+      "participants": [
+        {
+          "sim": 0,
+          "challenged": true,
+          "claimBefore": "majority",
+          "claimAfter": "majority",
+          "behaviorBefore": "hold",
+          "behaviorAfter": "hold",
+          "responsePolicy": "claim",
+          "response": "These actions contradict my claim, but the remaining rules are still ambiguous. I will defer revising my claim and keep my behavior while asking for a more discriminating test.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 28,
+          "freshSupport": [
+            4.3547544898217804e-12,
+            0.49999999999782263,
+            0,
+            0.49999999999782263
+          ]
+        },
+        {
+          "sim": 1,
+          "challenged": false,
+          "claimBefore": "oppose",
+          "claimAfter": "oppose",
+          "behaviorBefore": "hold",
+          "behaviorAfter": "hold",
+          "responsePolicy": "behavior",
+          "response": "These observations do not meet my response threshold for changing my rule. I will keep both settings and ask for more evidence.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 25,
+          "freshSupport": [
+            2.014488691914859e-08,
+            0.49999998992755657,
+            0,
+            0.49999998992755657
+          ]
+        },
+        {
+          "sim": 2,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "both",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 36,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 3,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "behavior",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 33,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 4,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "keep",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 33,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 5,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "claim",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 30,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 6,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "promise",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 33,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 7,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "both",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 26,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 8,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "keep",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 23,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "observedActions": 282,
+      "participants": [
+        {
+          "sim": 0,
+          "challenged": true,
+          "claimBefore": "majority",
+          "claimAfter": "majority",
+          "behaviorBefore": "hold",
+          "behaviorAfter": "hold",
+          "responsePolicy": "claim",
+          "response": "These actions contradict my claim, but the remaining rules are still ambiguous. I will defer revising my claim and keep my behavior while asking for a more discriminating test.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 35,
+          "freshSupport": [
+            6.5028546429243e-11,
+            0.4999999999674858,
+            0,
+            0.4999999999674858
+          ]
+        },
+        {
+          "sim": 1,
+          "challenged": false,
+          "claimBefore": "oppose",
+          "claimAfter": "oppose",
+          "behaviorBefore": "hold",
+          "behaviorAfter": "hold",
+          "responsePolicy": "behavior",
+          "response": "These observations do not meet my response threshold for changing my rule. I will keep both settings and ask for more evidence.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 23,
+          "freshSupport": [
+            6.214964383664023e-07,
+            0.3333331261678539,
+            0.3333331261678539,
+            0.3333331261678539
+          ]
+        },
+        {
+          "sim": 2,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "both",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 28,
+          "freshSupport": [
+            0.22117657526161763,
+            0.3894117123691912,
+            0.3894117123691912,
+            0
+          ]
+        },
+        {
+          "sim": 3,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "behavior",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 29,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 4,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "keep",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 32,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 5,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "claim",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 38,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 6,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "promise",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 31,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 7,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "both",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 35,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 8,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "keep",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 31,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "observedActions": 267,
+      "participants": [
+        {
+          "sim": 0,
+          "challenged": true,
+          "claimBefore": "majority",
+          "claimAfter": "majority",
+          "behaviorBefore": "hold",
+          "behaviorAfter": "hold",
+          "responsePolicy": "claim",
+          "response": "These actions contradict my claim, but the remaining rules are still ambiguous. I will defer revising my claim and keep my behavior while asking for a more discriminating test.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 19,
+          "freshSupport": [
+            6.163970556521914e-06,
+            0.33333127867648116,
+            0.33333127867648116,
+            0.33333127867648116
+          ]
+        },
+        {
+          "sim": 1,
+          "challenged": false,
+          "claimBefore": "oppose",
+          "claimAfter": "oppose",
+          "behaviorBefore": "hold",
+          "behaviorAfter": "hold",
+          "responsePolicy": "behavior",
+          "response": "These observations do not meet my response threshold for changing my rule. I will keep both settings and ask for more evidence.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 48,
+          "freshSupport": [
+            1.439798103061339e-13,
+            0.49999999999992806,
+            0,
+            0.49999999999992806
+          ]
+        },
+        {
+          "sim": 2,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "both",
+          "response": "These observations do not meet my response threshold for changing my rule. I will keep both settings and ask for more evidence.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 24,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 3,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "behavior",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 24,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 4,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "keep",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 32,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 5,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "claim",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 29,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 6,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "promise",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 23,
+          "freshSupport": [
+            0.1530088235687529,
+            0.42349558821562355,
+            0.42349558821562355,
+            0
+          ]
+        },
+        {
+          "sim": 7,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "both",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 31,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 8,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "keep",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 37,
+          "freshSupport": [
+            0.13537225341722656,
+            0,
+            0.8646277465827734,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "observedActions": 273,
+      "participants": [
+        {
+          "sim": 0,
+          "challenged": false,
+          "claimBefore": "majority",
+          "claimAfter": "majority",
+          "behaviorBefore": "hold",
+          "behaviorAfter": "hold",
+          "responsePolicy": "claim",
+          "response": "These observations do not meet my response threshold for changing my rule. I will keep both settings and ask for more evidence.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 36,
+          "freshSupport": [
+            6.505313189521879e-13,
+            0.4999999999996747,
+            0,
+            0.4999999999996747
+          ]
+        },
+        {
+          "sim": 1,
+          "challenged": false,
+          "claimBefore": "oppose",
+          "claimAfter": "oppose",
+          "behaviorBefore": "hold",
+          "behaviorAfter": "hold",
+          "responsePolicy": "behavior",
+          "response": "These observations do not meet my response threshold for changing my rule. I will keep both settings and ask for more evidence.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 35,
+          "freshSupport": [
+            2.4927609459950393e-10,
+            0.4999999998753619,
+            0,
+            0.4999999998753619
+          ]
+        },
+        {
+          "sim": 2,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "both",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 24,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 3,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "behavior",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 26,
+          "freshSupport": [
+            0.031311473582220875,
+            0.4843442632088895,
+            0.4843442632088895,
+            0
+          ]
+        },
+        {
+          "sim": 4,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "keep",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 30,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 5,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "claim",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 29,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 6,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "promise",
+          "response": "These observations do not meet my response threshold for changing my rule. I will keep both settings and ask for more evidence.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 30,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 7,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "both",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 29,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 8,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "keep",
+          "response": "These observations do not meet my response threshold for changing my rule. I will keep both settings and ask for more evidence.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 34,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "round": 7,
+      "observedActions": 245,
+      "participants": [
+        {
+          "sim": 0,
+          "challenged": true,
+          "claimBefore": "majority",
+          "claimAfter": "majority",
+          "behaviorBefore": "hold",
+          "behaviorAfter": "hold",
+          "responsePolicy": "claim",
+          "response": "These actions contradict my claim, but the remaining rules are still ambiguous. I will defer revising my claim and keep my behavior while asking for a more discriminating test.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 30,
+          "freshSupport": [
+            7.788992277095713e-11,
+            0.49999999996105504,
+            0,
+            0.49999999996105504
+          ]
+        },
+        {
+          "sim": 1,
+          "challenged": false,
+          "claimBefore": "oppose",
+          "claimAfter": "oppose",
+          "behaviorBefore": "hold",
+          "behaviorAfter": "hold",
+          "responsePolicy": "behavior",
+          "response": "These observations do not meet my response threshold for changing my rule. I will keep both settings and ask for more evidence.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 32,
+          "freshSupport": [
+            3.6343126448950466e-10,
+            0.49999999981828436,
+            0,
+            0.49999999981828436
+          ]
+        },
+        {
+          "sim": 2,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "both",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 32,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 3,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "behavior",
+          "response": "These observations do not meet my response threshold for changing my rule. I will keep both settings and ask for more evidence.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 18,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 4,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "keep",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 21,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 5,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "claim",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 31,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 6,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "promise",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 26,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 7,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "both",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 31,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 8,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "keep",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 24,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "round": 8,
+      "observedActions": 319,
+      "participants": [
+        {
+          "sim": 0,
+          "challenged": true,
+          "claimBefore": "majority",
+          "claimAfter": "majority",
+          "behaviorBefore": "hold",
+          "behaviorAfter": "hold",
+          "responsePolicy": "claim",
+          "response": "These actions contradict my claim, but the remaining rules are still ambiguous. I will defer revising my claim and keep my behavior while asking for a more discriminating test.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 35,
+          "freshSupport": [
+            6.5028546429243e-11,
+            0.4999999999674858,
+            0,
+            0.4999999999674858
+          ]
+        },
+        {
+          "sim": 1,
+          "challenged": false,
+          "claimBefore": "oppose",
+          "claimAfter": "oppose",
+          "behaviorBefore": "hold",
+          "behaviorAfter": "hold",
+          "responsePolicy": "behavior",
+          "response": "These observations do not meet my response threshold for changing my rule. I will keep both settings and ask for more evidence.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 33,
+          "freshSupport": [
+            2.4741913116937975e-13,
+            0.4999999999998763,
+            0,
+            0.4999999999998763
+          ]
+        },
+        {
+          "sim": 2,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "both",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 35,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 3,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "behavior",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 45,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 4,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "keep",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 29,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 5,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "claim",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 35,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 6,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "promise",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 43,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 7,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "both",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 32,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "sim": 8,
+          "challenged": false,
+          "claimBefore": "copy",
+          "claimAfter": "copy",
+          "behaviorBefore": "copy",
+          "behaviorAfter": "copy",
+          "responsePolicy": "keep",
+          "response": "My stated rule has the strongest support here. I will keep my claim and behavior.",
+          "change": "—",
+          "promised": null,
+          "promiseAssessment": null,
+          "freshActions": 32,
+          "freshSupport": [
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    }
+  ]
+}
