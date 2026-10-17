@@ -1,0 +1,6 @@
+numpy==2.5.4
+scipy==1.18.1
+matplotlib==3.11.2
+openmm==8.6.1
+# Flow also requires a working NVIDIA CUDA environment and:
+cupy-cuda12x[ctk]==14.2.0

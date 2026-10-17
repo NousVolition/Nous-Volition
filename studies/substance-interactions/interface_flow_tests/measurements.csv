@@ -1,0 +1,6 @@
+id,source_doi,location,observable,value,unit,temperature_C,diameter_mm,uncertainty,uncertainty_note,eligibility
+vins_p1,10.1021/acs.jpcb.5b00545,Table 1 p-1,surface_tension,71.92,mN/m,25.23,,,Y=1.0103; uY=0.0018; reference 71.19 at 30C; shared absolute calibration,within 0.3 K of simulated thermostat
+vins_p2,10.1021/acs.jpcb.5b00545,Table 1 p-2,surface_tension,71.93,mN/m,25.22,,,Y=1.0104; uY=0.0016; reference 71.19 at 30C; shared absolute calibration,within 0.3 K of simulated thermostat
+vins_h1,10.1021/acs.jpcb.5b00545,Table 2 h-1,surface_tension,71.92,mN/m,25.22,,,Y=0.9887; uY=0.0014; reference 72.74 at 20C; shared absolute calibration,within 0.3 K of simulated thermostat
+micev_dvs,10.5194/amt-17-335-2024,Section 4.1 and Figure 6,fall_speed_approximately,7.8,m/s,,2.5,0.5,Table 3 combined instrument uncertainty; not a mean standard error; N=27,conditional still-air fixed-shape comparison
+micev_parsivel,10.5194/amt-17-335-2024,Section 4.2 and Figure 7,reported_fall_speed,6.4,m/s,,2.5,,no experiment-specific mean uncertainty transcribed; N=149; different stairwell wind,conditional still-air fixed-shape comparison

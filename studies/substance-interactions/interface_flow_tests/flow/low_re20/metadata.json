@@ -1,0 +1,26 @@
+{
+  "name": "low_re20",
+  "D_lattice": 20,
+  "Re_D": 20.0,
+  "aspect": 1.0,
+  "speed": 0.06,
+  "width_D": 5.0,
+  "length_D": 12.0,
+  "duration_requested": 40.0,
+  "duration_completed": 39.999,
+  "cs": 0.0,
+  "seed": 31,
+  "tau0": 0.6799999999999999,
+  "grid": [
+    240,
+    100,
+    100
+  ],
+  "projected_area_lattice": 314.1592653589793,
+  "body_volume_voxels": 4169,
+  "exact_body_volume": 4188.790204786391,
+  "elapsed_s": 85.75,
+  "status": "completed",
+  "source_sha256": "70a461b0e555fccd9976ee9d6c9c5546307514b3a7be5834913398f3990ff066",
+  "notes": "Fixed no-slip body; periodic transverse domain; regularized LES if Cs>0; no evolving liquid surface"
+}

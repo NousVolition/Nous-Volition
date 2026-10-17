@@ -1,0 +1,22 @@
+{
+  "name": "lateral_3nm",
+  "seed": 101,
+  "N": 886,
+  "box_nm": [
+    3.0,
+    3.0,
+    8.0
+  ],
+  "dt_ps": 0.002,
+  "temperature_K": 298.15,
+  "bulk_equil_ps": 100,
+  "slab_equil_ps": 200,
+  "production_ps": 300,
+  "sample_interval_ps": 1.0,
+  "platform": "OpenCL mixed precision",
+  "openmm": "8.6.1",
+  "source_sha256": "0bc4ed70c3a216875b26a5f3fff97d7a0867c629160b468fd4772fe1926da66f",
+  "elapsed_s": 178.63999999999942,
+  "model": "TIP4P/2005, LJPME+PME",
+  "note": "Exploratory small-slab run. No empirical parameter fit; all sample frames retained."
+}

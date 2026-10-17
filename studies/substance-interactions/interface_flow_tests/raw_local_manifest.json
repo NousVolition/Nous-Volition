@@ -1,0 +1,66 @@
+{
+  "water/lateral_3nm/final_state.xml": {
+    "bytes": 589794,
+    "sha256": "c17a001946670cf80015d696cdb5d4bb50385a13b2171eb7e9f21eefc05b0d53"
+  },
+  "water/lateral_3nm/trajectory.npz": {
+    "bytes": 8641549,
+    "sha256": "247cdc7630b2b0bc26dee223c5af3944de09ec294cacf121857266d9bf430e67"
+  },
+  "water/primary_seed101/final_state.xml": {
+    "bytes": 333261,
+    "sha256": "f9b7ca174014429f6534478a342569ad0fd2e3a84ba2230cc6eb747ddc4ed141"
+  },
+  "water/primary_seed101/trajectory.npz": {
+    "bytes": 4904216,
+    "sha256": "62c948038164c6dce4d3ad2227f7b3b4b051f48aa2efbc79782742019f45c21c"
+  },
+  "water/primary_seed101_extension/final_state.xml": {
+    "bytes": 333451,
+    "sha256": "9cc622650d53c35e287a53fe78bbf0cdc8892fb8367d8aaa59fd9d8abbfe9d47"
+  },
+  "water/primary_seed101_extension/trajectory.npz": {
+    "bytes": 11457339,
+    "sha256": "65cc08ec32c0d8f8dff04b536a297b6c7c52de3e23dfccfa2f13fba6410673e6"
+  },
+  "water/primary_seed202/final_state.xml": {
+    "bytes": 334918,
+    "sha256": "dc83360d012701b5a3b6d9244ce926bd631331fd1722a8ef63ea70e29b5f5223"
+  },
+  "water/primary_seed202/trajectory.npz": {
+    "bytes": 4907236,
+    "sha256": "7334ecba47f408a007f982b924cd6595f003a1835feee46166943c5a79dc2216"
+  },
+  "water/primary_seed202_extension/final_state.xml": {
+    "bytes": 335405,
+    "sha256": "676f2824b719d7419c20bfee6e921ca0707109572124922581d34916fc5d5ae9"
+  },
+  "water/primary_seed202_extension/trajectory.npz": {
+    "bytes": 11458777,
+    "sha256": "ca498fcd572014410c6ab2381e38aee89228f6d5621d472fb370a8f1d074720c"
+  },
+  "water/primary_seed303/final_state.xml": {
+    "bytes": 332733,
+    "sha256": "cee7f386dde7a049f1ea3339e008e635a938b7c7cdd87e5bb7fa8f4c13b1d7f4"
+  },
+  "water/primary_seed303/trajectory.npz": {
+    "bytes": 4903722,
+    "sha256": "6f0622d4db698c071390aad070f2d2664a7b38358e948c510af9af34da449951"
+  },
+  "water/primary_seed303_extension/final_state.xml": {
+    "bytes": 333833,
+    "sha256": "84a12fe2833cc13f211056bff74f5dc779796aa8917ad77c6ad281c27bbcbd47"
+  },
+  "water/primary_seed303_extension/trajectory.npz": {
+    "bytes": 11452666,
+    "sha256": "f48975a5bdcdbb89a295556c9613ca77c83c526802d20cf6f9f43583cfbe944b"
+  },
+  "water/timestep_1fs/final_state.xml": {
+    "bytes": 334733,
+    "sha256": "38ce4b58500f9e38ef169ee991a5ba4086fa93ef5cb34d633cc80bf894d224af"
+  },
+  "water/timestep_1fs/trajectory.npz": {
+    "bytes": 4905264,
+    "sha256": "6af10b58c906759de136ee4d1df8cd32d2c760c53f4573c7504d4ea1507e2326"
+  }
+}

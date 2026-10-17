@@ -1,0 +1,27 @@
+{
+  "version": "interface-flow-pilot-v1",
+  "date_local": "2026-10-17",
+  "design_status": "Fixed before new simulation runs; not formally blinded. Search previews already exposed some water-tension numbers and qualitative wake observations. No parameter will be fitted to them.",
+  "water": {
+    "model": "TIP4P/2005 rigid water, selected in the preceding topology-method task; original parameters, no adjustment",
+    "geometry": "periodic liquid slab with two vapor interfaces; orthorhombic cell; PME electrostatics and LJPME dispersion",
+    "temperature_K": 298.15,
+    "primary": "at least two independently seeded runs, nominal lateral size 2.5 nm, z box 8 nm, 2 fs timestep; 100 ps bulk plus 200 ps slab equilibration then 300 ps sampling",
+    "controls": "1 fs timestep, larger lateral box, area-strain sensitivity; retain unsuccessful or poorly sampled cases",
+    "observables": "density profile, graph-based psi distribution and coverage; molecular-center test-area free-energy surface tension with two-interface normalization",
+    "topology": "Use existing classifier unchanged. Analyze complete graph before grouping by planar depth. Planar bins are not ITIM layers.",
+    "comparison": "New-to-this-project published experimental pure-water surface tension; score all chosen matched-temperature rows. Numerical water topology populations have no direct experimental validation here.",
+    "uncertainty": "time-block variability and between-seed agreement, not independent-molecule standard errors; small-box/short-trajectory limitations retained"
+  },
+  "flow": {
+    "model": "three-dimensional D3Q19 lattice-Boltzmann, fixed no-slip sphere/oblate body, incompressible low-Mach limit; regularized collision with optional fixed Smagorinsky Cs=0.1 for underresolved high-Re flow",
+    "scope": "External gas flow only. No VOF, internal liquid circulation, evolving shape, particle capture or retention claim.",
+    "primary": "Re_D=1500 and 2500; fixed aspect ratio 0.7, spherical control; grid, Mach/time and domain sensitivity",
+    "geometry_convention": "D volume-equivalent diameter; axis ratio streamwise/transverse; area convention explicit",
+    "numerical_checks": "equilibrium preservation, shear-wave decay and low-Re body control; density/mass, max velocity and force history; grid/domain differences",
+    "experimental_comparison": "Seek a new primary falling-drop experiment with geometry and terminal speed; compare computed gas drag with weight-minus-buoyancy inferred from measured terminal conditions, or a directly reported wake observable. Existing Hong, Lemaitre, Querel, Depee and Jones lineage are development evidence.",
+    "eligibility": "Never call guessed or correlation-derived velocities measurements. A fixed rigid interface is a conditional transfer test to a liquid drop. Missing geometry/thermophysical inputs and unsteady/nonterminal conditions must be flagged.",
+    "success": "Do not call flow validated if grid/domain sensitivity exceeds the discrepancy or interface assumptions remain unmatched. Publish all results, including failures."
+  },
+  "outcome_policy": "Numerical implementation fixes may follow verification failures and must be logged. No tuning to empirical targets. New-to-project comparison is not equivalent to an untouched model-selection holdout or universal validation."
+}

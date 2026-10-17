@@ -1,0 +1,18 @@
+[
+  {
+    "dt_fs": 2.0,
+    "duration_ps": 10.0,
+    "N": 501,
+    "drift_kJ_mol_molecule_per_ps": -3.164054643959918e-05,
+    "energy_range_kJ_mol_per_molecule": 0.007459522045067927,
+    "max_relative_energy_deviation": 0.0001118690664815004
+  },
+  {
+    "dt_fs": 1.0,
+    "duration_ps": 10.0,
+    "N": 501,
+    "drift_kJ_mol_molecule_per_ps": -2.4562779291194868e-05,
+    "energy_range_kJ_mol_per_molecule": 0.0022343178665207466,
+    "max_relative_energy_deviation": 3.507661670134991e-05
+  }
+]

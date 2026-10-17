@@ -1,0 +1,64 @@
+{
+  "date_local": "2026-10-17",
+  "independence": "New to this project's comparisons, and not used to change force-field or flow parameters. Values were visible during implementation, so this is not a blinded model-selection holdout. Future changes informed by these results would make these data development evidence.",
+  "sources": [
+    {
+      "id": "vins2015",
+      "doi": "10.1021/acs.jpcb.5b00545",
+      "url": "https://pure.tue.nl/ws/files/7992374/372814056466469.pdf",
+      "status": "Included: three near-25 C rows, all rows within 0.3 K of the 298.15 K thermostat",
+      "visual_check": "PDF pages 6 and 7: table values and reference calibrations verified against rendered tables.",
+      "limitations": "Relative capillary measurements in helium. Absolute tensions use IAPWS reference values; independent campaign, but not independent absolute calibration. Article reports absolute uncertainty about 0.36-0.41 mN/m; plots show a conservative 0.4 mN/m band, not a new precision estimate. The three rows are not three separate studies. Temperature differs by 0.22-0.23 K; actual MD temperature is reported separately. No direct experimental psi populations."
+    },
+    {
+      "id": "micev2024",
+      "doi": "10.5194/amt-17-335-2024",
+      "url": "https://amt.copernicus.org/articles/17/335/2024/",
+      "status": "Included: reported actual DVS and PARSIVEL velocities for nominal 2.5 mm drops, not correlation-based ground truth",
+      "visual_check": "PDF pages 10 and 11: Figures 6-7 support the reported velocity regions; Table 3 gives DVS combined uncertainty. Figure 7 velocity axis mistakenly says mm. Figure 6 has quantized individual velocities; 7.8 is the approximate value in prose, not a reconstructed exact mean.",
+      "limitations": "Measured 2.5 mm diameter is mass-derived nominal size, not a resolved time-dependent shape. DVS N=27; PARSIVEL N=149 in a different stairwell with wind. Table 3 nominal diameter uncertainty 0.05 mm; DVS combined velocity uncertainty 0.5 m/s is not divided by sqrt(N). No exact ambient air properties, interface shape or local air velocity supplied for matching these calculations. Earlier general prose says slight underestimation; Section 4.1 specifically reports large-drop overestimation and Figure 6 supports the latter. Quoted GT 7.4 m/s is model-derived and is excluded as a measured target."
+    },
+    {
+      "id": "saylor2005",
+      "doi": "10.1063/1.1874192",
+      "url": "https://cecas.clemson.edu/~jsaylor/paperPdfs/pf.v17.n03.pdf",
+      "status": "Qualitative wake context only; excluded from numerical frequency validation",
+      "reason": "Wake images and drop shapes are observations. Table frequencies and Strouhal numbers are inferred from correlations; they are not measured shedding frequencies. One-plane images do not validate our three-dimensional vortex statistics."
+    },
+    {
+      "id": "topology2025",
+      "doi": "10.1063/5.0272802",
+      "url": "https://discovery.ucl.ac.uk/10211213/1/024511_1_5.0272802.pdf",
+      "status": "Method definition, not experimental holdout",
+      "reason": "Full hydrogen-bond graph, shortest graph distance exactly four, minimum O-O distance over that shell; missing shell remains unclassified. Our planar depth groups are not the paper's ITIM intrinsic layers."
+    },
+    {
+      "id": "tip4p2005",
+      "doi": "10.1063/1.2121687",
+      "url": "https://www.nist.gov/mml/csd/chemical-informatics-group/benchmark-results-tip4p2005-water",
+      "status": "Fixed water model and parameter benchmark",
+      "reason": "Original rigid molecular geometry and charges/LJ parameters, PME plus LJPME. TIP4P/2005 was selected before this turn. Its historic calibration is not independent evidence for every water property."
+    },
+    {
+      "id": "test_area2007",
+      "doi": "10.1063/1.2715577",
+      "url": "https://hdl.handle.net/10272/9574",
+      "status": "Free-energy test-area method",
+      "reason": "Constant-volume, rigid-molecule area perturbation; our molecular centers are translated while geometry is preserved. Two interfaces explicitly give dF/dA=2 gamma. Finite area strain, box size and sampling are tested. 3D periodic PME images remain a limitation."
+    },
+    {
+      "id": "regularized_lbm2006",
+      "doi": "10.1016/j.matcom.2006.05.017",
+      "url": "https://arxiv.org/abs/physics/0506157",
+      "status": "Numerical method; not a drop experiment",
+      "reason": "Second-order nonequilibrium stress regularization. Our fixed Cs=0.1 subgrid viscosity, voxel wall and inlet/outlet are explicit approximations; this is not DNS or a liquid free-boundary solver."
+    }
+  ],
+  "screened_not_scored": [
+    {"source":"Gunn and Kinzer 1949 / Beard / Atlas correlations", "reason":"Used in earlier model lineage, and inferred speed is not new measured speed."},
+    {"source":"Paap 2022 pendant-drop water", "reason":"Different temperature, and calibration overlap; not needed for the predeclared near-298.15 K comparison."},
+    {"source":"MDPI 2026 bubble-pressure apparatus", "reason":"Full methods inaccessible; search snippets alone are not sufficient."},
+    {"source":"Thurai 2021 turbulent rainfall", "reason":"Ambient turbulence not matched by these controlled fixed-body calculations."},
+    {"source":"Chowdhury and Testik 2016", "reason":"No verified accessible numerical measurement table for this task; no data invented."}
+  ]
+}

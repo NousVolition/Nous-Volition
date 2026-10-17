@@ -1,0 +1,8 @@
+base,alternative,change,relative_Cd_change_percent
+re1500_d20,re1500_d28,grid 20 to 28,-5.310742866775831
+re2500_d20,re2500_d28,grid 20 to 28,26.98374118018836
+re1500_d20,re1500_wide,transverse 5D to 7D; length 12D to 16D,-7.553996568620757
+re1500_d20,re1500_slow,lattice speed 0.06 to 0.03,-0.03141446173016149
+re1500_d20,re1500_seed97,wake seed 31 to 97,-2.620667165449053
+re1500_d20,re1500_sphere,aspect 0.7 to 1,-10.378645976240296
+micev_dvs,micev_dvs_aspect084,aspect 0.7 to 0.84,-4.841849045746171

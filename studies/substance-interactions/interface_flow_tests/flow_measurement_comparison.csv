@@ -1,0 +1,4 @@
+name,measured_speed_m_s,speed_combined_uncertainty_m_s,assumed_D_mm,assumed_aspect,Re,computed_Cd,terminal_still_air_required_Cd,drag_over_weight_minus_buoyancy,comparison
+micev_dvs,7.8,0.5,2.5,0.7,1300.0,0.718477905250737,0.35075928096911096,2.0483503765478654,"Conditional force balance; measured speed sets Re, not an independent velocity prediction"
+micev_parsivel,6.4,,2.5,0.7,1066.666667,0.7237756833051296,0.5210008460488453,1.3892025105027825,"Conditional force balance; measured speed sets Re, not an independent velocity prediction"
+micev_dvs_aspect084,7.8,0.5,2.5,0.84,1300.0,0.6836902896514571,0.39609254502760455,1.7260872445953488,"Conditional force balance; measured speed sets Re, not an independent velocity prediction"

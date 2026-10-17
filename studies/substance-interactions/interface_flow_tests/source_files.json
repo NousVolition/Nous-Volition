@@ -1,0 +1,17 @@
+{
+  "micev2024.pdf": {
+    "bytes": 9671554,
+    "sha256": "30e4c682251c7943725692de29fbedb8c48ed38d9afd2eb19bcbd307df7a038e",
+    "redistributed": false
+  },
+  "saylor2005.pdf": {
+    "bytes": 158917,
+    "sha256": "d3bd47c736f720615fafdc539d86c1fb0df05a4d04e7309cbaac775011d54bd8",
+    "redistributed": false
+  },
+  "vins2015.pdf": {
+    "bytes": 1005677,
+    "sha256": "220c7cac57f721d4bc761ed28e0c1e4543274518d4f3f02e3b51241466173ecd",
+    "redistributed": false
+  }
+}

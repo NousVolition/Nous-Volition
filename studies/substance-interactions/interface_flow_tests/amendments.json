@@ -1,0 +1,23 @@
+{
+  "original_protocol": "protocol.json",
+  "changes": [
+    {
+      "change": "Conservative float-roundoff correction in LBM collision",
+      "trigger": "Periodic analytical shear-wave test showed accumulated mass drift exceeding its 20 ppm check; original diagnostic retained.",
+      "action": "Accumulate density in double precision, assign the collision residual to the zero-velocity population. Momentum is unchanged. Main body runs all use this corrected version.",
+      "empirical_fit": false
+    },
+    {
+      "change": "Extend each of three primary water seeds from 300 to 1000 ps production",
+      "trigger": "First 300 ps had broad 50 ps block tension variation, approximately 45-83 mN/m.",
+      "action": "700 ps continuation with same Hamiltonian, cell and thermostat; fresh thermostat noise. Continuation grouped with parent, never counted as another independent seed. Control runs remain 300 ps and are compared at matched durations as well as against full primary estimates.",
+      "empirical_fit": false
+    },
+    {
+      "change": "Additional Reynolds numbers 800 and 1000",
+      "trigger": "Computing a conditional terminal-speed prediction needs force-balance bracketing below measured-speed cases.",
+      "action": "Unchanged fixed-body flow model; interpolate its Cd(Re) curve and solve weight-minus-buoyancy balance without fitting to either measured speed. Result remains conditional on assumed geometry and still air.",
+      "empirical_fit": false
+    }
+  ]
+}

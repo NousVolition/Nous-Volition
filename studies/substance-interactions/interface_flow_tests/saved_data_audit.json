@@ -1,0 +1,936 @@
+{
+  "checks": [
+    {
+      "name": "water run count including continuations",
+      "passed": true,
+      "detail": 8
+    },
+    {
+      "name": "flow attempt count including failed control",
+      "passed": true,
+      "detail": 15
+    },
+    {
+      "name": "lateral_3nm: original force source pinned",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "lateral_3nm: finite energy and declared duration",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "lateral_3nm: zero-strain evaluation agrees per molecule",
+      "passed": true,
+      "detail": {
+        "maximum_kJ_mol_per_molecule": 1.7011539001989075e-05
+      }
+    },
+    {
+      "name": "lateral_3nm: number of water molecules preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "lateral_3nm: rigid OH geometry",
+      "passed": true,
+      "detail": {
+        "maximum_error_nm": 5.736947059631348e-07
+      }
+    },
+    {
+      "name": "lateral_3nm: saved frame cadence",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "lateral_3nm: temperature remains finite and physical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary_seed101: original force source pinned",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary_seed101: finite energy and declared duration",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary_seed101: zero-strain evaluation agrees per molecule",
+      "passed": true,
+      "detail": {
+        "maximum_kJ_mol_per_molecule": 2.531203598865938e-05
+      }
+    },
+    {
+      "name": "primary_seed101: number of water molecules preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary_seed101: rigid OH geometry",
+      "passed": true,
+      "detail": {
+        "maximum_error_nm": 4.470348358154297e-07
+      }
+    },
+    {
+      "name": "primary_seed101: saved frame cadence",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary_seed101: temperature remains finite and physical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary_seed101_extension: original force source pinned",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary_seed101_extension: finite energy and declared duration",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary_seed101_extension: zero-strain evaluation agrees per molecule",
+      "passed": true,
+      "detail": {
+        "maximum_kJ_mol_per_molecule": 3.800651791901467e-05
+      }
+    },
+    {
+      "name": "primary_seed101_extension: number of water molecules preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary_seed101_extension: rigid OH geometry",
+      "passed": true,
+      "detail": {
+        "maximum_error_nm": 6.407499313354492e-07
+      }
+    },
+    {
+      "name": "primary_seed101_extension: saved frame cadence",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary_seed101_extension: temperature remains finite and physical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary_seed202: original force source pinned",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary_seed202: finite energy and declared duration",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary_seed202: zero-strain evaluation agrees per molecule",
+      "passed": true,
+      "detail": {
+        "maximum_kJ_mol_per_molecule": 2.9560412046036676e-05
+      }
+    },
+    {
+      "name": "primary_seed202: number of water molecules preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary_seed202: rigid OH geometry",
+      "passed": true,
+      "detail": {
+        "maximum_error_nm": 4.544854164123535e-07
+      }
+    },
+    {
+      "name": "primary_seed202: saved frame cadence",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary_seed202: temperature remains finite and physical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary_seed202_extension: original force source pinned",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary_seed202_extension: finite energy and declared duration",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary_seed202_extension: zero-strain evaluation agrees per molecule",
+      "passed": true,
+      "detail": {
+        "maximum_kJ_mol_per_molecule": 4.398107161316017e-05
+      }
+    },
+    {
+      "name": "primary_seed202_extension: number of water molecules preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary_seed202_extension: rigid OH geometry",
+      "passed": true,
+      "detail": {
+        "maximum_error_nm": 5.21540641784668e-07
+      }
+    },
+    {
+      "name": "primary_seed202_extension: saved frame cadence",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary_seed202_extension: temperature remains finite and physical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary_seed303: original force source pinned",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary_seed303: finite energy and declared duration",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary_seed303: zero-strain evaluation agrees per molecule",
+      "passed": true,
+      "detail": {
+        "maximum_kJ_mol_per_molecule": 2.2699221310590555e-05
+      }
+    },
+    {
+      "name": "primary_seed303: number of water molecules preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary_seed303: rigid OH geometry",
+      "passed": true,
+      "detail": {
+        "maximum_error_nm": 4.842877388000488e-07
+      }
+    },
+    {
+      "name": "primary_seed303: saved frame cadence",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary_seed303: temperature remains finite and physical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary_seed303_extension: original force source pinned",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary_seed303_extension: finite energy and declared duration",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary_seed303_extension: zero-strain evaluation agrees per molecule",
+      "passed": true,
+      "detail": {
+        "maximum_kJ_mol_per_molecule": 4.900249676033483e-05
+      }
+    },
+    {
+      "name": "primary_seed303_extension: number of water molecules preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary_seed303_extension: rigid OH geometry",
+      "passed": true,
+      "detail": {
+        "maximum_error_nm": 7.003545761108398e-07
+      }
+    },
+    {
+      "name": "primary_seed303_extension: saved frame cadence",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary_seed303_extension: temperature remains finite and physical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "timestep_1fs: original force source pinned",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "timestep_1fs: finite energy and declared duration",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "timestep_1fs: zero-strain evaluation agrees per molecule",
+      "passed": true,
+      "detail": {
+        "maximum_kJ_mol_per_molecule": 3.0910605255666814e-05
+      }
+    },
+    {
+      "name": "timestep_1fs: number of water molecules preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "timestep_1fs: rigid OH geometry",
+      "passed": true,
+      "detail": {
+        "maximum_error_nm": 4.6193599700927734e-07
+      }
+    },
+    {
+      "name": "timestep_1fs: saved frame cadence",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "timestep_1fs: temperature remains finite and physical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "low_re20: flow source pinned",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "low_re20: finite saved output",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "low_re20: dimensioned geometry",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "low_re20: termination status consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "low_re20: numerical stability guard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "micev_dvs: flow source pinned",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "micev_dvs: finite saved output",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "micev_dvs: dimensioned geometry",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "micev_dvs: termination status consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "micev_dvs: numerical stability guard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "micev_dvs_aspect084: flow source pinned",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "micev_dvs_aspect084: finite saved output",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "micev_dvs_aspect084: dimensioned geometry",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "micev_dvs_aspect084: termination status consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "micev_dvs_aspect084: numerical stability guard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "micev_parsivel: flow source pinned",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "micev_parsivel: finite saved output",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "micev_parsivel: dimensioned geometry",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "micev_parsivel: termination status consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "micev_parsivel: numerical stability guard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re1500_d20: flow source pinned",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re1500_d20: finite saved output",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re1500_d20: dimensioned geometry",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re1500_d20: termination status consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re1500_d20: numerical stability guard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re1500_d28: flow source pinned",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re1500_d28: finite saved output",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re1500_d28: dimensioned geometry",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re1500_d28: termination status consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re1500_d28: numerical stability guard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re1500_no_sgs: flow source pinned",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re1500_no_sgs: finite saved output",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re1500_no_sgs: dimensioned geometry",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re1500_no_sgs: termination status consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re1500_seed97: flow source pinned",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re1500_seed97: finite saved output",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re1500_seed97: dimensioned geometry",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re1500_seed97: termination status consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re1500_seed97: numerical stability guard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re1500_slow: flow source pinned",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re1500_slow: finite saved output",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re1500_slow: dimensioned geometry",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re1500_slow: termination status consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re1500_slow: numerical stability guard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re1500_sphere: flow source pinned",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re1500_sphere: finite saved output",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re1500_sphere: dimensioned geometry",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re1500_sphere: termination status consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re1500_sphere: numerical stability guard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re1500_wide: flow source pinned",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re1500_wide: finite saved output",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re1500_wide: dimensioned geometry",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re1500_wide: termination status consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re1500_wide: numerical stability guard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re2500_d20: flow source pinned",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re2500_d20: finite saved output",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re2500_d20: dimensioned geometry",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re2500_d20: termination status consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re2500_d20: numerical stability guard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re2500_d28: flow source pinned",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re2500_d28: finite saved output",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re2500_d28: dimensioned geometry",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re2500_d28: termination status consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "re2500_d28: numerical stability guard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "terminal_re1000: flow source pinned",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "terminal_re1000: finite saved output",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "terminal_re1000: dimensioned geometry",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "terminal_re1000: termination status consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "terminal_re1000: numerical stability guard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "terminal_re800: flow source pinned",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "terminal_re800: finite saved output",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "terminal_re800: dimensioned geometry",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "terminal_re800: termination status consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "terminal_re800: numerical stability guard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "lateral_3nm: topology bulk",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "lateral_3nm: topology interface",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "lateral_3nm: topology other",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary_seed101: topology bulk",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary_seed101: topology interface",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary_seed101: topology other",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary_seed202: topology bulk",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary_seed202: topology interface",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary_seed202: topology other",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary_seed303: topology bulk",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary_seed303: topology interface",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "primary_seed303: topology other",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "timestep_1fs: topology bulk",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "timestep_1fs: topology interface",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "timestep_1fs: topology other",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "three independent primary water seeds",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "failed flow excluded from physical Cd mean",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "flow comparison values are finite",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "independent inlet/outlet mass budget",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "smaller step reduces short NVE energy range",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "syntax analyze.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "syntax audit_saved.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "syntax boundary_budget.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "syntax extend_water.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "syntax flow_lbm.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "syntax gpu_environment.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "syntax make_report.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "syntax nve_check.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "syntax run_all.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "syntax test_analysis.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "syntax verify_runtime.py",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "syntax water_md.py",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "passed": 164,
+  "total": 164,
+  "flow_outcomes": [
+    {
+      "name": "low_re20",
+      "status": "completed",
+      "completed": 39.999
+    },
+    {
+      "name": "micev_dvs",
+      "status": "completed",
+      "completed": 39.999
+    },
+    {
+      "name": "micev_dvs_aspect084",
+      "status": "completed",
+      "completed": 39.999
+    },
+    {
+      "name": "micev_parsivel",
+      "status": "completed",
+      "completed": 39.999
+    },
+    {
+      "name": "re1500_d20",
+      "status": "completed",
+      "completed": 39.999
+    },
+    {
+      "name": "re1500_d28",
+      "status": "completed",
+      "completed": 40.00071428571429
+    },
+    {
+      "name": "re1500_no_sgs",
+      "status": "numerical_guard_failed",
+      "completed": 25.8
+    },
+    {
+      "name": "re1500_seed97",
+      "status": "completed",
+      "completed": 39.999
+    },
+    {
+      "name": "re1500_slow",
+      "status": "completed",
+      "completed": 40.0005
+    },
+    {
+      "name": "re1500_sphere",
+      "status": "completed",
+      "completed": 39.999
+    },
+    {
+      "name": "re1500_wide",
+      "status": "completed",
+      "completed": 39.999
+    },
+    {
+      "name": "re2500_d20",
+      "status": "completed",
+      "completed": 39.999
+    },
+    {
+      "name": "re2500_d28",
+      "status": "completed",
+      "completed": 40.00071428571429
+    },
+    {
+      "name": "terminal_re1000",
+      "status": "completed",
+      "completed": 39.999
+    },
+    {
+      "name": "terminal_re800",
+      "status": "completed",
+      "completed": 39.999
+    }
+  ],
+  "note": "Audit passes can coexist with an expected retained numerical failure and poor physical agreement. This is not a model-validation certificate."
+}

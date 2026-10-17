@@ -1,0 +1,16 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "operating_system": "Windows",
+  "machine": "AMD64",
+  "packages": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "openmm": "8.6.1",
+    "cupy-cuda12x": "14.2.0"
+  },
+  "gpu": "NVIDIA GeForce RTX 3080, 10240 MiB, 610.74",
+  "date_local": "2026-10-17",
+  "precision": "OpenMM OpenCL mixed; LBM float32 populations with float64 density accumulation and force reduction",
+  "run_reproducibility": "Seeded stochastic inputs. Floating-point integration and GPU kernels are not promised bitwise reproducible across platforms."
+}

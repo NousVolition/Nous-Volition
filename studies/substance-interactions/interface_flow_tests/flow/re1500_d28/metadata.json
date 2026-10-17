@@ -1,0 +1,26 @@
+{
+  "name": "re1500_d28",
+  "D_lattice": 28,
+  "Re_D": 1500.0,
+  "aspect": 0.7,
+  "speed": 0.06,
+  "width_D": 5.0,
+  "length_D": 12.0,
+  "duration_requested": 40.0,
+  "duration_completed": 40.00071428571429,
+  "cs": 0.1,
+  "seed": 31,
+  "tau0": 0.50336,
+  "grid": [
+    336,
+    140,
+    140
+  ],
+  "projected_area_lattice": 781.0411529109095,
+  "body_volume_voxels": 11471,
+  "exact_body_volume": 11494.040321933857,
+  "elapsed_s": 567.0780000000086,
+  "status": "completed",
+  "source_sha256": "70a461b0e555fccd9976ee9d6c9c5546307514b3a7be5834913398f3990ff066",
+  "notes": "Fixed no-slip body; periodic transverse domain; regularized LES if Cs>0; no evolving liquid surface"
+}

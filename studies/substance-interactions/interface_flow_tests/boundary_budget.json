@@ -1,0 +1,10 @@
+{
+  "steps": 100,
+  "initial_mass": 65278.9990272671,
+  "net_boundary_mass_supplied": -1.3232300486415625,
+  "actual_mass_change": -1.3165936153382063,
+  "relative_budget_residual": 1.016626082238811e-07,
+  "maximum_step_relative_residual": 1.1871577410136628e-08,
+  "scope": "Independent boundary accounting control; production histories do not store full boundary-population fluxes.",
+  "passed": true
+}

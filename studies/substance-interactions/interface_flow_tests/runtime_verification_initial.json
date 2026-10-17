@@ -1,0 +1,89 @@
+{
+  "status": "failed",
+  "checks": [
+    {
+      "name": "D3Q19 weights",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "D3Q19 isotropic second moment",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "D3Q19 opposite velocities",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "shear decay ny=32",
+      "passed": true,
+      "value": {
+        "measured": 0.0014504908041500615,
+        "exact": 0.001454886634865615,
+        "relative_error": 0.003021424907075021
+      }
+    },
+    {
+      "name": "periodic mass ny=32",
+      "passed": true,
+      "value": 1.000006914138794
+    },
+    {
+      "name": "shear decay ny=64",
+      "passed": true,
+      "value": {
+        "measured": 0.001453831021618832,
+        "exact": 0.001454886634865615,
+        "relative_error": 0.0007255639178240791
+      }
+    },
+    {
+      "name": "periodic mass ny=64",
+      "passed": false,
+      "value": 1.000027060508728
+    },
+    {
+      "name": "uniform flow remains uniform",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "no body means no force",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "test-area preserves volume",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "test-area preserves molecular geometry 0",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "test-area preserves molecular geometry 1",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "independent dimer energy Reference",
+      "passed": true,
+      "value": {
+        "energy": -16.75139706571406,
+        "manual": -16.75139706571393
+      }
+    },
+    {
+      "name": "independent dimer energy OpenCL",
+      "passed": true,
+      "value": {
+        "energy": -16.751358032226562,
+        "manual": -16.75139706571393
+      }
+    }
+  ]
+}

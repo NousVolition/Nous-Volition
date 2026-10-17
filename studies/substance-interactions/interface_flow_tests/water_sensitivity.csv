@@ -1,0 +1,3 @@
+name,gamma_mN_m,matched_primary300_mean_mN_m,difference_mN_m,difference_percent,note
+lateral_3nm,63.298638822130165,66.68548400182583,-3.386845179695662,-5.078834217658123,Single short control; difference confounded by sampling. Larger cell also changes liquid-film thickness.
+timestep_1fs,69.28228661059961,66.68548400182583,2.5968026087737854,3.8941047630436154,Single short control; difference confounded by sampling. Larger cell also changes liquid-film thickness.
