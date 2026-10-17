@@ -1,0 +1,331 @@
+<div id="sims-claims-lab">
+<style>
+#sims-claims-lab { color:var(--foreground); }
+#sims-claims-lab .heading { padding-right:94px; }
+#sims-claims-lab .fields { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px 20px; margin:14px 0; }
+#sims-claims-lab .fields > * { min-width:0; }
+#sims-claims-lab .network { display:block; width:100%; }
+#sims-claims-lab .network text { fill:var(--foreground); font:inherit; }
+#sims-claims-lab .edge { stroke:var(--border); stroke-width:1.5; }
+#sims-claims-lab .a { fill:var(--viz-series-1); fill-opacity:.24; }
+#sims-claims-lab .b { fill:var(--viz-series-2); fill-opacity:.24; }
+#sims-claims-lab .observed { fill:none; stroke:var(--foreground); stroke-width:2; }
+#sims-claims-lab .legend { display:flex; flex-wrap:wrap; align-items:center; gap:8px 20px; margin:8px 0 16px; }
+#sims-claims-lab .legend-item { display:inline-flex; align-items:center; gap:7px; }
+#sims-claims-lab .swatch { width:12px; height:12px; background:var(--viz-series-1); border-radius:50%; }
+#sims-claims-lab .swatch.b-square { background:var(--viz-series-2); border-radius:0; }
+#sims-claims-lab .section { margin-top:18px; }
+#sims-claims-lab .phase { display:flex; flex-wrap:wrap; justify-content:space-between; gap:6px 20px; margin-top:14px; }
+#sims-claims-lab .prediction { display:flex; height:12px; width:100%; background:var(--muted); margin:8px 0; }
+#sims-claims-lab .prediction .part-a { background:var(--viz-series-1); }
+#sims-claims-lab .prediction .part-b { background:var(--viz-series-2); }
+#sims-claims-lab .detail { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:6px 18px; }
+#sims-claims-lab .spread { display:flex; flex-wrap:wrap; justify-content:space-between; gap:6px 18px; }
+#sims-claims-lab .evidence-table { table-layout:fixed; width:100%; }
+#sims-claims-lab .evidence-table th:nth-child(1) { width:19%; }
+#sims-claims-lab .evidence-table th:nth-child(2) { width:30%; }
+#sims-claims-lab .evidence-table th:nth-child(3) { width:17%; }
+#sims-claims-lab .evidence-table th:nth-child(4) { width:34%; }
+#sims-claims-lab .label-space { margin-bottom:8px; }
+#sims-claims-lab .lower-space { margin-bottom:14px; }
+@media(max-width:440px) { #sims-claims-lab .fields, #sims-claims-lab .detail { grid-template-columns:1fr; } }
+</style>
+<h3 class="heading">SIMS · claims under test</h3>
+<div class="fields">
+  <label class="form-label">Network<select class="form-select" data-control="topology"><option value="ring">Ring · two neighbors each</option><option value="star">Star · SIM 0 is the hub</option></select></label>
+  <label class="form-label">Starting setup<select class="form-select" data-control="preset"><option value="mismatch">One mismatch · SIM 0</option><option value="matched">All claims match</option><option value="mixed">Mixed rules · two mismatches</option><option value="custom" disabled>Custom rules</option></select></label>
+  <label class="form-label">Investigation<select class="form-select" data-control="mode"><option value="network">Observe network decisions</option><option value="probe">Controlled probes · fixed neighbors</option></select></label>
+  <label class="form-label">Trial seed<input class="form-control tabular-nums" data-control="seed" type="number" min="1" max="2147483647" step="1" value="20261008"></label>
+</div>
+<div class="viz-row">
+  <label class="form-check"><input class="form-check-input" type="checkbox" data-control="initiative" checked><span class="form-check-label">Copying rule: 2% spontaneous flips</span></label>
+</div>
+<div class="phase"><span data-display="phase">Prediction recorded</span><span class="text-small tabular-nums" data-display="clock"></span></div>
+<div data-display="stage"><svg class="network" data-display="network" role="img" aria-label="SIMS network"></svg></div>
+<div class="legend text-small">
+  <span class="legend-item"><span class="swatch" aria-hidden="true"></span>A · circle</span>
+  <span class="legend-item"><span class="swatch b-square" aria-hidden="true"></span>B · square</span>
+  <span>Outer ring · SIM being tested</span>
+</div>
+<div class="card" data-display="current-card">
+  <div class="spread label-space"><span data-display="current-title"></span><span class="text-small" data-display="current-claim"></span></div>
+  <div class="text-small" data-display="context"></div>
+  <div class="prediction" role="img" data-display="probability-bar" aria-label="Predicted probabilities"><div class="part-a" data-display="prob-a"></div><div class="part-b" data-display="prob-b"></div></div>
+  <div class="spread text-small tabular-nums"><span data-display="pred-a"></span><span data-display="pred-b"></span></div>
+  <hr>
+  <div class="spread"><span data-display="outcome"></span><span class="text-small tabular-nums" data-display="outcome-prob"></span></div>
+</div>
+<div class="section">
+  <label class="form-label" for="claims-playback">Replay <output class="tabular-nums" data-display="progress"></output></label>
+  <input class="form-range" id="claims-playback" data-control="cursor" type="range" min="0" max="1" step="1" value="0">
+  <div class="viz-row">
+    <button class="btn btn-primary" data-action="play" type="button">Play</button>
+    <button class="btn" data-action="step" type="button">Observe decision</button>
+    <button class="btn" data-action="finish" type="button">See full run</button>
+    <button class="btn" data-action="new" type="button">New trial</button>
+  </div>
+</div>
+<div class="section">
+  <div class="spread lower-space"><span>Evidence for each participant</span><span class="text-small" data-display="ledger-summary"></span></div>
+  <table class="table table-sm evidence-table">
+    <thead><tr><th scope="col">SIM</th><th scope="col">Stated rule</th><th scope="col" class="text-end">Decisions</th><th scope="col" class="text-end"><span data-tooltip="Relative likelihood of the stated rule among four candidate rules, with equal starting weights. This is not a probability of honesty.">Claim weight</span></th></tr></thead>
+    <tbody data-display="ledger"></tbody>
+  </table>
+</div>
+<div class="section card">
+  <div class="spread label-space"><span data-display="selected-title">Inspect SIM 0</span><span class="text-small" data-display="selected-status"></span></div>
+  <div class="detail text-small"><span data-display="selected-claim"></span><span data-display="best-rule"></span></div>
+  <div class="text-small section" data-display="selected-last"></div>
+  <div class="section"><button class="btn" type="button" data-action="jump">View last tested decision</button></div>
+  <details class="section">
+    <summary>Change this SIM’s claim or behavior</summary>
+    <div class="fields">
+      <label class="form-label">Stated rule<select class="form-select" data-control="claim"><option value="copy">Copy a neighbor</option><option value="hold">Hold starting choice</option><option value="majority">Follow majority</option><option value="oppose">Oppose majority</option></select></label>
+      <label class="form-label">Actual rule · simulation setup<select class="form-select" data-control="actual"><option value="copy">Copy a neighbor</option><option value="hold">Hold starting choice</option><option value="majority">Follow majority</option><option value="oppose">Oppose majority</option></select></label>
+    </div>
+    <span class="text-small">New rule settings restart the investigation.</span>
+  </details>
+</div>
+<div class="text-small section" data-display="setup-label"></div>
+<div class="sr-only" aria-live="polite" data-display="announcement"></div>
+</div>
+<script>
+(() => {
+  'use strict';
+  const root=document.getElementById('sims-claims-lab');
+  const control=n=>root.querySelector('[data-control="'+n+'"]');
+  const display=n=>root.querySelector('[data-display="'+n+'"]');
+  const action=n=>root.querySelector('[data-action="'+n+'"]');
+  const RULES=['copy','hold','majority','oppose'];
+  const NAMES={copy:'Copy neighbor',hold:'Hold start',majority:'Majority',oppose:'Oppose'};
+  const LONG={copy:'Copy a random neighbor; refuse a differing choice 15% of the time',hold:'Keep my starting choice',majority:'Follow my neighbors’ majority; keep my choice on a tie',oppose:'Oppose my neighbors’ majority; keep my choice on a tie'};
+  const N=9, MODEL='sims-claim-testing-v1', ns='http://www.w3.org/2000/svg';
+  let selected=0, cursor=0, timer=null, lastSaved=null, run, ledgers=[], config;
+  const rows=[];
+  const choice=v=>v===0?'A':'B';
+  const clampSeed=v=>Number.isFinite(Number(v))?Math.max(1,Math.min(2147483647,Math.round(Number(v)))):20261008;
+  function rng(seed) {
+    let a=seed>>>0;
+    return ()=>{a=(a+0x6D2B79F5)>>>0;let t=Math.imul(a^(a>>>15),1|a);t^=t+Math.imul(t^(t>>>7),61|t);return ((t^(t>>>14))>>>0)/4294967296;};
+  }
+  function shuffle(items,random) {
+    for(let i=items.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[items[i],items[j]]=[items[j],items[i]];}return items;
+  }
+  function neighbors(topology) {
+    return Array.from({length:N},(_,i)=>topology==='star'?(i===0?[1,2,3,4,5,6,7,8]:[0]):[(i+8)%N,(i+1)%N]);
+  }
+  function preset(name) {
+    const claims=Array(N).fill('copy'),actual=Array(N).fill('copy');
+    if(name==='mismatch')actual[0]='oppose';
+    if(name==='mixed'){
+      ['copy','hold','majority','oppose','copy','hold','majority','oppose','copy'].forEach((r,i)=>{claims[i]=r;actual[i]=r;});
+      actual[0]='oppose';actual[6]='hold';
+    }
+    return {claims,actual};
+  }
+  function normalize(c) {
+    const base=preset('mismatch');
+    const validRules=a=>Array.isArray(a)&&a.length===N&&a.every(r=>RULES.includes(r));
+    return {topology:c?.topology==='star'?'star':'ring',mode:c?.mode==='probe'?'probe':'network',seed:clampSeed(c?.seed??20261008),innovation:c?.innovation===0?0:.02,preset:['matched','mixed','mismatch','custom'].includes(c?.preset)?c.preset:'mismatch',claims:validRules(c?.claims)?c.claims.slice():base.claims,actual:validRules(c?.actual)?c.actual.slice():base.actual};
+  }
+  // Predictor receives observable context and declared candidate rules only.
+  // Inactive seconds are not decisions; predictions are conditional on an active turn.
+  function predict(rule,ctx) {
+    const beforeA=ctx.before===0?1:0;
+    const countA=ctx.neighborStates.filter(v=>v===0).length;
+    const degree=ctx.neighborStates.length;
+    if(rule==='copy')return ctx.innovation*(1-beforeA)+(1-ctx.innovation)*(.85*countA/degree+.15*beforeA);
+    if(rule==='hold')return ctx.initial===0?1:0;
+    if(countA*2===degree)return beforeA;
+    const majorityA=countA*2>degree;
+    return rule==='majority'?(majorityA?1:0):(majorityA?0:1);
+  }
+  // Simulator independently executes behavior, without reading stated claims or evidence.
+  function act(rule,ctx,random) {
+    if(rule==='hold')return ctx.initial;
+    if(rule==='majority'||rule==='oppose'){
+      let a=0,b=0;for(const v of ctx.neighborStates){if(v===0)a++;else b++;}
+      if(a===b)return ctx.before;
+      const majority=a>b?0:1;return rule==='majority'?majority:1-majority;
+    }
+    if(random()<ctx.innovation)return 1-ctx.before;
+    const proposal=ctx.neighborStates[Math.floor(random()*ctx.neighborStates.length)];
+    return proposal!==ctx.before&&random()<.15?ctx.before:proposal;
+  }
+  function simulate(raw) {
+    const c=normalize(raw),startRng=rng(c.seed^0xA341316C),scheduleRng=rng(c.seed^0x8F239D17),decisionRng=rng(c.seed);
+    const initial=Array.from({length:N},()=>startRng()<.5?0:1),adj=neighbors(c.topology),events=[];
+    let state=initial.slice();
+    function takeDecision(seat,second,probeId=null) {
+      const beforeState=state.slice();
+      const ctx={seat,before:state[seat],initial:initial[seat],neighborIds:adj[seat].slice(),neighborStates:adj[seat].map(i=>state[i]),innovation:c.innovation};
+      const predictions=RULES.map(rule=>predict(rule,ctx));
+      const claim=c.claims[seat],claimProbability=predictions[RULES.indexOf(claim)];
+      // Commit predictions before drawing the actual behavior.
+      const committed={ctx,predictions,claim,claimProbability};
+      const observed=act(c.actual[seat],ctx,decisionRng);
+      state[seat]=observed;
+      events.push({...committed,seat,second,probeId,beforeState,afterState:state.slice(),observed});
+    }
+    if(c.mode==='network'){
+      for(let second=1;second<=120;second++)for(const seat of shuffle([0,1,2,3,4,5,6,7,8],scheduleRng)){
+        if(scheduleRng()<.25)takeDecision(seat,second);
+      }
+    }else{
+      const tests=[];
+      for(let seat=0;seat<N;seat++){
+        const degree=adj[seat].length;
+        const counts=Array.from(new Set([0,Math.floor(degree/2),degree]));
+        for(const before of [0,1])for(const countA of counts)for(let repetition=0;repetition<8;repetition++)tests.push({seat,before,countA});
+      }
+      shuffle(tests,scheduleRng).forEach((test,index)=>{
+        state=initial.slice();state[test.seat]=test.before;
+        const ordering=shuffle(adj[test.seat].slice(),scheduleRng);
+        ordering.forEach((id,j)=>{state[id]=j<test.countA?0:1;});
+        takeDecision(test.seat,null,index+1);
+      });
+    }
+    return {initial,events,config:c};
+  }
+  function newLedger() {return {n:0,logL:[0,0,0,0],last:-1};}
+  // Observation updates never receive actual rules. Equal prior weight on four candidates.
+  function observe(ledger,event,index) {
+    const next={n:ledger.n+1,logL:ledger.logL.slice(),last:index};
+    event.predictions.forEach((pA,k)=>{
+      const p=event.observed===0?pA:1-pA;
+      next.logL[k]=p===0?-Infinity:next.logL[k]+Math.log(p);
+    });
+    return next;
+  }
+  function weights(ledger) {
+    const maximum=Math.max(...ledger.logL);
+    if(maximum===-Infinity)return [0,0,0,0];
+    const ls=ledger.logL.map(v=>Math.exp(v-maximum)),sum=ls.reduce((a,b)=>a+b,0);
+    return ls.map(v=>v/sum);
+  }
+  function indexEvidence(events) {
+    const snapshots=[Array.from({length:N},newLedger)];
+    events.forEach((event,index)=>{
+      const next=snapshots[index].slice();next[event.seat]=observe(next[event.seat],event,index);snapshots.push(next);
+    });return snapshots;
+  }
+  function percent(p) {
+    if(p===0)return '0%';if(p===1)return '100%';if(p<.001)return '<0.1%';if(p>.999)return '>99.9%';return (100*p).toFixed(1)+'%';
+  }
+  function svgEl(tag,attrs,text) {
+    const el=document.createElementNS(ns,tag);for(const [k,v] of Object.entries(attrs||{}))el.setAttribute(k,String(v));if(text!==undefined)el.textContent=text;return el;
+  }
+  function htmlEl(tag,cls,text) {const el=document.createElement(tag);if(cls)el.className=cls;if(text!==undefined)el.textContent=text;return el;}
+  function phaseState() {
+    const eventIndex=Math.floor(cursor/2),revealed=cursor%2===1,processed=eventIndex+(revealed?1:0);
+    return {eventIndex,revealed,processed,event:run.events[eventIndex],ledger:ledgers[processed]};
+  }
+  function createRows() {
+    for(let i=0;i<N;i++){
+      const tr=htmlEl('tr'),nameCell=htmlEl('td'),button=htmlEl('button','btn btn-ghost',String(i));
+      button.type='button';button.setAttribute('aria-label','Inspect SIM '+i);button.addEventListener('click',()=>{selected=i;drawSelected();drawLedger();save();announce();});nameCell.append(button);
+      const claim=htmlEl('td'),n=htmlEl('td','text-end tabular-nums'),weight=htmlEl('td','text-end tabular-nums');tr.append(nameCell,claim,n,weight);display('ledger').append(tr);rows.push({button,claim,n,weight});
+    }
+  }
+  function drawNetwork(event,revealed) {
+    const svg=display('network'),width=Math.max(260,display('stage').getBoundingClientRect().width),height=300,cx=width/2,cy=height/2;
+    const radius=Math.min((width-70)/2,111),state=revealed?event.afterState:event.beforeState;
+    svg.setAttribute('viewBox','0 0 '+width+' '+height);svg.setAttribute('height',height);svg.replaceChildren();
+    const coords=Array.from({length:N},(_,i)=>{
+      if(config.topology==='star'&&i===0)return [cx,cy];
+      const angle=-Math.PI/2+2*Math.PI*(config.topology==='star'?(i-1)/8:i/9);return [cx+radius*Math.cos(angle),cy+radius*Math.sin(angle)];
+    });
+    neighbors(config.topology).forEach((list,i)=>list.forEach(j=>{if(i<j)svg.append(svgEl('line',{x1:coords[i][0],y1:coords[i][1],x2:coords[j][0],y2:coords[j][1],class:'edge'}));}));
+    coords.forEach(([x,y],i)=>{
+      const group=svgEl('g',{'data-tooltip':'SIM '+i+' · '+choice(state[i])+' · stated rule: '+NAMES[config.claims[i]]});
+      if(i===event.seat)group.append(svgEl('circle',{cx:x,cy:y,r:29,class:'observed'}));
+      group.append(state[i]===0?svgEl('circle',{cx:x,cy:y,r:23,class:'a'}):svgEl('rect',{x:x-23,y:y-23,width:46,height:46,rx:4,class:'b'}));
+      group.append(svgEl('text',{x,y:y+5,'text-anchor':'middle'},i+' · '+choice(state[i])));svg.append(group);
+    });
+    const a=state.filter(v=>v===0).length;
+    svg.setAttribute('aria-label',config.topology+' network. '+(revealed?'Observed':'Predicting')+' SIM '+event.seat+'. '+a+' choose A, '+(9-a)+' choose B.');
+  }
+  function drawLedger() {
+    const {ledger,processed}=phaseState();let impossible=0;
+    ledger.forEach((l,i)=>{
+      const r=rows[i],k=RULES.indexOf(config.claims[i]),w=weights(l);
+      r.button.setAttribute('aria-pressed',i===selected?'true':'false');r.claim.textContent=NAMES[config.claims[i]];r.n.textContent=l.n;
+      const ruledOut=l.logL[k]===-Infinity;if(ruledOut)impossible++;
+      r.weight.textContent=l.n===0?'—':ruledOut?'Ruled out':percent(w[k]);
+      r.weight.setAttribute('data-tooltip',l.n===0?'No observed decisions yet':ruledOut?'At least one observed action had zero probability under the stated rule':'Relative support among four candidate rules; '+ledger[i].n+' active decisions');
+    });
+    display('ledger-summary').textContent=processed+' observed · '+impossible+' claims ruled out';
+  }
+  function drawSelected() {
+    const {ledger}=phaseState(),l=ledger[selected],w=weights(l),claim=config.claims[selected],maximum=Math.max(...w),tops=RULES.filter((_,k)=>Math.abs(w[k]-maximum)<1e-10);
+    display('selected-title').textContent='Inspect SIM '+selected;
+    display('selected-status').textContent=l.n===0?'Awaiting evidence':l.logL[RULES.indexOf(claim)]===-Infinity?'Claim contradicted by an observation':'Claim remains possible';
+    display('selected-claim').textContent='Claim: '+LONG[claim]+(claim==='copy'?' · '+Math.round(config.innovation*100)+'% spontaneous flips':'');
+    display('best-rule').textContent=l.n===0?'Four candidate rules · equal starting weights':'Best fit: '+tops.map(r=>NAMES[r]).join(' / ');
+    if(l.last<0)display('selected-last').textContent='No decision observed yet.';
+    else{
+      const e=run.events[l.last],p=e.observed===0?e.claimProbability:1-e.claimProbability;
+      display('selected-last').textContent='Last test: '+(e.probeId?'probe '+e.probeId:e.second+' s')+' · predicted A '+percent(e.claimProbability)+', B '+percent(1-e.claimProbability)+' · observed '+choice(e.observed)+' ('+percent(p)+' under claim).';
+    }
+    action('jump').disabled=l.last<0;
+    control('claim').value=claim;control('actual').value=config.actual[selected];
+  }
+  function draw() {
+    if(!run.events.length)return;
+    const p=phaseState(),e=p.event;
+    drawNetwork(e,p.revealed);
+    display('phase').textContent=p.revealed?'Observation → compare':'Claim → prediction recorded';
+    display('clock').textContent=config.mode==='network'?'Model time '+e.second+' / 120 s':'Controlled probe '+e.probeId+' / '+run.events.length;
+    display('current-title').textContent='Testing SIM '+e.seat;
+    display('current-claim').textContent='Stated rule: '+NAMES[e.claim];
+    display('context').textContent='Before: '+choice(e.ctx.before)+' · neighbors: '+e.ctx.neighborIds.map((id,j)=>id+'='+choice(e.ctx.neighborStates[j])).join(', ');
+    display('prob-a').style.width=(e.claimProbability*100)+'%';display('prob-b').style.width=((1-e.claimProbability)*100)+'%';
+    display('probability-bar').setAttribute('aria-label','Prediction before action: A '+percent(e.claimProbability)+', B '+percent(1-e.claimProbability));
+    display('pred-a').textContent='Predicted A: '+percent(e.claimProbability);display('pred-b').textContent='Predicted B: '+percent(1-e.claimProbability);
+    display('outcome').textContent=p.revealed?'Actually chose '+choice(e.observed)+(e.observed===e.ctx.before?' · stayed':' · switched'):'Outcome not yet shown';
+    display('outcome-prob').textContent=p.revealed?'Probability under claim: '+percent(e.observed===0?e.claimProbability:1-e.claimProbability):'Evidence unchanged';
+    const maximum=run.events.length*2-1;
+    control('cursor').max=maximum;control('cursor').value=cursor;
+    display('progress').textContent=(p.eventIndex+1)+' / '+run.events.length+' decisions';
+    action('step').textContent=p.revealed?'Next prediction':'Observe decision';action('step').disabled=cursor===maximum;action('finish').disabled=cursor===maximum;
+    action('play').textContent=timer!==null?'Pause':cursor===maximum?'Replay':'Play';
+    display('setup-label').textContent=config.mode==='network'?'120 model seconds · 25% activation · shuffled turns':'Separate active trials · own choice and neighbors clamped · 8 repeats per distinct context';
+    drawLedger();drawSelected();
+  }
+  function pause(){if(timer!==null)window.clearInterval(timer);timer=null;}
+  function announce(){const p=phaseState();display('announcement').textContent=display('phase').textContent+'. Testing SIM '+p.event.seat+'. '+display('outcome').textContent+'. '+display('ledger-summary').textContent;}
+  function save(){
+    if(!window.openai?.setWidgetState)return;
+    const p=phaseState(),state={modelContent:{model:MODEL,config,cursor,selected,processedDecisions:p.processed,evidence:p.ledger.map((l,i)=>({sim:i,claim:config.claims[i],decisions:l.n,claimWeight:weights(l)[RULES.indexOf(config.claims[i])],impossible:l.logL[RULES.indexOf(config.claims[i])]===-Infinity})),method:'Predictions conditional on observable pre-action context; four candidate likelihoods updated after each observed active decision, equal prior weights; simulator rules excluded from scoring.'},privateContent:{version:1}};
+    lastSaved=JSON.stringify(state.modelContent);try{Promise.resolve(window.openai.setWidgetState(state)).catch(()=>{});}catch(_){}
+  }
+  function syncControls(){control('topology').value=config.topology;control('mode').value=config.mode;control('seed').value=config.seed;control('preset').value=config.preset;control('initiative').checked=config.innovation>0;}
+  function rebuild(remember=true){pause();run=simulate(config);ledgers=indexEvidence(run.events);cursor=0;syncControls();draw();if(remember){save();announce();}}
+  function readSettings(){config={...config,topology:control('topology').value,mode:control('mode').value,seed:clampSeed(control('seed').value),innovation:control('initiative').checked ? .02 : 0};}
+  ['topology','mode','seed','initiative'].forEach(n=>control(n).addEventListener('change',()=>{readSettings();rebuild();}));
+  control('preset').addEventListener('change',()=>{const name=control('preset').value;if(name==='custom')return;config={...config,preset:name,...preset(name)};rebuild();});
+  control('claim').addEventListener('change',()=>{config.claims=config.claims.slice();config.claims[selected]=control('claim').value;config.preset='custom';rebuild();});
+  control('actual').addEventListener('change',()=>{config.actual=config.actual.slice();config.actual[selected]=control('actual').value;config.preset='custom';rebuild();});
+  control('cursor').addEventListener('input',()=>{pause();cursor=Number(control('cursor').value);draw();});
+  control('cursor').addEventListener('change',()=>{save();announce();});
+  action('step').addEventListener('click',()=>{pause();cursor=Math.min(run.events.length*2-1,cursor+1);draw();save();announce();});
+  action('finish').addEventListener('click',()=>{pause();cursor=run.events.length*2-1;draw();save();announce();});
+  action('new').addEventListener('click',()=>{config.seed=config.seed===2147483647?1:config.seed+1;rebuild();});
+  action('jump').addEventListener('click',()=>{const last=phaseState().ledger[selected].last;if(last>=0){pause();cursor=last*2+1;draw();save();announce();}});
+  action('play').addEventListener('click',()=>{
+    if(timer!==null){pause();draw();save();announce();return;}
+    if(cursor===run.events.length*2-1)cursor=0;
+    const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    timer=window.setInterval(()=>{cursor=Math.min(run.events.length*2-1,cursor+1);if(cursor===run.events.length*2-1)pause();draw();if(timer===null){save();announce();}},reduced?1000:450);draw();save();
+  });
+  function restore(state){
+    const c=state?.modelContent;if(c?.model!==MODEL)return false;
+    pause();config=normalize(c.config);selected=Math.max(0,Math.min(8,Math.round(Number(c.selected)||0)));rebuild(false);cursor=Math.max(0,Math.min(run.events.length*2-1,Math.round(Number(c.cursor)||0)));draw();return true;
+  }
+  createRows();config=normalize({});
+  if(!restore(window.openai?.widgetState))rebuild(false);
+  window.addEventListener('openai:set_globals',event=>{const state=event.detail?.globals?.widgetState;if(state?.modelContent?.model===MODEL&&JSON.stringify(state.modelContent)!==lastSaved)restore(state);});
+  new ResizeObserver(()=>{const p=phaseState();if(p.event)drawNetwork(p.event,p.revealed);}).observe(display('stage'));
+  document.addEventListener('visibilitychange',()=>{if(document.hidden&&timer!==null){pause();draw();save();}});
+})();
+</script>

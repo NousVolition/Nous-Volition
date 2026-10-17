@@ -1,0 +1,262 @@
+<div id="sims-network-lab">
+  <style>
+    #sims-network-lab { color: var(--foreground); }
+    #sims-network-lab .sim-heading { padding-right: 94px; margin-bottom: 16px; }
+    #sims-network-lab .sim-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 20px; }
+    #sims-network-lab .sim-fields > label { min-width: 0; }
+    #sims-network-lab .sim-stage { width: 100%; margin: 8px 0; }
+    #sims-network-lab .sim-network { display: block; width: 100%; overflow: visible; }
+    #sims-network-lab .sim-network text { fill: var(--foreground); font: inherit; }
+    #sims-network-lab .sim-edge { stroke: var(--border); stroke-width: 1.5; }
+    #sims-network-lab .sim-a { fill: var(--viz-series-1); fill-opacity: .23; }
+    #sims-network-lab .sim-b { fill: var(--viz-series-2); fill-opacity: .23; }
+    #sims-network-lab .sim-role { fill: none; stroke: var(--foreground); stroke-width: 1.5; stroke-dasharray: 3 3; }
+    #sims-network-lab .sim-active { stroke: var(--foreground); stroke-width: 2; }
+    #sims-network-lab .sim-legend { display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: center; }
+    #sims-network-lab .sim-legend-item { display: inline-flex; align-items: center; gap: 7px; }
+    #sims-network-lab .sim-dot { display: inline-block; width: 12px; height: 12px; background: var(--viz-series-1); border-radius: 50%; }
+    #sims-network-lab .sim-square { display: inline-block; width: 12px; height: 12px; background: var(--viz-series-2); }
+    #sims-network-lab .sim-time { margin: 16px 0 10px; }
+    #sims-network-lab .sim-status { margin: 12px 0; display: flex; flex-wrap: wrap; gap: 6px 20px; }
+    #sims-network-lab .sim-event { min-height: 2.8em; margin-top: 10px; }
+    @media (max-width: 430px) { #sims-network-lab .sim-fields { grid-template-columns: 1fr; } }
+  </style>
+  <h3 class="sim-heading">SIMS · local coordination</h3>
+  <div class="sim-fields">
+    <label class="form-label">Network
+      <select class="form-select" data-control="topology">
+        <option value="ring">Ring · two neighbors each</option>
+        <option value="star">Star · SIM 0 is the hub</option>
+      </select>
+    </label>
+    <label class="form-label">Resistance assigned to a seat
+      <select class="form-select" data-control="resistance">
+        <option value="ordinary:0">None · ordinary copying</option>
+        <option value="hold:0">SIM 0 holds its starting choice</option>
+        <option value="hold:1">SIM 1 holds its starting choice</option>
+        <option value="oppose:0">SIM 0 opposes its neighbors</option>
+        <option value="oppose:1">SIM 1 opposes its neighbors</option>
+      </select>
+    </label>
+    <label class="form-label">Trial seed
+      <input class="form-control tabular-nums" data-control="seed" type="number" min="1" max="2147483647" step="1" value="20261008">
+    </label>
+    <div class="viz-row">
+      <label class="form-check">
+        <input class="form-check-input" data-control="initiative" type="checkbox">
+        <span class="form-check-label">Spontaneous flips · 2% per active turn</span>
+      </label>
+    </div>
+  </div>
+  <div class="sim-stage">
+    <svg class="sim-network" role="img" aria-label="Nine SIMS connected in a ring" data-display="network"></svg>
+  </div>
+  <div class="sim-legend text-small">
+    <span class="sim-legend-item"><span class="sim-dot" aria-hidden="true"></span>Choice A · circle</span>
+    <span class="sim-legend-item"><span class="sim-square" aria-hidden="true"></span>Choice B · square</span>
+    <span data-display="role-legend" hidden>Dashed ring · assigned resistance</span>
+  </div>
+  <div class="sim-time">
+    <label class="form-label" for="sims-playback">Model time <output class="tabular-nums" data-display="time">0 / 120 s</output></label>
+    <input class="form-range" id="sims-playback" data-control="time" type="range" min="0" max="120" step="1" value="0">
+  </div>
+  <div class="viz-row">
+    <button class="btn btn-primary" type="button" data-action="play">Play</button>
+    <button class="btn" type="button" data-action="step">Step 1 s</button>
+    <button class="btn" type="button" data-action="new">New trial</button>
+  </div>
+  <div class="sim-status text-small tabular-nums">
+    <span data-display="votes">A: 0 · B: 0</span>
+    <span>First agreement: <span data-display="first">—</span></span>
+    <span>Agreement breaks: <span data-display="breaks">0</span></span>
+  </div>
+  <div class="sim-event text-small" data-display="event">Starting choices</div>
+  <div class="sr-only" data-display="announcement" aria-live="polite"></div>
+</div>
+<script>
+(() => {
+  'use strict';
+  const root = document.getElementById('sims-network-lab');
+  const control = name => root.querySelector('[data-control="' + name + '"]');
+  const display = name => root.querySelector('[data-display="' + name + '"]');
+  const action = name => root.querySelector('[data-action="' + name + '"]');
+  const ns = 'http://www.w3.org/2000/svg';
+  const defaults = { topology: 'ring', policy: 'ordinary', seat: 0, seed: 20261008, innovation: 0 };
+  let config = { ...defaults }, trace = [], time = 0, timer = null, lastSaved = null;
+  const choice = v => v === 0 ? 'A' : 'B';
+  const unanimous = state => state.every(v => v === state[0]);
+  function randomStream(seed) {
+    let a = seed >>> 0;
+    return () => {
+      a = (a + 0x6D2B79F5) >>> 0;
+      let t = Math.imul(a ^ (a >>> 15), 1 | a);
+      t ^= t + Math.imul(t ^ (t >>> 7), 61 | t);
+      return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+  }
+  function neighborsFor(topology) {
+    return Array.from({length: 9}, (_, i) => topology === 'star'
+      ? (i === 0 ? [1,2,3,4,5,6,7,8] : [0]) : [(i + 8) % 9, (i + 1) % 9]);
+  }
+  function simulate(c) {
+    const starts = randomStream((c.seed ^ 0xA341316C) >>> 0);
+    const rng = randomStream(c.seed);
+    const initial = Array.from({length: 9}, () => starts() < .5 ? 0 : 1);
+    const state = initial.slice(), neighbors = neighborsFor(c.topology);
+    let first = unanimous(state) ? 0 : null, breaks = 0;
+    const frames = [{state: state.slice(), first, breaks, events: []}];
+    for (let second = 1; second <= 120; second++) {
+      const order = [0,1,2,3,4,5,6,7,8], events = [];
+      for (let i = 8; i > 0; i--) {
+        const j = Math.floor(rng() * (i + 1));
+        [order[i], order[j]] = [order[j], order[i]];
+      }
+      for (const s of order) {
+        if (rng() >= .25) continue;
+        const before = state[s], was = unanimous(state);
+        let target, donor = null, refused = false, reason;
+        if (rng() < c.innovation) {
+          target = 1 - before; reason = 'initiative';
+        } else {
+          donor = neighbors[s][Math.floor(rng() * neighbors[s].length)];
+          target = state[donor]; reason = 'copy';
+          refused = target !== before && rng() < .15;
+        }
+        if (s === c.seat && c.policy === 'hold') {
+          target = initial[s]; refused = false; donor = null; reason = 'hold';
+        } else if (s === c.seat && c.policy === 'oppose') {
+          const a = neighbors[s].filter(n => state[n] === 0).length;
+          const b = neighbors[s].length - a;
+          target = a > b ? 1 : b > a ? 0 : before;
+          refused = false; donor = null; reason = a === b ? 'tie' : 'oppose';
+        }
+        if (!refused) state[s] = target;
+        const now = unanimous(state);
+        if (was && !now) breaks++;
+        if (now && first === null) first = second;
+        events.push({seat:s, before, after:state[s], target, donor, refused, reason});
+      }
+      frames.push({state:state.slice(), first, breaks, events});
+    }
+    return frames;
+  }
+  function element(tag, attrs, text) {
+    const el = document.createElementNS(ns, tag);
+    Object.entries(attrs || {}).forEach(([k,v]) => el.setAttribute(k, String(v)));
+    if (text !== undefined) el.textContent = text;
+    return el;
+  }
+  function describeEvent(e) {
+    if (!e) return time === 0 ? 'Starting choices · seat numbers 0–8' : 'No active turns this model second.';
+    const name = 'SIM ' + e.seat;
+    if (e.reason === 'hold') return name + ' held its starting choice ' + choice(e.after) + '.';
+    if (e.reason === 'tie') return name + ' saw a tied neighborhood and kept ' + choice(e.after) + '.';
+    if (e.reason === 'oppose') return name + ' opposed its neighbors’ majority: ' + choice(e.before) + ' → ' + choice(e.after) + '.';
+    if (e.reason === 'initiative') return name + ' flipped spontaneously: ' + choice(e.before) + ' → ' + choice(e.after) + '.';
+    if (e.refused) return name + ' refused SIM ' + e.donor + '’s choice ' + choice(e.target) + ' and kept ' + choice(e.after) + '.';
+    return name + ' copied SIM ' + e.donor + ': ' + choice(e.before) + ' → ' + choice(e.after) + '.';
+  }
+  function draw() {
+    const frame = trace[time], svg = display('network');
+    if (!frame) return;
+    const width = Math.max(260, root.querySelector('.sim-stage').getBoundingClientRect().width);
+    const height = width < 430 ? 330 : 340, cx = width / 2, cy = height / 2 - 3;
+    const radius = Math.min((width - 76) / 2, (height - 88) / 2);
+    const coords = Array.from({length:9}, (_,i) => {
+      if (config.topology === 'star' && i === 0) return [cx,cy];
+      const theta = -Math.PI/2 + 2*Math.PI*(config.topology === 'star' ? (i-1)/8 : i/9);
+      return [cx + radius*Math.cos(theta), cy + radius*Math.sin(theta)];
+    });
+    const aCount = frame.state.filter(v => v === 0).length;
+    const last = frame.events[frame.events.length - 1];
+    svg.setAttribute('viewBox', '0 0 ' + width + ' ' + height);
+    svg.setAttribute('height', height);
+    svg.setAttribute('aria-label', 'At model time ' + time + ' seconds, ' + aCount + ' SIMS choose A and ' + (9-aCount) + ' choose B. Network: ' + config.topology + '.');
+    svg.replaceChildren();
+    const neighbors = neighborsFor(config.topology);
+    neighbors.forEach((list,i) => list.forEach(j => {
+      if (j > i) svg.append(element('line', {x1:coords[i][0],y1:coords[i][1],x2:coords[j][0],y2:coords[j][1],class:'sim-edge'}));
+    }));
+    coords.forEach(([x,y],i) => {
+      const group = element('g', {'data-tooltip':'SIM ' + i + ' · choice ' + choice(frame.state[i]) + ' · ' + neighbors[i].length + ' neighbor' + (neighbors[i].length===1?'':'s')});
+      const isRole = config.policy !== 'ordinary' && config.seat === i;
+      const cls = (frame.state[i]===0 ? 'sim-a' : 'sim-b') + (last && last.seat===i ? ' sim-active' : '');
+      if (isRole) group.append(element('circle',{cx:x,cy:y,r:29,class:'sim-role'}));
+      group.append(frame.state[i]===0 ? element('circle',{cx:x,cy:y,r:23,class:cls}) : element('rect',{x:x-23,y:y-23,width:46,height:46,rx:4,class:cls}));
+      group.append(element('text',{x,y:y+5,'text-anchor':'middle'}, i + ' · ' + choice(frame.state[i])));
+      if (isRole) group.append(element('text',{x,y:y+45,'text-anchor':'middle',class:'text-small'},config.policy==='hold'?'holds':'opposes'));
+      svg.append(group);
+    });
+    display('role-legend').hidden = config.policy === 'ordinary';
+    display('time').textContent = time + ' / 120 s';
+    control('time').value = time;
+    display('votes').textContent = 'A: ' + aCount + ' · B: ' + (9-aCount) + (unanimous(frame.state) ? ' · unanimous now' : ' · mixed now');
+    display('first').textContent = frame.first === null ? 'not yet' : frame.first + ' s';
+    display('breaks').textContent = frame.breaks;
+    display('event').textContent = (time > 0 && last ? 'Last active turn: ' : '') + describeEvent(last);
+    action('step').disabled = time === 120;
+    action('play').textContent = timer !== null ? 'Pause' : time === 120 ? 'Replay' : 'Play';
+  }
+  function announce() {
+    const f = trace[time];
+    display('announcement').textContent = 'Model time ' + time + ' seconds. ' + display('votes').textContent + '. First agreement ' + (f.first===null?'not yet':f.first+' seconds') + '. Agreement breaks ' + f.breaks + '.';
+  }
+  function save() {
+    if (!window.openai || typeof window.openai.setWidgetState !== 'function') return;
+    const f=trace[time];
+    const state={modelContent:{model:'nine-sims-local-copying-v1',...config,activation:.25,refusal:.15,horizon:120,time,choices:f.state,firstAgreement:f.first,agreementBreaks:f.breaks,source:'NousVolition/Nous-Volition/studies/one-resisting-position/experiment.py',rng:'Mulberry32; illustrative trajectories, not Python ensemble replay'},privateContent:{version:1}};
+    lastSaved = JSON.stringify(state.modelContent);
+    try { Promise.resolve(window.openai.setWidgetState(state)).catch(()=>{}); } catch (_) {}
+  }
+  function pause() {
+    if (timer !== null) window.clearInterval(timer);
+    timer = null;
+  }
+  function readControls() {
+    const [policy,seat] = control('resistance').value.split(':');
+    const raw = Number(control('seed').value);
+    config={topology:control('topology').value,policy,seat:Number(seat),seed:Number.isFinite(raw)?Math.max(1,Math.min(2147483647,Math.round(raw))):defaults.seed,innovation:control('initiative').checked ? .02 : 0};
+    control('seed').value=config.seed;
+  }
+  function rebuild() {
+    pause(); readControls(); trace=simulate(config); time=0; draw(); announce(); save();
+  }
+  function hydrate(state) {
+    const c = state && state.modelContent;
+    if (!c || c.model !== 'nine-sims-local-copying-v1') return false;
+    config={topology:['ring','star'].includes(c.topology)?c.topology:defaults.topology,policy:['ordinary','hold','oppose'].includes(c.policy)?c.policy:defaults.policy,seat:c.seat===1?1:0,seed:Number.isFinite(c.seed)?Math.max(1,Math.min(2147483647,Math.round(c.seed))):defaults.seed,innovation:c.innovation===.02 ? .02 : 0};
+    control('topology').value=config.topology;
+    control('resistance').value=config.policy+':'+config.seat;
+    if(config.policy==='ordinary') control('resistance').value='ordinary:0';
+    control('seed').value=config.seed;
+    control('initiative').checked=config.innovation>0;
+    trace=simulate(config);time=Math.max(0,Math.min(120,Math.round(Number(c.time)||0)));
+    return true;
+  }
+  ['topology','resistance','seed','initiative'].forEach(name=>control(name).addEventListener('change',rebuild));
+  control('time').addEventListener('input',()=>{pause();time=Number(control('time').value);draw();});
+  control('time').addEventListener('change',()=>{announce();save();});
+  action('new').addEventListener('click',()=>{control('seed').value=config.seed===2147483647?1:config.seed+1;rebuild();});
+  action('step').addEventListener('click',()=>{pause();time=Math.min(120,time+1);draw();announce();save();});
+  action('play').addEventListener('click',()=>{
+    if(timer!==null){pause();draw();announce();save();return;}
+    if(time===120)time=0;
+    const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    timer=window.setInterval(()=>{
+      time=Math.min(120,time+1);
+      if(time===120)pause();
+      draw();
+      if(time===120){announce();save();}
+    },reduced?900:400);
+    draw();save();
+  });
+  if(!hydrate(window.openai && window.openai.widgetState)) trace=simulate(config);
+  window.addEventListener('openai:set_globals',event=>{
+    const state=event.detail && event.detail.globals && event.detail.globals.widgetState;
+    if(state && state.modelContent && state.modelContent.model==='nine-sims-local-copying-v1' && JSON.stringify(state.modelContent)!==lastSaved){pause();hydrate(state);draw();}
+  });
+  new ResizeObserver(draw).observe(root.querySelector('.sim-stage'));
+  document.addEventListener('visibilitychange',()=>{if(document.hidden && timer!==null){pause();draw();save();}});
+  draw();
+})();
+</script>

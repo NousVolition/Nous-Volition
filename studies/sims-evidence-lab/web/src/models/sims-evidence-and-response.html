@@ -1,0 +1,452 @@
+<div id="sims-response-lab">
+<style>
+#sims-response-lab { color:var(--foreground); }
+#sims-response-lab .heading { padding-right:94px; }
+#sims-response-lab .section { margin-top:18px; }
+#sims-response-lab .spread { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:8px 18px; }
+#sims-response-lab .fields { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px 18px; margin:14px 0; }
+#sims-response-lab .fields > * { min-width:0; }
+#sims-response-lab .network { display:block; width:100%; }
+#sims-response-lab .network text { fill:var(--foreground); font:inherit; }
+#sims-response-lab .edge { stroke:var(--border); stroke-width:1.5; }
+#sims-response-lab .a { fill:var(--viz-series-1); fill-opacity:.24; }
+#sims-response-lab .b { fill:var(--viz-series-2); fill-opacity:.24; }
+#sims-response-lab .focus { fill:none; stroke:var(--foreground); stroke-width:2; }
+#sims-response-lab .legend { display:flex; flex-wrap:wrap; gap:8px 20px; margin:8px 0 16px; }
+#sims-response-lab .legend-item { display:inline-flex; align-items:center; gap:7px; }
+#sims-response-lab .swatch { width:12px; height:12px; background:var(--viz-series-1); border-radius:50%; }
+#sims-response-lab .swatch-b { background:var(--viz-series-2); border-radius:0; }
+#sims-response-lab .gap-top { margin-top:10px; }
+#sims-response-lab .evidence-list { display:grid; gap:8px; padding-left:20px; margin:10px 0; }
+#sims-response-lab .weight-row { display:grid; grid-template-columns:100px minmax(0,1fr) 66px; gap:10px; align-items:center; margin:6px 0; }
+#sims-response-lab .track { height:7px; background:var(--muted); }
+#sims-response-lab .weight { height:100%; background:var(--viz-series-1); }
+#sims-response-lab .prediction { display:flex; height:10px; background:var(--muted); margin:10px 0; }
+#sims-response-lab .part-a { background:var(--viz-series-1); }
+#sims-response-lab .part-b { background:var(--viz-series-2); }
+#sims-response-lab .changes { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px 18px; margin-top:14px; }
+#sims-response-lab .change-line { display:block; }
+#sims-response-lab .rule-change { font-weight:500; }
+#sims-response-lab .table-wrap { margin-top:12px; }
+#sims-response-lab .table-wrap table { width:100%; table-layout:fixed; }
+#sims-response-lab .table-wrap col:first-child { width:20%; }
+#sims-response-lab .methods { display:grid; grid-template-columns:max-content minmax(0,1fr); gap:8px 16px; }
+#sims-response-lab .methods dt { font-weight:500; }
+#sims-response-lab .methods dd { margin:0; }
+@media(max-width:440px) { #sims-response-lab .fields, #sims-response-lab .changes { grid-template-columns:1fr; } #sims-response-lab .methods { grid-template-columns:1fr; gap:5px; } }
+</style>
+<h3 class="heading">SIMS · evidence and response</h3>
+<div class="text-small">Feynman · investigator</div>
+<div class="section viz-row" aria-label="Investigation stages">
+  <button type="button" class="btn" data-action="before">1 · Before</button>
+  <button type="button" class="btn" data-action="exchange">2 · Evidence &amp; replies</button>
+  <button type="button" class="btn" data-action="after">3 · After</button>
+</div>
+<div class="spread section"><span data-display="phase"></span><span class="text-small tabular-nums" data-display="clock"></span></div>
+<div data-display="stage"><svg class="network" data-display="network" role="img" aria-label="SIMS network"></svg></div>
+<div class="legend text-small">
+  <span class="legend-item"><span class="swatch" aria-hidden="true"></span>A · circle</span>
+  <span class="legend-item"><span class="swatch swatch-b" aria-hidden="true"></span>B · square</span>
+  <span>Outer ring · current participant</span>
+</div>
+<div data-display="exchange-panel">
+  <div class="card">
+    <div class="spread"><span data-display="investigator-title"></span><span class="text-small" data-display="packet-size"></span></div>
+    <div class="gap-top" data-display="evidence-message"></div>
+    <div class="text-small gap-top" data-tooltip="Each rule starts with 25% support. Observed actions update their relative likelihoods; the four weights sum to 100%.">Relative support · four candidate rules</div>
+    <div class="gap-top" data-display="weights" role="img" aria-label="Support for four candidate rules"></div>
+    <details class="gap-top">
+      <summary>Recorded actions shown to this participant</summary>
+      <ol class="evidence-list text-small" data-display="examples"></ol>
+      <div class="text-small" data-display="example-note"></div>
+    </details>
+    <hr>
+    <div class="spread"><span data-display="reply-title"></span><span class="text-small" data-display="policy-label"></span></div>
+    <div class="gap-top" data-display="reply"></div>
+    <div class="changes">
+      <div><span class="text-small">Stated claim</span><span class="change-line" data-display="exchange-claim"></span></div>
+      <div><span class="text-small">Behavior rule · model</span><span class="change-line" data-display="exchange-behavior"></span></div>
+    </div>
+  </div>
+</div>
+<div data-display="decision-panel" hidden>
+  <div class="card">
+    <div class="spread"><span data-display="decision-title"></span><span class="text-small" data-display="decision-claim"></span></div>
+    <div class="text-small gap-top" data-display="context"></div>
+    <div class="prediction" role="img" data-display="probability" aria-label="Predicted probabilities"><div class="part-a" data-display="prob-a"></div><div class="part-b" data-display="prob-b"></div></div>
+    <div class="spread text-small tabular-nums"><span data-display="pred-a"></span><span data-display="pred-b"></span></div>
+    <hr>
+    <div class="spread"><span data-display="outcome"></span><span class="text-small" data-display="outcome-prob"></span></div>
+  </div>
+</div>
+<div class="section">
+  <label class="form-label" for="sims-response-replay">Replay <output class="tabular-nums" data-display="progress"></output></label>
+  <input class="form-range" id="sims-response-replay" data-control="cursor" type="range" min="0" max="17" step="1" value="0">
+  <div class="viz-row">
+    <button class="btn btn-primary" type="button" data-action="step">Let SIM 0 respond</button>
+    <button class="btn" type="button" data-action="play">Play</button>
+    <button class="btn" type="button" data-action="finish">See outcomes</button>
+  </div>
+</div>
+<div class="section">
+  <div class="spread"><span>What changed?</span><span class="text-small" data-display="summary"></span></div>
+  <div class="table-wrap">
+    <table class="table table-sm">
+      <colgroup><col><col><col></colgroup>
+      <thead><tr><th scope="col">SIM</th><th scope="col">Claim</th><th scope="col">Behavior rule</th></tr></thead>
+      <tbody data-display="changes"></tbody>
+    </table>
+  </div>
+</div>
+<div class="section card">
+  <div class="spread"><span data-display="selected-title"></span><button class="btn btn-ghost" type="button" data-action="read-reply">Read exchange</button></div>
+  <div class="gap-top" data-display="selected-reply"></div>
+  <div class="gap-top" data-display="followup"></div>
+  <div class="text-small gap-top" data-display="followup-weight"></div>
+  <details class="section">
+    <summary>Edit this participant</summary>
+    <div class="fields">
+      <label class="form-label">Starting claim<select class="form-select" data-control="claim"><option value="copy">Copy a neighbor</option><option value="hold">Hold starting choice</option><option value="majority">Follow majority</option><option value="oppose">Oppose majority</option></select></label>
+      <label class="form-label">Starting behavior rule<select class="form-select" data-control="actual"><option value="copy">Copy a neighbor</option><option value="hold">Hold starting choice</option><option value="majority">Follow majority</option><option value="oppose">Oppose majority</option></select></label>
+      <label class="form-label">Response rule · model assumption<select class="form-select" data-control="policy"><option value="claim">Revise claim only</option><option value="behavior">Change behavior to match claim</option><option value="both">Adopt best fit in claim &amp; behavior</option><option value="promise">Promise change; retain behavior</option><option value="keep">Keep claim &amp; behavior</option></select></label>
+    </div>
+    <div class="text-small">Edits rerun the investigation from the starting setup.</div>
+  </details>
+</div>
+<details class="section">
+  <summary>Network and investigation settings</summary>
+  <div class="fields">
+    <label class="form-label">Starting setup<select class="form-select" data-control="preset"><option value="mismatch">Original · one mismatch at SIM 0</option><option value="contrast">Contrasting replies · controlled probes</option><option value="matched">All claims match</option><option value="mixed">Mixed rules · two mismatches</option><option value="custom" disabled>Custom</option></select></label>
+    <label class="form-label">Network<select class="form-select" data-control="topology"><option value="ring">Ring · two neighbors each</option><option value="star">Star · SIM 0 is the hub</option></select></label>
+    <label class="form-label">Evidence collection<select class="form-select" data-control="mode"><option value="network">Network decisions · before &amp; after</option><option value="probe">Controlled probes · before &amp; after</option></select></label>
+    <label class="form-label">Trial seed<input class="form-control tabular-nums" data-control="seed" type="number" min="1" max="2147483647" step="1" value="20261008"></label>
+  </div>
+  <div class="viz-row"><label class="form-check"><input class="form-check-input" data-control="innovation" type="checkbox" checked><span class="form-check-label">Copying rule: 2% spontaneous flips</span></label><button class="btn" type="button" data-action="new">New trial</button></div>
+</details>
+<details class="section">
+  <summary>Methods and response assumptions</summary>
+  <dl class="methods text-small">
+    <dt>Decision rules</dt><dd>Copy: random neighbor, 15% refusal of a different choice; optional 2% flip. Hold: original starting choice. Majority / oppose: local majority / opposite; retain current choice on ties.</dd>
+    <dt>Evidence</dt><dd>Predictions recorded before actions; likelihoods scored on observed context and outcomes. Four rules, each starting at 25% support. After each action, multiply each weight by its predicted probability of that action, then normalize the four weights to total 100%. Actual rule settings excluded from investigator scoring.</dd>
+    <dt>Response trigger</dt><dd>At least 12 actions; a unique alternative with ≥80% relative support and ≥10× the stated rule’s likelihood. Below threshold: retain settings and request more evidence.</dd>
+    <dt>Responses</dt><dd>Editable, deterministic participant policies. Dialogue is generated from evidence and policy; the investigator is named Feynman in this model.</dd>
+    <dt>Sequence</dt><dd>Collect evidence → show each SIM its own record → apply replies → collect fresh actions. Decisions pause during the nine exchanges.</dd>
+    <dt>Follow-up</dt><dd>Fresh likelihoods start from equal weights. Network: 120 seconds, 25% activation, shuffled turns. Probes: own choice and neighbor choices fixed; 8 repetitions per distinct context.</dd>
+    <dt>Behavior change</dt><dd>The table shows actual rule changes inside the simulator. Fresh-action evidence independently reports which rule the observations support.</dd>
+  </dl>
+</details>
+<div class="sr-only" aria-live="polite" data-display="announcement"></div>
+</div>
+<script>
+(() => {
+  'use strict';
+  const root=document.getElementById('sims-response-lab');
+  const control=n=>root.querySelector('[data-control="'+n+'"]');
+  const display=n=>root.querySelector('[data-display="'+n+'"]');
+  const action=n=>root.querySelector('[data-action="'+n+'"]');
+  const RULES=['copy','hold','majority','oppose'],POLICIES=['claim','behavior','both','promise','keep'];
+  const NAMES={copy:'Copy neighbor',hold:'Hold start',majority:'Majority',oppose:'Oppose'};
+  const PNAMES={claim:'Revise claim',behavior:'Align behavior',both:'Adopt best fit',promise:'Promise only',keep:'Keep both'};
+  const N=9,MODEL='sims-evidence-response-v1',NS='http://www.w3.org/2000/svg';
+  const MIN=12,THRESHOLD=.8,ODDS=10;
+  let config,run,chapter='exchange',cursor=0,selected=0,timer=null,lastSaved=null;
+  const rows=[],weightRows=[];
+  const choice=v=>v===0?'A':'B';
+  const clampSeed=v=>Number.isFinite(Number(v))?Math.max(1,Math.min(2147483647,Math.round(Number(v)))):20261008;
+  const pct=p=>p===0?'0%':p===1?'100%':p<.001?'<0.1%':p>.999?'>99.9%':(p*100).toFixed(1)+'%';
+  function rng(seed){let a=seed>>>0;return ()=>{a=(a+0x6D2B79F5)>>>0;let t=Math.imul(a^(a>>>15),1|a);t^=t+Math.imul(t^(t>>>7),61|t);return ((t^(t>>>14))>>>0)/4294967296;};}
+  function shuffle(a,r){for(let i=a.length-1;i>0;i--){const j=Math.floor(r()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+  function neighbors(topology){return Array.from({length:N},(_,i)=>topology==='star'?(i===0?[1,2,3,4,5,6,7,8]:[0]):[(i+8)%N,(i+1)%N]);}
+  function preset(name){
+    const claims=Array(N).fill('copy'),actual=Array(N).fill('copy');
+    const policies=['claim','behavior','both','behavior','keep','claim','promise','both','keep'];
+    if(name==='mismatch')actual[0]='oppose';
+    if(name==='mixed'){
+      ['copy','hold','majority','oppose','copy','hold','majority','oppose','copy'].forEach((r,i)=>{claims[i]=r;actual[i]=r;});
+      actual[0]='oppose';actual[6]='hold';
+    }
+    if(name==='contrast'){actual[0]='oppose';actual[3]='hold';actual[6]='majority';claims[8]='hold';actual[8]='oppose';}
+    return {claims,actual,policies};
+  }
+  function normalize(c){
+    const base=preset('mismatch');
+    const list=(a,allowed,fallback)=>Array.isArray(a)&&a.length===N&&a.every(v=>allowed.includes(v))?a.slice():fallback;
+    return {topology:c?.topology==='star'?'star':'ring',mode:c?.mode==='probe'?'probe':'network',seed:clampSeed(c?.seed??20261008),innovation:c?.innovation===0?0:.02,preset:['mismatch','matched','mixed','contrast','custom'].includes(c?.preset)?c.preset:'mismatch',claims:list(c?.claims,RULES,base.claims),actual:list(c?.actual,RULES,base.actual),policies:list(c?.policies,POLICIES,base.policies)};
+  }
+  // Investigator: observable context only. All probabilities condition on an active turn.
+  function predict(rule,ctx){
+    const beforeA=ctx.before===0?1:0,a=ctx.neighborStates.filter(v=>v===0).length,d=ctx.neighborStates.length;
+    if(rule==='copy')return ctx.innovation*(1-beforeA)+(1-ctx.innovation)*(.85*a/d+.15*beforeA);
+    if(rule==='hold')return ctx.initial===0?1:0;
+    if(a*2===d)return beforeA;
+    return rule==='majority'?(a*2>d?1:0):(a*2>d?0:1);
+  }
+  // Simulator: reads actual behavior rule, never stated claims or investigator weights.
+  function act(rule,ctx,r){
+    if(rule==='hold')return ctx.initial;
+    if(rule==='majority'||rule==='oppose'){
+      const a=ctx.neighborStates.filter(v=>v===0).length,d=ctx.neighborStates.length;
+      if(a*2===d)return ctx.before;
+      const majority=a*2>d?0:1;return rule==='majority'?majority:1-majority;
+    }
+    if(r()<ctx.innovation)return 1-ctx.before;
+    const proposal=ctx.neighborStates[Math.floor(r()*ctx.neighborStates.length)];
+    return proposal!==ctx.before&&r()<.15?ctx.before:proposal;
+  }
+  function simulate(c,options={}){
+    const salt=options.salt||0,startRng=rng(c.seed^0xA341316C),scheduleRng=rng(c.seed^0x8F239D17^salt),decisionRng=rng(c.seed^salt);
+    const initial=options.initial?options.initial.slice():Array.from({length:N},()=>startRng()<.5?0:1);
+    const adj=neighbors(c.topology),events=[];let state=options.start?options.start.slice():initial.slice();
+    function takeDecision(seat,second,probeId=null){
+      const beforeState=state.slice(),ctx={before:state[seat],initial:initial[seat],neighborIds:adj[seat].slice(),neighborStates:adj[seat].map(i=>state[i]),innovation:c.innovation};
+      const predictions=RULES.map(rule=>predict(rule,ctx)),claim=c.claims[seat],claimProbability=predictions[RULES.indexOf(claim)];
+      const committed={ctx,predictions,claim,claimProbability};
+      const observed=act(c.actual[seat],ctx,decisionRng);state[seat]=observed;
+      events.push({...committed,seat,second,probeId,beforeState,afterState:state.slice(),observed});
+    }
+    if(c.mode==='network'){
+      for(let second=1;second<=120;second++)for(const seat of shuffle([0,1,2,3,4,5,6,7,8],scheduleRng))if(scheduleRng()<.25)takeDecision(seat,second);
+    }else{
+      const probes=[];
+      for(let seat=0;seat<N;seat++){
+        const degree=adj[seat].length,counts=Array.from(new Set([0,Math.floor(degree/2),degree]));
+        for(const before of [0,1])for(const countA of counts)for(let repeat=0;repeat<8;repeat++)probes.push({seat,before,countA});
+      }
+      shuffle(probes,scheduleRng).forEach((p,index)=>{
+        state=initial.slice();state[p.seat]=p.before;
+        shuffle(adj[p.seat].slice(),scheduleRng).forEach((id,j)=>{state[id]=j<p.countA?0:1;});
+        takeDecision(p.seat,null,index+1);
+      });
+    }
+    return {initial,endState:state.slice(),events};
+  }
+  function blank(){return {n:0,logL:[0,0,0,0],last:-1};}
+  function observe(l,e,index){
+    const logL=l.logL.map((v,k)=>{const p=e.observed===0?e.predictions[k]:1-e.predictions[k];return p===0?-Infinity:v+Math.log(p);});
+    return {n:l.n+1,logL,last:index};
+  }
+  function indexEvidence(events){
+    const snapshots=[Array.from({length:N},blank)];
+    events.forEach((e,index)=>{const next=snapshots[index].slice();next[e.seat]=observe(next[e.seat],e,index);snapshots.push(next);});return snapshots;
+  }
+  function weights(l){
+    const m=Math.max(...l.logL);if(m===-Infinity)return [0,0,0,0];
+    const ls=l.logL.map(v=>Math.exp(v-m)),sum=ls.reduce((a,b)=>a+b,0);return ls.map(v=>v/sum);
+  }
+  function bestFit(l){
+    const w=weights(l),maximum=Math.max(...w),tops=RULES.filter((_,k)=>Math.abs(w[k]-maximum)<1e-10);
+    return {w,maximum,tops,best:tops.length===1?tops[0]:null,confident:l.n>=MIN&&tops.length===1&&maximum>=THRESHOLD};
+  }
+  // Evidence packet has no access to actual behavior settings or future actions.
+  function makePacket(seat,claim,l,events){
+    const b=bestFit(l),k=RULES.indexOf(claim),bestIndex=b.best===null?-1:RULES.indexOf(b.best);
+    const logRatio=bestIndex<0?0:l.logL[bestIndex]-l.logL[k];
+    const challenged=b.confident&&b.best!==claim&&logRatio>=Math.log(ODDS);
+    const examples=events.filter(e=>e.seat===seat).map(e=>{
+      const p=e.observed===0?e.claimProbability:1-e.claimProbability;
+      const q=bestIndex<0?p:(e.observed===0?e.predictions[bestIndex]:1-e.predictions[bestIndex]);
+      return {e,p,q,ratio:p===0&&q>0?Infinity:p>0&&q>0?Math.log(q/p):0};
+    }).sort((a,b)=>b.ratio===a.ratio?0:b.ratio>a.ratio?1:-1).slice(0,3);
+    return {seat,claim,n:l.n,...b,claimWeight:b.w[k],ruledOut:l.logL[k]===-Infinity,challenged,examples};
+  }
+  // Participants see their own evidence packet and apply their configured response policy.
+  // A response may revise a claim, issue a behavior command, make a promise only, or retain both.
+  function respond(policy,p){
+    const result={claim:p.claim,behaviorCommand:null,promised:null,policy,message:''};
+    if(!p.challenged){
+      result.message=p.n<MIN?'I have too few recorded decisions to revise my rule. I will keep my claim and behavior for now.':p.best===p.claim&&p.confident?'My stated rule has the strongest support here. I will keep my claim and behavior.':'These observations do not meet my response threshold for changing my rule. I will keep both settings and ask for more evidence.';
+      return result;
+    }
+    const best=NAMES[p.best],claim=NAMES[p.claim];
+    if(policy==='claim'){result.claim=p.best;result.message='I revise my claim to “'+best+'” to match these actions. I will keep my current behavior.';}
+    if(policy==='behavior'){result.behaviorCommand=p.claim;result.promised=p.claim;result.message='I keep my claim, “'+claim+'”. I will change my decisions to follow that rule from now on.';}
+    if(policy==='both'){result.claim=p.best;result.behaviorCommand=p.best;result.promised=p.best;result.message='I adopt “'+best+'” as both my stated rule and the rule I will follow.';}
+    if(policy==='promise'){result.promised=p.claim;result.message='I keep my claim, “'+claim+'”. I promise my next decisions will follow it.';}
+    if(policy==='keep')result.message='I see that these actions favor “'+best+'”. I choose to keep my current claim and behavior.';
+    return result;
+  }
+  function build(c){
+    const before=simulate(c),beforeEvidence=indexEvidence(before.events),baseline=beforeEvidence[beforeEvidence.length-1];
+    const packets=baseline.map((l,i)=>makePacket(i,c.claims[i],l,before.events));
+    const responses=packets.map((p,i)=>respond(c.policies[i],p));
+    const claims=responses.map(r=>r.claim),actual=responses.map((r,i)=>r.behaviorCommand===null?c.actual[i]:r.behaviorCommand);
+    const afterConfig={...c,claims,actual},after=simulate(afterConfig,{initial:before.initial,start:before.endState,salt:0x6BCE1589});
+    return {before,beforeEvidence,packets,responses,afterConfig,after,afterEvidence:indexEvidence(after.events)};
+  }
+  function htmlEl(tag,cls,text){const el=document.createElement(tag);if(cls)el.className=cls;if(text!==undefined)el.textContent=text;return el;}
+  function svgEl(tag,attrs,text){const el=document.createElementNS(NS,tag);for(const [k,v] of Object.entries(attrs||{}))el.setAttribute(k,String(v));if(text!==undefined)el.textContent=text;return el;}
+  function maxCursor(){return chapter==='exchange'?17:run[chapter].events.length*2-1;}
+  function view(){
+    if(chapter==='exchange'){
+      const seat=Math.floor(cursor/2),revealed=cursor%2===1;
+      return {seat,revealed,responsesSeen:seat+(revealed?1:0),state:run.before.endState,followup:run.afterEvidence[0]};
+    }
+    const index=Math.floor(cursor/2),revealed=cursor%2===1,processed=index+(revealed?1:0),e=run[chapter].events[index];
+    return {seat:e.seat,revealed,index,processed,e,responsesSeen:chapter==='after'?N:0,state:revealed?e.afterState:e.beforeState,followup:chapter==='after'?run.afterEvidence[processed]:run.afterEvidence[0]};
+  }
+  function makeRows(){
+    for(let i=0;i<N;i++){
+      const tr=htmlEl('tr'),td=htmlEl('td'),button=htmlEl('button','btn btn-ghost',String(i));
+      button.type='button';button.setAttribute('aria-label','Inspect SIM '+i);button.addEventListener('click',()=>{selected=i;drawSelected();drawChanges();save();announce();});td.append(button);
+      const claim=htmlEl('td'),behavior=htmlEl('td');tr.append(td,claim,behavior);display('changes').append(tr);rows.push({button,claim,behavior});
+    }
+    RULES.forEach(rule=>{
+      const row=htmlEl('div','weight-row text-small'),name=htmlEl('span','',NAMES[rule]),track=htmlEl('div','track'),bar=htmlEl('div','weight'),value=htmlEl('span','text-end tabular-nums');
+      track.append(bar);row.append(name,track,value);display('weights').append(row);weightRows.push({bar,value});
+    });
+  }
+  function drawNetwork(v){
+    const svg=display('network'),width=Math.max(260,display('stage').getBoundingClientRect().width),height=280,cx=width/2,cy=height/2,radius=Math.min((width-70)/2,104);
+    svg.setAttribute('viewBox','0 0 '+width+' '+height);svg.setAttribute('height',height);svg.replaceChildren();
+    const coords=Array.from({length:N},(_,i)=>{if(config.topology==='star'&&i===0)return [cx,cy];const angle=-Math.PI/2+2*Math.PI*(config.topology==='star'?(i-1)/8:i/9);return [cx+radius*Math.cos(angle),cy+radius*Math.sin(angle)];});
+    neighbors(config.topology).forEach((list,i)=>list.forEach(j=>{if(i<j)svg.append(svgEl('line',{x1:coords[i][0],y1:coords[i][1],x2:coords[j][0],y2:coords[j][1],class:'edge'}));}));
+    coords.forEach(([x,y],i)=>{
+      const group=svgEl('g',{'data-tooltip':'SIM '+i+' · '+choice(v.state[i])});
+      if(i===v.seat)group.append(svgEl('circle',{cx:x,cy:y,r:29,class:'focus'}));
+      group.append(v.state[i]===0?svgEl('circle',{cx:x,cy:y,r:23,class:'a'}):svgEl('rect',{x:x-23,y:y-23,width:46,height:46,rx:4,class:'b'}));
+      group.append(svgEl('text',{x,y:y+5,'text-anchor':'middle'},i+' · '+choice(v.state[i])));svg.append(group);
+    });
+    svg.setAttribute('aria-label',config.topology+' network. Current participant SIM '+v.seat+'. '+v.state.map((s,i)=>i+': '+choice(s)).join(', '));
+  }
+  function transitionText(before,after,seen){return !seen?NAMES[before]+' · pending':before===after?NAMES[before]+' · unchanged':NAMES[before]+' → '+NAMES[after];}
+  function evidenceMessage(p){
+    if(p.n===0)return 'No active decisions were recorded. I cannot compare your claim with actions yet.';
+    if(p.challenged)return 'Your claim is “'+NAMES[p.claim]+'”. Across '+p.n+' actions, “'+NAMES[p.best]+'” has '+pct(p.maximum)+' relative support; your claim has '+pct(p.claimWeight)+'. Will you revise your claim or change what you do?';
+    if(p.best===p.claim&&p.confident)return 'Across '+p.n+' actions, your claim, “'+NAMES[p.claim]+'”, has '+pct(p.claimWeight)+' relative support. No alternative passes the response threshold. How will you respond?';
+    return 'I recorded '+p.n+' actions. The best-fitting rule'+(p.tops.length===1?' is ':'s are ')+p.tops.map(r=>NAMES[r]).join(' / ')+'. The response threshold is not met. How will you respond?';
+  }
+  function drawExchange(v){
+    const p=run.packets[v.seat],r=run.responses[v.seat];
+    display('investigator-title').textContent='Feynman → SIM '+v.seat;
+    display('packet-size').textContent=p.n+' recorded actions';
+    display('evidence-message').textContent=evidenceMessage(p);
+    weightRows.forEach(({bar,value},k)=>{bar.style.width=(p.w[k]*100)+'%';value.textContent=pct(p.w[k]);});
+    display('weights').setAttribute('aria-label','Relative support: '+RULES.map((rule,k)=>NAMES[rule]+' '+pct(p.w[k])).join(', '));
+    display('examples').replaceChildren();
+    for(const {e,p:prob,q} of p.examples){
+      const stamp=e.probeId?'Probe '+e.probeId:e.second+' s';
+      let line=stamp+': before '+choice(e.ctx.before)+'; neighbors '+e.ctx.neighborIds.map((id,j)=>id+'='+choice(e.ctx.neighborStates[j])).join(', ')+'; chose '+choice(e.observed)+'. Claim assigned '+pct(prob)+' to that action';
+      if(p.best&&p.best!==p.claim)line+='; '+NAMES[p.best]+' assigned '+pct(q);
+      display('examples').append(htmlEl('li','',line+'.'));
+    }
+    display('example-note').textContent='Up to 3 actions with the largest likelihood ratio; all '+p.n+' actions enter the scores.';
+    display('reply-title').textContent='SIM '+v.seat+' → Feynman';
+    display('policy-label').textContent='Response rule: '+PNAMES[r.policy];
+    display('reply').textContent=v.revealed?r.message:'Evidence delivered · response pending';
+    display('exchange-claim').textContent=transitionText(config.claims[v.seat],r.claim,v.revealed);
+    display('exchange-behavior').textContent=transitionText(config.actual[v.seat],run.afterConfig.actual[v.seat],v.revealed);
+  }
+  function drawDecision(v){
+    const e=v.e;
+    display('decision-title').textContent='SIM '+e.seat+' · '+(v.revealed?'action observed':'prediction recorded');
+    display('decision-claim').textContent='Claim: '+NAMES[e.claim];
+    display('context').textContent='Before: '+choice(e.ctx.before)+' · neighbors: '+e.ctx.neighborIds.map((id,j)=>id+'='+choice(e.ctx.neighborStates[j])).join(', ');
+    display('prob-a').style.width=(100*e.claimProbability)+'%';display('prob-b').style.width=(100*(1-e.claimProbability))+'%';
+    display('probability').setAttribute('aria-label','Predicted A '+pct(e.claimProbability)+', B '+pct(1-e.claimProbability));
+    display('pred-a').textContent='Predicted A: '+pct(e.claimProbability);display('pred-b').textContent='Predicted B: '+pct(1-e.claimProbability);
+    display('outcome').textContent=v.revealed?'Actually chose '+choice(e.observed)+(e.observed===e.ctx.before?' · stayed':' · switched'):'Outcome not yet revealed';
+    display('outcome-prob').textContent=v.revealed?'Probability under claim: '+pct(e.observed===0?e.claimProbability:1-e.claimProbability):'Evidence unchanged';
+  }
+  function drawChanges(){
+    const v=view();let claims=0,behaviors=0;
+    rows.forEach((row,i)=>{
+      const seen=i<v.responsesSeen,cc=config.claims[i]!==run.afterConfig.claims[i],bc=config.actual[i]!==run.afterConfig.actual[i];
+      row.button.setAttribute('aria-pressed',i===selected?'true':'false');
+      row.claim.textContent=transitionText(config.claims[i],run.afterConfig.claims[i],seen);row.behavior.textContent=transitionText(config.actual[i],run.afterConfig.actual[i],seen);
+      row.claim.className=seen&&cc?'rule-change':'';row.behavior.className=seen&&bc?'rule-change':'';
+      if(seen&&cc)claims++;if(seen&&bc)behaviors++;
+    });
+    display('summary').textContent=v.responsesSeen+' / 9 replies · '+claims+' claims, '+behaviors+' behavior rules changed';
+  }
+  function freshEvidence(l,baseline){
+    const b=bestFit(l),old=bestFit(baseline);
+    if(l.n<MIN)return l.n+' fresh actions · more evidence needed';
+    if(!b.confident)return l.n+' fresh actions · rule still ambiguous';
+    if(old.confident&&old.best!==b.best)return l.n+' fresh actions · inferred rule changed: '+NAMES[old.best]+' → '+NAMES[b.best];
+    if(old.confident)return l.n+' fresh actions · still favor '+NAMES[b.best];
+    return l.n+' fresh actions · favor '+NAMES[b.best]+'; earlier rule uncertain';
+  }
+  function drawSelected(){
+    const v=view(),seen=selected<v.responsesSeen,r=run.responses[selected],l=v.followup[selected],baseline=run.beforeEvidence[run.beforeEvidence.length-1][selected];
+    display('selected-title').textContent='Inspect SIM '+selected;
+    display('selected-reply').textContent=seen?r.message:'Response pending · '+PNAMES[config.policies[selected]];
+    display('followup').textContent=l.n>0?freshEvidence(l,baseline):'Fresh actions: awaiting follow-up';
+    if(l.n>0){
+      const b=bestFit(l),k=RULES.indexOf(run.afterConfig.claims[selected]);
+      let msg='Current claim: '+NAMES[run.afterConfig.claims[selected]]+' · relative support '+pct(b.w[k])+' among four rules.';
+      if(l.logL[k]===-Infinity)msg+=' At least one action contradicts it.';
+      if(r.promised!==null){
+        const pk=RULES.indexOf(r.promised);
+        msg+=' Promise: '+NAMES[r.promised]+' · '+(l.logL[pk]===-Infinity?'contradicted by an action':b.confident&&b.best===r.promised?'supported by fresh actions':b.confident&&b.best!==r.promised?'fresh actions favor a different rule':'evidence incomplete')+'.';
+      }
+      display('followup-weight').textContent=msg;
+    }else display('followup-weight').textContent=seen?'Rule changes above are simulation state; the next stage observes their consequences.':'Each participant receives its own evidence before responding.';
+    control('claim').value=config.claims[selected];control('actual').value=config.actual[selected];control('policy').value=config.policies[selected];
+  }
+  function draw(){
+    const v=view();drawNetwork(v);
+    ['before','exchange','after'].forEach(name=>action(name).setAttribute('aria-pressed',chapter===name?'true':'false'));
+    display('exchange-panel').hidden=chapter!=='exchange';display('decision-panel').hidden=chapter==='exchange';
+    if(chapter==='exchange'){
+      display('phase').textContent=v.revealed?'Evidence → response recorded':'Evidence delivered → awaiting response';
+      display('clock').textContent='SIM '+v.seat+' · decisions paused';drawExchange(v);
+      display('progress').textContent=(v.seat+1)+' / 9 exchanges';
+      action('step').textContent=!v.revealed?'Let SIM '+v.seat+' respond':v.seat===8?'Observe fresh actions':'Next participant';
+    }else{
+      display('phase').textContent=(chapter==='before'?'Before exchange':'After responses')+' · '+(v.revealed?'observed':'prediction');
+      display('clock').textContent=config.mode==='probe'?'Probe '+v.e.probeId+' / '+run[chapter].events.length:'Model time '+(v.e.second+(chapter==='after'?120:0))+' s';
+      display('progress').textContent=(v.index+1)+' / '+run[chapter].events.length+' decisions';drawDecision(v);
+      action('step').textContent=cursor===maxCursor()?(chapter==='before'?'Show evidence':'Follow-up complete'):v.revealed?'Next prediction':'Observe decision';
+    }
+    action('step').disabled=chapter==='after'&&cursor===maxCursor();
+    action('finish').disabled=chapter==='after'&&cursor===maxCursor();
+    action('play').textContent=timer!==null?'Pause':chapter==='after'&&cursor===maxCursor()?'Replay replies':'Play';
+    control('cursor').max=maxCursor();control('cursor').value=cursor;drawChanges();drawSelected();
+  }
+  function pause(){if(timer!==null)window.clearInterval(timer);timer=null;}
+  function announce(){display('announcement').textContent=display('phase').textContent+'. '+display('summary').textContent+'. '+(chapter==='exchange'?display('reply').textContent:display('outcome').textContent);}
+  function save(){
+    if(!window.openai?.setWidgetState)return;
+    const v=view(),modelContent={model:MODEL,config,chapter,cursor,selected,responsesSeen:v.responsesSeen,participants:rows.map((_,i)=>{const seen=i<v.responsesSeen;return {sim:i,claimBefore:config.claims[i],claimAfter:seen?run.afterConfig.claims[i]:null,behaviorBefore:config.actual[i],behaviorAfter:seen?run.afterConfig.actual[i]:null,policy:config.policies[i],freshActions:v.followup[i].n,freshWeights:weights(v.followup[i])};}),method:'Evidence-only investigator, explicit participant response policies, fresh follow-up scores. Responses pause network decisions. Behavior columns expose simulated rule changes.'};
+    lastSaved=JSON.stringify(modelContent);try{Promise.resolve(window.openai.setWidgetState({modelContent,privateContent:{version:1}})).catch(()=>{});}catch(_){}
+  }
+  function syncControls(){['topology','mode','seed','preset'].forEach(n=>control(n).value=config[n]);control('innovation').checked=config.innovation>0;}
+  function rebuild(remember=true){pause();run=build(config);chapter='exchange';cursor=0;selected=0;syncControls();draw();if(remember){save();announce();}}
+  function navigate(name,position=0){pause();chapter=name;cursor=Math.max(0,Math.min(maxCursor(),position));if(chapter==='exchange')selected=Math.floor(cursor/2);draw();save();announce();}
+  function advance(){
+    if(cursor<maxCursor())cursor++;
+    else if(chapter==='before'){chapter='exchange';cursor=0;}
+    else if(chapter==='exchange'){chapter='after';cursor=0;}
+    if(chapter==='exchange')selected=Math.floor(cursor/2);
+  }
+  action('before').addEventListener('click',()=>navigate('before'));
+  action('exchange').addEventListener('click',()=>navigate('exchange'));
+  action('after').addEventListener('click',()=>navigate('after'));
+  action('step').addEventListener('click',()=>{pause();advance();draw();save();announce();});
+  action('finish').addEventListener('click',()=>navigate('after',run.after.events.length*2-1));
+  action('read-reply').addEventListener('click',()=>{const seen=selected<view().responsesSeen;navigate('exchange',selected*2+(seen?1:0));});
+  action('play').addEventListener('click',()=>{
+    if(timer!==null){pause();draw();save();announce();return;}
+    if(chapter==='after'&&cursor===maxCursor()){chapter='exchange';cursor=0;selected=0;}
+    timer=window.setInterval(()=>{advance();if(chapter==='after'&&cursor===maxCursor())pause();draw();if(timer===null){save();announce();}},chapter==='exchange'?2400:window.matchMedia('(prefers-reduced-motion: reduce)').matches?1100:550);draw();save();
+  });
+  control('cursor').addEventListener('input',()=>{pause();cursor=Number(control('cursor').value);if(chapter==='exchange')selected=Math.floor(cursor/2);draw();});
+  control('cursor').addEventListener('change',()=>{save();announce();});
+  for(const name of ['topology','mode','seed','innovation'])control(name).addEventListener('change',()=>{
+    config={...config,topology:control('topology').value,mode:control('mode').value,seed:clampSeed(control('seed').value),innovation:control('innovation').checked ? .02 : 0};rebuild();
+  });
+  control('preset').addEventListener('change',()=>{const name=control('preset').value;if(name==='custom')return;config={...config,preset:name,...preset(name)};if(name==='contrast')config.mode='probe';rebuild();});
+  for(const [name,key] of [['claim','claims'],['actual','actual'],['policy','policies']])control(name).addEventListener('change',()=>{
+    const seat=selected;config={...config,preset:'custom',[key]:config[key].map((r,i)=>i===seat?control(name).value:r)};rebuild(false);selected=seat;cursor=seat*2;draw();save();announce();
+  });
+  action('new').addEventListener('click',()=>{config.seed=config.seed===2147483647?1:config.seed+1;rebuild();});
+  function restore(state){
+    const s=state?.modelContent;if(s?.model!==MODEL)return false;
+    config=normalize(s.config);rebuild(false);chapter=['before','exchange','after'].includes(s.chapter)?s.chapter:'exchange';cursor=Math.max(0,Math.min(maxCursor(),Math.round(Number(s.cursor)||0)));selected=Math.max(0,Math.min(8,Math.round(Number(s.selected)||0)));draw();return true;
+  }
+  makeRows();config=normalize({});if(!restore(window.openai?.widgetState))rebuild(false);
+  window.addEventListener('openai:set_globals',event=>{const s=event.detail?.globals?.widgetState;if(s?.modelContent?.model===MODEL&&JSON.stringify(s.modelContent)!==lastSaved)restore(s);});
+  new ResizeObserver(()=>drawNetwork(view())).observe(display('stage'));
+  document.addEventListener('visibilitychange',()=>{if(document.hidden&&timer!==null){pause();draw();save();}});
+})();
+</script>

@@ -1,0 +1,20 @@
+SIMS first-load repair
+
+The original standalone export inserted the model into an empty iframe at
+runtime and connected local state through a one-shot iframe load event. Its
+shared display toolkit also requested remote scripts. A blank first visit
+was observed in the live browser and recovered after reload; the exact
+timing of that initial incident was not captured.
+
+This build removes that startup path. The model markup is in the initial
+HTML response, with a small synchronous state adapter before its script.
+The original model algorithms and saved-run snapshot are unchanged.
+Existing local-storage keys are retained. Missing, denied, or malformed
+storage cannot prevent the model's default or saved starting setup.
+
+Tooltip helpers are included in each page; no external script fetch is
+needed. An unused remote icon runtime has been removed. A visible startup
+message and a no-JavaScript message prevent silent empty output.
+
+Rebuild with Python 3.10+: python build.py
+The dist directory is the deployed static site.

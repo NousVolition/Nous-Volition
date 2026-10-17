@@ -2,7 +2,20 @@
 
 Nine participants interact through a ring or star. An investigator named **Feynman** records predictions, compares claims with actions, presents the evidence, and revisits participants' responses over repeated rounds.
 
-## Open the models
+## Live site and first-load repair
+
+**[Open the live SIMS model](https://sims-evidence-lab.itswaffles88.chatgpt.site/).** The October 17 update includes the model directly in each page, preserves existing saved settings, and bundles its display helpers. It no longer needs an embedded-frame startup or external script downloads.
+
+The current live site's [portable source and browser pages](web/) are included. Open [web/dist/index.html](web/dist/index.html) locally, or rebuild and check startup from this collection folder:
+
+```sh
+python web/build.py
+node web/tests/startup.cjs
+```
+
+All six public page routes passed fresh-visit checks without refreshing. The startup suite passed 48 checks covering saved/default state, corrupt or denied storage, direct rendering, and script syntax. The original participant algorithms and eight-round saved-run snapshot are unchanged. [Startup implementation notes](web/STARTUP.txt).
+
+## Original standalone exports
 
 Download this folder or clone the repository, then open a file from `site/` in a browser. Each exported HTML document includes its styling, controls, and simulation. GitHub's file view displays HTML source; download the file to run it. Browser storage remembers interactions when available.
 
@@ -54,4 +67,4 @@ All five original fragments are retained. [The early Feynman-named copy](fragmen
 
 [check-sims.cjs](tools/check-sims.cjs) and [check-claims.cjs](tools/check-claims.cjs) preserve the checks written earlier for the network and claim-testing models, with portable paths. They can be invoked with Node. They do not cover every later response or repeated-round feature.
 
-This publication built the standalone documents and generated the saved simulation outputs. The existing test suites were not rerun for this upload.
+The original October 15 publication built the standalone documents and generated the saved simulation outputs. On October 17, both existing model suites were rerun successfully: 960 network cases and 144 claim-testing cases, plus 2,096 probability contexts and 180,000 sampled actions. The browser interaction review and subsequent first-load repair are separate checks.
