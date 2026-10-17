@@ -36,6 +36,8 @@ def script(source):
 
 stylesheet = (SRC / 'assets/visualize.css').read_text(encoding='utf-8')
 runtime = (SRC / 'page-runtime.js').read_text(encoding='utf-8')
+mobile_style = (SRC / 'mobile.css').read_text(encoding='utf-8')
+mobile_ui = (SRC / 'mobile-ui.js').read_text(encoding='utf-8')
 kit = (SRC / 'assets/visualize.html').read_text(encoding='utf-8')
 kit = kit.replace('<!--__INLINE_VISUALIZATION_FRAGMENT__-->', '')
 vendor_license = (SRC / 'assets/FLOATING-UI-LICENSE.txt').read_text(encoding='utf-8')
@@ -52,6 +54,20 @@ DIST.mkdir(exist_ok=True)
 
 for filename, label, model_name, latest in PAGES:
     fragment = (SRC / 'models' / (model_name + '.html')).read_text(encoding='utf-8')
+    # Keep the original model and its rules intact; give wide data tables their
+    # own accessible scrolling region instead of squeezing their columns.
+    table_index = 0
+    def scroll_table(match):
+        table_label = 'Participant history' if 'history-table' in match.group(0) else 'Participant evidence and rules'
+        global table_index
+        table_index += 1
+        hint_id = f'sims-table-hint-{table_index}'
+        return (f'<p class="sims-table-hint text-small" id="{hint_id}">Swipe sideways to see all columns.</p>'
+                + f'<div class="sims-table-scroll" role="region" aria-label="{table_label}" tabindex="0" aria-describedby="{hint_id}">'
+                + match.group(0) + '</div>')
+    fragment = re.sub(r'<table\b[\s\S]*?</table>', scroll_table, fragment)
+    if model_name == 'sims-claim-testing':
+        fragment = fragment.replace('<div class="section card">', '<details class="section sims-weight-help"><summary>What does claim weight mean?</summary><p>Relative likelihood of the stated rule among four candidate rules, with equal starting weights. This is not a probability of honesty.</p></details><div class="section card">', 1)
     if 'data-lucide' in fragment:
         raise ValueError('New icons require a local icon runtime')
     def guarded(match):
@@ -69,7 +85,7 @@ for filename, label, model_name, latest in PAGES:
 <meta name="referrer" content="no-referrer">
 <meta http-equiv="Content-Security-Policy" content="{CSP}">
 <title>SIMS — {escape(label)}</title>
-<style>{stylesheet}\n{STYLE}</style>
+<style>{stylesheet}\n{STYLE}\n{mobile_style}</style>
 </head>
 <body>
 {nav}
@@ -81,6 +97,7 @@ for filename, label, model_name, latest in PAGES:
 {fragment}
 </main>
 {kit}
+{script(mobile_ui)}
 </body></html>
 '''
     (DIST / filename).write_text(content, encoding='utf-8', newline='\n')

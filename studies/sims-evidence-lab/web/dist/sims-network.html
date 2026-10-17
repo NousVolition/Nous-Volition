@@ -1496,6 +1496,37 @@ html,body{margin:0}body{box-sizing:border-box;padding:1rem!important}
 .sims-site-nav a.sims-methods{margin-left:auto;text-decoration:underline}
 .sims-startup{padding:1rem 0}.sims-startup[hidden]{display:none}
 @media(max-width:560px){.sims-site-nav a.sims-methods{margin-left:0}.sims-site-nav{font-size:13px}}
+
+/* Shared hosted-page layout. Model rules remain in the original fragments. */
+main .heading, main .sim-heading { padding-right:0!important; }
+main .table-responsive { overflow:visible; }
+.sims-table-scroll { max-width:100%; overflow-x:auto; overscroll-behavior-x:contain; -webkit-overflow-scrolling:touch; }
+.sims-table-scroll:focus-visible { outline:2px solid var(--foreground); outline-offset:3px; }
+.sims-table-hint { margin:8px 0 12px; color:var(--muted-foreground); }
+.sims-table-hint[hidden] { display:none; }
+main .sims-table-scroll .evidence-table { min-width:440px; }
+main .table-wrap .sims-table-scroll table { min-width:360px; }
+main .sims-table-scroll th, main .sims-table-scroll td { overflow-wrap:normal; }
+main .sims-table-scroll .history-table tr > :first-child { position:sticky; left:0; z-index:1; background:var(--background); }
+@media(max-width:900px), (pointer:coarse) {
+  .sims-site-nav a { display:inline-flex; align-items:center; min-height:44px; box-sizing:border-box; }
+  main .btn { min-height:44px; min-width:44px; height:auto; white-space:normal; }
+  main .form-select, main .form-control { min-height:44px; height:auto; font-size:16px; }
+  main .form-range { height:44px; min-height:44px; }
+  main .form-range::-webkit-slider-thumb { width:28px; height:28px; margin-top:-13px; }
+  main .form-range::-moz-range-thumb { width:28px; height:28px; }
+  main .form-check { min-height:44px; align-items:center; }
+  main .form-check-input { flex-shrink:0; width:24px; height:24px; }
+  main summary { min-height:44px; padding:9px 0; box-sizing:border-box; cursor:pointer; }
+  main .history-table .history-code { min-height:44px; min-width:40px; }
+}
+@media(max-width:560px) {
+  body { padding:12px!important; }
+  main .fields, main .sim-fields, main .changes, main .detail { grid-template-columns:minmax(0,1fr)!important; }
+  main .methods { grid-template-columns:minmax(0,1fr)!important; }
+  main .weight-row { grid-template-columns:90px minmax(0,1fr) 56px!important; gap:6px!important; }
+  main .viz-row { gap:8px; }
+}
 </style>
 </head>
 <body>
@@ -2478,4 +2509,29 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   })();
 </script>
 
+<script>(() => {
+  // The regions retain native touch scrolling and keyboard scrolling. Hints
+  // appear only when there really are columns outside the visible area.
+  for (const region of document.querySelectorAll('.sims-table-scroll')) {
+    const hint = document.getElementById(region.getAttribute('aria-describedby'));
+    const update = () => {
+      const overflow = region.scrollWidth > region.clientWidth + 1;
+      hint.hidden = !overflow;
+      region.tabIndex = overflow ? 0 : -1;
+    };
+    update();
+    if (typeof ResizeObserver === 'function') {
+      const observer = new ResizeObserver(update);
+      observer.observe(region);
+      observer.observe(region.querySelector('table'));
+    } else {
+      window.addEventListener('resize', update);
+    }
+  }
+  // A number pad is more useful than a text keyboard for a trial seed.
+  document.querySelectorAll('[data-control="seed"]').forEach(input => {
+    input.setAttribute('inputmode', 'numeric');
+  });
+})();
+</script>
 </body></html>

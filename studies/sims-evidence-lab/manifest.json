@@ -76,8 +76,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6051,
-      "sha256": "ef978b0d2675fe90fa0eae6539b36a82dde66bc4d79c73de32d80e8e8475b0e6"
+      "bytes": 6950,
+      "sha256": "fe978ac127d5d1f436bb9e64347b0cf3bea582f3e7b71d62f914ee14bee8cbfb"
     },
     {
       "path": "results/evidence-response-examples.json",
@@ -161,38 +161,43 @@
     },
     {
       "path": "web/build.py",
-      "bytes": 5471,
-      "sha256": "9e4b388d262e24908df5b9ee9b1b149a08075d360e14dfb3120e8202ea9e4c23"
+      "bytes": 6807,
+      "sha256": "f4cd400ab243eb65ded6064029ea300fc011ae2fbfc3044b3116d3a0167d33ff"
     },
     {
       "path": "web/dist/index.html",
-      "bytes": 135173,
-      "sha256": "958cee387496cbea91556bed445393b9b7366ed7c0faa5ab253769448fb8e0af"
+      "bytes": 138678,
+      "sha256": "b5cd9ed56653e3c0d47b5d2efe2532f0c8e20a4e550ff94a97ea9a7c2ffb6359"
     },
     {
       "path": "web/dist/latest-run.html",
-      "bytes": 135173,
-      "sha256": "958cee387496cbea91556bed445393b9b7366ed7c0faa5ab253769448fb8e0af"
+      "bytes": 138678,
+      "sha256": "b5cd9ed56653e3c0d47b5d2efe2532f0c8e20a4e550ff94a97ea9a7c2ffb6359"
     },
     {
       "path": "web/dist/sims-claim-testing.html",
-      "bytes": 111058,
-      "sha256": "be938685c620d170e9b42d780844597930105119b256e507c0e1e89fa92c569c"
+      "bytes": 114569,
+      "sha256": "70bdefd2199e6c0622bd351b2e6d63c953b8f5b55daeaf4961f75e325a605c00"
     },
     {
       "path": "web/dist/sims-evidence-and-response.html",
-      "bytes": 123336,
-      "sha256": "03ed914763e37d4108f044efd8d1d53434ca26ec3f569245a23a7d08e8e72901"
+      "bytes": 126608,
+      "sha256": "4a4d1c5f355a659d1bd20ef8a59d8c988454e0f34eb623f6217861492b80d4f6"
     },
     {
       "path": "web/dist/sims-network.html",
-      "bytes": 101232,
-      "sha256": "13c2d22d624c89e9b035d6b0d7c9a9ffee41c5f68d5f7a4699f30f6b61e1287b"
+      "bytes": 104260,
+      "sha256": "70cbfe036d96b6111035326f5dcd58b633e1e8795e2bb96ef6a5acbc287be9bd"
     },
     {
       "path": "web/dist/sims-repeated-rounds.html",
-      "bytes": 134683,
-      "sha256": "4f602ff6ff3d6a47a7979fde4d356959d5bc93e3aba8469ffe0ce0aa500258b7"
+      "bytes": 138188,
+      "sha256": "742ccdf335a65d03de9332e921be9ee3d24992c695b643d0ede4172072f7021d"
+    },
+    {
+      "path": "web/MOBILE.txt",
+      "bytes": 1127,
+      "sha256": "751fb2bcd8499bfcd2931f9040e6ae1674a47d7421bdebbdfb3a70c635c62b1f"
     },
     {
       "path": "web/src/assets/floating-ui-core-1.7.3.js",
@@ -225,6 +230,16 @@
       "sha256": "7b427d4b5963a652847aec7fe9d272c9ab5758f503e769f6484a67732bfe4fba"
     },
     {
+      "path": "web/src/mobile-ui.js",
+      "bytes": 968,
+      "sha256": "09e0843d9426076c9c2173a552e9740f9eb456202adf05d354101eb89f7cb58b"
+    },
+    {
+      "path": "web/src/mobile.css",
+      "bytes": 2041,
+      "sha256": "d47d7d11d2a5d2adcf93c4be8a7991fb815fd871dd2b0533cf6ae723aa9849d1"
+    },
+    {
       "path": "web/src/models/sims-claim-testing.html",
       "bytes": 25423,
       "sha256": "ec58cf3a5172f3814c1f5cb150ed22f5037c7a0ae8257df1b2a76b927f5c10e3"
@@ -253,6 +268,11 @@
       "path": "web/STARTUP.txt",
       "bytes": 1027,
       "sha256": "2a50432627439a21e447577d47acec1f44a1bcc2b5aa03631ec0cbb0b0d17bc3"
+    },
+    {
+      "path": "web/tests/mobile.cjs",
+      "bytes": 2574,
+      "sha256": "b073898572ea6504f3554326c795d5e4c9dea07f57e3748b9751cdda83683c26"
     },
     {
       "path": "web/tests/startup.cjs",

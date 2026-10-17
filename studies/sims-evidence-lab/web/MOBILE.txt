@@ -1,0 +1,17 @@
+SIMS phone usability update — 2026-10-17
+
+The hosted pages use shared mobile styles and native browser controls.
+- Main buttons, navigation links, disclosure rows, and checkbox labels have
+  at least 44 CSS pixels of target height at phone sizes or with coarse pointers.
+- Selects and number fields use 16px text; trial seeds request a numeric keyboard.
+- Wide evidence and history tables scroll within labeled regions, with a hint
+  shown only when columns overflow. The history participant column stays visible.
+- Phone layouts use one column. Zoom remains enabled.
+- Claim weight has a persistent native disclosure explanation, usable without hover.
+- Existing tooltip code supports touch pinning; simulation rules are unchanged.
+
+Validation: node tests/startup.cjs; node tests/mobile.cjs; browser checks of
+all six routes at 320x568, 375x812, 390x844, 430x932 and 844x390; every control
+type and dropdown option, participant selection, playback, persistence, table
+scrolling and navigation. These are desktop Chromium viewport checks; actual
+touch hardware and mobile Safari/Android browser engines have not been tested.

@@ -15,6 +15,19 @@ node web/tests/startup.cjs
 
 All six public page routes passed fresh-visit checks without refreshing. The startup suite passed 48 checks covering saved/default state, corrupt or denied storage, direct rendering, and script syntax. The original participant algorithms and eight-round saved-run snapshot are unchanged. [Startup implementation notes](web/STARTUP.txt).
 
+## Phone usability
+
+
+The live pages provide larger tap targets, 16px form text, a numeric seed keyboard, single-column phone forms, and labeled scrolling regions for wide tables. The history keeps participant labels visible while scrolling. Claim weight also has a tap-to-open explanation. Zoom remains enabled.
+
+All six routes were checked in Chromium viewports at 320×568, 375×812, 390×844, 430×932, and 844×390. Control checks cover all dropdown options, participants, stages, playback, sliders, trial seeds, checkboxes, persistence, and navigation. These are responsive browser checks; physical iPhone/Android touch devices and their browser engines have not been tested. The original model algorithms remain unchanged. See [mobile implementation notes](web/MOBILE.txt).
+
+```sh
+node web/tests/mobile.cjs
+```
+
+The mobile support suite passes 33 checks in addition to the 48 startup checks.
+
 ## Original standalone exports
 
 Download this folder or clone the repository, then open a file from `site/` in a browser. Each exported HTML document includes its styling, controls, and simulation. GitHub's file view displays HTML source; download the file to run it. Browser storage remembers interactions when available.
