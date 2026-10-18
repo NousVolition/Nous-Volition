@@ -81,6 +81,7 @@ jobs:
       - name: Build this commit
         run: python3 build.py
       - name: Connect BrowserStack to this build
+        id: tunnel
         if: env.SIMS_TARGET == 'build'
         uses: browserstack/github-actions/setup-local@1fad39ae4755588f7fc6854da6c3efba2bf5d08f
         env:
@@ -104,10 +105,11 @@ jobs:
           if-no-files-found: warn
           retention-days: 14
       - name: Close BrowserStack tunnel
-        if: always() && env.SIMS_TARGET == 'build'
+        if: always() && env.SIMS_TARGET == 'build' && (steps.tunnel.outcome == 'success' || steps.tunnel.outcome == 'failure')
         uses: browserstack/github-actions/setup-local@1fad39ae4755588f7fc6854da6c3efba2bf5d08f
         env:
           BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
         with:
           local-testing: stop
           local-identifier: ${{ env.BROWSERSTACK_LOCAL_IDENTIFIER }}
+
