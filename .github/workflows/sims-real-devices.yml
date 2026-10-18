@@ -1,0 +1,113 @@
+name: SIMS real phones
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'studies/sims-evidence-lab/**'
+      - '.github/workflows/sims-real-devices.yml'
+  pull_request:
+    paths:
+      - 'studies/sims-evidence-lab/**'
+      - '.github/workflows/sims-real-devices.yml'
+  workflow_dispatch:
+    inputs:
+      target:
+        description: Test the checked-out changes or the published live site
+        type: choice
+        options: [build, live]
+        default: build
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sims-real-phones-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  source-checks:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    defaults:
+      run:
+        working-directory: studies/sims-evidence-lab/web
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+          sparse-checkout: studies/sims-evidence-lab
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - run: python3 build.py
+      - run: node tests/startup.cjs
+      - run: node tests/mobile.cjs
+      - run: node --test tests/real-device/*.test.mjs
+
+  phones:
+    needs: source-checks
+    # Fork PRs receive source checks only. Never expose device credentials to fork code.
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        device: [iphone, android]
+    defaults:
+      run:
+        working-directory: studies/sims-evidence-lab/web
+    env:
+      BROWSERSTACK_LOCAL_IDENTIFIER: sims-${{ github.run_id }}-${{ github.run_attempt }}-${{ matrix.device }}
+      SIMS_DEVICE: ${{ matrix.device }}
+      SIMS_TARGET: ${{ inputs.target || 'build' }}
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+          sparse-checkout: studies/sims-evidence-lab
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - name: Check BrowserStack credentials
+        env:
+          BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
+          BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
+        run: node tests/real-device/credentials.mjs
+      - name: Build this commit
+        run: python3 build.py
+      - name: Connect BrowserStack to this build
+        if: env.SIMS_TARGET == 'build'
+        uses: browserstack/github-actions/setup-local@1fad39ae4755588f7fc6854da6c3efba2bf5d08f
+        env:
+          BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
+        with:
+          local-testing: start
+          local-identifier: ${{ env.BROWSERSTACK_LOCAL_IDENTIFIER }}
+          local-logging-level: setup-logs
+      - name: Test physical ${{ matrix.device }}
+        timeout-minutes: 20
+        env:
+          BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
+          BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
+        run: node tests/real-device/run.mjs
+      - name: Save screenshots and results
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: sims-${{ matrix.device }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: studies/sims-evidence-lab/web/test-results/real-device/
+          if-no-files-found: warn
+          retention-days: 14
+      - name: Close BrowserStack tunnel
+        if: always() && env.SIMS_TARGET == 'build'
+        uses: browserstack/github-actions/setup-local@1fad39ae4755588f7fc6854da6c3efba2bf5d08f
+        env:
+          BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
+        with:
+          local-testing: stop
+          local-identifier: ${{ env.BROWSERSTACK_LOCAL_IDENTIFIER }}

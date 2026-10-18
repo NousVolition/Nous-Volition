@@ -1,0 +1,4162 @@
+{
+  "testedAt": "2026-10-17T23:39:09.898Z",
+  "url": "https://sims-evidence-lab.itswaffles88.chatgpt.site/",
+  "passed": true,
+  "sourceChanged": false,
+  "devices": [
+    {
+      "key": "iphone",
+      "name": "iPhone 16",
+      "os": "iOS 18.5 · Safari",
+      "session": "bf9581cc84d872ef02edb397f8ead43657bad16c",
+      "passed": true,
+      "checkRecords": 172,
+      "initialFailures": 22,
+      "issues": [
+        {
+          "route": "Latest run",
+          "name": "touch disclosure: Recorded actions shown to this participant",
+          "initialResult": "Disclosure did not toggle",
+          "resolved": true,
+          "reason": "The first attempt targeted a disclosure outside the visible stage. Opening it in the evidence/replies stage passed.",
+          "retest": {
+            "source": "iphone-followup.json",
+            "name": "recorded evidence disclosure opens on touch"
+          }
+        },
+        {
+          "route": "Latest run",
+          "name": "edit numeric seed",
+          "initialResult": "An element could not be located on the page using the given search parameters.",
+          "resolved": true,
+          "reason": "The WebDriver input method cleared or changed the field differently from native keyboard editing. Native keyboard entry and commit passed.",
+          "retest": {
+            "source": "iphone-native-seed.json",
+            "name": "native keyboard seed entry"
+          }
+        },
+        {
+          "route": "Latest run",
+          "name": "touch replay slider",
+          "initialResult": "Slider value unchanged",
+          "resolved": true,
+          "reason": "The first drag started away from the slider thumb or with the keyboard still open. Dragging the thumb with the keyboard dismissed passed.",
+          "retest": {
+            "source": "iphone-followup.json",
+            "name": "touch drag from slider thumb"
+          }
+        },
+        {
+          "route": "Latest run",
+          "name": "touch new trial",
+          "initialResult": "New trial did not change seed",
+          "resolved": true,
+          "reason": "The earlier keyboard command did not commit the entered seed. Native keyboard entry followed by New trial passed.",
+          "retest": {
+            "source": "iphone-native-seed.json",
+            "name": "new trial after native seed entry"
+          }
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "edit numeric seed",
+          "initialResult": "An element could not be located on the page using the given search parameters.",
+          "resolved": true,
+          "reason": "The WebDriver input method cleared or changed the field differently from native keyboard editing. Native keyboard entry and commit passed.",
+          "retest": {
+            "source": "iphone-native-seed.json",
+            "name": "native keyboard seed entry"
+          }
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch replay slider",
+          "initialResult": "Slider value unchanged",
+          "resolved": true,
+          "reason": "The first drag started away from the slider thumb or with the keyboard still open. Dragging the thumb with the keyboard dismissed passed.",
+          "retest": {
+            "source": "iphone-followup.json",
+            "name": "touch drag from slider thumb"
+          }
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch new trial",
+          "initialResult": "New trial did not change seed",
+          "resolved": true,
+          "reason": "The earlier keyboard command did not commit the entered seed. Native keyboard entry followed by New trial passed.",
+          "retest": {
+            "source": "iphone-native-seed.json",
+            "name": "new trial after native seed entry"
+          }
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "edit numeric seed",
+          "initialResult": "An element could not be located on the page using the given search parameters.",
+          "resolved": true,
+          "reason": "The WebDriver input method cleared or changed the field differently from native keyboard editing. Native keyboard entry and commit passed.",
+          "retest": {
+            "source": "iphone-native-seed.json",
+            "name": "native keyboard seed entry"
+          }
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch replay slider",
+          "initialResult": "Slider value unchanged",
+          "resolved": true,
+          "reason": "The first drag started away from the slider thumb or with the keyboard still open. Dragging the thumb with the keyboard dismissed passed.",
+          "retest": {
+            "source": "iphone-followup.json",
+            "name": "touch drag from slider thumb"
+          }
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch new trial",
+          "initialResult": "New trial did not change seed",
+          "resolved": true,
+          "reason": "The earlier keyboard command did not commit the entered seed. Native keyboard entry followed by New trial passed.",
+          "retest": {
+            "source": "iphone-native-seed.json",
+            "name": "new trial after native seed entry"
+          }
+        },
+        {
+          "route": "sims-network",
+          "name": "edit numeric seed",
+          "initialResult": "An element could not be located on the page using the given search parameters.",
+          "resolved": true,
+          "reason": "The WebDriver input method cleared or changed the field differently from native keyboard editing. Native keyboard entry and commit passed.",
+          "retest": {
+            "source": "iphone-native-seed.json",
+            "name": "native keyboard seed entry"
+          }
+        },
+        {
+          "route": "sims-network",
+          "name": "touch replay slider",
+          "initialResult": "Slider value unchanged",
+          "resolved": true,
+          "reason": "The first drag started away from the slider thumb or with the keyboard still open. Dragging the thumb with the keyboard dismissed passed.",
+          "retest": {
+            "source": "iphone-followup.json",
+            "name": "touch drag from slider thumb"
+          }
+        },
+        {
+          "route": "sims-network",
+          "name": "touch new trial",
+          "initialResult": "New trial did not change seed",
+          "resolved": true,
+          "reason": "The earlier keyboard command did not commit the entered seed. Native keyboard entry followed by New trial passed.",
+          "retest": {
+            "source": "iphone-native-seed.json",
+            "name": "new trial after native seed entry"
+          }
+        },
+        {
+          "route": "Latest run",
+          "name": "numeric seed entry commits after blur",
+          "initialResult": "Seed did not commit",
+          "resolved": true,
+          "reason": "The WebDriver input method cleared or changed the field differently from native keyboard editing. Native keyboard entry and commit passed.",
+          "retest": {
+            "source": "iphone-native-seed.json",
+            "name": "native keyboard seed entry"
+          }
+        },
+        {
+          "route": "Latest run",
+          "name": "touch new trial after committed seed",
+          "initialResult": "New trial did not increment committed seed",
+          "resolved": true,
+          "reason": "The earlier keyboard command did not commit the entered seed. Native keyboard entry followed by New trial passed.",
+          "retest": {
+            "source": "iphone-native-seed.json",
+            "name": "new trial after native seed entry"
+          }
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "numeric seed entry commits after blur",
+          "initialResult": "Seed did not commit",
+          "resolved": true,
+          "reason": "The WebDriver input method cleared or changed the field differently from native keyboard editing. Native keyboard entry and commit passed.",
+          "retest": {
+            "source": "iphone-native-seed.json",
+            "name": "native keyboard seed entry"
+          }
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch new trial after committed seed",
+          "initialResult": "New trial did not increment committed seed",
+          "resolved": true,
+          "reason": "The earlier keyboard command did not commit the entered seed. Native keyboard entry followed by New trial passed.",
+          "retest": {
+            "source": "iphone-native-seed.json",
+            "name": "new trial after native seed entry"
+          }
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "numeric seed entry commits after blur",
+          "initialResult": "Seed did not commit",
+          "resolved": true,
+          "reason": "The WebDriver input method cleared or changed the field differently from native keyboard editing. Native keyboard entry and commit passed.",
+          "retest": {
+            "source": "iphone-native-seed.json",
+            "name": "native keyboard seed entry"
+          }
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch new trial after committed seed",
+          "initialResult": "New trial did not increment committed seed",
+          "resolved": true,
+          "reason": "The earlier keyboard command did not commit the entered seed. Native keyboard entry followed by New trial passed.",
+          "retest": {
+            "source": "iphone-native-seed.json",
+            "name": "new trial after native seed entry"
+          }
+        },
+        {
+          "route": "sims-network",
+          "name": "numeric seed entry commits after blur",
+          "initialResult": "Seed did not commit",
+          "resolved": true,
+          "reason": "The WebDriver input method cleared or changed the field differently from native keyboard editing. Native keyboard entry and commit passed.",
+          "retest": {
+            "source": "iphone-native-seed.json",
+            "name": "native keyboard seed entry"
+          }
+        },
+        {
+          "route": "sims-network",
+          "name": "touch new trial after committed seed",
+          "initialResult": "New trial did not increment committed seed",
+          "resolved": true,
+          "reason": "The earlier keyboard command did not commit the entered seed. Native keyboard entry followed by New trial passed.",
+          "retest": {
+            "source": "iphone-native-seed.json",
+            "name": "new trial after native seed entry"
+          }
+        },
+        {
+          "route": "landscape",
+          "name": "landscape touch step",
+          "initialResult": "An unknown server-side error occurred while processing the command. Original error: -[NSNull floatValue]: unrecognized selector sent to instance 0x1f26a45b0",
+          "resolved": true,
+          "reason": "The first rotation test used invalid touch coordinates. A real touch event calibrated the landscape coordinates, and the step passed.",
+          "retest": {
+            "source": "iphone-rotation-final.json",
+            "name": "landscape touch step"
+          }
+        }
+      ],
+      "checks": [
+        {
+          "route": "",
+          "name": "first navigation renders model",
+          "passed": true,
+          "details": {
+            "ready": "true",
+            "busy": "false",
+            "viewport": [
+              393,
+              659
+            ],
+            "scrollWidth": 393,
+            "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+            "touch": 5,
+            "title": "SIMS — Latest run"
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch disclosure: Network state",
+          "passed": true,
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch disclosure: Recorded actions shown to this participant",
+          "passed": false,
+          "details": "Disclosure did not toggle",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch disclosure: Rule transitions this round",
+          "passed": true,
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch disclosure: Edit this participant",
+          "passed": true,
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch disclosure: Network and investigation settings",
+          "passed": true,
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch disclosure: Methods and response assumptions",
+          "passed": true,
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "select preset",
+          "passed": true,
+          "details": {
+            "value": "contrast"
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "select round",
+          "passed": true,
+          "details": {
+            "value": "0"
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "select round-count",
+          "passed": true,
+          "details": {
+            "value": "3"
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "select claim",
+          "passed": true,
+          "details": {
+            "value": "copy"
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "select actual",
+          "passed": true,
+          "details": {
+            "value": "copy"
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "select policy",
+          "passed": true,
+          "details": {
+            "value": "claim"
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "select topology",
+          "passed": true,
+          "details": {
+            "value": "star"
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "select mode",
+          "passed": true,
+          "details": {
+            "value": "probe"
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "contrast/mismatch preset gives model state",
+          "passed": true,
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch checkbox innovation",
+          "passed": true,
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "edit numeric seed",
+          "passed": false,
+          "details": "An element could not be located on the page using the given search parameters.",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch stage before",
+          "passed": true,
+          "details": {
+            "phase": "Before exchange · prediction",
+            "clock": "Round 3 · probe 1 / 304",
+            "cursor": "0",
+            "selected": "SIM 1 · round 3",
+            "seed": "120261017",
+            "play": "Play"
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch stage exchange",
+          "passed": true,
+          "details": {
+            "phase": "Evidence delivered → awaiting response",
+            "clock": "Round 3 · SIM 0 · decisions paused",
+            "cursor": "0",
+            "selected": "SIM 0 · round 3",
+            "seed": "120261017",
+            "play": "Play"
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch stage after",
+          "passed": true,
+          "details": {
+            "phase": "After responses · prediction",
+            "clock": "Round 3 · probe 1 / 304",
+            "cursor": "0",
+            "selected": "SIM 0 · round 3",
+            "seed": "120261017",
+            "play": "Play"
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch replay slider",
+          "passed": false,
+          "details": "Slider value unchanged",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch step",
+          "passed": true,
+          "details": {
+            "before": {
+              "phase": "Evidence delivered → awaiting response",
+              "clock": "Round 3 · SIM 0 · decisions paused",
+              "cursor": "0",
+              "selected": "SIM 0 · round 3",
+              "seed": "120261017",
+              "play": "Play"
+            },
+            "after": {
+              "phase": "Evidence → response recorded",
+              "clock": "Round 3 · SIM 0 · decisions paused",
+              "cursor": "1",
+              "selected": "SIM 0 · round 3",
+              "seed": "120261017",
+              "play": "Play"
+            }
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch play and pause",
+          "passed": true,
+          "details": {
+            "playing": {
+              "phase": "Evidence → response recorded",
+              "clock": "Round 3 · SIM 0 · decisions paused",
+              "cursor": "1",
+              "selected": "SIM 0 · round 3",
+              "seed": "120261017",
+              "play": "Pause"
+            },
+            "stopped": {
+              "phase": "Evidence → response recorded",
+              "clock": "Round 3 · SIM 0 · decisions paused",
+              "cursor": "1",
+              "selected": "SIM 0 · round 3",
+              "seed": "120261017",
+              "play": "Play"
+            }
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch finish",
+          "passed": true,
+          "details": {
+            "phase": "After responses · observed",
+            "clock": "Round 3 · probe 304 / 304",
+            "cursor": "607",
+            "selected": "SIM 0 · round 3",
+            "seed": "120261017",
+            "play": "Replay rounds"
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch Inspect SIM 0 row 0",
+          "passed": true,
+          "details": "SIM 0 · round 3",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch Inspect SIM 1 row 1",
+          "passed": true,
+          "details": "SIM 1 · round 3",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch Inspect SIM 2 row 2",
+          "passed": true,
+          "details": "SIM 2 · round 3",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch Inspect SIM 3 row 3",
+          "passed": true,
+          "details": "SIM 3 · round 3",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch Inspect SIM 4 row 4",
+          "passed": true,
+          "details": "SIM 4 · round 3",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch Inspect SIM 5 row 5",
+          "passed": true,
+          "details": "SIM 5 · round 3",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch Inspect SIM 6 row 6",
+          "passed": true,
+          "details": "SIM 6 · round 3",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch Inspect SIM 7 row 7",
+          "passed": true,
+          "details": "SIM 7 · round 3",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch Inspect SIM 8 row 8",
+          "passed": true,
+          "details": "SIM 8 · round 3",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch Inspect SIM 0 row 9",
+          "passed": true,
+          "details": "SIM 0 · round 3",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch Inspect SIM 1 row 10",
+          "passed": true,
+          "details": "SIM 1 · round 3",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch Inspect SIM 2 row 11",
+          "passed": true,
+          "details": "SIM 2 · round 3",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch Inspect SIM 3 row 12",
+          "passed": true,
+          "details": "SIM 3 · round 3",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch Inspect SIM 4 row 13",
+          "passed": true,
+          "details": "SIM 4 · round 3",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch Inspect SIM 5 row 14",
+          "passed": true,
+          "details": "SIM 5 · round 3",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch Inspect SIM 6 row 15",
+          "passed": true,
+          "details": "SIM 6 · round 3",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch Inspect SIM 7 row 16",
+          "passed": true,
+          "details": "SIM 7 · round 3",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch Inspect SIM 8 row 17",
+          "passed": true,
+          "details": "SIM 8 · round 3",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch read-reply",
+          "passed": true,
+          "details": {
+            "phase": "Evidence → response recorded",
+            "clock": "Round 3 · SIM 8 · decisions paused",
+            "cursor": "17",
+            "selected": "SIM 8 · round 3",
+            "seed": "120261017",
+            "play": "Play"
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch new trial",
+          "passed": false,
+          "details": "New trial did not change seed",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "no runtime errors",
+          "passed": true,
+          "details": [],
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "trusted touch events received",
+          "passed": true,
+          "details": [
+            {
+              "trusted": true,
+              "pointerType": "touch",
+              "action": "before"
+            },
+            {
+              "trusted": true,
+              "pointerType": "touch",
+              "action": "exchange"
+            },
+            {
+              "trusted": true,
+              "pointerType": "touch",
+              "action": "after"
+            },
+            {
+              "trusted": true,
+              "pointerType": "touch",
+              "action": "exchange"
+            },
+            {
+              "trusted": true,
+              "pointerType": "touch",
+              "action": "step"
+            },
+            {
+              "trusted": true,
+              "pointerType": "touch",
+              "action": "play"
+            },
+            {
+              "trusted": true,
+              "pointerType": "touch",
+              "action": "play"
+            },
+            {
+              "trusted": true,
+              "pointerType": "touch",
+              "action": "finish"
+            },
+            {
+              "trusted": true,
+              "pointerType": "touch",
+              "action": "read-reply"
+            },
+            {
+              "trusted": true,
+              "pointerType": "touch",
+              "action": "new"
+            }
+          ],
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "first navigation renders model",
+          "passed": true,
+          "details": {
+            "ready": "true",
+            "busy": "false",
+            "viewport": [
+              393,
+              659
+            ],
+            "scrollWidth": 393,
+            "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+            "touch": 5,
+            "title": "SIMS — Evidence & response"
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch disclosure: Recorded actions shown to this participant",
+          "passed": true,
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch disclosure: Edit this participant",
+          "passed": true,
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch disclosure: Network and investigation settings",
+          "passed": true,
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch disclosure: Methods and response assumptions",
+          "passed": true,
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "select claim",
+          "passed": true,
+          "details": {
+            "value": "hold"
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "select actual",
+          "passed": true,
+          "details": {
+            "value": "copy"
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "select policy",
+          "passed": true,
+          "details": {
+            "value": "behavior"
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "select preset",
+          "passed": true,
+          "details": {
+            "value": "contrast"
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "select topology",
+          "passed": true,
+          "details": {
+            "value": "star"
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "select mode",
+          "passed": true,
+          "details": {
+            "value": "probe"
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "contrast/mismatch preset gives model state",
+          "passed": true,
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch checkbox innovation",
+          "passed": true,
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "edit numeric seed",
+          "passed": false,
+          "details": "An element could not be located on the page using the given search parameters.",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch stage before",
+          "passed": true,
+          "details": {
+            "phase": "Before exchange · prediction",
+            "clock": "Probe 1 / 304",
+            "cursor": "0",
+            "selected": "Inspect SIM 0",
+            "seed": "120261017",
+            "play": "Play"
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch stage exchange",
+          "passed": true,
+          "details": {
+            "phase": "Evidence delivered → awaiting response",
+            "clock": "SIM 0 · decisions paused",
+            "cursor": "0",
+            "selected": "Inspect SIM 0",
+            "seed": "120261017",
+            "play": "Play"
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch stage after",
+          "passed": true,
+          "details": {
+            "phase": "After responses · prediction",
+            "clock": "Probe 1 / 304",
+            "cursor": "0",
+            "selected": "Inspect SIM 0",
+            "seed": "120261017",
+            "play": "Play"
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch replay slider",
+          "passed": false,
+          "details": "Slider value unchanged",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch step",
+          "passed": true,
+          "details": {
+            "before": {
+              "phase": "Evidence delivered → awaiting response",
+              "clock": "SIM 0 · decisions paused",
+              "cursor": "0",
+              "selected": "Inspect SIM 0",
+              "seed": "120261017",
+              "play": "Play"
+            },
+            "after": {
+              "phase": "Evidence → response recorded",
+              "clock": "SIM 0 · decisions paused",
+              "cursor": "1",
+              "selected": "Inspect SIM 0",
+              "seed": "120261017",
+              "play": "Play"
+            }
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch play and pause",
+          "passed": true,
+          "details": {
+            "playing": {
+              "phase": "Evidence → response recorded",
+              "clock": "SIM 0 · decisions paused",
+              "cursor": "1",
+              "selected": "Inspect SIM 0",
+              "seed": "120261017",
+              "play": "Pause"
+            },
+            "stopped": {
+              "phase": "Evidence → response recorded",
+              "clock": "SIM 0 · decisions paused",
+              "cursor": "1",
+              "selected": "Inspect SIM 0",
+              "seed": "120261017",
+              "play": "Play"
+            }
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch finish",
+          "passed": true,
+          "details": {
+            "phase": "After responses · observed",
+            "clock": "Probe 304 / 304",
+            "cursor": "607",
+            "selected": "Inspect SIM 0",
+            "seed": "120261017",
+            "play": "Replay replies"
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch Inspect SIM 0 row 0",
+          "passed": true,
+          "details": "Inspect SIM 0",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch Inspect SIM 1 row 1",
+          "passed": true,
+          "details": "Inspect SIM 1",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch Inspect SIM 2 row 2",
+          "passed": true,
+          "details": "Inspect SIM 2",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch Inspect SIM 3 row 3",
+          "passed": true,
+          "details": "Inspect SIM 3",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch Inspect SIM 4 row 4",
+          "passed": true,
+          "details": "Inspect SIM 4",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch Inspect SIM 5 row 5",
+          "passed": true,
+          "details": "Inspect SIM 5",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch Inspect SIM 6 row 6",
+          "passed": true,
+          "details": "Inspect SIM 6",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch Inspect SIM 7 row 7",
+          "passed": true,
+          "details": "Inspect SIM 7",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch Inspect SIM 8 row 8",
+          "passed": true,
+          "details": "Inspect SIM 8",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch read-reply",
+          "passed": true,
+          "details": {
+            "phase": "Evidence → response recorded",
+            "clock": "SIM 8 · decisions paused",
+            "cursor": "17",
+            "selected": "Inspect SIM 8",
+            "seed": "120261017",
+            "play": "Play"
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch new trial",
+          "passed": false,
+          "details": "New trial did not change seed",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "no runtime errors",
+          "passed": true,
+          "details": [],
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "trusted touch events received",
+          "passed": true,
+          "details": [
+            {
+              "trusted": true,
+              "pointerType": "touch",
+              "action": "before"
+            },
+            {
+              "trusted": true,
+              "pointerType": "touch",
+              "action": "exchange"
+            },
+            {
+              "trusted": true,
+              "pointerType": "touch",
+              "action": "after"
+            },
+            {
+              "trusted": true,
+              "pointerType": "touch",
+              "action": "exchange"
+            },
+            {
+              "trusted": true,
+              "pointerType": "touch",
+              "action": "step"
+            },
+            {
+              "trusted": true,
+              "pointerType": "touch",
+              "action": "play"
+            },
+            {
+              "trusted": true,
+              "pointerType": "touch",
+              "action": "play"
+            },
+            {
+              "trusted": true,
+              "pointerType": "touch",
+              "action": "finish"
+            },
+            {
+              "trusted": true,
+              "pointerType": "touch",
+              "action": "read-reply"
+            },
+            {
+              "trusted": true,
+              "pointerType": "touch",
+              "action": "new"
+            }
+          ],
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "first navigation renders model",
+          "passed": true,
+          "details": {
+            "ready": "true",
+            "busy": "false",
+            "viewport": [
+              393,
+              659
+            ],
+            "scrollWidth": 393,
+            "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+            "touch": 5,
+            "title": "SIMS — Claims & actions"
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch disclosure: What does claim weight mean?",
+          "passed": true,
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch disclosure: Change this SIM’s claim or behavior",
+          "passed": true,
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "select topology",
+          "passed": true,
+          "details": {
+            "value": "star"
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "select preset",
+          "passed": true,
+          "details": {
+            "value": "matched"
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "select mode",
+          "passed": true,
+          "details": {
+            "value": "probe"
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "select claim",
+          "passed": true,
+          "details": {
+            "value": "hold"
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "select actual",
+          "passed": true,
+          "details": {
+            "value": "copy"
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "contrast/mismatch preset gives model state",
+          "passed": true,
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch checkbox initiative",
+          "passed": true,
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "edit numeric seed",
+          "passed": false,
+          "details": "An element could not be located on the page using the given search parameters.",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch replay slider",
+          "passed": false,
+          "details": "Slider value unchanged",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch step",
+          "passed": true,
+          "details": {
+            "before": {
+              "phase": "Claim → prediction recorded",
+              "clock": "Controlled probe 1 / 304",
+              "cursor": "0",
+              "selected": "Inspect SIM 0",
+              "seed": "120261017",
+              "play": "Play"
+            },
+            "after": {
+              "phase": "Observation → compare",
+              "clock": "Controlled probe 1 / 304",
+              "cursor": "1",
+              "selected": "Inspect SIM 0",
+              "seed": "120261017",
+              "play": "Play"
+            }
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch play and pause",
+          "passed": true,
+          "details": {
+            "playing": {
+              "phase": "Claim → prediction recorded",
+              "clock": "Controlled probe 2 / 304",
+              "cursor": "2",
+              "selected": "Inspect SIM 0",
+              "seed": "120261017",
+              "play": "Pause"
+            },
+            "stopped": {
+              "phase": "Observation → compare",
+              "clock": "Controlled probe 3 / 304",
+              "cursor": "5",
+              "selected": "Inspect SIM 0",
+              "seed": "120261017",
+              "play": "Play"
+            }
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch finish",
+          "passed": true,
+          "details": {
+            "phase": "Observation → compare",
+            "clock": "Controlled probe 304 / 304",
+            "cursor": "607",
+            "selected": "Inspect SIM 0",
+            "seed": "120261017",
+            "play": "Replay"
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch Inspect SIM 0 row 0",
+          "passed": true,
+          "details": "Inspect SIM 0",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch Inspect SIM 1 row 1",
+          "passed": true,
+          "details": "Inspect SIM 1",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch Inspect SIM 2 row 2",
+          "passed": true,
+          "details": "Inspect SIM 2",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch Inspect SIM 3 row 3",
+          "passed": true,
+          "details": "Inspect SIM 3",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch Inspect SIM 4 row 4",
+          "passed": true,
+          "details": "Inspect SIM 4",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch Inspect SIM 5 row 5",
+          "passed": true,
+          "details": "Inspect SIM 5",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch Inspect SIM 6 row 6",
+          "passed": true,
+          "details": "Inspect SIM 6",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch Inspect SIM 7 row 7",
+          "passed": true,
+          "details": "Inspect SIM 7",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch Inspect SIM 8 row 8",
+          "passed": true,
+          "details": "Inspect SIM 8",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch jump",
+          "passed": true,
+          "details": {
+            "phase": "Observation → compare",
+            "clock": "Controlled probe 296 / 304",
+            "cursor": "591",
+            "selected": "Inspect SIM 8",
+            "seed": "120261017",
+            "play": "Play"
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "horizontal touch swipe table 0",
+          "passed": true,
+          "details": {
+            "before": 0,
+            "after": 71
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch new trial",
+          "passed": false,
+          "details": "New trial did not change seed",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "no runtime errors",
+          "passed": true,
+          "details": [],
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "trusted touch events received",
+          "passed": true,
+          "details": [
+            {
+              "trusted": true,
+              "pointerType": "touch",
+              "action": "step"
+            },
+            {
+              "trusted": true,
+              "pointerType": "touch",
+              "action": "play"
+            },
+            {
+              "trusted": true,
+              "pointerType": "touch",
+              "action": "play"
+            },
+            {
+              "trusted": true,
+              "pointerType": "touch",
+              "action": "finish"
+            },
+            {
+              "trusted": true,
+              "pointerType": "touch",
+              "action": "jump"
+            },
+            {
+              "trusted": true,
+              "pointerType": "touch",
+              "action": "new"
+            }
+          ],
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-network",
+          "name": "first navigation renders model",
+          "passed": true,
+          "details": {
+            "ready": "true",
+            "busy": "false",
+            "viewport": [
+              393,
+              659
+            ],
+            "scrollWidth": 393,
+            "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+            "touch": 5,
+            "title": "SIMS — Network"
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-network",
+          "name": "select topology",
+          "passed": true,
+          "details": {
+            "value": "star"
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-network",
+          "name": "select resistance",
+          "passed": true,
+          "details": {
+            "value": "hold:0"
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-network",
+          "name": "touch checkbox initiative",
+          "passed": true,
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-network",
+          "name": "edit numeric seed",
+          "passed": false,
+          "details": "An element could not be located on the page using the given search parameters.",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-network",
+          "name": "touch replay slider",
+          "passed": false,
+          "details": "Slider value unchanged",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-network",
+          "name": "touch step",
+          "passed": true,
+          "details": {
+            "before": {
+              "phase": null,
+              "clock": null,
+              "cursor": "0",
+              "selected": null,
+              "seed": "120261017",
+              "play": "Play"
+            },
+            "after": {
+              "phase": null,
+              "clock": null,
+              "cursor": "1",
+              "selected": null,
+              "seed": "120261017",
+              "play": "Play"
+            }
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-network",
+          "name": "touch play and pause",
+          "passed": true,
+          "details": {
+            "playing": {
+              "phase": null,
+              "clock": null,
+              "cursor": "3",
+              "selected": null,
+              "seed": "120261017",
+              "play": "Pause"
+            },
+            "stopped": {
+              "phase": null,
+              "clock": null,
+              "cursor": "5",
+              "selected": null,
+              "seed": "120261017",
+              "play": "Play"
+            }
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-network",
+          "name": "touch new trial",
+          "passed": false,
+          "details": "New trial did not change seed",
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-network",
+          "name": "no runtime errors",
+          "passed": true,
+          "details": [],
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-network",
+          "name": "trusted touch events received",
+          "passed": true,
+          "details": [
+            {
+              "trusted": true,
+              "pointerType": "touch",
+              "action": "step"
+            },
+            {
+              "trusted": true,
+              "pointerType": "touch",
+              "action": "play"
+            },
+            {
+              "trusted": true,
+              "pointerType": "touch",
+              "action": "play"
+            },
+            {
+              "trusted": true,
+              "pointerType": "touch",
+              "action": "new"
+            }
+          ],
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "sims-repeated-rounds",
+          "name": "first navigation renders model",
+          "passed": true,
+          "details": {
+            "ready": "true",
+            "busy": "false",
+            "viewport": [
+              393,
+              659
+            ],
+            "scrollWidth": 393,
+            "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+            "touch": 5,
+            "title": "SIMS — Repeated rounds"
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "latest-run",
+          "name": "first navigation renders model",
+          "passed": true,
+          "details": {
+            "ready": "true",
+            "busy": "false",
+            "viewport": [
+              393,
+              659
+            ],
+            "scrollWidth": 393,
+            "ua": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1",
+            "touch": 5,
+            "title": "SIMS — Latest run"
+          },
+          "source": "iphone-audit.json"
+        },
+        {
+          "route": "",
+          "name": "numeric seed entry commits after blur",
+          "passed": false,
+          "details": "Seed did not commit",
+          "source": "iphone-followup.json"
+        },
+        {
+          "route": "",
+          "name": "touch drag from slider thumb",
+          "passed": true,
+          "details": {
+            "before": "0",
+            "after": "13"
+          },
+          "source": "iphone-followup.json"
+        },
+        {
+          "route": "",
+          "name": "recorded evidence disclosure opens on touch",
+          "passed": true,
+          "details": {
+            "before": false,
+            "after": true
+          },
+          "source": "iphone-followup.json"
+        },
+        {
+          "route": "",
+          "name": "touch step after keyboard dismissal",
+          "passed": true,
+          "details": {
+            "before": {
+              "phase": "Evidence delivered → awaiting response",
+              "cursor": "0",
+              "clock": "Round 3 · SIM 0 · decisions paused",
+              "selected": "SIM 0 · round 3",
+              "seed": "120261027",
+              "progress": "1 / 9 exchanges",
+              "outcome": "Actually chose B · stayed",
+              "step": "Let SIM 0 respond"
+            },
+            "after": {
+              "phase": "Evidence → response recorded",
+              "cursor": "1",
+              "clock": "Round 3 · SIM 0 · decisions paused",
+              "selected": "SIM 0 · round 3",
+              "seed": "120261027",
+              "progress": "1 / 9 exchanges",
+              "outcome": "Actually chose B · stayed",
+              "step": "Next participant"
+            }
+          },
+          "source": "iphone-followup.json"
+        },
+        {
+          "route": "",
+          "name": "touch new trial after committed seed",
+          "passed": false,
+          "details": "New trial did not increment committed seed",
+          "source": "iphone-followup.json"
+        },
+        {
+          "route": "",
+          "name": "touch horizontal table swipe 0",
+          "passed": true,
+          "details": {
+            "scrollLeft": 27
+          },
+          "source": "iphone-followup.json"
+        },
+        {
+          "route": "",
+          "name": "vertical touch swipe",
+          "passed": true,
+          "details": {
+            "scrollY": 692
+          },
+          "source": "iphone-followup.json"
+        },
+        {
+          "route": "",
+          "name": "touch tooltip opens and dismisses",
+          "passed": true,
+          "details": "SIM 0, round 1. Claim: Copy neighbor → Oppose. Behavior: Oppose → Oppose. No promise recorded",
+          "source": "iphone-followup.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "numeric seed entry commits after blur",
+          "passed": false,
+          "details": "Seed did not commit",
+          "source": "iphone-followup.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch drag from slider thumb",
+          "passed": true,
+          "details": {
+            "before": "0",
+            "after": "13"
+          },
+          "source": "iphone-followup.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "recorded evidence disclosure opens on touch",
+          "passed": true,
+          "details": {
+            "before": false,
+            "after": true
+          },
+          "source": "iphone-followup.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch step after keyboard dismissal",
+          "passed": true,
+          "details": {
+            "before": {
+              "phase": "Evidence delivered → awaiting response",
+              "cursor": "0",
+              "clock": "SIM 0 · decisions paused",
+              "selected": "Inspect SIM 0",
+              "seed": "120261027",
+              "progress": "1 / 9 exchanges",
+              "outcome": "",
+              "step": "Let SIM 0 respond"
+            },
+            "after": {
+              "phase": "Evidence → response recorded",
+              "cursor": "1",
+              "clock": "SIM 0 · decisions paused",
+              "selected": "Inspect SIM 0",
+              "seed": "120261027",
+              "progress": "1 / 9 exchanges",
+              "outcome": "",
+              "step": "Next participant"
+            }
+          },
+          "source": "iphone-followup.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch new trial after committed seed",
+          "passed": false,
+          "details": "New trial did not increment committed seed",
+          "source": "iphone-followup.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "vertical touch swipe",
+          "passed": true,
+          "details": {
+            "scrollY": 671
+          },
+          "source": "iphone-followup.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch tooltip opens and dismisses",
+          "passed": true,
+          "details": "SIM 0 · A",
+          "source": "iphone-followup.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "numeric seed entry commits after blur",
+          "passed": false,
+          "details": "Seed did not commit",
+          "source": "iphone-followup.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch drag from slider thumb",
+          "passed": true,
+          "details": {
+            "before": "0",
+            "after": "454"
+          },
+          "source": "iphone-followup.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch step after keyboard dismissal",
+          "passed": true,
+          "details": {
+            "before": {
+              "phase": "Claim → prediction recorded",
+              "cursor": "454",
+              "clock": "Controlled probe 228 / 304",
+              "selected": "Inspect SIM 8",
+              "seed": "120261027",
+              "progress": "228 / 304 decisions",
+              "outcome": "Outcome not yet shown",
+              "step": "Observe decision"
+            },
+            "after": {
+              "phase": "Observation → compare",
+              "cursor": "455",
+              "clock": "Controlled probe 228 / 304",
+              "selected": "Inspect SIM 8",
+              "seed": "120261027",
+              "progress": "228 / 304 decisions",
+              "outcome": "Actually chose A · stayed",
+              "step": "Next prediction"
+            }
+          },
+          "source": "iphone-followup.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch new trial after committed seed",
+          "passed": false,
+          "details": "New trial did not increment committed seed",
+          "source": "iphone-followup.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch horizontal table swipe 0",
+          "passed": true,
+          "details": {
+            "scrollLeft": 71
+          },
+          "source": "iphone-followup.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "vertical touch swipe",
+          "passed": true,
+          "details": {
+            "scrollY": 692
+          },
+          "source": "iphone-followup.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch tooltip opens and dismisses",
+          "passed": true,
+          "details": "SIM 0 · A · stated rule: Copy neighbor",
+          "source": "iphone-followup.json"
+        },
+        {
+          "route": "sims-network",
+          "name": "numeric seed entry commits after blur",
+          "passed": false,
+          "details": "Seed did not commit",
+          "source": "iphone-followup.json"
+        },
+        {
+          "route": "sims-network",
+          "name": "touch drag from slider thumb",
+          "passed": true,
+          "details": {
+            "before": "0",
+            "after": "90"
+          },
+          "source": "iphone-followup.json"
+        },
+        {
+          "route": "sims-network",
+          "name": "touch step after keyboard dismissal",
+          "passed": true,
+          "details": {
+            "before": {
+              "phase": null,
+              "cursor": "90",
+              "clock": null,
+              "selected": null,
+              "seed": "120261027",
+              "progress": null,
+              "outcome": null,
+              "step": "Step 1 s"
+            },
+            "after": {
+              "phase": null,
+              "cursor": "91",
+              "clock": null,
+              "selected": null,
+              "seed": "120261027",
+              "progress": null,
+              "outcome": null,
+              "step": "Step 1 s"
+            }
+          },
+          "source": "iphone-followup.json"
+        },
+        {
+          "route": "sims-network",
+          "name": "touch new trial after committed seed",
+          "passed": false,
+          "details": "New trial did not increment committed seed",
+          "source": "iphone-followup.json"
+        },
+        {
+          "route": "sims-network",
+          "name": "vertical touch swipe",
+          "passed": true,
+          "details": {
+            "scrollY": 446
+          },
+          "source": "iphone-followup.json"
+        },
+        {
+          "route": "sims-network",
+          "name": "touch tooltip opens and dismisses",
+          "passed": true,
+          "details": "SIM 0 · choice B · 8 neighbors",
+          "source": "iphone-followup.json"
+        },
+        {
+          "route": "navigation",
+          "name": "touch navigation Latest run",
+          "passed": true,
+          "details": {
+            "url": "https://sims-evidence-lab.itswaffles88.chatgpt.site/",
+            "title": "SIMS — Latest run"
+          },
+          "source": "iphone-followup.json"
+        },
+        {
+          "route": "navigation",
+          "name": "touch navigation Repeated rounds",
+          "passed": true,
+          "details": {
+            "url": "https://sims-evidence-lab.itswaffles88.chatgpt.site/sims-repeated-rounds",
+            "title": "SIMS — Repeated rounds"
+          },
+          "source": "iphone-followup.json"
+        },
+        {
+          "route": "navigation",
+          "name": "touch navigation Evidence & response",
+          "passed": true,
+          "details": {
+            "url": "https://sims-evidence-lab.itswaffles88.chatgpt.site/sims-evidence-and-response",
+            "title": "SIMS — Evidence & response"
+          },
+          "source": "iphone-followup.json"
+        },
+        {
+          "route": "navigation",
+          "name": "touch navigation Claims & actions",
+          "passed": true,
+          "details": {
+            "url": "https://sims-evidence-lab.itswaffles88.chatgpt.site/sims-claim-testing",
+            "title": "SIMS — Claims & actions"
+          },
+          "source": "iphone-followup.json"
+        },
+        {
+          "route": "navigation",
+          "name": "touch navigation Network",
+          "passed": true,
+          "details": {
+            "url": "https://sims-evidence-lab.itswaffles88.chatgpt.site/sims-network",
+            "title": "SIMS — Network"
+          },
+          "source": "iphone-followup.json"
+        },
+        {
+          "route": "navigation",
+          "name": "touch navigation Methods",
+          "passed": true,
+          "details": {
+            "url": "https://github.com/NousVolition/Nous-Volition/blob/main/studies/sims-evidence-lab/METHODS.md",
+            "title": "Nous-Volition/studies/sims-evidence-lab/METHODS.md at main · NousVolition/Nous-Volition · GitHub"
+          },
+          "source": "iphone-followup.json"
+        },
+        {
+          "route": "navigation",
+          "name": "touch navigation Source",
+          "passed": true,
+          "details": {
+            "url": "https://github.com/NousVolition/Nous-Volition/tree/main/studies/sims-evidence-lab",
+            "title": "Nous-Volition/studies/sims-evidence-lab at main · NousVolition/Nous-Volition · GitHub"
+          },
+          "source": "iphone-followup.json"
+        },
+        {
+          "route": "landscape",
+          "name": "landscape layout fits screen",
+          "passed": true,
+          "details": {
+            "width": 734,
+            "height": 393,
+            "scroll": 734,
+            "ready": "true"
+          },
+          "source": "iphone-followup.json"
+        },
+        {
+          "route": "landscape",
+          "name": "landscape touch step",
+          "passed": false,
+          "details": "An unknown server-side error occurred while processing the command. Original error: -[NSNull floatValue]: unrecognized selector sent to instance 0x1f26a45b0",
+          "source": "iphone-followup.json"
+        },
+        {
+          "route": "landscape",
+          "name": "returns to portrait",
+          "passed": true,
+          "details": {
+            "width": 393,
+            "height": 659,
+            "scroll": 393
+          },
+          "source": "iphone-followup.json"
+        },
+        {
+          "route": "",
+          "name": "native keyboard seed entry",
+          "passed": true,
+          "before": "2",
+          "after": {
+            "value": "20261037",
+            "active": "BODY",
+            "focus": null
+          },
+          "source": "iphone-native-seed.json"
+        },
+        {
+          "route": "",
+          "name": "new trial after native seed entry",
+          "passed": true,
+          "value": "20261038",
+          "source": "iphone-native-seed.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "native keyboard seed entry",
+          "passed": true,
+          "before": "2",
+          "after": {
+            "value": "20261037",
+            "active": "BODY",
+            "focus": null
+          },
+          "source": "iphone-native-seed.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "new trial after native seed entry",
+          "passed": true,
+          "value": "20261038",
+          "source": "iphone-native-seed.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "native keyboard seed entry",
+          "passed": true,
+          "before": "2",
+          "after": {
+            "value": "20261037",
+            "active": "BODY",
+            "focus": null
+          },
+          "source": "iphone-native-seed.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "new trial after native seed entry",
+          "passed": true,
+          "value": "20261038",
+          "source": "iphone-native-seed.json"
+        },
+        {
+          "route": "sims-network",
+          "name": "native keyboard seed entry",
+          "passed": true,
+          "before": "20261038",
+          "after": {
+            "value": "20261037",
+            "active": "BODY",
+            "focus": null
+          },
+          "source": "iphone-native-seed.json"
+        },
+        {
+          "route": "sims-network",
+          "name": "new trial after native seed entry",
+          "passed": true,
+          "value": "20261038",
+          "source": "iphone-native-seed.json"
+        },
+        {
+          "name": "landscape layout",
+          "passed": true,
+          "layout": {
+            "width": 734,
+            "height": 393,
+            "scroll": 734,
+            "ready": "true"
+          },
+          "source": "iphone-rotation-final.json"
+        },
+        {
+          "name": "landscape touch step",
+          "passed": true,
+          "before": "0",
+          "after": "1",
+          "calibration": {
+            "x": 241,
+            "y": 200,
+            "trusted": true,
+            "pointerType": "touch"
+          },
+          "offset": {
+            "x": 59,
+            "y": 0
+          },
+          "source": "iphone-rotation-final.json"
+        },
+        {
+          "name": "restore portrait",
+          "passed": true,
+          "portrait": {
+            "width": 393,
+            "height": 659,
+            "scroll": 393
+          },
+          "source": "iphone-rotation-final.json"
+        }
+      ],
+      "sessionUrl": "https://automate.browserstack.com/builds/4214742b5065d54fc67ea418f96f5a0ed4971378/sessions/bf9581cc84d872ef02edb397f8ead43657bad16c"
+    },
+    {
+      "key": "android",
+      "name": "Samsung Galaxy S23",
+      "os": "Android 13 · Chrome 149",
+      "session": "18be1a5b0c42920b31fbdf288a7058a5fede760e",
+      "passed": true,
+      "checkRecords": 176,
+      "initialFailures": 12,
+      "issues": [
+        {
+          "route": "Latest run",
+          "name": "edit numeric seed",
+          "initialResult": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"h1\"}\n  (Session info: chrome=149.0.7827.160)",
+          "resolved": true,
+          "reason": "The WebDriver input method cleared or changed the field differently from native keyboard editing. Native keyboard entry and commit passed.",
+          "retest": {
+            "source": "android-native-seed.json",
+            "name": "native keyboard seed entry"
+          }
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "edit numeric seed",
+          "initialResult": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"h1\"}\n  (Session info: chrome=149.0.7827.160)",
+          "resolved": true,
+          "reason": "The WebDriver input method cleared or changed the field differently from native keyboard editing. Native keyboard entry and commit passed.",
+          "retest": {
+            "source": "android-native-seed.json",
+            "name": "native keyboard seed entry"
+          }
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "edit numeric seed",
+          "initialResult": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"h1\"}\n  (Session info: chrome=149.0.7827.160)",
+          "resolved": true,
+          "reason": "The WebDriver input method cleared or changed the field differently from native keyboard editing. Native keyboard entry and commit passed.",
+          "retest": {
+            "source": "android-native-seed.json",
+            "name": "native keyboard seed entry"
+          }
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch replay slider",
+          "initialResult": "Slider value unchanged",
+          "resolved": true,
+          "reason": "The first drag started away from the slider thumb or with the keyboard still open. Dragging the thumb with the keyboard dismissed passed.",
+          "retest": {
+            "source": "android-followup.json",
+            "name": "touch drag from slider thumb"
+          }
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch step",
+          "initialResult": "Step did not advance",
+          "resolved": true,
+          "reason": "The failed keyboard step left the keyboard open. The touch step passed after dismissal.",
+          "retest": {
+            "source": "android-followup.json",
+            "name": "touch step after keyboard dismissal"
+          }
+        },
+        {
+          "route": "sims-network",
+          "name": "edit numeric seed",
+          "initialResult": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"h1\"}\n  (Session info: chrome=149.0.7827.160)",
+          "resolved": true,
+          "reason": "The WebDriver input method cleared or changed the field differently from native keyboard editing. Native keyboard entry and commit passed.",
+          "retest": {
+            "source": "android-native-seed.json",
+            "name": "native keyboard seed entry"
+          }
+        },
+        {
+          "route": "sims-network",
+          "name": "touch replay slider",
+          "initialResult": "Slider value unchanged",
+          "resolved": true,
+          "reason": "The first drag started away from the slider thumb or with the keyboard still open. Dragging the thumb with the keyboard dismissed passed.",
+          "retest": {
+            "source": "android-followup.json",
+            "name": "touch drag from slider thumb"
+          }
+        },
+        {
+          "route": "sims-network",
+          "name": "touch step",
+          "initialResult": "Step did not advance",
+          "resolved": true,
+          "reason": "The failed keyboard step left the keyboard open. The touch step passed after dismissal.",
+          "retest": {
+            "source": "android-followup.json",
+            "name": "touch step after keyboard dismissal"
+          }
+        },
+        {
+          "route": "Latest run",
+          "name": "numeric seed entry commits after blur",
+          "initialResult": "Seed did not commit",
+          "resolved": true,
+          "reason": "The WebDriver input method cleared or changed the field differently from native keyboard editing. Native keyboard entry and commit passed.",
+          "retest": {
+            "source": "android-native-seed.json",
+            "name": "native keyboard seed entry"
+          }
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "numeric seed entry commits after blur",
+          "initialResult": "Seed did not commit",
+          "resolved": true,
+          "reason": "The WebDriver input method cleared or changed the field differently from native keyboard editing. Native keyboard entry and commit passed.",
+          "retest": {
+            "source": "android-native-seed.json",
+            "name": "native keyboard seed entry"
+          }
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "numeric seed entry commits after blur",
+          "initialResult": "Seed did not commit",
+          "resolved": true,
+          "reason": "The WebDriver input method cleared or changed the field differently from native keyboard editing. Native keyboard entry and commit passed.",
+          "retest": {
+            "source": "android-native-seed.json",
+            "name": "native keyboard seed entry"
+          }
+        },
+        {
+          "route": "sims-network",
+          "name": "numeric seed entry commits after blur",
+          "initialResult": "Seed did not commit",
+          "resolved": true,
+          "reason": "The WebDriver input method cleared or changed the field differently from native keyboard editing. Native keyboard entry and commit passed.",
+          "retest": {
+            "source": "android-native-seed.json",
+            "name": "native keyboard seed entry"
+          }
+        }
+      ],
+      "checks": [
+        {
+          "route": "",
+          "name": "first navigation renders model",
+          "passed": true,
+          "details": {
+            "busy": "false",
+            "ready": "true",
+            "scrollWidth": 360,
+            "title": "SIMS — Latest run",
+            "touch": 5,
+            "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36",
+            "viewport": [
+              360,
+              649
+            ]
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch disclosure: Network state",
+          "passed": true,
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch disclosure: Recorded actions shown to this participant",
+          "passed": true,
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch disclosure: Rule transitions this round",
+          "passed": true,
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch disclosure: Edit this participant",
+          "passed": true,
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch disclosure: Network and investigation settings",
+          "passed": true,
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch disclosure: Methods and response assumptions",
+          "passed": true,
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "select preset",
+          "passed": true,
+          "details": {
+            "value": "contrast"
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "select round",
+          "passed": true,
+          "details": {
+            "value": "0"
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "select round-count",
+          "passed": true,
+          "details": {
+            "value": "3"
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "select claim",
+          "passed": true,
+          "details": {
+            "value": "copy"
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "select actual",
+          "passed": true,
+          "details": {
+            "value": "copy"
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "select policy",
+          "passed": true,
+          "details": {
+            "value": "behavior"
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "select topology",
+          "passed": true,
+          "details": {
+            "value": "star"
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "select mode",
+          "passed": true,
+          "details": {
+            "value": "probe"
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "contrast/mismatch preset gives model state",
+          "passed": true,
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch checkbox innovation",
+          "passed": true,
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "edit numeric seed",
+          "passed": false,
+          "details": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"h1\"}\n  (Session info: chrome=149.0.7827.160)",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch stage before",
+          "passed": true,
+          "details": {
+            "clock": "Round 3 · probe 1 / 304",
+            "cursor": "0",
+            "phase": "Before exchange · prediction",
+            "play": "Play",
+            "seed": "120261017",
+            "selected": "SIM 0 · round 3"
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch stage exchange",
+          "passed": true,
+          "details": {
+            "clock": "Round 3 · SIM 0 · decisions paused",
+            "cursor": "0",
+            "phase": "Evidence delivered → awaiting response",
+            "play": "Play",
+            "seed": "120261017",
+            "selected": "SIM 0 · round 3"
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch stage after",
+          "passed": true,
+          "details": {
+            "clock": "Round 3 · probe 1 / 304",
+            "cursor": "0",
+            "phase": "After responses · prediction",
+            "play": "Play",
+            "seed": "120261017",
+            "selected": "SIM 0 · round 3"
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch replay slider",
+          "passed": true,
+          "details": {
+            "before": "0",
+            "after": "3"
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch step",
+          "passed": true,
+          "details": {
+            "before": {
+              "clock": "Round 3 · SIM 1 · decisions paused",
+              "cursor": "3",
+              "phase": "Evidence → response recorded",
+              "play": "Play",
+              "seed": "120261017",
+              "selected": "SIM 1 · round 3"
+            },
+            "after": {
+              "clock": "Round 3 · SIM 2 · decisions paused",
+              "cursor": "4",
+              "phase": "Evidence delivered → awaiting response",
+              "play": "Play",
+              "seed": "120261017",
+              "selected": "SIM 2 · round 3"
+            }
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch play and pause",
+          "passed": true,
+          "details": {
+            "playing": {
+              "clock": "Round 3 · SIM 2 · decisions paused",
+              "cursor": "4",
+              "phase": "Evidence delivered → awaiting response",
+              "play": "Pause",
+              "seed": "120261017",
+              "selected": "SIM 2 · round 3"
+            },
+            "stopped": {
+              "clock": "Round 3 · SIM 2 · decisions paused",
+              "cursor": "4",
+              "phase": "Evidence delivered → awaiting response",
+              "play": "Play",
+              "seed": "120261017",
+              "selected": "SIM 2 · round 3"
+            }
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch finish",
+          "passed": true,
+          "details": {
+            "clock": "Round 3 · probe 304 / 304",
+            "cursor": "607",
+            "phase": "After responses · observed",
+            "play": "Replay rounds",
+            "seed": "120261017",
+            "selected": "SIM 2 · round 3"
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch Inspect SIM 0 row 0",
+          "passed": true,
+          "details": "SIM 0 · round 3",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch Inspect SIM 1 row 1",
+          "passed": true,
+          "details": "SIM 1 · round 3",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch Inspect SIM 2 row 2",
+          "passed": true,
+          "details": "SIM 2 · round 3",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch Inspect SIM 3 row 3",
+          "passed": true,
+          "details": "SIM 3 · round 3",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch Inspect SIM 4 row 4",
+          "passed": true,
+          "details": "SIM 4 · round 3",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch Inspect SIM 5 row 5",
+          "passed": true,
+          "details": "SIM 5 · round 3",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch Inspect SIM 6 row 6",
+          "passed": true,
+          "details": "SIM 6 · round 3",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch Inspect SIM 7 row 7",
+          "passed": true,
+          "details": "SIM 7 · round 3",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch Inspect SIM 8 row 8",
+          "passed": true,
+          "details": "SIM 8 · round 3",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch Inspect SIM 0 row 9",
+          "passed": true,
+          "details": "SIM 0 · round 3",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch Inspect SIM 1 row 10",
+          "passed": true,
+          "details": "SIM 1 · round 3",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch Inspect SIM 2 row 11",
+          "passed": true,
+          "details": "SIM 2 · round 3",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch Inspect SIM 3 row 12",
+          "passed": true,
+          "details": "SIM 3 · round 3",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch Inspect SIM 4 row 13",
+          "passed": true,
+          "details": "SIM 4 · round 3",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch Inspect SIM 5 row 14",
+          "passed": true,
+          "details": "SIM 5 · round 3",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch Inspect SIM 6 row 15",
+          "passed": true,
+          "details": "SIM 6 · round 3",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch Inspect SIM 7 row 16",
+          "passed": true,
+          "details": "SIM 7 · round 3",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch Inspect SIM 8 row 17",
+          "passed": true,
+          "details": "SIM 8 · round 3",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch read-reply",
+          "passed": true,
+          "details": {
+            "clock": "Round 3 · SIM 8 · decisions paused",
+            "cursor": "17",
+            "phase": "Evidence → response recorded",
+            "play": "Play",
+            "seed": "120261017",
+            "selected": "SIM 8 · round 3"
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "horizontal touch swipe table 1",
+          "passed": true,
+          "details": {
+            "before": 0,
+            "after": 24
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "touch new trial",
+          "passed": true,
+          "details": {
+            "before": "120261017",
+            "after": "120261018"
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "no runtime errors",
+          "passed": true,
+          "details": [],
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "trusted touch events received",
+          "passed": true,
+          "details": [
+            {
+              "action": "before",
+              "pointerType": "touch",
+              "trusted": true
+            },
+            {
+              "action": "exchange",
+              "pointerType": "touch",
+              "trusted": true
+            },
+            {
+              "action": "after",
+              "pointerType": "touch",
+              "trusted": true
+            },
+            {
+              "action": "exchange",
+              "pointerType": "touch",
+              "trusted": true
+            },
+            {
+              "action": "step",
+              "pointerType": "touch",
+              "trusted": true
+            },
+            {
+              "action": "play",
+              "pointerType": "touch",
+              "trusted": true
+            },
+            {
+              "action": "play",
+              "pointerType": "touch",
+              "trusted": true
+            },
+            {
+              "action": "finish",
+              "pointerType": "touch",
+              "trusted": true
+            },
+            {
+              "action": "read-reply",
+              "pointerType": "touch",
+              "trusted": true
+            },
+            {
+              "action": "new",
+              "pointerType": "touch",
+              "trusted": true
+            }
+          ],
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "first navigation renders model",
+          "passed": true,
+          "details": {
+            "busy": "false",
+            "ready": "true",
+            "scrollWidth": 360,
+            "title": "SIMS — Evidence & response",
+            "touch": 5,
+            "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36",
+            "viewport": [
+              360,
+              649
+            ]
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch disclosure: Recorded actions shown to this participant",
+          "passed": true,
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch disclosure: Edit this participant",
+          "passed": true,
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch disclosure: Network and investigation settings",
+          "passed": true,
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch disclosure: Methods and response assumptions",
+          "passed": true,
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "select claim",
+          "passed": true,
+          "details": {
+            "value": "hold"
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "select actual",
+          "passed": true,
+          "details": {
+            "value": "copy"
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "select policy",
+          "passed": true,
+          "details": {
+            "value": "behavior"
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "select preset",
+          "passed": true,
+          "details": {
+            "value": "contrast"
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "select topology",
+          "passed": true,
+          "details": {
+            "value": "star"
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "select mode",
+          "passed": true,
+          "details": {
+            "value": "probe"
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "contrast/mismatch preset gives model state",
+          "passed": true,
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch checkbox innovation",
+          "passed": true,
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "edit numeric seed",
+          "passed": false,
+          "details": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"h1\"}\n  (Session info: chrome=149.0.7827.160)",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch stage before",
+          "passed": true,
+          "details": {
+            "clock": "Probe 1 / 304",
+            "cursor": "0",
+            "phase": "Before exchange · prediction",
+            "play": "Play",
+            "seed": "120261017",
+            "selected": "Inspect SIM 0"
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch stage exchange",
+          "passed": true,
+          "details": {
+            "clock": "SIM 0 · decisions paused",
+            "cursor": "0",
+            "phase": "Evidence delivered → awaiting response",
+            "play": "Play",
+            "seed": "120261017",
+            "selected": "Inspect SIM 0"
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch stage after",
+          "passed": true,
+          "details": {
+            "clock": "Probe 1 / 304",
+            "cursor": "0",
+            "phase": "After responses · prediction",
+            "play": "Play",
+            "seed": "120261017",
+            "selected": "Inspect SIM 0"
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch replay slider",
+          "passed": true,
+          "details": {
+            "before": "0",
+            "after": "3"
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch step",
+          "passed": true,
+          "details": {
+            "before": {
+              "clock": "SIM 1 · decisions paused",
+              "cursor": "3",
+              "phase": "Evidence → response recorded",
+              "play": "Play",
+              "seed": "120261017",
+              "selected": "Inspect SIM 1"
+            },
+            "after": {
+              "clock": "SIM 2 · decisions paused",
+              "cursor": "4",
+              "phase": "Evidence delivered → awaiting response",
+              "play": "Play",
+              "seed": "120261017",
+              "selected": "Inspect SIM 2"
+            }
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch play and pause",
+          "passed": true,
+          "details": {
+            "playing": {
+              "clock": "SIM 2 · decisions paused",
+              "cursor": "4",
+              "phase": "Evidence delivered → awaiting response",
+              "play": "Pause",
+              "seed": "120261017",
+              "selected": "Inspect SIM 2"
+            },
+            "stopped": {
+              "clock": "SIM 2 · decisions paused",
+              "cursor": "4",
+              "phase": "Evidence delivered → awaiting response",
+              "play": "Play",
+              "seed": "120261017",
+              "selected": "Inspect SIM 2"
+            }
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch finish",
+          "passed": true,
+          "details": {
+            "clock": "Probe 304 / 304",
+            "cursor": "607",
+            "phase": "After responses · observed",
+            "play": "Replay replies",
+            "seed": "120261017",
+            "selected": "Inspect SIM 2"
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch Inspect SIM 0 row 0",
+          "passed": true,
+          "details": "Inspect SIM 0",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch Inspect SIM 1 row 1",
+          "passed": true,
+          "details": "Inspect SIM 1",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch Inspect SIM 2 row 2",
+          "passed": true,
+          "details": "Inspect SIM 2",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch Inspect SIM 3 row 3",
+          "passed": true,
+          "details": "Inspect SIM 3",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch Inspect SIM 4 row 4",
+          "passed": true,
+          "details": "Inspect SIM 4",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch Inspect SIM 5 row 5",
+          "passed": true,
+          "details": "Inspect SIM 5",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch Inspect SIM 6 row 6",
+          "passed": true,
+          "details": "Inspect SIM 6",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch Inspect SIM 7 row 7",
+          "passed": true,
+          "details": "Inspect SIM 7",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch Inspect SIM 8 row 8",
+          "passed": true,
+          "details": "Inspect SIM 8",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch read-reply",
+          "passed": true,
+          "details": {
+            "clock": "SIM 8 · decisions paused",
+            "cursor": "17",
+            "phase": "Evidence → response recorded",
+            "play": "Play",
+            "seed": "120261017",
+            "selected": "Inspect SIM 8"
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "horizontal touch swipe table 0",
+          "passed": true,
+          "details": {
+            "before": 0,
+            "after": 24
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch new trial",
+          "passed": true,
+          "details": {
+            "before": "120261017",
+            "after": "120261018"
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "no runtime errors",
+          "passed": true,
+          "details": [],
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "trusted touch events received",
+          "passed": true,
+          "details": [
+            {
+              "action": "before",
+              "pointerType": "touch",
+              "trusted": true
+            },
+            {
+              "action": "exchange",
+              "pointerType": "touch",
+              "trusted": true
+            },
+            {
+              "action": "after",
+              "pointerType": "touch",
+              "trusted": true
+            },
+            {
+              "action": "exchange",
+              "pointerType": "touch",
+              "trusted": true
+            },
+            {
+              "action": "step",
+              "pointerType": "touch",
+              "trusted": true
+            },
+            {
+              "action": "play",
+              "pointerType": "touch",
+              "trusted": true
+            },
+            {
+              "action": "play",
+              "pointerType": "touch",
+              "trusted": true
+            },
+            {
+              "action": "finish",
+              "pointerType": "touch",
+              "trusted": true
+            },
+            {
+              "action": "read-reply",
+              "pointerType": "touch",
+              "trusted": true
+            },
+            {
+              "action": "new",
+              "pointerType": "touch",
+              "trusted": true
+            }
+          ],
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "first navigation renders model",
+          "passed": true,
+          "details": {
+            "busy": "false",
+            "ready": "true",
+            "scrollWidth": 360,
+            "title": "SIMS — Claims & actions",
+            "touch": 5,
+            "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36",
+            "viewport": [
+              360,
+              649
+            ]
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch disclosure: What does claim weight mean?",
+          "passed": true,
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch disclosure: Change this SIM’s claim or behavior",
+          "passed": true,
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "select topology",
+          "passed": true,
+          "details": {
+            "value": "star"
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "select preset",
+          "passed": true,
+          "details": {
+            "value": "matched"
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "select mode",
+          "passed": true,
+          "details": {
+            "value": "probe"
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "select claim",
+          "passed": true,
+          "details": {
+            "value": "hold"
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "select actual",
+          "passed": true,
+          "details": {
+            "value": "copy"
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "contrast/mismatch preset gives model state",
+          "passed": true,
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch checkbox initiative",
+          "passed": true,
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "edit numeric seed",
+          "passed": false,
+          "details": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"h1\"}\n  (Session info: chrome=149.0.7827.160)",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch replay slider",
+          "passed": false,
+          "details": "Slider value unchanged",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch step",
+          "passed": false,
+          "details": "Step did not advance",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch play and pause",
+          "passed": true,
+          "details": {
+            "playing": {
+              "clock": "Controlled probe 1 / 304",
+              "cursor": "1",
+              "phase": "Observation → compare",
+              "play": "Pause",
+              "seed": "120261017",
+              "selected": "Inspect SIM 0"
+            },
+            "stopped": {
+              "clock": "Controlled probe 2 / 304",
+              "cursor": "2",
+              "phase": "Claim → prediction recorded",
+              "play": "Play",
+              "seed": "120261017",
+              "selected": "Inspect SIM 0"
+            }
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch finish",
+          "passed": true,
+          "details": {
+            "clock": "Controlled probe 304 / 304",
+            "cursor": "607",
+            "phase": "Observation → compare",
+            "play": "Replay",
+            "seed": "120261017",
+            "selected": "Inspect SIM 0"
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch Inspect SIM 0 row 0",
+          "passed": true,
+          "details": "Inspect SIM 0",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch Inspect SIM 1 row 1",
+          "passed": true,
+          "details": "Inspect SIM 1",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch Inspect SIM 2 row 2",
+          "passed": true,
+          "details": "Inspect SIM 2",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch Inspect SIM 3 row 3",
+          "passed": true,
+          "details": "Inspect SIM 3",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch Inspect SIM 4 row 4",
+          "passed": true,
+          "details": "Inspect SIM 4",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch Inspect SIM 5 row 5",
+          "passed": true,
+          "details": "Inspect SIM 5",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch Inspect SIM 6 row 6",
+          "passed": true,
+          "details": "Inspect SIM 6",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch Inspect SIM 7 row 7",
+          "passed": true,
+          "details": "Inspect SIM 7",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch Inspect SIM 8 row 8",
+          "passed": true,
+          "details": "Inspect SIM 8",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch jump",
+          "passed": true,
+          "details": {
+            "clock": "Controlled probe 294 / 304",
+            "cursor": "587",
+            "phase": "Observation → compare",
+            "play": "Play",
+            "seed": "120261017",
+            "selected": "Inspect SIM 8"
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "horizontal touch swipe table 0",
+          "passed": true,
+          "details": {
+            "before": 0,
+            "after": 104
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch new trial",
+          "passed": true,
+          "details": {
+            "before": "120261017",
+            "after": "120261018"
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "no runtime errors",
+          "passed": true,
+          "details": [],
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "trusted touch events received",
+          "passed": true,
+          "details": [
+            {
+              "action": "play",
+              "pointerType": "touch",
+              "trusted": true
+            },
+            {
+              "action": "play",
+              "pointerType": "touch",
+              "trusted": true
+            },
+            {
+              "action": "finish",
+              "pointerType": "touch",
+              "trusted": true
+            },
+            {
+              "action": "jump",
+              "pointerType": "touch",
+              "trusted": true
+            },
+            {
+              "action": "new",
+              "pointerType": "touch",
+              "trusted": true
+            }
+          ],
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-network",
+          "name": "first navigation renders model",
+          "passed": true,
+          "details": {
+            "busy": "false",
+            "ready": "true",
+            "scrollWidth": 360,
+            "title": "SIMS — Network",
+            "touch": 5,
+            "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36",
+            "viewport": [
+              360,
+              649
+            ]
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-network",
+          "name": "select topology",
+          "passed": true,
+          "details": {
+            "value": "star"
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-network",
+          "name": "select resistance",
+          "passed": true,
+          "details": {
+            "value": "hold:0"
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-network",
+          "name": "touch checkbox initiative",
+          "passed": true,
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-network",
+          "name": "edit numeric seed",
+          "passed": false,
+          "details": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"h1\"}\n  (Session info: chrome=149.0.7827.160)",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-network",
+          "name": "touch replay slider",
+          "passed": false,
+          "details": "Slider value unchanged",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-network",
+          "name": "touch step",
+          "passed": false,
+          "details": "Step did not advance",
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-network",
+          "name": "touch play and pause",
+          "passed": true,
+          "details": {
+            "playing": {
+              "clock": null,
+              "cursor": "1",
+              "phase": null,
+              "play": "Pause",
+              "seed": "120261017",
+              "selected": null
+            },
+            "stopped": {
+              "clock": null,
+              "cursor": "3",
+              "phase": null,
+              "play": "Play",
+              "seed": "120261017",
+              "selected": null
+            }
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-network",
+          "name": "touch new trial",
+          "passed": true,
+          "details": {
+            "before": "120261017",
+            "after": "120261018"
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-network",
+          "name": "no runtime errors",
+          "passed": true,
+          "details": [],
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-network",
+          "name": "trusted touch events received",
+          "passed": true,
+          "details": [
+            {
+              "action": "play",
+              "pointerType": "touch",
+              "trusted": true
+            },
+            {
+              "action": "play",
+              "pointerType": "touch",
+              "trusted": true
+            },
+            {
+              "action": "new",
+              "pointerType": "touch",
+              "trusted": true
+            }
+          ],
+          "source": "android-audit.json"
+        },
+        {
+          "route": "sims-repeated-rounds",
+          "name": "first navigation renders model",
+          "passed": true,
+          "details": {
+            "busy": "false",
+            "ready": "true",
+            "scrollWidth": 360,
+            "title": "SIMS — Repeated rounds",
+            "touch": 5,
+            "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36",
+            "viewport": [
+              360,
+              649
+            ]
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "latest-run",
+          "name": "first navigation renders model",
+          "passed": true,
+          "details": {
+            "busy": "false",
+            "ready": "true",
+            "scrollWidth": 360,
+            "title": "SIMS — Latest run",
+            "touch": 5,
+            "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36",
+            "viewport": [
+              360,
+              649
+            ]
+          },
+          "source": "android-audit.json"
+        },
+        {
+          "route": "",
+          "name": "numeric seed entry commits after blur",
+          "passed": false,
+          "details": "Seed did not commit",
+          "source": "android-followup.json"
+        },
+        {
+          "route": "",
+          "name": "touch drag from slider thumb",
+          "passed": true,
+          "details": {
+            "before": "0",
+            "after": "13"
+          },
+          "source": "android-followup.json"
+        },
+        {
+          "route": "",
+          "name": "recorded evidence disclosure opens on touch",
+          "passed": true,
+          "details": {
+            "before": false,
+            "after": true
+          },
+          "source": "android-followup.json"
+        },
+        {
+          "route": "",
+          "name": "touch step after keyboard dismissal",
+          "passed": true,
+          "details": {
+            "before": {
+              "clock": "Round 3 · SIM 0 · decisions paused",
+              "cursor": "0",
+              "outcome": "Actually chose A · stayed",
+              "phase": "Evidence delivered → awaiting response",
+              "progress": "1 / 9 exchanges",
+              "seed": "120261027",
+              "selected": "SIM 0 · round 3",
+              "step": "Let SIM 0 respond"
+            },
+            "after": {
+              "clock": "Round 3 · SIM 0 · decisions paused",
+              "cursor": "1",
+              "outcome": "Actually chose A · stayed",
+              "phase": "Evidence → response recorded",
+              "progress": "1 / 9 exchanges",
+              "seed": "120261027",
+              "selected": "SIM 0 · round 3",
+              "step": "Next participant"
+            }
+          },
+          "source": "android-followup.json"
+        },
+        {
+          "route": "",
+          "name": "touch new trial after committed seed",
+          "passed": true,
+          "details": {
+            "before": "120261027",
+            "after": "120261028"
+          },
+          "source": "android-followup.json"
+        },
+        {
+          "route": "",
+          "name": "touch horizontal table swipe 0",
+          "passed": true,
+          "details": {
+            "scrollLeft": 60
+          },
+          "source": "android-followup.json"
+        },
+        {
+          "route": "",
+          "name": "touch horizontal table swipe 1",
+          "passed": true,
+          "details": {
+            "scrollLeft": 24
+          },
+          "source": "android-followup.json"
+        },
+        {
+          "route": "",
+          "name": "vertical touch swipe",
+          "passed": true,
+          "details": {
+            "scrollY": 405
+          },
+          "source": "android-followup.json"
+        },
+        {
+          "route": "",
+          "name": "touch tooltip opens and dismisses",
+          "passed": true,
+          "details": "SIM 0, round 1. Claim: Copy neighbor → Oppose. Behavior: Oppose → Oppose. No promise recorded",
+          "source": "android-followup.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "numeric seed entry commits after blur",
+          "passed": false,
+          "details": "Seed did not commit",
+          "source": "android-followup.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch drag from slider thumb",
+          "passed": true,
+          "details": {
+            "before": "0",
+            "after": "13"
+          },
+          "source": "android-followup.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "recorded evidence disclosure opens on touch",
+          "passed": true,
+          "details": {
+            "before": false,
+            "after": true
+          },
+          "source": "android-followup.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch step after keyboard dismissal",
+          "passed": true,
+          "details": {
+            "before": {
+              "clock": "SIM 0 · decisions paused",
+              "cursor": "0",
+              "outcome": "",
+              "phase": "Evidence delivered → awaiting response",
+              "progress": "1 / 9 exchanges",
+              "seed": "120261027",
+              "selected": "Inspect SIM 0",
+              "step": "Let SIM 0 respond"
+            },
+            "after": {
+              "clock": "SIM 0 · decisions paused",
+              "cursor": "1",
+              "outcome": "",
+              "phase": "Evidence → response recorded",
+              "progress": "1 / 9 exchanges",
+              "seed": "120261027",
+              "selected": "Inspect SIM 0",
+              "step": "Next participant"
+            }
+          },
+          "source": "android-followup.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch new trial after committed seed",
+          "passed": true,
+          "details": {
+            "before": "120261027",
+            "after": "120261028"
+          },
+          "source": "android-followup.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch horizontal table swipe 0",
+          "passed": true,
+          "details": {
+            "scrollLeft": 24
+          },
+          "source": "android-followup.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "vertical touch swipe",
+          "passed": true,
+          "details": {
+            "scrollY": 405
+          },
+          "source": "android-followup.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "touch tooltip opens and dismisses",
+          "passed": true,
+          "details": "SIM 0 · B",
+          "source": "android-followup.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "numeric seed entry commits after blur",
+          "passed": false,
+          "details": "Seed did not commit",
+          "source": "android-followup.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch drag from slider thumb",
+          "passed": true,
+          "details": {
+            "before": "0",
+            "after": "455"
+          },
+          "source": "android-followup.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch step after keyboard dismissal",
+          "passed": true,
+          "details": {
+            "before": {
+              "clock": "Controlled probe 228 / 304",
+              "cursor": "455",
+              "outcome": "Actually chose B · stayed",
+              "phase": "Observation → compare",
+              "progress": "228 / 304 decisions",
+              "seed": "120261027",
+              "selected": "Inspect SIM 8",
+              "step": "Next prediction"
+            },
+            "after": {
+              "clock": "Controlled probe 229 / 304",
+              "cursor": "456",
+              "outcome": "Outcome not yet shown",
+              "phase": "Claim → prediction recorded",
+              "progress": "229 / 304 decisions",
+              "seed": "120261027",
+              "selected": "Inspect SIM 8",
+              "step": "Observe decision"
+            }
+          },
+          "source": "android-followup.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch new trial after committed seed",
+          "passed": true,
+          "details": {
+            "before": "120261027",
+            "after": "120261028"
+          },
+          "source": "android-followup.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch horizontal table swipe 0",
+          "passed": true,
+          "details": {
+            "scrollLeft": 104
+          },
+          "source": "android-followup.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "vertical touch swipe",
+          "passed": true,
+          "details": {
+            "scrollY": 405
+          },
+          "source": "android-followup.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "touch tooltip opens and dismisses",
+          "passed": true,
+          "details": "SIM 0 · A · stated rule: Copy neighbor",
+          "source": "android-followup.json"
+        },
+        {
+          "route": "sims-network",
+          "name": "numeric seed entry commits after blur",
+          "passed": false,
+          "details": "Seed did not commit",
+          "source": "android-followup.json"
+        },
+        {
+          "route": "sims-network",
+          "name": "touch drag from slider thumb",
+          "passed": true,
+          "details": {
+            "before": "0",
+            "after": "90"
+          },
+          "source": "android-followup.json"
+        },
+        {
+          "route": "sims-network",
+          "name": "touch step after keyboard dismissal",
+          "passed": true,
+          "details": {
+            "before": {
+              "clock": null,
+              "cursor": "90",
+              "outcome": null,
+              "phase": null,
+              "progress": null,
+              "seed": "120261027",
+              "selected": null,
+              "step": "Step 1 s"
+            },
+            "after": {
+              "clock": null,
+              "cursor": "91",
+              "outcome": null,
+              "phase": null,
+              "progress": null,
+              "seed": "120261027",
+              "selected": null,
+              "step": "Step 1 s"
+            }
+          },
+          "source": "android-followup.json"
+        },
+        {
+          "route": "sims-network",
+          "name": "touch new trial after committed seed",
+          "passed": true,
+          "details": {
+            "before": "120261027",
+            "after": "120261028"
+          },
+          "source": "android-followup.json"
+        },
+        {
+          "route": "sims-network",
+          "name": "vertical touch swipe",
+          "passed": true,
+          "details": {
+            "scrollY": 405
+          },
+          "source": "android-followup.json"
+        },
+        {
+          "route": "sims-network",
+          "name": "touch tooltip opens and dismisses",
+          "passed": true,
+          "details": "SIM 0 · choice A · 8 neighbors",
+          "source": "android-followup.json"
+        },
+        {
+          "route": "navigation",
+          "name": "touch navigation Latest run",
+          "passed": true,
+          "details": {
+            "url": "https://sims-evidence-lab.itswaffles88.chatgpt.site/",
+            "title": "SIMS — Latest run"
+          },
+          "source": "android-followup.json"
+        },
+        {
+          "route": "navigation",
+          "name": "touch navigation Repeated rounds",
+          "passed": true,
+          "details": {
+            "url": "https://sims-evidence-lab.itswaffles88.chatgpt.site/sims-repeated-rounds",
+            "title": "SIMS — Repeated rounds"
+          },
+          "source": "android-followup.json"
+        },
+        {
+          "route": "navigation",
+          "name": "touch navigation Evidence & response",
+          "passed": true,
+          "details": {
+            "url": "https://sims-evidence-lab.itswaffles88.chatgpt.site/sims-evidence-and-response",
+            "title": "SIMS — Evidence & response"
+          },
+          "source": "android-followup.json"
+        },
+        {
+          "route": "navigation",
+          "name": "touch navigation Claims & actions",
+          "passed": true,
+          "details": {
+            "url": "https://sims-evidence-lab.itswaffles88.chatgpt.site/sims-claim-testing",
+            "title": "SIMS — Claims & actions"
+          },
+          "source": "android-followup.json"
+        },
+        {
+          "route": "navigation",
+          "name": "touch navigation Network",
+          "passed": true,
+          "details": {
+            "url": "https://sims-evidence-lab.itswaffles88.chatgpt.site/sims-network",
+            "title": "SIMS — Network"
+          },
+          "source": "android-followup.json"
+        },
+        {
+          "route": "navigation",
+          "name": "touch navigation Methods",
+          "passed": true,
+          "details": {
+            "url": "https://github.com/NousVolition/Nous-Volition/blob/main/studies/sims-evidence-lab/METHODS.md",
+            "title": "Nous-Volition/studies/sims-evidence-lab/METHODS.md at main · NousVolition/Nous-Volition · GitHub"
+          },
+          "source": "android-followup.json"
+        },
+        {
+          "route": "navigation",
+          "name": "touch navigation Source",
+          "passed": true,
+          "details": {
+            "url": "https://github.com/NousVolition/Nous-Volition/tree/main/studies/sims-evidence-lab",
+            "title": "Nous-Volition/studies/sims-evidence-lab at main · NousVolition/Nous-Volition · GitHub"
+          },
+          "source": "android-followup.json"
+        },
+        {
+          "route": "landscape",
+          "name": "landscape layout fits screen",
+          "passed": true,
+          "details": {
+            "height": 280,
+            "ready": "true",
+            "scroll": 705,
+            "width": 705
+          },
+          "source": "android-followup.json"
+        },
+        {
+          "route": "landscape",
+          "name": "landscape touch step",
+          "passed": true,
+          "details": {
+            "before": {
+              "clock": null,
+              "cursor": "0",
+              "outcome": null,
+              "phase": null,
+              "progress": null,
+              "seed": "120261028",
+              "selected": null,
+              "step": "Step 1 s"
+            },
+            "after": {
+              "clock": null,
+              "cursor": "1",
+              "outcome": null,
+              "phase": null,
+              "progress": null,
+              "seed": "120261028",
+              "selected": null,
+              "step": "Step 1 s"
+            },
+            "offset": {
+              "x": 0,
+              "y": 0
+            }
+          },
+          "source": "android-followup.json"
+        },
+        {
+          "route": "landscape",
+          "name": "returns to portrait",
+          "passed": true,
+          "details": {
+            "height": 649,
+            "scroll": 360,
+            "width": 360
+          },
+          "source": "android-followup.json"
+        },
+        {
+          "route": "",
+          "name": "native keyboard seed entry",
+          "passed": true,
+          "before": "120261028",
+          "after": {
+            "active": "BODY",
+            "focus": null,
+            "value": "20261037"
+          },
+          "source": "android-native-seed.json"
+        },
+        {
+          "route": "",
+          "name": "new trial after native seed entry",
+          "passed": true,
+          "value": "20261038",
+          "source": "android-native-seed.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "native keyboard seed entry",
+          "passed": true,
+          "before": "120261028",
+          "after": {
+            "active": "BODY",
+            "focus": null,
+            "value": "20261037"
+          },
+          "source": "android-native-seed.json"
+        },
+        {
+          "route": "sims-evidence-and-response",
+          "name": "new trial after native seed entry",
+          "passed": true,
+          "value": "20261038",
+          "source": "android-native-seed.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "native keyboard seed entry",
+          "passed": true,
+          "before": "120261028",
+          "after": {
+            "active": "BODY",
+            "focus": null,
+            "value": "20261037"
+          },
+          "source": "android-native-seed.json"
+        },
+        {
+          "route": "sims-claim-testing",
+          "name": "new trial after native seed entry",
+          "passed": true,
+          "value": "20261038",
+          "source": "android-native-seed.json"
+        },
+        {
+          "route": "sims-network",
+          "name": "native keyboard seed entry",
+          "passed": true,
+          "before": "20261038",
+          "after": {
+            "active": "BODY",
+            "focus": null,
+            "value": "20261037"
+          },
+          "source": "android-native-seed.json"
+        },
+        {
+          "route": "sims-network",
+          "name": "new trial after native seed entry",
+          "passed": true,
+          "value": "20261038",
+          "source": "android-native-seed.json"
+        },
+        {
+          "name": "landscape layout",
+          "passed": true,
+          "layout": {
+            "height": 280,
+            "ready": "true",
+            "scroll": 705,
+            "width": 705
+          },
+          "source": "android-rotation-final.json"
+        },
+        {
+          "name": "landscape touch step",
+          "passed": true,
+          "before": "0",
+          "after": "1",
+          "calibration": {
+            "pointerType": "touch",
+            "trusted": true,
+            "x": 300,
+            "y": 200
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "source": "android-rotation-final.json"
+        },
+        {
+          "name": "restore portrait",
+          "passed": true,
+          "portrait": {
+            "height": 649,
+            "scroll": 360,
+            "width": 360
+          },
+          "source": "android-rotation-final.json"
+        }
+      ],
+      "sessionUrl": "https://automate.browserstack.com/builds/4214742b5065d54fc67ea418f96f5a0ed4971378/sessions/18be1a5b0c42920b31fbdf288a7058a5fede760e"
+    }
+  ]
+}

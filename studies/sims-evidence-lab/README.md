@@ -20,13 +20,19 @@ All six public page routes passed fresh-visit checks without refreshing. The sta
 
 The live pages provide larger tap targets, 16px form text, a numeric seed keyboard, single-column phone forms, and labeled scrolling regions for wide tables. The history keeps participant labels visible while scrolling. Claim weight also has a tap-to-open explanation. Zoom remains enabled.
 
-All six routes were checked in Chromium viewports at 320×568, 375×812, 390×844, 430×932, and 844×390. Control checks cover all dropdown options, participants, stages, playback, sliders, trial seeds, checkboxes, persistence, and navigation. These are responsive browser checks; physical iPhone/Android touch devices and their browser engines have not been tested. The original model algorithms remain unchanged. See [mobile implementation notes](web/MOBILE.txt).
+All six routes were checked in Chromium viewports at 320×568, 375×812, 390×844, 430×932, and 844×390. Control checks cover all dropdown options, participants, stages, playback, sliders, trial seeds, checkboxes, persistence, and navigation. These responsive browser checks are supplemented by the physical-device audit below. The original model algorithms remain unchanged. See [mobile implementation notes](web/MOBILE.txt).
 
 ```sh
 node web/tests/mobile.cjs
 ```
 
 The mobile support suite passes 33 checks in addition to the 48 startup checks.
+
+## Physical iPhone and Android tests
+
+On October 17, the live site passed targeted Appium checks on a physical iPhone 16 (iOS 18.5, Safari) and Samsung Galaxy S23 (Android 13, Chrome). The [audit report and retained retests](web/tests/real-device/baseline-2026-10-17/report.html) include screenshots, BrowserStack recording links, and the initial test-driver failures with their resolutions. No application touch defect was reproduced in that audit.
+
+The [SIMS real phones workflow](https://github.com/NousVolition/Nous-Volition/actions/workflows/sims-real-devices.yml) automatically checks SIMS changes on pushes to main and pull requests. It builds the checked-out web source, verifies that revision on both physical devices, and saves per-device screenshots, JSON, JUnit, and recording links. A manual run can also check the live site. BrowserStack repository secrets and available Automate allowance are required; fork pull requests run source checks only. See [setup, coverage, limits, and local commands](web/tests/real-device/README.md).
 
 ## Original standalone exports
 

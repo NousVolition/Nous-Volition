@@ -1,0 +1,73 @@
+{
+  "device": "iPhone Safari touch controls",
+  "records": [
+    {
+      "route": "",
+      "name": "native keyboard seed entry",
+      "passed": true,
+      "before": "2",
+      "after": {
+        "value": "20261037",
+        "active": "BODY",
+        "focus": null
+      }
+    },
+    {
+      "route": "",
+      "name": "new trial after native seed entry",
+      "passed": true,
+      "value": "20261038"
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "native keyboard seed entry",
+      "passed": true,
+      "before": "2",
+      "after": {
+        "value": "20261037",
+        "active": "BODY",
+        "focus": null
+      }
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "new trial after native seed entry",
+      "passed": true,
+      "value": "20261038"
+    },
+    {
+      "route": "sims-claim-testing",
+      "name": "native keyboard seed entry",
+      "passed": true,
+      "before": "2",
+      "after": {
+        "value": "20261037",
+        "active": "BODY",
+        "focus": null
+      }
+    },
+    {
+      "route": "sims-claim-testing",
+      "name": "new trial after native seed entry",
+      "passed": true,
+      "value": "20261038"
+    },
+    {
+      "route": "sims-network",
+      "name": "native keyboard seed entry",
+      "passed": true,
+      "before": "20261038",
+      "after": {
+        "value": "20261037",
+        "active": "BODY",
+        "focus": null
+      }
+    },
+    {
+      "route": "sims-network",
+      "name": "new trial after native seed entry",
+      "passed": true,
+      "value": "20261038"
+    }
+  ]
+}

@@ -1,0 +1,1205 @@
+{
+  "device": "Android Chrome touch controls",
+  "sessionId": "18be1a5b0c42920b31fbdf288a7058a5fede760e",
+  "started": "2026-10-17T23:26:00.448Z",
+  "method": "BrowserStack physical devices; Appium W3C touch pointer actions; WebDriver option selection and keyboard input; DOM assertions",
+  "checks": [
+    {
+      "route": "",
+      "name": "first navigation renders model",
+      "passed": true,
+      "details": {
+        "busy": "false",
+        "ready": "true",
+        "scrollWidth": 360,
+        "title": "SIMS — Latest run",
+        "touch": 5,
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36",
+        "viewport": [
+          360,
+          649
+        ]
+      }
+    },
+    {
+      "route": "",
+      "name": "touch disclosure: Network state",
+      "passed": true
+    },
+    {
+      "route": "",
+      "name": "touch disclosure: Recorded actions shown to this participant",
+      "passed": true
+    },
+    {
+      "route": "",
+      "name": "touch disclosure: Rule transitions this round",
+      "passed": true
+    },
+    {
+      "route": "",
+      "name": "touch disclosure: Edit this participant",
+      "passed": true
+    },
+    {
+      "route": "",
+      "name": "touch disclosure: Network and investigation settings",
+      "passed": true
+    },
+    {
+      "route": "",
+      "name": "touch disclosure: Methods and response assumptions",
+      "passed": true
+    },
+    {
+      "route": "",
+      "name": "select preset",
+      "passed": true,
+      "details": {
+        "value": "contrast"
+      }
+    },
+    {
+      "route": "",
+      "name": "select round",
+      "passed": true,
+      "details": {
+        "value": "0"
+      }
+    },
+    {
+      "route": "",
+      "name": "select round-count",
+      "passed": true,
+      "details": {
+        "value": "3"
+      }
+    },
+    {
+      "route": "",
+      "name": "select claim",
+      "passed": true,
+      "details": {
+        "value": "copy"
+      }
+    },
+    {
+      "route": "",
+      "name": "select actual",
+      "passed": true,
+      "details": {
+        "value": "copy"
+      }
+    },
+    {
+      "route": "",
+      "name": "select policy",
+      "passed": true,
+      "details": {
+        "value": "behavior"
+      }
+    },
+    {
+      "route": "",
+      "name": "select topology",
+      "passed": true,
+      "details": {
+        "value": "star"
+      }
+    },
+    {
+      "route": "",
+      "name": "select mode",
+      "passed": true,
+      "details": {
+        "value": "probe"
+      }
+    },
+    {
+      "route": "",
+      "name": "contrast/mismatch preset gives model state",
+      "passed": true
+    },
+    {
+      "route": "",
+      "name": "touch checkbox innovation",
+      "passed": true
+    },
+    {
+      "route": "",
+      "name": "edit numeric seed",
+      "passed": false,
+      "details": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"h1\"}\n  (Session info: chrome=149.0.7827.160)"
+    },
+    {
+      "route": "",
+      "name": "touch stage before",
+      "passed": true,
+      "details": {
+        "clock": "Round 3 · probe 1 / 304",
+        "cursor": "0",
+        "phase": "Before exchange · prediction",
+        "play": "Play",
+        "seed": "120261017",
+        "selected": "SIM 0 · round 3"
+      }
+    },
+    {
+      "route": "",
+      "name": "touch stage exchange",
+      "passed": true,
+      "details": {
+        "clock": "Round 3 · SIM 0 · decisions paused",
+        "cursor": "0",
+        "phase": "Evidence delivered → awaiting response",
+        "play": "Play",
+        "seed": "120261017",
+        "selected": "SIM 0 · round 3"
+      }
+    },
+    {
+      "route": "",
+      "name": "touch stage after",
+      "passed": true,
+      "details": {
+        "clock": "Round 3 · probe 1 / 304",
+        "cursor": "0",
+        "phase": "After responses · prediction",
+        "play": "Play",
+        "seed": "120261017",
+        "selected": "SIM 0 · round 3"
+      }
+    },
+    {
+      "route": "",
+      "name": "touch replay slider",
+      "passed": true,
+      "details": {
+        "before": "0",
+        "after": "3"
+      }
+    },
+    {
+      "route": "",
+      "name": "touch step",
+      "passed": true,
+      "details": {
+        "before": {
+          "clock": "Round 3 · SIM 1 · decisions paused",
+          "cursor": "3",
+          "phase": "Evidence → response recorded",
+          "play": "Play",
+          "seed": "120261017",
+          "selected": "SIM 1 · round 3"
+        },
+        "after": {
+          "clock": "Round 3 · SIM 2 · decisions paused",
+          "cursor": "4",
+          "phase": "Evidence delivered → awaiting response",
+          "play": "Play",
+          "seed": "120261017",
+          "selected": "SIM 2 · round 3"
+        }
+      }
+    },
+    {
+      "route": "",
+      "name": "touch play and pause",
+      "passed": true,
+      "details": {
+        "playing": {
+          "clock": "Round 3 · SIM 2 · decisions paused",
+          "cursor": "4",
+          "phase": "Evidence delivered → awaiting response",
+          "play": "Pause",
+          "seed": "120261017",
+          "selected": "SIM 2 · round 3"
+        },
+        "stopped": {
+          "clock": "Round 3 · SIM 2 · decisions paused",
+          "cursor": "4",
+          "phase": "Evidence delivered → awaiting response",
+          "play": "Play",
+          "seed": "120261017",
+          "selected": "SIM 2 · round 3"
+        }
+      }
+    },
+    {
+      "route": "",
+      "name": "touch finish",
+      "passed": true,
+      "details": {
+        "clock": "Round 3 · probe 304 / 304",
+        "cursor": "607",
+        "phase": "After responses · observed",
+        "play": "Replay rounds",
+        "seed": "120261017",
+        "selected": "SIM 2 · round 3"
+      }
+    },
+    {
+      "route": "",
+      "name": "touch Inspect SIM 0 row 0",
+      "passed": true,
+      "details": "SIM 0 · round 3"
+    },
+    {
+      "route": "",
+      "name": "touch Inspect SIM 1 row 1",
+      "passed": true,
+      "details": "SIM 1 · round 3"
+    },
+    {
+      "route": "",
+      "name": "touch Inspect SIM 2 row 2",
+      "passed": true,
+      "details": "SIM 2 · round 3"
+    },
+    {
+      "route": "",
+      "name": "touch Inspect SIM 3 row 3",
+      "passed": true,
+      "details": "SIM 3 · round 3"
+    },
+    {
+      "route": "",
+      "name": "touch Inspect SIM 4 row 4",
+      "passed": true,
+      "details": "SIM 4 · round 3"
+    },
+    {
+      "route": "",
+      "name": "touch Inspect SIM 5 row 5",
+      "passed": true,
+      "details": "SIM 5 · round 3"
+    },
+    {
+      "route": "",
+      "name": "touch Inspect SIM 6 row 6",
+      "passed": true,
+      "details": "SIM 6 · round 3"
+    },
+    {
+      "route": "",
+      "name": "touch Inspect SIM 7 row 7",
+      "passed": true,
+      "details": "SIM 7 · round 3"
+    },
+    {
+      "route": "",
+      "name": "touch Inspect SIM 8 row 8",
+      "passed": true,
+      "details": "SIM 8 · round 3"
+    },
+    {
+      "route": "",
+      "name": "touch Inspect SIM 0 row 9",
+      "passed": true,
+      "details": "SIM 0 · round 3"
+    },
+    {
+      "route": "",
+      "name": "touch Inspect SIM 1 row 10",
+      "passed": true,
+      "details": "SIM 1 · round 3"
+    },
+    {
+      "route": "",
+      "name": "touch Inspect SIM 2 row 11",
+      "passed": true,
+      "details": "SIM 2 · round 3"
+    },
+    {
+      "route": "",
+      "name": "touch Inspect SIM 3 row 12",
+      "passed": true,
+      "details": "SIM 3 · round 3"
+    },
+    {
+      "route": "",
+      "name": "touch Inspect SIM 4 row 13",
+      "passed": true,
+      "details": "SIM 4 · round 3"
+    },
+    {
+      "route": "",
+      "name": "touch Inspect SIM 5 row 14",
+      "passed": true,
+      "details": "SIM 5 · round 3"
+    },
+    {
+      "route": "",
+      "name": "touch Inspect SIM 6 row 15",
+      "passed": true,
+      "details": "SIM 6 · round 3"
+    },
+    {
+      "route": "",
+      "name": "touch Inspect SIM 7 row 16",
+      "passed": true,
+      "details": "SIM 7 · round 3"
+    },
+    {
+      "route": "",
+      "name": "touch Inspect SIM 8 row 17",
+      "passed": true,
+      "details": "SIM 8 · round 3"
+    },
+    {
+      "route": "",
+      "name": "touch read-reply",
+      "passed": true,
+      "details": {
+        "clock": "Round 3 · SIM 8 · decisions paused",
+        "cursor": "17",
+        "phase": "Evidence → response recorded",
+        "play": "Play",
+        "seed": "120261017",
+        "selected": "SIM 8 · round 3"
+      }
+    },
+    {
+      "route": "",
+      "name": "horizontal touch swipe table 1",
+      "passed": true,
+      "details": {
+        "before": 0,
+        "after": 24
+      }
+    },
+    {
+      "route": "",
+      "name": "touch new trial",
+      "passed": true,
+      "details": {
+        "before": "120261017",
+        "after": "120261018"
+      }
+    },
+    {
+      "route": "",
+      "name": "no runtime errors",
+      "passed": true,
+      "details": []
+    },
+    {
+      "route": "",
+      "name": "trusted touch events received",
+      "passed": true,
+      "details": [
+        {
+          "action": "before",
+          "pointerType": "touch",
+          "trusted": true
+        },
+        {
+          "action": "exchange",
+          "pointerType": "touch",
+          "trusted": true
+        },
+        {
+          "action": "after",
+          "pointerType": "touch",
+          "trusted": true
+        },
+        {
+          "action": "exchange",
+          "pointerType": "touch",
+          "trusted": true
+        },
+        {
+          "action": "step",
+          "pointerType": "touch",
+          "trusted": true
+        },
+        {
+          "action": "play",
+          "pointerType": "touch",
+          "trusted": true
+        },
+        {
+          "action": "play",
+          "pointerType": "touch",
+          "trusted": true
+        },
+        {
+          "action": "finish",
+          "pointerType": "touch",
+          "trusted": true
+        },
+        {
+          "action": "read-reply",
+          "pointerType": "touch",
+          "trusted": true
+        },
+        {
+          "action": "new",
+          "pointerType": "touch",
+          "trusted": true
+        }
+      ]
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "first navigation renders model",
+      "passed": true,
+      "details": {
+        "busy": "false",
+        "ready": "true",
+        "scrollWidth": 360,
+        "title": "SIMS — Evidence & response",
+        "touch": 5,
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36",
+        "viewport": [
+          360,
+          649
+        ]
+      }
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "touch disclosure: Recorded actions shown to this participant",
+      "passed": true
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "touch disclosure: Edit this participant",
+      "passed": true
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "touch disclosure: Network and investigation settings",
+      "passed": true
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "touch disclosure: Methods and response assumptions",
+      "passed": true
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "select claim",
+      "passed": true,
+      "details": {
+        "value": "hold"
+      }
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "select actual",
+      "passed": true,
+      "details": {
+        "value": "copy"
+      }
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "select policy",
+      "passed": true,
+      "details": {
+        "value": "behavior"
+      }
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "select preset",
+      "passed": true,
+      "details": {
+        "value": "contrast"
+      }
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "select topology",
+      "passed": true,
+      "details": {
+        "value": "star"
+      }
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "select mode",
+      "passed": true,
+      "details": {
+        "value": "probe"
+      }
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "contrast/mismatch preset gives model state",
+      "passed": true
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "touch checkbox innovation",
+      "passed": true
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "edit numeric seed",
+      "passed": false,
+      "details": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"h1\"}\n  (Session info: chrome=149.0.7827.160)"
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "touch stage before",
+      "passed": true,
+      "details": {
+        "clock": "Probe 1 / 304",
+        "cursor": "0",
+        "phase": "Before exchange · prediction",
+        "play": "Play",
+        "seed": "120261017",
+        "selected": "Inspect SIM 0"
+      }
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "touch stage exchange",
+      "passed": true,
+      "details": {
+        "clock": "SIM 0 · decisions paused",
+        "cursor": "0",
+        "phase": "Evidence delivered → awaiting response",
+        "play": "Play",
+        "seed": "120261017",
+        "selected": "Inspect SIM 0"
+      }
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "touch stage after",
+      "passed": true,
+      "details": {
+        "clock": "Probe 1 / 304",
+        "cursor": "0",
+        "phase": "After responses · prediction",
+        "play": "Play",
+        "seed": "120261017",
+        "selected": "Inspect SIM 0"
+      }
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "touch replay slider",
+      "passed": true,
+      "details": {
+        "before": "0",
+        "after": "3"
+      }
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "touch step",
+      "passed": true,
+      "details": {
+        "before": {
+          "clock": "SIM 1 · decisions paused",
+          "cursor": "3",
+          "phase": "Evidence → response recorded",
+          "play": "Play",
+          "seed": "120261017",
+          "selected": "Inspect SIM 1"
+        },
+        "after": {
+          "clock": "SIM 2 · decisions paused",
+          "cursor": "4",
+          "phase": "Evidence delivered → awaiting response",
+          "play": "Play",
+          "seed": "120261017",
+          "selected": "Inspect SIM 2"
+        }
+      }
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "touch play and pause",
+      "passed": true,
+      "details": {
+        "playing": {
+          "clock": "SIM 2 · decisions paused",
+          "cursor": "4",
+          "phase": "Evidence delivered → awaiting response",
+          "play": "Pause",
+          "seed": "120261017",
+          "selected": "Inspect SIM 2"
+        },
+        "stopped": {
+          "clock": "SIM 2 · decisions paused",
+          "cursor": "4",
+          "phase": "Evidence delivered → awaiting response",
+          "play": "Play",
+          "seed": "120261017",
+          "selected": "Inspect SIM 2"
+        }
+      }
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "touch finish",
+      "passed": true,
+      "details": {
+        "clock": "Probe 304 / 304",
+        "cursor": "607",
+        "phase": "After responses · observed",
+        "play": "Replay replies",
+        "seed": "120261017",
+        "selected": "Inspect SIM 2"
+      }
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "touch Inspect SIM 0 row 0",
+      "passed": true,
+      "details": "Inspect SIM 0"
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "touch Inspect SIM 1 row 1",
+      "passed": true,
+      "details": "Inspect SIM 1"
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "touch Inspect SIM 2 row 2",
+      "passed": true,
+      "details": "Inspect SIM 2"
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "touch Inspect SIM 3 row 3",
+      "passed": true,
+      "details": "Inspect SIM 3"
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "touch Inspect SIM 4 row 4",
+      "passed": true,
+      "details": "Inspect SIM 4"
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "touch Inspect SIM 5 row 5",
+      "passed": true,
+      "details": "Inspect SIM 5"
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "touch Inspect SIM 6 row 6",
+      "passed": true,
+      "details": "Inspect SIM 6"
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "touch Inspect SIM 7 row 7",
+      "passed": true,
+      "details": "Inspect SIM 7"
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "touch Inspect SIM 8 row 8",
+      "passed": true,
+      "details": "Inspect SIM 8"
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "touch read-reply",
+      "passed": true,
+      "details": {
+        "clock": "SIM 8 · decisions paused",
+        "cursor": "17",
+        "phase": "Evidence → response recorded",
+        "play": "Play",
+        "seed": "120261017",
+        "selected": "Inspect SIM 8"
+      }
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "horizontal touch swipe table 0",
+      "passed": true,
+      "details": {
+        "before": 0,
+        "after": 24
+      }
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "touch new trial",
+      "passed": true,
+      "details": {
+        "before": "120261017",
+        "after": "120261018"
+      }
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "no runtime errors",
+      "passed": true,
+      "details": []
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "trusted touch events received",
+      "passed": true,
+      "details": [
+        {
+          "action": "before",
+          "pointerType": "touch",
+          "trusted": true
+        },
+        {
+          "action": "exchange",
+          "pointerType": "touch",
+          "trusted": true
+        },
+        {
+          "action": "after",
+          "pointerType": "touch",
+          "trusted": true
+        },
+        {
+          "action": "exchange",
+          "pointerType": "touch",
+          "trusted": true
+        },
+        {
+          "action": "step",
+          "pointerType": "touch",
+          "trusted": true
+        },
+        {
+          "action": "play",
+          "pointerType": "touch",
+          "trusted": true
+        },
+        {
+          "action": "play",
+          "pointerType": "touch",
+          "trusted": true
+        },
+        {
+          "action": "finish",
+          "pointerType": "touch",
+          "trusted": true
+        },
+        {
+          "action": "read-reply",
+          "pointerType": "touch",
+          "trusted": true
+        },
+        {
+          "action": "new",
+          "pointerType": "touch",
+          "trusted": true
+        }
+      ]
+    },
+    {
+      "route": "sims-claim-testing",
+      "name": "first navigation renders model",
+      "passed": true,
+      "details": {
+        "busy": "false",
+        "ready": "true",
+        "scrollWidth": 360,
+        "title": "SIMS — Claims & actions",
+        "touch": 5,
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36",
+        "viewport": [
+          360,
+          649
+        ]
+      }
+    },
+    {
+      "route": "sims-claim-testing",
+      "name": "touch disclosure: What does claim weight mean?",
+      "passed": true
+    },
+    {
+      "route": "sims-claim-testing",
+      "name": "touch disclosure: Change this SIM’s claim or behavior",
+      "passed": true
+    },
+    {
+      "route": "sims-claim-testing",
+      "name": "select topology",
+      "passed": true,
+      "details": {
+        "value": "star"
+      }
+    },
+    {
+      "route": "sims-claim-testing",
+      "name": "select preset",
+      "passed": true,
+      "details": {
+        "value": "matched"
+      }
+    },
+    {
+      "route": "sims-claim-testing",
+      "name": "select mode",
+      "passed": true,
+      "details": {
+        "value": "probe"
+      }
+    },
+    {
+      "route": "sims-claim-testing",
+      "name": "select claim",
+      "passed": true,
+      "details": {
+        "value": "hold"
+      }
+    },
+    {
+      "route": "sims-claim-testing",
+      "name": "select actual",
+      "passed": true,
+      "details": {
+        "value": "copy"
+      }
+    },
+    {
+      "route": "sims-claim-testing",
+      "name": "contrast/mismatch preset gives model state",
+      "passed": true
+    },
+    {
+      "route": "sims-claim-testing",
+      "name": "touch checkbox initiative",
+      "passed": true
+    },
+    {
+      "route": "sims-claim-testing",
+      "name": "edit numeric seed",
+      "passed": false,
+      "details": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"h1\"}\n  (Session info: chrome=149.0.7827.160)"
+    },
+    {
+      "route": "sims-claim-testing",
+      "name": "touch replay slider",
+      "passed": false,
+      "details": "Slider value unchanged"
+    },
+    {
+      "route": "sims-claim-testing",
+      "name": "touch step",
+      "passed": false,
+      "details": "Step did not advance"
+    },
+    {
+      "route": "sims-claim-testing",
+      "name": "touch play and pause",
+      "passed": true,
+      "details": {
+        "playing": {
+          "clock": "Controlled probe 1 / 304",
+          "cursor": "1",
+          "phase": "Observation → compare",
+          "play": "Pause",
+          "seed": "120261017",
+          "selected": "Inspect SIM 0"
+        },
+        "stopped": {
+          "clock": "Controlled probe 2 / 304",
+          "cursor": "2",
+          "phase": "Claim → prediction recorded",
+          "play": "Play",
+          "seed": "120261017",
+          "selected": "Inspect SIM 0"
+        }
+      }
+    },
+    {
+      "route": "sims-claim-testing",
+      "name": "touch finish",
+      "passed": true,
+      "details": {
+        "clock": "Controlled probe 304 / 304",
+        "cursor": "607",
+        "phase": "Observation → compare",
+        "play": "Replay",
+        "seed": "120261017",
+        "selected": "Inspect SIM 0"
+      }
+    },
+    {
+      "route": "sims-claim-testing",
+      "name": "touch Inspect SIM 0 row 0",
+      "passed": true,
+      "details": "Inspect SIM 0"
+    },
+    {
+      "route": "sims-claim-testing",
+      "name": "touch Inspect SIM 1 row 1",
+      "passed": true,
+      "details": "Inspect SIM 1"
+    },
+    {
+      "route": "sims-claim-testing",
+      "name": "touch Inspect SIM 2 row 2",
+      "passed": true,
+      "details": "Inspect SIM 2"
+    },
+    {
+      "route": "sims-claim-testing",
+      "name": "touch Inspect SIM 3 row 3",
+      "passed": true,
+      "details": "Inspect SIM 3"
+    },
+    {
+      "route": "sims-claim-testing",
+      "name": "touch Inspect SIM 4 row 4",
+      "passed": true,
+      "details": "Inspect SIM 4"
+    },
+    {
+      "route": "sims-claim-testing",
+      "name": "touch Inspect SIM 5 row 5",
+      "passed": true,
+      "details": "Inspect SIM 5"
+    },
+    {
+      "route": "sims-claim-testing",
+      "name": "touch Inspect SIM 6 row 6",
+      "passed": true,
+      "details": "Inspect SIM 6"
+    },
+    {
+      "route": "sims-claim-testing",
+      "name": "touch Inspect SIM 7 row 7",
+      "passed": true,
+      "details": "Inspect SIM 7"
+    },
+    {
+      "route": "sims-claim-testing",
+      "name": "touch Inspect SIM 8 row 8",
+      "passed": true,
+      "details": "Inspect SIM 8"
+    },
+    {
+      "route": "sims-claim-testing",
+      "name": "touch jump",
+      "passed": true,
+      "details": {
+        "clock": "Controlled probe 294 / 304",
+        "cursor": "587",
+        "phase": "Observation → compare",
+        "play": "Play",
+        "seed": "120261017",
+        "selected": "Inspect SIM 8"
+      }
+    },
+    {
+      "route": "sims-claim-testing",
+      "name": "horizontal touch swipe table 0",
+      "passed": true,
+      "details": {
+        "before": 0,
+        "after": 104
+      }
+    },
+    {
+      "route": "sims-claim-testing",
+      "name": "touch new trial",
+      "passed": true,
+      "details": {
+        "before": "120261017",
+        "after": "120261018"
+      }
+    },
+    {
+      "route": "sims-claim-testing",
+      "name": "no runtime errors",
+      "passed": true,
+      "details": []
+    },
+    {
+      "route": "sims-claim-testing",
+      "name": "trusted touch events received",
+      "passed": true,
+      "details": [
+        {
+          "action": "play",
+          "pointerType": "touch",
+          "trusted": true
+        },
+        {
+          "action": "play",
+          "pointerType": "touch",
+          "trusted": true
+        },
+        {
+          "action": "finish",
+          "pointerType": "touch",
+          "trusted": true
+        },
+        {
+          "action": "jump",
+          "pointerType": "touch",
+          "trusted": true
+        },
+        {
+          "action": "new",
+          "pointerType": "touch",
+          "trusted": true
+        }
+      ]
+    },
+    {
+      "route": "sims-network",
+      "name": "first navigation renders model",
+      "passed": true,
+      "details": {
+        "busy": "false",
+        "ready": "true",
+        "scrollWidth": 360,
+        "title": "SIMS — Network",
+        "touch": 5,
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36",
+        "viewport": [
+          360,
+          649
+        ]
+      }
+    },
+    {
+      "route": "sims-network",
+      "name": "select topology",
+      "passed": true,
+      "details": {
+        "value": "star"
+      }
+    },
+    {
+      "route": "sims-network",
+      "name": "select resistance",
+      "passed": true,
+      "details": {
+        "value": "hold:0"
+      }
+    },
+    {
+      "route": "sims-network",
+      "name": "touch checkbox initiative",
+      "passed": true
+    },
+    {
+      "route": "sims-network",
+      "name": "edit numeric seed",
+      "passed": false,
+      "details": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"h1\"}\n  (Session info: chrome=149.0.7827.160)"
+    },
+    {
+      "route": "sims-network",
+      "name": "touch replay slider",
+      "passed": false,
+      "details": "Slider value unchanged"
+    },
+    {
+      "route": "sims-network",
+      "name": "touch step",
+      "passed": false,
+      "details": "Step did not advance"
+    },
+    {
+      "route": "sims-network",
+      "name": "touch play and pause",
+      "passed": true,
+      "details": {
+        "playing": {
+          "clock": null,
+          "cursor": "1",
+          "phase": null,
+          "play": "Pause",
+          "seed": "120261017",
+          "selected": null
+        },
+        "stopped": {
+          "clock": null,
+          "cursor": "3",
+          "phase": null,
+          "play": "Play",
+          "seed": "120261017",
+          "selected": null
+        }
+      }
+    },
+    {
+      "route": "sims-network",
+      "name": "touch new trial",
+      "passed": true,
+      "details": {
+        "before": "120261017",
+        "after": "120261018"
+      }
+    },
+    {
+      "route": "sims-network",
+      "name": "no runtime errors",
+      "passed": true,
+      "details": []
+    },
+    {
+      "route": "sims-network",
+      "name": "trusted touch events received",
+      "passed": true,
+      "details": [
+        {
+          "action": "play",
+          "pointerType": "touch",
+          "trusted": true
+        },
+        {
+          "action": "play",
+          "pointerType": "touch",
+          "trusted": true
+        },
+        {
+          "action": "new",
+          "pointerType": "touch",
+          "trusted": true
+        }
+      ]
+    },
+    {
+      "route": "sims-repeated-rounds",
+      "name": "first navigation renders model",
+      "passed": true,
+      "details": {
+        "busy": "false",
+        "ready": "true",
+        "scrollWidth": 360,
+        "title": "SIMS — Repeated rounds",
+        "touch": 5,
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36",
+        "viewport": [
+          360,
+          649
+        ]
+      }
+    },
+    {
+      "route": "latest-run",
+      "name": "first navigation renders model",
+      "passed": true,
+      "details": {
+        "busy": "false",
+        "ready": "true",
+        "scrollWidth": 360,
+        "title": "SIMS — Latest run",
+        "touch": 5,
+        "ua": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36",
+        "viewport": [
+          360,
+          649
+        ]
+      }
+    }
+  ],
+  "finished": "2026-10-17T23:29:13.942Z"
+}

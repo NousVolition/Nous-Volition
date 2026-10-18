@@ -76,8 +76,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6950,
-      "sha256": "fe978ac127d5d1f436bb9e64347b0cf3bea582f3e7b71d62f914ee14bee8cbfb"
+      "bytes": 7958,
+      "sha256": "ba0b5cd2d67d3a42236678dd918b322265bb64fefebd296a312f8c425e17c173"
     },
     {
       "path": "results/evidence-response-examples.json",
@@ -158,6 +158,11 @@
       "path": "tools/run-repeated-rounds.cjs",
       "bytes": 1281,
       "sha256": "7323c317087f4f6d113585d93fc3873722ea4514587116e24af60e98427f84d3"
+    },
+    {
+      "path": "web/.gitignore",
+      "bytes": 40,
+      "sha256": "d52ae788e79e5ed76232c791fb611724b1008f45aac5d9460eababa1283f47ce"
     },
     {
       "path": "web/build.py",
@@ -273,6 +278,116 @@
       "path": "web/tests/mobile.cjs",
       "bytes": 2574,
       "sha256": "b073898572ea6504f3554326c795d5e4c9dea07f57e3748b9751cdda83683c26"
+    },
+    {
+      "path": "web/tests/real-device/baseline-2026-10-17/android-audit.json",
+      "bytes": 29147,
+      "sha256": "02d493059f6ac17ffdb3daeba52e078c8a570e1202810c3255996f914be8dc64"
+    },
+    {
+      "path": "web/tests/real-device/baseline-2026-10-17/android-final-live.png",
+      "bytes": 147144,
+      "sha256": "40f70e9f4f3221820cd8945d27a6d20190284071e4ace3985f85e321f3bd2109"
+    },
+    {
+      "path": "web/tests/real-device/baseline-2026-10-17/android-followup.json",
+      "bytes": 11194,
+      "sha256": "ca75850a5792adea68c41ad71386ecdaf482f1c90d44445f18c78b878abcedb3"
+    },
+    {
+      "path": "web/tests/real-device/baseline-2026-10-17/android-landscape-verified.png",
+      "bytes": 79962,
+      "sha256": "3357da2352791deb50547625d20f16dc3395a925f640ac5fb5efe318eb1c2559"
+    },
+    {
+      "path": "web/tests/real-device/baseline-2026-10-17/android-native-seed.json",
+      "bytes": 1617,
+      "sha256": "755088467a4c40880315cad4e9fbefe0f66958997ec9c6ef07432cd62fa6a4de"
+    },
+    {
+      "path": "web/tests/real-device/baseline-2026-10-17/android-rotation-final.json",
+      "bytes": 712,
+      "sha256": "23a5dfdc5c9b976057a0f0f99d9af19d96632d4df7ca32b808b409931802f305"
+    },
+    {
+      "path": "web/tests/real-device/baseline-2026-10-17/iphone-audit.json",
+      "bytes": 29563,
+      "sha256": "9a5d70c0969eb58873c57e8099f5d4cc43ed39ce042e7e08ad8457cc204e6217"
+    },
+    {
+      "path": "web/tests/real-device/baseline-2026-10-17/iphone-final-live.png",
+      "bytes": 625357,
+      "sha256": "891a30ce25ffc9980b7747cc2b51978a75af3036ebc05709f01cb000250ae8a3"
+    },
+    {
+      "path": "web/tests/real-device/baseline-2026-10-17/iphone-followup.json",
+      "bytes": 10350,
+      "sha256": "c6230aa5e88d3cbc70c7d97b9ab2eb260c5395c2c7255da7b49823c96b48da9c"
+    },
+    {
+      "path": "web/tests/real-device/baseline-2026-10-17/iphone-landscape-verified.png",
+      "bytes": 447332,
+      "sha256": "d8e33b5aac309dedbaae29f33cc4d352c3a346a91fa96a47d23b4e6b31c56a8b"
+    },
+    {
+      "path": "web/tests/real-device/baseline-2026-10-17/iphone-native-seed.json",
+      "bytes": 1592,
+      "sha256": "49475f6026076e8e822aeac5fff5d5a67aa44bb4bd4f4b88328a7629a6cee31b"
+    },
+    {
+      "path": "web/tests/real-device/baseline-2026-10-17/iphone-rotation-final.json",
+      "bytes": 712,
+      "sha256": "4c9d4bfb26ea364ee8bfe3401aa8c5a2c0284f11030da78f7a742da8e7820cc2"
+    },
+    {
+      "path": "web/tests/real-device/baseline-2026-10-17/report.html",
+      "bytes": 15768,
+      "sha256": "ed32f35134034f20fe55b5a3290612361af67102221a05f9c971d6ae7c3d820e"
+    },
+    {
+      "path": "web/tests/real-device/baseline-2026-10-17/results.json",
+      "bytes": 130132,
+      "sha256": "9cd7af2c5cec142ff8572d38081db5c9f63bb7a8660d23d0c00219976971bd21"
+    },
+    {
+      "path": "web/tests/real-device/controls.mjs",
+      "bytes": 7188,
+      "sha256": "401f736a09f1b5d7437e7f7693d5caefaa5c0647b24fc95bff9127858e218e43"
+    },
+    {
+      "path": "web/tests/real-device/credentials.mjs",
+      "bytes": 634,
+      "sha256": "4e4bca3dfcaf126697b9d3fd868b36ad11a5930fe9f680c151adc792e02a5230"
+    },
+    {
+      "path": "web/tests/real-device/README.md",
+      "bytes": 5432,
+      "sha256": "6fcf9b533892636b5b71b5c960a71bcd42365cf683fdf0859245241efddaba53"
+    },
+    {
+      "path": "web/tests/real-device/run.mjs",
+      "bytes": 5698,
+      "sha256": "3b5bb8db1c3a599ada275159ed378958cca3771b61bf1376b0599de7dabc5e10"
+    },
+    {
+      "path": "web/tests/real-device/runner.test.mjs",
+      "bytes": 3807,
+      "sha256": "1d2c50471af9782d15418a23d8256200b6b3c10782a453164e3bf413f69e5dfb"
+    },
+    {
+      "path": "web/tests/real-device/server.mjs",
+      "bytes": 1296,
+      "sha256": "641a4dbfd12c371e06b048564f4803ca5076b464a3e21881c706d3a5ec7a2832"
+    },
+    {
+      "path": "web/tests/real-device/session.mjs",
+      "bytes": 3772,
+      "sha256": "3b9788d096a411f4c58858194a0390c0b09a23e52d87dcb2d3157017abe75546"
+    },
+    {
+      "path": "web/tests/real-device/suite.mjs",
+      "bytes": 11562,
+      "sha256": "67fbfdd39e5cf64f62270a0bc5b57c1dd9c9d84d213e03f797faf8770cf33a33"
     },
     {
       "path": "web/tests/startup.cjs",

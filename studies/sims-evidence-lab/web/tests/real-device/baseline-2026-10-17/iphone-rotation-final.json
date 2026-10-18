@@ -1,0 +1,40 @@
+{
+  "device": "iPhone Safari touch controls",
+  "records": [
+    {
+      "name": "landscape layout",
+      "passed": true,
+      "layout": {
+        "width": 734,
+        "height": 393,
+        "scroll": 734,
+        "ready": "true"
+      }
+    },
+    {
+      "name": "landscape touch step",
+      "passed": true,
+      "before": "0",
+      "after": "1",
+      "calibration": {
+        "x": 241,
+        "y": 200,
+        "trusted": true,
+        "pointerType": "touch"
+      },
+      "offset": {
+        "x": 59,
+        "y": 0
+      }
+    },
+    {
+      "name": "restore portrait",
+      "passed": true,
+      "portrait": {
+        "width": 393,
+        "height": 659,
+        "scroll": 393
+      }
+    }
+  ]
+}

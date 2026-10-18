@@ -1,0 +1,40 @@
+{
+  "device": "Android Chrome touch controls",
+  "records": [
+    {
+      "name": "landscape layout",
+      "passed": true,
+      "layout": {
+        "height": 280,
+        "ready": "true",
+        "scroll": 705,
+        "width": 705
+      }
+    },
+    {
+      "name": "landscape touch step",
+      "passed": true,
+      "before": "0",
+      "after": "1",
+      "calibration": {
+        "pointerType": "touch",
+        "trusted": true,
+        "x": 300,
+        "y": 200
+      },
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "name": "restore portrait",
+      "passed": true,
+      "portrait": {
+        "height": 649,
+        "scroll": 360,
+        "width": 360
+      }
+    }
+  ]
+}

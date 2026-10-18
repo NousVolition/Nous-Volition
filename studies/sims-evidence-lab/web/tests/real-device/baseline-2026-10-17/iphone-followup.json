@@ -1,0 +1,379 @@
+{
+  "device": "iPhone Safari touch controls",
+  "sessionId": "bf9581cc84d872ef02edb397f8ead43657bad16c",
+  "checks": [
+    {
+      "route": "",
+      "name": "numeric seed entry commits after blur",
+      "passed": false,
+      "details": "Seed did not commit"
+    },
+    {
+      "route": "",
+      "name": "touch drag from slider thumb",
+      "passed": true,
+      "details": {
+        "before": "0",
+        "after": "13"
+      }
+    },
+    {
+      "route": "",
+      "name": "recorded evidence disclosure opens on touch",
+      "passed": true,
+      "details": {
+        "before": false,
+        "after": true
+      }
+    },
+    {
+      "route": "",
+      "name": "touch step after keyboard dismissal",
+      "passed": true,
+      "details": {
+        "before": {
+          "phase": "Evidence delivered → awaiting response",
+          "cursor": "0",
+          "clock": "Round 3 · SIM 0 · decisions paused",
+          "selected": "SIM 0 · round 3",
+          "seed": "120261027",
+          "progress": "1 / 9 exchanges",
+          "outcome": "Actually chose B · stayed",
+          "step": "Let SIM 0 respond"
+        },
+        "after": {
+          "phase": "Evidence → response recorded",
+          "cursor": "1",
+          "clock": "Round 3 · SIM 0 · decisions paused",
+          "selected": "SIM 0 · round 3",
+          "seed": "120261027",
+          "progress": "1 / 9 exchanges",
+          "outcome": "Actually chose B · stayed",
+          "step": "Next participant"
+        }
+      }
+    },
+    {
+      "route": "",
+      "name": "touch new trial after committed seed",
+      "passed": false,
+      "details": "New trial did not increment committed seed"
+    },
+    {
+      "route": "",
+      "name": "touch horizontal table swipe 0",
+      "passed": true,
+      "details": {
+        "scrollLeft": 27
+      }
+    },
+    {
+      "route": "",
+      "name": "vertical touch swipe",
+      "passed": true,
+      "details": {
+        "scrollY": 692
+      }
+    },
+    {
+      "route": "",
+      "name": "touch tooltip opens and dismisses",
+      "passed": true,
+      "details": "SIM 0, round 1. Claim: Copy neighbor → Oppose. Behavior: Oppose → Oppose. No promise recorded"
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "numeric seed entry commits after blur",
+      "passed": false,
+      "details": "Seed did not commit"
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "touch drag from slider thumb",
+      "passed": true,
+      "details": {
+        "before": "0",
+        "after": "13"
+      }
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "recorded evidence disclosure opens on touch",
+      "passed": true,
+      "details": {
+        "before": false,
+        "after": true
+      }
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "touch step after keyboard dismissal",
+      "passed": true,
+      "details": {
+        "before": {
+          "phase": "Evidence delivered → awaiting response",
+          "cursor": "0",
+          "clock": "SIM 0 · decisions paused",
+          "selected": "Inspect SIM 0",
+          "seed": "120261027",
+          "progress": "1 / 9 exchanges",
+          "outcome": "",
+          "step": "Let SIM 0 respond"
+        },
+        "after": {
+          "phase": "Evidence → response recorded",
+          "cursor": "1",
+          "clock": "SIM 0 · decisions paused",
+          "selected": "Inspect SIM 0",
+          "seed": "120261027",
+          "progress": "1 / 9 exchanges",
+          "outcome": "",
+          "step": "Next participant"
+        }
+      }
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "touch new trial after committed seed",
+      "passed": false,
+      "details": "New trial did not increment committed seed"
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "vertical touch swipe",
+      "passed": true,
+      "details": {
+        "scrollY": 671
+      }
+    },
+    {
+      "route": "sims-evidence-and-response",
+      "name": "touch tooltip opens and dismisses",
+      "passed": true,
+      "details": "SIM 0 · A"
+    },
+    {
+      "route": "sims-claim-testing",
+      "name": "numeric seed entry commits after blur",
+      "passed": false,
+      "details": "Seed did not commit"
+    },
+    {
+      "route": "sims-claim-testing",
+      "name": "touch drag from slider thumb",
+      "passed": true,
+      "details": {
+        "before": "0",
+        "after": "454"
+      }
+    },
+    {
+      "route": "sims-claim-testing",
+      "name": "touch step after keyboard dismissal",
+      "passed": true,
+      "details": {
+        "before": {
+          "phase": "Claim → prediction recorded",
+          "cursor": "454",
+          "clock": "Controlled probe 228 / 304",
+          "selected": "Inspect SIM 8",
+          "seed": "120261027",
+          "progress": "228 / 304 decisions",
+          "outcome": "Outcome not yet shown",
+          "step": "Observe decision"
+        },
+        "after": {
+          "phase": "Observation → compare",
+          "cursor": "455",
+          "clock": "Controlled probe 228 / 304",
+          "selected": "Inspect SIM 8",
+          "seed": "120261027",
+          "progress": "228 / 304 decisions",
+          "outcome": "Actually chose A · stayed",
+          "step": "Next prediction"
+        }
+      }
+    },
+    {
+      "route": "sims-claim-testing",
+      "name": "touch new trial after committed seed",
+      "passed": false,
+      "details": "New trial did not increment committed seed"
+    },
+    {
+      "route": "sims-claim-testing",
+      "name": "touch horizontal table swipe 0",
+      "passed": true,
+      "details": {
+        "scrollLeft": 71
+      }
+    },
+    {
+      "route": "sims-claim-testing",
+      "name": "vertical touch swipe",
+      "passed": true,
+      "details": {
+        "scrollY": 692
+      }
+    },
+    {
+      "route": "sims-claim-testing",
+      "name": "touch tooltip opens and dismisses",
+      "passed": true,
+      "details": "SIM 0 · A · stated rule: Copy neighbor"
+    },
+    {
+      "route": "sims-network",
+      "name": "numeric seed entry commits after blur",
+      "passed": false,
+      "details": "Seed did not commit"
+    },
+    {
+      "route": "sims-network",
+      "name": "touch drag from slider thumb",
+      "passed": true,
+      "details": {
+        "before": "0",
+        "after": "90"
+      }
+    },
+    {
+      "route": "sims-network",
+      "name": "touch step after keyboard dismissal",
+      "passed": true,
+      "details": {
+        "before": {
+          "phase": null,
+          "cursor": "90",
+          "clock": null,
+          "selected": null,
+          "seed": "120261027",
+          "progress": null,
+          "outcome": null,
+          "step": "Step 1 s"
+        },
+        "after": {
+          "phase": null,
+          "cursor": "91",
+          "clock": null,
+          "selected": null,
+          "seed": "120261027",
+          "progress": null,
+          "outcome": null,
+          "step": "Step 1 s"
+        }
+      }
+    },
+    {
+      "route": "sims-network",
+      "name": "touch new trial after committed seed",
+      "passed": false,
+      "details": "New trial did not increment committed seed"
+    },
+    {
+      "route": "sims-network",
+      "name": "vertical touch swipe",
+      "passed": true,
+      "details": {
+        "scrollY": 446
+      }
+    },
+    {
+      "route": "sims-network",
+      "name": "touch tooltip opens and dismisses",
+      "passed": true,
+      "details": "SIM 0 · choice B · 8 neighbors"
+    },
+    {
+      "route": "navigation",
+      "name": "touch navigation Latest run",
+      "passed": true,
+      "details": {
+        "url": "https://sims-evidence-lab.itswaffles88.chatgpt.site/",
+        "title": "SIMS — Latest run"
+      }
+    },
+    {
+      "route": "navigation",
+      "name": "touch navigation Repeated rounds",
+      "passed": true,
+      "details": {
+        "url": "https://sims-evidence-lab.itswaffles88.chatgpt.site/sims-repeated-rounds",
+        "title": "SIMS — Repeated rounds"
+      }
+    },
+    {
+      "route": "navigation",
+      "name": "touch navigation Evidence & response",
+      "passed": true,
+      "details": {
+        "url": "https://sims-evidence-lab.itswaffles88.chatgpt.site/sims-evidence-and-response",
+        "title": "SIMS — Evidence & response"
+      }
+    },
+    {
+      "route": "navigation",
+      "name": "touch navigation Claims & actions",
+      "passed": true,
+      "details": {
+        "url": "https://sims-evidence-lab.itswaffles88.chatgpt.site/sims-claim-testing",
+        "title": "SIMS — Claims & actions"
+      }
+    },
+    {
+      "route": "navigation",
+      "name": "touch navigation Network",
+      "passed": true,
+      "details": {
+        "url": "https://sims-evidence-lab.itswaffles88.chatgpt.site/sims-network",
+        "title": "SIMS — Network"
+      }
+    },
+    {
+      "route": "navigation",
+      "name": "touch navigation Methods",
+      "passed": true,
+      "details": {
+        "url": "https://github.com/NousVolition/Nous-Volition/blob/main/studies/sims-evidence-lab/METHODS.md",
+        "title": "Nous-Volition/studies/sims-evidence-lab/METHODS.md at main · NousVolition/Nous-Volition · GitHub"
+      }
+    },
+    {
+      "route": "navigation",
+      "name": "touch navigation Source",
+      "passed": true,
+      "details": {
+        "url": "https://github.com/NousVolition/Nous-Volition/tree/main/studies/sims-evidence-lab",
+        "title": "Nous-Volition/studies/sims-evidence-lab at main · NousVolition/Nous-Volition · GitHub"
+      }
+    },
+    {
+      "route": "landscape",
+      "name": "landscape layout fits screen",
+      "passed": true,
+      "details": {
+        "width": 734,
+        "height": 393,
+        "scroll": 734,
+        "ready": "true"
+      }
+    },
+    {
+      "route": "landscape",
+      "name": "landscape touch step",
+      "passed": false,
+      "details": "An unknown server-side error occurred while processing the command. Original error: -[NSNull floatValue]: unrecognized selector sent to instance 0x1f26a45b0"
+    },
+    {
+      "route": "landscape",
+      "name": "returns to portrait",
+      "passed": true,
+      "details": {
+        "width": 393,
+        "height": 659,
+        "scroll": 393
+      }
+    }
+  ],
+  "finished": "2026-10-17T23:33:02.996Z"
+}
