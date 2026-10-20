@@ -1,0 +1,13 @@
+{
+  "publication_date_local": "2026-10-20",
+  "simulation_pause_date_local": "2026-10-17",
+  "release_type": "interim_results",
+  "reason": "User requested publication of the saved results after pausing the calculations. Remaining GPU cases were not resumed for this release.",
+  "interrupted_cases": ["re1600_a075_d28_long"],
+  "unfinished_checks": {
+    "re1600_a075_d28_long": "Longer wake averaging at Re=1600, 28 cells per diameter",
+    "midpoint_re1200_a0875_d28": "Independent lookup-interpolation check at Re=1200, aspect=0.875",
+    "midpoint_re2100_a065_d28": "Independent lookup-interpolation check at Re=2100, aspect=0.65",
+    "re2600_a075_d36": "High-Reynolds-number refinement at Re=2600, 36 cells per diameter"
+  }
+}

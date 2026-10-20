@@ -1,0 +1,242 @@
+[
+  {
+    "diameter_mm": 2.5,
+    "speed_m_s": 6.461493428179822,
+    "aspect": 0.8786835252366845,
+    "Re": 1076.9155713633036,
+    "balance_error": 3.3962939373734974e-13,
+    "status": "root_inside_library",
+    "parameter": "surface_tension_N_m",
+    "factor": 0.97
+  },
+  {
+    "diameter_mm": 4.0,
+    "speed_m_s": 7.955269960134111,
+    "aspect": 0.7535337223342193,
+    "Re": 2121.4053227024297,
+    "balance_error": 4.96373793483167e-16,
+    "status": "root_inside_library",
+    "parameter": "surface_tension_N_m",
+    "factor": 0.97
+  },
+  {
+    "diameter_mm": 2.5,
+    "speed_m_s": 6.487571613470997,
+    "aspect": 0.8845177941783638,
+    "Re": 1081.2619355784993,
+    "balance_error": 2.486302962647494e-13,
+    "status": "root_inside_library",
+    "parameter": "surface_tension_N_m",
+    "factor": 1.03
+  },
+  {
+    "diameter_mm": 4.0,
+    "speed_m_s": 8.01821265445389,
+    "aspect": 0.7632821621402622,
+    "Re": 2138.190041187704,
+    "balance_error": 3.309158623221114e-16,
+    "status": "root_inside_library",
+    "parameter": "surface_tension_N_m",
+    "factor": 1.03
+  },
+  {
+    "diameter_mm": 2.5,
+    "speed_m_s": 6.655935275314367,
+    "aspect": 0.8816183518164818,
+    "Re": 1109.3225458857278,
+    "balance_error": 4.6863334882454415e-15,
+    "status": "root_inside_library",
+    "parameter": "rho_air_kg_m3",
+    "factor": 0.95
+  },
+  {
+    "diameter_mm": 4.0,
+    "speed_m_s": 8.219745982534395,
+    "aspect": 0.7584814099572716,
+    "Re": 2191.932262009172,
+    "balance_error": 3.6384576772091947e-16,
+    "status": "root_inside_library",
+    "parameter": "rho_air_kg_m3",
+    "factor": 0.95
+  },
+  {
+    "diameter_mm": 2.5,
+    "speed_m_s": 6.307534732875677,
+    "aspect": 0.8817241992322683,
+    "Re": 1051.255788812613,
+    "balance_error": 3.3887830495947326e-16,
+    "status": "root_inside_library",
+    "parameter": "rho_air_kg_m3",
+    "factor": 1.05
+  },
+  {
+    "diameter_mm": 4.0,
+    "speed_m_s": 7.773229556537576,
+    "aspect": 0.7585365522659976,
+    "Re": 2072.8612150766867,
+    "balance_error": 1.8184924665549858e-13,
+    "status": "root_inside_library",
+    "parameter": "rho_air_kg_m3",
+    "factor": 1.05
+  },
+  {
+    "diameter_mm": 2.5,
+    "speed_m_s": 6.500038217513549,
+    "aspect": 0.8815733637207092,
+    "Re": 1140.3575820199212,
+    "balance_error": 3.3885784301784206e-16,
+    "status": "root_inside_library",
+    "parameter": "nu_air_m2_s",
+    "factor": 0.95
+  },
+  {
+    "diameter_mm": 4.0,
+    "speed_m_s": 8.036490805584839,
+    "aspect": 0.7584717883264348,
+    "Re": 2255.8570682343407,
+    "balance_error": 3.309158623221114e-16,
+    "status": "root_inside_library",
+    "parameter": "nu_air_m2_s",
+    "factor": 0.95
+  },
+  {
+    "diameter_mm": 2.5,
+    "speed_m_s": 6.452488671077923,
+    "aspect": 0.8817616934806067,
+    "Re": 1024.2045509647496,
+    "balance_error": 3.7839959842975617e-16,
+    "status": "root_inside_library",
+    "parameter": "nu_air_m2_s",
+    "factor": 1.05
+  },
+  {
+    "diameter_mm": 4.0,
+    "speed_m_s": 7.944261941739641,
+    "aspect": 0.7585429375199804,
+    "Re": 2017.5903344100675,
+    "balance_error": 1.409902349918563e-15,
+    "status": "root_inside_library",
+    "parameter": "nu_air_m2_s",
+    "factor": 1.05
+  },
+  {
+    "diameter_mm": 2.5,
+    "speed_m_s": 6.46875850712144,
+    "aspect": 0.8818698413334843,
+    "Re": 1078.1264178535732,
+    "balance_error": 3.1864156953927237e-13,
+    "status": "root_inside_library",
+    "parameter": "rho_water_kg_m3",
+    "factor": 0.998
+  },
+  {
+    "diameter_mm": 4.0,
+    "speed_m_s": 7.9805416041358574,
+    "aspect": 0.7588359155382339,
+    "Re": 2128.1444277695623,
+    "balance_error": 4.548072096511493e-16,
+    "status": "root_inside_library",
+    "parameter": "rho_water_kg_m3",
+    "factor": 0.998
+  },
+  {
+    "diameter_mm": 2.5,
+    "speed_m_s": 6.480932995929678,
+    "aspect": 0.8814769074858096,
+    "Re": 1080.155499321613,
+    "balance_error": 2.35393657884726e-13,
+    "status": "root_inside_library",
+    "parameter": "rho_water_kg_m3",
+    "factor": 1.002
+  },
+  {
+    "diameter_mm": 4.0,
+    "speed_m_s": 7.994174906636632,
+    "aspect": 0.7581841105911474,
+    "Re": 2131.7799751031016,
+    "balance_error": 1.364421628953448e-16,
+    "status": "root_inside_library",
+    "parameter": "rho_water_kg_m3",
+    "factor": 1.002
+  },
+  {
+    "diameter_mm": 2.4499999999999997,
+    "speed_m_s": 6.41287504366094,
+    "aspect": 0.8856018277073969,
+    "Re": 1047.4362571312868,
+    "balance_error": 3.9400208083064994e-16,
+    "status": "root_inside_library",
+    "parameter": "drop_diameter",
+    "factor": 0.98
+  },
+  {
+    "diameter_mm": 3.92,
+    "speed_m_s": 7.92140672251265,
+    "aspect": 0.7650366105399304,
+    "Re": 2070.127623483306,
+    "balance_error": 7.95581124754197e-14,
+    "status": "root_inside_library",
+    "parameter": "drop_diameter",
+    "factor": 0.98
+  },
+  {
+    "diameter_mm": 2.5500000000000003,
+    "speed_m_s": 6.5360576413036116,
+    "aspect": 0.8777156907322691,
+    "Re": 1111.129799021614,
+    "balance_error": 3.2733529275930462e-15,
+    "status": "root_inside_library",
+    "parameter": "drop_diameter",
+    "factor": 1.02
+  },
+  {
+    "diameter_mm": 4.08,
+    "speed_m_s": 8.052376689997509,
+    "aspect": 0.7520028408270022,
+    "Re": 2190.2464596793225,
+    "balance_error": 3.9343184225877953e-16,
+    "status": "root_inside_library",
+    "parameter": "drop_diameter",
+    "factor": 1.02
+  },
+  {
+    "diameter_mm": 4.0,
+    "speed_m_s": 8.330802400733754,
+    "aspect": 0.742046273396289,
+    "Re": 2221.547306862334,
+    "balance_error": 1.409902349918563e-15,
+    "status": "root_inside_library",
+    "parameter": "cd_10percent_diagnostic",
+    "factor": 0.9
+  },
+  {
+    "diameter_mm": 4.0,
+    "speed_m_s": 7.667678588756512,
+    "aspect": 0.7737140429947656,
+    "Re": 2044.71429033507,
+    "balance_error": 3.8882613822848085e-14,
+    "status": "root_inside_library",
+    "parameter": "cd_10percent_diagnostic",
+    "factor": 1.1
+  },
+  {
+    "diameter_mm": 4.0,
+    "speed_m_s": 8.095963235140106,
+    "aspect": 0.7752607910848367,
+    "Re": 2158.923529370695,
+    "balance_error": 0.0,
+    "status": "root_inside_library",
+    "parameter": "cq_10percent_diagnostic",
+    "factor": 0.9
+  },
+  {
+    "diameter_mm": 4.0,
+    "speed_m_s": 7.870456347671854,
+    "aspect": 0.7435550506849181,
+    "Re": 2098.788359379161,
+    "balance_error": 4.5480720965114934e-17,
+    "status": "root_inside_library",
+    "parameter": "cq_10percent_diagnostic",
+    "factor": 1.1
+  }
+]

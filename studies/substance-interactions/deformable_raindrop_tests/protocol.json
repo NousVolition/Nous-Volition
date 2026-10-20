@@ -1,0 +1,16 @@
+{
+  "version": "deformable-raindrop-v1",
+  "date": "2026-10-17",
+  "scope": "Resolved three-dimensional external gas flow plus a reduced, volume-preserving spheroidal liquid deformation model. This is not a two-fluid free-boundary DNS.",
+  "design_before_extraction": "Frozen before extracting the selected experiment's numerical axis-ratio table. Search previews already exposed qualitative behavior, a reported 0.04 shift for 4 mm drops, and experimental scatter. This is an unfitted new-source test, not a formally blinded holdout.",
+  "gas": "D3Q19 regularized lattice Boltzmann, Cs=0.1; exact spheroid/link intersections and linear Bouzidi interpolation replace stair-step half-way bounce-back. Measure total drag and generalized deformation load from boundary momentum transfer. No empirical drag/shape fit.",
+  "liquid": "a=R exp(2s/3), b=R exp(-s/3), aspect=exp(s). Affine irrotational incompressible velocity gives kinetic mass M=m(4a^2+2b^2)/45. Exact spheroid surface area gives capillary energy. Viscous dissipation rate=(4/3) mu V sdot^2. Equation: M sddot + 0.5 Mprime sdot^2 + (4/3) mu V sdot + sigma Sprime = Q_air. No prescribed equilibrium shape.",
+  "coupling": "Quasi-steady interpolation of computed aerodynamic drag and deformation load at Reynolds numbers and shapes. Shape responds to aerodynamic load; drag changes with shape. Interpolation only inside the computed envelope. Oscillations are a reduced-model prediction; no claim of unsteady wake locking or resolved internal circulation.",
+  "material_20C": {"rho_water_kg_m3":998.2,"mu_water_Pa_s":0.001002,"surface_tension_N_m":0.07275,"rho_air_kg_m3":1.204,"nu_air_m2_s":0.000015,"g_m_s2":9.80665},
+  "initial_flow_design": {"Re":[800,1600,2600],"aspect":[0.55,0.75,1.0],"diameter_cells":20,"width_D":5,"length_D":12,"duration_D_over_U":40,"U_lattice":0.06},
+  "refinement": "Same Re=1600 and aspect=0.75 at D=20,28,36. Additional computed-envelope, grid, averaging, domain or timestep cases may be added based on numerical checks, never to match measured targets. Record amendments.",
+  "verification": "Uniform flow and zero-load controls, curved-boundary geometry, low-Re drag sanity check, closed volume, Rayleigh l=2 frequency, Lamb small-amplitude damping, unforced energy balance, shape integration timestep and gas grid/time/domain sensitivity. Numerical failure stays in the record.",
+  "external_test": "Andsager, Beard & Laird (1999), maximum-fall-distance measured mean axis ratios for every available 2.5,2.9,3.6,4.0 mm row. Do not score theoretical speeds/frequencies or derived correlations as measurements. Compare predicted equilibrium with measured time means as an explicitly limited transfer test. Their transverse oscillations are outside the one-mode model.",
+  "prior_sources": "Micev2024, Saylor2005, and earlier capture/flow sources are development evidence, not new validation. No new parameter is fitted to their outcomes or to Andsager1999.",
+  "decision": "Publish all scored diameters and failures. No validation claim if numerical convergence or measurement matching is inadequate. Do not infer smoke capture, neutral repulsion, or a new Navier-Stokes law."
+}

@@ -1,0 +1,16 @@
+{
+ "nominal_temperature_K":293.15,
+ "nominal_pressure_Pa":101325,
+ "carrier":"dry air; fixed density and viscosity inputs",
+ "humidity":"No humidity or heat-transport equation. No evaporation or condensation. Experimental humidity is unavailable and not silently assigned a measured value.",
+ "liquid":"pure water; no surfactant, dissolved solute or charge",
+ "shape":"axisymmetric spheroid with one volume-preserving coordinate",
+ "interface":"immobile no-slip gas boundary for each lookup calculation; reduced liquid shape dynamics separately",
+ "thermal":"isothermal; surface tension fixed at nominal20C",
+ "turbulence":"resolved3D unsteadiness with fixed Smagorinsky closure, not fully resolved DNS",
+ "transport":"No aerosols, particle capture, coalescence, adsorption or chemical reaction in this increment",
+ "sampling":"Last half of each gas record; four time blocks describe variability without assuming statistical independence",
+ "uncertainty":"Numerical controls and one-at-a-time input perturbations; no joint posterior or total confidence interval",
+ "mass":"Exact geometric liquid volume; small nonconservative numerical leakage at interpolated gas walls is explicitly measured in a separate ledger test",
+ "energy":"Liquid reduced-model work/dissipation balance; not a global two-phase energy balance"
+}

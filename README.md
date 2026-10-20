@@ -18,6 +18,8 @@ This repository, **Streams and Rocks**, preserves the original stream-function r
 
 **[Water-interface simulations and resolved large-drop flow](studies/substance-interactions/interface_flow_tests/README.txt).** Adds actual TIP4P/2005 liquid–vapor molecular simulations, fourth-shell topology, three-dimensional external-flow fields, refinement controls and new published-measurement comparisons. The fixed-body flow model remains unvalidated for falling liquid drops; all failures and mismatches are retained. [Illustrated numerical report](studies/substance-interactions/interface_flow_tests/report.html).
 
+**[Deformable raindrops: interim results](studies/substance-interactions/deformable_raindrop_tests/README.txt).** Publishes 24 completed three-dimensional airflow runs, complete 20- and 28-cell prediction tables, a 36-cell reference check, and four measured drop-shape comparisons. The largest drop remains too flat in the model. Four numerical checks are unfinished and simulations remain paused; this is a reduced shape model, not validated two-fluid flow or smoke capture. [Figures and shape animation](studies/substance-interactions/deformable_raindrop_tests/report.html).
+
 ## Mechanisms, switching and memory
 
 **[Open the completed spring and chemical-feedback study](studies/mechanisms-switching-memory/README.md).** Eighteen verification tests and 168 seeded simulations test spring hysteresis, pulse thresholds, maintained activity, finite fuel and controls. Source, figures, saved trajectories and numerical results are included. The biochemical rates are explicitly hypothetical; this does not establish new reactions or forces for the original substances.
@@ -144,5 +146,6 @@ The package includes 374 automated tests, thirty-eight original scientific figur
 **[Open the live SIMS model](https://sims-evidence-lab.itswaffles88.chatgpt.site)** — public and shareable, with the latest saved run, all four interactive models, and links to methods and source.
 
 [Open the complete interactive collection](studies/sims-evidence-lab/README.md). Four browser models trace network choices, claim predictions, evidence exchanges, and repeated rounds with remembered promises. The package preserves editable sources, standalone browser documents, methods, existing checks, and reproducible saved outputs. [The latest saved run](studies/sims-evidence-lab/site/latest-run.html) retains the eight-round, seed-20261011 settings. Response policies and evidence thresholds are explicit synthetic assumptions; claim revisions, behavior-rule changes, and promises without change are recorded separately.
+
 
 

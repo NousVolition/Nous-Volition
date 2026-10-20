@@ -1,0 +1,101 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "weights",
+      "value": 0.0,
+      "limit": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "isotropic moments",
+      "value": 1.1102230246251565e-16,
+      "limit": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "opposites",
+      "value": 0.0,
+      "limit": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "analytic shear decay 32",
+      "value": 0.0030373857254908376,
+      "limit": 0.005,
+      "passed": true
+    },
+    {
+      "name": "periodic mass 32",
+      "value": 0.0,
+      "limit": 2e-06,
+      "passed": true
+    },
+    {
+      "name": "analytic shear decay 64",
+      "value": 0.0007235210178085927,
+      "limit": 0.005,
+      "passed": true
+    },
+    {
+      "name": "periodic mass 64",
+      "value": 0.0,
+      "limit": 2e-06,
+      "passed": true
+    },
+    {
+      "name": "shear refinement ratio below 0.3",
+      "value": 0.23820518142840505,
+      "limit": 0.3,
+      "passed": true
+    },
+    {
+      "name": "uniform velocity",
+      "value": 3.3527612686157227e-08,
+      "limit": 1e-06,
+      "passed": true
+    },
+    {
+      "name": "no obstacle no force",
+      "value": 0.0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "curved-wall rest net force rho=1.0",
+      "value": 0.0,
+      "limit": 2e-06,
+      "passed": true
+    },
+    {
+      "name": "pressure gauge corrected zero shape load rho=1.0",
+      "value": 5.110766992256063e-08,
+      "limit": 2e-05,
+      "passed": true
+    },
+    {
+      "name": "curved-wall rest fluid velocity rho=1.0",
+      "value": 3.725290298461914e-09,
+      "limit": 2e-06,
+      "passed": true
+    },
+    {
+      "name": "curved-wall rest net force rho=1.01",
+      "value": 0.0,
+      "limit": 2e-06,
+      "passed": true
+    },
+    {
+      "name": "pressure gauge corrected zero shape load rho=1.01",
+      "value": 1.2402977493143619e-08,
+      "limit": 2e-05,
+      "passed": true
+    },
+    {
+      "name": "curved-wall rest fluid velocity rho=1.01",
+      "value": 3.688406247093212e-09,
+      "limit": 2e-06,
+      "passed": true
+    }
+  ]
+}

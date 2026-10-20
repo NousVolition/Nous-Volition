@@ -1,0 +1,1551 @@
+{
+  "scope": "Integrity of available records; this audit does not pass unfinished numerical checks.",
+  "all_planned_cases_completed": false,
+  "unfinished_cases": [
+    {
+      "name": "midpoint_re1200_a0875_d28",
+      "status": "not_run",
+      "description": "Independent lookup-interpolation check at Re=1200, aspect=0.875"
+    },
+    {
+      "name": "midpoint_re2100_a065_d28",
+      "status": "not_run",
+      "description": "Independent lookup-interpolation check at Re=2100, aspect=0.65"
+    },
+    {
+      "name": "re1600_a075_d28_long",
+      "status": "interrupted_by_user_no_final_record",
+      "description": "Longer wake averaging at Re=1600, 28 cells per diameter"
+    },
+    {
+      "name": "re2600_a075_d36",
+      "status": "not_run",
+      "description": "High-Reynolds-number refinement at Re=2600, 36 cells per diameter"
+    }
+  ],
+  "total": 304,
+  "passed": 304,
+  "failed": [],
+  "checks": [
+    {
+      "name": "frozen source protocol.json",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "frozen source flow_lbm.py",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "frozen source shape_model.py",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "frozen source run_flows.py",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "valid Python analyze.py",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "valid Python audit_saved.py",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "valid Python flow_lbm.py",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "valid Python gpu_environment.py",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "valid Python make_report.py",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "valid Python run_flows.py",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "valid Python run_refined_library.py",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "valid Python shape_model.py",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "valid Python study_status.py",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "valid Python verify_gas.py",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "valid Python verify_mass_budget.py",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "valid Python verify_shape.py",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "valid Python verify_surface_load.py",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "verification record shape_verification.json",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "verification record gas_verification.json",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "verification record surface_load_verification.json",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "verification record mass_budget_verification.json",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "every planned case completed or explicitly unfinished",
+      "passed": true,
+      "value": 24
+    },
+    {
+      "name": "no undeclared final case records",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "saved status matches case inventory",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "pilot_re1600_a075_d20 same physical solver",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "pilot_re1600_a075_d20 completed",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "pilot_re1600_a075_d20 increasing recorded time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "pilot_re1600_a075_d20 finite saved history",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "pilot_re1600_a075_d20 density guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "pilot_re1600_a075_d20 lattice speed guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "pilot_re1600_a075_d20 final time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "pilot_re1600_a075_d20 positive mean drag",
+      "passed": true,
+      "value": 0.649105544733991
+    },
+    {
+      "name": "pilot_re1600_a075_d20 mean slice accumulated",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a055_d20 same physical solver",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a055_d20 completed",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a055_d20 increasing recorded time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a055_d20 finite saved history",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a055_d20 density guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a055_d20 lattice speed guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a055_d20 final time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a055_d20 positive mean drag",
+      "passed": true,
+      "value": 0.7659725358792259
+    },
+    {
+      "name": "re1600_a055_d20 mean slice accumulated",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a055_d28 same physical solver",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a055_d28 completed",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a055_d28 increasing recorded time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a055_d28 finite saved history",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a055_d28 density guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a055_d28 lattice speed guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a055_d28 final time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a055_d28 positive mean drag",
+      "passed": true,
+      "value": 0.7349177796937213
+    },
+    {
+      "name": "re1600_a055_d28 mean slice accumulated",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d20_halfway same physical solver",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d20_halfway completed",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d20_halfway increasing recorded time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d20_halfway finite saved history",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d20_halfway density guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d20_halfway lattice speed guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d20_halfway final time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d20_halfway positive mean drag",
+      "passed": true,
+      "value": 0.6991223757498775
+    },
+    {
+      "name": "re1600_a075_d20_halfway mean slice accumulated",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d20_seed97 same physical solver",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d20_seed97 completed",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d20_seed97 increasing recorded time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d20_seed97 finite saved history",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d20_seed97 density guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d20_seed97 lattice speed guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d20_seed97 final time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d20_seed97 positive mean drag",
+      "passed": true,
+      "value": 0.6466959331780854
+    },
+    {
+      "name": "re1600_a075_d20_seed97 mean slice accumulated",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d20_slow same physical solver",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d20_slow completed",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d20_slow increasing recorded time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d20_slow finite saved history",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d20_slow density guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d20_slow lattice speed guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d20_slow final time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d20_slow positive mean drag",
+      "passed": true,
+      "value": 0.6611134462911553
+    },
+    {
+      "name": "re1600_a075_d20_slow mean slice accumulated",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d20_wide same physical solver",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d20_wide completed",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d20_wide increasing recorded time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d20_wide finite saved history",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d20_wide density guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d20_wide lattice speed guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d20_wide final time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d20_wide positive mean drag",
+      "passed": true,
+      "value": 0.6169400086157194
+    },
+    {
+      "name": "re1600_a075_d20_wide mean slice accumulated",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d28 same physical solver",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d28 completed",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d28 increasing recorded time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d28 finite saved history",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d28 density guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d28 lattice speed guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d28 final time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d28 positive mean drag",
+      "passed": true,
+      "value": 0.5964648287220085
+    },
+    {
+      "name": "re1600_a075_d28 mean slice accumulated",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d36 same physical solver",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d36 completed",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d36 increasing recorded time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d36 finite saved history",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d36 density guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d36 lattice speed guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d36 final time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a075_d36 positive mean drag",
+      "passed": true,
+      "value": 0.5681602272812429
+    },
+    {
+      "name": "re1600_a075_d36 mean slice accumulated",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a100_d20 same physical solver",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a100_d20 completed",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a100_d20 increasing recorded time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a100_d20 finite saved history",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a100_d20 density guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a100_d20 lattice speed guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a100_d20 final time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a100_d20 positive mean drag",
+      "passed": true,
+      "value": 0.5900854021602924
+    },
+    {
+      "name": "re1600_a100_d20 mean slice accumulated",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a100_d28 same physical solver",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a100_d28 completed",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a100_d28 increasing recorded time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a100_d28 finite saved history",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a100_d28 density guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a100_d28 lattice speed guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a100_d28 final time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re1600_a100_d28 positive mean drag",
+      "passed": true,
+      "value": 0.5157456787193001
+    },
+    {
+      "name": "re1600_a100_d28 mean slice accumulated",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re20_sphere_d20 same physical solver",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re20_sphere_d20 completed",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re20_sphere_d20 increasing recorded time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re20_sphere_d20 finite saved history",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re20_sphere_d20 density guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re20_sphere_d20 lattice speed guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re20_sphere_d20 final time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re20_sphere_d20 positive mean drag",
+      "passed": true,
+      "value": 2.9180878260006406
+    },
+    {
+      "name": "re20_sphere_d20 mean slice accumulated",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a055_d20 same physical solver",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a055_d20 completed",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a055_d20 increasing recorded time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a055_d20 finite saved history",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a055_d20 density guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a055_d20 lattice speed guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a055_d20 final time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a055_d20 positive mean drag",
+      "passed": true,
+      "value": 0.6864178418013238
+    },
+    {
+      "name": "re2600_a055_d20 mean slice accumulated",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a055_d28 same physical solver",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a055_d28 completed",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a055_d28 increasing recorded time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a055_d28 finite saved history",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a055_d28 density guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a055_d28 lattice speed guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a055_d28 final time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a055_d28 positive mean drag",
+      "passed": true,
+      "value": 0.6995723180015286
+    },
+    {
+      "name": "re2600_a055_d28 mean slice accumulated",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a075_d20 same physical solver",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a075_d20 completed",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a075_d20 increasing recorded time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a075_d20 finite saved history",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a075_d20 density guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a075_d20 lattice speed guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a075_d20 final time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a075_d20 positive mean drag",
+      "passed": true,
+      "value": 0.583485848068323
+    },
+    {
+      "name": "re2600_a075_d20 mean slice accumulated",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a075_d28 same physical solver",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a075_d28 completed",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a075_d28 increasing recorded time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a075_d28 finite saved history",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a075_d28 density guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a075_d28 lattice speed guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a075_d28 final time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a075_d28 positive mean drag",
+      "passed": true,
+      "value": 0.5415412080882059
+    },
+    {
+      "name": "re2600_a075_d28 mean slice accumulated",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a100_d20 same physical solver",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a100_d20 completed",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a100_d20 increasing recorded time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a100_d20 finite saved history",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a100_d20 density guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a100_d20 lattice speed guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a100_d20 final time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a100_d20 positive mean drag",
+      "passed": true,
+      "value": 0.4861322627805797
+    },
+    {
+      "name": "re2600_a100_d20 mean slice accumulated",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a100_d28 same physical solver",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a100_d28 completed",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a100_d28 increasing recorded time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a100_d28 finite saved history",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a100_d28 density guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a100_d28 lattice speed guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a100_d28 final time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re2600_a100_d28 positive mean drag",
+      "passed": true,
+      "value": 0.46120397344260433
+    },
+    {
+      "name": "re2600_a100_d28 mean slice accumulated",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a055_d20 same physical solver",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a055_d20 completed",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a055_d20 increasing recorded time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a055_d20 finite saved history",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a055_d20 density guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a055_d20 lattice speed guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a055_d20 final time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a055_d20 positive mean drag",
+      "passed": true,
+      "value": 0.7731960205790819
+    },
+    {
+      "name": "re800_a055_d20 mean slice accumulated",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a055_d28 same physical solver",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a055_d28 completed",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a055_d28 increasing recorded time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a055_d28 finite saved history",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a055_d28 density guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a055_d28 lattice speed guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a055_d28 final time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a055_d28 positive mean drag",
+      "passed": true,
+      "value": 0.745641293226771
+    },
+    {
+      "name": "re800_a055_d28 mean slice accumulated",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a075_d20 same physical solver",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a075_d20 completed",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a075_d20 increasing recorded time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a075_d20 finite saved history",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a075_d20 density guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a075_d20 lattice speed guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a075_d20 final time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a075_d20 positive mean drag",
+      "passed": true,
+      "value": 0.744019722466022
+    },
+    {
+      "name": "re800_a075_d20 mean slice accumulated",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a075_d28 same physical solver",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a075_d28 completed",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a075_d28 increasing recorded time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a075_d28 finite saved history",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a075_d28 density guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a075_d28 lattice speed guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a075_d28 final time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a075_d28 positive mean drag",
+      "passed": true,
+      "value": 0.6556722094384619
+    },
+    {
+      "name": "re800_a075_d28 mean slice accumulated",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a100_d20 same physical solver",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a100_d20 completed",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a100_d20 increasing recorded time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a100_d20 finite saved history",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a100_d20 density guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a100_d20 lattice speed guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a100_d20 final time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a100_d20 positive mean drag",
+      "passed": true,
+      "value": 0.6061242968329216
+    },
+    {
+      "name": "re800_a100_d20 mean slice accumulated",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a100_d28 same physical solver",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a100_d28 completed",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a100_d28 increasing recorded time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a100_d28 finite saved history",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a100_d28 density guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a100_d28 lattice speed guard",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a100_d28 final time",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "re800_a100_d28 positive mean drag",
+      "passed": true,
+      "value": 0.5783695440603515
+    },
+    {
+      "name": "re800_a100_d28 mean slice accumulated",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "complete library 20",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "no extrapolation 20",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "saved equilibrium 20 2.5",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "self-consistent force/shape balance 20 2.5",
+      "passed": true,
+      "value": 3.4929193701208263e-16
+    },
+    {
+      "name": "locally restoring shape equilibrium 20 2.5",
+      "passed": true,
+      "value": 5.227407244774117e-07
+    },
+    {
+      "name": "saved equilibrium 20 2.9",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "self-consistent force/shape balance 20 2.9",
+      "passed": true,
+      "value": 3.114969711760547e-15
+    },
+    {
+      "name": "locally restoring shape equilibrium 20 2.9",
+      "passed": true,
+      "value": 7.148937975356495e-07
+    },
+    {
+      "name": "saved equilibrium 20 3.6",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "self-consistent force/shape balance 20 3.6",
+      "passed": true,
+      "value": 5.674140300447726e-16
+    },
+    {
+      "name": "locally restoring shape equilibrium 20 3.6",
+      "passed": true,
+      "value": 1.1365416010821822e-06
+    },
+    {
+      "name": "saved equilibrium 20 4.0",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "self-consistent force/shape balance 20 4.0",
+      "passed": true,
+      "value": 3.805532416704281e-15
+    },
+    {
+      "name": "locally restoring shape equilibrium 20 4.0",
+      "passed": true,
+      "value": 1.4147775256374405e-06
+    },
+    {
+      "name": "complete library 28",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "no extrapolation 28",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "saved equilibrium 28 2.5",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "self-consistent force/shape balance 28 2.5",
+      "passed": true,
+      "value": 2.8048142542070237e-13
+    },
+    {
+      "name": "locally restoring shape equilibrium 28 2.5",
+      "passed": true,
+      "value": 5.225993198714165e-07
+    },
+    {
+      "name": "saved equilibrium 28 2.9",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "self-consistent force/shape balance 28 2.9",
+      "passed": true,
+      "value": 1.503405520606653e-14
+    },
+    {
+      "name": "locally restoring shape equilibrium 28 2.9",
+      "passed": true,
+      "value": 7.076881553641747e-07
+    },
+    {
+      "name": "saved equilibrium 28 3.6",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "self-consistent force/shape balance 28 3.6",
+      "passed": true,
+      "value": 3.3689422937122167e-16
+    },
+    {
+      "name": "locally restoring shape equilibrium 28 3.6",
+      "passed": true,
+      "value": 1.102592533981702e-06
+    },
+    {
+      "name": "saved equilibrium 28 4.0",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "self-consistent force/shape balance 28 4.0",
+      "passed": true,
+      "value": 4.96373793483167e-16
+    },
+    {
+      "name": "locally restoring shape equilibrium 28 4.0",
+      "passed": true,
+      "value": 1.3699998577368111e-06
+    },
+    {
+      "name": "all preselected measured diameters",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "table2 vs table3 discrepancy retained",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "every diameter scored on both grids",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "all compared results are inside gas table",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "D2.5 finite shape trajectory",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "D2.5 positive shape ratio",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "D2.5 constant water volume",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "D2.5 liquid work-energy budget",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "D2.9 finite shape trajectory",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "D2.9 positive shape ratio",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "D2.9 constant water volume",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "D2.9 liquid work-energy budget",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "D3.6 finite shape trajectory",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "D3.6 positive shape ratio",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "D3.6 constant water volume",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "D3.6 liquid work-energy budget",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "D4 finite shape trajectory",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "D4 positive shape ratio",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "D4 constant water volume",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "D4 liquid work-energy budget",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "larger_initial finite shape trajectory",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "larger_initial positive shape ratio",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "larger_initial constant water volume",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "larger_initial liquid work-energy budget",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "double_damping finite shape trajectory",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "double_damping positive shape ratio",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "double_damping constant water volume",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "double_damping liquid work-energy budget",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "no_damping finite shape trajectory",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "no_damping positive shape ratio",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "no_damping constant water volume",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "no_damping liquid work-energy budget",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "no_air finite shape trajectory",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "no_air positive shape ratio",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "no_air constant water volume",
+      "passed": true,
+      "value": null
+    },
+    {
+      "name": "no_air liquid work-energy budget",
+      "passed": true,
+      "value": null
+    }
+  ]
+}

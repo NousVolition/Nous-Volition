@@ -1,0 +1,92 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "spheroid preserves exact water volume",
+      "value": 4.440892098500626e-16,
+      "tolerance": 1e-14,
+      "passed": true
+    },
+    {
+      "name": "sphere surface area",
+      "value": 2.220446049250313e-16,
+      "tolerance": 1e-13,
+      "passed": true
+    },
+    {
+      "name": "sphere zero capillary force",
+      "value": 2.9224789260391084e-15,
+      "tolerance": 1e-13,
+      "passed": true
+    },
+    {
+      "name": "sphere kinetic mass",
+      "value": 0.0,
+      "tolerance": 1e-13,
+      "passed": true
+    },
+    {
+      "name": "Rayleigh l=2 linear stiffness",
+      "value": 1.3664624987086427e-12,
+      "tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "surface energy derivative at -0.6",
+      "value": 4.13249434672025e-11,
+      "tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "surface energy derivative at -0.2",
+      "value": -1.323008369524814e-10,
+      "tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "surface energy derivative at 0.2",
+      "value": -4.6663783948019955e-12,
+      "tolerance": 1e-07,
+      "passed": true
+    },
+    {
+      "name": "numerical free oscillation frequency",
+      "value": 0.0,
+      "tolerance": 0.002,
+      "passed": true
+    },
+    {
+      "name": "unforced energy conservation",
+      "value": 3.909400518685187e-09,
+      "tolerance": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "Lamb small amplitude damping",
+      "value": 8.209002367576268e-05,
+      "tolerance": 0.003,
+      "passed": true
+    },
+    {
+      "name": "viscous energy-work balance",
+      "value": 3.734209845858577e-09,
+      "tolerance": 1e-05,
+      "passed": true
+    },
+    {
+      "name": "forced timestep refinement aspect",
+      "value": 4.463096558993129e-14,
+      "tolerance": 2e-05,
+      "passed": true
+    },
+    {
+      "name": "forced energy-work balance",
+      "value": 1.696999401010851e-15,
+      "tolerance": 1e-07,
+      "passed": true
+    }
+  ],
+  "analytic_frequency_Hz": 42.966289240694564,
+  "numerical_damping_per_s": 1.2548615685780944,
+  "analytic_damping_per_s": 1.254758565417752
+}

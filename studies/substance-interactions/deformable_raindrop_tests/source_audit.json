@@ -1,0 +1,11 @@
+{
+ "source": "Andsager, Beard & Laird (1999), Laboratory Measurements of Axis Ratios for Large Raindrops, Journal of the Atmospheric Sciences 56, 2673-2683",
+ "doi": "10.1175/1520-0469(1999)056<2673:LMOARF>2.0.CO;2",
+ "author_copy": "https://people.hws.edu/laird/index_files/pubs/1999-Andsager-et-al-jas.pdf",
+ "extraction": "Table 2, printed p2676, PDF page4; visually checked against rendered page. Table3/Figure4 also visually checked on PDF page6.",
+ "choice": "Every maximum-fall-distance row, chosen before table extraction. These are measured shape statistics. Table1 velocities and frequencies were not used as observed outcomes.",
+ "small_discrepancy": "The 4mm mean is 0.808 in Table2 and 0.807 in Table3; both are preserved. Primary score uses Table2 consistently; sensitivity uses Table3. Difference 0.001 is smaller than the reported 0.005 confidence half-width. No digitization of the histogram was needed.",
+ "conditions": "Deionized water, 25.5m fall. Experiment temperature varied from 8 to 28C; individual run temperatures, local air velocity and full droplet contours unavailable. Nominal comparison uses20C. Size varied within1% per run and2% between runs.",
+ "limits": "Reported 95% intervals describe measured means, not model or total systematic uncertainty. Several images can belong to one drop. Equilibrium spheroids are compared with time-mean chord ratios of oscillating, potentially non-spheroidal drops; transverse modes and wake locking are omitted.",
+ "independence": "No previous project study cited this source. Source/table selection and physical model were fixed before table extraction; search previews exposed qualitative findings first. No fitting. Subsequent use for changing the model turns these data into development evidence. This was not a blinded or preregistered validation study."
+}

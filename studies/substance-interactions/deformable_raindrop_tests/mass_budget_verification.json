@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "initial_mass": 65118.999029651284,
+  "max_relative_budget_residual": 2.9015898936844534e-07,
+  "cumulative_unphysical_wall_leakage_relative": -2.4011307641522592e-05,
+  "cumulative_open_boundary_transfer_relative": -5.03556316529322e-05,
+  "note": "Budget closure is checked, not zero physical wall permeability. Production runs record total mass offsets but not a complete production flux ledger. This numerical boundary leak remains a limitation."
+}

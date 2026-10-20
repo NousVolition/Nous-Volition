@@ -1,0 +1,172 @@
+{
+  "publication_date_local": "2026-10-20",
+  "status": "interim_partial_study",
+  "planned": 28,
+  "completed": 24,
+  "started": 25,
+  "all_planned_cases_completed": false,
+  "unfinished": [
+    {
+      "name": "midpoint_re1200_a0875_d28",
+      "status": "not_run",
+      "description": "Independent lookup-interpolation check at Re=1200, aspect=0.875"
+    },
+    {
+      "name": "midpoint_re2100_a065_d28",
+      "status": "not_run",
+      "description": "Independent lookup-interpolation check at Re=2100, aspect=0.65"
+    },
+    {
+      "name": "re1600_a075_d28_long",
+      "status": "interrupted_by_user_no_final_record",
+      "description": "Longer wake averaging at Re=1600, 28 cells per diameter"
+    },
+    {
+      "name": "re2600_a075_d36",
+      "status": "not_run",
+      "description": "High-Reynolds-number refinement at Re=2600, 36 cells per diameter"
+    }
+  ],
+  "cases": [
+    {
+      "name": "midpoint_re1200_a0875_d28",
+      "status": "not_run",
+      "description": "Independent lookup-interpolation check at Re=1200, aspect=0.875"
+    },
+    {
+      "name": "midpoint_re2100_a065_d28",
+      "status": "not_run",
+      "description": "Independent lookup-interpolation check at Re=2100, aspect=0.65"
+    },
+    {
+      "name": "pilot_re1600_a075_d20",
+      "status": "completed",
+      "description": ""
+    },
+    {
+      "name": "re1600_a055_d20",
+      "status": "completed",
+      "description": ""
+    },
+    {
+      "name": "re1600_a055_d28",
+      "status": "completed",
+      "description": ""
+    },
+    {
+      "name": "re1600_a075_d20_halfway",
+      "status": "completed",
+      "description": ""
+    },
+    {
+      "name": "re1600_a075_d20_seed97",
+      "status": "completed",
+      "description": ""
+    },
+    {
+      "name": "re1600_a075_d20_slow",
+      "status": "completed",
+      "description": ""
+    },
+    {
+      "name": "re1600_a075_d20_wide",
+      "status": "completed",
+      "description": ""
+    },
+    {
+      "name": "re1600_a075_d28",
+      "status": "completed",
+      "description": ""
+    },
+    {
+      "name": "re1600_a075_d28_long",
+      "status": "interrupted_by_user_no_final_record",
+      "description": "Longer wake averaging at Re=1600, 28 cells per diameter"
+    },
+    {
+      "name": "re1600_a075_d36",
+      "status": "completed",
+      "description": ""
+    },
+    {
+      "name": "re1600_a100_d20",
+      "status": "completed",
+      "description": ""
+    },
+    {
+      "name": "re1600_a100_d28",
+      "status": "completed",
+      "description": ""
+    },
+    {
+      "name": "re20_sphere_d20",
+      "status": "completed",
+      "description": ""
+    },
+    {
+      "name": "re2600_a055_d20",
+      "status": "completed",
+      "description": ""
+    },
+    {
+      "name": "re2600_a055_d28",
+      "status": "completed",
+      "description": ""
+    },
+    {
+      "name": "re2600_a075_d20",
+      "status": "completed",
+      "description": ""
+    },
+    {
+      "name": "re2600_a075_d28",
+      "status": "completed",
+      "description": ""
+    },
+    {
+      "name": "re2600_a075_d36",
+      "status": "not_run",
+      "description": "High-Reynolds-number refinement at Re=2600, 36 cells per diameter"
+    },
+    {
+      "name": "re2600_a100_d20",
+      "status": "completed",
+      "description": ""
+    },
+    {
+      "name": "re2600_a100_d28",
+      "status": "completed",
+      "description": ""
+    },
+    {
+      "name": "re800_a055_d20",
+      "status": "completed",
+      "description": ""
+    },
+    {
+      "name": "re800_a055_d28",
+      "status": "completed",
+      "description": ""
+    },
+    {
+      "name": "re800_a075_d20",
+      "status": "completed",
+      "description": ""
+    },
+    {
+      "name": "re800_a075_d28",
+      "status": "completed",
+      "description": ""
+    },
+    {
+      "name": "re800_a100_d20",
+      "status": "completed",
+      "description": ""
+    },
+    {
+      "name": "re800_a100_d28",
+      "status": "completed",
+      "description": ""
+    }
+  ]
+}

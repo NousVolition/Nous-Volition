@@ -1,0 +1,27 @@
+{
+  "name": "re1600_a075_d36",
+  "D_lattice": 36,
+  "Re_D": 1600.0,
+  "aspect": 0.75,
+  "speed": 0.06,
+  "width_D": 5.0,
+  "length_D": 12.0,
+  "duration_requested": 40.0,
+  "duration_completed": 40.0,
+  "cs": 0.1,
+  "seed": 31,
+  "tau0": 0.50405,
+  "grid": [
+    432,
+    180,
+    180
+  ],
+  "projected_area_lattice": 1233.0689843076868,
+  "body_volume_voxels": 24401,
+  "exact_body_volume": 24429.02447431423,
+  "elapsed_s": 565.9210000000021,
+  "status": "completed",
+  "source_sha256": "a652f148f93e9b33e3fe83195d46f8ffff76bb001f676fb33ad556d5e3232ee6",
+  "interpolated": true,
+  "notes": "Stationary gas-load library; reduced liquid deformation solved separately. No-slip interface. Quasi-steady coupling, no two-fluid DNS."
+}

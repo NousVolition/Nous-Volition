@@ -1,0 +1,27 @@
+{
+  "name": "re2600_a100_d28",
+  "D_lattice": 28,
+  "Re_D": 2600.0,
+  "aspect": 1.0,
+  "speed": 0.06,
+  "width_D": 5.0,
+  "length_D": 12.0,
+  "duration_requested": 40.0,
+  "duration_completed": 40.00071428571429,
+  "cs": 0.1,
+  "seed": 31,
+  "tau0": 0.5019384615384616,
+  "grid": [
+    336,
+    140,
+    140
+  ],
+  "projected_area_lattice": 615.7521601035994,
+  "body_volume_voxels": 11513,
+  "exact_body_volume": 11494.040321933857,
+  "elapsed_s": 212.28100000000268,
+  "status": "completed",
+  "source_sha256": "a652f148f93e9b33e3fe83195d46f8ffff76bb001f676fb33ad556d5e3232ee6",
+  "interpolated": true,
+  "notes": "Stationary gas-load library; reduced liquid deformation solved separately. No-slip interface. Quasi-steady coupling, no two-fluid DNS."
+}

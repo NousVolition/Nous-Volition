@@ -1,0 +1,154 @@
+DEFORMABLE LARGE-RAINDROP MODEL: WHAT IS ACTUALLY SOLVED
+
+INTERIM RELEASE, 20 OCTOBER 2026: 24 of 28 planned airflow cases are complete.
+The long-averaging control was interrupted; two interpolation checks and
+the Re=2600, 36-cell refinement were not run. Statements below describing
+the numerical design do not imply those four checks passed. Consult
+study_status.json for completed versus unfinished work. Physical source
+files and coefficients remain unchanged from the pre-extraction freeze.
+
+This extends the fixed-body pilot with a volume-preserving liquid shape model
+and a refined three-dimensional gas calculation. It is a reduced model, not a
+fully resolved two-phase free-surface simulation. One axisymmetric spheroidal
+coordinate is allowed to move. Neither its equilibrium value nor its motion
+is prescribed from an experimental shape correlation.
+
+LIQUID SHAPE, SI UNITS
+Let D be volume-equivalent diameter, R=D/2, s=log(aspect),
+a=R exp(2s/3), b=R exp(-s/3). The flow-direction semiaxis is a; the two
+transverse semiaxes are b. V=4 pi a b^2/3=pi D^3/6 at every time.
+The affine liquid velocity is (2 sdot x/3, -sdot y/3, -sdot z/3).
+It is divergence free, irrotational, and follows the spheroidal surface.
+Integrating its kinetic energy over a uniform-density ellipsoid gives
+T=0.5 M(s) sdot^2, M=m(4a^2+2b^2)/45, with m=rho_water V.
+Its viscous dissipation rate is (4/3) mu_water V sdot^2.
+The exact spheroid area is evaluated by 64-point Gauss-Legendre quadrature:
+S=2 pi b integral[-1,1] sqrt(a^2(1-u^2)+b^2 u^2) du.
+The surface-energy derivative is analytic under that integral, rather than a
+finite-difference force. The motion obeys
+  M sddot + 0.5 Mprime sdot^2 + (4/3) mu_water V sdot + sigma Sprime = Q_air.
+This is a variational, one-coordinate approximation to liquid dynamics.
+It does not solve a general liquid pressure/velocity field or enforce every
+pointwise tangential-stress condition. Air added mass is neglected.
+
+At small amplitude around a sphere, the model gives the Rayleigh quadrupole
+frequency omega^2=8 sigma/(rho_water R^3) and Lamb amplitude decay rate
+beta=5 mu_water/(rho_water R^2). These are independently verified limits,
+not experimental validation of finite deformation. A sphere's static Laplace
+pressure 2 sigma/R follows from d(sigma S)/dV; no two-fluid pressure jump is
+discretized here, so a free-interface Laplace-pressure solver test is not
+claimed. All gravity work associated with shape alone vanishes because the
+center and volume are fixed. Weight minus air buoyancy enters translation.
+
+AIRFLOW AND CURVED SURFACE
+The gas solves the 3D D3Q19 regularized isothermal lattice-Boltzmann equations
+with a fixed Smagorinsky coefficient Cs=0.1 and air Reynolds number Re=UD/nu.
+The nominal rectangular domain is 12D long and 5D in each transverse
+direction. The body center is 3D downstream. An equilibrium inlet and a
+copied-population outlet are used, with periodic transverse boundaries.
+These are finite-domain approximations; a wider/longer control is included.
+Each gas solve holds one geometry fixed. The interpolation library supplies
+the response to changing geometry in the separate liquid equation.
+
+The surface is defined analytically. The exact intersection of each lattice
+link with the spheroid determines the linear interpolated bounce-back
+distance (Bouzidi et al.). Thus the effective wall is not simply halfway
+between staircase nodes. The interface is still treated as no-slip and
+immobile during each gas calculation. No internal liquid circulation,
+time-dependent interface velocity, clean-surface tangential mobility or
+Marangoni stress is communicated to this airflow solver.
+
+Gas drag is the boundary momentum exchange projected along the flow. The
+deformation load Q is its virtual work against dr/ds=(2x/3,-y/3,-z/3), using
+the exact intersection position relative to the center. An isotropic
+reference-pressure contribution is removed. Finite links have a nonzero
+discrete constant-pressure moment, so its contribution at the boundary's
+weighted mean pressure is removed too. The uncorrected load and correction
+are retained. A manufactured P2 pressure field supplies an independent
+analytic surface-work check; its measured discretization error is reported.
+Generalized load units are N m; Cq=Q/(rho_air U^2 D^3). Drag uses
+Cd=F/(0.5 rho_air U^2 pi b^2), with projected area changing with aspect.
+
+Regularized collision conserves local mass to floating-point precision by
+assigning the rounding residual to the rest population. Interpolated wall
+reflection is NOT exactly mass conservative. A separate ledger explicitly
+quantifies that unphysical leakage and the inlet/outlet transfer; it does
+not pretend leakage is physical. Production runs store total mass offsets,
+not a full per-step integrated flux ledger. Open-domain total mass offsets
+alone are not a conservation residual. Density and speed guards stop
+unstable calculations; unsuccessful runs must not enter a prediction table.
+
+COUPLING AND PREDICTIONS
+A rectangular table in Re and aspect is interpolated linearly. No
+extrapolation beyond the computed range is permitted. Terminal speed and
+equilibrium shape are solved together from drag=weight-buoyancy and
+sigma Sprime=Q_air. Terminal speeds are predictions, not supplied measured
+speeds. Only measured shape outcomes are scored in this new comparison.
+
+Eliminating rho_air U^2 between the two balances shows why size and surface
+tension dominate these nominal equilibrium-shape sensitivities. If Sbar=S/D^2
+and Bo_D=(rho_water-rho_air) g D^2/sigma, then
+  dSbar/ds = (4/3) Bo_D exp(2s/3) Cq/Cd.
+Air density still affects buoyancy, the solved speed and Re-dependent loads;
+it is not exactly irrelevant. This identity is a consequence of this model's
+force balances, not a new fluid law or an empirical fit. It does not account
+for the mean-shape shifts produced by missing transverse oscillations.
+
+The transient examples perturb the predicted equilibrium shape, then evolve
+the liquid at its predicted fixed terminal speed. Shape changes feed back
+through the load table; the wake adjusts instantaneously in this
+quasi-steady approximation. The mean load has no shape-rate dependence, so
+aerodynamic damping and wake-driven sustained excitation are absent. The
+gas and liquid are not advanced in a single
+moving-boundary calculation. Translation is not time-integrated in these
+examples. There is no prescribed sinusoidal shape, breakup, coalescence,
+evaporation, electrical charge, aerosol collection or smoke retention.
+
+The liquid energy ledger integrates aerodynamic work and viscous loss:
+E(t)-E(0)-integral Q sdot dt+integral C sdot^2 dt=0.
+It checks energy within the reduced subsystem, not a global two-phase
+energy balance. The gas is isothermal and maintained by an external inlet.
+
+UNCERTAINTY AND RESOLUTION
+Different cells-per-diameter, lattice speeds, domain sizes, seeds and
+averaging windows diagnose numerical sensitivity. Four time-block means
+describe variation in each force record. They are not guaranteed independent
+and are not presented as a statistical confidence interval. Repeated seeds
+diagnose wake sensitivity, not independent experimental replication.
+One-at-a-time property, size and load perturbations are scenario ranges,
+not a calibrated joint uncertainty distribution. Geometry/Re table density
+can cause interpolation error beyond the grid controls. Boundary-layer and
+wake resolution remains limited; a stable calculation is not a DNS claim.
+
+EXTERNAL MEASUREMENT POLICY
+The new measurement set is Andsager, Beard & Laird (1999), Table2, all four
+25.5m rows. Source and model selection preceded numerical table extraction;
+previews had exposed qualitative outcomes. No parameters were fitted.
+An equilibrium spheroid is compared with a measured time-mean chord ratio.
+That observable mismatch, missing transverse oscillations and unmatched
+individual experimental temperatures prevent a fully matched validation.
+The selected table has all uncertainties and counts in measurements.csv.
+See source_audit.json for the preserved Table2/Table3 4mm discrepancy.
+
+PROVENANCE
+1. Curved boundary: Bouzidi, Firdaouss & Lallemand (2001), Physics of Fluids
+   13,3452-3459. https://doi.org/10.1063/1.1399290
+   Formula cross-check: official OpenLB boundary implementation documentation
+   https://www.openlb.net/DoxyGen/html/d3/d53/setBouzidiBoundary_8h_source.html
+   Our kernel is an independent implementation; OpenLB source is not bundled.
+2. Regularization: Latt & Chopard (2006), Mathematics and Computers in
+   Simulation. https://doi.org/10.1016/j.matcom.2006.05.017
+   https://arxiv.org/abs/physics/0506157
+3. Small-amplitude drop limits and their domain: Lohoefer (2020),
+   International Journal of Thermophysics41,30, equations3-5.
+   https://doi.org/10.1007/s10765-020-2608-z (publisher's corrected version).
+4. Nominal clean-water properties are rounded20C values consistent with
+   IAPWS viscosity/density and surface-tension correlations, not this
+   project's molecular-simulation estimates. Air values are declared rounded
+   dry-air20C inputs; they are not measured conditions for each photographed
+   drop. All actual numerical values are fixed in protocol.json.
+   https://iapws.org/technical-guidance/release/Surf-H2O
+   https://www.iapws.org/relguide/viscosity.html
+   https://iapws.org/technical-guidance/release/IAPWS-95
+5. New data: https://people.hws.edu/laird/index_files/pubs/1999-Andsager-et-al-jas.pdf
+   Source hash is in source_files.json; the copyrighted paper is not bundled.

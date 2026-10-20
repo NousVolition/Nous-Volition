@@ -1,0 +1,415 @@
+{
+  "study_status": {
+    "publication_date_local": "2026-10-20",
+    "status": "interim_partial_study",
+    "planned": 28,
+    "completed": 24,
+    "started": 25,
+    "all_planned_cases_completed": false,
+    "unfinished": [
+      {
+        "name": "midpoint_re1200_a0875_d28",
+        "status": "not_run",
+        "description": "Independent lookup-interpolation check at Re=1200, aspect=0.875"
+      },
+      {
+        "name": "midpoint_re2100_a065_d28",
+        "status": "not_run",
+        "description": "Independent lookup-interpolation check at Re=2100, aspect=0.65"
+      },
+      {
+        "name": "re1600_a075_d28_long",
+        "status": "interrupted_by_user_no_final_record",
+        "description": "Longer wake averaging at Re=1600, 28 cells per diameter"
+      },
+      {
+        "name": "re2600_a075_d36",
+        "status": "not_run",
+        "description": "High-Reynolds-number refinement at Re=2600, 36 cells per diameter"
+      }
+    ],
+    "cases": [
+      {
+        "name": "midpoint_re1200_a0875_d28",
+        "status": "not_run",
+        "description": "Independent lookup-interpolation check at Re=1200, aspect=0.875"
+      },
+      {
+        "name": "midpoint_re2100_a065_d28",
+        "status": "not_run",
+        "description": "Independent lookup-interpolation check at Re=2100, aspect=0.65"
+      },
+      {
+        "name": "pilot_re1600_a075_d20",
+        "status": "completed",
+        "description": ""
+      },
+      {
+        "name": "re1600_a055_d20",
+        "status": "completed",
+        "description": ""
+      },
+      {
+        "name": "re1600_a055_d28",
+        "status": "completed",
+        "description": ""
+      },
+      {
+        "name": "re1600_a075_d20_halfway",
+        "status": "completed",
+        "description": ""
+      },
+      {
+        "name": "re1600_a075_d20_seed97",
+        "status": "completed",
+        "description": ""
+      },
+      {
+        "name": "re1600_a075_d20_slow",
+        "status": "completed",
+        "description": ""
+      },
+      {
+        "name": "re1600_a075_d20_wide",
+        "status": "completed",
+        "description": ""
+      },
+      {
+        "name": "re1600_a075_d28",
+        "status": "completed",
+        "description": ""
+      },
+      {
+        "name": "re1600_a075_d28_long",
+        "status": "interrupted_by_user_no_final_record",
+        "description": "Longer wake averaging at Re=1600, 28 cells per diameter"
+      },
+      {
+        "name": "re1600_a075_d36",
+        "status": "completed",
+        "description": ""
+      },
+      {
+        "name": "re1600_a100_d20",
+        "status": "completed",
+        "description": ""
+      },
+      {
+        "name": "re1600_a100_d28",
+        "status": "completed",
+        "description": ""
+      },
+      {
+        "name": "re20_sphere_d20",
+        "status": "completed",
+        "description": ""
+      },
+      {
+        "name": "re2600_a055_d20",
+        "status": "completed",
+        "description": ""
+      },
+      {
+        "name": "re2600_a055_d28",
+        "status": "completed",
+        "description": ""
+      },
+      {
+        "name": "re2600_a075_d20",
+        "status": "completed",
+        "description": ""
+      },
+      {
+        "name": "re2600_a075_d28",
+        "status": "completed",
+        "description": ""
+      },
+      {
+        "name": "re2600_a075_d36",
+        "status": "not_run",
+        "description": "High-Reynolds-number refinement at Re=2600, 36 cells per diameter"
+      },
+      {
+        "name": "re2600_a100_d20",
+        "status": "completed",
+        "description": ""
+      },
+      {
+        "name": "re2600_a100_d28",
+        "status": "completed",
+        "description": ""
+      },
+      {
+        "name": "re800_a055_d20",
+        "status": "completed",
+        "description": ""
+      },
+      {
+        "name": "re800_a055_d28",
+        "status": "completed",
+        "description": ""
+      },
+      {
+        "name": "re800_a075_d20",
+        "status": "completed",
+        "description": ""
+      },
+      {
+        "name": "re800_a075_d28",
+        "status": "completed",
+        "description": ""
+      },
+      {
+        "name": "re800_a100_d20",
+        "status": "completed",
+        "description": ""
+      },
+      {
+        "name": "re800_a100_d28",
+        "status": "completed",
+        "description": ""
+      }
+    ]
+  },
+  "best_complete_library_D": 28,
+  "predictions": [
+    {
+      "diameter_mm": 2.5,
+      "speed_m_s": 6.168616014379942,
+      "aspect": 0.8838656172615242,
+      "Re": 1028.1026690633237,
+      "balance_error": 3.4929193701208263e-16,
+      "status": "root_inside_library",
+      "gas_grid_D": 20,
+      "observed_mean": 0.892,
+      "observed_ci95": 0.004,
+      "observed_sd": 0.019,
+      "residual": -0.008134382738475776,
+      "table3_residual": -0.008134382738475776,
+      "fixed_07_residual": -0.19200000000000006
+    },
+    {
+      "diameter_mm": 2.9,
+      "speed_m_s": 6.590393039583047,
+      "aspect": 0.8529795898968178,
+      "Re": 1274.142654319389,
+      "balance_error": 3.114969711760547e-15,
+      "status": "root_inside_library",
+      "gas_grid_D": 20,
+      "observed_mean": 0.874,
+      "observed_ci95": 0.006,
+      "observed_sd": 0.029,
+      "residual": -0.02102041010318223,
+      "table3_residual": -0.02102041010318223,
+      "fixed_07_residual": -0.17400000000000004
+    },
+    {
+      "diameter_mm": 3.6,
+      "speed_m_s": 7.308550558019348,
+      "aspect": 0.7963570598522042,
+      "Re": 1754.0521339246434,
+      "balance_error": 5.674140300447726e-16,
+      "status": "root_inside_library",
+      "gas_grid_D": 20,
+      "observed_mean": 0.798,
+      "observed_ci95": 0.005,
+      "observed_sd": 0.036,
+      "residual": -0.0016429401477958683,
+      "table3_residual": -0.0016429401477958683,
+      "fixed_07_residual": -0.09800000000000009
+    },
+    {
+      "diameter_mm": 4.0,
+      "speed_m_s": 7.673430742818221,
+      "aspect": 0.7650121725756637,
+      "Re": 2046.248198084859,
+      "balance_error": 3.805532416704281e-15,
+      "status": "root_inside_library",
+      "gas_grid_D": 20,
+      "observed_mean": 0.808,
+      "observed_ci95": 0.005,
+      "observed_sd": 0.045,
+      "residual": -0.04298782742433638,
+      "table3_residual": -0.04198782742433638,
+      "fixed_07_residual": -0.1080000000000001
+    },
+    {
+      "diameter_mm": 2.5,
+      "speed_m_s": 6.47484943967558,
+      "aspect": 0.8816733100897689,
+      "Re": 1079.1415732792632,
+      "balance_error": 2.8048142542070237e-13,
+      "status": "root_inside_library",
+      "gas_grid_D": 28,
+      "observed_mean": 0.892,
+      "observed_ci95": 0.004,
+      "observed_sd": 0.019,
+      "residual": -0.010326689910231113,
+      "table3_residual": -0.010326689910231113,
+      "fixed_07_residual": -0.19200000000000006
+    },
+    {
+      "diameter_mm": 2.9,
+      "speed_m_s": 6.944855227134543,
+      "aspect": 0.8493371382589763,
+      "Re": 1342.672010579345,
+      "balance_error": 1.503405520606653e-14,
+      "status": "root_inside_library",
+      "gas_grid_D": 28,
+      "observed_mean": 0.874,
+      "observed_ci95": 0.006,
+      "observed_sd": 0.029,
+      "residual": -0.024662861741023723,
+      "table3_residual": -0.024662861741023723,
+      "fixed_07_residual": -0.17400000000000004
+    },
+    {
+      "diameter_mm": 3.6,
+      "speed_m_s": 7.647238228210397,
+      "aspect": 0.7912916091285638,
+      "Re": 1835.337174770495,
+      "balance_error": 3.3689422937122167e-16,
+      "status": "root_inside_library",
+      "gas_grid_D": 28,
+      "observed_mean": 0.798,
+      "observed_ci95": 0.005,
+      "observed_sd": 0.036,
+      "residual": -0.006708390871436265,
+      "table3_residual": -0.006708390871436265,
+      "fixed_07_residual": -0.09800000000000009
+    },
+    {
+      "diameter_mm": 4.0,
+      "speed_m_s": 7.987362972051693,
+      "aspect": 0.7585098214755632,
+      "Re": 2129.963459213785,
+      "balance_error": 4.96373793483167e-16,
+      "status": "root_inside_library",
+      "gas_grid_D": 28,
+      "observed_mean": 0.808,
+      "observed_ci95": 0.005,
+      "observed_sd": 0.045,
+      "residual": -0.04949017852443682,
+      "table3_residual": -0.04849017852443682,
+      "fixed_07_residual": -0.1080000000000001
+    }
+  ],
+  "controls": [
+    {
+      "name": "re1600_a075_d28",
+      "Cd": 0.5964648287220085,
+      "Cq": -0.08226530665250283,
+      "Cd_percent_vs_d20": -8.109731374048746,
+      "Cq_percent_vs_d20": -5.0723012563298475
+    },
+    {
+      "name": "re1600_a075_d36",
+      "Cd": 0.5681602272812429,
+      "Cq": -0.07683153677456298,
+      "Cd_percent_vs_d20": -12.470285935690184,
+      "Cq_percent_vs_d20": -11.342444661913454
+    },
+    {
+      "name": "re1600_a075_d20_halfway",
+      "Cd": 0.6991223757498775,
+      "Cq": -0.08493452210875639,
+      "Cd_percent_vs_d20": 7.7055005032169,
+      "Cq_percent_vs_d20": -1.9922363903043694
+    },
+    {
+      "name": "re1600_a075_d20_slow",
+      "Cd": 0.6611134462911553,
+      "Cq": -0.08774755635760283,
+      "Cd_percent_vs_d20": 1.8499151108138046,
+      "Cq_percent_vs_d20": 1.2537840598241923
+    },
+    {
+      "name": "re1600_a075_d20_wide",
+      "Cd": 0.6169400086157194,
+      "Cq": -0.0828070990878071,
+      "Cd_percent_vs_d20": -4.955363019037728,
+      "Cq_percent_vs_d20": -4.447115364816501
+    },
+    {
+      "name": "re1600_a075_d20_seed97",
+      "Cd": 0.6466959331780854,
+      "Cq": -0.0864912768011789,
+      "Cd_percent_vs_d20": -0.3712203008361392,
+      "Cq_percent_vs_d20": -0.19586381876197656
+    }
+  ],
+  "paired_controls": [
+    {
+      "reference": "re1600_a075_d28",
+      "changed": "re1600_a075_d36",
+      "Cd_percent": -4.745393203051263,
+      "Cq_percent": -6.60517792864087
+    },
+    {
+      "reference": "pilot_re1600_a075_d20",
+      "changed": "re1600_a075_d20_slow",
+      "Cd_percent": 1.8499151108138046,
+      "Cq_percent": 1.2537840598241923
+    },
+    {
+      "reference": "pilot_re1600_a075_d20",
+      "changed": "re1600_a075_d20_wide",
+      "Cd_percent": -4.955363019037728,
+      "Cq_percent": -4.447115364816501
+    },
+    {
+      "reference": "re1600_a075_d20_halfway",
+      "changed": "pilot_re1600_a075_d20",
+      "Cd_percent": -7.154231183380244,
+      "Cq_percent": 2.0327332416625765
+    }
+  ],
+  "interpolation_checks": [],
+  "dynamics": [
+    {
+      "diameter_mm": 2.5,
+      "min_aspect": 0.8646022809625796,
+      "max_aspect": 0.8994842924194076,
+      "max_surface_speed_relative_to_air": 0.0013480100483226384,
+      "energy_budget_relative": 2.0143127060943367e-15
+    },
+    {
+      "diameter_mm": 2.9,
+      "min_aspect": 0.8328697935252595,
+      "max_aspect": 0.8664948865862976,
+      "max_surface_speed_relative_to_air": 0.001153657455124484,
+      "energy_budget_relative": 2.6777087114368464e-15
+    },
+    {
+      "diameter_mm": 3.6,
+      "min_aspect": 0.7759267132706583,
+      "max_aspect": 0.8072767599848887,
+      "max_surface_speed_relative_to_air": 0.0009181962881627748,
+      "energy_budget_relative": 1.5684924022436726e-15
+    },
+    {
+      "diameter_mm": 4.0,
+      "min_aspect": 0.7437769229213753,
+      "max_aspect": 0.7738327362928249,
+      "max_surface_speed_relative_to_air": 0.0008209703126529369,
+      "energy_budget_relative": 1.2234389444719081e-13
+    }
+  ],
+  "counts": {
+    "gas_attempts": 25,
+    "recorded_final_cases": 24,
+    "completed": 24,
+    "planned": 28,
+    "unfinished": 4
+  },
+  "mean_absolute_axis_error": 0.02279703026178198,
+  "old_fixed_07_mean_absolute_axis_error": 0.14300000000000007,
+  "fixed_shape_control_note": "Aspect0.7 is an illustrative prior fixed-body assumption, not a calibrated former predictor. Its error reduction is not a standalone model-validation claim.",
+  "decision": "External comparison only; unresolved numerical and physical limitations prevent a validation claim.",
+  "source_freeze_matches": {
+    "protocol.json": true,
+    "flow_lbm.py": true,
+    "shape_model.py": true,
+    "run_flows.py": true
+  }
+}

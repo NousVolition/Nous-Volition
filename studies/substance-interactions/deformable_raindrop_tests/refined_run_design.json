@@ -1,0 +1,105 @@
+[
+  [
+    "re800_a055_d28",
+    {
+      "diameter": 28,
+      "reynolds": 800,
+      "aspect": 0.55
+    }
+  ],
+  [
+    "re800_a075_d28",
+    {
+      "diameter": 28,
+      "reynolds": 800,
+      "aspect": 0.75
+    }
+  ],
+  [
+    "re800_a100_d28",
+    {
+      "diameter": 28,
+      "reynolds": 800,
+      "aspect": 1.0
+    }
+  ],
+  [
+    "re1600_a055_d28",
+    {
+      "diameter": 28,
+      "reynolds": 1600,
+      "aspect": 0.55
+    }
+  ],
+  [
+    "re1600_a075_d28",
+    {
+      "diameter": 28,
+      "reynolds": 1600,
+      "aspect": 0.75
+    }
+  ],
+  [
+    "re1600_a100_d28",
+    {
+      "diameter": 28,
+      "reynolds": 1600,
+      "aspect": 1.0
+    }
+  ],
+  [
+    "re2600_a055_d28",
+    {
+      "diameter": 28,
+      "reynolds": 2600,
+      "aspect": 0.55
+    }
+  ],
+  [
+    "re2600_a075_d28",
+    {
+      "diameter": 28,
+      "reynolds": 2600,
+      "aspect": 0.75
+    }
+  ],
+  [
+    "re2600_a100_d28",
+    {
+      "diameter": 28,
+      "reynolds": 2600,
+      "aspect": 1.0
+    }
+  ],
+  [
+    "re1600_a075_d28_long",
+    {
+      "diameter": 28,
+      "duration": 80
+    }
+  ],
+  [
+    "midpoint_re1200_a0875_d28",
+    {
+      "diameter": 28,
+      "reynolds": 1200,
+      "aspect": 0.875
+    }
+  ],
+  [
+    "midpoint_re2100_a065_d28",
+    {
+      "diameter": 28,
+      "reynolds": 2100,
+      "aspect": 0.65
+    }
+  ],
+  [
+    "re2600_a075_d36",
+    {
+      "diameter": 36,
+      "reynolds": 2600,
+      "aspect": 0.75
+    }
+  ]
+]
