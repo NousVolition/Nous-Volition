@@ -131,6 +131,10 @@ The sixteenth batch tests [live loss and recovery of Hug synchronization](studie
 
 The package includes 374 automated tests, thirty-eight original scientific figures, saved numerical results, and an [illustrated report](studies/dynamics-fractals-sims/report.html) to download and open locally. Equations, selected parameters, and links to primary sources are documented alongside the code.
 
+## Hug breakdown: clay hug and fluid shelter
+
+**[Open the hug-breakdown study](studies/hug-breakdown/README.md).** Two small 2D Navier–Stokes models test how a hugged fluid holds, breaks and recovers under an outside push. The first has a yielding clay wall that can heal. The second has a water and fog shelter using real density and viscosity ratios and surface tension. Once broken, the water shelter never re-closed. Source, sweep scripts, 15 passing tests, figures and saved results are included. These are 2D models with walls and forcing. They are not the Clay Millennium problem setup and make no claim about real people.
+
 ## SIMS animations: what changes within, and what changes with place
 
 [Open the animation guide](studies/sims-recovery-entrainment/animations/index.html). Seven interactive examples trace position, internal changes, carried memory, destination–memory feedback, and institutional records recreated from behaviour. These are explanatory models with explicit assumptions; download the repository to play the HTML animations locally.
