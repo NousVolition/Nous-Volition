@@ -26,6 +26,12 @@ The earlier [family/community guide](https://github.com/NousVolition/Nous-Voliti
 
 The seven-person scale can represent a fictional family or small community. It contains no observations or judgments about the user's family. All people and rules are synthetic, all services are abstract, and no real-world surveillance or intervention was performed.
 
+## Meaning expression context treatment and memory
+
+The [connections and evidence guide](CONNECTIONS.md) follows stated meaning, expression in context, actual treatment and remembered consequences into later encounters. It distinguishes source descriptions from consequences tested under fictional rules and from hypotheses that need observations. The diagram's Sens, Sin, U, Ω, W and field quantities require explicit mappings before they can form a single executable social model.
+
+This extends the question of power: who decides which expression counts, which context is relevant, whose account is recorded, and whether a previous classification changes later treatment? An account of force or resistance can keep its strength while identifying its speaker and the action it describes. The existing allocation benchmark tests constraints and priorities; the linked adaptable-role experiment tests a specified expectation update. Neither supplies a measured causal effect of language on treatment.
+
 ## Why this belongs beside the substance research
 
 The physical studies ask how identity, interfaces and environment shape material encounters. This extension asks how abilities, contact opportunities, limits and decision rules shape a community's allocation. Both specify the mechanism before interpreting an outcome. The passage supplies a social research question; it does not supply chemical rates, a force between droplets or a calibration of human behavior.

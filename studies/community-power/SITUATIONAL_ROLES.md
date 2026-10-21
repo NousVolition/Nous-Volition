@@ -2,6 +2,8 @@
 
 Streams and Rocks • community interpretation and proposed tests • 20 October 2026
 
+The [meaning, expression, context, treatment and memory guide](CONNECTIONS.md) connects these orientations to an encounter: what someone means, how it is expressed and received, how they are treated, and what carries into the next situation. Its evidence table distinguishes source-described connections, tested fictional mechanisms and social hypotheses still needing observations. A material description does not automatically determine a person's score, permission or remembered role.
+
 **A person can be water while holding a group together, fog while their position is only partly understood, smoke while carrying the traces of an earlier event, and clay while holding or reshaping an impression.** These orientations can overlap, change or cease to fit. The community does not require anyone to remain one material, or to become the same as everyone else.
 
 Water, Fog, Mist, Gas, Smoke, Clay and Ice remain available as expressive language. The four orientations below develop the current request. They describe a person-in-a-situation: a relationship among actions, history, demands and available choices. They are not permanent personality classes, diagnoses or measurements of a population.

@@ -14,6 +14,14 @@ The wider community model treats these as **overlapping, changeable orientations
 
 **Keep the strong language and make its evidence clear:** describe the action, attribute the interpretation and state the missing test. The [situational-role guide and test plan](https://github.com/NousVolition/Nous-Volition/blob/main/studies/community-power/SITUATIONAL_ROLES.md) gives examples and proposed tests of boundary visibility, linguistic capital, semantic change and feedback. These are open questions, not new results from this experiment.
 
+## Meaning, expression, context, treatment and memory
+
+The wider community model follows **stated meaning → expression in context → treatment → remembered consequences → a later encounter**. Record what a person intends, how they express it, the audience and rules, what others actually do, and whose expectation or record persists. The connection from wording to treatment remains a hypothesis requiring matched observations; this experiment does not process conversations.
+
+**One memory connection is implemented here:** after a round with completed output, each expectation weight becomes 75% of its previous value plus 25% of that person’s share of completed output. These weights affect later requests. If nothing is completed they remain unchanged. Practice changes skill through a separate learning rule. The no-memory control freezes expectation weights at their initially equal values while practice learning continues.
+
+The [connections and evidence guide](https://github.com/NousVolition/Nous-Volition/blob/main/studies/community-power/CONNECTIONS.md) distinguishes source-described relationships, consequences tested under fictional rules, logical consistency conditions and claims still needing observations. It preserves strong language with attribution and specifies new comparisons for expression, unequal treatment and memory. The existing results below have not been relabeled as empirical evidence about people.
+
 ## What happened after the role could change
 
 This table uses the higher demand (3.6 service units per round on average), 12 replication seeds and all seven target rotations averaged within each seed. Time is normalized: every person has one available time unit per round. “Target” means whoever was assigned the adaptable role in that run.
@@ -53,7 +61,7 @@ The first 30 rounds match across these five policies. The vertical line marks th
 
 Removing the assignment bias alone improves group completion to 87.9%, but the former target still supplies 0.550 extra time units, near its earlier 0.557. Its remembered role and accumulated skill remain. The model therefore distinguishes changing what someone is called from changing which requests they receive and which work they accept.
 
-The no-memory control raises completion after label removal to about 99.9%; the no-bias control reaches 100%. These controls show that the poor assigned-role outcomes come from the chosen request-routing rules. They do not establish a general law that specialization, memory or adaptation is harmful. The stronger handoff-cost and no-learning cases are retained in [sensitivity results](analysis/sensitivity_summary.csv).
+The no-memory control, which freezes expectation weights while retaining practice learning, raises completion after label removal to about 99.9%; the no-bias control reaches 100%. These controls show that the poor assigned-role outcomes come from the chosen request-routing rules. They do not establish a general law that specialization, memory or adaptation is harmful. The stronger handoff-cost and no-learning cases are retained in [sensitivity results](analysis/sensitivity_summary.csv).
 
 ## What this does and does not show
 

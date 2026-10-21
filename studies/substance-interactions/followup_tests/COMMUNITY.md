@@ -22,6 +22,12 @@ For example, the same fictional person could reconnect people as Water, ask for 
 
 The [situational-role guide](../../community-power/SITUATIONAL_ROLES.md) develops Water, Fog, Smoke and Clay with a concrete evidence plan. Boundary visibility needs paired examples with context; linguistic capital needs comparisons separating language from content and relationship history; semantic change needs comparisons across time or context; feedback needs time-ordered accounts or platform/dataset evidence. These are working hypotheses, not measured types of people or findings from the fluid tests.
 
+## Meaning expression context treatment and memory
+
+Follow what the person says they mean, their exact expression, the relevant context, the treatment they receive and what persists into later encounters. The [connections and evidence guide](../../community-power/CONNECTIONS.md) links these five parts to the existing community studies. It keeps the speaker's meaning separate from the receiver's interpretation, and a permit/restrict decision separate from its severity and consequences.
+
+The allocation study tests chosen constraints and priorities. The adaptable-role study tests how past contributions change later requests through an explicit expectation update; its no-memory control still permits practice learning. Whether wording or a prior label changes real treatment requires new matched cases and sequences. Water, Fog, Smoke or Clay can describe an episode without deciding a person's rights, worth or permanent place in the family.
+
 ## What connects the people
 
 The useful questions are concrete: Who contacts whom? Who understands the message? Who needs space? Which experiences persist? Who can repair a connection? We can assign each member adjustable contact, openness, boundary and memory variables rather than making the word alone determine their behavior.

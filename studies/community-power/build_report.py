@@ -30,6 +30,22 @@ table(['Orientation','Possible meaning','What needs describing'],[
  ['Clay','Holding or reshaping an impression','What persisted, what changed, and under which pressures or choices']])
 para('**Being water creates no obligation to absorb everyone else’s work.** People may combine, change or reject these descriptions. Record who chose the language, including any disagreement, and leave room for an episode that fits none of the labels.')
 para('**Keep the strong language; show the evidence and the missing test.** Describe what happened, attribute the interpretation and identify the comparison still needed. Force, resistance, pressure and boundaries can retain their meaning without being mistaken for measured physical forces. The proposed tests concern boundary visibility, linguistic capital, semantic change and feedback from labels; none is established by the existing synthetic runs. [Read the situational roles and concrete test plan](SITUATIONAL_ROLES.md).')
+h('Meaning, expression, context, treatment and memory')
+para('**Follow the encounter:** stated meaning → expression in context → treatment → remembered consequences → a later encounter. Context also shapes which expressions are available. This is a proposed way to examine a community, with evidence attached to each connection. Water, fog, smoke and clay can describe overlapping experiences along the sequence; they do not determine permission, worth or a fixed personality.')
+table(['Part','What to preserve'],[
+ ['Meaning · Sens','The person’s account of what they mean; keep the receiver’s interpretation separate'],
+ ['Expression · Sin','Exact words, actions or silence, with timing and register'],
+ ['Context · c','Audience, rules, policy version, resources and relevant history, declared before comparing outcomes'],
+ ['Treatment','What happens to the person: decision, reasons, severity, duration, work and help'],
+ ['Memory','Whose experience, expectation or institutional record persists, and how it affects a later encounter']])
+table(['Connection','Support now','Missing test'],[
+ ['Meaning and expression within context','Described in the supplied diagrams','Check the speaker’s meaning and receiver’s interpretation in comparable episodes'],
+ ['Rules and priorities → allocation','Tested under the fictional allocation rules below','Check whether those rules describe an observed community'],
+ ['Past contributions → later requests','Tested in the linked adaptable-role model','Test the expectation update against new time-ordered observations'],
+ ['Wording or prior treatment → later treatment','Proposed social hypotheses','Matched wording/actor comparisons and held-out sequences']])
+para('**A source-described relationship is not automatically an observed causal effect.** Solid arrows in the supplied diagram identify source descriptions; dashed arrows identify operational connections still to specify or test. In the existing adaptable-role model, the no-memory control freezes expectation weights but still allows learning through practice. It does not remove every consequence of history.')
+para('**Keep the strong language and identify its evidence.** Record the action, attribute the account and state the missing comparison. The screenshot’s 83 reported term occurrences are a count to reproduce from its manuscript, not a finding of bias. Equal permit/restrict decisions also do not establish equal reasons, severity or fairness.')
+para('The [full connections and evidence guide](CONNECTIONS.md) includes a worked fictional boundary example, the actual memory update, the Sens/Sin and Socio-Didact links, definitions of U, Ω and W, the distinction between score clearance and distance, and the tests still needed for field-to-decision mappings. This addition changes the interpretation and research plan; it adds no new numerical or human-data findings.')
 h('What was actually tested')
 para('768 main allocation cases cross 24 seeds, two skill patterns, two demand levels and eight organizational rules. Another 576 cases vary who receives priority, how strong it is and how much time assessment consumes. There are 36 tighter-tolerance pairs and 19 passing unit tests. These are optimization cases, not observed families or simulated conversations. Every arrangement uses the same ideal solver with complete information; distributed negotiation is not modeled.')
 table(['Choice','What changes'],[
