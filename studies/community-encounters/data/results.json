@@ -1,0 +1,198 @@
+{
+  "wording": {
+    "0": {
+      "mean": 0.0,
+      "minimum": 0.0,
+      "maximum": 0.0,
+      "interpretation": "Exact descriptive contrast over repeated authored cases; no sampling interval"
+    },
+    "0.8": {
+      "mean": 0.2538908733981796,
+      "minimum": 0.15195109705105017,
+      "maximum": 0.35322400161303474,
+      "interpretation": "Exact descriptive contrast over repeated authored cases; no sampling interval"
+    },
+    "-0.8": {
+      "mean": -0.2538908733981796,
+      "minimum": -0.35322400161303474,
+      "maximum": -0.15195109705105017,
+      "interpretation": "Exact descriptive contrast over repeated authored cases; no sampling interval"
+    }
+  },
+  "memory": {
+    "history_blind": {
+      "future_restriction_difference": {
+        "mean": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "n": 1000
+      },
+      "probability_difference": {
+        "mean": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "n": 1000
+      },
+      "first_probability_difference": {
+        "mean": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "n": 1000
+      },
+      "last_probability_difference": {
+        "mean": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "n": 1000
+      }
+    },
+    "record_only_decay": {
+      "future_restriction_difference": {
+        "mean": 0.008566666666666667,
+        "lower": 0.007573294480026594,
+        "upper": 0.00956003885330674,
+        "n": 1000
+      },
+      "probability_difference": {
+        "mean": 0.008326229387999812,
+        "lower": 0.008284359616245398,
+        "upper": 0.008368099159754226,
+        "n": 1000
+      },
+      "first_probability_difference": {
+        "mean": 0.050775619131400204,
+        "lower": 0.05001001684778935,
+        "upper": 0.05154122141501106,
+        "n": 1000
+      },
+      "last_probability_difference": {
+        "mean": 7.354037873074526e-05,
+        "lower": 7.232690263921421e-05,
+        "upper": 7.47538548222763e-05,
+        "n": 1000
+      }
+    },
+    "reinforcing_feedback": {
+      "future_restriction_difference": {
+        "mean": 0.012833333333333332,
+        "lower": 0.01107600207643274,
+        "upper": 0.014590664590233924,
+        "n": 1000
+      },
+      "probability_difference": {
+        "mean": 0.012635281704046054,
+        "lower": 0.012123190169511501,
+        "upper": 0.013147373238580607,
+        "n": 1000
+      },
+      "first_probability_difference": {
+        "mean": 0.050775619131400204,
+        "lower": 0.05001001684778935,
+        "upper": 0.05154122141501106,
+        "n": 1000
+      },
+      "last_probability_difference": {
+        "mean": 0.0006789988530724777,
+        "lower": 0.0004420516234254527,
+        "upper": 0.0009159460827195026,
+        "n": 1000
+      }
+    },
+    "corrective_feedback": {
+      "future_restriction_difference": {
+        "mean": -0.006233333333333335,
+        "lower": -0.007039301982100846,
+        "upper": -0.005427364684565823,
+        "n": 1000
+      },
+      "probability_difference": {
+        "mean": -0.005812483713150507,
+        "lower": -0.005983275686583603,
+        "upper": -0.0056416917397174105,
+        "n": 1000
+      },
+      "first_probability_difference": {
+        "mean": -0.04301662804442259,
+        "lower": -0.04378116963508976,
+        "upper": -0.04225208645375542,
+        "n": 1000
+      },
+      "last_probability_difference": {
+        "mean": -2.079101094166643e-05,
+        "lower": -6.3990706190755e-05,
+        "upper": 2.240868430742214e-05,
+        "n": 1000
+      }
+    },
+    "reset_before_round_6": {
+      "future_restriction_difference": {
+        "mean": 0.0064,
+        "lower": 0.005459237786692923,
+        "upper": 0.0073407622133070775,
+        "n": 1000
+      },
+      "probability_difference": {
+        "mean": 0.006585082169662006,
+        "lower": 0.006464714492259229,
+        "upper": 0.0067054498470647825,
+        "n": 1000
+      },
+      "first_probability_difference": {
+        "mean": 0.050775619131400204,
+        "lower": 0.05001001684778935,
+        "upper": 0.05154122141501106,
+        "n": 1000
+      },
+      "last_probability_difference": {
+        "mean": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "n": 1000
+      }
+    },
+    "zero_input": {
+      "future_restriction_difference": {
+        "mean": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "n": 1000
+      },
+      "probability_difference": {
+        "mean": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "n": 1000
+      },
+      "first_probability_difference": {
+        "mean": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "n": 1000
+      },
+      "last_probability_difference": {
+        "mean": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "n": 1000
+      }
+    }
+  },
+  "source_audit": {
+    "consistent": 4,
+    "excluded": 2,
+    "retained_intervals_include_one": true
+  },
+  "counts": {
+    "wording_cases": 432,
+    "paired_wording_contrasts": 108,
+    "joint_probability_pairs": 144,
+    "paired_memory_paths": 6000,
+    "sensitivity_pairs": 2400,
+    "later_encounters_main": 360000,
+    "unit_tests": 19
+  },
+  "seconds": 3.750534199993126,
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.5.3",
+  "platform": "Windows-11-10.0.26300-SP0"
+}

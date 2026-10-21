@@ -1,0 +1,28 @@
+{
+  "accessed": "2026-10-21",
+  "wording": {
+    "citation": "Juanchich, Sirota and Bonnefon, The polite wiggle-room effect in charity donation decisions, DOI 10.1002/bdm.2103",
+    "url": "https://jfbonnefon.github.io/publication/jbdm19/jbdm19.pdf",
+    "source_type": "Published rounded aggregate estimates, manually transcribed; not individual observations",
+    "selection": "All six donation wording contrasts in main Experiments 1, 2 and 3; Appendix D1 used as an internal consistency check. Experiment 3 contrasts apply to donation-first order, not both orders pooled.",
+    "data_access": "The paper's https://goo.gl/ffGH55 data link returned HTTP 404 on 2026-10-21; no raw-data refit performed.",
+    "rows": [
+      {"experiment": 1, "contrast": "would versus directive", "coef": -0.42, "se": 0.37, "appendix_or": 0.66, "n": 196, "table": "2", "page": 5},
+      {"experiment": 1, "contrast": "could versus directive", "coef": -0.01, "se": 0.36, "appendix_or": 0.99, "n": 196, "table": "2", "page": 5},
+      {"experiment": 2, "contrast": "would versus directive", "coef": -0.40, "se": 0.20, "appendix_or": 0.45, "n": 162, "table": "3", "page": 5},
+      {"experiment": 2, "contrast": "could versus directive", "coef": -0.14, "se": 0.13, "appendix_or": 0.44, "n": 162, "table": "3", "page": 5},
+      {"experiment": 3, "contrast": "would versus directive; donation first", "coef": -0.41, "se": 0.44, "appendix_or": 0.66, "n": 352, "table": "5", "page": 7},
+      {"experiment": 3, "contrast": "could versus directive; donation first", "coef": -0.55, "se": 0.45, "appendix_or": 0.58, "n": 352, "table": "5", "page": 7}
+    ]
+  },
+  "history": {
+    "citation": "Muchnik, Aral and Taylor (2013), Social Influence Bias: A Randomized Experiment, DOI 10.1126/science.1240466",
+    "url": "https://snap.stanford.edu/class/cs224w-readings/muchnik13bias.pdf",
+    "source_type": "Published rounded proportions, page 649; no individual data or reconstructed counts",
+    "scope": "Earlier displayed ratings of the same comment, followed by later viewers; not a test of an author's treatment across different future comments or private psychological memory",
+    "rows": [
+      {"outcome": "first viewer upvote after a prior downvote", "treated": 0.099, "control": 0.054},
+      {"outcome": "first viewer downvote after a prior downvote", "treated": 0.014, "control": 0.007}
+    ]
+  }
+}

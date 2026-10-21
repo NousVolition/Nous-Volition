@@ -6,6 +6,8 @@ Streams and Rocks community model • 20 October 2026
 
 The supplied diagrams provide this conceptual connection. The existing simulations test allocation rules and a particular feedback rule for remembered contributions. They do not yet test whether wording changes how real people are treated. The distinction below keeps the language strong and makes the next comparisons concrete.
 
+**Completed extension, 21 October 2026:** [wording and prior-treatment tests](../community-encounters/README.md) now implement an explicit synthetic decision procedure with wording-blind, history-blind, corrective and reset controls. The chosen wording penalty gives a 25.4-percentage-point mean difference; reversing it reverses the result. A prior restriction changes the next 30 encounters' restriction rate by +1.28 points under reinforcement and −0.62 under correction. These values follow the chosen rules. Published aggregate evidence is checked separately, with two inconsistent wording estimates excluded. The need for new comparable human observations remains.
+
 ## Five parts of an encounter
 
 | Part | Meaning in this model | What to record |
@@ -27,14 +29,15 @@ Water can describe adapting an expression while maintaining a boundary. Fog can 
 | Connection | Support available now | What still needs testing |
 | --- | --- | --- |
 | Meaning is expressed within a context | Source described in the Sens–Sin–Context diagram; the five-part record above is an operational proposal | Whether the record captures the speaker's meaning and the receiver's interpretation without collapsing them into one judgment |
-| Expression affects treatment | Proposed boundary and linguistic-capital hypotheses | Compare expressions with matched intended content and relevant circumstances; separate wording from identity, history and policy differences |
+| Expression affects treatment | Tested under a chosen literal-marker rule in the [synthetic encounter audit](../community-encounters/README.md); published wording summaries checked separately | Independently assess meaning equivalence and compare actual treatment; the authored templates and assigned penalty do not validate the social hypothesis |
 | Rules and priorities affect access and allocation | Tested in the [allocation benchmark](README.md), with explicit constraints and a chosen weighted objective; [methods](methods.md) and [saved checks](verification.json) | Whether these rules describe a particular community; the solver has complete information and does not interpret language or consent |
 | Treatment can be compared within a declared scope | Defined or logically derived once action, context and decision coding are fixed; see the consistency rule below | Comparable observed cases, including reasons, severity and duration; equal binary decisions alone do not demonstrate fairness |
 | Past contributions affect later requests | Tested in the [adaptable-role experiment](../adaptable-roles/README.md) through its explicit expectation update and controls | Whether observed expectations or institutional records follow that update; whether earlier treatment causes later treatment after relevant alternatives are considered |
+| Past treatment affects later treatment | Tested through stored restriction records in the [synthetic encounter audit](../community-encounters/README.md), including reinforcement, correction and resets | Actual time-ordered encounters with relevant alternatives controlled; a comment-rating experiment concerns later viewers of the same comment, not every kind of personal history |
 | Adaptation can preserve meaning or alter it | Source described through the Socio-Didact and semantic-change proposals | Repeated accounts across contexts and time; preserve the possibility that someone resists, refuses, revises their meaning or rejects the label |
 | A score or stored field maps to social permission | Proposed operational connection in the diagram | Specify the action representation, metric, update law and decision rule, then compare predictions with new observations |
 
-No new human observations or numerical experiments are claimed by this addition. The earlier numerical results retain their original scope.
+The 20 October conceptual addition introduced no new human observations or numerical experiments. The linked 21 October extension adds synthetic calculations and published-summary arithmetic, with no newly collected human observations. Earlier numerical results retain their original scope.
 
 ## An example that keeps the force of the language
 
@@ -56,7 +59,7 @@ The weights are dimensionless and sum to one. If no output is completed, the wei
 
 **The existing no-memory control freezes the expectation weights at their initial equal values; it still allows learning through practice.** It is not a control that removes every consequence of history. The separate no-learning and no-bias controls help distinguish those mechanisms. See [methods](../adaptable-roles/METHODS.md), [sensitivity results](../adaptable-roles/analysis/sensitivity_summary.csv) and [verification](../adaptable-roles/verification.json).
 
-Removing the assignment bias leaves the accumulated expectation weights and skills in place. Sharing after the switch changes allocation and resets expectations, so that comparison does not isolate the effect of removing a word. There is no equation here that translates a reported insult, a moderation flag or a material name into a later penalty. That would require a specified and separately tested rule.
+Removing the assignment bias leaves the accumulated expectation weights and skills in place. Sharing after the switch changes allocation and resets expectations, so that comparison does not isolate the effect of removing a word. That adaptable-role model does not translate a reported insult, a moderation flag or a material name into a later penalty. The separate [encounter module](../community-encounters/METHODS.md) now specifies a hypothetical restriction-record rule; it is not a fitted law of moderation or human memory.
 
 ## Connections that require explicit definitions
 

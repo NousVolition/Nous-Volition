@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "checks": [
+    "frozen model, test, runner and source-estimate hashes match",
+    "all 432 stored wording probabilities and offer limits checked",
+    "all wording-blind paired contrasts exactly zero",
+    "all 144 joint history contrasts match analytic log-odds shift",
+    "six policy aggregates and 60 selected paired reruns match saved results",
+    "saved reset example has identical treatment from encounter 6",
+    "all six published coefficient conversions checked; two exclusions retained",
+    "published percentage-point arithmetic checked without invented counts"
+  ],
+  "unit_tests": 19,
+  "selected_paired_reruns": 60,
+  "source_exclusions": 2,
+  "no_new_human_observations": true
+}

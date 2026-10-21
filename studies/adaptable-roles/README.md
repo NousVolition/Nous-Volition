@@ -22,6 +22,8 @@ The wider community model follows **stated meaning → expression in context →
 
 The [connections and evidence guide](https://github.com/NousVolition/Nous-Volition/blob/main/studies/community-power/CONNECTIONS.md) distinguishes source-described relationships, consequences tested under fictional rules, logical consistency conditions and claims still needing observations. It preserves strong language with attribution and specifies new comparisons for expression, unequal treatment and memory. The existing results below have not been relabeled as empirical evidence about people.
 
+A separate [completed encounter audit](https://github.com/NousVolition/Nous-Volition/blob/main/studies/community-encounters/README.md) now tests wording and prior restriction with explicit controls. It isolates stored treatment records without practice learning, compares reinforcing and corrective rules, and checks published summary estimates separately. Its parameters are assumptions; it does not turn this adaptable-role experiment into an observed study of people.
+
 ## What happened after the role could change
 
 This table uses the higher demand (3.6 service units per round on average), 12 replication seeds and all seven target rotations averaged within each seed. Time is normalized: every person has one available time unit per round. “Target” means whoever was assigned the adaptable role in that run.
