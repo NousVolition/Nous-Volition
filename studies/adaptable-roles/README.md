@@ -8,6 +8,12 @@ The central result is conditional but useful: **when someone stops accommodating
 
 Completed: **2,688 main paths**, 1,008 sensitivity paths, 18 arithmetic-refinement pairs and **19 passing unit tests**. Each path contains 60 decision rounds. The designated role changes after round 30. [Methods, assumptions and Foucault connection](METHODS.md) · [All seven members](analysis/all_seven_roles.csv) · [Verification](verification.json).
 
+## The same person can be water, fog, smoke or clay
+
+The wider community model treats these as **overlapping, changeable orientations in a situation**. A person can connect as water, be partly understood as fog, carry an earlier event as smoke, and hold or reshape an impression as clay. They can reject the description or fit none of the labels. The fixed names in this completed experiment are identifiers; its role rotations do not measure material personalities.
+
+**Keep the strong language and make its evidence clear:** describe the action, attribute the interpretation and state the missing test. The [situational-role guide and test plan](https://github.com/NousVolition/Nous-Volition/blob/main/studies/community-power/SITUATIONAL_ROLES.md) gives examples and proposed tests of boundary visibility, linguistic capital, semantic change and feedback. These are open questions, not new results from this experiment.
+
 ## What happened after the role could change
 
 This table uses the higher demand (3.6 service units per round on average), 12 replication seeds and all seven target rotations averaged within each seed. Time is normalized: every person has one available time unit per round. “Target” means whoever was assigned the adaptable role in that run.

@@ -1,10 +1,10 @@
 # A family or community with water, fog, mist, gas, smoke and clay
 
-Yes: these types can represent people in a family or community. Each person has a place, relationships, needs and a history. The material words give us an expressive way to describe how they respond. A person can combine types or change with the situation.
+**The same person can be water, fog, smoke or clay in different situations.** These orientations can overlap, change or cease to fit. Each person has relationships, needs, choices and a history. The material words give us an expressive way to describe a person in an encounter; they do not fix that person's identity. Mist, Gas and Ice remain available too. People can contest a description or choose none of the labels.
 
 The meanings below are starting choices for the analogy. They are not claims about any actual family member, and none is inherently the best or worst role.
 
-| Type | Possible meaning in the community | A rule we could test |
+| Situational orientation | Possible meaning in the community | A rule we could test |
 | --- | --- | --- |
 | Water | Adapts while staying connected | Responds readily to nearby members and can reconnect after disruption |
 | Fog | Present throughout the group, but difficult to read clearly | Signals reach several members with uncertainty about meaning |
@@ -14,7 +14,13 @@ The meanings below are starting choices for the analogy. They are not claims abo
 | Clay | Changes under sustained pressure and retains an impression | Repeated experiences change a slowly recovering memory state |
 | Ice | Holds a boundary or stable commitment | Resists small changes, then responds when a chosen threshold is crossed |
 
-For example, one fictional household could have a Water member who reconnects people, a Gas member who wants more space, a Clay member who remembers repeated conflicts, and a Mist member who checks in briefly. Fog and Smoke can describe how information moves between them. These roles can be combined: someone might be Water with friends and Ice when protecting a boundary.
+For example, the same fictional person could reconnect people as Water, ask for space as Gas, retain the impression of repeated conflicts as Clay, and check in briefly as Mist. Fog and Smoke can describe how their position or history enters an encounter. These orientations can coexist: someone may adapt a shared plan as Water while holding a boundary as Ice. Being Water does not require endless accommodation, and no orientation gives someone a permanent duty in the family.
+
+## Keep the strong language and show what remains to be tested
+
+**Precision does not require automatically softening strong or unfamiliar terms.** Preserve force, resistance, adaptation, pressure, boundaries and power when they express the intended claim. Describe the action, attribute the representation to its speaker or model, and state the missing comparison. A participant's account of being forced to adapt should remain attributable to them while its circumstances and possible explanations are examined.
+
+The [situational-role guide](../../community-power/SITUATIONAL_ROLES.md) develops Water, Fog, Smoke and Clay with a concrete evidence plan. Boundary visibility needs paired examples with context; linguistic capital needs comparisons separating language from content and relationship history; semantic change needs comparisons across time or context; feedback needs time-ordered accounts or platform/dataset evidence. These are working hypotheses, not measured types of people or findings from the fluid tests.
 
 ## What connects the people
 

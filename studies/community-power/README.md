@@ -6,6 +6,21 @@ Streams and Rocks • seven fictional participants • an executed allocation be
 
 The supplied page matches Foucault’s *Discipline and Punish*, in the panopticism chapter. Its discussion of organization and power provides the questions. The numerical rules are our explicit synthetic assumptions. [How the passage is used](interpretation.md) · [Methods and units](methods.md) · [Source provenance](source_provenance.json) · [Verification](verification.json).
 
+## People can be water, fog, smoke or clay in different situations
+
+**A person can be water here, fog there, smoke after an earlier event, and clay while holding or reshaping an impression.** These orientations can overlap and change. They describe a person in a situation, not a permanent type. The names in the existing numerical tables remain arbitrary identifiers; this broader interpretation does not assign new measured traits to those participants.
+
+| Orientation | Possible meaning | What needs describing |
+| --- | --- | --- |
+| Water | Adaptation and connection | What changed, what was preserved, and who carried the cost |
+| Fog | Presence with partly visible meaning or boundaries | Which signals were available, to whom, and what remained uncertain |
+| Smoke | A trace or warning travelling from an earlier event | The event or account, its route, and its later effects |
+| Clay | Holding or reshaping an impression | What persisted, what changed, and under which pressures or choices |
+
+**Being water creates no obligation to absorb everyone else’s work.** People may combine, change or reject these descriptions. Record who chose the language, including any disagreement, and leave room for an episode that fits none of the labels.
+
+**Keep the strong language; show the evidence and the missing test.** Describe what happened, attribute the interpretation and identify the comparison still needed. Force, resistance, pressure and boundaries can retain their meaning without being mistaken for measured physical forces. The proposed tests concern boundary visibility, linguistic capital, semantic change and feedback from labels; none is established by the existing synthetic runs. [Read the situational roles and concrete test plan](SITUATIONAL_ROLES.md).
+
 ## What was actually tested
 
 768 main allocation cases cross 24 seeds, two skill patterns, two demand levels and eight organizational rules. Another 576 cases vary who receives priority, how strong it is and how much time assessment consumes. There are 36 tighter-tolerance pairs and 19 passing unit tests. These are optimization cases, not observed families or simulated conversations. Every arrangement uses the same ideal solver with complete information; distributed negotiation is not modeled.

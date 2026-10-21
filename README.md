@@ -32,6 +32,8 @@ The [report and plots](studies/fluid-organization/report.html) are here in Strea
 
 ## Community: coordination, boundaries and power
 
+**[Water here, fog there: situational roles and evidence](studies/community-power/SITUATIONAL_ROLES.md).** The same person can be Water, Fog, Smoke or Clay as circumstances change, combine orientations or reject a label. Keep strong language about force, resistance, adaptation and power while showing the observation, the attributed interpretation and the missing test. Includes open tests for boundary visibility, linguistic capital, semantic change and feedback; no new human-data or simulation claims.
+
 **[Use the Foucault passage with the seven-member community](studies/community-power/README.md).** Water, Fog, Mist, Gas, Smoke, Clay and Ice name fictional participants in 768 main allocation cases and 576 sensitivity cases. The comparison tracks needs met, unequal decision priority and work beyond requested limits, with 19 passing unit tests and 29 saved-result checks. In the higher-demand replication setting, connected allocation raises mean fulfillment from 46.6% to 77.2%, while the least-served member can lose out. These are explicit synthetic assumptions, not human observations or chemical behavior. [Passage-to-model interpretation](studies/community-power/interpretation.md).
 
 **[Everyone can be the adaptable one—and everyone can stop](studies/adaptable-roles/README.md).** Rotates the role through all seven members in 2,688 main paths and 1,008 sensitivity paths, with 19 unit tests and 43 saved-result checks. Compare accepting, refusing, handing off and sharing coordination work, while tracking original plans and where extra work goes. These are explicit fictional rules, separate from physical fluid behavior.
@@ -146,6 +148,3 @@ The package includes 374 automated tests, thirty-eight original scientific figur
 **[Open the live SIMS model](https://sims-evidence-lab.itswaffles88.chatgpt.site)** — public and shareable, with the latest saved run, all four interactive models, and links to methods and source.
 
 [Open the complete interactive collection](studies/sims-evidence-lab/README.md). Four browser models trace network choices, claim predictions, evidence exchanges, and repeated rounds with remembered promises. The package preserves editable sources, standalone browser documents, methods, existing checks, and reproducible saved outputs. [The latest saved run](studies/sims-evidence-lab/site/latest-run.html) retains the eight-round, seed-20261011 settings. Response policies and evidence thresholds are explicit synthetic assumptions; claim revisions, behavior-rule changes, and promises without change are recorded separately.
-
-
-
