@@ -1,0 +1,10 @@
+{
+  "model_lock_sha256": "d8296c26c67cf52a73225694230439f0fd5eb95b3437b468781c149252e7898d",
+  "evaluated_utc": "2026-10-22T05:48:56.200465+00:00",
+  "selection_created_utc": "2026-10-22T05:48:34.209782+00:00",
+  "code_unchanged": true,
+  "source_sha256": "565f5cdd872ec98d2ec9dd73bf7493a5ecf2e2dc1e6751295c05af2de361ff17",
+  "all_observed_targets_scored": true,
+  "training_test_overlap": [],
+  "selection_changed_after_test": false
+}

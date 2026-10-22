@@ -1,0 +1,311 @@
+{
+  "checks_passed": 76,
+  "unit_tests_passed": 19,
+  "independent_rerun_compared": true,
+  "checks": [
+    {
+      "check": "87 distinct fitting piles",
+      "passed": true
+    },
+    {
+      "check": "Seven excluded from model lock fitting IDs",
+      "passed": true
+    },
+    {
+      "check": "All 33 candidates evaluated",
+      "passed": true
+    },
+    {
+      "check": "Every candidate has scores for 87 whole piles",
+      "passed": true
+    },
+    {
+      "check": "4257 rows per candidate in grouped validation",
+      "passed": true
+    },
+    {
+      "check": "Stored selection matches declared primary score",
+      "passed": true
+    },
+    {
+      "check": "Family choice uses training scores: original",
+      "passed": true
+    },
+    {
+      "check": "Family choice uses training scores: operating",
+      "passed": true
+    },
+    {
+      "check": "Family choice uses training scores: local",
+      "passed": true
+    },
+    {
+      "check": "Family choice uses training scores: history",
+      "passed": true
+    },
+    {
+      "check": "Family choice uses training scores: local_history",
+      "passed": true
+    },
+    {
+      "check": "Outer groups disjoint: 0",
+      "passed": true
+    },
+    {
+      "check": "Nested groups contained, disjoint and exhaustive: 0",
+      "passed": true
+    },
+    {
+      "check": "Outer groups disjoint: 1",
+      "passed": true
+    },
+    {
+      "check": "Nested groups contained, disjoint and exhaustive: 1",
+      "passed": true
+    },
+    {
+      "check": "Outer groups disjoint: 2",
+      "passed": true
+    },
+    {
+      "check": "Nested groups contained, disjoint and exhaustive: 2",
+      "passed": true
+    },
+    {
+      "check": "Outer groups disjoint: 3",
+      "passed": true
+    },
+    {
+      "check": "Nested groups contained, disjoint and exhaustive: 3",
+      "passed": true
+    },
+    {
+      "check": "Outer groups disjoint: 4",
+      "passed": true
+    },
+    {
+      "check": "Nested groups contained, disjoint and exhaustive: 4",
+      "passed": true
+    },
+    {
+      "check": "All 87 piles scored once by outer validation",
+      "passed": true
+    },
+    {
+      "check": "Selected nested procedure and selected family identical here",
+      "passed": true
+    },
+    {
+      "check": "Lock checksum matches evaluation receipt",
+      "passed": true
+    },
+    {
+      "check": "Selection timestamp precedes evaluation timestamp",
+      "passed": true
+    },
+    {
+      "check": "No training-test overlap",
+      "passed": true
+    },
+    {
+      "check": "Source hashes agree",
+      "passed": true
+    },
+    {
+      "check": "Locked scientific file unchanged: PROTOCOL.md",
+      "passed": true
+    },
+    {
+      "check": "Locked scientific file unchanged: model.py",
+      "passed": true
+    },
+    {
+      "check": "Locked scientific file unchanged: run_analysis.py",
+      "passed": true
+    },
+    {
+      "check": "All seven piles represented",
+      "passed": true
+    },
+    {
+      "check": "All 353 observed targets scored",
+      "passed": true
+    },
+    {
+      "check": "Seven scores for original",
+      "passed": true
+    },
+    {
+      "check": "Pooled MAE reconciles: original",
+      "passed": true
+    },
+    {
+      "check": "Pooled RMSE reconciles: original",
+      "passed": true
+    },
+    {
+      "check": "Equal-pile MAE reconciles: original",
+      "passed": true
+    },
+    {
+      "check": "Seven scores for operating",
+      "passed": true
+    },
+    {
+      "check": "Pooled MAE reconciles: operating",
+      "passed": true
+    },
+    {
+      "check": "Pooled RMSE reconciles: operating",
+      "passed": true
+    },
+    {
+      "check": "Equal-pile MAE reconciles: operating",
+      "passed": true
+    },
+    {
+      "check": "Seven scores for local",
+      "passed": true
+    },
+    {
+      "check": "Pooled MAE reconciles: local",
+      "passed": true
+    },
+    {
+      "check": "Pooled RMSE reconciles: local",
+      "passed": true
+    },
+    {
+      "check": "Equal-pile MAE reconciles: local",
+      "passed": true
+    },
+    {
+      "check": "Seven scores for history",
+      "passed": true
+    },
+    {
+      "check": "Pooled MAE reconciles: history",
+      "passed": true
+    },
+    {
+      "check": "Pooled RMSE reconciles: history",
+      "passed": true
+    },
+    {
+      "check": "Equal-pile MAE reconciles: history",
+      "passed": true
+    },
+    {
+      "check": "Seven scores for local_history",
+      "passed": true
+    },
+    {
+      "check": "Pooled MAE reconciles: local_history",
+      "passed": true
+    },
+    {
+      "check": "Pooled RMSE reconciles: local_history",
+      "passed": true
+    },
+    {
+      "check": "Equal-pile MAE reconciles: local_history",
+      "passed": true
+    },
+    {
+      "check": "Seven scores for selected",
+      "passed": true
+    },
+    {
+      "check": "Pooled MAE reconciles: selected",
+      "passed": true
+    },
+    {
+      "check": "Pooled RMSE reconciles: selected",
+      "passed": true
+    },
+    {
+      "check": "Equal-pile MAE reconciles: selected",
+      "passed": true
+    },
+    {
+      "check": "Original published RMSE reproduced",
+      "passed": true
+    },
+    {
+      "check": "Original published MAE reproduced",
+      "passed": true
+    },
+    {
+      "check": "Stored selected family predictions agree in summary",
+      "passed": true
+    },
+    {
+      "check": "Negative cross-validated predictions disclosed",
+      "passed": true
+    },
+    {
+      "check": "No seven-pile negatives in selected predictions",
+      "passed": true
+    },
+    {
+      "check": "Independent rerun exact: nested_cv_per_pile.csv",
+      "passed": true
+    },
+    {
+      "check": "Independent rerun exact: nested_cv_summary.json",
+      "passed": true
+    },
+    {
+      "check": "Independent rerun exact: nested_folds.json",
+      "passed": true
+    },
+    {
+      "check": "Independent rerun exact: nested_inner_candidates.csv",
+      "passed": true
+    },
+    {
+      "check": "Independent rerun exact: paired_intervals.json",
+      "passed": true
+    },
+    {
+      "check": "Independent rerun exact: selection_folds.json",
+      "passed": true
+    },
+    {
+      "check": "Independent rerun exact: sensitivity_folds.json",
+      "passed": true
+    },
+    {
+      "check": "Independent rerun exact: seven_pile_coverage.csv",
+      "passed": true
+    },
+    {
+      "check": "Independent rerun exact: seven_pile_metrics.csv",
+      "passed": true
+    },
+    {
+      "check": "Independent rerun exact: seven_pile_summary.json",
+      "passed": true
+    },
+    {
+      "check": "Independent rerun exact: split_sensitivity.csv",
+      "passed": true
+    },
+    {
+      "check": "Independent rerun exact: training_cv_candidates.csv",
+      "passed": true
+    },
+    {
+      "check": "Independent rerun exact: training_cv_per_pile.csv",
+      "passed": true
+    },
+    {
+      "check": "Rerun model and selection identical except timestamp",
+      "passed": true
+    },
+    {
+      "check": "Scientific unit tests pass",
+      "passed": true
+    }
+  ]
+}

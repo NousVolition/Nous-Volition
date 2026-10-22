@@ -1,0 +1,42 @@
+{
+  "selected_vs_original": {
+    "change_direction": "new minus reference; negative favors new",
+    "seed": 20261021,
+    "replicates": 10000,
+    "percentile_95": {
+      "mean_pile_mae": [
+        -3.148613955184136,
+        0.12129246201915603
+      ],
+      "pooled_mae": [
+        -3.3231052039220756,
+        0.21702380774501337
+      ],
+      "pooled_rmse": [
+        -4.214844191191732,
+        1.787950577617508
+      ]
+    },
+    "limitation": "Descriptive paired resampling of seven selected piles, fixed models; no refitting or selection uncertainty."
+  },
+  "local_history_vs_local": {
+    "change_direction": "new minus reference; negative favors new",
+    "seed": 20261021,
+    "replicates": 10000,
+    "percentile_95": {
+      "mean_pile_mae": [
+        -1.432949133842839,
+        1.3469375341751024
+      ],
+      "pooled_mae": [
+        -1.3905791349589083,
+        1.3478067710355752
+      ],
+      "pooled_rmse": [
+        -1.9428402926181647,
+        2.259248595677054
+      ]
+    },
+    "limitation": "Descriptive paired resampling of seven selected piles, fixed models; no refitting or selection uncertainty."
+  }
+}

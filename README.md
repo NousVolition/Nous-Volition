@@ -12,6 +12,8 @@ This repository, **Streams and Rocks**, preserves the original stream-function r
 
 ## Measured pile-driving predictions
 
+**[Local soil and depth history: training-only model selection](studies/isfog-local-history/README.md).** Compares 33 candidates using only the 87 training piles, with nested whole-pile validation, then freezes the selected model before checking all seven previously inspected excluded piles. The combined model reduces pooled MAE from 13.91 to 12.42 blows/m and RMSE from 18.10 to 17.05, but local soil alone is slightly better on these seven. EL worsens and remains a clear failure. Includes every pile, uncertainty, 19 scientific unit tests, 76 saved-result/rerun checks and an exact independent numerical rerun. These retrospective results do not establish physical soil memory or validate the separate community model.
+
 **[Seven excluded piles: actual ISFOG2020 data](studies/isfog-pile-tests/README.md).** Reproduces the supplied linear-model notebook on 87 fitting piles and evaluates all seven excluded piles (353 measured depth records). Pooled RMSE is 18.10 blows/m and MAE is 13.91. The notebook model beats a depth-only control on four of seven piles; EL and EF have negative R². Includes code, figures, row accounting, whole-pile uncertainty estimates, 14 passing unit tests and 26 saved-data checks. These piles were excluded from coefficient fitting but were visible during historical feature development, so this is a retrospective test, not untouched model-selection validation. Physical pile measurements do not validate the separate community model.
 
 ## Substance interactions and equation tests
@@ -168,3 +170,4 @@ The package includes 374 automated tests, thirty-eight original scientific figur
 **[Open the live SIMS model](https://sims-evidence-lab.itswaffles88.chatgpt.site)** — public and shareable, with the latest saved run, all four interactive models, and links to methods and source.
 
 [Open the complete interactive collection](studies/sims-evidence-lab/README.md). Four browser models trace network choices, claim predictions, evidence exchanges, and repeated rounds with remembered promises. The package preserves editable sources, standalone browser documents, methods, existing checks, and reproducible saved outputs. [The latest saved run](studies/sims-evidence-lab/site/latest-run.html) retains the eight-round, seed-20261011 settings. Response policies and evidence thresholds are explicit synthetic assumptions; claim revisions, behavior-rule changes, and promises without change are recorded separately.
+

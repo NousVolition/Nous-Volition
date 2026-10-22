@@ -1,0 +1,24 @@
+test_candidate_count_and_uniqueness (test_model.ScientificChecks.test_candidate_count_and_uniqueness) ... ok
+test_choice_tie_rule (test_model.ScientificChecks.test_choice_tie_rule) ... ok
+test_constant_column_finite (test_model.ScientificChecks.test_constant_column_finite) ... ok
+test_constant_target_r2_unavailable (test_model.ScientificChecks.test_constant_target_r2_unavailable) ... ok
+test_excluded_data_cannot_change_training_partition (test_model.ScientificChecks.test_excluded_data_cannot_change_training_partition) ... ok
+test_fit_only_preprocessing (test_model.ScientificChecks.test_fit_only_preprocessing) ... ok
+test_folds_deterministic (test_model.ScientificChecks.test_folds_deterministic) ... ok
+test_group_weight_equal_mass (test_model.ScientificChecks.test_group_weight_equal_mass) ... ok
+test_history_constant (test_model.ScientificChecks.test_history_constant) ... ok
+test_history_future_and_current_unchanged (test_model.ScientificChecks.test_history_future_and_current_unchanged) ... ok
+test_history_known_prefix (test_model.ScientificChecks.test_history_known_prefix) ... ok
+test_history_rejects_bad_order (test_model.ScientificChecks.test_history_rejects_bad_order) ... ok
+test_metric_known_values (test_model.ScientificChecks.test_metric_known_values) ... ok
+test_no_target_or_id_features (test_model.ScientificChecks.test_no_target_or_id_features) ... ok
+test_original_ols_independent_solution (test_model.ScientificChecks.test_original_ols_independent_solution) ... ok
+test_ridge_against_augmented_least_squares (test_model.ScientificChecks.test_ridge_against_augmented_least_squares) ... ok
+test_selection_rejects_excluded_group (test_model.ScientificChecks.test_selection_rejects_excluded_group) ... ok
+test_stored_model_roundtrip (test_model.ScientificChecks.test_stored_model_roundtrip) ... ok
+test_whole_group_folds (test_model.ScientificChecks.test_whole_group_folds) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.055s
+
+OK
