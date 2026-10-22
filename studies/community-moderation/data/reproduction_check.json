@@ -1,0 +1,22 @@
+{
+  "block_results.json": {
+    "byte_identical": true,
+    "sha256": "93643cb02345b1f7be577c4292a47a02714bfd1bfb0d9a0a3158bddeaa37d2b4"
+  },
+  "duration_histogram.csv": {
+    "byte_identical": true,
+    "sha256": "82311306a478307dfc5107a198e6a84063b3b748773a6171c8dbbeb894867364"
+  },
+  "wording_results.json": {
+    "byte_identical": true,
+    "sha256": "c572fc20fa974049ddaf1cd6fb7b2d475ea1e45080eba98aba8c8adf8717cfbd"
+  },
+  "cmv_history_coverage.json": {
+    "byte_identical": true,
+    "sha256": "d7c93be328a3e435f8c78026a9d67486af3f5b1b2d7fd40c3f03205dffcd7a63"
+  },
+  "topic_pair_scores.csv": {
+    "byte_identical": true,
+    "sha256": "6a8a1e667224b2f25f7213ff025b313dce012012c740730e3fef0c79e578942e"
+  }
+}

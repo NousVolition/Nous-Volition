@@ -1,0 +1,71 @@
+{
+  "accessed": "2026-10-21",
+  "files": [
+    {
+      "file": "cga_cmv.zip",
+      "url": "https://zissou.infosci.cornell.edu/convokit/datasets/conversations-gone-awry-cmv-corpus/conversations-gone-awry-cmv-corpus.zip",
+      "bytes": 51501878,
+      "sha256": "eb5b7dc7a043c9ec9078d8ca0cc43c0abc58f41d30d09a32ff79dad6643d885b",
+      "source": "Chang and Danescu-Niculescu-Mizil (2019), https://aclanthology.org/D19-1481/",
+      "revision": "unversioned public release; fail closed on SHA256 mismatch",
+      "redistribution": "Raw text and accounts not republished. Fetch from the authors; local cache only."
+    },
+    {
+      "file": "blocks.json",
+      "url": "https://zissou.infosci.cornell.edu/convokit/datasets/wikiconv-corpus-old/blocks.json",
+      "bytes": 1670592624,
+      "sha256": "002a12802858e3d0e8672435dc6f9c09d0ab9e5cd274d508f7c1dbcb14d860c6",
+      "source": "Cornell ConvoKit Wikipedia block log; associated with Chang and Danescu-Niculescu-Mizil (2019), https://arxiv.org/abs/1902.08628",
+      "revision": "unversioned public release; fail closed on SHA256 mismatch",
+      "redistribution": "Raw text and accounts not republished. Fetch from the authors; local cache only."
+    },
+    {
+      "file": "first_removals.json.gz",
+      "url": "https://raw.githubusercontent.com/BoulderDS/effect_of_comment_deletion_cmv_dataset/c0b09d298540e7dde2c1e42d2d8e3db4d1a90234/first_removals.json.gz",
+      "bytes": 198300,
+      "sha256": "663ee38ba2c5d0119c634eb13fe7e64ea8f1277822c535ac4b0431a6eec63fb8",
+      "source": "Srinivasan et al. (2019), https://doi.org/10.1145/3359265",
+      "revision": "c0b09d298540e7dde2c1e42d2d8e3db4d1a90234",
+      "redistribution": "Raw text and accounts not republished. Fetch from the authors; local cache only."
+    },
+    {
+      "file": "first_and_second_removals.json.gz",
+      "url": "https://raw.githubusercontent.com/BoulderDS/effect_of_comment_deletion_cmv_dataset/c0b09d298540e7dde2c1e42d2d8e3db4d1a90234/first_and_second_removals.json.gz",
+      "bytes": 252276,
+      "sha256": "68e0886cf382ad4d111d10386f075e3e5813d7da131790ae18421a0ebc133125",
+      "source": "Srinivasan et al. (2019), https://doi.org/10.1145/3359265",
+      "revision": "c0b09d298540e7dde2c1e42d2d8e3db4d1a90234",
+      "redistribution": "Raw text and accounts not republished. Fetch from the authors; local cache only."
+    },
+    {
+      "file": "delayed_feedback_setup_non_treatment_trees.json.gz",
+      "url": "https://raw.githubusercontent.com/BoulderDS/effect_of_comment_deletion_cmv_dataset/c0b09d298540e7dde2c1e42d2d8e3db4d1a90234/delayed_feedback_setup_non_treatment_trees.json.gz",
+      "bytes": 41070,
+      "sha256": "a360c170fa232a4859759782b7e76994ca7ce117d90aed94f0ee402b589fa872",
+      "source": "Srinivasan et al. (2019), https://doi.org/10.1145/3359265",
+      "revision": "c0b09d298540e7dde2c1e42d2d8e3db4d1a90234",
+      "redistribution": "Raw text and accounts not republished. Fetch from the authors; local cache only."
+    },
+    {
+      "file": "delayed_feedback_setup_treatment_trees.json.gz",
+      "url": "https://raw.githubusercontent.com/BoulderDS/effect_of_comment_deletion_cmv_dataset/c0b09d298540e7dde2c1e42d2d8e3db4d1a90234/delayed_feedback_setup_treatment_trees.json.gz",
+      "bytes": 66808,
+      "sha256": "7f02660b4313be058dc38b1091a4ec5b8718b6da845d2869f10cddcadbe21cb3",
+      "source": "Srinivasan et al. (2019), https://doi.org/10.1145/3359265",
+      "revision": "c0b09d298540e7dde2c1e42d2d8e3db4d1a90234",
+      "redistribution": "Raw text and accounts not republished. Fetch from the authors; local cache only."
+    }
+  ],
+  "documentation": [
+    "https://convokit.cornell.edu/documentation/awry_cmv.html",
+    "https://convokit.cornell.edu/datasets.html",
+    "https://github.com/BoulderDS/effect_of_comment_deletion_cmv_dataset",
+    "https://www.mediawiki.org/wiki/API:Block"
+  ],
+  "discovery_exclusions": {
+    "NormVio": "Released comment texts redacted; not a ready paired-meaning test.",
+    "FRENK-MMC-RTV": "Character-substituted text prevents a direct human meaning audit.",
+    "Prior ParaDetox study": "Offensiveness annotations are not recorded moderation actions.",
+    "Original blocks URL": "404; retrieved public legacy directory instead."
+  }
+}

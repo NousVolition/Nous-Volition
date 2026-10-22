@@ -1,0 +1,329 @@
+{
+  "log": {
+    "counts": {
+      "raw_events": 5227809,
+      "ip_target_events": 4000846,
+      "named_events": 1218840,
+      "hidden_target_events": 8123,
+      "unique_accounts": 1065694
+    },
+    "sha256": "002a12802858e3d0e8672435dc6f9c09d0ab9e5cd274d508f7c1dbcb14d860c6",
+    "bytes": 1670592624,
+    "latest": 1528126590.0,
+    "earliest": 1103773136.0,
+    "params_types": {
+      "dict": 1218840
+    },
+    "unknown_durations": [
+      [
+        "a chicken",
+        5
+      ],
+      [
+        "0",
+        3
+      ],
+      [
+        "100000 years",
+        2
+      ],
+      [
+        "a haddock",
+        2
+      ],
+      [
+        "a nanosecond",
+        2
+      ],
+      [
+        "12h",
+        2
+      ],
+      [
+        "65000000 years",
+        1
+      ],
+      [
+        "999999 years",
+        1
+      ],
+      [
+        "a sixteenth of a minute",
+        1
+      ],
+      [
+        "a fortnight less a day",
+        1
+      ],
+      [
+        "a second on Jupiter",
+        1
+      ],
+      [
+        "1000000 fortnights",
+        1
+      ],
+      [
+        "123456789101112 years",
+        1
+      ],
+      [
+        "a dozen minutes",
+        1
+      ],
+      [
+        "a partridge in a pear tree",
+        1
+      ],
+      [
+        "a microfortnight",
+        1
+      ],
+      [
+        "a goblet, three medieval princes, and a cornet",
+        1
+      ],
+      [
+        "a hoagie, two water fountains, and a blue jay",
+        1
+      ],
+      [
+        "a Planck time",
+        1
+      ],
+      [
+        "a very long",
+        1
+      ],
+      [
+        "a lager and some peanuts",
+        1
+      ],
+      [
+        "a different expiry time",
+        1
+      ],
+      [
+        "a new lovers arrival",
+        1
+      ],
+      [
+        "a very long time",
+        1
+      ],
+      [
+        "a cow, two cheeseburgers and a jackhammer",
+        1
+      ],
+      [
+        "a year from July 5, 2007",
+        1
+      ],
+      [
+        "a year from July 4, 2007",
+        1
+      ],
+      [
+        "a per IRC block",
+        1
+      ],
+      [
+        "a cow, two cheeseburgers and  a jackhammer",
+        1
+      ],
+      [
+        "A month from last year",
+        1
+      ]
+    ]
+  },
+  "exclusions": {
+    "accounts": 1065694,
+    "initial_indefinite": 966598,
+    "accounts_excluded_reconstruction": 22422,
+    "orphan_unblock": 22303,
+    "first_before_2006": 13999,
+    "first_never_observed_end": 3410,
+    "orphan_reblock": 29,
+    "unknown_or_nonpositive_expiry": 99
+  },
+  "windows": {
+    "30": {
+      "eligible": 58949,
+      "repeat": 14918,
+      "infinite_second": 8207,
+      "finite_pairs": {
+        "n": 6711,
+        "first_median_hours": 24.0,
+        "second_median_hours": 72.0,
+        "median_log2_ratio": 1.584962500721156,
+        "median_ratio": 3.0,
+        "median_log2_ratio_ci95": [
+          1.584962500721156,
+          1.584962500721156
+        ],
+        "longer": 5636,
+        "shorter": 469,
+        "equal": 606,
+        "sign_test_p": null,
+        "sign_test_log10_p": -1120.8082995991688,
+        "seed": 20261021,
+        "bootstrap_replicates": 2000
+      },
+      "same_moderator": {
+        "n": 2361,
+        "first_median_hours": 24.0,
+        "second_median_hours": 120.0,
+        "median_log2_ratio": 1.584962500721156,
+        "median_ratio": 3.0,
+        "median_log2_ratio_ci95": [
+          1.584962500721156,
+          1.584962500721156
+        ],
+        "longer": 1962,
+        "shorter": 184,
+        "equal": 215,
+        "sign_test_p": null,
+        "sign_test_log10_p": -374.50340504187704,
+        "seed": 20261021,
+        "bootstrap_replicates": 2000
+      },
+      "disruption_subset": {
+        "n": 2171,
+        "first_median_hours": 24.0,
+        "second_median_hours": 168.0,
+        "median_log2_ratio": 1.584962500721156,
+        "median_ratio": 3.0,
+        "median_log2_ratio_ci95": [
+          1.584962500721156,
+          1.8073549220576042
+        ],
+        "longer": 1970,
+        "shorter": 78,
+        "equal": 123,
+        "sign_test_p": null,
+        "sign_test_log10_p": -473.60614721387435,
+        "seed": 20261021,
+        "bootstrap_replicates": 2000
+      }
+    },
+    "90": {
+      "eligible": 58396,
+      "repeat": 17562,
+      "infinite_second": 9534,
+      "finite_pairs": {
+        "n": 8028,
+        "first_median_hours": 24.0,
+        "second_median_hours": 72.0,
+        "median_log2_ratio": 1.584962500721156,
+        "median_ratio": 3.0,
+        "median_log2_ratio_ci95": [
+          1.584962500721156,
+          1.584962500721156
+        ],
+        "longer": 6638,
+        "shorter": 621,
+        "equal": 769,
+        "sign_test_p": null,
+        "sign_test_log10_p": -1265.6978122118817,
+        "seed": 20261021,
+        "bootstrap_replicates": 2000
+      },
+      "same_moderator": {
+        "n": 2572,
+        "first_median_hours": 24.0,
+        "second_median_hours": 168.0,
+        "median_log2_ratio": 1.584962500721156,
+        "median_ratio": 3.0,
+        "median_log2_ratio_ci95": [
+          1.584962500721156,
+          1.584962500721156
+        ],
+        "longer": 2139,
+        "shorter": 195,
+        "equal": 238,
+        "sign_test_p": null,
+        "sign_test_log10_p": -412.5170888382111,
+        "seed": 20261021,
+        "bootstrap_replicates": 2000
+      },
+      "disruption_subset": {
+        "n": 2557,
+        "first_median_hours": 24.0,
+        "second_median_hours": 96.0,
+        "median_log2_ratio": 1.584962500721156,
+        "median_ratio": 3.0,
+        "median_log2_ratio_ci95": [
+          1.584962500721156,
+          1.584962500721156
+        ],
+        "longer": 2289,
+        "shorter": 112,
+        "equal": 156,
+        "sign_test_p": null,
+        "sign_test_log10_p": -527.2839340342459,
+        "seed": 20261021,
+        "bootstrap_replicates": 2000
+      }
+    },
+    "180": {
+      "eligible": 57600,
+      "repeat": 18784,
+      "infinite_second": 10097,
+      "finite_pairs": {
+        "n": 8687,
+        "first_median_hours": 24.0,
+        "second_median_hours": 72.0,
+        "median_log2_ratio": 1.584962500721156,
+        "median_ratio": 3.0,
+        "median_log2_ratio_ci95": [
+          1.4854268271702418,
+          1.584962500721156
+        ],
+        "longer": 7109,
+        "shorter": 697,
+        "equal": 881,
+        "sign_test_p": null,
+        "sign_test_log10_p": -1331.2375010879382,
+        "seed": 20261021,
+        "bootstrap_replicates": 2000
+      },
+      "same_moderator": {
+        "n": 2671,
+        "first_median_hours": 24.0,
+        "second_median_hours": 168.0,
+        "median_log2_ratio": 1.584962500721156,
+        "median_ratio": 3.0,
+        "median_log2_ratio_ci95": [
+          1.584962500721156,
+          1.584962500721156
+        ],
+        "longer": 2221,
+        "shorter": 200,
+        "equal": 250,
+        "sign_test_p": null,
+        "sign_test_log10_p": -430.22167626915535,
+        "seed": 20261021,
+        "bootstrap_replicates": 2000
+      },
+      "disruption_subset": {
+        "n": 2743,
+        "first_median_hours": 24.0,
+        "second_median_hours": 72.0,
+        "median_log2_ratio": 1.584962500721156,
+        "median_ratio": 3.0,
+        "median_log2_ratio_ci95": [
+          1.584962500721156,
+          1.584962500721156
+        ],
+        "longer": 2435,
+        "shorter": 124,
+        "equal": 184,
+        "sign_test_p": null,
+        "sign_test_log10_p": -555.9047662180765,
+        "seed": 20261021,
+        "bootstrap_replicates": 2000
+      }
+    }
+  }
+}

@@ -22,6 +22,14 @@ The [real-data report](../community-real-data/README.md) now checks these connec
 
 The two datasets test different parts of the proposed chain. A joint test of intended meaning, expression, context, real decisions and later encounters is still needed. [Methods and provenance](../community-real-data/METHODS.md).
 
+## Actual moderation and successive penalties
+
+The [moderation extension](../community-moderation/README.md) now analyzes recorded Reddit removals and Wikipedia blocks. In 8,687 accounts with two finite assigned blocks within the declared follow-up, the second assignment was longer for 7,109 (81.8%), equal for 881 and shorter for 697. Median assignments rose from 24 to 72 hours. This is **observed escalation among accounts blocked again**, not proof that memory caused harsher treatment for the same later conduct. Indefinite assignments, episode changes and selection limits are reported separately.
+
+For wording, 3,183 same-topic Reddit pairs retained both texts. All 12 closest pairs reviewed changed substantive content. They cannot support a wording-only contrast. A separate history dataset supplied matched comment IDs, but after joins none of its 1,914 comparisons had all four required before/after outcomes. Missing outcomes remain unknown. These completed checks leave both a causal wording effect and a causal punishment-memory mechanism open.
+
+**Keep criticism, refusal and resistance intact while checking what changes.** A change in an accusation, its target or its force can be a change in meaning. Water, fog, smoke and clay remain overlapping situational descriptions; this evidence does not assign identities or deserved treatment. [Reproducible results and remaining comparisons](../community-moderation/METHODS.md).
+
 ## Five parts of an encounter
 
 | Part | Meaning in this model | What to record |
@@ -43,11 +51,11 @@ Water can describe adapting an expression while maintaining a boundary. Fog can 
 | Connection | Support available now | What still needs testing |
 | --- | --- | --- |
 | Meaning is expressed within a context | Source described in the Sens–Sin–Context diagram; the five-part record above is an operational proposal | Whether the record captures the speaker's meaning and the receiver's interpretation without collapsing them into one judgment |
-| Expression affects treatment | Synthetic rule audit plus real selected content/offensiveness annotation comparisons in the [real-data extension](../community-real-data/README.md) | Independently assess meaning equivalence and compare actual treatment; the authored templates and assigned penalty do not validate the social hypothesis |
+| Expression affects treatment | Synthetic rule audit and real offensiveness labels; the [actual-moderation audit](../community-moderation/README.md) found substantive differences in all 12 closest topic pairs reviewed | Meaning-equivalent messages, comparable context and exposure, and actual decisions are still needed to isolate wording |
 | Rules and priorities affect access and allocation | Tested in the [allocation benchmark](README.md), with explicit constraints and a chosen weighted objective; [methods](methods.md) and [saved checks](verification.json) | Whether these rules describe a particular community; the solver has complete information and does not interpret language or consent |
 | Treatment can be compared within a declared scope | Defined or logically derived once action, context and decision coding are fixed; see the consistency rule below | Comparable observed cases, including reasons, severity and duration; equal binary decisions alone do not demonstrate fairness |
 | Past contributions affect later requests | Tested in the [adaptable-role experiment](../adaptable-roles/README.md) through its explicit expectation update and controls | Whether observed expectations or institutional records follow that update; whether earlier treatment causes later treatment after relevant alternatives are considered |
-| Past treatment affects later treatment | Synthetic restriction-record controls plus a [real randomized recognition endpoint](../community-real-data/README.md): 12/100 versus 2/100 people received later awards | Negative treatment, other communities, mediation and a joint longitudinal record of meaning, wording and decisions; the recognition result does not identify a memory mechanism |
+| Past treatment affects later treatment | Randomized positive-recognition evidence plus [observed penalty escalation](../community-moderation/README.md): 81.8% of paired finite second blocks were longer | Hold current conduct and context comparable; establish who could see prior penalties and distinguish changed behaviour, attention and decision rules. Escalation alone does not identify memory |
 | Adaptation can preserve meaning or alter it | Source described through the Socio-Didact and semantic-change proposals | Repeated accounts across contexts and time; preserve the possibility that someone resists, refuses, revises their meaning or rejects the label |
 | A score or stored field maps to social permission | Proposed operational connection in the diagram | Specify the action representation, metric, update law and decision rule, then compare predictions with new observations |
 

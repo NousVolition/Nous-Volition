@@ -1,0 +1,21 @@
+[
+  {
+    "stage": "After first topic-candidate retrieval",
+    "change": "Exclude any text beginning with [deleted] or [removed], including replacement templates with links; exact-placeholder matching alone admitted a deleted-text template as the top overlap candidate.",
+    "reason": "The original message is unavailable; two deletion templates cannot establish equivalent original meanings. Report the exclusion and rerank under the same rule. No outcome-driven threshold changes."
+  },
+  {
+    "stage": "After reading Wikipedia raw schema; before computing episode outcomes",
+    "source": "The documented blocks.json link returned 404. The legacy public directory supplies a 1.67 GB JSON-lines log, not a single JSON array. Stream it and verify hash; do not publish raw accounts.",
+    "episode": "Sort all available events per registered account; exclude IP addresses using Python ipaddress. A block starts an episode only when no block is active. Reblock and blocks while active modify the same episode. Unblock closes it; finite expiry ends it automatically. Orphan reblocks indicate incomplete history and exclude the account. Deduplicate log IDs; flag contradictory duplicate IDs.",
+    "cohort": "First observed episode starts on or after 2006-01-01, has a finite initial assigned duration and a known actual end. Require a complete 180-day observation horizon after that end, using maximum raw event timestamp as administrative endpoint. An absence of a second block is no recorded block in that window, not proof of participation or reform.",
+    "comparison": "Next distinct episode starting strictly after first episode ends and within 180 days. Describe second-block frequency, infinite second assignments, and first/second assigned-duration comparison where both finite positive. Use median hours, paired median log2 duration ratio, longer/equal/shorter counts; 2000 paired bootstrap draws seed 20261021. Exact sign test discards ties. Sensitivity same blocking moderator and both first/second reason strings containing disruption-related keywords (personal attack, incivil, harass, edit war, disrupt). Repeat 30 and 90 day windows.",
+    "limits": "Raw first observed block is not guaranteed first-ever if history is incomplete. Initial assigned duration is a treatment decision, not actual time served; unblocks and reblocks are tracked only to delimit episodes. Changing conduct, severity, policy, admins, identity, activity and enforcement opportunity confound comparisons. No causal claim that memory or prior penalty caused the next sanction."
+  },
+  {
+    "stage": "Duration parser review after initial schema pass",
+    "change": "Official MediaWiki API documents never as an indefinite expiry. Added it and rebuilt cache. Other unrecognized duration strings remain unknown and their accounts are excluded.",
+    "source": "https://www.mediawiki.org/wiki/API:Block",
+    "reason": "Correct interpretation of a documented value; no fitted outcome parameter."
+  }
+]

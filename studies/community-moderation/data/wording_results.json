@@ -1,0 +1,18 @@
+{
+  "conversations": 6842,
+  "removed": 3421,
+  "comparison": 3421,
+  "unavailable_endpoint_texts": 270,
+  "author_topic_pairs": 3421,
+  "text_available_pairs": 3183,
+  "max_topic_token_jaccard": 0.3360323886639676,
+  "topic_pairs_jaccard_ge_08": 0,
+  "exact_duplicate_endpoint_groups": 0,
+  "changed_endpoint_pairs_jaccard_ge_08_min8tokens": 0,
+  "audited_pairs": 12,
+  "audit_verdicts": {
+    "substantive_difference": 12
+  },
+  "causal_wording_effect": null,
+  "reason": "No accepted same-meaning contrasts in this audit. Retrieval is not exhaustive semantic matching; neither absence of wording effects nor fair moderation is established."
+}

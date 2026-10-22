@@ -1,0 +1,86 @@
+[
+  {
+    "pair_hash": "baff1fbb0a94b93d1bf50fc9f818520303d1131ada2c60e1ff1d9991c4f964a9",
+    "token_jaccard": 0.3360323886639676,
+    "verdict": "substantive_difference",
+    "note": "Shares a paragraph about old games, but the longer comment adds technical, contractual, legal and profitability claims. Extracting one shared paragraph would change the unit receiving moderation.",
+    "reviewer": "Single assistant review; outcome labels visible; not independent human adjudication"
+  },
+  {
+    "pair_hash": "b476291f58d8b675349c50740f853ae172fc26893aae6090679aa11077988642",
+    "token_jaccard": 0.3157894736842105,
+    "verdict": "substantive_difference",
+    "note": "Both question having children, but one attributes a desire for human extinction to the other person; the other gives an argument about unattainable perfection. Target and accusation change.",
+    "reviewer": "Single assistant review; outcome labels visible; not independent human adjudication"
+  },
+  {
+    "pair_hash": "08a0f5ec2ed9ee4bbea6c055de09a98adbb4ff43dc17e245b885f05dff38d72b",
+    "token_jaccard": 0.25,
+    "verdict": "substantive_difference",
+    "note": "One rejects giving up and qualifies what counts as poor writing; the other recommends quitting under specified conditions and makes different claims about fear and discipline. Stance and scope change.",
+    "reviewer": "Single assistant review; outcome labels visible; not independent human adjudication"
+  },
+  {
+    "pair_hash": "7f9c2f9675df665968598fff858dffd00784714a68be3f2b4ed3e3b949714143",
+    "token_jaccard": 0.23404255319148937,
+    "verdict": "substantive_difference",
+    "note": "One argues about environmental necessity and meat; the other answers different quotations using rape and slavery analogies. Shared topic does not preserve assertions or interpersonal force.",
+    "reviewer": "Single assistant review; outcome labels visible; not independent human adjudication"
+  },
+  {
+    "pair_hash": "01506606c003a04efa4c64313c68c4378eae5f671be592eef727d62ad1c74a27",
+    "token_jaccard": 0.23214285714285715,
+    "verdict": "substantive_difference",
+    "note": "One discusses definitions of atheism and agnosticism; the other disputes attributed religious identity and an interlocutor\u2019s hostility. Referents and claims differ.",
+    "reviewer": "Single assistant review; outcome labels visible; not independent human adjudication"
+  },
+  {
+    "pair_hash": "64f8f7dffca8b8c78956fae686b4e48e7d0e889a5c146674f08c20e020b9c055",
+    "token_jaccard": 0.23214285714285715,
+    "verdict": "substantive_difference",
+    "note": "One describes support networks and invites building another; the other alleges hypocrisy and tells a participant to stop complaining. These are distinct acts and propositions.",
+    "reviewer": "Single assistant review; outcome labels visible; not independent human adjudication"
+  },
+  {
+    "pair_hash": "b9718e1e9c03e5d011f8e32da3befb3cdb7cd18fcb45b01f642c643500e78847",
+    "token_jaccard": 0.22699386503067484,
+    "verdict": "substantive_difference",
+    "note": "The comments disagree about whether a masculinity label describes harmful social expectations or wrongly demonizes men. They make opposing causal and normative claims.",
+    "reviewer": "Single assistant review; outcome labels visible; not independent human adjudication"
+  },
+  {
+    "pair_hash": "5e2c6516fcb8c0451d35d7885df01e63e67bb0d3e1dc9461213e9a7df5403f8b",
+    "token_jaccard": 0.22641509433962265,
+    "verdict": "substantive_difference",
+    "note": "One advocates counterargument rather than censoring supposedly false views; the other probes legal standards and consistency of selective censorship. Overlapping concern is not an identical argument.",
+    "reviewer": "Single assistant review; outcome labels visible; not independent human adjudication"
+  },
+  {
+    "pair_hash": "1d9f5867b29925d090b117d070e9ad59d0f1a1c4d50492c6d627751726759152",
+    "token_jaccard": 0.225,
+    "verdict": "substantive_difference",
+    "note": "One defines communism through care for neighbours and excludes killing; the other denies that historical systems instantiate communism. Shared conclusion does not preserve all premises or scope.",
+    "reviewer": "Single assistant review; outcome labels visible; not independent human adjudication"
+  },
+  {
+    "pair_hash": "20e450b83134936edcb209e75a4d32fbbc8f22fbbe910ecf5517cd4888f17550",
+    "token_jaccard": 0.22131147540983606,
+    "verdict": "substantive_difference",
+    "note": "One discusses voting motives and challenges a participant\u2019s claimed absence of bias; the other rejects externally assigning voter interests. The direct accusation and additional claims differ.",
+    "reviewer": "Single assistant review; outcome labels visible; not independent human adjudication"
+  },
+  {
+    "pair_hash": "e03dd2f6abdb15e8e19f7a964ca622efb5060f4625ad03f3f9c0e239e0308c0e",
+    "token_jaccard": 0.21726190476190477,
+    "verdict": "substantive_difference",
+    "note": "Both oppose blanket language restrictions, but they answer different quotations and add distinct claims about history, jokes, reclamation and personal interests. Full messages are not paraphrases.",
+    "reviewer": "Single assistant review; outcome labels visible; not independent human adjudication"
+  },
+  {
+    "pair_hash": "8ca49e6943ba5225f475c5f0ae1731f13024b15250fb65d8791a1ab3cafbb962",
+    "token_jaccard": 0.21658986175115208,
+    "verdict": "substantive_difference",
+    "note": "One questions group definitions and evidence for organized discrimination; the other condemns feminism and attributes hostile acts to the interlocutor\u2019s group. Substantive claims and directed accusations differ.",
+    "reviewer": "Single assistant review; outcome labels visible; not independent human adjudication"
+  }
+]

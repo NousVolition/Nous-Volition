@@ -7,7 +7,7 @@
   "analysis/sensitivity.svg": "2e0449cf8d9ca150a7f88942f85310f291bb8e0bc088cde1736e6416713d1d94",
   "analysis/summary.json": "16a5d964bf63e13fe833c43c3ae7bb4cb73d9f813c6b17d1a01907ea1503c58d",
   "analyze.py": "81a5a7a6e9882ee1875f84ea168d48a887ce7350d803bd74fab73de44a60070e",
-  "build_report.py": "2a4443f2ac420caf2713709478d27ee2c2cd6d481c6cf97501636cac6f1b110c",
+  "build_report.py": "aa61aa4f70f877de1f73ab9cc807455227b2a00589ce97b03ce01eb8e96b12cd",
   "data/allocations.npz": "a3f8abd7eaac14d8db4b110b7e21ca7b7825945f966a7d3308c897b7363bfbff",
   "data/case_order.json": "4c56c43e624909537de6b175b032c99be027c1aa437c8100873f3c1373b8e96d",
   "data/cases.csv": "4684e13cf4384c14f67bb16dc9e8979a7249f12cba5700226f202637abd13628",
@@ -22,8 +22,8 @@
   "interpretation.md": "7c3ebf4f940fb0faf99309c0977d0617526e6f0e7215564d114c515517dedb12",
   "methods.md": "edebe556d5602ecf808527ec03a5e647439baacb96c6a491c02fcad89da770f7",
   "model.py": "97b99efa3ddd8ac1513bba4151a4bf93d27cc6b7f161328d83881fedfe4e98bf",
-  "README.md": "fb33a0582b04753e24041b6727672d5f90c5d2fd1f34a547e26f78005824f23b",
-  "report.html": "9fc266a270812c1eb7ffc6ee377eb66d8676c2e7e03c84b1f1e35f9d7a6c9e7b",
+  "README.md": "194c975386256730042c0369c3a52e2a575017962b47e18f79636ea3a9de2957",
+  "report.html": "c07a7f05b15fc4270af63f745c301716b41743b1b5604bf0ac1d3d613d44b007",
   "requirements.txt": "1839f9ebfe6ef8dbf3960d324981bdc15fa2378d9bb2f754e1af4ae7360baf4e",
   "run_study.py": "8957f18f6f3970bc8dd900b99e023ff22fcf07350cb1fcaaf21d69b32a839286",
   "source_provenance.json": "c105a42d74836e0e6c4855d11d727d2ea92cfa42c2ada5404d8617b7ec84e157",
@@ -31,5 +31,5 @@
   "test_model.py": "be11beb8cc97d458e4c8ddf3e442c6b1d7fc21d7871f5eb313f6c9cd2731a9d9",
   "verify.py": "16be56a12da97d251f3edfae615b3ecb611f0516a17650d25e32585d9260b687",
   "SITUATIONAL_ROLES.md": "4e0283cd13e49e53a79ec469eb190f9f6d9fc36ffdb749f6fb82e047faac680f",
-  "CONNECTIONS.md": "063bee7a6d6e69f22283e93f4cd17e83a7519d83700fc221855e56f8daa8fa45"
+  "CONNECTIONS.md": "22a635b9223c39199f7f517ff7405be353ae46100f9b60ab5f2d4d94dfb6170f"
 }

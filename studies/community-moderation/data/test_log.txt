@@ -1,0 +1,24 @@
+test_bootstrap_seed (test_analysis.AnalysisTests.test_bootstrap_seed) ... ok
+test_bounds_signs (test_analysis.AnalysisTests.test_bounds_signs) ... ok
+test_duration_summary (test_analysis.AnalysisTests.test_duration_summary) ... ok
+test_expiry_boundary (test_analysis.AnalysisTests.test_expiry_boundary) ... ok
+test_explicit_expiry (test_analysis.AnalysisTests.test_explicit_expiry) ... ok
+test_forceful_language_not_excluded (test_analysis.AnalysisTests.test_forceful_language_not_excluded) ... ok
+test_indefinite (test_analysis.AnalysisTests.test_indefinite) ... ok
+test_known_duration (test_analysis.AnalysisTests.test_known_duration) ... ok
+test_known_null (test_analysis.AnalysisTests.test_known_null) ... ok
+test_never_means_infinite (test_analysis.AnalysisTests.test_never_means_infinite) ... ok
+test_no_false_extension (test_analysis.AnalysisTests.test_no_false_extension) ... ok
+test_orphan_is_flagged (test_analysis.AnalysisTests.test_orphan_is_flagged) ... ok
+test_overlap_is_not_semantics (test_analysis.AnalysisTests.test_overlap_is_not_semantics) ... ok
+test_reblock_is_not_new_penalty (test_analysis.AnalysisTests.test_reblock_is_not_new_penalty) ... ok
+test_replacement_template_excluded (test_analysis.AnalysisTests.test_replacement_template_excluded) ... ok
+test_swap_negates_log_ratio (test_analysis.AnalysisTests.test_swap_negates_log_ratio) ... ok
+test_unblock_closes_episode (test_analysis.AnalysisTests.test_unblock_closes_episode) ... ok
+test_unknown_duration_not_zero (test_analysis.AnalysisTests.test_unknown_duration_not_zero) ... ok
+test_unknown_outcomes_preserved (test_analysis.AnalysisTests.test_unknown_outcomes_preserved) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.007s
+
+OK

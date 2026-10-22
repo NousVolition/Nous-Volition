@@ -1,0 +1,5 @@
+raw/
+reproduced/
+__pycache__/
+*.sqlite
+*.part

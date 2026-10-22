@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-21",
+  "status": "Exploratory analysis plan after reading source papers and data schemas, before calculating paired wording contrasts or block-sequence results. Not preregistered and not an untouched model-selection holdout.",
+  "wording": {
+    "data": "CGA-CMV release, final unique leaf of each conversation; removal label belongs only to that endpoint.",
+    "population": "Author-selected equal numbers of removed and comparison conversations; prevalence and discordance in author-defined pairs are fixed by selection, not estimates of community bias.",
+    "primary_search": "Compare endpoint texts within the author-supplied same-post pairs. Exclude empty, deleted and removed placeholder texts. Compute token-set Jaccard and character similarity as retrieval measures, not semantic verdicts. Audit the 12 highest token-overlap eligible pairs, sorted by hash for ties, with full context available. Include all outcomes, do not choose pairs because the result looks favorable.",
+    "secondary_search": "Find exact duplicate and high-overlap (Jaccard >= 0.8, at least 8 word tokens each) texts among all endpoints. Mark cross-context comparisons explicitly. No invented variants or new moderation calls.",
+    "audit": "One assistant review of proposition, referent, negation, scope, stance, intensity, quotation and conversational context. A matched topic is insufficient. Publish hashes and paraphrased reasons; no claim of independent human verification. No assumption that strong language must be softened.",
+    "estimation_gate": "Only a meaning-audited pair with observed decisions on both versions can support a descriptive paired contrast; causal wording effect additionally requires controlled context/exposure. If no eligible same-meaning contrast exists, report non-identification instead of counting topic pairs as paraphrases."
+  },
+  "history": {
+    "cmv": "Inspect authors' delayed-feedback release and assess whether actual subsequent outcome labels and removal timestamps can be recovered. Membership in first/second removal lists establishes a recorded positive outcome only; absence cannot mean not removed because third and subsequent removals are excluded. Report coverage, selection and identification limits.",
+    "wiki": "If public block records available, inspect schema first, then freeze a documented event/episode definition before outcome computation. Compare first versus second non-overlapping finite block episodes for the same account, with equal-duration and longer/shorter counts, paired bootstrap and same-reason/moderator sensitivities where recorded. This is an observational treatment-severity comparison conditional on being blocked again, not causal punishment-memory or an estimate of reoffending."
+  },
+  "publishing": "Reproducible analysis, source hashes, aggregate results, hashed audit keys, tests and limitations. Raw accounts and removed text remain in local source cache."
+}
