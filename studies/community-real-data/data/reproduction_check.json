@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "exact_byte_matches": [
+    "results.json",
+    "paired_labels.csv",
+    "join_coverage.csv",
+    "award_chronology.csv"
+  ]
+}

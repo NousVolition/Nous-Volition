@@ -4,9 +4,23 @@ Streams and Rocks community model • 20 October 2026
 
 **The same person can be water, fog, smoke or clay as a situation changes.** To understand an encounter, follow what they mean, how they express it, the circumstances in which it is received, how they are treated, and what carries into the next encounter. A material name can help describe that experience; it does not decide the person's worth or what treatment they deserve.
 
-The supplied diagrams provide this conceptual connection. The existing simulations test allocation rules and a particular feedback rule for remembered contributions. They do not yet test whether wording changes how real people are treated. The distinction below keeps the language strong and makes the next comparisons concrete.
+The supplied diagrams provide this conceptual connection. The existing simulations test allocation rules and a particular feedback rule for remembered contributions. The allocation simulations do not test whether wording changes how real people are treated; the separate real-data extension below tests content labels, judgments and a randomized recognition outcome. The distinction below keeps the language strong and makes the next comparisons concrete.
 
 **Completed extension, 21 October 2026:** [wording and prior-treatment tests](../community-encounters/README.md) now implement an explicit synthetic decision procedure with wording-blind, history-blind, corrective and reset controls. The chosen wording penalty gives a 25.4-percentage-point mean difference; reversing it reverses the result. A prior restriction changes the next 30 encounters' restriction rate by +1.28 points under reinforcement and −0.62 under correction. These values follow the chosen rules. Published aggregate evidence is checked separately, with two inconsistent wording estimates excluded. The need for new comparable human observations remains.
+
+## Completed real-data extension: 21 October 2026
+
+The [real-data report](../community-real-data/README.md) now checks these connections against public human annotation records and a randomized Wikipedia study. It keeps judgments, actual recognition and hypothetical memory mechanisms distinct.
+
+| Connection | Finding from real observations | Limit that remains |
+| --- | --- | --- |
+| Changed wording preserves meaning | 25,528 of 30,072 changed pairs received a close-content label; 4,544 did not. A single-assistant audit of 24 accepted pairs found 9 substantive changes and 3 uncertain cases. | Publisher labels do not guarantee identical meaning or force; the audit is not independent human validation. |
+| Expression changes judgment | Among 941 source-matched pairs with both labels, 754 switched from offensive to nonoffensive and 3 in the reverse direction. | Only 3.69% of accepted changed pairs had both labels. These are selected annotation judgments, not observed exclusion or penalties. |
+| Prior treatment changes a later encounter | In a randomized study, 12/100 initially awarded contributors received another award versus 2/100 controls; difference +10 points, 95% interval +2.9 to +17.9. | Supports recognition affecting later recognition in that population. It does not isolate memory, establish effects of punishment, or validate the synthetic decay rule. |
+
+**A rewrite can be preferred and still lose the point.** Retain criticism, refusal, anger and accusations with their meaning and attribution. Changing a person-level accusation into a statement about an action is a substantive change to inspect. An offensiveness label alone establishes neither falsity nor a deserved penalty. The person can remain water, fog, smoke or clay in different circumstances; none of these datasets validates those descriptions as fixed kinds of people.
+
+The two datasets test different parts of the proposed chain. A joint test of intended meaning, expression, context, real decisions and later encounters is still needed. [Methods and provenance](../community-real-data/METHODS.md).
 
 ## Five parts of an encounter
 
@@ -29,11 +43,11 @@ Water can describe adapting an expression while maintaining a boundary. Fog can 
 | Connection | Support available now | What still needs testing |
 | --- | --- | --- |
 | Meaning is expressed within a context | Source described in the Sens–Sin–Context diagram; the five-part record above is an operational proposal | Whether the record captures the speaker's meaning and the receiver's interpretation without collapsing them into one judgment |
-| Expression affects treatment | Tested under a chosen literal-marker rule in the [synthetic encounter audit](../community-encounters/README.md); published wording summaries checked separately | Independently assess meaning equivalence and compare actual treatment; the authored templates and assigned penalty do not validate the social hypothesis |
+| Expression affects treatment | Synthetic rule audit plus real selected content/offensiveness annotation comparisons in the [real-data extension](../community-real-data/README.md) | Independently assess meaning equivalence and compare actual treatment; the authored templates and assigned penalty do not validate the social hypothesis |
 | Rules and priorities affect access and allocation | Tested in the [allocation benchmark](README.md), with explicit constraints and a chosen weighted objective; [methods](methods.md) and [saved checks](verification.json) | Whether these rules describe a particular community; the solver has complete information and does not interpret language or consent |
 | Treatment can be compared within a declared scope | Defined or logically derived once action, context and decision coding are fixed; see the consistency rule below | Comparable observed cases, including reasons, severity and duration; equal binary decisions alone do not demonstrate fairness |
 | Past contributions affect later requests | Tested in the [adaptable-role experiment](../adaptable-roles/README.md) through its explicit expectation update and controls | Whether observed expectations or institutional records follow that update; whether earlier treatment causes later treatment after relevant alternatives are considered |
-| Past treatment affects later treatment | Tested through stored restriction records in the [synthetic encounter audit](../community-encounters/README.md), including reinforcement, correction and resets | Actual time-ordered encounters with relevant alternatives controlled; a comment-rating experiment concerns later viewers of the same comment, not every kind of personal history |
+| Past treatment affects later treatment | Synthetic restriction-record controls plus a [real randomized recognition endpoint](../community-real-data/README.md): 12/100 versus 2/100 people received later awards | Negative treatment, other communities, mediation and a joint longitudinal record of meaning, wording and decisions; the recognition result does not identify a memory mechanism |
 | Adaptation can preserve meaning or alter it | Source described through the Socio-Didact and semantic-change proposals | Repeated accounts across contexts and time; preserve the possibility that someone resists, refuses, revises their meaning or rejects the label |
 | A score or stored field maps to social permission | Proposed operational connection in the diagram | Specify the action representation, metric, update law and decision rule, then compare predictions with new observations |
 

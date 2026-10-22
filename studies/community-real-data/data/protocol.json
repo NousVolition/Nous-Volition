@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-21",
+  "stage": "Analysis plan recorded after source-paper findings and previews were read, before the present full-data outcome summaries; exploratory reanalysis, not preregistered or an untouched model-selection holdout.",
+  "wording": {
+    "source": "s-nlp/en_paradetox_content and s-nlp/en_paradetox_toxicity; immutable revisions in sources.json",
+    "unit": "Unique exact original/rewrite text pair, not rows or independent raters",
+    "cleaning": "Collapse exact duplicates, exclude keys with conflicting labels, report all missing joins. Exact string joins only. No presumed original toxic label from column names.",
+    "meaning": "Report publisher match labels across all unique pairs and changed-text pairs. These judge close content, not unchanged pragmatic force or independently verified intent.",
+    "judgment": "Restrict primary paired comparison to match=True, changed texts, unambiguous toxicity labels for both texts. Report all four label combinations, paired change and bootstrap by original text (2000 draws, seed 20261021). If two-sided coverage is inadequate, report it without substituting assumed labels. Report one-sided rewrite labels separately.",
+    "audit": "Select 24 changed matched pairs by SHA256(original + NUL + rewrite), lowest hashes. Assistant review of proposition/target/negation/force; label explicitly as one AI audit, not fresh human validation. Preserve disagreements with released match labels. No universal mandate to soften strong language."
+  },
+  "history": {
+    "primary": "Restivo and van de Rijt 2012 randomized Wikipedia award experiment. Primary endpoint: any additional award in 90 days, 12/100 vs 2/100 published exact counts. Fisher two-sided test, risk difference Newcombe-Wilson 95% CI, risk ratio approximate log CI. Verify counts against any obtainable individual-record release; do not fabricate individual rows.",
+    "secondary": "If author-supplied individual data via DS-100 available, analyze randomization groups, pre-treatment balance and end-period edit outcome; additional awards only if recorded. No inference of cognitive memory vs reputation mediation.",
+    "optional_observational": "Bitcoin OTC and Alpha timestamped ratings: use strict earlier ratings, process ties in blocks; predict negative rating from earlier recipient ratings with a fixed Beta(1,1) estimator vs global history only. Report chronological last-30% Brier/log loss and target-cluster bootstrap difference; predefine cutoff by sorted unique times, not outcome. No fitted tuning or causal claim. Only use if temporal field provenance and coverage support it."
+  },
+  "boundaries": "No new human experiment or platform intervention. Separate source labels, AI review, real feedback and toy-model outcomes. These datasets do not jointly observe meaning, wording and history in a single community."
+}

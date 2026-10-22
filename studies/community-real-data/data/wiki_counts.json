@@ -1,0 +1,16 @@
+{
+  "source": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0034358",
+  "location": "Methods; Results and Discussion paragraph beginning Twelve experimental subjects; Figure 1 caption",
+  "data_level": "Exact published person-level endpoint counts; no individual participant rows reconstructed",
+  "treatment": {
+    "n": 100,
+    "any_later_award": 12,
+    "total_later_awards": 14
+  },
+  "control": {
+    "n": 100,
+    "any_later_award": 2,
+    "total_later_awards": 3
+  },
+  "followup_days": 90
+}

@@ -6,6 +6,8 @@ Streams and Rocks • completed computational tests and published evidence check
 
 The study ran 432 wording cases, 144 joint wording/history probability pairs, 6,000 paired history paths and 2,400 sensitivity pairs. Each history pair has 30 later encounters. Nineteen unit tests passed. Published numerical checks are reported separately below. [Methods](METHODS.md) · [Frozen protocol](data/protocol.json) · [Saved-result verification](verification.json).
 
+**Real-data follow-up now completed:** [content, judgment and later recognition](https://github.com/NousVolition/Nous-Volition/blob/main/studies/community-real-data/README.md) analyses human annotation records and exact randomized-study counts. It finds semantic failures, differing judgments among selected labeled matches, and a recognition effect in one Wikipedia experiment. These observations do not fit or validate the synthetic parameters below.
+
 ## The same offer expressed four ways
 
 Each expression keeps the same authored task, offered duration and maximum duration. For example, one person offers twenty minutes and declines any larger commitment. Direct, courteous, formal and forceful versions retain that content. **Complete meaning is not proven identical:** wording can also communicate different relationship signals, urgency or tone. Independent speaker and recipient checks remain necessary.

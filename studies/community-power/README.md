@@ -46,6 +46,14 @@ The supplied page matches Foucault’s *Discipline and Punish*, in the panoptici
 
 The [full connections and evidence guide](CONNECTIONS.md) includes a worked fictional boundary example, the actual memory update, the Sens/Sin and Socio-Didact links, definitions of U, Ω and W, the distinction between score clearance and distance, and the tests still needed for field-to-decision mappings. Its initial conceptual addition was followed by the synthetic encounter tests below; no newly collected human observations are claimed.
 
+## Completed checks against real data
+
+The [real-data extension](https://github.com/NousVolition/Nous-Volition/blob/main/studies/community-real-data/README.md) checks 30,072 changed wording pairs with human content labels. Of these, 4,544 failed the content-match check. A single-assistant review found further substantive changes in 9 of 24 accepted pairs and uncertainty in 3; this is an audit requiring human review, not independent validation.
+
+Among 941 selected matched pairs with both offensiveness labels, 754 changed from offensive to nonoffensive and 3 in the reverse direction. Those are annotation judgments, not recorded penalties. In a separate randomized Wikipedia experiment, 12/100 initially awarded contributors received another award versus 2/100 controls: +10 percentage points, with a 95% interval of +2.9 to +17.9. This supports an effect of prior recognition in that setting; it does not identify a universal memory mechanism. [Evidence boundaries and reproducible analysis](https://github.com/NousVolition/Nous-Volition/blob/main/studies/community-real-data/METHODS.md).
+
+**Preserve the point as well as the force.** A rewrite can remove an accusation, change a target or weaken a refusal. A preferred wording is not automatically equivalent, and an offensiveness label does not decide truth or deserved treatment. Water, fog, smoke and clay remain changeable situational descriptions.
+
 ## Completed wording and prior-treatment tests
 
 The [new encounter study](https://github.com/NousVolition/Nous-Volition/blob/main/studies/community-encounters/README.md) adds 432 wording cases, 6,000 paired history paths and explicit controls. In its synthetic rule, a chosen wording penalty produces a 25.4-percentage-point average restriction-probability difference for the same authored offer; reversing the penalty reverses that difference. Wording-blind rules give zero difference. The texts preserve task and time limits, but complete meaning equivalence has not been independently assessed.

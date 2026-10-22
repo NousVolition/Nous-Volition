@@ -1,0 +1,13 @@
+{
+  "changes": [
+    {
+      "reason": "Downloaded Wikipedia file schema revealed group-day medians and award events, not individual participants.",
+      "decision": "Use only as a descriptive chronology and cross-check of event totals. Inference uses exact randomized person-level counts from the paper. Do not treat 242 days as 242 independent people."
+    },
+    {
+      "reason": "A randomized endpoint is available for the requested history question. Bitcoin snapshots lack verified complete event-history/visibility provenance.",
+      "decision": "Do not analyze downloaded Bitcoin snapshots or substitute predictive association for causal evidence in this report."
+    }
+  ],
+  "holdout_status": "Published findings and data previews informed source choice; confirmatory calculations within an exploratory reanalysis, not an untouched validation of the community model."
+}

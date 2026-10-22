@@ -1,0 +1,131 @@
+{
+  "date": "2026-10-21",
+  "data_kind": "Reanalysis of real human annotations and a published randomized experiment",
+  "flow": {
+    "content_rows": 32317,
+    "toxicity_rows": 26507,
+    "content_exact_duplicate_rows": 673,
+    "toxicity_exact_duplicate_rows": 2227,
+    "unique_pair_keys": 31636,
+    "conflicting_pair_keys": 8,
+    "unique_comment_keys": 24239,
+    "conflicting_comment_keys": 41,
+    "unambiguous_pairs": 31628,
+    "meaning_match": 27076,
+    "meaning_mismatch": 4552,
+    "identical_pairs": 1556,
+    "changed_pairs": 30072,
+    "changed_match": 25528,
+    "changed_mismatch": 4544,
+    "matched_changed_with_rewrite_label": 22774,
+    "rewrite_label_offensive": 2442,
+    "matched_changed_two_labels": 941,
+    "two_label_coverage": 0.03686148542776559
+  },
+  "paired_labels": {
+    "n": 941,
+    "originals": 717,
+    "both_nonoffensive": 67,
+    "nonoffensive_to_offensive": 3,
+    "offensive_to_nonoffensive": 754,
+    "both_offensive": 117,
+    "original_offensive_rate": 0.9256110520722636,
+    "rewrite_offensive_rate": 0.1275239107332625,
+    "rewrite_minus_original": {
+      "estimate": -0.798087141339001,
+      "low": -0.8278803565465392,
+      "high": -0.768642958748222,
+      "clusters": 717,
+      "draws": 2000,
+      "seed": 20261021
+    },
+    "equal_weight_originals": {
+      "estimate": -0.7810320781032078,
+      "low": -0.8117154811715481,
+      "high": -0.7503486750348675,
+      "clusters": 717,
+      "draws": 2000,
+      "seed": 20261021
+    },
+    "inference": "Descriptive selected-pair label contrast; no causal test of moderation, no population prevalence estimate"
+  },
+  "controls": {
+    "identical_with_label": 1327,
+    "identical_label_changes": 0,
+    "note": "The exact join reuses the same released label for identical strings; this is a data-integrity control, not an independent rater reliability test."
+  },
+  "meaning_audit": {
+    "n": 24,
+    "verdicts": {
+      "changed": 9,
+      "no_clear_core_loss": 12,
+      "uncertain": 3
+    },
+    "reviewer": "Single assistant qualitative audit, no independent new human ratings",
+    "sampling": "24 lowest SHA-256 pair IDs among changed pairs with unambiguous match=True; not selected by toxicity outcome"
+  },
+  "history": {
+    "table": [
+      [
+        12,
+        88
+      ],
+      [
+        2,
+        98
+      ]
+    ],
+    "treatment_rate": 0.12,
+    "control_rate": 0.02,
+    "risk_difference": 0.09999999999999999,
+    "risk_difference_ci": [
+      0.02927678733196659,
+      0.1794549097929073
+    ],
+    "risk_ratio": 6.0,
+    "risk_ratio_log_ci": [
+      1.3780893556381473,
+      26.123124638263825
+    ],
+    "fisher_two_sided_p": 0.010094706872787147,
+    "pearson_p": 0.005582096093171001,
+    "treatment_wilson": [
+      0.06999406437019488,
+      0.19812099426711421
+    ],
+    "control_wilson": [
+      0.00550196755016235,
+      0.07001179072854388
+    ],
+    "daily_file_checks": {
+      "0": {
+        "group_day_rows": 121,
+        "additional_award_events": 3,
+        "day0": 1.0,
+        "day90": 2.2149122,
+        "first_award_day": 7
+      },
+      "1": {
+        "group_day_rows": 121,
+        "additional_award_events": 14,
+        "day0": 1.0,
+        "day90": 2.9381189,
+        "first_award_day": 8
+      }
+    },
+    "timing_scope_check": "The paper discusses day 8 in a productivity comparison of experimental recipients. The group-day file records the first treated award on day 8 and a control award on day 7. These can coexist; no table-versus-figure failure is asserted. Individual event-time models remain unavailable.",
+    "daily_file_unit": "242 group-day summaries, not 242 independent people. Award events 14/3 differ from people with any award 12/2.",
+    "productivity_baseline_check": {
+      "raw_endpoint_ratio": 1.3265170962532962,
+      "baseline_subtracted_ratio": 1.5952748684225904,
+      "note": "Day 0 is 1 in both groups. About 60% applies to gains beyond that baseline, not raw endpoint ratio. Productivity is ancillary and no individual-level significance test is reconstructed."
+    }
+  },
+  "software": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1"
+  },
+  "protocol_sha256": "c5fd6e2336cb586d55750c965961083e088f6b5cff19c855d08c6cf524d1f995",
+  "sources_sha256": "f2a2372af2d0559d25429d2b9522e0c9a20ed30555cceab53a3d0a375080ef57"
+}

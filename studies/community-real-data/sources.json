@@ -1,0 +1,36 @@
+{
+  "accessed": "2026-10-21",
+  "files": [
+    {
+      "id": "content",
+      "file": "content.tsv",
+      "url": "https://huggingface.co/datasets/s-nlp/en_paradetox_content/resolve/b448f622b078cf7a97bd54d11ae97ea1aabef690/train.tsv",
+      "revision": "b448f622b078cf7a97bd54d11ae97ea1aabef690",
+      "sha256": "a027fe5f99fe3dee841f9a5cafc218fbcac0226bae9e67f1be6bf74f982a9e76",
+      "bytes": 3525986,
+      "license": "Dataset metadata says openrail++; raw text is not redistributed here",
+      "citation": "Logacheva et al. 2022. ParaDetox: Detoxification with Parallel Data. https://aclanthology.org/2022.acl-long.469/"
+    },
+    {
+      "id": "toxicity",
+      "file": "toxicity.tsv",
+      "url": "https://huggingface.co/datasets/s-nlp/en_paradetox_toxicity/resolve/01c05c8bb326b3c166648723d073bb0724ef458d/train.tsv",
+      "revision": "01c05c8bb326b3c166648723d073bb0724ef458d",
+      "sha256": "d8d4d6be14a8df748f407d1742c2bb42b15e52562d56cc538f80f18b1c7e8d90",
+      "bytes": 1446241,
+      "license": "Dataset metadata says openrail++; raw text is not redistributed here",
+      "citation": "Logacheva et al. 2022. ParaDetox: Detoxification with Parallel Data. https://aclanthology.org/2022.acl-long.469/"
+    },
+    {
+      "id": "wikipedia_daily",
+      "file": "WikipediaExp.csv",
+      "url": "https://media.githubusercontent.com/media/DS-100/textbook/508b3f95ecfc1c59ae00794aeb48aca80b16b085/content/datasets/WikipediaExp.csv",
+      "revision": "508b3f95ecfc1c59ae00794aeb48aca80b16b085",
+      "sha256": "8705053c9f62958c3d5eb83f14d622fa4ae0b75d5f12bbe9a0253a1cb7ba0e10",
+      "bytes": 4385,
+      "license": "Host book is CC BY-NC-ND 4.0; downloaded for analysis; raw file not redistributed",
+      "citation": "Author-provided aggregate data via Learning Data Science: https://learningds.org/data_sources.html; primary experiment https://doi.org/10.1371/journal.pone.0034358",
+      "unit": "One experimental group per day; NOT individual participants"
+    }
+  ]
+}

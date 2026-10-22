@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "checks": 19,
+  "check_names": [
+    "source_hash_content",
+    "source_hash_toxicity",
+    "source_hash_wikipedia_daily",
+    "content_conflicts",
+    "text_conflicts",
+    "content_partition",
+    "all_paired_records_exact",
+    "four_cells_and_total",
+    "paired_reduction_arithmetic",
+    "audit_sampling",
+    "audit_verdict_counts",
+    "exact_published_endpoint",
+    "fisher_independent_enumeration",
+    "history_effect_arithmetic",
+    "group_not_individual_rows",
+    "event_not_person_totals",
+    "control_event_day_distinguished_from_treated",
+    "protocol_hash",
+    "provenance_hash"
+  ],
+  "unit_tests": 13,
+  "empirical_scope": "Released human labels; exact published randomized endpoint; group-day chronology. No original human data collection.",
+  "semantic_validation": "Single AI audit, not new independent human validation."
+}
