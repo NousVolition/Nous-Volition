@@ -1,6 +1,6 @@
 # Meaning expression context treatment and memory
 
-Streams and Rocks community model • 20 October 2026
+Streams and Rocks community model • 20 October 2026 · public-record evidence updated 22 October 2026
 
 **The same person can be water, fog, smoke or clay as a situation changes.** To understand an encounter, follow what they mean, how they express it, the circumstances in which it is received, how they are treated, and what carries into the next encounter. A material name can help describe that experience; it does not decide the person's worth or what treatment they deserve.
 
@@ -51,11 +51,11 @@ Water can describe adapting an expression while maintaining a boundary. Fog can 
 | Connection | Support available now | What still needs testing |
 | --- | --- | --- |
 | Meaning is expressed within a context | Source described in the Sens–Sin–Context diagram; the five-part record above is an operational proposal | Whether the record captures the speaker's meaning and the receiver's interpretation without collapsing them into one judgment |
-| Expression affects treatment | Synthetic rule audit and real offensiveness labels; the [actual-moderation audit](../community-moderation/README.md) found substantive differences in all 12 closest topic pairs reviewed | Meaning-equivalent messages, comparable context and exposure, and actual decisions are still needed to isolate wording |
+| Expression affects treatment | The [new public-record audit](../community-record-tests/README.md) finds different statuses in 3/8 pairs provisionally judged meaning-equivalent before outcomes, including 2/5 lexical changes; 193/353 identical-text controls also differ | Independent semantic review, decision reasons/timestamps and comparable exposure are needed to identify whether wording caused the difference |
 | Rules and priorities affect access and allocation | Tested in the [allocation benchmark](README.md), with explicit constraints and a chosen weighted objective; [methods](methods.md) and [saved checks](verification.json) | Whether these rules describe a particular community; the solver has complete information and does not interpret language or consent |
 | Treatment can be compared within a declared scope | Defined or logically derived once action, context and decision coding are fixed; see the consistency rule below | Comparable observed cases, including reasons, severity and duration; equal binary decisions alone do not demonstrate fairness |
 | Past contributions affect later requests | Tested in the [adaptable-role experiment](../adaptable-roles/README.md) through its explicit expectation update and controls | Whether observed expectations or institutional records follow that update; whether earlier treatment causes later treatment after relevant alternatives are considered |
-| Past treatment affects later treatment | Randomized positive-recognition evidence plus [observed penalty escalation](../community-moderation/README.md): 81.8% of paired finite second blocks were longer | Hold current conduct and context comparable; establish who could see prior penalties and distinguish changed behaviour, attention and decision rules. Escalation alone does not identify memory |
+| Past treatment affects later treatment | Randomized positive-recognition evidence plus [extended penalty comparisons](../community-record-tests/README.md): 517/591 finite second blocks were longer under exact reason-string and same-moderator controls; median paired ratio 3.5 | Matching recorded reasons is not matching conduct. Establish history visibility and distinguish current behavior, reporting, selection and decision rules; escalation alone does not identify causal memory |
 | Adaptation can preserve meaning or alter it | Source described through the Socio-Didact and semantic-change proposals | Repeated accounts across contexts and time; preserve the possibility that someone resists, refuses, revises their meaning or rejects the label |
 | A score or stored field maps to social permission | Proposed operational connection in the diagram | Specify the action representation, metric, update law and decision rule, then compare predictions with new observations |
 
@@ -112,7 +112,19 @@ The source's field quantities **S, q and a(q)** also need definitions, units, a 
 
 A useful episode record contains the time, actor, speaker's intended meaning, exact expression, recipient's interpretation, policy and relevant context, decision, actual treatment and reasons, prior records available at that time, and later outcomes. Add who chose the material description and whether it was accepted, contested or changed. Use attributable accounts with appropriate consent; the record is a proposed research structure, not a population measurement or a classification of people.
 
-## Source scope
+## Completed public-record comparison — 22 October 2026
+
+The [new report, full semantic audit and reproducible results](../community-record-tests/README.md) test these connections using actual DER STANDARD forum statuses and Wikipedia block decisions. They add observations to the model without fitting its fictional expectation or memory parameters.
+
+**Meaning and expression:** 40 changed German post pairs were reviewed with their recorded status fields hidden. Eight provisionally preserve meaning, 21 change it and 11 remain uncertain. Removing an insult, accusation or demand was treated as a possible substantive change rather than automatically softened away. The review is by one assistant; independent German-speaking review remains needed.
+
+**Context and treatment:** posts share author, article and parent and were created within 24 hours. Three of the eight meaning-preserving pairs differ in recorded status; two of the five lexical pairs do. But 193 of 353 identical-text controls also differ. Duplicate-post rules, timing, reports and moderator exposure remain possible explanations. These are actual different outcomes, conditional on the semantic judgment; they do not establish that wording caused them or that the decision was unfair. Restricting to ten-minute gaps retains 2/4 differences among all accepted pairs.
+
+**Treatment and memory:** among 591 finite repeat-block pairs with the same recorded reason and moderator, 517 (87.5%) receive a longer second initial assignment. The median paired ratio is 3.5, with a paired-bootstrap 95% interval of 3.0–4.29. Thirty- and ninety-day gap checks retain the same direction. This strengthens the observation of escalation, while equal reason text cannot establish equal conduct or a causal effect of a known prior penalty.
+
+**What remains open:** independently check semantic equivalence, obtain decision timing and reasons, measure current conduct, and test variation in whether prior records are visible. The material roles remain situational descriptions that people can combine, change or reject. Strong language about force, exclusion and resistance remains available when tied to an observation or attributed account; neither word counts nor material labels establish those claims by themselves.
+
+## Source scope (original conceptual addition)
 
 The four supplied screenshots are the sources for the conceptual diagram, the evidence roadmap, the scoped consistency example and the reported language counts. Their underlying manuscript and corpus were not supplied with this addition. Source-described connections and reported counts therefore retain that status.
 
@@ -121,3 +133,4 @@ For traceability, the attachment filenames begin `codex-clipboard-7f9d094a` (con
 Foucault's place in the model remains the question of who defines categories, controls access, records conduct and makes an expectation persist. The [passage-to-model interpretation](interpretation.md) gives its source and limits. The physical substance calculations supply no validation of these social connections.
 
 [Community allocation results](README.md) · [Situational roles](SITUATIONAL_ROLES.md) · [Adaptable-role results](../adaptable-roles/README.md)
+

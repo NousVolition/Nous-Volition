@@ -1,0 +1,287 @@
+{
+  "audit_sha256": "dfca929506c7e172f13bf210ea11951fbd996dff7045a0c64af12945d1743b67",
+  "sample_sha256": "c70287e9697838edfe3204d457f024fc55e9e6f682d44d79b6a78b3a1a4ab315",
+  "source_database_sha256": "a18794962a57f46107fc391b906c03ea8d4a445927d7940a976e63efcc8bc1b4",
+  "groups": {
+    "all_changed": {
+      "status_pairs": {
+        "n": 40,
+        "online_online": 18,
+        "online_deleted": 6,
+        "deleted_online": 10,
+        "deleted_deleted": 6,
+        "discordant": 16,
+        "discordant_fraction": 0.4
+      },
+      "within_1h": {
+        "n": 28,
+        "online_online": 13,
+        "online_deleted": 6,
+        "deleted_online": 5,
+        "deleted_deleted": 4,
+        "discordant": 11,
+        "discordant_fraction": 0.39285714285714285
+      },
+      "within_10min": {
+        "n": 16,
+        "online_online": 6,
+        "online_deleted": 4,
+        "deleted_online": 4,
+        "deleted_deleted": 2,
+        "discordant": 8,
+        "discordant_fraction": 0.5
+      },
+      "distinct_authors": 40,
+      "distinct_articles": 38,
+      "non_top_level": 11,
+      "parent_record_available": 11,
+      "article_record_available": 40
+    },
+    "pass": {
+      "status_pairs": {
+        "n": 8,
+        "online_online": 5,
+        "online_deleted": 2,
+        "deleted_online": 1,
+        "deleted_deleted": 0,
+        "discordant": 3,
+        "discordant_fraction": 0.375
+      },
+      "within_1h": {
+        "n": 7,
+        "online_online": 4,
+        "online_deleted": 2,
+        "deleted_online": 1,
+        "deleted_deleted": 0,
+        "discordant": 3,
+        "discordant_fraction": 0.42857142857142855
+      },
+      "within_10min": {
+        "n": 4,
+        "online_online": 2,
+        "online_deleted": 1,
+        "deleted_online": 1,
+        "deleted_deleted": 0,
+        "discordant": 2,
+        "discordant_fraction": 0.5
+      },
+      "distinct_authors": 8,
+      "distinct_articles": 8,
+      "non_top_level": 2,
+      "parent_record_available": 2,
+      "article_record_available": 8
+    },
+    "fail": {
+      "status_pairs": {
+        "n": 21,
+        "online_online": 9,
+        "online_deleted": 1,
+        "deleted_online": 7,
+        "deleted_deleted": 4,
+        "discordant": 8,
+        "discordant_fraction": 0.38095238095238093
+      },
+      "within_1h": {
+        "n": 12,
+        "online_online": 5,
+        "online_deleted": 1,
+        "deleted_online": 3,
+        "deleted_deleted": 3,
+        "discordant": 4,
+        "discordant_fraction": 0.3333333333333333
+      },
+      "within_10min": {
+        "n": 4,
+        "online_online": 1,
+        "online_deleted": 0,
+        "deleted_online": 2,
+        "deleted_deleted": 1,
+        "discordant": 2,
+        "discordant_fraction": 0.5
+      },
+      "distinct_authors": 21,
+      "distinct_articles": 19,
+      "non_top_level": 7,
+      "parent_record_available": 7,
+      "article_record_available": 21
+    },
+    "uncertain": {
+      "status_pairs": {
+        "n": 11,
+        "online_online": 4,
+        "online_deleted": 3,
+        "deleted_online": 2,
+        "deleted_deleted": 2,
+        "discordant": 5,
+        "discordant_fraction": 0.45454545454545453
+      },
+      "within_1h": {
+        "n": 9,
+        "online_online": 4,
+        "online_deleted": 3,
+        "deleted_online": 1,
+        "deleted_deleted": 1,
+        "discordant": 4,
+        "discordant_fraction": 0.4444444444444444
+      },
+      "within_10min": {
+        "n": 8,
+        "online_online": 3,
+        "online_deleted": 3,
+        "deleted_online": 1,
+        "deleted_deleted": 1,
+        "discordant": 4,
+        "discordant_fraction": 0.5
+      },
+      "distinct_authors": 11,
+      "distinct_articles": 11,
+      "non_top_level": 2,
+      "parent_record_available": 2,
+      "article_record_available": 11
+    },
+    "pass_lexical": {
+      "status_pairs": {
+        "n": 5,
+        "online_online": 3,
+        "online_deleted": 1,
+        "deleted_online": 1,
+        "deleted_deleted": 0,
+        "discordant": 2,
+        "discordant_fraction": 0.4
+      },
+      "within_1h": {
+        "n": 4,
+        "online_online": 2,
+        "online_deleted": 1,
+        "deleted_online": 1,
+        "deleted_deleted": 0,
+        "discordant": 2,
+        "discordant_fraction": 0.5
+      },
+      "within_10min": {
+        "n": 2,
+        "online_online": 1,
+        "online_deleted": 0,
+        "deleted_online": 1,
+        "deleted_deleted": 0,
+        "discordant": 1,
+        "discordant_fraction": 0.5
+      },
+      "distinct_authors": 5,
+      "distinct_articles": 5,
+      "non_top_level": 2,
+      "parent_record_available": 2,
+      "article_record_available": 5
+    },
+    "pass_typography": {
+      "status_pairs": {
+        "n": 3,
+        "online_online": 2,
+        "online_deleted": 1,
+        "deleted_online": 0,
+        "deleted_deleted": 0,
+        "discordant": 1,
+        "discordant_fraction": 0.3333333333333333
+      },
+      "within_1h": {
+        "n": 3,
+        "online_online": 2,
+        "online_deleted": 1,
+        "deleted_online": 0,
+        "deleted_deleted": 0,
+        "discordant": 1,
+        "discordant_fraction": 0.3333333333333333
+      },
+      "within_10min": {
+        "n": 2,
+        "online_online": 1,
+        "online_deleted": 1,
+        "deleted_online": 0,
+        "deleted_deleted": 0,
+        "discordant": 1,
+        "discordant_fraction": 0.5
+      },
+      "distinct_authors": 3,
+      "distinct_articles": 3,
+      "non_top_level": 0,
+      "parent_record_available": 0,
+      "article_record_available": 3
+    },
+    "exact_all": {
+      "status_pairs": {
+        "n": 353,
+        "online_online": 52,
+        "online_deleted": 179,
+        "deleted_online": 14,
+        "deleted_deleted": 108,
+        "discordant": 193,
+        "discordant_fraction": 0.546742209631728
+      },
+      "within_1h": {
+        "n": 253,
+        "online_online": 42,
+        "online_deleted": 137,
+        "deleted_online": 9,
+        "deleted_deleted": 65,
+        "discordant": 146,
+        "discordant_fraction": 0.5770750988142292
+      },
+      "within_10min": {
+        "n": 152,
+        "online_online": 34,
+        "online_deleted": 86,
+        "deleted_online": 5,
+        "deleted_deleted": 27,
+        "discordant": 91,
+        "discordant_fraction": 0.5986842105263158
+      },
+      "distinct_authors": 271,
+      "distinct_articles": 278,
+      "non_top_level": 124,
+      "parent_record_available": 124,
+      "article_record_available": 353
+    },
+    "exact_sample": {
+      "status_pairs": {
+        "n": 40,
+        "online_online": 4,
+        "online_deleted": 20,
+        "deleted_online": 5,
+        "deleted_deleted": 11,
+        "discordant": 25,
+        "discordant_fraction": 0.625
+      },
+      "within_1h": {
+        "n": 27,
+        "online_online": 4,
+        "online_deleted": 14,
+        "deleted_online": 5,
+        "deleted_deleted": 4,
+        "discordant": 19,
+        "discordant_fraction": 0.7037037037037037
+      },
+      "within_10min": {
+        "n": 15,
+        "online_online": 2,
+        "online_deleted": 9,
+        "deleted_online": 3,
+        "deleted_deleted": 1,
+        "discordant": 12,
+        "discordant_fraction": 0.8
+      },
+      "distinct_authors": 40,
+      "distinct_articles": 38,
+      "non_top_level": 16,
+      "parent_record_available": 16,
+      "article_record_available": 40
+    }
+  },
+  "equivalence_counts": {
+    "fail": 21,
+    "pass": 8,
+    "uncertain": 11
+  },
+  "exact_control_check": "All 353 mechanically verified for identical normalized text and matching author/article/parent; no independent referent review.",
+  "wording_causal_effect_identified": false,
+  "decision_timestamps_available": false
+}

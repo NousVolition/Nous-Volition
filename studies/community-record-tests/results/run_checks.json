@@ -1,0 +1,10 @@
+{
+  "completed_utc": "2026-10-22T23:30:12.363985+00:00",
+  "tests_run": 23,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "python": "3.12.14",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1"
+}

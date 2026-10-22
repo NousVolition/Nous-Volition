@@ -1,0 +1,761 @@
+{
+  "checks": [
+    {
+      "check": "30d_all n",
+      "passed": true
+    },
+    {
+      "check": "30d_all first_median_hours",
+      "passed": true
+    },
+    {
+      "check": "30d_all second_median_hours",
+      "passed": true
+    },
+    {
+      "check": "30d_all median_log2_ratio",
+      "passed": true
+    },
+    {
+      "check": "30d_all median_ratio",
+      "passed": true
+    },
+    {
+      "check": "30d_all median_log2_ratio_ci95",
+      "passed": true
+    },
+    {
+      "check": "30d_all longer",
+      "passed": true
+    },
+    {
+      "check": "30d_all shorter",
+      "passed": true
+    },
+    {
+      "check": "30d_all equal",
+      "passed": true
+    },
+    {
+      "check": "30d_all sign_test_p",
+      "passed": true
+    },
+    {
+      "check": "30d_all sign_test_log10_p",
+      "passed": true
+    },
+    {
+      "check": "30d_all seed",
+      "passed": true
+    },
+    {
+      "check": "30d_all bootstrap_replicates",
+      "passed": true
+    },
+    {
+      "check": "30d_same_reason n",
+      "passed": true
+    },
+    {
+      "check": "30d_same_reason first_median_hours",
+      "passed": true
+    },
+    {
+      "check": "30d_same_reason second_median_hours",
+      "passed": true
+    },
+    {
+      "check": "30d_same_reason median_log2_ratio",
+      "passed": true
+    },
+    {
+      "check": "30d_same_reason median_ratio",
+      "passed": true
+    },
+    {
+      "check": "30d_same_reason median_log2_ratio_ci95",
+      "passed": true
+    },
+    {
+      "check": "30d_same_reason longer",
+      "passed": true
+    },
+    {
+      "check": "30d_same_reason shorter",
+      "passed": true
+    },
+    {
+      "check": "30d_same_reason equal",
+      "passed": true
+    },
+    {
+      "check": "30d_same_reason sign_test_p",
+      "passed": true
+    },
+    {
+      "check": "30d_same_reason sign_test_log10_p",
+      "passed": true
+    },
+    {
+      "check": "30d_same_reason seed",
+      "passed": true
+    },
+    {
+      "check": "30d_same_reason bootstrap_replicates",
+      "passed": true
+    },
+    {
+      "check": "30d_same_reason Spearman",
+      "passed": true
+    },
+    {
+      "check": "30d_same_moderator n",
+      "passed": true
+    },
+    {
+      "check": "30d_same_moderator first_median_hours",
+      "passed": true
+    },
+    {
+      "check": "30d_same_moderator second_median_hours",
+      "passed": true
+    },
+    {
+      "check": "30d_same_moderator median_log2_ratio",
+      "passed": true
+    },
+    {
+      "check": "30d_same_moderator median_ratio",
+      "passed": true
+    },
+    {
+      "check": "30d_same_moderator median_log2_ratio_ci95",
+      "passed": true
+    },
+    {
+      "check": "30d_same_moderator longer",
+      "passed": true
+    },
+    {
+      "check": "30d_same_moderator shorter",
+      "passed": true
+    },
+    {
+      "check": "30d_same_moderator equal",
+      "passed": true
+    },
+    {
+      "check": "30d_same_moderator sign_test_p",
+      "passed": true
+    },
+    {
+      "check": "30d_same_moderator sign_test_log10_p",
+      "passed": true
+    },
+    {
+      "check": "30d_same_moderator seed",
+      "passed": true
+    },
+    {
+      "check": "30d_same_moderator bootstrap_replicates",
+      "passed": true
+    },
+    {
+      "check": "30d_both_controls n",
+      "passed": true
+    },
+    {
+      "check": "30d_both_controls first_median_hours",
+      "passed": true
+    },
+    {
+      "check": "30d_both_controls second_median_hours",
+      "passed": true
+    },
+    {
+      "check": "30d_both_controls median_log2_ratio",
+      "passed": true
+    },
+    {
+      "check": "30d_both_controls median_ratio",
+      "passed": true
+    },
+    {
+      "check": "30d_both_controls median_log2_ratio_ci95",
+      "passed": true
+    },
+    {
+      "check": "30d_both_controls longer",
+      "passed": true
+    },
+    {
+      "check": "30d_both_controls shorter",
+      "passed": true
+    },
+    {
+      "check": "30d_both_controls equal",
+      "passed": true
+    },
+    {
+      "check": "30d_both_controls sign_test_p",
+      "passed": true
+    },
+    {
+      "check": "30d_both_controls sign_test_log10_p",
+      "passed": true
+    },
+    {
+      "check": "30d_both_controls seed",
+      "passed": true
+    },
+    {
+      "check": "30d_both_controls bootstrap_replicates",
+      "passed": true
+    },
+    {
+      "check": "30d_both_controls Spearman",
+      "passed": true
+    },
+    {
+      "check": "90d_all n",
+      "passed": true
+    },
+    {
+      "check": "90d_all first_median_hours",
+      "passed": true
+    },
+    {
+      "check": "90d_all second_median_hours",
+      "passed": true
+    },
+    {
+      "check": "90d_all median_log2_ratio",
+      "passed": true
+    },
+    {
+      "check": "90d_all median_ratio",
+      "passed": true
+    },
+    {
+      "check": "90d_all median_log2_ratio_ci95",
+      "passed": true
+    },
+    {
+      "check": "90d_all longer",
+      "passed": true
+    },
+    {
+      "check": "90d_all shorter",
+      "passed": true
+    },
+    {
+      "check": "90d_all equal",
+      "passed": true
+    },
+    {
+      "check": "90d_all sign_test_p",
+      "passed": true
+    },
+    {
+      "check": "90d_all sign_test_log10_p",
+      "passed": true
+    },
+    {
+      "check": "90d_all seed",
+      "passed": true
+    },
+    {
+      "check": "90d_all bootstrap_replicates",
+      "passed": true
+    },
+    {
+      "check": "90d_same_reason n",
+      "passed": true
+    },
+    {
+      "check": "90d_same_reason first_median_hours",
+      "passed": true
+    },
+    {
+      "check": "90d_same_reason second_median_hours",
+      "passed": true
+    },
+    {
+      "check": "90d_same_reason median_log2_ratio",
+      "passed": true
+    },
+    {
+      "check": "90d_same_reason median_ratio",
+      "passed": true
+    },
+    {
+      "check": "90d_same_reason median_log2_ratio_ci95",
+      "passed": true
+    },
+    {
+      "check": "90d_same_reason longer",
+      "passed": true
+    },
+    {
+      "check": "90d_same_reason shorter",
+      "passed": true
+    },
+    {
+      "check": "90d_same_reason equal",
+      "passed": true
+    },
+    {
+      "check": "90d_same_reason sign_test_p",
+      "passed": true
+    },
+    {
+      "check": "90d_same_reason sign_test_log10_p",
+      "passed": true
+    },
+    {
+      "check": "90d_same_reason seed",
+      "passed": true
+    },
+    {
+      "check": "90d_same_reason bootstrap_replicates",
+      "passed": true
+    },
+    {
+      "check": "90d_same_reason Spearman",
+      "passed": true
+    },
+    {
+      "check": "90d_same_moderator n",
+      "passed": true
+    },
+    {
+      "check": "90d_same_moderator first_median_hours",
+      "passed": true
+    },
+    {
+      "check": "90d_same_moderator second_median_hours",
+      "passed": true
+    },
+    {
+      "check": "90d_same_moderator median_log2_ratio",
+      "passed": true
+    },
+    {
+      "check": "90d_same_moderator median_ratio",
+      "passed": true
+    },
+    {
+      "check": "90d_same_moderator median_log2_ratio_ci95",
+      "passed": true
+    },
+    {
+      "check": "90d_same_moderator longer",
+      "passed": true
+    },
+    {
+      "check": "90d_same_moderator shorter",
+      "passed": true
+    },
+    {
+      "check": "90d_same_moderator equal",
+      "passed": true
+    },
+    {
+      "check": "90d_same_moderator sign_test_p",
+      "passed": true
+    },
+    {
+      "check": "90d_same_moderator sign_test_log10_p",
+      "passed": true
+    },
+    {
+      "check": "90d_same_moderator seed",
+      "passed": true
+    },
+    {
+      "check": "90d_same_moderator bootstrap_replicates",
+      "passed": true
+    },
+    {
+      "check": "90d_both_controls n",
+      "passed": true
+    },
+    {
+      "check": "90d_both_controls first_median_hours",
+      "passed": true
+    },
+    {
+      "check": "90d_both_controls second_median_hours",
+      "passed": true
+    },
+    {
+      "check": "90d_both_controls median_log2_ratio",
+      "passed": true
+    },
+    {
+      "check": "90d_both_controls median_ratio",
+      "passed": true
+    },
+    {
+      "check": "90d_both_controls median_log2_ratio_ci95",
+      "passed": true
+    },
+    {
+      "check": "90d_both_controls longer",
+      "passed": true
+    },
+    {
+      "check": "90d_both_controls shorter",
+      "passed": true
+    },
+    {
+      "check": "90d_both_controls equal",
+      "passed": true
+    },
+    {
+      "check": "90d_both_controls sign_test_p",
+      "passed": true
+    },
+    {
+      "check": "90d_both_controls sign_test_log10_p",
+      "passed": true
+    },
+    {
+      "check": "90d_both_controls seed",
+      "passed": true
+    },
+    {
+      "check": "90d_both_controls bootstrap_replicates",
+      "passed": true
+    },
+    {
+      "check": "90d_both_controls Spearman",
+      "passed": true
+    },
+    {
+      "check": "180d_all n",
+      "passed": true
+    },
+    {
+      "check": "180d_all first_median_hours",
+      "passed": true
+    },
+    {
+      "check": "180d_all second_median_hours",
+      "passed": true
+    },
+    {
+      "check": "180d_all median_log2_ratio",
+      "passed": true
+    },
+    {
+      "check": "180d_all median_ratio",
+      "passed": true
+    },
+    {
+      "check": "180d_all median_log2_ratio_ci95",
+      "passed": true
+    },
+    {
+      "check": "180d_all longer",
+      "passed": true
+    },
+    {
+      "check": "180d_all shorter",
+      "passed": true
+    },
+    {
+      "check": "180d_all equal",
+      "passed": true
+    },
+    {
+      "check": "180d_all sign_test_p",
+      "passed": true
+    },
+    {
+      "check": "180d_all sign_test_log10_p",
+      "passed": true
+    },
+    {
+      "check": "180d_all seed",
+      "passed": true
+    },
+    {
+      "check": "180d_all bootstrap_replicates",
+      "passed": true
+    },
+    {
+      "check": "180d_same_reason n",
+      "passed": true
+    },
+    {
+      "check": "180d_same_reason first_median_hours",
+      "passed": true
+    },
+    {
+      "check": "180d_same_reason second_median_hours",
+      "passed": true
+    },
+    {
+      "check": "180d_same_reason median_log2_ratio",
+      "passed": true
+    },
+    {
+      "check": "180d_same_reason median_ratio",
+      "passed": true
+    },
+    {
+      "check": "180d_same_reason median_log2_ratio_ci95",
+      "passed": true
+    },
+    {
+      "check": "180d_same_reason longer",
+      "passed": true
+    },
+    {
+      "check": "180d_same_reason shorter",
+      "passed": true
+    },
+    {
+      "check": "180d_same_reason equal",
+      "passed": true
+    },
+    {
+      "check": "180d_same_reason sign_test_p",
+      "passed": true
+    },
+    {
+      "check": "180d_same_reason sign_test_log10_p",
+      "passed": true
+    },
+    {
+      "check": "180d_same_reason seed",
+      "passed": true
+    },
+    {
+      "check": "180d_same_reason bootstrap_replicates",
+      "passed": true
+    },
+    {
+      "check": "180d_same_reason Spearman",
+      "passed": true
+    },
+    {
+      "check": "180d_same_moderator n",
+      "passed": true
+    },
+    {
+      "check": "180d_same_moderator first_median_hours",
+      "passed": true
+    },
+    {
+      "check": "180d_same_moderator second_median_hours",
+      "passed": true
+    },
+    {
+      "check": "180d_same_moderator median_log2_ratio",
+      "passed": true
+    },
+    {
+      "check": "180d_same_moderator median_ratio",
+      "passed": true
+    },
+    {
+      "check": "180d_same_moderator median_log2_ratio_ci95",
+      "passed": true
+    },
+    {
+      "check": "180d_same_moderator longer",
+      "passed": true
+    },
+    {
+      "check": "180d_same_moderator shorter",
+      "passed": true
+    },
+    {
+      "check": "180d_same_moderator equal",
+      "passed": true
+    },
+    {
+      "check": "180d_same_moderator sign_test_p",
+      "passed": true
+    },
+    {
+      "check": "180d_same_moderator sign_test_log10_p",
+      "passed": true
+    },
+    {
+      "check": "180d_same_moderator seed",
+      "passed": true
+    },
+    {
+      "check": "180d_same_moderator bootstrap_replicates",
+      "passed": true
+    },
+    {
+      "check": "180d_both_controls n",
+      "passed": true
+    },
+    {
+      "check": "180d_both_controls first_median_hours",
+      "passed": true
+    },
+    {
+      "check": "180d_both_controls second_median_hours",
+      "passed": true
+    },
+    {
+      "check": "180d_both_controls median_log2_ratio",
+      "passed": true
+    },
+    {
+      "check": "180d_both_controls median_ratio",
+      "passed": true
+    },
+    {
+      "check": "180d_both_controls median_log2_ratio_ci95",
+      "passed": true
+    },
+    {
+      "check": "180d_both_controls longer",
+      "passed": true
+    },
+    {
+      "check": "180d_both_controls shorter",
+      "passed": true
+    },
+    {
+      "check": "180d_both_controls equal",
+      "passed": true
+    },
+    {
+      "check": "180d_both_controls sign_test_p",
+      "passed": true
+    },
+    {
+      "check": "180d_both_controls sign_test_log10_p",
+      "passed": true
+    },
+    {
+      "check": "180d_both_controls seed",
+      "passed": true
+    },
+    {
+      "check": "180d_both_controls bootstrap_replicates",
+      "passed": true
+    },
+    {
+      "check": "180d_both_controls Spearman",
+      "passed": true
+    },
+    {
+      "check": "all_changed status_pairs",
+      "passed": true
+    },
+    {
+      "check": "all_changed within_1h",
+      "passed": true
+    },
+    {
+      "check": "all_changed within_10min",
+      "passed": true
+    },
+    {
+      "check": "pass status_pairs",
+      "passed": true
+    },
+    {
+      "check": "pass within_1h",
+      "passed": true
+    },
+    {
+      "check": "pass within_10min",
+      "passed": true
+    },
+    {
+      "check": "fail status_pairs",
+      "passed": true
+    },
+    {
+      "check": "fail within_1h",
+      "passed": true
+    },
+    {
+      "check": "fail within_10min",
+      "passed": true
+    },
+    {
+      "check": "uncertain status_pairs",
+      "passed": true
+    },
+    {
+      "check": "uncertain within_1h",
+      "passed": true
+    },
+    {
+      "check": "uncertain within_10min",
+      "passed": true
+    },
+    {
+      "check": "pass_lexical status_pairs",
+      "passed": true
+    },
+    {
+      "check": "pass_lexical within_1h",
+      "passed": true
+    },
+    {
+      "check": "pass_lexical within_10min",
+      "passed": true
+    },
+    {
+      "check": "pass_typography status_pairs",
+      "passed": true
+    },
+    {
+      "check": "pass_typography within_1h",
+      "passed": true
+    },
+    {
+      "check": "pass_typography within_10min",
+      "passed": true
+    },
+    {
+      "check": "exact_all status_pairs",
+      "passed": true
+    },
+    {
+      "check": "exact_all within_1h",
+      "passed": true
+    },
+    {
+      "check": "exact_all within_10min",
+      "passed": true
+    },
+    {
+      "check": "exact_sample status_pairs",
+      "passed": true
+    },
+    {
+      "check": "exact_sample within_1h",
+      "passed": true
+    },
+    {
+      "check": "exact_sample within_10min",
+      "passed": true
+    },
+    {
+      "check": "all requested history subsets present",
+      "passed": true
+    },
+    {
+      "check": "positive wording findings not silently excluded",
+      "passed": true
+    },
+    {
+      "check": "exact duplicate control retained",
+      "passed": true
+    }
+  ],
+  "passed": 189
+}

@@ -1,0 +1,242 @@
+[
+  {
+    "pair_hash": "003700b43eec018466e7f6a70ad2b2fc0ddd822336fecfd55917b286caced263",
+    "verdict": "fail",
+    "change_type": "content",
+    "reason": "Removes the explicit asylum-seeker attribution and a derogatory group description. The target and accusation change."
+  },
+  {
+    "pair_hash": "0192cf32646f03821949897a1ff8bd4b85fbe62134c0a270eca63144f2a2d008",
+    "verdict": "fail",
+    "change_type": "content",
+    "reason": "Generalizes food purchases at supermarkets to shopping at local shops. The economic claim has a broader scope."
+  },
+  {
+    "pair_hash": "023eccd3c5b527ade3cb32888b9dc2d1dc181eabfa6a89db96b61f1eae1c715e",
+    "verdict": "pass",
+    "change_type": "typography",
+    "reason": "Removes leading continuation dots and changes trailing ellipsis to a period. The full criticism, targets and allegations remain unchanged."
+  },
+  {
+    "pair_hash": "035c89b8778036884f79cead25bd081971e4c687eaec0c51b8e2ee013d048fca",
+    "verdict": "uncertain",
+    "change_type": "force",
+    "reason": "Changes the headline from opinion manipulation to opinion formation. The unchanged body is critical, but the explicit headline accusation is softened."
+  },
+  {
+    "pair_hash": "043fedd39abf01dd923c3874d75fe83da7e0875a4e95153816d6a4c169bd3211",
+    "verdict": "uncertain",
+    "change_type": "dialect_typo",
+    "reason": "The farewell contains a changed dialect word. It plausibly repairs a typo, but the intended earlier verb is not established."
+  },
+  {
+    "pair_hash": "04a23d20650a326a90c6d89f304925b9a6a0465fc1523a93b2ae703c66438044",
+    "verdict": "fail",
+    "change_type": "content",
+    "reason": "Drops the specified technology institutes from the research criticism, removing a concrete institutional target."
+  },
+  {
+    "pair_hash": "04bfc6286d7acef2f522700620aecdc52dc7ec88ec2d7bd233f2564a58c015b6",
+    "verdict": "fail",
+    "change_type": "metacomment",
+    "reason": "Adds a second-attempt notice, which introduces information about the posting encounter even though the political insinuation remains."
+  },
+  {
+    "pair_hash": "0539201e508f2c63664e2d971275b597026af5c03e54bdb1ac4873c783dfaed2",
+    "verdict": "uncertain",
+    "change_type": "corruption",
+    "reason": "Changes the opening verb into an unclear malformed word. The rest is identical, but the corrupt text prevents a confident complete equivalence judgment."
+  },
+  {
+    "pair_hash": "0543141184d5b0d764a74acabfeb58c586c10dbbd1c8e45e3a0b44960b8cce2c",
+    "verdict": "pass",
+    "change_type": "typography",
+    "reason": "Only the space before the headline question marks changes. All assertions, accusations, punctuation marks and their targets remain."
+  },
+  {
+    "pair_hash": "05ff02df30069e5f0d1c53c9a2494bea7c717f8926d869fdf6fbab432e5fd7d7",
+    "verdict": "fail",
+    "change_type": "content",
+    "reason": "Changes the headline to a financial-dependence insinuation and removes a date. This changes framing and factual detail."
+  },
+  {
+    "pair_hash": "0790c76ea1d192ec32763033471555a052d328a03e42dc0ef671465e7a8dc7e5",
+    "verdict": "uncertain",
+    "change_type": "repetition_truncation",
+    "reason": "Removes a duplicated opening and completes a truncated final sentence. Core claims recur elsewhere, but repetition and incomplete wording prevent a strict force-preserving match."
+  },
+  {
+    "pair_hash": "0974c2fbc7f1d9180f64b4f58612ad9a6276e4cc515e4ddd1490661fac5fd9a2",
+    "verdict": "fail",
+    "change_type": "force",
+    "reason": "Masks the vulgar accusation and changes an explanation from possible to easy. These are changes in expression force and certainty."
+  },
+  {
+    "pair_hash": "0a32781fa96a6ee7884861bc9059b6ec2131021bb3b325c262c880e59e78af76",
+    "verdict": "uncertain",
+    "change_type": "force",
+    "reason": "Changes the heading from question form to an explanatory noun clause. The body is unchanged, but whether the rhetorical commitment is identical is uncertain."
+  },
+  {
+    "pair_hash": "0a35a16947bae7b550244f17eed87761b8d4d1239a2315c602b7693c075afe31",
+    "verdict": "fail",
+    "change_type": "stance",
+    "reason": "Adds explicit agreement with the criticism and changes the linked retailer. The added endorsement changes the stance."
+  },
+  {
+    "pair_hash": "0a4519a92da0955c3bbde18b31efc2fde67c0e1cec704722a39d415036876630",
+    "verdict": "fail",
+    "change_type": "content",
+    "reason": "Removes an explicit demand for imprisonment or institutionalization and replaces it with political metaphors. That is substantive content loss."
+  },
+  {
+    "pair_hash": "0bf913d84bd625eedf6fe2491b864fb93eed17d781bec7f08fafe4be4f2df5f1",
+    "verdict": "uncertain",
+    "change_type": "reference",
+    "reason": "Changes the definite reference to a debate into an indefinite one. The intended event cannot be verified from the available context."
+  },
+  {
+    "pair_hash": "0c332c74da4d9793ae81c4f2c66da0803612bcf9e5fbb3386f6aedbbc4f30de9",
+    "verdict": "pass",
+    "change_type": "lexical_syntactic",
+    "reason": "Rephrases people from Eastern Europe as Eastern Europeans in the headline. Numbers, referent, body claims and accusatory force are retained; minor spelling changes add no claim."
+  },
+  {
+    "pair_hash": "0c62e64a7f4f01f8a28a6b6674059cfefe687f63a739783be765a0c1ca3cce54",
+    "verdict": "fail",
+    "change_type": "truncation",
+    "reason": "The earlier sentence is incomplete; the later one explicitly attributes opposition to an official. The missing earlier proposition cannot be assumed."
+  },
+  {
+    "pair_hash": "0c8ee4dc6c209432b955a10ce5bc45500f5d6079883f7624887edf7d399409eb",
+    "verdict": "uncertain",
+    "change_type": "force",
+    "reason": "Adds a temporal/discourse particle to the challenge about which statement is false. It may simply restate the request, but temporal implication and renewed pressure are not established as identical."
+  },
+  {
+    "pair_hash": "0d40b502ef55603a3eb0739ddd5c917b314d437e182a72c92abc155a03ee3e4c",
+    "verdict": "fail",
+    "change_type": "content",
+    "reason": "Removes a complaint about deletion and removes the limitation to voluntary city benefits, broadening the policy demand."
+  },
+  {
+    "pair_hash": "0d50b6bf716febadcefaa090e2d3d2d9ef241aa3c4f18b44abf409b04aa1c12c",
+    "verdict": "uncertain",
+    "change_type": "force",
+    "reason": "Drops an intensifying adverb from the disapproving conclusion. Factual content remains, but strict pragmatic-force equivalence is uncertain."
+  },
+  {
+    "pair_hash": "0d74e95d3c27b7f853d6641f20acaa7b11d7be6127d6cab6036e9336114144fd",
+    "verdict": "fail",
+    "change_type": "force",
+    "reason": "Removes a direct personal insult and changes the interpersonal challenge. Keeping the technical quotation does not preserve the entire message."
+  },
+  {
+    "pair_hash": "0dc40c3b259dc408f368b5e8b3b85a47c196776ac4369ed9eee253371ec05ba1",
+    "verdict": "fail",
+    "change_type": "modality",
+    "reason": "Changes could-have-acted to should-have-acted and substitutes a different derogatory label. Obligation and interpersonal force change."
+  },
+  {
+    "pair_hash": "0e91f92f6c338e430d2f23e6e5e97937cfe934318642d0909fe6319104e1bdb6",
+    "verdict": "fail",
+    "change_type": "target",
+    "reason": "Changes the headline target from everyone to every media outlet. The attribution of distortion changes."
+  },
+  {
+    "pair_hash": "0e9827dfb5a8e1d21dddff48bcfafdb3ef1c4250ab0e8b6824602eba4e886ddc",
+    "verdict": "uncertain",
+    "change_type": "corruption",
+    "reason": "Both headlines contain an incomplete malformed word with a one-character difference. Their intended full meaning cannot be reliably reconstructed."
+  },
+  {
+    "pair_hash": "0eaa67b4632845ce068d09a0cc910769a7fb1abab25fd1493ee051c0b568df15",
+    "verdict": "fail",
+    "change_type": "force",
+    "reason": "Replaces an imperative reprimand with an accusation of personal attack. The technical argument stays, but the speech act changes."
+  },
+  {
+    "pair_hash": "0ebe6986a91a67e0c6ec4b349f1a3f3b7234dae52bfe66f62ebe12fca74e4063",
+    "verdict": "fail",
+    "change_type": "stance",
+    "reason": "Removes explicit blame and withholding of sympathy. Those are substantive parts of the original attitude, not dispensable wording."
+  },
+  {
+    "pair_hash": "0fe33d9a8483123b4f8b3668bb3d29fcf2375b3267790fa12d676f9bb3cbe6e7",
+    "verdict": "fail",
+    "change_type": "metacomment",
+    "reason": "Adds a second-attempt notice and a specific delay claim. This changes information about moderation or posting context."
+  },
+  {
+    "pair_hash": "109a58ecfdc9b9f4e164adc4c3e055c3aacb71197503399eff389d67978b4901",
+    "verdict": "fail",
+    "change_type": "content",
+    "reason": "Adds the device on which the service is used and strengthens the regret. The scope and expressed intensity change."
+  },
+  {
+    "pair_hash": "10ccc652bfd2a8650872cab943509979ada9d9c8fdabe8d29fa9911502954e45",
+    "verdict": "fail",
+    "change_type": "metacomment",
+    "reason": "Adds a second-attempt label and an accusation of censorship. The retained quotation alone does not establish whole-message equivalence."
+  },
+  {
+    "pair_hash": "11c40ce1969a609dd67fd367474558c939b34b8d220bb4c71524a1f4e424c663",
+    "verdict": "pass",
+    "change_type": "lexical_syntactic",
+    "reason": "Adds an indefinite article before the same unpaid role. The assertion about the role and the inference of no payment are unchanged."
+  },
+  {
+    "pair_hash": "12036889f3f3c5406be30d45b5810d7482edabcf5ce4d6796ac5ae5c379c6844",
+    "verdict": "uncertain",
+    "change_type": "reference",
+    "reason": "Adds an unexplained proper-name or geographic label. It may be a signature or addressee, but this is not established by the available context."
+  },
+  {
+    "pair_hash": "122268512607e420cafb7dd0db4ea333ca0dadb6ba4306db0b77e173a81ca74c",
+    "verdict": "pass",
+    "change_type": "lexical_syntactic",
+    "reason": "Rephrases the same agricultural-development counterexample and corrects spelling, keeping the rejection and identical evidence link. The example marker makes the already linked example explicit."
+  },
+  {
+    "pair_hash": "124d19e7309f985b573578dc34a9e9d74333d564c46bacf7bc7ec099bdf03e32",
+    "verdict": "fail",
+    "change_type": "stance",
+    "reason": "Replaces an approving headline with an objection and removes the source link. The stance changes despite identical quoted numbers."
+  },
+  {
+    "pair_hash": "12ceeb384edd3c40137403757465c8d0f1a60e0105521f7cbdf75813dabf7dbe",
+    "verdict": "uncertain",
+    "change_type": "force",
+    "reason": "Drops an adverb conveying inevitability or sarcasm. The criticism remains strong, but identical pragmatic force is not certain."
+  },
+  {
+    "pair_hash": "133dde5246dedc988ba0614fe6753086b4a0a7322e8dc1ebe54c4af435f045db",
+    "verdict": "pass",
+    "change_type": "lexical_syntactic",
+    "reason": "Moves the negation without changing its scope. The same mocking assertion about electoral influence remains; removing the final exclamation does not materially change this assertion in context."
+  },
+  {
+    "pair_hash": "133e374a46ea2e0b6461cc2632ab5357bffc79eba1102c1743f9008e488f98fa",
+    "verdict": "fail",
+    "change_type": "target_quantifier",
+    "reason": "Changes the accused group and adds a majority qualifier. Both reference and quantification change."
+  },
+  {
+    "pair_hash": "1399ca5a9c2b41e8b9b6389cad9780150a28a5e01a85d7c711ea28d24843db17",
+    "verdict": "fail",
+    "change_type": "content",
+    "reason": "Adds a proverb-like headline and truncates the final prediction. The complete earlier claim cannot be treated as fully retained."
+  },
+  {
+    "pair_hash": "14c36f5c39987e419f368ea78b4033b1d5a0c4308ae98780deec6db9fc9fc42d",
+    "verdict": "pass",
+    "change_type": "typography",
+    "reason": "Only a space following an ellipsis is added. The same question, referent and criticism remain."
+  },
+  {
+    "pair_hash": "1513e5ef8629d4fab83d68340e68c603c3bd8c972af5efcd7e8a08f2480fd6ce",
+    "verdict": "pass",
+    "change_type": "lexical_syntactic",
+    "reason": "Substitutes two idioms of complete agreement while preserving all technical instructions, uncertainty, criticism and endorsement."
+  }
+]

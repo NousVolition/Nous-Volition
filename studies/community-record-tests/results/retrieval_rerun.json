@@ -1,0 +1,31 @@
+{
+  "checks": [
+    {
+      "file": "frozen_pairs.json",
+      "identical": true,
+      "sha256": "ccd114b4f33c0cfaf5fe34be6f01599d12bebdc8c715f16f45e7938fa3474b5c"
+    },
+    {
+      "file": "blind_wording_audit.json",
+      "identical": true,
+      "sha256": "0777d8e69d17ed7831b9b54a04a00ff733abbaa8d3d8ee89b327bc9ba134b1af"
+    },
+    {
+      "file": "exact_pool.json",
+      "identical": true,
+      "sha256": "8bdf191c5ac50c1431bd8295a4d5de21ad2da60ad732a4e22f71a6fe7f17533b"
+    },
+    {
+      "file": "changed_pool.json",
+      "identical": true,
+      "sha256": "a62cc746d4beb88f165c58ac280bcfc04f205bd99a29921e193d233d887276e5"
+    },
+    {
+      "file": "wording_selection.json",
+      "identical": true,
+      "sha256": "d0d866745e17e5355e4a47fc648a3d952d086b7d17e76692db1c594cf8e8e6fb"
+    }
+  ],
+  "source_outcomes_read_for_selection": false,
+  "note": "Repeated outcome-independent scan; timezone portability adjustment for naive timestamps preserved every selected pair. Raw files and IDs are not published."
+}

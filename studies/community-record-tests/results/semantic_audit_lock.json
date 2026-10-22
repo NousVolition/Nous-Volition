@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-10-22T23:20:38.554817+00:00",
+  "review_completed_client_date": "2026-10-22",
+  "reviewer": "single assistant; no independent human review",
+  "recorded_status_fields_hidden": true,
+  "text_can_itself_mention_moderation": true,
+  "verdicts_frozen_before_status_join": true,
+  "audit_sha256": "dfca929506c7e172f13bf210ea11951fbd996dff7045a0c64af12945d1743b67",
+  "sample_order_sha256": "606991fc7f500e8a998e7964711d37ef42046c7593da64db8cac1669554711e1"
+}

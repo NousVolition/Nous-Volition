@@ -55,3 +55,10 @@ jobs:
           python verify_saved.py
       - name: Updated Hug live recovery animation checks
         run: node studies/hug-guard-sync/check_player.cjs
+
+      - name: Public-record semantic audit and penalty checks
+        working-directory: studies/community-record-tests
+        run: |
+          python -m unittest -q
+          python verify_saved.py
+

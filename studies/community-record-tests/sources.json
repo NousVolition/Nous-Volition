@@ -1,0 +1,34 @@
+{
+  "retrieved_local_date": "2026-10-21",
+  "review_completed_client_date": "2026-10-22",
+  "files": [
+    {
+      "file": "million_post_corpus.tar.bz2",
+      "study": "wording",
+      "url": "https://github.com/OFAI/million-post-corpus/releases/download/v1.0.0/million_post_corpus.tar.bz2",
+      "bytes": 105587534,
+      "sha256": "d09e8a7504e2512836f6113cf9e36bf5c4928fd0a75e2d65af701357485ab6d8",
+      "version": "1.0.0",
+      "source": "Schabus, Skowron and Trapp (2017), https://ofai.github.io/million-post-corpus/",
+      "license": "CC BY-NC-SA 4.0",
+      "redistribution": "No raw text or identities republished."
+    },
+    {
+      "file": "blocks.json",
+      "url": "https://zissou.infosci.cornell.edu/convokit/datasets/wikiconv-corpus-old/blocks.json",
+      "bytes": 1670592624,
+      "sha256": "002a12802858e3d0e8672435dc6f9c09d0ab9e5cd274d508f7c1dbcb14d860c6",
+      "source": "Cornell ConvoKit Wikipedia block log; associated with Chang and Danescu-Niculescu-Mizil (2019), https://arxiv.org/abs/1902.08628",
+      "revision": "unversioned public release; fail closed on SHA256 mismatch",
+      "redistribution": "Raw text and accounts not republished. Fetch from the authors; local cache only.",
+      "study": "history"
+    }
+  ],
+  "database_sha256": "a18794962a57f46107fc391b906c03ea8d4a445927d7940a976e63efcc8bc1b4",
+  "database_bytes": 356311040,
+  "block_log_range_utc": {
+    "earliest": "2004-12-23T03:38:56+00:00",
+    "latest": "2018-06-04T15:36:30+00:00"
+  },
+  "block_original_log_rehashed_for_this_extension": true
+}
