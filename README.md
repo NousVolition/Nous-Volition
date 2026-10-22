@@ -10,6 +10,10 @@ This repository, **Streams and Rocks**, preserves the original stream-function r
 
 **[Wording, meaning and later recognition: completed real-data checks](studies/community-real-data/README.md).** Of 30,072 changed wording pairs, 4,544 failed the source’s content-match check; a documented assistant audit flags additional semantic changes. A selected 941-pair comparison shows changes in human offensiveness judgments, with limited coverage and no moderation-outcome claim. A separate randomized Wikipedia study shows later awards for 12/100 initially awarded contributors versus 2/100 controls (+10 percentage points; 95% interval +2.9 to +17.9). Includes reproducible analysis, source hashes, figures, 13 unit tests and 19 saved-data checks. The [community model](studies/community-power/CONNECTIONS.md) distinguishes these results from open questions about intent, actual penalties and memory mechanisms.
 
+## Measured pile-driving predictions
+
+**[Seven excluded piles: actual ISFOG2020 data](studies/isfog-pile-tests/README.md).** Reproduces the supplied linear-model notebook on 87 fitting piles and evaluates all seven excluded piles (353 measured depth records). Pooled RMSE is 18.10 blows/m and MAE is 13.91. The notebook model beats a depth-only control on four of seven piles; EL and EF have negative R². Includes code, figures, row accounting, whole-pile uncertainty estimates, 14 passing unit tests and 26 saved-data checks. These piles were excluded from coefficient fitting but were visible during historical feature development, so this is a retrospective test, not untouched model-selection validation. Physical pile measurements do not validate the separate community model.
+
 ## Substance interactions and equation tests
 
 **[Open the earlier substance-interaction and equation studies](studies/substance-interactions/README.md).** The collection includes the 114-row interaction matrix, gas/water partitioning, charged-droplet controls, five-equation transport tests, stability and energy examples, and the water-figure audit. Source, saved numerical data, figures, references and reproduction instructions are included. All 74 unit tests and 8 saved-data checks passed again before publication; matrix entries distinguish simulated cases from analytic or literature assessments.
@@ -158,5 +162,6 @@ The package includes 374 automated tests, thirty-eight original scientific figur
 **[Open the live SIMS model](https://sims-evidence-lab.itswaffles88.chatgpt.site)** — public and shareable, with the latest saved run, all four interactive models, and links to methods and source.
 
 [Open the complete interactive collection](studies/sims-evidence-lab/README.md). Four browser models trace network choices, claim predictions, evidence exchanges, and repeated rounds with remembered promises. The package preserves editable sources, standalone browser documents, methods, existing checks, and reproducible saved outputs. [The latest saved run](studies/sims-evidence-lab/site/latest-run.html) retains the eight-round, seed-20261011 settings. Response policies and evidence thresholds are explicit synthetic assumptions; claim revisions, behavior-rule changes, and promises without change are recorded separately.
+
 
 

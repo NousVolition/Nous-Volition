@@ -1,0 +1,9 @@
+pile,source_rows,observed_target_rows,target_missing_rows,scored_rows,observed_but_unscored,scored_fraction_of_observed,scored_min_depth_m,scored_max_depth_m
+TRAIN_87,6823,4257,2566,4257,0,1.0,2.0,34.0
+EL,79,55,24,55,0,1.0,3.0,30.0
+CB,80,45,35,45,0,1.0,5.0,27.0
+AV,81,59,22,59,0,1.0,3.0,32.0
+BV,78,49,29,49,0,1.0,4.0,28.0
+EF,80,49,31,49,0,1.0,5.0,29.0
+DL,79,55,24,55,0,1.0,4.0,31.0
+BM,74,41,33,41,0,1.0,4.0,24.0

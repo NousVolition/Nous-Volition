@@ -1,0 +1,9 @@
+{
+  "initial_check": "No missing cone resistance or diameter anywhere in raw CSV",
+  "initial_passed": false,
+  "missing_cone_resistance": 0,
+  "missing_diameter_rows": 2052,
+  "missing_diameter_rows_with_observed_target": 0,
+  "missing_diameter_in_scored_integral_prefixes": 0,
+  "resolution": "Raw CPT extends beyond installed pile geometry. Check diameter completeness along each scored integral prefix instead. Preserve missing values. No predictions changed."
+}

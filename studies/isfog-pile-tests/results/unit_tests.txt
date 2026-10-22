@@ -1,0 +1,19 @@
+test_bootstrap_reproducible_and_clustered (test_analysis.ScientificChecks.test_bootstrap_reproducible_and_clustered) ... ok
+test_constant_control (test_analysis.ScientificChecks.test_constant_control) ... ok
+test_constant_target_r2_undefined (test_analysis.ScientificChecks.test_constant_target_r2_undefined) ... ok
+test_dimensional_conversion (test_analysis.ScientificChecks.test_dimensional_conversion) ... ok
+test_group_integrals_reset (test_analysis.ScientificChecks.test_group_integrals_reset) ... ok
+test_heldout_outcomes_cannot_change_fit (test_analysis.ScientificChecks.test_heldout_outcomes_cannot_change_fit) ... ok
+test_independent_augmented_design (test_analysis.ScientificChecks.test_independent_augmented_design) ... ok
+test_known_errors_and_bias_direction (test_analysis.ScientificChecks.test_known_errors_and_bias_direction) ... ok
+test_missing_outcome_not_zero (test_analysis.ScientificChecks.test_missing_outcome_not_zero) ... ok
+test_negative_predictions_not_clipped (test_analysis.ScientificChecks.test_negative_predictions_not_clipped) ... ok
+test_ols_known_solution (test_analysis.ScientificChecks.test_ols_known_solution) ... ok
+test_other_pile_cannot_change_features (test_analysis.ScientificChecks.test_other_pile_cannot_change_features) ... ok
+test_reverse_depth_rejected (test_analysis.ScientificChecks.test_reverse_depth_rejected) ... ok
+test_unused_missingness_sensitivity (test_analysis.ScientificChecks.test_unused_missingness_sensitivity) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.079s
+
+OK

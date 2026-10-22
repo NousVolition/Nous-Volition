@@ -1,0 +1,25 @@
+{
+  "policy": "Only required fields must be present",
+  "training_rows": 4257,
+  "test_rows": 353,
+  "extra_training_rows": 0,
+  "extra_test_rows": 0,
+  "model": {
+    "intercept": 24.574230770198675,
+    "coefficients": [
+      2.6142161864987683,
+      19.88699179638722,
+      39.17286467441636
+    ],
+    "rank": 3
+  },
+  "pooled": {
+    "n": 353,
+    "rmse_blows_per_m": 18.103647630024593,
+    "mae_blows_per_m": 13.908667597807762,
+    "bias_blows_per_m": 0.026089633974488324,
+    "r2": 0.5208009391526609,
+    "negative_predictions": 0
+  },
+  "same_rows_max_prediction_change": 0.0
+}

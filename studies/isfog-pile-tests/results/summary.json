@@ -1,0 +1,85 @@
+{
+  "status": "completed",
+  "raw_rows": 7374,
+  "observed_target_rows": 4610,
+  "training_rows": 4257,
+  "test_rows": 353,
+  "excluded_piles": [
+    "EL",
+    "CB",
+    "AV",
+    "BV",
+    "EF",
+    "DL",
+    "BM"
+  ],
+  "pooled": {
+    "notebook": {
+      "n": 353,
+      "rmse_blows_per_m": 18.103647630024593,
+      "mae_blows_per_m": 13.908667597807762,
+      "bias_blows_per_m": 0.026089633974488324,
+      "r2": 0.5208009391526609,
+      "negative_predictions": 0
+    },
+    "mean": {
+      "n": 353,
+      "rmse_blows_per_m": 26.170754889787407,
+      "mae_blows_per_m": 21.23544899808158,
+      "bias_blows_per_m": -0.9855074177493304,
+      "r2": -0.0014200498078238422,
+      "negative_predictions": 0
+    },
+    "depth": {
+      "n": 353,
+      "rmse_blows_per_m": 18.83343764919234,
+      "mae_blows_per_m": 14.352647009881364,
+      "bias_blows_per_m": -0.16140944434281004,
+      "r2": 0.48138750075386794,
+      "negative_predictions": 0
+    },
+    "energy": {
+      "n": 353,
+      "rmse_blows_per_m": 20.666187249501245,
+      "mae_blows_per_m": 15.857810188259855,
+      "bias_blows_per_m": 0.6187327889555936,
+      "r2": 0.37554017564782505,
+      "negative_predictions": 0
+    }
+  },
+  "equal_pile": {
+    "notebook": {
+      "mean_pile_rmse_blows_per_m": 17.298599707238033,
+      "mean_pile_mae_blows_per_m": 13.780739192653085
+    },
+    "mean": {
+      "mean_pile_rmse_blows_per_m": 26.186887090783408,
+      "mean_pile_mae_blows_per_m": 21.343836845014522
+    },
+    "depth": {
+      "mean_pile_rmse_blows_per_m": 17.859368549577443,
+      "mean_pile_mae_blows_per_m": 14.17677288346774
+    },
+    "energy": {
+      "mean_pile_rmse_blows_per_m": 20.09186717500432,
+      "mean_pile_mae_blows_per_m": 15.947646471025715
+    }
+  },
+  "cluster_bootstrap": {
+    "seed": 20261021,
+    "repetitions": 10000,
+    "rmse_percentile_95": [
+      14.51324981902491,
+      21.038183886218427
+    ],
+    "mae_percentile_95": [
+      11.50268473085976,
+      16.029693176117163
+    ],
+    "interpretation": "Descriptive whole-pile bootstrap, fixed model; seven selected piles, spatial independence not established."
+  },
+  "unit_tests": 14,
+  "checks": 26,
+  "failed_checks": [],
+  "holdout_status": "Excluded from fitting; not untouched during historical model selection."
+}

@@ -1,0 +1,137 @@
+[
+  {
+    "check": "Input matches original notebook shape",
+    "passed": true,
+    "details": [
+      7374,
+      13
+    ]
+  },
+  {
+    "check": "94 locations",
+    "passed": true,
+    "details": 94
+  },
+  {
+    "check": "4610 observed targets",
+    "passed": true,
+    "details": 4610
+  },
+  {
+    "check": "Training and evaluation locations disjoint",
+    "passed": true,
+    "details": null
+  },
+  {
+    "check": "All seven piles evaluated",
+    "passed": true,
+    "details": null
+  },
+  {
+    "check": "87 fitting piles",
+    "passed": true,
+    "details": 87
+  },
+  {
+    "check": "No duplicate IDs",
+    "passed": true,
+    "details": null
+  },
+  {
+    "check": "All source depth increments are 0.5 m",
+    "passed": true,
+    "details": null
+  },
+  {
+    "check": "No missing cone resistance",
+    "passed": true,
+    "details": null
+  },
+  {
+    "check": "Diameter present throughout every scored integral prefix",
+    "passed": true,
+    "details": 0
+  },
+  {
+    "check": "No negative observed blowcounts",
+    "passed": true,
+    "details": null
+  },
+  {
+    "check": "Linear energy training R2 reproduces within 1e-8",
+    "passed": true,
+    "details": null
+  },
+  {
+    "check": "Transformed energy training R2 reproduces within 1e-8",
+    "passed": true,
+    "details": null
+  },
+  {
+    "check": "Cone proxy training R2 reproduces within 1e-8",
+    "passed": true,
+    "details": null
+  },
+  {
+    "check": "Three-feature training R2 reproduces within 1e-8",
+    "passed": true,
+    "details": null
+  },
+  {
+    "check": "Saved CB test R2 reproduces within 1e-8",
+    "passed": true,
+    "details": null
+  },
+  {
+    "check": "Saved rounded coefficients reproduced",
+    "passed": true,
+    "details": null
+  },
+  {
+    "check": "Saved intercept reproduced",
+    "passed": true,
+    "details": null
+  },
+  {
+    "check": "Independent OLS implementation agrees below 1e-9 blows/m",
+    "passed": true,
+    "details": 1.2789769243681803e-13
+  },
+  {
+    "check": "Changing test outcomes cannot change coefficients",
+    "passed": true,
+    "details": null
+  },
+  {
+    "check": "Deterministic refit",
+    "passed": true,
+    "details": null
+  },
+  {
+    "check": "Coverage accounts for every source row",
+    "passed": true,
+    "details": null
+  },
+  {
+    "check": "Coverage accounts for every observed target",
+    "passed": true,
+    "details": null
+  },
+  {
+    "check": "Every observed target is scored",
+    "passed": true,
+    "details": null
+  },
+  {
+    "check": "Primary results contain all models and all requested piles",
+    "passed": true,
+    "details": null
+  },
+  {
+    "check": "Scientific unit tests pass",
+    "passed": true,
+    "details": {
+      "run": 14
+    }
+  }
+]

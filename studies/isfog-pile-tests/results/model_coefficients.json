@@ -1,0 +1,30 @@
+{
+  "notebook": {
+    "intercept": 24.574230770198675,
+    "coefficients": [
+      2.6142161864987683,
+      19.88699179638722,
+      39.17286467441636
+    ],
+    "rank": 3
+  },
+  "mean": {
+    "intercept": 65.1315841780958,
+    "coefficients": [],
+    "rank": 0
+  },
+  "depth": {
+    "intercept": 17.479178260379058,
+    "coefficients": [
+      71.80744166526028
+    ],
+    "rank": 1
+  },
+  "energy": {
+    "intercept": 14.74445683181915,
+    "coefficients": [
+      69.81939984205354
+    ],
+    "rank": 1
+  }
+}
