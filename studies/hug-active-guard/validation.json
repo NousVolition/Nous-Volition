@@ -1,0 +1,53 @@
+{
+  "unit_tests": 19,
+  "unit_tests_passed": true,
+  "animation": {
+    "selection_seek_checks": 1512,
+    "finite_canvas_operations": 8228175,
+    "all_models_eccentricities_starts_clips": true,
+    "play_pause_end_and_stale_frame": true,
+    "display_bytes_and_indices": true,
+    "offline_no_network": true,
+    "method": "Offline JavaScript canvas/DOM harness; not a browser rendering test"
+  },
+  "animation_float32_max_error": 2.9801647261074038e-08,
+  "animation_error_units": "Mixed display channels: mm and dimensionless guards; not full-state integration error",
+  "gif_frames": 161,
+  "gif_plays_once": true,
+  "visual_review": "Three plot PNGs and GIF middle frame inspected; corrected crowded tick labels and a legend over bars. Offline player tested with a JavaScript canvas/DOM harness, not browser rendering.",
+  "numerical_gates": {
+    "saved_path_refinement": true,
+    "energy_balance": true,
+    "classification_refinement": true,
+    "independent_solver": true,
+    "cycle_checks": true,
+    "finite": true,
+    "guard_bounds": true
+  },
+  "saved_audit_before_manifest": {
+    "frozen_protocol_unchanged": true,
+    "pre_run_sources_unchanged": true,
+    "analysis_sources_unchanged": true,
+    "128_cases_in_declared_order": true,
+    "per_start_diagnostics_complete": true,
+    "both_summaries_complete": true,
+    "all_seven_numerical_gates": true,
+    "saved_path_refinement": true,
+    "energy_balance": true,
+    "52_independent_segments": true,
+    "six_attracting_cycles": true,
+    "guard_bounds": true,
+    "classifications_agree": true,
+    "quiet_feedback_off": true,
+    "repeat_and_start_gates_recomputed": true,
+    "animation_bound_to_results": true,
+    "display_dimensions": true,
+    "display_samples_finite": true,
+    "display_guards_bounded": true,
+    "embedded_animation_identical": true,
+    "player_offline": true,
+    "report_player_links_resolve": true,
+    "parent_dependencies_unchanged": true,
+    "published_manifest": true
+  }
+}

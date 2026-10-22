@@ -40,3 +40,11 @@ jobs:
       - name: Recovery and entrainment checks
         working-directory: studies/sims-recovery-entrainment
         run: python test_experiments.py
+      - name: Updated Hug equation and saved-result checks
+        working-directory: studies/hug-active-guard
+        run: |
+          python -m unittest -q
+          python verify_saved.py
+      - name: Updated Hug offline animation checks
+        run: node studies/hug-active-guard/check_player.cjs
+

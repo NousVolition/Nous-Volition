@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "origin": "synthetic reduced active-guard Hug comparison",
+  "equation_source": "https://github.com/NousVolition/My-Sources-Project-ALL/blob/7fbc7f28f685c86f824d7587aff91feedf20d3da/reports/interaction-equation.md",
+  "old_model_source": "https://github.com/NousVolition/Nous-Volition/blob/253072332453f2f28455ec07aa9a0f5b60885146/studies/dynamics-fractals-sims/hug_rhythm.py",
+  "material": {"G_M_Pa": 28000, "eta_M_Pa_s": 5200000, "G_K_Pa": 19000, "eta_K_Pa_s": 900000},
+  "mechanics": {"effective_mass_kg": 0.2, "parallel_stiffness_N_m": 0.7},
+  "feedback": {"gain_N_s_m": 0.03, "saturation_N_s_m3": 3000000, "controller_delay_s": 0},
+  "length_m": 0.1, "volume_m3": 1e-7, "displacement_scale_m": 0.0001,
+  "guard": {"baselines": [-0.55, 0.35], "lambda_per_s": 1, "tau_s": 0.6, "theta": -0.4, "beta": 2, "chi": 0.5, "rate_reference_s": 1, "damping_per_guard_N_s_m": 0.01},
+  "models": ["old", "directional", "A_receives_more", "B_receives_more", "shared", "frozen", "no_strain", "feedback_off"],
+  "conditions": [{"name":"No orbit","e":null},{"name":"Circular","e":0},{"name":"Pasiphae","e":0.412},{"name":"Elara","e":0.212},{"name":"Himalia","e":0.160},{"name":"Europa","e":0.009},{"name":"Callisto","e":0.007},{"name":"Thebe","e":0.018}],
+  "orbit_period_s": 5.7, "orbital_force_rms_N": 0.000006,
+  "starts_scaled": [[0.25,0,0,0,-0.55,0.35,0.5,0.5],[-1.4,0.2,0.02,-0.01,-0.35,0.15,0.3,0.7]],
+  "horizon_s": 4200, "tail_s": 456, "tail_sample_s": 0.05, "history_sample_s": 1,
+  "solver": {"main_rtol":2e-9,"main_atol":2e-11,"main_max_step_s":0.15,"fine_rtol":2e-11,"fine_atol":2e-13,"fine_max_step_s":0.075},
+  "gates": {"saved_path_difference":0.0002,"energy_residual":0.00001,"independent_error":0.00002,"repeat_error":0.0001,"history_error":0.0001,"observable_half_amplitude_mm":0.0001,"guard_bounds":1e-10,"shooting_error":1e-7,"floquet_neutral_error":1e-5,"floquet_transverse_max":0.9999},
+  "repeat_comparisons":20, "maximum_repeat_orbits":4,
+  "interpretation": "A declared one-mode mechanical realization of the updated local participant/guard equations and optional dissipative stress loop. Additional damping is c(g_AB+g_BA); strain input is chi times one-half of squared normalized shear rate. The old clay law, active source, mass, stiffness, and prescribed orbital waveforms are retained. The time mapping, guard coefficients and damping are synthetic choices, not a unique derivation or measured clay values. This is not a Navier-Stokes solver, a moving-boundary/contact model, an orbital backreaction model, or a test of physical people. No stiffness intervention is made. Old recovery delays are not retested here. No forced response is called a self-sustained cycle merely because it repeats.",
+  "controls": "Old has no added damping and only its four mechanical states are assessed. Frozen guards are both 0.5 for both starts. All new models have the same damper coefficient. Shared replaces both targets by their mean. No-strain sets chi=0. Feedback-off removes both gain and saturation while retaining guards and orbital force. Directional weights are (1,1), (1.5,0.5), (0.5,1.5), ordered A receives B then B receives A. Comparisons old/frozen include added resistance; frozen/directional isolate adaptation under the stated rule.",
+  "resources": {"threads":1,"max_seconds_per_integration":1800,"new_scientific_trajectories":128},
+  "physical_measurements":0
+}

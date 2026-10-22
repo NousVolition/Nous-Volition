@@ -1,0 +1,9 @@
+{
+  "sha256": {
+    "model.py": "8b5652c389328bf8991fbe1ff0bd0117792bf7156d4424e0043979d23397bdf7",
+    "protocol.json": "428974e278d27ded0c3ef12c9efcee5cf42ace2b088704389fd5b9ac95a5c20e",
+    "run.py": "a8e196070cc6177f1b478854dc6d1c8dc0b973ad0b2524e7d9334a1b47e0cf16"
+  },
+  "python": "3.12.14",
+  "numpy": "2.3.5"
+}

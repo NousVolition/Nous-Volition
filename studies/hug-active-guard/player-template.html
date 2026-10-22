@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Old and updated Hug — animation</title>
+<style>
+:root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#faf9f5;color:#23313b;font:16px/1.55 system-ui,sans-serif}main{max-width:1280px;padding:28px 24px;margin:auto}h1{font-size:clamp(28px,4vw,44px);line-height:1.15;margin:18px 0}h2{font-size:21px;margin:0}a{color:#006d74}.intro{max-width:950px}.controls{display:flex;flex-wrap:wrap;gap:14px;margin:22px 0 12px}label{display:flex;flex-direction:column;gap:5px;font-size:14px}select,button{font:inherit;background:#fff;border:1px solid #a5b9bd;border-radius:6px;padding:10px;color:inherit}select{max-width:100%}button{cursor:pointer;min-width:90px}button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #c58932;outline-offset:3px}.transport{display:flex;align-items:center;gap:18px;padding:14px;background:#eaf1ef;border-radius:8px}.transport label{flex:1}input{width:100%;accent-color:#007d7e}.legend{display:flex;gap:24px;margin:16px 0}.old::before,.new::before{content:'';display:inline-block;width:30px;border-top:3px dashed #7b8492;margin-right:8px;vertical-align:middle}.new::before{border-top:3px solid #007d7e}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.card{background:white;border:1px solid #d9dedd;border-radius:9px;padding:17px;min-width:0}.status{min-height:52px;font-size:14px;color:#31545a;margin:6px 0}.card canvas{width:100%;height:auto;display:block}.guards{font-size:13px;color:#31545a;min-height:40px}.foot{font-size:14px;max-width:1000px}.badge{color:#006d74;font-size:13px;letter-spacing:.06em;text-transform:uppercase}@media(max-width:850px){.cards{grid-template-columns:1fr}.card{max-width:650px;width:100%;margin:auto}main{padding:20px 15px}.status{min-height:0}.controls label{width:calc(50% - 7px)}}@media(max-width:470px){.controls label{width:100%}.transport{gap:10px;padding:10px}}
+</style></head><body><main>
+<a href="report.html">← Comparison and equations</a><div class="badge">Saved synthetic trajectories</div>
+<h1>Old and updated Hug</h1><p class="intro">See how the same clay oscillator moves with added, evolving guards. The gray and teal outlines share the same simulation clock. Deformation is magnified ×150. The outline is a drawing of one shear mode; its joins stay closed by construction.</p>
+<div class="controls">
+<label>Compare the old model with<select id="model"></select></label>
+<label>Eccentric input<select id="eccentric"></select></label>
+<label>Starting state<select id="start"><option value="0">Start 1</option><option value="1">Start 2</option></select></label>
+<label>Saved interval<select id="clip"></select></label>
+</div>
+<div class="transport"><button id="play" type="button">Play</button><label><span id="time"></span><input id="seek" type="range" min="0" max="22.8" step="0.01" value="0" aria-label="Time within saved interval"></label></div>
+<p id="notice" class="foot" aria-live="polite"></p>
+<div class="legend"><span class="old">Old Hug</span><span class="new" id="new-label">Updated Hug</span></div>
+<div class="cards">
+<section class="card"><h2 id="title0">No orbit</h2><p class="status" id="status0"></p><canvas id="canvas0" width="380" height="450" role="img" aria-label="Old and updated Hug without an orbit: shape and displacement"></canvas><div class="guards" id="guards0"></div></section>
+<section class="card"><h2 id="title1">Circular</h2><p class="status" id="status1"></p><canvas id="canvas1" width="380" height="450" role="img" aria-label="Old and updated Hug with circular forcing: shape and displacement"></canvas><div class="guards" id="guards1"></div></section>
+<section class="card"><h2 id="title2">Eccentric</h2><p class="status" id="status2"></p><canvas id="canvas2" width="380" height="450" role="img" aria-label="Old and updated Hug with eccentric forcing: shape and displacement"></canvas><div class="guards" id="guards2"></div></section>
+</div>
+<p class="foot">Late classifications come from all states over the final 456 seconds, including internal clay, participant and guard states. The early clip has no steady-state classification. Changing intervals jumps to a different part of the same trajectory. Playback runs at 1.5 simulation seconds per second and stops at the end.</p>
+<p class="foot">Orbit clocks show prescribed forcing with period 5.7 simulation seconds and equal force RMS. Moon names select eccentricity; these are not real lunar periods or forces. With the active energy source off, orbital forcing can still drive motion. These clips do not repeat the earlier stiffness-switch loss and recovery test.</p>
+<noscript>JavaScript is required for playback. The comparison report contains static plots and results.</noscript>
+</main>
+<script type="application/json" id="data">GUARD_DATA_PLACEHOLDER</script>
+<script>
+'use strict';
+const D=JSON.parse(document.getElementById('data').textContent),$=id=>document.getElementById(id);
+const bytes=Uint8Array.from(atob(D.values),c=>c.charCodeAt(0)),view=new DataView(bytes.buffer);
+if(bytes.length!==D.shape.reduce((a,b)=>a*b,1)*4)throw new Error('Invalid saved data length');
+const oldColor='#7b8492',newColor='#007d7e';
+let elapsed=0,playing=false,last=null,generation=0;
+D.models.forEach((m,i)=>{if(i)$('model').add(new Option(D.labels[m],i));});
+D.conditions.forEach((c,i)=>{if(i>1)$('eccentric').add(new Option(c.name+' · e = '+c.e,i));});
+D.clips.forEach((c,i)=>$('clip').add(new Option(c.label,i)));
+$('model').value='1';$('eccentric').value='3';$('clip').value='1';
+function sample(clip,caseIndex,time,channel){
+ const pos=Math.max(0,Math.min(D.shape[2]-1,time/D.sample_s)),a=Math.floor(pos),b=Math.min(a+1,D.shape[2]-1),f=pos-a;
+ const read=j=>view.getFloat32((((clip*D.shape[1]+caseIndex)*D.shape[2]+j)*D.shape[3]+channel)*4,true);
+ return read(a)*(1-f)+read(b)*f;
+}
+function caseIndex(model,condition){return ((model*D.conditions.length+condition)*2+Number($('start').value));}
+function summary(model,condition){return D.summary.find(x=>x.model===D.models[model]&&x.condition===condition);}
+function path(ctx,points,color,dash,width=2){ctx.beginPath();ctx.strokeStyle=color;ctx.lineWidth=width;ctx.setLineDash(dash);points.forEach((p,i)=>i?ctx.lineTo(...p):ctx.moveTo(...p));ctx.stroke();ctx.setLineDash([]);}
+function text(ctx,value,x,y,size=12,color='#52616b',align='center'){ctx.fillStyle=color;ctx.font=size+'px system-ui,sans-serif';ctx.textAlign=align;ctx.fillText(value,x,y);}
+function drawCard(panel,condition){
+ const canvas=$('canvas'+panel),w=Math.max(240,canvas.clientWidth),h=450,ctx=canvas.getContext('2d');canvas.width=Math.round(w);canvas.height=h;
+ const clip=Number($('clip').value),model=Number($('model').value),now=D.clips[clip].start+elapsed;
+ const center=w/2,scale=Math.min(w*.29,95),origin=180;
+ if(condition){
+  const e=D.conditions[condition].e,M=((now/D.period_s)%1)*2*Math.PI;let E=M;
+  for(let n=0;n<12;n++)E-=(E-e*Math.sin(E)-M)/(1-e*Math.cos(E));
+  ctx.beginPath();ctx.strokeStyle='#c3d0d2';ctx.lineWidth=1;ctx.ellipse(center,40,28,28*Math.sqrt(1-e*e),0,0,2*Math.PI);ctx.stroke();
+  ctx.beginPath();ctx.fillStyle='#7e8e92';ctx.arc(center+28*e,40,2,0,2*Math.PI);ctx.fill();
+  ctx.beginPath();ctx.fillStyle=newColor;ctx.arc(center+28*Math.cos(E),40+28*Math.sqrt(1-e*e)*Math.sin(E),3.5,0,2*Math.PI);ctx.fill();
+  text(ctx,'Prescribed orbit · 5.7 s',center,86);
+ }else text(ctx,D.models[model]==='feedback_off'?'Comparison energy source off':'Active internal energy source',center,69);
+ for(const [m,color,dash] of [[0,oldColor,[5,4]],[model,newColor,[]]]){
+  const q=sample(clip,caseIndex(m,condition),elapsed,0);
+  for(const arm of D.outline)path(ctx,arm.map(p=>[center+scale*(p[0]+D.magnification*q/100*p[1]),origin-scale*p[1]]),color,dash,2.2);
+ }
+ const left=40,right=w-14,top=305,bottom=403,range=.4;
+ path(ctx,[[left,top],[left,bottom],[right,bottom]],'#b7c4c8',[],1);
+ path(ctx,[[left,(top+bottom)/2],[right,(top+bottom)/2]],'#dde3e5',[],1);
+ for(const val of [-range,0,range])text(ctx,val.toFixed(1),left-6,(top+bottom)/2-val/range*(bottom-top)/2+4,10,'#52616b','right');
+ text(ctx,'q (mm)',left,top-12,11,'#52616b','left');
+ for(const [m,color,dash] of [[0,oldColor,[4,3]],[model,newColor,[]]]){
+  const k=caseIndex(m,condition),points=Array.from({length:D.shape[2]},(_,j)=>[left+(right-left)*j/(D.shape[2]-1),(top+bottom)/2-sample(clip,k,j*D.sample_s,0)/range*(bottom-top)/2]);path(ctx,points,color,dash,1.5);
+ }
+ const cursor=left+(right-left)*elapsed/D.duration_s;path(ctx,[[cursor,top],[cursor,bottom]],'#34444c',[],1);
+ text(ctx,D.clips[clip].start.toFixed(1),left,bottom+17,10,'#52616b','left');text(ctx,(D.clips[clip].start+D.duration_s).toFixed(1),right,bottom+17,10,'#52616b','right');text(ctx,'Simulation time (s)',center,440,11);
+ const k=caseIndex(model,condition);$('guards'+panel).textContent='Comparison guards: A receives B '+sample(clip,k,elapsed,1).toFixed(3)+' · B receives A '+sample(clip,k,elapsed,2).toFixed(3);
+}
+function draw(){
+ const clip=Number($('clip').value);$('time').textContent='Simulation time '+(D.clips[clip].start+elapsed).toFixed(2)+' s';$('seek').value=String(elapsed);
+ [0,1,Number($('eccentric').value)].forEach((c,i)=>drawCard(i,c));
+}
+function updateLabels(){
+ const clip=Number($('clip').value),m=Number($('model').value);$('new-label').textContent=D.labels[D.models[m]];
+ $('notice').textContent=clip===0?'Early response: settling is still being observed. No steady-state label is assigned.':'Late response: labels describe the final diagnostic window, not a synchronization event at the cursor.';
+ [0,1,Number($('eccentric').value)].forEach((c,i)=>{
+  $('title'+i).textContent=(c>1?'Eccentric · ':'')+D.conditions[c].name;
+  const names={'autonomous repeat confirmed':'autonomous rhythm','orbital repeat confirmed':'orbital repeat','quiet':'quiet'};
+  const label=model=>names[summary(model,c).status]||summary(model,c).status;
+  $('status'+i).textContent=clip===0?'Early response · unclassified':'Old: '+label(0)+' · comparison: '+label(m);
+ });draw();
+}
+function stop(){playing=false;last=null;generation++;$('play').textContent='Play';}
+for(const id of ['model','eccentric','start'])$(id).addEventListener('change',updateLabels);
+$('clip').addEventListener('change',()=>{stop();elapsed=0;updateLabels();});
+$('seek').addEventListener('input',()=>{elapsed=Math.max(0,Math.min(D.duration_s,Number($('seek').value)));last=null;draw();});
+$('play').addEventListener('click',()=>{if(playing)stop();else{if(elapsed>=D.duration_s)elapsed=0;playing=true;last=null;$('play').textContent='Pause';const token=++generation;requestAnimationFrame(t=>frame(t,token));}});
+function frame(t,token){if(!playing||token!==generation)return;if(last!==null)elapsed=Math.min(D.duration_s,elapsed+Math.max(0,Math.min((t-last)/1000,.1))*1.5);last=t;draw();if(elapsed>=D.duration_s)stop();else requestAnimationFrame(t=>frame(t,token));}
+new ResizeObserver(draw).observe(document.querySelector('.cards'));updateLabels();
+</script></body></html>

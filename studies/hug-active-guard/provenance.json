@@ -1,0 +1,41 @@
+{
+  "equation_source": "https://github.com/NousVolition/My-Sources-Project-ALL/blob/7fbc7f28f685c86f824d7587aff91feedf20d3da/reports/interaction-equation.md",
+  "old_repository_commit": "253072332453f2f28455ec07aa9a0f5b60885146",
+  "parent_sha256": {
+    "models.py": "4efb846917f50f4f0bf43f3c7c1253d0fb9cbf6db5ecbf4d20679ffa475348af",
+    "bridge_checks.py": "eee5d1773b584dd500f9cb6aedabeac5a524850534765e986a177d41242ca238",
+    "sims_response.py": "49ab067c3bbb76ad586ff9ed563fdd78bfb02028729d569fd3413f89fe5f35f0",
+    "clay_sims.py": "a485001bfc350822f7f5dbdf4ef0986ba0cd9cdc4f1b2f07757bad7562048d36",
+    "orbits.py": "d87199df5a01b45a8cd4847e3b2168454bc7e6918192f4f413a28133c8ea6cbc",
+    "active_hug.py": "e651fce052d97369f62baa783eb201faa488c551ad70948d6dfdd1f77e1d4f8d",
+    "hug_source/source/hug_envelope.py": "e0ef7fbb71e561d8875e1efc02e2ebf79558a8d0eae5e2e03ef9ee3045d9bdb6",
+    "hug_sims.py": "6a53441550ad49c229838ae1319253fd22d8ec8cd41931b4752dc7998c279faa",
+    "hug_orbits.py": "12b2827d9463710537f71483a5f2baa06b953aab858457f6869b32a85d218512",
+    "hug_rhythm.py": "abe96acdb2c7abd0e90c20be05ec4d60ecec100765657378c769e9f75bd4fab8",
+    "orbit_protocol.json": "699c641d6a03ee5112a76eb20f0c30325b9160a49b50cc9a2a15c472772e5a4c",
+    "clay_source/clay_model.py": "bfc0eb42fba2f96e033c38d32f7c181697e0386fe6841183e388e5199e2efbc5",
+    "hug_source/hug_model.py": "a64dea09dc0ef6f8e8cb1167554e0aa757672c392b224a8b0035d39a5a17c18c"
+  },
+  "parent_git_blobs": {
+    "models.py": "a5c675a19e6782ab9e3d34e9168d0fa63d1dd6ed",
+    "bridge_checks.py": "28b67d1bfb324c696ae051cb5ef428fc475b48ba",
+    "sims_response.py": "7814b6b3442537ba32935df65f72e8c8400590f5",
+    "clay_sims.py": "04325d0abbc9f3c83a2ddb36afd319a91c3de7e0",
+    "orbits.py": "1ed03812452c01af7eac8a093377edd556a1ce27",
+    "active_hug.py": "914e77e757a87c2fe66c9659249dccf8c2ac9a26",
+    "hug_source/source/hug_envelope.py": "ea9b0bca014349ffef2e474d16a2637184749ce8",
+    "hug_sims.py": "66c98b6419cee2ecfdcfc28f86be285300e5003b",
+    "hug_orbits.py": "a5c52b474853a5be688e47ce4a79ce91b2731a6b",
+    "hug_rhythm.py": "f30e9f291197fb725fc21b9fab74218e8c406cbf",
+    "orbit_protocol.json": "35af8b8f93251f38f393a35b6edf9396b97d0b5e",
+    "clay_source/clay_model.py": "4c7cc28b42078d78b11372cee3259dbc943a07ea",
+    "hug_source/hug_model.py": "3611065d8bef4e93ba1e4a5e5e08ef15062b4cd1"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.18.1",
+    "matplotlib": "3.10.8"
+  },
+  "note": "Synthetic reduced coupling; unchanged imported parent sources. No measured parameters or website deployment."
+}

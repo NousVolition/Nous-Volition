@@ -80,7 +80,7 @@ the separate project linked below.
 
 [Read the review and connections](https://github.com/NousVolition/My-Sources-Project-ALL/blob/main/REPOSITORY-CURRENT-REVIEW.md) for current completion status, duplicate-file findings, material feedback, clay memory, and related identity/position and prediction tests. It distinguishes shared testing methods from demonstrated physical coupling.
 
-Repository CI now runs 374 dynamics/fractal/topology/heteroclinic/reversibility/SIMS-response/Hug/clay/orbit, 12 social-organization and 13 recovery/entrainment unit tests, plus source syntax, JSON, local Markdown links and the three published study manifests. These checks do not rerun the full ensembles or certify the scientific interpretations.
+Repository CI now runs 374 dynamics/fractal/topology/heteroclinic/reversibility/SIMS-response/Hug/clay/orbit, 12 social-organization and 13 recovery/entrainment unit tests, plus source syntax, JSON, local Markdown links and the published study manifests. These checks do not rerun the full ensembles or certify the scientific interpretations.
 
 ## Start here
 
@@ -149,6 +149,10 @@ The sixteenth batch tests [live loss and recovery of Hug synchronization](studie
 
 The package includes 374 automated tests, thirty-eight original scientific figures, saved numerical results, and an [illustrated report](studies/dynamics-fractals-sims/report.html) to download and open locally. Equations, selected parameters, and links to primary sources are documented alongside the code.
 
+## Hug with the updated evolving guards
+
+**[Compare the old and updated Hug](studies/hug-active-guard/README.md).** The declared reduced model retains the clay oscillator and adds internal participant states, evolving directional guards and passive resistance. Across 128 trajectories at two accuracy settings, the autonomous rhythm and circular/all six eccentric orbital repeats persist; the no-orbit swing is 27.6% smaller. Frozen, shared, direction-swapped and energy-off controls explain what changed. Includes 19 unit tests, independent solver and cycle-stability checks, [three plots](studies/hug-active-guard/report.html) and an [offline comparison player](studies/hug-active-guard/player.html). These are synthetic results; prior stiffness-switch recovery delays are not recalculated.
+
 ## Hug breakdown: clay hug and fluid shelter
 
 **[Open the hug-breakdown study](studies/hug-breakdown/README.md).** Two small 2D Navier–Stokes models test how a hugged fluid holds, breaks and recovers under an outside push. The first has a yielding clay wall that can heal. The second has a water and fog shelter using real density and viscosity ratios and surface tension. Once broken, the water shelter never re-closed. A third model puts the two together: a water layer with a clay lining. Up to a push of P = 20 it held better than either wall alone; at P = 40 the result depended on the case. A materials sweep swaps in hard water, hydrogen peroxide, smoke, CO2 and helium, and a separate smoke vs hard water test shows a smoke ring, which has no surface tension, breaks at every push while a hard-water ring behaves like plain water. Source, sweep scripts, 40 passing tests, figures and saved results are included. These are 2D models with walls and forcing. They are not the Clay Millennium problem setup and make no claim about real people.
@@ -162,6 +166,3 @@ The package includes 374 automated tests, thirty-eight original scientific figur
 **[Open the live SIMS model](https://sims-evidence-lab.itswaffles88.chatgpt.site)** — public and shareable, with the latest saved run, all four interactive models, and links to methods and source.
 
 [Open the complete interactive collection](studies/sims-evidence-lab/README.md). Four browser models trace network choices, claim predictions, evidence exchanges, and repeated rounds with remembered promises. The package preserves editable sources, standalone browser documents, methods, existing checks, and reproducible saved outputs. [The latest saved run](studies/sims-evidence-lab/site/latest-run.html) retains the eight-round, seed-20261011 settings. Response policies and evidence thresholds are explicit synthetic assumptions; claim revisions, behavior-rule changes, and promises without change are recorded separately.
-
-
-
