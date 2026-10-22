@@ -1,0 +1,58 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hug synchronization — old and updated</title><style>
+*{box-sizing:border-box}body{background:#faf9f5;color:#23313b;margin:0;font:16px/1.55 system-ui,sans-serif}main{max-width:1160px;padding:28px 22px;margin:auto}h1{font-size:clamp(28px,4vw,43px);line-height:1.15}h2{font-size:21px;margin:0}a{color:#006d74}.controls{display:flex;gap:14px;flex-wrap:wrap;margin:22px 0}label{display:flex;flex-direction:column;font-size:14px;gap:5px}select,button{font:inherit;border:1px solid #acbdc1;border-radius:6px;padding:10px;background:white;color:inherit}select{max-width:100%}button{cursor:pointer;min-width:90px}input{width:100%;accent-color:#007d7e}.transport{display:flex;align-items:center;gap:16px;background:#eaf1ef;border-radius:8px;padding:14px}.transport label{flex:1}.cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}.card{min-width:0;border:1px solid #d9dedd;border-radius:8px;background:white;padding:16px}.status{font-weight:600;margin:5px 0;min-height:26px}.card canvas{width:100%;height:auto;display:block}.note{font-size:14px}.values{font-size:13px;color:#52616b}.legend{display:flex;flex-wrap:wrap;gap:22px;margin:14px 0}.solid:before,.ghost:before{content:'';display:inline-block;border-top:3px solid #007d7e;width:27px;margin-right:7px;vertical-align:middle}.ghost:before{border-top:3px dotted #9ca8ac}button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #c58932;outline-offset:3px}@media(max-width:660px){main{padding:18px 13px}.cards{grid-template-columns:1fr}.controls label{width:100%}.transport{padding:10px;gap:10px}}
+.controls label{max-width:100%}#clip{width:360px}
+</style></head><body><main><a href="report.html">← Results and recovery-time comparison</a><h1>Losing and regaining the rhythm</h1>
+<p>Compare the old and updated Hug through the same stiffness changes. The motion, internal states and orbital clock continue through both switches. Each clip comes from the saved continuous trajectories; changing clips jumps in time.</p>
+<div class="controls"><label>Eccentric input<select id="condition"></select></label><label>Intervention<select id="arm"><option value="0">Raise, then restore</option><option value="1">Keep stiffness unchanged</option><option value="2">Raise and leave high</option></select></label><label>Settled history<select id="history"><option value="0">History 1</option><option value="1">History 2</option></select></label><label>Clip<select id="clip"></select></label></div>
+<div class="transport"><button id="play" type="button">Play</button><label><span id="time"></span><input id="seek" type="range" min="0" max="22.8" step="0.01" value="0" aria-label="Time within clip"></label></div>
+<p id="notice" class="note" aria-live="polite"></p><div class="legend"><span class="solid">Current shape</span><span class="ghost">Same trajectory one orbit earlier</span></div>
+<div class="cards">
+<section class="card"><h2 id="title0"></h2><p class="status" id="status0"></p><canvas id="canvas0" width="450" height="420" role="img" aria-label="Old Hug circular motion and synchronization error"></canvas><p class="values" id="values0"></p></section>
+<section class="card"><h2 id="title1"></h2><p class="status" id="status1"></p><canvas id="canvas1" width="450" height="420" role="img" aria-label="Updated Hug circular motion and synchronization error"></canvas><p class="values" id="values1"></p></section>
+<section class="card"><h2 id="title2"></h2><p class="status" id="status2"></p><canvas id="canvas2" width="450" height="420" role="img" aria-label="Old Hug eccentric motion and synchronization error"></canvas><p class="values" id="values2"></p></section>
+<section class="card"><h2 id="title3"></h2><p class="status" id="status3"></p><canvas id="canvas3" width="450" height="420" role="img" aria-label="Updated Hug eccentric motion and synchronization error"></canvas><p class="values" id="values3"></p></section>
+</div>
+<p class="note">Synchronization requires 20 full-state comparisons and agreement between histories. The updated test includes all eight states; the old test uses its four mechanical states. “Assessing” means a new confirmation window is incomplete. No 1–4 orbit repeat does not establish chaos. Confirmation is resolved on a 5.7-second grid, not at each animation frame.</p>
+<p class="note">Synthetic material and guard parameters. All prescribed orbits last 5.7 simulation seconds with equal force RMS; moon names select eccentricity. Shape deformation is magnified ×150, with closure preserved by the drawing map. Playback runs at 1.5 simulation seconds per second and stops at the end of each clip.</p><noscript>Enable JavaScript for animation, or view the static report.</noscript></main>
+<script type="application/json" id="data">SYNC_GUARD_DATA_PLACEHOLDER</script>
+<script>
+'use strict';
+const D=JSON.parse(document.getElementById('data').textContent),$=id=>document.getElementById(id),raw=Uint8Array.from(atob(D.values),c=>c.charCodeAt(0)),view=new DataView(raw.buffer);
+if(raw.length!==D.shape.reduce((a,b)=>a*b,1)*4)throw Error('Incorrect animation size');
+let elapsed=0,playing=false,last=null,generation=0;
+D.conditions.forEach((c,i)=>{if(i)$('condition').add(new Option(c.name+' · e = '+c.e,i+1));});$('condition').value='3';
+D.clips.forEach((c,i)=>$('clip').add(new Option(c.label,i)));
+const words={assessing:'Assessing · new window',synchronized:'Synchronized',no_short_repeat:'No 1–4 orbit repeat',quiet:'Quiet'};
+function caseIndex(model,condition){return ((model*3+Number($('arm').value))*7+condition-1)*2+Number($('history').value);}
+function timeline(model,condition){return D.timelines[(model*3+Number($('arm').value))*7+condition-1];}
+function sample(ci,index,t){const pos=Math.max(0,Math.min(D.shape[2]-1,(t-D.clips[ci].sample_start_s)/D.step_s)),a=Math.floor(pos),b=Math.min(a+1,D.shape[2]-1),f=pos-a;const read=j=>view.getFloat32(((ci*D.shape[1]+index)*D.shape[2]+j)*4,true);return (1-f)*read(a)+f*read(b);}
+function assessment(model,condition,t){const a=timeline(model,condition);let i=0;while(i+1<a.time.length&&a.time[i+1]<=t+1e-8)i++;return {status:a.status[i],error:a.error[i]};}
+function line(ctx,points,color,dash=[],width=1.5){ctx.beginPath();ctx.strokeStyle=color;ctx.lineWidth=width;ctx.setLineDash(dash);let active=false;for(const p of points){if(p===null){active=false;continue;}active?ctx.lineTo(...p):ctx.moveTo(...p);active=true;}ctx.stroke();ctx.setLineDash([]);}
+function text(ctx,v,x,y,size=12,align='center'){ctx.fillStyle='#52616b';ctx.font=size+'px system-ui,sans-serif';ctx.textAlign=align;ctx.fillText(v,x,y);}
+function drawCard(panel,model,condition,t){
+ const canvas=$('canvas'+panel),w=Math.max(240,canvas.clientWidth),h=420,ctx=canvas.getContext('2d');canvas.width=Math.round(w);canvas.height=h;const ci=Number($('clip').value),idx=caseIndex(model,condition),q=sample(ci,idx,t),ghost=sample(ci,idx,t-D.period_s),color=model?'#007d7e':'#7b8492';
+ const state=assessment(model,condition,t);$('status'+panel).textContent=words[state.status];$('status'+panel).style.color=state.status==='synchronized'?'#007d7e':state.status==='no_short_repeat'?'#ad5422':'#52616b';
+ const scale=Math.min(81,w*.29),cy=126;
+ for(const [value,c,dash] of [[ghost,'#b0b9bc',[2,4]],[q,color,[]]])for(const arm of D.outline)line(ctx,arm.map(p=>[w/2+scale*(p[0]+150*value/100*p[1]),cy-scale*p[1]]),c,dash,2.3);
+ const theta=((D.absolute_start_s+t)/D.period_s)%1*2*Math.PI;let E=theta;const e=D.conditions[condition-1].e;for(let k=0;k<12;k++)E-=(E-e*Math.sin(E)-theta)/(1-e*Math.cos(E));
+ ctx.beginPath();ctx.strokeStyle='#bac9cc';ctx.ellipse(w-30,29,19,19*Math.sqrt(1-e*e),0,0,2*Math.PI);ctx.stroke();ctx.beginPath();ctx.fillStyle=color;ctx.arc(w-30+19*Math.cos(E),29+19*Math.sqrt(1-e*e)*Math.sin(E),3,0,2*Math.PI);ctx.fill();
+ const arm=Number($('arm').value),factor=arm===1?1:t<171?1:t<741?2:arm===2?2:1;text(ctx,'Stiffness ×'+factor+' · prescribed orbital clock',w/2,240,12);
+ const left=44,right=w-14,top=278,bottom=383,X=v=>left+(right-left)*v/D.end_s,Y=v=>bottom-(v+12)/14*(bottom-top),a=timeline(model,condition);
+ ctx.fillStyle='#faf0e8';ctx.fillRect(X(171),top,X(741)-X(171),bottom-top);
+ line(ctx,[[left,top],[left,bottom],[right,bottom]],'#bdc8ca',[],1);
+ for(const value of [-12,-8,-4,0])text(ctx,'10^'+value,left-6,Y(value)+4,10,'right');
+ line(ctx,[[left,Y(-4)],[right,Y(-4)]],'#5a6569',[2,3],1);
+ line(ctx,a.time.map((v,i)=>a.error[i]===null?null:[X(v),Y(Math.max(-12,Math.log10(Math.max(a.error[i],1e-12))))]),color,[],1.5);
+ for(const v of [171,741])line(ctx,[[X(v),top],[X(v),bottom]],'#b8a99c',[3,3],.8);line(ctx,[[X(t),top],[X(t),bottom]],'#39494e',[],1);
+ text(ctx,'Full-state orbit-repeat error',left,top-12,12,'left');for(const v of [0,1000,2000,3000,4161])text(ctx,String(v),X(v),bottom+16,10);text(ctx,'Elapsed simulation time (s)',w/2,415,11);
+ $('values'+panel).textContent='q = '+q.toFixed(3)+' mm · '+(state.error===null?'Awaiting complete diagnostic window':'latest repeat error '+state.error.toExponential(2));
+}
+function draw(){const ci=Number($('clip').value),t=D.clips[ci].start_s+elapsed;$('time').textContent='Elapsed '+t.toFixed(2)+' s';$('seek').value=String(elapsed);[[0,1],[1,1],[0,Number($('condition').value)],[1,Number($('condition').value)]].forEach(([m,c],i)=>drawCard(i,m,c,t));}
+function labels(){const c=Number($('condition').value);[1,1,c,c].forEach((v,i)=>$('title'+i).textContent=(i%2?'Updated':'Old')+' · '+D.conditions[v-1].name);const clip=D.clips[Number($('clip').value)];$('notice').textContent=clip.label+' · '+clip.start_s.toFixed(1)+'–'+(clip.start_s+D.duration_s).toFixed(1)+' s. Clip labels refer to the restored intervention; control arms use the same times.';draw();}
+function stop(){playing=false;last=null;generation++;$('play').textContent='Play';}
+for(const id of ['condition','arm','history'])$(id).addEventListener('change',labels);
+$('clip').addEventListener('change',()=>{stop();elapsed=0;labels();});$('seek').addEventListener('input',()=>{elapsed=Math.max(0,Math.min(D.duration_s,Number($('seek').value)));last=null;draw();});
+$('play').addEventListener('click',()=>{if(playing)stop();else{if(elapsed>=D.duration_s)elapsed=0;playing=true;last=null;$('play').textContent='Pause';const token=++generation;requestAnimationFrame(t=>frame(t,token));}});
+function frame(t,token){if(!playing||token!==generation)return;if(last!==null)elapsed=Math.min(D.duration_s,elapsed+Math.max(0,Math.min((t-last)/1000,.1))*1.5);last=t;draw();if(elapsed>=D.duration_s)stop();else requestAnimationFrame(t=>frame(t,token));}
+new ResizeObserver(draw).observe(document.querySelector('.cards'));labels();
+</script></body></html>

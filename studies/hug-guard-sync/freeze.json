@@ -1,0 +1,28 @@
+{
+  "sha256": {
+    "protocol.json": "ba0eb0fb7c5961f9126009c001d2d773d86ddc2fee4569ec86ca68700bbef20a",
+    "guard_sync.py": "131e7cd37fc48b9c393792b61eb2ac512c99cbb3158a4114d342586397534683",
+    "analyze_sync.py": "8bb7749ec68742f7f42dff5ed93a859953bbc1451abcf5d31f33dd67ef3574cb",
+    "../hug-active-guard/model.py": "8b5652c389328bf8991fbe1ff0bd0117792bf7156d4424e0043979d23397bdf7",
+    "../hug-active-guard/protocol.json": "428974e278d27ded0c3ef12c9efcee5cf42ace2b088704389fd5b9ac95a5c20e",
+    "../dynamics-fractals-sims/hug_sync.py": "5f4bef765f84c680f262601517dfb267bc6683863105b1a91bda8fe21e68628d",
+    "../dynamics-fractals-sims/hug_sync_protocol.json": "ea62272f3954dec6099dfb7447211eeaa8ea860823a6e4341a93afed4f1e51a4",
+    "../dynamics-fractals-sims/hug_sync_results.json": "bdecbdd59ba277c7a129cca85d806951a3116df7a5f8e15fbb88d98a7f3c1b03",
+    "../dynamics-fractals-sims/hug_robustness_results.json": "79a25dc89702b7c58db6a08dc8de10cf3e642f74b900a47b263cae6ec9cecd76",
+    "../dynamics-fractals-sims/models.py": "4efb846917f50f4f0bf43f3c7c1253d0fb9cbf6db5ecbf4d20679ffa475348af",
+    "../dynamics-fractals-sims/bridge_checks.py": "eee5d1773b584dd500f9cb6aedabeac5a524850534765e986a177d41242ca238",
+    "../dynamics-fractals-sims/sims_response.py": "49ab067c3bbb76ad586ff9ed563fdd78bfb02028729d569fd3413f89fe5f35f0",
+    "../dynamics-fractals-sims/clay_sims.py": "a485001bfc350822f7f5dbdf4ef0986ba0cd9cdc4f1b2f07757bad7562048d36",
+    "../dynamics-fractals-sims/orbits.py": "d87199df5a01b45a8cd4847e3b2168454bc7e6918192f4f413a28133c8ea6cbc",
+    "../dynamics-fractals-sims/active_hug.py": "e651fce052d97369f62baa783eb201faa488c551ad70948d6dfdd1f77e1d4f8d",
+    "../dynamics-fractals-sims/hug_source/source/hug_envelope.py": "e0ef7fbb71e561d8875e1efc02e2ebf79558a8d0eae5e2e03ef9ee3045d9bdb6",
+    "../dynamics-fractals-sims/hug_sims.py": "6a53441550ad49c229838ae1319253fd22d8ec8cd41931b4752dc7998c279faa",
+    "../dynamics-fractals-sims/hug_orbits.py": "12b2827d9463710537f71483a5f2baa06b953aab858457f6869b32a85d218512",
+    "../dynamics-fractals-sims/hug_rhythm.py": "abe96acdb2c7abd0e90c20be05ec4d60ecec100765657378c769e9f75bd4fab8",
+    "../dynamics-fractals-sims/orbit_protocol.json": "699c641d6a03ee5112a76eb20f0c30325b9160a49b50cc9a2a15c472772e5a4c",
+    "../dynamics-fractals-sims/clay_source/clay_model.py": "bfc0eb42fba2f96e033c38d32f7c181697e0386fe6841183e388e5199e2efbc5",
+    "../dynamics-fractals-sims/hug_source/hug_model.py": "a64dea09dc0ef6f8e8cb1167554e0aa757672c392b224a8b0035d39a5a17c18c"
+  },
+  "python": "3.12.14",
+  "numpy": "2.3.5"
+}

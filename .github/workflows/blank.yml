@@ -48,3 +48,10 @@ jobs:
       - name: Updated Hug offline animation checks
         run: node studies/hug-active-guard/check_player.cjs
 
+      - name: Updated Hug live recovery checks
+        working-directory: studies/hug-guard-sync
+        run: |
+          python -m unittest -q
+          python verify_saved.py
+      - name: Updated Hug live recovery animation checks
+        run: node studies/hug-guard-sync/check_player.cjs

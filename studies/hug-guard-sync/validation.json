@@ -1,0 +1,60 @@
+{
+  "unit_tests": 9,
+  "unit_tests_passed": true,
+  "numerical_gates": {
+    "finite": true,
+    "state_continuity": true,
+    "energy_balance": true,
+    "path_refinement": true,
+    "classifications": true,
+    "confirmation_timing": true,
+    "independent_solver": true,
+    "guard_bounds": true,
+    "updated_settlement": true,
+    "baseline_locked": true
+  },
+  "saved_checks_before_manifest": {
+    "protocol_unchanged": true,
+    "frozen_sources_unchanged": true,
+    "results_sources_unchanged": true,
+    "84_declared_cases": true,
+    "complete_summaries_and_projection": true,
+    "numerical_gates_pass": true,
+    "path_refinement": true,
+    "energy_with_switch_work": true,
+    "42_independent_segments": true,
+    "continuous_states_both_switches": true,
+    "guard_bounds": true,
+    "timing_refinement": true,
+    "no_measurement_claim": true,
+    "historical_comparison_complete": true,
+    "classification_and_confirmation_recomputed": true,
+    "animation_source_and_cases": true,
+    "animation_samples_finite": true,
+    "ghost_samples_within_clip": true,
+    "animation_statuses_are_saved_diagnostics": true,
+    "embedded_animation_identical": true,
+    "offline_player": true,
+    "report_links_resolve": true,
+    "package_hashes": true
+  },
+  "animation_float32_max_error_mm": 7.4505760172538515e-09,
+  "animation_controls": {
+    "selection_seek_checks": 3888,
+    "finite_draw_operations": 36117984,
+    "all_conditions_histories_arms": true,
+    "switch_timestamp_uses_new_stage": true,
+    "play_pause_end_stale_frames": true,
+    "display_byte_indices": true,
+    "offline_no_network": true,
+    "method": "Offline DOM/canvas harness, not browser rendering"
+  },
+  "gif": {
+    "frames": 427,
+    "clips": 7,
+    "all_frames_decoded": true,
+    "plays_once": true,
+    "source_sha256": "c39c7744f67485afbda96eefe203e17df0b9f0e34d7f76476268198521b6b01e"
+  },
+  "visual_review": "All three scientific plots plus GIF loss, first updated recovery and final recovery frames inspected. No layout clipping observed."
+}

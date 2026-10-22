@@ -1,0 +1,20 @@
+{
+  "origin": "synthetic old versus evolving-guard Hug stiffness intervention",
+  "models": ["old", "directional"],
+  "arms": ["restore", "sham", "hold_high"],
+  "histories": [0, 1],
+  "absolute_start_s": 6000,
+  "orbit_period_s": 5.7,
+  "orbital_force_rms_N": 0.000006,
+  "boundaries_s": [0, 171, 741, 4161],
+  "stiffness_factor": 2,
+  "sample_interval_s": 0.05,
+  "repeat_comparisons": 20,
+  "maximum_repeat_orbits": 4,
+  "solver": {"main_rtol": 2e-9, "main_atol": 2e-11, "main_max_step_s": 0.15, "fine_rtol": 2e-11, "fine_atol": 2e-13, "fine_max_step_s": 0.075},
+  "gates": {"repeat_error_scaled": 0.0001, "between_history_error_scaled": 0.0001, "observable_half_amplitude_mm": 0.0001, "full_path_refinement_error_scaled": 0.0002, "energy_error_scaled": 0.00001, "independent_solver_error_scaled": 0.00002, "event_time_refinement_orbits": 1, "state_guard_scaled": 1000, "guard_bounds": 1e-10},
+  "max_seconds_per_integration": 1800,
+  "equation_source": "https://github.com/NousVolition/My-Sources-Project-ALL/blob/7fbc7f28f685c86f824d7587aff91feedf20d3da/reports/interaction-equation.md",
+  "parent_commit": "a0edd94f9aaed6925acdc80524aafc3536800754",
+  "interpretation": "Same stiffness intervention, force phase and confirmation rule as the published old-model test. Old runs continue the exact historical settled states. Updated runs settle their two declared histories to absolute time 6000 independently at each accuracy. Then all states and absolute forcing phase continue through both switches. Old diagnostics use four mechanical states; updated diagnostics use all eight states, with a separately reported four-state projection for comparability. Controls retain baseline stiffness or leave it high. Loss/recovery outcomes are not required to pass: no loss, no regained repeat, and right-censored recovery are reportable. Times include a 20-comparison window and are resolved on the 5.7-second grid, with sustained recovery checked retrospectively through 4161 seconds. No short repeat does not prove chaos. The material, guard strength and time mapping remain synthetic and fixed. The drawing map preserves joins by construction. No new physical measurements, actual moon loads, orbital backreaction or tearing model are included."
+}

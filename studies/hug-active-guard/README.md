@@ -4,6 +4,8 @@ The updated synthetic Hug retains a locally attracting autonomous rhythm and ful
 
 [Illustrated report](report.html) · [Offline animation](player.html) · [Equations, controls and reproduction](METHODS.md) · [Results](results.json)
 
+**Recovery follow-up completed:** [old and updated stiffness-switch recovery times](../hug-guard-sync/README.md), with a [live comparison animation](../hug-guard-sync/player.html).
+
 ![Old and updated motion](figures/old-new-rhythm.png)
 
 | Input | Old half-range (mm) | Updated half-range (mm) | Change |

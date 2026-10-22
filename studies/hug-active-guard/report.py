@@ -110,6 +110,7 @@ def report(d):
     table=''.join(f"<tr><td>{c['name']}</td><td>{row(d,'old',j)['half_amplitude_mm']:.6f}</td><td>{row(d,'directional',j)['half_amplitude_mm']:.6f}</td><td>{100*(row(d,'directional',j)['half_amplitude_mm']/row(d,'old',j)['half_amplitude_mm']-1):+.1f}%</td><td>{'Stable cycle' if j==0 else 'Orbital repeat'}</td></tr>" for j,c in enumerate(p['conditions']))
     text=f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hug: old and updated equations</title><style>body{{font:17px/1.65 system-ui,sans-serif;background:{BG};color:#23313b;margin:0}}main{{max-width:1080px;margin:auto;padding:35px 24px}}h1{{font-size:2.3rem;line-height:1.15}}h2{{margin-top:2rem}}a{{color:#006d74}}img{{width:100%;height:auto;background:white;border:1px solid #ddd;border-radius:8px}}.table{{overflow:auto}}table{{border-collapse:collapse;width:100%;font-size:15px}}td,th{{padding:9px;text-align:left;border-bottom:1px solid #d9dddf}}.note{{padding:15px 20px;background:#e9f1ef;border-left:4px solid {NEW}}}button,.button{{display:inline-block;padding:10px 18px;border:1px solid #007d7e;border-radius:5px;text-decoration:none}}small{{font-size:14px}}</style></head><body><main>
 <p><a href="../dynamics-fractals-sims/report.html#hug-sync">Earlier Hug study</a> / Updated comparison</p>
+<p><strong>Recovery follow-up completed:</strong> <a href="../hug-guard-sync/report.html">Compare old and updated loss/recovery times</a> · <a href="../hug-guard-sync/player.html">Play the stiffness-switch comparison</a></p>
 <h1>The rhythm remains.<br>The swing becomes smaller.</h1>
 <p>The updated evolving guards preserve the synthetic Hug's stable autonomous rhythm and its orbital repetition in all seven forced conditions. The no-orbit displacement half-range falls by <strong>{abs(ratio):.1f}%</strong>. All declared numerical checks pass.</p>
 <p><a class="button" href="player.html">Play old and updated Hug</a> &nbsp; <a href="METHODS.md">Equations and full methods</a> &nbsp; <a href="results.json">Numerical results</a></p>
@@ -133,6 +134,8 @@ def report(d):
 The updated synthetic Hug retains a locally attracting autonomous rhythm and full-state orbital repetition for circular and all six eccentric inputs. Its no-orbit displacement half-range is {abs(ratio):.1f}% smaller. This is a declared reduced mechanical coupling of the updated participant/guard equations, not a unique derivation or full Navier-Stokes model.
 
 [Illustrated report](report.html) · [Offline animation](player.html) · [Equations, controls and reproduction](METHODS.md) · [Results](results.json)
+
+**Recovery follow-up completed:** [old and updated stiffness-switch recovery times](../hug-guard-sync/README.md), with a [live comparison animation](../hug-guard-sync/player.html).
 
 ![Old and updated motion](figures/old-new-rhythm.png)
 
