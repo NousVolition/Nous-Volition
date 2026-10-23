@@ -15,6 +15,8 @@ Within one person, Smoke is inward speaking and Clay is inward listening. Wind, 
 
 ## The equations used
 
+The author has clarified that the ideas came first and were translated into the Navier–Stokes format. The [inverse translation](INVERSE_TRANSLATION.md) now works backward from that mathematics to the inward process, distinguishing author definitions, reconstructed connections and assumptions added by the translation.
+
 ```text
 u_t + (u · ∇)u = −∇p + νΔu − (σ/ρ)a(q)e;  ∇·u = 0
 q = |∇S| − Γ
@@ -68,9 +70,11 @@ The [2026 data extension](https://doi.org/10.1038/s41597-026-08414-6) adds finer
 
 ## What would permit the requested full test
 
-The missing step is to define how the recorded observations arise from the full mathematical states. The [measurement contract](MEASUREMENT_CONTRACT.md) lists the exact unresolved connections: the inward roles, the moving idea and intended meaning, the continuous domain, utility, history and idea forms. The question is not whether every hidden field can be measured directly. It is whether a declared observation model makes the full equations distinguishable from alternatives using noisy, partial records.
+The [inverse translation](INVERSE_TRANSLATION.md) reconstructs Smoke and Clay as putting-forward and receiving functions within one movement–context feedback loop. Accumulated influence changes context; movement carries context; context differences can redirect movement. These functional connections recover part of the idea behind the equations without assigning an arbitrary velocity component to Smoke or a scalar to Clay.
 
-Once that connection is supplied, reserve people and later episodes before selecting parameters, estimate states from their past only, and propagate the full PDE to predict reserved observations. Compare its force and accumulated-source mechanisms with explicit ablations. The present 118 records are development data because they have now been inspected. A successful numerical run or a good match to a chosen text representation would not by itself establish that the representation measures the inward two-in-one.
+The remaining step is operational: specify how observations arise from the mathematical states. The [measurement contract](MEASUREMENT_CONTRACT.md) identifies the needed coordinates, units, utility input, history and observation rules. The current integral does not separately preserve the contents of memories, their felt age or each inward function’s history. Mathematical pressure does not automatically measure felt pressure, and incompressibility does not measure Water as perceived balance.
+
+After calibrating that observation mapping, reserve people and later episodes before selecting parameters, estimate states from their past only, and propagate the full PDE to predict reserved observations. Compare its force and accumulated-source mechanisms with explicit ablations. The present 118 records are development data because they have now been inspected. A successful numerical run or a good match to a chosen text representation would not by itself establish that the representation measures the inward two-in-one.
 
 This study therefore supplies completed equation tests and a real-data suitability audit. It does not report an invented empirical prediction score. The prior 0.2134 questionnaire-history result remains a separately labeled statistical comparator in the earlier study.
 

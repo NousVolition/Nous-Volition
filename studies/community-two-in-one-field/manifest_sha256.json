@@ -1,7 +1,7 @@
 {
   ".gitignore": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793",
   "audit_data.py": "4e455a70dce68588c9d6f4ca21558f5f05b1f27e43a256441a7242f3c6e49bf4",
-  "build_report.py": "2e802ae7df1887cdea9b916adedb14ab4053f721068e480a97bcde9d1c8cf175",
+  "build_report.py": "a5e8ef7a01c2bb1b70724bdc38bf8c3085d16244750d6a28ddb2c12df3302051",
   "corpus_field.py": "00b50a93ae413d46109327ccf0c08e8e07d00028313eaa0da87d765e58705f35",
   "corpus_trace.json": "4e7702cbc696ac7e3ab8efca81cfa41226630ca90e7a5bb9223d57a3dc0c38d4",
   "environment.json": "618be982802fd62aa474562a7a4066c584e320e039476b81d0c819c99882326d",
@@ -9,11 +9,11 @@
   "fetch_data.py": "55015dd4c380c8e5c37d09ee6f3a4a01ddc2dfbd7d5d7347d362e185ebd8c7f7",
   "figures/field_identification.png": "4f0be9b23fe18ae574729e45522f9386da03c0b736de18c5ab2f1d3a7f4524dc",
   "figures/refinement.png": "d46a1b49ed2860418a3c1913f7c9ada6986ea4a79a56e9f3c7c732f19e80388d",
-  "MEASUREMENT_CONTRACT.md": "d3514dc6a21413ca2ade0e2bf3fceed19a0bbb21cf9db6974dd9481c14b92a7e",
+  "MEASUREMENT_CONTRACT.md": "941e7e296bae8a8eefce27f02bfac46722008b68a4a043ff7ba10d825ee24e15",
   "measurement_coverage.csv": "218ec2b6f78470b9294317c7be6da7566853f40fa51147b31f110022336f5905",
   "PROTOCOL.md": "ff13d113c109a5c84ae1dd92f085175f8fe221f7a79c168d524cf1995fc5383b",
-  "README.md": "4ad4d2ca67929c2aea7098d27c1ee244106d4eb87673d19025ad09bd834f9370",
-  "report.html": "57d67a214bc05202e6278e23680802d128b2b552f63dd2f9fa93b8c4c2fd9873",
+  "README.md": "33a921b1f612684f03fae950041854264e60458e89ec617fdd96d8d2324ef667",
+  "report.html": "4e96d62564b4b5888948f595a19cd7d79ce89050aaf5c6ca8c5c598e486dfd49",
   "requirements.txt": "f7aed4ae51aaee7d846aa6919eb9b0ad240a26b7e982cfc150678d4421cc65d7",
   "results/data_audit.json": "42b4a5112d32a59995bb2a6c29e3a92ee02c39c37f482b04ff76affcfeea631f",
   "results/equation_results.json": "e302f721202c18d05e3a7ff0fdec4d7059a97851998abb0109d90ad173eadd7d",
@@ -25,5 +25,6 @@
   "source_manifest.json": "4e02b9d19695bc80cc2047ce7dbcb809561e4844db3f694b70253c47bf26c33b",
   "SOURCES.md": "beffca919cfdfbeec97679120a5ebd565743b291a01811b0fd617630a33eb73d",
   "test_equations.py": "2ccd29d85e9cfae4f46a06397acde583d3cebac98fd50c8cb1c999375cacf10d",
-  "verify_saved.py": "4c570ad01c9efb5ffd7262888829cabc3f0d721884f5576cf573236ffc4bc7c6"
+  "verify_saved.py": "4c570ad01c9efb5ffd7262888829cabc3f0d721884f5576cf573236ffc4bc7c6",
+  "INVERSE_TRANSLATION.md": "75798b6527e17f5db3a446391843b342b563948bd424528001bb69dbed917e83"
 }

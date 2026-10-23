@@ -26,6 +26,8 @@ Arendt's two-in-one supplies a philosophical connection to thinking as an intern
 
 ## Exact corpus and proposed observation links
 
+The author has clarified that the ideas came first and were translated into the Navier–Stokes format. The [inverse translation](../community-two-in-one-field/INVERSE_TRANSLATION.md) works backward from the supplied equations: accumulated influence changes context, movement carries context, and context differences can redirect movement. Smoke and Clay are reconstructed as putting-forward and receiving functions within that loop, not arbitrarily assigned state variables. This is a proposed interpretation; the equations do not separately encode their contents, histories or observations. The reconstruction distinguishes author definitions, exact mathematics and assumptions introduced by the translation.
+
 The corrected corpus is retained, including:
 
 $$u_t+(u\cdot\nabla)u=-\nabla p+\nu\Delta u-(\sigma/\rho)a(q)e,\quad \nabla\cdot u=0,$$

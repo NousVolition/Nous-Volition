@@ -4,6 +4,8 @@ Smoke is inward speaking, Clay is inward listening, and the moving idea is affec
 
 ## What must be specified before a full empirical fit
 
+The author explains that the ideas preceded their translation into the Navier–Stokes format. The [inverse translation](INVERSE_TRANSLATION.md) reconstructs the connection instead of asking the author to supply it again: putting-forward and receiving are functions in a person-specific loop of accumulated input, context and movement. This gives a conceptual interpretation to develop into observations. It does not yet fix a metric, measurement scale or observation function.
+
 An observation equation connects a latent mathematical state to a recorded quantity. Write it as y_i(t) = H_i(u_i, S_i, A_i, context, history; t) + measurement error, where H_i must be defined before testing. This expression is a placeholder for the required measurement link, not an additional fitted equation or a replacement for the corpus PDE. Partial observations can test a latent model if they constrain its predictions. It is not necessary to measure every internal field directly.
 
 The unresolved specification is concrete:
@@ -18,7 +20,7 @@ The unresolved specification is concrete:
 | Idea forms | Separate observations of perceived balance, agreement, tension, memory clarity and felt temporal distance | Calling positive sentiment Water, low similarity Fog, or elapsed time Wind |
 | Observation noise | Timing, reporting and annotation uncertainty, with a calibration procedure | Treating one transcript or an LLM annotation as perfect access to thought |
 
-These connections may already be defined in another part of the author's work. They were not found in the supplied corrected corpus's mathematical field specification. The source trace is provided with exact paragraph references. An existing definition should be used before proposing a new one.
+The inverse translation distinguishes meanings recoverable from the author's clarifications from mathematical assumptions added in the corpus. It proposes functional connections for Smoke and Clay while retaining the exact equations. The table above identifies the remaining operational choices: how to recognize and measure those connections, rather than asking the author to restate the original ideas. Any recovered original translation should be compared with this reconstruction using the supplied paragraph trace.
 
 The corpus also contains the W consistency check (paragraph 104), maximization of U on an exact boundary margin (105–107), and the static reciprocal rescaling that preserves SR (497–501). Those expressions have not been discarded. They currently specify different mathematical questions and do not provide evolution equations for Smoke and Clay. The two scalar entries in the static rescaling are not automatically the two inward positions, and their product is not a time-conserved quantity without a dynamical law. Likewise, a between-actor W comparison cannot simply be renamed an inward listener. Their coupling to this within-person application must be stated if they are intended to be part of it.
 
@@ -28,7 +30,7 @@ The corpus fixes A(0)=0 at the model's integration origin. That origin need not 
 
 ## A test that would distinguish the mechanisms
 
-Once the connections above are supplied, fix the observation mapping, metric, parameter units and noise model using a development set. Reserve different people and later episodes before selecting parameters. Infer latent states using only the available past of each person. Propagate the full coupled PDE to predict held-out observations. Never reset A, u or S using the target being predicted. Compare the full model with declared no-force and no-source ablations to test whether its mechanisms matter; those comparisons do not replace the full model.
+Once the reconstructed connections have operational definitions, fix the observation mapping, metric, parameter units and noise model using a development set. Reserve different people and later episodes before selecting parameters. Infer latent states using only the available past of each person. Propagate the full coupled PDE to predict held-out observations. Never reset A, u or S using the target being predicted. Compare the full model with declared no-force and no-source ablations to test whether its mechanisms matter; those comparisons do not replace the full model.
 
 Report held-out likelihood or a prespecified error in the actual observation units, interval coverage, numerical refinement, and whether parameter changes can be distinguished within measurement uncertainty. An independent data collection or fixed reserve is needed after using these 118 records to design the mapping. More records cannot identify a parameter that is structurally confounded with another; fixing a known scale or measuring A can address the gamma/kappa ambiguity without changing the equations.
 
