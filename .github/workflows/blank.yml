@@ -113,9 +113,22 @@ jobs:
       - name: Hug larger-movement offline animation checks
         run: node studies/hug-movement-sweep/check_player.cjs
 
-      - name: Exact two-in-one corpus equations and saved audit checks
+  two-in-one-field-checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+      OMP_NUM_THREADS: '1'
+      OPENBLAS_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install field test dependencies
+        run: python -m pip install numpy==2.3.5 scipy==1.18.1
+      - name: Exact corpus equations and saved audit checks
         working-directory: studies/community-two-in-one-field
         run: |
           python -m unittest discover -p 'test_*.py' -q
           python verify_saved.py
-
