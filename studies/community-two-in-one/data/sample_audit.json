@@ -1,0 +1,25 @@
+{
+  "original": {
+    "rows": 1696,
+    "people": 212,
+    "inner_voice_reports": 621,
+    "other_experience_reports": 1075
+  },
+  "replication": {
+    "rows": 2664,
+    "people": 222,
+    "other_experience_reports": 1867,
+    "inner_voice_reports": 797
+  },
+  "cram": {
+    "raw_rows": 37632,
+    "raw_people": 6584,
+    "included_rows": 12982,
+    "included_people": 4115,
+    "exclusions": {
+      "missing_content": 23390,
+      "non_single_or_invalid_bin": 1258,
+      "invalid_content": 2
+    }
+  }
+}

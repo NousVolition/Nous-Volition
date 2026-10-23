@@ -1,0 +1,158 @@
+{
+  "protocol_sha256": "9da8eac9ad7275d4ec0f5237a086cd34db896cf2434f3ed52746486ea468824f",
+  "seed": 20261022,
+  "bootstrap_draws": 2000,
+  "audit": {
+    "original": {
+      "rows": 1696,
+      "people": 212,
+      "inner_voice_reports": 621,
+      "other_experience_reports": 1075
+    },
+    "replication": {
+      "rows": 2664,
+      "people": 222,
+      "other_experience_reports": 1867,
+      "inner_voice_reports": 797
+    },
+    "cram": {
+      "raw_rows": 37632,
+      "raw_people": 6584,
+      "included_rows": 12982,
+      "included_people": 4115,
+      "exclusions": {
+        "missing_content": 23390,
+        "non_single_or_invalid_bin": 1258,
+        "invalid_content": 2
+      }
+    }
+  },
+  "inner": {
+    "outcome": "dialogic",
+    "population_probability": 0.548720792664892,
+    "chosen_strength": 1,
+    "tuning": [
+      {
+        "strength": 1,
+        "brier": 0.17362829360775286
+      },
+      {
+        "strength": 2,
+        "brier": 0.1801736647847362
+      },
+      {
+        "strength": 4,
+        "brier": 0.19448981472074334
+      },
+      {
+        "strength": 8,
+        "brier": 0.21141738918848685
+      },
+      {
+        "strength": 16,
+        "brier": 0.2260729293396035
+      }
+    ],
+    "evaluation_people": 142,
+    "evaluation_predictions": 632,
+    "brier": {
+      "population": 0.2567035368290007,
+      "last": 0.3286811779769527,
+      "history": 0.21343554640418474
+    },
+    "history_minus_population": {
+      "mean": -0.04326799042481598,
+      "ci95": [
+        -0.07034210007435071,
+        -0.014946354154132481
+      ],
+      "people": 142
+    },
+    "history_minus_last": {
+      "mean": -0.11524563157276786,
+      "ci95": [
+        -0.15068836826587345,
+        -0.08087340088475524
+      ],
+      "people": 142
+    }
+  },
+  "strict_sensitivity": {
+    "outcome": "strict_dialogic",
+    "population_probability": 0.21958000591540966,
+    "chosen_strength": 2,
+    "tuning": [
+      {
+        "strength": 1,
+        "brier": 0.1548288554238359
+      },
+      {
+        "strength": 2,
+        "brier": 0.1510435408667925
+      },
+      {
+        "strength": 4,
+        "brier": 0.15450173321487856
+      },
+      {
+        "strength": 8,
+        "brier": 0.1624901171661917
+      },
+      {
+        "strength": 16,
+        "brier": 0.17101016005412675
+      }
+    ],
+    "evaluation_people": 142,
+    "evaluation_predictions": 632,
+    "brier": {
+      "population": 0.17819010039885466,
+      "last": 0.20867604617604615,
+      "history": 0.14503863093734806
+    },
+    "history_minus_population": {
+      "mean": -0.03315146946150663,
+      "ci95": [
+        -0.05249693501974724,
+        -0.016110575447563284
+      ],
+      "people": 142
+    },
+    "history_minus_last": {
+      "mean": -0.06363741523869813,
+      "ci95": [
+        -0.09340121282722297,
+        -0.03431436559844845
+      ],
+      "people": 142
+    }
+  },
+  "memory": {
+    "paired_people": 1052,
+    "recent_minus_remote": {
+      "mean": 7.021707055618652,
+      "ci95": [
+        5.633174061363225,
+        8.654860585588365
+      ],
+      "people": 1052
+    },
+    "remote_greater_fraction": {
+      "mean": 0.31247520069882234,
+      "ci95": [
+        0.2956986052186266,
+        0.32897175676738416
+      ],
+      "people": 1052
+    },
+    "tie_fraction": 0.06156843363473591,
+    "two_each_sensitivity": {
+      "mean": 6.1588099035467465,
+      "ci95": [
+        4.94055411999491,
+        7.335652633580263
+      ],
+      "people": 703
+    }
+  }
+}

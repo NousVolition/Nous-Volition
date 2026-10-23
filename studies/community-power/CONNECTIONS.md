@@ -1,3 +1,21 @@
+# Current connections within one person
+
+Smoke is inward speaking, Clay is inward listening, and the middle is the moving idea. Each person has their own history. The current sequence is a proposed internal exchange, not a conversation between separate people. [Current model and corpus fidelity](../community-two-in-one/MODEL.md) · [Testing document and completed checks](../community-two-in-one/README.md).
+
+| Connection | Support | What remains to test |
+| --- | --- | --- |
+| Speaking and listening affect a moving idea within one person | Author definition, with a philosophical connection to Arendt | Observe both functions and before/after idea content within the same episode |
+| A person's earlier records help predict later dialogic reports | Completed replication probe: error 0.2134 history vs 0.2567 population | Stable person differences remain an alternative to causal temporal accumulation |
+| Memory age does not rigidly determine content | Older has more counted content in 31.25% of within-person pairs on average | Vividness, accuracy and subjective temporal distance need different measures |
+| Agreement or apparent balance can conceal disturbance | Proposed interpretation | Record calm, agreement and unresolved tension independently; do not infer hidden conflict from quiet alone |
+| Exact corpus fields explain the internal exchange | Equations retained, observation mapping unspecified | Define domains, units, histories, measurements and identifiability before fitting |
+
+Strong language is retained with attribution and testable comparisons. A metaphor does not assign identity, a diagnosis or a force measured in newtons. The new public datasets do not contain all these links.
+
+## Historical external encounter framework
+
+The material below records the earlier external-community framework and its completed tests. Its descriptions of speakers, audiences, moderation, penalties and institutional memory concern external encounters. They do not replace or establish the corrected within-person roles above.
+
 # Meaning expression context treatment and memory
 
 Streams and Rocks community model • 20 October 2026 · public-record evidence updated 22 October 2026

@@ -1,0 +1,18 @@
+{
+  "pages": 9,
+  "visually_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "clipping_or_overlap": false,
+  "renderer": "Adobe PDF Services conversion from final DOCX; every page rendered with Poppler and visually inspected",
+  "local_renderer": "Packaged render_docx.py attempted; bundled LibreOffice unavailable on this Windows runtime",
+  "docx_sha256": "f151445891ca88d37de2385857cf39bebb7f28b752b5029d9eb83ed93aab2414"
+}

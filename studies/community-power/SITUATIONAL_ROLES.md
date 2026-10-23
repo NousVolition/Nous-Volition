@@ -1,57 +1,42 @@
-# Water here, fog there: people can change their relation to a situation
+# One person and a moving idea
 
-Streams and Rocks • community interpretation and proposed tests • 20 October 2026
+This is the current interpretation requested by the author on 22 October 2026. It supersedes the earlier interpretation of Smoke and Clay as separate people. The older allocation, moderation and conversation studies remain historical studies of different questions.
 
-The [meaning, expression, context, treatment and memory guide](CONNECTIONS.md) connects these orientations to an encounter: what someone means, how it is expressed and received, how they are treated, and what carries into the next situation. Its evidence table distinguishes source-described connections, tested fictional mechanisms and social hypotheses still needing observations. A material description does not automatically determine a person's score, permission or remembered role.
+**Within one person, Smoke is the inward speaking position, Clay is the inward listening position, and the middle is the idea moving between them.** Both positions can affect what is retained, questioned, reformulated or refused. They are distinguishable functions in a person's account, not separate people, diagnoses or permanent material identities. One person need not experience literal voices to describe this process.
 
-**A person can be water while holding a group together, fog while their position is only partly understood, smoke while carrying the traces of an earlier event, and clay while holding or reshaping an impression.** These orientations can overlap, change or cease to fit. The community does not require anyone to remain one material, or to become the same as everyone else.
+Each person's exchange has its own history. Keep three things separate: recorded events; what the person remembers or believes about those events; and what is recalled or reinterpreted now. Unrecorded history is unknown, not zero. The speaking and listening positions may draw on different parts of that history, but their separate histories require reports rather than being assumed independent.
 
-Water, Fog, Mist, Gas, Smoke, Clay and Ice remain available as expressive language. The four orientations below develop the current request. They describe a person-in-a-situation: a relationship among actions, history, demands and available choices. They are not permanent personality classes, diagnoses or measurements of a population.
-
-## Four orientations, many possible situations
-
-| Orientation | What it can express | What to describe before applying it |
+| Term | Working meaning supplied or clarified in this conversation | Measurement still needed |
 | --- | --- | --- |
-| **Water** | Adaptation, connection, finding a route through changing demands | What the person changed, what they preserved, whose need they met and what the adjustment cost |
-| **Fog** | Presence across a group while meaning, position or boundaries remain partly visible | Which signals were available, to whom, and what remained uncertain; uncertainty may belong to the observer or situation |
-| **Smoke** | A trace, warning or account of an earlier event that travels into later encounters | The earlier event or reported experience, the route by which its account travelled, and its documented later effects |
-| **Clay** | Taking an impression, holding a history, or reshaping under sustained pressure or deliberate effort | What persisted, what changed, over what period, and what pressure or choice accompanied the change |
+| Smoke | Inward speaking position | What is internally put forward and how the person identifies that function |
+| Clay | Inward listening position | What is received, held, challenged, reshaped or refused |
+| Moving idea | Content moving and changing between these positions | Before and after formulations, with changes in claim, target, force and implication checked |
+| Water | Adaptation and continuity where this description fits | What changes, what is preserved and the person's own account of the cost |
+| Mist | Internalized or unspoken agreement | What is taken for granted, endorsement and freedom to reconsider it |
+| Fog | Remembered past with variable clarity | Recalled content, vividness, certainty and verifiable accuracy recorded separately |
+| Wind | Space between memories and experienced time in the author's vocabulary | Actual elapsed time and felt temporal distance recorded separately |
+| D2O or perceived balance | Apparent balance that may conceal unresolved disturbance | Calm or agreement and unresolved tension rated independently |
+| Peroxide | Its specific role has not yet been defined | Ask for a definition before assigning a variable or causal mechanism |
 
-These are proposed meanings to discuss and revise, not hidden causes of behavior. A participant may use a word differently or reject it. Record who supplied the description and preserve disagreements. More than one orientation, or none, can fit the available account.
+An old memory may remain clear and a recent memory may feel dreamlike. Do not build monotonic fading into the definition. An average association with event age would not eliminate individual exceptions. Peace does not mean no movement, and disturbance does not establish illness or failure. **Coercion, pressure, refusal and resistance retain their force when the account warrants them; attribution and an explicit missing test make the claim inspectable.**
 
-**Being water creates no obligation to absorb everyone else's work. Holding an impression as clay does not cancel the possibility of change.** Adaptation, resistance and refusal can each protect a boundary or impose a cost; examine whose boundary and whose cost rather than giving any material an automatic moral rank.
+Arendt's two-in-one supplies a philosophical connection to thinking as an internal exchange. Her discussion of Socrates' gadfly, midwife and electric ray concerns different effects of thought. This project does not equate those images with a medical scale or claim that Arendt supplied these material variables. The particular Smoke, Clay and middle mapping belongs to the author of this project. Source: [Thinking and Moral Considerations](https://jonudell.net/h/arendt.pdf), especially pages 431–434 and 441–445.
 
-Consider a fictional person who rearranges a shared task, asks for time before taking a position, brings an old warning into the discussion, and holds a limit after repeated broken promises. Water, fog, smoke and clay could describe different parts of that episode. The descriptions need not replace one another, and the person can contest all four. This is an illustration, not an observed family or a new simulation result.
+## Exact corpus and proposed observation links
 
-## Preserve semantic force
+The corrected corpus is retained, including:
 
-**Precision does not require automatically softening strong or unfamiliar terms.** Keep words such as *force, resistance, pressure, adaptation, boundaries, coercion* and *power* when they express the intended claim. Make the claim inspectable:
+$$u_t+(u\cdot\nabla)u=-\nabla p+\nu\Delta u-(\sigma/\rho)a(q)e,\quad \nabla\cdot u=0,$$
+$$q=|\nabla S|-\Gamma,\quad S_t+u\cdot\nabla S=D\Delta S+K_h\kappa A,$$
+$$A_t=\gamma(U-U_{baseline}),\quad A(0)=0,\quad T=\mu_0(\nabla u+\nabla u^T).$$
 
-1. **Describe what happened:** acts, words, imposed rules, available alternatives and consequences, with the relevant context.
-2. **Attribute the representation:** distinguish a participant's account, an observer's interpretation, a model rule and a physical measurement. Preserve a participant's strong wording as their account without silently converting it into an established causal finding.
-3. **State the missing test:** say what comparison could support, weaken or revise the interpretation. Do not substitute a vague phrase for a precise unresolved question.
+These are the transcribed equations from corpus paragraphs 229–230, 517–519 and 545–550, not newly fitted social laws. The fixed direction e is not velocity-dependent drag. Preserve the signed field and the chosen threshold law, including the negative tail if tanh is used. The corpus's accumulated input A has no automatic forgetting term.
 
-For a synthetic allocation, a direct description is: **“This rule overrides the member's stated work limit.”** The next questions are how much work crossed that limit, who received the benefit, and what happened when the limit was enforced. If a participant says **“I was forced to adapt,”** retain that account and investigate the demand, possible refusal, consequences and alternatives before making a wider causal claim. Calling a boundary “resistance” does not establish a force measured in newtons.
+For a proposed within-person application, index the fields, inputs and declared domain by person. That indexing is an application choice. It does not measure those fields. In particular, the corpus condition A(0)=0 must not be silently changed to encode a biography: earlier history needs a specified pre-observation evolution or separately justified initial/input mapping. A score for remembered tension is not automatically S, pressure, utility or A. No semantic distance or internal velocity has yet been calibrated.
 
-## Four working hypotheses and the tests still missing
+The public pilot data below do not identify both internal positions or idea trajectories. Therefore no new full-field fit is claimed. The numerical history predictor is explicitly an added statistical comparator; it does not replace the corpus equations. The source DOCX SHA256 is 01f9ab0942f9c88982863e2ffc1e3c495786b5e6b67a26ae77d18235e7058acf. The prior field solver remains byte-for-byte unchanged (SHA256 00b50a93ae413d46109327ccf0c08e8e07d00028313eaa0da87d765e58705f35).
 
-All four rows are **proposed social tests, not findings established by the material simulations or the synthetic community benchmarks**. Choose comparisons and success criteria before examining new outcomes; retain counterexamples and later test any revised account on additional cases.
+See [the frozen pilot protocol](../community-two-in-one/PROTOCOL.md), [the editable testing document](../community-two-in-one/Two_in_one_testing_protocol.docx) and [completed results](../community-two-in-one/README.md).
 
-| Working hypothesis | Evidence that could support it | What could weaken it or distinguish another explanation |
-| --- | --- | --- |
-| **Boundary visibility:** making a limit legible may change how others respond | Paired examples with the request, relationship, stated limit and consequences documented; compare similar situations where the boundary is differently visible | Equally visible limits receive different treatment because authority, workload or history differs; visibility alone fails to explain the contrast |
-| **Linguistic capital:** wording or register may affect whose account carries weight | Compare accounts with equivalent content while documenting speaker position and relationship history; check that rewording preserves meaning | The response follows changed content, speaker authority or prior events rather than language; the claimed language effect disappears under those comparisons |
-| **Semantic change:** the meaning of water, fog, smoke or clay may shift with situation and time | Follow accounts across time or contexts, preserving what speakers meant on each occasion and examples that do not fit the earlier definition | Apparent change is an observer's recoding, a different speaker's usage or missing context rather than a change in the original account |
-| **Feedback:** using a label may change later expectations, requests or treatment | Time-ordered accounts or platform/dataset records showing when a label appeared, who encountered it and what changed afterward, with a relevant comparison | The treatment began before the label, reflects a platform rule or changing demand, or occurs equally without the label; association alone leaves causation unresolved |
 
-An episode record can contain: **person; time and setting; observed words/actions; participant account; proposed orientation(s); who chose the terms; demands and options; consequences for each person; competing interpretations; missing comparison.** Keep the record at the level of the episode. No permanent material identity or numerical personality score is required.
-
-## How this extends the existing model
-
-The [allocation benchmark](README.md) uses material names as arbitrary identifiers. The [adaptable-role experiment](../adaptable-roles/README.md) rotates coordination roles and tests refusal, handoff and sharing under declared synthetic rules. Neither experiment measures these four orientations in people or tests the four hypotheses above. The fixed names in their historical result tables remain identifiers, not a restriction on this situational interpretation.
-
-A future computational extension could represent an orientation by several context-dependent variables for contact, interpretation, boundaries and memory. It would need explicit transition rules, name-swap controls, comparisons that hold the situation constant, and observations capable of challenging those rules. That extension has not been implemented by this documentation update.
-
-The [Foucault interpretation](interpretation.md) also makes the act of classification a question of power: who can name the role, who benefits from it, and what happens when someone refuses it? This framework keeps that question open instead of turning the material vocabulary into a permanent assignment.
-
-Editorial basis: the user-supplied passage on working hypotheses and preserving semantic force, and the user's request of 20 October 2026. This addition states the interpretation and its evidence needs; it reports no new human observations or numerical experiments.
+[Earlier situational interpretation preserved for provenance](LEGACY_SITUATIONAL_ROLES.md).

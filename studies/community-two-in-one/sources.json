@@ -1,0 +1,104 @@
+{
+  "input_files": [
+    {
+      "file": "cram.csv",
+      "url": "https://ndownloader.figshare.com/files/22308141",
+      "sha256": "4bcf8535b3dac87ce0267b073560438d2f460ab8a74d8472710db7d51e308123",
+      "bytes": 1847071
+    },
+    {
+      "file": "data_replication_exp.csv",
+      "url": "https://osf.io/download/vjumb/",
+      "sha256": "423a71da04dda7e0a60ad0752b4e11a6a3bd130f9052c420d3045c0aedca5e1b",
+      "bytes": 571540
+    },
+    {
+      "file": "data_original_exp.csv",
+      "url": "https://osf.io/download/p3fg5/",
+      "sha256": "f1fcc21a0a830cb60b71c0195493177c11cd7c7032271f67ac5f63ab52837bac",
+      "bytes": 366975
+    }
+  ],
+  "accessed": "2026-10-22",
+  "references": [
+    {
+      "id": "inner",
+      "title": "Stay Focused! The Role of Inner Speech in Maintaining Attention During a Boring Task",
+      "authors": "Nedergaard, Skewes and Wallentin",
+      "year": 2023,
+      "doi": "10.1037/xhp0001112",
+      "url": "https://johannenedergaard.github.io/Nedergaard_Skewes_Wallentin_2023.pdf",
+      "data": "https://osf.io/jgx7m/",
+      "scope": "Processed original and replication experience-sampling data; no private free-text responses redistributed."
+    },
+    {
+      "id": "cram",
+      "title": "Autobiographical Memory Content and Recollection Frequency: Public Release of Quantitative Datasets and Representative Classification Analysis",
+      "year": 2020,
+      "doi": "10.5334/joc.105",
+      "data": "https://doi.org/10.6084/m9.figshare.10246958.v4",
+      "license": "CC0",
+      "scope": "Counted recalled content across memories, not accuracy or subjective temporal distance."
+    },
+    {
+      "id": "cram_methods",
+      "title": "Quantitative Measurements of Autobiographical Memory Content",
+      "year": 2012,
+      "doi": "10.1371/journal.pone.0044809",
+      "scope": "Youth bin 0 oldest, 9 most recent; scoring and temporal-bin methods."
+    },
+    {
+      "id": "arendt",
+      "title": "Thinking and Moral Considerations",
+      "year": 1971,
+      "url": "https://jonudell.net/h/arendt.pdf",
+      "scope": "Philosophical source; the author supplies Smoke, Clay and moving idea mapping."
+    }
+  ],
+  "scispace": {
+    "used_for": "Literature discovery and screening, followed by original-source checks",
+    "searches": [
+      "Open repeated within-person dialogic inner-speech datasets with personal history",
+      "Open autobiographical memory content, event age and subjective time datasets"
+    ],
+    "included": [
+      "CRAM public memory data discovered in SciSpace and verified at Figshare and primary papers"
+    ],
+    "excluded_or_future": [
+      {
+        "title": "Thinking out loud EEG dataset",
+        "doi": "10.1038/s41597-022-01147-2",
+        "reason": "Fixed-command inner-speech EEG is not a trajectory of autobiographical meaning."
+      },
+      {
+        "title": "Internal Dialogical Activity Scale Revised",
+        "doi": "10.1080/10720537.2024.2446756",
+        "reason": "Candidate trait instrument; not used here as longitudinal evidence. SciSpace supplied no extractable author limitations."
+      },
+      {
+        "title": "Autobiographical Recollection Test",
+        "doi": "10.1016/j.jarmac.2019.06.005",
+        "reason": "Candidate future instrument; no data analyzed here."
+      }
+    ],
+    "limitations": "SciSpace summaries are discovery aids. Missing limitations in a summary are not evidence that a study has none."
+  },
+  "corpus": {
+    "file": "Plain_Language_Corpus_Math_and_Logic_Corrected.docx",
+    "sha256": "01f9ab0942f9c88982863e2ffc1e3c495786b5e6b67a26ae77d18235e7058acf",
+    "paragraphs": [
+      229,
+      230,
+      517,
+      518,
+      519,
+      545,
+      546,
+      547,
+      548,
+      549,
+      550
+    ]
+  },
+  "interpretation": "User corrections in this conversation take precedence over earlier community metaphors."
+}

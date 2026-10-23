@@ -97,3 +97,10 @@ jobs:
           python verify_saved.py
       - name: Hug movement-memory feedback offline animation checks
         run: node studies/hug-memory-feedback/check_player.cjs
+
+
+      - name: Within person history and memory content checks
+        working-directory: studies/community-two-in-one
+        run: |
+          python -m unittest -q
+          python verify_saved.py

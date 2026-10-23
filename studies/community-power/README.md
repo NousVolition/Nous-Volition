@@ -1,10 +1,16 @@
-# A community: coordination, boundaries and power
+# One person and a moving idea
 
-Streams and Rocks • seven fictional participants • an executed allocation benchmark inspired by the uploaded Foucault passage
+Streams and Rocks • current interpretation updated 22 October 2026 • historical community benchmarks retained below
 
-**Water, Fog, Mist, Gas, Smoke, Clay and Ice can belong to the same community.** This study asks how organizing the same people changes their ability to meet needs, the distribution of help and the work required of each member. Different skills and contact opportunities can make a group more capable; a higher group total does not guarantee that every member benefits.
+**Smoke is inward speaking, Clay is inward listening, and the middle is the idea moving between them within one person’s two-in-one.** Every person has their own history. This corrects the earlier interpretation of these roles as different people. Mist, Fog, Wind and perceived balance remain proposed descriptions with distinct measurement needs.
 
-The supplied page matches Foucault’s *Discipline and Punish*, in the panopticism chapter. Its discussion of organization and power provides the questions. The numerical rules are our explicit synthetic assumptions. [How the passage is used](interpretation.md) · [Methods and units](methods.md) · [Source provenance](source_provenance.json) · [Verification](verification.json).
+The [new testing document and public-data probes](../community-two-in-one/README.md) include an editable protocol, episode and history forms, exact-corpus fidelity requirements and completed measurements. Recorded personal history predicts later reported inner dialogue with error 0.2134 versus 0.2567 for a population estimate. Older memories contain more counted content in 31.25% of within-person older/newer comparisons on average. These findings do not establish a causal memory mechanism or validate the full inner field.
+
+Read the [current roles](SITUATIONAL_ROLES.md), [connections and evidence](CONNECTIONS.md), and [editable testing document](../community-two-in-one/Two_in_one_testing_protocol.docx). The seven-person allocation and earlier external-dialogue studies below concern separate questions; their numerical results remain unchanged.
+
+## Historical studies of community and external encounters
+
+The original allocation benchmark used seven fictional participants and explicit synthetic rules inspired by the uploaded Foucault passage. [How the passage was used](interpretation.md) · [Methods and units](methods.md) · [Source provenance](source_provenance.json). These are not measurements of the current intrapersonal roles.
 
 ## New measurements of reference, expression and interaction
 
@@ -20,24 +26,17 @@ The [full coupled corpus-field test](../community-full-field/README.md) now runs
 
 In 162 candidate answer-uptake changes, 62 become correct, eight become incorrect and 92 remain incorrect. In 2,259 matched forum pairs, early unquoted phrase reuse differs by +2.30 percentage points between later attack-removal and control branches, with a 95% interval from −0.49 to +5.16. Repeated words often rebut or quote another person. [The full review](../community-mimesis/results/functional_audit.json) distinguishes acceptance, joint construction and mirrored challenge without claiming a causal imitation law.
 
-## People can be water, fog, smoke or clay in different situations
+## Current roles within one person
 
-**A person can be water here, fog there, smoke after an earlier event, and clay while holding or reshaping an impression.** These orientations can overlap and change. They describe a person in a situation, not a permanent type. The names in the existing numerical tables remain arbitrary identifiers; this broader interpretation does not assign new measured traits to those participants.
+Smoke and Clay are inward speaking and listening, with the idea moving between them. Each function can draw on different parts of that person’s remembered history. Calm, agreement and unresolved tension must be recorded separately. Water can still describe adaptation without creating an obligation to adapt. No role is a diagnosis or fixed identity.
 
-| Orientation | Possible meaning | What needs describing |
-| --- | --- | --- |
-| Water | Adaptation and connection | What changed, what was preserved, and who carried the cost |
-| Fog | Presence with partly visible meaning or boundaries | Which signals were available, to whom, and what remained uncertain |
-| Smoke | A trace or warning travelling from an earlier event | The event or account, its route, and its later effects |
-| Clay | Holding or reshaping an impression | What persisted, what changed, and under which pressures or choices |
+**Keep strong language and state the missing comparison.** Coercion, resistance, pressure, refusal and boundaries remain available where they express the reported experience. The [current testing document](../community-two-in-one/report.html) separates definitions, measured findings and untested mechanisms.
 
-**Being water creates no obligation to absorb everyone else’s work.** People may combine, change or reject these descriptions. Record who chose the language, including any disagreement, and leave room for an episode that fits none of the labels.
-
-**Keep the strong language; show the evidence and the missing test.** Describe what happened, attribute the interpretation and identify the comparison still needed. Force, resistance, pressure and boundaries can retain their meaning without being mistaken for measured physical forces. The proposed tests concern boundary visibility, linguistic capital, semantic change and feedback from labels; none is established by the existing synthetic runs. [Read the situational roles and concrete test plan](SITUATIONAL_ROLES.md).
+## Earlier framework for external encounters
 
 ## Meaning, expression, context, treatment and memory
 
-**Follow the encounter:** stated meaning → expression in context → treatment → remembered consequences → a later encounter. Context also shapes which expressions are available. This is a proposed way to examine a community, with evidence attached to each connection. Water, fog, smoke and clay can describe overlapping experiences along the sequence; they do not determine permission, worth or a fixed personality.
+**Follow the encounter:** stated meaning → expression in context → treatment → remembered consequences → a later encounter. Context also shapes which expressions are available. This is a proposed way to examine a community, with evidence attached to each connection. This older sequence concerns external encounters; the current inward Smoke and Clay mapping is defined above and is not validated by these external records.
 
 | Part | What to preserve |
 | --- | --- |

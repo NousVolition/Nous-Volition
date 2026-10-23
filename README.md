@@ -6,6 +6,8 @@ This repository, **Streams and Rocks**, preserves the original stream-function r
 
 ## Real data for the community connections
 
+**[One person and a moving idea](studies/community-two-in-one/README.md).** Smoke and Clay are inward speaking and listening within one person’s two-in-one, shaped by their own history. Includes an editable SciSpace-assisted testing document, public inner-dialogue and autobiographical-memory probes, recording forms and exact-corpus fidelity requirements. Personal-history prediction error is 0.2134 versus 0.2567 for a population estimate; older memories have more counted content in 31.25% of within-person pairs on average. These limited findings do not validate the full inner field.
+
 **[New reference, expression and interaction measurements](studies/community-reference-field/README.md).** OneCommon provides wording, human reference interpretations, spatial object positions and actual message times. The exact coupled corpus equations are tested under an explicit reference-field mapping, using 64 training and 64 reserved scenario episodes. Spatial MSE is 11.771 versus 12.913 for the last observed field, with uncertainty that includes no advantage; removing the added force gives 11.775. The force and accumulated source have not demonstrated a predictive benefit. Includes 1,160 episode integrations, 12 unit tests, 2,851 saved-result checks and all numerical predictions. Reference is a measured component of meaning, not a measurement of all intent or social utility.
 
 **[Full coupled corpus field: real-record conditional test](studies/community-full-field/README.md).** Runs the supplied momentum, incompressibility, field-transport and accumulated-source equations together. Under an explicit proposed correctness mapping, evaluation MSE is 0.1403 versus 0.1043 for the last-answer control across 455 submissions in 127 groups. The failed mapping and lack of spatial identifiability are retained. Includes 25 spatial runs, all three activation laws, 17 unit tests, 3,122 saved-result checks and every prediction. This is a retrospective internal split of previously used records, not full empirical validation of human field dynamics.
@@ -186,6 +188,7 @@ The package includes 374 automated tests, thirty-eight original scientific figur
 **[Open the live SIMS model](https://sims-evidence-lab.itswaffles88.chatgpt.site)** — public and shareable, with the latest saved run, all four interactive models, and links to methods and source.
 
 [Open the complete interactive collection](studies/sims-evidence-lab/README.md). Four browser models trace network choices, claim predictions, evidence exchanges, and repeated rounds with remembered promises. The package preserves editable sources, standalone browser documents, methods, existing checks, and reproducible saved outputs. [The latest saved run](studies/sims-evidence-lab/site/latest-run.html) retains the eight-round, seed-20261011 settings. Response policies and evidence thresholds are explicit synthetic assumptions; claim revisions, behavior-rule changes, and promises without change are recorded separately.
+
 
 
 
