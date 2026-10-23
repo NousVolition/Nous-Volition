@@ -54,6 +54,8 @@ Maximum mass-accounting error is 6.07e-17; divergence RMS 1.74e-17; Taylor–Gre
 
 ## What the real records can establish
 
+**New primary-record search:** the [original inward-experience audit](primary_records/README.md) indexes 39 DES samples from one person, including 37 after the source’s training day, and closely examines five complete episode sections. A separate public workbook has 66 questionnaire records from 23 people. These sources contain actual accounts of inward speaking/hearing, reconsideration, imagery and personal-history references. They do not yet define a full predictive test of the corpus field or all idea forms. No simpler predictor or empirical full-model score was substituted.
+
 The [NEMAR experience-sampling source](https://doi.org/10.82901/nemar.on007216) provides repeated reports of thought movement, verbalness, visualness, affect, arousal, attention, intentionality, disengagement, temporal focus, self/other focus and confidence. All 280 selected files passed their upstream hashes. The audit found the expected 13 item rows in each of 840 probes. The 19 nonnumeric/nonfinite development responses are retained as missing, including a fully blank probe; no values are imputed.
 
 Eight participants remain reserved from response analysis and model selection. Their file structure, item presence and timestamps were audited, but their response values were not summarized or fitted. This is a source suitability assessment. There is no held-out prediction claim. Sequential question timings are not continuous measurements of thought.

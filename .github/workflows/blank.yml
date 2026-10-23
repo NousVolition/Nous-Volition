@@ -155,3 +155,7 @@ jobs:
       - name: Miro source probes using full coupled dynamics
         working-directory: studies/community-two-in-one-application
         run: python check_miro_connections.py
+      - name: Primary inner-experience source audit integrity
+        working-directory: studies/community-two-in-one-application
+        run: python primary_records/verify.py
+

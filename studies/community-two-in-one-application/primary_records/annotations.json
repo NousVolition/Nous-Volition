@@ -1,0 +1,67 @@
+[
+  {
+    "sample": "5.3",
+    "interview": 7,
+    "pages_reviewed": [11,12,13,14,15,16,17,18,19,20],
+    "interview_locator": "31:03-57:52",
+    "participant_report": "A remembered childhood event is offered as background to a present concern; a calming line of thought and a threatening interpretation are reported together.",
+    "source_qualification": "The interviewer brackets the causal history claim. Wording, imagery and the relation between description and metaphor remain uncertain. Later remarks do not justify flattening the whole episode into a single definite category.",
+    "history_status": "participant_attributed_background; event occurrence and causation not independently verified",
+    "model_connection": "Personal history and competing inward responses are pertinent to the proposed two-in-one. They are not a measured utility time series or a calibrated force.",
+    "form_status": "unassigned; storm language is not a measured Wind or Fog variable",
+    "clock_status": "interview offsets only; no calibrated intra-thought intervals",
+    "evidence_level": "selected retrospective self-report with explicit uncertainty"
+  },
+  {
+    "sample": "8.5",
+    "interview": 10,
+    "pages_reviewed": [14,15,16],
+    "interview_locator": "35:12-41:08",
+    "participant_report": "A prior drawing is recalled through its colors while the desired structural details cannot be recovered.",
+    "source_qualification": "The participant corrects alternatives proposed by the interviewer. This reports incomplete retrieval; it does not measure objective memory accuracy or elapsed event age.",
+    "history_status": "specific prior artifact recalled; event date and independent artifact comparison unavailable",
+    "model_connection": "Relevant to Fog as variable memory clarity and to distinguishing an original event from its current retrieval.",
+    "form_status": "candidate connection only; Fog not participant-labelled or quantitatively measured",
+    "clock_status": "interview offsets only; recalled event age unspecified",
+    "evidence_level": "selected retrospective self-report"
+  },
+  {
+    "sample": "9.2",
+    "interview": 11,
+    "pages_reviewed": [6,7,8,9,10],
+    "interview_locator": "13:40-26:08",
+    "participant_report": "The participant reports both inward speaking and hearing while reading, alongside searching for a description and a brief image.",
+    "source_qualification": "Speaking and hearing are explicitly distinguished, but the search is not fully articulated. The source warns that the duration word milliseconds must not be taken literally.",
+    "history_status": "comparison to earlier sampled experiences; no role-specific event ledger or complete input history",
+    "model_connection": "Directly relevant to separating inward expression from hearing and searching. Hearing alone does not establish Clay's receiving, evaluating or reshaping function.",
+    "form_status": "unassigned; verbalness and imagery are not material-form labels",
+    "clock_status": "interview offsets and qualitative brevity; no measured milliseconds",
+    "evidence_level": "selected retrospective self-report"
+  },
+  {
+    "sample": "10.1",
+    "interview": 12,
+    "pages_reviewed": [1,2,3,4,5],
+    "interview_locator": "00:08-12:27",
+    "participant_report": "Frustration and patience coexist, with reported awareness of choosing understanding and moderating a reaction.",
+    "source_qualification": "The interview probes whether this process was directly experienced and resolves some timing context, but does not record a continuous within-episode trajectory or an independent outcome measure.",
+    "history_status": "current context and general understanding; no calibrated personal utility history",
+    "model_connection": "Supports investigating inward reconsideration and keeping calm appearance separate from disturbance. It does not establish a Water state or stable equilibrium.",
+    "form_status": "unassigned; coexistence does not prove perceived balance",
+    "clock_status": "interview offsets; some qualitative before/beep order, no trajectory timestamps",
+    "evidence_level": "selected retrospective self-report with timing qualification"
+  },
+  {
+    "sample": "11.3",
+    "interview": 13,
+    "pages_reviewed": [9,10,11],
+    "interview_locator": "24:54-32:24",
+    "participant_report": "Alternative arrangements are imagined in succession and evaluated for usefulness. Reported experienced pace differs from the inferred physical rapidity.",
+    "source_qualification": "Speaking to another person is external context. The inward images and comparisons are the relevant observations. Suggested fractions of a second are not instrument-measured durations.",
+    "history_status": "current task and preferences; no measured prehistory",
+    "model_connection": "Relevant to a moving nonverbal idea, evaluation and Wind's distinction between experienced and clock time. It does not supply a sequence of numerical coordinates or utility values.",
+    "form_status": "unassigned; no paired old/new memories or measured temporal distortion",
+    "clock_status": "reported sequence; exact transition times and outcomes unavailable",
+    "evidence_level": "selected retrospective self-report"
+  }
+]
