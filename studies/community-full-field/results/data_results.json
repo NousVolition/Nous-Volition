@@ -1,0 +1,118 @@
+{
+  "train": {
+    "groups": 280,
+    "sequences": 634,
+    "forecasts": 1052,
+    "models": {
+      "field": {
+        "macro_mse": 0.15762359686274122,
+        "macro_mae": 0.1682338232410858,
+        "outside_unit_interval": 78,
+        "minimum": -0.08170490577036335,
+        "maximum": 0.9880383622526147
+      },
+      "nonnegative": {
+        "macro_mse": 0.15860037721382259,
+        "macro_mae": 0.15860037721382259,
+        "outside_unit_interval": 0,
+        "minimum": 0.0,
+        "maximum": 1.0
+      },
+      "instantaneous": {
+        "macro_mse": 0.158539246230117,
+        "macro_mae": 0.16384731961807686,
+        "outside_unit_interval": 112,
+        "minimum": -0.029555204120884127,
+        "maximum": 0.9958232276818413
+      },
+      "initial": {
+        "macro_mse": 0.15860037721382259,
+        "macro_mae": 0.15860037721382259,
+        "outside_unit_interval": 0,
+        "minimum": 0.0,
+        "maximum": 1.0
+      },
+      "last": {
+        "macro_mse": 0.11399395888891686,
+        "macro_mae": 0.11399395888891686,
+        "outside_unit_interval": 0,
+        "minimum": 0.0,
+        "maximum": 1.0
+      },
+      "training_mean": {
+        "macro_mse": 0.22134829524725685,
+        "macro_mae": 0.44430493044510566,
+        "outside_unit_interval": 0,
+        "minimum": 0.3355513307984791,
+        "maximum": 0.3355513307984791
+      }
+    }
+  },
+  "evaluation": {
+    "groups": 127,
+    "sequences": 282,
+    "forecasts": 455,
+    "models": {
+      "field": {
+        "macro_mse": 0.14031829843974178,
+        "macro_mae": 0.15193601237614493,
+        "outside_unit_interval": 16,
+        "minimum": -0.19616377473853186,
+        "maximum": 0.9880383622526147
+      },
+      "nonnegative": {
+        "macro_mse": 0.14004499437570306,
+        "macro_mae": 0.14004499437570306,
+        "outside_unit_interval": 0,
+        "minimum": 0.0,
+        "maximum": 1.0
+      },
+      "instantaneous": {
+        "macro_mse": 0.13942468255882148,
+        "macro_mae": 0.145544006190535,
+        "outside_unit_interval": 28,
+        "minimum": -0.007581749751440322,
+        "maximum": 1.0026331825484045
+      },
+      "initial": {
+        "macro_mse": 0.14004499437570306,
+        "macro_mae": 0.14004499437570306,
+        "outside_unit_interval": 0,
+        "minimum": 0.0,
+        "maximum": 1.0
+      },
+      "last": {
+        "macro_mse": 0.10427915260592426,
+        "macro_mae": 0.10427915260592426,
+        "outside_unit_interval": 0,
+        "minimum": 0.0,
+        "maximum": 1.0
+      },
+      "training_mean": {
+        "macro_mse": 0.22138136461491237,
+        "macro_mae": 0.44433799981276106,
+        "outside_unit_interval": 0,
+        "minimum": 0.3355513307984791,
+        "maximum": 0.3355513307984791
+      }
+    }
+  },
+  "paired_field_minus_last_mse": {
+    "estimate": 0.03603914583381749,
+    "interval95": [
+      0.014461621735285613,
+      0.05777851290564433
+    ],
+    "bootstrap_groups": 127,
+    "replicates": 2000,
+    "seed": 20261022
+  },
+  "parameters": {
+    "baseline": 0.23659305993690852,
+    "gamma": 1.0,
+    "kappa": -0.03133751376794335,
+    "nonnegative_kappa": 0.0,
+    "instantaneous_coefficient": -0.014391704618003483,
+    "training_target_mean": 0.3355513307984791
+  }
+}

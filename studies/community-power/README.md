@@ -6,6 +6,10 @@ Streams and Rocks • seven fictional participants • an executed allocation be
 
 The supplied page matches Foucault’s *Discipline and Punish*, in the panopticism chapter. Its discussion of organization and power provides the questions. The numerical rules are our explicit synthetic assumptions. [How the passage is used](interpretation.md) · [Methods and units](methods.md) · [Source provenance](source_provenance.json) · [Verification](verification.json).
 
+## Full coupled field and the real-data test
+
+The [full coupled corpus-field test](../community-full-field/README.md) now runs momentum, pressure, incompressibility, signed-field transport and accumulated input together. Its explicitly proposed correctness mapping was tested on 455 later submissions in 127 evaluation groups, with fitting confined to separate training groups. Mean squared error is 0.1403 versus 0.1043 for retaining the last answer; 16 predictions fall outside [0,1]. The equations were retained, and the unsuccessful measurement link is reported. These are previously used public records, not untouched external validation. Different computed flows have identical total-field predictions, so this dataset cannot identify the spatial model. Intended meaning, treatment and penalty feedback still need their own measured links.
+
 ## Corrected corpus and real uptake records
 
 **Earlier community simulations included added equations.** The [corpus fidelity audit and real-record study](../community-mimesis/README.md) now uses the supplied corrected corpus explicitly. It preserves accumulated input A and source J=κA, all three threshold laws, exact-edge eligibility and the other stated mathematical relations. Logistic decisions and decaying penalty memory remain separately assumed extensions. Thirty-seven unit tests and 87 saved-result checks pass; this does not fit continuum social dynamics to text.

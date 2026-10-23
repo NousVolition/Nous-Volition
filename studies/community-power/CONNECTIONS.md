@@ -145,3 +145,10 @@ Foucault's place in the model remains the question of who defines categories, co
 [Community allocation results](README.md) · [Situational roles](SITUATIONAL_ROLES.md) · [Adaptable-role results](../adaptable-roles/README.md)
 
 
+
+
+## Full coupled field: completed conditional test
+
+The [full coupled corpus-field test](../community-full-field/README.md) now runs momentum, pressure, incompressibility, signed-field transport and accumulated input together. Its explicitly proposed correctness mapping was tested on 455 later submissions in 127 evaluation groups, with fitting confined to separate training groups. Mean squared error is 0.1403 versus 0.1043 for retaining the last answer; 16 predictions fall outside [0,1]. The equations were retained, and the unsuccessful measurement link is reported. These are previously used public records, not untouched external validation. Different computed flows have identical total-field predictions, so this dataset cannot identify the spatial model. Intended meaning, treatment and penalty feedback still need their own measured links.
+
+The candidate input is observed task correctness, not a claim to measure Sens or personal utility. The candidate output is the spatial total of S. Under periodic boundaries, transport and force cannot change that total; only the accumulated source does. The study runs 18 primary spatial calculations and seven training-input coverage calculations, preserves all three corpus response laws, and checks mass, divergence, pressure, stress and energy accounting. The same person may still be Water, Fog, Smoke or Clay in different situations; this calculation does not assign those descriptions from answer scores.

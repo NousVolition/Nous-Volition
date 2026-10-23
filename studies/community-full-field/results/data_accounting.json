@@ -1,0 +1,10 @@
+{
+  "records": 17111,
+  "missing_timestamps": 17111,
+  "submissions": 3107,
+  "unparsed": 7,
+  "singleton_sequences": 677,
+  "groups": 500,
+  "eligible_sequences": 916,
+  "forecasts": 1507
+}

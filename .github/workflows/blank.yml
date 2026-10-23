@@ -69,3 +69,9 @@ jobs:
         run: |
           python -m unittest -q
           python verify_saved.py
+
+      - name: Full coupled corpus field and conditional real-record checks
+        working-directory: studies/community-full-field
+        run: |
+          python -m unittest -q
+          python verify_saved.py

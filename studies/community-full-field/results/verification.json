@@ -1,0 +1,7 @@
+{
+  "unit_tests": 17,
+  "saved_checks": 3122,
+  "passed": true,
+  "protocol_sha256": "8ef6b96534bcd1960d9b2d27e86d7389f571d36cfa0d5aca12dba1ac9802ee4e",
+  "numpy": "2.5.3"
+}
