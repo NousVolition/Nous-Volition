@@ -1,0 +1,28 @@
+{
+  "unit_tests": {
+    "passed": 13,
+    "failed": 0
+  },
+  "saved_data": {
+    "passed": true,
+    "paths": 54,
+    "samples": 3853,
+    "energy_residual_max": 0.000001863252382161562
+  },
+  "player": {
+    "passed": true,
+    "states_exercised": 432,
+    "method": "Offline DOM and canvas logic harness; not a browser layout test"
+  },
+  "visual_review": {
+    "plots": 4,
+    "gif_sample_frames": [
+      0,
+      70,
+      120,
+      230
+    ],
+    "browser_layout": "Not performed: local-file URL rejected by browser policy"
+  },
+  "scope": "Synthetic numerical implementation, not empirical clay or human validation"
+}

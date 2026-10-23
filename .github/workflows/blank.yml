@@ -81,3 +81,11 @@ jobs:
         run: |
           python -m unittest -q
           python verify_saved.py
+
+      - name: Hug retained-history equations and saved trajectories
+        working-directory: studies/hug-memory-continuity
+        run: |
+          python -m unittest -q
+          python verify_saved.py
+      - name: Hug retained-history offline animation checks
+        run: node studies/hug-memory-continuity/check_player.cjs

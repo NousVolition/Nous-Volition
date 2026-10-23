@@ -1,0 +1,1093 @@
+{
+  "main": {
+    "kind": "main",
+    "nodes": 32,
+    "rows": [
+      {
+        "scenario": "retained",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "retained",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "retained",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "retained",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "retained",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "retained",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "erased_control",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "erased_control",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "erased_control",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "erased_control",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "erased_control",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "erased_control",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "no_pause",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "no_pause",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "no_pause",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "no_pause",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "no_pause",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "no_pause",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "origin",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "origin",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "origin",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "origin",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "origin",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "origin",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "generation1",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "generation1",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "generation1",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "generation1",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "generation1",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "generation1",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "generation3",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "generation3",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "generation3",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "generation3",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "generation3",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "generation3",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "changed_care",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "changed_care",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "changed_care",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "changed_care",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "changed_care",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "changed_care",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "persistent",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "persistent",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "persistent",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "persistent",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "persistent",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "persistent",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "opposing",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "opposing",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "opposing",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "opposing",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "opposing",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "opposing",
+        "condition": 2,
+        "history": 1
+      }
+    ],
+    "width": 44,
+    "elapsed_s": 33.60336329997517,
+    "jumps": [
+      {
+        "time_s": 720,
+        "erased": [
+          {
+            "row": 6,
+            "A_before": [
+              1.0000000000000038,
+              1.0000000000000042,
+              1.0000000000000029
+            ],
+            "S_rms_before": 0.4281356893904948
+          },
+          {
+            "row": 7,
+            "A_before": [
+              1.0000000000000038,
+              1.0000000000000042,
+              1.0000000000000029
+            ],
+            "S_rms_before": 0.4281356893904948
+          },
+          {
+            "row": 8,
+            "A_before": [
+              1.0000000000000038,
+              1.0000000000000042,
+              1.0000000000000029
+            ],
+            "S_rms_before": 0.4281356893904948
+          },
+          {
+            "row": 9,
+            "A_before": [
+              1.0000000000000038,
+              1.0000000000000042,
+              1.0000000000000029
+            ],
+            "S_rms_before": 0.4281356893904948
+          },
+          {
+            "row": 10,
+            "A_before": [
+              1.0000000000000038,
+              1.0000000000000042,
+              1.0000000000000029
+            ],
+            "S_rms_before": 0.4281356893904948
+          },
+          {
+            "row": 11,
+            "A_before": [
+              1.0000000000000038,
+              1.0000000000000042,
+              1.0000000000000029
+            ],
+            "S_rms_before": 0.4281356893904948
+          }
+        ]
+      }
+    ],
+    "ledger_sha256": "ad4226ad927a0d28e3b94d1aca9b1bcb563927487e2e2aaead370e626c47053b",
+    "source_hashes": {
+      "model.py": "4b352b82b9d5364aa8f6b545fda39c7d7f0fd43bf7e4428cca4fb48de5dbbf53",
+      "protocol.json": "74be926d7613dc256d5744c7717e86a08f5cf9b47f07d5b719e552cc3cc39c2a"
+    }
+  },
+  "fine": {
+    "kind": "fine",
+    "nodes": 64,
+    "rows": [
+      {
+        "scenario": "retained",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "retained",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "retained",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "retained",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "retained",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "retained",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "erased_control",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "erased_control",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "erased_control",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "erased_control",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "erased_control",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "erased_control",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "no_pause",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "no_pause",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "no_pause",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "no_pause",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "no_pause",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "no_pause",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "origin",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "origin",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "origin",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "origin",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "origin",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "origin",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "generation1",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "generation1",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "generation1",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "generation1",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "generation1",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "generation1",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "generation3",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "generation3",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "generation3",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "generation3",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "generation3",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "generation3",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "changed_care",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "changed_care",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "changed_care",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "changed_care",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "changed_care",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "changed_care",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "persistent",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "persistent",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "persistent",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "persistent",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "persistent",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "persistent",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "opposing",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "opposing",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "opposing",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "opposing",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "opposing",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "opposing",
+        "condition": 2,
+        "history": 1
+      }
+    ],
+    "width": 76,
+    "elapsed_s": 84.32439190003788,
+    "jumps": [
+      {
+        "time_s": 720,
+        "erased": [
+          {
+            "row": 6,
+            "A_before": [
+              0.9999999999999959,
+              0.999999999999994,
+              0.9999999999999941
+            ],
+            "S_rms_before": 0.42804469875933737
+          },
+          {
+            "row": 7,
+            "A_before": [
+              0.9999999999999959,
+              0.999999999999994,
+              0.9999999999999941
+            ],
+            "S_rms_before": 0.42804469875933737
+          },
+          {
+            "row": 8,
+            "A_before": [
+              0.9999999999999959,
+              0.999999999999994,
+              0.9999999999999941
+            ],
+            "S_rms_before": 0.42804469875933737
+          },
+          {
+            "row": 9,
+            "A_before": [
+              0.9999999999999959,
+              0.999999999999994,
+              0.9999999999999941
+            ],
+            "S_rms_before": 0.42804469875933737
+          },
+          {
+            "row": 10,
+            "A_before": [
+              0.9999999999999959,
+              0.999999999999994,
+              0.9999999999999941
+            ],
+            "S_rms_before": 0.42804469875933737
+          },
+          {
+            "row": 11,
+            "A_before": [
+              0.9999999999999959,
+              0.999999999999994,
+              0.9999999999999941
+            ],
+            "S_rms_before": 0.42804469875933737
+          }
+        ]
+      }
+    ],
+    "ledger_sha256": "ad4226ad927a0d28e3b94d1aca9b1bcb563927487e2e2aaead370e626c47053b",
+    "source_hashes": {
+      "model.py": "4b352b82b9d5364aa8f6b545fda39c7d7f0fd43bf7e4428cca4fb48de5dbbf53",
+      "protocol.json": "74be926d7613dc256d5744c7717e86a08f5cf9b47f07d5b719e552cc3cc39c2a"
+    }
+  },
+  "timefine": {
+    "kind": "timefine",
+    "nodes": 32,
+    "rows": [
+      {
+        "scenario": "retained",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "retained",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "retained",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "retained",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "retained",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "retained",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "erased_control",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "erased_control",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "erased_control",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "erased_control",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "erased_control",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "erased_control",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "no_pause",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "no_pause",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "no_pause",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "no_pause",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "no_pause",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "no_pause",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "origin",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "origin",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "origin",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "origin",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "origin",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "origin",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "generation1",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "generation1",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "generation1",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "generation1",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "generation1",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "generation1",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "generation3",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "generation3",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "generation3",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "generation3",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "generation3",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "generation3",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "changed_care",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "changed_care",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "changed_care",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "changed_care",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "changed_care",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "changed_care",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "persistent",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "persistent",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "persistent",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "persistent",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "persistent",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "persistent",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "opposing",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "opposing",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "opposing",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "opposing",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "opposing",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "opposing",
+        "condition": 2,
+        "history": 1
+      }
+    ],
+    "width": 44,
+    "elapsed_s": 64.30161010002485,
+    "jumps": [
+      {
+        "time_s": 720,
+        "erased": [
+          {
+            "row": 6,
+            "A_before": [
+              0.9999999999999962,
+              0.9999999999999941,
+              0.999999999999994
+            ],
+            "S_rms_before": 0.42813568939049407
+          },
+          {
+            "row": 7,
+            "A_before": [
+              0.9999999999999962,
+              0.9999999999999941,
+              0.999999999999994
+            ],
+            "S_rms_before": 0.42813568939049407
+          },
+          {
+            "row": 8,
+            "A_before": [
+              0.9999999999999962,
+              0.9999999999999941,
+              0.999999999999994
+            ],
+            "S_rms_before": 0.42813568939049407
+          },
+          {
+            "row": 9,
+            "A_before": [
+              0.9999999999999962,
+              0.9999999999999941,
+              0.999999999999994
+            ],
+            "S_rms_before": 0.42813568939049407
+          },
+          {
+            "row": 10,
+            "A_before": [
+              0.9999999999999962,
+              0.9999999999999941,
+              0.999999999999994
+            ],
+            "S_rms_before": 0.42813568939049407
+          },
+          {
+            "row": 11,
+            "A_before": [
+              0.9999999999999962,
+              0.9999999999999941,
+              0.999999999999994
+            ],
+            "S_rms_before": 0.42813568939049407
+          }
+        ]
+      }
+    ],
+    "ledger_sha256": "ad4226ad927a0d28e3b94d1aca9b1bcb563927487e2e2aaead370e626c47053b",
+    "source_hashes": {
+      "model.py": "4b352b82b9d5364aa8f6b545fda39c7d7f0fd43bf7e4428cca4fb48de5dbbf53",
+      "protocol.json": "74be926d7613dc256d5744c7717e86a08f5cf9b47f07d5b719e552cc3cc39c2a"
+    }
+  },
+  "spatial": {
+    "kind": "spatial",
+    "nodes": 128,
+    "rows": [
+      {
+        "scenario": "retained",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "retained",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "retained",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "opposing",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "opposing",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "opposing",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "persistent",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "persistent",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "persistent",
+        "condition": 2,
+        "history": 0
+      }
+    ],
+    "width": 140,
+    "elapsed_s": 55.49608739995165,
+    "jumps": [],
+    "ledger_sha256": "ad4226ad927a0d28e3b94d1aca9b1bcb563927487e2e2aaead370e626c47053b",
+    "source_hashes": {
+      "model.py": "4b352b82b9d5364aa8f6b545fda39c7d7f0fd43bf7e4428cca4fb48de5dbbf53",
+      "protocol.json": "74be926d7613dc256d5744c7717e86a08f5cf9b47f07d5b719e552cc3cc39c2a"
+    }
+  }
+}

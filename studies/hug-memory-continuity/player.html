@@ -1,0 +1,45 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hug memory continuity — animation</title>
+<style>*{box-sizing:border-box}body{margin:30px auto;padding:0 24px;max-width:1180px;background:#faf9f5;color:#183b43;font:16px/1.5 system-ui}h1{font-size:32px;line-height:1.2;margin:18px 0 12px}a{color:#087f8c}p{max-width:1000px}.controls{display:flex;flex-wrap:wrap;align-items:end;gap:14px;margin:20px 0}label{display:grid;gap:5px;font-size:14px}select,button{font:inherit;padding:9px 12px;border:1px solid #a9bdb8;border-radius:6px;background:white;color:#183b43}button{cursor:pointer}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:white;border:1px solid #d5dfda;border-radius:12px;padding:14px}h2{font-size:20px;margin:0}.status{min-height:48px;color:#51646b;font-size:14px}canvas{width:100%;height:auto;display:block}.metric{font-size:14px;margin:8px 0}.bar{height:7px;border-radius:4px;background:#e4ebe8;overflow:hidden}.bar span{display:block;height:100%;background:#087f8c}.timeline{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:center}input[type=range]{width:100%;accent-color:#087f8c}.note{background:#e9f1ee;padding:14px 18px;border-radius:8px}.legend{display:flex;gap:20px;font-size:14px;margin:10px 0}.teal{color:#087f8c}.orange{color:#c45a23}.small{font-size:13px;color:#51646b}@media(max-width:760px){.cards{grid-template-columns:1fr}.card canvas{max-width:350px;margin:auto}h1{font-size:27px}}
+</style></head><body>
+<p><a href="report.html">← Results and plots</a> · <a href="METHODS.md">Equations</a></p>
+<h1>The rhythm becomes quiet. The history remains.</h1>
+<p>Saved synthetic trajectories with a bounded expressed field. The active drive is off and braking is applied at 480–720 s. Orbital forcing continues. A separate neighbor account arrives at 950–970 s.</p>
+<div class="controls"><label>Scenario<select id="scenario"></select></label><label>Initial mechanical state<select id="history"><option value="0">First start</option><option value="1">Second start</option></select></label><label>Clip<select id="clip"></select></label><button id="play" type="button">Play</button></div>
+<div class="timeline"><strong id="clock">Elapsed time</strong><input id="seek" type="range" min="0" max="150" value="0" step="1" aria-label="Position within clip"></div>
+<p class="small" id="clipnote"></p><div class="legend"><span class="teal">━━ Selected scenario</span><span class="orange" id="resetlegend">┄┄ Reset control, generation 2</span></div>
+<div class="cards" id="cards"></div>
+<p class="note">The shape shows one shear mode, exaggerated ×150. Closure is preserved by the drawing map. Color and motion do not establish physical rupture, human trauma or inherited personal memories. Clips skip waiting time within the same saved trajectories.</p>
+<p class="small">Stored input and expressed influence are distinct. Only the labeled reset control deletes working A and S; the audit record remains. Stronger transmission and opposing exchange are sensitivity settings, not kinds of people. <a href="REFERENCE.md">Adoption and ancestry reference</a>.</p>
+<script src="animation-data.js"></script><script>
+'use strict';
+const D=HUGDATA;function decode(b){const x=atob(b),u=new Uint8Array(x.length);for(let i=0;i<x.length;i++)u[i]=x.charCodeAt(i);return new Float32Array(u.buffer)}
+const Q=decode(D.q),A=decode(D.A),S=decode(D.S),AMP=decode(D.amplitude),REP=decode(D.repeat);const nr=D.shape[1],ns=D.scenarios.length;
+const scenario=document.getElementById('scenario'),history=document.getElementById('history'),clip=document.getElementById('clip'),seek=document.getElementById('seek'),play=document.getElementById('play');
+D.scenarios.forEach((s,i)=>scenario.add(new Option(s.label,i)));D.clips.forEach((s,i)=>clip.add(new Option(s.label,i)));
+const cards=[];D.conditions.forEach((c,i)=>{const el=document.createElement('section');el.className='card';el.innerHTML='<h2></h2><div class="status"></div><canvas width="340" height="310"></canvas><div class="metric stored"></div><div class="bar"><span></span></div><div class="metric expression"></div><div class="small displacement"></div>';el.querySelector('h2').textContent=c.name;document.getElementById('cards').append(el);cards.push(el)});
+let playing=false,last=0,carry=0;
+function row(s,c,h){return s*6+c*2+h}
+function render(){const s=+scenario.value,h=+history.value,cl=D.clips[+clip.value],frame=cl.start+(+seek.value),time=D.times[frame],paused=D.scenarios[s].pause&&time>=480&&time<720;
+ document.getElementById('clock').textContent='Elapsed '+time.toFixed(1)+' s';document.getElementById('clipnote').textContent='Clip '+(+clip.value+1)+'/'+D.clips.length+' · '+D.times[cl.start].toFixed(0)+'–'+D.times[cl.start+cl.count-1].toFixed(0)+' s. Changing clips jumps in time; it does not reset a trajectory.';
+ document.getElementById('resetlegend').style.visibility=s===0?'visible':'hidden';
+ cards.forEach((el,c)=>{const j=row(s,c,h),q=Q[frame*nr+j],amplitude=AMP[frame*nr+j],baseline=D.baselines[j],r=REP[frame*nr+j];let status;
+ if(paused)status='Drive off + brake · '+(100*amplitude/baseline).toFixed(1)+'% of baseline amplitude';
+ else if(c===0)status=(amplitude<.8*baseline?'Amplitude below 80%':'Amplitude at least 80%')+' · no orbital synchronization test';
+ else if((D.scenarios[s].pause&&time>=720&&time<783)||(time>=950&&time<1033))status='Assessing after intervention / reminder';
+ else status=r>=0&&r<D.repeatTolerance?'Mechanical 1-orbit repeat confirmed':'No mechanical 1-orbit confirmation';
+ el.querySelector('.status').textContent=status;el.querySelector('.stored').textContent='Stored input A: '+A[frame*ns+s].toFixed(3);el.querySelector('.bar span').style.width=Math.min(100,100*A[frame*ns+s]/3.5)+'%';el.querySelector('.expression').textContent='Expressed S, RMS: '+S[frame*ns+s].toFixed(3);el.querySelector('.displacement').textContent='Displacement: '+q.toFixed(4)+' mm · active drive '+(paused?'off':'on');
+ const cv=el.querySelector('canvas'),ctx=cv.getContext('2d');ctx.clearRect(0,0,340,310);
+ if(c>0){const ec=D.conditions[c].e,phase=2*Math.PI*time/D.period;ctx.strokeStyle='#baccc6';ctx.lineWidth=1;ctx.beginPath();ctx.ellipse(170,43,40,40*Math.sqrt(1-ec*ec),0,0,2*Math.PI);ctx.stroke();let E=phase;for(let z=0;z<10;z++)E-=(E-ec*Math.sin(E)-phase)/(1-ec*Math.cos(E));ctx.fillStyle='#687e85';ctx.beginPath();ctx.arc(170+40*ec,43,2,0,2*Math.PI);ctx.fill();ctx.fillStyle='#087f8c';ctx.beginPath();ctx.arc(170+40*Math.cos(E),43+40*Math.sqrt(1-ec*ec)*Math.sin(E),4,0,2*Math.PI);ctx.fill()}
+ else{ctx.fillStyle='#687e85';ctx.font='14px system-ui';ctx.textAlign='center';ctx.fillText('No external orbital clock',170,45)}
+ ctx.strokeStyle='#e0e7e3';ctx.setLineDash([3,4]);ctx.beginPath();ctx.moveTo(45,205);ctx.lineTo(295,205);ctx.stroke();ctx.setLineDash([]);
+ function shape(mm,color,dash){ctx.strokeStyle=color;ctx.lineWidth=3;ctx.setLineDash(dash);ctx.beginPath();const shear=150*(mm/1000)/.1;for(let k=0;k<=160;k++){const th=2*Math.PI*k/160,x=170+80*(Math.cos(th)+shear*Math.sin(th)),y=205-80*Math.sin(th);if(k===0)ctx.moveTo(x,y);else ctx.lineTo(x,y)}ctx.stroke();ctx.setLineDash([])}
+ if(s===0)shape(Q[frame*nr+row(1,c,h)],'#c45a23',[5,5]);shape(q,'#087f8c',[]);
+ ctx.fillStyle='#687e85';ctx.font='12px system-ui';ctx.textAlign='left';ctx.fillText('upper: paired exchange permitted',20,113);ctx.fillText('lower: direct exchange exactly off',20,305);
+ });
+}
+function setPlaying(v){playing=v;play.textContent=v?'Pause':'Play';last=0;carry=0}
+play.addEventListener('click',()=>setPlaying(!playing));[scenario,history,clip,seek].forEach(el=>el.addEventListener('input',()=>{if(el===clip)seek.value=0;render()}));
+function tick(now){if(playing){if(last)carry+=now-last;last=now;if(carry>=65){const steps=Math.floor(carry/65);carry%=65;let f=+seek.value+steps;if(f>=151){f=0;clip.value=(+clip.value+1)%D.clips.length}seek.value=f;render()}}requestAnimationFrame(tick)}
+render();requestAnimationFrame(tick);
+window.hugPlayer={render,setPlaying,data:D,decoded:{Q,A,S,AMP,REP}};
+</script></body></html>
