@@ -2,7 +2,7 @@
 
 Larger simulated movement restructures the expressed field more strongly, but no tested paired case crosses the predeclared rhythm-change bands. Stored A and event provenance remain intact. This is a synthetic stress test of reduced equations, not measured clay behavior.
 
-[Plain-language report](report.html) · [Interactive animation](player.html) · [Animated GIF](hug-movement.gif) · [SciSpace-assisted testing structure](TESTING_STRUCTURE.md) · [Methods and reproduction](METHODS.md)
+[Plain-language report](report.html) · [Interactive animation](player.html) · [Animated GIF](hug-movement.gif) · [SciSpace-assisted testing structure](TESTING_STRUCTURE.md) · [Methods and reproduction](METHODS.md) · [Specification status](SPECIFICATION_STATUS.md)
 
 ![Movement sweep](figures/sweep.png)
 
@@ -10,7 +10,7 @@ Six primary movement settings (1, 3, 10, 30, 100, 300), three orbital conditions
 
 The field can change without changing the rhythm substantially. When the orbit's force is held fixed while self-motion grows, orbital repetition can change in both paired models. That is not a memory-feedback effect. All outcomes, including unconfirmed recovery windows, remain in [results.json](results.json), [summary.csv](summary.csv), and the report.
 
-The [testing structure](TESTING_STRUCTURE.md) separates equation fidelity, numerical reliability, causal controls, rhythm outcomes and future material measurements. SciSpace discovery was checked against linked primary sources; the numerical thresholds are explicit study choices. The original source laws and the declared reductions/extensions remain pinned and unchanged.
+The [testing structure](TESTING_STRUCTURE.md) separates equation fidelity, numerical reliability, causal controls, rhythm outcomes and future material measurements. SciSpace discovery was checked against linked primary sources; the numerical thresholds are explicit study choices. The preceding surrogate stays fixed across the sweep; it is not the unmodified corpus system. The [specification register](SPECIFICATION_STATUS.md) identifies the changed source law, added relaxation and pair exchange, separate Burgers mechanics, and missing full-field inputs.
 
 Twenty unit tests cover source fidelity, scaling symmetry, conservative transport, exact lower-half exclusion and diagnostics. [Saved checks](verify_saved.py) recompute mechanics and retained inputs; [player checks](check_player.cjs) exercise offline controls and finite coordinates, not browser layout. Full double-precision trajectories are reproducible; compact primary data and refinement audits are published. See [run provenance](run_provenance.json), [protocol](protocol.json), and [hash manifest](manifest_sha256.json).
 

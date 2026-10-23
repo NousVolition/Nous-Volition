@@ -4,9 +4,11 @@ The question is whether movement changes the expression of retained history enou
 
 This structure was prepared with literature discovery through SciSpace. The test choices and thresholds below are ours, not prescriptions taken from those papers. The immediate numerical study occupies stages 1–4; the material measurements in stage 5 remain future work.
 
+**Before a full field simulation:** complete the [specification register](SPECIFICATION_STATUS.md). It distinguishes corpus laws, the user's graded upper-region design intent, and the assistant-added surrogate. The completed study's fixed formulation includes a capped source, relaxation, pair exchange and Burgers mechanics; those additions are not supplied by the corpus. Its Newtonian analogy does not derive the Burgers law. The full field domain, boundaries, meaning and units of S, input/kernel normalization, branch choices and fluid/body coupling still require explicit specifications.
+
 | Stage | Question | Evidence required | What it cannot establish |
 |---|---|---|---|
-| 1. Equation fidelity | Are the supplied laws and declared extensions implemented? | Pinned source files; zero-deformation limit; exact lower-half exclusion; retained input; conservative redistribution | That the proposed laws describe a physical material |
+| 1. Equation fidelity | Which corpus laws are retained, modified or augmented, and is the stated surrogate implemented correctly? | Separate corpus-law and extension audits; pinned files; zero-deformation limit; exact lower-half exclusion; retained input; conservative redistribution | Equivalence of the surrogate to the full corpus system, or physical validity |
 | 2. Numerical trust | Does the answer persist with finer calculations? | 32/64/128 spatial cells, tighter time accuracy, energy balance, finite fields, matched-effect convergence | Experimental validation |
 | 3. Mechanism | Is a change caused by movement feedback? | Paired moving/fixed spatial operators at identical parameters and histories; a second family with orbit force held fixed | A causal conclusion about people or inherited memory |
 | 4. Rhythm | Is it a change in size, timing, phase, or orbit repetition? | Separate amplitude, cycle period, phase offset, pause/recovery and full mechanical repeat diagnostics | A proof of an asymptotic limit cycle, chaos, or universal critical threshold |

@@ -2,6 +2,8 @@
 
 The [testing structure](TESTING_STRUCTURE.md) records the questions, controls, decision bands, literature support and future measurements. [protocol.json](protocol.json) freezes the immediate sweep. All physical and field parameters remain synthetic.
 
+The [specification register](SPECIFICATION_STATUS.md) distinguishes the retained corpus laws from the assistant-added surrogate. In particular, capped j replaces the corpus's linear J; the mean-one angular kernels differ from its unit-spatial-integral kernel; relaxation and pair exchange are added operators; and Burgers mechanics is a separate constitutive choice. This sweep keeps that surrogate fixed. It is not a full simulation of the unmodified corpus equations, and the pair exchange is not a source-established Girardian doubling law.
+
 ## Equations and provenance
 
 The prior model is preserved as [baseline.py](baseline.py), the deformation-aware extension as [feedback.py](feedback.py), and its exact prior protocol as [source_protocol.json](source_protocol.json). SHA-256 hashes are pinned in the new protocol. The full source-law derivation is preserved in the [movement-feedback methods](../hug-memory-feedback/METHODS.md). These files implement the user's accumulated-source and transported-field equations under the declared angular-field and single-shear-mode reduction. They do not implement the full spatial momentum/pressure system.
