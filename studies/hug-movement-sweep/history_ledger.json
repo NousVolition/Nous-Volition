@@ -1,0 +1,85 @@
+{
+  "ancestry": {
+    "enabled": false,
+    "reason": "No human genetic or epigenetic transmission coefficient is established by the cited reference data. Generational attenuation here concerns communicated exposure, not inherited autobiographical memory."
+  },
+  "events": [
+    {
+      "center_rad": 0.7,
+      "channel": 0,
+      "end_s": 30,
+      "id": "origin-001",
+      "origin": "origin participant",
+      "rate_per_s": 0.03333333333333333,
+      "route": "direct for generation 0; communicated account for descendants",
+      "start_s": 0
+    },
+    {
+      "center_rad": 2.2,
+      "channel": 1,
+      "end_s": 70,
+      "id": "care-001",
+      "origin": "caregiving environment",
+      "rate_per_s": 0.03333333333333333,
+      "route": "experienced context; independent of biological ancestry",
+      "start_s": 40
+    },
+    {
+      "center_rad": 4.1,
+      "channel": 2,
+      "end_s": 110,
+      "id": "neighbor-001",
+      "origin": "neighbor account",
+      "rate_per_s": 0.03333333333333333,
+      "route": "social communication",
+      "start_s": 80
+    },
+    {
+      "center_rad": 4.1,
+      "channel": 2,
+      "end_s": 970,
+      "id": "reminder-001",
+      "origin": "neighbor account",
+      "rate_per_s": 0.025,
+      "route": "later re-exposure; no new claim of direct participation",
+      "start_s": 950
+    }
+  ],
+  "scenario_routes": [
+    {
+      "caregiver": 0.35,
+      "generation": 2,
+      "id": "feedback",
+      "neighbor": 0.15,
+      "transmission": 0.55
+    },
+    {
+      "caregiver": 0.35,
+      "generation": 2,
+      "id": "frozen",
+      "neighbor": 0.15,
+      "transmission": 0.55
+    },
+    {
+      "caregiver": 0.35,
+      "generation": 2,
+      "id": "diffusion_only",
+      "neighbor": 0.15,
+      "transmission": 0.55
+    },
+    {
+      "caregiver": 0.35,
+      "generation": 2,
+      "id": "gradient_only",
+      "neighbor": 0.15,
+      "transmission": 0.55
+    },
+    {
+      "caregiver": 0.35,
+      "generation": 2,
+      "id": "no_pause",
+      "neighbor": 0.15,
+      "transmission": 0.55
+    }
+  ]
+}

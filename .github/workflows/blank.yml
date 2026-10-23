@@ -104,3 +104,11 @@ jobs:
         run: |
           python -m unittest -q
           python verify_saved.py
+
+      - name: Hug larger-movement equations and saved results
+        working-directory: studies/hug-movement-sweep
+        run: |
+          python -m unittest -q
+          python verify_saved.py
+      - name: Hug larger-movement offline animation checks
+        run: node studies/hug-movement-sweep/check_player.cjs

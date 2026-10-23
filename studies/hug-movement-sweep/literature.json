@@ -1,0 +1,44 @@
+{
+  "tool": "SciSpace",
+  "date": "2026-10-22",
+  "queries": [
+    "How should numerical experiments distinguish amplitude changes, phase locking, and recovery after perturbation in a periodically forced nonlinear oscillator, with matched controls and numerical convergence checks?",
+    "What experimental protocols and constitutive model checks are used for amplitude sweeps, recovery, and structural memory in thixotropic clay or soft viscoelastic materials under large oscillatory shear?"
+  ],
+  "screening": "Targeted discovery, not a systematic review. Protocol decisions are assistant-designed and explicitly labeled.",
+  "selected": [
+    {
+      "id": "4ap2o4kj0e",
+      "doi": "10.1007/s00397-009-0403-7",
+      "title": "Large amplitude oscillatory shear of pseudoplastic and elastoviscoplastic materials",
+      "primary_url": "https://link.springer.com/article/10.1007/s00397-009-0403-7",
+      "access": "Publisher abstract",
+      "application": "Separate amplitude and frequency; consider stress-strain loops in future material testing. No coefficients borrowed."
+    },
+    {
+      "id": "1kxfaa9k4g",
+      "doi": "10.1122/8.0000262",
+      "title": "Distinguishing thixotropy from viscoelasticity",
+      "primary_url": "https://arxiv.org/abs/2106.13452",
+      "access": "Author abstract and journal metadata",
+      "application": "Recovery can have competing mechanisms; waiting-time step tests are candidates for future measurement, not evidence validating the Hug."
+    },
+    {
+      "id": "2k17hc49us",
+      "doi": "10.1103/PhysRevE.97.042209",
+      "title": "Stabilisation of dynamics of oscillatory systems by non-autonomous perturbation",
+      "primary_url": "https://arxiv.org/abs/1803.11392",
+      "access": "Author abstract and full paper",
+      "application": "Distinguish finite-window synchronization from asymptotic stability; no transfer of the paper's stability results."
+    }
+  ],
+  "methods_column": {
+    "column": "methods_used",
+    "ids": [
+      "4ap2o4kj0e",
+      "1kxfaa9k4g",
+      "23ttzb7pbl"
+    ],
+    "use": "Discovery aid only; unverified extraction details not adopted."
+  }
+}

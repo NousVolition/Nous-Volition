@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hug movement comparison</title>
+<style>body{max-width:1120px;margin:28px auto;padding:0 20px;background:#faf9f5;color:#193f46;font:16px/1.6 system-ui}h1{font-size:30px;line-height:1.2}a{color:#087f8c}select,button{font:inherit;padding:8px;border:1px solid #bccccc;border-radius:5px;background:white;color:#193f46}label{display:inline-block;margin:6px 16px 6px 0}input{width:min(600px,75vw)}canvas{width:100%;height:auto;background:white;border:1px solid #d9dfdf;border-radius:10px}.note{padding:12px 18px;background:#edf3f1;border-radius:8px}#readout{font-weight:600}.legend{font-size:14px}small{color:#60767b}</style></head>
+<body><h1>Larger Hug motion: field change and rhythm change</h1><p><a href="report.html">Report and plots</a> · <a href="TESTING_STRUCTURE.md">Testing structure</a></p>
+<p class="note">These are saved synthetic trajectories. Shape uses actual shear, gain ×1. Colors show the change in local expression caused by movement feedback; white means little difference from the control. Stored history is retained throughout.</p>
+<label>Movement setting <select id="setting"></select></label><label>Time window <select id="clip"></select></label><label>Speed <select id="speed"><option value="0.25">¼ speed</option><option value="0.5" selected>½ speed</option><option value="1">Real simulation speed</option></select></label>
+<div><button id="play">Pause</button> <input id="seek" aria-label="Time within the selected clip" type="range" min="0" max="150" value="0" step="1"></div><p id="readout" aria-live="polite"></p><canvas id="plot" width="1080" height="455" aria-label="Three Hug outlines compare feedback with fixed geometry for no orbit, circular and eccentric forcing"></canvas>
+<p class="legend">Solid colored outline: movement feedback. Dashed gray: fixed-geometry control at the same time. Purple: less local expression; orange: more. One common color scale, ±0.012 S, across every setting.</p><p id="verdict"></p><small>First mechanical start shown; both starts are in the results. Orbit-repeat means the mechanical state meets the numerical test over ten orbital comparisons. It is not inferred from outline overlap. Clips jump between labeled windows; no simulated state is reset. The affine outline stays closed by construction. This is uncalibrated reduced-model behavior, not a prediction of real clay damage.</small>
+<script src="animation-data.js"></script><script>
+const D=SWEEPDATA, el=id=>document.getElementById(id), canvas=el('plot'),ctx=canvas.getContext('2d');
+function unpack(s){const bytes=Uint8Array.from(atob(s),c=>c.charCodeAt(0));return new Float32Array(bytes.buffer)}
+const sets=D.datasets.map(s=>({...s,q:unpack(s.q),delta:unpack(s.delta),amplitude:unpack(s.amplitude),repeat:unpack(s.repeat)}));
+el('setting').innerHTML=sets.map((s,i)=>`<option value="${i}">×${s.scale} · orbit force ${s.policy==='scaled'?'proportional':'fixed'}</option>`).join('');el('setting').value='5';
+el('clip').innerHTML=D.clips.map((c,i)=>`<option value="${i}">${c.name}</option>`).join('');el('clip').value='3';
+let running=true,frame=0,last=null,accum=0;
+function mix(a,b,t){return a.map((x,i)=>Math.round(x+(b[i]-x)*t))}
+function fieldColor(v){const t=Math.min(1,Math.abs(v)/D.colorLimit);return 'rgb('+mix([247,247,247],v<0?[102,55,145]:[204,112,28],t).join(',')+')'}
+function coords(cx,cy,r,g,k){const th=k*2*Math.PI/256;return [cx+r*(Math.cos(th)+g*Math.sin(th)),cy-r*Math.sin(th)]}
+function line(points,color,width,dash=[]){ctx.beginPath();ctx.setLineDash(dash);ctx.strokeStyle=color;ctx.lineWidth=width;points.forEach((p,i)=>i?ctx.lineTo(...p):ctx.moveTo(...p));ctx.stroke();ctx.setLineDash([])}
+function label(text,x,y,size=15,color='#193f46'){ctx.font=`${size}px system-ui`;ctx.fillStyle=color;ctx.fillText(text,x,y)}
+function render(){const si=Number(el('setting').value),ci=Number(el('clip').value),s=sets[si],clip=D.clips[ci];frame=Math.max(0,Math.min(150,Number(el('seek').value)));const i=clip.start+frame,t=D.times[i];
+ ctx.clearRect(0,0,canvas.width,canvas.height);el('readout').textContent=`${clip.name} · simulation ${t.toFixed(1)} s · setting ×${s.scale} · ${s.policy==='scaled'?'orbital force grows with motion':'orbital force stays fixed'}`;
+ for(let c=0;c<3;c++){const x=22+355*c,cx=x+155,cy=240,g=s.q[i*6+c]/100,old=s.q[i*6+c+3]/100;label(D.conditions[c],x,35,20);
+ let status=c===0?'Self-rhythm; no orbital test':(s.repeat[i*3+c]<.01?'Mechanical orbit-repeat confirmed':'Mechanical orbit-repeat not confirmed');if(s.amplitude[i*3+c]<.1*s.baseline[c])status='Small motion during braking';label(status,x,65,13);
+ if(c>0){const e=c===1?0:.212,M=2*Math.PI*t/D.period;let E=M;for(let j=0;j<8;j++)E-=(E-e*Math.sin(E)-M)/(1-e*Math.cos(E));ctx.beginPath();ctx.strokeStyle='#cbd5d5';ctx.lineWidth=1;ctx.ellipse(cx,112,30,30*Math.sqrt(1-e*e),0,0,2*Math.PI);ctx.stroke();ctx.beginPath();ctx.arc(cx+30*Math.cos(E),112-30*Math.sqrt(1-e*e)*Math.sin(E),4,0,2*Math.PI);ctx.fillStyle='#087f8c';ctx.fill();label('Continuous 5.7 s orbital clock',x+65,158,11,'#718087')}
+ const points=Array.from({length:257},(_,k)=>coords(cx,cy,69,g,k));line(points,'#aab4b6',10);
+ for(let k=0;k<256;k++){const value=s.delta[(i*3+c)*32+Math.floor(k*32/256)];line([points[k],points[k+1]],fieldColor(value),6)}
+ line(Array.from({length:257},(_,k)=>coords(cx,cy,69,old,k)),'#718087',1,[4,4]);
+ label(`d = ${s.q[i*6+c].toFixed(3)} mm · shear ${(100*g).toFixed(2)}%`,x,345,14);label(`Local late pattern difference: ${(100*s.fieldRMS[c]).toFixed(4)}%`,x,375,13);label(s.flags[c].length?'Rhythm screen: '+s.flags[c].join(', '):'No paired rhythm band crossed',x,405,14,'#087f8c');}
+ el('verdict').textContent='Read the colors as redistribution of expressed influence. Compare rhythm against the fixed-geometry control within the same setting. Differences between orbital-force policies answer a separate question.';
+ return {dataset:si,clip:ci,frame,time:t};}
+el('play').onclick=()=>{running=!running;el('play').textContent=running?'Pause':'Play';last=null};
+for(const id of ['setting','clip','seek'])el(id).oninput=()=>{if(id==='clip')el('seek').value='0';accum=0;render()};
+function tick(now){if(last!==null&&running){accum+=(now-last)/1000*Number(el('speed').value);if(accum>=.2){const steps=Math.floor(accum/.2);accum-=steps*.2;el('seek').value=String((Number(el('seek').value)+steps)%151);render()}}last=now;requestAnimationFrame(tick)}
+render();requestAnimationFrame(tick);
+</script></body></html>

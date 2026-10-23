@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "unit_tests": 20,
+  "main_trajectories": 96,
+  "refinement_trajectories": 204,
+  "saved_mechanical_paths_recomputed": 96,
+  "offline_player_states": 96,
+  "offline_canvas_coordinate_calls": 303800,
+  "visual_review": [
+    "sweep.png",
+    "largest-motion.png",
+    "forcing-control.png",
+    "GIF before-braking and late frames"
+  ],
+  "browser_layout_test": false,
+  "browser_layout_note": "Local-file browser access unavailable; no alternate browser route was used. Offline player logic and rendered image frames were checked.",
+  "physical_measurements": 0,
+  "numerical_scope": "32/64 cells at every primary setting; tighter time controls at every primary setting; 128 cells for largest primary and both fixed-orbit controls. No sampled matched rhythm screen crossing."
+}

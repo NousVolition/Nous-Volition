@@ -1,0 +1,1927 @@
+{
+  "scaled/1/main": {
+    "scale": 1,
+    "orbit_policy": "scaled",
+    "kind": "main",
+    "nodes": 32,
+    "rows": [
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 1
+      }
+    ],
+    "seconds": 45.76777100004256,
+    "source_hashes": {
+      "model.py": "3899b6f9058d309b679cc94be97dc5a5b4a18970c559b34555340d1d09575978",
+      "baseline.py": "4b352b82b9d5364aa8f6b545fda39c7d7f0fd43bf7e4428cca4fb48de5dbbf53",
+      "feedback.py": "85c2ca5164fb82dd68cebcdaa07b92648be579bb7059238c958c9ad5bd832aa6",
+      "protocol.json": "a81d5a360354bfddb0a2a8cf92cb9c730284c1cf7a2662d0638fc3127059e720",
+      "source_protocol.json": "c56b8d7bb008b363163cea0b70cf2f811d8a685fd8445710f536eeaf4d9a1956",
+      "history_ledger.json": "dfdf4ec62a89ac524824747cbb58352b38e5d196fc11707a194489d3439d71ff"
+    }
+  },
+  "scaled/1/fine": {
+    "scale": 1,
+    "orbit_policy": "scaled",
+    "kind": "fine",
+    "nodes": 64,
+    "rows": [
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 1
+      }
+    ],
+    "seconds": 94.96545860002516,
+    "source_hashes": {
+      "model.py": "3899b6f9058d309b679cc94be97dc5a5b4a18970c559b34555340d1d09575978",
+      "baseline.py": "4b352b82b9d5364aa8f6b545fda39c7d7f0fd43bf7e4428cca4fb48de5dbbf53",
+      "feedback.py": "85c2ca5164fb82dd68cebcdaa07b92648be579bb7059238c958c9ad5bd832aa6",
+      "protocol.json": "a81d5a360354bfddb0a2a8cf92cb9c730284c1cf7a2662d0638fc3127059e720",
+      "source_protocol.json": "c56b8d7bb008b363163cea0b70cf2f811d8a685fd8445710f536eeaf4d9a1956",
+      "history_ledger.json": "dfdf4ec62a89ac524824747cbb58352b38e5d196fc11707a194489d3439d71ff"
+    }
+  },
+  "scaled/1/timefine": {
+    "scale": 1,
+    "orbit_policy": "scaled",
+    "kind": "timefine",
+    "nodes": 32,
+    "rows": [
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 1
+      }
+    ],
+    "seconds": 85.59754840005189,
+    "source_hashes": {
+      "model.py": "3899b6f9058d309b679cc94be97dc5a5b4a18970c559b34555340d1d09575978",
+      "baseline.py": "4b352b82b9d5364aa8f6b545fda39c7d7f0fd43bf7e4428cca4fb48de5dbbf53",
+      "feedback.py": "85c2ca5164fb82dd68cebcdaa07b92648be579bb7059238c958c9ad5bd832aa6",
+      "protocol.json": "a81d5a360354bfddb0a2a8cf92cb9c730284c1cf7a2662d0638fc3127059e720",
+      "source_protocol.json": "c56b8d7bb008b363163cea0b70cf2f811d8a685fd8445710f536eeaf4d9a1956",
+      "history_ledger.json": "dfdf4ec62a89ac524824747cbb58352b38e5d196fc11707a194489d3439d71ff"
+    }
+  },
+  "scaled/3/main": {
+    "scale": 3,
+    "orbit_policy": "scaled",
+    "kind": "main",
+    "nodes": 32,
+    "rows": [
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 1
+      }
+    ],
+    "seconds": 44.921676700003445,
+    "source_hashes": {
+      "model.py": "3899b6f9058d309b679cc94be97dc5a5b4a18970c559b34555340d1d09575978",
+      "baseline.py": "4b352b82b9d5364aa8f6b545fda39c7d7f0fd43bf7e4428cca4fb48de5dbbf53",
+      "feedback.py": "85c2ca5164fb82dd68cebcdaa07b92648be579bb7059238c958c9ad5bd832aa6",
+      "protocol.json": "a81d5a360354bfddb0a2a8cf92cb9c730284c1cf7a2662d0638fc3127059e720",
+      "source_protocol.json": "c56b8d7bb008b363163cea0b70cf2f811d8a685fd8445710f536eeaf4d9a1956",
+      "history_ledger.json": "dfdf4ec62a89ac524824747cbb58352b38e5d196fc11707a194489d3439d71ff"
+    }
+  },
+  "scaled/3/fine": {
+    "scale": 3,
+    "orbit_policy": "scaled",
+    "kind": "fine",
+    "nodes": 64,
+    "rows": [
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 1
+      }
+    ],
+    "seconds": 93.5159699000069,
+    "source_hashes": {
+      "model.py": "3899b6f9058d309b679cc94be97dc5a5b4a18970c559b34555340d1d09575978",
+      "baseline.py": "4b352b82b9d5364aa8f6b545fda39c7d7f0fd43bf7e4428cca4fb48de5dbbf53",
+      "feedback.py": "85c2ca5164fb82dd68cebcdaa07b92648be579bb7059238c958c9ad5bd832aa6",
+      "protocol.json": "a81d5a360354bfddb0a2a8cf92cb9c730284c1cf7a2662d0638fc3127059e720",
+      "source_protocol.json": "c56b8d7bb008b363163cea0b70cf2f811d8a685fd8445710f536eeaf4d9a1956",
+      "history_ledger.json": "dfdf4ec62a89ac524824747cbb58352b38e5d196fc11707a194489d3439d71ff"
+    }
+  },
+  "scaled/3/timefine": {
+    "scale": 3,
+    "orbit_policy": "scaled",
+    "kind": "timefine",
+    "nodes": 32,
+    "rows": [
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 1
+      }
+    ],
+    "seconds": 87.47603449999588,
+    "source_hashes": {
+      "model.py": "3899b6f9058d309b679cc94be97dc5a5b4a18970c559b34555340d1d09575978",
+      "baseline.py": "4b352b82b9d5364aa8f6b545fda39c7d7f0fd43bf7e4428cca4fb48de5dbbf53",
+      "feedback.py": "85c2ca5164fb82dd68cebcdaa07b92648be579bb7059238c958c9ad5bd832aa6",
+      "protocol.json": "a81d5a360354bfddb0a2a8cf92cb9c730284c1cf7a2662d0638fc3127059e720",
+      "source_protocol.json": "c56b8d7bb008b363163cea0b70cf2f811d8a685fd8445710f536eeaf4d9a1956",
+      "history_ledger.json": "dfdf4ec62a89ac524824747cbb58352b38e5d196fc11707a194489d3439d71ff"
+    }
+  },
+  "scaled/10/main": {
+    "scale": 10,
+    "orbit_policy": "scaled",
+    "kind": "main",
+    "nodes": 32,
+    "rows": [
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 1
+      }
+    ],
+    "seconds": 44.95410770003218,
+    "source_hashes": {
+      "model.py": "3899b6f9058d309b679cc94be97dc5a5b4a18970c559b34555340d1d09575978",
+      "baseline.py": "4b352b82b9d5364aa8f6b545fda39c7d7f0fd43bf7e4428cca4fb48de5dbbf53",
+      "feedback.py": "85c2ca5164fb82dd68cebcdaa07b92648be579bb7059238c958c9ad5bd832aa6",
+      "protocol.json": "a81d5a360354bfddb0a2a8cf92cb9c730284c1cf7a2662d0638fc3127059e720",
+      "source_protocol.json": "c56b8d7bb008b363163cea0b70cf2f811d8a685fd8445710f536eeaf4d9a1956",
+      "history_ledger.json": "dfdf4ec62a89ac524824747cbb58352b38e5d196fc11707a194489d3439d71ff"
+    }
+  },
+  "scaled/10/fine": {
+    "scale": 10,
+    "orbit_policy": "scaled",
+    "kind": "fine",
+    "nodes": 64,
+    "rows": [
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 1
+      }
+    ],
+    "seconds": 98.24628969997866,
+    "source_hashes": {
+      "model.py": "3899b6f9058d309b679cc94be97dc5a5b4a18970c559b34555340d1d09575978",
+      "baseline.py": "4b352b82b9d5364aa8f6b545fda39c7d7f0fd43bf7e4428cca4fb48de5dbbf53",
+      "feedback.py": "85c2ca5164fb82dd68cebcdaa07b92648be579bb7059238c958c9ad5bd832aa6",
+      "protocol.json": "a81d5a360354bfddb0a2a8cf92cb9c730284c1cf7a2662d0638fc3127059e720",
+      "source_protocol.json": "c56b8d7bb008b363163cea0b70cf2f811d8a685fd8445710f536eeaf4d9a1956",
+      "history_ledger.json": "dfdf4ec62a89ac524824747cbb58352b38e5d196fc11707a194489d3439d71ff"
+    }
+  },
+  "scaled/10/timefine": {
+    "scale": 10,
+    "orbit_policy": "scaled",
+    "kind": "timefine",
+    "nodes": 32,
+    "rows": [
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 1
+      }
+    ],
+    "seconds": 93.59384330001194,
+    "source_hashes": {
+      "model.py": "3899b6f9058d309b679cc94be97dc5a5b4a18970c559b34555340d1d09575978",
+      "baseline.py": "4b352b82b9d5364aa8f6b545fda39c7d7f0fd43bf7e4428cca4fb48de5dbbf53",
+      "feedback.py": "85c2ca5164fb82dd68cebcdaa07b92648be579bb7059238c958c9ad5bd832aa6",
+      "protocol.json": "a81d5a360354bfddb0a2a8cf92cb9c730284c1cf7a2662d0638fc3127059e720",
+      "source_protocol.json": "c56b8d7bb008b363163cea0b70cf2f811d8a685fd8445710f536eeaf4d9a1956",
+      "history_ledger.json": "dfdf4ec62a89ac524824747cbb58352b38e5d196fc11707a194489d3439d71ff"
+    }
+  },
+  "scaled/30/main": {
+    "scale": 30,
+    "orbit_policy": "scaled",
+    "kind": "main",
+    "nodes": 32,
+    "rows": [
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 1
+      }
+    ],
+    "seconds": 43.89075469999807,
+    "source_hashes": {
+      "model.py": "3899b6f9058d309b679cc94be97dc5a5b4a18970c559b34555340d1d09575978",
+      "baseline.py": "4b352b82b9d5364aa8f6b545fda39c7d7f0fd43bf7e4428cca4fb48de5dbbf53",
+      "feedback.py": "85c2ca5164fb82dd68cebcdaa07b92648be579bb7059238c958c9ad5bd832aa6",
+      "protocol.json": "a81d5a360354bfddb0a2a8cf92cb9c730284c1cf7a2662d0638fc3127059e720",
+      "source_protocol.json": "c56b8d7bb008b363163cea0b70cf2f811d8a685fd8445710f536eeaf4d9a1956",
+      "history_ledger.json": "dfdf4ec62a89ac524824747cbb58352b38e5d196fc11707a194489d3439d71ff"
+    }
+  },
+  "scaled/30/fine": {
+    "scale": 30,
+    "orbit_policy": "scaled",
+    "kind": "fine",
+    "nodes": 64,
+    "rows": [
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 1
+      }
+    ],
+    "seconds": 97.74108180002077,
+    "source_hashes": {
+      "model.py": "3899b6f9058d309b679cc94be97dc5a5b4a18970c559b34555340d1d09575978",
+      "baseline.py": "4b352b82b9d5364aa8f6b545fda39c7d7f0fd43bf7e4428cca4fb48de5dbbf53",
+      "feedback.py": "85c2ca5164fb82dd68cebcdaa07b92648be579bb7059238c958c9ad5bd832aa6",
+      "protocol.json": "a81d5a360354bfddb0a2a8cf92cb9c730284c1cf7a2662d0638fc3127059e720",
+      "source_protocol.json": "c56b8d7bb008b363163cea0b70cf2f811d8a685fd8445710f536eeaf4d9a1956",
+      "history_ledger.json": "dfdf4ec62a89ac524824747cbb58352b38e5d196fc11707a194489d3439d71ff"
+    }
+  },
+  "scaled/30/timefine": {
+    "scale": 30,
+    "orbit_policy": "scaled",
+    "kind": "timefine",
+    "nodes": 32,
+    "rows": [
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 1
+      }
+    ],
+    "seconds": 84.59146590001183,
+    "source_hashes": {
+      "model.py": "3899b6f9058d309b679cc94be97dc5a5b4a18970c559b34555340d1d09575978",
+      "baseline.py": "4b352b82b9d5364aa8f6b545fda39c7d7f0fd43bf7e4428cca4fb48de5dbbf53",
+      "feedback.py": "85c2ca5164fb82dd68cebcdaa07b92648be579bb7059238c958c9ad5bd832aa6",
+      "protocol.json": "a81d5a360354bfddb0a2a8cf92cb9c730284c1cf7a2662d0638fc3127059e720",
+      "source_protocol.json": "c56b8d7bb008b363163cea0b70cf2f811d8a685fd8445710f536eeaf4d9a1956",
+      "history_ledger.json": "dfdf4ec62a89ac524824747cbb58352b38e5d196fc11707a194489d3439d71ff"
+    }
+  },
+  "scaled/100/main": {
+    "scale": 100,
+    "orbit_policy": "scaled",
+    "kind": "main",
+    "nodes": 32,
+    "rows": [
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 1
+      }
+    ],
+    "seconds": 44.586424299981445,
+    "source_hashes": {
+      "model.py": "3899b6f9058d309b679cc94be97dc5a5b4a18970c559b34555340d1d09575978",
+      "baseline.py": "4b352b82b9d5364aa8f6b545fda39c7d7f0fd43bf7e4428cca4fb48de5dbbf53",
+      "feedback.py": "85c2ca5164fb82dd68cebcdaa07b92648be579bb7059238c958c9ad5bd832aa6",
+      "protocol.json": "a81d5a360354bfddb0a2a8cf92cb9c730284c1cf7a2662d0638fc3127059e720",
+      "source_protocol.json": "c56b8d7bb008b363163cea0b70cf2f811d8a685fd8445710f536eeaf4d9a1956",
+      "history_ledger.json": "dfdf4ec62a89ac524824747cbb58352b38e5d196fc11707a194489d3439d71ff"
+    }
+  },
+  "scaled/100/fine": {
+    "scale": 100,
+    "orbit_policy": "scaled",
+    "kind": "fine",
+    "nodes": 64,
+    "rows": [
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 1
+      }
+    ],
+    "seconds": 94.5077159999637,
+    "source_hashes": {
+      "model.py": "3899b6f9058d309b679cc94be97dc5a5b4a18970c559b34555340d1d09575978",
+      "baseline.py": "4b352b82b9d5364aa8f6b545fda39c7d7f0fd43bf7e4428cca4fb48de5dbbf53",
+      "feedback.py": "85c2ca5164fb82dd68cebcdaa07b92648be579bb7059238c958c9ad5bd832aa6",
+      "protocol.json": "a81d5a360354bfddb0a2a8cf92cb9c730284c1cf7a2662d0638fc3127059e720",
+      "source_protocol.json": "c56b8d7bb008b363163cea0b70cf2f811d8a685fd8445710f536eeaf4d9a1956",
+      "history_ledger.json": "dfdf4ec62a89ac524824747cbb58352b38e5d196fc11707a194489d3439d71ff"
+    }
+  },
+  "scaled/100/timefine": {
+    "scale": 100,
+    "orbit_policy": "scaled",
+    "kind": "timefine",
+    "nodes": 32,
+    "rows": [
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 1
+      }
+    ],
+    "seconds": 85.19975910003996,
+    "source_hashes": {
+      "model.py": "3899b6f9058d309b679cc94be97dc5a5b4a18970c559b34555340d1d09575978",
+      "baseline.py": "4b352b82b9d5364aa8f6b545fda39c7d7f0fd43bf7e4428cca4fb48de5dbbf53",
+      "feedback.py": "85c2ca5164fb82dd68cebcdaa07b92648be579bb7059238c958c9ad5bd832aa6",
+      "protocol.json": "a81d5a360354bfddb0a2a8cf92cb9c730284c1cf7a2662d0638fc3127059e720",
+      "source_protocol.json": "c56b8d7bb008b363163cea0b70cf2f811d8a685fd8445710f536eeaf4d9a1956",
+      "history_ledger.json": "dfdf4ec62a89ac524824747cbb58352b38e5d196fc11707a194489d3439d71ff"
+    }
+  },
+  "scaled/300/main": {
+    "scale": 300,
+    "orbit_policy": "scaled",
+    "kind": "main",
+    "nodes": 32,
+    "rows": [
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 1
+      }
+    ],
+    "seconds": 48.940081499982625,
+    "source_hashes": {
+      "model.py": "3899b6f9058d309b679cc94be97dc5a5b4a18970c559b34555340d1d09575978",
+      "baseline.py": "4b352b82b9d5364aa8f6b545fda39c7d7f0fd43bf7e4428cca4fb48de5dbbf53",
+      "feedback.py": "85c2ca5164fb82dd68cebcdaa07b92648be579bb7059238c958c9ad5bd832aa6",
+      "protocol.json": "a81d5a360354bfddb0a2a8cf92cb9c730284c1cf7a2662d0638fc3127059e720",
+      "source_protocol.json": "c56b8d7bb008b363163cea0b70cf2f811d8a685fd8445710f536eeaf4d9a1956",
+      "history_ledger.json": "dfdf4ec62a89ac524824747cbb58352b38e5d196fc11707a194489d3439d71ff"
+    }
+  },
+  "scaled/300/fine": {
+    "scale": 300,
+    "orbit_policy": "scaled",
+    "kind": "fine",
+    "nodes": 64,
+    "rows": [
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 1
+      }
+    ],
+    "seconds": 92.60589760000585,
+    "source_hashes": {
+      "model.py": "3899b6f9058d309b679cc94be97dc5a5b4a18970c559b34555340d1d09575978",
+      "baseline.py": "4b352b82b9d5364aa8f6b545fda39c7d7f0fd43bf7e4428cca4fb48de5dbbf53",
+      "feedback.py": "85c2ca5164fb82dd68cebcdaa07b92648be579bb7059238c958c9ad5bd832aa6",
+      "protocol.json": "a81d5a360354bfddb0a2a8cf92cb9c730284c1cf7a2662d0638fc3127059e720",
+      "source_protocol.json": "c56b8d7bb008b363163cea0b70cf2f811d8a685fd8445710f536eeaf4d9a1956",
+      "history_ledger.json": "dfdf4ec62a89ac524824747cbb58352b38e5d196fc11707a194489d3439d71ff"
+    }
+  },
+  "scaled/300/timefine": {
+    "scale": 300,
+    "orbit_policy": "scaled",
+    "kind": "timefine",
+    "nodes": 32,
+    "rows": [
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 1
+      }
+    ],
+    "seconds": 84.54126610001549,
+    "source_hashes": {
+      "model.py": "3899b6f9058d309b679cc94be97dc5a5b4a18970c559b34555340d1d09575978",
+      "baseline.py": "4b352b82b9d5364aa8f6b545fda39c7d7f0fd43bf7e4428cca4fb48de5dbbf53",
+      "feedback.py": "85c2ca5164fb82dd68cebcdaa07b92648be579bb7059238c958c9ad5bd832aa6",
+      "protocol.json": "a81d5a360354bfddb0a2a8cf92cb9c730284c1cf7a2662d0638fc3127059e720",
+      "source_protocol.json": "c56b8d7bb008b363163cea0b70cf2f811d8a685fd8445710f536eeaf4d9a1956",
+      "history_ledger.json": "dfdf4ec62a89ac524824747cbb58352b38e5d196fc11707a194489d3439d71ff"
+    }
+  },
+  "scaled/300/spatial": {
+    "scale": 300.0,
+    "orbit_policy": "scaled",
+    "kind": "spatial",
+    "nodes": 128,
+    "rows": [
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 1
+      }
+    ],
+    "seconds": 105.97353439999279,
+    "source_hashes": {
+      "model.py": "3899b6f9058d309b679cc94be97dc5a5b4a18970c559b34555340d1d09575978",
+      "baseline.py": "4b352b82b9d5364aa8f6b545fda39c7d7f0fd43bf7e4428cca4fb48de5dbbf53",
+      "feedback.py": "85c2ca5164fb82dd68cebcdaa07b92648be579bb7059238c958c9ad5bd832aa6",
+      "protocol.json": "a81d5a360354bfddb0a2a8cf92cb9c730284c1cf7a2662d0638fc3127059e720",
+      "source_protocol.json": "c56b8d7bb008b363163cea0b70cf2f811d8a685fd8445710f536eeaf4d9a1956",
+      "history_ledger.json": "dfdf4ec62a89ac524824747cbb58352b38e5d196fc11707a194489d3439d71ff"
+    }
+  },
+  "fixed/100/main": {
+    "scale": 100.0,
+    "orbit_policy": "fixed",
+    "kind": "main",
+    "nodes": 32,
+    "rows": [
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 1
+      }
+    ],
+    "seconds": 53.0715962999966,
+    "source_hashes": {
+      "model.py": "3899b6f9058d309b679cc94be97dc5a5b4a18970c559b34555340d1d09575978",
+      "baseline.py": "4b352b82b9d5364aa8f6b545fda39c7d7f0fd43bf7e4428cca4fb48de5dbbf53",
+      "feedback.py": "85c2ca5164fb82dd68cebcdaa07b92648be579bb7059238c958c9ad5bd832aa6",
+      "protocol.json": "a81d5a360354bfddb0a2a8cf92cb9c730284c1cf7a2662d0638fc3127059e720",
+      "source_protocol.json": "c56b8d7bb008b363163cea0b70cf2f811d8a685fd8445710f536eeaf4d9a1956",
+      "history_ledger.json": "dfdf4ec62a89ac524824747cbb58352b38e5d196fc11707a194489d3439d71ff"
+    }
+  },
+  "fixed/100/fine": {
+    "scale": 100.0,
+    "orbit_policy": "fixed",
+    "kind": "fine",
+    "nodes": 64,
+    "rows": [
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 1
+      }
+    ],
+    "seconds": 93.13536670000758,
+    "source_hashes": {
+      "model.py": "3899b6f9058d309b679cc94be97dc5a5b4a18970c559b34555340d1d09575978",
+      "baseline.py": "4b352b82b9d5364aa8f6b545fda39c7d7f0fd43bf7e4428cca4fb48de5dbbf53",
+      "feedback.py": "85c2ca5164fb82dd68cebcdaa07b92648be579bb7059238c958c9ad5bd832aa6",
+      "protocol.json": "a81d5a360354bfddb0a2a8cf92cb9c730284c1cf7a2662d0638fc3127059e720",
+      "source_protocol.json": "c56b8d7bb008b363163cea0b70cf2f811d8a685fd8445710f536eeaf4d9a1956",
+      "history_ledger.json": "dfdf4ec62a89ac524824747cbb58352b38e5d196fc11707a194489d3439d71ff"
+    }
+  },
+  "fixed/100/spatial": {
+    "scale": 100.0,
+    "orbit_policy": "fixed",
+    "kind": "spatial",
+    "nodes": 128,
+    "rows": [
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 1
+      }
+    ],
+    "seconds": 112.15358580002794,
+    "source_hashes": {
+      "model.py": "3899b6f9058d309b679cc94be97dc5a5b4a18970c559b34555340d1d09575978",
+      "baseline.py": "4b352b82b9d5364aa8f6b545fda39c7d7f0fd43bf7e4428cca4fb48de5dbbf53",
+      "feedback.py": "85c2ca5164fb82dd68cebcdaa07b92648be579bb7059238c958c9ad5bd832aa6",
+      "protocol.json": "a81d5a360354bfddb0a2a8cf92cb9c730284c1cf7a2662d0638fc3127059e720",
+      "source_protocol.json": "c56b8d7bb008b363163cea0b70cf2f811d8a685fd8445710f536eeaf4d9a1956",
+      "history_ledger.json": "dfdf4ec62a89ac524824747cbb58352b38e5d196fc11707a194489d3439d71ff"
+    }
+  },
+  "fixed/300/main": {
+    "scale": 300.0,
+    "orbit_policy": "fixed",
+    "kind": "main",
+    "nodes": 32,
+    "rows": [
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 1
+      }
+    ],
+    "seconds": 44.798903399962,
+    "source_hashes": {
+      "model.py": "3899b6f9058d309b679cc94be97dc5a5b4a18970c559b34555340d1d09575978",
+      "baseline.py": "4b352b82b9d5364aa8f6b545fda39c7d7f0fd43bf7e4428cca4fb48de5dbbf53",
+      "feedback.py": "85c2ca5164fb82dd68cebcdaa07b92648be579bb7059238c958c9ad5bd832aa6",
+      "protocol.json": "a81d5a360354bfddb0a2a8cf92cb9c730284c1cf7a2662d0638fc3127059e720",
+      "source_protocol.json": "c56b8d7bb008b363163cea0b70cf2f811d8a685fd8445710f536eeaf4d9a1956",
+      "history_ledger.json": "dfdf4ec62a89ac524824747cbb58352b38e5d196fc11707a194489d3439d71ff"
+    }
+  },
+  "fixed/300/fine": {
+    "scale": 300.0,
+    "orbit_policy": "fixed",
+    "kind": "fine",
+    "nodes": 64,
+    "rows": [
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 1
+      }
+    ],
+    "seconds": 94.67169190000277,
+    "source_hashes": {
+      "model.py": "3899b6f9058d309b679cc94be97dc5a5b4a18970c559b34555340d1d09575978",
+      "baseline.py": "4b352b82b9d5364aa8f6b545fda39c7d7f0fd43bf7e4428cca4fb48de5dbbf53",
+      "feedback.py": "85c2ca5164fb82dd68cebcdaa07b92648be579bb7059238c958c9ad5bd832aa6",
+      "protocol.json": "a81d5a360354bfddb0a2a8cf92cb9c730284c1cf7a2662d0638fc3127059e720",
+      "source_protocol.json": "c56b8d7bb008b363163cea0b70cf2f811d8a685fd8445710f536eeaf4d9a1956",
+      "history_ledger.json": "dfdf4ec62a89ac524824747cbb58352b38e5d196fc11707a194489d3439d71ff"
+    }
+  },
+  "fixed/300/spatial": {
+    "scale": 300.0,
+    "orbit_policy": "fixed",
+    "kind": "spatial",
+    "nodes": 128,
+    "rows": [
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 1
+      }
+    ],
+    "seconds": 107.50642190000508,
+    "source_hashes": {
+      "model.py": "3899b6f9058d309b679cc94be97dc5a5b4a18970c559b34555340d1d09575978",
+      "baseline.py": "4b352b82b9d5364aa8f6b545fda39c7d7f0fd43bf7e4428cca4fb48de5dbbf53",
+      "feedback.py": "85c2ca5164fb82dd68cebcdaa07b92648be579bb7059238c958c9ad5bd832aa6",
+      "protocol.json": "a81d5a360354bfddb0a2a8cf92cb9c730284c1cf7a2662d0638fc3127059e720",
+      "source_protocol.json": "c56b8d7bb008b363163cea0b70cf2f811d8a685fd8445710f536eeaf4d9a1956",
+      "history_ledger.json": "dfdf4ec62a89ac524824747cbb58352b38e5d196fc11707a194489d3439d71ff"
+    }
+  }
+}

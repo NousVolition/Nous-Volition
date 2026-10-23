@@ -1,0 +1,202 @@
+{
+  "version": 2,
+  "status": "Synthetic movement-to-field feedback; no measured clay or human memory parameters",
+  "source_docx_sha256": "01f9ab0942f9c88982863e2ffc1e3c495786b5e6b67a26ae77d18235e7058acf",
+  "source_board": "https://miro.com/app/board/uXjVEXBJz3k=/",
+  "horizon_s": 1800,
+  "pause_s": [
+    480,
+    720
+  ],
+  "sample_s": 0.5,
+  "orbit_period_s": 5.7,
+  "orbital_force_rms_N": 6e-06,
+  "conditions": [
+    {
+      "name": "No orbit",
+      "e": null
+    },
+    {
+      "name": "Circular",
+      "e": 0
+    },
+    {
+      "name": "Eccentric (Elara shape)",
+      "e": 0.212
+    }
+  ],
+  "mechanics": {
+    "mass_kg": 0.2,
+    "stiffness_N_m": 0.7,
+    "active_gain_N_s_m": 0.03,
+    "active_saturation_N_s_m3": 3000000,
+    "brake_N_s_m": 0.8,
+    "length_m": 0.1,
+    "volume_m3": 1e-07,
+    "scale_m": 0.0001
+  },
+  "clay": {
+    "G_M_Pa": 28000,
+    "eta_M_Pa_s": 5200000,
+    "G_K_Pa": 19000,
+    "eta_K_Pa_s": 900000
+  },
+  "field": {
+    "radius_m": 0.05,
+    "diffusivity_m2_s": 2e-05,
+    "source_cap_per_s": 0.02,
+    "kappa_per_s": 0.04,
+    "expression_relaxation_per_s": 0.04,
+    "exchange_rate_per_s": 0.008,
+    "exchange_scale": 0.5,
+    "threshold_per_m": 1,
+    "epsilon_per_m": 1,
+    "response_strength_Pa": 1,
+    "kernel_concentration": 4,
+    "law": "smooth_exact_off"
+  },
+  "initial_displacements_scaled": [
+    0.25,
+    -1.4
+  ],
+  "scenarios": [
+    {
+      "id": "feedback",
+      "label": "Movement restructures expression",
+      "generation": 2,
+      "transmission": 0.55,
+      "caregiver": 0.35,
+      "neighbor": 0.15,
+      "exchange_sign": 1,
+      "erase": false,
+      "pause": true,
+      "moving_diffusion": true,
+      "moving_gradient": true
+    },
+    {
+      "id": "frozen",
+      "label": "Previous fixed spatial calculations",
+      "generation": 2,
+      "transmission": 0.55,
+      "caregiver": 0.35,
+      "neighbor": 0.15,
+      "exchange_sign": 1,
+      "erase": false,
+      "pause": true,
+      "moving_diffusion": false,
+      "moving_gradient": false
+    }
+  ],
+  "events": [
+    {
+      "id": "origin-001",
+      "origin": "origin participant",
+      "route": "direct for generation 0; communicated account for descendants",
+      "channel": 0,
+      "start_s": 0,
+      "end_s": 30,
+      "rate_per_s": 0.03333333333333333,
+      "center_rad": 0.7
+    },
+    {
+      "id": "care-001",
+      "origin": "caregiving environment",
+      "route": "experienced context; independent of biological ancestry",
+      "channel": 1,
+      "start_s": 40,
+      "end_s": 70,
+      "rate_per_s": 0.03333333333333333,
+      "center_rad": 2.2
+    },
+    {
+      "id": "neighbor-001",
+      "origin": "neighbor account",
+      "route": "social communication",
+      "channel": 2,
+      "start_s": 80,
+      "end_s": 110,
+      "rate_per_s": 0.03333333333333333,
+      "center_rad": 4.1
+    },
+    {
+      "id": "reminder-001",
+      "origin": "neighbor account",
+      "route": "later re-exposure; no new claim of direct participation",
+      "channel": 2,
+      "start_s": 950,
+      "end_s": 970,
+      "rate_per_s": 0.025,
+      "center_rad": 4.1
+    }
+  ],
+  "ancestry_channel": {
+    "enabled": false,
+    "reason": "No human genetic or epigenetic transmission coefficient is established by the cited reference data. Generational attenuation here concerns communicated exposure, not inherited autobiographical memory."
+  },
+  "numerics": {
+    "main_nodes": 32,
+    "main_max_step_s": 0.15,
+    "main_rtol": 2e-08,
+    "main_atol": 2e-10,
+    "fine_nodes": 64,
+    "fine_max_step_s": 0.075,
+    "fine_rtol": 2e-10,
+    "fine_atol": 2e-12
+  },
+  "diagnostics": {
+    "window_s": 57,
+    "amplitude_recovery_fraction": 0.8,
+    "quiet_fraction": 0.1,
+    "repeat_tolerance_scaled": 0.01,
+    "repeat_window_orbits": 10,
+    "phase_match_horizon_s": 1800
+  },
+  "interpretation": "Retain accumulated A and every event record. Update diffusion and source-force gradients using actual deformation. Existing source caps, expression relaxation and upper-only paired exchange remain declared extensions. Material sources follow their material labels. No resets, new adoption/ancestry parameters or fitted restructuring gain.",
+  "feedback": {
+    "map": "x=X+(d/L)*Y, y=Y",
+    "diffusion_frame": "isotropic current-space diffusion, pulled back and projected onto the angular field",
+    "coefficient": "g=1+gamma*sin(2*theta)+gamma^2*sin(theta)^2",
+    "gamma": "physical displacement d divided by L; display magnification never enters dynamics",
+    "new_gain": null,
+    "scope": "Angular field reduction and one clay shear mode; not a full 2D fluid/contact model"
+  },
+  "baseline_model_sha256": "4b352b82b9d5364aa8f6b545fda39c7d7f0fd43bf7e4428cca4fb48de5dbbf53",
+  "sweep": {
+    "scales": [
+      1,
+      3,
+      10,
+      30,
+      100,
+      300
+    ],
+    "rule": "For factor r, active saturation b=b0/r^2, initial displacement=r*d0, and orbital RMS=r*F0. All source, memory, clay, spring and clock parameters stay fixed. Actual motion is measured, not imposed.",
+    "fixed_orbit_scales": [
+      100,
+      300
+    ],
+    "fixed_orbit_rule": "Secondary controls keep orbital RMS at F0 while b and initial displacement use r; no-orbit paths provide duplicates.",
+    "interpretation": "Synthetic amplitude stress test of the reduced equations, not a validated finite-strain clay law.",
+    "effect_criteria": {
+      "relative_period": 0.01,
+      "relative_amplitude": 0.01,
+      "phase_cycles": 0.05,
+      "recovery_delay_s": 5.7,
+      "repeat_tolerance": 0.01
+    },
+    "criteria_note": "Operational screening bands selected before running; not statistical significance, physical thresholds or biological limits. Any band crossing must survive spatial/time refinement and both starts are reported separately.",
+    "late_window_s": [
+      1600,
+      1800
+    ],
+    "recovery_censor_s": 949.5,
+    "refinements": "All six primary scales at 64 cells and tighter time accuracy at 32 cells. Largest primary scale and both fixed-orbit controls also at 128 cells. If a rhythm band crossing occurs, test that scale at 128 cells too before calling it resolved.",
+    "repeat_scaling": "Divide the four original scaled mechanical states by r before applying the unchanged .01 repeat tolerance. This avoids making a larger movement artificially harder to classify."
+  },
+  "pinned_sources": {
+    "baseline.py": "4b352b82b9d5364aa8f6b545fda39c7d7f0fd43bf7e4428cca4fb48de5dbbf53",
+    "feedback.py": "85c2ca5164fb82dd68cebcdaa07b92648be579bb7059238c958c9ad5bd832aa6",
+    "source_protocol.json": "c56b8d7bb008b363163cea0b70cf2f811d8a685fd8445710f536eeaf4d9a1956",
+    "history_ledger.json": "dfdf4ec62a89ac524824747cbb58352b38e5d196fc11707a194489d3439d71ff"
+  }
+}
