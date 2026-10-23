@@ -1,0 +1,1349 @@
+{
+  "scope": "12 synthetic full coupled runs and mathematical response probes; not a fit to people",
+  "empirical_fit": false,
+  "substitute_predictor": false,
+  "solver_sha256": "00b50a93ae413d46109327ccf0c08e8e07d00028313eaa0da87d765e58705f35",
+  "plan_sha256": "7e33560ba3e37dd0405a55c42e61c61b0faffe09cb311880fc02e4c3817dd1c5",
+  "coupled_runs": 12,
+  "probes": [
+    {
+      "law": "sharp",
+      "q": [
+        -1.0,
+        -0.639,
+        0.0,
+        0.1,
+        1.0
+      ],
+      "activation": [
+        0.0,
+        0.0,
+        0.0,
+        0.1,
+        1.0
+      ]
+    },
+    {
+      "law": "tanh",
+      "q": [
+        -1.0,
+        -0.639,
+        0.0,
+        0.1,
+        1.0
+      ],
+      "activation": [
+        -0.11920292202211755,
+        -0.1392322596271463,
+        0.0,
+        0.0549833997312478,
+        0.8807970779778823
+      ]
+    },
+    {
+      "law": "smooth_off",
+      "q": [
+        -1.0,
+        -0.639,
+        0.0,
+        0.1,
+        1.0
+      ],
+      "activation": [
+        0.0,
+        0.0,
+        0.0,
+        3.720075976020836e-45,
+        0.36787944117144233
+      ]
+    }
+  ],
+  "tanh_minimum": {
+    "q_over_epsilon": -0.639232271380537,
+    "a_over_epsilon": -0.13923227138053693
+  },
+  "positive_underflow": {
+    "q": 0.01,
+    "epsilon": 1.0,
+    "log_activation": -10004.605170185989,
+    "float64_activation": 0.0,
+    "mathematically_positive": true
+  },
+  "runs": [
+    {
+      "law": "sharp",
+      "grid": 24,
+      "velocity_max": 0.0,
+      "mirrored_S_max": 0.0,
+      "mirrored_A_max": 0.0,
+      "gradient_norm_max": 0.0,
+      "pressure_max": 0.0,
+      "force_max": 0.0,
+      "max_mass_error": 1.0408340855860843e-17,
+      "max_energy_identity_residual": 1.971892701208011e-18,
+      "max_divergence_rms": 5.469400883724975e-19,
+      "endpoint_diagnostics": [
+        [
+          {
+            "A": 0.20000000000000015,
+            "mass": 0.006000000000000004,
+            "energy": 0.0013324183942319363,
+            "velocity_rms": 0.05162205718938245,
+            "divergence_rms": 5.469400883724975e-19,
+            "work": 3.73386891748351e-05,
+            "viscous_dissipation": 0.004199340168942477,
+            "energy_rate": -0.004162001479767644,
+            "energy_identity_residual": -1.971892701208011e-18,
+            "pressure_rms": 0.0015016892506462506,
+            "stress_rms": 0.006480231607699278,
+            "S_min": -0.032517756640000985,
+            "S_max": 0.08372065362709942,
+            "person": "synthetic-person",
+            "time": 0.2,
+            "role": "unattributed",
+            "event_ref": "explicit-input-0",
+            "initial_state_basis": "declared synthetic initial field and uninterrupted input history",
+            "mass_exact": 0.006000000000000001,
+            "mass_error": 2.6020852139652106e-18,
+            "steps": 100,
+            "dt": 0.002
+          },
+          {
+            "A": -1.3877787807814457e-17,
+            "mass": 0.012000000000000004,
+            "energy": 0.0007238120693309291,
+            "velocity_rms": 0.0380476561520136,
+            "divergence_rms": 5.467333946986805e-19,
+            "work": 0.0001031745170945601,
+            "viscous_dissipation": 0.0022371633960968436,
+            "energy_rate": -0.002133988879002283,
+            "energy_identity_residual": 3.6591823321385775e-19,
+            "pressure_rms": 0.0012961807509088155,
+            "stress_rms": 0.0047298661673422044,
+            "S_min": -0.025752990253990624,
+            "S_max": 0.11460816348868814,
+            "person": "synthetic-person",
+            "time": 0.4,
+            "role": "unattributed",
+            "event_ref": "explicit-input-1",
+            "initial_state_basis": "declared synthetic initial field and uninterrupted input history",
+            "mass_exact": 0.012000000000000014,
+            "mass_error": -1.0408340855860843e-17,
+            "steps": 100,
+            "dt": 0.002
+          },
+          {
+            "A": -1.3877787807814457e-17,
+            "mass": 0.012000000000000004,
+            "energy": 0.00041495528983412307,
+            "velocity_rms": 0.02880816862746131,
+            "divergence_rms": 3.12919119914911e-19,
+            "work": 0.00012809167701672392,
+            "viscous_dissipation": 0.0011964841618889747,
+            "energy_rate": -0.001068392484872251,
+            "energy_identity_residual": -1.0842021724855044e-19,
+            "pressure_rms": 0.0008977039819667235,
+            "stress_rms": 0.0034590232174545677,
+            "S_min": -0.02119438341872952,
+            "S_max": 0.09537691086655936,
+            "person": "synthetic-person",
+            "time": 0.6000000000000001,
+            "role": "unattributed",
+            "event_ref": "explicit-input-2",
+            "initial_state_basis": "declared synthetic initial field and uninterrupted input history",
+            "mass_exact": 0.012000000000000004,
+            "mass_error": 0.0,
+            "steps": 101,
+            "dt": 0.0019801980198019807
+          }
+        ],
+        [
+          {
+            "A": -0.20000000000000015,
+            "mass": -0.006000000000000004,
+            "energy": 0.0013324183942319363,
+            "velocity_rms": 0.05162205718938245,
+            "divergence_rms": 5.469400883724975e-19,
+            "work": 3.73386891748351e-05,
+            "viscous_dissipation": 0.004199340168942477,
+            "energy_rate": -0.004162001479767644,
+            "energy_identity_residual": -1.971892701208011e-18,
+            "pressure_rms": 0.0015016892506462506,
+            "stress_rms": 0.006480231607699278,
+            "S_min": -0.08372065362709942,
+            "S_max": 0.032517756640000985,
+            "person": "synthetic-person",
+            "time": 0.2,
+            "role": "unattributed",
+            "event_ref": "explicit-input-0",
+            "initial_state_basis": "declared synthetic initial field and uninterrupted input history",
+            "mass_exact": -0.006000000000000001,
+            "mass_error": -2.6020852139652106e-18,
+            "steps": 100,
+            "dt": 0.002
+          },
+          {
+            "A": 1.3877787807814457e-17,
+            "mass": -0.012000000000000004,
+            "energy": 0.0007238120693309291,
+            "velocity_rms": 0.0380476561520136,
+            "divergence_rms": 5.467333946986805e-19,
+            "work": 0.0001031745170945601,
+            "viscous_dissipation": 0.0022371633960968436,
+            "energy_rate": -0.002133988879002283,
+            "energy_identity_residual": 3.6591823321385775e-19,
+            "pressure_rms": 0.0012961807509088155,
+            "stress_rms": 0.0047298661673422044,
+            "S_min": -0.11460816348868814,
+            "S_max": 0.025752990253990624,
+            "person": "synthetic-person",
+            "time": 0.4,
+            "role": "unattributed",
+            "event_ref": "explicit-input-1",
+            "initial_state_basis": "declared synthetic initial field and uninterrupted input history",
+            "mass_exact": -0.012000000000000014,
+            "mass_error": 1.0408340855860843e-17,
+            "steps": 100,
+            "dt": 0.002
+          },
+          {
+            "A": 1.3877787807814457e-17,
+            "mass": -0.012000000000000004,
+            "energy": 0.00041495528983412307,
+            "velocity_rms": 0.02880816862746131,
+            "divergence_rms": 3.12919119914911e-19,
+            "work": 0.00012809167701672392,
+            "viscous_dissipation": 0.0011964841618889747,
+            "energy_rate": -0.001068392484872251,
+            "energy_identity_residual": -1.0842021724855044e-19,
+            "pressure_rms": 0.0008977039819667235,
+            "stress_rms": 0.0034590232174545677,
+            "S_min": -0.09537691086655936,
+            "S_max": 0.02119438341872952,
+            "person": "synthetic-person",
+            "time": 0.6000000000000001,
+            "role": "unattributed",
+            "event_ref": "explicit-input-2",
+            "initial_state_basis": "declared synthetic initial field and uninterrupted input history",
+            "mass_exact": -0.012000000000000004,
+            "mass_error": 0.0,
+            "steps": 101,
+            "dt": 0.0019801980198019807
+          }
+        ]
+      ]
+    },
+    {
+      "law": "sharp",
+      "grid": 48,
+      "velocity_max": 0.0,
+      "mirrored_S_max": 0.0,
+      "mirrored_A_max": 0.0,
+      "gradient_norm_max": 0.0,
+      "pressure_max": 0.0,
+      "force_max": 0.0,
+      "max_mass_error": 2.949029909160572e-17,
+      "max_energy_identity_residual": 8.199278929421627e-19,
+      "max_divergence_rms": 5.458172990894234e-19,
+      "endpoint_diagnostics": [
+        [
+          {
+            "A": 0.20000000000000073,
+            "mass": 0.006000000000000013,
+            "energy": 0.0013324173350485703,
+            "velocity_rms": 0.051622036671339695,
+            "divergence_rms": 2.7769990280786285e-19,
+            "work": 3.732591850395465e-05,
+            "viscous_dissipation": 0.00419934261374115,
+            "energy_rate": -0.004162016695237196,
+            "energy_identity_residual": -8.199278929421627e-19,
+            "pressure_rms": 0.0015019150645995808,
+            "stress_rms": 0.006480233494050311,
+            "S_min": -0.03251764954797585,
+            "S_max": 0.0837208044662145,
+            "person": "synthetic-person",
+            "time": 0.2,
+            "role": "unattributed",
+            "event_ref": "explicit-input-0",
+            "initial_state_basis": "declared synthetic initial field and uninterrupted input history",
+            "mass_exact": 0.006000000000000001,
+            "mass_error": 1.214306433183765e-17,
+            "steps": 158,
+            "dt": 0.0012658227848101266
+          },
+          {
+            "A": 1.3444106938820255e-17,
+            "mass": 0.012000000000000026,
+            "energy": 0.0007238085057041346,
+            "velocity_rms": 0.03804756248970845,
+            "divergence_rms": 5.458172990894234e-19,
+            "work": 0.0001031408430662542,
+            "viscous_dissipation": 0.002237155261109857,
+            "energy_rate": -0.0021340144180436033,
+            "energy_identity_residual": -4.0657581468206416e-19,
+            "pressure_rms": 0.001297495165822614,
+            "stress_rms": 0.004729857567739072,
+            "S_min": -0.025752929356250467,
+            "S_max": 0.1146082285820127,
+            "person": "synthetic-person",
+            "time": 0.4,
+            "role": "unattributed",
+            "event_ref": "explicit-input-1",
+            "initial_state_basis": "declared synthetic initial field and uninterrupted input history",
+            "mass_exact": 0.012000000000000056,
+            "mass_error": -2.949029909160572e-17,
+            "steps": 158,
+            "dt": 0.0012658227848101266
+          },
+          {
+            "A": 1.3444106938820255e-17,
+            "mass": 0.012000000000000026,
+            "energy": 0.00041494348663982466,
+            "velocity_rms": 0.02880775890762156,
+            "divergence_rms": 3.2138899938463173e-19,
+            "work": 0.00012803854204887356,
+            "viscous_dissipation": 0.0011964764554025617,
+            "energy_rate": -0.0010684379133536887,
+            "energy_identity_residual": -5.149960319306146e-19,
+            "pressure_rms": 0.0008983444989621844,
+            "stress_rms": 0.0034590120777507585,
+            "S_min": -0.021194376825604225,
+            "S_max": 0.09537691576041359,
+            "person": "synthetic-person",
+            "time": 0.6000000000000001,
+            "role": "unattributed",
+            "event_ref": "explicit-input-2",
+            "initial_state_basis": "declared synthetic initial field and uninterrupted input history",
+            "mass_exact": 0.012000000000000026,
+            "mass_error": 0.0,
+            "steps": 158,
+            "dt": 0.001265822784810127
+          }
+        ],
+        [
+          {
+            "A": -0.20000000000000073,
+            "mass": -0.006000000000000013,
+            "energy": 0.0013324173350485703,
+            "velocity_rms": 0.051622036671339695,
+            "divergence_rms": 2.7769990280786285e-19,
+            "work": 3.732591850395465e-05,
+            "viscous_dissipation": 0.00419934261374115,
+            "energy_rate": -0.004162016695237196,
+            "energy_identity_residual": -8.199278929421627e-19,
+            "pressure_rms": 0.0015019150645995808,
+            "stress_rms": 0.006480233494050311,
+            "S_min": -0.0837208044662145,
+            "S_max": 0.03251764954797585,
+            "person": "synthetic-person",
+            "time": 0.2,
+            "role": "unattributed",
+            "event_ref": "explicit-input-0",
+            "initial_state_basis": "declared synthetic initial field and uninterrupted input history",
+            "mass_exact": -0.006000000000000001,
+            "mass_error": -1.214306433183765e-17,
+            "steps": 158,
+            "dt": 0.0012658227848101266
+          },
+          {
+            "A": -1.3444106938820255e-17,
+            "mass": -0.012000000000000026,
+            "energy": 0.0007238085057041346,
+            "velocity_rms": 0.03804756248970845,
+            "divergence_rms": 5.458172990894234e-19,
+            "work": 0.0001031408430662542,
+            "viscous_dissipation": 0.002237155261109857,
+            "energy_rate": -0.0021340144180436033,
+            "energy_identity_residual": -4.0657581468206416e-19,
+            "pressure_rms": 0.001297495165822614,
+            "stress_rms": 0.004729857567739072,
+            "S_min": -0.1146082285820127,
+            "S_max": 0.025752929356250467,
+            "person": "synthetic-person",
+            "time": 0.4,
+            "role": "unattributed",
+            "event_ref": "explicit-input-1",
+            "initial_state_basis": "declared synthetic initial field and uninterrupted input history",
+            "mass_exact": -0.012000000000000056,
+            "mass_error": 2.949029909160572e-17,
+            "steps": 158,
+            "dt": 0.0012658227848101266
+          },
+          {
+            "A": -1.3444106938820255e-17,
+            "mass": -0.012000000000000026,
+            "energy": 0.00041494348663982466,
+            "velocity_rms": 0.02880775890762156,
+            "divergence_rms": 3.2138899938463173e-19,
+            "work": 0.00012803854204887356,
+            "viscous_dissipation": 0.0011964764554025617,
+            "energy_rate": -0.0010684379133536887,
+            "energy_identity_residual": -5.149960319306146e-19,
+            "pressure_rms": 0.0008983444989621844,
+            "stress_rms": 0.0034590120777507585,
+            "S_min": -0.09537691576041359,
+            "S_max": 0.021194376825604225,
+            "person": "synthetic-person",
+            "time": 0.6000000000000001,
+            "role": "unattributed",
+            "event_ref": "explicit-input-2",
+            "initial_state_basis": "declared synthetic initial field and uninterrupted input history",
+            "mass_exact": -0.012000000000000026,
+            "mass_error": 0.0,
+            "steps": 158,
+            "dt": 0.001265822784810127
+          }
+        ]
+      ]
+    },
+    {
+      "law": "tanh",
+      "grid": 24,
+      "velocity_max": 0.0,
+      "mirrored_S_max": 0.0,
+      "mirrored_A_max": 0.0,
+      "gradient_norm_max": 0.0,
+      "pressure_max": 0.0,
+      "force_max": 0.0,
+      "max_mass_error": 1.0408340855860843e-17,
+      "max_energy_identity_residual": 4.0657581468206416e-19,
+      "max_divergence_rms": 3.086230050430423e-19,
+      "endpoint_diagnostics": [
+        [
+          {
+            "A": 0.20000000000000015,
+            "mass": 0.006000000000000004,
+            "energy": 0.001332017473617122,
+            "velocity_rms": 0.05161429014560061,
+            "divergence_rms": 2.750161261801504e-19,
+            "work": 3.3340081405440713e-05,
+            "viscous_dissipation": 0.00419943775100131,
+            "energy_rate": -0.00416609766959587,
+            "energy_identity_residual": -4.0657581468206416e-19,
+            "pressure_rms": 0.0015175520288573108,
+            "stress_rms": 0.006480306899369281,
+            "S_min": -0.03251776165360325,
+            "S_max": 0.08372066065677354,
+            "person": "synthetic-person",
+            "time": 0.2,
+            "role": "unattributed",
+            "event_ref": "explicit-input-0",
+            "initial_state_basis": "declared synthetic initial field and uninterrupted input history",
+            "mass_exact": 0.006000000000000001,
+            "mass_error": 2.6020852139652106e-18,
+            "steps": 100,
+            "dt": 0.002
+          },
+          {
+            "A": -1.3877787807814457e-17,
+            "mass": 0.012000000000000004,
+            "energy": 0.0007221405297512363,
+            "velocity_rms": 0.03800369797141421,
+            "divergence_rms": 3.086230050430423e-19,
+            "work": 9.508151651648465e-05,
+            "viscous_dissipation": 0.002237529106599203,
+            "energy_rate": -0.0021424475900827184,
+            "energy_identity_residual": -2.168404344971009e-19,
+            "pressure_rms": 0.001329701638522359,
+            "stress_rms": 0.0047302527486374375,
+            "S_min": -0.025753063148077366,
+            "S_max": 0.11460834995617797,
+            "person": "synthetic-person",
+            "time": 0.4,
+            "role": "unattributed",
+            "event_ref": "explicit-input-1",
+            "initial_state_basis": "declared synthetic initial field and uninterrupted input history",
+            "mass_exact": 0.012000000000000014,
+            "mass_error": -1.0408340855860843e-17,
+            "steps": 100,
+            "dt": 0.002
+          },
+          {
+            "A": -1.3877787807814457e-17,
+            "mass": 0.012000000000000004,
+            "energy": 0.00041124300710432146,
+            "velocity_rms": 0.02867901696726446,
+            "divergence_rms": 3.0572179859756553e-19,
+            "work": 0.00011701526996777585,
+            "viscous_dissipation": 0.001197250137230779,
+            "energy_rate": -0.001080234867263003,
+            "energy_identity_residual": 1.8973538018496328e-19,
+            "pressure_rms": 0.0009285238165495892,
+            "stress_rms": 0.0034601302536621053,
+            "S_min": -0.021194693916861705,
+            "S_max": 0.09537779973979406,
+            "person": "synthetic-person",
+            "time": 0.6000000000000001,
+            "role": "unattributed",
+            "event_ref": "explicit-input-2",
+            "initial_state_basis": "declared synthetic initial field and uninterrupted input history",
+            "mass_exact": 0.012000000000000004,
+            "mass_error": 0.0,
+            "steps": 101,
+            "dt": 0.0019801980198019807
+          }
+        ],
+        [
+          {
+            "A": -0.20000000000000015,
+            "mass": -0.006000000000000004,
+            "energy": 0.001332017473617122,
+            "velocity_rms": 0.05161429014560061,
+            "divergence_rms": 2.750161261801504e-19,
+            "work": 3.3340081405440713e-05,
+            "viscous_dissipation": 0.00419943775100131,
+            "energy_rate": -0.00416609766959587,
+            "energy_identity_residual": -4.0657581468206416e-19,
+            "pressure_rms": 0.0015175520288573108,
+            "stress_rms": 0.006480306899369281,
+            "S_min": -0.08372066065677354,
+            "S_max": 0.03251776165360325,
+            "person": "synthetic-person",
+            "time": 0.2,
+            "role": "unattributed",
+            "event_ref": "explicit-input-0",
+            "initial_state_basis": "declared synthetic initial field and uninterrupted input history",
+            "mass_exact": -0.006000000000000001,
+            "mass_error": -2.6020852139652106e-18,
+            "steps": 100,
+            "dt": 0.002
+          },
+          {
+            "A": 1.3877787807814457e-17,
+            "mass": -0.012000000000000004,
+            "energy": 0.0007221405297512363,
+            "velocity_rms": 0.03800369797141421,
+            "divergence_rms": 3.086230050430423e-19,
+            "work": 9.508151651648465e-05,
+            "viscous_dissipation": 0.002237529106599203,
+            "energy_rate": -0.0021424475900827184,
+            "energy_identity_residual": -2.168404344971009e-19,
+            "pressure_rms": 0.001329701638522359,
+            "stress_rms": 0.0047302527486374375,
+            "S_min": -0.11460834995617797,
+            "S_max": 0.025753063148077366,
+            "person": "synthetic-person",
+            "time": 0.4,
+            "role": "unattributed",
+            "event_ref": "explicit-input-1",
+            "initial_state_basis": "declared synthetic initial field and uninterrupted input history",
+            "mass_exact": -0.012000000000000014,
+            "mass_error": 1.0408340855860843e-17,
+            "steps": 100,
+            "dt": 0.002
+          },
+          {
+            "A": 1.3877787807814457e-17,
+            "mass": -0.012000000000000004,
+            "energy": 0.00041124300710432146,
+            "velocity_rms": 0.02867901696726446,
+            "divergence_rms": 3.0572179859756553e-19,
+            "work": 0.00011701526996777585,
+            "viscous_dissipation": 0.001197250137230779,
+            "energy_rate": -0.001080234867263003,
+            "energy_identity_residual": 1.8973538018496328e-19,
+            "pressure_rms": 0.0009285238165495892,
+            "stress_rms": 0.0034601302536621053,
+            "S_min": -0.09537779973979406,
+            "S_max": 0.021194693916861705,
+            "person": "synthetic-person",
+            "time": 0.6000000000000001,
+            "role": "unattributed",
+            "event_ref": "explicit-input-2",
+            "initial_state_basis": "declared synthetic initial field and uninterrupted input history",
+            "mass_exact": -0.012000000000000004,
+            "mass_error": 0.0,
+            "steps": 101,
+            "dt": 0.0019801980198019807
+          }
+        ]
+      ]
+    },
+    {
+      "law": "tanh",
+      "grid": 48,
+      "velocity_max": 0.0,
+      "mirrored_S_max": 0.0,
+      "mirrored_A_max": 0.0,
+      "gradient_norm_max": 0.0,
+      "pressure_max": 0.0,
+      "force_max": 0.0,
+      "max_mass_error": 2.949029909160572e-17,
+      "max_energy_identity_residual": 1.4568966692773966e-18,
+      "max_divergence_rms": 4.156094189327422e-19,
+      "endpoint_diagnostics": [
+        [
+          {
+            "A": 0.20000000000000073,
+            "mass": 0.006000000000000013,
+            "energy": 0.0013320177372374523,
+            "velocity_rms": 0.051614295253107005,
+            "divergence_rms": 2.7676703355664326e-19,
+            "work": 3.3342009690347646e-05,
+            "viscous_dissipation": 0.004199437566998475,
+            "energy_rate": -0.004166095557308129,
+            "energy_identity_residual": -1.4568966692773966e-18,
+            "pressure_rms": 0.0015175356268285662,
+            "stress_rms": 0.0064803067573985075,
+            "S_min": -0.03251765451818794,
+            "S_max": 0.0837208111474449,
+            "person": "synthetic-person",
+            "time": 0.2,
+            "role": "unattributed",
+            "event_ref": "explicit-input-0",
+            "initial_state_basis": "declared synthetic initial field and uninterrupted input history",
+            "mass_exact": 0.006000000000000001,
+            "mass_error": 1.214306433183765e-17,
+            "steps": 158,
+            "dt": 0.0012658227848101266
+          },
+          {
+            "A": 1.3444106938820255e-17,
+            "mass": 0.012000000000000026,
+            "energy": 0.0007221432718167544,
+            "velocity_rms": 0.038003770123943084,
+            "divergence_rms": 3.079160246874995e-19,
+            "work": 9.509890737706733e-05,
+            "viscous_dissipation": 0.0022375247246306323,
+            "energy_rate": -0.0021424258172535646,
+            "energy_identity_residual": 3.1170812458958252e-19,
+            "pressure_rms": 0.0013299476912884685,
+            "stress_rms": 0.00473024811678059,
+            "S_min": -0.025753002566442154,
+            "S_max": 0.11460841335496999,
+            "person": "synthetic-person",
+            "time": 0.4,
+            "role": "unattributed",
+            "event_ref": "explicit-input-1",
+            "initial_state_basis": "declared synthetic initial field and uninterrupted input history",
+            "mass_exact": 0.012000000000000056,
+            "mass_error": -2.949029909160572e-17,
+            "steps": 158,
+            "dt": 0.0012658227848101266
+          },
+          {
+            "A": 1.3444106938820255e-17,
+            "mass": 0.012000000000000026,
+            "energy": 0.0004112493098386775,
+            "velocity_rms": 0.02867923673456731,
+            "divergence_rms": 4.156094189327422e-19,
+            "work": 0.00011702743453905344,
+            "viscous_dissipation": 0.0011972502457034933,
+            "energy_rate": -0.00108022281116444,
+            "energy_identity_residual": -2.710505431213761e-20,
+            "pressure_rms": 0.0009284954211444495,
+            "stress_rms": 0.0034601304104086785,
+            "S_min": -0.021194688290184262,
+            "S_max": 0.09537779895818876,
+            "person": "synthetic-person",
+            "time": 0.6000000000000001,
+            "role": "unattributed",
+            "event_ref": "explicit-input-2",
+            "initial_state_basis": "declared synthetic initial field and uninterrupted input history",
+            "mass_exact": 0.012000000000000026,
+            "mass_error": 0.0,
+            "steps": 158,
+            "dt": 0.001265822784810127
+          }
+        ],
+        [
+          {
+            "A": -0.20000000000000073,
+            "mass": -0.006000000000000013,
+            "energy": 0.0013320177372374523,
+            "velocity_rms": 0.051614295253107005,
+            "divergence_rms": 2.7676703355664326e-19,
+            "work": 3.3342009690347646e-05,
+            "viscous_dissipation": 0.004199437566998475,
+            "energy_rate": -0.004166095557308129,
+            "energy_identity_residual": -1.4568966692773966e-18,
+            "pressure_rms": 0.0015175356268285662,
+            "stress_rms": 0.0064803067573985075,
+            "S_min": -0.0837208111474449,
+            "S_max": 0.03251765451818794,
+            "person": "synthetic-person",
+            "time": 0.2,
+            "role": "unattributed",
+            "event_ref": "explicit-input-0",
+            "initial_state_basis": "declared synthetic initial field and uninterrupted input history",
+            "mass_exact": -0.006000000000000001,
+            "mass_error": -1.214306433183765e-17,
+            "steps": 158,
+            "dt": 0.0012658227848101266
+          },
+          {
+            "A": -1.3444106938820255e-17,
+            "mass": -0.012000000000000026,
+            "energy": 0.0007221432718167544,
+            "velocity_rms": 0.038003770123943084,
+            "divergence_rms": 3.079160246874995e-19,
+            "work": 9.509890737706733e-05,
+            "viscous_dissipation": 0.0022375247246306323,
+            "energy_rate": -0.0021424258172535646,
+            "energy_identity_residual": 3.1170812458958252e-19,
+            "pressure_rms": 0.0013299476912884685,
+            "stress_rms": 0.00473024811678059,
+            "S_min": -0.11460841335496999,
+            "S_max": 0.025753002566442154,
+            "person": "synthetic-person",
+            "time": 0.4,
+            "role": "unattributed",
+            "event_ref": "explicit-input-1",
+            "initial_state_basis": "declared synthetic initial field and uninterrupted input history",
+            "mass_exact": -0.012000000000000056,
+            "mass_error": 2.949029909160572e-17,
+            "steps": 158,
+            "dt": 0.0012658227848101266
+          },
+          {
+            "A": -1.3444106938820255e-17,
+            "mass": -0.012000000000000026,
+            "energy": 0.0004112493098386775,
+            "velocity_rms": 0.02867923673456731,
+            "divergence_rms": 4.156094189327422e-19,
+            "work": 0.00011702743453905344,
+            "viscous_dissipation": 0.0011972502457034933,
+            "energy_rate": -0.00108022281116444,
+            "energy_identity_residual": -2.710505431213761e-20,
+            "pressure_rms": 0.0009284954211444495,
+            "stress_rms": 0.0034601304104086785,
+            "S_min": -0.09537779895818876,
+            "S_max": 0.021194688290184262,
+            "person": "synthetic-person",
+            "time": 0.6000000000000001,
+            "role": "unattributed",
+            "event_ref": "explicit-input-2",
+            "initial_state_basis": "declared synthetic initial field and uninterrupted input history",
+            "mass_exact": -0.012000000000000026,
+            "mass_error": 0.0,
+            "steps": 158,
+            "dt": 0.001265822784810127
+          }
+        ]
+      ]
+    },
+    {
+      "law": "smooth_off",
+      "grid": 24,
+      "velocity_max": 0.0,
+      "mirrored_S_max": 0.0,
+      "mirrored_A_max": 0.0,
+      "gradient_norm_max": 0.0,
+      "pressure_max": 0.0,
+      "force_max": 0.0,
+      "max_mass_error": 8.673617379884035e-18,
+      "max_energy_identity_residual": 7.724940478959219e-19,
+      "max_divergence_rms": 3.8708191383995e-19,
+      "endpoint_diagnostics": [
+        [
+          {
+            "A": 0.20000000000000015,
+            "mass": 0.006000000000000003,
+            "energy": 0.001330425153489977,
+            "velocity_rms": 0.0515834305468331,
+            "divergence_rms": 4.076202537745457e-20,
+            "work": 1.6270894387459566e-05,
+            "viscous_dissipation": 0.004199257892233811,
+            "energy_rate": -0.004182986997846351,
+            "energy_identity_residual": 1.3552527156068805e-20,
+            "pressure_rms": 0.0015331406857656625,
+            "stress_rms": 0.006480168124542612,
+            "S_min": -0.03251777498807493,
+            "S_max": 0.08372068064427432,
+            "person": "synthetic-person",
+            "time": 0.2,
+            "role": "unattributed",
+            "event_ref": "explicit-input-0",
+            "initial_state_basis": "declared synthetic initial field and uninterrupted input history",
+            "mass_exact": 0.006000000000000001,
+            "mass_error": 1.734723475976807e-18,
+            "steps": 100,
+            "dt": 0.002
+          },
+          {
+            "A": -1.3877787807814457e-17,
+            "mass": 0.012000000000000004,
+            "energy": 0.0007151360978545995,
+            "velocity_rms": 0.037818939642845606,
+            "divergence_rms": 3.864153454955618e-19,
+            "work": 5.9356008916530605e-05,
+            "viscous_dissipation": 0.0022376827748668195,
+            "energy_rate": -0.0021783267659502897,
+            "energy_identity_residual": -7.724940478959219e-19,
+            "pressure_rms": 0.0013652860905941826,
+            "stress_rms": 0.0047304151771983185,
+            "S_min": -0.025753252500894653,
+            "S_max": 0.11460918589503533,
+            "person": "synthetic-person",
+            "time": 0.4,
+            "role": "unattributed",
+            "event_ref": "explicit-input-1",
+            "initial_state_basis": "declared synthetic initial field and uninterrupted input history",
+            "mass_exact": 0.012000000000000012,
+            "mass_error": -8.673617379884035e-18,
+            "steps": 100,
+            "dt": 0.002
+          },
+          {
+            "A": -1.3877787807814457e-17,
+            "mass": 0.012000000000000004,
+            "energy": 0.0003958817141510238,
+            "velocity_rms": 0.02813829114040239,
+            "divergence_rms": 3.8708191383995e-19,
+            "work": 7.078548189961549e-05,
+            "viscous_dissipation": 0.0011978113506646798,
+            "energy_rate": -0.0011270258687650647,
+            "energy_identity_residual": -3.6591823321385775e-19,
+            "pressure_rms": 0.0009224097116690312,
+            "stress_rms": 0.003460941130190862,
+            "S_min": -0.02119544730530178,
+            "S_max": 0.09538240437403467,
+            "person": "synthetic-person",
+            "time": 0.6000000000000001,
+            "role": "unattributed",
+            "event_ref": "explicit-input-2",
+            "initial_state_basis": "declared synthetic initial field and uninterrupted input history",
+            "mass_exact": 0.012000000000000004,
+            "mass_error": 0.0,
+            "steps": 101,
+            "dt": 0.0019801980198019807
+          }
+        ],
+        [
+          {
+            "A": -0.20000000000000015,
+            "mass": -0.006000000000000003,
+            "energy": 0.001330425153489977,
+            "velocity_rms": 0.0515834305468331,
+            "divergence_rms": 4.076202537745457e-20,
+            "work": 1.6270894387459566e-05,
+            "viscous_dissipation": 0.004199257892233811,
+            "energy_rate": -0.004182986997846351,
+            "energy_identity_residual": 1.3552527156068805e-20,
+            "pressure_rms": 0.0015331406857656625,
+            "stress_rms": 0.006480168124542612,
+            "S_min": -0.08372068064427432,
+            "S_max": 0.03251777498807493,
+            "person": "synthetic-person",
+            "time": 0.2,
+            "role": "unattributed",
+            "event_ref": "explicit-input-0",
+            "initial_state_basis": "declared synthetic initial field and uninterrupted input history",
+            "mass_exact": -0.006000000000000001,
+            "mass_error": -1.734723475976807e-18,
+            "steps": 100,
+            "dt": 0.002
+          },
+          {
+            "A": 1.3877787807814457e-17,
+            "mass": -0.012000000000000004,
+            "energy": 0.0007151360978545995,
+            "velocity_rms": 0.037818939642845606,
+            "divergence_rms": 3.864153454955618e-19,
+            "work": 5.9356008916530605e-05,
+            "viscous_dissipation": 0.0022376827748668195,
+            "energy_rate": -0.0021783267659502897,
+            "energy_identity_residual": -7.724940478959219e-19,
+            "pressure_rms": 0.0013652860905941826,
+            "stress_rms": 0.0047304151771983185,
+            "S_min": -0.11460918589503533,
+            "S_max": 0.025753252500894653,
+            "person": "synthetic-person",
+            "time": 0.4,
+            "role": "unattributed",
+            "event_ref": "explicit-input-1",
+            "initial_state_basis": "declared synthetic initial field and uninterrupted input history",
+            "mass_exact": -0.012000000000000012,
+            "mass_error": 8.673617379884035e-18,
+            "steps": 100,
+            "dt": 0.002
+          },
+          {
+            "A": 1.3877787807814457e-17,
+            "mass": -0.012000000000000004,
+            "energy": 0.0003958817141510238,
+            "velocity_rms": 0.02813829114040239,
+            "divergence_rms": 3.8708191383995e-19,
+            "work": 7.078548189961549e-05,
+            "viscous_dissipation": 0.0011978113506646798,
+            "energy_rate": -0.0011270258687650647,
+            "energy_identity_residual": -3.6591823321385775e-19,
+            "pressure_rms": 0.0009224097116690312,
+            "stress_rms": 0.003460941130190862,
+            "S_min": -0.09538240437403467,
+            "S_max": 0.02119544730530178,
+            "person": "synthetic-person",
+            "time": 0.6000000000000001,
+            "role": "unattributed",
+            "event_ref": "explicit-input-2",
+            "initial_state_basis": "declared synthetic initial field and uninterrupted input history",
+            "mass_exact": -0.012000000000000004,
+            "mass_error": 0.0,
+            "steps": 101,
+            "dt": 0.0019801980198019807
+          }
+        ]
+      ]
+    },
+    {
+      "law": "smooth_off",
+      "grid": 48,
+      "velocity_max": 0.0,
+      "mirrored_S_max": 0.0,
+      "mirrored_A_max": 0.0,
+      "gradient_norm_max": 0.0,
+      "pressure_max": 0.0,
+      "force_max": 0.0,
+      "max_mass_error": 2.949029909160572e-17,
+      "max_energy_identity_residual": 2.0227146780432692e-18,
+      "max_divergence_rms": 5.453174536124685e-19,
+      "endpoint_diagnostics": [
+        [
+          {
+            "A": 0.20000000000000073,
+            "mass": 0.006000000000000013,
+            "energy": 0.001330424735572021,
+            "velocity_rms": 0.05158342244504568,
+            "divergence_rms": 3.873493287994299e-19,
+            "work": 1.6262825375301774e-05,
+            "viscous_dissipation": 0.004199260511542954,
+            "energy_rate": -0.004182997686167654,
+            "energy_identity_residual": -2.0227146780432692e-18,
+            "pressure_rms": 0.0015328035532911689,
+            "stress_rms": 0.006480170145561731,
+            "S_min": -0.03251766782800193,
+            "S_max": 0.08372083099629969,
+            "person": "synthetic-person",
+            "time": 0.2,
+            "role": "unattributed",
+            "event_ref": "explicit-input-0",
+            "initial_state_basis": "declared synthetic initial field and uninterrupted input history",
+            "mass_exact": 0.006000000000000001,
+            "mass_error": 1.214306433183765e-17,
+            "steps": 158,
+            "dt": 0.0012658227848101266
+          },
+          {
+            "A": 1.3444106938820255e-17,
+            "mass": 0.012000000000000026,
+            "energy": 0.0007151262091379341,
+            "velocity_rms": 0.03781867816669256,
+            "divergence_rms": 7.023405915576374e-20,
+            "work": 5.928820460460509e-05,
+            "viscous_dissipation": 0.0022376955640918774,
+            "energy_rate": -0.0021784073594872727,
+            "energy_identity_residual": -3.3881317890172014e-19,
+            "pressure_rms": 0.0013645070179096976,
+            "stress_rms": 0.004730428695257838,
+            "S_min": -0.02575319203330097,
+            "S_max": 0.11460925995059847,
+            "person": "synthetic-person",
+            "time": 0.4,
+            "role": "unattributed",
+            "event_ref": "explicit-input-1",
+            "initial_state_basis": "declared synthetic initial field and uninterrupted input history",
+            "mass_exact": 0.012000000000000056,
+            "mass_error": -2.949029909160572e-17,
+            "steps": 158,
+            "dt": 0.0012658227848101266
+          },
+          {
+            "A": 1.3444106938820255e-17,
+            "mass": 0.012000000000000028,
+            "energy": 0.0003958544458601264,
+            "velocity_rms": 0.02813732204244485,
+            "divergence_rms": 5.453174536124685e-19,
+            "work": 7.069592060319344e-05,
+            "viscous_dissipation": 0.001197809219375122,
+            "energy_rate": -0.0011271132987719288,
+            "energy_identity_residual": -1.8973538018496328e-19,
+            "pressure_rms": 0.0009221244291903365,
+            "stress_rms": 0.0034609380511288,
+            "S_min": -0.02119544167305975,
+            "S_max": 0.09538246051584721,
+            "person": "synthetic-person",
+            "time": 0.6000000000000001,
+            "role": "unattributed",
+            "event_ref": "explicit-input-2",
+            "initial_state_basis": "declared synthetic initial field and uninterrupted input history",
+            "mass_exact": 0.012000000000000026,
+            "mass_error": 1.734723475976807e-18,
+            "steps": 158,
+            "dt": 0.001265822784810127
+          }
+        ],
+        [
+          {
+            "A": -0.20000000000000073,
+            "mass": -0.006000000000000013,
+            "energy": 0.001330424735572021,
+            "velocity_rms": 0.05158342244504568,
+            "divergence_rms": 3.873493287994299e-19,
+            "work": 1.6262825375301774e-05,
+            "viscous_dissipation": 0.004199260511542954,
+            "energy_rate": -0.004182997686167654,
+            "energy_identity_residual": -2.0227146780432692e-18,
+            "pressure_rms": 0.0015328035532911689,
+            "stress_rms": 0.006480170145561731,
+            "S_min": -0.08372083099629969,
+            "S_max": 0.03251766782800193,
+            "person": "synthetic-person",
+            "time": 0.2,
+            "role": "unattributed",
+            "event_ref": "explicit-input-0",
+            "initial_state_basis": "declared synthetic initial field and uninterrupted input history",
+            "mass_exact": -0.006000000000000001,
+            "mass_error": -1.214306433183765e-17,
+            "steps": 158,
+            "dt": 0.0012658227848101266
+          },
+          {
+            "A": -1.3444106938820255e-17,
+            "mass": -0.012000000000000026,
+            "energy": 0.0007151262091379341,
+            "velocity_rms": 0.03781867816669256,
+            "divergence_rms": 7.023405915576374e-20,
+            "work": 5.928820460460509e-05,
+            "viscous_dissipation": 0.0022376955640918774,
+            "energy_rate": -0.0021784073594872727,
+            "energy_identity_residual": -3.3881317890172014e-19,
+            "pressure_rms": 0.0013645070179096976,
+            "stress_rms": 0.004730428695257838,
+            "S_min": -0.11460925995059847,
+            "S_max": 0.02575319203330097,
+            "person": "synthetic-person",
+            "time": 0.4,
+            "role": "unattributed",
+            "event_ref": "explicit-input-1",
+            "initial_state_basis": "declared synthetic initial field and uninterrupted input history",
+            "mass_exact": -0.012000000000000056,
+            "mass_error": 2.949029909160572e-17,
+            "steps": 158,
+            "dt": 0.0012658227848101266
+          },
+          {
+            "A": -1.3444106938820255e-17,
+            "mass": -0.012000000000000028,
+            "energy": 0.0003958544458601264,
+            "velocity_rms": 0.02813732204244485,
+            "divergence_rms": 5.453174536124685e-19,
+            "work": 7.069592060319344e-05,
+            "viscous_dissipation": 0.001197809219375122,
+            "energy_rate": -0.0011271132987719288,
+            "energy_identity_residual": -1.8973538018496328e-19,
+            "pressure_rms": 0.0009221244291903365,
+            "stress_rms": 0.0034609380511288,
+            "S_min": -0.09538246051584721,
+            "S_max": 0.02119544167305975,
+            "person": "synthetic-person",
+            "time": 0.6000000000000001,
+            "role": "unattributed",
+            "event_ref": "explicit-input-2",
+            "initial_state_basis": "declared synthetic initial field and uninterrupted input history",
+            "mass_exact": -0.012000000000000026,
+            "mass_error": -1.734723475976807e-18,
+            "steps": 158,
+            "dt": 0.001265822784810127
+          }
+        ]
+      ]
+    }
+  ],
+  "energy_work": [
+    {
+      "law": "sharp",
+      "velocity_plus_e_work": -0.012075351210338413,
+      "velocity_minus_e_work": 0.012075351210338413
+    },
+    {
+      "law": "tanh",
+      "velocity_plus_e_work": -0.011194107879813195,
+      "velocity_minus_e_work": 0.011194107879813195
+    },
+    {
+      "law": "smooth_off",
+      "velocity_plus_e_work": -0.006862782520084876,
+      "velocity_minus_e_work": 0.006862782520084876
+    }
+  ],
+  "checks": [
+    {
+      "check": "sharp zero at onset",
+      "passed": true
+    },
+    {
+      "check": "sharp positive above onset",
+      "passed": true
+    },
+    {
+      "check": "sharp signed below onset",
+      "passed": true
+    },
+    {
+      "check": "sharp n=24 velocity_max",
+      "passed": true
+    },
+    {
+      "check": "sharp n=24 mirrored_S_max",
+      "passed": true
+    },
+    {
+      "check": "sharp n=24 mirrored_A_max",
+      "passed": true
+    },
+    {
+      "check": "sharp n=24 gradient_norm_max",
+      "passed": true
+    },
+    {
+      "check": "sharp n=24 pressure_max",
+      "passed": true
+    },
+    {
+      "check": "sharp n=24 force_max",
+      "passed": true
+    },
+    {
+      "check": "sharp n=24 mass_error",
+      "passed": true
+    },
+    {
+      "check": "sharp n=24 energy_identity_residual",
+      "passed": true
+    },
+    {
+      "check": "sharp n=24 divergence_rms",
+      "passed": true
+    },
+    {
+      "check": "sharp n=48 velocity_max",
+      "passed": true
+    },
+    {
+      "check": "sharp n=48 mirrored_S_max",
+      "passed": true
+    },
+    {
+      "check": "sharp n=48 mirrored_A_max",
+      "passed": true
+    },
+    {
+      "check": "sharp n=48 gradient_norm_max",
+      "passed": true
+    },
+    {
+      "check": "sharp n=48 pressure_max",
+      "passed": true
+    },
+    {
+      "check": "sharp n=48 force_max",
+      "passed": true
+    },
+    {
+      "check": "sharp n=48 mass_error",
+      "passed": true
+    },
+    {
+      "check": "sharp n=48 energy_identity_residual",
+      "passed": true
+    },
+    {
+      "check": "sharp n=48 divergence_rms",
+      "passed": true
+    },
+    {
+      "check": "sharp force is not automatic drag",
+      "passed": true
+    },
+    {
+      "check": "tanh zero at onset",
+      "passed": true
+    },
+    {
+      "check": "tanh positive above onset",
+      "passed": true
+    },
+    {
+      "check": "tanh signed below onset",
+      "passed": true
+    },
+    {
+      "check": "tanh n=24 velocity_max",
+      "passed": true
+    },
+    {
+      "check": "tanh n=24 mirrored_S_max",
+      "passed": true
+    },
+    {
+      "check": "tanh n=24 mirrored_A_max",
+      "passed": true
+    },
+    {
+      "check": "tanh n=24 gradient_norm_max",
+      "passed": true
+    },
+    {
+      "check": "tanh n=24 pressure_max",
+      "passed": true
+    },
+    {
+      "check": "tanh n=24 force_max",
+      "passed": true
+    },
+    {
+      "check": "tanh n=24 mass_error",
+      "passed": true
+    },
+    {
+      "check": "tanh n=24 energy_identity_residual",
+      "passed": true
+    },
+    {
+      "check": "tanh n=24 divergence_rms",
+      "passed": true
+    },
+    {
+      "check": "tanh n=48 velocity_max",
+      "passed": true
+    },
+    {
+      "check": "tanh n=48 mirrored_S_max",
+      "passed": true
+    },
+    {
+      "check": "tanh n=48 mirrored_A_max",
+      "passed": true
+    },
+    {
+      "check": "tanh n=48 gradient_norm_max",
+      "passed": true
+    },
+    {
+      "check": "tanh n=48 pressure_max",
+      "passed": true
+    },
+    {
+      "check": "tanh n=48 force_max",
+      "passed": true
+    },
+    {
+      "check": "tanh n=48 mass_error",
+      "passed": true
+    },
+    {
+      "check": "tanh n=48 energy_identity_residual",
+      "passed": true
+    },
+    {
+      "check": "tanh n=48 divergence_rms",
+      "passed": true
+    },
+    {
+      "check": "tanh force is not automatic drag",
+      "passed": true
+    },
+    {
+      "check": "smooth_off zero at onset",
+      "passed": true
+    },
+    {
+      "check": "smooth_off positive above onset",
+      "passed": true
+    },
+    {
+      "check": "smooth_off signed below onset",
+      "passed": true
+    },
+    {
+      "check": "smooth_off n=24 velocity_max",
+      "passed": true
+    },
+    {
+      "check": "smooth_off n=24 mirrored_S_max",
+      "passed": true
+    },
+    {
+      "check": "smooth_off n=24 mirrored_A_max",
+      "passed": true
+    },
+    {
+      "check": "smooth_off n=24 gradient_norm_max",
+      "passed": true
+    },
+    {
+      "check": "smooth_off n=24 pressure_max",
+      "passed": true
+    },
+    {
+      "check": "smooth_off n=24 force_max",
+      "passed": true
+    },
+    {
+      "check": "smooth_off n=24 mass_error",
+      "passed": true
+    },
+    {
+      "check": "smooth_off n=24 energy_identity_residual",
+      "passed": true
+    },
+    {
+      "check": "smooth_off n=24 divergence_rms",
+      "passed": true
+    },
+    {
+      "check": "smooth_off n=48 velocity_max",
+      "passed": true
+    },
+    {
+      "check": "smooth_off n=48 mirrored_S_max",
+      "passed": true
+    },
+    {
+      "check": "smooth_off n=48 mirrored_A_max",
+      "passed": true
+    },
+    {
+      "check": "smooth_off n=48 gradient_norm_max",
+      "passed": true
+    },
+    {
+      "check": "smooth_off n=48 pressure_max",
+      "passed": true
+    },
+    {
+      "check": "smooth_off n=48 force_max",
+      "passed": true
+    },
+    {
+      "check": "smooth_off n=48 mass_error",
+      "passed": true
+    },
+    {
+      "check": "smooth_off n=48 energy_identity_residual",
+      "passed": true
+    },
+    {
+      "check": "smooth_off n=48 divergence_rms",
+      "passed": true
+    },
+    {
+      "check": "smooth_off force is not automatic drag",
+      "passed": true
+    },
+    {
+      "check": "tanh minimum position matches board rounding",
+      "passed": true
+    },
+    {
+      "check": "tanh minimum value matches board rounding",
+      "passed": true
+    },
+    {
+      "check": "positive exact-off branch can underflow",
+      "passed": true
+    }
+  ],
+  "check_count": 69,
+  "passed": true
+}

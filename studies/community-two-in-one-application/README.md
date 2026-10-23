@@ -2,17 +2,27 @@
 
 Streams and Rocks · 23 October 2026
 
-**The full empirical two-in-one model is not finished or validated.** This study adds a runner that keeps each person’s state and input history separate, 36 coupled equation trials, and a new audit of 840 real thought probes from 24 people. The trials expose both retained history and missing role distinctions. No simpler predictor or movement-only score is presented as the requested full-model test.
+**The full empirical two-in-one model is not finished or validated.** This study adds a runner that keeps each person’s state and input history separate, 48 coupled synthetic equation trials (36 original and 12 from the live Miro review), and an audit of 840 real thought probes from 24 people. The trials expose both retained history and missing role distinctions. No simpler predictor or movement-only score is presented as the requested full-model test.
 
 Smoke is inward putting-forward and Clay is inward receiving within one person. Wind, Fog, Mist and Water are forms of the moving idea. Water is perceived balance. The author now gives D₂O a distinct role: a small compositional change can have a large consequence, potentially changing something life-saving into something life-threatening. Testing that claim requires specified changes and observed consequences; the mathematical threshold is not automatically a harm boundary.
 
 | Completed | Result | Meaning |
 | --- | --- | --- |
-| Exact corpus dynamics | 36 synthetic coupled trials and one analytic check | No change to the audited solver |
+| Exact corpus components in a declared coupling | 48 synthetic coupled trials and one analytic check | No change to the audited solver or accumulated-input law |
 | Person-specific runner | State, input order, role attribution and event references preserved | Missing initial state or utility and cross-person/gap-filled histories are rejected |
 | New real records | 24 people; 47 sessions; 140 runs; 840 probes; 10,920 item rows | Measurement coverage, not 10,920 independent people |
-| Verification | 14 unit tests; 89 saved checks | Numerical and source-accounting checks |
+| Verification | 14 unit tests; 89 original saved checks; 69 Miro-derived numerical checks | Numerical and source-accounting checks |
 | Full empirical fit | Not performed | Required observation functions and joint measurements are absent |
+
+## Using the updated corpus and live Miro boards
+
+A fresh read of the available corrected DOCX confirms that it is byte-identical to the source already used in the latest tests. Three relevant Miro boards were read in selected areas after inventorying eight owned boards. The [source reconciliation](MIRO_CONNECTIONS.md) traces the equations, meaning/expression distinction, proposed connections, memory comparisons and response probes to their sources. It also records skipped content and version conflicts rather than claiming a whole-board review.
+
+The board marks the shared S–u feedback loop as a proposed coupling. This implementation uses the exact component equations on a declared shared periodic domain; that numerical closure is not an empirically established inward geometry. The board’s suggested forgetting curves would change the model. They are recorded as alternatives, with no decay silently added to the corpus accumulator.
+
+The new mirrored-field test ran all three laws at grids 24 and 48. Reversing the initial signed S and the entire excess-input history preserves velocity and pressure while reversing S and A at the recorded endpoints. The [12 full coupled runs](results/miro_checks.json) pass all 69 checks. Movement alone cannot distinguish these opposite signed states. This is a mathematical ambiguity, not a claim that opposite human meanings are equivalent.
+
+The response probes also distinguish negative tanh activation from an inactive force, and a mathematically positive exact-off value from a float64 underflow zero. The tanh minimum is at q/epsilon = −0.639232271380537. Fixed-direction forcing can add or remove energy; it is not automatically drag. The [additional frozen plan](MIRO_TEST_PLAN.md) and [test script](check_miro_connections.py) make these checks reproducible.
 
 ## What the exact equations say about history
 
@@ -73,6 +83,7 @@ python -m pip install -r requirements.txt
 python fetch_data.py
 python audit_records.py
 python run_exact_tests.py
+python check_miro_connections.py
 python -m unittest discover -p "test_*.py" -v
 python verify_saved.py
 python build_report.py

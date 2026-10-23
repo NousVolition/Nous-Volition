@@ -2,7 +2,7 @@
 
 Smoke is inward speaking, Clay is inward listening, and the middle is the moving idea. Each person has their own history. The current sequence is a proposed internal exchange, not a conversation between separate people. [Current model and corpus fidelity](../community-two-in-one/MODEL.md) · [Testing document and completed checks](../community-two-in-one/README.md).
 
-**Wind, Fog, Water, Mist and the other forms describe the moving idea itself. Water is perceived balance. The other water is heavy water, D₂O: two deuterium (²H) atoms and one oxygen atom.** The earlier assignment of perceived balance to D₂O was an editorial error. Its distinct role in the idea model remains unspecified; no new role is inferred from its chemical mass.
+**Wind, Fog, Water, Mist and the other forms describe the moving idea itself. Water is perceived balance. The other water is heavy water, D₂O: two deuterium (²H) atoms and one oxygen atom.** The earlier assignment of perceived balance to D₂O was an editorial error. The author now defines D₂O as a small compositional change with potentially large consequences, including potentially life-threatening consequences. This is the author's meaning, not a consequence inferred from molecular mass. Testing it requires observed changes and outcomes.
 
 | Connection | Support | What remains to test |
 | --- | --- | --- |
@@ -181,3 +181,6 @@ The [grounded reference and full-field study](../community-reference-field/READM
 This new source measures the referential component of meaning through retrospective human annotations. It preserves the distinction between Sens and Sin: two expressions can identify the same objects without preserving every implication, and repeated words can refer to different objects. The source contains no matched moderation decisions or penalty histories. Its annotated dialogues were successful, and annotators could see later context. It therefore cannot establish prospective understanding, rivalry, helpful doubles or a causal memory effect.
 
 All coupled momentum, incompressibility, signed-field transport and accumulated-source equations remain in the calculation. The added mapping turns object references into spatial fields and interpretation agreement into a proposed recoverability-utility proxy. Utility, social velocity, pressure and boundary conditions remain assumed or latent, not measured human quantities. The numerical pilot completed 1,160 episode integrations, with 12 unit tests and 2,851 saved-result checks. Water, Fog, Smoke and Clay remain changeable situational descriptions; reference scores do not classify people.
+
+
+Updated source connection, 23 October 2026: [corrected corpus and live Miro review](../community-two-in-one-application/MIRO_CONNECTIONS.md).

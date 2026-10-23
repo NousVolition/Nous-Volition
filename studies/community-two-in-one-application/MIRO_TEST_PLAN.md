@@ -1,0 +1,13 @@
+# Checks derived from the live Miro boards
+
+Recorded 23 October 2026 before running this extension. This supplements the existing frozen numerical plan; it does not alter it, the corpus solver, the empirical split, or any response data.
+
+Source: the corrected corpus board, frames 05, 06, 10, 13, 16, 18 and 20, plus the Grounding and Theory map frames. Read provenance is in source_reconciliation.json. The locally available corrected DOCX has SHA-256 01f9ab0942f9c88982863e2ffc1e3c495786b5e6b67a26ae77d18235e7058acf, identical to the previously audited version.
+
+1. Compute all three response laws at q/epsilon = -1, -0.639, 0, 0.1 and 1 with epsilon=1. Check the negative tanh minimum from its analytic derivative. Check a positive but numerically underflowing exact-off value at q=0.01 using log(a)=log(q)-1/q². A floating zero is not a mathematical exact-off verdict.
+2. For each response law, use the existing full coupled S–u solver at grids 24 and 48, max step 0.002, kappa=0.3 and all other Parameters defaults. Initial S texture is +0.04 or -0.04, initial Taylor–Green velocity amplitude 0.1, A=0 explicitly synthetic. Intervals each last 0.2. Inputs are [1,-1,0] and [-1,1,0], respectively. This mirrors the entire signed initial field and source history, not only the last input. Retain all advection, diffusion, momentum, forcing, pressure projection and accumulated-source terms.
+3. Derived expectation: under this simultaneous sign reversal, S and A reverse, while |grad S|, q, force, velocity and pressure agree. Check the full trajectories at every interval endpoint (tolerance 1e-11). Check mean-field source accounting (1e-12), energy identity (1e-12), and incompressibility (1e-12). Save all endpoint states for both signs and both grids. These are 12 additional coupled synthetic runs, not human-data predictions.
+4. At a fixed textured S, compare constant divergence-free velocities +e_k and -e_k. Fixed-direction force can add or remove kinetic energy; do not label it automatic drag. Report both work values for each law.
+5. Confirm source and solver hashes and save the plan hash. Review all results, including failures. These are mechanism checks, not evidence that human meaning is a signed scalar or that human opposites are interchangeable.
+
+Do not add decay to A, relaxation to S, an arbitrary form classifier, a movement-only predictor or a psychological interpretation of the numerical threshold. The board proposes forgetting alternatives, but a retention curve is not by itself a replacement field equation. The user's exact-equation requirement takes precedence over a board recommendation to alter the dynamics.

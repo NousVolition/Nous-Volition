@@ -1,5 +1,7 @@
 # Why the complete empirical fit cannot yet be performed
 
+The 23 October [corrected corpus and live Miro reconciliation](MIRO_CONNECTIONS.md) has now been completed for the available source and selected board areas. It adds exact-equation tests and source traceability, not the missing participant observations. The shared S–u feedback is explicitly a coupling choice; the board's dashed return path does not establish a measured inward geometry. The board's proposed decay alternatives are not silently substituted for the corpus accumulator.
+
 The full field dynamics can be executed, but the supplied corpus does not define a complete two-in-one observation model. The author requests the exact equations and no substitute predictor. A model that predicts only the newly available movement rating would leave out inward receiving, meaning, personal memory contents and idea forms. It would not satisfy that request.
 
 The original field equations are retained. The author has now defined D2O as the sensitivity question of a small compositional change with potentially large consequences. The complete register of currently supplied meanings is in form_definitions.json. That definition supplies a comparison to investigate, not a benefit/harm classifier.

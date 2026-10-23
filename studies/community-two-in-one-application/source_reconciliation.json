@@ -1,0 +1,168 @@
+{
+  "reviewed": "2026-10-23",
+  "corpus": {
+    "filename": "Plain_Language_Corpus_Math_and_Logic_Corrected.docx",
+    "sha256": "01f9ab0942f9c88982863e2ffc1e3c495786b5e6b67a26ae77d18235e7058acf",
+    "bytes": 63724,
+    "nonempty_paragraphs": 624,
+    "same_as_latest_test_source": true,
+    "paragraphs": {
+      "meaning": 22,
+      "momentum_and_force": [
+        229,
+        230
+      ],
+      "response_options": [
+        263,
+        264
+      ],
+      "updated_count": 273,
+      "field_and_history": [
+        517,
+        518
+      ],
+      "meaning_distinction": 605
+    }
+  },
+  "boards_inventoried": 8,
+  "boards_with_targeted_reads": 3,
+  "reads": [
+    {
+      "key": "core_equations",
+      "url": "https://miro.com/app/board/uXjVEXBJz3k=/",
+      "frames": [
+        {
+          "id": "3458764687912872499",
+          "title": "05 · Three response laws with different behavior"
+        },
+        {
+          "id": "3458764687912872500",
+          "title": "06 · Static invariance and dynamic memory are separate models"
+        },
+        {
+          "id": "3458764687918055185",
+          "title": "16 · The past survives a zero input"
+        },
+        {
+          "id": "3458764687918055187",
+          "title": "18 · Identical readings can hide different states"
+        }
+      ],
+      "item_count": 55,
+      "skipped_count": 95,
+      "tool_message": "Read 55 managed + 95 foreign items, 1 carrying rendered bounds (selected 4 of 4 requested widgets)",
+      "snapshot_svg_sha256": "892751af3ba309d63befe90020bda33dab12a53aaa80cc452c613b314535ad6d"
+    },
+    {
+      "key": "new_memory",
+      "url": "https://miro.com/app/board/uXjVEXBJz3k=/",
+      "frames": [
+        {
+          "id": "3458764688055411860",
+          "title": "Synthesis · The whole board"
+        },
+        {
+          "id": "3458764688169288636",
+          "title": "Grounding the core loop"
+        },
+        {
+          "id": "3458764688184818696",
+          "title": "Theory map · What to test and what to recommend"
+        }
+      ],
+      "item_count": 145,
+      "skipped_count": 89,
+      "tool_message": "Read 145 managed + 89 foreign items, 2 carrying rendered bounds (selected 3 of 3 requested widgets)",
+      "snapshot_svg_sha256": "e15998d39f5a9606db1f1a2137a31f1882f733fdf493fbdc3c8f6c316c4b0ade"
+    },
+    {
+      "key": "benchmark",
+      "url": "https://miro.com/app/board/uXjVEW8HkiQ=/",
+      "frames": [
+        {
+          "id": "3458764688167791493",
+          "title": "1  Preserve the intended meaning"
+        },
+        {
+          "id": "3458764688167791494",
+          "title": "2  Check mathematics and claim limits"
+        },
+        {
+          "id": "3458764688167791495",
+          "title": "3  Test consistency and useful change"
+        },
+        {
+          "id": "3458764688184078595",
+          "title": "V4 • Calculator protocol"
+        }
+      ],
+      "item_count": 126,
+      "skipped_count": 0,
+      "tool_message": "Read 126 managed + 0 foreign items (selected 4 of 4 requested widgets)",
+      "snapshot_svg_sha256": "4384ad454185c46e5d5b88616e4759a677840ddb6826510dec17f009add31f87"
+    },
+    {
+      "key": "architecture",
+      "url": "https://miro.com/app/board/uXjVEXlaw6E=/",
+      "frames": [
+        {
+          "id": "3458764687796037617",
+          "title": "02 · Nous-Volition / Streams and Rocks"
+        },
+        {
+          "id": "3458764687796037618",
+          "title": "03 · Connections documented in your work"
+        },
+        {
+          "id": "3458764687911659101",
+          "title": "10 · Digital boundaries and representation models"
+        }
+      ],
+      "item_count": 32,
+      "skipped_count": 4,
+      "tool_message": "Read 32 managed + 4 foreign items, 1 carrying rendered bounds (selected 3 of 3 requested widgets)",
+      "snapshot_svg_sha256": "93f20f254ace49f32990239e23052e69ebb60fbc9f47fa9142f5a78599a147ea"
+    },
+    {
+      "key": "connections",
+      "url": "https://miro.com/app/board/uXjVEXBJz3k=/",
+      "frames": [
+        {
+          "id": "3458764687915993860",
+          "title": "10 · How the ideas connect"
+        },
+        {
+          "id": "3458764687916065203",
+          "title": "13 · Memory can feed a threshold response"
+        },
+        {
+          "id": "3458764687918055189",
+          "title": "20 · A smooth switch hides several different effects"
+        }
+      ],
+      "item_count": 59,
+      "skipped_count": 82,
+      "tool_message": "Read 59 managed + 82 foreign items (selected 3 of 3 requested widgets)",
+      "snapshot_svg_sha256": "207077c6e2e6d9da0c46f8cf7a813af29442796e595009aa75ca0ff1bf66f53e"
+    },
+    {
+      "key": "protocol",
+      "url": "https://miro.com/app/board/uXjVEXBJz3k=/",
+      "frames": [
+        {
+          "id": "3458764687918280919",
+          "title": "21 · Try it: memory, cancellation and order"
+        }
+      ],
+      "item_count": 5,
+      "skipped_count": 105,
+      "tool_message": "Read 5 managed + 105 foreign items, 1 carrying rendered bounds (selected 2 of 2 requested widgets)",
+      "snapshot_svg_sha256": "ca76a98ae9b98d33e9e567309d6ad2a60c082ae8ba0126e8f5ad65fd8aaa5184"
+    }
+  ],
+  "whole_boards_reviewed": false,
+  "raw_snapshots_published": false,
+  "new_human_observations_obtained_from_boards": false,
+  "decay_added_to_original_solver": false,
+  "full_empirical_fit_completed": false
+}

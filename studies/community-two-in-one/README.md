@@ -4,7 +4,7 @@ Streams and Rocks • 22 October 2026 • a corrected interpretation, two public
 
 **Smoke, Clay and the moving idea are within one person's two-in-one.** Smoke is inward speaking; Clay is inward listening; the middle is the idea moving and changing between them. Every person has their own history. This replaces the earlier interpretation of these roles as separate people. It does not turn material properties into psychological laws.
 
-**Wind, Fog, Water and Mist are forms of the moving idea. Water represents perceived balance. The other water is heavy water, D₂O, made of two deuterium (²H) atoms and one oxygen atom.** The distinct role of heavy water within the idea model remains to be specified. This corrects the earlier attribution of perceived balance to D₂O; the equations and completed numerical results are unchanged.
+**Wind, Fog, Water and Mist are forms of the moving idea. Water represents perceived balance. The other water is heavy water, D₂O, made of two deuterium (²H) atoms and one oxygen atom.** The author now defines D₂O as a small compositional change with potentially large consequences, including a change from life-saving to potentially life-threatening. This does not supply a measured danger threshold. The older editable protocol predates this clarification; [MODEL.md](MODEL.md) records the current definitions. This corrects the earlier attribution of perceived balance to D₂O; the equations and completed numerical results are unchanged.
 
 [Download the editable testing document](Two_in_one_testing_protocol.docx) · [Read the same document in HTML](report.html) · [Current model and exact corpus equations](MODEL.md) · [Frozen pilot analysis protocol](PROTOCOL.md)
 
@@ -47,3 +47,6 @@ For a source-level reproduction, download to a private folder with `python fetch
 Twelve unit tests and 23,604 saved-result checks passed. Source hashes, exclusions, participant-level scores, predictions, bootstrap settings and the pre-calculation protocol hash are included. Reproduction uses a fixed seed and 2,000 participant resamples. The protocol is not a registered preregistration. An initial parser failed to normalize spaces in response labels and returned no eligible reports; it was corrected before valid results were produced and is covered by a unit test.
 
 The original corpus SHA256 and the unchanged prior field solver SHA256 are recorded in MODEL.md. See [sources and screening](sources.json), [numeric results](results/summary.json), [sample exclusions](data/sample_audit.json) and [verification](results/verification.json).
+
+
+Updated source connection, 23 October 2026: [corrected corpus and live Miro review](../community-two-in-one-application/MIRO_CONNECTIONS.md).

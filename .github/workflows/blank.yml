@@ -152,3 +152,6 @@ jobs:
         run: |
           python -m unittest discover -p 'test_*.py' -q
           python verify_saved.py
+      - name: Miro source probes using full coupled dynamics
+        working-directory: studies/community-two-in-one-application
+        run: python check_miro_connections.py
