@@ -1,0 +1,30 @@
+{
+  "scope": "Community implementation audit, not all repository studies",
+  "files": [
+    {
+      "local_relative_path": "community_power/model.py",
+      "published_relative_path": "studies/community-power/model.py",
+      "sha256": "97b99efa3ddd8ac1513bba4151a4bf93d27cc6b7f161328d83881fedfe4e98bf"
+    },
+    {
+      "local_relative_path": "community_encounters/model.py",
+      "published_relative_path": "studies/community-encounters/model.py",
+      "sha256": "e8ad46a4da96dd5d6c9b4317670cb6c9be1b4d1b1e96b536e1f917c42daeae61"
+    },
+    {
+      "local_relative_path": "community_encounters/METHODS.md",
+      "published_relative_path": "studies/community-encounters/METHODS.md",
+      "sha256": "d6368baa5781c8d5dd4cab00b3f09a5ad570178a232149dc5685c1e317cde8bc"
+    },
+    {
+      "local_relative_path": "community_record_tests/compare_wording.py",
+      "published_relative_path": "studies/community-record-tests/compare_wording.py",
+      "sha256": "e40679e954279ef738f5a76b0e3156d642814454bae7fbc6c80270a58853ec0f"
+    },
+    {
+      "local_relative_path": "community_record_tests/analyze_history.py",
+      "published_relative_path": "studies/community-record-tests/analyze_history.py",
+      "sha256": "aab478864ce30cb0b221278cd8ce4cbba484181d9f31c96ab0847a07b3be8037"
+    }
+  ]
+}

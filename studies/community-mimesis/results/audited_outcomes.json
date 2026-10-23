@@ -1,0 +1,238 @@
+{
+  "deli": [
+    {
+      "event_hash": "026bec5b78ea2fb583cbd91d8232ecc15947cd39d064f70e09ae848f001303de",
+      "group_hash": "24a61da80728957d2f7aebec84f6421c3b72657542ecf5588e58c34ccbca0beb",
+      "category": "explicit_acceptance",
+      "proposal_confirmed": true,
+      "reason": "Recipient asks for the reason, expresses uncertainty, then explicitly agrees to the proposed two-card set before submitting. Acceptance need not be independent understanding.",
+      "delta": 0,
+      "before_correct": 0,
+      "after_correct": 0
+    },
+    {
+      "event_hash": "033e0492f627bd703d148ab4b77b1b6995f59bb3747ee128a30f55e05b11449a",
+      "group_hash": "3d41edaaa2077c0a2416aebdef94313ea69245a2892521761adc6d3728f5edd8",
+      "category": "co_construction",
+      "proposal_confirmed": true,
+      "reason": "Recipient supplies the odd-card argument before the partner states the matched pair, then explains removing the even card. This is jointly developed reasoning, not evidence of one-way copying.",
+      "delta": 1,
+      "before_correct": 0,
+      "after_correct": 1
+    },
+    {
+      "event_hash": "039f467d84a19f4bcc46f90e7a3caa456389b747046d65d2f662755a5d75c67f",
+      "group_hash": "9e97d1de4f772d49d17d5a5c6c020785089faf924946e840ff7cf85396adbca7",
+      "category": "explicit_acceptance",
+      "proposal_confirmed": true,
+      "reason": "Partner proposes adding the odd card. Recipient says the reasoning makes sense and explicitly says they are revising too.",
+      "delta": 0,
+      "before_correct": 0,
+      "after_correct": 0
+    },
+    {
+      "event_hash": "0569028a7b22b7a9304e6f9f63c0d3ca89eb3e94c2d5fe378bb360294b6810d7",
+      "group_hash": "eb0f1a7a4d72ffcdb0a7175ff364a9d0502c867a7a81a72bc0e52c85d4fb394b",
+      "category": "temporal_only",
+      "proposal_confirmed": true,
+      "reason": "A partner names the new single-card choice before the submission. No explicit recipient acceptance or attribution is visible.",
+      "delta": 0,
+      "before_correct": 0,
+      "after_correct": 0
+    },
+    {
+      "event_hash": "080054b6cf9efa60868410a179050b91f4c4ef453c484dcaaaad8ce25bc638f5",
+      "group_hash": "f3cda754962c56877e05e5b24acd78c4903935565209b963e42afc1adfecf9f7",
+      "category": "return_to_earlier_idea",
+      "proposal_confirmed": true,
+      "reason": "Recipient agrees with the partner but also says they had initially picked that same pair. Adoption of a genuinely new idea is not established.",
+      "delta": 0,
+      "before_correct": 0,
+      "after_correct": 0
+    },
+    {
+      "event_hash": "087f3a228d454cfa7a576aa68f472e8ee9e85f2e46f909d378543decd9e239e0",
+      "group_hash": "cfab519e05387013e8201f593c7f46222ddf5ef321cf87c32ede6201d929297d",
+      "category": "temporal_only",
+      "proposal_confirmed": true,
+      "reason": "A partner proposes the reduced pair immediately before the recipient submits it. No explicit recipient explanation is visible in this window.",
+      "delta": 1,
+      "before_correct": 0,
+      "after_correct": 1
+    },
+    {
+      "event_hash": "094bf06f8db821877246bb47b516b3782efa18d751b78b66943778338c7ab944",
+      "group_hash": "25ad330cd7a3a0f0fbc2b0c0e9c0e09dc7fb0c609acad1c605906a27755e78ea",
+      "category": "temporal_only",
+      "proposal_confirmed": true,
+      "reason": "Several partners shift toward one card, followed by the recipient submission. The recipient does not explicitly state that this is why they changed.",
+      "delta": 0,
+      "before_correct": 0,
+      "after_correct": 0
+    },
+    {
+      "event_hash": "0a534f09f7fcd53aab75fa61470fa7f42703be39c02fd211bef0953d2752c394",
+      "group_hash": "cb5bce22e3faaddfa6a7c89f1f822d34920730b97ca244f3648ed57344a537f0",
+      "category": "explicit_acceptance",
+      "proposal_confirmed": true,
+      "reason": "Recipient explicitly agrees and says they will use the proposed pair, while continuing to raise an alternative argument.",
+      "delta": 0,
+      "before_correct": 0,
+      "after_correct": 0
+    },
+    {
+      "event_hash": "0b616dfbcc28b0fa88b6c4a14f58cf7ef72eff92098c16c18445640cd9baba7d",
+      "group_hash": "f584b43f8a4ae8fa85bfe3d9ef54dc05b9693dffb702cd7130ed021b35b8ba9b",
+      "category": "explicit_acceptance",
+      "proposal_confirmed": true,
+      "reason": "Recipient initially explains the odd-card choice, then submits and explicitly endorses the partner-supported alternative pair.",
+      "delta": -1,
+      "before_correct": 1,
+      "after_correct": 0
+    },
+    {
+      "event_hash": "0ca4e4b78897b1ba50d3ddfdba64d69806e2d7db83233d270b4d6e8690864127",
+      "group_hash": "42c2bc781f9d626298de9d828213fe179eb6e90c89985412f2241eacf8dcb156",
+      "category": "deference",
+      "proposal_confirmed": true,
+      "reason": "Recipient attributes the decision to the other person and expresses confidence in their ability to choose, while also urging a random choice. This is deference, not demonstrated logical understanding.",
+      "delta": 0,
+      "before_correct": 0,
+      "after_correct": 0
+    },
+    {
+      "event_hash": "0ea3f1f360e590bbea4c9e000122f76cf9ec92fe180f132f1fd68a94ad3e8dcd",
+      "group_hash": "9630bd0de34b3d2d052033dab262c3e59091c42607a8086b3c984e9d400d9b31",
+      "category": "requested_answer",
+      "proposal_confirmed": true,
+      "reason": "Recipient asks for a final answer and then submits the named pair. An immediate subsequent submission changes it again; uptake is transient.",
+      "delta": 1,
+      "before_correct": 0,
+      "after_correct": 1
+    },
+    {
+      "event_hash": "10552904871235515290886c87022b1975fc6175ccb1a5f45097b8b9e517af0f",
+      "group_hash": "0233f4dd0d1833463030be662f8adce4103f313d08fa227dea67b3f6e428505b",
+      "category": "explicit_acceptance",
+      "proposal_confirmed": true,
+      "reason": "Later partner messages genuinely advocate the single-card answer and the recipient explicitly agrees. An earlier detected message mentions a different outside example, so not every matched mention is a valid proposal.",
+      "delta": 0,
+      "before_correct": 0,
+      "after_correct": 0
+    },
+    {
+      "event_hash": "12b887b4c2cbab13ab8d76a57f3861a621e7a4f3b2fe9ffb9db312b519de9271",
+      "group_hash": "b3a2111d0e764f881421cb9098938288cd71e40d64f49983cc33c8711d1b44f1",
+      "category": "co_construction",
+      "proposal_confirmed": true,
+      "reason": "Recipient raises the unnecessary-card issue before the partner states the final pair, then explains and endorses it. Both participants contribute.",
+      "delta": 1,
+      "before_correct": 0,
+      "after_correct": 1
+    },
+    {
+      "event_hash": "154a0afd53a7d9097efb64938c62824c377e202584d5a16ec825c32ef920fe52",
+      "group_hash": "2170869041f6bdd2601646224c2f4f41c52729fa52c629d2bc7295ca3ed425b6",
+      "category": "temporal_only",
+      "proposal_confirmed": true,
+      "reason": "Partners propose a three-card set before the recipient submits it. The recipient also supplies their own alternative reasoning; explicit attribution is absent.",
+      "delta": 0,
+      "before_correct": 0,
+      "after_correct": 0
+    },
+    {
+      "event_hash": "159b851a34d259faaf26f186eaead94096b9e82c4d5b844ece4969821ecd918e",
+      "group_hash": "b150a13ba3a586181d8ddf9012c50d5c3400e5b131388f8b94c22c06ea4ead18",
+      "category": "explicit_acceptance",
+      "proposal_confirmed": true,
+      "reason": "Recipient first proposes a different pair; partner suggests three cards; recipient explicitly agrees with that suggestion and submits it.",
+      "delta": 0,
+      "before_correct": 0,
+      "after_correct": 0
+    },
+    {
+      "event_hash": "15dbc5e305aec299ccd3a6185d907f55887e39169d1a76f02e3cb1a3a09bbc59",
+      "group_hash": "9c6b82eab9de679e114e11f2135800ea5ecafb63f9151ee0aaa95fa65e5b8329",
+      "category": "explicit_acceptance",
+      "proposal_confirmed": true,
+      "reason": "A partner challenges the all-card consensus with a two-card proposal. Recipient explicitly says that partner is right and revises the submission.",
+      "delta": 1,
+      "before_correct": 0,
+      "after_correct": 1
+    }
+  ],
+  "cga": [
+    {
+      "conversation_hash": "00095cc8648f2538f2f3eb917068f841337e2031dbd402ae625b6c37d6736f90",
+      "category": "rebuttal",
+      "reason": "Reuses the phrase naming attention to challenge its explanation, not to adopt the previous position.",
+      "removed": 0
+    },
+    {
+      "conversation_hash": "00228943375bda0e6198990a449f577742b327fddb321f521afc89607b661d76",
+      "category": "rebuttal",
+      "reason": "Repeats the possibility of being forced into a sexuality in order to reject it. Repetition reverses stance.",
+      "removed": 0
+    },
+    {
+      "conversation_hash": "002d8a0f88961ec2e5291460d45dc68cce768c429a2dff298b0f7c78f0af58c7",
+      "category": "common_phrase",
+      "reason": "Only a generic people-who phrase matches; the later reply also challenges a different participant. This does not establish transmission from the matched source.",
+      "removed": 1
+    },
+    {
+      "conversation_hash": "00518fcb7f93a2a9ba20b1734514ac25b64d88852604b6486c62ef132abeee25",
+      "category": "mirrored_personal_challenge",
+      "reason": "Both participants challenge the other's economic understanding; the return reply also attacks presentation. Topic phrases are reused, but common desire or a causal path to rivalry is not observed.",
+      "removed": 1
+    },
+    {
+      "conversation_hash": "009584aca5f93f99bfc52eee3f7f30e83a78c7008fefd76a9cd69aed672ff1da",
+      "category": "partial_agreement_then_rebuttal",
+      "reason": "Explicitly accepts a conditional premise, then uses it to argue for an opposing conclusion. Some proposition overlap coexists with disagreement.",
+      "removed": 0
+    },
+    {
+      "conversation_hash": "00a91005ed049255aaece89c18c619d44738894e61a4e5ad9637194b8aac44ae",
+      "category": "common_phrase",
+      "reason": "A generic comparative phrase occurs in two distinct arguments. This is not sufficient evidence of copying.",
+      "removed": 1
+    },
+    {
+      "conversation_hash": "00b47ef5eb1859c9b5bda0e3fbb010192247695874a8c79e4d6e099d7416df89",
+      "category": "shared_topic_extension",
+      "reason": "Both discuss treaty obligations, but the later participant adds a different national example. Short topic overlap does not identify imitation.",
+      "removed": 1
+    },
+    {
+      "conversation_hash": "00d05bab0f8ab0c7e8294b9705007ae2a29176d311f7c6801f4836fc849bc4cd",
+      "category": "reciprocal_rebuttal",
+      "reason": "Both participants reuse propositions to contest their implications, including a negated correlation claim. Reciprocal wording alone is not mirrored desire or personal rivalry.",
+      "removed": 1
+    },
+    {
+      "conversation_hash": "00dd0402d7bef4a91d96e63e442c2524317972950947cc3d6cdeb92f0cdddc5a",
+      "category": "rebuttal",
+      "reason": "Repeats the material-composition premise while rejecting the inference to determinism.",
+      "removed": 1
+    },
+    {
+      "conversation_hash": "00f7b98699ff9a6f2a22440d4cccedf0f0767bf21ddf3f93f8a908dc196e2491",
+      "category": "common_phrase",
+      "reason": "Shared language about a national public and a common introductory phrase; positions remain opposed.",
+      "removed": 0
+    },
+    {
+      "conversation_hash": "013b10d9af8fb4fddc65f4fe794b5925409aa85fcafc4c4da3481d2a8673c430",
+      "category": "quotation_continuation",
+      "reason": "Much of the purported unquoted reuse is a continuation of a Markdown quotation without repeated quote markers. The simple line filter misses this; it must not be counted as endorsement.",
+      "removed": 0
+    },
+    {
+      "conversation_hash": "015c86c8b44a6471021b3cad46db548051fc6dbed34f5445c09544da34cb294c",
+      "category": "rebuttal",
+      "reason": "Repeats an attributed generational description specifically to reject it.",
+      "removed": 1
+    }
+  ]
+}

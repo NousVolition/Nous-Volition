@@ -1,0 +1,158 @@
+[
+  {
+    "paragraph": 18,
+    "text": "The initial-field result is proved within its stated assumptions. For the checked Cartesian construction, the derivatives cancel exactly:"
+  },
+  {
+    "paragraph": 19,
+    "text": "∇ · u₀ = −AHCφ + AHCφ = 0."
+  },
+  {
+    "paragraph": 20,
+    "text": "The field is smooth through the axis, rapidly decreasing, and finite-energy. The analytic derivation establishes these properties; finite tests support the implementation. These statements use the checked construction with finite parameters R ≥ 0, a > 0, b > 0, and real A and B."
+  },
+  {
+    "paragraph": 21,
+    "text": "The claim being withheld concerns global smooth evolution. “Not proved here” does not mean false, concealed, or that the initial-field proof failed. Separately justified short-time existence remains possible. Changing the forcing alone does not undo the identity for an unchanged initial field; it changes what must be justified about its evolution."
+  },
+  {
+    "paragraph": 22,
+    "text": "Preserve “preserves Sens while adjusting Sin.” Here, Sens means personal intent or intended meaning, and Sin means socially constrained or encoded expression. Keep the unusual wording and its distinction. It does not need conventional replacement or treatment as a mathematical theorem."
+  },
+  {
+    "paragraph": 66,
+    "text": "This specification places four nodes on a three-coordinate grid (X, Y, Z), with three levels on each axis. The positions form a 4 × 3 array, or twelve scalar coordinates before constraints; the Y projection alone is a four-component vector. Architectural labels describe assigned roles inside the model. A time-evolution or feedback law has not been supplied."
+  },
+  {
+    "paragraph": 93,
+    "text": "V = [(2, 3, 1); (2, 3, 2); (1, 3, 2); (3, 3, 1)]."
+  },
+  {
+    "paragraph": 95,
+    "text": "r_Y = [Y(a) − y_ref; Y(b) − y_ref; Y(c) − y_ref; Y(d) − y_ref] = [0; 0; 0; 0]."
+  },
+  {
+    "paragraph": 97,
+    "text": "The zero residual establishes Y-coordinate alignment for these four positions. It is a coordinate difference, not a gradient. The earlier phrase closed-loop stability expresses a proposed architectural interpretation; stability over time would require a specified evolution or feedback law and a stability argument. Alignment alone does not establish that result."
+  },
+  {
+    "paragraph": 104,
+    "text": "Formula 1  Consistency or Shibboleth Check. For each declared relevant context c: ∀i, j ∈ P, ∀α ∈ A, W(i, α; c) = W(j, α; c)."
+  },
+  {
+    "paragraph": 105,
+    "text": "Formula 2  Boundary Margin Model. Maximize U(α; c) over α ∈ F(i,c) with m(i,c)(α) = ε, where ε > 0."
+  },
+  {
+    "paragraph": 106,
+    "text": "Definitions: P is the actor set, A the available action set, and c a declared relevant context. In this binary audit W(i, α; c) ∈ {0, 1}, with 1 = restriction and 0 = permission. Equality tests outcomes, not identical reasoning or fairness. One counterexample to the universal claim is enough: some i, j, α in the same context have unequal W values. Context must not be chosen merely to hide the disparity under examination."
+  },
+  {
+    "paragraph": 107,
+    "text": "For the boundary model, place actions in a specified metric feature space X. ΩSin(i, c) is its permitted region, with nonempty boundary; F(i,c) = A ∩ ΩSin(i, c). Define m(i,c)(α) as distance to that boundary inside ΩSin, and minus that distance outside; boundary points have margin zero. Ordinary unsigned distance is never negative. The condition m = ε chooses an exact permitted-side edge margin. The alternative m ≥ ε requires minimum clearance and is not the same objective. Either feasible set can be empty; a maximizing action need not exist without further domain and regularity assumptions. These quantities operationalize the metaphor only after a representation and metric are chosen."
+  },
+  {
+    "paragraph": 229,
+    "text": "∂u/∂t + (u · ∇)u = −∇p + ν∇²u + f,     ∇ · u = 0."
+  },
+  {
+    "paragraph": 230,
+    "text": "f = −(σ/ρ) a(q) eₖ,     q = |∇S| − Γcrit."
+  },
+  {
+    "paragraph": 261,
+    "text": "Choose the response law a before using the equation. Sharp threshold: a₀(q) = max(q, 0), so the added force is zero for q ≤ 0 and proportional to q for q > 0. This law is continuous but not differentiable at q = 0."
+  },
+  {
+    "paragraph": 262,
+    "text": "Original tanh choice: aₜ(q) = q[1 + tanh(q/ε)]/2, with ε > 0. It is smooth as a function of q, but for finite q < 0 it is negative and nonzero. For example, aₜ(−ε) ≈ −0.119203ε. The force therefore reverses direction below threshold when σ > 0; it does not simply switch off. A small tail may be intentional, but its sign and interpretation must be stated."
+  },
+  {
+    "paragraph": 263,
+    "text": "Zero-gradient concern: |v| is not differentiable at v = 0. Composing it with tanh does not automatically remove that issue; a particular composition can have cancellations, which need checking. For a smooth alternative, use gδ(v) = √(v · v + δ²) − δ with δ > 0, and qδ = gδ(∇S) − Γcrit. This changes the gradient measure near zero and is a modeling choice."
+  },
+  {
+    "paragraph": 264,
+    "text": "Optional smooth exact-off response: aε(q) = 0 for q ≤ 0, and aε(q) = q exp[−(ε/q)²] for q > 0. For fixed ε > 0 this scalar function is C∞, including the join at zero. Using aε(qδ) with fixed δ > 0 makes the constitutive response smooth in the gradient variable and exactly zero when qδ ≤ 0. This is an alternative to the tanh law, not a property of it. Its positive onset in the original magnitude is |∇S| > √(Γcrit² + 2δΓcrit), so the threshold must be calibrated in the chosen measure. To retain the original cutoff |∇S| = Γcrit instead, use the calibrated excess qδ* = √(|∇S|² + δ²) − √(Γcrit² + δ²). It has the same sign as |∇S| − Γcrit for Γcrit ≥ 0. Using aε(qδ*) gives a smooth exact-off alternative with that original cutoff; the response above it is still a changed constitutive law."
+  },
+  {
+    "paragraph": 265,
+    "text": "A fixed eₖ specifies direction; it does not guarantee drag or energy dissipation. For f to remove kinetic energy pointwise, u · f must be nonpositive. The model still needs a domain, initial and boundary data, a definition or equation for S, and compatible coefficient units. A smooth constitutive response is not a proof of smooth solutions for all time. Pressure, viscosity, yield, and boundary remain modeling language unless independently operationalized."
+  },
+  {
+    "paragraph": 273,
+    "text": "The reproduced count is 90 occurrences across the 23 selected term groups: 70 in the abstract and main text (pp. 1–25) and 20 in reference titles (pp. 26–31). This replaces the supplied report’s total of 83. Frequency alone does not establish bias, inaccuracy, or justification."
+  },
+  {
+    "paragraph": 366,
+    "text": "• Output 1 — Defined calculation: Effective severity = base severity × context modifier. Restrict in this scenario when effective severity ≥ the separately assigned threshold. Alpha: 5 × 0.8 = 4 < 8.5, so no restriction. Beta: 5 × 1.4 = 7 ≥ 5.5, so restriction. Gamma: 5 × 1.3 = 6.5 ≥ 6.0, so restriction. The alignment scores are descriptive scenario inputs; no formula derives the modifiers or thresholds from them."
+  },
+  {
+    "paragraph": 368,
+    "text": "• Output 3 — Possible feedback: If a previous flag changes a later score, repeated penalties could compound. No time-update rule or sequence is specified here, so feedback is a hypothesis to test, not a computed output of this table."
+  },
+  {
+    "paragraph": 498,
+    "text": "x = [S ; R]"
+  },
+  {
+    "paragraph": 499,
+    "text": "M = [λ, 0; 0, 1/λ],     λ > 0."
+  },
+  {
+    "paragraph": 500,
+    "text": "M x = [λ S ; (1/λ) R]"
+  },
+  {
+    "paragraph": 501,
+    "text": "(λ S) · ((1/λ) R) = S R = Q"
+  },
+  {
+    "paragraph": 517,
+    "text": "∂S/∂t + u · ∇S = D_diff ∇²S + Kₕ(x − x₀) J(t)."
+  },
+  {
+    "paragraph": 518,
+    "text": "A(t) = ∫₀ᵗ γ[U(s) − Ubaseline] ds,     J(t) = κ A(t)."
+  },
+  {
+    "paragraph": 519,
+    "text": "Kₕ is a smooth localized kernel of width h > 0 with spatial integral 1. The original δ(x − x₀) is an alternative point-source idealization interpreted as a distribution, not an ordinary smooth function. A stores accumulated input; κ converts that stored quantity to a source rate with the required units. This retains the original memory choice explicitly. Under closed or periodic boundaries, constant positive excess utility can make the total field grow quadratically in time because the stored input is integrated again by the evolution equation. If instantaneous production is intended instead, specify J(t) = γ[U(t) − Ubaseline] with suitable units; that is a different model. Negative excess input may lower this signed field. Initial and boundary data remain necessary. For compressible transport, replace u · ∇S by ∇ · (Su)."
+  },
+  {
+    "paragraph": 545,
+    "text": "T = µ₀[∇u + (∇u)ᵀ],     µ₀ > 0."
+  },
+  {
+    "paragraph": 547,
+    "text": "Γcrit ≥ 0. Optional calibration: Γcrit = τ₀/η, with τ₀ ≥ 0 and η > 0."
+  },
+  {
+    "paragraph": 548,
+    "text": "q = |∇S| − Γcrit;     a₀(q) = 0 if q ≤ 0, and a₀(q) = q if q > 0."
+  },
+  {
+    "paragraph": 549,
+    "text": "ρ[∂u/∂t + (u · ∇)u] = −∇P + µ∇²u − σ a₀(q)eₖ,     ∇ · u = 0."
+  },
+  {
+    "paragraph": 550,
+    "text": "Assume constant ρ > 0, µ > 0, and σ ≥ 0; p = P/ρ and ν = µ/ρ connect this equation to the earlier normalized form. The calibration η must give Γcrit the same units as |∇S|. Increasing η lowers Γcrit at fixed τ₀, so the label rigidity does not by itself establish stronger resistance. Fixed-direction forcing is not necessarily dissipative. Initial and boundary data, the S coupling, and a domain are required; smooth activation alone does not establish well-posedness or global regularity."
+  },
+  {
+    "paragraph": 605,
+    "text": "When adaptation retains intended meaning, the phrase “preserves Sens while adjusting Sin” names that distinction: Sens is personal intent or intended meaning; Sin is its socially constrained or encoded expression. Keep the coined wording and explain it alongside the original when needed. The phrase does not imply changing the intent itself, moral wrongdoing, superior ability, manipulation, or guaranteed success in every setting."
+  },
+  {
+    "paragraph": 615,
+    "text": "Formula 1  Consistency or Shibboleth Check. For each declared relevant context c: ∀i, j ∈ P, ∀α ∈ A, W(i, α; c) = W(j, α; c)."
+  },
+  {
+    "paragraph": 616,
+    "text": "Formula 2  Boundary Margin Model. Maximize U(α; c) over α ∈ F(i,c) with m(i,c)(α) = ε, where ε > 0. This is the exact-edge version. Use m(i,c)(α) ≥ ε instead for a minimum-clearance version; these are distinct objectives."
+  },
+  {
+    "paragraph": 637,
+    "text": "The four rows exhaust the binary pairs. Equal decisions establish only outcome consistency for the compared case; they do not establish fairness or a shared rationale. Sens means personal intent or intended meaning; Sin means socially constrained or encoded expression here, not moral wrongdoing. Socio-Didact names a situational learning mode. These local definitions guide interpretation without making unfamiliar language defective or making the author’s model a universal claim."
+  }
+]

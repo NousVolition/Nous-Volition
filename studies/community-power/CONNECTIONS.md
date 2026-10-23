@@ -8,6 +8,16 @@ The supplied diagrams provide this conceptual connection. The existing simulatio
 
 **Completed extension, 21 October 2026:** [wording and prior-treatment tests](../community-encounters/README.md) now implement an explicit synthetic decision procedure with wording-blind, history-blind, corrective and reset controls. The chosen wording penalty gives a 25.4-percentage-point mean difference; reversing it reverses the result. A prior restriction changes the next 30 encounters' restriction rate by +1.28 points under reinforcement and −0.62 under correction. These values follow the chosen rules. Published aggregate evidence is checked separately, with two inconsistent wording estimates excluded. The need for new comparable human observations remains.
 
+## Corrected corpus and observed uptake
+
+**The supplied corrected corpus now controls the equation specification.** The [corpus fidelity and real-record study](../community-mimesis/README.md) implements the distinct threshold laws, accumulated input A(t), source J(t)=κA(t), transport and other stated mathematical relations. Earlier allocation, logistic-decision and decaying-penalty simulations are labelled additions, not exact tests of those corpus equations. [Equation-by-equation traceability](../community-mimesis/CORPUS_AUDIT.md).
+
+In actual DeliData discussions, 162 candidate answer changes follow a partner's matching proposed solution: 62 become correct, 8 become incorrect and 92 remain incorrect. Sixteen reviewed cases distinguish explicit acceptance, joint construction, deference, return to an earlier idea and sequence alone. These observations make helpful uptake and spreading a mistake concrete without declaring every match copying.
+
+In 2,259 matched forum pairs, early unquoted phrase reuse differs by +2.30 percentage points between later attack-removal and control branches (95% cluster interval −0.49 to +5.16). Reciprocal reuse gives −1.02 points (−2.23 to +0.18). The review finds rebuttals, topic overlap, a quotation-filter failure and one mirrored personal challenge. Neither comparison validates Girardian rivalry or a causal copying effect. Repetition can preserve a phrase while rejecting its meaning.
+
+**Preserves Sens while adjusting Sin** remains the corpus distinction. A repeated phrase is not automatically preserved intent, a geometric distance or a force. Water, Fog, Smoke and Clay remain overlapping situational descriptions. The study retains strong language with its observation or attribution and publishes every reviewed case, assumption and remaining test. Thirty-seven unit tests and 87 saved-result checks pass; mathematical verification remains distinct from empirical validation.
+
 ## Completed real-data extension: 21 October 2026
 
 The [real-data report](../community-real-data/README.md) now checks these connections against public human annotation records and a randomized Wikipedia study. It keeps judgments, actual recognition and hypothetical memory mechanisms distinct.
@@ -101,11 +111,11 @@ Declare relevant context and any actor-specific modifiers before inspecting disp
 
 **Score clearance is not automatically geometric distance.** As an illustrative mathematical case only, if normalized features `x` obey `w·x ≤ b` under a declared Euclidean metric and nonzero `w`, signed clearance is `b − w·x` and signed distance to the plane is `(b − w·x) / ||w||`. Changing feature scales or the metric changes that distance. No social distance has been measured by writing this formula.
 
-The source's field quantities **S, q and a(q)** also need definitions, units, a time-update rule and a mapping to observable decisions. Stored input in a physical or mathematical field does not establish that institutional penalties accumulate in the same way.
+The corrected corpus defines **S, q and the separate a(q) laws** and supplies the field accumulation rule **A(t)=∫₀ᵗγ[U(s)−Ubaseline]ds, J(t)=κA(t)**. What still needs an empirical specification is the social geometry, calibrated quantities, coupling and mapping to observable decisions. In particular, the corpus does not identify real penalties with excess utility or supply a penalty-to-W update. The earlier decaying penalty rule is a separately assumed extension.
 
 ## Comparisons that could strengthen the claims
 
-1. **Recover the language audit.** The selected counts displayed in the screenshot total 83 (69 in its first count column and 14 in its second). This verifies arithmetic only. Reproducing the count requires the exact manuscript and version, matching and overlap rules, traceable occurrences, and separation of quotations from narration. Frequency alone establishes neither bias nor warranted use. Keep participant representations of “the Left” distinct from researcher representations of liberalism or public discourse; these referents are not interchangeable.
+1. **Retain the corrected language audit and its provenance.** The older screenshot totals 83. The newly supplied corrected corpus reports a reproduced total of **90**, split into 70 body and 20 reference occurrences, with explicit matching rules and source version. This turn records that correction; it did not independently rerun the manuscript scan. Frequency alone establishes neither bias nor warranted use. Keep participant representations of “the Left” distinct from researcher representations of liberalism or public discourse; these referents are not interchangeable.
 2. **Compare expression and treatment.** Record meaning, wording, actor, context, history, policy and outcome consistently. Decide in advance which differences should leave treatment unchanged. Use paired alternatives and repeated cases, including cases that would weaken the hypothesis. Check that the supposed wording alternatives preserve content and meaning for the participants.
 3. **Test memory over time.** Specify which previous event updates which state, who has access to it, how it changes later requests or decisions, and how it decays or is corrected. Compare with a model omitting that history, while keeping practice learning separate. Frozen-state and order-shuffled controls can diagnose mechanisms but are not interchangeable. Keep later outcomes out of earlier predictors.
 4. **Reserve new observations for evaluation.** Use development records to choose mappings and parameters. Then freeze those choices and evaluate entire new sequences, with people or groups separated where needed to prevent leakage. Report uncertainty, alternative explanations and failures. Data that influenced a revision remain development evidence even if no parameters were fitted to them.
@@ -133,4 +143,5 @@ For traceability, the attachment filenames begin `codex-clipboard-7f9d094a` (con
 Foucault's place in the model remains the question of who defines categories, controls access, records conduct and makes an expectation persist. The [passage-to-model interpretation](interpretation.md) gives its source and limits. The physical substance calculations supply no validation of these social connections.
 
 [Community allocation results](README.md) · [Situational roles](SITUATIONAL_ROLES.md) · [Adaptable-role results](../adaptable-roles/README.md)
+
 

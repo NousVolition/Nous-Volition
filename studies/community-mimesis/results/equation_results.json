@@ -1,0 +1,46 @@
+{
+  "tanh_at_minus_epsilon_for_epsilon_1": -0.11920292202211755,
+  "sharp_at_minus_1": 0.0,
+  "smooth_exact_off_at_minus_1": 0.0,
+  "grid_refinement": [
+    {
+      "n": 16,
+      "l2_error": 0.006877607211105605,
+      "source_integral_error": 2.886579864025407e-15,
+      "accumulated_input_error": 6.661338147750939e-16
+    },
+    {
+      "n": 32,
+      "l2_error": 0.0017289561323335814,
+      "source_integral_error": 5.551115123125783e-17,
+      "accumulated_input_error": 6.661338147750939e-16
+    },
+    {
+      "n": 64,
+      "l2_error": 0.00043283769286477824,
+      "source_integral_error": 4.440892098500626e-16,
+      "accumulated_input_error": 6.661338147750939e-16
+    },
+    {
+      "n": 128,
+      "l2_error": 0.0001082468630371922,
+      "source_integral_error": 4.440892098500626e-16,
+      "accumulated_input_error": 6.661338147750939e-16
+    }
+  ],
+  "time_refinement": [
+    {
+      "max_dt": 0.1,
+      "semidiscrete_l2_error": 5.273728120054436e-09
+    },
+    {
+      "max_dt": 0.05,
+      "semidiscrete_l2_error": 3.289344413434171e-10
+    },
+    {
+      "max_dt": 0.025,
+      "semidiscrete_l2_error": 2.053735076161949e-11
+    }
+  ],
+  "empirical_social_validation": false
+}

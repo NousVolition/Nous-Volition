@@ -62,3 +62,10 @@ jobs:
           python -m unittest -q
           python verify_saved.py
 
+
+
+      - name: Corrected corpus equations and real uptake records
+        working-directory: studies/community-mimesis
+        run: |
+          python -m unittest -q
+          python verify_saved.py

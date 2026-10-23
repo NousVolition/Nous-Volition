@@ -6,6 +6,12 @@ Streams and Rocks • seven fictional participants • an executed allocation be
 
 The supplied page matches Foucault’s *Discipline and Punish*, in the panopticism chapter. Its discussion of organization and power provides the questions. The numerical rules are our explicit synthetic assumptions. [How the passage is used](interpretation.md) · [Methods and units](methods.md) · [Source provenance](source_provenance.json) · [Verification](verification.json).
 
+## Corrected corpus and real uptake records
+
+**Earlier community simulations included added equations.** The [corpus fidelity audit and real-record study](../community-mimesis/README.md) now uses the supplied corrected corpus explicitly. It preserves accumulated input A and source J=κA, all three threshold laws, exact-edge eligibility and the other stated mathematical relations. Logistic decisions and decaying penalty memory remain separately assumed extensions. Thirty-seven unit tests and 87 saved-result checks pass; this does not fit continuum social dynamics to text.
+
+In 162 candidate answer-uptake changes, 62 become correct, eight become incorrect and 92 remain incorrect. In 2,259 matched forum pairs, early unquoted phrase reuse differs by +2.30 percentage points between later attack-removal and control branches, with a 95% interval from −0.49 to +5.16. Repeated words often rebut or quote another person. [The full review](../community-mimesis/results/functional_audit.json) distinguishes acceptance, joint construction and mirrored challenge without claiming a causal imitation law.
+
 ## People can be water, fog, smoke or clay in different situations
 
 **A person can be water here, fog there, smoke after an earlier event, and clay while holding or reshaping an impression.** These orientations can overlap and change. They describe a person in a situation, not a permanent type. The names in the existing numerical tables remain arbitrary identifiers; this broader interpretation does not assign new measured traits to those participants.
@@ -42,7 +48,7 @@ The supplied page matches Foucault’s *Discipline and Punish*, in the panoptici
 
 **A source-described relationship is not automatically an observed causal effect.** Solid arrows in the supplied diagram identify source descriptions; dashed arrows identify operational connections still to specify or test. In the existing adaptable-role model, the no-memory control freezes expectation weights but still allows learning through practice. It does not remove every consequence of history.
 
-**Keep the strong language and identify its evidence.** Record the action, attribute the account and state the missing comparison. The screenshot’s 83 reported term occurrences are a count to reproduce from its manuscript, not a finding of bias. Equal permit/restrict decisions also do not establish equal reasons, severity or fairness.
+**Keep the strong language and identify its evidence.** Record the action, attribute the account and state the missing comparison. The older screenshot totals 83; the supplied corrected corpus reports 90 occurrences (70 body and 20 references). This update records that correction without independently rescanning the manuscript, and neither total alone establishes bias. Equal permit/restrict decisions also do not establish equal reasons, severity or fairness.
 
 The [full connections and evidence guide](CONNECTIONS.md) includes a worked fictional boundary example, the actual memory update, the Sens/Sin and Socio-Didact links, definitions of U, Ω and W, the distinction between score clearance and distance, and the tests still needed for field-to-decision mappings. Its initial conceptual addition was followed by the synthetic encounter tests below; no newly collected human observations are claimed.
 
