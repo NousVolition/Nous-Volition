@@ -1,0 +1,47 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hug — movement and memory feedback</title><style>
+*{box-sizing:border-box}body{max-width:1180px;margin:32px auto;padding:0 24px;color:#193f46;background:#faf9f5;font:16px/1.5 system-ui}h1{font-size:34px;line-height:1.2}h2{font-size:21px;margin:0}a{color:#087f8c}.controls{display:flex;flex-wrap:wrap;gap:14px;align-items:end;margin:24px 0}label{display:grid;gap:6px;font-size:14px}select,button{font:inherit;border:1px solid #b7c9c1;border-radius:6px;padding:9px 12px;background:white;color:#193f46}button{cursor:pointer}.timeline{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:16px}input{width:100%;accent-color:#087f8c}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{padding:16px;border:1px solid #d4dfda;border-radius:12px;background:white}canvas{width:100%;height:auto;display:block}.status{font-size:14px;min-height:44px;color:#536a70}.metric{font-size:14px;margin:9px 0}.note{padding:17px 20px;background:#e9f1ed;border-radius:9px}.small{font-size:13px;color:#536a70}.legend{display:flex;gap:14px;align-items:center;margin:18px 0;flex-wrap:wrap}.gradient{width:180px;height:13px;background:linear-gradient(to right,#583575,#f7f7f2,#ba681c)}@media(max-width:760px){.cards{grid-template-columns:1fr}.card canvas{max-width:370px;margin:auto}h1{font-size:28px}}
+</style></head><body>
+<p><a href="report.html">← Plain-language results</a> · <a href="METHODS.md">Equations and limits</a></p>
+<h1>The record stays. Its expression can move.</h1>
+<p>The clay now changes how influence is distributed. The measured effect is small. The colors below enlarge that difference so you can see it; the overall rhythm recovers almost exactly as before.</p>
+<div class="controls"><label>Show<select id="view"><option value="0">Change caused by feedback</option><option value="1">Current expressed field</option></select></label><label>Initial mechanical state<select id="history"><option value="0">First start</option><option value="1">Second start</option></select></label><label>Clip<select id="clip"></select></label><button id="play" type="button">Play</button></div>
+<div class="timeline"><strong id="clock"></strong><input id="seek" type="range" min="0" max="150" step="1" value="0" aria-label="Position within clip"></div>
+<p class="small" id="clipnote"></p><div class="legend"><span id="lowlabel">Less influence here</span><span class="gradient" id="gradient"></span><span id="highlabel">More influence here</span></div><p class="small" id="scale"></p>
+<div class="cards" id="cards"></div>
+<p class="note">The stored inputs are never reset. Purple and orange show influence being redistributed relative to the previous model; they do not indicate good/bad memory or erased history. Direct mirroring remains confined to the upper half. Diffusion can reach the lower half.</p>
+<p class="small">Synthetic saved trajectories. Shape deformation is exaggerated ×150; the colors have a separate scale. Clips skip waiting time and use interpolation between saved samples. Closure is supplied by the drawing map, not a physical-contact test. The model resolves an angular field and one clay shear mode; no human memory or clay measurements were collected.</p>
+<script src="animation-data.js"></script><script>
+'use strict';
+const D=HUGDATA;function decode(b){const s=atob(b),u=new Uint8Array(s.length);for(let i=0;i<s.length;i++)u[i]=s.charCodeAt(i);return new Float32Array(u.buffer)}
+const Q=decode(D.q),OLD=decode(D.old),DELTA=decode(D.delta),AMP=decode(D.amplitude),A=decode(D.A),REP=decode(D.repeat);
+const view=document.getElementById('view'),history=document.getElementById('history'),clip=document.getElementById('clip'),seek=document.getElementById('seek'),play=document.getElementById('play');
+D.clips.forEach((x,i)=>clip.add(new Option(x.label,i)));const cards=[];
+D.conditions.forEach(c=>{const el=document.createElement('section');el.className='card';el.innerHTML='<h2></h2><div class="status"></div><canvas width="340" height="345"></canvas><div class="metric stored"></div><div class="metric change"></div><div class="small mean"></div>';el.querySelector('h2').textContent=c.name;document.getElementById('cards').append(el);cards.push(el)});
+let playing=false,last=0,carry=0;
+function color(value,change){const low=change?[88,53,117]:[232,242,238],mid=[247,247,242],high=change?[186,104,28]:[8,127,140];let a,b,t;if(change){const v=Math.max(-1,Math.min(1,value/D.deltaColorLimit));a=v<0?low:mid;b=v<0?mid:high;t=v<0?v+1:v}else{a=low;b=high;t=Math.max(0,Math.min(1,value/D.fieldColorLimit))}return 'rgb('+a.map((x,i)=>Math.round(x+(b[i]-x)*t)).join(',')+')'}
+function render(){const h=+history.value,cl=D.clips[+clip.value],frame=cl.start+(+seek.value),time=D.times[frame],change=+view.value===0,paused=time>=480&&time<720;
+ document.getElementById('clock').textContent='Elapsed '+time.toFixed(1)+' s';document.getElementById('clipnote').textContent=cl.label+' · '+D.times[cl.start].toFixed(0)+'–'+D.times[cl.start+150].toFixed(0)+' s. Selecting a clip jumps in the same saved trajectory.';
+ document.getElementById('lowlabel').textContent=change?'Less influence here':'Lower expression';document.getElementById('highlabel').textContent=change?'More influence here':'Higher expression';document.getElementById('gradient').style.background=change?'linear-gradient(to right,#583575,#f7f7f2,#ba681c)':'linear-gradient(to right,#e8f2ee,#087f8c)';
+ document.getElementById('scale').textContent=change?'Colors span −12 to +12 millionths of S relative to the previous model. White means similar expression; the history is still present.':'Colors span S = 0 to 0.7. These are synthetic field units, not measured quantities of human memory.';
+ cards.forEach((el,c)=>{const j=c*2+h,q=Q[frame*12+j],r=REP[frame*6+j];let status;
+ if(paused)status='Drive off + brake · '+(100*AMP[frame*6+j]/D.baseline[j]).toFixed(1)+'% of baseline movement';
+ else if(c===0)status='No orbit · '+(AMP[frame*6+j]>=.8*D.baseline[j]?'amplitude at least 80%':'amplitude below 80%');
+ else if((time>=720&&time<783)||(time>=950&&time<1033))status='Assessing orbital repetition after change';
+ else status=r>=0&&r<.01?'Mechanical 1-orbit repeat confirmed':'No mechanical 1-orbit confirmation';
+ el.querySelector('.status').textContent=status;el.querySelector('.stored').textContent='Stored input A: '+A[frame].toFixed(3)+' · no reset';
+ let sum=0,mean=0;for(let n=0;n<D.cells;n++){const k=(frame*6+j)*D.cells+n;sum+=DELTA[k]*DELTA[k];mean+=OLD[k]+DELTA[k]}
+ el.querySelector('.change').textContent='Pattern difference: '+(1e6*Math.sqrt(sum/D.cells)).toFixed(2)+' millionths of S';el.querySelector('.mean').textContent='Mean expression: '+(mean/D.cells).toFixed(4)+' · displacement '+q.toFixed(4)+' mm';
+ const ctx=el.querySelector('canvas').getContext('2d');ctx.clearRect(0,0,340,345);
+ if(c>0){const e=D.conditions[c].e,M=2*Math.PI*time/D.period;let E=M;for(let k=0;k<10;k++)E-=(E-e*Math.sin(E)-M)/(1-e*Math.cos(E));ctx.strokeStyle='#bbccc5';ctx.lineWidth=1;ctx.beginPath();ctx.ellipse(170,45,34,34*Math.sqrt(1-e*e),0,0,2*Math.PI);ctx.stroke();ctx.fillStyle='#647b80';ctx.beginPath();ctx.arc(170+34*e,45,2,0,2*Math.PI);ctx.fill();ctx.fillStyle='#087f8c';ctx.beginPath();ctx.arc(170+34*Math.cos(E),45+34*Math.sqrt(1-e*e)*Math.sin(E),4,0,2*Math.PI);ctx.fill()}
+ else{ctx.fillStyle='#647b80';ctx.font='13px system-ui';ctx.textAlign='center';ctx.fillText('No orbital clock',170,45)}
+ ctx.strokeStyle='#d5dfda';ctx.lineWidth=1;ctx.setLineDash([3,4]);ctx.beginPath();ctx.moveTo(25,220);ctx.lineTo(315,220);ctx.stroke();ctx.setLineDash([]);
+ const shear=150*(q/1000)/.1;function xy(th){return [170+91*(Math.cos(th)+shear*Math.sin(th)),220-91*Math.sin(th)]}
+ ctx.strokeStyle='#9aaba6';ctx.lineWidth=10;ctx.beginPath();for(let n=0;n<=256;n++){const pt=xy(2*Math.PI*n/256);if(n===0)ctx.moveTo(...pt);else ctx.lineTo(...pt)}ctx.stroke();
+ ctx.lineWidth=7;ctx.lineCap='round';for(let n=0;n<256;n++){const th=2*Math.PI*(n+.5)/256,cell=Math.floor(th/(2*Math.PI)*D.cells)%D.cells,k=(frame*6+j)*D.cells+cell,v=change?DELTA[k]:OLD[k]+DELTA[k],a=xy(2*Math.PI*n/256),b=xy(2*Math.PI*(n+1)/256);ctx.strokeStyle=color(v,change);ctx.beginPath();ctx.moveTo(...a);ctx.lineTo(...b);ctx.stroke()}
+ ctx.fillStyle='#647b80';ctx.font='12px system-ui';ctx.textAlign='left';ctx.fillText('upper half: direct paired exchange',18,110);ctx.fillText('lower half: direct paired exchange off',18,335);
+ });}
+function setPlaying(v){playing=v;play.textContent=v?'Pause':'Play';last=0;carry=0}
+play.addEventListener('click',()=>setPlaying(!playing));[view,history,clip,seek].forEach(el=>el.addEventListener('input',()=>{if(el===clip)seek.value=0;render()}));
+function tick(now){if(playing){if(last)carry+=now-last;last=now;if(carry>=65){const steps=Math.floor(carry/65);carry%=65;let f=+seek.value+steps;if(f>150){f=0;clip.value=(+clip.value+1)%D.clips.length}seek.value=f;render()}}requestAnimationFrame(tick)}
+render();requestAnimationFrame(tick);window.hugPlayer={render,setPlaying,data:D,decoded:{Q,OLD,DELTA,AMP,A,REP}};
+</script></body></html>

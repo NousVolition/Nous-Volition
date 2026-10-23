@@ -89,3 +89,11 @@ jobs:
           python verify_saved.py
       - name: Hug retained-history offline animation checks
         run: node studies/hug-memory-continuity/check_player.cjs
+
+      - name: Hug movement-memory feedback equations and saved data
+        working-directory: studies/hug-memory-feedback
+        run: |
+          python -m unittest -q
+          python verify_saved.py
+      - name: Hug movement-memory feedback offline animation checks
+        run: node studies/hug-memory-feedback/check_player.cjs

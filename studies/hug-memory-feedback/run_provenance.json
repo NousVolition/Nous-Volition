@@ -1,0 +1,564 @@
+{
+  "main": {
+    "kind": "main",
+    "nodes": 32,
+    "rows": [
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "diffusion_only",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "diffusion_only",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "diffusion_only",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "diffusion_only",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "diffusion_only",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "diffusion_only",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "gradient_only",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "gradient_only",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "gradient_only",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "gradient_only",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "gradient_only",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "gradient_only",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "no_pause",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "no_pause",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "no_pause",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "no_pause",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "no_pause",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "no_pause",
+        "condition": 2,
+        "history": 1
+      }
+    ],
+    "seconds": 49.57794909999939,
+    "source_hashes": {
+      "model.py": "85c2ca5164fb82dd68cebcdaa07b92648be579bb7059238c958c9ad5bd832aa6",
+      "baseline.py": "4b352b82b9d5364aa8f6b545fda39c7d7f0fd43bf7e4428cca4fb48de5dbbf53",
+      "protocol.json": "c56b8d7bb008b363163cea0b70cf2f811d8a685fd8445710f536eeaf4d9a1956",
+      "history_ledger.json": "dfdf4ec62a89ac524824747cbb58352b38e5d196fc11707a194489d3439d71ff"
+    }
+  },
+  "fine": {
+    "kind": "fine",
+    "nodes": 64,
+    "rows": [
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "diffusion_only",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "diffusion_only",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "diffusion_only",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "diffusion_only",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "diffusion_only",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "diffusion_only",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "gradient_only",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "gradient_only",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "gradient_only",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "gradient_only",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "gradient_only",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "gradient_only",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "no_pause",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "no_pause",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "no_pause",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "no_pause",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "no_pause",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "no_pause",
+        "condition": 2,
+        "history": 1
+      }
+    ],
+    "seconds": 129.43057819997193,
+    "source_hashes": {
+      "model.py": "85c2ca5164fb82dd68cebcdaa07b92648be579bb7059238c958c9ad5bd832aa6",
+      "baseline.py": "4b352b82b9d5364aa8f6b545fda39c7d7f0fd43bf7e4428cca4fb48de5dbbf53",
+      "protocol.json": "c56b8d7bb008b363163cea0b70cf2f811d8a685fd8445710f536eeaf4d9a1956",
+      "history_ledger.json": "dfdf4ec62a89ac524824747cbb58352b38e5d196fc11707a194489d3439d71ff"
+    }
+  },
+  "timefine": {
+    "kind": "timefine",
+    "nodes": 32,
+    "rows": [
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "diffusion_only",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "diffusion_only",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "diffusion_only",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "diffusion_only",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "diffusion_only",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "diffusion_only",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "gradient_only",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "gradient_only",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "gradient_only",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "gradient_only",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "gradient_only",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "gradient_only",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "no_pause",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "no_pause",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "no_pause",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "no_pause",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "no_pause",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "no_pause",
+        "condition": 2,
+        "history": 1
+      }
+    ],
+    "seconds": 105.47346040001139,
+    "source_hashes": {
+      "model.py": "85c2ca5164fb82dd68cebcdaa07b92648be579bb7059238c958c9ad5bd832aa6",
+      "baseline.py": "4b352b82b9d5364aa8f6b545fda39c7d7f0fd43bf7e4428cca4fb48de5dbbf53",
+      "protocol.json": "c56b8d7bb008b363163cea0b70cf2f811d8a685fd8445710f536eeaf4d9a1956",
+      "history_ledger.json": "dfdf4ec62a89ac524824747cbb58352b38e5d196fc11707a194489d3439d71ff"
+    }
+  },
+  "spatial": {
+    "kind": "spatial",
+    "nodes": 128,
+    "rows": [
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "feedback",
+        "condition": 2,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 0,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 1,
+        "history": 1
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 0
+      },
+      {
+        "scenario": "frozen",
+        "condition": 2,
+        "history": 1
+      }
+    ],
+    "seconds": 111.33243140002014,
+    "source_hashes": {
+      "model.py": "85c2ca5164fb82dd68cebcdaa07b92648be579bb7059238c958c9ad5bd832aa6",
+      "baseline.py": "4b352b82b9d5364aa8f6b545fda39c7d7f0fd43bf7e4428cca4fb48de5dbbf53",
+      "protocol.json": "c56b8d7bb008b363163cea0b70cf2f811d8a685fd8445710f536eeaf4d9a1956",
+      "history_ledger.json": "dfdf4ec62a89ac524824747cbb58352b38e5d196fc11707a194489d3439d71ff"
+    }
+  }
+}

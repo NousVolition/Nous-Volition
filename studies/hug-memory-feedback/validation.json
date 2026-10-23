@@ -1,0 +1,27 @@
+{
+  "equation_tests": 25,
+  "saved_data_verification": "passed",
+  "player_logic_states": 72,
+  "simulations": {
+    "main": 30,
+    "refinement": 72
+  },
+  "visual_review": {
+    "plots": 3,
+    "gif_sample_frames": [
+      0,
+      70,
+      120,
+      230
+    ],
+    "browser_layout": "Not verified; local-file URL was previously blocked by browser policy; offline DOM/canvas harness used"
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.18.1",
+    "matplotlib": "3.10.8",
+    "Pillow": "12.3.0"
+  },
+  "status": "Synthetic numerical implementation checks, not physical or human validation"
+}
