@@ -1,0 +1,21 @@
+{
+  "source_dialogues": 6760,
+  "annotated_dialogues": 5191,
+  "admin_dialogues_excluded": 129,
+  "not_annotated": 1569,
+  "usable_dialogues": 5062,
+  "markables_considered": 40384,
+  "retained_markables": 32795,
+  "fewer_than_three_votes_excluded": 4330,
+  "speaker_sequences_too_short": 8118,
+  "nonconcrete_or_uncertain_excluded": 3259,
+  "episode_interval_excluded": 349,
+  "repeated_wording_comparisons": 524,
+  "repeated_wording_changed_referent": 195,
+  "eligible_episodes": 1657,
+  "primary_pilot_episodes": 128,
+  "wording_pairs": 5358,
+  "cross_speaker_transitions": 12188,
+  "source_scenarios": 6759,
+  "training_scenario_assignment": 4731
+}

@@ -1,0 +1,8 @@
+{
+  "unit_tests": 12,
+  "saved_checks": 2851,
+  "passed": true,
+  "protocol_sha256": "488413f9ee5ee9d497302159164203e4a4afbb2f11fcb26d98dfca7f41206821",
+  "corpus_sha256": "01f9ab0942f9c88982863e2ffc1e3c495786b5e6b67a26ae77d18235e7058acf",
+  "note": "Derived reference fields and utility proxy are explicit additional observation assumptions."
+}

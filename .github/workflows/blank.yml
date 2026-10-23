@@ -75,3 +75,9 @@ jobs:
         run: |
           python -m unittest -q
           python verify_saved.py
+
+      - name: Grounded reference field and observed-wording checks
+        working-directory: studies/community-reference-field
+        run: |
+          python -m unittest -q
+          python verify_saved.py

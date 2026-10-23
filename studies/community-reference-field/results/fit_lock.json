@@ -1,0 +1,122 @@
+{
+  "candidates": [
+    {
+      "index": 0,
+      "sigma": 0.0001,
+      "D": 0.0,
+      "train_mse": 15.851117342679863,
+      "max_dt_used": 0.005
+    },
+    {
+      "index": 1,
+      "sigma": 0.0001,
+      "D": 0.001,
+      "train_mse": 14.488445129247623,
+      "max_dt_used": 0.005
+    },
+    {
+      "index": 2,
+      "sigma": 0.0001,
+      "D": 0.01,
+      "train_mse": 11.548519121467287,
+      "max_dt_used": 0.005
+    },
+    {
+      "index": 3,
+      "sigma": 0.001,
+      "D": 0.0,
+      "train_mse": 16.389943100905015,
+      "max_dt_used": 0.005
+    },
+    {
+      "index": 4,
+      "sigma": 0.001,
+      "D": 0.001,
+      "train_mse": 14.890763334769435,
+      "max_dt_used": 0.005
+    },
+    {
+      "index": 5,
+      "sigma": 0.001,
+      "D": 0.01,
+      "train_mse": 11.611782926291813,
+      "max_dt_used": 0.005
+    },
+    {
+      "index": 6,
+      "sigma": 0.01,
+      "D": 0.0,
+      "train_mse": 20.979919685184086,
+      "max_dt_used": 0.005
+    },
+    {
+      "index": 7,
+      "sigma": 0.01,
+      "D": 0.001,
+      "train_mse": 19.04920081176098,
+      "max_dt_used": 0.005
+    },
+    {
+      "index": 8,
+      "sigma": 0.01,
+      "D": 0.01,
+      "train_mse": 13.157580551481274,
+      "max_dt_used": 0.005
+    },
+    {
+      "index": 9,
+      "sigma": 0.0,
+      "D": 0.0,
+      "train_mse": 15.833230834188473,
+      "max_dt_used": 0.005
+    },
+    {
+      "index": 10,
+      "sigma": 0.0,
+      "D": 0.001,
+      "train_mse": 14.474485554869919,
+      "max_dt_used": 0.005
+    },
+    {
+      "index": 11,
+      "sigma": 0.0,
+      "D": 0.01,
+      "train_mse": 11.545981494564625,
+      "max_dt_used": 0.005
+    }
+  ],
+  "selected": {
+    "index": 2,
+    "sigma": 0.0001,
+    "D": 0.01,
+    "train_mse": 11.548519121467287,
+    "max_dt_used": 0.005
+  },
+  "force_off": {
+    "index": 11,
+    "sigma": 0.0,
+    "D": 0.01,
+    "train_mse": 11.545981494564625,
+    "max_dt_used": 0.005
+  },
+  "parameters": {
+    "n": 16,
+    "nu": 0.02,
+    "diffusivity": 0.01,
+    "rho": 1.0,
+    "sigma": 0.0001,
+    "threshold": 1.0,
+    "epsilon": 1.0,
+    "h": 0.12,
+    "gamma": 1.0,
+    "kappa": 0.13407437056223684,
+    "baseline": 0.8515625,
+    "law": "sharp",
+    "direction": [
+      1.0,
+      0.0
+    ]
+  },
+  "protocol_sha256": "488413f9ee5ee9d497302159164203e4a4afbb2f11fcb26d98dfca7f41206821",
+  "selection": "Training only; fixed before running evaluation fields"
+}

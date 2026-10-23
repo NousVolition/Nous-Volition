@@ -1,0 +1,42 @@
+{
+  "repository": "Alab-NII/onecommon",
+  "commit": "19125f2edc38c20341bfbb1756154aacdaa4f149",
+  "tree": "64c789cd8551315729e6725a0ff9061fdb580108",
+  "files": [
+    {
+      "name": "final_transcripts.json",
+      "url": "https://raw.githubusercontent.com/Alab-NII/onecommon/19125f2edc38c20341bfbb1756154aacdaa4f149/aaai2020/annotation/final_transcripts.json",
+      "bytes": 18921977,
+      "sha256": "0ca5f3f7ad114ba4c7c8b008b9e79d8c8b1a824de757f836cb3e5e31b0bdb404",
+      "git_blob_sha": "8ca14c683c5b4e1005e01b7d81dc07fa9991ed57"
+    },
+    {
+      "name": "markable_annotation.json",
+      "url": "https://raw.githubusercontent.com/Alab-NII/onecommon/19125f2edc38c20341bfbb1756154aacdaa4f149/aaai2020/annotation/markable_annotation.json",
+      "bytes": 18927374,
+      "sha256": "2522b2671a85169bc94a1dfcea01cdb25c4256a67ea1be3befca40ea9e8187e8",
+      "git_blob_sha": "744e32011107112da7fbccc94ec8001548b0c0cc"
+    },
+    {
+      "name": "aggregated_referent_annotation.json",
+      "url": "https://raw.githubusercontent.com/Alab-NII/onecommon/19125f2edc38c20341bfbb1756154aacdaa4f149/aaai2020/annotation/aggregated_referent_annotation.json",
+      "bytes": 7338806,
+      "sha256": "cf5b75fc232bd502f8ff3bc3c16d94cb0c3edd66dedb2fb87762aa4133a7384b",
+      "git_blob_sha": "e23790b8f574244c7f4ba14915532c1cb750611a"
+    },
+    {
+      "name": "referent_annotation.json",
+      "url": "https://raw.githubusercontent.com/Alab-NII/onecommon/19125f2edc38c20341bfbb1756154aacdaa4f149/aaai2020/annotation/referent_annotation.json",
+      "bytes": 30590600,
+      "sha256": "49687c0f0991808ce2e943e9e67949753e01b33b2a26254f7e3dd3e4038d7464",
+      "git_blob_sha": "3c58b3eb1a0875ebffce983dfe1a9317c3b6f115"
+    },
+    {
+      "name": "markable_detection.md",
+      "url": "https://raw.githubusercontent.com/Alab-NII/onecommon/19125f2edc38c20341bfbb1756154aacdaa4f149/aaai2020/annotation/markable_detection.md",
+      "bytes": 9599,
+      "sha256": "1f6b4a30a1d4762d7b8dcb973642b666099062ad5ee1105050ec9ce17ab06504",
+      "git_blob_sha": "bfff76a116ee3c3b3465e4e027594d4ea6526ed8"
+    }
+  ]
+}
