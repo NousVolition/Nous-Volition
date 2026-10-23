@@ -4,6 +4,8 @@ Streams and Rocks • 22 October 2026 • a corrected interpretation, two public
 
 **Smoke, Clay and the moving idea are within one person's two-in-one.** Smoke is inward speaking; Clay is inward listening; the middle is the idea moving and changing between them. Every person has their own history. This replaces the earlier interpretation of these roles as separate people. It does not turn material properties into psychological laws.
 
+**Wind, Fog, Water and Mist are forms of the moving idea. Water represents perceived balance. The other water is heavy water, D₂O, made of two deuterium (²H) atoms and one oxygen atom.** The distinct role of heavy water within the idea model remains to be specified. This corrects the earlier attribution of perceived balance to D₂O; the equations and completed numerical results are unchanged.
+
 [Download the editable testing document](Two_in_one_testing_protocol.docx) · [Read the same document in HTML](report.html) · [Current model and exact corpus equations](MODEL.md) · [Frozen pilot analysis protocol](PROTOCOL.md)
 
 The document includes working definitions, completed numerical findings, a proposed diary design, an episode recording sheet, a personal-history record, comparison models, meaning checks and evidence gates. It was researched with SciSpace and checked against original sources. The proposed new human study has not been recruited or run.

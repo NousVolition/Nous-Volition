@@ -4,18 +4,20 @@ This is the current interpretation requested by the author on 22 October 2026. I
 
 **Within one person, Smoke is the inward speaking position, Clay is the inward listening position, and the middle is the idea moving between them.** Both positions can affect what is retained, questioned, reformulated or refused. They are distinguishable functions in a person's account, not separate people, diagnoses or permanent material identities. One person need not experience literal voices to describe this process.
 
+**Wind, Fog, Water, Mist and the other named forms describe the moving idea itself. Water represents perceived balance. The other water is heavy water, D₂O: two deuterium (²H) atoms and one oxygen atom.** Its specific distinction within the idea model beyond being another water form has not yet been specified. Do not assign perceived balance to D₂O on the author's behalf. Smoke and Clay remain the inward speaking and listening functions that affect this moving idea.
+
 Each person's exchange has its own history. Keep three things separate: recorded events; what the person remembers or believes about those events; and what is recalled or reinterpreted now. Unrecorded history is unknown, not zero. The speaking and listening positions may draw on different parts of that history, but their separate histories require reports rather than being assumed independent.
 
 | Term | Working meaning supplied or clarified in this conversation | Measurement still needed |
 | --- | --- | --- |
 | Smoke | Inward speaking position | What is internally put forward and how the person identifies that function |
 | Clay | Inward listening position | What is received, held, challenged, reshaped or refused |
-| Moving idea | Content moving and changing between these positions | Before and after formulations, with changes in claim, target, force and implication checked |
-| Water | Adaptation and continuity where this description fits | What changes, what is preserved and the person's own account of the cost |
-| Mist | Internalized or unspoken agreement | What is taken for granted, endorsement and freedom to reconsider it |
-| Fog | Remembered past with variable clarity | Recalled content, vividness, certainty and verifiable accuracy recorded separately |
-| Wind | Space between memories and experienced time in the author's vocabulary | Actual elapsed time and felt temporal distance recorded separately |
-| D2O or perceived balance | Apparent balance that may conceal unresolved disturbance | Calm or agreement and unresolved tension rated independently |
+| Moving idea | The middle, described through forms such as Wind, Fog, Water and Mist | Before and after formulations, their attributed form, and changes in claim, target, force and implication |
+| Water | Perceived balance as a form of the moving idea | Perceived balance, calm, agreement and unresolved tension rated separately |
+| Mist | A form of the moving idea associated with internalized or unspoken agreement | What is taken for granted, endorsement and freedom to reconsider it |
+| Fog | A form of the moving idea associated with remembered past and variable clarity | Recalled content, vividness, certainty and verifiable accuracy recorded separately |
+| Wind | A form of the moving idea associated with space between memories and experienced time | Actual elapsed time and felt temporal distance recorded separately |
+| Heavy water or D₂O | The other water form, chemically two deuterium atoms and one oxygen atom | Its distinct role and the observations that would distinguish it from Water still need the author's definition |
 | Peroxide | Its specific role has not yet been defined | Ask for a definition before assigning a variable or causal mechanism |
 
 An old memory may remain clear and a recent memory may feel dreamlike. Do not build monotonic fading into the definition. An average association with event age would not eliminate individual exceptions. Peace does not mean no movement, and disturbance does not establish illness or failure. **Coercion, pressure, refusal and resistance retain their force when the account warrants them; attribution and an explicit missing test make the claim inspectable.**
@@ -37,6 +39,8 @@ For a proposed within-person application, index the fields, inputs and declared 
 The public pilot data below do not identify both internal positions or idea trajectories. Therefore no new full-field fit is claimed. The numerical history predictor is explicitly an added statistical comparator; it does not replace the corpus equations. The source DOCX SHA256 is 01f9ab0942f9c88982863e2ffc1e3c495786b5e6b67a26ae77d18235e7058acf. The prior field solver remains byte-for-byte unchanged (SHA256 00b50a93ae413d46109327ccf0c08e8e07d00028313eaa0da87d765e58705f35).
 
 See [the frozen pilot protocol](../community-two-in-one/PROTOCOL.md), [the editable testing document](../community-two-in-one/Two_in_one_testing_protocol.docx) and [completed results](../community-two-in-one/README.md).
+
+Editorial correction on 22 October 2026: the previous document mistakenly attached perceived balance to D₂O and treated the named forms too separately from the moving idea. The current wording follows the author's correction. This is a correction of definitions; it does not change the equations or numerical results.
 
 
 [Earlier situational interpretation preserved for provenance](LEGACY_SITUATIONAL_ROLES.md).

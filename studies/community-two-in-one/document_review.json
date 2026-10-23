@@ -14,5 +14,5 @@
   "clipping_or_overlap": false,
   "renderer": "Adobe PDF Services conversion from final DOCX; every page rendered with Poppler and visually inspected",
   "local_renderer": "Packaged render_docx.py attempted; bundled LibreOffice unavailable on this Windows runtime",
-  "docx_sha256": "f151445891ca88d37de2385857cf39bebb7f28b752b5029d9eb83ed93aab2414"
+  "docx_sha256": "8232f1f3e4cbaa8b02da85850cd29518b48b6dee7b84e9939a930bfaa3deb475"
 }

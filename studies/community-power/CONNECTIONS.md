@@ -2,6 +2,8 @@
 
 Smoke is inward speaking, Clay is inward listening, and the middle is the moving idea. Each person has their own history. The current sequence is a proposed internal exchange, not a conversation between separate people. [Current model and corpus fidelity](../community-two-in-one/MODEL.md) · [Testing document and completed checks](../community-two-in-one/README.md).
 
+**Wind, Fog, Water, Mist and the other forms describe the moving idea itself. Water is perceived balance. The other water is heavy water, D₂O: two deuterium (²H) atoms and one oxygen atom.** The earlier assignment of perceived balance to D₂O was an editorial error. Its distinct role in the idea model remains unspecified; no new role is inferred from its chemical mass.
+
 | Connection | Support | What remains to test |
 | --- | --- | --- |
 | Speaking and listening affect a moving idea within one person | Author definition, with a philosophical connection to Arendt | Observe both functions and before/after idea content within the same episode |

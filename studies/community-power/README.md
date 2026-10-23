@@ -2,7 +2,7 @@
 
 Streams and Rocks • current interpretation updated 22 October 2026 • historical community benchmarks retained below
 
-**Smoke is inward speaking, Clay is inward listening, and the middle is the idea moving between them within one person’s two-in-one.** Every person has their own history. This corrects the earlier interpretation of these roles as different people. Mist, Fog, Wind and perceived balance remain proposed descriptions with distinct measurement needs.
+**Smoke is inward speaking, Clay is inward listening, and the middle is the idea moving between them within one person’s two-in-one. Wind, Fog, Water and Mist describe the moving idea itself.** Water represents perceived balance. The other water is heavy water, D₂O, with two deuterium atoms and one oxygen atom; its distinct role in the idea model remains to be specified. Every person has their own history.
 
 The [new testing document and public-data probes](../community-two-in-one/README.md) include an editable protocol, episode and history forms, exact-corpus fidelity requirements and completed measurements. Recorded personal history predicts later reported inner dialogue with error 0.2134 versus 0.2567 for a population estimate. Older memories contain more counted content in 31.25% of within-person older/newer comparisons on average. These findings do not establish a causal memory mechanism or validate the full inner field.
 
@@ -28,7 +28,7 @@ In 162 candidate answer-uptake changes, 62 become correct, eight become incorrec
 
 ## Current roles within one person
 
-Smoke and Clay are inward speaking and listening, with the idea moving between them. Each function can draw on different parts of that person’s remembered history. Calm, agreement and unresolved tension must be recorded separately. Water can still describe adaptation without creating an obligation to adapt. No role is a diagnosis or fixed identity.
+Smoke and Clay are inward speaking and listening, affecting the moving idea in its Water, Fog, Mist, Wind and other forms. Each function can draw on different parts of that person’s remembered history. Water is perceived balance; perceived balance, calm, agreement and unresolved tension must be recorded separately. Heavy water is D₂O and is not automatically assigned the same role. No role is a diagnosis or fixed identity.
 
 **Keep strong language and state the missing comparison.** Coercion, resistance, pressure, refusal and boundaries remain available where they express the reported experience. The [current testing document](../community-two-in-one/report.html) separates definitions, measured findings and untested mechanisms.
 

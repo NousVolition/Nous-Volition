@@ -17,7 +17,7 @@ plt.rcParams.update({'font.family':'DejaVu Sans','font.size':11,'axes.spines.top
 f,ax=plt.subplots(figsize=(7,2.5)); ax.set(xlim=(0,10),ylim=(0,4));ax.axis('off')
 ax.add_patch(FancyBboxPatch((.1,.2),9.8,3.6,boxstyle='round,pad=0.03',edgecolor='#666666',facecolor='#f7f7f7'))
 ax.text(5,3.45,'ONE PERSON · THEIR OWN HISTORY',ha='center',weight='bold',color='#222222')
-for x,label,colour in [(1.6,'SMOKE\nInward speaking','#e2e8ed'),(5,'MOVING IDEA\nReceived and\nreformulated','#e9efe4'),(8.4,'CLAY\nInward listening','#f0e8df')]:
+for x,label,colour in [(1.6,'SMOKE\nInward speaking','#e2e8ed'),(5,'MOVING IDEA\nWater, fog, mist,\nwind, heavy water','#e9efe4'),(8.4,'CLAY\nInward listening','#f0e8df')]:
     ax.add_patch(FancyBboxPatch((x-1.3,1.3),2.6,1.1,boxstyle='round,pad=0.08',edgecolor='#999999',facecolor=colour))
     ax.text(x,1.85,label,ha='center',va='center',fontsize=10)
 for a,b in [(2.98,3.62),(6.38,7.02)]: ax.annotate('',xy=(b,1.85),xytext=(a,1.85),arrowprops={'arrowstyle':'<->','color':'#333333'})
@@ -44,7 +44,7 @@ b=page('Testing the two in one','Streams and Rocks  |  Research protocol and com
 p(b,'Purpose: test how an idea moves within one person, how inward speaking and listening affect it, and how that person’s history enters the process. This document fixes the current interpretation, reports two completed measurement probes, and supplies forms for the observations still missing.')
 image(b,'figures/within_person.png','The arrows express the author’s proposed relationship. They do not establish a physical or psychological mechanism.')
 h(b,'The working interpretation')
-p(b,'Smoke is the inward speaking position. Clay is the inward listening position. The middle is the idea moving between them. Both positions can change what is retained, questioned, reformulated or refused. These are functions within one person, not two people or permanent personality classes.')
+p(b,'Smoke is inward speaking and Clay is inward listening. The middle is the idea moving between them: Wind, Fog, Water, Mist and the other named forms describe that moving idea itself. Water represents perceived balance. The other water is heavy water, D₂O. Both inward positions can affect what is retained, questioned, reformulated or refused.')
 p(b,'Each person has a distinct history. Keep recorded events, remembered versions and what is recalled now separate. Missing history stays unknown. A clear childhood memory and a dreamlike recent memory are both admissible observations.')
 h(b,'What this document establishes')
 p(b,'The completed checks use real public records of inner experience and recalled memory content. They support narrowly stated associations. They do not measure the full Smoke–Clay–idea exchange or validate the corpus field equations as a model of thinking. The proposed diary study has not been run.')
@@ -54,13 +54,13 @@ b=page('1 Define what is being observed','Use participant descriptions first and
 table(b,['Term','Working description','Record separately'],[
  ['Smoke','Inward speaking','The proposition put forward and its wording, image or nonverbal form'],
  ['Clay','Inward listening','What is received, held, challenged, revised or refused'],
- ['Moving idea','Content changing between positions','Before and after accounts; which claim, target, implication or force changed'],
- ['Mist','Internalized or unspoken agreement','Agreement, assumptions and freedom to reconsider'],
- ['Fog','Remembered past with variable clarity','Content, vividness, certainty and independently checkable accuracy'],
- ['Wind','Space between memories and experienced time','Actual event age, recall duration and felt temporal distance'],
- ['Perceived balance','Calm or agreement may coexist with disturbance','Calm, agreement and unresolved tension as separate ratings'],
- ['Water','Adaptation where this word fits','What changed, what persisted and what that change cost']])
-p(b,'D₂O is the author’s image for perceived balance. H₂O₂ is a different substance; its specific role in this interpretation remains undefined. Leave peroxide unassigned until the author supplies its intended relationship. No chemical properties become psychological causes by analogy.')
+ ['Moving idea','The middle taking the named forms below','Before and after accounts; form, claim, target, implication and force'],
+ ['Mist','Moving idea as internalized or unspoken agreement','Agreement, assumptions and freedom to reconsider'],
+ ['Fog','Moving idea associated with remembered past and variable clarity','Content, vividness, certainty and independently checkable accuracy'],
+ ['Wind','Moving idea associated with space between memories and experienced time','Actual event age, recall duration and felt temporal distance'],
+ ['Water','Moving idea as perceived balance','Perceived balance, calm, agreement and unresolved tension rated separately'],
+ ['Heavy water','The other water form called D₂O','Its distinct role in the idea model still needs the author’s definition']])
+p(b,'Heavy water, D₂O, contains two deuterium (²H) atoms and one oxygen atom. [5] The author assigns perceived balance to Water. This corrects the earlier attribution of balance to D₂O. The difference between the two water forms in the idea model must be described before it can be tested. Peroxide remains separately undefined here.')
 h(b,'Keep the semantic force')
 p(b,'Retain coercion, resistance, refusal, pressure and conflict when they express the reported experience. Attribute the account and state the comparison still needed. Do not automatically soften strong language or infer a diagnosis from it. Participants may reject any material description or report no distinguishable inner positions.')
 p(b,'Do not score calm as healthy or disagreement as compromised. A peaceful exchange can change an idea; agreement can leave tension unresolved. These possibilities must be recorded rather than decided by the labels.')
@@ -105,9 +105,9 @@ table(b,['Field','Entry'],[
  ['Experience before the prompt','Words / images / nonverbal / no exchange / uncertain\n________________________________________________'],
  ['Smoke and the initial idea','What was put forward? Preserve wording or describe the image.\n________________________________________________\n________________________________________________'],
  ['Clay and the inward response','What was heard, held, challenged, reshaped or refused?\n________________________________________________\n________________________________________________'],
- ['Idea after the response','What changed or remained? Same claim / rephrased / revised / rejected / uncertain\n________________________________________________\n________________________________________________'],
+ ['Idea after the response','Same claim / rephrased / revised / rejected / uncertain\nIdea form before and after: water / fog / mist / wind / heavy water / other / none / unknown\n________________________________________________'],
  ['History recalled now','Private event ID(s), remembered account and relevance\n________________________________________________'],
- ['Independent ratings from 0 to 4','Calm __  Agreement __  Unresolved tension __\nVividness __  Certainty __  Freedom to reconsider __'],
+ ['Independent ratings from 0 to 4','Perceived balance __  Calm __  Agreement __\nUnresolved tension __  Vividness __  Certainty __\nFreedom to reconsider __'],
  ['Time measures','Estimated event date or age __  Felt distance 0 near to 4 far __\nRecall duration __  Date certainty __'],
  ['Reporting and follow-up','Did the prompt change the thought? __\nSame idea at next prompt? __  Linked episode ID __']])
 p(b,'Rating anchors: 0 = not at all, 1 = slightly, 2 = moderately, 3 = strongly, 4 = very strongly. Use “unknown” and “not applicable” explicitly. These are proposed items, not a validated scale. Ask participants whether the wording captures their experience before a confirmatory study.')
@@ -148,6 +148,7 @@ p(b,'[1] Arendt, H. (1971). Thinking and Moral Considerations. Social Research, 
 p(b,'[2] Nedergaard, J., Skewes, J., and Wallentin, M. (2023). “Stay Focused!” The Role of Inner Speech in Maintaining Attention During a Boring Task. DOI: 10.1037/xhp0001112. Data and analysis materials: https://osf.io/jgx7m/')
 p(b,'[3] Autobiographical Memory Content and Recollection Frequency: Public Release of Quantitative Datasets and Representative Classification Analysis (2020). DOI: 10.5334/joc.105. CRAM dataset version 4: https://doi.org/10.6084/m9.figshare.10246958.v4. Public data license: CC0.')
 p(b,'[4] Gardner and colleagues (2012). Quantitative Measurements of Autobiographical Memory Content. DOI: 10.1371/journal.pone.0044809. This source defines temporal youth bins and content scoring.')
+p(b,'[5] PubChem. Deuterium Oxide, compound 24602. https://pubchem.ncbi.nlm.nih.gov/compound/24602. Chemical identity only; the idea forms and perceived-balance mapping are the author’s definitions.')
 p(b,'SciSpace located the CRAM sources and candidate measures of dialogical activity. The EEG dataset Thinking out loud (10.1038/s41597-022-01147-2) was screened out for this question: fixed commands do not track a moving autobiographical idea. IDAS-R (10.1080/10720537.2024.2446756) is a candidate instrument, not longitudinal evidence used here. Search summaries were not treated as completed validation.')
 h(b,'Reproduce the completed checks')
 p(b,'The study folder contains PROTOCOL.md, protocol_freeze.json, sources.json, derived numeric data, analysis code, predictions, person-level summaries and figures. Raw free-text responses and original participant IDs are omitted. Source download URLs and SHA256 hashes are recorded. Install requirements.txt, then run:')
