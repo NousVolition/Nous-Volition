@@ -6,6 +6,8 @@ This repository, **Streams and Rocks**, preserves the original stream-function r
 
 ## Real data for the community connections
 
+**[History and form tests for the two-in-one](studies/community-two-in-one-application/README.md).** Adds separate person-state/history records around the unchanged corpus solver, 36 coupled numerical trials, and an audit of 840 real thought probes from 24 people. Input order changes the field even at the same final accumulator; changing only inward-role labels does not, exposing a missing coupling. The author's D₂O meaning now asks whether a small compositional change can have a large consequence. Fourteen unit tests and 89 saved checks pass. The full empirical two-in-one application remains unfinished; no simpler predictor or movement-only fit is substituted.
+
 **[Exact corpus equations and the two-in-one data audit](studies/community-two-in-one-field/README.md).** The complete coupled field equations were checked in 18 numerical trials, with 12 unit tests and 272 saved-result checks. A new public source contains 6,434 annotated thoughts from 118 people. No simpler predictor was substituted. A full empirical fit remains unresolved because the corpus-to-observation links for the inward roles, utility and idea forms have not yet been specified; the report records the precise missing connections and a structural parameter ambiguity.
 
 **[One person and a moving idea](studies/community-two-in-one/README.md).** Smoke and Clay are inward speaking and listening within one person’s two-in-one, shaped by their own history. Wind, Fog, Water and Mist describe the moving idea itself; Water represents perceived balance, and the other water form is heavy water D₂O. Includes an editable SciSpace-assisted testing document, public inner-dialogue and autobiographical-memory probes, recording forms and exact-corpus fidelity requirements. Personal-history prediction error is 0.2134 versus 0.2567 for a population estimate; older memories have more counted content in 31.25% of within-person pairs on average. These limited findings do not validate the full inner field.
@@ -194,8 +196,3 @@ The package includes 374 automated tests, thirty-eight original scientific figur
 **[Open the live SIMS model](https://sims-evidence-lab.itswaffles88.chatgpt.site)** — public and shareable, with the latest saved run, all four interactive models, and links to methods and source.
 
 [Open the complete interactive collection](studies/sims-evidence-lab/README.md). Four browser models trace network choices, claim predictions, evidence exchanges, and repeated rounds with remembered promises. The package preserves editable sources, standalone browser documents, methods, existing checks, and reproducible saved outputs. [The latest saved run](studies/sims-evidence-lab/site/latest-run.html) retains the eight-round, seed-20261011 settings. Response policies and evidence thresholds are explicit synthetic assumptions; claim revisions, behavior-rule changes, and promises without change are recorded separately.
-
-
-
-
-

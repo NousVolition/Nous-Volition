@@ -1,0 +1,469 @@
+{
+  "coupled_runs": 36,
+  "analytic_runs": 1,
+  "analytic_taylor_green_max_error": 1.9109713811360507e-14,
+  "synthetic_inputs": true,
+  "empirical_model_fit": false,
+  "runs": [
+    {
+      "law": "sharp",
+      "parameters": {
+        "n": 24,
+        "nu": 0.02,
+        "diffusivity": 0.01,
+        "rho": 1.0,
+        "sigma": 0.1,
+        "threshold": 0.05,
+        "epsilon": 0.1,
+        "h": 0.12,
+        "gamma": 1.0,
+        "kappa": 0.3,
+        "baseline": 0.0,
+        "law": "sharp",
+        "direction": [
+          1.0,
+          0.0
+        ]
+      },
+      "history_comparison": {
+        "state_rms": 0.02318561622439158,
+        "S_rms": 0.039880010967254347,
+        "u_rms": 0.003339395481669022
+      },
+      "history_A": [
+        -1.3877787807814457e-17,
+        1.3877787807814457e-17
+      ],
+      "history_final_mass": [
+        0.012000000000000004,
+        -0.012000000000000004
+      ],
+      "role_relabel_difference": {
+        "state_rms": 0.0,
+        "S_rms": 0.0,
+        "u_rms": 0.0
+      },
+      "state_rescaling": {
+        "state_rms": 0.0,
+        "S_rms": 0.0,
+        "u_rms": 0.0
+      },
+      "rescaled_pressure_max": 0.0,
+      "perturbation_comparison": {
+        "state_rms": 0.00017025489215483785,
+        "S_rms": 0.0002471439396714603,
+        "u_rms": 0.00011375424825393558
+      },
+      "perturbation_input_S_rms": 0.0004,
+      "unknown_prior_comparison": {
+        "state_rms": 0.013129450684116832,
+        "S_rms": 0.022713114707032536,
+        "u_rms": 0.000794306648955543
+      },
+      "unknown_prior_final_mass": [
+        0.0059999999999999915,
+        -0.005999999999999991
+      ],
+      "grid24_48": {
+        "state_rms": 2.476235944440844e-06,
+        "S_rms": 7.297582446193637e-08,
+        "u_rms": 3.0323182457211365e-06
+      },
+      "grid48_72": {
+        "state_rms": 3.5050881642086873e-07,
+        "S_rms": 3.6067116346580324e-08,
+        "u_rms": 4.285256435061483e-07
+      },
+      "time_refinement": {
+        "state_rms": 3.4566492296635443e-12,
+        "S_rms": 1.340249489480714e-13,
+        "u_rms": 4.23245253983197e-12
+      },
+      "max_mass_error": 6.071532165918825e-17,
+      "max_divergence": 1.7448142731043952e-17,
+      "max_energy_identity": 1.971892701208011e-18,
+      "rows": [
+        {
+          "A": 0.20000000000000015,
+          "mass": 0.006000000000000004,
+          "energy": 0.0013324183942319363,
+          "velocity_rms": 0.05162205718938245,
+          "divergence_rms": 5.469400883724975e-19,
+          "work": 3.73386891748351e-05,
+          "viscous_dissipation": 0.004199340168942477,
+          "energy_rate": -0.004162001479767644,
+          "energy_identity_residual": -1.971892701208011e-18,
+          "pressure_rms": 0.0015016892506462506,
+          "stress_rms": 0.006480231607699278,
+          "S_min": -0.032517756640000985,
+          "S_max": 0.08372065362709942,
+          "person": "synthetic-person",
+          "time": 0.2,
+          "role": "unattributed",
+          "event_ref": "declared-input-0",
+          "initial_state_basis": "synthetic initial state, not a measured biography",
+          "mass_exact": 0.006000000000000001,
+          "mass_error": 2.6020852139652106e-18,
+          "steps": 100,
+          "dt": 0.002
+        },
+        {
+          "A": -1.3877787807814457e-17,
+          "mass": 0.012000000000000004,
+          "energy": 0.0007238120693309291,
+          "velocity_rms": 0.0380476561520136,
+          "divergence_rms": 5.467333946986805e-19,
+          "work": 0.0001031745170945601,
+          "viscous_dissipation": 0.0022371633960968436,
+          "energy_rate": -0.002133988879002283,
+          "energy_identity_residual": 3.6591823321385775e-19,
+          "pressure_rms": 0.0012961807509088155,
+          "stress_rms": 0.0047298661673422044,
+          "S_min": -0.025752990253990624,
+          "S_max": 0.11460816348868814,
+          "person": "synthetic-person",
+          "time": 0.4,
+          "role": "unattributed",
+          "event_ref": "declared-input-1",
+          "initial_state_basis": "synthetic initial state, not a measured biography",
+          "mass_exact": 0.01200000000000001,
+          "mass_error": -6.938893903907228e-18,
+          "steps": 100,
+          "dt": 0.002
+        },
+        {
+          "A": -1.3877787807814457e-17,
+          "mass": 0.012000000000000004,
+          "energy": 0.00041495528983412307,
+          "velocity_rms": 0.02880816862746131,
+          "divergence_rms": 3.12919119914911e-19,
+          "work": 0.00012809167701672392,
+          "viscous_dissipation": 0.0011964841618889747,
+          "energy_rate": -0.001068392484872251,
+          "energy_identity_residual": -1.0842021724855044e-19,
+          "pressure_rms": 0.0008977039819667235,
+          "stress_rms": 0.0034590232174545677,
+          "S_min": -0.02119438341872952,
+          "S_max": 0.09537691086655936,
+          "person": "synthetic-person",
+          "time": 0.6000000000000001,
+          "role": "unattributed",
+          "event_ref": "declared-input-2",
+          "initial_state_basis": "synthetic initial state, not a measured biography",
+          "mass_exact": 0.01200000000000001,
+          "mass_error": -6.938893903907228e-18,
+          "steps": 101,
+          "dt": 0.0019801980198019807
+        }
+      ]
+    },
+    {
+      "law": "tanh",
+      "parameters": {
+        "n": 24,
+        "nu": 0.02,
+        "diffusivity": 0.01,
+        "rho": 1.0,
+        "sigma": 0.1,
+        "threshold": 0.05,
+        "epsilon": 0.1,
+        "h": 0.12,
+        "gamma": 1.0,
+        "kappa": 0.3,
+        "baseline": 0.0,
+        "law": "tanh",
+        "direction": [
+          1.0,
+          0.0
+        ]
+      },
+      "history_comparison": {
+        "state_rms": 0.023196681818099286,
+        "S_rms": 0.039880010625523404,
+        "u_rms": 0.003452744894902824
+      },
+      "history_A": [
+        -1.3877787807814457e-17,
+        1.3877787807814457e-17
+      ],
+      "history_final_mass": [
+        0.012000000000000004,
+        -0.012000000000000004
+      ],
+      "role_relabel_difference": {
+        "state_rms": 0.0,
+        "S_rms": 0.0,
+        "u_rms": 0.0
+      },
+      "state_rescaling": {
+        "state_rms": 0.0,
+        "S_rms": 0.0,
+        "u_rms": 0.0
+      },
+      "rescaled_pressure_max": 0.0,
+      "perturbation_comparison": {
+        "state_rms": 0.00017244090815615417,
+        "S_rms": 0.00024715228006928454,
+        "u_rms": 0.0001185819355418681
+      },
+      "perturbation_input_S_rms": 0.0004,
+      "unknown_prior_comparison": {
+        "state_rms": 0.013130592158689156,
+        "S_rms": 0.022713115132041644,
+        "u_rms": 0.0008221168749357407
+      },
+      "unknown_prior_final_mass": [
+        0.0059999999999999915,
+        -0.005999999999999991
+      ],
+      "grid24_48": {
+        "state_rms": 2.099088119929965e-06,
+        "S_rms": 7.849949829502616e-08,
+        "u_rms": 2.5702481042168646e-06
+      },
+      "grid48_72": {
+        "state_rms": 5.026898653600979e-08,
+        "S_rms": 1.3060638603400986e-09,
+        "u_rms": 6.155975641303868e-08
+      },
+      "time_refinement": {
+        "state_rms": 2.0048040336741332e-14,
+        "S_rms": 1.683772015700808e-14,
+        "u_rms": 2.1473971965441168e-14
+      },
+      "max_mass_error": 6.071532165918825e-17,
+      "max_divergence": 1.744548251595713e-17,
+      "max_energy_identity": 1.9159885266892274e-18,
+      "rows": [
+        {
+          "A": 0.20000000000000015,
+          "mass": 0.006000000000000004,
+          "energy": 0.001332017473617122,
+          "velocity_rms": 0.05161429014560061,
+          "divergence_rms": 2.750161261801504e-19,
+          "work": 3.3340081405440713e-05,
+          "viscous_dissipation": 0.00419943775100131,
+          "energy_rate": -0.00416609766959587,
+          "energy_identity_residual": -4.0657581468206416e-19,
+          "pressure_rms": 0.0015175520288573108,
+          "stress_rms": 0.006480306899369281,
+          "S_min": -0.03251776165360325,
+          "S_max": 0.08372066065677354,
+          "person": "synthetic-person",
+          "time": 0.2,
+          "role": "unattributed",
+          "event_ref": "declared-input-0",
+          "initial_state_basis": "synthetic initial state, not a measured biography",
+          "mass_exact": 0.006000000000000001,
+          "mass_error": 2.6020852139652106e-18,
+          "steps": 100,
+          "dt": 0.002
+        },
+        {
+          "A": -1.3877787807814457e-17,
+          "mass": 0.012000000000000004,
+          "energy": 0.0007221405297512363,
+          "velocity_rms": 0.03800369797141421,
+          "divergence_rms": 3.086230050430423e-19,
+          "work": 9.508151651648465e-05,
+          "viscous_dissipation": 0.002237529106599203,
+          "energy_rate": -0.0021424475900827184,
+          "energy_identity_residual": -2.168404344971009e-19,
+          "pressure_rms": 0.001329701638522359,
+          "stress_rms": 0.0047302527486374375,
+          "S_min": -0.025753063148077366,
+          "S_max": 0.11460834995617797,
+          "person": "synthetic-person",
+          "time": 0.4,
+          "role": "unattributed",
+          "event_ref": "declared-input-1",
+          "initial_state_basis": "synthetic initial state, not a measured biography",
+          "mass_exact": 0.01200000000000001,
+          "mass_error": -6.938893903907228e-18,
+          "steps": 100,
+          "dt": 0.002
+        },
+        {
+          "A": -1.3877787807814457e-17,
+          "mass": 0.012000000000000004,
+          "energy": 0.00041124300710432146,
+          "velocity_rms": 0.02867901696726446,
+          "divergence_rms": 3.0572179859756553e-19,
+          "work": 0.00011701526996777585,
+          "viscous_dissipation": 0.001197250137230779,
+          "energy_rate": -0.001080234867263003,
+          "energy_identity_residual": 1.8973538018496328e-19,
+          "pressure_rms": 0.0009285238165495892,
+          "stress_rms": 0.0034601302536621053,
+          "S_min": -0.021194693916861705,
+          "S_max": 0.09537779973979406,
+          "person": "synthetic-person",
+          "time": 0.6000000000000001,
+          "role": "unattributed",
+          "event_ref": "declared-input-2",
+          "initial_state_basis": "synthetic initial state, not a measured biography",
+          "mass_exact": 0.01200000000000001,
+          "mass_error": -6.938893903907228e-18,
+          "steps": 101,
+          "dt": 0.0019801980198019807
+        }
+      ]
+    },
+    {
+      "law": "smooth_off",
+      "parameters": {
+        "n": 24,
+        "nu": 0.02,
+        "diffusivity": 0.01,
+        "rho": 1.0,
+        "sigma": 0.1,
+        "threshold": 0.05,
+        "epsilon": 0.1,
+        "h": 0.12,
+        "gamma": 1.0,
+        "kappa": 0.3,
+        "baseline": 0.0,
+        "law": "smooth_off",
+        "direction": [
+          1.0,
+          0.0
+        ]
+      },
+      "history_comparison": {
+        "state_rms": 0.023189133961046587,
+        "S_rms": 0.0398800541289234,
+        "u_rms": 0.0033755802659863124
+      },
+      "history_A": [
+        -1.3877787807814457e-17,
+        1.3877787807814457e-17
+      ],
+      "history_final_mass": [
+        0.012000000000000004,
+        -0.012000000000000004
+      ],
+      "role_relabel_difference": {
+        "state_rms": 0.0,
+        "S_rms": 0.0,
+        "u_rms": 0.0
+      },
+      "state_rescaling": {
+        "state_rms": 0.0,
+        "S_rms": 0.0,
+        "u_rms": 0.0
+      },
+      "rescaled_pressure_max": 0.0,
+      "perturbation_comparison": {
+        "state_rms": 0.00016981187088089397,
+        "S_rms": 0.0002471533811011202,
+        "u_rms": 0.00011274622097102115
+      },
+      "perturbation_input_S_rms": 0.0004,
+      "unknown_prior_comparison": {
+        "state_rms": 0.013127393514573309,
+        "S_rms": 0.02271311681143124,
+        "u_rms": 0.0007415207919079105
+      },
+      "unknown_prior_final_mass": [
+        0.0059999999999999915,
+        -0.0059999999999999915
+      ],
+      "grid24_48": {
+        "state_rms": 4.0293359266320575e-06,
+        "S_rms": 3.713037594690095e-07,
+        "u_rms": 4.927919314840071e-06
+      },
+      "grid48_72": {
+        "state_rms": 2.3250730966551854e-07,
+        "S_rms": 1.4949458310457918e-08,
+        "u_rms": 2.8456586306153794e-07
+      },
+      "time_refinement": {
+        "state_rms": 3.3002426739645555e-14,
+        "S_rms": 1.7140032513423718e-14,
+        "u_rms": 3.855969266965048e-14
+      },
+      "max_mass_error": 6.071532165918825e-17,
+      "max_divergence": 1.744767124378281e-17,
+      "max_energy_identity": 2.0227146780432692e-18,
+      "rows": [
+        {
+          "A": 0.20000000000000015,
+          "mass": 0.006000000000000003,
+          "energy": 0.001330425153489977,
+          "velocity_rms": 0.0515834305468331,
+          "divergence_rms": 4.076202537745457e-20,
+          "work": 1.6270894387459566e-05,
+          "viscous_dissipation": 0.004199257892233811,
+          "energy_rate": -0.004182986997846351,
+          "energy_identity_residual": 1.3552527156068805e-20,
+          "pressure_rms": 0.0015331406857656625,
+          "stress_rms": 0.006480168124542612,
+          "S_min": -0.03251777498807493,
+          "S_max": 0.08372068064427432,
+          "person": "synthetic-person",
+          "time": 0.2,
+          "role": "unattributed",
+          "event_ref": "declared-input-0",
+          "initial_state_basis": "synthetic initial state, not a measured biography",
+          "mass_exact": 0.006000000000000001,
+          "mass_error": 1.734723475976807e-18,
+          "steps": 100,
+          "dt": 0.002
+        },
+        {
+          "A": -1.3877787807814457e-17,
+          "mass": 0.012000000000000004,
+          "energy": 0.0007151360978545995,
+          "velocity_rms": 0.037818939642845606,
+          "divergence_rms": 3.864153454955618e-19,
+          "work": 5.9356008916530605e-05,
+          "viscous_dissipation": 0.0022376827748668195,
+          "energy_rate": -0.0021783267659502897,
+          "energy_identity_residual": -7.724940478959219e-19,
+          "pressure_rms": 0.0013652860905941826,
+          "stress_rms": 0.0047304151771983185,
+          "S_min": -0.025753252500894653,
+          "S_max": 0.11460918589503533,
+          "person": "synthetic-person",
+          "time": 0.4,
+          "role": "unattributed",
+          "event_ref": "declared-input-1",
+          "initial_state_basis": "synthetic initial state, not a measured biography",
+          "mass_exact": 0.01200000000000001,
+          "mass_error": -6.938893903907228e-18,
+          "steps": 100,
+          "dt": 0.002
+        },
+        {
+          "A": -1.3877787807814457e-17,
+          "mass": 0.012000000000000004,
+          "energy": 0.0003958817141510238,
+          "velocity_rms": 0.02813829114040239,
+          "divergence_rms": 3.8708191383995e-19,
+          "work": 7.078548189961549e-05,
+          "viscous_dissipation": 0.0011978113506646798,
+          "energy_rate": -0.0011270258687650647,
+          "energy_identity_residual": -3.6591823321385775e-19,
+          "pressure_rms": 0.0009224097116690312,
+          "stress_rms": 0.003460941130190862,
+          "S_min": -0.02119544730530178,
+          "S_max": 0.09538240437403467,
+          "person": "synthetic-person",
+          "time": 0.6000000000000001,
+          "role": "unattributed",
+          "event_ref": "declared-input-2",
+          "initial_state_basis": "synthetic initial state, not a measured biography",
+          "mass_exact": 0.01200000000000001,
+          "mass_error": -6.938893903907228e-18,
+          "steps": 101,
+          "dt": 0.0019801980198019807
+        }
+      ]
+    }
+  ],
+  "seconds": 30.940219163894653,
+  "solver_sha256": "00b50a93ae413d46109327ccf0c08e8e07d00028313eaa0da87d765e58705f35",
+  "protocol_sha256": "43d8b607a23aa3553660523dacd5fabd9f1ba3fbb67b973a95c5c32c89eb4413",
+  "numerical_plan_sha256": "1c825aa6183a74ba09375efd0c33b5303c4c628d38713c74ab99d1262582b7a8"
+}

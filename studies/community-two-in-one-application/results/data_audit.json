@@ -1,0 +1,208 @@
+{
+  "participants": 24,
+  "sessions": 47,
+  "runs": 140,
+  "probes": 840,
+  "item_rows": 10920,
+  "item_counts": {
+    "att": 840,
+    "past": 840,
+    "fut": 840,
+    "self": 840,
+    "ppl": 840,
+    "arou": 840,
+    "aff": 840,
+    "eng": 840,
+    "mvmt": 840,
+    "delib": 840,
+    "image": 840,
+    "ling": 840,
+    "conf": 840
+  },
+  "reserved_participants": [
+    "sub-010",
+    "sub-012",
+    "sub-013",
+    "sub-015",
+    "sub-018",
+    "sub-019",
+    "sub-021",
+    "sub-025"
+  ],
+  "development_participants": [
+    "sub-009",
+    "sub-023",
+    "sub-008",
+    "sub-006",
+    "sub-004",
+    "sub-014",
+    "sub-003",
+    "sub-007",
+    "sub-017",
+    "sub-011",
+    "sub-016",
+    "sub-020",
+    "sub-001",
+    "sub-005",
+    "sub-024",
+    "sub-002"
+  ],
+  "reserved_response_values_used": false,
+  "header_variants": [
+    {
+      "columns": [
+        "onset",
+        "duration",
+        "offset",
+        "trial",
+        "item",
+        "RT",
+        "response"
+      ],
+      "files": 140
+    }
+  ],
+  "dictionary_variants": 1,
+  "issues": [],
+  "development_response_ranges": {
+    "att": [
+      1.0,
+      10.0,
+      545
+    ],
+    "past": [
+      1.0,
+      9.0,
+      551
+    ],
+    "fut": [
+      1.0,
+      10.0,
+      551
+    ],
+    "self": [
+      1.0,
+      10.0,
+      551
+    ],
+    "ppl": [
+      1.0,
+      10.0,
+      551
+    ],
+    "arou": [
+      1.0,
+      10.0,
+      551
+    ],
+    "aff": [
+      1.0,
+      10.0,
+      551
+    ],
+    "eng": [
+      1.0,
+      9.0,
+      551
+    ],
+    "mvmt": [
+      1.0,
+      10.0,
+      551
+    ],
+    "delib": [
+      1.0,
+      10.0,
+      551
+    ],
+    "image": [
+      1.0,
+      10.0,
+      551
+    ],
+    "ling": [
+      1.0,
+      10.0,
+      551
+    ],
+    "conf": [
+      1.0,
+      10.0,
+      551
+    ]
+  },
+  "full_model_fit_performed": false,
+  "reason": "No independent observations of inward receiving, meaning, utility, form labels or their observation functions. A movement-only mapping would not test the requested full model.",
+  "development_nonnumeric_or_nonfinite": [
+    {
+      "item": "att",
+      "source_token": "nonfinite",
+      "count": 6
+    },
+    {
+      "item": "att",
+      "source_token": "",
+      "count": 1
+    },
+    {
+      "item": "past",
+      "source_token": "",
+      "count": 1
+    },
+    {
+      "item": "fut",
+      "source_token": "",
+      "count": 1
+    },
+    {
+      "item": "self",
+      "source_token": "",
+      "count": 1
+    },
+    {
+      "item": "ppl",
+      "source_token": "",
+      "count": 1
+    },
+    {
+      "item": "arou",
+      "source_token": "",
+      "count": 1
+    },
+    {
+      "item": "aff",
+      "source_token": "",
+      "count": 1
+    },
+    {
+      "item": "eng",
+      "source_token": "",
+      "count": 1
+    },
+    {
+      "item": "mvmt",
+      "source_token": "",
+      "count": 1
+    },
+    {
+      "item": "delib",
+      "source_token": "",
+      "count": 1
+    },
+    {
+      "item": "image",
+      "source_token": "",
+      "count": 1
+    },
+    {
+      "item": "ling",
+      "source_token": "",
+      "count": 1
+    },
+    {
+      "item": "conf",
+      "source_token": "",
+      "count": 1
+    }
+  ]
+}

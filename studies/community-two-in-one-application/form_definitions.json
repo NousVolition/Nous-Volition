@@ -1,0 +1,18 @@
+{
+  "status": "author concepts with explicit observation requirements; not fitted form equations",
+  "scope": "all functions and the moving idea occur within one person",
+  "roles": {
+    "Smoke": {"meaning": "inward putting-forward", "needs": ["person's report of what is put forward", "intended meaning", "time", "history references"]},
+    "Clay": {"meaning": "inward receiving, holding, questioning, reshaping or refusing", "needs": ["person's report of what is received", "response to it", "time", "history references"]}
+  },
+  "idea_forms": {
+    "Water": {"meaning": "perceived balance", "needs": ["perceived balance", "calm", "agreement", "unresolved disturbance"], "forbidden_substitution": "positive affect or zero velocity alone"},
+    "Fog": {"meaning": "moving idea involving remembered past and variable clarity", "needs": ["recalled content", "clarity", "certainty", "event age", "accuracy where independently checkable"], "forbidden_substitution": "low questionnaire confidence or old age alone"},
+    "Wind": {"meaning": "moving idea involving the space between memories and experienced time", "needs": ["event time or age", "report time", "felt temporal distance"], "forbidden_substitution": "clock time or past/future focus alone"},
+    "Mist": {"meaning": "moving idea involving internalized or unspoken agreement", "needs": ["what is taken for granted", "endorsement", "unresolved disagreement", "freedom to reconsider"], "forbidden_substitution": "low arousal, silence or low movement alone"},
+    "D2O": {"meaning": "small compositional change with a potentially large consequence, including helpful or harmful consequences", "source": "author clarification in the current turn", "needs": ["specified before and after change", "specified distance or size of change", "context", "observed consequence", "benefit or harm criterion"], "forbidden_substitution": "a numerical threshold crossing classified as harm without an observed consequence"},
+    "H2O2": {"meaning": null, "status": "not assigned a distinct within-person meaning by the author"}
+  },
+  "history": {"owner": "one person", "roles_may_reference_different_events": true, "distinguish": ["recorded event", "remembered account", "current retrieval"], "unknown_is_zero": false, "assume_monotonic_fading": false},
+  "chemistry_note": "D2O contains two deuterium atoms and one oxygen atom; its conceptual role is not a toxicity calculation. H2O2 is a different compound."
+}

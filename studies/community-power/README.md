@@ -2,7 +2,9 @@
 
 Streams and Rocks • current interpretation updated 22 October 2026 • historical community benchmarks retained below
 
-**Smoke is inward speaking, Clay is inward listening, and the middle is the idea moving between them within one person’s two-in-one. Wind, Fog, Water and Mist describe the moving idea itself.** Water represents perceived balance. The other water is heavy water, D₂O, with two deuterium atoms and one oxygen atom; its distinct role in the idea model remains to be specified. Every person has their own history.
+**Smoke is inward speaking, Clay is inward listening, and the middle is the idea moving between them within one person’s two-in-one. Wind, Fog, Water and Mist describe the moving idea itself.** Water represents perceived balance. The author now gives D₂O the role of a small compositional change with potentially large consequences, including a change from life-saving to potentially life-threatening. Its effect must be specified and observed; the name alone does not determine help or harm. Every person has their own history.
+
+The [new history and form tests](../community-two-in-one-application/README.md) add a person-specific runner for the unchanged corpus equations, 36 coupled trials, and an audit of 840 real thought probes from 24 people. Different input orders leave different fields even at the same final accumulator, while exchanging only Smoke/Clay labels changes nothing because the equations do not use those labels. Fourteen unit tests and 89 saved checks pass. The full empirical two-in-one application remains unfinished: these records do not separately measure the inward functions, meaning, history contents or idea forms. No simpler predictor is substituted.
 
 The [exact corpus equations and new data audit](../community-two-in-one-field/README.md) retain the full coupled field dynamics. Eighteen numerical trials, 12 unit tests and 272 saved-result checks pass. The new public source contains 6,434 annotated thoughts from 118 people. A full empirical two-in-one fit remains unresolved: the inward roles, utility and idea forms still need their observation links to the corpus variables. No simpler predictor was substituted in this study.
 
@@ -32,7 +34,7 @@ In 162 candidate answer-uptake changes, 62 become correct, eight become incorrec
 
 ## Current roles within one person
 
-Smoke and Clay are inward speaking and listening, affecting the moving idea in its Water, Fog, Mist, Wind and other forms. Each function can draw on different parts of that person’s remembered history. Water is perceived balance; perceived balance, calm, agreement and unresolved tension must be recorded separately. Heavy water is D₂O and is not automatically assigned the same role. No role is a diagnosis or fixed identity.
+Smoke and Clay are inward speaking and listening, affecting the moving idea in its Water, Fog, Mist, Wind and other forms. Each function can draw on different parts of that person’s remembered history. Water is perceived balance; perceived balance, calm, agreement and unresolved tension must be recorded separately. D₂O asks how a small compositional change can have a large consequence. No role is a diagnosis or fixed identity.
 
 **Keep strong language and state the missing comparison.** Coercion, resistance, pressure, refusal and boundaries remain available where they express the reported experience. The [current testing document](../community-two-in-one/report.html) separates definitions, measured findings and untested mechanisms.
 

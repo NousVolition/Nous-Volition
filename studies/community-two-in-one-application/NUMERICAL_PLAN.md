@@ -1,0 +1,13 @@
+# Exact equation tests of history and identifiability
+
+This plan is frozen before these new runs. It extends the equation checks without changing the corpus solver. All numerical inputs here are synthetic, in the existing declared dimensionless units. They are not derived from participant ratings.
+
+For each of sharp, signed tanh and smooth exact-off activation, use the original coupled solver on the unit periodic square, rho=1, nu=.02, D=.01, sigma=.1, threshold=.05, epsilon=.1, gamma=1, kappa=.3, kernel width=.12 and e=(1,0). Initial S=.04 cos(2πx)cos(2πy), initial Taylor–Green velocity amplitude=.1, and original A(0)=0. Each input interval lasts .2. Use grids 24, 48 and 72 and maximum step .002, with an additional .001 temporal refinement at grid 24.
+
+1. Run history [1,-1,0] and its time-reversed first two inputs [-1,1,0]. Both finish at A=0 and current excess input 0. Compare the full states. Under these boundaries their exact final S means are +.012 and -.012. This tests whether accumulated history can leave effects beyond the current value of A.
+2. Attach distinct inward-role labels to two ledgers with exactly the same time, U and baseline sequence. The original solver receives the same mathematical inputs and must return the same states. This exposes the absence of an explicit role-dependent coupling; it is not a comparison of observed human roles.
+3. Multiply all S values, initial S amplitude, threshold, epsilon and kappa by c=2, while dividing sigma by c. Keep gamma, nu, D and u unchanged. For these three activation laws a(cq;c epsilon)=c a(q;epsilon), so exact u and p remain unchanged and S doubles. This tests the state-unit ambiguity that any observation mapping must resolve.
+4. Perturb the initial S amplitude by plus and minus 1% while keeping all other inputs and coefficients fixed. Report full-state and observable differences, and threshold activity. The D2O-inspired question is sensitivity to a small change; a change in mathematical response is not categorized as human help, harm, life or death.
+5. Check an unknown observation-start A by continuing the same supplied field with A=-.1 and A=.1 for one zero-excess-input interval. A at observation start can be nonzero due to earlier evolution; these are sensitivity conditions, not independently reconstructed biographies. Keep them labeled conditional initial states, not measured histories.
+
+Report mass identity, divergence, numerical refinement and actual differences. Never infer role/history identification from a close numerical agreement or classify form labels from arbitrary signs. Preserve the original protocol and the initial numerical plan rather than rewriting them after results.

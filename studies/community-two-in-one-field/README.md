@@ -4,7 +4,7 @@ Streams and Rocks · 22 October 2026
 
 **The coupled corpus equations were run and checked. A full empirical two-in-one fit remains unresolved.** The new public source contains 6,434 annotated thoughts from 118 people, but does not separately measure the inward speaker, inward listener, perceived balance or utility. The corpus supplies the field dynamics; it does not yet specify the observation link from those dynamics to these inward roles. No simpler predictor was fitted or substituted in this study.
 
-Within one person, Smoke is inward speaking and Clay is inward listening. Wind, Fog, Water and Mist describe the moving idea itself. Water is perceived balance. Heavy water is D₂O, whose distinct role still needs definition. Each person has their own history; the new measurements do not erase unrecorded history.
+Within one person, Smoke is inward speaking and Clay is inward listening. Wind, Fog, Water and Mist describe the moving idea itself. Water is perceived balance. The author has subsequently clarified D₂O as a small compositional change with potentially large consequences. The [new history and form tests](../community-two-in-one-application/README.md) incorporate that definition and further exact-equation checks. Each person has their own history; the measurements do not erase unrecorded history.
 
 | Completed work | Result | What it establishes |
 | --- | --- | --- |

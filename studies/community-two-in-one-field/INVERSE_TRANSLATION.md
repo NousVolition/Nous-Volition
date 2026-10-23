@@ -55,7 +55,7 @@ The inverse reading is: **accumulated influence changes the context in which an 
 | Fog and variable memory clarity | Field variation and diffusion | Vividness, certainty and accuracy; no equation requires old memories to fade |
 | Wind and experienced time | Evolution in model time t | The relation between clock time, event age and felt temporal distance |
 | Mist and unspoken agreement | A context field can organize a proposed interpretation | Whether agreement is recognized, endorsed, imposed or open to reconsideration |
-| Heavy water D₂O | The author identifies the other water form | Its distinct experiential role; molecular mass does not supply that role |
+| Heavy water D₂O | Subsequent author clarification: a small compositional change can have a large consequence | The specific change, its size, context, observed consequences and benefit/harm criteria; molecular mass alone does not supply them |
 
 The Navier–Stokes format adds a continuous geometry, local derivatives, incompressibility, smoothing terms and Newtonian stress. The supplied coupling adds a single accumulated scalar, localized source, threshold and fixed force direction. Constant coefficients, periodic boundaries and a unit-square domain in the numerical trials are additional declared computational choices. These are inspectable assumptions, not consequences of the material names.
 
@@ -78,6 +78,8 @@ W equality compares treatment across actors within a declared context (104). Exa
 The reciprocal transformation [S,R] → [λS,R/λ] preserves SR (497–506). Its entries are scalar variables, distinct from spatial coordinates. Two entries alone do not make it the two-in-one: the transformation supplies neither two histories nor time evolution. These expressions remain in the corpus; their coupling to this application remains unresolved.
 
 ## Testing the reconstruction
+
+Update on 23 October: the author's D₂O clarification is now included above. The [new history and form tests](../community-two-in-one-application/README.md) test input order, role relabeling, state scaling and a small perturbation in the unchanged equations, and audit a new public repeated-report source. These findings do not complete the missing empirical observation functions.
 
 The reconstruction specifies a conceptual correspondence: **putting forward, receiving and returning occur within one evolving person-specific process.** It does not fix how many units of S correspond to a report, where a thought lies in the continuous domain, or which observation identifies a source or threshold response. Those are operational choices to evaluate, not ideas the author must invent again from scratch.
 

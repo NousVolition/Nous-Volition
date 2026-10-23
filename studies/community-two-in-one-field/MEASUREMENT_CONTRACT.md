@@ -1,6 +1,6 @@
 # Connecting observations to the exact corpus model
 
-Smoke is inward speaking, Clay is inward listening, and the moving idea is affected by both within one person. Wind, Fog, Water and Mist are forms of that moving idea. Water is perceived balance. Heavy water is D₂O; its distinct role remains unspecified. These author-supplied meanings are retained. The corpus defines S as a signed status/context field, not automatically as the idea itself, the speaker or the listener.
+Smoke is inward speaking, Clay is inward listening, and the moving idea is affected by both within one person. Wind, Fog, Water and Mist are forms of that moving idea. Water is perceived balance. The author's subsequent D₂O clarification represents a small compositional change with potentially large consequences. Its test requires a specified change and observed consequences, not an automatic harm label. The corpus defines S as a signed status/context field, not automatically as the idea itself, the speaker or the listener. See the [new history and form tests](../community-two-in-one-application/README.md).
 
 ## What must be specified before a full empirical fit
 

@@ -1,0 +1,11 @@
+{
+  "figures_visually_reviewed": [
+    "figures/history.png",
+    "figures/checks.png"
+  ],
+  "html_source_checked": true,
+  "browser_render_review": false,
+  "empirical_full_fit": false,
+  "substitute_predictor": false,
+  "remaining": "No calibrated joint observation model for inward roles, forms, meaning and memory content."
+}

@@ -1,0 +1,1408 @@
+{
+  "repository": "nemarDatasets/on007216",
+  "commit": "4ff088a521a89176a1b8cd361d145e95f2db1506",
+  "doi": "10.82901/nemar.on007216",
+  "license": "CC0",
+  "files": [
+    {
+      "path": "sub-001/ses-001/func/sub-001_ses-001_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-001/ses-001/func/sub-001_ses-001_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "41fe7737938124cbec05ebab17c0874143266453",
+      "size": 6518
+    },
+    {
+      "path": "sub-001/ses-001/func/sub-001_ses-001_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-001/ses-001/func/sub-001_ses-001_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "3326dc9ce8e9b5a4628a3cd708ad6a94d2d85765",
+      "size": 6354
+    },
+    {
+      "path": "sub-001/ses-001/func/sub-001_ses-001_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-001/ses-001/func/sub-001_ses-001_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "36c1288cdd016336536305da70f25e1c8cbd06fb",
+      "size": 6548
+    },
+    {
+      "path": "sub-001/ses-002/func/sub-001_ses-002_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-001/ses-002/func/sub-001_ses-002_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "589c3679820e82048b51aa2139259ce0d3b22814",
+      "size": 6543
+    },
+    {
+      "path": "sub-001/ses-002/func/sub-001_ses-002_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-001/ses-002/func/sub-001_ses-002_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "5a19c368995359be1caa7c283391b0a448a552d2",
+      "size": 6564
+    },
+    {
+      "path": "sub-001/ses-002/func/sub-001_ses-002_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-001/ses-002/func/sub-001_ses-002_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "371bf526d3880e4c82216179dc1e5f3942a61b29",
+      "size": 6553
+    },
+    {
+      "path": "sub-002/ses-001/func/sub-002_ses-001_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-002/ses-001/func/sub-002_ses-001_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "f9ce6ee8db693bc6f03b6bf0aa32f6ab003db6e4",
+      "size": 6487
+    },
+    {
+      "path": "sub-002/ses-001/func/sub-002_ses-001_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-002/ses-001/func/sub-002_ses-001_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "11838a2a11ecc77c4e735c325498b0ef751d8e3a",
+      "size": 6494
+    },
+    {
+      "path": "sub-002/ses-001/func/sub-002_ses-001_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-002/ses-001/func/sub-002_ses-001_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "d80edf14bb10ca07083d63e51d7da79d319893ed",
+      "size": 6509
+    },
+    {
+      "path": "sub-002/ses-002/func/sub-002_ses-002_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-002/ses-002/func/sub-002_ses-002_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "029949fe117e4025a3939da1ca1cdf8654f498e7",
+      "size": 6480
+    },
+    {
+      "path": "sub-002/ses-002/func/sub-002_ses-002_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-002/ses-002/func/sub-002_ses-002_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "cf3f914dd026e64029f044c1c3c7287beffdfdce",
+      "size": 6520
+    },
+    {
+      "path": "sub-002/ses-002/func/sub-002_ses-002_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-002/ses-002/func/sub-002_ses-002_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "d4e07cea3ae2b0e0904b6ff92dddc21346fb53ba",
+      "size": 6520
+    },
+    {
+      "path": "sub-003/ses-001/func/sub-003_ses-001_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-003/ses-001/func/sub-003_ses-001_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "121834117d579cf323e445f0439f97bc3cb3c833",
+      "size": 6455
+    },
+    {
+      "path": "sub-003/ses-001/func/sub-003_ses-001_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-003/ses-001/func/sub-003_ses-001_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "76cc7180808b71eeab745d9b56e886756129fd86",
+      "size": 6457
+    },
+    {
+      "path": "sub-003/ses-002/func/sub-003_ses-002_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-003/ses-002/func/sub-003_ses-002_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "a279162dfd5008629b473497b6ee73442dd46a70",
+      "size": 6457
+    },
+    {
+      "path": "sub-003/ses-002/func/sub-003_ses-002_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-003/ses-002/func/sub-003_ses-002_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "ed951ae4cf151fbfb9288749f4bf72032f6d1114",
+      "size": 6474
+    },
+    {
+      "path": "sub-003/ses-002/func/sub-003_ses-002_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-003/ses-002/func/sub-003_ses-002_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "96968e6cbee49de1f0e1a1d0870dd63e08b48153",
+      "size": 6498
+    },
+    {
+      "path": "sub-004/ses-001/func/sub-004_ses-001_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-004/ses-001/func/sub-004_ses-001_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "4134208eb4fdf40eb78b71bc6f9995e434180c48",
+      "size": 6438
+    },
+    {
+      "path": "sub-004/ses-001/func/sub-004_ses-001_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-004/ses-001/func/sub-004_ses-001_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "04456c5b2c8735cadd49cf830f5830cc51ca0e39",
+      "size": 5926
+    },
+    {
+      "path": "sub-004/ses-001/func/sub-004_ses-001_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-004/ses-001/func/sub-004_ses-001_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "95312e680f7abbbed58f5f817ff0da52f0dc1aab",
+      "size": 6544
+    },
+    {
+      "path": "sub-004/ses-002/func/sub-004_ses-002_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-004/ses-002/func/sub-004_ses-002_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "beec6b344ffbb6abed7823927b93b68ee716a270",
+      "size": 6515
+    },
+    {
+      "path": "sub-004/ses-002/func/sub-004_ses-002_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-004/ses-002/func/sub-004_ses-002_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "66442dd2ffff5463f35e3d8539903cd463460ce6",
+      "size": 6453
+    },
+    {
+      "path": "sub-004/ses-002/func/sub-004_ses-002_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-004/ses-002/func/sub-004_ses-002_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "2047bd2b6d34363c6c472a77c42412f72317cd4c",
+      "size": 6501
+    },
+    {
+      "path": "sub-005/ses-001/func/sub-005_ses-001_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-005/ses-001/func/sub-005_ses-001_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "78e02f04fc6f2877d6fbac2bb295987aa07e2aa4",
+      "size": 6475
+    },
+    {
+      "path": "sub-005/ses-001/func/sub-005_ses-001_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-005/ses-001/func/sub-005_ses-001_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "45488b0094ed93fc7d1838b3882b3220a07ac074",
+      "size": 6457
+    },
+    {
+      "path": "sub-005/ses-001/func/sub-005_ses-001_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-005/ses-001/func/sub-005_ses-001_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "4fb1027d67f3a2b7ee0ec57e76fb925ee34ef72f",
+      "size": 6499
+    },
+    {
+      "path": "sub-006/ses-001/func/sub-006_ses-001_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-006/ses-001/func/sub-006_ses-001_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "4171a6a0f12d9697ddf1fd4804ebfe0ba6dc354a",
+      "size": 6447
+    },
+    {
+      "path": "sub-006/ses-001/func/sub-006_ses-001_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-006/ses-001/func/sub-006_ses-001_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "95d6ffc4429f8fb64adaa28f9059011bb084c90f",
+      "size": 6471
+    },
+    {
+      "path": "sub-006/ses-001/func/sub-006_ses-001_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-006/ses-001/func/sub-006_ses-001_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "bd74ec86ce1f54683e36c944855a353f068f7ad3",
+      "size": 6468
+    },
+    {
+      "path": "sub-006/ses-002/func/sub-006_ses-002_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-006/ses-002/func/sub-006_ses-002_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "fe2581d6b9322628726d57653ce7af7a87d75409",
+      "size": 6460
+    },
+    {
+      "path": "sub-006/ses-002/func/sub-006_ses-002_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-006/ses-002/func/sub-006_ses-002_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "e910ff1d0b8ac89752d61382a9bba546a15f5219",
+      "size": 6514
+    },
+    {
+      "path": "sub-006/ses-002/func/sub-006_ses-002_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-006/ses-002/func/sub-006_ses-002_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "041d6aa08b36a644f5926ee2258f2e15dd32580d",
+      "size": 6513
+    },
+    {
+      "path": "sub-007/ses-001/func/sub-007_ses-001_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-007/ses-001/func/sub-007_ses-001_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "07e6f39ca9446050695da3ec9bb8d444b5ca6865",
+      "size": 6470
+    },
+    {
+      "path": "sub-007/ses-001/func/sub-007_ses-001_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-007/ses-001/func/sub-007_ses-001_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "05e77da7f1c0f397c0dcbfa70678be971fbf37c6",
+      "size": 6439
+    },
+    {
+      "path": "sub-007/ses-001/func/sub-007_ses-001_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-007/ses-001/func/sub-007_ses-001_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "afb276bbdaecb47fa0c46e778832c87cf541f0a6",
+      "size": 6453
+    },
+    {
+      "path": "sub-007/ses-002/func/sub-007_ses-002_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-007/ses-002/func/sub-007_ses-002_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "c0ecc08f51ef215f1b9e246d065709f2b14ef178",
+      "size": 5662
+    },
+    {
+      "path": "sub-007/ses-002/func/sub-007_ses-002_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-007/ses-002/func/sub-007_ses-002_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "69287d3602376e6aa62481010b98e8a53822f68a",
+      "size": 5671
+    },
+    {
+      "path": "sub-007/ses-002/func/sub-007_ses-002_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-007/ses-002/func/sub-007_ses-002_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "9c06b5bfad1b4889905430e9eb9abec108cc760c",
+      "size": 5651
+    },
+    {
+      "path": "sub-008/ses-001/func/sub-008_ses-001_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-008/ses-001/func/sub-008_ses-001_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "18d98f7ef06399496bd3422a4d6335ac13757578",
+      "size": 5676
+    },
+    {
+      "path": "sub-008/ses-001/func/sub-008_ses-001_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-008/ses-001/func/sub-008_ses-001_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "d8a9c177d072dd2d4a1643127c5e9a6ba7386138",
+      "size": 5698
+    },
+    {
+      "path": "sub-008/ses-001/func/sub-008_ses-001_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-008/ses-001/func/sub-008_ses-001_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "2671dbdc0e772ae05f9c91c0485ea176616aab23",
+      "size": 5681
+    },
+    {
+      "path": "sub-008/ses-002/func/sub-008_ses-002_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-008/ses-002/func/sub-008_ses-002_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "88ba13ed413870b1a9abae5d8f32c9ce133ce7e1",
+      "size": 5498
+    },
+    {
+      "path": "sub-008/ses-002/func/sub-008_ses-002_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-008/ses-002/func/sub-008_ses-002_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "bb649e8454a6a0575423a6484a526aba393d68f7",
+      "size": 5734
+    },
+    {
+      "path": "sub-008/ses-002/func/sub-008_ses-002_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-008/ses-002/func/sub-008_ses-002_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "897eb47152217ff52e252c79418d0266861fbdd4",
+      "size": 5743
+    },
+    {
+      "path": "sub-009/ses-001/func/sub-009_ses-001_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-009/ses-001/func/sub-009_ses-001_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "95876304aed0ab80635f7dd2bbc882cbef2ba5a6",
+      "size": 5661
+    },
+    {
+      "path": "sub-009/ses-001/func/sub-009_ses-001_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-009/ses-001/func/sub-009_ses-001_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "f75ec1507c858341281efd554e36112aaa00672b",
+      "size": 5709
+    },
+    {
+      "path": "sub-009/ses-001/func/sub-009_ses-001_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-009/ses-001/func/sub-009_ses-001_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "a3dda66476f5535873d419b5ecd51464b695383b",
+      "size": 5736
+    },
+    {
+      "path": "sub-009/ses-002/func/sub-009_ses-002_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-009/ses-002/func/sub-009_ses-002_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "0e52b7ce17898b82efb0171989598205bd1224ce",
+      "size": 5751
+    },
+    {
+      "path": "sub-009/ses-002/func/sub-009_ses-002_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-009/ses-002/func/sub-009_ses-002_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "97fc60242a8c8898f0586732c8b68aa28ba2ffcb",
+      "size": 5735
+    },
+    {
+      "path": "sub-009/ses-002/func/sub-009_ses-002_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-009/ses-002/func/sub-009_ses-002_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "9db90852b32ecaea4ea685f5a49b478d744ec258",
+      "size": 5733
+    },
+    {
+      "path": "sub-010/ses-001/func/sub-010_ses-001_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-010/ses-001/func/sub-010_ses-001_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "cce4d098026f4136234556f1e939a49942b8bb04",
+      "size": 5716
+    },
+    {
+      "path": "sub-010/ses-001/func/sub-010_ses-001_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-010/ses-001/func/sub-010_ses-001_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "76d49ea8befdf6867770f89531b67fd3abe240a8",
+      "size": 5686
+    },
+    {
+      "path": "sub-010/ses-001/func/sub-010_ses-001_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-010/ses-001/func/sub-010_ses-001_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "a9a83f9262615eb78f49436f6069497fe49d5455",
+      "size": 5731
+    },
+    {
+      "path": "sub-010/ses-002/func/sub-010_ses-002_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-010/ses-002/func/sub-010_ses-002_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "82d50f9405d929bf92f36499119c18bf31a5c584",
+      "size": 5734
+    },
+    {
+      "path": "sub-010/ses-002/func/sub-010_ses-002_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-010/ses-002/func/sub-010_ses-002_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "4013b7bfd617e121597a1bdc9167d544e67f589d",
+      "size": 5717
+    },
+    {
+      "path": "sub-010/ses-002/func/sub-010_ses-002_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-010/ses-002/func/sub-010_ses-002_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "b66f16e77e7983b8bf7ff9930163b77ba53f10af",
+      "size": 5741
+    },
+    {
+      "path": "sub-011/ses-001/func/sub-011_ses-001_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-011/ses-001/func/sub-011_ses-001_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "b170d43f14aa929b2263c9a3b48cf68c9e66fdf9",
+      "size": 5503
+    },
+    {
+      "path": "sub-011/ses-001/func/sub-011_ses-001_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-011/ses-001/func/sub-011_ses-001_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "fb08f46d96898155650e0314e05af056f3317869",
+      "size": 5520
+    },
+    {
+      "path": "sub-011/ses-001/func/sub-011_ses-001_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-011/ses-001/func/sub-011_ses-001_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "60e93374973396ce138cc97e51ad898dd40b58d2",
+      "size": 5488
+    },
+    {
+      "path": "sub-011/ses-002/func/sub-011_ses-002_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-011/ses-002/func/sub-011_ses-002_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "c4f5506a68c373bcf2c8aff285e64449e179ce61",
+      "size": 5654
+    },
+    {
+      "path": "sub-011/ses-002/func/sub-011_ses-002_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-011/ses-002/func/sub-011_ses-002_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "cde87fc20546b4ced4e82e51dfd5d6af02cdbe34",
+      "size": 5666
+    },
+    {
+      "path": "sub-011/ses-002/func/sub-011_ses-002_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-011/ses-002/func/sub-011_ses-002_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "806897de0a2227d3385a103fc7c7b6793054d68d",
+      "size": 5646
+    },
+    {
+      "path": "sub-012/ses-001/func/sub-012_ses-001_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-012/ses-001/func/sub-012_ses-001_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "3c135bacde00c531b9be03c3389572aff26fb725",
+      "size": 5660
+    },
+    {
+      "path": "sub-012/ses-001/func/sub-012_ses-001_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-012/ses-001/func/sub-012_ses-001_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "31b9f0ffcb9e152f20426e379c219b9e09627bbf",
+      "size": 5659
+    },
+    {
+      "path": "sub-012/ses-001/func/sub-012_ses-001_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-012/ses-001/func/sub-012_ses-001_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "442279e2ea2486420946cc09de1c61f1fea8701d",
+      "size": 5667
+    },
+    {
+      "path": "sub-012/ses-002/func/sub-012_ses-002_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-012/ses-002/func/sub-012_ses-002_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "33a6bdca7fa78364abd1d54c6b8abcbba8fa7496",
+      "size": 6461
+    },
+    {
+      "path": "sub-012/ses-002/func/sub-012_ses-002_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-012/ses-002/func/sub-012_ses-002_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "906b08ffc0a3233e5c12db6339cf2d5f34aad0f7",
+      "size": 6446
+    },
+    {
+      "path": "sub-012/ses-002/func/sub-012_ses-002_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-012/ses-002/func/sub-012_ses-002_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "1adf44f32107fc5ae39554555eca60d31b56fd84",
+      "size": 6485
+    },
+    {
+      "path": "sub-013/ses-001/func/sub-013_ses-001_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-013/ses-001/func/sub-013_ses-001_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "054cfbc0d0f1f4453e859a54f0dde465d6077b5a",
+      "size": 5669
+    },
+    {
+      "path": "sub-013/ses-001/func/sub-013_ses-001_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-013/ses-001/func/sub-013_ses-001_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "0e978b4075d35e208c787b7878cf15c242b7fe42",
+      "size": 5603
+    },
+    {
+      "path": "sub-013/ses-001/func/sub-013_ses-001_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-013/ses-001/func/sub-013_ses-001_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "2a1c4a1db26a6831457c87bdcba20755492eb681",
+      "size": 5622
+    },
+    {
+      "path": "sub-013/ses-002/func/sub-013_ses-002_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-013/ses-002/func/sub-013_ses-002_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "a3515479bfb9fd47187b1facf95166397ea1bedc",
+      "size": 6448
+    },
+    {
+      "path": "sub-013/ses-002/func/sub-013_ses-002_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-013/ses-002/func/sub-013_ses-002_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "a33f37459305a706981910fa256b9eb1cd27ef3e",
+      "size": 6500
+    },
+    {
+      "path": "sub-013/ses-002/func/sub-013_ses-002_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-013/ses-002/func/sub-013_ses-002_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "b96fc11eb319933ebc6597157643d603802be50f",
+      "size": 6570
+    },
+    {
+      "path": "sub-014/ses-001/func/sub-014_ses-001_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-014/ses-001/func/sub-014_ses-001_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "fe70b102d082a45ffae8186b786d25855239bad9",
+      "size": 6450
+    },
+    {
+      "path": "sub-014/ses-001/func/sub-014_ses-001_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-014/ses-001/func/sub-014_ses-001_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "c69398c738d12cbf034743d4a5eba2a69d9287b7",
+      "size": 6524
+    },
+    {
+      "path": "sub-014/ses-001/func/sub-014_ses-001_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-014/ses-001/func/sub-014_ses-001_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "fba01bd012b348596c59ad8efca48338f3f7edd4",
+      "size": 6494
+    },
+    {
+      "path": "sub-014/ses-002/func/sub-014_ses-002_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-014/ses-002/func/sub-014_ses-002_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "4418dbe7674f00d572ee388ae0b40ce9eafa1dd8",
+      "size": 6537
+    },
+    {
+      "path": "sub-014/ses-002/func/sub-014_ses-002_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-014/ses-002/func/sub-014_ses-002_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "fa629893d02eb51f52371b3ec55d2bbcedf579ff",
+      "size": 6519
+    },
+    {
+      "path": "sub-014/ses-002/func/sub-014_ses-002_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-014/ses-002/func/sub-014_ses-002_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "587bddf6d98ddd47606819917af283d6e53b6404",
+      "size": 6511
+    },
+    {
+      "path": "sub-015/ses-001/func/sub-015_ses-001_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-015/ses-001/func/sub-015_ses-001_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "47c4ccfbfa1fb3dfee1dd9951a59490832cb601d",
+      "size": 6447
+    },
+    {
+      "path": "sub-015/ses-001/func/sub-015_ses-001_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-015/ses-001/func/sub-015_ses-001_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "ea9019f52da005ec7bfe8b54f8f85af3ae461fd6",
+      "size": 6415
+    },
+    {
+      "path": "sub-015/ses-001/func/sub-015_ses-001_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-015/ses-001/func/sub-015_ses-001_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "a518d82e83d25c3f6126d1d4ea7e4f756967ef2a",
+      "size": 6452
+    },
+    {
+      "path": "sub-015/ses-002/func/sub-015_ses-002_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-015/ses-002/func/sub-015_ses-002_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "03fd42eedfb02eb2d8589cbd594ec4f74814abb5",
+      "size": 6448
+    },
+    {
+      "path": "sub-015/ses-002/func/sub-015_ses-002_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-015/ses-002/func/sub-015_ses-002_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "308815600258f15a53c62176508269e7197addcf",
+      "size": 6480
+    },
+    {
+      "path": "sub-015/ses-002/func/sub-015_ses-002_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-015/ses-002/func/sub-015_ses-002_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "ba6de25761c38d3a0469749abdaf457149b66361",
+      "size": 6348
+    },
+    {
+      "path": "sub-016/ses-001/func/sub-016_ses-001_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-016/ses-001/func/sub-016_ses-001_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "e6c032d3f339b0066d3bcfde75d81fe6987eb546",
+      "size": 6269
+    },
+    {
+      "path": "sub-016/ses-001/func/sub-016_ses-001_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-016/ses-001/func/sub-016_ses-001_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "e81ec3210d59baf394e9ae699cd2ed9b3219202c",
+      "size": 6465
+    },
+    {
+      "path": "sub-016/ses-001/func/sub-016_ses-001_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-016/ses-001/func/sub-016_ses-001_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "84630ee23a207e910116b49bf0aff5c4a0d9479b",
+      "size": 6468
+    },
+    {
+      "path": "sub-016/ses-002/func/sub-016_ses-002_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-016/ses-002/func/sub-016_ses-002_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "60be4ad613ac5fbb1d74dab6292bc0c3328b7137",
+      "size": 6448
+    },
+    {
+      "path": "sub-016/ses-002/func/sub-016_ses-002_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-016/ses-002/func/sub-016_ses-002_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "f95bbf6519450c529044e512d379851ad7f4697a",
+      "size": 6449
+    },
+    {
+      "path": "sub-016/ses-002/func/sub-016_ses-002_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-016/ses-002/func/sub-016_ses-002_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "be367d860472cb04ba7d7a6d62ff4417db131378",
+      "size": 6112
+    },
+    {
+      "path": "sub-017/ses-001/func/sub-017_ses-001_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-017/ses-001/func/sub-017_ses-001_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "6ee13bcce7291333803dc034de327afd73372cf1",
+      "size": 6001
+    },
+    {
+      "path": "sub-017/ses-001/func/sub-017_ses-001_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-017/ses-001/func/sub-017_ses-001_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "5c5a2c124ec98a36cebc7333cf2c5f344489605e",
+      "size": 6481
+    },
+    {
+      "path": "sub-017/ses-001/func/sub-017_ses-001_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-017/ses-001/func/sub-017_ses-001_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "b389aaf04bf8a729f1bcc90ec5bd4bf4810058f9",
+      "size": 6354
+    },
+    {
+      "path": "sub-017/ses-002/func/sub-017_ses-002_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-017/ses-002/func/sub-017_ses-002_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "a3c844dae69dd76239a3359be8c4c748697c5e54",
+      "size": 6346
+    },
+    {
+      "path": "sub-017/ses-002/func/sub-017_ses-002_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-017/ses-002/func/sub-017_ses-002_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "a6604e464f29b1bcd529197a87869d9e8a3162e1",
+      "size": 6480
+    },
+    {
+      "path": "sub-017/ses-002/func/sub-017_ses-002_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-017/ses-002/func/sub-017_ses-002_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "5a3c8f95efedd9b7ff768d33941cf16c47dfc8c8",
+      "size": 6482
+    },
+    {
+      "path": "sub-018/ses-001/func/sub-018_ses-001_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-018/ses-001/func/sub-018_ses-001_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "a38de0aa62f87ebcb00d8e5e6d1350e4e04851ff",
+      "size": 6420
+    },
+    {
+      "path": "sub-018/ses-001/func/sub-018_ses-001_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-018/ses-001/func/sub-018_ses-001_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "fd15a7eb98852886683da696f4207e861c589ee0",
+      "size": 6463
+    },
+    {
+      "path": "sub-018/ses-001/func/sub-018_ses-001_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-018/ses-001/func/sub-018_ses-001_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "9f5f9b05e978a3144457310f8e4a361c085294a6",
+      "size": 6360
+    },
+    {
+      "path": "sub-018/ses-002/func/sub-018_ses-002_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-018/ses-002/func/sub-018_ses-002_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "52a9d2d51739a98a8ad1e4a080ced9859d029cc0",
+      "size": 6486
+    },
+    {
+      "path": "sub-018/ses-002/func/sub-018_ses-002_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-018/ses-002/func/sub-018_ses-002_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "d32c25359f36cf9316428ec1ad58cabf23247f60",
+      "size": 6483
+    },
+    {
+      "path": "sub-018/ses-002/func/sub-018_ses-002_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-018/ses-002/func/sub-018_ses-002_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "b373cfa18fafd8c531e38ab624b97de754c06efe",
+      "size": 6458
+    },
+    {
+      "path": "sub-019/ses-001/func/sub-019_ses-001_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-019/ses-001/func/sub-019_ses-001_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "3def86510944060a68d2a2464dbf60221724cf45",
+      "size": 6464
+    },
+    {
+      "path": "sub-019/ses-001/func/sub-019_ses-001_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-019/ses-001/func/sub-019_ses-001_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "13abcfea18d963b66938496f3f7ae3abf247e5f1",
+      "size": 6461
+    },
+    {
+      "path": "sub-019/ses-001/func/sub-019_ses-001_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-019/ses-001/func/sub-019_ses-001_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "c245eddf8c8b3b5de8b6b6068929f4545abff4df",
+      "size": 6461
+    },
+    {
+      "path": "sub-019/ses-002/func/sub-019_ses-002_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-019/ses-002/func/sub-019_ses-002_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "8d718be841980bc7579bf4eb0d7b0e78e29a7af2",
+      "size": 6472
+    },
+    {
+      "path": "sub-019/ses-002/func/sub-019_ses-002_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-019/ses-002/func/sub-019_ses-002_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "9b30a4dfc4f6a9c3114d2152b928588d0fc5a25b",
+      "size": 6459
+    },
+    {
+      "path": "sub-019/ses-002/func/sub-019_ses-002_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-019/ses-002/func/sub-019_ses-002_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "1daf2e6818204ed02175831ac38945e7d66517ab",
+      "size": 6466
+    },
+    {
+      "path": "sub-020/ses-001/func/sub-020_ses-001_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-020/ses-001/func/sub-020_ses-001_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "1f4571d4488b37e5c0ebeb6adc7d579c1977e62d",
+      "size": 6395
+    },
+    {
+      "path": "sub-020/ses-001/func/sub-020_ses-001_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-020/ses-001/func/sub-020_ses-001_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "61e13931d2335e9beeefeae9f399fff491769336",
+      "size": 6236
+    },
+    {
+      "path": "sub-020/ses-001/func/sub-020_ses-001_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-020/ses-001/func/sub-020_ses-001_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "f2402971a5535e4199e25ae23b7fd6258296e22c",
+      "size": 6281
+    },
+    {
+      "path": "sub-020/ses-002/func/sub-020_ses-002_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-020/ses-002/func/sub-020_ses-002_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "2f666106e638ae500d4832d41e0d1af8f479353f",
+      "size": 6508
+    },
+    {
+      "path": "sub-020/ses-002/func/sub-020_ses-002_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-020/ses-002/func/sub-020_ses-002_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "0e7df4b230f16517dc28bcd36b052a2e7f63ef81",
+      "size": 6576
+    },
+    {
+      "path": "sub-020/ses-002/func/sub-020_ses-002_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-020/ses-002/func/sub-020_ses-002_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "97da8764afd5080ab04cd3e2844f5cee33b7d992",
+      "size": 6582
+    },
+    {
+      "path": "sub-021/ses-001/func/sub-021_ses-001_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-021/ses-001/func/sub-021_ses-001_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "d85c9ab2d8114cb4ed2da4d4e8a643c50658e47c",
+      "size": 6449
+    },
+    {
+      "path": "sub-021/ses-001/func/sub-021_ses-001_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-021/ses-001/func/sub-021_ses-001_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "3bab21f1a749124c25b3250043d1a3f73f244ab7",
+      "size": 6500
+    },
+    {
+      "path": "sub-021/ses-001/func/sub-021_ses-001_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-021/ses-001/func/sub-021_ses-001_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "e33b61d58b4facd10bc1335b8b5673b1fc654b6b",
+      "size": 6498
+    },
+    {
+      "path": "sub-021/ses-002/func/sub-021_ses-002_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-021/ses-002/func/sub-021_ses-002_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "f94cce55981bb039826cfaae1e30f63768105ec9",
+      "size": 6479
+    },
+    {
+      "path": "sub-021/ses-002/func/sub-021_ses-002_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-021/ses-002/func/sub-021_ses-002_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "2a15ba58fee063e54b46c2b2fb2501e075ba33cf",
+      "size": 6530
+    },
+    {
+      "path": "sub-021/ses-002/func/sub-021_ses-002_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-021/ses-002/func/sub-021_ses-002_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "d601c9027bcf3fdc6d885ffb65dccedd005df239",
+      "size": 6532
+    },
+    {
+      "path": "sub-023/ses-001/func/sub-023_ses-001_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-023/ses-001/func/sub-023_ses-001_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "9a2538e760026311e4afaae7343553f8c0354d0b",
+      "size": 6354
+    },
+    {
+      "path": "sub-023/ses-001/func/sub-023_ses-001_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-023/ses-001/func/sub-023_ses-001_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "76358308a13815f628e526b7e25f5b7beab8795d",
+      "size": 6461
+    },
+    {
+      "path": "sub-023/ses-001/func/sub-023_ses-001_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-023/ses-001/func/sub-023_ses-001_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "bea9172b94d9e8d8f0222c6b2ad44a7a150d25f8",
+      "size": 6485
+    },
+    {
+      "path": "sub-023/ses-002/func/sub-023_ses-002_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-023/ses-002/func/sub-023_ses-002_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "e8bb5932ea9e8e591f1e8c450caac3d0f552edaa",
+      "size": 6412
+    },
+    {
+      "path": "sub-023/ses-002/func/sub-023_ses-002_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-023/ses-002/func/sub-023_ses-002_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "d4e5474f13a9b7aaa0ba571b7276f56359f1d68d",
+      "size": 6491
+    },
+    {
+      "path": "sub-023/ses-002/func/sub-023_ses-002_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-023/ses-002/func/sub-023_ses-002_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "e6e8e513e3e7337e4bd6f8de4d49011b2adcba75",
+      "size": 6498
+    },
+    {
+      "path": "sub-024/ses-001/func/sub-024_ses-001_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-024/ses-001/func/sub-024_ses-001_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "26d761d425b3ac3a8ca7eb6304974a9908a6e319",
+      "size": 6488
+    },
+    {
+      "path": "sub-024/ses-001/func/sub-024_ses-001_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-024/ses-001/func/sub-024_ses-001_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "61836234a196001548c213e3ae2f8270df3bcf9a",
+      "size": 6452
+    },
+    {
+      "path": "sub-024/ses-001/func/sub-024_ses-001_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-024/ses-001/func/sub-024_ses-001_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "c291399b7b5c20803ce8368a2073d01728b28ae4",
+      "size": 6499
+    },
+    {
+      "path": "sub-024/ses-002/func/sub-024_ses-002_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-024/ses-002/func/sub-024_ses-002_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "5f10988b3c1cae89b0fc4d7b71196a3081ffde59",
+      "size": 6480
+    },
+    {
+      "path": "sub-024/ses-002/func/sub-024_ses-002_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-024/ses-002/func/sub-024_ses-002_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "f5d93ec49adc8f387cdd7af28361bdf3c412f09e",
+      "size": 6475
+    },
+    {
+      "path": "sub-024/ses-002/func/sub-024_ses-002_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-024/ses-002/func/sub-024_ses-002_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "be45eb99739093758ab21f73f8fce399104d2c4c",
+      "size": 6469
+    },
+    {
+      "path": "sub-025/ses-001/func/sub-025_ses-001_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-025/ses-001/func/sub-025_ses-001_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "b9666e46392edd69d3630899d76bc8120cb26334",
+      "size": 6407
+    },
+    {
+      "path": "sub-025/ses-001/func/sub-025_ses-001_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-025/ses-001/func/sub-025_ses-001_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "891961b6ab15c110822fe55b764be904df587031",
+      "size": 6434
+    },
+    {
+      "path": "sub-025/ses-001/func/sub-025_ses-001_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-025/ses-001/func/sub-025_ses-001_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "2dab03d4c6a25689505fb281e95b8a93c3eea750",
+      "size": 6537
+    },
+    {
+      "path": "sub-025/ses-002/func/sub-025_ses-002_task-ExperienceSampling_run-001_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-025/ses-002/func/sub-025_ses-002_task-ExperienceSampling_run-001_events.tsv",
+      "sha": "e4e4fc14efdfdb3363dbd111a37f287093e4d761",
+      "size": 6553
+    },
+    {
+      "path": "sub-025/ses-002/func/sub-025_ses-002_task-ExperienceSampling_run-002_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-025/ses-002/func/sub-025_ses-002_task-ExperienceSampling_run-002_events.tsv",
+      "sha": "c93e0c2c38be4726ce06832198242e28f7308bbd",
+      "size": 6521
+    },
+    {
+      "path": "sub-025/ses-002/func/sub-025_ses-002_task-ExperienceSampling_run-003_events.json",
+      "sha": "b82b0b19dc0fc561c164dcbc9097e5d8b9242483",
+      "size": 5114
+    },
+    {
+      "path": "sub-025/ses-002/func/sub-025_ses-002_task-ExperienceSampling_run-003_events.tsv",
+      "sha": "81160150c7b23ce7c80d4605c8ba7142bdf6bd58",
+      "size": 6537
+    }
+  ]
+}

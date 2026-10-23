@@ -1,0 +1,65 @@
+from pathlib import Path
+import json,html,re
+import numpy as np
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+from corpus_field import Field,Parameters
+ROOT=Path(__file__).resolve().parent;R=ROOT/'results';F=ROOT/'figures';F.mkdir(exist_ok=True)
+e=json.loads((R/'equation_results.json').read_text());d=json.loads((R/'data_audit.json').read_text());v=json.loads((R/'verification.json').read_text());z=np.load(R/'states.npz')
+f=Field(Parameters());a=f.real(z['sharp_history'][2]);b=f.real(z['sharp_reversed'][2])
+fig,axes=plt.subplots(1,3,figsize=(11.5,3.5),layout='constrained');lim=max(abs(a).max(),abs(b).max())
+for ax,field,title in zip(axes,[a,b,a-b],['Earlier +1 then −1','Earlier −1 then +1','Difference after both end at A = 0']):
+    m=lim if ax is not axes[2] else abs(a-b).max()
+    im=ax.imshow(field.T,extent=[0,1,0,1],origin='lower',vmin=-m,vmax=m,cmap='RdBu_r');ax.set(title=title,xlabel='Model coordinate x',ylabel='Model coordinate y');fig.colorbar(im,ax=ax,shrink=.8,label='Signed S')
+fig.suptitle('The full field retains effects of input order\nSynthetic equation test, not measured thought or memory maps',fontsize=12)
+fig.savefig(F/'history.png',dpi=170);plt.close(fig)
+fig,axes=plt.subplots(1,2,figsize=(10,3.7),layout='constrained')
+for x in e['runs']:axes[0].plot([24,48],[x['grid24_48']['state_rms'],x['grid48_72']['state_rms']],marker='o',label=x['law'])
+axes[0].set(yscale='log',xticks=[24,48],xticklabels=['24 → 48','48 → 72'],ylabel='Full-state RMS difference',title='Successive grid differences decrease');axes[0].legend(fontsize=9)
+names=[x['law'] for x in e['runs']];axes[1].bar(names,[x['perturbation_comparison']['S_rms'] for x in e['runs']],color='#29878c')
+axes[1].axhline(.0004,color='#a54028',ls='--',label='Initial S difference');axes[1].set(ylabel='RMS difference in S',title='A ±1% initial change in this trial');axes[1].legend(fontsize=9)
+fig.savefig(F/'checks.png',dpi=170);plt.close(fig)
+
+md=[];ht=[]
+def inline(t):
+    t=html.escape(str(t));t=re.sub(r'\[([^]]+)\]\(([^)]+)\)',r'<a href="\2">\1</a>',t);return re.sub(r'\*\*([^*]+)\*\*',r'<strong>\1</strong>',t)
+def h(t,n=2):md.append('#'*n+' '+t);ht.append(f'<h{n}>{inline(t)}</h{n}>')
+def p(t):md.append(t);ht.append('<p>'+inline(t)+'</p>')
+def table(headers,rows):
+    md.append('\n'.join(['| '+' | '.join(headers)+' |','| '+' | '.join(['---']*len(headers))+' |']+['| '+' | '.join(map(str,r))+' |' for r in rows]))
+    ht.append('<div class="scroll"><table><tr>'+''.join('<th>'+inline(x)+'</th>' for x in headers)+'</tr>'+''.join('<tr>'+''.join('<td>'+inline(x)+'</td>' for x in r)+'</tr>' for r in rows)+'</table></div>')
+def image(n,c):md.append(f'![{c}](figures/{n}.png)');ht.append(f'<figure><img src="figures/{n}.png" alt="{html.escape(c)}"><figcaption>{inline(c)}</figcaption></figure>')
+def code(t):md.append('```text\n'+t+'\n```');ht.append('<pre>'+html.escape(t)+'</pre>')
+h('History and form tests for the two in one',1)
+p('Streams and Rocks · 23 October 2026')
+p('**The full empirical two-in-one model is not finished or validated.** This study adds a runner that keeps each person’s state and input history separate, 36 coupled equation trials, and a new audit of 840 real thought probes from 24 people. The trials expose both retained history and missing role distinctions. No simpler predictor or movement-only score is presented as the requested full-model test.')
+p('Smoke is inward putting-forward and Clay is inward receiving within one person. Wind, Fog, Mist and Water are forms of the moving idea. Water is perceived balance. The author now gives D₂O a distinct role: a small compositional change can have a large consequence, potentially changing something life-saving into something life-threatening. Testing that claim requires specified changes and observed consequences; the mathematical threshold is not automatically a harm boundary.')
+table(['Completed','Result','Meaning'],[['Exact corpus dynamics','36 synthetic coupled trials and one analytic check','No change to the audited solver'],['Person-specific runner','State, input order, role attribution and event references preserved','Missing initial state or utility and cross-person/gap-filled histories are rejected'],['New real records',f"{d['participants']} people; {d['sessions']} sessions; {d['runs']} runs; {d['probes']} probes; {d['item_rows']:,} item rows",'Measurement coverage, not 10,920 independent people'],['Verification',f"14 unit tests; {v['count']} saved checks",'Numerical and source-accounting checks'],['Full empirical fit','Not performed','Required observation functions and joint measurements are absent']])
+h('What the exact equations say about history')
+p('Reversing two earlier input intervals leaves both final accumulators at A≈0 and the current input at zero. Nevertheless, the full fields differ. Under the declared periodic boundaries, final mean S is +0.012 for the +1 then −1 history, and −0.012 for the reverse. The sharp-law S difference is RMS 0.039880 and the velocity-component difference RMS 0.003339. History therefore can matter beyond the present accumulator. These units and histories are synthetic, not psychological measurements.')
+image('history','Different prior input orders produce different fields even when the current input and final accumulator agree.')
+p('Changing only the Smoke/Clay attribution of an otherwise identical input sequence produces exactly the same computed state in all three response laws. This is expected because those labels do not enter the supplied equations. The runner preserves that provenance, but does not invent a force or a separate history equation from it. This identifies a missing coupling or observation rule; it does not establish that the inward functions are equivalent in people.')
+h('Why a freely fitted interpretation would be ambiguous')
+p('Doubling S, its initial amplitude, the threshold, the smoothing parameter and κ, while halving σ, leaves the complete velocity and pressure fields unchanged and doubles S. All three response laws obey this scaling, and all paired numerical differences after undoing the S rescaling are exactly zero. A measured movement signal alone therefore cannot choose the scale of the context field and these parameters. A calibrated observation of S, a fixed scale, or another justified constraint is needed.')
+p('Changing unknown observation-start A from −0.1 to +0.1, conditional on the same starting field, changes the later S field by RMS 0.022713 in the sharp-law trial. Those are sensitivity conditions, not recovered biographies. The runner accepts explicitly supplied nonzero observation-start A while preserving the original integral’s origin. It never interprets unobserved history as zero.')
+h('Small changes and the D2O question')
+p('The initial S amplitude was varied by ±1%, giving an initial pairwise S RMS difference of 0.000400. The final difference is about 0.000247 for each response law: this particular perturbation contracts in S. A large consequence is therefore not demonstrated by this trial. Other settings may behave differently. The tests contain no measured benefit/harm outcomes and no chemistry or toxicity calculation.')
+image('checks','Numerical refinement and a specified small-change test of the full equations. Neither chart establishes a human consequence.')
+table(['Law','Grid 24 versus 48','Grid 48 versus 72','Half-step difference'],[[x['law'],f"{x['grid24_48']['state_rms']:.3g}",f"{x['grid48_72']['state_rms']:.3g}",f"{x['time_refinement']['state_rms']:.3g}"] for x in e['runs']])
+p(f"Maximum mass-accounting error is {max(x['max_mass_error'] for x in e['runs']):.3g}; divergence RMS {max(x['max_divergence'] for x in e['runs']):.3g}; Taylor–Green analytic velocity error {e['analytic_taylor_green_max_error']:.3g}. Finite checks do not prove a general Navier–Stokes theorem.")
+h('What the real records can establish')
+p('The [NEMAR experience-sampling source](https://doi.org/10.82901/nemar.on007216) provides repeated reports of thought movement, verbalness, visualness, affect, arousal, attention, intentionality, disengagement, temporal focus, self/other focus and confidence. All 280 selected files passed their upstream hashes. The audit found the expected 13 item rows in each of 840 probes. The 19 nonnumeric/nonfinite development responses are retained as missing, including a fully blank probe; no values are imputed.')
+p('Eight participants remain reserved from response analysis and model selection. Their file structure, item presence and timestamps were audited, but their response values were not summarized or fitted. This is a source suitability assessment. There is no held-out prediction claim. Sequential question timings are not continuous measurements of thought.')
+table(['Required construct','Closest source item','Why it does not establish the construct'],[['Inward speaking and receiving','Verbalness','Does not distinguish putting-forward from what was understood or refused'],['Meaning and idea content','No content transcript','A rating does not identify the idea’s claim or implications'],['Personal and role-specific memory history','Earlier reports and past-focus ratings','No event contents or separate role references; unrecorded gaps remain unknown'],['Water / perceived balance','Affect and arousal','Pleasantness or activation is not perceived balance'],['Fog / memory clarity','Confidence in answering the probe','Does not directly measure a recalled memory’s vividness or accuracy'],['Wind / experienced time','Past and future orientation','Temporal focus is not felt distance or distortion'],['Mist / unspoken agreement','No direct item','Silence, calm and endorsement cannot be interchanged'],['D2O / small change with large consequence','No paired compositional change/outcome','Cannot infer help or harm from the movement scale'],['U and continuum states','No calibrated utility or spatial field observation','Renaming a rating would add an unsupported measurement assumption']])
+h('What is needed to finish the requested application')
+p('The remaining work is substantive: define and calibrate observations linking the inward functions, meaning, history and forms to the existing fields, and obtain records that can distinguish those links. The [measurement record](MEASUREMENT_RECORD.md) specifies what must be observed. The [current form definitions](form_definitions.json) retain the author’s meanings. The [readiness finding](READINESS.md) explains why a movement-only fit would be another incomplete substitute.')
+p('The same mathematical core may support several observable outputs without a separate dynamical equation for every form. However, those output functions are not supplied by the corpus and cannot be established by a column name. Any new coupling or measurement rule must be identified as an addition and tested. The W consistency condition, exact-margin utility optimization and reciprocal scalar rescaling remain separate corpus relations; they have not been silently renamed as inward role dynamics.')
+h('Reproduce and inspect')
+code('python -m pip install -r requirements.txt\npython fetch_data.py\npython audit_records.py\npython run_exact_tests.py\npython -m unittest discover -p "test_*.py" -v\npython verify_saved.py\npython build_report.py')
+p('Run inside this study directory. Downloads are limited to public behavioral records and dictionaries; raw files stay outside the publication directory. The [frozen protocol](PROTOCOL.md), [numerical plan](NUMERICAL_PLAN.md), [source manifest](source_manifest.json), [source review](SOURCES.md), [data audit](results/data_audit.json), [equation results](results/equation_results.json) and [verification](results/verification.json) distinguish planned, computed and unmeasured quantities.')
+p('[Current two-in-one model](../community-two-in-one/MODEL.md) · [Inverse translation](../community-two-in-one-field/INVERSE_TRANSLATION.md) · [Streams and Rocks community model](../community-power/README.md)')
+(ROOT/'README.md').write_text('\n\n'.join(md)+'\n',encoding='utf-8')
+css='body{margin:0;background:#f3f5f4;color:#18332e;font:17px/1.65 system-ui,sans-serif}main{max-width:1100px;margin:30px auto;background:white;padding:36px 44px}h1{font-size:2rem;line-height:1.2}h2{margin-top:2.2rem}a{color:#096b79}pre{white-space:pre-wrap;background:#edf4f2;padding:22px;font-size:.85rem}table{width:100%;border-collapse:collapse;font-size:.9rem}th,td{text-align:left;vertical-align:top;padding:12px;border-bottom:1px solid #d8e5df}th{background:#eaf4ef}.scroll{overflow:auto}figure{margin:26px 0}img{width:100%;height:auto}figcaption{color:#49645d;font-size:.88rem}@media(max-width:700px){main{padding:20px;margin:0}body{font-size:16px}}'
+(ROOT/'report.html').write_text('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>History and form tests for the two in one</title><style>'+css+'</style></head><body><main>'+''.join(ht)+'</main></body></html>',encoding='utf-8')
+print('Built report and figures.')

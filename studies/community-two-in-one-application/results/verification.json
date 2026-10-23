@@ -1,0 +1,394 @@
+{
+  "passed": true,
+  "count": 89,
+  "checks": [
+    {
+      "check": "corpus_field.py preserved",
+      "passed": true
+    },
+    {
+      "check": "PROTOCOL.md preserved",
+      "passed": true
+    },
+    {
+      "check": "NUMERICAL_PLAN.md preserved",
+      "passed": true
+    },
+    {
+      "check": "36 complete coupled synthetic runs",
+      "passed": true
+    },
+    {
+      "check": "Taylor Green analytic solution",
+      "passed": true
+    },
+    {
+      "check": "sharp history retained",
+      "passed": true
+    },
+    {
+      "check": "sharp exact history mass",
+      "passed": true
+    },
+    {
+      "check": "sharp same final accumulator",
+      "passed": true
+    },
+    {
+      "check": "sharp missing role dynamics identified",
+      "passed": true
+    },
+    {
+      "check": "sharp full state scaling",
+      "passed": true
+    },
+    {
+      "check": "sharp plus1pct finite",
+      "passed": true
+    },
+    {
+      "check": "sharp minus1pct finite",
+      "passed": true
+    },
+    {
+      "check": "sharp prior_plus finite",
+      "passed": true
+    },
+    {
+      "check": "sharp prior_minus finite",
+      "passed": true
+    },
+    {
+      "check": "sharp grid48 finite",
+      "passed": true
+    },
+    {
+      "check": "sharp grid72 finite",
+      "passed": true
+    },
+    {
+      "check": "sharp halfdt finite",
+      "passed": true
+    },
+    {
+      "check": "sharp history finite",
+      "passed": true
+    },
+    {
+      "check": "sharp reversed finite",
+      "passed": true
+    },
+    {
+      "check": "sharp rescaled finite",
+      "passed": true
+    },
+    {
+      "check": "sharp archived grid24_48",
+      "passed": true
+    },
+    {
+      "check": "sharp archived grid48_72",
+      "passed": true
+    },
+    {
+      "check": "sharp archived time_refinement",
+      "passed": true
+    },
+    {
+      "check": "sharp archived perturbation_comparison",
+      "passed": true
+    },
+    {
+      "check": "sharp archived unknown_prior_comparison",
+      "passed": true
+    },
+    {
+      "check": "sharp grid refinement",
+      "passed": true
+    },
+    {
+      "check": "sharp small time error",
+      "passed": true
+    },
+    {
+      "check": "sharp mass conservation accounting",
+      "passed": true
+    },
+    {
+      "check": "sharp incompressibility",
+      "passed": true
+    },
+    {
+      "check": "sharp energy identity",
+      "passed": true
+    },
+    {
+      "check": "tanh history retained",
+      "passed": true
+    },
+    {
+      "check": "tanh exact history mass",
+      "passed": true
+    },
+    {
+      "check": "tanh same final accumulator",
+      "passed": true
+    },
+    {
+      "check": "tanh missing role dynamics identified",
+      "passed": true
+    },
+    {
+      "check": "tanh full state scaling",
+      "passed": true
+    },
+    {
+      "check": "tanh plus1pct finite",
+      "passed": true
+    },
+    {
+      "check": "tanh minus1pct finite",
+      "passed": true
+    },
+    {
+      "check": "tanh prior_plus finite",
+      "passed": true
+    },
+    {
+      "check": "tanh prior_minus finite",
+      "passed": true
+    },
+    {
+      "check": "tanh grid48 finite",
+      "passed": true
+    },
+    {
+      "check": "tanh grid72 finite",
+      "passed": true
+    },
+    {
+      "check": "tanh halfdt finite",
+      "passed": true
+    },
+    {
+      "check": "tanh history finite",
+      "passed": true
+    },
+    {
+      "check": "tanh reversed finite",
+      "passed": true
+    },
+    {
+      "check": "tanh rescaled finite",
+      "passed": true
+    },
+    {
+      "check": "tanh archived grid24_48",
+      "passed": true
+    },
+    {
+      "check": "tanh archived grid48_72",
+      "passed": true
+    },
+    {
+      "check": "tanh archived time_refinement",
+      "passed": true
+    },
+    {
+      "check": "tanh archived perturbation_comparison",
+      "passed": true
+    },
+    {
+      "check": "tanh archived unknown_prior_comparison",
+      "passed": true
+    },
+    {
+      "check": "tanh grid refinement",
+      "passed": true
+    },
+    {
+      "check": "tanh small time error",
+      "passed": true
+    },
+    {
+      "check": "tanh mass conservation accounting",
+      "passed": true
+    },
+    {
+      "check": "tanh incompressibility",
+      "passed": true
+    },
+    {
+      "check": "tanh energy identity",
+      "passed": true
+    },
+    {
+      "check": "smooth_off history retained",
+      "passed": true
+    },
+    {
+      "check": "smooth_off exact history mass",
+      "passed": true
+    },
+    {
+      "check": "smooth_off same final accumulator",
+      "passed": true
+    },
+    {
+      "check": "smooth_off missing role dynamics identified",
+      "passed": true
+    },
+    {
+      "check": "smooth_off full state scaling",
+      "passed": true
+    },
+    {
+      "check": "smooth_off plus1pct finite",
+      "passed": true
+    },
+    {
+      "check": "smooth_off minus1pct finite",
+      "passed": true
+    },
+    {
+      "check": "smooth_off prior_plus finite",
+      "passed": true
+    },
+    {
+      "check": "smooth_off prior_minus finite",
+      "passed": true
+    },
+    {
+      "check": "smooth_off grid48 finite",
+      "passed": true
+    },
+    {
+      "check": "smooth_off grid72 finite",
+      "passed": true
+    },
+    {
+      "check": "smooth_off halfdt finite",
+      "passed": true
+    },
+    {
+      "check": "smooth_off history finite",
+      "passed": true
+    },
+    {
+      "check": "smooth_off reversed finite",
+      "passed": true
+    },
+    {
+      "check": "smooth_off rescaled finite",
+      "passed": true
+    },
+    {
+      "check": "smooth_off archived grid24_48",
+      "passed": true
+    },
+    {
+      "check": "smooth_off archived grid48_72",
+      "passed": true
+    },
+    {
+      "check": "smooth_off archived time_refinement",
+      "passed": true
+    },
+    {
+      "check": "smooth_off archived perturbation_comparison",
+      "passed": true
+    },
+    {
+      "check": "smooth_off archived unknown_prior_comparison",
+      "passed": true
+    },
+    {
+      "check": "smooth_off grid refinement",
+      "passed": true
+    },
+    {
+      "check": "smooth_off small time error",
+      "passed": true
+    },
+    {
+      "check": "smooth_off mass conservation accounting",
+      "passed": true
+    },
+    {
+      "check": "smooth_off incompressibility",
+      "passed": true
+    },
+    {
+      "check": "smooth_off energy identity",
+      "passed": true
+    },
+    {
+      "check": "24 real participants",
+      "passed": true
+    },
+    {
+      "check": "47 separate sessions",
+      "passed": true
+    },
+    {
+      "check": "140 runs",
+      "passed": true
+    },
+    {
+      "check": "840 real probes",
+      "passed": true
+    },
+    {
+      "check": "10920 item rows",
+      "passed": true
+    },
+    {
+      "check": "all question groups complete",
+      "passed": true
+    },
+    {
+      "check": "reserved responses not analyzed",
+      "passed": true
+    },
+    {
+      "check": "no invented full fit",
+      "passed": true
+    },
+    {
+      "check": "missing ratings reported",
+      "passed": true
+    }
+  ],
+  "threshold_activity": [
+    {
+      "law": "sharp",
+      "condition": "plus1pct",
+      "above_threshold_fraction": 0.9635416666666666
+    },
+    {
+      "law": "sharp",
+      "condition": "minus1pct",
+      "above_threshold_fraction": 0.9635416666666666
+    },
+    {
+      "law": "tanh",
+      "condition": "plus1pct",
+      "above_threshold_fraction": 0.9635416666666666
+    },
+    {
+      "law": "tanh",
+      "condition": "minus1pct",
+      "above_threshold_fraction": 0.9635416666666666
+    },
+    {
+      "law": "smooth_off",
+      "condition": "plus1pct",
+      "above_threshold_fraction": 0.9635416666666666
+    },
+    {
+      "law": "smooth_off",
+      "condition": "minus1pct",
+      "above_threshold_fraction": 0.9618055555555556
+    }
+  ]
+}
