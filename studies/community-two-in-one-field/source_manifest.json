@@ -1,0 +1,1679 @@
+{
+  "repository": "Lee-Memory-Cognition-Lab/thinkaloud_paper",
+  "commit": "e8005a84122e208f1607064d897763d6cbddf25a",
+  "files": [
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/README.md",
+      "bytes": 270,
+      "git_blob_sha1": "1a6320e4bab42769da39f63caf5a3206fa277bc0",
+      "sha256": "0a75723235848f1782b31ff7ba7759319219368303993a561b743e1b03a26cc4"
+    },
+    {
+      "path": "behav_data/sub-001_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-001_transcripts.xlsx",
+      "bytes": 10671,
+      "git_blob_sha1": "ed421d686612969f2179702fe273ab08e588c94e",
+      "sha256": "96f1bff83dc688b5be0a30a47e4ffe2d94e17b40cd137aa08803f959a55183e0"
+    },
+    {
+      "path": "behav_data/sub-002_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-002_transcripts.xlsx",
+      "bytes": 11061,
+      "git_blob_sha1": "bf738ad87de1b5aa02fc399ef9c7925a5c9fcf86",
+      "sha256": "88bcca538d99e4d99d4a631233632f792ba4ad6b09d832c523fa0cd572d53b0b"
+    },
+    {
+      "path": "behav_data/sub-004_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-004_transcripts.xlsx",
+      "bytes": 11789,
+      "git_blob_sha1": "a88945893f722746682aced0c3965c9695bd1baf",
+      "sha256": "af79ac914a8b5433073b541194edde244767435b3ad33dc472f58dc90905118a"
+    },
+    {
+      "path": "behav_data/sub-005_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-005_transcripts.xlsx",
+      "bytes": 15635,
+      "git_blob_sha1": "1cb67d9cf3d0c772c755007fb73334725a7b52e7",
+      "sha256": "cb777e98674511ed040b55b79d96ee88701d67c9542bbde85ee4fc9caf5cad17"
+    },
+    {
+      "path": "behav_data/sub-006_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-006_transcripts.xlsx",
+      "bytes": 13080,
+      "git_blob_sha1": "6aeaed238467728e5c01293205ff2c8eaf734bbd",
+      "sha256": "a7854a66ffbcbae6c3e7915b5c6c4ed37d55f6df25dd15188b86220598f9935f"
+    },
+    {
+      "path": "behav_data/sub-007_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-007_transcripts.xlsx",
+      "bytes": 12910,
+      "git_blob_sha1": "4c7f9d239a2a19aebd9c6a310dd47bf89e66d891",
+      "sha256": "ebe299a0591dc18ae0cbeffb6924458e8936f7af77a99585d17219a226cabad4"
+    },
+    {
+      "path": "behav_data/sub-009_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-009_transcripts.xlsx",
+      "bytes": 11665,
+      "git_blob_sha1": "6dbc5dd130cb44100523ebf9fa78f7b623d0101d",
+      "sha256": "c5b0bc59b84607b78712c413b56c343963f44c779f10ecb7d9e047508892ca5d"
+    },
+    {
+      "path": "behav_data/sub-010_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-010_transcripts.xlsx",
+      "bytes": 12947,
+      "git_blob_sha1": "b7de638a81f479773d5e56585279688f602e8654",
+      "sha256": "96f9fc9a14c3c78b3117da5eae4f10a3cc9f8885feeeaff5f92fe692af01df9b"
+    },
+    {
+      "path": "behav_data/sub-011_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-011_transcripts.xlsx",
+      "bytes": 12398,
+      "git_blob_sha1": "c62c9c22ff7513a1000de48f5efb5a272720de98",
+      "sha256": "e4761b888451b02b722ae5a4d150e1bd65c25770119e941fb760967895de1af3"
+    },
+    {
+      "path": "behav_data/sub-012_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-012_transcripts.xlsx",
+      "bytes": 14104,
+      "git_blob_sha1": "6f40c77d64b8e8dedcd67cb0cd5358800cd99555",
+      "sha256": "2be1cf48edaaaeb3913775b432a41e9e9228026766025c9c0cb37dd6da3269e6"
+    },
+    {
+      "path": "behav_data/sub-013_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-013_transcripts.xlsx",
+      "bytes": 13745,
+      "git_blob_sha1": "28f6bfd3ee7e8e9d8fb31a5baf2316c295da1ee7",
+      "sha256": "b24736d64b30ffc5eb47a5ff5c9570848186cf7c9e7f0a37ed5e088bfb4ce3b1"
+    },
+    {
+      "path": "behav_data/sub-014_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-014_transcripts.xlsx",
+      "bytes": 13705,
+      "git_blob_sha1": "04401f3ed43019edcd33ef2aba2b011b262f9b18",
+      "sha256": "d47e3f0035ad0367a4d21ae441b8456eba87930344e242e354cce71a3a7db5ad"
+    },
+    {
+      "path": "behav_data/sub-016_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-016_transcripts.xlsx",
+      "bytes": 10415,
+      "git_blob_sha1": "ac5f8f9f03435d37d7426d1f2752608bfb711888",
+      "sha256": "51cac0f1f0e7b9d9a4d0e8220f4958b3c41b7c787cf9e7ccb4158d2626ff8f3c"
+    },
+    {
+      "path": "behav_data/sub-017_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-017_transcripts.xlsx",
+      "bytes": 11061,
+      "git_blob_sha1": "2e9225ee7bbdbe166005054c6009f926d48d05cc",
+      "sha256": "cfa35479f383d225ba9e03922337177fe0bdf6685c8f9895ef876f4d741dae5d"
+    },
+    {
+      "path": "behav_data/sub-018_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-018_transcripts.xlsx",
+      "bytes": 10858,
+      "git_blob_sha1": "870e31b2640abdfe283a2c8e554ede5174b7f130",
+      "sha256": "14a7c6dbc4cc52ba57743f1892f70c23817e1e7be390ced323b23f12362cf617"
+    },
+    {
+      "path": "behav_data/sub-019_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-019_transcripts.xlsx",
+      "bytes": 9709,
+      "git_blob_sha1": "4de495ee44496f0b945e5d0f9141f5aa3c9bdd15",
+      "sha256": "5a96be4b40fe07793c2247dfea5997d45b4f8a383f78bb55c2192d751fd1ece9"
+    },
+    {
+      "path": "behav_data/sub-020_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-020_transcripts.xlsx",
+      "bytes": 12922,
+      "git_blob_sha1": "bbc8db1ee7393b698273ca714777b8c97db933e3",
+      "sha256": "48657a014e807f72d702980ea4f3fc19533095f0f72795571cfe1330aa566902"
+    },
+    {
+      "path": "behav_data/sub-021_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-021_transcripts.xlsx",
+      "bytes": 12067,
+      "git_blob_sha1": "9312cb2e0efba2ad386a31f28d094871fcc16416",
+      "sha256": "040c89e7ea38fc60f9af110527c2fe645f31378b540d2e376894bb43c92b918b"
+    },
+    {
+      "path": "behav_data/sub-023_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-023_transcripts.xlsx",
+      "bytes": 11093,
+      "git_blob_sha1": "f16c952ebdab0b7fed0ce9e1cdb1b7b609a2f8b4",
+      "sha256": "2db8a43c772d6bbd095fb894662644a29e87d5d4da0f904c4485204197cbccfd"
+    },
+    {
+      "path": "behav_data/sub-024_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-024_transcripts.xlsx",
+      "bytes": 11927,
+      "git_blob_sha1": "1f5488846e369d5ef63fa5c30392c91331e395bd",
+      "sha256": "af6e7d36a7a9c2cbce7675507db006edfa8248c73d0d4cb488844253035518ef"
+    },
+    {
+      "path": "behav_data/sub-025_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-025_transcripts.xlsx",
+      "bytes": 10069,
+      "git_blob_sha1": "6885aff9663fe7a8eb47e9d6a5870155ca0272eb",
+      "sha256": "d9735045e6e8bc966670ef076fddd116b1bd0a3c4a23451e45e76d4adb6bae18"
+    },
+    {
+      "path": "behav_data/sub-026_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-026_transcripts.xlsx",
+      "bytes": 15410,
+      "git_blob_sha1": "a6e6c863e06624e6e6cd071ab9de115eaea5cb74",
+      "sha256": "2ac544f6ce1274e23b6206875d66a534466425e2c0f7e820955268159e48c1f9"
+    },
+    {
+      "path": "behav_data/sub-027_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-027_transcripts.xlsx",
+      "bytes": 13671,
+      "git_blob_sha1": "c4eec9705e49a8d54de48e26de69265a56e40e71",
+      "sha256": "7e30e698782aec763b8d458fa1dc4bb6be6b15c7c3c094def65e3fc54923486a"
+    },
+    {
+      "path": "behav_data/sub-029_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-029_transcripts.xlsx",
+      "bytes": 13089,
+      "git_blob_sha1": "99a849f51c8cf4570bacdac444d65c4861bf327f",
+      "sha256": "dde79787b3f1e6f0e650a30cd99099f25d31330030364ac08a4a638108d82032"
+    },
+    {
+      "path": "behav_data/sub-031_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-031_transcripts.xlsx",
+      "bytes": 13504,
+      "git_blob_sha1": "e959c9175c5e3ee5cd365416cc7d01144c9786a8",
+      "sha256": "7f6228b572075723c76c44f833974e694425dcbd4772bc87c83f8edf7d40de6c"
+    },
+    {
+      "path": "behav_data/sub-032_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-032_transcripts.xlsx",
+      "bytes": 14177,
+      "git_blob_sha1": "a7a2c1719bdc24953529ab61ddbba114542406d3",
+      "sha256": "20a47d607b95e28fb144d444b2e0a2d51582b986af5c95c4e6e0c732eaae838b"
+    },
+    {
+      "path": "behav_data/sub-033_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-033_transcripts.xlsx",
+      "bytes": 13044,
+      "git_blob_sha1": "59c3acf090e73c4c2a243c8c15251e247a9f84c0",
+      "sha256": "bfc2e551fe1e84b21b23ee7acfedc7367c4cb75ce567cd94f85d701e67d4cfec"
+    },
+    {
+      "path": "behav_data/sub-034_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-034_transcripts.xlsx",
+      "bytes": 12580,
+      "git_blob_sha1": "acaa2937c9597da1d098ed810920714a323e9b37",
+      "sha256": "bfb04e995c4fa982defe5dd87b2858f202cca8e20fae45e9c024c2a27abcd541"
+    },
+    {
+      "path": "behav_data/sub-035_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-035_transcripts.xlsx",
+      "bytes": 10982,
+      "git_blob_sha1": "2e8630e4699fd34072d3f72b03ff42bff0497dd4",
+      "sha256": "5525ed9f399d8981499ea9bd707299f845680e27033efd5ba46a648c105237f9"
+    },
+    {
+      "path": "behav_data/sub-036_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-036_transcripts.xlsx",
+      "bytes": 9577,
+      "git_blob_sha1": "f4072f1f9a636510458d0844f9c1f54693466148",
+      "sha256": "6c631e295181cfe809ffa898bc814ffab104f5fba416c2f7d9e7d4965170892f"
+    },
+    {
+      "path": "behav_data/sub-037_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-037_transcripts.xlsx",
+      "bytes": 10837,
+      "git_blob_sha1": "64e23a0d005398117899b6d7b7305b8a80a7f9c5",
+      "sha256": "58e8f52cf4645b23131bec78cfd5fd1a48d765ca413281379289db773b411e56"
+    },
+    {
+      "path": "behav_data/sub-038_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-038_transcripts.xlsx",
+      "bytes": 14574,
+      "git_blob_sha1": "38f0e8c8ffef35bd9062974df725162b0b12ed46",
+      "sha256": "6796b669119c394fcb464470f9111cbc7814f2bb589eb7a0e6ecca6ec8f70923"
+    },
+    {
+      "path": "behav_data/sub-039_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-039_transcripts.xlsx",
+      "bytes": 11247,
+      "git_blob_sha1": "5c44f76f455404d8246b6d824830cfecd52c81f5",
+      "sha256": "59859711b1d2988dfbe56fd3ce6a9de87f7149dc1a2c2ffa6d83084b31a89c0d"
+    },
+    {
+      "path": "behav_data/sub-040_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-040_transcripts.xlsx",
+      "bytes": 12552,
+      "git_blob_sha1": "1bbe95b8a2f96f8178c49080fb31fe088b40426f",
+      "sha256": "a877e608c8557c99c23eb88f2b701cc9e6553bc82f1c6bec57cb5fc7ed43c0ed"
+    },
+    {
+      "path": "behav_data/sub-041_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-041_transcripts.xlsx",
+      "bytes": 11646,
+      "git_blob_sha1": "eb577ae73363b14b9f713076f464fd5c467e7485",
+      "sha256": "37904dbfdc8cbafeb4347fdc360e6558a547c9969d25ed422b7d66ff48056748"
+    },
+    {
+      "path": "behav_data/sub-042_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-042_transcripts.xlsx",
+      "bytes": 10257,
+      "git_blob_sha1": "65aa21dd1aa0479b84be0408d29578b770dca187",
+      "sha256": "dcd03039393c68297e82a2b7c9dae58bb6ca33829b2c4e9ba189d97a11d36f64"
+    },
+    {
+      "path": "behav_data/sub-043_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-043_transcripts.xlsx",
+      "bytes": 14708,
+      "git_blob_sha1": "af99dd2302d2d40761e72dc6b23834ec8004c720",
+      "sha256": "6c2a335ca945f8e1773eb3a041dd1eda6c3df1bee085cfbb4c757bbd2810883b"
+    },
+    {
+      "path": "behav_data/sub-044_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-044_transcripts.xlsx",
+      "bytes": 12623,
+      "git_blob_sha1": "ab4b82fc43acdade641774b899f51f9f593da6a8",
+      "sha256": "e7f08ce1ca6b8689434688e8f3c10e78a2a3d67bfa3550505d8a8a9b4cbabc7b"
+    },
+    {
+      "path": "behav_data/sub-045_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-045_transcripts.xlsx",
+      "bytes": 13721,
+      "git_blob_sha1": "12bd768da160cc7604d9fc82808dc6618a168666",
+      "sha256": "c6f9a0fe5207c020e2f059d050fc2beeff719f50e0a722aecc97138d2cbebb44"
+    },
+    {
+      "path": "behav_data/sub-046_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-046_transcripts.xlsx",
+      "bytes": 12032,
+      "git_blob_sha1": "0527d8e93055519b6c5c70a3fd43d2a5a48d08f9",
+      "sha256": "3e9e1916eb64230c4fc1832ec3347f4d99e068e64acd693808204dc4a7f122b5"
+    },
+    {
+      "path": "behav_data/sub-047_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-047_transcripts.xlsx",
+      "bytes": 11848,
+      "git_blob_sha1": "422269974945aea167958fdb8daf79b4efb7009a",
+      "sha256": "52de02f2c93d18ab887bdb6e56af01b7c2800781c5a728d6f92d93034583002c"
+    },
+    {
+      "path": "behav_data/sub-048_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-048_transcripts.xlsx",
+      "bytes": 13058,
+      "git_blob_sha1": "76073101d86ef2fa06e506e39eb1536b1a9f0665",
+      "sha256": "67c1de5e84d507566ab55df966963b867e0f651f05cedf12b04bbc63a741be5f"
+    },
+    {
+      "path": "behav_data/sub-049_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-049_transcripts.xlsx",
+      "bytes": 14335,
+      "git_blob_sha1": "3235f409119a1443a308a9bd48b36b9e8d054ccf",
+      "sha256": "77bbdb757d2c1b79ddf0a5e156e6c11ebfcb806e720fde2a8c2f85eccd00626d"
+    },
+    {
+      "path": "behav_data/sub-050_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-050_transcripts.xlsx",
+      "bytes": 11889,
+      "git_blob_sha1": "45b0a399012c8163e5c40048ca7f27ee8468da02",
+      "sha256": "f93bdddb1e6160c9c50c1becdeac2f309c92e959f6c10ed8812941749fd79d25"
+    },
+    {
+      "path": "behav_data/sub-051_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-051_transcripts.xlsx",
+      "bytes": 9879,
+      "git_blob_sha1": "05d0044f798213bed7d88a54bea748eb536eb098",
+      "sha256": "90768cad19a43850fc4542dd6ed2ae43213f7a41a9ba2d9f7aff4ed9fec89389"
+    },
+    {
+      "path": "behav_data/sub-052_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-052_transcripts.xlsx",
+      "bytes": 11912,
+      "git_blob_sha1": "600f6d4a6886d23e36903014785f244a349fcfca",
+      "sha256": "94085ab8101013791905b51f431d9b74ae94a4d77d7ebb80c281cdc0b0d3b7c1"
+    },
+    {
+      "path": "behav_data/sub-053_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-053_transcripts.xlsx",
+      "bytes": 12142,
+      "git_blob_sha1": "edf55e3f1667cde4a7f0da22fe9aede53b145bd9",
+      "sha256": "fa941632876fe6ba648fe1ccaf6833c18af234b0ea7605565c0ee3ba6e5ebd27"
+    },
+    {
+      "path": "behav_data/sub-054_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-054_transcripts.xlsx",
+      "bytes": 11465,
+      "git_blob_sha1": "7d0368b036fea2c9e79bc3ef40b45dd390ca473f",
+      "sha256": "54c3547e9ca03084f56c843232bb931b8b9d11532310910587c4a71a632af416"
+    },
+    {
+      "path": "behav_data/sub-055_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-055_transcripts.xlsx",
+      "bytes": 15989,
+      "git_blob_sha1": "6bf014570c62051796e3f6ee081457b1bf1e6f00",
+      "sha256": "21e272dd342bf934bf96da1565ded92ee96830784dc82415aa2954987d2bc956"
+    },
+    {
+      "path": "behav_data/sub-056_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-056_transcripts.xlsx",
+      "bytes": 8180,
+      "git_blob_sha1": "8003066daf9a0a54b11c77d440252cc00ff7840d",
+      "sha256": "c6eb00825141ecf4bbd5f8e39350be3ae0d7abc1c441cebb906970828965dc74"
+    },
+    {
+      "path": "behav_data/sub-057_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-057_transcripts.xlsx",
+      "bytes": 12547,
+      "git_blob_sha1": "0b427f59483c8532435028e0975a345a6f65ee3d",
+      "sha256": "1fe56a483578d266e4cba6ce3188ef41fb109535787ea13f2b6e710690b58ac3"
+    },
+    {
+      "path": "behav_data/sub-058_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-058_transcripts.xlsx",
+      "bytes": 11031,
+      "git_blob_sha1": "57a1758a8f260a5e2cd299f54aec314f708120c5",
+      "sha256": "ba752001bdcec49045166892d00dc1fd60e356992915f74ec79d2b710970d832"
+    },
+    {
+      "path": "behav_data/sub-059_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-059_transcripts.xlsx",
+      "bytes": 11937,
+      "git_blob_sha1": "75eb9091c0f31dee7672e295dabd47733f3eb620",
+      "sha256": "c9d198520d62e1fa3c1193e7fec7d40c354b5e05bbaf71a91534d3c10bee19cf"
+    },
+    {
+      "path": "behav_data/sub-060_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-060_transcripts.xlsx",
+      "bytes": 12411,
+      "git_blob_sha1": "3962933fae7f31f5ac430f5f7ad6154cb5f274dd",
+      "sha256": "39c3a3bd9ee0ea74f63f7068a80b063c19a6e8eba1e528fea1c8fe7b63fb580a"
+    },
+    {
+      "path": "behav_data/sub-061_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-061_transcripts.xlsx",
+      "bytes": 9225,
+      "git_blob_sha1": "bd42f1353d814cef23d806f6abfc810e6d77fc78",
+      "sha256": "c4060f46e948c8476e1a9affba3981d24ead417829310de95a7924763a14c928"
+    },
+    {
+      "path": "behav_data/sub-062_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-062_transcripts.xlsx",
+      "bytes": 11814,
+      "git_blob_sha1": "07a53a1f147d9eb398ad76d0cdda9eca24d30537",
+      "sha256": "d28494c5479d3e67ddca0c9606f1acdfdbb97cb03ab50a3c75c2215563d1a9ea"
+    },
+    {
+      "path": "behav_data/sub-064_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-064_transcripts.xlsx",
+      "bytes": 16743,
+      "git_blob_sha1": "36c9f448410081a869f0938e7e1e336f972c66ac",
+      "sha256": "2359dee4b06447beb50cb205299353d2f17ad810cdeee03e390e54d057a58e75"
+    },
+    {
+      "path": "behav_data/sub-065_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-065_transcripts.xlsx",
+      "bytes": 15465,
+      "git_blob_sha1": "6ccc72c124d91ac22120c5a20dd2354c9355d83f",
+      "sha256": "bfe1c0f1cb6ebce6a63986d44e835ff91623841725fd24a7ad4ca52cf21b5657"
+    },
+    {
+      "path": "behav_data/sub-066_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-066_transcripts.xlsx",
+      "bytes": 13478,
+      "git_blob_sha1": "8e483fb5d40352341742fa1b054313f5eb4d61f8",
+      "sha256": "c24a3ff7c336d82ddacd68548d9322e7e386817524c08c7c060e143d90a72f5c"
+    },
+    {
+      "path": "behav_data/sub-067_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-067_transcripts.xlsx",
+      "bytes": 10501,
+      "git_blob_sha1": "6a8df290f71671c2c0c9ef31caf6183ea26c30f4",
+      "sha256": "7da433182a67f48b8329ac82d27aba8dd5815e648cb95bf11529b1d3aa3e4cb6"
+    },
+    {
+      "path": "behav_data/sub-068_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-068_transcripts.xlsx",
+      "bytes": 12214,
+      "git_blob_sha1": "a8830a3abd78bf14e48923cc26984929d722be31",
+      "sha256": "d9e5e5338339f64b9cfe1d4b41ff0eecfb2dedbf49dabad68b6efa45eeef60b3"
+    },
+    {
+      "path": "behav_data/sub-069_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-069_transcripts.xlsx",
+      "bytes": 12774,
+      "git_blob_sha1": "2ba68e24838a6c4ffe26ca2004bc4b252d71a3d0",
+      "sha256": "483df0c189ecef9e51d33a118558da50dc9908c15124d7a88eeed5fac4f8a5f4"
+    },
+    {
+      "path": "behav_data/sub-070_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-070_transcripts.xlsx",
+      "bytes": 12253,
+      "git_blob_sha1": "a20532579359747f5f44f3833e1a96f6f2af063a",
+      "sha256": "d393275837ce67d85f4a3045e784ec7943b29c1cad980f532e6219cf60fb33bf"
+    },
+    {
+      "path": "behav_data/sub-071_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-071_transcripts.xlsx",
+      "bytes": 12766,
+      "git_blob_sha1": "899247a1834c8b14d64ed1d60d38d4c9ac298358",
+      "sha256": "60434adf0de97e3a823937dba051da7e428cc140801fb30d148fb14f489683ae"
+    },
+    {
+      "path": "behav_data/sub-072_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-072_transcripts.xlsx",
+      "bytes": 11428,
+      "git_blob_sha1": "04dd2ad98a70aa601ed45349ec46561973702781",
+      "sha256": "dbd665fd67a476e5a622a6a514f425c46313e2209b0e33159d2fb1d389f5652d"
+    },
+    {
+      "path": "behav_data/sub-073_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-073_transcripts.xlsx",
+      "bytes": 14581,
+      "git_blob_sha1": "f4008ca16738b5ab81c669b7c7af123e5fcd0cb4",
+      "sha256": "74f7c9ce73f338870ebe5a156ab4a80da0e562ae6d8cf0ca0eca94495a35a9d1"
+    },
+    {
+      "path": "behav_data/sub-074_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-074_transcripts.xlsx",
+      "bytes": 13251,
+      "git_blob_sha1": "b4589400a6744a10e78e0541bf0f996fc8a0e43d",
+      "sha256": "c991bb7fccd4970d702f655800688a9cad5baa3ab11e8cef316325a7936e1920"
+    },
+    {
+      "path": "behav_data/sub-075_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-075_transcripts.xlsx",
+      "bytes": 14825,
+      "git_blob_sha1": "1dd1feae6d64dc7d1f7db2f981a09b55d45cf0dd",
+      "sha256": "d41bfa8b9970a39148e46cdad59f4d04dd8356662d7b0640cc7efa6f4a51433c"
+    },
+    {
+      "path": "behav_data/sub-076_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-076_transcripts.xlsx",
+      "bytes": 11465,
+      "git_blob_sha1": "3136af5642a40c4f0da0108c6f475b8cf1747441",
+      "sha256": "94850897c39c9d9162682217e66d831d4c97fe91a7db2540dc154d2bfde455a5"
+    },
+    {
+      "path": "behav_data/sub-077_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-077_transcripts.xlsx",
+      "bytes": 13359,
+      "git_blob_sha1": "4647e274d2b8409fd184e1e8cec226600555d7e9",
+      "sha256": "ebe7ea9c905648232a689ddd55f23bd4d4d684b5082894e0bec6249cee1fec59"
+    },
+    {
+      "path": "behav_data/sub-078_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-078_transcripts.xlsx",
+      "bytes": 16150,
+      "git_blob_sha1": "a807403962e9e956e5c422d48542dfdcaee54616",
+      "sha256": "1627df5c4ca7ab2f9b69a902934c1b669f77dbbb0696efaa2e0348a7f53bae79"
+    },
+    {
+      "path": "behav_data/sub-079_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-079_transcripts.xlsx",
+      "bytes": 11644,
+      "git_blob_sha1": "66c647af579ae67b36da7f38fb7fccb4d99f2f70",
+      "sha256": "1dc358cebf0e801c54aafe02f04c0624f2e017ef9a509fa859bbc9f8c21f7b90"
+    },
+    {
+      "path": "behav_data/sub-080_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-080_transcripts.xlsx",
+      "bytes": 12756,
+      "git_blob_sha1": "3c2209c0cf4fac885af5e04fd7d03dbf3bc8e36a",
+      "sha256": "27fff8641cc0fa517cea0a641995a488076844b9a53b91e06b96252cdd6fca00"
+    },
+    {
+      "path": "behav_data/sub-081_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-081_transcripts.xlsx",
+      "bytes": 8913,
+      "git_blob_sha1": "2910d5a570e884c813008c6a7dfb0f3816d439d0",
+      "sha256": "7060feb1da3ac80abfbdab2fbebb97b5daed81da86cb34d40fa7dbdb4ddd8778"
+    },
+    {
+      "path": "behav_data/sub-082_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-082_transcripts.xlsx",
+      "bytes": 11384,
+      "git_blob_sha1": "8156b5a5ec7985553f8a101d0367d10ff638a0fd",
+      "sha256": "ca21153fee92c007c12512734303064311b7ea3431113212de57c7f1dda1e340"
+    },
+    {
+      "path": "behav_data/sub-083_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-083_transcripts.xlsx",
+      "bytes": 14189,
+      "git_blob_sha1": "50d75a6fabbf2d602a4fd08220ac87f8906fa20b",
+      "sha256": "1daf7a1792f30f07b70a9cfc8cc412e1d3cb44d66093964182ae759e06462e79"
+    },
+    {
+      "path": "behav_data/sub-084_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-084_transcripts.xlsx",
+      "bytes": 12102,
+      "git_blob_sha1": "c1727807f7a55b326a9c9dcd903892d141b271d8",
+      "sha256": "2135cd001e1d730e409eaff4af085615b48beb24f98cac9d020d889e7ad99089"
+    },
+    {
+      "path": "behav_data/sub-085_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-085_transcripts.xlsx",
+      "bytes": 11528,
+      "git_blob_sha1": "513dae2abaf64d75f3c8d6b2e361f325e9a15755",
+      "sha256": "e0a4fdb1409d5e5eb4f7cc35317252facb398df29f6fb9486cef96def6f4eab7"
+    },
+    {
+      "path": "behav_data/sub-086_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-086_transcripts.xlsx",
+      "bytes": 13856,
+      "git_blob_sha1": "d4baad44719e078fe7f2ce04960e8c324db2e48a",
+      "sha256": "4b6ff100020b45cf5b2cc944aee2ceb33d90c6fffdc6d0dd1176c6d3f7131438"
+    },
+    {
+      "path": "behav_data/sub-087_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-087_transcripts.xlsx",
+      "bytes": 13119,
+      "git_blob_sha1": "df19111dc5c3be5893de61084d16aaea84553fa7",
+      "sha256": "91574a611ea620f36fe23e14006d9a824c442b23528c20264dd0cfb148d4e4b1"
+    },
+    {
+      "path": "behav_data/sub-088_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-088_transcripts.xlsx",
+      "bytes": 10686,
+      "git_blob_sha1": "ff2b08e015b30329a6dec6aa4a179ce576245f4c",
+      "sha256": "aa842eebf8375dca6974fa9504542007295c1a18bc6ba439ed43ccfcaeb3e4c4"
+    },
+    {
+      "path": "behav_data/sub-089_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-089_transcripts.xlsx",
+      "bytes": 11048,
+      "git_blob_sha1": "7cbb14e21e3464529803e9ec8edb46cc45685655",
+      "sha256": "37146677590714e65302237c018377a8ba8a6b4ca12ca574ed26b34f96d68467"
+    },
+    {
+      "path": "behav_data/sub-090_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-090_transcripts.xlsx",
+      "bytes": 14908,
+      "git_blob_sha1": "52eebff94c1f60ff931424be13a8c1295e9e0fe2",
+      "sha256": "cc16f804da3e629ca30818b1dd51d3e0610cfe8091304fe8fe6f94890b41c7eb"
+    },
+    {
+      "path": "behav_data/sub-091_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-091_transcripts.xlsx",
+      "bytes": 13672,
+      "git_blob_sha1": "33f7512f9266b7dc8338986f60fd588dc76e8605",
+      "sha256": "e36e4a876a9272564a8298867bddf5f365d349db2ee56e4f83a1ab23b8519a86"
+    },
+    {
+      "path": "behav_data/sub-092_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-092_transcripts.xlsx",
+      "bytes": 9819,
+      "git_blob_sha1": "e303d8d2a50153dd8d773a6cf76ae22c7658aa18",
+      "sha256": "43d3a9865cfab633a6dbd4b605f14a84cd2612ccc4c9bef5fa93a049d92878b7"
+    },
+    {
+      "path": "behav_data/sub-093_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-093_transcripts.xlsx",
+      "bytes": 14112,
+      "git_blob_sha1": "902ec8662c78501f3a399d0b3ea09ba85913d0cc",
+      "sha256": "17a390f1a1b7e9f99ced588dcab8248e242c05f6ec61806bb394a7fddd4cfa93"
+    },
+    {
+      "path": "behav_data/sub-094_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-094_transcripts.xlsx",
+      "bytes": 12976,
+      "git_blob_sha1": "ce9b7d5e010f31bb5408d9a8a178eec69bcf1eb0",
+      "sha256": "74997f057735a1a3660ba0a43e65cadd3adaac408f5c7a2c6d08a0cec5dee98a"
+    },
+    {
+      "path": "behav_data/sub-096_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-096_transcripts.xlsx",
+      "bytes": 12492,
+      "git_blob_sha1": "b4d7a818718dfd9119575ef7c4af897b2b1242e9",
+      "sha256": "5c5e6886ac4602d3ef244145ae1bb3cbaf074e6595f309246af2f8168682d428"
+    },
+    {
+      "path": "behav_data/sub-097_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-097_transcripts.xlsx",
+      "bytes": 12408,
+      "git_blob_sha1": "17f48aeac69d8391b6c2c5635b5fea8e10829c00",
+      "sha256": "acf0e5353c87fd9ca3117cce213528f8826e8f433b325f13326bcd7aeef73951"
+    },
+    {
+      "path": "behav_data/sub-098_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-098_transcripts.xlsx",
+      "bytes": 15141,
+      "git_blob_sha1": "b1fe5ef8e43644ac072c1012045d6266fc8b3d1b",
+      "sha256": "e76c9d7ce207613f2138b0a3fd597028af34a810da63b714141e8902c8e991f2"
+    },
+    {
+      "path": "behav_data/sub-099_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-099_transcripts.xlsx",
+      "bytes": 15659,
+      "git_blob_sha1": "4a1f7f8f0b01a0c22489511b660d23628d66af6e",
+      "sha256": "fa21b5c33605b7cecb3d842ac8c5387cb3f5b14760bfa352736dd53c7837e319"
+    },
+    {
+      "path": "behav_data/sub-100_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-100_transcripts.xlsx",
+      "bytes": 12372,
+      "git_blob_sha1": "5f7cfc4c4cc97df8aaf760e7f0b42d9a60ed1606",
+      "sha256": "9094d0dbf41d62447399cda98ba859d7c9f9edaad67600b45a21e9082275ad65"
+    },
+    {
+      "path": "behav_data/sub-101_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-101_transcripts.xlsx",
+      "bytes": 12145,
+      "git_blob_sha1": "2f0ff6c8c31afe52084a2f73a2a65d3a0ed21f88",
+      "sha256": "ef0ab40c66d68935f2d97584172d49b015f391c52a6eca13bde42ee1b6200e2a"
+    },
+    {
+      "path": "behav_data/sub-102_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-102_transcripts.xlsx",
+      "bytes": 13636,
+      "git_blob_sha1": "569876dde699820499a381461e7b41f756c57405",
+      "sha256": "29db98edf70a6791cac94bcee34349223678f28efb6197a766e56b084b906b94"
+    },
+    {
+      "path": "behav_data/sub-103_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-103_transcripts.xlsx",
+      "bytes": 11360,
+      "git_blob_sha1": "5b94b195b883ad817f25e558fdeb60ffd042321d",
+      "sha256": "c5c843def66d2c1a5b0cc12430cf99f913551897cf0f09bec53ada7a92a4ce1e"
+    },
+    {
+      "path": "behav_data/sub-105_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-105_transcripts.xlsx",
+      "bytes": 14073,
+      "git_blob_sha1": "5157377e9d242c7ce05a8e97a23b065d71f05ff7",
+      "sha256": "2b8c00f989e48ce38da179fb620873dac797717e51f469f93f736ca75c106230"
+    },
+    {
+      "path": "behav_data/sub-106_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-106_transcripts.xlsx",
+      "bytes": 11306,
+      "git_blob_sha1": "594dc5f98919706d09c85d1ea5c6c97cf7a8407e",
+      "sha256": "0806e4ccac6ce92feac85ef38b534491eaaa484fea688d79bf90d896f56a1afd"
+    },
+    {
+      "path": "behav_data/sub-107_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-107_transcripts.xlsx",
+      "bytes": 10690,
+      "git_blob_sha1": "82e58184e203f11ea71fff4569221a8ee53d5b4c",
+      "sha256": "47f0b80922e074f2bc1e91a12a1f0f2b61647b7a74a68ad0d18df8fbde33aaac"
+    },
+    {
+      "path": "behav_data/sub-108_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-108_transcripts.xlsx",
+      "bytes": 11571,
+      "git_blob_sha1": "60b9a3d5b382d4fb44aec7ea02a103b3df0114f2",
+      "sha256": "cc1520740a9f7bd8c5861c81705b1cb484f1d571637572ed59186efca64bd562"
+    },
+    {
+      "path": "behav_data/sub-109_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-109_transcripts.xlsx",
+      "bytes": 8698,
+      "git_blob_sha1": "8d8dd1fb39ec10230a73088f2cbfde191fc8d6a6",
+      "sha256": "c943306112614a396a89efd23434f31042bb43d4891839be9a12deb5f0f6751f"
+    },
+    {
+      "path": "behav_data/sub-110_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-110_transcripts.xlsx",
+      "bytes": 8791,
+      "git_blob_sha1": "7bc7415852ba17b7f6ab45beafec0a1e730dd18a",
+      "sha256": "ffffd0161499afd676d3c3c3e4fe5e9c2cddb501041f3c6963b00c0ac15e1dbf"
+    },
+    {
+      "path": "behav_data/sub-111_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-111_transcripts.xlsx",
+      "bytes": 13194,
+      "git_blob_sha1": "36a75d729e1b72a4b9c1c82479d98c484517e698",
+      "sha256": "d5298b487335c8e29d7ef3024f06a294e7a1d7e2e7ec3c6448ffef0581752860"
+    },
+    {
+      "path": "behav_data/sub-112_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-112_transcripts.xlsx",
+      "bytes": 13010,
+      "git_blob_sha1": "07caa1c736e8cf45e78dc32e450a12e78c8a258c",
+      "sha256": "5ee18b422182d30144ef4297e5fc8e73d48a7b24b73eef03a09250692349ef89"
+    },
+    {
+      "path": "behav_data/sub-113_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-113_transcripts.xlsx",
+      "bytes": 15575,
+      "git_blob_sha1": "887d7765c33d5479a2fda8a293e870ed87a9b4b2",
+      "sha256": "9b6fd689b2199e09f503b8b1dd76a782fc9594c3aea6ba6ceb7370b1bd0b84d7"
+    },
+    {
+      "path": "behav_data/sub-114_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-114_transcripts.xlsx",
+      "bytes": 11046,
+      "git_blob_sha1": "93cb6928d76046d87bb456ecee5c0d61daac1d70",
+      "sha256": "2b5ae7847118b57e407595281b2e1e61cb4ebadd19f87122b68568a5fc60ade1"
+    },
+    {
+      "path": "behav_data/sub-115_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-115_transcripts.xlsx",
+      "bytes": 14072,
+      "git_blob_sha1": "728e883797893e2706317adcf9510d56b2cdc614",
+      "sha256": "d147fdcc0f7ac26c9dfef7209c7c98603c8576812f2bc93762344785988999a1"
+    },
+    {
+      "path": "behav_data/sub-116_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-116_transcripts.xlsx",
+      "bytes": 15417,
+      "git_blob_sha1": "8e2f20bcad60332803d16bd2781c23cb517a2578",
+      "sha256": "e42291af1c3c0234b9e09818759a301d26ffced36cbadca7809762321bf7ac63"
+    },
+    {
+      "path": "behav_data/sub-117_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-117_transcripts.xlsx",
+      "bytes": 14156,
+      "git_blob_sha1": "ca8ebf28ecb0d49c635ac83880803f172467e76c",
+      "sha256": "1e3287b0554d8cc7005dc830ebddd708bd728daec970684f169ede0ebef5dd1c"
+    },
+    {
+      "path": "behav_data/sub-118_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-118_transcripts.xlsx",
+      "bytes": 13826,
+      "git_blob_sha1": "f83dfb8fd28f89b1f4341a321eeeb41ae6c7a269",
+      "sha256": "4aa42c2471203daddca8a83614f47b7caf3e6c46b2b3af0e1cc357acece1feae"
+    },
+    {
+      "path": "behav_data/sub-119_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-119_transcripts.xlsx",
+      "bytes": 13003,
+      "git_blob_sha1": "26d78afc2fc2c546fb409c37edf3814ca0fd593e",
+      "sha256": "98d0341f8342b3afa7aa08808bb730e491f81d11733179b10a55e0dda8937d76"
+    },
+    {
+      "path": "behav_data/sub-120_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-120_transcripts.xlsx",
+      "bytes": 12437,
+      "git_blob_sha1": "7558551d49a18c2e3f16ba9aab16504e577edf77",
+      "sha256": "bfdd1de7caa7fea775c5923a9c6b7f83f06e43bd3a8b52f3f7c12ebaed056bd3"
+    },
+    {
+      "path": "behav_data/sub-121_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-121_transcripts.xlsx",
+      "bytes": 12448,
+      "git_blob_sha1": "128859ea27d3a99c835452ebf014d0926042e46a",
+      "sha256": "19b630a17e7e875ec15f79e9884c23b8c3c8d048dbc64b78de0c833c811a08d2"
+    },
+    {
+      "path": "behav_data/sub-122_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-122_transcripts.xlsx",
+      "bytes": 12010,
+      "git_blob_sha1": "bf7dd826f9ac7c1de52bc2738d19b3b3c3bc39bd",
+      "sha256": "620ab238cd450877363091334fe15e28d8167617714f55da891f34e936b5c74d"
+    },
+    {
+      "path": "behav_data/sub-123_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-123_transcripts.xlsx",
+      "bytes": 10463,
+      "git_blob_sha1": "9aa986f39588046faad5115fc83d83952f7450c9",
+      "sha256": "2d6872fef3abe56f283638db8ab36bb0be1046d1564f00bc9862f01552fcc926"
+    },
+    {
+      "path": "behav_data/sub-124_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-124_transcripts.xlsx",
+      "bytes": 16000,
+      "git_blob_sha1": "575be79922e532ffc242a0573cca8197890f04f9",
+      "sha256": "ea175f461b88220734ecc9e91ec32807591e451434024e084939ccdbe8147e01"
+    },
+    {
+      "path": "behav_data/sub-125_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-125_transcripts.xlsx",
+      "bytes": 11786,
+      "git_blob_sha1": "6b6e494e1ddb02809bbe3b25d152ffddfad7d7bf",
+      "sha256": "5c6e8fb1f21ef8eb35a56867fecef944db4ff3cc4cf8b45016f254590abd2407"
+    },
+    {
+      "path": "behav_data/sub-126_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-126_transcripts.xlsx",
+      "bytes": 15174,
+      "git_blob_sha1": "3b704b9fc266e4009b7173c744d6d40b1b3121c8",
+      "sha256": "cc1d0133591f64d4b37d9a6368c1078c00c4ee6c00cfc3dc6bc129b13fd4140d"
+    },
+    {
+      "path": "behav_data/sub-127_transcripts.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/behav_data/sub-127_transcripts.xlsx",
+      "bytes": 11378,
+      "git_blob_sha1": "71b599ee7e385f279639aba3eb7d04d76f106f80",
+      "sha256": "97e6176f8b4d29cb718aa99f5be3b471c346f5aeb46f8fa2445927f54bd92f1a"
+    },
+    {
+      "path": "embeddings/sub-001_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-001_embeddings.csv",
+      "bytes": 269469,
+      "git_blob_sha1": "c48ef3d14ce934612a63003514b945ef5f9d110e",
+      "sha256": "7f41ba11aa80cdfe88547fcd02c67899e6d83c1d9aae383ebdba25c5509bcce7"
+    },
+    {
+      "path": "embeddings/sub-002_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-002_embeddings.csv",
+      "bytes": 478884,
+      "git_blob_sha1": "f9304931835d5e656c2d17462da3c0aec5a9d676",
+      "sha256": "515c03e76289c45f2a9fa4943607a4efe2250e47c37cb8e89ac7df894d1cadf0"
+    },
+    {
+      "path": "embeddings/sub-004_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-004_embeddings.csv",
+      "bytes": 583528,
+      "git_blob_sha1": "d4ba6661105a2091e08097ff7af0b134d03c9ba0",
+      "sha256": "9f3e013bcda3e9124b8cb71ebba28283b82dd97aa97610c89713ef879b4a45ed"
+    },
+    {
+      "path": "embeddings/sub-005_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-005_embeddings.csv",
+      "bytes": 669481,
+      "git_blob_sha1": "e17b098a3fbc51c8b9ba62354177113b42e4d972",
+      "sha256": "c64bbe7b65b41ec950ced688dfacbc69086b5f0c6ea56722b6cbbebdfca250cd"
+    },
+    {
+      "path": "embeddings/sub-006_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-006_embeddings.csv",
+      "bytes": 440841,
+      "git_blob_sha1": "2425a74b2255853729732f8aecab94b294208488",
+      "sha256": "81a49511556c311b23e57e2253f8820493099a830e25b1314ac414af213f451c"
+    },
+    {
+      "path": "embeddings/sub-007_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-007_embeddings.csv",
+      "bytes": 383554,
+      "git_blob_sha1": "5827459a525998bc1a28fb530fb3e3a5d9e50d33",
+      "sha256": "837cdeeb303785274ac7f4afdd1d2c475883ee49c786b4cf9ceb4b75157f8de5"
+    },
+    {
+      "path": "embeddings/sub-009_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-009_embeddings.csv",
+      "bytes": 659658,
+      "git_blob_sha1": "55dcf4896a5de68afaee484cfa21ea058aba8751",
+      "sha256": "2cfe839ffe35896158506db73fcc29ceaa5eec356e64f7aa9707c56686fe49c1"
+    },
+    {
+      "path": "embeddings/sub-010_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-010_embeddings.csv",
+      "bytes": 555235,
+      "git_blob_sha1": "3e3b309efbf6345bcd1e309930b9fc443d166b54",
+      "sha256": "9f0afe6f0ba1268cd3a14d7d3e2bce0f7fb5d4a0bcba6098431d391e45f6f946"
+    },
+    {
+      "path": "embeddings/sub-011_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-011_embeddings.csv",
+      "bytes": 278961,
+      "git_blob_sha1": "566078b8f5ddd9190fd1e441665a31aeeca8de5e",
+      "sha256": "bcf46c03db6b9be9950f2005206e15f51b6e9d1e9f0bc4ba1a86bc86b587f87f"
+    },
+    {
+      "path": "embeddings/sub-012_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-012_embeddings.csv",
+      "bytes": 754912,
+      "git_blob_sha1": "0ab1dd4fcdecbf223e1f7a45533b784bcef2f079",
+      "sha256": "f0d956ec580611ab571aef2685c280aeeb7ac92aacb88da8fcb4fcd27a22821c"
+    },
+    {
+      "path": "embeddings/sub-013_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-013_embeddings.csv",
+      "bytes": 592879,
+      "git_blob_sha1": "f1d018532d1781f6ffc67c4d7f885324f7e1bae5",
+      "sha256": "4e5383c5e28e986b20acbef7425ecc7c49f094787ed3485c215ba938ec480c46"
+    },
+    {
+      "path": "embeddings/sub-014_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-014_embeddings.csv",
+      "bytes": 507445,
+      "git_blob_sha1": "aea4ed33ff40ba637636c9ceeadef2f093e466e0",
+      "sha256": "9e95a367b5ad5fa404574a22303966e78003a125f64170296dd96290b7c9f522"
+    },
+    {
+      "path": "embeddings/sub-016_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-016_embeddings.csv",
+      "bytes": 478806,
+      "git_blob_sha1": "0e921d05e3174b47911ab612592c576760e50238",
+      "sha256": "328ff622e6a3e22a144d6bba59e7fb9d97706e1fb47ccead3fa43f34c74d97b0"
+    },
+    {
+      "path": "embeddings/sub-017_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-017_embeddings.csv",
+      "bytes": 440679,
+      "git_blob_sha1": "2d626251185cd01e8362c36c1475840bc46c6240",
+      "sha256": "11350c04c607bc8e02748de8c3ee4493ca121e791c535cb2978cd56421a387fe"
+    },
+    {
+      "path": "embeddings/sub-018_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-018_embeddings.csv",
+      "bytes": 326743,
+      "git_blob_sha1": "6cea8c88ea85b3a8824a311c7e5c5be20bddbc3d",
+      "sha256": "7c7242a8ec025ed337930b806ce7f511fc37c0a8c6cb31c6fe73b46b135124e9"
+    },
+    {
+      "path": "embeddings/sub-019_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-019_embeddings.csv",
+      "bytes": 345445,
+      "git_blob_sha1": "b3ae8faad67c67805d24a41d11f737337844bb17",
+      "sha256": "4c2189735a311e05cabfdaa0e1d1c719dc11eaa0ff36f24ea06c18dd63b1ed0f"
+    },
+    {
+      "path": "embeddings/sub-020_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-020_embeddings.csv",
+      "bytes": 497689,
+      "git_blob_sha1": "2e4ec9db855a5cb8b06a9d6305847c227446e8c1",
+      "sha256": "ffa6270a09a71a5c95b4d704c8d4c11ecaa5eb0709f944ddcd9537f3d6acff14"
+    },
+    {
+      "path": "embeddings/sub-021_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-021_embeddings.csv",
+      "bytes": 621846,
+      "git_blob_sha1": "22816deaf9ae4b17bb9709d6e99b4e05df562f00",
+      "sha256": "6bdf409ddf519c5f93e5888e5d9f47426e2d68981dd899c743b1920af6757946"
+    },
+    {
+      "path": "embeddings/sub-023_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-023_embeddings.csv",
+      "bytes": 307511,
+      "git_blob_sha1": "c866261217d9faa2b322c2e910d2e36cfe777297",
+      "sha256": "0a0c091315b2c87f19f455020b7629215f6fd1351b9d2b2656f21977e2f481e2"
+    },
+    {
+      "path": "embeddings/sub-024_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-024_embeddings.csv",
+      "bytes": 326453,
+      "git_blob_sha1": "c0ca6a75c8c4028bfdd9f95e7b904ea69d463937",
+      "sha256": "989aa0e3ad455b0c45777d086480bbb5768cc8d9dc342e2d8ed14037f0bc1e8a"
+    },
+    {
+      "path": "embeddings/sub-025_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-025_embeddings.csv",
+      "bytes": 555078,
+      "git_blob_sha1": "962b4b14a5630466009a9171c750f367f7733174",
+      "sha256": "7f4b8516f3dc6c875fbb85646544909750953b9e00e478bdf8f9d9249863b75f"
+    },
+    {
+      "path": "embeddings/sub-026_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-026_embeddings.csv",
+      "bytes": 1106946,
+      "git_blob_sha1": "fa1c6e5ed9db5936199d5ca2aeb8c44baa7e0887",
+      "sha256": "9d42e2dc16c7677e54a66cb721c3990b29d4a5a33afa27b25cfcff5c7fbc43e9"
+    },
+    {
+      "path": "embeddings/sub-027_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-027_embeddings.csv",
+      "bytes": 783213,
+      "git_blob_sha1": "f0f5a08db167e84b7ae80f1280d9403788dbddb7",
+      "sha256": "57fec95ade0f4090afffbd7bc78d253ae56fe5e4a7cf60ee5be715aee1cbda62"
+    },
+    {
+      "path": "embeddings/sub-029_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-029_embeddings.csv",
+      "bytes": 459874,
+      "git_blob_sha1": "ac509f60f7832fa0146201208178f1c0bb199417",
+      "sha256": "4502559ae91966997a6a5215213ca2fb9c847bca1b1b634d8165a9be37f629d5"
+    },
+    {
+      "path": "embeddings/sub-031_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-031_embeddings.csv",
+      "bytes": 869213,
+      "git_blob_sha1": "8b78a56a87347c615939bfe218a5cb99bd8ab23e",
+      "sha256": "78f04de444108f4430f1d0c7acedb8dc7a9f2d3259f5764916b18f1bfab4763b"
+    },
+    {
+      "path": "embeddings/sub-032_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-032_embeddings.csv",
+      "bytes": 935650,
+      "git_blob_sha1": "25361d3f94aefc1809460948b451319ab5d8b6dd",
+      "sha256": "7a4a129c47b88bfb521dacdfc4e8112078aa0ba13eae6fd5189a56a76801b741"
+    },
+    {
+      "path": "embeddings/sub-033_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-033_embeddings.csv",
+      "bytes": 554716,
+      "git_blob_sha1": "b06fa02aaf253fcb69babb0e562ded3648472aa0",
+      "sha256": "2679f6c239ae98ddefb25a4556db35083932d9850723e5561a51bfc614427397"
+    },
+    {
+      "path": "embeddings/sub-034_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-034_embeddings.csv",
+      "bytes": 430915,
+      "git_blob_sha1": "1093c4e288ee2ecb6c9cc535890a0f47790963db",
+      "sha256": "d9f6f8a2eea39be7e702340a6b62a351253896ca78899a6bbced5d02993abd3a"
+    },
+    {
+      "path": "embeddings/sub-035_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-035_embeddings.csv",
+      "bytes": 393142,
+      "git_blob_sha1": "45e53db2c0916e400365196d3fbae4967669b53d",
+      "sha256": "eed21b24ca46edc84f35216303653139e3b29d78bd07f168354470964c051d97"
+    },
+    {
+      "path": "embeddings/sub-036_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-036_embeddings.csv",
+      "bytes": 259775,
+      "git_blob_sha1": "800abe1c47b0546ad95415b848aa8e61d614a895",
+      "sha256": "26f095e3e42ce8f8ac130e2c1e9f2c791d9302e84c447e54e8433133cac65399"
+    },
+    {
+      "path": "embeddings/sub-037_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-037_embeddings.csv",
+      "bytes": 288409,
+      "git_blob_sha1": "8a0207ba4d55ec30fbec8fb50963b89b63e4e7ec",
+      "sha256": "7fac03dc380dccede0dcbf49a34adab7c77f6364cc3f17d8892b43125d1abf5c"
+    },
+    {
+      "path": "embeddings/sub-038_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-038_embeddings.csv",
+      "bytes": 602417,
+      "git_blob_sha1": "ae96faa5a8c51633c40610e6550a45068363a135",
+      "sha256": "667085906ff6558d40e0f759ab336df976f898ae12ecd7ce4591efa5067fcf67"
+    },
+    {
+      "path": "embeddings/sub-039_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-039_embeddings.csv",
+      "bytes": 316942,
+      "git_blob_sha1": "f2bc769ac465c065760109546d4a00dc0c6ac3da",
+      "sha256": "b7e2c58337f6f65bf528fd74c4f400c5acbeb35a18c5096c87e1f537bf58cd42"
+    },
+    {
+      "path": "embeddings/sub-040_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-040_embeddings.csv",
+      "bytes": 317144,
+      "git_blob_sha1": "d9d571d3153e65bd2bafe500b4d400de852559ab",
+      "sha256": "25f05ab70e229429b42c6010a84ba316d382138ef7c7e905fa2cacc3d96092e9"
+    },
+    {
+      "path": "embeddings/sub-041_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-041_embeddings.csv",
+      "bytes": 488300,
+      "git_blob_sha1": "9e218d6218005d506a746a721a22ccd930995ca2",
+      "sha256": "93c1a4a027865c380012f87b80a93b7cf80ab953e3fecba8fa6e83d101fa6e26"
+    },
+    {
+      "path": "embeddings/sub-042_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-042_embeddings.csv",
+      "bytes": 421744,
+      "git_blob_sha1": "d20ad9c1f3619a28627fc68844f437520731540b",
+      "sha256": "2f8e4ee766b240ac75c43f11135332cd0ee705ce99c65b77a38987ee47c893c0"
+    },
+    {
+      "path": "embeddings/sub-043_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-043_embeddings.csv",
+      "bytes": 697417,
+      "git_blob_sha1": "1dce194e3b3ce465b123dc019823c4209b81d2dd",
+      "sha256": "87d7f129135fa9aba7a7da63425744c291ba36faa36526fea405ee238e176882"
+    },
+    {
+      "path": "embeddings/sub-044_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-044_embeddings.csv",
+      "bytes": 478637,
+      "git_blob_sha1": "5a9ed31206fe8a396283b1379a09c5eac1867dc5",
+      "sha256": "a20a1387cbdfdd3b21e1a68167cbdff67ac669fe7c5fffb17f4ad18850c05890"
+    },
+    {
+      "path": "embeddings/sub-045_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-045_embeddings.csv",
+      "bytes": 374170,
+      "git_blob_sha1": "6bde59b084fe569d9d4fc9fa139de8475d4666b5",
+      "sha256": "b5fb110789c4f16cc1cbbcdeb8a039db1695a1a4f1088b4776d1896ea4a15091"
+    },
+    {
+      "path": "embeddings/sub-046_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-046_embeddings.csv",
+      "bytes": 374003,
+      "git_blob_sha1": "3d3f4d9bbd3885ff8fcd6cd976aa5e51d8fec7c7",
+      "sha256": "71d5b0615fa228ac7968c21283bf4b1ac61321755b880f9a8c0f52abe9e867f2"
+    },
+    {
+      "path": "embeddings/sub-047_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-047_embeddings.csv",
+      "bytes": 497821,
+      "git_blob_sha1": "9bfbf50bc94f9982329e49c82f4782ad3ac9353b",
+      "sha256": "fc05d37570b105b7e3a8dc75e8e49205dc8424089ddd67992b650b0aae79ade5"
+    },
+    {
+      "path": "embeddings/sub-048_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-048_embeddings.csv",
+      "bytes": 583495,
+      "git_blob_sha1": "48b380c77e0526885acbbb1e408aaddcbc7f7ffc",
+      "sha256": "68cfcdeae1ecbb0b69310fe4c2499170262c8eb3f614ed19c791389525eaca1d"
+    },
+    {
+      "path": "embeddings/sub-049_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-049_embeddings.csv",
+      "bytes": 630980,
+      "git_blob_sha1": "09055b5670e10127f643da8e918b34103e9a8196",
+      "sha256": "64167bcfecb098a265c45ce1aaff7c08ce1e8f6a205cc64231ab1b98ef64dff6"
+    },
+    {
+      "path": "embeddings/sub-050_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-050_embeddings.csv",
+      "bytes": 545290,
+      "git_blob_sha1": "e90aac60721d5349d75593c9bc8c70aa6ace653c",
+      "sha256": "253bace14f052ada96c633f51898138ef78fbbba1edafd7126866baf2f8e1b18"
+    },
+    {
+      "path": "embeddings/sub-051_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-051_embeddings.csv",
+      "bytes": 402418,
+      "git_blob_sha1": "188081528fb4d24dd3047cb5f0e5c711b79ddade",
+      "sha256": "f743159325c6161c047ae3322c1c022ca9eb1f1ba99f2a8b09aeff05c6b4d42d"
+    },
+    {
+      "path": "embeddings/sub-052_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-052_embeddings.csv",
+      "bytes": 402590,
+      "git_blob_sha1": "f0da81cc7aa2a30ed5bc6bf159c42bf35df6055c",
+      "sha256": "e15f547c275e9b8af6968d20163f4997c7663758383cb7146567181850b98561"
+    },
+    {
+      "path": "embeddings/sub-053_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-053_embeddings.csv",
+      "bytes": 288447,
+      "git_blob_sha1": "e99fb7c3029ac319f98bcecf77523b4bbaceba5d",
+      "sha256": "1550ce5220f6bb348868614bd47c22040852c754066de3bf185c952e161c1282"
+    },
+    {
+      "path": "embeddings/sub-054_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-054_embeddings.csv",
+      "bytes": 431286,
+      "git_blob_sha1": "13a2b30b632651ff6b3ba0884e7f0255a257af04",
+      "sha256": "bd73a16d66e1a7753fe4e2c9a4edb2588fe300822a15d29c1a0404dbf11a9174"
+    },
+    {
+      "path": "embeddings/sub-055_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-055_embeddings.csv",
+      "bytes": 831254,
+      "git_blob_sha1": "7891918c80101fed76062178532b9fb21f7f971b",
+      "sha256": "39d5e525c85d3a41370fd4ac5375a25ff097abcdb9e3621008298ad6fb9676d9"
+    },
+    {
+      "path": "embeddings/sub-056_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-056_embeddings.csv",
+      "bytes": 278887,
+      "git_blob_sha1": "bc19cb67838c18bb4f3049a6bfe2a39dbec81e9f",
+      "sha256": "ebd6b70b9a4168b53f6822a72bf297edd72079a7629404174f022b0d97a41034"
+    },
+    {
+      "path": "embeddings/sub-057_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-057_embeddings.csv",
+      "bytes": 564382,
+      "git_blob_sha1": "c81d7ef03ed912a4e04204ddc41115c437b10f69",
+      "sha256": "d35c3530e528b6aeec56aec61d7810f12dc160c30e710b95b03682a9b5611baf"
+    },
+    {
+      "path": "embeddings/sub-058_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-058_embeddings.csv",
+      "bytes": 393295,
+      "git_blob_sha1": "049bcbd51237ec98fe242c9c26d7c40d2e00f141",
+      "sha256": "f047e36a3adbaa12eb03cc41f047db7c009a45db9664fc3fa00f9fc956adff62"
+    },
+    {
+      "path": "embeddings/sub-059_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-059_embeddings.csv",
+      "bytes": 345744,
+      "git_blob_sha1": "7030e4bac217a7119c42fdd583c92919cecffd5f",
+      "sha256": "440bc3cb04e31ac3d07f28522234bbfb0bb8b159cb327e273c27e1e3b8a77a86"
+    },
+    {
+      "path": "embeddings/sub-060_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-060_embeddings.csv",
+      "bytes": 536010,
+      "git_blob_sha1": "71e8d51edd2d695bf95b4af069a1447f5af63a2f",
+      "sha256": "f1e5429e9cc46c3bc884d74c65b2bdc3e61aa7fe17307cc90f99ed5911615f3c"
+    },
+    {
+      "path": "embeddings/sub-061_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-061_embeddings.csv",
+      "bytes": 317076,
+      "git_blob_sha1": "5c4f516edd31dcef6cfa4fb4fc2ef0623a0fb3f8",
+      "sha256": "05e36c08f727bd631802e962d5137eb8445797004a5e8ab89a5841e5f71ea632"
+    },
+    {
+      "path": "embeddings/sub-062_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-062_embeddings.csv",
+      "bytes": 630908,
+      "git_blob_sha1": "563d078002002522c1a08d3653fb4c8e9d5d39c5",
+      "sha256": "3fb2e05bc9820ad56cbb28e8323698754bc72ade5a774c9746ff34e649337653"
+    },
+    {
+      "path": "embeddings/sub-064_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-064_embeddings.csv",
+      "bytes": 1125560,
+      "git_blob_sha1": "c316eee99b9bca9fdb8a671bf44eaad0ecd0ad39",
+      "sha256": "7d9b1eed3816def6b6831a559b731a2183b1ac72c89e1271cfe319b6d83888bc"
+    },
+    {
+      "path": "embeddings/sub-065_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-065_embeddings.csv",
+      "bytes": 878490,
+      "git_blob_sha1": "7ffbf3d8096ac2f47f036f415db5003063b2ca79",
+      "sha256": "81a994c1074c11d59cbb7224da52c7f1fea1a298f82e7fa0c2037489681333c8"
+    },
+    {
+      "path": "embeddings/sub-066_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-066_embeddings.csv",
+      "bytes": 744920,
+      "git_blob_sha1": "3962b706a831c6834963acd16f705cb3eeb7f77f",
+      "sha256": "1884dfa64d014a8dac647bbc2cc66e0af4910b47218684cc42fcee5687bed06b"
+    },
+    {
+      "path": "embeddings/sub-067_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-067_embeddings.csv",
+      "bytes": 231439,
+      "git_blob_sha1": "5e65ebb0776910caf73f7e90e25d1c9cd7a76058",
+      "sha256": "424cf7bee545fc1ef76406e64fe10fc7151403aaa0f0f64cc9a63b2b0e846472"
+    },
+    {
+      "path": "embeddings/sub-068_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-068_embeddings.csv",
+      "bytes": 402507,
+      "git_blob_sha1": "24c6a9ced28d662f02853acbea90ac1ea2e8f37e",
+      "sha256": "34d47715f5dbd33327d97f190e4a244171a59680bde97ef2829305f76f73b2c4"
+    },
+    {
+      "path": "embeddings/sub-069_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-069_embeddings.csv",
+      "bytes": 602430,
+      "git_blob_sha1": "ec6b1e7b106d078ed1bbb0164cba5dfb1f74a3cd",
+      "sha256": "621e7f2b87a5984e3700c030f00c23a8adea483cff27244a3c233a7611b71e9c"
+    },
+    {
+      "path": "embeddings/sub-070_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-070_embeddings.csv",
+      "bytes": 450055,
+      "git_blob_sha1": "16b0d07dcfbc250c876e88a75c490e64793497f4",
+      "sha256": "a89cf8098c9c344220754d2d7f06ec962df468d9e0553d2fc4d099c78b436166"
+    },
+    {
+      "path": "embeddings/sub-071_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-071_embeddings.csv",
+      "bytes": 354872,
+      "git_blob_sha1": "d3724eb64a10e55dcf3a2b056e47db0e9ca2c6d0",
+      "sha256": "4874224dc36ee2b76258be1626389f5524959b80af1c7cb56155256014183c20"
+    },
+    {
+      "path": "embeddings/sub-072_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-072_embeddings.csv",
+      "bytes": 278691,
+      "git_blob_sha1": "b1b79a83959063e190cc38b7aaf38d89c78b4db0",
+      "sha256": "c9306027aa614b89b2fa6dd8872137b3406f3eb050c267d767513867aa24a39f"
+    },
+    {
+      "path": "embeddings/sub-073_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-073_embeddings.csv",
+      "bytes": 754815,
+      "git_blob_sha1": "00e6aa063d70fa9034f8304055e530e5c49d7915",
+      "sha256": "a948dec4f492e6ac7b700346dd1028b85b01d6d3c54fc46c2c6877846864cea0"
+    },
+    {
+      "path": "embeddings/sub-074_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-074_embeddings.csv",
+      "bytes": 659758,
+      "git_blob_sha1": "fef8f098edeecdc64f763e719307ca61798d81fb",
+      "sha256": "04fb14272b9a751dcff74d7848dc44405476d0765e3e4638e94db6bdcb642888"
+    },
+    {
+      "path": "embeddings/sub-075_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-075_embeddings.csv",
+      "bytes": 736058,
+      "git_blob_sha1": "c7e71fed4eeb9e2a3797a91f4b805d910551dcb6",
+      "sha256": "1d401514a8dce67930e4ff8bef798f640b14473ead2645ec3c6dd0dd825635dc"
+    },
+    {
+      "path": "embeddings/sub-076_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-076_embeddings.csv",
+      "bytes": 497824,
+      "git_blob_sha1": "52fdd0d5ef66f9d3a50fb298efd051c95494361b",
+      "sha256": "36637bcbb94b763a7a91ae0bc437f6cf1ab4f7150abf50a3537bf3fc6b37343c"
+    },
+    {
+      "path": "embeddings/sub-077_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-077_embeddings.csv",
+      "bytes": 745179,
+      "git_blob_sha1": "ae8300d4a0be09a24b0d464c4d1d22786e475298",
+      "sha256": "50b05fd5938871c21d934008c12d092e83a4e34c1145e1ccce8ad6902ffdc87d"
+    },
+    {
+      "path": "embeddings/sub-078_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-078_embeddings.csv",
+      "bytes": 754994,
+      "git_blob_sha1": "f8f9a6b543085ef8d8d8712cf2b75d0a94c1e40b",
+      "sha256": "1e7d18342221fef5f626b8f60c6f27fbc8d92116c6b36283ed20ff3409d3d0cc"
+    },
+    {
+      "path": "embeddings/sub-079_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-079_embeddings.csv",
+      "bytes": 421683,
+      "git_blob_sha1": "3ba0a8bf571a42a0949a12cc082a2c91d6bbd8c3",
+      "sha256": "71099681fe8ae9b3233593835b15457a3cd63acdd3d08d86503cfb47a4ba8755"
+    },
+    {
+      "path": "embeddings/sub-080_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-080_embeddings.csv",
+      "bytes": 507362,
+      "git_blob_sha1": "21e813ec5cfea3f6685b5a1a7253e308d84dd6d4",
+      "sha256": "4c7adf3f0d4f46f4d000d4dd38bf82dd740abb01ad5a75af0a33cf68a42c3258"
+    },
+    {
+      "path": "embeddings/sub-081_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-081_embeddings.csv",
+      "bytes": 364663,
+      "git_blob_sha1": "b5b2775d1d022bdb4930ff94adea9c30734d5ddf",
+      "sha256": "132d8f88f611ec314f0a2ebce4f68b4f8dd2353e65d44c6fb700e3d5147da4a5"
+    },
+    {
+      "path": "embeddings/sub-082_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-082_embeddings.csv",
+      "bytes": 326518,
+      "git_blob_sha1": "3b5abe0b7ac9da648dd3aadbe69bba25d6c2789f",
+      "sha256": "d1439636d43995e6762507962d2aa21ed62de1baa7f761f56805b13f1c817750"
+    },
+    {
+      "path": "embeddings/sub-083_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-083_embeddings.csv",
+      "bytes": 792862,
+      "git_blob_sha1": "2c455b52d0e23b4d16219087af9a797aab42e7ac",
+      "sha256": "b832351fe03a1adcb4af729365b945d0d7776769b8107f06ac9c6cf7d4145e6f"
+    },
+    {
+      "path": "embeddings/sub-084_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-084_embeddings.csv",
+      "bytes": 697148,
+      "git_blob_sha1": "6aa7092e5d888f8f7a6396268e891ba2633d55a3",
+      "sha256": "7b80d6fc65502b64b76588b3be7a0d4adae3469abb0ecf95d78d28ff73a8afda"
+    },
+    {
+      "path": "embeddings/sub-085_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-085_embeddings.csv",
+      "bytes": 516998,
+      "git_blob_sha1": "7b8ef38dbadff7e17ba8e9f012344f29d4705a4c",
+      "sha256": "e414c0b101152ca580359436e212086e5c650b4bff95cdfaed4bce571ea22191"
+    },
+    {
+      "path": "embeddings/sub-086_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-086_embeddings.csv",
+      "bytes": 478935,
+      "git_blob_sha1": "2f19c87882b7e2822f515413861546d5082efc39",
+      "sha256": "c82b79518cad9ba8fc46170351323b9ceacf784f612f86c201369b4001898477"
+    },
+    {
+      "path": "embeddings/sub-087_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-087_embeddings.csv",
+      "bytes": 202674,
+      "git_blob_sha1": "5bde1ed95bbec858cdadc3f316594c0224c26b69",
+      "sha256": "977cad6c07e1a06f5d39fd3a7e0adb11152b00e60af433e3838b24fc12c37019"
+    },
+    {
+      "path": "embeddings/sub-088_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-088_embeddings.csv",
+      "bytes": 278907,
+      "git_blob_sha1": "00f01282278809f40f37329d765272d416f3092c",
+      "sha256": "f3ec62ac260a8b3ea1951f6ed27b1ddeb2eff9db687d09d0b6d8ac27ad7cd589"
+    },
+    {
+      "path": "embeddings/sub-089_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-089_embeddings.csv",
+      "bytes": 335960,
+      "git_blob_sha1": "778de26683ca3be9997aa5606650d7ac871fbf0e",
+      "sha256": "0a28eea56a896a82463c50811d4b9d5d32f7fec3d4fc46871a3627eb5f56569f"
+    },
+    {
+      "path": "embeddings/sub-090_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-090_embeddings.csv",
+      "bytes": 906658,
+      "git_blob_sha1": "8117468a5c8c99a641b8b54e173530ff1ac4b3fc",
+      "sha256": "2d7a8b6535d1120597e30ec7802578a8ec6895ee3238e91682e0a0025d010092"
+    },
+    {
+      "path": "embeddings/sub-091_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-091_embeddings.csv",
+      "bytes": 564341,
+      "git_blob_sha1": "79deb6ea31971febd82acd52417ef66f71d3da8b",
+      "sha256": "6d921cb7e48dddb3bde5b58096e6335358d5c1973049dfd2e3eb3f47d56c0265"
+    },
+    {
+      "path": "embeddings/sub-092_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-092_embeddings.csv",
+      "bytes": 288471,
+      "git_blob_sha1": "d5359fb3a9f19ec6b14ea1f818fb610e75075bff",
+      "sha256": "9d98fbabda9f77663f3a4415babe4957bf463fffd3c539c9e9182e494ad5552e"
+    },
+    {
+      "path": "embeddings/sub-093_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-093_embeddings.csv",
+      "bytes": 706940,
+      "git_blob_sha1": "5b70935c9953fc75433335a8604a11b2918a07b9",
+      "sha256": "e8def8dd971ab6095be9a238b77b13ae09b97ebe1c2b432c76adc4256b07ebd9"
+    },
+    {
+      "path": "embeddings/sub-094_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-094_embeddings.csv",
+      "bytes": 678509,
+      "git_blob_sha1": "08434b0833d380344c14c38663d4730d45900224",
+      "sha256": "102e512c5da388a8e09231bf9846f65bea5ebbb15fb32f69e910215ad09b2a46"
+    },
+    {
+      "path": "embeddings/sub-096_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-096_embeddings.csv",
+      "bytes": 630937,
+      "git_blob_sha1": "e7d205c7acf776ec7d7736278ecbe3ca898aa7f4",
+      "sha256": "240b6dd3de7f0d87ab4c5b5294fc7e3d9c2b9b441a450a1a5b1ca95093a5315a"
+    },
+    {
+      "path": "embeddings/sub-097_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-097_embeddings.csv",
+      "bytes": 564438,
+      "git_blob_sha1": "cb7496ff868c1f3dab1e846c6ffde9b74b2d91da",
+      "sha256": "0d08c72a7fb792e5cce9a553065dcd46ed8e60a8a88abdc6be9218005d892a05"
+    },
+    {
+      "path": "embeddings/sub-098_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-098_embeddings.csv",
+      "bytes": 735696,
+      "git_blob_sha1": "0da0d7fff43502df3889b48ca03a1d4b4b3c0961",
+      "sha256": "4a98a4906d4613728e3e4f792bf6a3e9a7fe63bfaf58549a6d9b64ddcd49b2c7"
+    },
+    {
+      "path": "embeddings/sub-099_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-099_embeddings.csv",
+      "bytes": 412193,
+      "git_blob_sha1": "7318341d41003a9336785258a89cd4cb615df610",
+      "sha256": "2584e06cd88d04a12774a66645158f8669e1d96988f2f6f0d48a345eed278aa5"
+    },
+    {
+      "path": "embeddings/sub-100_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-100_embeddings.csv",
+      "bytes": 355046,
+      "git_blob_sha1": "c932726a4f3fce8dac74d0a82b86c2e55e458b17",
+      "sha256": "91bfa14b3e97287aa9b499d3f9efe97de3f9ebc4b290ecdbd5ca10342a729660"
+    },
+    {
+      "path": "embeddings/sub-101_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-101_embeddings.csv",
+      "bytes": 383352,
+      "git_blob_sha1": "1aa5f7cb5d5ce5cbe1628d61fcceae66b0799ce5",
+      "sha256": "7bb3b9f94ec59eefe85b24b8a709fef3a6ed6319b92e7a0f91181dc7d688ea85"
+    },
+    {
+      "path": "embeddings/sub-102_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-102_embeddings.csv",
+      "bytes": 488514,
+      "git_blob_sha1": "4889e5f7459d00618e6d18806658535931d7cf1d",
+      "sha256": "44f02c4e27bc48e4914fd97192d3c986b83f7d5e04d85b8e38a5465c44feb1b3"
+    },
+    {
+      "path": "embeddings/sub-103_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-103_embeddings.csv",
+      "bytes": 364636,
+      "git_blob_sha1": "7cb61fc387d559ee023062e59c75552cc42efe22",
+      "sha256": "88050af39f9a00b493f065d03ef16b041eae64b80a59be09cccd45f30b0e8fe1"
+    },
+    {
+      "path": "embeddings/sub-105_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-105_embeddings.csv",
+      "bytes": 716162,
+      "git_blob_sha1": "ad2c3f54184cacd50da922bae02c6ef86f57858f",
+      "sha256": "062ab8664a675d8bb299e60ffea84b2c6e77198cc3041cdfad8dcf2b45d48692"
+    },
+    {
+      "path": "embeddings/sub-106_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-106_embeddings.csv",
+      "bytes": 450295,
+      "git_blob_sha1": "ed63c913eb3ca538d70dd0fd02fffeddc21b0aff",
+      "sha256": "95299ca6dbfe3cc3076f2a674b2129b8f6df26aef00dfc8ce89575a5d10f05ca"
+    },
+    {
+      "path": "embeddings/sub-107_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-107_embeddings.csv",
+      "bytes": 354980,
+      "git_blob_sha1": "46af88d144764c741cf0005bac21a361e3e59512",
+      "sha256": "a7b5e0b6feecd59d81143095289fa16b78ca2179b03ff5ce6a91d5de70850eb9"
+    },
+    {
+      "path": "embeddings/sub-108_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-108_embeddings.csv",
+      "bytes": 536018,
+      "git_blob_sha1": "c318ff76f78edb8871b12373810441e6902e921b",
+      "sha256": "ad428510612749152aa9dc06c0f2cf99550beab2fbb09c9527624d001f927a24"
+    },
+    {
+      "path": "embeddings/sub-109_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-109_embeddings.csv",
+      "bytes": 336009,
+      "git_blob_sha1": "6575fb77059863c9cdeebdeb394052b3b1a0f958",
+      "sha256": "1cffd5363f60933976a07b912b99e5ced6e93aab9384d52b68beffd017c9e4e8"
+    },
+    {
+      "path": "embeddings/sub-110_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-110_embeddings.csv",
+      "bytes": 183753,
+      "git_blob_sha1": "e886f745cc68ac6af195add53049ed034b8c4471",
+      "sha256": "b49960af36b39f17000dfb46db0d2b3d1ac5fee5937110cd1a0c9555196a5999"
+    },
+    {
+      "path": "embeddings/sub-111_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-111_embeddings.csv",
+      "bytes": 488298,
+      "git_blob_sha1": "eba95331d5ccd773a775b9fdd89afeda21147e1d",
+      "sha256": "b5825b32e625a0349e45785215c66f4f6d6f19be897535785a3be622de8ccf68"
+    },
+    {
+      "path": "embeddings/sub-112_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-112_embeddings.csv",
+      "bytes": 678858,
+      "git_blob_sha1": "c016065015aaa5463ce6ea6c3544dae4cde99c18",
+      "sha256": "55866c35c535da50be26f31a2aca068c10d3176a6b857e3754fb42809d6ba014"
+    },
+    {
+      "path": "embeddings/sub-113_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-113_embeddings.csv",
+      "bytes": 801991,
+      "git_blob_sha1": "9f5cd9c298fd83475e04190bc182d0f8950bf011",
+      "sha256": "ca45c382ad2bc922c028bfdec65e493906ea3a6ed76d575c8ba513db68c34724"
+    },
+    {
+      "path": "embeddings/sub-114_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-114_embeddings.csv",
+      "bytes": 526073,
+      "git_blob_sha1": "6e4a84c7640f8dac4b231bdc5698f575e5555382",
+      "sha256": "8a7061d5f3dce03138d3724a42bb3821d747d912f3a6cc210b1c21c5aea90b35"
+    },
+    {
+      "path": "embeddings/sub-115_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-115_embeddings.csv",
+      "bytes": 564012,
+      "git_blob_sha1": "6b8c83094156c3ee608d0fce08d4153506e4bffd",
+      "sha256": "a1acd1b8adfbbcd766ceb9a2a41c5f1739e9324f04e02d780e3fb5346971fd6a"
+    },
+    {
+      "path": "embeddings/sub-116_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-116_embeddings.csv",
+      "bytes": 526400,
+      "git_blob_sha1": "cfdc2f6a8ed310d1255237b2bcd22272526308b4",
+      "sha256": "85291dbd2650d65df91d3e6f0015010756a0d2abeb53ad7d79e81c1c71daf092"
+    },
+    {
+      "path": "embeddings/sub-117_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-117_embeddings.csv",
+      "bytes": 335868,
+      "git_blob_sha1": "cca76db24a66ecb45af63addc927070351bed9dd",
+      "sha256": "e97ffcd69cdb6224e7268b533602a968176d425b900e02f103d31658fbbea571"
+    },
+    {
+      "path": "embeddings/sub-118_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-118_embeddings.csv",
+      "bytes": 707085,
+      "git_blob_sha1": "8136fa13d46294de3d5ad6b9a2b60287e184a773",
+      "sha256": "98fe9f6e3ded04fae7fbce5d67722b35899620ee539286cbb749f36a03d6cf8d"
+    },
+    {
+      "path": "embeddings/sub-119_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-119_embeddings.csv",
+      "bytes": 374118,
+      "git_blob_sha1": "636c18220b1dd2a3ea77ac7338426b0c8983cd3d",
+      "sha256": "0582fe67299dcbd41abc14c4a1bb7be62291eb951590b8ef316438a7b5ed7515"
+    },
+    {
+      "path": "embeddings/sub-120_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-120_embeddings.csv",
+      "bytes": 459666,
+      "git_blob_sha1": "e55add346869fe6ee8091e2e2ba7dc046e8f1ebb",
+      "sha256": "66acb19889892e113592e14433cc86f79637f771340797ec61f56fb4dcdc5912"
+    },
+    {
+      "path": "embeddings/sub-121_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-121_embeddings.csv",
+      "bytes": 726274,
+      "git_blob_sha1": "b8255a69bf22773d6293f6b1e38b722d61d7ad43",
+      "sha256": "41e56365fe7df3912922ad14e04c07d19cdd351278535084aef31230a1ce71b1"
+    },
+    {
+      "path": "embeddings/sub-122_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-122_embeddings.csv",
+      "bytes": 688051,
+      "git_blob_sha1": "b1aa3e9b62126fb52575660fec76bbffa34d3502",
+      "sha256": "43bb600f02f28875c68f90dc0e1ef7c9829332c7274b253ffd7953b0fa0c04d7"
+    },
+    {
+      "path": "embeddings/sub-123_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-123_embeddings.csv",
+      "bytes": 516876,
+      "git_blob_sha1": "5d4e779e958f41e1d9ed011009746c78be0ab887",
+      "sha256": "ce18fb10dc993bf0e06971e82400977fc069cee1271decd31ef6352b816158e7"
+    },
+    {
+      "path": "embeddings/sub-124_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-124_embeddings.csv",
+      "bytes": 516541,
+      "git_blob_sha1": "eef440412fe17cb64e76a084c3a02ea30bc2fa7c",
+      "sha256": "f5b1af729cf06e99e43a383003b3a96c2b5ce4bf2492af642a7c1eec15e2c2fc"
+    },
+    {
+      "path": "embeddings/sub-125_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-125_embeddings.csv",
+      "bytes": 497795,
+      "git_blob_sha1": "550115aa1c5d0e2c24367d6614dc379fb9bd175d",
+      "sha256": "299c7a4739bfc58c59bcacb8798543c15d84347ef27cdf8d67226ce30787db99"
+    },
+    {
+      "path": "embeddings/sub-126_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-126_embeddings.csv",
+      "bytes": 887893,
+      "git_blob_sha1": "66762affbbf188af9da94aa55d5da7894cea11ff",
+      "sha256": "a7226ec84f18e1e80768d477a1f65537da35be89165002f7ff9375211a30eee2"
+    },
+    {
+      "path": "embeddings/sub-127_embeddings.csv",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/embeddings/sub-127_embeddings.csv",
+      "bytes": 573829,
+      "git_blob_sha1": "7339c3b3805872d8120c98ed961b22be501009aa",
+      "sha256": "63469c42cefdca97e2b0bd4c23bb222ded2352e50a762ddddfe611d823bf0371"
+    },
+    {
+      "path": "participant_info.xlsx",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/participant_info.xlsx",
+      "bytes": 14176,
+      "git_blob_sha1": "45ea769ccbfc26162f25d04907bf364bd721a15e",
+      "sha256": "5e0f840133bd45afef8defa5885817623151696c7ce41dbb653ad15d0a2f3588"
+    },
+    {
+      "path": "thinkaloud_behavior_analysis.ipynb",
+      "url": "https://raw.githubusercontent.com/Lee-Memory-Cognition-Lab/thinkaloud_paper/e8005a84122e208f1607064d897763d6cbddf25a/thinkaloud_behavior_analysis.ipynb",
+      "bytes": 1782376,
+      "git_blob_sha1": "0c95903a269e80d44dbe0f821051ba7430634223",
+      "sha256": "9bcbd6861258b3eba89f545ca7c79c990721d80d9cee6806b74b33c0191ea028"
+    }
+  ]
+}

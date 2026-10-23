@@ -1,0 +1,53 @@
+{
+  "participants": 118,
+  "sentences": 12104,
+  "thoughts": 6434,
+  "embedding_rows": 6434,
+  "nonfinite_times": 0,
+  "nonpositive_duration": 0,
+  "start_reversals": 0,
+  "overlapping_neighbor_rows": 0,
+  "multi_category_thoughts": 0,
+  "missing_text": 0,
+  "missing_topic": 0,
+  "thought_id_reversals": 0,
+  "thought_embedding_count_mismatch": 0,
+  "bad_embedding_values": 0,
+  "zero_embedding_rows": 0,
+  "sequential_thought_ids_all": true,
+  "source_files_with_reordered_columns": 3,
+  "source_files_with_extra_columns": 2,
+  "populated_extra_cells": 8,
+  "embedding_dimensions": 768,
+  "thought_category_counts": {
+    "1": 740,
+    "2": 946,
+    "3": 1249,
+    "4": 1789,
+    "5": 1595,
+    "6": 115
+  },
+  "session_span_seconds": {
+    "min": 522.39,
+    "median": 597.735,
+    "max": 611.9
+  },
+  "sentence_headers": [
+    "Transcribed Sentence",
+    "Start Time",
+    "End Time",
+    "category",
+    "topic",
+    "thoughtID"
+  ],
+  "full_two_in_one_fit_performed": false,
+  "missing_observation_definitions": [
+    "Smoke inward-speaking observable",
+    "Clay inward-listening observable",
+    "S and u observation map in a continuous metric domain",
+    "Utility U and its comparison baseline",
+    "Recorded pre-session input or initial-state inference for history",
+    "Water perceived balance and other idea-form labels"
+  ],
+  "source_files_verified": 239
+}

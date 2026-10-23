@@ -1,0 +1,1094 @@
+{
+  "passed": true,
+  "count": 272,
+  "checks": [
+    {
+      "check": "Unchanged solver hash",
+      "passed": true
+    },
+    {
+      "check": "Frozen protocol hash",
+      "passed": true
+    },
+    {
+      "check": "Eighteen completed coupled runs",
+      "passed": true
+    },
+    {
+      "check": "sharp_24 analytic accumulated input at 0.2",
+      "passed": true
+    },
+    {
+      "check": "sharp_24 analytic total at 0.2",
+      "passed": true
+    },
+    {
+      "check": "sharp_24 analytic accumulated input at 0.4",
+      "passed": true
+    },
+    {
+      "check": "sharp_24 analytic total at 0.4",
+      "passed": true
+    },
+    {
+      "check": "sharp_24 analytic accumulated input at 0.6000000000000001",
+      "passed": true
+    },
+    {
+      "check": "sharp_24 analytic total at 0.6000000000000001",
+      "passed": true
+    },
+    {
+      "check": "sharp_24 saved mass",
+      "passed": true
+    },
+    {
+      "check": "sharp_24 saved energy",
+      "passed": true
+    },
+    {
+      "check": "sharp_24 saved velocity_rms",
+      "passed": true
+    },
+    {
+      "check": "sharp_24 saved divergence_rms",
+      "passed": true
+    },
+    {
+      "check": "sharp_24 saved pressure_rms",
+      "passed": true
+    },
+    {
+      "check": "sharp_24 saved stress_rms",
+      "passed": true
+    },
+    {
+      "check": "sharp_24 finite state",
+      "passed": true
+    },
+    {
+      "check": "sharp_24 divergence",
+      "passed": true
+    },
+    {
+      "check": "sharp_48 analytic accumulated input at 0.2",
+      "passed": true
+    },
+    {
+      "check": "sharp_48 analytic total at 0.2",
+      "passed": true
+    },
+    {
+      "check": "sharp_48 analytic accumulated input at 0.4",
+      "passed": true
+    },
+    {
+      "check": "sharp_48 analytic total at 0.4",
+      "passed": true
+    },
+    {
+      "check": "sharp_48 analytic accumulated input at 0.6000000000000001",
+      "passed": true
+    },
+    {
+      "check": "sharp_48 analytic total at 0.6000000000000001",
+      "passed": true
+    },
+    {
+      "check": "sharp_48 saved mass",
+      "passed": true
+    },
+    {
+      "check": "sharp_48 saved energy",
+      "passed": true
+    },
+    {
+      "check": "sharp_48 saved velocity_rms",
+      "passed": true
+    },
+    {
+      "check": "sharp_48 saved divergence_rms",
+      "passed": true
+    },
+    {
+      "check": "sharp_48 saved pressure_rms",
+      "passed": true
+    },
+    {
+      "check": "sharp_48 saved stress_rms",
+      "passed": true
+    },
+    {
+      "check": "sharp_48 finite state",
+      "passed": true
+    },
+    {
+      "check": "sharp_48 divergence",
+      "passed": true
+    },
+    {
+      "check": "sharp_72 analytic accumulated input at 0.2",
+      "passed": true
+    },
+    {
+      "check": "sharp_72 analytic total at 0.2",
+      "passed": true
+    },
+    {
+      "check": "sharp_72 analytic accumulated input at 0.4",
+      "passed": true
+    },
+    {
+      "check": "sharp_72 analytic total at 0.4",
+      "passed": true
+    },
+    {
+      "check": "sharp_72 analytic accumulated input at 0.6000000000000001",
+      "passed": true
+    },
+    {
+      "check": "sharp_72 analytic total at 0.6000000000000001",
+      "passed": true
+    },
+    {
+      "check": "sharp_72 saved mass",
+      "passed": true
+    },
+    {
+      "check": "sharp_72 saved energy",
+      "passed": true
+    },
+    {
+      "check": "sharp_72 saved velocity_rms",
+      "passed": true
+    },
+    {
+      "check": "sharp_72 saved divergence_rms",
+      "passed": true
+    },
+    {
+      "check": "sharp_72 saved pressure_rms",
+      "passed": true
+    },
+    {
+      "check": "sharp_72 saved stress_rms",
+      "passed": true
+    },
+    {
+      "check": "sharp_72 finite state",
+      "passed": true
+    },
+    {
+      "check": "sharp_72 divergence",
+      "passed": true
+    },
+    {
+      "check": "sharp_half_dt analytic accumulated input at 0.2",
+      "passed": true
+    },
+    {
+      "check": "sharp_half_dt analytic total at 0.2",
+      "passed": true
+    },
+    {
+      "check": "sharp_half_dt analytic accumulated input at 0.4",
+      "passed": true
+    },
+    {
+      "check": "sharp_half_dt analytic total at 0.4",
+      "passed": true
+    },
+    {
+      "check": "sharp_half_dt analytic accumulated input at 0.6000000000000001",
+      "passed": true
+    },
+    {
+      "check": "sharp_half_dt analytic total at 0.6000000000000001",
+      "passed": true
+    },
+    {
+      "check": "sharp_half_dt saved mass",
+      "passed": true
+    },
+    {
+      "check": "sharp_half_dt saved energy",
+      "passed": true
+    },
+    {
+      "check": "sharp_half_dt saved velocity_rms",
+      "passed": true
+    },
+    {
+      "check": "sharp_half_dt saved divergence_rms",
+      "passed": true
+    },
+    {
+      "check": "sharp_half_dt saved pressure_rms",
+      "passed": true
+    },
+    {
+      "check": "sharp_half_dt saved stress_rms",
+      "passed": true
+    },
+    {
+      "check": "sharp_half_dt finite state",
+      "passed": true
+    },
+    {
+      "check": "sharp_half_dt divergence",
+      "passed": true
+    },
+    {
+      "check": "sharp_scaled_memory analytic accumulated input at 0.2",
+      "passed": true
+    },
+    {
+      "check": "sharp_scaled_memory analytic total at 0.2",
+      "passed": true
+    },
+    {
+      "check": "sharp_scaled_memory analytic accumulated input at 0.4",
+      "passed": true
+    },
+    {
+      "check": "sharp_scaled_memory analytic total at 0.4",
+      "passed": true
+    },
+    {
+      "check": "sharp_scaled_memory analytic accumulated input at 0.6000000000000001",
+      "passed": true
+    },
+    {
+      "check": "sharp_scaled_memory analytic total at 0.6000000000000001",
+      "passed": true
+    },
+    {
+      "check": "sharp_scaled_memory saved mass",
+      "passed": true
+    },
+    {
+      "check": "sharp_scaled_memory saved energy",
+      "passed": true
+    },
+    {
+      "check": "sharp_scaled_memory saved velocity_rms",
+      "passed": true
+    },
+    {
+      "check": "sharp_scaled_memory saved divergence_rms",
+      "passed": true
+    },
+    {
+      "check": "sharp_scaled_memory saved pressure_rms",
+      "passed": true
+    },
+    {
+      "check": "sharp_scaled_memory saved stress_rms",
+      "passed": true
+    },
+    {
+      "check": "sharp_scaled_memory finite state",
+      "passed": true
+    },
+    {
+      "check": "sharp_scaled_memory divergence",
+      "passed": true
+    },
+    {
+      "check": "tanh_24 analytic accumulated input at 0.2",
+      "passed": true
+    },
+    {
+      "check": "tanh_24 analytic total at 0.2",
+      "passed": true
+    },
+    {
+      "check": "tanh_24 analytic accumulated input at 0.4",
+      "passed": true
+    },
+    {
+      "check": "tanh_24 analytic total at 0.4",
+      "passed": true
+    },
+    {
+      "check": "tanh_24 analytic accumulated input at 0.6000000000000001",
+      "passed": true
+    },
+    {
+      "check": "tanh_24 analytic total at 0.6000000000000001",
+      "passed": true
+    },
+    {
+      "check": "tanh_24 saved mass",
+      "passed": true
+    },
+    {
+      "check": "tanh_24 saved energy",
+      "passed": true
+    },
+    {
+      "check": "tanh_24 saved velocity_rms",
+      "passed": true
+    },
+    {
+      "check": "tanh_24 saved divergence_rms",
+      "passed": true
+    },
+    {
+      "check": "tanh_24 saved pressure_rms",
+      "passed": true
+    },
+    {
+      "check": "tanh_24 saved stress_rms",
+      "passed": true
+    },
+    {
+      "check": "tanh_24 finite state",
+      "passed": true
+    },
+    {
+      "check": "tanh_24 divergence",
+      "passed": true
+    },
+    {
+      "check": "tanh_48 analytic accumulated input at 0.2",
+      "passed": true
+    },
+    {
+      "check": "tanh_48 analytic total at 0.2",
+      "passed": true
+    },
+    {
+      "check": "tanh_48 analytic accumulated input at 0.4",
+      "passed": true
+    },
+    {
+      "check": "tanh_48 analytic total at 0.4",
+      "passed": true
+    },
+    {
+      "check": "tanh_48 analytic accumulated input at 0.6000000000000001",
+      "passed": true
+    },
+    {
+      "check": "tanh_48 analytic total at 0.6000000000000001",
+      "passed": true
+    },
+    {
+      "check": "tanh_48 saved mass",
+      "passed": true
+    },
+    {
+      "check": "tanh_48 saved energy",
+      "passed": true
+    },
+    {
+      "check": "tanh_48 saved velocity_rms",
+      "passed": true
+    },
+    {
+      "check": "tanh_48 saved divergence_rms",
+      "passed": true
+    },
+    {
+      "check": "tanh_48 saved pressure_rms",
+      "passed": true
+    },
+    {
+      "check": "tanh_48 saved stress_rms",
+      "passed": true
+    },
+    {
+      "check": "tanh_48 finite state",
+      "passed": true
+    },
+    {
+      "check": "tanh_48 divergence",
+      "passed": true
+    },
+    {
+      "check": "tanh_72 analytic accumulated input at 0.2",
+      "passed": true
+    },
+    {
+      "check": "tanh_72 analytic total at 0.2",
+      "passed": true
+    },
+    {
+      "check": "tanh_72 analytic accumulated input at 0.4",
+      "passed": true
+    },
+    {
+      "check": "tanh_72 analytic total at 0.4",
+      "passed": true
+    },
+    {
+      "check": "tanh_72 analytic accumulated input at 0.6000000000000001",
+      "passed": true
+    },
+    {
+      "check": "tanh_72 analytic total at 0.6000000000000001",
+      "passed": true
+    },
+    {
+      "check": "tanh_72 saved mass",
+      "passed": true
+    },
+    {
+      "check": "tanh_72 saved energy",
+      "passed": true
+    },
+    {
+      "check": "tanh_72 saved velocity_rms",
+      "passed": true
+    },
+    {
+      "check": "tanh_72 saved divergence_rms",
+      "passed": true
+    },
+    {
+      "check": "tanh_72 saved pressure_rms",
+      "passed": true
+    },
+    {
+      "check": "tanh_72 saved stress_rms",
+      "passed": true
+    },
+    {
+      "check": "tanh_72 finite state",
+      "passed": true
+    },
+    {
+      "check": "tanh_72 divergence",
+      "passed": true
+    },
+    {
+      "check": "tanh_half_dt analytic accumulated input at 0.2",
+      "passed": true
+    },
+    {
+      "check": "tanh_half_dt analytic total at 0.2",
+      "passed": true
+    },
+    {
+      "check": "tanh_half_dt analytic accumulated input at 0.4",
+      "passed": true
+    },
+    {
+      "check": "tanh_half_dt analytic total at 0.4",
+      "passed": true
+    },
+    {
+      "check": "tanh_half_dt analytic accumulated input at 0.6000000000000001",
+      "passed": true
+    },
+    {
+      "check": "tanh_half_dt analytic total at 0.6000000000000001",
+      "passed": true
+    },
+    {
+      "check": "tanh_half_dt saved mass",
+      "passed": true
+    },
+    {
+      "check": "tanh_half_dt saved energy",
+      "passed": true
+    },
+    {
+      "check": "tanh_half_dt saved velocity_rms",
+      "passed": true
+    },
+    {
+      "check": "tanh_half_dt saved divergence_rms",
+      "passed": true
+    },
+    {
+      "check": "tanh_half_dt saved pressure_rms",
+      "passed": true
+    },
+    {
+      "check": "tanh_half_dt saved stress_rms",
+      "passed": true
+    },
+    {
+      "check": "tanh_half_dt finite state",
+      "passed": true
+    },
+    {
+      "check": "tanh_half_dt divergence",
+      "passed": true
+    },
+    {
+      "check": "tanh_scaled_memory analytic accumulated input at 0.2",
+      "passed": true
+    },
+    {
+      "check": "tanh_scaled_memory analytic total at 0.2",
+      "passed": true
+    },
+    {
+      "check": "tanh_scaled_memory analytic accumulated input at 0.4",
+      "passed": true
+    },
+    {
+      "check": "tanh_scaled_memory analytic total at 0.4",
+      "passed": true
+    },
+    {
+      "check": "tanh_scaled_memory analytic accumulated input at 0.6000000000000001",
+      "passed": true
+    },
+    {
+      "check": "tanh_scaled_memory analytic total at 0.6000000000000001",
+      "passed": true
+    },
+    {
+      "check": "tanh_scaled_memory saved mass",
+      "passed": true
+    },
+    {
+      "check": "tanh_scaled_memory saved energy",
+      "passed": true
+    },
+    {
+      "check": "tanh_scaled_memory saved velocity_rms",
+      "passed": true
+    },
+    {
+      "check": "tanh_scaled_memory saved divergence_rms",
+      "passed": true
+    },
+    {
+      "check": "tanh_scaled_memory saved pressure_rms",
+      "passed": true
+    },
+    {
+      "check": "tanh_scaled_memory saved stress_rms",
+      "passed": true
+    },
+    {
+      "check": "tanh_scaled_memory finite state",
+      "passed": true
+    },
+    {
+      "check": "tanh_scaled_memory divergence",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_24 analytic accumulated input at 0.2",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_24 analytic total at 0.2",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_24 analytic accumulated input at 0.4",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_24 analytic total at 0.4",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_24 analytic accumulated input at 0.6000000000000001",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_24 analytic total at 0.6000000000000001",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_24 saved mass",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_24 saved energy",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_24 saved velocity_rms",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_24 saved divergence_rms",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_24 saved pressure_rms",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_24 saved stress_rms",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_24 finite state",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_24 divergence",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_48 analytic accumulated input at 0.2",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_48 analytic total at 0.2",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_48 analytic accumulated input at 0.4",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_48 analytic total at 0.4",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_48 analytic accumulated input at 0.6000000000000001",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_48 analytic total at 0.6000000000000001",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_48 saved mass",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_48 saved energy",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_48 saved velocity_rms",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_48 saved divergence_rms",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_48 saved pressure_rms",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_48 saved stress_rms",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_48 finite state",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_48 divergence",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_72 analytic accumulated input at 0.2",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_72 analytic total at 0.2",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_72 analytic accumulated input at 0.4",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_72 analytic total at 0.4",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_72 analytic accumulated input at 0.6000000000000001",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_72 analytic total at 0.6000000000000001",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_72 saved mass",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_72 saved energy",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_72 saved velocity_rms",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_72 saved divergence_rms",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_72 saved pressure_rms",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_72 saved stress_rms",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_72 finite state",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_72 divergence",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_half_dt analytic accumulated input at 0.2",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_half_dt analytic total at 0.2",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_half_dt analytic accumulated input at 0.4",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_half_dt analytic total at 0.4",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_half_dt analytic accumulated input at 0.6000000000000001",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_half_dt analytic total at 0.6000000000000001",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_half_dt saved mass",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_half_dt saved energy",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_half_dt saved velocity_rms",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_half_dt saved divergence_rms",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_half_dt saved pressure_rms",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_half_dt saved stress_rms",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_half_dt finite state",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_half_dt divergence",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_scaled_memory analytic accumulated input at 0.2",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_scaled_memory analytic total at 0.2",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_scaled_memory analytic accumulated input at 0.4",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_scaled_memory analytic total at 0.4",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_scaled_memory analytic accumulated input at 0.6000000000000001",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_scaled_memory analytic total at 0.6000000000000001",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_scaled_memory saved mass",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_scaled_memory saved energy",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_scaled_memory saved velocity_rms",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_scaled_memory saved divergence_rms",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_scaled_memory saved pressure_rms",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_scaled_memory saved stress_rms",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_scaled_memory finite state",
+      "passed": true
+    },
+    {
+      "check": "smooth_off_scaled_memory divergence",
+      "passed": true
+    },
+    {
+      "check": "no_force analytic accumulated input at 0.2",
+      "passed": true
+    },
+    {
+      "check": "no_force analytic total at 0.2",
+      "passed": true
+    },
+    {
+      "check": "no_force analytic accumulated input at 0.4",
+      "passed": true
+    },
+    {
+      "check": "no_force analytic total at 0.4",
+      "passed": true
+    },
+    {
+      "check": "no_force analytic accumulated input at 0.6000000000000001",
+      "passed": true
+    },
+    {
+      "check": "no_force analytic total at 0.6000000000000001",
+      "passed": true
+    },
+    {
+      "check": "no_force saved mass",
+      "passed": true
+    },
+    {
+      "check": "no_force saved energy",
+      "passed": true
+    },
+    {
+      "check": "no_force saved velocity_rms",
+      "passed": true
+    },
+    {
+      "check": "no_force saved divergence_rms",
+      "passed": true
+    },
+    {
+      "check": "no_force saved pressure_rms",
+      "passed": true
+    },
+    {
+      "check": "no_force saved stress_rms",
+      "passed": true
+    },
+    {
+      "check": "no_force finite state",
+      "passed": true
+    },
+    {
+      "check": "no_force divergence",
+      "passed": true
+    },
+    {
+      "check": "no_source analytic accumulated input at 0.2",
+      "passed": true
+    },
+    {
+      "check": "no_source analytic total at 0.2",
+      "passed": true
+    },
+    {
+      "check": "no_source analytic accumulated input at 0.4",
+      "passed": true
+    },
+    {
+      "check": "no_source analytic total at 0.4",
+      "passed": true
+    },
+    {
+      "check": "no_source analytic accumulated input at 0.6000000000000001",
+      "passed": true
+    },
+    {
+      "check": "no_source analytic total at 0.6000000000000001",
+      "passed": true
+    },
+    {
+      "check": "no_source saved mass",
+      "passed": true
+    },
+    {
+      "check": "no_source saved energy",
+      "passed": true
+    },
+    {
+      "check": "no_source saved velocity_rms",
+      "passed": true
+    },
+    {
+      "check": "no_source saved divergence_rms",
+      "passed": true
+    },
+    {
+      "check": "no_source saved pressure_rms",
+      "passed": true
+    },
+    {
+      "check": "no_source saved stress_rms",
+      "passed": true
+    },
+    {
+      "check": "no_source finite state",
+      "passed": true
+    },
+    {
+      "check": "no_source divergence",
+      "passed": true
+    },
+    {
+      "check": "different_spatial_parameters analytic accumulated input at 0.2",
+      "passed": true
+    },
+    {
+      "check": "different_spatial_parameters analytic total at 0.2",
+      "passed": true
+    },
+    {
+      "check": "different_spatial_parameters analytic accumulated input at 0.4",
+      "passed": true
+    },
+    {
+      "check": "different_spatial_parameters analytic total at 0.4",
+      "passed": true
+    },
+    {
+      "check": "different_spatial_parameters analytic accumulated input at 0.6000000000000001",
+      "passed": true
+    },
+    {
+      "check": "different_spatial_parameters analytic total at 0.6000000000000001",
+      "passed": true
+    },
+    {
+      "check": "different_spatial_parameters saved mass",
+      "passed": true
+    },
+    {
+      "check": "different_spatial_parameters saved energy",
+      "passed": true
+    },
+    {
+      "check": "different_spatial_parameters saved velocity_rms",
+      "passed": true
+    },
+    {
+      "check": "different_spatial_parameters saved divergence_rms",
+      "passed": true
+    },
+    {
+      "check": "different_spatial_parameters saved pressure_rms",
+      "passed": true
+    },
+    {
+      "check": "different_spatial_parameters saved stress_rms",
+      "passed": true
+    },
+    {
+      "check": "different_spatial_parameters finite state",
+      "passed": true
+    },
+    {
+      "check": "different_spatial_parameters divergence",
+      "passed": true
+    },
+    {
+      "check": "sharp saved grid difference",
+      "passed": true
+    },
+    {
+      "check": "sharp decreasing grid difference",
+      "passed": true
+    },
+    {
+      "check": "sharp full state scaling identity",
+      "passed": true
+    },
+    {
+      "check": "tanh saved grid difference",
+      "passed": true
+    },
+    {
+      "check": "tanh decreasing grid difference",
+      "passed": true
+    },
+    {
+      "check": "tanh full state scaling identity",
+      "passed": true
+    },
+    {
+      "check": "smooth_off saved grid difference",
+      "passed": true
+    },
+    {
+      "check": "smooth_off decreasing grid difference",
+      "passed": true
+    },
+    {
+      "check": "smooth_off full state scaling identity",
+      "passed": true
+    },
+    {
+      "check": "All participants",
+      "passed": true
+    },
+    {
+      "check": "Coverage total sentences",
+      "passed": true
+    },
+    {
+      "check": "Coverage total thoughts",
+      "passed": true
+    },
+    {
+      "check": "Coverage total embedding_rows",
+      "passed": true
+    },
+    {
+      "check": "Coverage total populated_extra_cells",
+      "passed": true
+    },
+    {
+      "check": "Thought count and embedding alignment",
+      "passed": true
+    },
+    {
+      "check": "No empirical fit claimed",
+      "passed": true
+    },
+    {
+      "check": "Known source anomalies retained",
+      "passed": true
+    }
+  ]
+}

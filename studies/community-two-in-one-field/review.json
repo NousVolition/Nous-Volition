@@ -1,0 +1,11 @@
+{
+  "figures_visually_reviewed": [
+    "figures/field_identification.png",
+    "figures/refinement.png"
+  ],
+  "html_source_checked": true,
+  "browser_render_review": false,
+  "browser_review_limit": "Browser tool policy disallows file URLs. No alternate browser route attempted.",
+  "empirical_full_two_in_one_fit": false,
+  "substitute_predictor": false
+}

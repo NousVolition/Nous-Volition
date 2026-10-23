@@ -1,0 +1,9 @@
+quantity,evidence_status,available_record,limitation
+Person and within-session order,Observed,118 people; separate recorded streams,Do not concatenate different people into one history
+Expression and elapsed time,Observed,"12,104 timed sentence/clause records",Verbalizing thought can change it; clock time is not felt time
+Thought topics and categories,Observer annotation,"6,434 groups with aligned numeric embeddings",Classification of expressed content is not a direct measure of personal intent
+Smoke and Clay functions,Unmeasured in this release,No separate role columns,A spoken sentence does not reveal what was inwardly received or refused
+Sens and utility U,Unmeasured as model inputs,No participant-rated intended-meaning trajectory or utility scale,Do not replace these with emotion or semantic similarity
+Spatial S and u,Mapping unresolved,768-dimensional language-model vectors are available,"A declared continuous domain, metric and observation equation are required"
+Personal pre-session history,Unobserved,"Short current session, not lifetime input",Missing history is not zero
+Water Fog Mist Wind forms,Unmeasured as author-defined forms,No reports of the stated distinctions,"Perceived balance, agreement, tension and felt time remain separate"

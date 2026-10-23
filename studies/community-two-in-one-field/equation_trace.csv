@@ -1,0 +1,7 @@
+corpus_paragraph,equation,implementation,fidelity
+229,u_t + (u dot grad)u = -grad(p) + nu Laplacian(u) + f; div(u)=0,Field.terms; Field.project,"Momentum, convection, pressure and incompressibility retained"
+230;548,q=abs(grad(S))-Gamma; f=-(sigma/rho)*a(q)*e,Field.terms; activation,Fixed unit direction; not drag
+261;262;264,sharp; signed tanh; smooth exact-off alternatives,activation,Three distinct laws; no clipping of the signed tanh tail
+517,S_t + u dot grad(S) = D Laplacian(S) + K_h*kappa*A,Field.terms,Signed scalar; source kernel normalized; no per-step renormalization of S
+518;532,A_t=gamma*(U-Ubaseline); A(0)=0,Field.initial; Field.step,Accumulated source; no forgetting term
+545,T=mu0*(grad(u)+transpose(grad(u))),Field.diagnostics,Symmetric stress; mu0=rho*nu is explicit for these trials

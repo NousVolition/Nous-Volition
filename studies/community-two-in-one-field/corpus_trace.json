@@ -1,0 +1,162 @@
+[
+  {
+    "paragraph": 22,
+    "text": "Preserve “preserves Sens while adjusting Sin.” Here, Sens means personal intent or intended meaning, and Sin means socially constrained or encoded expression. Keep the unusual wording and its distinction. It does not need conventional replacement or treatment as a mathematical theorem.",
+    "equations": []
+  },
+  {
+    "paragraph": 103,
+    "text": "The framework combines a consistency rule with a spatial boundary metaphor. The first asks whether the same action is evaluated by the same rule across actors. The second represents how close an action is to a modeled response boundary while preserving the actor's intended utility.",
+    "equations": []
+  },
+  {
+    "paragraph": 104,
+    "text": "Formula 1  Consistency or Shibboleth Check. For each declared relevant context c: ∀i, j ∈ P, ∀α ∈ A, W(i, α; c) = W(j, α; c).",
+    "equations": []
+  },
+  {
+    "paragraph": 105,
+    "text": "Formula 2  Boundary Margin Model. Maximize U(α; c) over α ∈ F(i,c) with m(i,c)(α) = ε, where ε > 0.",
+    "equations": []
+  },
+  {
+    "paragraph": 106,
+    "text": "Definitions: P is the actor set, A the available action set, and c a declared relevant context. In this binary audit W(i, α; c) ∈ {0, 1}, with 1 = restriction and 0 = permission. Equality tests outcomes, not identical reasoning or fairness. One counterexample to the universal claim is enough: some i, j, α in the same context have unequal W values. Context must not be chosen merely to hide the disparity under examination.",
+    "equations": []
+  },
+  {
+    "paragraph": 107,
+    "text": "For the boundary model, place actions in a specified metric feature space X. ΩSin(i, c) is its permitted region, with nonempty boundary; F(i,c) = A ∩ ΩSin(i, c). Define m(i,c)(α) as distance to that boundary inside ΩSin, and minus that distance outside; boundary points have margin zero. Ordinary unsigned distance is never negative. The condition m = ε chooses an exact permitted-side edge margin. The alternative m ≥ ε requires minimum clearance and is not the same objective. Either feasible set can be empty; a maximizing action need not exist without further domain and regularity assumptions. These quantities operationalize the metaphor only after a representation and metric are chosen.",
+    "equations": []
+  },
+  {
+    "paragraph": 229,
+    "text": "∂u/∂t + (u · ∇)u = −∇p + ν∇²u + f,     ∇ · u = 0.",
+    "equations": []
+  },
+  {
+    "paragraph": 230,
+    "text": "f = −(σ/ρ) a(q) eₖ,     q = |∇S| − Γcrit.",
+    "equations": []
+  },
+  {
+    "paragraph": 235,
+    "text": "Velocity field, time, and spatial gradient in a specified continuous domain.",
+    "equations": []
+  },
+  {
+    "paragraph": 261,
+    "text": "Choose the response law a before using the equation. Sharp threshold: a₀(q) = max(q, 0), so the added force is zero for q ≤ 0 and proportional to q for q > 0. This law is continuous but not differentiable at q = 0.",
+    "equations": []
+  },
+  {
+    "paragraph": 262,
+    "text": "Original tanh choice: aₜ(q) = q[1 + tanh(q/ε)]/2, with ε > 0. It is smooth as a function of q, but for finite q < 0 it is negative and nonzero. For example, aₜ(−ε) ≈ −0.119203ε. The force therefore reverses direction below threshold when σ > 0; it does not simply switch off. A small tail may be intentional, but its sign and interpretation must be stated.",
+    "equations": []
+  },
+  {
+    "paragraph": 263,
+    "text": "Zero-gradient concern: |v| is not differentiable at v = 0. Composing it with tanh does not automatically remove that issue; a particular composition can have cancellations, which need checking. For a smooth alternative, use gδ(v) = √(v · v + δ²) − δ with δ > 0, and qδ = gδ(∇S) − Γcrit. This changes the gradient measure near zero and is a modeling choice.",
+    "equations": []
+  },
+  {
+    "paragraph": 264,
+    "text": "Optional smooth exact-off response: aε(q) = 0 for q ≤ 0, and aε(q) = q exp[−(ε/q)²] for q > 0. For fixed ε > 0 this scalar function is C∞, including the join at zero. Using aε(qδ) with fixed δ > 0 makes the constitutive response smooth in the gradient variable and exactly zero when qδ ≤ 0. This is an alternative to the tanh law, not a property of it. Its positive onset in the original magnitude is |∇S| > √(Γcrit² + 2δΓcrit), so the threshold must be calibrated in the chosen measure. To retain the original cutoff |∇S| = Γcrit instead, use the calibrated excess qδ* = √(|∇S|² + δ²) − √(Γcrit² + δ²). It has the same sign as |∇S| − Γcrit for Γcrit ≥ 0. Using aε(qδ*) gives a smooth exact-off alternative with that original cutoff; the response above it is still a changed constitutive law.",
+    "equations": []
+  },
+  {
+    "paragraph": 497,
+    "text": "Tracks a paired rescaling of two scalar variables. For λ > 0, scaling S by λ and R by 1/λ preserves their product. This is an algebraic invariance under a specified transformation; no equilibrium or time conservation follows without a dynamical model. The precise description is a product preserved under reciprocal scaling. This transformation property does not establish stability or boundedness of a subsequent time evolution.",
+    "equations": []
+  },
+  {
+    "paragraph": 498,
+    "text": "x = [S ; R]",
+    "equations": []
+  },
+  {
+    "paragraph": 499,
+    "text": "M = [λ, 0; 0, 1/λ],     λ > 0.",
+    "equations": []
+  },
+  {
+    "paragraph": 500,
+    "text": "M x = [λ S ; (1/λ) R]",
+    "equations": []
+  },
+  {
+    "paragraph": 501,
+    "text": "(λ S) · ((1/λ) R) = S R = Q",
+    "equations": []
+  },
+  {
+    "paragraph": 506,
+    "text": "Two-component vector of scalar variables for this model; distinct from spatial x elsewhere.",
+    "equations": []
+  },
+  {
+    "paragraph": 516,
+    "text": "Treats status or context as a signed field over a specified spatial embedding. Advection carries the field, diffusion spreads it, and a localized source changes it. A network alone does not specify the continuous geometry needed for these derivatives. With constant D_diff ≥ 0 and ∇ · u = 0, the following transport form is also a conservative continuity form.",
+    "equations": []
+  },
+  {
+    "paragraph": 517,
+    "text": "∂S/∂t + u · ∇S = D_diff ∇²S + Kₕ(x − x₀) J(t).",
+    "equations": []
+  },
+  {
+    "paragraph": 518,
+    "text": "A(t) = ∫₀ᵗ γ[U(s) − Ubaseline] ds,     J(t) = κ A(t).",
+    "equations": []
+  },
+  {
+    "paragraph": 519,
+    "text": "Kₕ is a smooth localized kernel of width h > 0 with spatial integral 1. The original δ(x − x₀) is an alternative point-source idealization interpreted as a distribution, not an ordinary smooth function. A stores accumulated input; κ converts that stored quantity to a source rate with the required units. This retains the original memory choice explicitly. Under closed or periodic boundaries, constant positive excess utility can make the total field grow quadratically in time because the stored input is integrated again by the evolution equation. If instantaneous production is intended instead, specify J(t) = γ[U(t) − Ubaseline] with suitable units; that is a different model. Negative excess input may lower this signed field. Initial and boundary data remain necessary. For compressible transport, replace u · ∇S by ∇ · (Su).",
+    "equations": []
+  },
+  {
+    "paragraph": 524,
+    "text": "Signed status or context field over a specified continuous spatial embedding.",
+    "equations": []
+  },
+  {
+    "paragraph": 532,
+    "text": "Accumulated input from excess utility, starting at A(0) = 0.",
+    "equations": []
+  },
+  {
+    "paragraph": 538,
+    "text": "Utility at integration time s and the chosen comparison baseline.",
+    "equations": []
+  },
+  {
+    "paragraph": 545,
+    "text": "T = µ₀[∇u + (∇u)ᵀ],     µ₀ > 0.",
+    "equations": []
+  },
+  {
+    "paragraph": 546,
+    "text": "T is the symmetric viscous stress for the stated incompressible Newtonian analogy. The earlier µ₀∇u was a scaled velocity-gradient tensor, not this full stress. This constitutive choice does not establish literal fluid behavior in a social system.",
+    "equations": []
+  },
+  {
+    "paragraph": 547,
+    "text": "Γcrit ≥ 0. Optional calibration: Γcrit = τ₀/η, with τ₀ ≥ 0 and η > 0.",
+    "equations": []
+  },
+  {
+    "paragraph": 548,
+    "text": "q = |∇S| − Γcrit;     a₀(q) = 0 if q ≤ 0, and a₀(q) = q if q > 0.",
+    "equations": []
+  },
+  {
+    "paragraph": 549,
+    "text": "ρ[∂u/∂t + (u · ∇)u] = −∇P + µ∇²u − σ a₀(q)eₖ,     ∇ · u = 0.",
+    "equations": []
+  },
+  {
+    "paragraph": 550,
+    "text": "Assume constant ρ > 0, µ > 0, and σ ≥ 0; p = P/ρ and ν = µ/ρ connect this equation to the earlier normalized form. The calibration η must give Γcrit the same units as |∇S|. Increasing η lowers Γcrit at fixed τ₀, so the label rigidity does not by itself establish stronger resistance. Fixed-direction forcing is not necessarily dissipative. Initial and boundary data, the S coupling, and a domain are required; smooth activation alone does not establish well-posedness or global regularity.",
+    "equations": []
+  }
+]

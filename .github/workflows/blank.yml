@@ -112,3 +112,10 @@ jobs:
           python verify_saved.py
       - name: Hug larger-movement offline animation checks
         run: node studies/hug-movement-sweep/check_player.cjs
+
+      - name: Exact two-in-one corpus equations and saved audit checks
+        working-directory: studies/community-two-in-one-field
+        run: |
+          python -m unittest discover -p 'test_*.py' -q
+          python verify_saved.py
+
