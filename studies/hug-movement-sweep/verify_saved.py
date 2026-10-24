@@ -4,13 +4,28 @@ import numpy as np
 from model import ROOT,Hug,configured,protocol
 from analyze import audit
 
+# Phase is bounded in cycles. Different libm/NumPy paths can differ after
+# atan2, complex exp and angle even with identical saved float64 mechanics.
+# This absolute roundoff allowance is unrelated to the scientific effect cutoff.
+PHASE_ROUNDOFF_ATOL = 32 * np.finfo(np.float64).eps
+
+def assert_pair_value(name, actual, saved, context=None):
+    detail=dict(context=context,metric=name,actual=actual,saved=saved)
+    if name=='max_phase_offset_cycles':
+        assert np.isfinite(actual) and np.isfinite(saved),detail
+        error=abs(actual-saved)
+        assert error<=PHASE_ROUNDOFF_ATOL,dict(**detail,absolute_difference=error,allowed_roundoff=PHASE_ROUNDOFF_ATOL)
+        return float(error)
+    assert actual==saved,detail
+    return 0.0
+
 def main():
     result=json.loads((ROOT/'results.json').read_text());prov=json.loads((ROOT/'run_provenance.json').read_text())
     assert result['main_paths']==96 and result['all_checks_pass']
     assert len(result['studies'])==8
     for run in prov.values():
         for f,sha in run['source_hashes'].items():assert hashlib.sha256((ROOT/f).read_bytes()).hexdigest()==sha,f
-    count=0
+    count=0;max_phase_roundoff=0.0
     for r in result['studies']:
         key=f"{r['orbit_policy']}/{r['scale']}/main";meta=prov[key];d=np.load(ROOT/'data'/f"{r['orbit_policy']}-{r['scale']}.npz");t=d['time']
         m=Hug(configured(r['scale'],r['orbit_policy']),32);z=np.zeros((len(t),12,m.width));z[:,:,:4]=d['mechanics'];z[:,:,-5:]=d['work'];z[:,:,4:7]=d['A'][:,None,:]
@@ -38,11 +53,13 @@ def main():
         assert np.abs(d['field_frozen']+d['field_delta']).max()<m.bound()
         for j in range(6):
             a=calculated['pairs'][j];b=r['pairs'][j]
-            for name in ['relative_amplitude_change','relative_period_change','max_phase_offset_cycles','amplitude_delay_change_s','repeat_delay_change_s','flags','max_displacement_difference_mm']:assert a[name]==b[name],dict(study=key,metric=name,pair=j,actual=a[name],saved=b[name],absolute_difference=abs(a[name]-b[name]) if isinstance(a[name],(float,int)) and isinstance(b[name],(float,int)) else None)
+            for name in ['relative_amplitude_change','relative_period_change','max_phase_offset_cycles','amplitude_delay_change_s','repeat_delay_change_s','flags','max_displacement_difference_mm']:
+                error=assert_pair_value(name,a[name],b[name],dict(policy=r['orbit_policy'],scale=r['scale'],pair=j))
+                max_phase_roundoff=max(max_phase_roundoff,error)
             if j%2==0:
                 for name in ['max_field_difference','late_field_rms_difference','late_field_relative_rms']:np.testing.assert_allclose(a[name],b[name],rtol=5e-7,atol=2e-12)
         assert set(r['refinements'])>=({'fine','timefine'} if r['orbit_policy']=='scaled' else {'fine','spatial'})
         for ref in r['refinements'].values():assert ref['checks']['passed'] and ref['screen_agrees']
         if r['scale']==300 or any(x['flags'] for x in r['pairs']):assert 'spatial' in r['refinements']
-    print(json.dumps(dict(passed=True,paths_recomputed=count,refinement_paths=result['refinement_paths'],scope='Saved mechanics, energy, inputs, primary-start field differences and recorded refinement audits; no measured clay validation'),indent=2))
+    print(json.dumps(dict(passed=True,paths_recomputed=count,refinement_paths=result['refinement_paths'],max_phase_metric_roundoff_cycles=max_phase_roundoff,phase_metric_roundoff_atol=PHASE_ROUNDOFF_ATOL,scope='Saved mechanics, energy, inputs, primary-start field differences and recorded refinement audits; no measured clay validation'),indent=2))
 if __name__=='__main__':main()

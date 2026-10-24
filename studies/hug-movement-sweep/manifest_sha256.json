@@ -37,5 +37,7 @@
   "test_sweep.py": "7c0e0f570d7b295c69882b809046f10f47e2966cdf24bcfc0358fbd03bee0d4a",
   "TESTING_STRUCTURE.md": "7ff594672fc1851ab0e524cee1823aac5c4517dbdf527047e55e76b8ddc5fca6",
   "validation.json": "d5614b17feb75de29ddb4c77f4eef8025fbc7fb5fcf3842846b22f3ea4feb2f6",
-  "verify_saved.py": "1a753782189e01f5685b048779d1f55139c83e459f7c0226cf82b6ff0cbdefa4"
+  "verify_saved.py": "c589b6748bbe09d7a5a4e28dcb57430e7778103b5c80ddf6e7409231e60979f4",
+  "test_saved_metrics.py": "51abb5d6235c191002d805330e6c39a057a3484a2b5aaa1c0f4da2e14515b0fd",
+  "VERIFICATION_NOTE.md": "9feb1130e010448d71c474872340bfa321c8430ddbf47cbfe833a66538117359"
 }
