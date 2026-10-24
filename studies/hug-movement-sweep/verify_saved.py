@@ -38,7 +38,7 @@ def main():
         assert np.abs(d['field_frozen']+d['field_delta']).max()<m.bound()
         for j in range(6):
             a=calculated['pairs'][j];b=r['pairs'][j]
-            for name in ['relative_amplitude_change','relative_period_change','max_phase_offset_cycles','amplitude_delay_change_s','repeat_delay_change_s','flags','max_displacement_difference_mm']:assert a[name]==b[name],(name,j)
+            for name in ['relative_amplitude_change','relative_period_change','max_phase_offset_cycles','amplitude_delay_change_s','repeat_delay_change_s','flags','max_displacement_difference_mm']:assert a[name]==b[name],dict(study=key,metric=name,pair=j,actual=a[name],saved=b[name],absolute_difference=abs(a[name]-b[name]) if isinstance(a[name],(float,int)) and isinstance(b[name],(float,int)) else None)
             if j%2==0:
                 for name in ['max_field_difference','late_field_rms_difference','late_field_relative_rms']:np.testing.assert_allclose(a[name],b[name],rtol=5e-7,atol=2e-12)
         assert set(r['refinements'])>=({'fine','timefine'} if r['orbit_policy']=='scaled' else {'fine','spatial'})
