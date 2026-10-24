@@ -1,0 +1,15 @@
+{
+  "analysis": "measured-data audit and paired descriptive inference",
+  "full_field_empirical_runs": 0,
+  "simpler_predictive_models_fitted": 0,
+  "synthetic_field_runs": 0,
+  "imputed_by_this_analysis": 0,
+  "individual_histories_fabricated": 0,
+  "full_model_status": "Not run: observation map and field/history inputs are not identified by these records.",
+  "bootstrap_seed": 20261023,
+  "bootstrap_resamples": 20000,
+  "python": "3.12.14",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "openpyxl": "3.1.5"
+}

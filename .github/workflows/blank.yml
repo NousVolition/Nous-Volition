@@ -178,3 +178,20 @@ jobs:
         run: |
           python -m unittest discover -p 'test_*.py' -v
           python verify_saved.py --published
+
+  measured-inner-experience-checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install measurement-analysis dependencies
+        run: pip install -r studies/community-measured-inner-experience/requirements.txt
+      - name: Check measurement accounting and saved artifacts
+        working-directory: studies/community-measured-inner-experience
+        run: |
+          python -m unittest test_measurements.py -v
+          python verify.py
+

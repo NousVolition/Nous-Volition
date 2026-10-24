@@ -1,0 +1,40 @@
+{
+  "retrieved_utc_date": "2026-10-24",
+  "files": [
+    {
+      "file": "RUM_master_data.xlsx",
+      "url": "https://osf.io/download/s7tdh/",
+      "bytes": 19584,
+      "sha256": "8781f10d5faa4fa59c9da892265ce182519ae9324df4cc082a473dacdf918920"
+    },
+    {
+      "file": "dataset_response_level.xlsx",
+      "url": "https://osf.io/download/9mhtq/",
+      "bytes": 210236,
+      "sha256": "a4b101a035399208a1e68bec06dc80fb73cf438370621cbe20f747a6e9090d65"
+    },
+    {
+      "file": "dataset_subject_level.xlsx",
+      "url": "https://osf.io/download/5jas2/",
+      "bytes": 120374,
+      "sha256": "477f5206cab93ac0124e8433093b6942ff0b784bf79e10ef942ecc40c3a65d67"
+    },
+    {
+      "file": "qualtrics_experiment.qsf",
+      "url": "https://osf.io/download/qs3uw/",
+      "bytes": 219174,
+      "sha256": "2773eb5cdd628455b5b1d5084a766aca4f332a8c1f11f19ee39b20cb09b9dd35"
+    }
+  ],
+  "papers": [
+    {
+      "doi": "10.1371/journal.pone.0238920",
+      "osf": "https://osf.io/hj7tz/"
+    },
+    {
+      "doi": "10.1177/02762366261446941",
+      "osf": "https://osf.io/95hgx/"
+    }
+  ],
+  "redistribution": "Raw workbooks and narratives remain local. Reproduction downloads public original files and checks hashes."
+}
