@@ -2,6 +2,8 @@
 
 Streams and Rocks · 23 October 2026
 
+**Follow-up: [real observations connected to the two-in-one field](../community-observation-bridge/README.md).** An explicit observation map now connects five DES episodes to Smoke, Clay and the moving idea, with person-owned history references. The unchanged full field solver ran 75 main trials and three exploratory refinements. Different assumed histories remain compatible with the same report-derived constraints but give opposite later contextual-support contrasts. This advances the connection beyond a source audit; the added readout is still uncalibrated and no later measured human trajectory is predicted.
+
 **The full empirical two-in-one model is not finished or validated.** This study adds a runner that keeps each person’s state and input history separate, 48 coupled synthetic equation trials (36 original and 12 from the live Miro review), and an audit of 840 real thought probes from 24 people. The trials expose both retained history and missing role distinctions. No simpler predictor or movement-only score is presented as the requested full-model test.
 
 Smoke is inward putting-forward and Clay is inward receiving within one person. Wind, Fog, Mist and Water are forms of the moving idea. Water is perceived balance. The author now gives D₂O a distinct role: a small compositional change can have a large consequence, potentially changing something life-saving into something life-threatening. Testing that claim requires specified changes and observed consequences; the mathematical threshold is not automatically a harm boundary.

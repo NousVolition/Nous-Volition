@@ -159,3 +159,22 @@ jobs:
         working-directory: studies/community-two-in-one-application
         run: python primary_records/verify.py
 
+  two-in-one-observation-bridge-checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+      OMP_NUM_THREADS: '1'
+      OPENBLAS_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install full field check dependencies
+        run: python -m pip install numpy==2.3.5 scipy==1.18.1
+      - name: Observation connections and unchanged field equations
+        working-directory: studies/community-observation-bridge
+        run: |
+          python -m unittest discover -p 'test_*.py' -v
+          python verify_saved.py --published

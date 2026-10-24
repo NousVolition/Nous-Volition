@@ -1,0 +1,95 @@
+{
+  "retrieved": "2026-10-23",
+  "sources": [
+    {
+      "file": "lena_interview_7_sampling_day_5_transcript_with_commentary.pdf",
+      "url": "https://hurlburt.faculty.unlv.edu/ieo/lena/lena_interview_7_sampling_day_5_transcript_with_commentary.pdf",
+      "bytes": 437226,
+      "sha256": "265699c26353c673e3ae2df3e96c6214cfc9248731b725c1bf47494020db0d5d",
+      "retrieved": "2026-10-23",
+      "redistributed": false
+    },
+    {
+      "file": "lena_interview_10_sampling_day_8_transcript_with_commentary.pdf",
+      "url": "https://hurlburt.faculty.unlv.edu/ieo/lena/lena_interview_10_sampling_day_8_transcript_with_commentary.pdf",
+      "bytes": 461801,
+      "sha256": "e7f2083eb36df7a7e9251ac9d8404c4b23a6455d130a1206a03727f92cab3301",
+      "retrieved": "2026-10-23",
+      "redistributed": false
+    },
+    {
+      "file": "lena_interview_11_sampling_day_9_transcript_with_commentary.pdf",
+      "url": "https://hurlburt.faculty.unlv.edu/ieo/lena/lena_interview_11_sampling_day_9_transcript_with_commentary.pdf",
+      "bytes": 466522,
+      "sha256": "a9334eea162ba5480ef986bc70f9c783a1ca3718d25907e83c13f845aec988a1",
+      "retrieved": "2026-10-23",
+      "redistributed": false
+    },
+    {
+      "file": "lena_interview_12_sampling_day_10_transcript_with_commentary.pdf",
+      "url": "https://hurlburt.faculty.unlv.edu/ieo/lena/lena_interview_12_sampling_day_10_transcript_with_commentary.pdf",
+      "bytes": 472565,
+      "sha256": "083da481f66346182cc20b787d19ddbe9e74d46632e71223a7aa0d7f9b5b6204",
+      "retrieved": "2026-10-23",
+      "redistributed": false
+    },
+    {
+      "file": "lena_interview_13_sampling_day_11_transcript_with_commentary.pdf",
+      "url": "https://hurlburt.faculty.unlv.edu/ieo/lena/lena_interview_13_sampling_day_11_transcript_with_commentary.pdf",
+      "bytes": 441069,
+      "sha256": "e347e39671e69781d13d57df1a006cf2e27df924de4090b318a6eb0c054999ea",
+      "retrieved": "2026-10-23",
+      "redistributed": false
+    }
+  ],
+  "corpus": {
+    "file": "Plain_Language_Corpus_Math_and_Logic_Corrected.docx",
+    "sha256": "01f9ab0942f9c88982863e2ffc1e3c495786b5e6b67a26ae77d18235e7058acf",
+    "paragraphs": [
+      22,
+      104,
+      105,
+      106,
+      107,
+      229,
+      230,
+      497,
+      498,
+      499,
+      500,
+      501,
+      516,
+      517,
+      518,
+      519,
+      520,
+      521,
+      522,
+      523,
+      524,
+      525,
+      526,
+      527,
+      528,
+      529,
+      530,
+      531,
+      532,
+      545,
+      605
+    ]
+  },
+  "miro": {
+    "board": "https://miro.com/app/board/uXjVEXBJz3k=/",
+    "live_read": "2026-10-23",
+    "frames": {
+      "10": "3458764687915993860",
+      "13": "3458764687916065203",
+      "16": "3458764687918055185",
+      "18": "3458764687918055187",
+      "Theory map": "3458764688184818696"
+    },
+    "scope": "Selected-frame SVG reads, not exhaustive board coverage. Two read batches returned 46 and 77 items; 86 and 79 items respectively were skipped.",
+    "evidence_status": "Source definitions and proposed methodological links, not participant observations"
+  }
+}

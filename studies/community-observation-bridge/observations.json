@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "status": "manual_development_coding_not_independent_validation",
+  "person_id": "DES_Lena",
+  "scope": "Five selected episodes from one public self-report series. No continuous trajectory is reconstructed between episodes.",
+  "role_definition": {
+    "Smoke": "Inward putting-forward; may be verbal or nonverbal.",
+    "Clay": "Inward receiving, holding, questioning, reshaping or refusing; hearing alone is insufficient.",
+    "MovingIdea": "Content considered within the same person; its expression, history and forms are recorded separately."
+  },
+  "role_assignment_status": "analyst operational interpretation using the author's definitions; not participant labels",
+  "history": [
+    {"id":"H53_event","person_id":"DES_Lena","episode":"5.3","kind":"participant_attributed_earlier_event","event_time":null,"original_event_verified":false,"recorded_meaning":"Childhood background offered for current concern.","numerical_utility":null},
+    {"id":"H53_principle","person_id":"DES_Lena","episode":"5.3","kind":"learned_principle","event_time":null,"original_event_verified":false,"recorded_meaning":"Prior learning invoked to calm the present response.","numerical_utility":null},
+    {"id":"H85_drawing","person_id":"DES_Lena","episode":"8.5","kind":"recalled_prior_artifact","event_time":null,"original_event_verified":false,"recorded_meaning":"Earlier drawing is the object of current retrieval.","numerical_utility":null}
+  ],
+  "episodes": [
+    {
+      "id":"5.3","person_id":"DES_Lena","source_file":"lena_interview_7_sampling_day_5_transcript_with_commentary.pdf","pdf_pages":[11,12,13,14,15,16,17,18,19,20],"interview_time":"31:03–57:52",
+      "reported":"A threatening interpretation and a calming line of thought coexist.",
+      "nodes":[
+        {"id":"53_concern","content":"Present concern","expression":"wording and imagery uncertain","operations":["Smoke"],"history_refs":["H53_event"]},
+        {"id":"53_reconsider","content":"Calming reconsideration","expression":"reported thought; exact mode uncertain","operations":["Smoke","Clay"],"history_refs":["H53_principle"]}
+      ],
+      "edges":[{"from":"53_reconsider","to":"53_concern","relation":"reconsideration","status":"analyst_role_mapping_of_reported_process"},{"from":"53_concern","to":"53_reconsider","relation":"coexistence","status":"participant_report"}],
+      "limits":"The interviewer brackets the historical causal claim. A storm metaphor does not measure Wind or Fog.",
+      "forms":{"Water":"unknown","Fog":"unknown","Wind":"unknown","Mist":"unknown","D2O":"unknown","H2O2":"undefined"},
+      "descriptors":{"perceived_balance":null,"calm":"calming effort","disturbance":"present concern","recalled_content":"background event","retrieval_clarity":null,"event_age":null,"felt_temporal_distance":null,"unspoken_assumption":null,"endorsement":null,"specified_small_change":null,"observed_consequence":null}
+    },
+    {
+      "id":"8.5","person_id":"DES_Lena","source_file":"lena_interview_10_sampling_day_8_transcript_with_commentary.pdf","pdf_pages":[14,15,16],"interview_time":"35:12–41:08",
+      "reported":"Colors from a prior drawing are retrieved; needed structural details are not.",
+      "nodes":[
+        {"id":"85_retrieval","content":"Earlier drawing","expression":"partial visual recall","operations":["Smoke"],"history_refs":["H85_drawing"]},
+        {"id":"85_search","content":"Needed structural details","expression":"attempted retrieval; exact mode uncertain","operations":["Clay"],"history_refs":["H85_drawing"]}
+      ],
+      "edges":[{"from":"85_search","to":"85_retrieval","relation":"seeking_missing_content","status":"analyst_role_mapping_of_reported_process"}],
+      "limits":"Corrections of the interviewer's suggestions are external clarification, not additional inward Clay events. Original drawing and event age are unavailable.",
+      "forms":{"Water":"unknown","Fog":"partial_feature_connection","Wind":"unknown","Mist":"unknown","D2O":"unknown","H2O2":"undefined"},
+      "descriptors":{"perceived_balance":null,"calm":null,"disturbance":null,"recalled_content":"prior drawing","retrieval_clarity":"colors available; structure unavailable","event_age":null,"felt_temporal_distance":null,"unspoken_assumption":null,"endorsement":null,"specified_small_change":null,"observed_consequence":null}
+    },
+    {
+      "id":"9.2","person_id":"DES_Lena","source_file":"lena_interview_11_sampling_day_9_transcript_with_commentary.pdf","pdf_pages":[6,7,8,9,10],"interview_time":"13:40–26:08",
+      "reported":"Inward speaking and hearing accompany reading, a search for a description and a brief image.",
+      "nodes":[
+        {"id":"92_read","content":"Material being read","expression":"inward speaking and hearing","operations":["Smoke"],"history_refs":[]},
+        {"id":"92_search","content":"Description of a person's relation to land","expression":"search and brief imagery","operations":["Clay"],"history_refs":[]}
+      ],
+      "edges":[{"from":"92_read","to":"92_search","relation":"cooccurring_search","status":"participant_report_with_analyst_role_mapping"}],
+      "limits":"Hearing is recorded but not automatically counted as Clay. Search content and earlier history are incomplete. Briefness is not measured milliseconds.",
+      "forms":{"Water":"unknown","Fog":"unknown","Wind":"unknown","Mist":"unknown","D2O":"unknown","H2O2":"undefined"},
+      "descriptors":{"perceived_balance":null,"calm":null,"disturbance":null,"recalled_content":null,"retrieval_clarity":null,"event_age":null,"felt_temporal_distance":null,"unspoken_assumption":null,"endorsement":null,"specified_small_change":null,"observed_consequence":null}
+    },
+    {
+      "id":"10.1","person_id":"DES_Lena","source_file":"lena_interview_12_sampling_day_10_transcript_with_commentary.pdf","pdf_pages":[1,2,3,4,5],"interview_time":"00:08–12:27; choosing and mitigation 6:45, 10:03; no intensity ranking 11:19",
+      "reported":"Frustration and patience coexist, with conscious choosing of understanding and moderation of reaction.",
+      "nodes":[
+        {"id":"101_F","content":"Frustrated appraisal","expression":"reported feeling/appraisal; not a verbatim inner utterance","operations":["Smoke"],"history_refs":[]},
+        {"id":"101_P","content":"Understanding/patience alternative","expression":"reported conscious reconsideration","operations":["Smoke","Clay"],"history_refs":[]}
+      ],
+      "edges":[{"from":"101_F","to":"101_P","relation":"coexistence","status":"participant_report"},{"from":"101_P","to":"101_F","relation":"mitigation_and_reconsideration","status":"participant_report_with_analyst_role_mapping"}],
+      "limits":"No numerical intensity ranking, utility history, within-episode clock trajectory or later independent outcome. Calm does not establish perceived balance.",
+      "forms":{"Water":"unknown","Fog":"unknown","Wind":"unknown","Mist":"unknown","D2O":"unknown","H2O2":"undefined"},
+      "descriptors":{"perceived_balance":null,"calm":"reported moderation of reaction","disturbance":"coexisting frustration","recalled_content":null,"retrieval_clarity":null,"event_age":null,"felt_temporal_distance":null,"unspoken_assumption":null,"endorsement":null,"specified_small_change":null,"observed_consequence":null},
+      "numerical_bridge":{"status":"added_observation_hypothesis","P":"101_P","F":"101_F","initial_constraints":["c_P>0","c_F>0","d(c_P-c_F)/dt>0"],"measured_derivatives":null,"measured_future":null}
+    },
+    {
+      "id":"11.3","person_id":"DES_Lena","source_file":"lena_interview_13_sampling_day_11_transcript_with_commentary.pdf","pdf_pages":[9,10,11],"interview_time":"24:54–32:24",
+      "reported":"Imagined arrangements succeed one another and are evaluated for usefulness; experienced pace is distinguished from inferred rapidity.",
+      "nodes":[
+        {"id":"113_options","content":"Alternative arrangements","expression":"nonverbal images","operations":["Smoke"],"history_refs":[]},
+        {"id":"113_evaluation","content":"Usefulness of alternatives","expression":"inward evaluation","operations":["Clay"],"history_refs":[]}
+      ],
+      "edges":[{"from":"113_options","to":"113_evaluation","relation":"comparison","status":"participant_report_with_analyst_role_mapping"}],
+      "limits":"A shared goal is not identical propositional content: different arrangements differ in meaning. External speech is context. No instrument-measured transition intervals or complete prehistory.",
+      "forms":{"Water":"unknown","Fog":"unknown","Wind":"partial_feature_connection","Mist":"unknown","D2O":"unknown","H2O2":"undefined"},
+      "descriptors":{"perceived_balance":null,"calm":null,"disturbance":null,"recalled_content":null,"retrieval_clarity":null,"event_age":null,"felt_temporal_distance":"qualitative pace only; no memory-age comparison","unspoken_assumption":null,"endorsement":null,"specified_small_change":null,"observed_consequence":null}
+    }
+  ],
+  "history_encoding_policy": "History references are source-attributed metadata, not numerical inputs. Empty references mean unrecorded here, never no history. Earlier events, current retrievals and reported interpretations stay distinct. No other person's history is borrowed.",
+  "semantic_equivalence_test": "Not completed: source reports do not provide matched alternative wording with independently verified intended meaning and later outcomes. Retain content, expression and uncertainty without inventing semantic scores.",
+  "form_measurement_policy": "Partial feature connections do not classify a whole episode. Missing descriptors remain null. D2O is the author's metaphor for a specified small change and consequential effect, not a toxicity claim or a synonym for H2O2."
+}

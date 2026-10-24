@@ -1,0 +1,82 @@
+{
+  "status": "pass",
+  "checks": 42,
+  "check_names": [
+    "Unchanged audited full solver",
+    "Source lock PROTOCOL.md",
+    "Source lock observer.py",
+    "Source lock NUMERICAL_AMENDMENT.md",
+    "Original frozen protocol",
+    "Stricter reading amendment",
+    "Stricter reading tied to original results",
+    "One actual person, five episodes",
+    "No empirical forecast score",
+    "Complete declared search",
+    "Complete exploratory refinement",
+    "48 compatible candidates",
+    "60 constructive pairs",
+    "mass_error_max",
+    "divergence_max",
+    "energy_residual_max",
+    "Same initial context and movement readouts",
+    "Both compatible and opposite endpoints",
+    "A=-0.02: actual half step",
+    "A=-0.02: grid contraction",
+    "A=-0.02: time agreement",
+    "A=-0.02: sign and constraints stable",
+    "A=0.005: actual half step",
+    "A=0.005: grid contraction",
+    "A=0.005: time agreement",
+    "A=0.005: sign and constraints stable",
+    "A=0.005: stricter directions survive",
+    "A=0.02: actual half step",
+    "A=0.02: grid contraction",
+    "A=0.02: time agreement",
+    "A=0.02: sign and constraints stable",
+    "A=0.02: stricter directions survive",
+    "No source readouts identical across A",
+    "Pressure retained when forcing disabled",
+    "Five primary source hashes",
+    "Saved full state dimensions and finite values",
+    "Saved fields reproduce saved endpoint readouts",
+    "Downloaded source lena_interview_7_sampling_day_5_transcript_with_commentary.pdf",
+    "Downloaded source lena_interview_10_sampling_day_8_transcript_with_commentary.pdf",
+    "Downloaded source lena_interview_11_sampling_day_9_transcript_with_commentary.pdf",
+    "Downloaded source lena_interview_12_sampling_day_10_transcript_with_commentary.pdf",
+    "Downloaded source lena_interview_13_sampling_day_11_transcript_with_commentary.pdf"
+  ],
+  "ledger": {
+    "episodes": 5,
+    "people": 1,
+    "history_references": 3,
+    "nodes": 10
+  },
+  "convergence": [
+    {
+      "A0": -0.02,
+      "grid24_48": 3.377913318503012e-08,
+      "grid48_72": 9.608888712486774e-09,
+      "actual_half_step": 1.1379786002407855e-13,
+      "contrast72": -0.03312424467218997
+    },
+    {
+      "A0": 0.005,
+      "grid24_48": 2.1717299797385792e-07,
+      "grid48_72": 1.3069785975705628e-08,
+      "actual_half_step": 2.957634137601417e-13,
+      "contrast72": -0.004469501105882956
+    },
+    {
+      "A0": 0.02,
+      "grid24_48": 1.5097225833926586e-06,
+      "grid48_72": 2.4175154100802843e-09,
+      "actual_half_step": 5.066946862086752e-12,
+      "contrast72": 0.012041002993690708
+    }
+  ],
+  "maxima": {
+    "mass_error_max": 3.58046925441613e-14,
+    "divergence_max": 2.4673467627671517e-17,
+    "energy_residual_max": 2.6020852139652106e-18
+  }
+}
