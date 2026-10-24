@@ -1,0 +1,6 @@
+{
+  "local_html_visual_preview": "not performed",
+  "reason": "Browser security policy rejected file-protocol navigation. No alternate browser or indirect preview was attempted.",
+  "performed_instead": "Source parsing, link-target checks, report-notice checks and release hashing; these do not constitute a visual layout check.",
+  "external_research_search": "Candidate discovery and source triage only; no new empirical full-model fit. Repeated discovery was checked against existing source registers."
+}

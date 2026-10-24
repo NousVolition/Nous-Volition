@@ -1,5 +1,9 @@
 # One person and a moving idea
 
+<!-- chain-audit:start -->
+Audit update, 23 October 2026. The earlier statistical history comparator and editable protocol are retained as historical work. The protocol predates later form clarifications; consult MODEL.md and the current audit requirements. It is not the requested full-equation empirical model. Smoke and Clay have transmit/receive architectural anchors in the corpus, but their measured dynamic coupling is still missing. [Corrections, source coverage and remaining tests](https://github.com/NousVolition/Nous-Volition/tree/main/studies/community-chain-audit). Mist’s narrower agreement interpretation is provisional, not an author-established definition. Earlier frozen protocols and editable documents retain that historical proposal; current definition tables supersede it.
+<!-- chain-audit:end -->
+
 Streams and Rocks • 22 October 2026 • a corrected interpretation, two public-data probes and an editable testing document
 
 **Smoke, Clay and the moving idea are within one person's two-in-one.** Smoke is inward speaking; Clay is inward listening; the middle is the idea moving and changing between them. Every person has their own history. This replaces the earlier interpretation of these roles as separate people. It does not turn material properties into psychological laws.
@@ -26,7 +30,7 @@ The inner-experience source is [Nedergaard, Skewes and Wallentin's study](https:
 
 ## What is still untested
 
-The public sources do not separately measure internal speaking and listening, idea transitions, Mist as internalized agreement, perceived balance concealing disturbance, or Wind as experienced temporal spacing. No new full-field simulation or fit is claimed here. The corpus and prior solver are unchanged; the statistical history predictor is an explicitly added measurement probe.
+The public sources do not separately measure internal speaking and listening, idea transitions, the provisional interpretation of Mist as internalized agreement, perceived balance concealing disturbance, or Wind as experienced temporal spacing. No new full-field simulation or fit is claimed here. The corpus and prior solver are unchanged; the statistical history predictor is an explicitly added measurement probe.
 
 The author’s material vocabulary remains available without fixing identities. Calm, agreement, tension, vividness, accuracy and felt temporal distance need separate measurements. Peroxide’s specific metaphorical role remains undefined. Strong language remains intact, attributed and open to comparison.
 

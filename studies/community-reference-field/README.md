@@ -1,5 +1,9 @@
 # Real reference, expression and interaction over time
 
+<!-- chain-audit:start -->
+Audit update, 23 October 2026. The saved full-field pixel errors reproduce. Initial A=0 and u=0 at the first included utterance are analyst initialization choices, not measured prehistory. Annotated reference and recoverability are partial proxies; external dialogue is not the inward Smoke/Clay exchange. The numerical score remains conditional on these assumptions. [Corrections, source coverage and remaining tests](https://github.com/NousVolition/Nous-Volition/tree/main/studies/community-chain-audit).
+<!-- chain-audit:end -->
+
 **Completed 22 October 2026 for Streams and Rocks.** We acquired OneCommon, a new public source with human reference interpretations, actual expressions, message timestamps and object coordinates. We ran the coupled corpus equations against observed spatial reference fields under an explicit measurement hypothesis. The model improves over keeping the initial field fixed, but its advantage over the last observed field is uncertain, and switching off its added force gives almost the same performance.
 
 [Illustrated report](report.html) · [Frozen protocol](PROTOCOL.md) · [Sources, equation traceability and limitations](SOURCES.md) · [Field results](results/field_results.json) · [All episode predictions](results/predictions.csv)

@@ -1,0 +1,24 @@
+test_accounting_all_policies (test_model.ModelTests.test_accounting_all_policies) ... ok
+test_all_stop (test_model.ModelTests.test_all_stop) ... ok
+test_equal_skills_closed_form (test_model.ModelTests.test_equal_skills_closed_form) ... ok
+test_handoff_overhead (test_model.ModelTests.test_handoff_overhead) ... ok
+test_invalid_input (test_model.ModelTests.test_invalid_input) ... ok
+test_labels_do_nothing (test_model.ModelTests.test_labels_do_nothing) ... ok
+test_matched_history (test_model.ModelTests.test_matched_history) ... ok
+test_no_learning (test_model.ModelTests.test_no_learning) ... ok
+test_no_memory (test_model.ModelTests.test_no_memory) ... ok
+test_nobody_does_extra_work (test_model.ModelTests.test_nobody_does_extra_work) ... ok
+test_person_permutation (test_model.ModelTests.test_person_permutation) ... ok
+test_preused_analytic (test_model.ModelTests.test_preused_analytic) ... ok
+test_refusal_means_zero_work_after_switch (test_model.ModelTests.test_refusal_means_zero_work_after_switch) ... ok
+test_saturation (test_model.ModelTests.test_saturation) ... ok
+test_tighter_arithmetic_tolerance (test_model.ModelTests.test_tighter_arithmetic_tolerance) ... ok
+test_unequal_skills_equal_normalized_work (test_model.ModelTests.test_unequal_skills_equal_normalized_work) ... ok
+test_uniform_no_bias_stays_uniform (test_model.ModelTests.test_uniform_no_bias_stays_uniform) ... ok
+test_zero_capacity (test_model.ModelTests.test_zero_capacity) ... ok
+test_zero_demand (test_model.ModelTests.test_zero_demand) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.411s
+
+OK

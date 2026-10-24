@@ -1,7 +1,7 @@
 {
   ".gitignore": "a9fb67619f3869bcc24bb2358cbbb26300ed932b9e98399e2bcb5365434d8fe6",
   "analyze.py": "d3b64700dc7de199ba5cb9ec9e1330c586581cdeba0993c2ada5d1a250cb4d28",
-  "build_report.py": "a58b80730617a63f4fb52b87bb3ee6aa5c820de936f5d9544f4b3c940b840f2e",
+  "build_report.py": "3f44ed6e09d0e901db391f74a28914a8e91afad74c8585c611c8b92135e0aa28",
   "CORPUS_AUDIT.md": "cf16f57ee1ab353d23ddea9664449fe10c516f63ec0fe0f45074b08a40be53e5",
   "corpus_equations.py": "081b459e1bd343051512f07934bf2d6eda08e78aa067ddede873cb240200c2a8",
   "corpus_extract.json": "1700f9183aadbbef7c2a8d880bc850776fb6771a54e7ca940feee748f842da27",
@@ -11,8 +11,8 @@
   "observations.py": "2c86539136f7336e171c80fbc5ab1ad83a8be7036196f34f7bfcc84ed2ec29a2",
   "prior_code_audit.json": "51599491c7c4ea5e43c27eb21a29cfaaff4341699e659f4bc96bf0537bfc054e",
   "PROTOCOL.md": "097ba8ccc854ebe780cfe5613b6f562e3e548fd6728e35c54ba8420ef9b0b286",
-  "README.md": "95897f2c59302fcc25c816fe8080505b8fa97381c59348333b28248ddc19137e",
-  "report.html": "0f0a08843b11da26654f08c1df57d829aba733252694d572ae50d4ae0ab13cfb",
+  "README.md": "ebd75884e9fed01f4663b9f19b92d2a02be6374ccbf8898df38968530fa05bac",
+  "report.html": "085ac086c0abb75149946c1498d63929ad41fe81ecd0adb7236861927efddd25",
   "requirements.txt": "1839f9ebfe6ef8dbf3960d324981bdc15fa2378d9bb2f754e1af4ae7360baf4e",
   "results/audit_lock.json": "43ce85a3a725084c55e40e2d037358c0b1c82dc5377ad9c4d958b5fa25ab0281",
   "results/audited_outcomes.json": "f9eb50bfaca8f0fe2f34f607740cb030a74736906e7f318e4383929802bf000f",
@@ -29,5 +29,7 @@
   "SOURCES.md": "88522b2f9f9b14cf1354e29ad51fcbea7d885b31c7cdeb0afe00ecf8c956743e",
   "test_corpus.py": "43fa679a8f5c4c565e808225e0fadb8ee4c9dbdf28faf4a45c9f4832c9db0e56",
   "test_observations.py": "864f8e89bf8bb48cddefd56e5b2bd050c1d5769e90a6fdc34dd32403248846a4",
-  "verify_saved.py": "5c0cff20830532f7dea745b444a435a788d194b20b97649cfea723862547c3b6"
+  "verify_saved.py": "5c0cff20830532f7dea745b444a435a788d194b20b97649cfea723862547c3b6",
+  "AUDIT_NOTICE.md": "e10a7e3e433c353fd427f164bb755c9a57d989593321d94aa0c4c324fd3d3b40",
+  "audit_note.py": "b1115bf672ff9ac2ac52b60227024cc68d2eb1fb329242b621af54350201aa2a"
 }

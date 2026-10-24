@@ -1,0 +1,28 @@
+test_audit_missing_or_duplicate_rejected (test_record_tests.RecordTests.test_audit_missing_or_duplicate_rejected) ... ok
+test_audit_tampering_rejected (test_record_tests.RecordTests.test_audit_tampering_rejected) ... ok
+test_bootstrap_order_independent (test_record_tests.RecordTests.test_bootstrap_order_independent) ... ok
+test_candidate_has_no_outcome_input (test_record_tests.RecordTests.test_candidate_has_no_outcome_input) ... ok
+test_empty_summary (test_record_tests.RecordTests.test_empty_summary) ... ok
+test_episode_extension_preserves_initial_assignment (test_record_tests.RecordTests.test_episode_extension_preserves_initial_assignment) ... ok
+test_exact_control (test_record_tests.RecordTests.test_exact_control) ... ok
+test_expiry_does_not_invent_unknown_duration (test_record_tests.RecordTests.test_expiry_does_not_invent_unknown_duration) ... ok
+test_greedy_disjoint (test_record_tests.RecordTests.test_greedy_disjoint) ... ok
+test_html_whitespace (test_record_tests.RecordTests.test_html_whitespace) ... ok
+test_orphan_not_new_penalty (test_record_tests.RecordTests.test_orphan_not_new_penalty) ... ok
+test_paired_summary_known_values (test_record_tests.RecordTests.test_paired_summary_known_values) ... ok
+test_published_wording_rows_reproduce_counts (test_record_tests.RecordTests.test_published_wording_rows_reproduce_counts) ... ok
+test_reason_only_allowed_normalization (test_record_tests.RecordTests.test_reason_only_allowed_normalization) ... ok
+test_saved_audit_locked (test_record_tests.RecordTests.test_saved_audit_locked) ... ok
+test_saved_cohort_conservation (test_record_tests.RecordTests.test_saved_cohort_conservation) ... ok
+test_short_text_excluded (test_record_tests.RecordTests.test_short_text_excluded) ... ok
+test_similarity_is_not_equivalence (test_record_tests.RecordTests.test_similarity_is_not_equivalence) ... ok
+test_status_accounting (test_record_tests.RecordTests.test_status_accounting) ... ok
+test_ties_not_directional_evidence (test_record_tests.RecordTests.test_ties_not_directional_evidence) ... ok
+test_time_window_inclusive (test_record_tests.RecordTests.test_time_window_inclusive) ... ok
+test_unblock_changes_end_not_assignment (test_record_tests.RecordTests.test_unblock_changes_end_not_assignment) ... ok
+test_unknown_status_rejected (test_record_tests.RecordTests.test_unknown_status_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.014s
+
+OK

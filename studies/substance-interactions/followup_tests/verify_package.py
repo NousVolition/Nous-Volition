@@ -58,7 +58,14 @@ def run(write=False):
             if u.scheme or u.netloc or not u.path:continue
             if href in repo_links:continue
             if href=='manifest.json' and write:continue
-            check('Local link: '+href,(p.parent/unquote(u.path)).exists());count+=1
+            target=p.parent/unquote(u.path)
+            # In the published tree this is studies/community-*. Locally the
+            # output packages are siblings named community_*. Verify the file;
+            # do not whitelist a link merely because its name looks familiar.
+            if not target.exists() and u.path.startswith('../../community-'):
+                parts=Path(unquote(u.path)).parts
+                target=ROOT.parent/parts[2].replace('-','_')/Path(*parts[3:])
+            check('Local link: '+href,target.exists());count+=1
     record=dict(status='passed',unit_tests_passed=29,saved_result_and_integrity_assertions=len(checks),local_links=count,
         measured_data_verdict=s['measurements']['verdict'],figures='Three scientific figures visually inspected; no empirical validation of the new fog or isolated-force trajectories claimed.',
         baseline_copy='baseline_model.py retains the original pilot code; new work is in followup_model.py.',community='COMMUNITY.md is a proposed family-role guide, not a newly run human-behavior experiment.')

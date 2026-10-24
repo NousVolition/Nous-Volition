@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "checks": {
+    "sample_count_and_training_split": true,
+    "unique_samples": true,
+    "unknown_original_times_preserved": true,
+    "annotation_scope": true,
+    "no_predictive_score_or_form_classification": true,
+    "wave_denominators_preserved": true,
+    "exact_solver_unchanged": true,
+    "plan_unchanged": true,
+    "source_provenance": true,
+    "original_locator_used": true
+  }
+}

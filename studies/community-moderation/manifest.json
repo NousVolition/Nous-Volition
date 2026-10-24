@@ -7,7 +7,7 @@
   "analysis_core.py": "3fbd940b25b4451b3789b0741c438507eeaa916f78209f2d18d22f3880b6389d",
   "analyze_blocks.py": "9bd4e6d099b5da18bd957af1822acc14fd98a4f024818990b859243db219d7c1",
   "analyze_wording.py": "080e0f58769b1405a7b9c6d297c0b65250aa900b9f62abd005c8f2d679d778f1",
-  "build_report.py": "cce9dce11ed31a8957a11c8843ea03ce9d56157fdbdc24d5692b2140892df0a5",
+  "build_report.py": "96f6ed80fa6916ebd32273755d6e9e863c01be4e0fbc5228fcdda28bfe67dfa1",
   "data/block_results.json": "93643cb02345b1f7be577c4292a47a02714bfd1bfb0d9a0a3158bddeaa37d2b4",
   "data/cmv_history_coverage.json": "d7c93be328a3e435f8c78026a9d67486af3f5b1b2d7fd40c3f03205dffcd7a63",
   "data/duration_histogram.csv": "82311306a478307dfc5107a198e6a84063b3b748773a6171c8dbbeb894867364",
@@ -23,12 +23,14 @@
   "inspect_meaning.py": "46bf1224319427de8a664e5178bbb5a648cab1df47cd92822e84813d1672aec5",
   "METHODS.md": "fe1701df2cada89dd074d2d5344ff882e26276dd7705ef6ec7546f01e056f2f4",
   "prepare_blocks.py": "23fda2f6433bf98c8151804c9aeb72ed035eb9f4a1287ce313f3777875e6dfcd",
-  "README.md": "3ad2e83a530cd63172967234b8836c13208d0c791dfd12ef852434254979d2fc",
-  "report.html": "e0479246d0ceec52c257c73c78066404db337acfbfdff7bea524c23fce4d1aa8",
+  "README.md": "ce56e8de6069c325591a60b6175837cd1022953342aa77d2ffd5bc1143fae882",
+  "report.html": "bb08c20a48e92ceb4223c09649102a107035dba77ee4898d14a27b51c8ac2cc3",
   "reproduce_aggregates.py": "30c792f5fa9321862c935380c2344f1635111000f28d335e80fa3ab463441a57",
   "requirements.txt": "a1aeb48336b45a57b1d153747b2f2da141e173286105bd21bbda06d21c3ca590",
   "sources.json": "32a5078361342472bb0442e6be1acae3023c4dfb2cc3250919a18abaafd5cc5e",
   "test_analysis.py": "d8839f5dab7baafc6cbb407fff4f9f49a320a3f6f509963f62a385ed92dd23f2",
   "verification.json": "5cdc53166930a1b42034b200bdb71c80a1c63334f7db81e322099412bb6e9bb8",
-  "verify.py": "3408497a69e99705d3e502205a83e19e2fccc7080c69e2b606904185bbe2b49b"
+  "verify.py": "3408497a69e99705d3e502205a83e19e2fccc7080c69e2b606904185bbe2b49b",
+  "AUDIT_NOTICE.md": "9cd8e8b59da16a2ea6c42cac10ca9b503fd29d981483fc4cd106a1cda440289f",
+  "audit_note.py": "b1115bf672ff9ac2ac52b60227024cc68d2eb1fb329242b621af54350201aa2a"
 }

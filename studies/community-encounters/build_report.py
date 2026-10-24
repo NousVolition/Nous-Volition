@@ -91,3 +91,8 @@ para('The runner refuses to overwrite an output directory. [Seed summaries](data
 css='body{font:17px/1.65 system-ui;color:#213544;background:#f1f5f5;margin:0}main{max-width:1160px;background:white;margin:24px auto;padding:36px}h1{line-height:1.2}h2{color:#17667b;margin-top:2em}a{color:#086e87}table{width:100%;border-collapse:collapse;font-size:.9em}td,th{padding:12px;text-align:left;border-bottom:1px solid #d7e1e1}.scroll{overflow:auto}img{width:100%;height:auto}figure{margin:28px 0}figcaption{font-size:.87em}pre{padding:20px;background:#eef4f5;overflow:auto}@media(max-width:700px){main{margin:0;padding:18px}}'
 (ROOT/'report.html').write_text('<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Wording and prior treatment</title><style>'+css+'</style><main>'+''.join(ht)+'</main></html>',encoding='utf-8')
 print('Built report, README and figures')
+
+
+# Preserve the source-chain audit when this historical report is rebuilt.
+from audit_note import apply_notice
+apply_notice(Path(__file__).resolve().parent)

@@ -168,3 +168,8 @@ for line in md.splitlines():
 flush_table()
 (P/'report.html').write_text('<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Full corpus field and real records</title><style>body{font:17px/1.6 system-ui;color:#20343d;max-width:1150px;margin:auto;padding:35px 25px}h1{line-height:1.2}h2{margin-top:2.2em}a{color:#096b89}img{width:100%;height:auto;margin:22px 0}pre{background:#edf3f5;padding:18px;overflow:auto}table{border-collapse:collapse;width:100%;font-size:15px}th,td{padding:10px;border-bottom:1px solid #bbc8ce;text-align:left}.scroll{overflow:auto}.item{padding-left:16px;border-left:3px solid #177c86}</style><main>'+''.join(parts)+'</main></html>',encoding='utf-8')
 print('Built README, report and three figures.')
+
+
+# Preserve the source-chain audit when this historical report is rebuilt.
+from audit_note import apply_notice
+apply_notice(Path(__file__).resolve().parent)

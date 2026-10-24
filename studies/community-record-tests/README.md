@@ -1,5 +1,9 @@
 # Meaning, moderation and repeated penalties
 
+<!-- chain-audit:start -->
+Audit update, 23 October 2026. The semantic review and all saved penalty summaries were rechecked. The meaning judgments remain a single AI-assisted review, not independent human confirmation. Observed repeat penalties do not by themselves identify a causal memory mechanism or the full two-in-one field. [Corrections, source coverage and remaining tests](https://github.com/NousVolition/Nous-Volition/tree/main/studies/community-chain-audit).
+<!-- chain-audit:end -->
+
 Streams and Rocks · completed public-record analysis · 22 October 2026
 
 **Three of eight pairs judged to preserve meaning had different recorded moderation outcomes. Second penalties were longer in 517 of 591 Wikipedia pairs sharing the same recorded reason and moderator.** These are observations from public records. Neither comparison isolates a causal wording or prior-penalty effect.

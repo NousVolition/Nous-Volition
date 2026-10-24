@@ -1,0 +1,17 @@
+test_all_terms_active_in_coupled_trial (test_equations.ExactCorpusTests.test_all_terms_active_in_coupled_trial) ... ok
+test_audited_solver_is_unchanged (test_equations.ExactCorpusTests.test_audited_solver_is_unchanged) ... ok
+test_energy_accounting (test_equations.ExactCorpusTests.test_energy_accounting) ... ok
+test_fixed_direction_force_is_not_drag (test_equations.ExactCorpusTests.test_fixed_direction_force_is_not_drag) ... ok
+test_full_state_scale_symmetry (test_equations.ExactCorpusTests.test_full_state_scale_symmetry) ... ok
+test_grid_difference_includes_fine_only_modes (test_equations.ExactCorpusTests.test_grid_difference_includes_fine_only_modes) ... ok
+test_grid_difference_normalizes_identical_modes (test_equations.ExactCorpusTests.test_grid_difference_normalizes_identical_modes) ... ok
+test_memory_continues_to_source_at_baseline (test_equations.ExactCorpusTests.test_memory_continues_to_source_at_baseline) ... ok
+test_negative_input_retains_signed_field (test_equations.ExactCorpusTests.test_negative_input_retains_signed_field) ... ok
+test_pressure_reconstruction_and_divergence (test_equations.ExactCorpusTests.test_pressure_reconstruction_and_divergence) ... ok
+test_signed_tanh_tail_and_exact_off_alternatives (test_equations.ExactCorpusTests.test_signed_tanh_tail_and_exact_off_alternatives) ... ok
+test_stress_is_symmetric (test_equations.ExactCorpusTests.test_stress_is_symmetric) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.212s
+
+OK

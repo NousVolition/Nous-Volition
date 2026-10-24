@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "check_count": 43,
+  "unit_tests_recorded": 19,
+  "selected_case_reruns": 12,
+  "full_example_reruns": 16,
+  "note": "Numerical and saved-result checks, not empirical validation of a social theory."
+}

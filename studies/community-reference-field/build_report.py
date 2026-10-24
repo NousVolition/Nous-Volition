@@ -160,3 +160,8 @@ for line in md.splitlines():
     elif line.startswith('* '):parts.append('<p class="item">'+inline(line[2:])+'</p>')
     else:parts.append('<p>'+inline(line)+'</p>')
 flush();(P/'report.html').write_text('<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Reference, expression and field dynamics</title><style>body{font:17px/1.6 system-ui;max-width:1150px;padding:35px 25px;margin:auto;color:#20343d}h1{line-height:1.2}h2{margin-top:2.2em}a{color:#096b89}img{width:100%;height:auto;margin:20px 0}pre{overflow:auto;background:#edf3f5;padding:18px}table{border-collapse:collapse;width:100%;font-size:15px}td,th{padding:10px;border-bottom:1px solid #b8c8cf;text-align:left}.scroll{overflow:auto}.item{border-left:3px solid #127a87;padding-left:16px}</style><main>'+''.join(parts)+'</main></html>',encoding='utf-8');print('Built report, README and three figures.')
+
+
+# Preserve the source-chain audit when this historical report is rebuilt.
+from audit_note import apply_notice
+apply_notice(Path(__file__).resolve().parent)

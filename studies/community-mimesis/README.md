@@ -1,5 +1,9 @@
 # Corpus equations and real records of uptake and conflict
 
+<!-- chain-audit:start -->
+Audit update, 23 October 2026. This study implemented corpus components and observable uptake/copying comparisons. Its scalar transport checks are not a full coupled inward field fit. Later numerical checks retain the complete coupled momentum/pressure/transport/accumulator system; real observation functions remain to be identified. [Corrections, source coverage and remaining tests](https://github.com/NousVolition/Nous-Volition/tree/main/studies/community-chain-audit).
+<!-- chain-audit:end -->
+
 Completed 22 October 2026 for Streams and Rocks. **The earlier community simulations included added equations. This study implements the supplied corpus equations explicitly, audits those differences, and separately tests real conversation records.** It does not call a phrase similarity score meaning, a correct answer utility, or a past penalty your field-memory variable.
 
 [Illustrated report](report.html) · [Equation-by-equation audit](CORPUS_AUDIT.md) · [Frozen protocol](PROTOCOL.md) · [All numerical results](results/observed_results.json) · [Every functional review](results/functional_audit.json).

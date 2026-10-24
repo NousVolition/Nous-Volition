@@ -1,0 +1,24 @@
+test_all_constraints (test_model.Tests.test_all_constraints) ... ok
+test_analytic_identical (test_model.Tests.test_analytic_identical) ... ok
+test_analytic_isolated (test_model.Tests.test_analytic_isolated) ... ok
+test_assessment_cannot_raise_optimal_total (test_model.Tests.test_assessment_cannot_raise_optimal_total) ... ok
+test_complete_graph_upper_bound (test_model.Tests.test_complete_graph_upper_bound) ... ok
+test_differentiation_preserves_row_mean (test_model.Tests.test_differentiation_preserves_row_mean) ... ok
+test_equal_edge_counts (test_model.Tests.test_equal_edge_counts) ... ok
+test_forbidden_edges (test_model.Tests.test_forbidden_edges) ... ok
+test_identity_reindexing (test_model.Tests.test_identity_reindexing) ... ok
+test_invalid_parameters (test_model.Tests.test_invalid_parameters) ... ok
+test_labels_are_inert (test_model.Tests.test_labels_are_inert) ... ok
+test_neutral_priority_exact_control (test_model.Tests.test_neutral_priority_exact_control) ... ok
+test_priority_increases_weighted_objective (test_model.Tests.test_priority_increases_weighted_objective) ... ok
+test_recording_is_inert (test_model.Tests.test_recording_is_inert) ... ok
+test_relaxation_cannot_lower_optimal_total (test_model.Tests.test_relaxation_cannot_lower_optimal_total) ... ok
+test_requested_time_respected (test_model.Tests.test_requested_time_respected) ... ok
+test_self_subset (test_model.Tests.test_self_subset) ... ok
+test_solver_tolerance (test_model.Tests.test_solver_tolerance) ... ok
+test_zero_budget (test_model.Tests.test_zero_budget) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.149s
+
+OK

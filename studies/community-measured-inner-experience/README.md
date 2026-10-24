@@ -1,5 +1,9 @@
 # Real inner-experience measurements for the two-in-one
 
+<!-- chain-audit:start -->
+Audit update, 23 October 2026. The workbook analysis was rerun independently of all earlier predicted fields and reproduced its saved quantitative outputs. It still does not identify the full inward observation model. The audit now covers the whole corrected DOCX, all 37 PDF pages and all eight board inventories, including prototype contents and explicit remaining coverage limits. No full empirical two-in-one fit is claimed. [Corrections, source coverage and remaining tests](https://github.com/NousVolition/Nous-Volition/tree/main/studies/community-chain-audit). Mist’s narrower agreement interpretation is provisional, not an author-established definition. Earlier frozen protocols and editable documents retain that historical proposal; current definition tables supersede it.
+<!-- chain-audit:end -->
+
 **New public data were analyzed. The full empirical corpus-equation test remains unperformed.** These files do not identify inward Smoke, Clay, the moving idea and personal history well enough to initialize and score the coupled field model. No simpler predictive model was fitted and no missing history was set to zero. This is new measurement evidence and a specific account of what prevents the requested full test, not a claim of completion.
 
 ## What was actually measured and calculated
@@ -34,7 +38,7 @@ Bootstrap resamples whole people within each comparison (20,000; seed 20261023).
 
 ## Connection to the author's model
 
-The [measurement ledger](measurement_map.json) preserves Smoke as inward putting-forward, Clay as inward receiving/holding/questioning/reshaping/refusing, and the moving idea within the same person. Water is perceived balance; Fog concerns clarity; Wind concerns experienced time; Mist concerns internalized agreement; D₂O denotes the consequential small change. These forms are not inferred from unrelated questionnaire names. H₂O₂ remains separately unspecified.
+The [measurement ledger](measurement_map.json) preserves Smoke as inward putting-forward, Clay as inward receiving/holding/questioning/reshaping/refusing, and the moving idea within the same person. Water is perceived balance; Fog concerns clarity; Wind concerns experienced time; Mist is an author-named form whose narrower interpretation as internalized agreement remains provisional; D₂O denotes the consequential small change. These forms are not inferred from unrelated questionnaire names. H₂O₂ remains separately unspecified.
 
 The [corpus and Miro reconciliation](CORPUS_AND_MIRO.md) records the exact equations, source hashes and inspected frames/pages. In particular, S means the signed status/context field, not Sens. The Miro arrows require an operational connection between measurements and the field. The model's accumulated A cannot be reconstructed from age, a trait score or the number of prior answers.
 

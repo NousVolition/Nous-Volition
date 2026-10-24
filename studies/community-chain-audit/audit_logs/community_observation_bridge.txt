@@ -1,0 +1,13 @@
+test_accumulator_and_total_field_match_integrals (test_bridge.FullEquationTests.test_accumulator_and_total_field_match_integrals) ... ok
+test_constant_context_shift_is_not_a_new_direction (test_bridge.FullEquationTests.test_constant_context_shift_is_not_a_new_direction) ... ok
+test_pressure_restores_unprojected_momentum (test_bridge.FullEquationTests.test_pressure_restores_unprojected_momentum) ... ok
+test_zero_source_erases_only_this_initial_A_difference (test_bridge.FullEquationTests.test_zero_source_erases_only_this_initial_A_difference) ... ok
+test_cross_person_history_rejected (test_bridge.ObservationTests.test_cross_person_history_rejected) ... ok
+test_dangling_reconsideration_rejected (test_bridge.ObservationTests.test_dangling_reconsideration_rejected) ... ok
+test_ledger_integrity (test_bridge.ObservationTests.test_ledger_integrity) ... ok
+test_unmeasured_balance_not_inferred_from_calm (test_bridge.ObservationTests.test_unmeasured_balance_not_inferred_from_calm) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.100s
+
+OK

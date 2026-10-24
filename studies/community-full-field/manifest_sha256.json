@@ -1,14 +1,14 @@
 {
   ".gitignore": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793",
-  "build_report.py": "fb300878d25252ae8c1f4112513666de1008e039eca59d9c01ee78b02e1ba79b",
+  "build_report.py": "d1ec9d9dfd824114bc6210b9078a15afd265b8e42a879e370c6656fa463a3c49",
   "data_test.py": "d4ef2d973aa147cf905bfeb0b9c69ccbbe83fcad3de0065a9dc511c7e622c4a8",
   "field.py": "00b50a93ae413d46109327ccf0c08e8e07d00028313eaa0da87d765e58705f35",
   "figures/data_comparison.png": "4a34b7faa4e665b0a6af3473026e84db7ab1cde15108f63d89f27998385d893e",
   "figures/fields.png": "fe838e204c58175cb789681f12e8ee3558f8788101c0e6358619be80ca62c114",
   "figures/input_patterns.png": "b743437ef13bd6014aa8733faf043c9c32dd87c984692498fb20fd48d6211daa",
   "PROTOCOL.md": "8ef6b96534bcd1960d9b2d27e86d7389f571d36cfa0d5aca12dba1ac9802ee4e",
-  "README.md": "53c414d0ae3c8a1be18d5ee1557351823dca156f2dc4624c05e5127f13ffbf67",
-  "report.html": "b9f3c27cb9ff04387ad9f03e6a7b2860962ee6596897ceb476b2ba28e6c6e001",
+  "README.md": "174826531f60f19d76cf1d73657288a33d7a761465740202fce0d53f4905702d",
+  "report.html": "b4ba2842dcff653ef36f6e9f6847ff49d95280af5b3b8f92b3c3deda9e7d315b",
   "requirements.txt": "1839f9ebfe6ef8dbf3960d324981bdc15fa2378d9bb2f754e1af4ae7360baf4e",
   "results/data_accounting.json": "baecbc51188f0d9badacd6c98a3f0fd0f3dddfafa1e262a7b1d892b5736d2a68",
   "results/data_results.json": "399b06b13652825f5944b643039069cf47534ace8debc0aa4aa5096b3f03bbca",
@@ -27,5 +27,7 @@
   "run_spatial.py": "91790718b23c6a57b2ee862fc0c535b250d8ec267565f2802ec9291ea91a2b52",
   "SOURCES.md": "fb2286f07527ae65df395460e45d87c2ee099bceba5cf6aa20c3f8627384ef29",
   "test_field.py": "612ce4b9c1814672f27204e33311fe845b35d5ee672b2cb6f8ac8b5bc3bb3265",
-  "verify_saved.py": "fe9eef3056adcba7c1cf6a83daa66108f95826c38a124f8465f326465aaad883"
+  "verify_saved.py": "fe9eef3056adcba7c1cf6a83daa66108f95826c38a124f8465f326465aaad883",
+  "AUDIT_NOTICE.md": "d0961d4d8d7697db3832f80c3958e4914c584cd2724ba9954216cde4fee348f5",
+  "audit_note.py": "b1115bf672ff9ac2ac52b60227024cc68d2eb1fb329242b621af54350201aa2a"
 }

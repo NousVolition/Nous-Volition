@@ -1,7 +1,7 @@
 {
   "analyze_history.py": "aab478864ce30cb0b221278cd8ce4cbba484181d9f31c96ab0847a07b3be8037",
   "block_episodes.py": "3fbd940b25b4451b3789b0741c438507eeaa916f78209f2d18d22f3880b6389d",
-  "build_report.py": "42dde94d6ae46bdca93a97cdd06ba8e12f6d7d0fcaccbb9bf51663db8f1a1c36",
+  "build_report.py": "06dcf4caefcf0422b1378c3ea4d7245f4eadeb2e1d7730b26013e45cb519bbcf",
   "compare_wording.py": "e40679e954279ef738f5a76b0e3156d642814454bae7fbc6c80270a58853ec0f",
   "DATA_LICENSE.md": "b12a36ab7598e540586ee02b26f756378bb292f14182d7a671bf475ab459a4db",
   "download_data.py": "52ddecdad1c6a46e5e04b0e3501e0d7bcd10cd06d174c4ee1dc7202331806f09",
@@ -11,9 +11,9 @@
   "inspect_pair.py": "3e932b1adf7d57fce50d71a0497acd24f27dcf72b5143300171fa6154e7d392d",
   "prepare_blocks.py": "36b3887a2b0138b1a26d261bc7ed4fefc0228526c0cdacc6db51c6bd4256a745",
   "PROTOCOL.md": "945a274857537cddcafd275f2e483f5535164605632596ec0a9c9d3388281fe3",
-  "README.md": "f2e214f7c9671ccf99bd3e35dbfbf8decde288a2423f84bcc4eb58006f34ca0a",
+  "README.md": "1fdfffd1f36f5fb856e67ffc813f5091aedabdd0015140ce3b117d2e00a9230a",
   "record_core.py": "e898a125e7fec4e97269c998bfae43f0b19c93fc21c7dfd2c2e404081f834a53",
-  "report.html": "ce8a5633c453e5aa082a6c6fc585747e4d639451bc50ce6fc53c1a997a753e63",
+  "report.html": "a68c46a2f972d9649c5c55eeb158f333a4235d786219652d54b09b1edef01aab",
   "requirements.txt": "1839f9ebfe6ef8dbf3960d324981bdc15fa2378d9bb2f754e1af4ae7360baf4e",
   "results/audited_status_pairs.csv": "18e335a6db674c180caf5ffae581a7e3da497729daadd2550b1c18d3d346ba9a",
   "results/history_duration_histogram.csv": "4f4750aa93f0401d11f4ecfa35a725c2564b13f8e92732073fa5320e648eac79",
@@ -30,5 +30,7 @@
   "run_checks.py": "f670199c9e31340511f895aac74f070ea220845e0b82ad4c276cbdc87de701bd",
   "sources.json": "5839e56d1822833bbaec31b548330e1bc1ff2806392ce2dc0521324764f7a181",
   "test_record_tests.py": "385e17621f35197b5ca7cac7aaacffd1670519a7b74c53333312dc653342346b",
-  "verify_saved.py": "b98c7f81da868cca200650dccbcd8b0ad699336fbaaea7756c65853c880f8bdb"
+  "verify_saved.py": "b98c7f81da868cca200650dccbcd8b0ad699336fbaaea7756c65853c880f8bdb",
+  "AUDIT_NOTICE.md": "166ee5e77b9cfc65b397717b2ae5fabe5cf99b030e8d8f6f68792e884b7dee6d",
+  "audit_note.py": "b1115bf672ff9ac2ac52b60227024cc68d2eb1fb329242b621af54350201aa2a"
 }

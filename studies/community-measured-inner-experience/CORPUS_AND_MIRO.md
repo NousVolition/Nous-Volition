@@ -51,3 +51,14 @@ Smoke, Clay and idea forms retain the user's definitions within one person. Ther
 ## What can make an empirical run possible
 
 Not every field value must be directly observed. A specified observation operator with justified error, identifiable latent-state/parameter inference, known or inferred initial/prehistory conditions and an independently scored future measurement could test the full model. At present these new records lack that identified bridge. This is a limitation of this attempted test, not a proof that the theory is false or forever untestable.
+
+
+## Source-chain correction: the roles have an architectural anchor
+
+The full corrected corpus already assigns transmit/I to a=(2,3,1), receive/Self to b=(2,3,2), sink/buffer to c=(1,3,2), and perimeter to d=(3,3,1), in paragraphs 72–91. Smoke can be read in relation to transmit and Clay in relation to receive. Earlier statements suggesting no mathematical anchor at all were too broad.
+
+These are source-assigned roles and static coordinates, not measured locations in a person. The original receive description includes external or auxiliary input; the author's later within-person two-in-one is a further interpretive specification. No evolution law for these four nodes, mapping from them to the PDE domain, or measured role-specific history follows from the coordinates alone. Retaining that distinction preserves the source instead of replacing the user's theory.
+
+Mist as specifically internalized or unspoken agreement is an operational interpretation previously introduced in the reports. The author supplied Mist as a form of the moving idea, but did not uniquely assign that narrower meaning. Keep it provisional. Water's perceived balance and D2O's small-change/consequence distinction remain the author's explicit clarifications. Strong language remains when warranted by the observed and attributed account.
+
+See the [complete chain audit](https://github.com/NousVolition/Nous-Volition/tree/main/studies/community-chain-audit), including exact source passages and unresolved measurement requirements.

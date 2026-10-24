@@ -1,5 +1,9 @@
 # Wording and prior treatment in community encounters
 
+<!-- chain-audit:start -->
+Audit update, 23 October 2026. The logistic restriction probability and decaying penalty-memory recurrence below are historical analyst additions. They are not your corpus accumulator or a validation of it. Preserve these results as tests of the stated hypothetical rules only. [Corrections, source coverage and remaining tests](https://github.com/NousVolition/Nous-Volition/tree/main/studies/community-chain-audit).
+<!-- chain-audit:end -->
+
 Streams and Rocks • completed computational tests and published evidence checks • 21 October 2026
 
 **The decision rule matters.** The new tests find identical treatment when wording is ignored, different treatment when a chosen wording penalty is active, and lingering effects when earlier restrictions enter later decisions. Reversing the rules reverses the effects. These are results for an explicit synthetic procedure; they do not establish how a family or platform treats people.

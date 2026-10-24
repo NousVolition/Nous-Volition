@@ -1,0 +1,11 @@
+test_condition_reversal_changes_sign (test_measurements.Measurements.test_condition_reversal_changes_sign) ... ok
+test_holm_known_family (test_measurements.Measurements.test_holm_known_family) ... ok
+test_missing_is_not_zero (test_measurements.Measurements.test_missing_is_not_zero) ... ok
+test_no_substitute_model_claim (test_measurements.Measurements.test_no_substitute_model_claim) ... ok
+test_sample_join_and_denominators (test_measurements.Measurements.test_sample_join_and_denominators) ... ok
+test_saved_comparison_accounting (test_measurements.Measurements.test_saved_comparison_accounting) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.006s
+
+OK

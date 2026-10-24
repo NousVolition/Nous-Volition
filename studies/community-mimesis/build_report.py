@@ -60,3 +60,8 @@ body='''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewpor
 </main></html>'''
 (p/'report.html').write_text(body,encoding='utf-8')
 print('Wrote report.html and figures/findings.png')
+
+
+# Preserve the source-chain audit when this historical report is rebuilt.
+from audit_note import apply_notice
+apply_notice(Path(__file__).resolve().parent)

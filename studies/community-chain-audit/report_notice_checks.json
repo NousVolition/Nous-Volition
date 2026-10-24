@@ -1,0 +1,93 @@
+[
+  {
+    "study": "community_encounters",
+    "reports_have_one_notice": true,
+    "generators": [
+      "build_report.py"
+    ]
+  },
+  {
+    "study": "community_full_field",
+    "reports_have_one_notice": true,
+    "generators": [
+      "build_report.py"
+    ]
+  },
+  {
+    "study": "community_measured_inner_experience",
+    "reports_have_one_notice": true,
+    "generators": [
+      "build_report.py"
+    ]
+  },
+  {
+    "study": "community_mimesis",
+    "reports_have_one_notice": true,
+    "generators": [
+      "build_report.py"
+    ]
+  },
+  {
+    "study": "community_moderation",
+    "reports_have_one_notice": true,
+    "generators": [
+      "build_report.py"
+    ]
+  },
+  {
+    "study": "community_observation_bridge",
+    "reports_have_one_notice": true,
+    "generators": [
+      "build_report.py"
+    ]
+  },
+  {
+    "study": "community_power",
+    "reports_have_one_notice": true,
+    "generators": [
+      "build_report.py"
+    ]
+  },
+  {
+    "study": "community_real_data",
+    "reports_have_one_notice": true,
+    "generators": [
+      "build_report.py"
+    ]
+  },
+  {
+    "study": "community_record_tests",
+    "reports_have_one_notice": true,
+    "generators": [
+      "build_report.py"
+    ]
+  },
+  {
+    "study": "community_reference_field",
+    "reports_have_one_notice": true,
+    "generators": [
+      "build_report.py"
+    ]
+  },
+  {
+    "study": "community_two_in_one",
+    "reports_have_one_notice": true,
+    "generators": [
+      "build_document.py"
+    ]
+  },
+  {
+    "study": "community_two_in_one_application",
+    "reports_have_one_notice": true,
+    "generators": [
+      "build_report.py"
+    ]
+  },
+  {
+    "study": "community_two_in_one_field",
+    "reports_have_one_notice": true,
+    "generators": [
+      "build_report.py"
+    ]
+  }
+]

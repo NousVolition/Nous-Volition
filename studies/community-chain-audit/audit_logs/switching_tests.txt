@@ -1,0 +1,23 @@
+test_conversion_balance_and_nonnegativity (test_models.ChemicalChecks.test_conversion_balance_and_nonnegativity) ... ok
+test_derivative_against_finite_differences (test_models.ChemicalChecks.test_derivative_against_finite_differences) ... ok
+test_finite_fuel_adenylate_and_phosphate_balances (test_models.ChemicalChecks.test_finite_fuel_adenylate_and_phosphate_balances) ... ok
+test_fuel_shutdown_erases_memory (test_models.ChemicalChecks.test_fuel_shutdown_erases_memory) ... ok
+test_independent_rk4_refinement (test_models.ChemicalChecks.test_independent_rk4_refinement) ... ok
+test_no_feedback_against_exact_solution (test_models.ChemicalChecks.test_no_feedback_against_exact_solution) ... ok
+test_no_stimulus_no_spontaneous_source (test_models.ChemicalChecks.test_no_stimulus_no_spontaneous_source) ... ok
+test_physical_interval_inward_rates (test_models.ChemicalChecks.test_physical_interval_inward_rates) ... ok
+test_pulse_threshold_and_memory (test_models.ChemicalChecks.test_pulse_threshold_and_memory) ... ok
+test_seeded_counts_conserved_and_repeatable (test_models.ChemicalChecks.test_seeded_counts_conserved_and_repeatable) ... ok
+test_stationary_states_and_stability (test_models.ChemicalChecks.test_stationary_states_and_stability) ... ok
+test_energy_including_continuous_parameter_work (test_models.MechanicalChecks.test_energy_including_continuous_parameter_work) ... ok
+test_energy_including_tilt_jump_work (test_models.MechanicalChecks.test_energy_including_tilt_jump_work) ... ok
+test_equilibria_and_stability (test_models.MechanicalChecks.test_equilibria_and_stability) ... ok
+test_folds_have_zero_force_and_slope (test_models.MechanicalChecks.test_folds_have_zero_force_and_slope) ... ok
+test_force_is_negative_potential_gradient (test_models.MechanicalChecks.test_force_is_negative_potential_gradient) ... ok
+test_pulse_threshold_matches_independent_quadrature (test_models.MechanicalChecks.test_pulse_threshold_matches_independent_quadrature) ... ok
+test_smaller_steps_converge_to_reference (test_models.MechanicalChecks.test_smaller_steps_converge_to_reference) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.416s
+
+OK

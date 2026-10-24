@@ -96,3 +96,8 @@ para('The protocol was recorded before these full-data summaries, after source f
 css='body{font:17px/1.65 system-ui;color:#213544;background:#eef4f3;margin:0}main{max-width:1100px;background:white;margin:24px auto;padding:38px}h1{font-size:2.2rem;line-height:1.2}h2{color:#176b74;margin-top:2em}a{color:#126a83}table{width:100%;border-collapse:collapse;font-size:.9em}th,td{text-align:left;vertical-align:top;padding:12px;border-bottom:1px solid #d2dddd}th{background:#eaf4f2}.scroll{overflow:auto}img{width:100%;height:auto}figure{margin:28px 0}figcaption{font-size:.86em;color:#4a626d}pre{overflow:auto;background:#edf3f5;padding:20px}@media(max-width:700px){main{padding:18px;margin:0}h1{font-size:1.8rem}}'
 (ROOT/'report.html').write_text('<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Real encounters — Streams and Rocks</title><style>'+css+'</style><main>'+''.join(ht)+'</main></html>',encoding='utf8')
 print('Built real-data report and two figures')
+
+
+# Preserve the source-chain audit when this historical report is rebuilt.
+from audit_note import apply_notice
+apply_notice(Path(__file__).resolve().parent)

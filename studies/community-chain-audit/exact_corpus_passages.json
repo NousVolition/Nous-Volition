@@ -1,0 +1,738 @@
+[
+  {
+    "paragraph": 18,
+    "text": "The initial-field result is proved within its stated assumptions. For the checked Cartesian construction, the derivatives cancel exactly:"
+  },
+  {
+    "paragraph": 19,
+    "text": "∇ · u₀ = −AHCφ + AHCφ = 0."
+  },
+  {
+    "paragraph": 20,
+    "text": "The field is smooth through the axis, rapidly decreasing, and finite-energy. The analytic derivation establishes these properties; finite tests support the implementation. These statements use the checked construction with finite parameters R ≥ 0, a > 0, b > 0, and real A and B."
+  },
+  {
+    "paragraph": 21,
+    "text": "The claim being withheld concerns global smooth evolution. “Not proved here” does not mean false, concealed, or that the initial-field proof failed. Separately justified short-time existence remains possible. Changing the forcing alone does not undo the identity for an unchanged initial field; it changes what must be justified about its evolution."
+  },
+  {
+    "paragraph": 22,
+    "text": "Preserve “preserves Sens while adjusting Sin.” Here, Sens means personal intent or intended meaning, and Sin means socially constrained or encoded expression. Keep the unusual wording and its distinction. It does not need conventional replacement or treatment as a mathematical theorem."
+  },
+  {
+    "paragraph": 66,
+    "text": "This specification places four nodes on a three-coordinate grid (X, Y, Z), with three levels on each axis. The positions form a 4 × 3 array, or twelve scalar coordinates before constraints; the Y projection alone is a four-component vector. Architectural labels describe assigned roles inside the model. A time-evolution or feedback law has not been supplied."
+  },
+  {
+    "paragraph": 67,
+    "text": "2. Variable Definitions"
+  },
+  {
+    "paragraph": 68,
+    "text": "Variable"
+  },
+  {
+    "paragraph": 69,
+    "text": "Coordinate"
+  },
+  {
+    "paragraph": 70,
+    "text": "Component"
+  },
+  {
+    "paragraph": 71,
+    "text": "Functional description"
+  },
+  {
+    "paragraph": 72,
+    "text": "a"
+  },
+  {
+    "paragraph": 73,
+    "text": "(2, 3, 1)"
+  },
+  {
+    "paragraph": 74,
+    "text": "Primary Node"
+  },
+  {
+    "paragraph": 75,
+    "text": "Active workspace executing the transmit path ('I')."
+  },
+  {
+    "paragraph": 76,
+    "text": "b"
+  },
+  {
+    "paragraph": 77,
+    "text": "(2, 3, 2)"
+  },
+  {
+    "paragraph": 78,
+    "text": "Secondary Node"
+  },
+  {
+    "paragraph": 79,
+    "text": "Active workspace executing the receive path ('Self') while incorporating an external input or auxiliary agent."
+  },
+  {
+    "paragraph": 80,
+    "text": "c"
+  },
+  {
+    "paragraph": 81,
+    "text": "(1, 3, 2)"
+  },
+  {
+    "paragraph": 82,
+    "text": "Lower-Tier Sink / Buffer"
+  },
+  {
+    "paragraph": 83,
+    "text": "Assigned lower-layer role for residual drift or transfer; no transfer law is specified."
+  },
+  {
+    "paragraph": 84,
+    "text": "d"
+  },
+  {
+    "paragraph": 85,
+    "text": "(3, 3, 1)"
+  },
+  {
+    "paragraph": 86,
+    "text": "Outer Boundary Layer"
+  },
+  {
+    "paragraph": 87,
+    "text": "Reference perimeter in the architecture."
+  },
+  {
+    "paragraph": 88,
+    "text": "y_ref"
+  },
+  {
+    "paragraph": 89,
+    "text": "3"
+  },
+  {
+    "paragraph": 90,
+    "text": "Reference Forcing Level"
+  },
+  {
+    "paragraph": 91,
+    "text": "Common Y-coordinate reference, not a time variable."
+  },
+  {
+    "paragraph": 92,
+    "text": "3. Mathematical Formulation"
+  },
+  {
+    "paragraph": 93,
+    "text": "V = [(2, 3, 1); (2, 3, 2); (1, 3, 2); (3, 3, 1)]."
+  },
+  {
+    "paragraph": 94,
+    "text": "The alignment condition asks whether all four Y coordinates equal y_ref = 3. The reference level is distinguished from a time variable."
+  },
+  {
+    "paragraph": 95,
+    "text": "r_Y = [Y(a) − y_ref; Y(b) − y_ref; Y(c) − y_ref; Y(d) − y_ref] = [0; 0; 0; 0]."
+  },
+  {
+    "paragraph": 96,
+    "text": "4. Interpretation"
+  },
+  {
+    "paragraph": 97,
+    "text": "The zero residual establishes Y-coordinate alignment for these four positions. It is a coordinate difference, not a gradient. The earlier phrase closed-loop stability expresses a proposed architectural interpretation; stability over time would require a specified evolution or feedback law and a stability argument. Alignment alone does not establish that result."
+  },
+  {
+    "paragraph": 99,
+    "text": "The \"True B-Lister\" Project"
+  },
+  {
+    "paragraph": 100,
+    "text": "Hofferian Analysis of Group Boundaries in Digital Communities"
+  },
+  {
+    "paragraph": 101,
+    "text": "Plain-Language Revision"
+  },
+  {
+    "paragraph": 102,
+    "text": "1. Dual-Engine Framework"
+  },
+  {
+    "paragraph": 103,
+    "text": "The framework combines a consistency rule with a spatial boundary metaphor. The first asks whether the same action is evaluated by the same rule across actors. The second represents how close an action is to a modeled response boundary while preserving the actor's intended utility."
+  },
+  {
+    "paragraph": 104,
+    "text": "Formula 1  Consistency or Shibboleth Check. For each declared relevant context c: ∀i, j ∈ P, ∀α ∈ A, W(i, α; c) = W(j, α; c)."
+  },
+  {
+    "paragraph": 105,
+    "text": "Formula 2  Boundary Margin Model. Maximize U(α; c) over α ∈ F(i,c) with m(i,c)(α) = ε, where ε > 0."
+  },
+  {
+    "paragraph": 106,
+    "text": "Definitions: P is the actor set, A the available action set, and c a declared relevant context. In this binary audit W(i, α; c) ∈ {0, 1}, with 1 = restriction and 0 = permission. Equality tests outcomes, not identical reasoning or fairness. One counterexample to the universal claim is enough: some i, j, α in the same context have unequal W values. Context must not be chosen merely to hide the disparity under examination."
+  },
+  {
+    "paragraph": 107,
+    "text": "For the boundary model, place actions in a specified metric feature space X. ΩSin(i, c) is its permitted region, with nonempty boundary; F(i,c) = A ∩ ΩSin(i, c). Define m(i,c)(α) as distance to that boundary inside ΩSin, and minus that distance outside; boundary points have margin zero. Ordinary unsigned distance is never negative. The condition m = ε chooses an exact permitted-side edge margin. The alternative m ≥ ε requires minimum clearance and is not the same objective. Either feasible set can be empty; a maximizing action need not exist without further domain and regularity assumptions. These quantities operationalize the metaphor only after a representation and metric are chosen."
+  },
+  {
+    "paragraph": 214,
+    "text": "High-alignment participant"
+  },
+  {
+    "paragraph": 215,
+    "text": "Already uses familiar local conventions."
+  },
+  {
+    "paragraph": 216,
+    "text": "Usually encounters less friction because their behavior is easier to interpret within the setting."
+  },
+  {
+    "paragraph": 217,
+    "text": "Adaptive observer"
+  },
+  {
+    "paragraph": 218,
+    "text": "Learns how the local response boundary changes across spaces."
+  },
+  {
+    "paragraph": 219,
+    "text": "Can adjust presentation when useful without assuming control over the system."
+  },
+  {
+    "paragraph": 220,
+    "text": "5. System-Level Interpretation"
+  },
+  {
+    "paragraph": 221,
+    "text": "Consistency within a context can coexist with different thresholds across contexts. A contradiction arises only if the same policy also asserts invariance over the very differences it allows to change outcomes. Actor-specific modifiers need an explicit rule and justification; relabeling an identity difference as context does not settle a fairness audit."
+  },
+  {
+    "paragraph": 223,
+    "text": "Smoothed Navier-Stokes Yield-Stress Framework"
+  },
+  {
+    "paragraph": 224,
+    "text": "Mathematical Specification for Boundary-Response Modeling"
+  },
+  {
+    "paragraph": 225,
+    "text": "Plain-Language Revision"
+  },
+  {
+    "paragraph": 226,
+    "text": "1. Mathematical Context"
+  },
+  {
+    "paragraph": 227,
+    "text": "This section distinguishes three response laws: a sharp threshold with exact inactivity below it, the original tanh approximation with a signed response below threshold, and an optional smooth law with exact inactivity. Smoothness of a scalar switch and smoothness of its composition with a gradient magnitude are separate questions. None establishes a solution to the Clay Mathematics Institute Navier–Stokes problem."
+  },
+  {
+    "paragraph": 228,
+    "text": "2. Governing Momentum Equation"
+  },
+  {
+    "paragraph": 229,
+    "text": "∂u/∂t + (u · ∇)u = −∇p + ν∇²u + f,     ∇ · u = 0."
+  },
+  {
+    "paragraph": 230,
+    "text": "f = −(σ/ρ) a(q) eₖ,     q = |∇S| − Γcrit."
+  },
+  {
+    "paragraph": 231,
+    "text": "3. Variable Definitions"
+  },
+  {
+    "paragraph": 232,
+    "text": "Symbol"
+  },
+  {
+    "paragraph": 233,
+    "text": "Definition"
+  },
+  {
+    "paragraph": 234,
+    "text": "u, t, ∇"
+  },
+  {
+    "paragraph": 235,
+    "text": "Velocity field, time, and spatial gradient in a specified continuous domain."
+  },
+  {
+    "paragraph": 236,
+    "text": "p = P/ρ"
+  },
+  {
+    "paragraph": 237,
+    "text": "Pressure divided by constant density; distinct from the actor set P elsewhere."
+  },
+  {
+    "paragraph": 238,
+    "text": "ν = µ/ρ > 0"
+  },
+  {
+    "paragraph": 239,
+    "text": "Kinematic viscosity in the chosen analogy."
+  },
+  {
+    "paragraph": 240,
+    "text": "∇²"
+  },
+  {
+    "paragraph": 241,
+    "text": "Spatial Laplacian."
+  },
+  {
+    "paragraph": 242,
+    "text": "σ ≥ 0, ρ > 0"
+  },
+  {
+    "paragraph": 243,
+    "text": "Response-strength and density parameters; σ a(q)/ρ has acceleration units."
+  },
+  {
+    "paragraph": 244,
+    "text": "S"
+  },
+  {
+    "paragraph": 245,
+    "text": "Modeled field; its regularity and coupling need specifying."
+  },
+  {
+    "paragraph": 246,
+    "text": "|∇S|"
+  },
+  {
+    "paragraph": 247,
+    "text": "Euclidean gradient magnitude; not differentiable as a function of the gradient at zero."
+  },
+  {
+    "paragraph": 248,
+    "text": "Γcrit ≥ 0"
+  },
+  {
+    "paragraph": 249,
+    "text": "Threshold in gradient units; τ₀/η is an optional dimensionally compatible calibration."
+  },
+  {
+    "paragraph": 250,
+    "text": "q"
+  },
+  {
+    "paragraph": 251,
+    "text": "Gradient magnitude minus threshold."
+  },
+  {
+    "paragraph": 252,
+    "text": "ε > 0"
+  },
+  {
+    "paragraph": 253,
+    "text": "Response transition scale, with the same units as q."
+  },
+  {
+    "paragraph": 254,
+    "text": "δ > 0"
+  },
+  {
+    "paragraph": 255,
+    "text": "Gradient regularization scale in gδ; same units as the gradient. Distinct from a Dirac delta."
+  },
+  {
+    "paragraph": 256,
+    "text": "a₀, aₜ, aε"
+  },
+  {
+    "paragraph": 257,
+    "text": "Sharp exact-off, original signed tanh, and optional smooth exact-off response laws."
+  },
+  {
+    "paragraph": 258,
+    "text": "eₖ"
+  },
+  {
+    "paragraph": 259,
+    "text": "Fixed unit direction; no automatic claim of opposition to motion."
+  },
+  {
+    "paragraph": 260,
+    "text": "4. Scope Note"
+  },
+  {
+    "paragraph": 261,
+    "text": "Choose the response law a before using the equation. Sharp threshold: a₀(q) = max(q, 0), so the added force is zero for q ≤ 0 and proportional to q for q > 0. This law is continuous but not differentiable at q = 0."
+  },
+  {
+    "paragraph": 262,
+    "text": "Original tanh choice: aₜ(q) = q[1 + tanh(q/ε)]/2, with ε > 0. It is smooth as a function of q, but for finite q < 0 it is negative and nonzero. For example, aₜ(−ε) ≈ −0.119203ε. The force therefore reverses direction below threshold when σ > 0; it does not simply switch off. A small tail may be intentional, but its sign and interpretation must be stated."
+  },
+  {
+    "paragraph": 263,
+    "text": "Zero-gradient concern: |v| is not differentiable at v = 0. Composing it with tanh does not automatically remove that issue; a particular composition can have cancellations, which need checking. For a smooth alternative, use gδ(v) = √(v · v + δ²) − δ with δ > 0, and qδ = gδ(∇S) − Γcrit. This changes the gradient measure near zero and is a modeling choice."
+  },
+  {
+    "paragraph": 264,
+    "text": "Optional smooth exact-off response: aε(q) = 0 for q ≤ 0, and aε(q) = q exp[−(ε/q)²] for q > 0. For fixed ε > 0 this scalar function is C∞, including the join at zero. Using aε(qδ) with fixed δ > 0 makes the constitutive response smooth in the gradient variable and exactly zero when qδ ≤ 0. This is an alternative to the tanh law, not a property of it. Its positive onset in the original magnitude is |∇S| > √(Γcrit² + 2δΓcrit), so the threshold must be calibrated in the chosen measure. To retain the original cutoff |∇S| = Γcrit instead, use the calibrated excess qδ* = √(|∇S|² + δ²) − √(Γcrit² + δ²). It has the same sign as |∇S| − Γcrit for Γcrit ≥ 0. Using aε(qδ*) gives a smooth exact-off alternative with that original cutoff; the response above it is still a changed constitutive law."
+  },
+  {
+    "paragraph": 265,
+    "text": "A fixed eₖ specifies direction; it does not guarantee drag or energy dissipation. For f to remove kinetic energy pointwise, u · f must be nonpositive. The model still needs a domain, initial and boundary data, a definition or equation for S, and compatible coefficient units. A smooth constitutive response is not a proof of smooth solutions for all time. Pressure, viscosity, yield, and boundary remain modeling language unless independently operationalized."
+  },
+  {
+    "paragraph": 493,
+    "text": "1. Overview"
+  },
+  {
+    "paragraph": 494,
+    "text": "This paper develops a systems model for examining how people, language, and group boundaries interact in digital spaces. It combines group sociology, fluid-flow metaphors, vector calculus, and pragmatic linguistics. The mathematical models are used as structured ways to describe movement, pressure, thresholds, and changes in a social environment; they are not claims that human groups are literally fluids or that social behavior can be measured with perfect precision. The framework tracks how personal intent (Sens) can be reshaped into socially constrained or encoded expression (Sin), how boundaries become visible through differences in treatment, and how an observer can learn those boundaries without needing to become a central or dominant actor. The Socio-Didact is therefore treated as an adaptive observation mode: someone who learns the unwritten rules of a setting, stays relatively unobtrusive when useful, and adjusts enough to reduce unnecessary friction while preserving intended meaning."
+  },
+  {
+    "paragraph": 495,
+    "text": "2. Three Mathematical Models"
+  },
+  {
+    "paragraph": 496,
+    "text": "System 1: The Static Invariance Matrix"
+  },
+  {
+    "paragraph": 497,
+    "text": "Tracks a paired rescaling of two scalar variables. For λ > 0, scaling S by λ and R by 1/λ preserves their product. This is an algebraic invariance under a specified transformation; no equilibrium or time conservation follows without a dynamical model. The precise description is a product preserved under reciprocal scaling. This transformation property does not establish stability or boundedness of a subsequent time evolution."
+  },
+  {
+    "paragraph": 498,
+    "text": "x = [S ; R]"
+  },
+  {
+    "paragraph": 499,
+    "text": "M = [λ, 0; 0, 1/λ],     λ > 0."
+  },
+  {
+    "paragraph": 500,
+    "text": "M x = [λ S ; (1/λ) R]"
+  },
+  {
+    "paragraph": 501,
+    "text": "(λ S) · ((1/λ) R) = S R = Q"
+  },
+  {
+    "paragraph": 502,
+    "text": "System 1 Variable Registry"
+  },
+  {
+    "paragraph": 503,
+    "text": "Symbol"
+  },
+  {
+    "paragraph": 504,
+    "text": "Definition / Structural Parameter"
+  },
+  {
+    "paragraph": 505,
+    "text": "x"
+  },
+  {
+    "paragraph": 506,
+    "text": "Two-component vector of scalar variables for this model; distinct from spatial x elsewhere."
+  },
+  {
+    "paragraph": 507,
+    "text": "λ > 0"
+  },
+  {
+    "paragraph": 508,
+    "text": "Paired scaling factor; division requires nonzero λ, and positivity preserves signs."
+  },
+  {
+    "paragraph": 509,
+    "text": "S"
+  },
+  {
+    "paragraph": 510,
+    "text": "Scalar environmental-context variable in this static model."
+  },
+  {
+    "paragraph": 511,
+    "text": "R"
+  },
+  {
+    "paragraph": 512,
+    "text": "Scalar behavioral or response variable."
+  },
+  {
+    "paragraph": 513,
+    "text": "Q = SR"
+  },
+  {
+    "paragraph": 514,
+    "text": "Product invariant under the stated reciprocal rescaling; not an established dynamic equilibrium."
+  },
+  {
+    "paragraph": 515,
+    "text": "System 2: The Fluid Continuity Model"
+  },
+  {
+    "paragraph": 516,
+    "text": "Treats status or context as a signed field over a specified spatial embedding. Advection carries the field, diffusion spreads it, and a localized source changes it. A network alone does not specify the continuous geometry needed for these derivatives. With constant D_diff ≥ 0 and ∇ · u = 0, the following transport form is also a conservative continuity form."
+  },
+  {
+    "paragraph": 517,
+    "text": "∂S/∂t + u · ∇S = D_diff ∇²S + Kₕ(x − x₀) J(t)."
+  },
+  {
+    "paragraph": 518,
+    "text": "A(t) = ∫₀ᵗ γ[U(s) − Ubaseline] ds,     J(t) = κ A(t)."
+  },
+  {
+    "paragraph": 519,
+    "text": "Kₕ is a smooth localized kernel of width h > 0 with spatial integral 1. The original δ(x − x₀) is an alternative point-source idealization interpreted as a distribution, not an ordinary smooth function. A stores accumulated input; κ converts that stored quantity to a source rate with the required units. This retains the original memory choice explicitly. Under closed or periodic boundaries, constant positive excess utility can make the total field grow quadratically in time because the stored input is integrated again by the evolution equation. If instantaneous production is intended instead, specify J(t) = γ[U(t) − Ubaseline] with suitable units; that is a different model. Negative excess input may lower this signed field. Initial and boundary data remain necessary. For compressible transport, replace u · ∇S by ∇ · (Su)."
+  },
+  {
+    "paragraph": 520,
+    "text": "System 2 Variable Registry"
+  },
+  {
+    "paragraph": 521,
+    "text": "Symbol"
+  },
+  {
+    "paragraph": 522,
+    "text": "Definition / Structural Parameter"
+  },
+  {
+    "paragraph": 523,
+    "text": "S(x, t)"
+  },
+  {
+    "paragraph": 524,
+    "text": "Signed status or context field over a specified continuous spatial embedding."
+  },
+  {
+    "paragraph": 525,
+    "text": "u"
+  },
+  {
+    "paragraph": 526,
+    "text": "Advection velocity; divergence-free for the displayed conservative interpretation."
+  },
+  {
+    "paragraph": 527,
+    "text": "D_diff ≥ 0"
+  },
+  {
+    "paragraph": 528,
+    "text": "Constant diffusion coefficient, with units length²/time."
+  },
+  {
+    "paragraph": 529,
+    "text": "Kₕ(x − x₀)"
+  },
+  {
+    "paragraph": 530,
+    "text": "Smooth localized source kernel, width h > 0, integral 1; units inverse spatial volume."
+  },
+  {
+    "paragraph": 531,
+    "text": "A(t)"
+  },
+  {
+    "paragraph": 532,
+    "text": "Accumulated input from excess utility, starting at A(0) = 0."
+  },
+  {
+    "paragraph": 533,
+    "text": "J(t) = κA(t)"
+  },
+  {
+    "paragraph": 534,
+    "text": "Source rate; κ converts accumulated input to rate units compatible with KₕJ."
+  },
+  {
+    "paragraph": 535,
+    "text": "γ"
+  },
+  {
+    "paragraph": 536,
+    "text": "Coefficient converting utility difference into accumulated-input rate."
+  },
+  {
+    "paragraph": 537,
+    "text": "U(s), Ubaseline"
+  },
+  {
+    "paragraph": 538,
+    "text": "Utility at integration time s and the chosen comparison baseline."
+  },
+  {
+    "paragraph": 539,
+    "text": "s"
+  },
+  {
+    "paragraph": 540,
+    "text": "Dummy integration time, from 0 to t."
+  },
+  {
+    "paragraph": 541,
+    "text": "δ(x − x₀)"
+  },
+  {
+    "paragraph": 542,
+    "text": "Optional Dirac point-source distribution replacing Kₕ; not a smooth ordinary function."
+  },
+  {
+    "paragraph": 543,
+    "text": "System 3  The Boundary Threshold and Response Model"
+  },
+  {
+    "paragraph": 544,
+    "text": "The sharp version defines exactly what happens on both sides: the additional boundary force is zero at and below threshold, and active above it. Zero added force does not mean the whole system is stable; the other terms still evolve. The smooth alternatives and their distinct behavior are specified in the earlier threshold section."
+  },
+  {
+    "paragraph": 545,
+    "text": "T = µ₀[∇u + (∇u)ᵀ],     µ₀ > 0."
+  },
+  {
+    "paragraph": 546,
+    "text": "T is the symmetric viscous stress for the stated incompressible Newtonian analogy. The earlier µ₀∇u was a scaled velocity-gradient tensor, not this full stress. This constitutive choice does not establish literal fluid behavior in a social system."
+  },
+  {
+    "paragraph": 547,
+    "text": "Γcrit ≥ 0. Optional calibration: Γcrit = τ₀/η, with τ₀ ≥ 0 and η > 0."
+  },
+  {
+    "paragraph": 548,
+    "text": "q = |∇S| − Γcrit;     a₀(q) = 0 if q ≤ 0, and a₀(q) = q if q > 0."
+  },
+  {
+    "paragraph": 549,
+    "text": "ρ[∂u/∂t + (u · ∇)u] = −∇P + µ∇²u − σ a₀(q)eₖ,     ∇ · u = 0."
+  },
+  {
+    "paragraph": 550,
+    "text": "Assume constant ρ > 0, µ > 0, and σ ≥ 0; p = P/ρ and ν = µ/ρ connect this equation to the earlier normalized form. The calibration η must give Γcrit the same units as |∇S|. Increasing η lowers Γcrit at fixed τ₀, so the label rigidity does not by itself establish stronger resistance. Fixed-direction forcing is not necessarily dissipative. Initial and boundary data, the S coupling, and a domain are required; smooth activation alone does not establish well-posedness or global regularity."
+  },
+  {
+    "paragraph": 551,
+    "text": "System 3 Variable Registry"
+  },
+  {
+    "paragraph": 552,
+    "text": "Symbol"
+  },
+  {
+    "paragraph": 553,
+    "text": "Definition / Structural Parameter"
+  },
+  {
+    "paragraph": 554,
+    "text": "T"
+  },
+  {
+    "paragraph": 555,
+    "text": "Symmetric Newtonian viscous stress under the stated incompressible analogy."
+  },
+  {
+    "paragraph": 556,
+    "text": "µ₀ > 0"
+  },
+  {
+    "paragraph": 557,
+    "text": "Baseline viscosity used to define T; specify how it relates to µ if the models are coupled."
+  },
+  {
+    "paragraph": 603,
+    "text": "5. Socio-Didact: Adaptive Observation Mode"
+  },
+  {
+    "paragraph": 604,
+    "text": "Socio-Didact is a coined term for a person who learns the unwritten social rules of a network by watching how people and situations are treated. It does not describe a diagnosis, a special cognitive type, or a superior observer. It is simply a functional mode of learning: notice the local rules, notice when they change, and decide how much to adapt while keeping the intended meaning of what you are trying to say or do."
+  },
+  {
+    "paragraph": 605,
+    "text": "When adaptation retains intended meaning, the phrase “preserves Sens while adjusting Sin” names that distinction: Sens is personal intent or intended meaning; Sin is its socially constrained or encoded expression. Keep the coined wording and explain it alongside the original when needed. The phrase does not imply changing the intent itself, moral wrongdoing, superior ability, manipulation, or guaranteed success in every setting."
+  },
+  {
+    "paragraph": 606,
+    "text": "A Socio-Didact may be quiet, peripheral, or easy to overlook. The useful skill is not control over the group; it is familiarity with the setting. Over time, the observer may learn which behaviors attract attention, which cues signal belonging, where friction tends to appear, and when it is easier to stay unobtrusive. The term describes adaptation to a social environment, not mastery over it."
+  },
+  {
+    "paragraph": 607,
+    "text": "• OR-01 [Notice the Boundary]: Watch for points where the same kind of behavior starts receiving a noticeably different response."
+  },
+  {
+    "paragraph": 608,
+    "text": "• OR-02 [Notice Context Changes]: Check whether identity, audience, setting, or group membership changes how an action is interpreted."
+  },
+  {
+    "paragraph": 609,
+    "text": "• OR-03 [Adjust Expression]: Decide whether changing wording or presentation would reduce unnecessary friction without changing the intended meaning."
+  },
+  {
+    "paragraph": 610,
+    "text": "• OR-04 [Estimate the Margin]: Learn approximately how much variation a setting tolerates before correction, conflict, or exclusion becomes more likely. On the permitted side, m(i,c)(α) = ε expresses a chosen small modeled margin. This requires a specified feature space and distance; it is not an exact measurement of a person or group."
+  },
+  {
+    "paragraph": 611,
+    "text": "• OR-05 [Recognize Membership Cues]: Notice recurring words, rituals, styles, or behaviors that signal belonging. Recognizing a cue does not require adopting it; it simply makes the local social map easier to read."
+  },
+  {
+    "paragraph": 612,
+    "text": "Nomenclature Clarification: Socio-Didact and Divergent Epistemological Orientation are separate ideas. A Socio-Didact is a situational observer mode. Divergent Epistemological Orientation describes a tendency to prioritize independent verification, distinctions, and consistency when evaluating information. Neither term is a diagnosis, a fixed personality type, or a claim of superior ability."
+  },
+  {
+    "paragraph": 613,
+    "text": "6. Boundary and Consistency Checks"
+  },
+  {
+    "paragraph": 614,
+    "text": "This section uses two compact formulas to ask two practical questions: (1) Are similar actions being judged by the same rule across different people or groups? (2) How close is an action to a modeled boundary while still preserving the actor's intended utility?"
+  },
+  {
+    "paragraph": 615,
+    "text": "Formula 1  Consistency or Shibboleth Check. For each declared relevant context c: ∀i, j ∈ P, ∀α ∈ A, W(i, α; c) = W(j, α; c)."
+  },
+  {
+    "paragraph": 616,
+    "text": "Formula 2  Boundary Margin Model. Maximize U(α; c) over α ∈ F(i,c) with m(i,c)(α) = ε, where ε > 0. This is the exact-edge version. Use m(i,c)(α) ≥ ε instead for a minimum-clearance version; these are distinct objectives."
+  },
+  {
+    "paragraph": 617,
+    "text": "W(i, α; c)"
+  },
+  {
+    "paragraph": 618,
+    "text": "W(j, α; c)"
+  },
+  {
+    "paragraph": 619,
+    "text": "Equal outcome?"
+  },
+  {
+    "paragraph": 620,
+    "text": "Interpretation"
+  },
+  {
+    "paragraph": 621,
+    "text": "1"
+  },
+  {
+    "paragraph": 622,
+    "text": "1"
+  },
+  {
+    "paragraph": 623,
+    "text": "Yes"
+  },
+  {
+    "paragraph": 624,
+    "text": "Both restricted."
+  }
+]

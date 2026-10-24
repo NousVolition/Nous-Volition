@@ -1,0 +1,22 @@
+test_kappa_gamma_product_not_separately_identified (test_field.DataTests.test_kappa_gamma_product_not_separately_identified) ... ok
+test_memory_is_accumulated_twice (test_field.DataTests.test_memory_is_accumulated_twice) ... ok
+test_next_target_not_used_in_own_predictor (test_field.DataTests.test_next_target_not_used_in_own_predictor) ... ok
+test_training_parameters_ignore_evaluation_outcomes (test_field.DataTests.test_training_parameters_ignore_evaluation_outcomes) ... ok
+test_activation_signs (test_field.FieldTests.test_activation_signs) ... ok
+test_energy_identity (test_field.FieldTests.test_energy_identity) ... ok
+test_exact_mass_and_zero_divergence (test_field.FieldTests.test_exact_mass_and_zero_divergence) ... ok
+test_force_can_add_energy (test_field.FieldTests.test_force_can_add_energy) ... ok
+test_invalid_parameters (test_field.FieldTests.test_invalid_parameters) ... ok
+test_mass_independent_of_spatial_parameters (test_field.FieldTests.test_mass_independent_of_spatial_parameters) ... ok
+test_memory_persists_after_input (test_field.FieldTests.test_memory_persists_after_input) ... ok
+test_normalized_kernel (test_field.FieldTests.test_normalized_kernel) ... ok
+test_passive_scalar (test_field.FieldTests.test_passive_scalar) ... ok
+test_pressure_reconstructs_projected_force (test_field.FieldTests.test_pressure_reconstructs_projected_force) ... ok
+test_projection_preserves_mean (test_field.FieldTests.test_projection_preserves_mean) ... ok
+test_refinement_comparison_indexes_exact_modes (test_field.FieldTests.test_refinement_comparison_indexes_exact_modes) ... ok
+test_taylor_green (test_field.FieldTests.test_taylor_green) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.447s
+
+OK

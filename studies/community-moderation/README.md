@@ -1,5 +1,9 @@
 # Actual moderation decisions and later penalties
 
+<!-- chain-audit:start -->
+Audit update, 23 October 2026. The saved aggregate and penalty results were rechecked. Matching and outcome definitions limit causal interpretation. This does not test the full corpus equations or independent inward meanings. [Corrections, source coverage and remaining tests](https://github.com/NousVolition/Nous-Volition/tree/main/studies/community-chain-audit).
+<!-- chain-audit:end -->
+
 Streams and Rocks • completed public-data analyses • 21 October 2026
 
 **Second finite Wikipedia blocks were longer in 7,109 of 8,687 paired accounts (81.8%).** This documents escalating assigned penalties among accounts blocked again. The records do not establish that the earlier penalty caused harsher treatment for identical later conduct. The Reddit wording check found no acceptable same-meaning pair among the 12 closest topic pairs reviewed, so a wording effect remains unmeasured.

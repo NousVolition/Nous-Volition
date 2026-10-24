@@ -1,5 +1,9 @@
 # History and form tests for the two in one
 
+<!-- chain-audit:start -->
+Audit update, 23 October 2026. Roles and event references are retained metadata; changing a Smoke/Clay label alone does not change evolution. The exact corpus does not yet supply form-specific observation functions. Mist as unspoken agreement is a provisional interpretation, not a settled author definition. The new audited runner checks finite input, real fields, prehistory provenance and effective time-step refinement. [Corrections, source coverage and remaining tests](https://github.com/NousVolition/Nous-Volition/tree/main/studies/community-chain-audit).
+<!-- chain-audit:end -->
+
 Streams and Rocks · 23 October 2026
 
 **Follow-up: [real observations connected to the two-in-one field](../community-observation-bridge/README.md).** An explicit observation map now connects five DES episodes to Smoke, Clay and the moving idea, with person-owned history references. The unchanged full field solver ran 75 main trials and three exploratory refinements. Different assumed histories remain compatible with the same report-derived constraints but give opposite later contextual-support contrasts. This advances the connection beyond a source audit; the added readout is still uncalibrated and no later measured human trajectory is predicted.
@@ -70,7 +74,7 @@ Eight participants remain reserved from response analysis and model selection. T
 | Water / perceived balance | Affect and arousal | Pleasantness or activation is not perceived balance |
 | Fog / memory clarity | Confidence in answering the probe | Does not directly measure a recalled memory’s vividness or accuracy |
 | Wind / experienced time | Past and future orientation | Temporal focus is not felt distance or distortion |
-| Mist / unspoken agreement | No direct item | Silence, calm and endorsement cannot be interchanged |
+| Mist / agreement interpretation provisional | No direct item | Silence, calm and endorsement cannot be interchanged |
 | D2O / small change with large consequence | No paired compositional change/outcome | Cannot infer help or harm from the movement scale |
 | U and continuum states | No calibrated utility or spatial field observation | Renaming a rating would add an unsupported measurement assumption |
 

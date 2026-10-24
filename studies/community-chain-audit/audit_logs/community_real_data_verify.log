@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "WORKSPACE\outputs\community_real_data\verify.py", line 59, in <module>
+    parser=argparse.ArgumentParser();parser.add_argument('--raw-dir',type=Path,default=ROOT/'raw');args=parser.parse_args();main(args.raw_dir)
+                                                                                                                            ^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\community_real_data\verify.py", line 18, in main
+    check('source_hash_'+src['id'],hashlib.sha256((raw/src['file']).read_bytes()).hexdigest()==src['sha256'])
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "LOCAL_USER\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "LOCAL_USER\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'WORKSPACE\\outputs\\community_real_data\\raw\\content.tsv'

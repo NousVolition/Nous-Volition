@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "unit_tests_passed": 29,
+  "saved_result_and_integrity_assertions": 202,
+  "local_links": 32,
+  "measured_data_verdict": "The diffusion-only pilot does not describe these falling-droplet measurements; no factor fitted and no full microphysics validation claimed.",
+  "figures": "Three scientific figures visually inspected; no empirical validation of the new fog or isolated-force trajectories claimed.",
+  "baseline_copy": "baseline_model.py retains the original pilot code; new work is in followup_model.py.",
+  "community": "COMMUNITY.md is a proposed family-role guide, not a newly run human-behavior experiment."
+}

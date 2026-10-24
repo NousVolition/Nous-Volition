@@ -1,5 +1,9 @@
 # Real observations connected to the two-in-one field
 
+<!-- chain-audit:start -->
+Audit update, 23 October 2026. This conditional compatibility test uses analyst-chosen node locations, Gaussian readout widths, initial fields and support zero. It is not an empirical calibration or prediction of later measured inward experience. Positive-support constraints need a calibrated zero. The earlier duplicate-step amendment is retained and rechecked; 75 main runs contain 73 unique configurations. [Corrections, source coverage and remaining tests](https://github.com/NousVolition/Nous-Volition/tree/main/studies/community-chain-audit). Mist’s narrower agreement interpretation is provisional, not an author-established definition. Earlier frozen protocols and editable documents retain that historical proposal; current definition tables supersede it.
+<!-- chain-audit:end -->
+
 Streams and Rocks · 23 October 2026
 
 **Completed:** an explicit connection from five real inward-experience episodes to Smoke, Clay, the moving idea and personal-history references; 75 full coupled field runs plus three exploratory refinements; source, conservation and numerical checks. The solver is byte-identical to the audited corpus implementation. No simpler predictor was fitted or substituted.
@@ -85,7 +89,7 @@ The code uses 2D periodic Fourier Galerkin projection and RK4. Grid refinement c
 
 The observation mapping now exists explicitly and has been exercised. It has **not** been independently calibrated. The data do not determine the starting field, accumulator, utility input, contextual-support units, semantic chart or human time scale. Reported histories remain attached to inward operations, but the equations do not yet distinguish separate Smoke and Clay history evolution. The idea-form descriptors are retained without fabricated numeric labels.
 
-A full empirical test needs independently coded, repeated episodes and later outcomes that jointly constrain those quantities. Water's perceived balance must be distinguished from calm; Mist requires a specified internalized assumption; D₂O requires a specified small change and an observed consequence. Fog's partial retrieval needs an original-event comparison to test accuracy; Wind needs experience-time and clock-time measurements. A physical substance dataset cannot supply these inward observations.
+A full empirical test needs independently coded, repeated episodes and later outcomes that jointly constrain those quantities. Water's perceived balance must be distinguished from calm; Mist needs an established experiential distinction; an internalized assumption would test only the narrower, provisional agreement interpretation; D₂O requires a specified small change and an observed consequence. Fog's partial retrieval needs an original-event comparison to test accuracy; Wind needs experience-time and clock-time measurements. A physical substance dataset cannot supply these inward observations.
 
 Freeze the chart, input and readout mappings on development data before scoring later episodes or held-out people. The current five episodes have already informed the mapping and cannot serve as that independent test. No empirical prediction error is reported; its JSON value remains null.
 

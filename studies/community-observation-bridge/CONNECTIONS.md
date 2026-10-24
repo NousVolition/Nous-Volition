@@ -65,7 +65,7 @@ The graph links reported earlier references to relevant operations. Numerical tr
 | Water | Perceived balance, separately from calm and disturbance | Not established; patience and frustration can coexist without a balance claim |
 | Fog | Which content is remembered and which features are clear or missing | Partial feature connection in 8.5; memory accuracy is untested |
 | Wind | Experienced time/spacing distinguished from clock time and memory age | Partial pace connection in 11.3; no measured time distortion |
-| Mist | A specified unspoken assumption, its internalization and endorsement | Unknown; silence alone is insufficient |
+| Mist | Establish its experiential distinction; unspoken agreement is a provisional narrower interpretation | Distinction unresolved; agreement observations would test that proposal only, and silence is insufficient |
 | D₂O | A specified small change and a measured helpful or harmful consequence | Unknown; no harm boundary or chemical inference is introduced |
 | H₂O₂ | A separately defined experiential role | Undefined in this observation model; not substituted for D₂O |
 

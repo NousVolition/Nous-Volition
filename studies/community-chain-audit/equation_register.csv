@@ -1,0 +1,11 @@
+source,relation,equation,interpretation
+P22; P603–605,Sens and Sin,Preserve intended meaning while adjusting encoded expression,Conceptual distinction; not S or an automatically measured embedding
+P72–97,Architecture,"a=(2,3,1); b=(2,3,2); c=(1,3,2); d=(3,3,1); rY=V[:,1]-3","Transmit/receive/buffer/perimeter; static alignment, not an evolution law"
+P104; P615,Consistency,"W(i,alpha;c)=W(j,alpha;c) within declared action/context",Decision equality; not a fairness or private-motive proof
+P105–107; P616,Boundary utility,"maximize U(alpha), alpha in A intersect Omega, m(alpha)=epsilon",Exact equality retained; no supplied empirical utility/metric
+P229–230,Momentum,u_t+(u dot grad)u=-grad(p)+nu Lap(u)-(sigma/rho)a(q)e_k; div(u)=0,Fixed unit direction; shared periodic 2D numerical domain is added
+P261–264,Responses,"a0=max(q,0); at=q(1+tanh(q/epsilon))/2; ae=0 for q<=0 else q exp(-(epsilon/q)^2)",Three distinct laws; signed tanh tail not clipped
+P263–264,Gradient alternatives,q=g-Gamma; q_delta=sqrt(g^2+delta^2)-delta-Gamma; q_delta_star=sqrt(g^2+delta^2)-sqrt(Gamma^2+delta^2),Different optional laws; onset explicitly tested
+P498–506,Reciprocal transform,"(S,R) -> (lambda S,R/lambda); SR invariant","Static scalar relation, distinct from spatial field S"
+P517–532,Transport/history,S_t+u dot grad S=D_diff Lap S+K_h kappa A; A(t)=integral_0^t gamma(U-Ubaseline)ds; integral K_h dx=1,No automatic forgetting; observation-start A need not be zero
+P545–557,Stress,T=mu0(grad u+grad u transposed); mu0>0,"mu0=rho nu is an optional declared closure, not a required identity"

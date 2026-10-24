@@ -99,3 +99,8 @@ p('[Current two-in-one definitions](https://github.com/NousVolition/Nous-Volitio
 css='body{margin:0;background:#f3f5f4;color:#18332e;font:17px/1.65 system-ui,sans-serif}main{max-width:1100px;margin:30px auto;background:white;padding:36px 44px}h1{font-size:2rem;line-height:1.2}h2{margin-top:2.2rem}a{color:#096b79}pre{white-space:pre-wrap;background:#edf4f2;padding:22px;font-size:.85rem}table{width:100%;border-collapse:collapse;font-size:.9rem}th,td{text-align:left;vertical-align:top;padding:12px;border-bottom:1px solid #d8e5df}th{background:#eaf4ef}.scroll{overflow:auto}figure{margin:26px 0}img{width:100%;height:auto}figcaption{color:#49645d;font-size:.88rem}@media(max-width:700px){main{padding:20px;margin:0}body{font-size:16px}}'
 (ROOT/'report.html').write_text('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Exact corpus equations and two in one data audit</title><style>'+css+'</style></head><body><main>'+''.join(ht)+'</main></body></html>',encoding='utf-8')
 print('Built figures, equation and measurement tables, README and HTML report.')
+
+
+# Preserve the source-chain audit when this historical report is rebuilt.
+from audit_note import apply_notice
+apply_notice(Path(__file__).resolve().parent)

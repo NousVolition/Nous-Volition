@@ -1,0 +1,24 @@
+test_authored_slot_preservation (test_model.Tests.test_authored_slot_preservation) ... ok
+test_baseline_probability (test_model.Tests.test_baseline_probability) ... ok
+test_finite_state_bound (test_model.Tests.test_finite_state_bound) ... ok
+test_first_encounter_analytic (test_model.Tests.test_first_encounter_analytic) ... ok
+test_history_blind_identical_decisions (test_model.Tests.test_history_blind_identical_decisions) ... ok
+test_history_order (test_model.Tests.test_history_order) ... ok
+test_inert_label_names (test_model.Tests.test_inert_label_names) ... ok
+test_marker_case_and_punctuation (test_model.Tests.test_marker_case_and_punctuation) ... ok
+test_marker_not_substring (test_model.Tests.test_marker_not_substring) ... ok
+test_probability_bounds (test_model.Tests.test_probability_bounds) ... ok
+test_record_only_decay (test_model.Tests.test_record_only_decay) ... ok
+test_reset_removes_later_difference (test_model.Tests.test_reset_removes_later_difference) ... ok
+test_reversed_rule_reverses_order (test_model.Tests.test_reversed_rule_reverses_order) ... ok
+test_same_marker_same_response (test_model.Tests.test_same_marker_same_response) ... ok
+test_seed_reproducibility (test_model.Tests.test_seed_reproducibility) ... ok
+test_source_ci_known_zero (test_model.Tests.test_source_ci_known_zero) ... ok
+test_source_rounding_consistency (test_model.Tests.test_source_rounding_consistency) ... ok
+test_wording_blind_all_forms (test_model.Tests.test_wording_blind_all_forms) ... ok
+test_zero_input_identical (test_model.Tests.test_zero_input_identical) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.333s
+
+OK

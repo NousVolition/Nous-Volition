@@ -1,0 +1,19 @@
+test_against_independent_all_pairs_shortest_path (test_topology.TopologyTests.test_against_independent_all_pairs_shortest_path) ... ok
+test_both_geometric_cutoffs_are_strict (test_topology.TopologyTests.test_both_geometric_cutoffs_are_strict) ... ok
+test_cutting_graph_changes_label_without_coordinate_motion (test_topology.TopologyTests.test_cutting_graph_changes_label_without_coordinate_motion) ... ok
+test_exact_chain_and_missing_shell (test_topology.TopologyTests.test_exact_chain_and_missing_shell) ... ok
+test_fourth_nearest_is_not_fourth_topological (test_topology.TopologyTests.test_fourth_nearest_is_not_fourth_topological) ... ok
+test_geometric_chain_and_reverse_donor (test_topology.TopologyTests.test_geometric_chain_and_reverse_donor) ... ok
+test_hydrogen_bond_across_periodic_boundary (test_topology.TopologyTests.test_hydrogen_bond_across_periodic_boundary) ... ok
+test_input_guards_and_cli_snapshot (test_topology.TopologyTests.test_input_guards_and_cli_snapshot) ... ok
+test_layer_coverage_and_full_graph_before_selection (test_topology.TopologyTests.test_layer_coverage_and_full_graph_before_selection) ... ok
+test_minimum_over_all_exact_four_neighbors (test_topology.TopologyTests.test_minimum_over_all_exact_four_neighbors) ... ok
+test_periodic_endpoint_distance (test_topology.TopologyTests.test_periodic_endpoint_distance) ... ok
+test_rotation_translation_and_permutation_invariance (test_topology.TopologyTests.test_rotation_translation_and_permutation_invariance) ... ok
+test_shorter_path_excludes_four_step_walk (test_topology.TopologyTests.test_shorter_path_excludes_four_step_walk) ... ok
+test_threshold_equality (test_topology.TopologyTests.test_threshold_equality) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.007s
+
+OK

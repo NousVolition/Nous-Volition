@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "WORKSPACE\outputs\followup_tests\verify_package.py", line 75, in <module>
+    parser=argparse.ArgumentParser();parser.add_argument('--write-manifest',action='store_true');args=parser.parse_args();run(args.write_manifest)
+                                                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\followup_tests\verify_package.py", line 61, in run
+    check('Local link: '+href,(p.parent/unquote(u.path)).exists());count+=1
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "WORKSPACE\outputs\followup_tests\verify_package.py", line 22, in check
+    if not test:raise AssertionError(name)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Local link: ../../community-power/SITUATIONAL_ROLES.md

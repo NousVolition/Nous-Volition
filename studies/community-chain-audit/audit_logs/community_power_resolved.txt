@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "unit_tests_recorded": 19,
+  "saved_result_checks": 29,
+  "selected_reproductions": 12,
+  "max_supply_violation": 2.220446049250313e-16,
+  "max_need_violation": 3.885780586188048e-16,
+  "max_time_violation": 1.1102230246251565e-16,
+  "note": "Implementation and saved-result verification; not empirical validation of human behavior."
+}

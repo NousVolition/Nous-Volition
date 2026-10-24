@@ -1,0 +1,14 @@
+test_all_rows_and_replicates_kept (test_external.ExternalTests.test_all_rows_and_replicates_kept) ... ok
+test_censor_not_counted_as_capture (test_external.ExternalTests.test_censor_not_counted_as_capture) ... ok
+test_diameter_radius_units (test_external.ExternalTests.test_diameter_radius_units) ... ok
+test_frozen_hashes (test_external.ExternalTests.test_frozen_hashes) ... ok
+test_inlet_bound (test_external.ExternalTests.test_inlet_bound) ... ok
+test_nonzero_upper_bound_with_zero_hits (test_external.ExternalTests.test_nonzero_upper_bound_with_zero_hits) ... ok
+test_rare_bound_coverage_independent_binomial (test_external.ExternalTests.test_rare_bound_coverage_independent_binomial) ... ok
+test_rare_count_bounds_do_not_collapse (test_external.ExternalTests.test_rare_count_bounds_do_not_collapse) ... ok
+test_source_mass_ratio_audit (test_external.ExternalTests.test_source_mass_ratio_audit) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.008s
+
+OK

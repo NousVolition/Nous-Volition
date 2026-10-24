@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "WORKSPACE\outputs\community_power\verify.py", line 66, in <module>
+    try:result=run()
+               ^^^^^
+  File "WORKSPACE\outputs\community_power\verify.py", line 57, in run
+    check('Report local links and images resolve',all(x=='verification.json' or re.match(r'https?://',x) or (ROOT/x).exists() for x in targets))
+  File "WORKSPACE\outputs\community_power\verify.py", line 11, in check
+    if not test:raise AssertionError(name)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Report local links and images resolve

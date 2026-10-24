@@ -1,5 +1,9 @@
 # One person and a moving idea
 
+<!-- chain-audit:start -->
+Audit update, 23 October 2026. The allocation results below are synthetic and use assumed skills, budgets and allocation rules. They do not test the exact corpus field or within-person Smoke and Clay. The current model keeps those roles within one person; the audit restores their transmit/receive corpus anchors and separates all untested observation links. [Corrections, source coverage and remaining tests](https://github.com/NousVolition/Nous-Volition/tree/main/studies/community-chain-audit).
+<!-- chain-audit:end -->
+
 Streams and Rocks • current interpretation updated 22 October 2026 • historical community benchmarks retained below
 
 **Smoke is inward speaking, Clay is inward listening, and the middle is the idea moving between them within one person’s two-in-one. Wind, Fog, Water and Mist describe the moving idea itself.** Water represents perceived balance. The author now gives D₂O the role of a small compositional change with potentially large consequences, including a change from life-saving to potentially life-threatening. Its effect must be specified and observed; the name alone does not determine help or harm. Every person has their own history.

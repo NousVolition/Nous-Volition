@@ -55,7 +55,7 @@ table(b,['Term','Working description','Record separately'],[
  ['Smoke','Inward speaking','The proposition put forward and its wording, image or nonverbal form'],
  ['Clay','Inward listening','What is received, held, challenged, revised or refused'],
  ['Moving idea','The middle taking the named forms below','Before and after accounts; form, claim, target, implication and force'],
- ['Mist','Moving idea as internalized or unspoken agreement','Agreement, assumptions and freedom to reconsider'],
+ ['Mist','Author-named moving-idea form; its narrower agreement interpretation is provisional','Establish the distinction and record the person’s own description'],
  ['Fog','Moving idea associated with remembered past and variable clarity','Content, vividness, certainty and independently checkable accuracy'],
  ['Wind','Moving idea associated with space between memories and experienced time','Actual event age, recall duration and felt temporal distance'],
  ['Water','Moving idea as perceived balance','Perceived balance, calm, agreement and unresolved tension rated separately'],
@@ -221,3 +221,7 @@ style='''body{margin:0;background:#eceff1;color:#171717;font:16px/1.45 Calibri,A
 (R/'report.html').write_text('<!doctype html><html lang="en"><meta charset="utf-8"><title>Testing the two in one</title><style>'+style+'</style><body>'+''.join(htmlpages)+'</body></html>',encoding='utf-8')
 (R/'document_content.json').write_text(json.dumps(pages,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
 print('Built editable DOCX, HTML testing document and three figures.')
+
+# Preserve the later source-chain correction when regenerating the HTML report.
+from audit_note import apply_notice
+apply_notice(R)

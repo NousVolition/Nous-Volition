@@ -1,0 +1,19 @@
+test_all_three_response_scalings (test_application.ApplicationTests.test_all_three_response_scalings) ... ok
+test_cross_person_rejected (test_application.ApplicationTests.test_cross_person_rejected) ... ok
+test_gap_is_not_filled (test_application.ApplicationTests.test_gap_is_not_filled) ... ok
+test_missing_utility_is_not_affect (test_application.ApplicationTests.test_missing_utility_is_not_affect) ... ok
+test_no_form_proxy_from_survey_names (test_application.ApplicationTests.test_no_form_proxy_from_survey_names) ... ok
+test_no_state_mutation (test_application.ApplicationTests.test_no_state_mutation) ... ok
+test_nonfinite_utility_rejected (test_application.ApplicationTests.test_nonfinite_utility_rejected) ... ok
+test_nonzero_prior_mass_identity (test_application.ApplicationTests.test_nonzero_prior_mass_identity) ... ok
+test_original_runner_parity (test_application.ApplicationTests.test_original_runner_parity) ... ok
+test_original_solver_hash (test_application.ApplicationTests.test_original_solver_hash) ... ok
+test_reserved_split_disjoint (test_application.ApplicationTests.test_reserved_split_disjoint) ... ok
+test_role_labels_retained_but_do_not_invent_force (test_application.ApplicationTests.test_role_labels_retained_but_do_not_invent_force) ... ok
+test_tanh_tail_preserved (test_application.ApplicationTests.test_tanh_tail_preserved) ... ok
+test_unknown_history_is_not_zero (test_application.ApplicationTests.test_unknown_history_is_not_zero) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.787s
+
+OK

@@ -1,5 +1,7 @@
 # Nous Volition · Streams and Rocks
 
+**[Source-chain audit and repairs](studies/community-chain-audit/README.md).** Rechecked the full corrected corpus, all 37 PDF pages, eight Miro boards and the study dependency chain. Reproduced 443 existing unit tests, reran saved-result checks and the latest workbook analysis, and ran 18 new full-field numerical fixtures. Corrections expose initial-history resets, uncalibrated observation maps, form-definition drift and errors in Miro forgetting proposals. The exact corpus equations are retained; a full empirical two-in-one validation remains open. Coverage limits and all failed audit attempts are recorded.
+
 **Large numerical data:** [verified release downloads and restore instructions](DATA-RELEASES.md). Reports and figures remain available here.
 
 This repository, **Streams and Rocks**, preserves the original stream-function report, physical-fluid experiments and separate social-organization studies.
@@ -202,4 +204,5 @@ The package includes 374 automated tests, thirty-eight original scientific figur
 **[Open the live SIMS model](https://sims-evidence-lab.itswaffles88.chatgpt.site)** — public and shareable, with the latest saved run, all four interactive models, and links to methods and source.
 
 [Open the complete interactive collection](studies/sims-evidence-lab/README.md). Four browser models trace network choices, claim predictions, evidence exchanges, and repeated rounds with remembered promises. The package preserves editable sources, standalone browser documents, methods, existing checks, and reproducible saved outputs. [The latest saved run](studies/sims-evidence-lab/site/latest-run.html) retains the eight-round, seed-20261011 settings. Response policies and evidence thresholds are explicit synthetic assumptions; claim revisions, behavior-rule changes, and promises without change are recorded separately.
+
 

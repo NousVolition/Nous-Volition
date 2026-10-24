@@ -81,7 +81,7 @@ Primary constraints: c_P > 0, c_F > 0, d(c_P−c_F)/dt > 0</pre>
 <div class="scroll"><table><tr><th>A</th><th>Grid 24→48 difference</th><th>Grid 48→72 difference</th><th>Actual half-step difference</th></tr>{convergence}</table></div>
 <p>Eight unit tests passed. Source hashes and saved outputs passed their checks. Maximum field-total accounting error was {v['maxima']['mass_error_max']:.3g}; divergence RMS {v['maxima']['divergence_max']:.3g}; instantaneous semidiscrete energy-identity residual {v['maxima']['energy_residual_max']:.3g}. These are numerical diagnostics, not human validation.</p>
 <p>With the source disabled, the two initial-accumulator choices give identical fields in this control. Disabling the threshold force does not remove all history sensitivity, because the source still changes S. This identifies model pathways; it does not identify a psychological cause.</p>
-<h2>What is supported — and what remains open</h2><p>The primary records support investigating inward presentation, reconsideration, nonverbal alternatives, partial recall and experienced pace. Fog and Wind have partial feature connections. Water's perceived balance, Mist's internalized unspoken agreement and D₂O's small change with a consequential effect are not established by these episodes. Missing observations remain unknown.</p>
+<h2>What is supported — and what remains open</h2><p>The primary records support investigating inward presentation, reconsideration, nonverbal alternatives, partial recall and experienced pace. Fog and Wind have partial feature connections. Water's perceived balance, the provisional agreement interpretation of Mist and D₂O's small change with a consequential effect are not established by these episodes. Missing observations remain unknown.</p>
 <p><b>The full empirical two-in-one model remains unvalidated.</b> The new observation operator is explicit and testable, but uncalibrated. These selected records informed its construction. The model time is dimensionless; no later human endpoint, independent held-out score, population conclusion or separate Smoke/Clay history evolution was invented. Stronger independent measurements must distinguish the admissible histories and test the proposed readout.</p>
 <h2>Reproduce and inspect</h2><p><a href="README.md">Study README</a> · <a href="CONNECTIONS.md">Connection and limits</a> · <a href="observations.json">Observation graph</a> · <a href="provenance.json">Source hashes and Miro frames</a> · <a href="PROTOCOL.md">Frozen protocol</a> · <a href="CONSTRAINT_AMENDMENT.md">Stricter-reading amendment</a> · <a href="results/runs.csv">All 78 run records</a> · <a href="results/summary.json">Quantitative summary</a> · <a href="results/verification.json">Verification</a></p>
 <pre>python -m pip install -r requirements.txt
@@ -94,3 +94,8 @@ python build_report.py</pre><p class="muted">Original PDFs remain at the source.
     print(json.dumps(dict(run_rows=len(allrows),figures=2,report='report.html')))
 
 if __name__=='__main__':main()
+
+
+# Preserve the source-chain audit when this historical report is rebuilt.
+from audit_note import apply_notice
+apply_notice(Path(__file__).resolve().parent)

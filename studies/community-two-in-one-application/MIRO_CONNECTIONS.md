@@ -42,6 +42,17 @@ The board recommends agreement between AIC, BIC and cross-validation. That is a 
 
 The architecture board still describes the older reported total of 83 selected terms. The corrected DOCX paragraph 273 and the current corpus board report a recount of **90: 70 body and 20 reference-title occurrences**. This reconciliation follows the newer source and attributes that count; it does not claim to have performed a new manuscript recount. The separate broader-vocabulary count on the board is a different selection and must not be combined with 90.
 
-The current source links strengthen traceability, but do not turn the audited 840 thought probes into measurements of all required constructs. The [measurement record](MEASUREMENT_RECORD.md) still requires inward receiving, intended meaning, recalled-event contents, perceived balance, felt time, unspoken agreement and consequences of small changes. The boards provide proposed tests and mathematical relationships, not those missing participant records. The reserved participants remain unused for response analysis or model selection.
+The current source links strengthen traceability, but do not turn the audited 840 thought probes into measurements of all required constructs. The [measurement record](MEASUREMENT_RECORD.md) still requires inward receiving, intended meaning, recalled-event contents, perceived balance, felt time, author-defined form distinctions and consequences of small changes (unspoken agreement is only a provisional Mist interpretation). The boards provide proposed tests and mathematical relationships, not those missing participant records. The reserved participants remain unused for response analysis or model selection.
 
 The author's current definitions govern the inward interpretation: Smoke and Clay are within one person; the named forms belong to the moving idea; Water is perceived balance; D2O names a small compositional change with potentially large consequences. No automatic form classifier, harm threshold or extra role force is inferred from these names.
+
+
+## Source-chain correction: the roles have an architectural anchor
+
+The full corrected corpus already assigns transmit/I to a=(2,3,1), receive/Self to b=(2,3,2), sink/buffer to c=(1,3,2), and perimeter to d=(3,3,1), in paragraphs 72–91. Smoke can be read in relation to transmit and Clay in relation to receive. Earlier statements suggesting no mathematical anchor at all were too broad.
+
+These are source-assigned roles and static coordinates, not measured locations in a person. The original receive description includes external or auxiliary input; the author's later within-person two-in-one is a further interpretive specification. No evolution law for these four nodes, mapping from them to the PDE domain, or measured role-specific history follows from the coordinates alone. Retaining that distinction preserves the source instead of replacing the user's theory.
+
+Mist as specifically internalized or unspoken agreement is an operational interpretation previously introduced in the reports. The author supplied Mist as a form of the moving idea, but did not uniquely assign that narrower meaning. Keep it provisional. Water's perceived balance and D2O's small-change/consequence distinction remain the author's explicit clarifications. Strong language remains when warranted by the observed and attributed account.
+
+See the [complete chain audit](https://github.com/NousVolition/Nous-Volition/tree/main/studies/community-chain-audit), including exact source passages and unresolved measurement requirements.

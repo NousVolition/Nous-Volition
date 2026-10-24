@@ -83,3 +83,8 @@ for old,new in [('../community-real-data/','https://github.com/NousVolition/Nous
 css='body{margin:0;background:#edf2ef;color:#253830;font:17px/1.65 system-ui,sans-serif}main{max-width:1120px;margin:30px auto;padding:38px;background:white;border-radius:12px}h1{font-size:2.2rem;line-height:1.2}h2{color:#176c70;margin-top:2.2em}table{border-collapse:collapse;width:100%;font-size:.91rem}td,th{padding:12px;text-align:left;border-bottom:1px solid #d6e0dc;vertical-align:top}th{background:#edf4f0}a{color:#126e86}.scroll{overflow:auto}img{max-width:100%;height:auto}pre{background:#eef3f0;overflow:auto;padding:20px;font-size:.85em}@media(max-width:700px){main{margin:0;padding:18px}body{font-size:16px}}'
 (ROOT/'report.html').write_text('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Actual moderation decisions and later penalties</title><style>'+css+'</style></head><body><main>'+''.join(ht)+'</main></body></html>',encoding='utf-8')
 print('Built report and two figures.')
+
+
+# Preserve the source-chain audit when this historical report is rebuilt.
+from audit_note import apply_notice
+apply_notice(Path(__file__).resolve().parent)

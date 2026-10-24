@@ -59,7 +59,7 @@ Bootstrap resamples whole people within each comparison (20,000; seed 20261023).
 
 ## Connection to the author's model
 
-The [measurement ledger](measurement_map.json) preserves Smoke as inward putting-forward, Clay as inward receiving/holding/questioning/reshaping/refusing, and the moving idea within the same person. Water is perceived balance; Fog concerns clarity; Wind concerns experienced time; Mist concerns internalized agreement; D₂O denotes the consequential small change. These forms are not inferred from unrelated questionnaire names. H₂O₂ remains separately unspecified.
+The [measurement ledger](measurement_map.json) preserves Smoke as inward putting-forward, Clay as inward receiving/holding/questioning/reshaping/refusing, and the moving idea within the same person. Water is perceived balance; Fog concerns clarity; Wind concerns experienced time; Mist is an author-named form whose narrower interpretation as internalized agreement remains provisional; D₂O denotes the consequential small change. These forms are not inferred from unrelated questionnaire names. H₂O₂ remains separately unspecified.
 
 The [corpus and Miro reconciliation](CORPUS_AND_MIRO.md) records the exact equations, source hashes and inspected frames/pages. In particular, S means the signed status/context field, not Sens. The Miro arrows require an operational connection between measurements and the field. The model's accumulated A cannot be reconstructed from age, a trait score or the number of prior answers.
 
@@ -112,3 +112,8 @@ for line in text.splitlines():
     elif line:parts.append('<p>'+fmt(line)+'</p>')
 (P/'report.html').write_text('<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Measured inner experience — Streams and Rocks</title><style>body{max-width:1080px;margin:40px auto;padding:0 24px;font:17px/1.6 system-ui;color:#21323a}h1{font-size:34px;line-height:1.2}h2{margin-top:36px;color:#164b65}a{color:#12658a}img{width:100%;height:auto}table{border-collapse:collapse;width:100%;font-size:15px}td{padding:10px;border-bottom:1px solid #ddd}tr:first-child{font-weight:bold;background:#edf3f5}.scroll{overflow-x:auto}pre{padding:18px;background:#f3f5f6;overflow-x:auto}</style><main>'+''.join(parts)+'</main></html>',encoding='utf-8')
 print('Report and figure written')
+
+
+# Preserve the source-chain audit when this historical report is rebuilt.
+from audit_note import apply_notice
+apply_notice(Path(__file__).resolve().parent)

@@ -1,0 +1,33 @@
+test_alkalinity (test_advanced.CarbonateTests.test_alkalinity) ... ok
+test_carbon_conserved_and_pool_accounted (test_advanced.CarbonateTests.test_carbon_conserved_and_pool_accounted) ... ok
+test_detailed_balance (test_advanced.CarbonateTests.test_detailed_balance) ... ok
+test_equilibrium_stationarity (test_advanced.CarbonateTests.test_equilibrium_stationarity) ... ok
+test_fixed_pH_analytic (test_advanced.CarbonateTests.test_fixed_pH_analytic) ... ok
+test_no_reaction_control (test_advanced.CarbonateTests.test_no_reaction_control) ... ok
+test_true_pka_matches_published_rounding (test_advanced.CarbonateTests.test_true_pka_matches_published_rounding) ... ok
+test_divergence_free (test_advanced.FallingTests.test_divergence_free) ... ok
+test_far_flow (test_advanced.FallingTests.test_far_flow) ... ok
+test_no_slip (test_advanced.FallingTests.test_no_slip) ... ok
+test_phoresis_saturation (test_advanced.FallingTests.test_phoresis_saturation) ... ok
+test_phoretic_directions (test_advanced.FallingTests.test_phoretic_directions) ... ok
+test_streamline_interception_analytic (test_advanced.FallingTests.test_streamline_interception_analytic) ... ok
+test_charge_distribution (test_advanced.OtherTests.test_charge_distribution) ... ok
+test_charge_tail (test_advanced.OtherTests.test_charge_tail) ... ok
+test_ice_aged_upper_bound (test_advanced.OtherTests.test_ice_aged_upper_bound) ... ok
+test_ice_guard (test_advanced.OtherTests.test_ice_guard) ... ok
+test_ice_kinetic_equilibrium (test_advanced.OtherTests.test_ice_kinetic_equilibrium) ... ok
+test_lubrication_quadrature (test_advanced.OtherTests.test_lubrication_quadrature) ... ok
+test_no_arbitrary_peroxide_pH (test_advanced.OtherTests.test_no_arbitrary_peroxide_pH) ... ok
+test_peroxide_analytic (test_advanced.OtherTests.test_peroxide_analytic) ... ok
+test_peroxide_atoms (test_advanced.OtherTests.test_peroxide_atoms) ... ok
+test_closed_mass (test_advanced.RadialTests.test_closed_mass) ... ok
+test_fixed_geometry_Henry_equilibrium (test_advanced.RadialTests.test_fixed_geometry_Henry_equilibrium) ... ok
+test_liquid_uniformity_at_equilibrium (test_advanced.RadialTests.test_liquid_uniformity_at_equilibrium) ... ok
+test_nonvolatile_receding_boundary (test_advanced.RadialTests.test_nonvolatile_receding_boundary) ... ok
+test_sphere_grid_convergence (test_advanced.RadialTests.test_sphere_grid_convergence) ... ok
+test_zero_exchange_empty_drop (test_advanced.RadialTests.test_zero_exchange_empty_drop) ... ok
+
+----------------------------------------------------------------------
+Ran 28 tests in 3.225s
+
+OK

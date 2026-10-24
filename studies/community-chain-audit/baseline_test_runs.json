@@ -1,0 +1,470 @@
+[
+  {
+    "study": "substance_root",
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      ".",
+      "-p",
+      "test*.py",
+      "-v"
+    ],
+    "returncode": 0,
+    "seconds": 1.8900000000139698,
+    "tests": 27,
+    "log": "audit_logs/substance_root.txt"
+  },
+  {
+    "study": "adaptable_roles",
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      ".",
+      "-p",
+      "test*.py",
+      "-v"
+    ],
+    "returncode": 0,
+    "seconds": 0.6709999999729916,
+    "tests": 19,
+    "log": "audit_logs/adaptable_roles.txt"
+  },
+  {
+    "study": "advanced_tests",
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      ".",
+      "-p",
+      "test*.py",
+      "-v"
+    ],
+    "returncode": 0,
+    "seconds": 4.342999999993481,
+    "tests": 28,
+    "log": "audit_logs/advanced_tests.txt"
+  },
+  {
+    "study": "collection_external_check",
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      ".",
+      "-p",
+      "test*.py",
+      "-v"
+    ],
+    "returncode": 0,
+    "seconds": 1.4540000000270084,
+    "tests": 9,
+    "log": "audit_logs/collection_external_check.txt"
+  },
+  {
+    "study": "community_encounters",
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      ".",
+      "-p",
+      "test*.py",
+      "-v"
+    ],
+    "returncode": 0,
+    "seconds": 0.5779999999795109,
+    "tests": 19,
+    "log": "audit_logs/community_encounters.txt"
+  },
+  {
+    "study": "community_full_field",
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      ".",
+      "-p",
+      "test*.py",
+      "-v"
+    ],
+    "returncode": 0,
+    "seconds": 1.2339999999967404,
+    "tests": 17,
+    "log": "audit_logs/community_full_field.txt"
+  },
+  {
+    "study": "community_measured_inner_experience",
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      ".",
+      "-p",
+      "test*.py",
+      "-v"
+    ],
+    "returncode": 0,
+    "seconds": 1.672000000020489,
+    "tests": 6,
+    "log": "audit_logs/community_measured_inner_experience.txt"
+  },
+  {
+    "study": "community_mimesis",
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      ".",
+      "-p",
+      "test*.py",
+      "-v"
+    ],
+    "returncode": 0,
+    "seconds": 1.0619999999762513,
+    "tests": 37,
+    "log": "audit_logs/community_mimesis.txt"
+  },
+  {
+    "study": "community_moderation",
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      ".",
+      "-p",
+      "test*.py",
+      "-v"
+    ],
+    "returncode": 0,
+    "seconds": 1.6410000000032596,
+    "tests": 19,
+    "log": "audit_logs/community_moderation.txt"
+  },
+  {
+    "study": "community_observation_bridge",
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      ".",
+      "-p",
+      "test*.py",
+      "-v"
+    ],
+    "returncode": 0,
+    "seconds": 0.9220000000204891,
+    "tests": 8,
+    "log": "audit_logs/community_observation_bridge.txt"
+  },
+  {
+    "study": "community_power",
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      ".",
+      "-p",
+      "test*.py",
+      "-v"
+    ],
+    "returncode": 0,
+    "seconds": 1.2660000000032596,
+    "tests": 19,
+    "log": "audit_logs/community_power.txt"
+  },
+  {
+    "study": "community_real_data",
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      ".",
+      "-p",
+      "test*.py",
+      "-v"
+    ],
+    "returncode": 0,
+    "seconds": 1.625,
+    "tests": 13,
+    "log": "audit_logs/community_real_data.txt"
+  },
+  {
+    "study": "community_record_tests",
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      ".",
+      "-p",
+      "test*.py",
+      "-v"
+    ],
+    "returncode": 0,
+    "seconds": 1.625,
+    "tests": 23,
+    "log": "audit_logs/community_record_tests.txt"
+  },
+  {
+    "study": "community_reference_field",
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      ".",
+      "-p",
+      "test*.py",
+      "-v"
+    ],
+    "returncode": 0,
+    "seconds": 1.327999999979511,
+    "tests": 12,
+    "log": "audit_logs/community_reference_field.txt"
+  },
+  {
+    "study": "community_two_in_one",
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      ".",
+      "-p",
+      "test*.py",
+      "-v"
+    ],
+    "returncode": 0,
+    "seconds": 0.35999999998603016,
+    "tests": 12,
+    "log": "audit_logs/community_two_in_one.txt"
+  },
+  {
+    "study": "community_two_in_one_application",
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      ".",
+      "-p",
+      "test*.py",
+      "-v"
+    ],
+    "returncode": 0,
+    "seconds": 1.6560000000172295,
+    "tests": 14,
+    "log": "audit_logs/community_two_in_one_application.txt"
+  },
+  {
+    "study": "community_two_in_one_field",
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      ".",
+      "-p",
+      "test*.py",
+      "-v"
+    ],
+    "returncode": 0,
+    "seconds": 1.0459999999729916,
+    "tests": 12,
+    "log": "audit_logs/community_two_in_one_field.txt"
+  },
+  {
+    "study": "equation_tests",
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      ".",
+      "-p",
+      "test*.py",
+      "-v"
+    ],
+    "returncode": 0,
+    "seconds": 2.125,
+    "tests": 20,
+    "log": "audit_logs/equation_tests.txt"
+  },
+  {
+    "study": "followup_tests",
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      ".",
+      "-p",
+      "test*.py",
+      "-v"
+    ],
+    "returncode": 0,
+    "seconds": 2.7820000000065193,
+    "tests": 29,
+    "log": "audit_logs/followup_tests.txt"
+  },
+  {
+    "study": "interface_flow_tests",
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      ".",
+      "-p",
+      "test*.py",
+      "-v"
+    ],
+    "returncode": 0,
+    "seconds": 2.405999999959022,
+    "tests": 4,
+    "log": "audit_logs/interface_flow_tests.txt"
+  },
+  {
+    "study": "isfog_local_history_tests",
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      ".",
+      "-p",
+      "test*.py",
+      "-v"
+    ],
+    "returncode": 0,
+    "seconds": 1.4530000000377186,
+    "tests": 19,
+    "log": "audit_logs/isfog_local_history_tests.txt"
+  },
+  {
+    "study": "isfog_pile_tests",
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      ".",
+      "-p",
+      "test*.py",
+      "-v"
+    ],
+    "returncode": 0,
+    "seconds": 1.2660000000032596,
+    "tests": 14,
+    "log": "audit_logs/isfog_pile_tests.txt"
+  },
+  {
+    "study": "large_raindrop_tests",
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      ".",
+      "-p",
+      "test*.py",
+      "-v"
+    ],
+    "returncode": 0,
+    "seconds": 1.4679999999934807,
+    "tests": 12,
+    "log": "audit_logs/large_raindrop_tests.txt"
+  },
+  {
+    "study": "large_raindrop_tests_interface_topology",
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      ".",
+      "-p",
+      "test*.py",
+      "-v"
+    ],
+    "returncode": 0,
+    "seconds": 0.9540000000270084,
+    "tests": 14,
+    "log": "audit_logs/large_raindrop_tests_interface_topology.txt"
+  },
+  {
+    "study": "stability_tests",
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      ".",
+      "-p",
+      "test*.py",
+      "-v"
+    ],
+    "returncode": 0,
+    "seconds": 2.077999999979511,
+    "tests": 19,
+    "log": "audit_logs/stability_tests.txt"
+  },
+  {
+    "study": "switching_tests",
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      ".",
+      "-p",
+      "test*.py",
+      "-v"
+    ],
+    "returncode": 0,
+    "seconds": 1.6089999999967404,
+    "tests": 18,
+    "log": "audit_logs/switching_tests.txt"
+  }
+]

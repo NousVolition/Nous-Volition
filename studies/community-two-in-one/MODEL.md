@@ -14,7 +14,7 @@ Each person's exchange has its own history. Keep three things separate: recorded
 | Clay | Inward listening position | What is received, held, challenged, reshaped or refused |
 | Moving idea | The middle, described through forms such as Wind, Fog, Water and Mist | Before and after formulations, their attributed form, and changes in claim, target, force and implication |
 | Water | Perceived balance as a form of the moving idea | Perceived balance, calm, agreement and unresolved tension rated separately |
-| Mist | A form of the moving idea associated with internalized or unspoken agreement | What is taken for granted, endorsement and freedom to reconsider it |
+| Mist | Author-named form of the moving idea; its distinct operational meaning remains unresolved. Unspoken/internalized agreement was an added provisional interpretation. | Preserve the person’s description; establish the distinction before deciding which observations measure it. |
 | Fog | A form of the moving idea associated with remembered past and variable clarity | Recalled content, vividness, certainty and verifiable accuracy recorded separately |
 | Wind | A form of the moving idea associated with space between memories and experienced time | Actual elapsed time and felt temporal distance recorded separately |
 | Heavy water or D₂O | A small compositional change with potentially large consequences | Specify the change, its size, comparable context, observed consequence and criteria for benefit or harm |
@@ -45,3 +45,14 @@ The public pilot data below do not identify both internal positions or idea traj
 See [the frozen pilot protocol](PROTOCOL.md), [the editable testing document](Two_in_one_testing_protocol.docx) and [completed results](README.md).
 
 Editorial correction on 22 October 2026: the previous document mistakenly attached perceived balance to D₂O and treated the named forms too separately from the moving idea. The current wording follows the author's correction. This is a correction of definitions; it does not change the equations or numerical results.
+
+
+## Source-chain correction: the roles have an architectural anchor
+
+The full corrected corpus already assigns transmit/I to a=(2,3,1), receive/Self to b=(2,3,2), sink/buffer to c=(1,3,2), and perimeter to d=(3,3,1), in paragraphs 72–91. Smoke can be read in relation to transmit and Clay in relation to receive. Earlier statements suggesting no mathematical anchor at all were too broad.
+
+These are source-assigned roles and static coordinates, not measured locations in a person. The original receive description includes external or auxiliary input; the author's later within-person two-in-one is a further interpretive specification. No evolution law for these four nodes, mapping from them to the PDE domain, or measured role-specific history follows from the coordinates alone. Retaining that distinction preserves the source instead of replacing the user's theory.
+
+Mist as specifically internalized or unspoken agreement is an operational interpretation previously introduced in the reports. The author supplied Mist as a form of the moving idea, but did not uniquely assign that narrower meaning. Keep it provisional. Water's perceived balance and D2O's small-change/consequence distinction remain the author's explicit clarifications. Strong language remains when warranted by the observed and attributed account.
+
+See the [complete chain audit](https://github.com/NousVolition/Nous-Volition/tree/main/studies/community-chain-audit), including exact source passages and unresolved measurement requirements.

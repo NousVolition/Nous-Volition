@@ -1,5 +1,9 @@
 # Exact corpus equations and the two in one data audit
 
+<!-- chain-audit:start -->
+Audit update, 23 October 2026. The corpus contains transmit/I and receive/Self roles at P72–91. Those are genuine conceptual anchors, although they do not determine their dynamic coupling to S and u. The full PDE runs below are numerical fixtures. A(0)=0 refers to the declared integral origin, not every observation session. Use the audited runner for explicit observation-start state and separate stress coefficient. [Corrections, source coverage and remaining tests](https://github.com/NousVolition/Nous-Volition/tree/main/studies/community-chain-audit).
+<!-- chain-audit:end -->
+
 Streams and Rocks · 22 October 2026
 
 **The coupled corpus equations were run and checked. A full empirical two-in-one fit remains unresolved.** The new public source contains 6,434 annotated thoughts from 118 people, but does not separately measure the inward speaker, inward listener, perceived balance or utility. The corpus supplies the field dynamics; it does not yet specify the observation link from those dynamics to these inward roles. No simpler predictor was fitted or substituted in this study.

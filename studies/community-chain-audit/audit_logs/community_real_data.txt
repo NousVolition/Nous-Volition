@@ -1,0 +1,18 @@
+test_binomial_boundaries (test_analysis.AnalysisTests.test_binomial_boundaries) ... ok
+test_cluster_not_pair_resampling (test_analysis.AnalysisTests.test_cluster_not_pair_resampling) ... ok
+test_column_names_do_not_set_outcome (test_analysis.AnalysisTests.test_column_names_do_not_set_outcome) ... ok
+test_conflict_is_excluded_not_majority_voted (test_analysis.AnalysisTests.test_conflict_is_excluded_not_majority_voted) ... ok
+test_duplicate_is_not_new_rater (test_analysis.AnalysisTests.test_duplicate_is_not_new_rater) ... ok
+test_fisher_matches_hypergeometric_enumeration (test_analysis.AnalysisTests.test_fisher_matches_hypergeometric_enumeration) ... ok
+test_history_endpoint_and_reversal (test_analysis.AnalysisTests.test_history_endpoint_and_reversal) ... ok
+test_invalid_label_rejected (test_analysis.AnalysisTests.test_invalid_label_rejected) ... ok
+test_no_fuzzy_join (test_analysis.AnalysisTests.test_no_fuzzy_join) ... ok
+test_null_history (test_analysis.AnalysisTests.test_null_history) ... ok
+test_pair_hash_keeps_direction_and_boundary (test_analysis.AnalysisTests.test_pair_hash_keeps_direction_and_boundary) ... ok
+test_seed_reproducibility (test_analysis.AnalysisTests.test_seed_reproducibility) ... ok
+test_zero_change_control (test_analysis.AnalysisTests.test_zero_change_control) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.022s
+
+OK

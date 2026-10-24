@@ -1,0 +1,9 @@
+test_area_translation_preserves_volume_and_bonds (test_analysis.AnalysisChecks.test_area_translation_preserves_volume_and_bonds) ... ok
+test_slab_center_periodic_translation (test_analysis.AnalysisChecks.test_slab_center_periodic_translation) ... ok
+test_surface_tension_two_interfaces (test_analysis.AnalysisChecks.test_surface_tension_two_interfaces) ... ok
+test_volume_equivalent_force_balance (test_analysis.AnalysisChecks.test_volume_equivalent_force_balance) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK

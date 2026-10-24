@@ -1,0 +1,30 @@
+{
+  "command": "python analyze.py --data-dir SOURCE_DOWNLOAD_DIRECTORY --output-dir SEPARATE_AUDIT_DIRECTORY",
+  "comparisons": [
+    {
+      "file": "measurement_audit.json",
+      "old_sha256": "df89d6308022e0425720eb863d4b740b56189ef5622967f2d55215c718806c92",
+      "new_sha256": "df89d6308022e0425720eb863d4b740b56189ef5622967f2d55215c718806c92",
+      "byte_equal": true
+    },
+    {
+      "file": "order_sensitivity.csv",
+      "old_sha256": "570277c5a092cda24f1059369707ce07fb7e98c76151b43ac43c2d53994c9874",
+      "new_sha256": "570277c5a092cda24f1059369707ce07fb7e98c76151b43ac43c2d53994c9874",
+      "byte_equal": true
+    },
+    {
+      "file": "paired_visq.csv",
+      "old_sha256": "35415932fcd6f91545645bb5afc2d2ed093c2b99de34e00f297e0b852740e0eb",
+      "new_sha256": "35415932fcd6f91545645bb5afc2d2ed093c2b99de34e00f297e0b852740e0eb",
+      "byte_equal": true
+    },
+    {
+      "file": "run_status.json",
+      "old_sha256": "8fa987e350c5a61f9a19f063fe19ae81d3177b6d6b596c56c3c2c6756da94e2f",
+      "new_sha256": "8fa987e350c5a61f9a19f063fe19ae81d3177b6d6b596c56c3c2c6756da94e2f",
+      "byte_equal": true
+    }
+  ],
+  "interpretation": "Direct source-workbook rerun; no earlier field predictions imported. Status zeros alone are declarations, not instrumentation."
+}

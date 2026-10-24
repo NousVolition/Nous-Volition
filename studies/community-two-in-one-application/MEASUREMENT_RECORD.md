@@ -14,7 +14,7 @@ Use a person key and a session/episode key. Preserve the person's own wording an
 | Water | Perceived balance, calm, agreement and unresolved disturbance recorded separately | Test apparent balance that coexists with disturbance |
 | Fog | Content, vividness/clarity, certainty and accuracy where independently checkable | Distinguish a vivid old memory from a vague recent one without imposing age-based fading |
 | Wind | Actual elapsed time/event age, felt temporal distance and uncertainty | Test felt time separately from clock time or past/future orientation |
-| Mist | What is taken for granted, whether endorsed, unresolved disagreement and ability to reconsider | Distinguish unspoken agreement from imposed or merely presumed agreement |
+| Mist | Person’s description and the author’s operational distinction, still unresolved | If the narrower agreement hypothesis is adopted, record assumptions, endorsement and ability to reconsider; these are proposed observations, not an established definition |
 | D2O | Exactly what changed, a declared measure of change size, comparable context and observed consequences | Test small differences with large effects, including helpful or harmful effects under specified criteria |
 | Utility | What matters to the person, a defined rating/choice procedure, baseline and units | Calibrate U and gamma rather than rename affect, confidence or attention |
 | Field observation | Meaning-space coordinates, distance metric and how reports constrain S and u | Test the continuum hypothesis and distinguish its spatial mechanisms |

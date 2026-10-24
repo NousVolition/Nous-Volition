@@ -195,3 +195,21 @@ jobs:
           python -m unittest test_measurements.py -v
           python verify.py
 
+
+
+  corpus-chain-audit-checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install exact corpus audit dependencies
+        run: pip install -r studies/community-chain-audit/requirements.txt
+      - name: Verify published evidence and exact-equation conformance
+        working-directory: studies/community-chain-audit
+        run: |
+          python verify.py
+          python -m unittest test_audit.py -v
+          python run_checks.py

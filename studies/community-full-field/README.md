@@ -1,5 +1,9 @@
 # Full coupled corpus field with real submission records
 
+<!-- chain-audit:start -->
+Audit update, 23 October 2026. The 0.140318 versus 0.104279 errors reproduce under the stated correctness-to-total hypothesis. A was reset to zero at the first observation despite unknown prehistory. These are conditional legacy results, not a test of personal history. The 1,507 comparisons use an exact integral consequence; the 18 primary spatial runs contain only one unique four-input pattern. No refit or new holdout claim is made. [Corrections, source coverage and remaining tests](https://github.com/NousVolition/Nous-Volition/tree/main/studies/community-chain-audit).
+<!-- chain-audit:end -->
+
 Completed 22 October 2026 for Streams and Rocks. **The coupled equations have now been run. The proposed link from those fields to task correctness did not outperform a simple last-answer control. Full empirical validation remains open because the records do not measure the spatial fields.**
 
 [Illustrated report](report.html) · [Frozen protocol](PROTOCOL.md) · [Equations, sources and units](SOURCES.md) · [All comparison results](results/data_results.json) · [Spatial diagnostics](results/spatial_results.json)

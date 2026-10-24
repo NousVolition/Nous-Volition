@@ -1,5 +1,9 @@
 # Real data: wording, meaning and later encounters
 
+<!-- chain-audit:start -->
+Audit update, 23 October 2026. Released human labels and the published recognition endpoint were rechecked. Same content labels do not establish the same intended meaning; recognition is not a negative-penalty mechanism. These data do not validate the full inward field. [Corrections, source coverage and remaining tests](https://github.com/NousVolition/Nous-Volition/tree/main/studies/community-chain-audit).
+<!-- chain-audit:end -->
+
 Streams and Rocks • completed reanalysis • 21 October 2026
 
 **Wording can change how a statement is judged, but preserving its meaning is a separate test. Prior recognition can also change later recognition.** These findings come from human annotation records and a randomized Wikipedia experiment. They do not establish the complete community model or a universal rule for how people remember treatment.

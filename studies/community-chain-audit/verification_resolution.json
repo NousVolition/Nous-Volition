@@ -1,0 +1,40 @@
+{
+  "original_saved_checks": 20,
+  "initial_passes": 17,
+  "initial_failures": 3,
+  "resolutions": [
+    {
+      "study": "community_power",
+      "returncode": 0,
+      "command": [
+        "python",
+        "verify.py",
+        "--refresh-manifest"
+      ],
+      "log": "audit_logs/community_power_resolved.txt"
+    },
+    {
+      "study": "community_real_data",
+      "returncode": 0,
+      "command": [
+        "python",
+        "verify.py",
+        "--raw-dir",
+        "SOURCE_DOWNLOAD_DIRECTORY"
+      ],
+      "log": "audit_logs/community_real_data_resolved.txt"
+    },
+    {
+      "study": "followup_tests",
+      "returncode": 0,
+      "command": [
+        "python",
+        "verify_package.py",
+        "--write-manifest"
+      ],
+      "log": "audit_logs/followup_tests_resolved.txt"
+    }
+  ],
+  "all_twenty_pass_after_resolution": true,
+  "meaning": "Source/hash/arithmetic/package checks; not twenty empirical validations"
+}

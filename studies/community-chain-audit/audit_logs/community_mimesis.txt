@@ -1,0 +1,42 @@
+test_accumulation (test_corpus.CorpusTests.test_accumulation) ... ok
+test_action_abstention (test_corpus.CorpusTests.test_action_abstention) ... ok
+test_alignment (test_corpus.CorpusTests.test_alignment) ... ok
+test_alignment_perturbation (test_corpus.CorpusTests.test_alignment_perturbation) ... ok
+test_binary_table (test_corpus.CorpusTests.test_binary_table) ... ok
+test_calibrated_threshold (test_corpus.CorpusTests.test_calibrated_threshold) ... ok
+test_context_abstention (test_corpus.CorpusTests.test_context_abstention) ... ok
+test_empty_edge (test_corpus.CorpusTests.test_empty_edge) ... ok
+test_exact_not_minimum (test_corpus.CorpusTests.test_exact_not_minimum) ... ok
+test_fixed_force_not_always_drag (test_corpus.CorpusTests.test_fixed_force_not_always_drag) ... ok
+test_force_reversal (test_corpus.CorpusTests.test_force_reversal) ... ok
+test_grid_refinement (test_corpus.CorpusTests.test_grid_refinement) ... ok
+test_negative_tanh (test_corpus.CorpusTests.test_negative_tanh) ... ok
+test_no_silent_decay (test_corpus.CorpusTests.test_no_silent_decay) ... ok
+test_order_matters (test_corpus.CorpusTests.test_order_matters) ... ok
+test_product (test_corpus.CorpusTests.test_product) ... ok
+test_sharp (test_corpus.CorpusTests.test_sharp) ... ok
+test_smooth_off (test_corpus.CorpusTests.test_smooth_off) ... ok
+test_stress (test_corpus.CorpusTests.test_stress) ... ok
+test_tanh_equivalence (test_corpus.CorpusTests.test_tanh_equivalence) ... ok
+test_transport_total (test_corpus.CorpusTests.test_transport_total) ... ok
+test_zero_scaling (test_corpus.CorpusTests.test_zero_scaling) ... ok
+test_card_order_irrelevant (test_observations.ObservationsTests.test_card_order_irrelevant) ... ok
+test_confirmation_pair_incorrect (test_observations.ObservationsTests.test_confirmation_pair_incorrect) ... ok
+test_correct_counterexample_cards (test_observations.ObservationsTests.test_correct_counterexample_cards) ... ok
+test_extra_card_not_correct (test_observations.ObservationsTests.test_extra_card_not_correct) ... ok
+test_missing_submission (test_observations.ObservationsTests.test_missing_submission) ... ok
+test_momentum_density_normalization (test_observations.ObservationsTests.test_momentum_density_normalization) ... ok
+test_no_interpreting_prose_as_submission (test_observations.ObservationsTests.test_no_interpreting_prose_as_submission) ... ok
+test_no_join_across_removed_quote (test_observations.ObservationsTests.test_no_join_across_removed_quote) ... ok
+test_novel_cross_speaker (test_observations.ObservationsTests.test_novel_cross_speaker) ... ok
+test_outcome_not_used (test_observations.ObservationsTests.test_outcome_not_used) ... ok
+test_past_self_use_excluded (test_observations.ObservationsTests.test_past_self_use_excluded) ... ok
+test_quote_continuation_limitation (test_observations.ObservationsTests.test_quote_continuation_limitation) ... ok
+test_quotes_not_endorsement (test_observations.ObservationsTests.test_quotes_not_endorsement) ... ok
+test_reciprocal_different_phrases (test_observations.ObservationsTests.test_reciprocal_different_phrases) ... ok
+test_self_repetition_excluded (test_observations.ObservationsTests.test_self_repetition_excluded) ... ok
+
+----------------------------------------------------------------------
+Ran 37 tests in 0.776s
+
+OK

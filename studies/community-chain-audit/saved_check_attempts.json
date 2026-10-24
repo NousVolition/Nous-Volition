@@ -1,0 +1,122 @@
+[
+  {
+    "script": "community_power/verify.py",
+    "returncode": 1,
+    "seconds": 2.687000000034459,
+    "output": "Traceback (most recent call last):\n  File \"WORKSPACE\\outputs\\community_power\\verify.py\", line 66, in <module>\n    try:result=run()\n               ^^^^^\n  File \"WORKSPACE\\outputs\\community_power\\verify.py\", line 57, in run\n    check('Report local links and images resolve',all(x=='verification.json' or re.match(r'https?://',x) or (ROOT/x).exists() for x in targets))\n  File \"WORKSPACE\\outputs\\community_power\\verify.py\", line 11, in check\n    if not test:raise AssertionError(name)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Report local links and images resolve\n"
+  },
+  {
+    "script": "community_encounters/verify.py",
+    "returncode": 0,
+    "seconds": 0.26600000000325963,
+    "output": "{\n  \"status\": \"passed\",\n  \"checks\": [\n    \"frozen model, test, runner and source-estimate hashes match\",\n    \"all 432 stored wording probabilities and offer limits checked\",\n    \"all wording-blind paired contrasts exactly zero\",\n    \"all 144 joint history contrasts match analytic log-odds shift\",\n    \"six policy aggregates and 60 selected paired reruns match saved results\",\n    \"saved reset example has identical treatment from encounter 6\",\n    \"all six published coefficient conversions checked; two exclusions retained\",\n    \"published percentage-point arithmetic checked without invented counts\"\n  ],\n  \"unit_tests\": 19,\n  \"selected_paired_reruns\": 60,\n  \"source_exclusions\": 2,\n  \"no_new_human_observations\": true\n}\n"
+  },
+  {
+    "script": "community_real_data/verify.py",
+    "returncode": 1,
+    "seconds": 1.4839999999967404,
+    "output": "Traceback (most recent call last):\n  File \"WORKSPACE\\outputs\\community_real_data\\verify.py\", line 59, in <module>\n    parser=argparse.ArgumentParser();parser.add_argument('--raw-dir',type=Path,default=ROOT/'raw');args=parser.parse_args();main(args.raw_dir)\n                                                                                                                            ^^^^^^^^^^^^^^^^^^\n  File \"WORKSPACE\\outputs\\community_real_data\\verify.py\", line 18, in main\n    check('source_hash_'+src['id'],hashlib.sha256((raw/src['file']).read_bytes()).hexdigest()==src['sha256'])\n                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"LOCAL_USER\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\pathlib.py\", line 1019, in read_bytes\n    with self.open(mode='rb') as f:\n         ^^^^^^^^^^^^^^^^^^^^\n  File \"LOCAL_USER\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\pathlib.py\", line 1013, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'LOCAL_USER\\\\Documents\\\\Codex\\\\2026-10-09\\\\referenced-chatgpt-conversation-this-is-an-2\\\\outputs\\\\community_real_data\\\\raw\\\\content.tsv'\n"
+  },
+  {
+    "script": "community_moderation/verify.py",
+    "returncode": 0,
+    "seconds": 3.702999999979511,
+    "output": "\": true,\n    \"endpoint_outcomes_partition\": true,\n    \"topic_pairs_are_balanced_by_design\": true,\n    \"topic_score_coverage\": true,\n    \"audit_keys_equal_top12\": true,\n    \"audit_count\": true,\n    \"audit_classification_accounting\": true,\n    \"no_causal_wording_estimate\": true,\n    \"highest_score_matches\": true,\n    \"topic_score_sorted\": true,\n    \"30_episode_partition\": true,\n    \"30_duration_partition\": true,\n    \"30_sensitivities_are_subsets\": true,\n    \"90_episode_partition\": true,\n    \"90_duration_partition\": true,\n    \"90_sensitivities_are_subsets\": true,\n    \"180_episode_partition\": true,\n    \"180_duration_partition\": true,\n    \"180_sensitivities_are_subsets\": true,\n    \"delayed_feedback_setup_non_treatment_trees_outcome_cells_partition\": true,\n    \"delayed_feedback_setup_non_treatment_trees_bounds_do_not_identify_sign\": true,\n    \"delayed_feedback_setup_treatment_trees_outcome_cells_partition\": true,\n    \"delayed_feedback_setup_treatment_trees_bounds_do_not_identify_sign\": true,\n    \"all_nine_aggregate_summaries_reproduce\": true,\n    \"unit_tests\": true\n  },\n  \"passed\": 27,\n  \"total\": 27,\n  \"unit_tests\": 19,\n  \"aggregate_reproductions\": {\n    \"30_finite_pairs\": true,\n    \"30_same_moderator\": true,\n    \"30_disruption_subset\": true,\n    \"90_finite_pairs\": true,\n    \"90_same_moderator\": true,\n    \"90_disruption_subset\": true,\n    \"180_finite_pairs\": true,\n    \"180_same_moderator\": true,\n    \"180_disruption_subset\": true\n  },\n  \"browser_preview\": \"Not performed: local-file browser navigation was blocked by policy. Static HTML and figure inspection are separate checks.\"\n}\n"
+  },
+  {
+    "script": "community_record_tests/verify_saved.py",
+    "returncode": 0,
+    "seconds": 2.35999999998603,
+    "output": "189 saved-result checks passed; all 12 history summaries and 24 status tables reproduced.\n"
+  },
+  {
+    "script": "community_mimesis/verify_saved.py",
+    "returncode": 0,
+    "seconds": 1.4060000000172295,
+    "output": "{\"passed\": 87, \"all_passed\": true}\n"
+  },
+  {
+    "script": "community_full_field/verify_saved.py",
+    "returncode": 0,
+    "seconds": 0.8589999999967404,
+    "output": "{\n  \"passed\": 3122,\n  \"checks\": \"Independent recurrence, fit, forecast, bootstrap, provenance and field identities\"\n}\n"
+  },
+  {
+    "script": "community_reference_field/verify_saved.py",
+    "returncode": 0,
+    "seconds": 3.60999999998603,
+    "output": "{\n  \"passed\": 2851,\n  \"scope\": \"Source/selection, fit, full pixel errors, mass identities, diagnostics and descriptive bootstrap\"\n}\n"
+  },
+  {
+    "script": "community_two_in_one/verify_saved.py",
+    "returncode": 0,
+    "seconds": 0.4220000000204891,
+    "output": "{\"passed\": true, \"saved_checks\": 23604, \"protocol_sha256\": \"9da8eac9ad7275d4ec0f5237a086cd34db896cf2434f3ed52746486ea468824f\"}\n"
+  },
+  {
+    "script": "community_two_in_one_field/verify_saved.py",
+    "returncode": 0,
+    "seconds": 0.8429999999934807,
+    "output": "{\"passed\": true, \"checks\": 272}\n"
+  },
+  {
+    "script": "community_two_in_one_application/verify_saved.py",
+    "returncode": 0,
+    "seconds": 2.1410000000032596,
+    "output": "{\"passed\": true, \"checks\": 89}\n"
+  },
+  {
+    "script": "community_two_in_one_application/primary_records/verify.py",
+    "returncode": 0,
+    "seconds": 0.061999999976251274,
+    "output": "{\n  \"passed\": true,\n  \"checks\": {\n    \"sample_count_and_training_split\": true,\n    \"unique_samples\": true,\n    \"unknown_original_times_preserved\": true,\n    \"annotation_scope\": true,\n    \"no_predictive_score_or_form_classification\": true,\n    \"wave_denominators_preserved\": true,\n    \"exact_solver_unchanged\": true,\n    \"plan_unchanged\": true,\n    \"source_provenance\": true,\n    \"original_locator_used\": true\n  }\n}\n"
+  },
+  {
+    "script": "community_observation_bridge/verify_saved.py",
+    "returncode": 0,
+    "seconds": 1.0630000000237487,
+    "output": "id contraction\",\n    \"A=-0.02: time agreement\",\n    \"A=-0.02: sign and constraints stable\",\n    \"A=0.005: actual half step\",\n    \"A=0.005: grid contraction\",\n    \"A=0.005: time agreement\",\n    \"A=0.005: sign and constraints stable\",\n    \"A=0.005: stricter directions survive\",\n    \"A=0.02: actual half step\",\n    \"A=0.02: grid contraction\",\n    \"A=0.02: time agreement\",\n    \"A=0.02: sign and constraints stable\",\n    \"A=0.02: stricter directions survive\",\n    \"No source readouts identical across A\",\n    \"Pressure retained when forcing disabled\",\n    \"Five primary source hashes\",\n    \"Saved full state dimensions and finite values\",\n    \"Saved fields reproduce saved endpoint readouts\"\n  ],\n  \"ledger\": {\n    \"episodes\": 5,\n    \"people\": 1,\n    \"history_references\": 3,\n    \"nodes\": 10\n  },\n  \"convergence\": [\n    {\n      \"A0\": -0.02,\n      \"grid24_48\": 3.377913318503012e-08,\n      \"grid48_72\": 9.608888712486774e-09,\n      \"actual_half_step\": 1.1379786002407855e-13,\n      \"contrast72\": -0.03312424467218997\n    },\n    {\n      \"A0\": 0.005,\n      \"grid24_48\": 2.1717299797385792e-07,\n      \"grid48_72\": 1.3069785975705628e-08,\n      \"actual_half_step\": 2.957634137601417e-13,\n      \"contrast72\": -0.004469501105882956\n    },\n    {\n      \"A0\": 0.02,\n      \"grid24_48\": 1.5097225833926586e-06,\n      \"grid48_72\": 2.4175154100802843e-09,\n      \"actual_half_step\": 5.066946862086752e-12,\n      \"contrast72\": 0.012041002993690708\n    }\n  ],\n  \"maxima\": {\n    \"mass_error_max\": 3.58046925441613e-14,\n    \"divergence_max\": 2.4673467627671517e-17,\n    \"energy_residual_max\": 2.6020852139652106e-18\n  }\n}\n"
+  },
+  {
+    "script": "community_measured_inner_experience/verify.py",
+    "returncode": 0,
+    "seconds": 0.09399999998277053,
+    "output": "Checked 18 artifact hashes, Python/JSON parsing, report links and raw-file exclusion.\n"
+  },
+  {
+    "script": "isfog_local_history_tests/audit_results.py",
+    "returncode": 0,
+    "seconds": 1.0150000000139698,
+    "output": "{\"checks_passed\": 62, \"unit_tests_passed\": 19}\n"
+  },
+  {
+    "script": "large_raindrop_tests/verify_results.py",
+    "returncode": 0,
+    "seconds": 0.23499999998603016,
+    "output": "{\n  \"status\": \"passed\",\n  \"checks\": 52,\n  \"max_distribution_refinement_relative\": 6.345235931599134e-06\n}\n"
+  },
+  {
+    "script": "collection_external_check/verify_results.py",
+    "returncode": 0,
+    "seconds": 1.6560000000172295,
+    "output": "106 saved-result checks passed\n"
+  },
+  {
+    "script": "advanced_tests/verify_package.py",
+    "returncode": 0,
+    "seconds": 0.3119999999762513,
+    "output": "Passed 44 saved-result/package audits; 34 recorded unit tests.\n"
+  },
+  {
+    "script": "followup_tests/verify_package.py",
+    "returncode": 1,
+    "seconds": 0.2970000000204891,
+    "output": "Traceback (most recent call last):\n  File \"WORKSPACE\\outputs\\followup_tests\\verify_package.py\", line 75, in <module>\n    parser=argparse.ArgumentParser();parser.add_argument('--write-manifest',action='store_true');args=parser.parse_args();run(args.write_manifest)\n                                                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"WORKSPACE\\outputs\\followup_tests\\verify_package.py\", line 61, in run\n    check('Local link: '+href,(p.parent/unquote(u.path)).exists());count+=1\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"WORKSPACE\\outputs\\followup_tests\\verify_package.py\", line 22, in check\n    if not test:raise AssertionError(name)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Local link: ../../community-power/SITUATIONAL_ROLES.md\n"
+  },
+  {
+    "script": "adaptable_roles/verify.py",
+    "returncode": 0,
+    "seconds": 0.5320000000065193,
+    "output": "{\n  \"status\": \"passed\",\n  \"check_count\": 43,\n  \"unit_tests_recorded\": 19,\n  \"selected_case_reruns\": 12,\n  \"full_example_reruns\": 16,\n  \"note\": \"Numerical and saved-result checks, not empirical validation of a social theory.\"\n}\n"
+  }
+]

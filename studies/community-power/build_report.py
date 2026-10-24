@@ -104,3 +104,8 @@ css='''body{margin:0;background:#f3f5f4;color:#243632;font:17px/1.65 system-ui,s
 (ROOT/'report.html').write_text('<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Community: coordination, boundaries and power</title><style>'+css+'</style><main>'+''.join(ht)+'</main></html>',encoding='utf-8')
 print('Built community README and offline report.')
 
+
+
+# Preserve the source-chain audit when this historical report is rebuilt.
+from audit_note import apply_notice
+apply_notice(Path(__file__).resolve().parent)

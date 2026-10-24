@@ -1,0 +1,9 @@
+board,url,indexed,svg_ids,scope,remaining
+AI comparison testing strategy,https://miro.com/app/board/uXjVEW8HkiQ=/,588,588,"Text, tables, diagrams, named containers and source references inspected; embedded content separately listed","Referenced external reports and AI experiment logs mapped, not newly rerun"
+Plain Language Corpus | Corrected Math and Logic,https://miro.com/app/board/uXjVEXBJz3k=/,808,808,"Text, tables, diagrams, named containers and source references inspected; embedded content separately listed",Two small image previews inspected; text too small for independent re-transcription. Matching table/chart content recovered as structured text. Eight prototype HTML screens read.
+Nous Volition Codebase Architecture,https://miro.com/app/board/uXjVEXlaw6E=/,108,108,"Text, tables, diagrams, named containers and source references inspected; embedded content separately listed","Referenced external reports and AI experiment logs mapped, not newly rerun"
+Test Case Generator (QA),https://miro.com/app/board/uXjVEW8LgpY=/,0,0,Empty board at audit time,None
+Intelligent Canvas Playground,https://miro.com/app/board/uXjVEXEOEZQ=/,127,127,"Text, tables, diagrams, named containers and source references inspected; embedded content separately listed",18 connector/template image pixels not separately read; generic example prompts are not research observations
+AI Playground,https://miro.com/app/board/uXjVEXHkvMs=/,0,0,Empty board at audit time,None
+AI Playground,https://miro.com/app/board/uXjVEXAZ5RU=/,116,114,"Text, tables, diagrams, named containers and source references inspected; embedded content separately listed",Two foreign AI connector objects indexed but not exposed by SVG; 29 template image pixels not separately read
+AI Playground,https://miro.com/app/board/uXjVEXBO-2s=/,0,0,Empty board at audit time,None

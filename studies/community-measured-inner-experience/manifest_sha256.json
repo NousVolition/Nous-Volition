@@ -2,12 +2,12 @@
   ".gitignore": "e62ebc77afe76f03258651c53afc2a9177680dc034ded5ec5cbbc1803d6cc19e",
   "ANALYSIS_PLAN.md": "7d48bd6dcf051a697ebd46de3e2c07343b6828febbc73ff93e053b40964d7e2d",
   "analyze.py": "62ff1915d4c9c2f9e41466140b2dff3c84eda75bf936e39386453906c7d36128",
-  "build_report.py": "8798ad937e8d1bd270181b0e00a88bf18548fc1657c6c7a17af1c9ff31dec68d",
-  "CORPUS_AND_MIRO.md": "47194e54bb2bff1f878a75df224e41c74723353de19e344df98adf4854e2d329",
+  "build_report.py": "d1a35f4791a0961f665927da772478876240005c91a75ad35afccade671c7fc6",
+  "CORPUS_AND_MIRO.md": "dd1476eeb220fe442c5bcf2963587178e6f2b3d50a357a21cf72d8c134f9f444",
   "fetch_data.py": "85d95551a8ca01c2dcbb2a906a9a8ab2e242a47bff8db7d2d4abb53c30b3d07d",
-  "measurement_map.json": "b7253efab44d39752f40c9f6b9cdbf10bded5cc4747be2f7b26c44ef6deb312b",
-  "README.md": "a6fba56dfeb205e4ba97439a12969e9b3453a6277b1bddb00a21a946bb5c97b5",
-  "report.html": "8f55040c4515664da12ac9643c9f65bf608a50a66e04798affcc8b3368de93c5",
+  "measurement_map.json": "1ccd6ae220397042f7b5274499c7f62c5d838330a71d7eaf7a89d91f66d3417f",
+  "README.md": "a3b404de078981d6085b8a4dee815c16e8af60d440ea354332d6b4bf142071ae",
+  "report.html": "300e1ea77a770b18d8f60666c60e6c980e45b340ba6ce4e830d189d761a30049",
   "requirements.txt": "a7fcf7a5231e4a03b08d39321f5ef7ce975748f1e62fbb00aac364eb325dd833",
   "results/inner_experience.png": "30e1c6dfa6cfc7fb3ad9aedbaac5346daa5b12694c6c702e16be26c236e8ed83",
   "results/measurement_audit.json": "df89d6308022e0425720eb863d4b740b56189ef5622967f2d55215c718806c92",
@@ -16,5 +16,7 @@
   "results/run_status.json": "8fa987e350c5a61f9a19f063fe19ae81d3177b6d6b596c56c3c2c6756da94e2f",
   "sources.json": "0319141cb637dc6573b9a60d84102dabdfcfae7d42ec18d01bd8477b82d6efa9",
   "test_measurements.py": "6f78b291c48269d531fe5c445320db33e2e91baf4433432a4438f827ac0c10d8",
-  "verify.py": "6d95ce587fbed79f47aa5827073f92d0ec7a7ce50fff745956fdce811e4546a3"
+  "verify.py": "6d95ce587fbed79f47aa5827073f92d0ec7a7ce50fff745956fdce811e4546a3",
+  "AUDIT_NOTICE.md": "44c7c9942ac1e4f27ab4b920813cd11b9d22fda616d425204799161b82e92e09",
+  "audit_note.py": "b1115bf672ff9ac2ac52b60227024cc68d2eb1fb329242b621af54350201aa2a"
 }

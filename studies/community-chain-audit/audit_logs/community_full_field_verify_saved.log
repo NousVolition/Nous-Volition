@@ -1,0 +1,4 @@
+{
+  "passed": 3122,
+  "checks": "Independent recurrence, fit, forecast, bootstrap, provenance and field identities"
+}

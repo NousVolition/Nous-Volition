@@ -6,6 +6,16 @@ from model import make_community,solve,POLICIES
 ROOT=Path(__file__).resolve().parent
 checks=[]
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+def local_target_exists(target):
+    """Check either the published tree or this project's underscore-named mirror."""
+    from urllib.parse import urlsplit,unquote
+    path=unquote(urlsplit(target).path)
+    if not path:return True
+    if (ROOT/path).exists():return True
+    parts=Path(path).parts
+    if len(parts)>1 and parts[0]=='..' and parts[1].startswith('community-'):
+        return (ROOT.parent/parts[1].replace('-','_')/Path(*parts[2:])).exists()
+    return False
 def check(name,test):
     checks.append(dict(name=name,passed=bool(test)))
     if not test:raise AssertionError(name)
@@ -54,7 +64,7 @@ def run():
         check('Selected case reproduces '+str(i),max(np.max(abs(fresh['flow']-z['flow'][i])),np.max(abs(fresh['met']-z['needs_met'][i])),np.max(abs(fresh['effort']-z['effort'][i])))<1e-10)
     text=(ROOT/'report.html').read_text(encoding='utf-8')
     targets=re.findall(r'(?:href|src)="([^"]+)"',text)
-    check('Report local links and images resolve',all(x=='verification.json' or re.match(r'https?://',x) or (ROOT/x).exists() for x in targets))
+    check('Report local links and images resolve',all(x=='verification.json' or re.match(r'https?://',x) or local_target_exists(x) for x in targets))
     check('Shareable text has no private local paths',all(not re.search(r'[A-Za-z]:[\\/]+Users[\\/]',p.read_text(encoding='utf-8')) for p in packaged() if p.suffix in ('.py','.md','.json','.txt','.html','.csv')))
     current={p.relative_to(ROOT).as_posix():sha(p) for p in packaged()}
     if '--refresh-manifest' in sys.argv:(ROOT/'manifest.json').write_text(json.dumps(current,indent=2)+'\n',encoding='utf-8')

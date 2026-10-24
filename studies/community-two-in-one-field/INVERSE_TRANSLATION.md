@@ -54,7 +54,7 @@ The inverse reading is: **accumulated influence changes the context in which an 
 | Water as perceived balance | Changing or steady flows can occur | Perceived balance observed separately from calm, agreement and unresolved tension |
 | Fog and variable memory clarity | Field variation and diffusion | Vividness, certainty and accuracy; no equation requires old memories to fade |
 | Wind and experienced time | Evolution in model time t | The relation between clock time, event age and felt temporal distance |
-| Mist and unspoken agreement | A context field can organize a proposed interpretation | Whether agreement is recognized, endorsed, imposed or open to reconsideration |
+| Mist: author-named form; narrower agreement interpretation provisional | A context field can organize a proposed interpretation, but does not define this form | Establish the experiential distinction first; agreement/endorsement observations would test only the narrower proposal |
 | Heavy water D₂O | Subsequent author clarification: a small compositional change can have a large consequence | The specific change, its size, context, observed consequences and benefit/harm criteria; molecular mass alone does not supply them |
 
 The Navier–Stokes format adds a continuous geometry, local derivatives, incompressibility, smoothing terms and Newtonian stress. The supplied coupling adds a single accumulated scalar, localized source, threshold and fixed force direction. Constant coefficients, periodic boundaries and a unit-square domain in the numerical trials are additional declared computational choices. These are inspectable assumptions, not consequences of the material names.
@@ -94,3 +94,14 @@ After calibration, an observation map can connect partial records to the **full 
 Author definitions: the clarifications in this conversation, including that the ideas preceded their Navier–Stokes translation. Mathematical source: *Plain Language Corpus Math and Logic Corrected*, SHA256 `01f9ab0942f9c88982863e2ffc1e3c495786b5e6b67a26ae77d18235e7058acf`; [exact selected paragraphs](corpus_trace.json). [Current definitions](../community-two-in-one/MODEL.md) · [Completed field audit](README.md) · [Measurement contract](MEASUREMENT_CONTRACT.md).
 
 This revision changes the interpretation and testing specification. The exact solver, saved numerical results and frozen protocol are preserved. The interpretation is not a diagnosis or a validated fluid law of inward experience.
+
+
+## Source-chain correction: the roles have an architectural anchor
+
+The full corrected corpus already assigns transmit/I to a=(2,3,1), receive/Self to b=(2,3,2), sink/buffer to c=(1,3,2), and perimeter to d=(3,3,1), in paragraphs 72–91. Smoke can be read in relation to transmit and Clay in relation to receive. Earlier statements suggesting no mathematical anchor at all were too broad.
+
+These are source-assigned roles and static coordinates, not measured locations in a person. The original receive description includes external or auxiliary input; the author's later within-person two-in-one is a further interpretive specification. No evolution law for these four nodes, mapping from them to the PDE domain, or measured role-specific history follows from the coordinates alone. Retaining that distinction preserves the source instead of replacing the user's theory.
+
+Mist as specifically internalized or unspoken agreement is an operational interpretation previously introduced in the reports. The author supplied Mist as a form of the moving idea, but did not uniquely assign that narrower meaning. Keep it provisional. Water's perceived balance and D2O's small-change/consequence distinction remain the author's explicit clarifications. Strong language remains when warranted by the observed and attributed account.
+
+See the [complete chain audit](https://github.com/NousVolition/Nous-Volition/tree/main/studies/community-chain-audit), including exact source passages and unresolved measurement requirements.

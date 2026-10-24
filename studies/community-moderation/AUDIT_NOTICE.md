@@ -1,0 +1,1 @@
+Audit update, 23 October 2026. The saved aggregate and penalty results were rechecked. Matching and outcome definitions limit causal interpretation. This does not test the full corpus equations or independent inward meanings. [Corrections, source coverage and remaining tests](https://github.com/NousVolition/Nous-Volition/tree/main/studies/community-chain-audit).

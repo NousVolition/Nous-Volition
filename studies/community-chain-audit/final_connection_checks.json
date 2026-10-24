@@ -1,0 +1,53 @@
+{
+  "source_anchors_and_hashes": 33,
+  "frozen_protocols_unchanged": [
+    "outputs/adaptable_roles/data/protocol.json",
+    "outputs/collection_external_check/protocol.json",
+    "outputs/community_encounters/data/protocol.json",
+    "outputs/community_full_field/PROTOCOL.md",
+    "outputs/community_mimesis/PROTOCOL.md",
+    "outputs/community_moderation/data/protocol.json",
+    "outputs/community_observation_bridge/PROTOCOL.md",
+    "outputs/community_power/data/protocol.json",
+    "outputs/community_real_data/data/protocol.json",
+    "outputs/community_record_tests/PROTOCOL.md",
+    "outputs/community_reference_field/PROTOCOL.md",
+    "outputs/community_two_in_one/PROTOCOL.md",
+    "outputs/community_two_in_one_application/MIRO_TEST_PLAN.md",
+    "outputs/community_two_in_one_application/NUMERICAL_PLAN.md",
+    "outputs/community_two_in_one_application/PRIMARY_RECORD_PLAN.md",
+    "outputs/community_two_in_one_application/PROTOCOL.md",
+    "outputs/community_two_in_one_field/PROTOCOL.md",
+    "outputs/deformable_raindrop_tests/protocol.json",
+    "outputs/interface_flow_tests/protocol.json",
+    "outputs/isfog_local_history_tests/PROTOCOL.md",
+    "outputs/isfog_pile_tests/PROTOCOL.md",
+    "outputs/stability_tests/prior_water_data/protocol.json"
+  ],
+  "checks": [
+    {
+      "study": "community_two_in_one_application",
+      "command": "python -m unittest test_application.py -q",
+      "returncode": 0,
+      "output": "----------------------------------------------------------------------\nRan 14 tests in 0.846s\n\nOK"
+    },
+    {
+      "study": "community_measured_inner_experience",
+      "command": "python -m unittest discover -q",
+      "returncode": 0,
+      "output": "----------------------------------------------------------------------\nRan 6 tests in 0.009s\n\nOK"
+    },
+    {
+      "study": "community_chain_audit",
+      "command": "python -m unittest test_audit.py -q",
+      "returncode": 0,
+      "output": "----------------------------------------------------------------------\nRan 17 tests in 0.866s\n\nOK"
+    },
+    {
+      "study": "community_two_in_one_application",
+      "command": "python verify_saved.py",
+      "returncode": 0,
+      "output": "{\"passed\": true, \"checks\": 89}"
+    }
+  ]
+}

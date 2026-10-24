@@ -1,0 +1,65 @@
+{
+  "question": "Which publicly available longitudinal datasets measure a person's inner speech, momentary thought content, and autobiographical context together, and what are the limits of inferring inner dialogue from questionnaires or verbal reports?",
+  "records": [
+    {
+      "title": "Voices in the head: A population-level map of inner-speech modes and agency",
+      "doi": "10.17605/osf.io/tgdar",
+      "id": "fcbfz7e3afoi",
+      "status": "Discovery metadata and abstract only; not a new empirical test"
+    },
+    {
+      "title": "Voices in the head: A population-level map of inner-speech modes and agency",
+      "doi": "10.31234/osf.io/2s7a5_v1",
+      "id": "8qjaraq0gwbd",
+      "status": "Discovery metadata and abstract only; not a new empirical test"
+    },
+    {
+      "title": "An fMRI dataset of verbalized spontaneous thought with annotated transcripts and self-report trait measures",
+      "doi": "10.64898/2026.05.12.724488",
+      "id": "b6hqy42lxvhf",
+      "status": "Discovery metadata and abstract only; not a new empirical test"
+    },
+    {
+      "title": "Spontaneous Thought Dynamics as a Signature of Positive and Negative Affectivity",
+      "doi": "10.5281/zenodo.10445890",
+      "id": "106jn03s0w",
+      "status": "Discovery metadata and abstract only; not a new empirical test"
+    },
+    {
+      "title": "Spontaneous Thought Dynamics as a Signature of Positive and Negative Affectivity",
+      "doi": "10.5281/zenodo.10445889",
+      "id": "1q0hqcigk2",
+      "status": "Discovery metadata and abstract only; not a new empirical test"
+    },
+    {
+      "title": "The ConDialInt Model: Condensation, Dialogality, and Intentionality Dimensions of Inner Speech Within a Hierarchical Predictive Control Framework.",
+      "doi": "10.3389/FPSYG.2019.02019",
+      "id": "3jvi3gntiu",
+      "status": "Discovery metadata and abstract only; not a new empirical test"
+    },
+    {
+      "title": "Capturing Inner Experience At Scale: An AI Interviewer Co-Developed with the Founder of a Landmark Phenomenological Method",
+      "doi": "10.48550/arxiv.2607.20310",
+      "id": "hh97pbwf07af",
+      "status": "Discovery metadata and abstract only; not a new empirical test"
+    },
+    {
+      "title": "Additional file 1 of Capturing naturalistic thoughts using a precision experience sampling idiographic approach",
+      "doi": "10.6084/m9.figshare.32031618",
+      "id": "8at0pn5j7u5i",
+      "status": "Discovery metadata and abstract only; not a new empirical test"
+    },
+    {
+      "title": "The brain’s conversation with itself: neural substrates of dialogic inner speech",
+      "doi": "10.1093/SCAN/NSV094",
+      "id": "2h0n9iod31",
+      "status": "Discovery metadata and abstract only; not a new empirical test"
+    },
+    {
+      "title": "Mapping Content and Dynamics in the Stream of Consciousness: a Latent Brain State Analysis",
+      "doi": "10.31219/osf.io/e8xay_v2",
+      "id": "nd368304h6vf",
+      "status": "Discovery metadata and abstract only; not a new empirical test"
+    }
+  ]
+}
