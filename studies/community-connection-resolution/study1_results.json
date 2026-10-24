@@ -1,0 +1,83 @@
+{
+  "study1_training": {
+    "people": 117,
+    "eligible_people": 117,
+    "response_slots": 18720,
+    "complete_vectors": 18720,
+    "missing_vectors": 0,
+    "within_chain_pairs": 18252,
+    "excluded_chain_boundaries": 351,
+    "observed_mean_squared_displacement": 0.2596304841661188,
+    "expected_shuffled_displacement": 0.4200581943143216,
+    "difference_shuffled_minus_ordered": 0.1604277101482029,
+    "difference_person_bootstrap_95pct": [
+      0.14936919629807688,
+      0.1729734906722893
+    ],
+    "monte_carlo_p_one_sided": 0.001,
+    "permutations": 999,
+    "seed": 261023,
+    "permutation_mean": 0.42005033687256726,
+    "nonzero_valence": 16055,
+    "varying_valence_people": 117
+  },
+  "study1_retest_order": {
+    "people": 49,
+    "eligible_people": 49,
+    "response_slots": 7840,
+    "complete_vectors": 7840,
+    "missing_vectors": 0,
+    "within_chain_pairs": 7644,
+    "excluded_chain_boundaries": 147,
+    "observed_mean_squared_displacement": 0.2380250817634746,
+    "expected_shuffled_displacement": 0.385619974229788,
+    "difference_shuffled_minus_ordered": 0.1475948924663134,
+    "difference_person_bootstrap_95pct": [
+      0.1277890696491529,
+      0.1668933140999476
+    ],
+    "monte_carlo_p_one_sided": 0.001,
+    "permutations": 999,
+    "seed": 261024,
+    "permutation_mean": 0.38575127370184814,
+    "nonzero_valence": 6709,
+    "varying_valence_people": 49
+  },
+  "paired_sessions": {
+    "pairs": 49,
+    "matched_mean_squared_centroid_distance": 0.015524353082549427,
+    "random_pair_expectation": 0.06211093579834494,
+    "difference_random_minus_matched": 0.04658658271579551,
+    "paired_bootstrap_95pct": [
+      0.029225309175126012,
+      0.06400825409404368
+    ],
+    "monte_carlo_p_one_sided": 0.001,
+    "permutations": 999,
+    "seed": 261024
+  },
+  "training_retest_first_session_overlap": 49,
+  "unused_record_ids": [
+    1,
+    2,
+    6,
+    7,
+    8,
+    14,
+    15,
+    22,
+    25,
+    26,
+    28,
+    31,
+    34,
+    69,
+    86,
+    87,
+    92,
+    105,
+    116,
+    119
+  ],
+  "source_sha256": "b63bbb250739bbd7c08156e8e94d0ce9bca6aecc84af858b8ec8e9fafa7e28f9"
+}

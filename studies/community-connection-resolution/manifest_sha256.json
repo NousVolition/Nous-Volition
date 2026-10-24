@@ -1,0 +1,14 @@
+{
+  "analyze.py": "93549f1b1728c76a7926e63e9c0bcba851e78eb7433370f7d27d913f0602f818",
+  "fetch.py": "5b6d7c0a3b6314ece761b34ffb221f4ed7ce93f3985b4b0f8e5105a16b26b3d1",
+  "paired_sessions.csv": "e97a328373a7f0544b182dfb96db53b803e2e9dab136951c5cb98509306d1783",
+  "PROTOCOL.md": "7c73fb3dc5ff6db94a096f372bcd7107f76c2bc98ff1a6fd4dd3ce0cf9cb0235",
+  "provenance.json": "140998edbb5094b99e63472403f6e57b144348e280b825c2faccf1ac04093f5c",
+  "README.md": "314c29be2920f79c06ed383f35d9f7426ea171a6ffbc5d0f325b972e8baf8e40",
+  "REGISTER_AND_ADDED_RULES.md": "645e2a4aff0649c9f46f2fe141f0b0d035ef5df2074c6369e3e6ff9bd8246bca",
+  "sources.json": "4d2a0f40ed78e8d0b6353828f75e7b953a4974c248c5884ad24b093c77457864",
+  "study1_results.json": "394b5470265eb87d757c2602af8a7290fabaad23325dee6f8803c96d8592f01d",
+  "study1_retest_people.csv": "1e4be9e6bf98dbcbce9edce8674e65bfd7e5e91ca569ffe94c88f0d25a6b51a2",
+  "study1_training_people.csv": "b64c509b0e4a157750eef57e113c0a27557d986a655b890bd439d0bec500d06d",
+  "test_analysis.py": "4c0f234cbd9fa98bc0cab58901f5f75e903ce8f4c5ce9c835bbd6a7fcb10834c"
+}

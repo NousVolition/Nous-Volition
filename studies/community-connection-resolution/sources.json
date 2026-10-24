@@ -1,0 +1,47 @@
+[
+  {
+    "file": "fastweb_basedata.mat",
+    "url": "https://zenodo.org/records/10445890/files/fastweb_basedata.mat?download=1",
+    "sha256": "b63bbb250739bbd7c08156e8e94d0ce9bca6aecc84af858b8ec8e9fafa7e28f9",
+    "md5": "e51d7e759cb30856991e93be8f4777ad",
+    "license": "CC-BY-4.0",
+    "author": "Lux, Lee, Han, Lee, Gim, Choi and Woo",
+    "source_version": "10.5281/zenodo.10445890"
+  },
+  {
+    "file": "fastweb_codebook.xlsx",
+    "url": "https://zenodo.org/records/10445890/files/fastweb_codebook.xlsx?download=1",
+    "sha256": "9e94b1e82bddcc3d2d029f699f2084f61340e847dbbc8db30e63de6ef334cad7",
+    "md5": "65dcb35d70a4bda388aeecafdcbceb68",
+    "license": "CC-BY-4.0",
+    "author": "Lux, Lee, Han, Lee, Gim, Choi and Woo",
+    "source_version": "10.5281/zenodo.10445890"
+  },
+  {
+    "file": "fastweb_dmpm_1.m",
+    "url": "https://zenodo.org/records/10445890/files/fastweb_dmpm_1.m?download=1",
+    "sha256": "215a775057b4d9d05d0f2196e917842c00c7318fdd09004d55dc5fb82fbef934",
+    "md5": "529c785d93a1c9f1cc87ccc5e923561b",
+    "license": "CC-BY-4.0",
+    "author": "Lux, Lee, Han, Lee, Gim, Choi and Woo",
+    "source_version": "10.5281/zenodo.10445890"
+  },
+  {
+    "file": "fastweb_features.m",
+    "url": "https://zenodo.org/records/10445890/files/fastweb_features.m?download=1",
+    "sha256": "161807c06003c2babcb95de6d84cf759387dd4e76b5c677403fd0f22fdb535c0",
+    "md5": "cb10b67d6df66466c557a2d1d80866c3",
+    "license": "CC-BY-4.0",
+    "author": "Lux, Lee, Han, Lee, Gim, Choi and Woo",
+    "source_version": "10.5281/zenodo.10445890"
+  },
+  {
+    "file": "fastweb_fg3_modelperformance_2.m",
+    "url": "https://zenodo.org/records/10445890/files/fastweb_fg3_modelperformance_2.m?download=1",
+    "sha256": "f31fef5b58f147ee8fca6c9fdeff3147ddf8f536ef7dd9fb9177f86c19e5fc3b",
+    "md5": "fb616f688e106fa3d4cc4b0cd7f36168",
+    "license": "CC-BY-4.0",
+    "author": "Lux, Lee, Han, Lee, Gim, Choi and Woo",
+    "source_version": "10.5281/zenodo.10445890"
+  }
+]

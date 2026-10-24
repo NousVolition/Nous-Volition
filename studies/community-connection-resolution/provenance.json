@@ -1,0 +1,15 @@
+{
+  "checkpoint_date": "2026-10-24",
+  "python": "3.12.14",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "corpus_sha256": "01f9ab0942f9c88982863e2ffc1e3c495786b5e6b67a26ae77d18235e7058acf",
+  "field_equations_executed_in_new_analysis": false,
+  "new_field_runs": 0,
+  "analysis_unit_tests": 6,
+  "study2_opened": false,
+  "code_sha256": "93549f1b1728c76a7926e63e9c0bcba851e78eb7433370f7d27d913f0602f818",
+  "protocol_sha256": "7c73fb3dc5ff6db94a096f372bcd7107f76c2bc98ff1a6fd4dd3ce0cf9cb0235",
+  "miro_refresh_sha256": "376c2c3741539f7cbadc052b05757f8931f4fa6a5d963094570d2f840be8f44e",
+  "mist_definition_pending": true
+}
