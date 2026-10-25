@@ -7,6 +7,7 @@ import math
 import sys
 P = Path(__file__).resolve().parent
 TRUSTED = {
+ "gate_worker.py":"0f73c23b45d6f3d806c8cf4b592f7241f2e6a8d8f96bb1e494e6ed7afe2e1d93",
  "manifest_sha256.json":"127f78c467a0356fdaf62b333473c858793c4a451ab98504c2ce00bcd2d346dd",
  "run_contract.json":"cc91253f756681d097245ebe8a338d209b0416af2556dec804bf0b2c9e4ee794",
  "parameter_bounds.json":"50bb21ea6f4764a4d8b87748fd962c6e5c20db7cd20303343f2dd433c4a06180",
@@ -16,7 +17,7 @@ TRUSTED = {
 METADATA={"study","run_id","date","declared_by"}
 def sha(path):
  return hashlib.sha256(Path(path).read_bytes()).hexdigest()
-def strict_json(path):
+def strict_loads(text):
  def pairs(items):
   d={}
   for k,v in items:
@@ -24,7 +25,9 @@ def strict_json(path):
    d[k]=v
   return d
  def bad(v): raise ValueError("Nonfinite JSON constant: "+v)
- return json.loads(Path(path).read_text(encoding="utf-8"),object_pairs_hook=pairs,parse_constant=bad)
+ return json.loads(text,object_pairs_hook=pairs,parse_constant=bad)
+def strict_json(path):
+ return strict_loads(Path(path).read_bytes())
 def canonical(value):
  return json.dumps(value,sort_keys=True,ensure_ascii=False,allow_nan=False,separators=(",",":"))
 def integrity_errors(root=P):

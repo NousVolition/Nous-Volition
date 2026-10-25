@@ -1,0 +1,7 @@
+{
+  "protocol": "fresh-worker-v1",
+  "run_nonce": "3628b2db8d0ae074c53fb25359df25530c5b7ba2b444faf600894ff8f8007edb",
+  "real_run_checks_started": true,
+  "runner_sha256": "e83799e11c0386185d55e60f8d4a7ea405da751123241b8ba5bb6d89ce689a57",
+  "worker_sha256": "0f73c23b45d6f3d806c8cf4b592f7241f2e6a8d8f96bb1e494e6ed7afe2e1d93"
+}

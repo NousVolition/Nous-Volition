@@ -1,0 +1,14 @@
+{
+  "protocol": "fresh-worker-v1",
+  "run_nonce": "3628b2db8d0ae074c53fb25359df25530c5b7ba2b444faf600894ff8f8007edb",
+  "success": true,
+  "worker_sha256": "0f73c23b45d6f3d806c8cf4b592f7241f2e6a8d8f96bb1e494e6ed7afe2e1d93",
+  "declaration_sha256": "01d995e4a95b4474f235cfd0fa9b7d9f9aaeafd7b646937662364680092e406d",
+  "contract_sha256": "a3d7426fcf14b5a1163a7905d5b5dd7e3bc808c836a39c0e6facf29f0c63afd0",
+  "trace_sha256": "cb7984902572ae72f5bf6f3ca4e01cef120c4e97aeb05c6624c02b2c5e1a91ce",
+  "start_sha256": "6e7cf0f21ab79763d8f42e9f23ff4d8502976746c773a7ac7538d6ef7debae4e",
+  "output_sha256": {
+    "results.json": "34764ed93e752140cbb530d98657484122e251f0457798266f835fa0d71383e5",
+    "test_log.txt": "3bdf6b323167bddf50d02f7eba93dcb8b9e70ef36c2d173e93428dcb1d95a728"
+  }
+}

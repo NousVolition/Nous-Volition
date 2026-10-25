@@ -1,0 +1,38 @@
+test_all_numeric_parameters_required (test_run_manifest.Gate.test_all_numeric_parameters_required) ... ok
+test_case_removal_order_and_alternatives (test_run_manifest.Gate.test_case_removal_order_and_alternatives) ... ok
+test_changed_contract_or_trust_manifest_refused (test_run_manifest.Gate.test_changed_contract_or_trust_manifest_refused) ... ok
+test_changed_pinned_runner_refused_before_run (test_run_manifest.Gate.test_changed_pinned_runner_refused_before_run) ... ok
+test_ci_uses_gate_before_real_runner (test_run_manifest.Gate.test_ci_uses_gate_before_real_runner) ... ok
+test_coefficient_bounds_and_choice (test_run_manifest.Gate.test_coefficient_bounds_and_choice) ... ok
+test_complete_example (test_run_manifest.Gate.test_complete_example) ... ok
+test_date_and_wrong_types (test_run_manifest.Gate.test_date_and_wrong_types) ... ok
+test_duplicate_keys_and_nonfinite_json_refused (test_run_manifest.Gate.test_duplicate_keys_and_nonfinite_json_refused) ... ok
+test_every_rule_and_inheritance_required (test_run_manifest.Gate.test_every_rule_and_inheritance_required) ... ok
+test_existing_output_and_audit_output_refused (test_run_manifest.Gate.test_existing_output_and_audit_output_refused) ... ok
+test_explicit_statuses_not_corpus_guess (test_run_manifest.Gate.test_explicit_statuses_not_corpus_guess) ... ok
+test_gradient_delta_grid_and_coefficient_drift (test_run_manifest.Gate.test_gradient_delta_grid_and_coefficient_drift) ... ok
+test_grid_implementation_bounds (test_run_manifest.Gate.test_grid_implementation_bounds) ... ok
+test_missing_and_extra_fields (test_run_manifest.Gate.test_missing_and_extra_fields) ... ok
+test_no_additions_or_false_validation (test_run_manifest.Gate.test_no_additions_or_false_validation) ... ok
+test_no_solver_import_on_gate_import (test_run_manifest.Gate.test_no_solver_import_on_gate_import) ... ok
+test_offset_texture_speed_history_intervals_required (test_run_manifest.Gate.test_offset_texture_speed_history_intervals_required) ... ok
+test_original_86_still_unchanged (test_run_manifest.Gate.test_original_86_still_unchanged) ... ok
+test_real_cli_refuses_bad_declarations_without_output (test_run_manifest.Gate.test_real_cli_refuses_bad_declarations_without_output) ... ok
+test_signed_mass_is_not_a_corpus_positivity_rule (test_run_manifest.Gate.test_signed_mass_is_not_a_corpus_positivity_rule) ... ok
+test_unknown_claimed_rows (test_run_manifest.Gate.test_unknown_claimed_rows) ... ok
+test_all_13_real_entry_points (test_run_manifest.Notices.test_all_13_real_entry_points) ... ok
+test_missing_comment_only_hidden_and_css_changes_refused (test_run_manifest.Notices.test_missing_comment_only_hidden_and_css_changes_refused) ... ok
+test_checked_worker_payload_and_no_archived_results (test_run_manifest.WorkerFreshness.test_checked_worker_payload_and_no_archived_results) ... ok
+test_distinct_run_nonces_and_exact_declaration_bytes (test_run_manifest.WorkerFreshness.test_distinct_run_nonces_and_exact_declaration_bytes) ... ok
+test_missing_worker_refused_before_launch (test_run_manifest.WorkerFreshness.test_missing_worker_refused_before_launch) ... ok
+test_no_fresh_completion_means_rejection (test_run_manifest.WorkerFreshness.test_no_fresh_completion_means_rejection) ... ok
+test_original_fake_worker_exploit_refused_before_launch (test_run_manifest.WorkerFreshness.test_original_fake_worker_exploit_refused_before_launch) ... ok
+test_real_worker_rechecks_snapshot_before_model_import (test_run_manifest.WorkerFreshness.test_real_worker_rechecks_snapshot_before_model_import) ... ok
+test_real_worker_rejects_preexisting_results_logs_and_markers (test_run_manifest.WorkerFreshness.test_real_worker_rejects_preexisting_results_logs_and_markers) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 14.182s
+
+OK
+Gate refused before worker launch: Output must be a new directory outside the sealed audit directory
+Gate refused before worker launch: Output must be a new directory outside the sealed audit directory
