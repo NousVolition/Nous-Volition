@@ -3,6 +3,29 @@
 Trust boundary: reviewed launcher code, Python environment and OS. This is not
 a sandbox against a user able to rewrite the launcher or interfere with its process.
 """
+# sys is built in. No path-based import is permitted before this startup check.
+import sys
+_SECURE_CLI = False
+if __name__ == "__main__":
+    if not (sys.flags.isolated and sys.flags.no_site and sys.flags.safe_path):
+        raise SystemExit("Gate refused before imports: use python -I -S gated_run.py MANIFEST --output NEW_DIRECTORY")
+    if sys.flags.optimize:
+        raise SystemExit("Gate refused: optimized Python disables fixture assertions")
+    sys.dont_write_bytecode = True
+    from pathlib import Path
+    import hashlib
+    import types
+    _checker = Path(__file__).resolve().with_name("run_manifest.py")
+    _checker_bytes = _checker.read_bytes()
+    _checker_digest = "6b06bf0c4882188d8bdacb6b9009572b3c00754d13cc40c981e3ce297668f515"
+    if _checker.is_symlink() or hashlib.sha256(_checker_bytes).hexdigest() != _checker_digest:
+        raise SystemExit("Gate refused before launch: run_manifest.py integrity mismatch")
+    # Explicit verified source loading ignores packages and cached bytecode.
+    _module = types.ModuleType("run_manifest")
+    _module.__file__ = str(_checker)
+    sys.modules["run_manifest"] = _module
+    exec(compile(_checker_bytes, str(_checker), "exec"), _module.__dict__)
+    _SECURE_CLI = True
 from pathlib import Path
 import argparse
 import datetime
@@ -12,12 +35,32 @@ import math
 import os
 import re
 import secrets
+import site
 import subprocess
-import sys
 from run_manifest import P, TRUSTED, METADATA, canonical, integrity_errors, sha, strict_json, strict_loads, validate
 
 PROTOCOL = "fresh-worker-v1"
 OUTPUT_NAMES = ("results.json", "test_log.txt")
+
+def local_shadow_errors(audit):
+    """Conservatively refuse local files/packages that could shadow stdlib."""
+    names = {n.casefold() for n in sys.stdlib_module_names}
+    errors = []
+    for directory in {Path(audit).resolve(), Path.cwd().resolve()}:
+        for path in directory.iterdir():
+            if path.name.split(".")[0].casefold() in names and (
+                path.is_dir() or path.suffix.casefold() in (".py", ".pyc", ".pyd", ".so")
+            ):
+                errors.append("Local standard-library shadow refused: "+str(path))
+    return errors
+
+def dependency_paths():
+    """Locate installed numerical packages without running site hooks or .pth."""
+    executable = Path(sys.executable).absolute()
+    candidate = executable.parent.parent
+    prefix = candidate if (candidate/"pyvenv.cfg").is_file() else Path(sys.base_prefix)
+    return [str(Path(p).resolve()) for p in site.getsitepackages([str(prefix)])
+            if Path(p).name in ("site-packages", "dist-packages") and Path(p).is_dir()]
 
 def dump_new(path, value):
     with Path(path).open("x", encoding="utf-8", newline="\n") as stream:
@@ -32,7 +75,7 @@ def prepare_run(manifest_path, output, audit=P):
     audit, output = Path(audit).resolve(), Path(output).resolve()
     declaration_bytes = Path(manifest_path).read_bytes()
     manifest = strict_loads(declaration_bytes)  # Parse the same bytes we preserve.
-    errors = validate(manifest, audit)
+    errors = local_shadow_errors(audit) + validate(manifest, audit)
     if errors:
         raise ValueError("; ".join(errors))
     # Read once, compare before creating output, then execute these exact bytes
@@ -66,7 +109,13 @@ def prepare_run(manifest_path, output, audit=P):
     context = dict(protocol=PROTOCOL, run_nonce=secrets.token_hex(32),
                    worker_sha256=worker_hash, declaration_sha256=sha(output/"declaration.json"),
                    contract_sha256=sha(output/"contract.json"), input_hashes=input_hashes,
-                   outputs_absent_before_launch=True)
+                   outputs_absent_before_launch=True,
+                   parent_startup=dict(isolated=bool(sys.flags.isolated),
+                                       no_site=bool(sys.flags.no_site),
+                                       safe_path=bool(sys.flags.safe_path),
+                                       optimize=sys.flags.optimize),
+                   subprocess_origin=str(Path(subprocess.__file__).resolve()),
+                   dependency_paths=dependency_paths())
     dump_new(output/"run_context.json", context)
     return context, contract, worker_bytes
 
@@ -102,6 +151,8 @@ def fresh_output_errors(output, context, contract):
             errors.append("Real runner did not complete")
         if trace.get("model_functions_replaced") is not False:
             errors.append("Solver replacement reported")
+        if trace.get("worker_startup") != dict(isolated=True,no_site=True,safe_path=True,optimize=0):
+            errors.append("Worker startup isolation missing")
         for name in ("declaration_sha256","contract_sha256"):
             if completion.get(name) != context[name]:
                 errors.append("Completion does not match current "+name)
@@ -164,6 +215,9 @@ def fresh_output_errors(output, context, contract):
     return errors
 
 def run(manifest_path, output, audit=P):
+    if not _SECURE_CLI:
+        print("Gate refused: execution requires the isolated CLI, not an imported run()")
+        return 1
     audit, output = Path(audit).resolve(), Path(output).resolve()
     try:
         context, contract, worker_bytes = prepare_run(manifest_path, output, audit)
@@ -176,7 +230,7 @@ def run(manifest_path, output, audit=P):
     start=datetime.datetime.now(datetime.timezone.utc).isoformat()
     # '-' reads the already verified worker payload from stdin, not from a
     # mutable script path. No model function or output is mocked.
-    command=[sys.executable,"-I","-B","-",str(output/"audit-copy"),str(output/"run_context.json")]
+    command=[sys.executable,"-I","-S","-B","-",str(output/"audit-copy"),str(output/"run_context.json")]
     with (output/"runner.log").open("wb") as log:
         result=subprocess.run(command,input=worker_bytes,cwd=output/"audit-copy",env=env,stdout=log,stderr=subprocess.STDOUT)
     errors=integrity_errors(audit)
@@ -189,6 +243,11 @@ def run(manifest_path, output, audit=P):
                  original_pinned_files=86,original_pinned_files_unchanged=not integrity_errors(audit),
                  worker_sha256=context["worker_sha256"],worker_verified_before_launch=True,
                  verified_worker_bytes_executed_via_stdin=True,
+                 parent_startup=context["parent_startup"],
+                 subprocess_origin=context["subprocess_origin"],
+                 checker_loaded_from_verified_source=True,
+                 worker_startup=dict(isolated=True,no_site=True),
+                 dependency_paths=context["dependency_paths"],
                  archived_outputs_copied=False,outputs_absent_before_launch=True,
                  fresh_output_verification=not errors,
                  copied_runner_sha256=context["input_hashes"]["run_checks.py"],

@@ -3,13 +3,17 @@
 This worker is hash-checked by the parent and executed from those checked bytes.
 Its completion record is meaningful only within that trusted launcher boundary.
 """
+import sys
+if __name__ == "__main__" and not (sys.flags.isolated and sys.flags.no_site and sys.flags.safe_path):
+    raise SystemExit("Worker requires isolated startup without site hooks")
+if sys.flags.optimize:
+    raise SystemExit("Worker refuses optimized Python")
 from pathlib import Path
 from dataclasses import asdict
 import hashlib
 import json
 import os
 import runpy
-import sys
 
 OUTPUT_NAMES = ("results.json", "test_log.txt")
 PROTOCOL = "fresh-worker-v1"
@@ -48,9 +52,19 @@ def main():
     if sha(output / "declaration.json") != context["declaration_sha256"]:
         raise RuntimeError("Declaration bytes changed")
     contract = json.loads((output / "contract.json").read_text(encoding="utf-8"))
+    # Append the parent's installed package directories after the standard
+    # library; do not call site.main/addsitedir or execute .pth files.
+    for directory in context["dependency_paths"]:
+        path = Path(directory)
+        if not path.is_absolute() or not path.is_dir() or path.name not in ("site-packages", "dist-packages"):
+            raise RuntimeError("Invalid numerical dependency directory")
+        sys.path.append(str(path))
     import numpy as np
     expected = contract["cases"]
-    trace = dict(protocol=PROTOCOL, run_nonce=nonce, coupled_cases=[], board_alternatives=[],
+    trace = dict(protocol=PROTOCOL, run_nonce=nonce,
+                 worker_startup=dict(isolated=bool(sys.flags.isolated),no_site=bool(sys.flags.no_site),
+                                     safe_path=bool(sys.flags.safe_path),optimize=sys.flags.optimize),
+                 coupled_cases=[], board_alternatives=[],
                  observed_output_writes=[], model_functions_replaced=False,
                  runner_returned=False)
     sys.path.insert(0, str(audit))

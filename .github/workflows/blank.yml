@@ -215,14 +215,15 @@ jobs:
         working-directory: studies/community-chain-audit
         run: |
           python verify.py
-          python run_manifest.py run_manifest.example.json
-          python -m unittest test_run_manifest.py -v
+          python -I -S run_manifest.py run_manifest.example.json
+          python -I -S test_run_manifest.py -v
+          python -I -S test_parent_launch.py -v
       - name: Execute the unchanged real runner through the gate
         working-directory: studies/community-chain-audit
-        run: python gated_run.py run_manifest.example.json --output "${{ runner.temp }}/corpus-gated-run"
+        run: python -I -S gated_run.py run_manifest.example.json --output "${{ runner.temp }}/corpus-gated-run"
       - name: Reject replayed and corrupted evidence from the real run
         working-directory: studies/community-chain-audit
-        run: python test_fresh_outputs.py --run-dir "${{ runner.temp }}/corpus-gated-run"
+        run: python -I -S test_fresh_outputs.py --run-dir "${{ runner.temp }}/corpus-gated-run"
       - name: Recheck all 86 originals and every notice
         run: |
           python studies/community-chain-audit/verify.py

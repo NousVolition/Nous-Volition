@@ -1,0 +1,22 @@
+test_bad_direction_and_grid (test_audit.Conformance.test_bad_direction_and_grid) ... ok
+test_capped_steps_not_refinement (test_audit.Conformance.test_capped_steps_not_refinement) ... ok
+test_full_rhs_matches_pinned_solver_all_laws (test_audit.Conformance.test_full_rhs_matches_pinned_solver_all_laws) ... ok
+test_gap_overlap_crossperson_rejected (test_audit.Conformance.test_gap_overlap_crossperson_rejected) ... ok
+test_imaginary_physical_state_rejected (test_audit.Conformance.test_imaginary_physical_state_rejected) ... ok
+test_missing_and_nonfinite_time (test_audit.Conformance.test_missing_and_nonfinite_time) ... ok
+test_missing_stress_coefficient_rejected (test_audit.Conformance.test_missing_stress_coefficient_rejected) ... ok
+test_no_implicit_run_history (test_audit.Conformance.test_no_implicit_run_history) ... ok
+test_nonfinite_parameters (test_audit.Conformance.test_nonfinite_parameters) ... ok
+test_nonzero_history_mass_identity (test_audit.Conformance.test_nonzero_history_mass_identity) ... ok
+test_pressure_and_energy_identity (test_audit.Conformance.test_pressure_and_energy_identity) ... ok
+test_regularization_cutoffs (test_audit.Conformance.test_regularization_cutoffs) ... ok
+test_role_labels_do_not_invent_a_force (test_audit.Conformance.test_role_labels_do_not_invent_a_force) ... ok
+test_split_evolution_preserves_history (test_audit.Conformance.test_split_evolution_preserves_history) ... ok
+test_stress_independent_coefficient (test_audit.Conformance.test_stress_independent_coefficient) ... ok
+test_three_responses_retain_distinctions (test_audit.Conformance.test_three_responses_retain_distinctions) ... ok
+test_uniform_advection_diffusion_manufactured_solution (test_audit.Conformance.test_uniform_advection_diffusion_manufactured_solution) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 1.414s
+
+OK
