@@ -1,0 +1,114 @@
+{
+  "success": true,
+  "real_run_nonce": "3628b2db8d0ae074c53fb25359df25530c5b7ba2b444faf600894ff8f8007edb",
+  "real_runner_executed": true,
+  "solver_functions_mocked": false,
+  "rejected_scenarios": 14,
+  "checks": [
+    {
+      "name": "valid_old_run_replayed_as_new",
+      "rejected": true,
+      "errors": [
+        "Stale or mismatched run identity: start",
+        "Stale or mismatched run identity: trace",
+        "Stale or mismatched run identity: completion"
+      ]
+    },
+    {
+      "name": "missing_audit-copy/results.json",
+      "rejected": true,
+      "errors": [
+        "Missing or non-regular fresh output: audit-copy\\results.json"
+      ]
+    },
+    {
+      "name": "missing_audit-copy/test_log.txt",
+      "rejected": true,
+      "errors": [
+        "Missing or non-regular fresh output: audit-copy\\test_log.txt"
+      ]
+    },
+    {
+      "name": "missing_worker_completion.json",
+      "rejected": true,
+      "errors": [
+        "Missing or non-regular fresh output: worker_completion.json"
+      ]
+    },
+    {
+      "name": "missing_runner_started.json",
+      "rejected": true,
+      "errors": [
+        "Missing or non-regular fresh output: runner_started.json"
+      ]
+    },
+    {
+      "name": "missing_execution_trace.json",
+      "rejected": true,
+      "errors": [
+        "Missing or non-regular fresh output: execution_trace.json"
+      ]
+    },
+    {
+      "name": "changed_results.json",
+      "rejected": true,
+      "errors": [
+        "Results changed after worker completion",
+        "Output-write witness mismatch",
+        "Malformed/incomplete fresh evidence: Extra data: line 882 column 1 (char 31762)"
+      ]
+    },
+    {
+      "name": "changed_test_log.txt",
+      "rejected": true,
+      "errors": [
+        "Results changed after worker completion",
+        "Output-write witness mismatch"
+      ]
+    },
+    {
+      "name": "missing_write_witness",
+      "rejected": true,
+      "errors": [
+        "Both fresh output writes were not observed"
+      ]
+    },
+    {
+      "name": "runner_not_returned",
+      "rejected": true,
+      "errors": [
+        "Real runner did not complete"
+      ]
+    },
+    {
+      "name": "case_incomplete",
+      "rejected": true,
+      "errors": [
+        "Case incomplete or initial history changed"
+      ]
+    },
+    {
+      "name": "case_parameter_changed",
+      "rejected": true,
+      "errors": [
+        "Observed case does not match declaration: sharp/n24/parameters"
+      ]
+    },
+    {
+      "name": "saved_result_disagrees_with_observed_return",
+      "rejected": true,
+      "errors": [
+        "Saved result differs from observed return"
+      ]
+    },
+    {
+      "name": "execution_input_changed_after_completion",
+      "rejected": true,
+      "errors": [
+        "Execution input changed: run_checks.py"
+      ]
+    }
+  ],
+  "original_86_unchanged": true,
+  "original_completed_run_unchanged": true
+}

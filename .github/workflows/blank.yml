@@ -220,6 +220,9 @@ jobs:
       - name: Execute the unchanged real runner through the gate
         working-directory: studies/community-chain-audit
         run: python gated_run.py run_manifest.example.json --output "${{ runner.temp }}/corpus-gated-run"
+      - name: Reject replayed and corrupted evidence from the real run
+        working-directory: studies/community-chain-audit
+        run: python test_fresh_outputs.py --run-dir "${{ runner.temp }}/corpus-gated-run"
       - name: Recheck all 86 originals and every notice
         run: |
           python studies/community-chain-audit/verify.py
@@ -231,6 +234,11 @@ jobs:
           name: corpus-gated-real-run
           path: |
             ${{ runner.temp }}/corpus-gated-run/receipt.json
+            ${{ runner.temp }}/corpus-gated-run/run_context.json
+            ${{ runner.temp }}/corpus-gated-run/contract.json
+            ${{ runner.temp }}/corpus-gated-run/runner_started.json
+            ${{ runner.temp }}/corpus-gated-run/worker_completion.json
+            ${{ runner.temp }}/corpus-gated-run/fresh_output_regressions.json
             ${{ runner.temp }}/corpus-gated-run/execution_trace.json
             ${{ runner.temp }}/corpus-gated-run/runner.log
             ${{ runner.temp }}/corpus-gated-run/declaration.json

@@ -109,7 +109,91 @@ class Gate(unittest.TestCase):
   self.assertNotIn("python run_checks.py",job)
   self.assertNotIn("python -m unittest test_audit.py",job)
   self.assertLess(job.index("python run_manifest.py"),job.index("python gated_run.py"))
+  self.assertLess(job.index("python gated_run.py"),job.index("python test_fresh_outputs.py"))
+  for name in ("run_context.json","runner_started.json","worker_completion.json","fresh_output_regressions.json"):
+   self.assertIn(name,job)
   self.assertIn("python studies/community-chain-audit/verify.py",job)
+class WorkerFreshness(unittest.TestCase):
+ def prepare(self, directory):
+  from gated_run import prepare_run
+  output=Path(directory)/"new-run"
+  context,contract,payload=prepare_run(P/"run_manifest.example.json",output)
+  return output,context,contract,payload
+ def launch_worker(self, output, payload):
+  return subprocess.run([sys.executable,"-I","-B","-",str(output/"audit-copy"),str(output/"run_context.json")],
+                        input=payload,stdout=subprocess.PIPE,stderr=subprocess.PIPE,cwd=output/"audit-copy")
+ def test_checked_worker_payload_and_no_archived_results(self):
+  import hashlib
+  with tempfile.TemporaryDirectory() as d:
+   out,context,contract,payload=self.prepare(d)
+   self.assertEqual(hashlib.sha256(payload).hexdigest(),TRUSTED["gate_worker.py"])
+   self.assertEqual(context["worker_sha256"],TRUSTED["gate_worker.py"])
+   self.assertFalse((out/"audit-copy/results.json").exists())
+   self.assertFalse((out/"audit-copy/test_log.txt").exists())
+   self.assertEqual(len(context["input_hashes"]),85)
+   self.assertEqual(len(context["run_nonce"]),64)
+ def test_distinct_run_nonces_and_exact_declaration_bytes(self):
+  from gated_run import prepare_run
+  with tempfile.TemporaryDirectory() as d:
+   a=Path(d)/"a";b=Path(d)/"b"
+   ca,_,_=prepare_run(P/"run_manifest.example.json",a)
+   cb,_,_=prepare_run(P/"run_manifest.example.json",b)
+   self.assertNotEqual(ca["run_nonce"],cb["run_nonce"])
+   self.assertEqual((a/"declaration.json").read_bytes(),(P/"run_manifest.example.json").read_bytes())
+ def test_original_fake_worker_exploit_refused_before_launch(self):
+  with tempfile.TemporaryDirectory() as d:
+   clone=Path(d)/"source";shutil.copytree(P,clone,ignore=shutil.ignore_patterns("__pycache__","gate_evidence","freshness_evidence"))
+   fake=clone/"gate_worker.py"
+   fake.write_text("""from pathlib import Path
+import json,sys
+Path(__file__).with_name("fake_executed").write_text("yes")
+Path(sys.argv[3]).write_text(json.dumps({"success":True,"coupled_cases":[{"completed":True}]*18,"board_alternatives":[{},{},{}],"model_functions_replaced":False}))
+""",encoding="utf-8")
+   out=Path(d)/"output"
+   r=subprocess.run([sys.executable,"-B",str(clone/"gated_run.py"),str(clone/"run_manifest.example.json"),"--output",str(out)],capture_output=True,text=True)
+   self.assertEqual(r.returncode,1,r.stdout+r.stderr)
+   self.assertIn("gate_worker.py",r.stdout)
+   self.assertFalse(out.exists());self.assertFalse((clone/"fake_executed").exists())
+ def test_missing_worker_refused_before_launch(self):
+  with tempfile.TemporaryDirectory() as d:
+   clone=Path(d)/"source";shutil.copytree(P,clone,ignore=shutil.ignore_patterns("__pycache__","gate_evidence","freshness_evidence"))
+   (clone/"gate_worker.py").unlink()
+   out=Path(d)/"output"
+   r=subprocess.run([sys.executable,"-B",str(clone/"gated_run.py"),str(clone/"run_manifest.example.json"),"--output",str(out)],capture_output=True,text=True)
+   self.assertEqual(r.returncode,1);self.assertFalse(out.exists())
+ def test_real_worker_rejects_preexisting_results_logs_and_markers(self):
+  paths=("audit-copy/results.json","audit-copy/test_log.txt","execution_trace.json","runner_started.json","worker_completion.json")
+  for name in paths:
+   with self.subTest(name=name),tempfile.TemporaryDirectory() as d:
+    out,context,contract,payload=self.prepare(d)
+    target=out/name
+    original=P/Path(name).name
+    target.write_bytes(original.read_bytes() if original.exists() else b'{"old":true}')
+    before=target.read_bytes()
+    r=self.launch_worker(out,payload)
+    self.assertNotEqual(r.returncode,0,r.stdout.decode())
+    self.assertIn(b"Pre-existing output refused",r.stderr)
+    self.assertEqual(target.read_bytes(),before)
+    if name!="runner_started.json":self.assertFalse((out/"runner_started.json").exists())
+ def test_real_worker_rechecks_snapshot_before_model_import(self):
+  with tempfile.TemporaryDirectory() as d:
+   out,context,contract,payload=self.prepare(d)
+   source=out/"audit-copy/run_checks.py"
+   source.write_bytes(source.read_bytes()+b"\n# changed after preparation\n")
+   r=self.launch_worker(out,payload)
+   self.assertNotEqual(r.returncode,0)
+   self.assertIn(b"Execution input changed: run_checks.py",r.stderr)
+   self.assertFalse((out/"runner_started.json").exists())
+ def test_no_fresh_completion_means_rejection(self):
+  from gated_run import fresh_output_errors
+  with tempfile.TemporaryDirectory() as d:
+   out,context,contract,payload=self.prepare(d)
+   self.assertTrue(fresh_output_errors(out,context,contract))
+   for n in ("results.json","test_log.txt"):
+    shutil.copyfile(P/n,out/"audit-copy"/n)
+   # Replaying archived result and old trace cannot establish this run.
+   shutil.copyfile(P/"gate_evidence/execution_trace.json",out/"execution_trace.json")
+   self.assertTrue(fresh_output_errors(out,context,contract))
 class Notices(unittest.TestCase):
  @classmethod
  def setUpClass(cls):

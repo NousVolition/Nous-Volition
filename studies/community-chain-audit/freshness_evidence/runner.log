@@ -1,0 +1,41 @@
+{
+  "unit_tests": 17,
+  "full_coupled_runs": 18,
+  "refinement": [
+    {
+      "law": "sharp",
+      "grid24_48": 3.018335538165777e-05,
+      "grid48_72": 2.182608528037472e-06,
+      "actual_half_step": 2.9644567155328344e-11
+    },
+    {
+      "law": "tanh",
+      "grid24_48": 3.064637151571119e-05,
+      "grid48_72": 2.222948452292238e-06,
+      "actual_half_step": 1.3536339132699447e-13
+    },
+    {
+      "law": "smooth_off",
+      "grid24_48": 2.7203410159665695e-05,
+      "grid48_72": 1.4824179609138479e-06,
+      "actual_half_step": 3.670823064281743e-13
+    }
+  ],
+  "board_alternative_checks": {
+    "A_decay_balanced": [
+      -1.2543233829740313e-17,
+      0.0
+    ],
+    "A_decay_reversed": [
+      1.2543233829740313e-17,
+      0.0
+    ],
+    "S_relaxation_finite_pulse": [
+      1.0,
+      1.0
+    ],
+    "scope": "These two decay equations are board proposals, not the unchanged corpus model."
+  },
+  "max_mass_error": 1.6653345369377348e-16,
+  "max_divergence": 1.7447680903433165e-17
+}
