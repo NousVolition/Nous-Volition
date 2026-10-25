@@ -1,0 +1,35 @@
+{
+  "checks": [
+    {
+      "name": "gate_tests",
+      "exit_code": 0
+    },
+    {
+      "name": "integrity",
+      "exit_code": 0
+    },
+    {
+      "name": "declaration",
+      "exit_code": 0
+    },
+    {
+      "name": "notices",
+      "exit_code": 0
+    }
+  ],
+  "gate_tests": 24,
+  "equation_tests": 17,
+  "full_coupled_runs": 18,
+  "separate_board_checks": 3,
+  "original_pinned_files": 86,
+  "unchanged": true,
+  "exact_saved_numerical_comparison": {
+    "refinement": true,
+    "board_alternative_checks": true,
+    "role_label_differences": true,
+    "S_offset_differences": true,
+    "max_mass_error": true,
+    "max_divergence": true
+  },
+  "no_model_functions_replaced": true
+}

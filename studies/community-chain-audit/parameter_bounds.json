@@ -1,0 +1,186 @@
+{
+  "scope": "Bounds for this audited 2D implementation. Source bounds and implementation restrictions are distinct. The supported case plan is sealed separately.",
+  "parameters": {
+    "n": {
+      "kind": "integer",
+      "min": 12,
+      "exclusive_min": false,
+      "max": null,
+      "source": "fixture",
+      "register_row": null,
+      "note": "Added implementation restriction: even integer n>=12.",
+      "multiple_of": 2
+    },
+    "max_dt": {
+      "kind": "real",
+      "min": 0,
+      "exclusive_min": true,
+      "max": null,
+      "source": "fixture",
+      "register_row": null,
+      "note": "requested cap on the time step; the solver's stability cap may realise a smaller step, and that cap is an added fixture rule the manifest must state; never a corpus quantity"
+    },
+    "initial_total": {
+      "kind": "real",
+      "min": null,
+      "exclusive_min": false,
+      "max": null,
+      "source": "fixture",
+      "register_row": null,
+      "note": "total initial S mass placed on the grid; a fixture"
+    },
+    "A0": {
+      "kind": "real",
+      "min": null,
+      "exclusive_min": false,
+      "max": null,
+      "source": "fixture",
+      "register_row": "Transport/history",
+      "note": "accumulator prehistory A(0); C03: unknown prehistory is not zero, so a run declares a value and a range"
+    },
+    "nu": {
+      "kind": "real",
+      "min": 0,
+      "exclusive_min": true,
+      "max": null,
+      "source": "corpus",
+      "register_row": "Momentum",
+      "note": "nu > 0 (P229-230)"
+    },
+    "rho": {
+      "kind": "real",
+      "min": 0,
+      "exclusive_min": true,
+      "max": null,
+      "source": "corpus",
+      "register_row": "Momentum",
+      "note": "rho > 0"
+    },
+    "sigma": {
+      "kind": "real",
+      "min": 0,
+      "exclusive_min": false,
+      "max": null,
+      "source": "corpus",
+      "register_row": "Momentum",
+      "note": "sigma >= 0; sigma > 0 makes the tanh tail reverse direction"
+    },
+    "threshold": {
+      "kind": "real",
+      "min": 0,
+      "exclusive_min": false,
+      "max": null,
+      "source": "corpus",
+      "register_row": "Responses",
+      "note": "Gamma_crit >= 0"
+    },
+    "epsilon": {
+      "kind": "real",
+      "min": 0,
+      "exclusive_min": true,
+      "max": null,
+      "source": "corpus",
+      "register_row": "Responses",
+      "note": "epsilon > 0; sets the tanh and smooth exact-off scales"
+    },
+    "delta": {
+      "kind": "real",
+      "min": 0,
+      "exclusive_min": true,
+      "max": null,
+      "source": "corpus",
+      "register_row": "Gradient alternatives",
+      "note": "delta > 0; shifts the onset to sqrt(Gamma^2 + 2 delta Gamma) unless the calibrated form is used"
+    },
+    "diffusivity": {
+      "kind": "real",
+      "min": 0,
+      "exclusive_min": false,
+      "max": null,
+      "source": "corpus",
+      "register_row": "Transport/history",
+      "note": "D_diff >= 0, constant"
+    },
+    "h": {
+      "kind": "real",
+      "min": 0,
+      "exclusive_min": true,
+      "max": null,
+      "source": "corpus",
+      "register_row": "Transport/history",
+      "note": "kernel width; the kernel must integrate to 1"
+    },
+    "mu0": {
+      "kind": "real",
+      "min": 0,
+      "exclusive_min": true,
+      "max": null,
+      "source": "corpus",
+      "register_row": "Stress",
+      "note": "mu0 > 0; mu0 = rho nu is a closure a run must declare (C07)"
+    },
+    "gamma": {
+      "kind": "real",
+      "min": null,
+      "exclusive_min": false,
+      "max": null,
+      "source": "fixture",
+      "register_row": "Transport/history",
+      "note": "no corpus sign or magnitude; declare a range"
+    },
+    "kappa": {
+      "kind": "real",
+      "min": null,
+      "exclusive_min": false,
+      "max": null,
+      "source": "fixture",
+      "register_row": "Transport/history",
+      "note": "no corpus sign or magnitude; declare a range"
+    },
+    "baseline": {
+      "kind": "real",
+      "min": null,
+      "exclusive_min": false,
+      "max": null,
+      "source": "fixture",
+      "register_row": "Transport/history",
+      "note": "U_baseline; declare a range"
+    },
+    "law": {
+      "kind": "choice",
+      "choices": [
+        "sharp",
+        "tanh",
+        "smooth_off"
+      ],
+      "source": "corpus",
+      "register_row": "Responses",
+      "note": "three distinct laws; no fourth may be added without an added-rule entry"
+    },
+    "gradient_law": {
+      "kind": "choice",
+      "choices": [
+        "raw",
+        "regularized",
+        "calibrated"
+      ],
+      "source": "corpus",
+      "register_row": "Gradient alternatives",
+      "note": "the three gradient measures named in the register"
+    },
+    "direction": {
+      "kind": "unit_vector",
+      "length": 2,
+      "source": "fixture",
+      "register_row": "Momentum",
+      "note": "Unit norm is corpus; length 2 is this added numerical domain. norm tolerance 1e-9 is gate policy."
+    }
+  },
+  "hard_stops": [
+    "Unknown parameter or profile: refuse; a new profile needs a reviewed contract.",
+    "Out-of-domain coefficient: refuse.",
+    "Missing or changed case, added rule, program or inheritance: refuse.",
+    "Any changed pinned source: refuse before solver import.",
+    "Empirical validation claims: refused by this numerical fixture profile."
+  ]
+}

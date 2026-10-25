@@ -1,0 +1,158 @@
+[
+  {
+    "study": "adaptable_roles",
+    "status": "physical/numerical study; no inward validation",
+    "evidence_scope": "Physical, numerical or synthetic comparison; no inward Smoke/Clay/meaning validation",
+    "eligible_inheritance": false
+  },
+  {
+    "study": "advanced_tests",
+    "status": "physical/numerical study; no inward validation",
+    "evidence_scope": "Physical, numerical or synthetic comparison; no inward Smoke/Clay/meaning validation",
+    "eligible_inheritance": false
+  },
+  {
+    "study": "collection_external_check",
+    "status": "physical/numerical study; no inward validation",
+    "evidence_scope": "Physical, numerical or synthetic comparison; no inward Smoke/Clay/meaning validation",
+    "eligible_inheritance": false
+  },
+  {
+    "study": "community_encounters",
+    "status": "added-rule historical",
+    "evidence_scope": "Historical logistic restriction and decaying memory; separate assumed laws",
+    "eligible_inheritance": false
+  },
+  {
+    "study": "community_full_field",
+    "status": "conditional numerical fixture",
+    "evidence_scope": "Full PDE fixtures plus conditional correctness-to-total hypothesis; initial-history reset",
+    "eligible_inheritance": false
+  },
+  {
+    "study": "community_measured_inner_experience",
+    "status": "measurement analysis; no empirical PDE run",
+    "evidence_scope": "Source measurement arithmetic independent of prior predicted fields; no empirical PDE run",
+    "eligible_inheritance": false
+  },
+  {
+    "study": "community_mimesis",
+    "status": "component and observational analysis",
+    "evidence_scope": "Observable text/uptake plus individual corpus components; not full inward fit",
+    "eligible_inheritance": false
+  },
+  {
+    "study": "community_moderation",
+    "status": "observational analysis",
+    "evidence_scope": "Status/penalty reanalysis with matching limits; no full field",
+    "eligible_inheritance": false
+  },
+  {
+    "study": "community_observation_bridge",
+    "status": "conditional numerical fixture",
+    "evidence_scope": "Full PDE conditional on invented spatial/readout choices; five episodes from one person, not future forecasts",
+    "eligible_inheritance": false
+  },
+  {
+    "study": "community_power",
+    "status": "added-rule historical",
+    "evidence_scope": "Historical synthetic allocation; no corpus PDE fit",
+    "eligible_inheritance": false
+  },
+  {
+    "study": "community_real_data",
+    "status": "observational and aggregate analysis",
+    "evidence_scope": "Human labels plus published recognition endpoint; no full field",
+    "eligible_inheritance": false
+  },
+  {
+    "study": "community_record_tests",
+    "status": "observational analysis",
+    "evidence_scope": "Selected semantic reviews and repeat-penalty association; not independent human meaning validation",
+    "eligible_inheritance": false
+  },
+  {
+    "study": "community_reference_field",
+    "status": "conditional numerical fixture",
+    "evidence_scope": "Full PDE with reference/annotation proxy; initial-history reset; external dialogue",
+    "eligible_inheritance": false
+  },
+  {
+    "study": "community_two_in_one",
+    "status": "added-rule historical",
+    "evidence_scope": "Within-person questionnaire/history analysis and an added statistical comparator; not full equations",
+    "eligible_inheritance": false
+  },
+  {
+    "study": "community_two_in_one_application",
+    "status": "conditional numerical fixture",
+    "evidence_scope": "Full PDE with declared person state; role labels metadata; form observations incomplete",
+    "eligible_inheritance": false
+  },
+  {
+    "study": "community_two_in_one_field",
+    "status": "numerical fixture",
+    "evidence_scope": "Full coupled synthetic PDE and source availability/identifiability audit",
+    "eligible_inheritance": true
+  },
+  {
+    "study": "deformable_raindrop_tests",
+    "status": "physical/numerical study; no inward validation",
+    "evidence_scope": "Physical, numerical or synthetic comparison; no inward Smoke/Clay/meaning validation",
+    "eligible_inheritance": false
+  },
+  {
+    "study": "equation_tests",
+    "status": "physical/numerical study; no inward validation",
+    "evidence_scope": "Physical, numerical or synthetic comparison; no inward Smoke/Clay/meaning validation",
+    "eligible_inheritance": false
+  },
+  {
+    "study": "followup_tests",
+    "status": "physical/numerical study; no inward validation",
+    "evidence_scope": "Physical, numerical or synthetic comparison; no inward Smoke/Clay/meaning validation",
+    "eligible_inheritance": false
+  },
+  {
+    "study": "interface_flow_tests",
+    "status": "physical/numerical study; no inward validation",
+    "evidence_scope": "Physical, numerical or synthetic comparison; no inward Smoke/Clay/meaning validation",
+    "eligible_inheritance": false
+  },
+  {
+    "study": "isfog_local_history_tests",
+    "status": "physical/numerical study; no inward validation",
+    "evidence_scope": "Physical, numerical or synthetic comparison; no inward Smoke/Clay/meaning validation",
+    "eligible_inheritance": false
+  },
+  {
+    "study": "isfog_pile_tests",
+    "status": "physical/numerical study; no inward validation",
+    "evidence_scope": "Physical, numerical or synthetic comparison; no inward Smoke/Clay/meaning validation",
+    "eligible_inheritance": false
+  },
+  {
+    "study": "large_raindrop_tests",
+    "status": "physical/numerical study; no inward validation",
+    "evidence_scope": "Physical, numerical or synthetic comparison; no inward Smoke/Clay/meaning validation",
+    "eligible_inheritance": false
+  },
+  {
+    "study": "stability_tests",
+    "status": "physical/numerical study; no inward validation",
+    "evidence_scope": "Physical, numerical or synthetic comparison; no inward Smoke/Clay/meaning validation",
+    "eligible_inheritance": false
+  },
+  {
+    "study": "substance_root",
+    "status": "physical/numerical study; no inward validation",
+    "evidence_scope": "Physical, numerical or synthetic comparison; no inward Smoke/Clay/meaning validation",
+    "eligible_inheritance": false
+  },
+  {
+    "study": "switching_tests",
+    "status": "physical/numerical study; no inward validation",
+    "evidence_scope": "Physical, numerical or synthetic comparison; no inward Smoke/Clay/meaning validation",
+    "eligible_inheritance": false
+  }
+]
