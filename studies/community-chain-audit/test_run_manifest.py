@@ -1,4 +1,15 @@
 """Regression checks use the real gate CLI and real files; no mocks."""
+import sys
+if __name__ == "__main__":
+ if not (sys.flags.isolated and sys.flags.no_site):
+  raise SystemExit("Use python -I -S test_run_manifest.py -v")
+ sys.dont_write_bytecode = True
+ from pathlib import Path
+ import types
+ for name in ("run_manifest","gated_run"):
+  path=Path(__file__).resolve().with_name(name+".py")
+  module=types.ModuleType(name);module.__file__=str(path);sys.modules[name]=module
+  exec(compile(path.read_bytes(),str(path),"exec"),module.__dict__)
 from pathlib import Path
 import copy, importlib.util, json, os, shutil, subprocess, sys, tempfile, unittest
 from run_manifest import P, TRUSTED, canonical, chain_status, check_parameters, integrity_errors, strict_json, validate
@@ -75,7 +86,7 @@ class Gate(unittest.TestCase):
    for i,(key,value) in enumerate(changes):
     m=copy.deepcopy(self.m);m[key]=value;f=d/f"bad{i}.json";f.write_text(json.dumps(m),encoding="utf-8")
     out=d/f"out{i}"
-    r=subprocess.run([sys.executable,"-B",str(P/"gated_run.py"),str(f),"--output",str(out)],capture_output=True,text=True)
+    r=subprocess.run([sys.executable,"-I","-S","-B",str(P/"gated_run.py"),str(f),"--output",str(out)],capture_output=True,text=True)
     self.assertEqual(r.returncode,1,r.stdout+r.stderr);self.assertFalse(out.exists())
  def test_duplicate_keys_and_nonfinite_json_refused(self):
   with tempfile.TemporaryDirectory() as d:
@@ -90,7 +101,7 @@ class Gate(unittest.TestCase):
    for before,after in ((b"('n24',24,.001)",b"('n24',96,.001)"),
                         (b"Parameters(n=n,law=law,mu0=.07)",b"Parameters(n=n,law=law,mu0=.07,nu=.9)")):
     source.write_bytes(original.replace(before,after));out=Path(d)/"output"
-    r=subprocess.run([sys.executable,"-B",str(clone/"gated_run.py"),str(clone/"run_manifest.example.json"),"--output",str(out)],capture_output=True,text=True)
+    r=subprocess.run([sys.executable,"-I","-S","-B",str(clone/"gated_run.py"),str(clone/"run_manifest.example.json"),"--output",str(out)],capture_output=True,text=True)
     self.assertEqual(r.returncode,1,r.stdout+r.stderr);self.assertIn("run_checks.py",r.stdout);self.assertFalse(out.exists())
  def test_changed_contract_or_trust_manifest_refused(self):
   with tempfile.TemporaryDirectory() as d:
@@ -100,16 +111,20 @@ class Gate(unittest.TestCase):
     self.assertTrue(integrity_errors(clone));p.write_bytes(before)
  def test_existing_output_and_audit_output_refused(self):
   with tempfile.TemporaryDirectory() as d:
-   self.assertEqual(run(P/"run_manifest.example.json",Path(d)),1)
-  self.assertEqual(run(P/"run_manifest.example.json",P/"new-output"),1);self.assertFalse((P/"new-output").exists())
+   for output in (Path(d),P/"new-output"):
+    r=subprocess.run([sys.executable,"-I","-S","-B",str(P/"gated_run.py"),str(P/"run_manifest.example.json"),"--output",str(output)],capture_output=True,text=True)
+    self.assertEqual(r.returncode,1,r.stdout+r.stderr)
+    self.assertIn("Output must be a new directory",r.stdout)
+  self.assertFalse((P/"new-output").exists())
  def test_original_86_still_unchanged(self):self.assertEqual(integrity_errors(),[])
  def test_ci_uses_gate_before_real_runner(self):
   workflow=(ROOT/".github/workflows/blank.yml").read_text(encoding="utf-8")
   job=workflow[workflow.index("  corpus-chain-audit-checks:"):]
   self.assertNotIn("python run_checks.py",job)
   self.assertNotIn("python -m unittest test_audit.py",job)
-  self.assertLess(job.index("python run_manifest.py"),job.index("python gated_run.py"))
-  self.assertLess(job.index("python gated_run.py"),job.index("python test_fresh_outputs.py"))
+  self.assertLess(job.index("python -I -S run_manifest.py"),job.index("python -I -S gated_run.py"))
+  self.assertLess(job.index("python -I -S gated_run.py"),job.index("python -I -S test_fresh_outputs.py"))
+  self.assertIn("python -I -S test_parent_launch.py",job)
   for name in ("run_context.json","runner_started.json","worker_completion.json","fresh_output_regressions.json"):
    self.assertIn(name,job)
   self.assertIn("python studies/community-chain-audit/verify.py",job)
@@ -120,7 +135,7 @@ class WorkerFreshness(unittest.TestCase):
   context,contract,payload=prepare_run(P/"run_manifest.example.json",output)
   return output,context,contract,payload
  def launch_worker(self, output, payload):
-  return subprocess.run([sys.executable,"-I","-B","-",str(output/"audit-copy"),str(output/"run_context.json")],
+  return subprocess.run([sys.executable,"-I","-S","-B","-",str(output/"audit-copy"),str(output/"run_context.json")],
                         input=payload,stdout=subprocess.PIPE,stderr=subprocess.PIPE,cwd=output/"audit-copy")
  def test_checked_worker_payload_and_no_archived_results(self):
   import hashlib
@@ -150,7 +165,7 @@ Path(__file__).with_name("fake_executed").write_text("yes")
 Path(sys.argv[3]).write_text(json.dumps({"success":True,"coupled_cases":[{"completed":True}]*18,"board_alternatives":[{},{},{}],"model_functions_replaced":False}))
 """,encoding="utf-8")
    out=Path(d)/"output"
-   r=subprocess.run([sys.executable,"-B",str(clone/"gated_run.py"),str(clone/"run_manifest.example.json"),"--output",str(out)],capture_output=True,text=True)
+   r=subprocess.run([sys.executable,"-I","-S","-B",str(clone/"gated_run.py"),str(clone/"run_manifest.example.json"),"--output",str(out)],capture_output=True,text=True)
    self.assertEqual(r.returncode,1,r.stdout+r.stderr)
    self.assertIn("gate_worker.py",r.stdout)
    self.assertFalse(out.exists());self.assertFalse((clone/"fake_executed").exists())
@@ -159,7 +174,7 @@ Path(sys.argv[3]).write_text(json.dumps({"success":True,"coupled_cases":[{"compl
    clone=Path(d)/"source";shutil.copytree(P,clone,ignore=shutil.ignore_patterns("__pycache__","gate_evidence","freshness_evidence"))
    (clone/"gate_worker.py").unlink()
    out=Path(d)/"output"
-   r=subprocess.run([sys.executable,"-B",str(clone/"gated_run.py"),str(clone/"run_manifest.example.json"),"--output",str(out)],capture_output=True,text=True)
+   r=subprocess.run([sys.executable,"-I","-S","-B",str(clone/"gated_run.py"),str(clone/"run_manifest.example.json"),"--output",str(out)],capture_output=True,text=True)
    self.assertEqual(r.returncode,1);self.assertFalse(out.exists())
  def test_real_worker_rejects_preexisting_results_logs_and_markers(self):
   paths=("audit-copy/results.json","audit-copy/test_log.txt","execution_trace.json","runner_started.json","worker_completion.json")

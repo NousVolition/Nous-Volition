@@ -4,6 +4,19 @@ CI invokes gated_run.py first, then passes its new directory here. This program
 does not generate simulated successes or replace the runner/model. Faults are
 injected only into disposable copies of the actual completed execution.
 """
+import sys
+if __name__ == "__main__":
+    if not (sys.flags.isolated and sys.flags.no_site) or sys.flags.optimize:
+        raise SystemExit("Use non-optimized python -I -S test_fresh_outputs.py --run-dir NEW_RUN")
+    sys.dont_write_bytecode = True
+    from pathlib import Path
+    import types
+    for name in ("run_manifest","gated_run"):
+        path=Path(__file__).resolve().with_name(name+".py")
+        module=types.ModuleType(name)
+        module.__file__=str(path)
+        sys.modules[name]=module
+        exec(compile(path.read_bytes(),str(path),"exec"),module.__dict__)
 from pathlib import Path
 import argparse
 import json

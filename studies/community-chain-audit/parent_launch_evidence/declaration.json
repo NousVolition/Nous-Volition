@@ -1,0 +1,2866 @@
+{
+  "study": "community-chain-audit",
+  "run_id": "sealed-audit-real-run-v2",
+  "date": "2026-10-24",
+  "declared_by": "Streams and Rocks gate repair",
+  "profile": "sealed-audit-run-checks-v2",
+  "scope": "Numerical verification only; no empirical corpus validation",
+  "register_rows": [
+    "Momentum",
+    "Responses",
+    "Gradient alternatives",
+    "Transport/history",
+    "Stress"
+  ],
+  "added_rules": [
+    {
+      "id": "N01",
+      "statement": "Identify the transport S/u with the momentum S/u across separate corpus sections.",
+      "scope": "Proposed in Miro frame 13 as a dashed coupling; implemented in the solver. It is a model assembly choice, not an empirically established link.",
+      "origin": "Added numerical/assembly/verification choice; not a corpus requirement"
+    },
+    {
+      "id": "N02",
+      "statement": "Periodic two-dimensional unit square, uniform grid, unit area.",
+      "scope": "Implemented. These are mathematical coordinates, not measured mental locations; no three-dimensional generality is claimed. Mean S equals integral S only because the area is one.",
+      "origin": "Added numerical/assembly/verification choice; not a corpus requirement"
+    },
+    {
+      "id": "N03",
+      "statement": "Constant coefficients and fixed source location x0=(.5,.5). Default forcing direction e_k=(1,0).",
+      "scope": "Implemented. No observed role/source location or direction was calibrated.",
+      "origin": "Added numerical/assembly/verification choice; not a corpus requirement"
+    },
+    {
+      "id": "N04",
+      "statement": "Specific kernel K proportional to exp{[cos(2pi(x−.5))+cos(2pi(y−.5))−2]/(2pi h)^2}, normalized by its grid mean.",
+      "scope": "Implemented. The register specifies a normalized localized kernel, not this functional shape. The Fourier representation then truncates this kernel.",
+      "origin": "Added numerical/assembly/verification choice; not a corpus requirement"
+    },
+    {
+      "id": "N05",
+      "statement": "State represented by two velocity components and one signed scalar field; pressure reconstructed with mean zero.",
+      "scope": "Implemented. Pressure's zero mean is a gauge choice. No independent Smoke or Clay state is present.",
+      "origin": "Added numerical/assembly/verification choice; not a corpus requirement"
+    },
+    {
+      "id": "N06",
+      "statement": "Fourier spatial differentiation and Galerkin truncation, retaining only modes with 3|m_x|<n and 3|m_y|<n.",
+      "scope": "Implemented to control aliasing. This changes the finite numerical representation, not the written continuum equations.",
+      "origin": "Added numerical/assembly/verification choice; not a corpus requirement"
+    },
+    {
+      "id": "N07",
+      "statement": "Helmholtz projection of velocity right-hand side and post-step projection to remove roundoff divergence. Preserve velocity zero mode.",
+      "scope": "Implemented incompressibility treatment.",
+      "origin": "Added numerical/assembly/verification choice; not a corpus requirement"
+    },
+    {
+      "id": "N08",
+      "statement": "Classical fourth-order Runge–Kutta time integration. U is constant on each supplied interval; A advances at every intermediate stage.",
+      "scope": "Implemented. Piecewise-constant input is an interpolation assumption, not a corpus requirement.",
+      "origin": "Added numerical/assembly/verification choice; not a corpus requirement"
+    },
+    {
+      "id": "N09",
+      "statement": "Time-step cap .45/[max(nu,D)*max(1,max retained k²)]. Steps=ceil(duration/min(requested_dt,cap)); actual_dt=duration/steps.",
+      "scope": "Implemented numerical choice. Requested halving is not necessarily actual halving; actual steps must be checked. This diffusion cap is not a general proof of nonlinear stability.",
+      "origin": "Added numerical/assembly/verification choice; not a corpus requirement"
+    },
+    {
+      "id": "N10",
+      "statement": "Initial u=v[sin(2pi x)cos(2pi y),−cos(2pi x)sin(2pi y)]; S=M0+b cos(2pi x)cos(2pi y).",
+      "scope": "Implemented initializer. Shape, texture b and speed v are synthetic assumptions, not measured person states.",
+      "origin": "Added numerical/assembly/verification choice; not a corpus requirement"
+    },
+    {
+      "id": "N11",
+      "statement": "Default numerical coefficients: n=24, nu=.02, D=.01, rho=1, sigma=.1, Gamma=.05, epsilon=.1, h=.12, gamma=kappa=1, Ubaseline=0, raw gradient, delta=.01. Default texture=.04, speed=.1 and total S=0.",
+      "scope": "Code defaults; actual runners override some. mu0 has no accepted implicit default in the audited wrapper. None is a measured psychological constant.",
+      "origin": "Added numerical/assembly/verification choice; not a corpus requirement"
+    },
+    {
+      "id": "N12",
+      "statement": "Explicit person ID, event reference, initial-history basis, Astart, start time and requested step required. Role must be Smoke/Clay/both/unattributed.",
+      "scope": "Added provenance contract. Role membership changes metadata only; swapping Smoke/Clay leaves equations unchanged.",
+      "origin": "Added numerical/assembly/verification choice; not a corpus requirement"
+    },
+    {
+      "id": "N13",
+      "statement": "Refuse cross-person joins, interval gaps/overlaps, missing/nonfinite U or time and nonpositive duration/step. Contiguity tolerance 1e−12.",
+      "scope": "Added input policy. Missing history is not set to zero. The policy rejects unknown intervals; it does not reconstruct their history.",
+      "origin": "Added numerical/assembly/verification choice; not a corpus requirement"
+    },
+    {
+      "id": "N14",
+      "statement": "Even integer grid n>=12; finite coefficients; nu>0, D>=0, rho>0, sigma>=0, Gamma>=0, h>0, mu0>0, epsilon>0, delta>0; two-component finite direction with approximately unit norm.",
+      "scope": "Implemented parameter-domain restrictions. Unit norm uses NumPy `isclose` defaults (rtol=1e−5, atol=1e−8), not exact symbolic equality. Gamma here means threshold; gamma input-gain remains finite without a positivity guard.",
+      "origin": "Added numerical/assembly/verification choice; not a corpus requirement"
+    },
+    {
+      "id": "N15",
+      "statement": "Initial spectral shape (3,n,n), resolved modes, real physical field and divergence-free velocity checked to 1e−10.",
+      "scope": "Added finite precision acceptance policy. Finite output is checked during evolution.",
+      "origin": "Added numerical/assembly/verification choice; not a corpus requirement"
+    },
+    {
+      "id": "N16",
+      "statement": "Mass, pressure/stress/velocity RMS, kinetic energy, force work, viscous dissipation and divergence are diagnostics. Mass uses the exact interval integral kappa[Astart dt + gamma DeltaU dt²/2].",
+      "scope": "Derived diagnostic consequences, not independent empirical measurements. Energy is .5 mean|u|²; work=mean(u·f), viscous loss=nu mean|grad u|².",
+      "origin": "Added numerical/assembly/verification choice; not a corpus requirement"
+    },
+    {
+      "id": "N17",
+      "statement": "Grid comparison uses Fourier coefficients normalized by n², retaining common modes; RMS discrepancy is sqrt(sum|difference|²).",
+      "scope": "Existing audit comparison rule; does not itself measure unresolved high-frequency error.",
+      "origin": "Added numerical/assembly/verification choice; not a corpus requirement"
+    },
+    {
+      "id": "N18",
+      "statement": "Actual refinement requires same observation times and strictly smaller actual steps with more steps in each interval.",
+      "scope": "Added verification rule.",
+      "origin": "Added numerical/assembly/verification choice; not a corpus requirement"
+    },
+    {
+      "id": "N19",
+      "statement": "Existing synthetic audit: grids24,48,72; requested dt=.001 plus an actual-half-step run; all three activations; M0=.3,Astart=.2,mu0=.07; U=+1 then−1 over two .125 intervals; swapped role labels; S+10 offset.",
+      "scope": "Already executed earlier. These inputs are numerical fixtures, not real people. Test acceptance includes <1e−12 conservation/energy/divergence checks, analytic solution atol=1e−11 and decreasing successive grid discrepancy.",
+      "origin": "Added numerical/assembly/verification choice; not a corpus requirement"
+    },
+    {
+      "id": "N20",
+      "statement": "Separate Miro alternatives: A'=gamma DeltaU−lambda A and/or S relaxation −mu S, checked through [A,M,1] matrix exponentials with lambda or mu=1 and finite ±1 pulses.",
+      "scope": "Already checked as alternatives in the previous audit. These added equations are not inserted into the unchanged corpus solver and are not validated forgetting laws.",
+      "origin": "Added numerical/assembly/verification choice; not a corpus requirement"
+    }
+  ],
+  "inherits": [
+    {
+      "study": "community_two_in_one_field",
+      "status": "numerical fixture",
+      "artifact": "legacy_field.py",
+      "sha256": "00b50a93ae413d46109327ccf0c08e8e07d00028313eaa0da87d765e58705f35",
+      "basis": "Pinned legacy PDE implementation copied from this study; no empirical validity inherited"
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "sharp/n24",
+      "parameters": {
+        "n": 24,
+        "nu": 0.02,
+        "diffusivity": 0.01,
+        "rho": 1.0,
+        "sigma": 0.1,
+        "threshold": 0.05,
+        "epsilon": 0.1,
+        "h": 0.12,
+        "gamma": 1.0,
+        "kappa": 1.0,
+        "baseline": 0.0,
+        "law": "sharp",
+        "direction": [
+          1.0,
+          0.0
+        ],
+        "mu0": 0.07,
+        "gradient_law": "raw",
+        "delta": 0.01
+      },
+      "person": "synthetic",
+      "initial": {
+        "total": 0.3,
+        "texture": 0.04,
+        "speed": 0.1,
+        "offset": 0.0,
+        "A": 0.2,
+        "start": 0.0
+      },
+      "max_dt": 0.001,
+      "intervals": [
+        {
+          "person": "synthetic",
+          "start": 0.0,
+          "end": 0.125,
+          "utility": 1.0,
+          "role": "Smoke",
+          "event_ref": "fixture:first"
+        },
+        {
+          "person": "synthetic",
+          "start": 0.125,
+          "end": 0.25,
+          "utility": -1.0,
+          "role": "Clay",
+          "event_ref": "fixture:second"
+        }
+      ],
+      "initial_state_basis": "declared synthetic nonzero prehistory"
+    },
+    {
+      "case_id": "sharp/n48",
+      "parameters": {
+        "n": 48,
+        "nu": 0.02,
+        "diffusivity": 0.01,
+        "rho": 1.0,
+        "sigma": 0.1,
+        "threshold": 0.05,
+        "epsilon": 0.1,
+        "h": 0.12,
+        "gamma": 1.0,
+        "kappa": 1.0,
+        "baseline": 0.0,
+        "law": "sharp",
+        "direction": [
+          1.0,
+          0.0
+        ],
+        "mu0": 0.07,
+        "gradient_law": "raw",
+        "delta": 0.01
+      },
+      "person": "synthetic",
+      "initial": {
+        "total": 0.3,
+        "texture": 0.04,
+        "speed": 0.1,
+        "offset": 0.0,
+        "A": 0.2,
+        "start": 0.0
+      },
+      "max_dt": 0.001,
+      "intervals": [
+        {
+          "person": "synthetic",
+          "start": 0.0,
+          "end": 0.125,
+          "utility": 1.0,
+          "role": "Smoke",
+          "event_ref": "fixture:first"
+        },
+        {
+          "person": "synthetic",
+          "start": 0.125,
+          "end": 0.25,
+          "utility": -1.0,
+          "role": "Clay",
+          "event_ref": "fixture:second"
+        }
+      ],
+      "initial_state_basis": "declared synthetic nonzero prehistory"
+    },
+    {
+      "case_id": "sharp/n72",
+      "parameters": {
+        "n": 72,
+        "nu": 0.02,
+        "diffusivity": 0.01,
+        "rho": 1.0,
+        "sigma": 0.1,
+        "threshold": 0.05,
+        "epsilon": 0.1,
+        "h": 0.12,
+        "gamma": 1.0,
+        "kappa": 1.0,
+        "baseline": 0.0,
+        "law": "sharp",
+        "direction": [
+          1.0,
+          0.0
+        ],
+        "mu0": 0.07,
+        "gradient_law": "raw",
+        "delta": 0.01
+      },
+      "person": "synthetic",
+      "initial": {
+        "total": 0.3,
+        "texture": 0.04,
+        "speed": 0.1,
+        "offset": 0.0,
+        "A": 0.2,
+        "start": 0.0
+      },
+      "max_dt": 0.001,
+      "intervals": [
+        {
+          "person": "synthetic",
+          "start": 0.0,
+          "end": 0.125,
+          "utility": 1.0,
+          "role": "Smoke",
+          "event_ref": "fixture:first"
+        },
+        {
+          "person": "synthetic",
+          "start": 0.125,
+          "end": 0.25,
+          "utility": -1.0,
+          "role": "Clay",
+          "event_ref": "fixture:second"
+        }
+      ],
+      "initial_state_basis": "declared synthetic nonzero prehistory"
+    },
+    {
+      "case_id": "sharp/n48_actual_half",
+      "parameters": {
+        "n": 48,
+        "nu": 0.02,
+        "diffusivity": 0.01,
+        "rho": 1.0,
+        "sigma": 0.1,
+        "threshold": 0.05,
+        "epsilon": 0.1,
+        "h": 0.12,
+        "gamma": 1.0,
+        "kappa": 1.0,
+        "baseline": 0.0,
+        "law": "sharp",
+        "direction": [
+          1.0,
+          0.0
+        ],
+        "mu0": 0.07,
+        "gradient_law": "raw",
+        "delta": 0.01
+      },
+      "person": "synthetic",
+      "initial": {
+        "total": 0.3,
+        "texture": 0.04,
+        "speed": 0.1,
+        "offset": 0.0,
+        "A": 0.2,
+        "start": 0.0
+      },
+      "max_dt": 0.0005,
+      "intervals": [
+        {
+          "person": "synthetic",
+          "start": 0.0,
+          "end": 0.125,
+          "utility": 1.0,
+          "role": "Smoke",
+          "event_ref": "fixture:first"
+        },
+        {
+          "person": "synthetic",
+          "start": 0.125,
+          "end": 0.25,
+          "utility": -1.0,
+          "role": "Clay",
+          "event_ref": "fixture:second"
+        }
+      ],
+      "initial_state_basis": "same synthetic prehistory"
+    },
+    {
+      "case_id": "sharp/role_swap",
+      "parameters": {
+        "n": 48,
+        "nu": 0.02,
+        "diffusivity": 0.01,
+        "rho": 1.0,
+        "sigma": 0.1,
+        "threshold": 0.05,
+        "epsilon": 0.1,
+        "h": 0.12,
+        "gamma": 1.0,
+        "kappa": 1.0,
+        "baseline": 0.0,
+        "law": "sharp",
+        "direction": [
+          1.0,
+          0.0
+        ],
+        "mu0": 0.07,
+        "gradient_law": "raw",
+        "delta": 0.01
+      },
+      "person": "synthetic",
+      "initial": {
+        "total": 0.3,
+        "texture": 0.04,
+        "speed": 0.1,
+        "offset": 0.0,
+        "A": 0.2,
+        "start": 0.0
+      },
+      "max_dt": 0.001,
+      "intervals": [
+        {
+          "person": "synthetic",
+          "start": 0.0,
+          "end": 0.125,
+          "utility": 1.0,
+          "role": "Clay",
+          "event_ref": "fixture:first"
+        },
+        {
+          "person": "synthetic",
+          "start": 0.125,
+          "end": 0.25,
+          "utility": -1.0,
+          "role": "Smoke",
+          "event_ref": "fixture:second"
+        }
+      ],
+      "initial_state_basis": "same synthetic prehistory"
+    },
+    {
+      "case_id": "sharp/S_offset",
+      "parameters": {
+        "n": 48,
+        "nu": 0.02,
+        "diffusivity": 0.01,
+        "rho": 1.0,
+        "sigma": 0.1,
+        "threshold": 0.05,
+        "epsilon": 0.1,
+        "h": 0.12,
+        "gamma": 1.0,
+        "kappa": 1.0,
+        "baseline": 0.0,
+        "law": "sharp",
+        "direction": [
+          1.0,
+          0.0
+        ],
+        "mu0": 0.07,
+        "gradient_law": "raw",
+        "delta": 0.01
+      },
+      "person": "synthetic",
+      "initial": {
+        "total": 0.3,
+        "texture": 0.04,
+        "speed": 0.1,
+        "offset": 10.0,
+        "A": 0.2,
+        "start": 0.0
+      },
+      "max_dt": 0.001,
+      "intervals": [
+        {
+          "person": "synthetic",
+          "start": 0.0,
+          "end": 0.125,
+          "utility": 1.0,
+          "role": "Smoke",
+          "event_ref": "fixture:first"
+        },
+        {
+          "person": "synthetic",
+          "start": 0.125,
+          "end": 0.25,
+          "utility": -1.0,
+          "role": "Clay",
+          "event_ref": "fixture:second"
+        }
+      ],
+      "initial_state_basis": "declared S zero-shift"
+    },
+    {
+      "case_id": "tanh/n24",
+      "parameters": {
+        "n": 24,
+        "nu": 0.02,
+        "diffusivity": 0.01,
+        "rho": 1.0,
+        "sigma": 0.1,
+        "threshold": 0.05,
+        "epsilon": 0.1,
+        "h": 0.12,
+        "gamma": 1.0,
+        "kappa": 1.0,
+        "baseline": 0.0,
+        "law": "tanh",
+        "direction": [
+          1.0,
+          0.0
+        ],
+        "mu0": 0.07,
+        "gradient_law": "raw",
+        "delta": 0.01
+      },
+      "person": "synthetic",
+      "initial": {
+        "total": 0.3,
+        "texture": 0.04,
+        "speed": 0.1,
+        "offset": 0.0,
+        "A": 0.2,
+        "start": 0.0
+      },
+      "max_dt": 0.001,
+      "intervals": [
+        {
+          "person": "synthetic",
+          "start": 0.0,
+          "end": 0.125,
+          "utility": 1.0,
+          "role": "Smoke",
+          "event_ref": "fixture:first"
+        },
+        {
+          "person": "synthetic",
+          "start": 0.125,
+          "end": 0.25,
+          "utility": -1.0,
+          "role": "Clay",
+          "event_ref": "fixture:second"
+        }
+      ],
+      "initial_state_basis": "declared synthetic nonzero prehistory"
+    },
+    {
+      "case_id": "tanh/n48",
+      "parameters": {
+        "n": 48,
+        "nu": 0.02,
+        "diffusivity": 0.01,
+        "rho": 1.0,
+        "sigma": 0.1,
+        "threshold": 0.05,
+        "epsilon": 0.1,
+        "h": 0.12,
+        "gamma": 1.0,
+        "kappa": 1.0,
+        "baseline": 0.0,
+        "law": "tanh",
+        "direction": [
+          1.0,
+          0.0
+        ],
+        "mu0": 0.07,
+        "gradient_law": "raw",
+        "delta": 0.01
+      },
+      "person": "synthetic",
+      "initial": {
+        "total": 0.3,
+        "texture": 0.04,
+        "speed": 0.1,
+        "offset": 0.0,
+        "A": 0.2,
+        "start": 0.0
+      },
+      "max_dt": 0.001,
+      "intervals": [
+        {
+          "person": "synthetic",
+          "start": 0.0,
+          "end": 0.125,
+          "utility": 1.0,
+          "role": "Smoke",
+          "event_ref": "fixture:first"
+        },
+        {
+          "person": "synthetic",
+          "start": 0.125,
+          "end": 0.25,
+          "utility": -1.0,
+          "role": "Clay",
+          "event_ref": "fixture:second"
+        }
+      ],
+      "initial_state_basis": "declared synthetic nonzero prehistory"
+    },
+    {
+      "case_id": "tanh/n72",
+      "parameters": {
+        "n": 72,
+        "nu": 0.02,
+        "diffusivity": 0.01,
+        "rho": 1.0,
+        "sigma": 0.1,
+        "threshold": 0.05,
+        "epsilon": 0.1,
+        "h": 0.12,
+        "gamma": 1.0,
+        "kappa": 1.0,
+        "baseline": 0.0,
+        "law": "tanh",
+        "direction": [
+          1.0,
+          0.0
+        ],
+        "mu0": 0.07,
+        "gradient_law": "raw",
+        "delta": 0.01
+      },
+      "person": "synthetic",
+      "initial": {
+        "total": 0.3,
+        "texture": 0.04,
+        "speed": 0.1,
+        "offset": 0.0,
+        "A": 0.2,
+        "start": 0.0
+      },
+      "max_dt": 0.001,
+      "intervals": [
+        {
+          "person": "synthetic",
+          "start": 0.0,
+          "end": 0.125,
+          "utility": 1.0,
+          "role": "Smoke",
+          "event_ref": "fixture:first"
+        },
+        {
+          "person": "synthetic",
+          "start": 0.125,
+          "end": 0.25,
+          "utility": -1.0,
+          "role": "Clay",
+          "event_ref": "fixture:second"
+        }
+      ],
+      "initial_state_basis": "declared synthetic nonzero prehistory"
+    },
+    {
+      "case_id": "tanh/n48_actual_half",
+      "parameters": {
+        "n": 48,
+        "nu": 0.02,
+        "diffusivity": 0.01,
+        "rho": 1.0,
+        "sigma": 0.1,
+        "threshold": 0.05,
+        "epsilon": 0.1,
+        "h": 0.12,
+        "gamma": 1.0,
+        "kappa": 1.0,
+        "baseline": 0.0,
+        "law": "tanh",
+        "direction": [
+          1.0,
+          0.0
+        ],
+        "mu0": 0.07,
+        "gradient_law": "raw",
+        "delta": 0.01
+      },
+      "person": "synthetic",
+      "initial": {
+        "total": 0.3,
+        "texture": 0.04,
+        "speed": 0.1,
+        "offset": 0.0,
+        "A": 0.2,
+        "start": 0.0
+      },
+      "max_dt": 0.0005,
+      "intervals": [
+        {
+          "person": "synthetic",
+          "start": 0.0,
+          "end": 0.125,
+          "utility": 1.0,
+          "role": "Smoke",
+          "event_ref": "fixture:first"
+        },
+        {
+          "person": "synthetic",
+          "start": 0.125,
+          "end": 0.25,
+          "utility": -1.0,
+          "role": "Clay",
+          "event_ref": "fixture:second"
+        }
+      ],
+      "initial_state_basis": "same synthetic prehistory"
+    },
+    {
+      "case_id": "tanh/role_swap",
+      "parameters": {
+        "n": 48,
+        "nu": 0.02,
+        "diffusivity": 0.01,
+        "rho": 1.0,
+        "sigma": 0.1,
+        "threshold": 0.05,
+        "epsilon": 0.1,
+        "h": 0.12,
+        "gamma": 1.0,
+        "kappa": 1.0,
+        "baseline": 0.0,
+        "law": "tanh",
+        "direction": [
+          1.0,
+          0.0
+        ],
+        "mu0": 0.07,
+        "gradient_law": "raw",
+        "delta": 0.01
+      },
+      "person": "synthetic",
+      "initial": {
+        "total": 0.3,
+        "texture": 0.04,
+        "speed": 0.1,
+        "offset": 0.0,
+        "A": 0.2,
+        "start": 0.0
+      },
+      "max_dt": 0.001,
+      "intervals": [
+        {
+          "person": "synthetic",
+          "start": 0.0,
+          "end": 0.125,
+          "utility": 1.0,
+          "role": "Clay",
+          "event_ref": "fixture:first"
+        },
+        {
+          "person": "synthetic",
+          "start": 0.125,
+          "end": 0.25,
+          "utility": -1.0,
+          "role": "Smoke",
+          "event_ref": "fixture:second"
+        }
+      ],
+      "initial_state_basis": "same synthetic prehistory"
+    },
+    {
+      "case_id": "tanh/S_offset",
+      "parameters": {
+        "n": 48,
+        "nu": 0.02,
+        "diffusivity": 0.01,
+        "rho": 1.0,
+        "sigma": 0.1,
+        "threshold": 0.05,
+        "epsilon": 0.1,
+        "h": 0.12,
+        "gamma": 1.0,
+        "kappa": 1.0,
+        "baseline": 0.0,
+        "law": "tanh",
+        "direction": [
+          1.0,
+          0.0
+        ],
+        "mu0": 0.07,
+        "gradient_law": "raw",
+        "delta": 0.01
+      },
+      "person": "synthetic",
+      "initial": {
+        "total": 0.3,
+        "texture": 0.04,
+        "speed": 0.1,
+        "offset": 10.0,
+        "A": 0.2,
+        "start": 0.0
+      },
+      "max_dt": 0.001,
+      "intervals": [
+        {
+          "person": "synthetic",
+          "start": 0.0,
+          "end": 0.125,
+          "utility": 1.0,
+          "role": "Smoke",
+          "event_ref": "fixture:first"
+        },
+        {
+          "person": "synthetic",
+          "start": 0.125,
+          "end": 0.25,
+          "utility": -1.0,
+          "role": "Clay",
+          "event_ref": "fixture:second"
+        }
+      ],
+      "initial_state_basis": "declared S zero-shift"
+    },
+    {
+      "case_id": "smooth_off/n24",
+      "parameters": {
+        "n": 24,
+        "nu": 0.02,
+        "diffusivity": 0.01,
+        "rho": 1.0,
+        "sigma": 0.1,
+        "threshold": 0.05,
+        "epsilon": 0.1,
+        "h": 0.12,
+        "gamma": 1.0,
+        "kappa": 1.0,
+        "baseline": 0.0,
+        "law": "smooth_off",
+        "direction": [
+          1.0,
+          0.0
+        ],
+        "mu0": 0.07,
+        "gradient_law": "raw",
+        "delta": 0.01
+      },
+      "person": "synthetic",
+      "initial": {
+        "total": 0.3,
+        "texture": 0.04,
+        "speed": 0.1,
+        "offset": 0.0,
+        "A": 0.2,
+        "start": 0.0
+      },
+      "max_dt": 0.001,
+      "intervals": [
+        {
+          "person": "synthetic",
+          "start": 0.0,
+          "end": 0.125,
+          "utility": 1.0,
+          "role": "Smoke",
+          "event_ref": "fixture:first"
+        },
+        {
+          "person": "synthetic",
+          "start": 0.125,
+          "end": 0.25,
+          "utility": -1.0,
+          "role": "Clay",
+          "event_ref": "fixture:second"
+        }
+      ],
+      "initial_state_basis": "declared synthetic nonzero prehistory"
+    },
+    {
+      "case_id": "smooth_off/n48",
+      "parameters": {
+        "n": 48,
+        "nu": 0.02,
+        "diffusivity": 0.01,
+        "rho": 1.0,
+        "sigma": 0.1,
+        "threshold": 0.05,
+        "epsilon": 0.1,
+        "h": 0.12,
+        "gamma": 1.0,
+        "kappa": 1.0,
+        "baseline": 0.0,
+        "law": "smooth_off",
+        "direction": [
+          1.0,
+          0.0
+        ],
+        "mu0": 0.07,
+        "gradient_law": "raw",
+        "delta": 0.01
+      },
+      "person": "synthetic",
+      "initial": {
+        "total": 0.3,
+        "texture": 0.04,
+        "speed": 0.1,
+        "offset": 0.0,
+        "A": 0.2,
+        "start": 0.0
+      },
+      "max_dt": 0.001,
+      "intervals": [
+        {
+          "person": "synthetic",
+          "start": 0.0,
+          "end": 0.125,
+          "utility": 1.0,
+          "role": "Smoke",
+          "event_ref": "fixture:first"
+        },
+        {
+          "person": "synthetic",
+          "start": 0.125,
+          "end": 0.25,
+          "utility": -1.0,
+          "role": "Clay",
+          "event_ref": "fixture:second"
+        }
+      ],
+      "initial_state_basis": "declared synthetic nonzero prehistory"
+    },
+    {
+      "case_id": "smooth_off/n72",
+      "parameters": {
+        "n": 72,
+        "nu": 0.02,
+        "diffusivity": 0.01,
+        "rho": 1.0,
+        "sigma": 0.1,
+        "threshold": 0.05,
+        "epsilon": 0.1,
+        "h": 0.12,
+        "gamma": 1.0,
+        "kappa": 1.0,
+        "baseline": 0.0,
+        "law": "smooth_off",
+        "direction": [
+          1.0,
+          0.0
+        ],
+        "mu0": 0.07,
+        "gradient_law": "raw",
+        "delta": 0.01
+      },
+      "person": "synthetic",
+      "initial": {
+        "total": 0.3,
+        "texture": 0.04,
+        "speed": 0.1,
+        "offset": 0.0,
+        "A": 0.2,
+        "start": 0.0
+      },
+      "max_dt": 0.001,
+      "intervals": [
+        {
+          "person": "synthetic",
+          "start": 0.0,
+          "end": 0.125,
+          "utility": 1.0,
+          "role": "Smoke",
+          "event_ref": "fixture:first"
+        },
+        {
+          "person": "synthetic",
+          "start": 0.125,
+          "end": 0.25,
+          "utility": -1.0,
+          "role": "Clay",
+          "event_ref": "fixture:second"
+        }
+      ],
+      "initial_state_basis": "declared synthetic nonzero prehistory"
+    },
+    {
+      "case_id": "smooth_off/n48_actual_half",
+      "parameters": {
+        "n": 48,
+        "nu": 0.02,
+        "diffusivity": 0.01,
+        "rho": 1.0,
+        "sigma": 0.1,
+        "threshold": 0.05,
+        "epsilon": 0.1,
+        "h": 0.12,
+        "gamma": 1.0,
+        "kappa": 1.0,
+        "baseline": 0.0,
+        "law": "smooth_off",
+        "direction": [
+          1.0,
+          0.0
+        ],
+        "mu0": 0.07,
+        "gradient_law": "raw",
+        "delta": 0.01
+      },
+      "person": "synthetic",
+      "initial": {
+        "total": 0.3,
+        "texture": 0.04,
+        "speed": 0.1,
+        "offset": 0.0,
+        "A": 0.2,
+        "start": 0.0
+      },
+      "max_dt": 0.0005,
+      "intervals": [
+        {
+          "person": "synthetic",
+          "start": 0.0,
+          "end": 0.125,
+          "utility": 1.0,
+          "role": "Smoke",
+          "event_ref": "fixture:first"
+        },
+        {
+          "person": "synthetic",
+          "start": 0.125,
+          "end": 0.25,
+          "utility": -1.0,
+          "role": "Clay",
+          "event_ref": "fixture:second"
+        }
+      ],
+      "initial_state_basis": "same synthetic prehistory"
+    },
+    {
+      "case_id": "smooth_off/role_swap",
+      "parameters": {
+        "n": 48,
+        "nu": 0.02,
+        "diffusivity": 0.01,
+        "rho": 1.0,
+        "sigma": 0.1,
+        "threshold": 0.05,
+        "epsilon": 0.1,
+        "h": 0.12,
+        "gamma": 1.0,
+        "kappa": 1.0,
+        "baseline": 0.0,
+        "law": "smooth_off",
+        "direction": [
+          1.0,
+          0.0
+        ],
+        "mu0": 0.07,
+        "gradient_law": "raw",
+        "delta": 0.01
+      },
+      "person": "synthetic",
+      "initial": {
+        "total": 0.3,
+        "texture": 0.04,
+        "speed": 0.1,
+        "offset": 0.0,
+        "A": 0.2,
+        "start": 0.0
+      },
+      "max_dt": 0.001,
+      "intervals": [
+        {
+          "person": "synthetic",
+          "start": 0.0,
+          "end": 0.125,
+          "utility": 1.0,
+          "role": "Clay",
+          "event_ref": "fixture:first"
+        },
+        {
+          "person": "synthetic",
+          "start": 0.125,
+          "end": 0.25,
+          "utility": -1.0,
+          "role": "Smoke",
+          "event_ref": "fixture:second"
+        }
+      ],
+      "initial_state_basis": "same synthetic prehistory"
+    },
+    {
+      "case_id": "smooth_off/S_offset",
+      "parameters": {
+        "n": 48,
+        "nu": 0.02,
+        "diffusivity": 0.01,
+        "rho": 1.0,
+        "sigma": 0.1,
+        "threshold": 0.05,
+        "epsilon": 0.1,
+        "h": 0.12,
+        "gamma": 1.0,
+        "kappa": 1.0,
+        "baseline": 0.0,
+        "law": "smooth_off",
+        "direction": [
+          1.0,
+          0.0
+        ],
+        "mu0": 0.07,
+        "gradient_law": "raw",
+        "delta": 0.01
+      },
+      "person": "synthetic",
+      "initial": {
+        "total": 0.3,
+        "texture": 0.04,
+        "speed": 0.1,
+        "offset": 10.0,
+        "A": 0.2,
+        "start": 0.0
+      },
+      "max_dt": 0.001,
+      "intervals": [
+        {
+          "person": "synthetic",
+          "start": 0.0,
+          "end": 0.125,
+          "utility": 1.0,
+          "role": "Smoke",
+          "event_ref": "fixture:first"
+        },
+        {
+          "person": "synthetic",
+          "start": 0.125,
+          "end": 0.25,
+          "utility": -1.0,
+          "role": "Clay",
+          "event_ref": "fixture:second"
+        }
+      ],
+      "initial_state_basis": "declared S zero-shift"
+    }
+  ],
+  "board_alternatives": [
+    {
+      "name": "A_decay_balanced",
+      "lam": 1,
+      "mu": 0,
+      "inputs": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          38,
+          0
+        ]
+      ]
+    },
+    {
+      "name": "A_decay_reversed",
+      "lam": 1,
+      "mu": 0,
+      "inputs": [
+        [
+          1,
+          -1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          38,
+          0
+        ]
+      ]
+    },
+    {
+      "name": "S_relaxation_finite_pulse",
+      "lam": 0,
+      "mu": 1,
+      "inputs": [
+        [
+          1,
+          1
+        ],
+        [
+          39,
+          0
+        ]
+      ]
+    }
+  ],
+  "verification_program": "import unittest, numpy as np\nfrom dataclasses import replace\nfrom audited_field import Field,Parameters,evolve,excess_gradient,refinement_is_distinct\nfrom legacy_field import Field as LegacyField,Parameters as LegacyParameters,activation\n\nclass Conformance(unittest.TestCase):\n def setUp(self):self.p=Parameters(n=24,mu0=.02);self.f=Field(self.p);self.z,_=self.f.initial(.3)\n def test_full_rhs_matches_pinned_solver_all_laws(self):\n  for law in ('sharp','tanh','smooth_off'):\n   f=Field(replace(self.p,law=law));legacy=LegacyField(LegacyParameters(n=24,law=law))\n   for new,old in zip(f.terms(self.z,.27),legacy.terms(self.z,.27)):np.testing.assert_array_equal(new,old)\n def test_missing_stress_coefficient_rejected(self):\n  with self.assertRaises(ValueError):Field(Parameters())\n def test_stress_independent_coefficient(self):\n  other=Field(replace(self.p,mu0=.06))\n  np.testing.assert_allclose(other.stress(self.z),3*self.f.stress(self.z),atol=1e-14)\n  np.testing.assert_array_equal(other.terms(self.z,.1)[0],self.f.terms(self.z,.1)[0])\n def test_nonfinite_parameters(self):\n  for key in ('nu','gamma','kappa','baseline','mu0','epsilon'):\n   with self.subTest(key=key),self.assertRaises(ValueError):Field(replace(self.p,**{key:float('nan')}))\n def test_bad_direction_and_grid(self):\n  for p in (replace(self.p,n=24.),replace(self.p,direction=(1.,0.,0.)),replace(self.p,law='invented')):\n   with self.assertRaises(ValueError):Field(p)\n def test_three_responses_retain_distinctions(self):\n  q=np.array([-1.,0.,1.]);np.testing.assert_array_equal(activation(q,'sharp',1),[0,0,1])\n  np.testing.assert_allclose(activation(q,'tanh',1),[-.11920292202211755,0,.8807970779778824])\n  np.testing.assert_allclose(activation(q,'smooth_off',1),[0,0,np.exp(-1)])\n def test_regularization_cutoffs(self):\n  G=.4;delta=.3;cut=np.sqrt(G*G+2*delta*G)\n  self.assertAlmostEqual(float(excess_gradient(cut,G,'regularized',delta)),0)\n  self.assertAlmostEqual(float(excess_gradient(G,G,'calibrated',delta)),0)\n  self.assertLess(excess_gradient(G,G,'regularized',delta),0)\n def interval(self,**kwargs):return dict(person='fixture',start=3.,end=3.1,utility=.7,role='Smoke',event_ref='synthetic:1',**kwargs)\n def evolve(self,**kwargs):\n  args=dict(person='fixture',intervals=[self.interval()],p=self.p,z=self.z,A=.2,start=3.,initial_state_basis='declared synthetic prehistory',max_dt=.001)\n  args.update(kwargs);return evolve(**args)\n def test_nonzero_history_mass_identity(self):\n  z,A,rows=self.evolve();self.assertAlmostEqual(A,.27,places=12);self.assertAlmostEqual(rows[-1]['mass'],.3235,places=12)\n def test_split_evolution_preserves_history(self):\n  # Binary-exact intervals make the discrete steps identical; otherwise ceil\n  # can create 101 steps versus 50+51 and this is a different integration grid.\n  i=dict(self.interval(),end=3.125);a=dict(i,end=3.0625);b=dict(i,start=3.0625)\n  whole=self.evolve(intervals=[i],max_dt=1/1024);first=self.evolve(intervals=[a],max_dt=1/1024);second=self.evolve(intervals=[b],z=first[0],A=first[1],start=3.0625,max_dt=1/1024)\n  self.assertEqual(whole[2][0]['steps'],first[2][0]['steps']+second[2][0]['steps'])\n  np.testing.assert_allclose(whole[0],second[0],atol=1e-11);self.assertAlmostEqual(whole[1],second[1])\n def test_missing_and_nonfinite_time(self):\n  for overrides in ({'A':None},{'start':float('nan')},{'max_dt':0.},{'max_dt':-1.},{'initial_state_basis':''}):\n   with self.assertRaises((ValueError,TypeError)):self.evolve(**overrides)\n def test_gap_overlap_crossperson_rejected(self):\n  for changes in ({'start':3.01},{'start':2.99},{'person':'another'},{'end':float('inf')},{'utility':float('nan')}):\n   with self.assertRaises(ValueError):self.evolve(intervals=[dict(self.interval(),**changes)])\n def test_imaginary_physical_state_rejected(self):\n  z=self.z.copy();z[2,0,0]+=1j\n  with self.assertRaises(ValueError):self.evolve(z=z)\n def test_role_labels_do_not_invent_a_force(self):\n  a=self.evolve();b=self.evolve(intervals=[dict(self.interval(),role='Clay')]);np.testing.assert_array_equal(a[0],b[0])\n def test_no_implicit_run_history(self):\n  with self.assertRaises(ValueError):self.f.run([1.])\n def test_capped_steps_not_refinement(self):\n  a=self.evolve(max_dt=.1)[2];b=self.evolve(max_dt=.05)[2]\n  self.assertFalse(refinement_is_distinct(a,b));c=self.evolve(max_dt=a[0]['dt']/2)[2];self.assertTrue(refinement_is_distinct(a,c))\n def test_pressure_and_energy_identity(self):\n  dz,ph,_,_,force=self.f.terms(self.z,.2);d=self.f.diagnostics(self.z,.2)\n  self.assertLess(abs(d['energy_identity_residual']),1e-12);self.assertLess(d['divergence_rms'],1e-12)\n def test_uniform_advection_diffusion_manufactured_solution(self):\n  p=replace(self.p,sigma=0);f=Field(p);x=2*np.pi*f.x\n  physical=np.array([np.full_like(x,.4),np.zeros_like(x),np.sin(x)])\n  z=f.fft(physical)*f.mask\n  out,_,_=evolve('fixture',[dict(person='fixture',start=0.,end=.1,utility=0.,role='unattributed',event_ref='analytic')],p,z=z,A=0.,start=0.,initial_state_basis='analytic zero source',max_dt=.0005)\n  exact=np.exp(-p.diffusivity*(2*np.pi)**2*.1)*np.sin(x-2*np.pi*.4*.1)\n  np.testing.assert_allclose(f.real(out[2]),exact,atol=1e-11)\n\nif __name__=='__main__':unittest.main()\n",
+  "numeric_literals": [
+    {
+      "file": "audited_field.py",
+      "line": 14,
+      "value": "0.01"
+    },
+    {
+      "file": "audited_field.py",
+      "line": 16,
+      "value": "0.01"
+    },
+    {
+      "file": "audited_field.py",
+      "line": 19,
+      "value": "0"
+    },
+    {
+      "file": "audited_field.py",
+      "line": 29,
+      "value": "0"
+    },
+    {
+      "file": "audited_field.py",
+      "line": 29,
+      "value": "0"
+    },
+    {
+      "file": "audited_field.py",
+      "line": 29,
+      "value": "0"
+    },
+    {
+      "file": "audited_field.py",
+      "line": 30,
+      "value": "2"
+    },
+    {
+      "file": "audited_field.py",
+      "line": 37,
+      "value": "2"
+    },
+    {
+      "file": "audited_field.py",
+      "line": 37,
+      "value": "2"
+    },
+    {
+      "file": "audited_field.py",
+      "line": 38,
+      "value": "2"
+    },
+    {
+      "file": "audited_field.py",
+      "line": 39,
+      "value": "0"
+    },
+    {
+      "file": "audited_field.py",
+      "line": 40,
+      "value": "0"
+    },
+    {
+      "file": "audited_field.py",
+      "line": 43,
+      "value": "2"
+    },
+    {
+      "file": "audited_field.py",
+      "line": 44,
+      "value": "2"
+    },
+    {
+      "file": "audited_field.py",
+      "line": 45,
+      "value": "0"
+    },
+    {
+      "file": "audited_field.py",
+      "line": 45,
+      "value": "0"
+    },
+    {
+      "file": "audited_field.py",
+      "line": 45,
+      "value": "1"
+    },
+    {
+      "file": "audited_field.py",
+      "line": 45,
+      "value": "1j"
+    },
+    {
+      "file": "audited_field.py",
+      "line": 45,
+      "value": "2"
+    },
+    {
+      "file": "audited_field.py",
+      "line": 49,
+      "value": "0"
+    },
+    {
+      "file": "audited_field.py",
+      "line": 53,
+      "value": "2"
+    },
+    {
+      "file": "audited_field.py",
+      "line": 54,
+      "value": "0"
+    },
+    {
+      "file": "audited_field.py",
+      "line": 54,
+      "value": "1"
+    },
+    {
+      "file": "audited_field.py",
+      "line": 58,
+      "value": "2"
+    },
+    {
+      "file": "audited_field.py",
+      "line": 69,
+      "value": "0"
+    },
+    {
+      "file": "audited_field.py",
+      "line": 71,
+      "value": "3"
+    },
+    {
+      "file": "audited_field.py",
+      "line": 72,
+      "value": "1e-10"
+    },
+    {
+      "file": "audited_field.py",
+      "line": 73,
+      "value": "1"
+    },
+    {
+      "file": "audited_field.py",
+      "line": 73,
+      "value": "2"
+    },
+    {
+      "file": "audited_field.py",
+      "line": 74,
+      "value": "1e-10"
+    },
+    {
+      "file": "audited_field.py",
+      "line": 75,
+      "value": "1e-10"
+    },
+    {
+      "file": "audited_field.py",
+      "line": 76,
+      "value": "2"
+    },
+    {
+      "file": "audited_field.py",
+      "line": 77,
+      "value": "0.45"
+    },
+    {
+      "file": "audited_field.py",
+      "line": 77,
+      "value": "1.0"
+    },
+    {
+      "file": "audited_field.py",
+      "line": 81,
+      "value": "1e-12"
+    },
+    {
+      "file": "audited_field.py",
+      "line": 84,
+      "value": "0.5"
+    },
+    {
+      "file": "audited_field.py",
+      "line": 84,
+      "value": "2"
+    },
+    {
+      "file": "audited_field.py",
+      "line": 94,
+      "value": "0"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 12,
+      "value": "24"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 13,
+      "value": "0.02"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 14,
+      "value": "0.01"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 15,
+      "value": "1.0"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 16,
+      "value": "0.1"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 17,
+      "value": "0.05"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 18,
+      "value": "0.1"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 19,
+      "value": "0.12"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 20,
+      "value": "1.0"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 21,
+      "value": "1.0"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 22,
+      "value": "0.0"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 24,
+      "value": "0.0"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 24,
+      "value": "1.0"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 27,
+      "value": "0"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 28,
+      "value": "0"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 29,
+      "value": "2"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 31,
+      "value": "0"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 32,
+      "value": "2"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 39,
+      "value": "0"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 39,
+      "value": "0"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 39,
+      "value": "0"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 39,
+      "value": "0"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 39,
+      "value": "0"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 39,
+      "value": "0"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 39,
+      "value": "12"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 39,
+      "value": "2"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 40,
+      "value": "1"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 41,
+      "value": "2"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 41,
+      "value": "2"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 42,
+      "value": "2"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 42,
+      "value": "2"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 43,
+      "value": "3"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 43,
+      "value": "3"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 45,
+      "value": "0.5"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 45,
+      "value": "0.5"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 45,
+      "value": "2"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 45,
+      "value": "2"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 45,
+      "value": "2"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 45,
+      "value": "2"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 45,
+      "value": "2"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 47,
+      "value": "1"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 47,
+      "value": "2"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 48,
+      "value": "1"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 48,
+      "value": "2"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 49,
+      "value": "1j"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 51,
+      "value": "0"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 51,
+      "value": "1"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 52,
+      "value": "0"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 54,
+      "value": "0.0"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 54,
+      "value": "0.04"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 54,
+      "value": "0.1"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 55,
+      "value": "2"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 55,
+      "value": "2"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 58,
+      "value": "0.0"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 60,
+      "value": "2"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 60,
+      "value": "2"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 61,
+      "value": "2"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 64,
+      "value": "0"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 65,
+      "value": "0"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 68,
+      "value": "2"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 69,
+      "value": "2"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 71,
+      "value": "0"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 71,
+      "value": "0"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 71,
+      "value": "1"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 71,
+      "value": "1j"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 71,
+      "value": "2"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 75,
+      "value": "0"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 75,
+      "value": "0"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 75,
+      "value": "0.5"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 75,
+      "value": "0.5"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 76,
+      "value": "0"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 76,
+      "value": "0"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 76,
+      "value": "0.5"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 76,
+      "value": "0.5"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 77,
+      "value": "2"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 77,
+      "value": "2"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 77,
+      "value": "6"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 79,
+      "value": "2"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 79,
+      "value": "2"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 82,
+      "value": "2"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 82,
+      "value": "2"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 83,
+      "value": "0"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 83,
+      "value": "1"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 83,
+      "value": "1j"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 84,
+      "value": "0"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 84,
+      "value": "1"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 85,
+      "value": "0"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 85,
+      "value": "0"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 86,
+      "value": "0"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 86,
+      "value": "1"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 87,
+      "value": "0"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 87,
+      "value": "0.5"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 88,
+      "value": "0"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 90,
+      "value": "2"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 92,
+      "value": "0.0"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 92,
+      "value": "0.004"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 92,
+      "value": "0.04"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 92,
+      "value": "0.1"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 92,
+      "value": "1.0"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 95,
+      "value": "0.45"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 95,
+      "value": "1.0"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 98,
+      "value": "0.5"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 98,
+      "value": "2"
+    },
+    {
+      "file": "legacy_field.py",
+      "line": 102,
+      "value": "1"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 11,
+      "value": "1"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 11,
+      "value": "1"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 12,
+      "value": "2"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 13,
+      "value": "2"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 13,
+      "value": "2"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 17,
+      "value": "0.001"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 17,
+      "value": "0.001"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 17,
+      "value": "0.001"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 17,
+      "value": "24"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 17,
+      "value": "48"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 17,
+      "value": "72"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 20,
+      "value": "0.07"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 20,
+      "value": "0.3"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 21,
+      "value": "0.0"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 21,
+      "value": "0.125"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 21,
+      "value": "0.125"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 21,
+      "value": "0.25"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 21,
+      "value": "1.0"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 21,
+      "value": "1.0"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 22,
+      "value": "0.0"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 22,
+      "value": "0.2"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 24,
+      "value": "0.07"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 24,
+      "value": "0.3"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 24,
+      "value": "48"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 25,
+      "value": "0"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 25,
+      "value": "0.0"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 25,
+      "value": "0.2"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 25,
+      "value": "2"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 27,
+      "value": "48"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 29,
+      "value": "0.0"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 29,
+      "value": "0.001"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 29,
+      "value": "0.2"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 31,
+      "value": "0"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 31,
+      "value": "0"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 31,
+      "value": "10"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 31,
+      "value": "2"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 31,
+      "value": "2"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 31,
+      "value": "48"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 32,
+      "value": "0.0"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 32,
+      "value": "0.001"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 32,
+      "value": "0.2"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 33,
+      "value": "0"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 33,
+      "value": "0"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 33,
+      "value": "10"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 33,
+      "value": "2"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 33,
+      "value": "2"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 33,
+      "value": "48"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 39,
+      "value": "0.0"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 39,
+      "value": "0.0"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 39,
+      "value": "1.0"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 41,
+      "value": "0.0"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 41,
+      "value": "0.0"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 41,
+      "value": "0.0"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 41,
+      "value": "0.0"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 41,
+      "value": "0.0"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 41,
+      "value": "1.0"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 43,
+      "value": "2"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 44,
+      "value": "0"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 44,
+      "value": "0"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 44,
+      "value": "0"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 44,
+      "value": "0"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 44,
+      "value": "0"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 44,
+      "value": "0"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 44,
+      "value": "1"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 44,
+      "value": "1"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 44,
+      "value": "1"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 44,
+      "value": "1"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 44,
+      "value": "1"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 44,
+      "value": "1"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 44,
+      "value": "1"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 44,
+      "value": "1"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 44,
+      "value": "1"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 44,
+      "value": "1"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 44,
+      "value": "1"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 44,
+      "value": "1"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 44,
+      "value": "1"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 44,
+      "value": "38"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 44,
+      "value": "38"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 44,
+      "value": "39"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 45,
+      "value": "1"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 45,
+      "value": "1"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 45,
+      "value": "1"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 45,
+      "value": "1e-12"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 45,
+      "value": "1e-12"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 46,
+      "value": "2"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 48,
+      "value": "18"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 49,
+      "value": "2"
+    },
+    {
+      "file": "run_checks.py",
+      "line": 50,
+      "value": "2"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 7,
+      "value": "0.02"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 7,
+      "value": "0.3"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 7,
+      "value": "24"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 10,
+      "value": "24"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 11,
+      "value": "0.27"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 11,
+      "value": "0.27"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 15,
+      "value": "0.06"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 16,
+      "value": "1e-14"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 16,
+      "value": "3"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 17,
+      "value": "0"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 17,
+      "value": "0"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 17,
+      "value": "0.1"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 17,
+      "value": "0.1"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 22,
+      "value": "0.0"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 22,
+      "value": "0.0"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 22,
+      "value": "1.0"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 22,
+      "value": "24.0"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 25,
+      "value": "0"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 25,
+      "value": "0"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 25,
+      "value": "0.0"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 25,
+      "value": "1"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 25,
+      "value": "1"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 25,
+      "value": "1.0"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 25,
+      "value": "1.0"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 26,
+      "value": "0"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 26,
+      "value": "0.11920292202211755"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 26,
+      "value": "0.8807970779778824"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 26,
+      "value": "1"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 27,
+      "value": "0"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 27,
+      "value": "0"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 27,
+      "value": "1"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 27,
+      "value": "1"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 29,
+      "value": "0.3"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 29,
+      "value": "0.4"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 29,
+      "value": "2"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 30,
+      "value": "0"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 31,
+      "value": "0"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 32,
+      "value": "0"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 33,
+      "value": "0.7"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 33,
+      "value": "3.0"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 33,
+      "value": "3.1"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 35,
+      "value": "0.001"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 35,
+      "value": "0.2"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 35,
+      "value": "3.0"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 38,
+      "value": "0.27"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 38,
+      "value": "0.3235"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 38,
+      "value": "1"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 38,
+      "value": "12"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 38,
+      "value": "12"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 42,
+      "value": "3.0625"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 42,
+      "value": "3.0625"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 42,
+      "value": "3.125"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 43,
+      "value": "0"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 43,
+      "value": "1"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 43,
+      "value": "1"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 43,
+      "value": "1"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 43,
+      "value": "1"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 43,
+      "value": "1024"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 43,
+      "value": "1024"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 43,
+      "value": "1024"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 43,
+      "value": "3.0625"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 44,
+      "value": "0"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 44,
+      "value": "0"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 44,
+      "value": "0"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 44,
+      "value": "2"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 44,
+      "value": "2"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 44,
+      "value": "2"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 45,
+      "value": "0"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 45,
+      "value": "0"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 45,
+      "value": "1"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 45,
+      "value": "1"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 45,
+      "value": "1e-11"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 47,
+      "value": "0.0"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 47,
+      "value": "1.0"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 50,
+      "value": "2.99"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 50,
+      "value": "3.01"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 53,
+      "value": "0"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 53,
+      "value": "0"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 53,
+      "value": "1j"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 53,
+      "value": "2"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 56,
+      "value": "0"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 56,
+      "value": "0"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 58,
+      "value": "1.0"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 60,
+      "value": "0.05"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 60,
+      "value": "0.1"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 60,
+      "value": "2"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 60,
+      "value": "2"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 61,
+      "value": "0"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 61,
+      "value": "2"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 61,
+      "value": "2"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 63,
+      "value": "0.2"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 63,
+      "value": "0.2"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 64,
+      "value": "1e-12"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 64,
+      "value": "1e-12"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 66,
+      "value": "0"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 66,
+      "value": "2"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 67,
+      "value": "0.4"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 69,
+      "value": "0.0"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 69,
+      "value": "0.0"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 69,
+      "value": "0.0"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 69,
+      "value": "0.0"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 69,
+      "value": "0.0005"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 69,
+      "value": "0.1"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 70,
+      "value": "0.1"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 70,
+      "value": "0.1"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 70,
+      "value": "0.4"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 70,
+      "value": "2"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 70,
+      "value": "2"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 70,
+      "value": "2"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 71,
+      "value": "1e-11"
+    },
+    {
+      "file": "test_audit.py",
+      "line": 71,
+      "value": "2"
+    }
+  ],
+  "claims_corpus_validation": false
+}

@@ -1,0 +1,15 @@
+test_changed_checker_source_refused_before_execution (__main__.ParentLaunch.test_changed_checker_source_refused_before_execution) ... ok
+test_checker_package_and_unchecked_bytecode_are_not_loaded (__main__.ParentLaunch.test_checker_package_and_unchecked_bytecode_are_not_loaded) ... ok
+test_exact_fake_subprocess_launch_and_old_result_attack (__main__.ParentLaunch.test_exact_fake_subprocess_launch_and_old_result_attack) ... ok
+test_imported_run_cannot_claim_a_gated_execution (__main__.ParentLaunch.test_imported_run_cannot_claim_a_gated_execution) ... ok
+test_old_unisolated_commands_refused_before_local_import (__main__.ParentLaunch.test_old_unisolated_commands_refused_before_local_import) ... ok
+test_other_standard_library_shadows_refused (__main__.ParentLaunch.test_other_standard_library_shadows_refused) ... ok
+test_pythonpath_and_startup_environment_ignored (__main__.ParentLaunch.test_pythonpath_and_startup_environment_ignored) ... ok
+test_site_pth_and_sitecustomize_hooks_disabled (__main__.ParentLaunch.test_site_pth_and_sitecustomize_hooks_disabled) ... ok
+test_subprocess_package_and_sourceless_bytecode_refused (__main__.ParentLaunch.test_subprocess_package_and_sourceless_bytecode_refused) ... ok
+test_working_directory_shadow_refused (__main__.ParentLaunch.test_working_directory_shadow_refused) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 4.652s
+
+OK

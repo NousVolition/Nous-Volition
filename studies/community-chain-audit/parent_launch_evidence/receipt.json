@@ -1,0 +1,47 @@
+{
+  "protocol": "fresh-worker-v1",
+  "run_nonce": "a9ef1ec891287a8ce6de953db7969dc9a0d52a8c1b7d30b05e625fe115d89a4c",
+  "success": true,
+  "started_at": "2026-10-25T05:18:09.122023+00:00",
+  "finished_at": "2026-10-25T05:18:36.064542+00:00",
+  "profile": "sealed-audit-run-checks-v2",
+  "exit_code": 0,
+  "original_pinned_files": 86,
+  "original_pinned_files_unchanged": true,
+  "worker_sha256": "9c5fa4a6530c3f8052280d11a7da8e4adab2692a27127d52b68825fb190e3845",
+  "worker_verified_before_launch": true,
+  "verified_worker_bytes_executed_via_stdin": true,
+  "parent_startup": {
+    "isolated": true,
+    "no_site": true,
+    "safe_path": true,
+    "optimize": 0
+  },
+  "subprocess_origin": "C:\\Users\\ziman\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib\\subprocess.py",
+  "checker_loaded_from_verified_source": true,
+  "worker_startup": {
+    "isolated": true,
+    "no_site": true
+  },
+  "dependency_paths": [
+    "C:\\Users\\ziman\\Documents\\Codex\\2026-10-09\\referenced-chatgpt-conversation-this-is-an-2\\work\\run-gate-install\\venv\\Lib\\site-packages"
+  ],
+  "archived_outputs_copied": false,
+  "outputs_absent_before_launch": true,
+  "fresh_output_verification": true,
+  "copied_runner_sha256": "e83799e11c0386185d55e60f8d4a7ea405da751123241b8ba5bb6d89ce689a57",
+  "declaration_sha256": "01d995e4a95b4474f235cfd0fa9b7d9f9aaeafd7b646937662364680092e406d",
+  "errors": [],
+  "scope": "Real numerical fixture run; not empirical two-in-one validation",
+  "full_coupled_runs": 18,
+  "equation_tests": 17,
+  "observed_evolve_calls": 18,
+  "board_alternatives": 3,
+  "model_functions_replaced": false,
+  "max_mass_error": 1.6653345369377348e-16,
+  "max_divergence": 1.7447680903433165e-17,
+  "output_sha256": {
+    "results.json": "34764ed93e752140cbb530d98657484122e251f0457798266f835fa0d71383e5",
+    "test_log.txt": "f9d54d772b91d0539ef2edc03ed598372027681b4bea63c2ad625f7057b1d200"
+  }
+}

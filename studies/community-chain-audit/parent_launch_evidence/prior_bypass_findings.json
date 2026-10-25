@@ -1,0 +1,12 @@
+{
+  "probe": "Extra local subprocess.py substitutes launch and rebinds old evidence",
+  "exit_code": 0,
+  "elapsed_seconds": 1.1099999999860302,
+  "gate_accepted": true,
+  "worker_not_launched": true,
+  "three_gate_source_files_unchanged": true,
+  "all_86_cloned_pinned_files_unchanged": true,
+  "all_86_original_pinned_files_unchanged": true,
+  "old_result_bytes_reused": true,
+  "production_changed": false
+}

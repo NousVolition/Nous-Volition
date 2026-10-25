@@ -1,4 +1,7 @@
 """Complete declarations for one reviewed, byte-pinned real runner."""
+import sys
+if __name__ == "__main__" and not (sys.flags.isolated and sys.flags.no_site and sys.flags.safe_path):
+ raise SystemExit("Declaration check requires python -I -S run_manifest.py MANIFEST")
 from pathlib import Path
 import datetime
 import hashlib
@@ -7,7 +10,7 @@ import math
 import sys
 P = Path(__file__).resolve().parent
 TRUSTED = {
- "gate_worker.py":"0f73c23b45d6f3d806c8cf4b592f7241f2e6a8d8f96bb1e494e6ed7afe2e1d93",
+ "gate_worker.py":"9c5fa4a6530c3f8052280d11a7da8e4adab2692a27127d52b68825fb190e3845",
  "manifest_sha256.json":"127f78c467a0356fdaf62b333473c858793c4a451ab98504c2ce00bcd2d346dd",
  "run_contract.json":"cc91253f756681d097245ebe8a338d209b0416af2556dec804bf0b2c9e4ee794",
  "parameter_bounds.json":"50bb21ea6f4764a4d8b87748fd962c6e5c20db7cd20303343f2dd433c4a06180",
