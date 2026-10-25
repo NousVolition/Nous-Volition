@@ -199,7 +199,11 @@ jobs:
 
   corpus-chain-audit-checks:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+      OMP_NUM_THREADS: '1'
+      OPENBLAS_NUM_THREADS: '1'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -207,9 +211,28 @@ jobs:
           python-version: '3.12'
       - name: Install exact corpus audit dependencies
         run: pip install -r studies/community-chain-audit/requirements.txt
-      - name: Verify published evidence and exact-equation conformance
+      - name: Verify sealed release and complete declaration before model execution
         working-directory: studies/community-chain-audit
         run: |
           python verify.py
-          python -m unittest test_audit.py -v
-          python run_checks.py
+          python run_manifest.py run_manifest.example.json
+          python -m unittest test_run_manifest.py -v
+      - name: Execute the unchanged real runner through the gate
+        working-directory: studies/community-chain-audit
+        run: python gated_run.py run_manifest.example.json --output "${{ runner.temp }}/corpus-gated-run"
+      - name: Recheck all 86 originals and every notice
+        run: |
+          python studies/community-chain-audit/verify.py
+          python tools/check_audit_notices.py
+      - name: Preserve real-run receipts, trace and results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: corpus-gated-real-run
+          path: |
+            ${{ runner.temp }}/corpus-gated-run/receipt.json
+            ${{ runner.temp }}/corpus-gated-run/execution_trace.json
+            ${{ runner.temp }}/corpus-gated-run/runner.log
+            ${{ runner.temp }}/corpus-gated-run/declaration.json
+            ${{ runner.temp }}/corpus-gated-run/audit-copy/results.json
+            ${{ runner.temp }}/corpus-gated-run/audit-copy/test_log.txt

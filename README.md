@@ -1,5 +1,7 @@
 # Nous Volition · Streams and Rocks
 
+**[Enforced run declarations and real-run evidence](studies/community-chain-audit/RUN_GATE.md).** The repaired gate binds declarations to the byte-pinned runner, records all 18 actual coupled runs and the separate alternatives, and preserves all 86 sealed audit files. Added numerical rules remain explicit; these checks do not establish empirical two-in-one validation.
+
 **[Equation coverage and every added rule](studies/community-connection-resolution/REGISTER_AND_ADDED_RULES.md).** Current checkpoint: five register rows are coded in the existing field solver; the new real-data script invokes none of them. The inventory records 43 numerical, statistical and proposed choices, including unfinished work. [Completed sequence statistics](studies/community-connection-resolution/README.md) describe 117 people and 49 repeated sessions; they do not establish a full empirical two-in-one model.
 
 **[Source-chain audit and repairs](studies/community-chain-audit/README.md).** Rechecked the full corrected corpus, all 37 PDF pages, eight Miro boards and the study dependency chain. Reproduced 443 existing unit tests, reran saved-result checks and the latest workbook analysis, and ran 18 new full-field numerical fixtures. Corrections expose initial-history resets, uncalibrated observation maps, form-definition drift and errors in Miro forgetting proposals. The exact corpus equations are retained; a full empirical two-in-one validation remains open. Coverage limits and all failed audit attempts are recorded.

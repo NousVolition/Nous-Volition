@@ -1,0 +1,24 @@
+{
+  "started_at": "2026-10-25T01:17:17.846809+00:00",
+  "finished_at": "2026-10-25T01:17:42.337684+00:00",
+  "profile": "sealed-audit-run-checks-v2",
+  "exit_code": 0,
+  "original_pinned_files": 86,
+  "original_pinned_files_unchanged": true,
+  "worker_sha256": "b153306ef4f2c7e7f76249f8f6a4b92a05a3f6854c2ed65219a48b20a3cf5a7d",
+  "copied_runner_sha256": "e83799e11c0386185d55e60f8d4a7ea405da751123241b8ba5bb6d89ce689a57",
+  "declaration_sha256": "01d995e4a95b4474f235cfd0fa9b7d9f9aaeafd7b646937662364680092e406d",
+  "snapshot_output_changes": [
+    "results.json",
+    "test_log.txt"
+  ],
+  "errors": [],
+  "scope": "Real numerical fixture run; not empirical two-in-one validation",
+  "full_coupled_runs": 18,
+  "equation_tests": 17,
+  "observed_evolve_calls": 18,
+  "board_alternatives": 3,
+  "model_functions_replaced": false,
+  "max_mass_error": 1.6653345369377348e-16,
+  "max_divergence": 1.7447680903433165e-17
+}
