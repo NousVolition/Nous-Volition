@@ -4,6 +4,20 @@
 
 **Streams and Rocks by [NousVolition](https://github.com/NousVolition)** brings together stream-function research, fluid dynamics experiments, SIMS memory and group-boundary models, and separate community studies. Start with the [study guide](#start-here); each study records its own assumptions, results and limits.
 
+## Find a specific study
+
+| Question | Where to start |
+| --- | --- |
+| How do SIMS names, memory and group boundaries interact? | [SIMS social organization](studies/social-organization/README.md) |
+| How does Hug movement change the expression of history? | [Hug memory feedback](studies/hug-memory-feedback/README.md) |
+| What is implemented in the two-in-one field model? | [Equation register and added rules](studies/community-connection-resolution/REGISTER_AND_ADDED_RULES.md) |
+| Which community claims survived the source-chain audit? | [Source-chain audit and evidence](studies/community-chain-audit/README.md) |
+| How were predictions tested on measured piles? | [ISFOG pile-driving tests](studies/isfog-pile-tests/README.md) |
+
+[Browse all 58 README guides](streams-and-rocks-study-index.md)
+
+## Study updates
+
 **[Enforced run declarations and real-run evidence](studies/community-chain-audit/RUN_GATE.md).** The repaired gate binds declarations to the byte-pinned runner, records all 18 actual coupled runs and the separate alternatives, and preserves all 86 sealed audit files. Added numerical rules remain explicit; these checks do not establish empirical two-in-one validation.
 
 **[Equation coverage and every added rule](studies/community-connection-resolution/REGISTER_AND_ADDED_RULES.md).** Current checkpoint: five register rows are coded in the existing field solver; the new real-data script invokes none of them. The inventory records 43 numerical, statistical and proposed choices, including unfinished work. [Completed sequence statistics](studies/community-connection-resolution/README.md) describe 117 people and 49 repeated sessions; they do not establish a full empirical two-in-one model.

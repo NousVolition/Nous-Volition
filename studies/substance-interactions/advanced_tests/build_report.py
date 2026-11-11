@@ -22,7 +22,7 @@ def figure(name,caption):
 def commands(t):md.append('```sh\n'+t+'\n```');ht.append('<pre>'+html.escape(t)+'</pre>')
 
 heading('Substance study: transport, kinetics and evidence audit',1)
-para('Completed computational batch • 13 October 2026 • Streams and Rocks / Nous Volition')
+para('Completed computational batch • 13 October 2026 • Streams and Rocks / NousVolition')
 para('**The falling-droplet candidate is substantially closer to the published collection data, and the new liquid-diffusion and carbonate solvers pass their numerical checks. Experimental validation remains incomplete.** This report separates completed calculations, measured input data and unresolved evidence across the six requested extensions.')
 para('Read the [methods and assumptions](METHODS.md), [source provenance](references.json), [six-item evidence register](evidence_gaps.csv), [saved-result verification](verification.json), or [previous study](https://github.com/NousVolition/Nous-Volition/tree/main/studies/substance-interactions). The original interaction matrix and equation appendix remain in the parent study.')
 heading('What ran')

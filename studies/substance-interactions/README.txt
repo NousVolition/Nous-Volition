@@ -1,4 +1,4 @@
-NOUSVOLITION / MY-SOURCES-PROJECT-ALL
+NousVolition / MY-SOURCES-PROJECT-ALL
 Reproducible chemical / transport interaction pilot
 
 Start with research_report.html, a self-contained illustrated report.

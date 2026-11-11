@@ -1,6 +1,6 @@
 # Substance study: transport, kinetics and evidence audit
 
-Completed computational batch • 13 October 2026 • Streams and Rocks / Nous Volition
+Completed computational batch • 13 October 2026 • Streams and Rocks / NousVolition
 
 **The falling-droplet candidate is substantially closer to the published collection data, and the new liquid-diffusion and carbonate solvers pass their numerical checks. Experimental validation remains incomplete.** This report separates completed calculations, measured input data and unresolved evidence across the six requested extensions.
 
