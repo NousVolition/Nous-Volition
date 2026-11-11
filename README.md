@@ -1,4 +1,8 @@
-# Nous Volition · Streams and Rocks
+# Streams and Rocks: fluid dynamics and SIMS studies
+
+<a id="nous-volition--streams-and-rocks"></a>
+
+**Streams and Rocks by [NousVolition](https://github.com/NousVolition)** brings together stream-function research, fluid dynamics experiments, SIMS memory and group-boundary models, and separate community studies. Start with the [study guide](#start-here); each study records its own assumptions, results and limits.
 
 **[Enforced run declarations and real-run evidence](studies/community-chain-audit/RUN_GATE.md).** The repaired gate binds declarations to the byte-pinned runner, records all 18 actual coupled runs and the separate alternatives, and preserves all 86 sealed audit files. Added numerical rules remain explicit; these checks do not establish empirical two-in-one validation.
 
@@ -211,6 +215,13 @@ The package includes 374 automated tests, thirty-eight original scientific figur
 
 
 
+
+## Related NousVolition projects
+
+- [Hug and SIMS Lean proofs](https://github.com/NousVolition/hug-sims-lean-proofs) — formal proofs, numerical studies and verification records.
+- [Semantic Organizer Bot](https://github.com/NousVolition/semantic-organizer-bot) — language discovery, source review, HermiT and lambeq tools.
+- [SIMS evolving guard studies](https://github.com/NousVolition/My-Sources-Project-ALL) — original framework, asymmetric interaction tests and source archive.
+
 ## License
 
-Copyright © 2026 Nous Volition. All rights reserved. See the [copyright notice](LICENSE) for the terms that apply to reuse of the original work in this repository.
+Copyright © 2026 NousVolition. All rights reserved. See the [copyright notice](LICENSE) for the terms that apply to reuse of the original work in this repository.
